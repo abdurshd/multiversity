@@ -276,7 +276,7 @@ const noAssassinationTimeline: Timeline = {
   consequences: [
     {
       id: 'no-world-war',
-      category: 'military',
+      category: 'political',
       shortTerm: 'Avoids World War I entirely, saving 17 million lives',
       longTerm: 'No wartime devastation allows continued European cultural development',
       globalImpact: 'Different 20th century without the trauma of total war'
@@ -391,7 +391,7 @@ const localizedConflictTimeline: Timeline = {
   consequences: [
     {
       id: 'limited-warfare',
-      category: 'military',
+      category: 'political',
       shortTerm: 'Regional war with limited casualties compared to world war',
       longTerm: 'Military technology develops more slowly without total war pressure',
       globalImpact: 'Different pace of military and technological development'
@@ -538,6 +538,150 @@ const germanVictoryTimeline: Timeline = {
   presentDayStatus: 'The German Empire dominated Europe until 1945 when it finally democratized after losing World War II (which started in 1935 when Britain finally challenged German hegemony). Today, Germany leads the "European Imperial Federation" and makes really good cars! 🚗🇩🇪'
 };
 
+// Interactive story scenarios for World War I
+const interactiveScenarios = [
+  {
+    id: 'archduke-assassination-choice',
+    title: 'The Archduke\'s Fatal Route',
+    text: 'Sarajevo, June 28, 1914. You are Archduke Franz Ferdinand\'s driver. After the failed first assassination attempt, you\'re told to take a different route. But you\'re confused about the directions...',
+    emoji: '🚗',
+    background: 'bg-gradient-to-br from-gray-700 to-red-800',
+    characters: ['👑', '🚗', '💣'],
+    sceneType: 'decision' as const,
+    timelineYear: 1914,
+    timelineEvent: 'Assassination of Archduke Franz Ferdinand',
+    choices: [
+      {
+        id: 'take-planned-route',
+        text: 'Follow the new, safer route as instructed',
+        consequence: 'You avoid the assassin completely - Franz Ferdinand lives and WWI might be prevented!'
+      },
+      {
+        id: 'take-wrong-turn',
+        text: 'Get confused and take the wrong turn onto Franz Joseph Street',
+        consequence: 'Your mistake brings you right to Gavrilo Princip - the shot that starts WWI is fired'
+      },
+      {
+        id: 'stop-and-ask-directions',
+        text: 'Stop the car and ask for directions to be sure',
+        consequence: 'While stopped, you\'re spotted by another conspirator - history takes a different but equally dangerous turn'
+      }
+    ]
+  },
+  {
+    id: 'christmas-truce-decision',
+    title: 'The Christmas Truce',
+    text: 'December 24, 1914. No Man\'s Land, Western Front. It\'s Christmas Eve and you hear German soldiers singing "Silent Night." Someone suggests a truce...',
+    emoji: '🎄',
+    background: 'bg-gradient-to-br from-green-800 to-red-900',
+    characters: ['🎄', '⚔️', '🤝'],
+    sceneType: 'decision' as const,
+    timelineYear: 1914,
+    timelineEvent: 'Christmas Truce across No Man\'s Land',
+    choices: [
+      {
+        id: 'join-truce',
+        text: 'Climb out of the trench and join the Christmas celebration',
+        consequence: 'You share cigarettes, photos, and football with the "enemy" - a moment of humanity in hell'
+      },
+      {
+        id: 'stay-vigilant',
+        text: 'Remain at your post - this could be a trick',
+        consequence: 'Your caution is noted by officers, but you miss a historic moment of peace'
+      },
+      {
+        id: 'report-to-officers',
+        text: 'Report the fraternization to your commanding officer',
+        consequence: 'Your report leads to orders ending the truce - duty over humanity'
+      }
+    ]
+  },
+  {
+    id: 'verdun-defense',
+    title: 'The Hell of Verdun',
+    text: 'February 1916. Verdun, France. The Germans launch their massive offensive to "bleed France white." You\'re a French officer deciding how to respond to this meat grinder...',
+    emoji: '⚔️',
+    background: 'bg-gradient-to-br from-red-900 to-black',
+    characters: ['🇫🇷', '💀', '🔥'],
+    sceneType: 'battle' as const,
+    timelineYear: 1916,
+    timelineEvent: 'Battle of Verdun - the longest battle of WWI',
+    choices: [
+      {
+        id: 'fight-to-last-man',
+        text: 'Fight to the last man - "They shall not pass!"',
+        consequence: 'Your heroic defense becomes legendary, but at a terrible cost in French lives'
+      },
+      {
+        id: 'strategic-withdrawal',
+        text: 'Conduct strategic withdrawal to better positions',
+        consequence: 'Your tactical wisdom saves lives but may be seen as retreating'
+      },
+      {
+        id: 'counter-attack',
+        text: 'Launch immediate counter-attack to retake lost ground',
+        consequence: 'Your aggression catches Germans off-guard but leads to massive casualties'
+      }
+    ]
+  },
+  {
+    id: 'us-entry-decision',
+    title: 'The Zimmermann Telegram',
+    text: 'February 1917. Washington D.C. You\'re President Wilson\'s advisor. British intelligence just handed you the Zimmermann Telegram - Germany is asking Mexico to attack the US!',
+    emoji: '📜',
+    background: 'bg-gradient-to-br from-blue-800 to-red-700',
+    characters: ['🇺🇸', '📮', '⚔️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1917,
+    timelineEvent: 'Zimmermann Telegram pushes America toward war',
+    choices: [
+      {
+        id: 'immediate-war',
+        text: 'Recommend immediate declaration of war on Germany',
+        consequence: 'Your quick action gets America into the war early, potentially saving Allied lives'
+      },
+      {
+        id: 'verify-authenticity',
+        text: 'Demand verification - this could be British propaganda',
+        consequence: 'Your caution delays American entry but ensures you\'re making the right decision'
+      },
+      {
+        id: 'diplomatic-solution',
+        text: 'Try one more diplomatic solution before war',
+        consequence: 'Your peace efforts are noble but may allow Germany to gain more ground'
+      }
+    ]
+  },
+  {
+    id: 'armistice-negotiation',
+    title: 'The Armistice Decision',
+    text: 'November 1918. Compiègne Forest, France. You\'re negotiating the Armistice. Germany is beaten but still fighting. How harsh should the terms be?',
+    emoji: '🕊️',
+    background: 'bg-gradient-to-br from-green-700 to-gray-800',
+    characters: ['📜', '🕊️', '⚔️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1918,
+    timelineEvent: 'Armistice negotiations end the Great War',
+    choices: [
+      {
+        id: 'harsh-terms',
+        text: 'Impose harsh terms - Germany must pay for this war',
+        consequence: 'Your tough stance ensures German defeat but may breed resentment for the future'
+      },
+      {
+        id: 'moderate-terms',
+        text: 'Seek moderate terms that Germany can accept',
+        consequence: 'Your reasonableness ends the war quickly and may prevent future conflicts'
+      },
+      {
+        id: 'unconditional-surrender',
+        text: 'Demand nothing less than unconditional surrender',
+        consequence: 'Your absolutism might prolong fighting but ensures total victory'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const worldWarOneChapter: Chapter = {
   id: 'world-war-1',
@@ -558,5 +702,6 @@ export const worldWarOneChapter: Chapter = {
   ],
   mainImage: '/images/world-war-1-main.jpg',
   icon: '⚔️',
-  backgroundColor: 'from-gray-600 to-red-800'
+  backgroundColor: 'from-gray-600 to-red-800',
+  interactiveScenarios
 };

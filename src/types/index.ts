@@ -60,6 +60,28 @@ export interface Timeline {
   icon: string;
 }
 
+export interface StoryChoice {
+  id: string;
+  text: string;
+  consequence: string;
+  nextSceneId?: string;
+}
+
+export interface InteractiveScenario {
+  id: string;
+  title: string;
+  text: string;
+  emoji: string;
+  background: string;
+  characters: string[];
+  sceneType: 'battle' | 'negotiation' | 'exploration' | 'decision' | 'revelation';
+  visualEffects?: string[];
+  choices?: StoryChoice[];
+  timelineYear?: number;
+  timelineEvent?: string;
+  soundEffect?: string;
+}
+
 export interface Chapter {
   id: string;
   title: string;
@@ -72,6 +94,7 @@ export interface Chapter {
   divergencePoint: string;
   divergenceYear: number;
   alternativeTimelines: Timeline[];
+  interactiveScenarios?: InteractiveScenario[];
   mainImage: string;
   icon: string;
   backgroundColor: string;

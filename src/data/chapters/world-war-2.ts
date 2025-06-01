@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect, InteractiveScenario } from '../../types';
 
 // Key figures with global scope and dramatic descriptions
 const keyFigures: Person[] = [
@@ -617,6 +617,235 @@ const japanWinsPacificTimeline: Timeline = {
   presentDayStatus: 'The Japanese Pacific Federation is one of three global superpowers alongside the American Republic and European Union. December 7th is celebrated as "Liberation Day" across Asia. Pearl Harbor hosts annual "Peace and Prosperity" ceremonies. 🌸🕊️'
 };
 
+// Interactive scenarios for key WW2 moments
+const interactiveScenarios: InteractiveScenario[] = [
+  {
+    id: 'poland-invasion-1939',
+    title: 'The Invasion Begins: Poland Under Attack',
+    text: 'September 1, 1939, 4:45 AM. German forces cross the Polish border at multiple points. You are a Polish commander receiving reports of massive German attacks. The fate of your nation and the world hangs in the balance.',
+    emoji: '⚔️',
+    background: 'from-gray-800 to-red-900',
+    characters: ['🇵🇱', '🇩🇪', '👨‍✈️'],
+    sceneType: 'battle',
+    timelineYear: 1939,
+    timelineEvent: 'germany-invades-poland-1939',
+    choices: [
+      {
+        id: 'fight-defensively',
+        text: 'Order strategic withdrawal to prepared defensive positions',
+        consequence: 'Polish forces conduct fighting retreat, buying time for allies to mobilize but losing territory rapidly.'
+      },
+      {
+        id: 'counterattack-immediately',
+        text: 'Launch immediate counterattacks against German spearheads',
+        consequence: 'Brave Polish cavalry and infantry attack German tanks, suffering heavy casualties but showing incredible courage.'
+      },
+      {
+        id: 'appeal-for-help',
+        text: 'Send urgent appeals to Britain and France for immediate military support',
+        consequence: 'Allies declare war but cannot provide immediate military assistance, leaving Poland to fight alone.'
+      }
+    ]
+  },
+  {
+    id: 'battle-of-britain-1940',
+    title: 'The Few: Defending Britain from the Air',
+    text: 'August 1940. The Luftwaffe launches Operation Eagle Day to destroy the RAF and pave the way for invasion. You are an RAF squadron leader with limited pilots facing overwhelming German air power. Churchill\'s words echo: "Never was so much owed by so many to so few."',
+    emoji: '✈️',
+    background: 'from-blue-800 to-gray-700',
+    characters: ['🇬🇧', '🇩🇪', '✈️'],
+    sceneType: 'battle',
+    timelineYear: 1940,
+    timelineEvent: 'battle-of-britain-1940',
+    choices: [
+      {
+        id: 'defend-airfields',
+        text: 'Focus on protecting RAF airfields and radar stations',
+        consequence: 'Maintaining airfield operations keeps fighters in the air, but civilian areas suffer heavy bombing.'
+      },
+      {
+        id: 'attack-bombers',
+        text: 'Prioritize attacking German bomber formations over London',
+        consequence: 'Heavy bomber losses force Germans to switch to night bombing, reducing accuracy but continuing the Blitz.'
+      },
+      {
+        id: 'hit-and-run',
+        text: 'Use hit-and-run tactics to preserve pilot strength',
+        consequence: 'Conservative tactics preserve experienced pilots but allow more German bombers through to targets.'
+      }
+    ]
+  },
+  {
+    id: 'pearl-harbor-1941',
+    title: 'A Date Which Will Live in Infamy',
+    text: 'December 7, 1941, 7:55 AM. Japanese aircraft swarm over Pearl Harbor in a devastating surprise attack. You are Admiral Kimmel, commander of the Pacific Fleet, as the first bombs fall. America\'s neutrality dies in the flames.',
+    emoji: '🛩️',
+    background: 'from-orange-600 to-red-900',
+    characters: ['🇺🇸', '🇯🇵', '🛩️'],
+    sceneType: 'battle',
+    timelineYear: 1941,
+    timelineEvent: 'pearl-harbor-1941',
+    choices: [
+      {
+        id: 'organize-defense',
+        text: 'Rally available anti-aircraft guns and organize immediate defense',
+        consequence: 'Quick response saves some ships and aircraft, but the surprise attack achieves most of its objectives.'
+      },
+      {
+        id: 'save-fuel-depot',
+        text: 'Focus on protecting the crucial fuel storage facilities',
+        consequence: 'Fuel depot survives, providing vital resources for Pacific War, though ship losses remain severe.'
+      },
+      {
+        id: 'evacuate-personnel',
+        text: 'Prioritize saving lives and evacuating key personnel',
+        consequence: 'Many lives saved but material losses mount as Japanese achieve tactical surprise completely.'
+      }
+    ]
+  },
+  {
+    id: 'd-day-planning-1944',
+    title: 'Operation Overlord: The Greatest Gamble',
+    text: 'June 4, 1944. General Eisenhower faces the most crucial decision of the war. Weather is marginal, German defenses are strong, but the invasion cannot be delayed much longer. The liberation of Europe hangs on your choice.',
+    emoji: '🏖️',
+    background: 'from-blue-600 to-green-800',
+    characters: ['🇺🇸', '🇬🇧', '🇨🇦'],
+    sceneType: 'decision',
+    timelineYear: 1944,
+    timelineEvent: 'd-day-1944',
+    choices: [
+      {
+        id: 'go-tomorrow',
+        text: 'Launch the invasion on June 6 despite weather concerns',
+        consequence: 'Rough seas and clouds complicate the landing, but achieves crucial surprise as Germans don\'t expect attack in bad weather.'
+      },
+      {
+        id: 'wait-for-weather',
+        text: 'Delay invasion until weather improves, risking discovery',
+        consequence: 'Better weather aids the assault but Germans detect preparations, strengthening defenses significantly.'
+      },
+      {
+        id: 'alternative-target',
+        text: 'Switch to alternative landing sites with better weather',
+        consequence: 'Alternative beaches face stronger defenses but weather advantage, creating different tactical challenges.'
+      }
+    ]
+  },
+  {
+    id: 'holocaust-resistance-1943',
+    title: 'Voices in the Darkness: Resistance and Rescue',
+    text: 'Warsaw Ghetto, April 1943. Reports of deportations and extermination camps have reached the ghetto. You are part of the Jewish resistance deciding how to respond to the impossible situation. Every choice carries the weight of lives and dignity.',
+    emoji: '✊',
+    background: 'from-gray-900 to-yellow-800',
+    characters: ['✡️', '💪', '📜'],
+    sceneType: 'decision',
+    timelineYear: 1943,
+    choices: [
+      {
+        id: 'armed-uprising',
+        text: 'Organize armed resistance despite overwhelming odds',
+        consequence: 'Warsaw Ghetto Uprising inspires resistance worldwide but results in ghetto\'s destruction and many casualties.'
+      },
+      {
+        id: 'document-atrocities',
+        text: 'Focus on documenting Nazi crimes for history and justice',
+        consequence: 'Hidden archives preserve testimony of genocide, ensuring the world will know the truth.'
+      },
+      {
+        id: 'rescue-operations',
+        text: 'Prioritize smuggling children and others to safety',
+        consequence: 'Rescue networks save hundreds of lives but operate under constant danger of discovery.'
+      }
+    ]
+  },
+  {
+    id: 'atomic-decision-1945',
+    title: 'The Ultimate Weapon: A Decision for the Ages',
+    text: 'July 1945. President Truman faces the most momentous decision in human history. The Manhattan Project has produced atomic weapons. Japan fights on despite devastating losses. Invasion estimates suggest massive casualties. The nuclear age awaits your choice.',
+    emoji: '☢️',
+    background: 'from-yellow-600 to-orange-900',
+    characters: ['🇺🇸', '☢️', '🌍'],
+    sceneType: 'decision',
+    timelineYear: 1945,
+    timelineEvent: 'hiroshima-nagasaki-1945',
+    choices: [
+      {
+        id: 'use-atomic-bomb',
+        text: 'Authorize atomic bombing to force Japanese surrender',
+        consequence: 'Hiroshima and Nagasaki destroyed, Japan surrenders, but nuclear age begins with devastating civilian casualties.'
+      },
+      {
+        id: 'demonstrate-weapon',
+        text: 'Demonstrate atomic power on unpopulated target as warning',
+        consequence: 'Demonstration shows atomic power but may not convince Japan to surrender, potentially prolonging war.'
+      },
+      {
+        id: 'conventional-invasion',
+        text: 'Proceed with conventional invasion of Japan (Operation Downfall)',
+        consequence: 'Massive casualties on both sides as Japan fights to the death defending homeland, but no nuclear precedent.'
+      }
+    ]
+  },
+  {
+    id: 've-day-decisions-1945',
+    title: 'Victory in Europe: Shaping the Post-War World',
+    text: 'May 8, 1945. Nazi Germany has surrendered unconditionally. Europe lies in ruins but free from fascism. You are among the Allied leaders deciding how to rebuild Europe and deal with the emerging Soviet challenge. The post-war world order begins now.',
+    emoji: '🎉',
+    background: 'from-green-600 to-blue-800',
+    characters: ['🇺🇸', '🇬🇧', '🇫🇷', '🇷🇺'],
+    sceneType: 'negotiation',
+    timelineYear: 1945,
+    timelineEvent: 've-day-1945',
+    choices: [
+      {
+        id: 'rebuild-democracy',
+        text: 'Focus on rebuilding democratic institutions across Europe',
+        consequence: 'Democratic reconstruction succeeds in the West but creates tension with Soviet-occupied Eastern Europe.'
+      },
+      {
+        id: 'punish-germany',
+        text: 'Impose harsh reparations and punishment on Germany',
+        consequence: 'German punishment satisfies justice but creates economic hardship that communists might exploit.'
+      },
+      {
+        id: 'compromise-with-stalin',
+        text: 'Seek accommodation with Soviet Union for unified Europe',
+        consequence: 'Compromise with Stalin might preserve unity but risks communist influence spreading westward.'
+      }
+    ]
+  },
+  {
+    id: 'japanese-surrender-1945',
+    title: '🕊️ The Emperor\'s Decision: Ending the Rising Sun',
+    description: 'August 15, 1945. Emperor Hirohito must address the Japanese people after atomic bombings and Soviet invasion. You advise the Emperor on how to announce surrender while preserving national honor and ensuring Japan\'s survival.',
+    year: 1945,
+    location: 'Imperial Palace, Tokyo',
+    sceneType: 'decision',
+    participants: ['🇯🇵', '👑', '🌸'],
+    backgroundColor: 'from-red-800 to-yellow-600',
+    choices: [
+      {
+        id: 'unconditional-surrender',
+        text: 'Accept complete unconditional surrender to save Japanese lives',
+        consequence: 'Total surrender saves Japan from invasion but subjects nation to complete Allied occupation.',
+        impact: 'Unconditional surrender preserves Japanese lives but transforms Japan under American influence.'
+      },
+      {
+        id: 'negotiate-terms',
+        text: 'Attempt to negotiate surrender terms preserving imperial system',
+        consequence: 'Negotiations delay surrender but might preserve some Japanese autonomy and imperial dignity.',
+        impact: 'Negotiation attempts risk more atomic attacks but potentially secure better post-war position.'
+      },
+      {
+        id: 'fight-to-end',
+        text: 'Call for continued resistance despite atomic weapons',
+        consequence: 'Continued resistance leads to invasion and massive casualties, potentially destroying Japanese civilization.',
+        impact: 'Fighting to the end preserves honor but results in catastrophic destruction of Japanese people and culture.'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const worldWarTwoChapter: Chapter = {
   id: 'world-war-2',
@@ -637,5 +866,12 @@ export const worldWarTwoChapter: Chapter = {
   ],
   mainImage: '/images/world-war-2-main.jpg',
   icon: '🌍',
-  backgroundColor: 'from-blue-800 to-red-900'
+  backgroundColor: 'from-blue-800 to-red-900',
+  mainTimeline: {
+    id: 'ww2-main',
+    title: 'World War II: The War That Changed Everything',
+    description: 'The complete timeline of the Second World War',
+    events: mainTimelineEvents
+  },
+  interactiveScenarios
 };

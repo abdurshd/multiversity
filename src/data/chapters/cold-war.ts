@@ -761,6 +761,150 @@ const peacefulCoexistenceTimeline: Timeline = {
   presentDayStatus: 'The Global Cooperation Federation has successfully managed international relations for 40 years. Climate change was solved by 2000, Mars has permanent settlements, and poverty is extinct. The old "East vs. West" is studied as an example of unnecessary conflict. 🌍🚀'
 };
 
+// Interactive story scenarios for Cold War
+const interactiveScenarios = [
+  {
+    id: 'iron-curtain-speech',
+    title: 'The Iron Curtain Warning',
+    text: 'March 1946, Fulton, Missouri. Winston Churchill asks you to review his speech about Soviet intentions. It will either start the Cold War or prevent it...',
+    emoji: '🗣️',
+    background: 'bg-gradient-to-br from-gray-700 to-blue-900',
+    characters: ['🐕', '🔮', '🌍'],
+    sceneType: 'decision' as const,
+    timelineYear: 1946,
+    timelineEvent: 'Churchill\'s Iron Curtain speech',
+    choices: [
+      {
+        id: 'support-warning',
+        text: 'Support Churchill\'s warning about Soviet expansion',
+        consequence: 'Your support helps define the containment policy and begins the Cold War'
+      },
+      {
+        id: 'urge-diplomacy',
+        text: 'Urge continued diplomacy and cooperation with Stalin',
+        consequence: 'Your diplomacy delays confrontation but may enable Soviet expansion'
+      },
+      {
+        id: 'propose-neutrality',
+        text: 'Propose American neutrality in European affairs',
+        consequence: 'Your isolationism leaves Europe to Soviet influence but avoids global tension'
+      }
+    ]
+  },
+  {
+    id: 'berlin-blockade',
+    title: 'The Berlin Crisis',
+    text: 'June 1948. Stalin blocks all access to West Berlin, trapping 2 million people. Military leaders suggest forcing the blockade. What do you do?',
+    emoji: '✈️',
+    background: 'bg-gradient-to-br from-blue-800 to-gray-900',
+    characters: ['🛩️', '🍞', '⚔️'],
+    sceneType: 'battle' as const,
+    timelineYear: 1948,
+    timelineEvent: 'Berlin Blockade and Airlift',
+    choices: [
+      {
+        id: 'organize-airlift',
+        text: 'Organize a massive airlift to supply Berlin',
+        consequence: 'Your airlift succeeds brilliantly, showing Western resolve without war'
+      },
+      {
+        id: 'force-blockade',
+        text: 'Send armed convoys to force through the blockade',
+        consequence: 'Your military action risks World War III but shows absolute determination'
+      },
+      {
+        id: 'negotiate-compromise',
+        text: 'Negotiate a face-saving compromise with Stalin',
+        consequence: 'Your diplomacy ends the crisis but may be seen as weakness'
+      }
+    ]
+  },
+  {
+    id: 'cuban-missile-crisis',
+    title: 'Thirteen Days in October',
+    text: 'October 1962. Soviet missiles are in Cuba, 90 miles from Florida. Your generals want airstrikes, Khrushchev threatens nuclear war. The world holds its breath...',
+    emoji: '🚀',
+    background: 'bg-gradient-to-br from-red-900 to-black',
+    characters: ['💣', '📞', '🌍'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1962,
+    timelineEvent: 'Cuban Missile Crisis - World on brink of nuclear war',
+    choices: [
+      {
+        id: 'naval-blockade',
+        text: 'Impose a naval quarantine and negotiate privately',
+        consequence: 'Your measured response avoids war while forcing Soviet withdrawal'
+      },
+      {
+        id: 'airstrike-missiles',
+        text: 'Launch airstrikes to destroy the missile sites',
+        consequence: 'Your military action eliminates the threat but risks nuclear escalation'
+      },
+      {
+        id: 'accept-missiles',
+        text: 'Accept Soviet missiles in exchange for guarantees',
+        consequence: 'Your acceptance avoids war but changes the nuclear balance forever'
+      }
+    ]
+  },
+  {
+    id: 'berlin-wall-crisis',
+    title: 'The Wall Goes Up',
+    text: 'August 1961. East Germans are building a wall through Berlin overnight. Your advisors suggest military action to tear it down before it\'s complete...',
+    emoji: '🧱',
+    background: 'bg-gradient-to-br from-gray-600 to-red-800',
+    characters: ['🔨', '🚧', '😢'],
+    sceneType: 'decision' as const,
+    timelineYear: 1961,
+    timelineEvent: 'Construction of Berlin Wall',
+    choices: [
+      {
+        id: 'tear-down-wall',
+        text: 'Order immediate action to tear down the wall',
+        consequence: 'Your action prevents the wall but risks armed confrontation with Soviets'
+      },
+      {
+        id: 'diplomatic-protest',
+        text: 'Lodge strong diplomatic protests but avoid military action',
+        consequence: 'Your restraint prevents war but the wall divides Berlin for decades'
+      },
+      {
+        id: 'ignore-east-berlin',
+        text: 'Accept East German sovereignty over their territory',
+        consequence: 'Your acceptance reduces tension but abandons East Berliners to communist rule'
+      }
+    ]
+  },
+  {
+    id: 'space-race-decision',
+    title: 'The Space Race Challenge',
+    text: 'October 1957. Sputnik orbits overhead, beeping Soviet superiority to the world. Congress demands action. How do you respond to this space age humiliation?',
+    emoji: '🛰️',
+    background: 'bg-gradient-to-br from-purple-900 to-blue-black',
+    characters: ['🚀', '🌟', '🔬'],
+    sceneType: 'exploration' as const,
+    timelineYear: 1957,
+    timelineEvent: 'Sputnik launches Space Race',
+    choices: [
+      {
+        id: 'crash-space-program',
+        text: 'Launch a crash program to beat Soviets to the moon',
+        consequence: 'Your ambitious program eventually succeeds but costs enormous resources'
+      },
+      {
+        id: 'military-space-focus',
+        text: 'Focus on military applications of space technology',
+        consequence: 'Your military emphasis gives strategic advantage but less public appeal'
+      },
+      {
+        id: 'international-cooperation',
+        text: 'Propose international cooperation in space exploration',
+        consequence: 'Your cooperation reduces costs but may limit American space leadership'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const coldWarChapter: Chapter = {
   id: 'cold-war',
@@ -781,6 +925,7 @@ export const coldWarChapter: Chapter = {
     peacefulCoexistenceTimeline,
     // Additional timelines can be added here...
   ],
+  interactiveScenarios,
   mainImage: '/images/cold-war-main.jpg',
   icon: '❄️',
   backgroundColor: 'from-blue-900 to-red-800'

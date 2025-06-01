@@ -434,6 +434,150 @@ const confederatedStatesTimeline: Timeline = {
   presentDayStatus: 'The Confederated States of America operates as a loose federal system with very strong state governments. Similar to Switzerland or early EU model. Economic development similar to our timeline but achieved more slowly and with greater regional variation.'
 };
 
+// Interactive story scenarios
+const interactiveScenarios = [
+  {
+    id: 'colonial-uprising',
+    title: 'The Colonial Uprising Begins',
+    text: 'You are in Boston, 1773. British soldiers patrol the streets as tensions rise. The Sons of Liberty are planning something big at the harbor tonight...',
+    emoji: '⚡',
+    background: 'bg-gradient-to-br from-blue-900 to-gray-800',
+    characters: ['🎭', '🛒', '⚓'],
+    sceneType: 'decision' as const,
+    timelineYear: 1773,
+    timelineEvent: 'Boston Tea Party planned',
+    choices: [
+      {
+        id: 'join-tea-party',
+        text: 'Join the Sons of Liberty in dumping British tea',
+        consequence: 'Your participation helps escalate the conflict, making reconciliation harder'
+      },
+      {
+        id: 'warn-authorities',
+        text: 'Warn the British authorities about the planned protest',
+        consequence: 'The tea is saved but colonial anger intensifies, hastening revolution'
+      },
+      {
+        id: 'stay-neutral',
+        text: 'Stay home and avoid taking sides',
+        consequence: 'You remain safe but miss a chance to influence history'
+      }
+    ]
+  },
+  {
+    id: 'continental-congress',
+    title: 'The Continental Congress Debates',
+    text: 'Philadelphia, 1776. You sit in the Continental Congress as delegates passionately debate whether to declare independence. Benjamin Franklin catches your eye...',
+    emoji: '📜',
+    background: 'bg-gradient-to-br from-amber-800 to-red-900',
+    characters: ['🎩', '✒️', '📖'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1776,
+    timelineEvent: 'Declaration of Independence being drafted',
+    choices: [
+      {
+        id: 'support-independence',
+        text: 'Strongly advocate for immediate independence',
+        consequence: 'Your passionate speech helps sway undecided delegates toward revolution'
+      },
+      {
+        id: 'compromise-solution',
+        text: 'Propose a compromise with Britain for greater autonomy',
+        consequence: 'Some delegates consider reconciliation, potentially delaying war'
+      },
+      {
+        id: 'demand-guarantees',
+        text: 'Support independence but demand guarantees about slavery',
+        consequence: 'You force a difficult conversation that shapes the new nation\'s future'
+      }
+    ]
+  },
+  {
+    id: 'valley-forge',
+    title: 'Valley Forge Winter',
+    text: 'Winter 1777-78. The Continental Army shivers at Valley Forge. Soldiers are deserting, supplies are gone. Washington asks for your counsel on a critical decision...',
+    emoji: '❄️',
+    background: 'bg-gradient-to-br from-gray-700 to-blue-900',
+    characters: ['🥶', '⚔️', '🏃'],
+    sceneType: 'battle' as const,
+    timelineYear: 1777,
+    timelineEvent: 'Continental Army winter at Valley Forge',
+    choices: [
+      {
+        id: 'attack-philadelphia',
+        text: 'Launch a desperate winter attack on British-held Philadelphia',
+        consequence: 'A risky gamble that could end the war quickly or destroy the army'
+      },
+      {
+        id: 'endure-winter',
+        text: 'Endure the winter and wait for spring reinforcements',
+        consequence: 'Your patience allows Von Steuben to train the army into a professional force'
+      },
+      {
+        id: 'seek-negotiations',
+        text: 'Secretly send peace feelers to the British',
+        consequence: 'Your diplomatic efforts could end the suffering but at what cost?'
+      }
+    ]
+  },
+  {
+    id: 'french-alliance',
+    title: 'The French Question',
+    text: 'Paris, 1778. Benjamin Franklin negotiates with French ministers. They offer military aid, but demand America become a French protectorate. How do you advise?',
+    emoji: '🇫🇷',
+    background: 'bg-gradient-to-br from-blue-600 to-purple-800',
+    characters: ['👑', '🎭', '⚖️'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1778,
+    timelineEvent: 'French Alliance negotiations',
+    choices: [
+      {
+        id: 'accept-protectorate',
+        text: 'Accept French protection to guarantee victory',
+        consequence: 'French control ensures victory but compromises true independence'
+      },
+      {
+        id: 'negotiate-alliance',
+        text: 'Negotiate for military aid without political control',
+        consequence: 'Your diplomacy secures crucial French support while maintaining sovereignty'
+      },
+      {
+        id: 'reject-french-aid',
+        text: 'Reject French aid to maintain complete independence',
+        consequence: 'American self-reliance is preserved but victory becomes much harder'
+      }
+    ]
+  },
+  {
+    id: 'yorktown-finale',
+    title: 'Victory at Yorktown',
+    text: 'October 1781. British General Cornwallis is trapped at Yorktown. The war could end here, but how you handle victory will shape the new nation...',
+    emoji: '🏆',
+    background: 'bg-gradient-to-br from-yellow-600 to-green-800',
+    characters: ['🎺', '🏴', '🕊️'],
+    sceneType: 'revelation' as const,
+    timelineYear: 1781,
+    timelineEvent: 'Siege of Yorktown - British surrender',
+    choices: [
+      {
+        id: 'magnanimous-victory',
+        text: 'Show magnanimity and honor to defeated British forces',
+        consequence: 'Your noble conduct sets a precedent for American values and international respect'
+      },
+      {
+        id: 'demand-reparations',
+        text: 'Demand harsh reparations and concessions from Britain',
+        consequence: 'Your demands secure more territory but create lasting resentment'
+      },
+      {
+        id: 'immediate-constitution',
+        text: 'Push for immediate constitutional convention',
+        consequence: 'Your urgency helps create a stronger federal government from the start'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const usIndependenceChapter: Chapter = {
   id: 'us-independence',
@@ -452,6 +596,7 @@ export const usIndependenceChapter: Chapter = {
     confederatedStatesTimeline,
     // Additional timelines would be added here...
   ],
+  interactiveScenarios,
   mainImage: '/images/independence-main.jpg',
   icon: '🗽',
   backgroundColor: 'from-red-600 to-blue-600'

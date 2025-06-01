@@ -34,7 +34,7 @@ const keyFigures: Person[] = [
     name: 'Lech Wałęsa',
     role: 'The Electrician Who Shocked the System',
     born: 1943,
-    died: null,
+    died: undefined,
     description: 'The Polish shipyard worker who founded Solidarity and helped bring down communism! ⚡🔧 Proved that sometimes a simple electrician can rewire an entire political system!',
     image: '/images/walesa.jpg'
   },
@@ -677,6 +677,150 @@ const peacefulDissolutionTimeline: Timeline = {
   presentDayStatus: 'The "Velvet Dissolution" is studied worldwide as the perfect example of how to end an empire peacefully. December 25th is celebrated as "Friendship Day" across all former Soviet states. The Post-Soviet Cooperation Organization is more successful than anyone expected! 🕊️🤝'
 };
 
+// Interactive story scenarios for USSR Collapse
+const interactiveScenarios = [
+  {
+    id: 'gorbachev-reforms',
+    title: 'Gorbachev\'s Reform Dilemma',
+    text: 'Moscow, 1987. You\'re advising Gorbachev on his reform program. The economy is stagnating, but opening up could unleash forces you can\'t control...',
+    emoji: '🔨',
+    background: 'bg-gradient-to-br from-red-800 to-gray-900',
+    characters: ['🔨', '📰', '🕊️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1987,
+    timelineEvent: 'Gorbachev introduces glasnost and perestroika',
+    choices: [
+      {
+        id: 'full-openness',
+        text: 'Embrace full glasnost - let truth and democracy flourish',
+        consequence: 'Your idealism unleashes forces that will transform and ultimately destroy the Soviet system'
+      },
+      {
+        id: 'limited-reforms',
+        text: 'Implement limited, controlled reforms to maintain stability',
+        consequence: 'Your caution preserves control but fails to address fundamental economic problems'
+      },
+      {
+        id: 'abandon-reforms',
+        text: 'Abandon reforms and return to traditional Soviet methods',
+        consequence: 'Your conservatism maintains the system but accelerates economic decline'
+      }
+    ]
+  },
+  {
+    id: 'chernobyl-crisis',
+    title: 'The Chernobyl Cover-up',
+    text: 'Kiev, April 26, 1986. Reactor 4 has exploded at Chernobyl! You\'re a Soviet official deciding how to handle this disaster. Do you tell the truth or protect the system?',
+    emoji: '☢️',
+    background: 'bg-gradient-to-br from-green-400 to-black',
+    characters: ['☢️', '🏭', '📰'],
+    sceneType: 'decision' as const,
+    timelineYear: 1986,
+    timelineEvent: 'Chernobyl nuclear disaster reveals Soviet system failures',
+    choices: [
+      {
+        id: 'tell-truth',
+        text: 'Tell the world the truth about the disaster immediately',
+        consequence: 'Your honesty saves lives but exposes Soviet incompetence to the world'
+      },
+      {
+        id: 'minimize-damage',
+        text: 'Minimize the reports - say it\'s a minor incident',
+        consequence: 'Your cover-up protects Soviet prestige but delays evacuation and increases casualties'
+      },
+      {
+        id: 'blame-sabotage',
+        text: 'Blame foreign sabotage to deflect responsibility',
+        consequence: 'Your propaganda preserves the system\'s image but destroys credibility when truth emerges'
+      }
+    ]
+  },
+  {
+    id: 'berlin-wall-decision',
+    title: 'The Wall Must Fall',
+    text: 'East Berlin, November 9, 1989. You\'re an East German border guard. An official mistakenly announced the border is open! Thousands of East Berliners are demanding passage...',
+    emoji: '🧱',
+    background: 'bg-gradient-to-br from-gray-600 to-blue-800',
+    characters: ['🧱', '🚪', '👥'],
+    sceneType: 'decision' as const,
+    timelineYear: 1989,
+    timelineEvent: 'Fall of the Berlin Wall',
+    choices: [
+      {
+        id: 'open-gates',
+        text: 'Open the gates - the people have spoken',
+        consequence: 'Your courage helps end the Cold War but you\'re acting without clear orders'
+      },
+      {
+        id: 'wait-for-orders',
+        text: 'Wait for official confirmation from headquarters',
+        consequence: 'Your caution is procedurally correct but the crowd grows angrier and more dangerous'
+      },
+      {
+        id: 'use-force',
+        text: 'Use force to maintain border security',
+        consequence: 'Your duty to orders could trigger a massacre and international crisis'
+      }
+    ]
+  },
+  {
+    id: 'august-coup-crisis',
+    title: 'The August Coup',
+    text: 'Moscow, August 19, 1991. You\'re a Soviet military officer. Hardliners have arrested Gorbachev and declared emergency rule. Will you support the coup or defend democracy?',
+    emoji: '⚔️',
+    background: 'bg-gradient-to-br from-red-900 to-black',
+    characters: ['⚔️', '🏛️', '📻'],
+    sceneType: 'battle' as const,
+    timelineYear: 1991,
+    timelineEvent: 'Failed August coup attempt against Gorbachev',
+    choices: [
+      {
+        id: 'support-coup',
+        text: 'Support the coup - restore order and Soviet power',
+        consequence: 'Your support for hardliners might save the USSR but destroys democratic hopes'
+      },
+      {
+        id: 'defend-yeltsin',
+        text: 'Defend Yeltsin and the Russian White House',
+        consequence: 'Your courage helps defeat the coup and accelerates the end of the Soviet Union'
+      },
+      {
+        id: 'stay-neutral',
+        text: 'Remain neutral - let politicians fight it out',
+        consequence: 'Your neutrality avoids personal risk but fails to shape this crucial moment'
+      }
+    ]
+  },
+  {
+    id: 'union-treaty-decision',
+    title: 'The Last Union Treaty',
+    text: 'Moscow, December 1991. You\'re representing your republic in negotiations for a new Union Treaty. Should you preserve the USSR in some form or declare full independence?',
+    emoji: '📜',
+    background: 'bg-gradient-to-br from-blue-700 to-red-800',
+    characters: ['📜', '🤝', '🏃‍♂️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1991,
+    timelineEvent: 'Final attempts to preserve the Soviet Union',
+    choices: [
+      {
+        id: 'preserve-union',
+        text: 'Sign a new treaty to preserve a democratic USSR',
+        consequence: 'Your commitment to unity might save the federation but requires difficult compromises'
+      },
+      {
+        id: 'declare-independence',
+        text: 'Declare full independence - the USSR is finished',
+        consequence: 'Your independence accelerates Soviet collapse but ensures your republic\'s freedom'
+      },
+      {
+        id: 'demand-concessions',
+        text: 'Demand major concessions before considering any union',
+        consequence: 'Your hard bargaining might get better terms but could torpedo negotiations entirely'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const ussrCollapseChapter: Chapter = {
   id: 'ussr-collapse',
@@ -697,5 +841,6 @@ export const ussrCollapseChapter: Chapter = {
   ],
   mainImage: '/images/ussr-collapse-main.jpg',
   icon: '🔨',
-  backgroundColor: 'from-red-800 to-gray-900'
+  backgroundColor: 'from-red-800 to-gray-900',
+  interactiveScenarios
 };

@@ -530,6 +530,150 @@ const islamicRussiaTimeline: Timeline = {
   presentDayStatus: 'Islamic Russia evolved into a unique civilization blending Orthodox, Islamic, and secular traditions. Today it leads the "Eurasian Islamic Federation" with its capital in Kazan. The country is known for its beautiful mosque-cathedral architecture and its role as a bridge between civilizations. Friday prayers in the Kremlin are quite a sight! 🕌⛪'
 };
 
+// Interactive story scenarios for Russian Empire
+const interactiveScenarios = [
+  {
+    id: 'peter-beard-tax',
+    title: 'Peter\'s Beard Tax Revolution',
+    text: 'Moscow, 1705. You\'re a Russian noble facing Peter the Great\'s new beard tax. He wants to westernize Russia by forcing everyone to shave. Your magnificent beard is your pride!',
+    emoji: '🧔',
+    background: 'bg-gradient-to-br from-blue-800 to-white',
+    characters: ['🧔', '✂️', '💰'],
+    sceneType: 'decision' as const,
+    timelineYear: 1705,
+    timelineEvent: 'Peter the Great\'s westernization reforms',
+    choices: [
+      {
+        id: 'shave-beard',
+        text: 'Shave your beard and embrace Western fashion',
+        consequence: 'Your compliance with Peter\'s reforms earns royal favor but loses traditional Russian identity'
+      },
+      {
+        id: 'pay-beard-tax',
+        text: 'Pay the beard tax and keep your traditional appearance',
+        consequence: 'Your wealth preserves tradition but marks you as resistant to modernization'
+      },
+      {
+        id: 'rebel-against-reforms',
+        text: 'Organize resistance against these Western impositions',
+        consequence: 'Your traditionalism rallies others but risks Peter\'s wrath and possible exile'
+      }
+    ]
+  },
+  {
+    id: 'st-petersburg-construction',
+    title: 'Building Venice in a Swamp',
+    text: 'Baltic Coast, 1703. You\'re overseeing construction of Peter\'s new capital, St. Petersburg. Thousands of workers are dying in the marshes, but Peter demands his "Window to Europe"...',
+    emoji: '🏗️',
+    background: 'bg-gradient-to-br from-gray-600 to-blue-700',
+    characters: ['🏗️', '💀', '👑'],
+    sceneType: 'decision' as const,
+    timelineYear: 1703,
+    timelineEvent: 'Construction of St. Petersburg',
+    choices: [
+      {
+        id: 'improve-conditions',
+        text: 'Improve working conditions to save lives',
+        consequence: 'Your humanity saves workers but slows construction, risking Peter\'s displeasure'
+      },
+      {
+        id: 'meet-deadline',
+        text: 'Push workers harder to meet Peter\'s impossible deadline',
+        consequence: 'Your efficiency pleases the Tsar but costs thousands of lives in the swamps'
+      },
+      {
+        id: 'request-more-resources',
+        text: 'Ask Peter for more resources and time',
+        consequence: 'Your reasonable request might save lives but could be seen as questioning imperial will'
+      }
+    ]
+  },
+  {
+    id: 'decembrist-revolt',
+    title: 'The Decembrist Dilemma',
+    text: 'St. Petersburg, December 26, 1825. You\'re a liberal officer in Senate Square. When Alexander I died, should Constantine or Nicholas become Tsar? Some officers want a constitution...',
+    emoji: '🗽',
+    background: 'bg-gradient-to-br from-white to-red-700',
+    characters: ['⚔️', '📜', '👑'],
+    sceneType: 'battle' as const,
+    timelineYear: 1825,
+    timelineEvent: 'Decembrist Revolt for constitutional monarchy',
+    choices: [
+      {
+        id: 'join-revolt',
+        text: 'Join the Decembrists and fight for constitutional monarchy',
+        consequence: 'Your idealism advances the cause of freedom but risks execution or Siberian exile'
+      },
+      {
+        id: 'stay-loyal',
+        text: 'Remain loyal to the new Tsar Nicholas I',
+        consequence: 'Your loyalty preserves your career but enables continued autocracy'
+      },
+      {
+        id: 'try-mediation',
+        text: 'Attempt to mediate between rebels and loyalists',
+        consequence: 'Your diplomacy might prevent bloodshed but satisfies neither side completely'
+      }
+    ]
+  },
+  {
+    id: 'serf-emancipation',
+    title: 'The Great Emancipation',
+    text: 'St. Petersburg, 1861. You\'re advising Tsar Alexander II on serf emancipation. Freeing 23 million serfs will transform Russia, but how much land should they get?',
+    emoji: '⛓️',
+    background: 'bg-gradient-to-br from-brown-600 to-green-700',
+    characters: ['⛓️', '🌾', '💰'],
+    sceneType: 'decision' as const,
+    timelineYear: 1861,
+    timelineEvent: 'Emancipation of the serfs',
+    choices: [
+      {
+        id: 'generous-land-grants',
+        text: 'Give serfs generous land grants for true freedom',
+        consequence: 'Your generosity creates a prosperous peasantry but angers noble landowners'
+      },
+      {
+        id: 'minimal-compensation',
+        text: 'Provide minimal land to protect noble interests',
+        consequence: 'Your compromise preserves the aristocracy but leaves serfs in poverty'
+      },
+      {
+        id: 'gradual-transition',
+        text: 'Implement gradual transition over 20 years',
+        consequence: 'Your caution reduces disruption but delays true freedom for millions'
+      }
+    ]
+  },
+  {
+    id: 'rasputin-influence',
+    title: 'The Mad Monk\'s Influence',
+    text: 'Tsarskoye Selo, 1915. You\'re a court advisor watching Rasputin\'s growing influence over the Tsarina. His mystic healing of the young Tsarevich gives him dangerous power...',
+    emoji: '🔮',
+    background: 'bg-gradient-to-br from-purple-900 to-black',
+    characters: ['🔮', '👑', '💀'],
+    sceneType: 'decision' as const,
+    timelineYear: 1915,
+    timelineEvent: 'Rasputin\'s influence on the royal family',
+    choices: [
+      {
+        id: 'expose-rasputin',
+        text: 'Expose Rasputin\'s corruption and demand his removal',
+        consequence: 'Your courage might save the monarchy but risks the Tsarina\'s wrath and your position'
+      },
+      {
+        id: 'work-with-rasputin',
+        text: 'Try to work with Rasputin to limit his influence',
+        consequence: 'Your pragmatism might contain the damage but legitimizes his presence'
+      },
+      {
+        id: 'plot-against-rasputin',
+        text: 'Join the plot to eliminate Rasputin permanently',
+        consequence: 'Your drastic action might save Russia but involves you in murder'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const russianEmpireChapter: Chapter = {
   id: 'russian-empire',
@@ -550,5 +694,6 @@ export const russianEmpireChapter: Chapter = {
   ],
   mainImage: '/images/russian-empire-main.jpg',
   icon: '🐻',
-  backgroundColor: 'from-red-600 to-blue-800'
+  backgroundColor: 'from-red-600 to-blue-800',
+  interactiveScenarios
 };

@@ -22,41 +22,83 @@ const ChapterDetail: React.FC = () => {
     }
   }, [chapterId]);
 
-  const generateStoryScenes = (chapter: Chapter) => {
-    return [
+  const getStoryScenes = (chapter: Chapter) => {
+    // Use chapter's interactive scenarios if available, otherwise fall back to generated ones
+    if (chapter.interactiveScenarios && chapter.interactiveScenarios.length > 0) {
+      return chapter.interactiveScenarios;
+    }
+
+    // Fallback to generated scenarios for chapters without custom ones
+    const scenes = [
       {
         id: 'opening',
         title: 'The Setting',
-        text: chapter.historicalContext,
+        text: `Welcome to ${chapter.period}. The world is about to change forever...`,
         emoji: chapter.icon,
         background: 'bg-gradient-to-br from-purple-600 to-blue-800',
-        characters: ['🏛️', '⚡', '🌍']
+        characters: ['🏛️', '⚡', '🌍'],
+        sceneType: 'exploration' as const,
+        timelineYear: chapter.startYear,
+        timelineEvent: `Beginning of ${chapter.period}`
       },
       {
         id: 'characters',
-        title: 'Meet the Players',
-        text: `Key figures like ${chapter.keyFigures.slice(0, 3).map(f => f.name).join(', ')} shaped this incredible period of history!`,
+        title: 'Meet the Key Players',
+        text: `You encounter the most influential figures of this era. ${chapter.keyFigures[0]?.name} approaches you with an urgent matter...`,
         emoji: '👥',
         background: 'bg-gradient-to-br from-green-600 to-teal-800',
-        characters: chapter.keyFigures.slice(0, 3).map(f => f.name.charAt(0))
+        characters: chapter.keyFigures.slice(0, 3).map(f => f.name.charAt(0)),
+        sceneType: 'negotiation' as const,
+        timelineYear: chapter.startYear + 1,
+        timelineEvent: 'Key alliances being formed',
+        choices: [
+          {
+            id: 'trust',
+            text: 'Trust their judgment and support their cause',
+            consequence: 'Your alliance strengthens their position significantly'
+          },
+          {
+            id: 'question',
+            text: 'Question their motives and demand more information',
+            consequence: 'They respect your caution and reveal crucial intelligence'
+          },
+          {
+            id: 'oppose',
+            text: 'Oppose their plans and propose an alternative',
+            consequence: 'Your bold stance creates a new faction with different goals'
+          }
+        ]
       },
       {
         id: 'divergence',
-        title: 'The Turning Point',
-        text: `Everything changes at the ${chapter.divergencePoint} in ${chapter.divergenceYear}. One decision could alter the course of history forever!`,
+        title: 'The Pivotal Moment',
+        text: `This is it - the moment that will define history. The ${chapter.divergencePoint} in ${chapter.divergenceYear}. Your next decision will echo through the ages!`,
         emoji: '⚡',
-        background: 'bg-gradient-to-br from-orange-600 to-red-800',
-        characters: ['⚔️', '🤔', '💥']
+        background: 'bg-gradient-to-br from-yellow-600 to-red-800',
+        characters: ['👑', '⚖️', '🌟'],
+        sceneType: 'decision' as const,
+        timelineYear: chapter.divergenceYear,
+        timelineEvent: chapter.divergencePoint,
+        choices: chapter.alternativeTimelines.slice(0, 3).map((timeline, index) => ({
+          id: timeline.id,
+          text: `Choose the path: ${timeline.title}`,
+          consequence: `This choice leads to: ${timeline.description.slice(0, 100)}...`
+        }))
       },
       {
-        id: 'timelines',
-        title: 'Infinite Possibilities',
-        text: `Explore ${chapter.alternativeTimelines.length} different ways history could have unfolded. Each choice creates a new world!`,
+        id: 'revelation',
+        title: 'The New World',
+        text: `The consequences of your choices ripple through time. History has been rewritten, and the world will never be the same!`,
         emoji: '🌟',
         background: 'bg-gradient-to-br from-pink-600 to-purple-800',
-        characters: ['🔮', '🎭', '🌈']
+        characters: ['🔮', '🎭', '🌈'],
+        sceneType: 'revelation' as const,
+        timelineYear: chapter.endYear,
+        timelineEvent: `End of ${chapter.period} - New era begins`
       }
     ];
+
+    return scenes;
   };
 
   const handleCharacterInteraction = (character: Person) => {
@@ -66,61 +108,61 @@ const ChapterDetail: React.FC = () => {
   const getParticleTheme = (chapterId: string) => {
     const themeMap: Record<string, { colors: string[], particleCount: number, speed: number }> = {
       'us-independence': {
-        colors: ['#1E40AF', '#DC2626', '#FFFFFF', '#FFD700'],
-        particleCount: 60,
-        speed: 0.8
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 20,
+        speed: 0.3
       },
       'french-revolution': {
-        colors: ['#DC2626', '#FFFFFF', '#1E40AF', '#FFD700'],
-        particleCount: 80,
-        speed: 1.2
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 25,
+        speed: 0.3
       },
       'lincoln-era': {
-        colors: ['#1E40AF', '#DC2626', '#8B4513', '#FFD700'],
-        particleCount: 50,
-        speed: 0.6
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 15,
+        speed: 0.2
       },
       'russian-empire': {
-        colors: ['#FFD700', '#DC2626', '#FFFFFF', '#4B5563'],
-        particleCount: 70,
-        speed: 0.9
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 20,
+        speed: 0.3
       },
       'lenin-revolution': {
-        colors: ['#DC2626', '#FFD700', '#B91C1C', '#FCD34D'],
-        particleCount: 100,
-        speed: 1.5
-      },
-      'world-war-1': {
-        colors: ['#6B7280', '#DC2626', '#1F2937', '#F59E0B'],
-        particleCount: 90,
-        speed: 1.1
-      },
-      'hitler-rise': {
-        colors: ['#7F1D1D', '#1F2937', '#6B7280', '#DC2626'],
-        particleCount: 60,
-        speed: 0.7
-      },
-      'world-war-2': {
-        colors: ['#1E40AF', '#DC2626', '#059669', '#F59E0B', '#6B7280'],
-        particleCount: 120,
-        speed: 1.3
-      },
-      'cold-war': {
-        colors: ['#1E40AF', '#DC2626', '#E5E7EB', '#6B7280'],
-        particleCount: 40,
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 30,
         speed: 0.4
       },
+      'world-war-1': {
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 25,
+        speed: 0.3
+      },
+      'hitler-rise': {
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 20,
+        speed: 0.3
+      },
+      'world-war-2': {
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 35,
+        speed: 0.4
+      },
+      'cold-war': {
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 15,
+        speed: 0.2
+      },
       'ussr-collapse': {
-        colors: ['#DC2626', '#F59E0B', '#6B7280', '#1F2937'],
-        particleCount: 150,
-        speed: 1.8
+        colors: ['#64748B', '#94A3B8'],
+        particleCount: 30,
+        speed: 0.4
       }
     };
 
     return themeMap[chapterId] || {
-      colors: ['#3B82F6', '#8B5CF6', '#06B6D4', '#10B981', '#F59E0B'],
-      particleCount: 80,
-      speed: 1.0
+      colors: ['#64748B', '#94A3B8'],
+      particleCount: 20,
+      speed: 0.3
     };
   };
 
@@ -152,9 +194,9 @@ const ChapterDetail: React.FC = () => {
           particleCount={particleTheme.particleCount}
           colors={particleTheme.colors}
           speed={particleTheme.speed}
-          size={3}
-          interactive={true}
-          className="opacity-60"
+          size={2}
+          interactive={false}
+          className="opacity-20"
         />
         <div className="relative max-w-6xl mx-auto px-6">
           <motion.div
@@ -239,10 +281,11 @@ const ChapterDetail: React.FC = () => {
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.5 }}
+                className="overflow-hidden"
               >
                 <InteractiveStory
                   title={chapter.title}
-                  scenes={generateStoryScenes(chapter)}
+                  scenes={getStoryScenes(chapter)}
                   onComplete={() => setShowStory(false)}
                 />
               </motion.div>

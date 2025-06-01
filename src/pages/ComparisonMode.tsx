@@ -34,7 +34,7 @@ const ComparisonMode: React.FC = () => {
     // Initialize particle system
     const createParticles = () => {
       const particles = [];
-      for (let i = 0; i < 50; i++) {
+      for (let i = 0; i < 20; i++) {
         particles.push({
           x: Math.random() * window.innerWidth,
           y: Math.random() * window.innerHeight,
@@ -154,7 +154,7 @@ const ComparisonMode: React.FC = () => {
         .attr('stroke-dashoffset', pathLength)
         .transition()
         .duration(2000)
-        .delay(timelineIndex * 500)
+        .delay(timelineIndex * 500 + (animationPhase * 500))
         .ease(d3.easeCubicInOut)
         .attr('stroke-dashoffset', 0)
         .style('opacity', 1);
@@ -228,7 +228,7 @@ const ComparisonMode: React.FC = () => {
         })
         .transition()
         .duration(600)
-        .delay((d, i) => timelineIndex * 500 + 2000 + i * 100)
+        .delay((d, i) => timelineIndex * 500 + (animationPhase * 1000) + i * 100)
         .attr('r', 8);
 
       // Pulse animation for divergence points
@@ -289,7 +289,7 @@ const ComparisonMode: React.FC = () => {
       .style('stroke', '#4B5563')
       .style('stroke-width', 1);
 
-  }, [selectedTimelines, dimensions]);
+  }, [selectedTimelines, dimensions, animationPhase]);
 
   const showTooltip = (event: any, data: any, timeline: Timeline) => {
     const tooltip = d3.select('body').append('div')
@@ -341,11 +341,11 @@ const ComparisonMode: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dark-900 via-purple-900 to-dark-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative">
       {/* Animated background canvas */}
       <canvas
         id="particle-canvas"
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none opacity-20"
         style={{ zIndex: 1 }}
       />
 

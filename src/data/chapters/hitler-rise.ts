@@ -280,7 +280,7 @@ const artSchoolTimelineAccepted: Timeline = {
     },
     {
       id: 'no-world-war-ii',
-      category: 'military',
+      category: 'political',
       shortTerm: 'No Nazi aggression means no European war in 1930s-40s',
       longTerm: 'Different global power balance and technological development',
       globalImpact: 'Millions of lives saved and different post-war world order'
@@ -396,7 +396,7 @@ const beerHallSuccessTimeline: Timeline = {
     },
     {
       id: 'different-war-timing',
-      category: 'military',
+      category: 'political',
       shortTerm: 'European war begins in 1930 instead of 1939',
       longTerm: 'Different technological and political conditions affect war outcome',
       globalImpact: 'Earlier conflict changes global power balance and alliances'
@@ -505,7 +505,7 @@ const assassinationSuccessTimeline: Timeline = {
   consequences: [
     {
       id: 'earlier-war-end',
-      category: 'military',
+      category: 'political',
       shortTerm: 'World War II ends 8 months earlier, saving millions of lives',
       longTerm: 'Different post-war arrangements with less destruction',
       globalImpact: 'Different Cold War dynamics with unified democratic Germany'
@@ -537,6 +537,150 @@ const assassinationSuccessTimeline: Timeline = {
   presentDayStatus: 'Germany\'s democratic transition in 1944 created the "Stauffenberg Republic," named after the hero who killed Hitler. Colonel Stauffenberg became post-war Chancellor and led Germany\'s transformation into a model democracy. July 20th is celebrated as "Freedom Day" across Europe. The Wolf\'s Lair is now a peace memorial. 🕊️🎯'
 };
 
+// Interactive story scenarios for Hitler's Rise to Power
+const interactiveScenarios = [
+  {
+    id: 'art-school-decision',
+    title: 'The Art School Rejection',
+    text: 'Vienna, October 1907. You are an admissions officer at the Vienna Academy of Fine Arts. A young Austrian named Adolf Hitler has applied. His portfolio shows some talent but lacks technical skill...',
+    emoji: '🎨',
+    background: 'bg-gradient-to-br from-purple-800 to-gray-900',
+    characters: ['🎨', '📋', '🏛️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1907,
+    timelineEvent: 'Hitler\'s application to art school',
+    choices: [
+      {
+        id: 'accept-student',
+        text: 'Accept him - everyone deserves a chance to improve',
+        consequence: 'Your compassion changes history - Hitler becomes a mediocre artist instead of a dictator'
+      },
+      {
+        id: 'reject-application',
+        text: 'Reject the application - the technical skills aren\'t there',
+        consequence: 'Your professional judgment sets Hitler on a path of resentment that will reshape the world'
+      },
+      {
+        id: 'conditional-acceptance',
+        text: 'Offer conditional acceptance with remedial training',
+        consequence: 'Your compromise gives Hitler hope but delays his artistic development'
+      }
+    ]
+  },
+  {
+    id: 'beer-hall-putsch',
+    title: 'The Beer Hall Putsch',
+    text: 'Munich, November 8, 1923. You\'re a Bavarian police officer as Hitler storms into the Bürgerbräu beer hall with armed SA men, declaring a revolution. What do you do?',
+    emoji: '🍺',
+    background: 'bg-gradient-to-br from-orange-700 to-red-900',
+    characters: ['🍺', '⚔️', '👮'],
+    sceneType: 'battle' as const,
+    timelineYear: 1923,
+    timelineEvent: 'Beer Hall Putsch - Hitler\'s failed coup attempt',
+    choices: [
+      {
+        id: 'arrest-immediately',
+        text: 'Arrest Hitler immediately for treason',
+        consequence: 'Your quick action stops the putsch but makes Hitler a martyr to his followers'
+      },
+      {
+        id: 'call-reinforcements',
+        text: 'Quietly call for backup while keeping Hitler talking',
+        consequence: 'Your strategic thinking leads to Hitler\'s capture but gives him time to rally supporters'
+      },
+      {
+        id: 'negotiate-surrender',
+        text: 'Try to negotiate a peaceful surrender',
+        consequence: 'Your diplomacy might prevent bloodshed but could allow Hitler to escape'
+      }
+    ]
+  },
+  {
+    id: 'hindenburg-decision',
+    title: 'The Fatal Appointment',
+    text: 'Berlin, January 30, 1933. You are President Hindenburg\'s advisor. Conservative politicians are urging you to appoint Hitler as Chancellor, claiming they can control him...',
+    emoji: '👑',
+    background: 'bg-gradient-to-br from-gray-800 to-black',
+    characters: ['👴', '⚖️', '💀'],
+    sceneType: 'decision' as const,
+    timelineYear: 1933,
+    timelineEvent: 'Hindenburg considers appointing Hitler as Chancellor',
+    choices: [
+      {
+        id: 'refuse-appointment',
+        text: 'Refuse to appoint Hitler - he\'s too dangerous',
+        consequence: 'Your wisdom prevents Nazi takeover but may lead to political crisis and potential civil war'
+      },
+      {
+        id: 'appoint-with-limits',
+        text: 'Appoint Hitler but with strict constitutional limits',
+        consequence: 'Your compromise gives Hitler legal power - he quickly destroys the very limits you set'
+      },
+      {
+        id: 'demand-coalition',
+        text: 'Insist on a coalition government to dilute Nazi power',
+        consequence: 'Your political maneuvering briefly restrains Hitler but he soon eliminates his partners'
+      }
+    ]
+  },
+  {
+    id: 'reichstag-fire-response',
+    title: 'The Reichstag Fire Crisis',
+    text: 'Berlin, February 27, 1933. The Reichstag building is burning! Hitler claims it\'s a communist plot and demands emergency powers. You\'re a parliamentarian who must decide...',
+    emoji: '🔥',
+    background: 'bg-gradient-to-br from-red-800 to-orange-900',
+    characters: ['🔥', '🏛️', '⚖️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1933,
+    timelineEvent: 'Reichstag Fire used to justify emergency measures',
+    choices: [
+      {
+        id: 'grant-emergency-powers',
+        text: 'Grant emergency powers - the nation is in crisis',
+        consequence: 'Your fear-based decision gives Hitler the tools to destroy democracy legally'
+      },
+      {
+        id: 'demand-investigation',
+        text: 'Demand full investigation before granting any powers',
+        consequence: 'Your insistence on due process delays Hitler\'s takeover but he brands you as unpatriotic'
+      },
+      {
+        id: 'refuse-emergency-powers',
+        text: 'Refuse emergency powers - this could be a Nazi setup',
+        consequence: 'Your suspicion is correct but your opposition may be swept aside by public panic'
+      }
+    ]
+  },
+  {
+    id: 'july-plot-decision',
+    title: 'The July 20 Plot',
+    text: 'Wolf\'s Lair, July 20, 1944. You\'re Colonel Stauffenberg. The bomb is in your briefcase. Hitler is just meters away. This is your chance to end the Nazi regime...',
+    emoji: '💣',
+    background: 'bg-gradient-to-br from-green-800 to-black',
+    characters: ['💣', '🎯', '⚰️'],
+    sceneType: 'battle' as const,
+    timelineYear: 1944,
+    timelineEvent: 'July 20 plot to assassinate Hitler',
+    choices: [
+      {
+        id: 'detonate-bomb',
+        text: 'Place the bomb and activate the timer',
+        consequence: 'Your courage attempts to save Germany and the world, but will the bomb work?'
+      },
+      {
+        id: 'abort-mission',
+        text: 'Abort - too many innocent people could be killed',
+        consequence: 'Your moral qualms preserve lives but allow Hitler to continue his destruction'
+      },
+      {
+        id: 'wait-better-opportunity',
+        text: 'Wait for a better opportunity with fewer witnesses',
+        consequence: 'Your caution might lead to a better plan, but each day costs thousands of lives'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const hitlerRiseChapter: Chapter = {
   id: 'hitler-rise',
@@ -557,5 +701,6 @@ export const hitlerRiseChapter: Chapter = {
   ],
   mainImage: '/images/hitler-rise-main.jpg',
   icon: '⚠️',
-  backgroundColor: 'from-gray-800 to-red-900'
+  backgroundColor: 'from-gray-800 to-red-900',
+  interactiveScenarios
 };

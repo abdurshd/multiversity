@@ -530,6 +530,150 @@ const trotskyLeadershipTimeline: Timeline = {
   presentDayStatus: 'The Trotskyist Revolutionary Federation collapsed in 1989 from exhaustion after 65 years of permanent revolution. Turns out constantly overthrowing governments is really tiring! Today, former communist countries celebrate "Revolution Fatigue Day" annually. 😴🔴'
 };
 
+// Interactive story scenarios for Lenin Revolution
+const interactiveScenarios = [
+  {
+    id: 'february-revolution',
+    title: 'The February Revolution',
+    text: 'February 1917, Petrograd. The Tsar has abdicated! Workers and soldiers flood the streets. You must choose between supporting the Provisional Government or the radical Soviets...',
+    emoji: '🏭',
+    background: 'bg-gradient-to-br from-gray-700 to-red-800',
+    characters: ['👑', '⚒️', '🔥'],
+    sceneType: 'decision' as const,
+    timelineYear: 1917,
+    timelineEvent: 'February Revolution - Tsar Nicholas II abdicates',
+    choices: [
+      {
+        id: 'support-provisional',
+        text: 'Support the Provisional Government and democratic transition',
+        consequence: 'Your support strengthens moderate forces but may delay radical change'
+      },
+      {
+        id: 'join-soviets',
+        text: 'Join the workers\' and soldiers\' councils (Soviets)',
+        consequence: 'Your radicalism builds revolutionary momentum but destabilizes the government'
+      },
+      {
+        id: 'call-for-order',
+        text: 'Call for law and order until elections can be held',
+        consequence: 'Your moderation preserves stability but frustrates revolutionary expectations'
+      }
+    ]
+  },
+  {
+    id: 'lenins-return',
+    title: 'Lenin\'s Sealed Train',
+    text: 'April 1917. Lenin arrives at Finland Station with his radical "April Theses." He demands immediate revolution. The crowd looks to you - do you support this extremist?',
+    emoji: '🚂',
+    background: 'bg-gradient-to-br from-red-700 to-black',
+    characters: ['🧔', '📜', '⚡'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1917,
+    timelineEvent: 'Lenin returns with April Theses',
+    choices: [
+      {
+        id: 'embrace-lenin',
+        text: 'Embrace Lenin\'s call for immediate socialist revolution',
+        consequence: 'Your support radicalizes the Bolsheviks and pushes toward October Revolution'
+      },
+      {
+        id: 'demand-moderation',
+        text: 'Demand Lenin moderate his position for party unity',
+        consequence: 'Your pragmatism creates internal Bolshevik division but maintains broader coalition'
+      },
+      {
+        id: 'reject-extremism',
+        text: 'Reject Lenin\'s extremism and break with the Bolsheviks',
+        consequence: 'Your break weakens Lenin but strengthens moderate socialist alternatives'
+      }
+    ]
+  },
+  {
+    id: 'july-days',
+    title: 'The July Days Crisis',
+    text: 'July 1917. Armed workers and soldiers march demanding "All Power to the Soviets!" The government prepares to crush the uprising. Lenin hesitates - should the Bolsheviks lead or hold back?',
+    emoji: '🔫',
+    background: 'bg-gradient-to-br from-orange-600 to-red-900',
+    characters: ['⚔️', '🏃', '💥'],
+    sceneType: 'battle' as const,
+    timelineYear: 1917,
+    timelineEvent: 'July Days uprising fails',
+    choices: [
+      {
+        id: 'lead-uprising',
+        text: 'Lead the armed uprising against the Provisional Government',
+        consequence: 'Your leadership might succeed in overthrowing the government or lead to disaster'
+      },
+      {
+        id: 'strategic-retreat',
+        text: 'Order strategic retreat to preserve revolutionary forces',
+        consequence: 'Your caution saves the party but misses a revolutionary opportunity'
+      },
+      {
+        id: 'split-difference',
+        text: 'Support the workers but avoid direct Bolshevik involvement',
+        consequence: 'Your compromise maintains plausible deniability but confuses your supporters'
+      }
+    ]
+  },
+  {
+    id: 'october-revolution',
+    title: 'The October Revolution',
+    text: 'October 25, 1917. Bolshevik forces surround the Winter Palace. Kerensky has fled. This is the moment - seize power for the proletariat or negotiate a coalition?',
+    emoji: '🏰',
+    background: 'bg-gradient-to-br from-red-800 to-purple-900',
+    characters: ['🔴', '👑', '⚡'],
+    sceneType: 'battle' as const,
+    timelineYear: 1917,
+    timelineEvent: 'October Revolution - Bolsheviks seize power',
+    choices: [
+      {
+        id: 'seize-total-power',
+        text: 'Seize total power in the name of the working class',
+        consequence: 'Your boldness creates the Soviet state but triggers civil war'
+      },
+      {
+        id: 'coalition-government',
+        text: 'Negotiate a coalition with other socialist parties',
+        consequence: 'Your compromise shares power but may weaken revolutionary purity'
+      },
+      {
+        id: 'demand-elections',
+        text: 'Demand immediate elections to legitimize any new government',
+        consequence: 'Your democratic principles risk losing power to more moderate parties'
+      }
+    ]
+  },
+  {
+    id: 'civil-war-begins',
+    title: 'The Russian Civil War',
+    text: 'November 1917. White Army generals are rallying opposition. Foreign powers threaten intervention. How do you defend the revolution?',
+    emoji: '⚔️',
+    background: 'bg-gradient-to-br from-black to-red-900',
+    characters: ['🔴', '⚪', '🌍'],
+    sceneType: 'battle' as const,
+    timelineYear: 1918,
+    timelineEvent: 'Russian Civil War begins',
+    choices: [
+      {
+        id: 'total-war',
+        text: 'Mobilize total war against all enemies of the revolution',
+        consequence: 'Your militarization wins the war but transforms Russia into an armed camp'
+      },
+      {
+        id: 'negotiate-peace',
+        text: 'Try to negotiate separate peace deals with different White factions',
+        consequence: 'Your diplomacy might divide enemies but could be seen as weakness'
+      },
+      {
+        id: 'foreign-alliances',
+        text: 'Seek foreign communist allies and international revolution',
+        consequence: 'Your internationalism spreads revolution but increases foreign intervention'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const leninRevolutionChapter: Chapter = {
   id: 'lenin-revolution',
@@ -548,6 +692,7 @@ export const leninRevolutionChapter: Chapter = {
     trotskyLeadershipTimeline,
     // Additional timelines can be added here...
   ],
+  interactiveScenarios,
   mainImage: '/images/lenin-revolution-main.jpg',
   icon: '⚡',
   backgroundColor: 'from-red-600 to-yellow-600'

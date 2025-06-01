@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect, InteractiveScenario } from '../../types';
 
 // Key figures with engaging, respectful but fun descriptions
 const keyFigures: Person[] = [
@@ -390,7 +390,7 @@ const peacefulAbolitionTimeline: Timeline = {
   consequences: [
     {
       id: 'no-civil-war',
-      category: 'military',
+      category: 'political',
       shortTerm: '620,000 lives saved by avoiding Civil War',
       longTerm: 'No destruction of Southern infrastructure and economy',
       globalImpact: 'America remains economically stronger, influences global economy more'
@@ -537,6 +537,234 @@ const confederacyWinsTimeline: Timeline = {
   presentDayStatus: 'The Confederate States eventually abolished slavery in 1920 due to economic pressure and international isolation. The two American nations reunified in 1945 after fighting together in World War II. Today, the period of division is remembered as "The Awkward Years" when family reunions were really complicated! 🤔👨‍👩‍👧‍👦'
 };
 
+// Interactive scenarios for immersive storytelling
+const interactiveScenarios: InteractiveScenario[] = [
+  {
+    id: 'election-1860',
+    title: 'The Election That Broke America',
+    text: 'November 1860. You are Abraham Lincoln, having just won the presidency without receiving a single vote in 10 Southern states. Reports flood in that South Carolina is already talking secession. The nation teeters on the edge of dissolution. How do you respond to this constitutional crisis?',
+    emoji: '🗳️',
+    background: 'bg-gradient-to-br from-blue-800 to-gray-700',
+    characters: ['👨‍🎩', '📜', '⚖️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1860,
+    timelineEvent: 'Lincoln wins presidency, triggering secession crisis',
+    choices: [
+      {
+        id: 'conciliatory-approach',
+        text: 'Issue conciliatory statements promising to protect Southern interests',
+        consequence: 'Your moderate tone slows secession but emboldens radicals who see weakness'
+      },
+      {
+        id: 'firm-union-stance',
+        text: 'Declare that the Union is perpetual and secession is illegal',
+        consequence: 'Your firmness rallies Northern support but accelerates Southern departure'
+      },
+      {
+        id: 'constitutional-convention',
+        text: 'Call for a constitutional convention to address Southern concerns',
+        consequence: 'Your proposal shows flexibility but creates dangerous precedent for constitutional changes'
+      }
+    ]
+  },
+  {
+    id: 'fort-sumter-decision',
+    title: 'The Moment of Truth',
+    text: 'April 1861. Fort Sumter in Charleston Harbor is running out of supplies. Confederate forces surround it, demanding surrender. You face the ultimate decision: resupply and risk war, or abandon the fort and appear weak. The fate of the Union hangs in the balance.',
+    emoji: '🏰',
+    background: 'bg-gradient-to-br from-red-600 to-orange-800',
+    characters: ['⚔️', '🚢', '💥'],
+    sceneType: 'battle' as const,
+    timelineYear: 1861,
+    timelineEvent: 'Fort Sumter crisis - first shots of Civil War',
+    choices: [
+      {
+        id: 'resupply-mission',
+        text: 'Send supply ships to Fort Sumter, risking Confederate attack',
+        consequence: 'Your decision forces the South to fire first, rallying Northern support for war'
+      },
+      {
+        id: 'negotiate-withdrawal',
+        text: 'Negotiate a face-saving withdrawal from the fort',
+        consequence: 'Your compromise prevents immediate war but legitimizes secession'
+      },
+      {
+        id: 'reinforce-garrison',
+        text: 'Send additional troops to reinforce the fort',
+        consequence: 'Your aggressive move is seen as Northern aggression, losing moral high ground'
+      }
+    ]
+  },
+  {
+    id: 'emancipation-decision',
+    title: 'The Great Moral Choice',
+    text: 'September 1862. After the Battle of Antietam, you have the political capital to issue the Emancipation Proclamation. Your Cabinet is divided - some call it military necessity, others fear it will alienate border states. This decision will redefine the war itself.',
+    emoji: '⛓️',
+    background: 'bg-gradient-to-br from-purple-800 to-blue-900',
+    characters: ['📜', '✊', '🕊️'],
+    sceneType: 'revelation' as const,
+    timelineYear: 1862,
+    timelineEvent: 'Emancipation Proclamation decision point',
+    choices: [
+      {
+        id: 'full-emancipation',
+        text: 'Declare all slaves in rebellious states to be free',
+        consequence: 'Your bold moral stance transforms the war but risks losing border state support'
+      },
+      {
+        id: 'gradual-emancipation',
+        text: 'Propose gradual, compensated emancipation over several years',
+        consequence: 'Your moderate approach maintains unity but disappoints abolitionists'
+      },
+      {
+        id: 'military-emancipation',
+        text: 'Free only slaves who join the Union army',
+        consequence: 'Your pragmatic choice gains soldiers while limiting political risk'
+      }
+    ]
+  },
+  {
+    id: 'gettysburg-aftermath',
+    title: 'Words That Echo Through Time',
+    text: 'November 1863. You stand at Gettysburg Cemetery, tasked with dedicating the battlefield where so many died. The main speaker has droned on for two hours. Now it\'s your turn. In just a few minutes, you must somehow make sense of this carnage and inspire a war-weary nation.',
+    emoji: '🎤',
+    background: 'bg-gradient-to-br from-gray-700 to-blue-800',
+    characters: ['⚰️', '🇺🇸', '✨'],
+    sceneType: 'revelation' as const,
+    timelineYear: 1863,
+    timelineEvent: 'Gettysburg Address delivered',
+    choices: [
+      {
+        id: 'brief-consecration',
+        text: 'Deliver a brief, spiritual consecration of the battlefield',
+        consequence: 'Your concise words become immortal, redefining American democracy itself'
+      },
+      {
+        id: 'detailed-history',
+        text: 'Give a detailed account of the battle and its significance',
+        consequence: 'Your comprehensive speech informs but lacks the poetic power of brevity'
+      },
+      {
+        id: 'political-rallying',
+        text: 'Use the moment for political rallying and war justification',
+        consequence: 'Your partisan message energizes supporters but divides the audience'
+      }
+    ]
+  },
+  {
+    id: 'election-1864',
+    title: 'Democracy in Wartime',
+    text: 'November 1864. The war drags on with no end in sight. General McClellan runs against you on a peace platform, promising to negotiate with the Confederacy. Many question whether elections should even be held during wartime. Your decisions here will define American democracy.',
+    emoji: '🗳️',
+    background: 'bg-gradient-to-br from-green-700 to-blue-800',
+    characters: ['🎩', '🕊️', '⚔️'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1864,
+    timelineEvent: '1864 Presidential Election during ongoing war',
+    choices: [
+      {
+        id: 'continue-elections',
+        text: 'Insist that elections must proceed as scheduled, war or no war',
+        consequence: 'Your commitment to democracy inspires the world but risks losing power'
+      },
+      {
+        id: 'postpone-elections',
+        text: 'Propose postponing elections until the war ends',
+        consequence: 'Your practical decision maintains stability but sets dangerous precedent'
+      },
+      {
+        id: 'military-voting',
+        text: 'Ensure soldiers can vote from the battlefield',
+        consequence: 'Your innovation strengthens democracy and secures military support'
+      }
+    ]
+  },
+  {
+    id: 'surrender-terms',
+    title: 'Victory with Honor',
+    text: 'April 1865. Lee has surrendered at Appomattox. The war is essentially over, but how you treat the defeated Confederacy will shape America\'s future. Grant wants generous terms, while many in Congress demand harsh punishment. Your choice will define Reconstruction.',
+    emoji: '🏳️',
+    background: 'bg-gradient-to-br from-white to-blue-600',
+    characters: ['🤝', '⚖️', '🕊️'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1865,
+    timelineEvent: 'Lee\'s surrender and Reconstruction planning',
+    choices: [
+      {
+        id: 'malice-toward-none',
+        text: 'Pursue "malice toward none, charity for all" reconciliation',
+        consequence: 'Your generous approach promotes healing but may not protect freed slaves adequately'
+      },
+      {
+        id: 'justice-first',
+        text: 'Demand accountability for treason and protection for freed slaves',
+        consequence: 'Your firm stance ensures justice but may deepen sectional resentment'
+      },
+      {
+        id: 'economic-reconstruction',
+        text: 'Focus on economic rebuilding and infrastructure investment',
+        consequence: 'Your pragmatic approach rebuilds quickly but avoids deeper social issues'
+      }
+    ]
+  },
+  {
+    id: 'theater-night',
+    title: 'A Night at the Theater',
+    text: 'April 14, 1865. Mary insists on attending "Our American Cousin" at Ford\'s Theatre to celebrate the war\'s end. Your bodyguard is unreliable, and there have been threats. You\'re exhausted and want to stay home, but the people need to see their president in public.',
+    emoji: '🎭',
+    background: 'bg-gradient-to-br from-red-800 to-black',
+    characters: ['🎪', '👥', '⚠️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1865,
+    timelineEvent: 'The night of Lincoln\'s assassination',
+    choices: [
+      {
+        id: 'attend-theater',
+        text: 'Attend the play to show normalcy and celebrate with the people',
+        consequence: 'Your public appearance demonstrates leadership but exposes you to danger'
+      },
+      {
+        id: 'stay-home',
+        text: 'Stay home and work on Reconstruction plans instead',
+        consequence: 'Your caution preserves your safety but disappoints the public'
+      },
+      {
+        id: 'increase-security',
+        text: 'Attend but insist on heavy security presence',
+        consequence: 'Your precautions provide safety but create distance from the people'
+      }
+    ]
+  },
+  {
+    id: 'reconstruction-vision',
+    title: 'Binding Up the Nation\'s Wounds',
+    text: 'April 1865. With the war ending, you must design Reconstruction policy. Four million newly freed slaves need protection and opportunity. The South lies in ruins. Congress wants revenge while you preach reconciliation. Your plan will shape America for generations.',
+    emoji: '🔨',
+    background: 'bg-gradient-to-br from-yellow-600 to-green-700',
+    characters: ['🏗️', '✊', '🤝'],
+    sceneType: 'exploration' as const,
+    timelineYear: 1865,
+    timelineEvent: 'Reconstruction planning and implementation',
+    choices: [
+      {
+        id: 'federal-protection',
+        text: 'Establish strong federal oversight to protect freed slaves\' rights',
+        consequence: 'Your intervention ensures civil rights but creates lasting federal-state tensions'
+      },
+      {
+        id: 'state-restoration',
+        text: 'Quickly restore Southern states with minimal conditions',
+        consequence: 'Your mercy speeds reunification but may abandon freed slaves to oppression'
+      },
+      {
+        id: 'gradual-integration',
+        text: 'Implement gradual integration with education and economic support',
+        consequence: 'Your patient approach builds lasting change but may be too slow for justice'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const lincolnEraChapter: Chapter = {
   id: 'lincoln-era',
@@ -555,6 +783,7 @@ export const lincolnEraChapter: Chapter = {
     confederacyWinsTimeline,
     // Additional timelines can be added here...
   ],
+  interactiveScenarios,
   mainImage: '/images/lincoln-era-main.jpg',
   icon: '🎩',
   backgroundColor: 'from-blue-800 to-gray-600'

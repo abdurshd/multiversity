@@ -477,6 +477,150 @@ const girondistVictoryTimeline: Timeline = {
   presentDayStatus: 'The French Federal Republic became the heart of a peaceful European confederation by 1850. Today it leads the "European Federal Union" - like the EU but with even more cheese varieties and regional autonomy. The Girondist model inspired federal systems worldwide. Très magnifique! 🇫🇷🧀'
 };
 
+// Interactive story scenarios for French Revolution
+const interactiveScenarios = [
+  {
+    id: 'estates-general-crisis',
+    title: 'The Estates-General Crisis',
+    text: 'Versailles, May 1789. You are a delegate to the Estates-General. The Third Estate is locked out of their meeting hall. What do you do?',
+    emoji: '🏰',
+    background: 'bg-gradient-to-br from-purple-800 to-blue-900',
+    characters: ['👨‍💼', '⚖️', '🗝️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1789,
+    timelineEvent: 'Estates-General convenes for first time in 175 years',
+    choices: [
+      {
+        id: 'tennis-court-oath',
+        text: 'Join the Tennis Court Oath and swear to create a new constitution',
+        consequence: 'Your bold action helps spark the revolution and establish the National Assembly'
+      },
+      {
+        id: 'negotiate-compromise',
+        text: 'Try to negotiate a compromise with the other estates',
+        consequence: 'Your diplomacy delays revolution but builds more moderate coalition'
+      },
+      {
+        id: 'demand-king-intervene',
+        text: 'Demand the king intervene and restore order',
+        consequence: 'Your loyalty to tradition puts you at odds with revolutionary sentiment'
+      }
+    ]
+  },
+  {
+    id: 'storming-bastille',
+    title: 'The Storming of the Bastille',
+    text: 'July 14, 1789. Paris erupts! Angry crowds gather outside the Bastille fortress. They need gunpowder, but the governor refuses. The crowd turns to you...',
+    emoji: '🏰',
+    background: 'bg-gradient-to-br from-red-700 to-orange-800',
+    characters: ['⚔️', '🧨', '🗡️'],
+    sceneType: 'battle' as const,
+    timelineYear: 1789,
+    timelineEvent: 'Storming of the Bastille - Revolution begins',
+    choices: [
+      {
+        id: 'lead-assault',
+        text: 'Lead the assault on the fortress',
+        consequence: 'Your courage inspires the crowd and the Bastille falls, but violence escalates'
+      },
+      {
+        id: 'negotiate-surrender',
+        text: 'Try to negotiate a peaceful surrender',
+        consequence: 'Your diplomacy prevents some bloodshed but may be seen as weakness'
+      },
+      {
+        id: 'organize-siege',
+        text: 'Organize a proper siege with strategy',
+        consequence: 'Your military planning ensures victory with fewer casualties'
+      }
+    ]
+  },
+  {
+    id: 'kings-fate',
+    title: 'The Fate of the King',
+    text: 'January 1793. Louis XVI stands trial for treason. The Convention is divided - death or exile? Your vote could determine the king\'s fate...',
+    emoji: '👑',
+    background: 'bg-gradient-to-br from-gray-800 to-black',
+    characters: ['⚖️', '🗡️', '🕊️'],
+    sceneType: 'decision' as const,
+    timelineYear: 1793,
+    timelineEvent: 'Trial of Louis XVI',
+    choices: [
+      {
+        id: 'vote-execution',
+        text: 'Vote for execution - the king must pay for his crimes',
+        consequence: 'Your vote helps seal the king\'s fate, shocking Europe and radicalizing the revolution'
+      },
+      {
+        id: 'vote-exile',
+        text: 'Vote for exile - show mercy and avoid bloodshed',
+        consequence: 'Your mercy preserves the possibility of reconciliation but angers radicals'
+      },
+      {
+        id: 'abstain-vote',
+        text: 'Abstain - this decision is too momentous for you',
+        consequence: 'Your indecision reflects the nation\'s uncertainty about revolutionary justice'
+      }
+    ]
+  },
+  {
+    id: 'reign-of-terror',
+    title: 'The Reign of Terror',
+    text: 'September 1793. Robespierre declares "Terror is the order of the day!" The guillotine works overtime. A friend whispers: someone accused you of counter-revolutionary activities...',
+    emoji: '😱',
+    background: 'bg-gradient-to-br from-red-900 to-black',
+    characters: ['🗡️', '😰', '👁️'],
+    sceneType: 'battle' as const,
+    timelineYear: 1793,
+    timelineEvent: 'Reign of Terror begins',
+    choices: [
+      {
+        id: 'flee-paris',
+        text: 'Flee Paris immediately before you\'re arrested',
+        consequence: 'Your escape saves your life but you lose all political influence'
+      },
+      {
+        id: 'defend-yourself',
+        text: 'Stay and defend yourself before the Committee',
+        consequence: 'Your brave defense might save you or make you a martyr to revolutionary excess'
+      },
+      {
+        id: 'denounce-others',
+        text: 'Denounce others to prove your revolutionary loyalty',
+        consequence: 'Your betrayal saves you but perpetuates the cycle of terror and fear'
+      }
+    ]
+  },
+  {
+    id: 'napoleon-rises',
+    title: 'The Rise of Napoleon',
+    text: 'November 1799. General Bonaparte has returned from Egypt. The Directory is weak and unpopular. He approaches you about supporting his coup...',
+    emoji: '⚡',
+    background: 'bg-gradient-to-br from-gold-600 to-purple-800',
+    characters: ['👑', '⚔️', '🌟'],
+    sceneType: 'negotiation' as const,
+    timelineYear: 1799,
+    timelineEvent: 'Napoleon\'s coup d\'état - 18 Brumaire',
+    choices: [
+      {
+        id: 'support-napoleon',
+        text: 'Support Napoleon - France needs strong leadership',
+        consequence: 'Your support helps end the revolution but begins military dictatorship'
+      },
+      {
+        id: 'oppose-coup',
+        text: 'Oppose the coup and defend the Directory',
+        consequence: 'Your defense of democracy might preserve the republic or get you exiled'
+      },
+      {
+        id: 'negotiate-terms',
+        text: 'Negotiate terms - support him only if he promises constitutional limits',
+        consequence: 'Your conditions might moderate Napoleon\'s power or be ignored entirely'
+      }
+    ]
+  }
+];
+
 // Main chapter data
 export const frenchRevolutionChapter: Chapter = {
   id: 'french-revolution',
@@ -495,6 +639,7 @@ export const frenchRevolutionChapter: Chapter = {
     girondistVictoryTimeline,
     // Additional timelines can be added here...
   ],
+  interactiveScenarios,
   mainImage: '/images/french-revolution-main.jpg',
   icon: '🇫🇷',
   backgroundColor: 'from-blue-600 to-red-600'

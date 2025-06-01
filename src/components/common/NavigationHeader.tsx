@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Clock, Home, BookOpen, GitBranch } from 'lucide-react';
+import { Home, BookOpen, GitBranch } from 'lucide-react';
+import MultiversityIcon from '../icons/MultiversityIcon';
 
 const NavigationHeader: React.FC = () => {
   const location = useLocation();
@@ -13,7 +14,7 @@ const NavigationHeader: React.FC = () => {
     <header className="bg-dark-900 border-b border-dark-700 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-3">
-          <Clock className="w-8 h-8 text-primary-500" />
+          <MultiversityIcon className="w-8 h-8 text-primary-500" />
           <h1 className="text-2xl font-bold text-white">Multiversity</h1>
         </Link>
 

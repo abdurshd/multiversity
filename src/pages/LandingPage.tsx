@@ -42,17 +42,18 @@ const LandingPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dark-900 via-purple-900 to-dark-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative">
       {/* Sound Effects System */}
       <SoundEffects enabled={true} />
       
-      {/* Particle System Background */}
+      {/* Subtle Particle System Background */}
       <ParticleSystem 
-        particleCount={120}
-        colors={['#3B82F6', '#8B5CF6', '#06B6D4', '#10B981', '#F59E0B', '#EF4444']}
-        speed={0.4}
-        size={4}
-        interactive={true}
+        particleCount={30}
+        colors={['#64748B', '#94A3B8', '#CBD5E1']}
+        speed={0.2}
+        size={2}
+        interactive={false}
+        className="opacity-30"
       />
 
       {/* Dynamic background elements */}
@@ -178,6 +179,13 @@ const LandingPage: React.FC = () => {
                     duration: 2,
                     repeat: Infinity,
                     ease: "easeInOut",
+                  }}
+                  style={{
+                    background: 'linear-gradient(45deg, #3B82F6, #8B5CF6, #06B6D4, #10B981, #F59E0B, #EF4444)',
+                    backgroundSize: '300% 300%',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
                   }}
                 >
                   verse
