@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowRight, Clock, Globe, BookOpen, GitBranch, Sparkles, Zap, TrendingUp } from 'lucide-react';
+import { ArrowRight, Clock, Globe, BookOpen, GitBranch, Sparkles } from 'lucide-react';
 import ParticleSystem from '../components/common/ParticleSystem';
-import SoundEffects, { audioManager } from '../components/common/SoundEffects';
+import SoundEffects from '../components/common/SoundEffects';
 
 const LandingPage: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -33,13 +33,6 @@ const LandingPage: React.FC = () => {
     { id: 'ussr-collapse', title: 'USSR Collapse (1991)', description: 'Soviet Union\'s different endings', color: 'bg-pink-600', icon: '🔨', emoji: '🧱' },
   ];
 
-  const handleChapterHover = () => {
-    audioManager.playSound('chime', 0.4);
-  };
-
-  const handleChapterClick = () => {
-    audioManager.playSound('success', 0.6);
-  };
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 to-slate-800 relative">

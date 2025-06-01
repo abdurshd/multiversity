@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures with fun, animated character descriptions
 const keyFigures: Person[] = [
@@ -59,6 +59,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with engaging, character-driven storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'peter-modernization-1700',
@@ -190,6 +191,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: Democratic Russia
 const democraticRussiaTimeline: Timeline = {

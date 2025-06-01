@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect, InteractiveScenario } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
 // Key figures with global scope and dramatic descriptions
 const keyFigures: Person[] = [
@@ -77,6 +77,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with global drama and visual storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'germany-invades-poland-1939',
@@ -259,6 +260,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: No Appeasement
 const noAppeasementTimeline: Timeline = {
@@ -354,7 +356,7 @@ const noAppeasementTimeline: Timeline = {
     },
     {
       id: 'shorter-war',
-      category: 'military',
+      category: 'political',
       shortTerm: 'War lasts only 2 years instead of 6',
       longTerm: 'Millions of military and civilian lives saved',
       globalImpact: 'Less destruction allows faster post-war recovery'
@@ -466,7 +468,7 @@ const dDayFailsTimeline: Timeline = {
   consequences: [
     {
       id: 'extended-war',
-      category: 'military',
+      category: 'political',
       shortTerm: 'War extends 2 more years with massive additional casualties',
       longTerm: 'Different military technology development and tactics',
       globalImpact: 'Nuclear weapons possibly used in European theater'
@@ -817,30 +819,27 @@ const interactiveScenarios: InteractiveScenario[] = [
   {
     id: 'japanese-surrender-1945',
     title: '🕊️ The Emperor\'s Decision: Ending the Rising Sun',
-    description: 'August 15, 1945. Emperor Hirohito must address the Japanese people after atomic bombings and Soviet invasion. You advise the Emperor on how to announce surrender while preserving national honor and ensuring Japan\'s survival.',
-    year: 1945,
-    location: 'Imperial Palace, Tokyo',
+    text: 'August 15, 1945. Emperor Hirohito must address the Japanese people after atomic bombings and Soviet invasion. You advise the Emperor on how to announce surrender while preserving national honor and ensuring Japan\'s survival.',
+    emoji: '🕊️',
+    timelineYear: 1945,
     sceneType: 'decision',
-    participants: ['🇯🇵', '👑', '🌸'],
-    backgroundColor: 'from-red-800 to-yellow-600',
+    characters: ['🇯🇵', '👑', '🌸'],
+    background: 'from-red-800 to-yellow-600',
     choices: [
       {
         id: 'unconditional-surrender',
         text: 'Accept complete unconditional surrender to save Japanese lives',
-        consequence: 'Total surrender saves Japan from invasion but subjects nation to complete Allied occupation.',
-        impact: 'Unconditional surrender preserves Japanese lives but transforms Japan under American influence.'
+        consequence: 'Total surrender saves Japan from invasion but subjects nation to complete Allied occupation.'
       },
       {
         id: 'negotiate-terms',
         text: 'Attempt to negotiate surrender terms preserving imperial system',
-        consequence: 'Negotiations delay surrender but might preserve some Japanese autonomy and imperial dignity.',
-        impact: 'Negotiation attempts risk more atomic attacks but potentially secure better post-war position.'
+        consequence: 'Negotiations delay surrender but might preserve some Japanese autonomy and imperial dignity.'
       },
       {
         id: 'fight-to-end',
         text: 'Call for continued resistance despite atomic weapons',
-        consequence: 'Continued resistance leads to invasion and massive casualties, potentially destroying Japanese civilization.',
-        impact: 'Fighting to the end preserves honor but results in catastrophic destruction of Japanese people and culture.'
+        consequence: 'Continued resistance leads to invasion and massive casualties, potentially destroying Japanese civilization.'
       }
     ]
   }
@@ -867,11 +866,5 @@ export const worldWarTwoChapter: Chapter = {
   mainImage: '/images/world-war-2-main.jpg',
   icon: '🌍',
   backgroundColor: 'from-blue-800 to-red-900',
-  mainTimeline: {
-    id: 'ww2-main',
-    title: 'World War II: The War That Changed Everything',
-    description: 'The complete timeline of the Second World War',
-    events: mainTimelineEvents
-  },
   interactiveScenarios
 };

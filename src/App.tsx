@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationHeader from './components/common/NavigationHeader';
 import LandingPage from './pages/LandingPage';

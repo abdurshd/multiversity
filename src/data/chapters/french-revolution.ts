@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures in the French Revolution with cartoonish descriptions
 const keyFigures: Person[] = [
@@ -50,6 +50,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with fun, engaging descriptions
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'financial-crisis-1787',
@@ -167,9 +168,10 @@ const mainTimelineEvents: HistoricalEvent[] = [
     impact: 'Ends the revolutionary period and begins the Napoleonic era',
     relatedFigures: ['napoleon-bonaparte'],
     location: { lat: 48.8566, lng: 2.3522 },
-    type: 'military'
+    type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: Constitutional Monarchy Success
 const constitutionalMonarchyTimeline: Timeline = {
@@ -315,7 +317,7 @@ const robespierreLivesTimeline: Timeline = {
       impact: 'Creates revolutionary empire based on ideological purity rather than Napoleon\'s pragmatism',
       relatedFigures: ['robespierre'],
       location: { lat: 50.8503, lng: 4.3517 },
-      type: 'military'
+      type: 'political'
     },
     {
       id: 'cult-supreme-being-1798',
@@ -350,7 +352,7 @@ const robespierreLivesTimeline: Timeline = {
     },
     {
       id: 'revolutionary-wars',
-      category: 'military',
+      category: 'political',
       shortTerm: 'Ideological wars against all European monarchies',
       longTerm: 'Different style of European conquest based on revolutionary ideology',
       globalImpact: 'Earlier development of ideological warfare and propaganda techniques'

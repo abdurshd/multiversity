@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures with dramatic collapse descriptions
 const keyFigures: Person[] = [
@@ -77,6 +77,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with dramatic collapse storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'gorbachev-becomes-leader-1985',
@@ -319,6 +320,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: Successful Coup
 const successfulCoupTimeline: Timeline = {

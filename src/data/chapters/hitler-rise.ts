@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures with respectful but engaging descriptions
 const keyFigures: Person[] = [
@@ -59,6 +59,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with serious but accessible storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'hitler-art-rejection-1907',
@@ -191,6 +192,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'social'
   }
 ];
+*/
 
 // Alternative Timeline 1: Art School Acceptance
 const artSchoolTimelineAccepted: Timeline = {

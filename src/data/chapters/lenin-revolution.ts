@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures with dramatic character descriptions
 const keyFigures: Person[] = [
@@ -59,6 +59,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with dramatic storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'february-revolution-1917',
@@ -190,6 +191,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'economic'
   }
 ];
+*/
 
 // Alternative Timeline 1: Menshevik Victory
 const menshevikVictoryTimeline: Timeline = {

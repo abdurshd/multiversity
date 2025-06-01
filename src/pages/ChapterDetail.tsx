@@ -79,7 +79,7 @@ const ChapterDetail: React.FC = () => {
         sceneType: 'decision' as const,
         timelineYear: chapter.divergenceYear,
         timelineEvent: chapter.divergencePoint,
-        choices: chapter.alternativeTimelines.slice(0, 3).map((timeline, index) => ({
+        choices: chapter.alternativeTimelines.slice(0, 3).map((timeline) => ({
           id: timeline.id,
           text: `Choose the path: ${timeline.title}`,
           consequence: `This choice leads to: ${timeline.description.slice(0, 100)}...`

@@ -5,7 +5,7 @@ import {
   ArrowLeft, 
   Calendar, 
   MapPin, 
-  Users, 
+  
   TrendingUp, 
   GitBranch, 
   Clock,
@@ -158,7 +158,7 @@ const TimelineExplorer: React.FC = () => {
                   <h3 className="text-lg font-semibold text-white">Events Completed</h3>
                 </div>
                 <div className="space-y-3">
-                  {currentEvents.slice(-3).map((event, index) => (
+                  {currentEvents.slice(-3).map((event) => (
                     <div 
                       key={event.id}
                       className="bg-dark-800 rounded-lg p-3 cursor-pointer hover:bg-dark-600 transition-colors"
@@ -183,7 +183,7 @@ const TimelineExplorer: React.FC = () => {
                   <h3 className="text-lg font-semibold text-white">Upcoming Events</h3>
                 </div>
                 <div className="space-y-3">
-                  {futureEvents.slice(0, 3).map((event, index) => (
+                  {futureEvents.slice(0, 3).map((event) => (
                     <div 
                       key={event.id}
                       className="bg-dark-800 rounded-lg p-3 cursor-pointer hover:bg-dark-600 transition-colors opacity-70"
@@ -208,7 +208,7 @@ const TimelineExplorer: React.FC = () => {
                   <h3 className="text-lg font-semibold text-white">Key Consequences</h3>
                 </div>
                 <div className="space-y-3">
-                  {timeline.consequences.slice(0, 3).map((consequence, index) => (
+                  {timeline.consequences.slice(0, 3).map((consequence) => (
                     <div key={consequence.id} className="bg-dark-800 rounded-lg p-3">
                       <div className="text-xs text-purple-400 mb-1">{consequence.category}</div>
                       <div className="text-sm text-white">{consequence.shortTerm}</div>

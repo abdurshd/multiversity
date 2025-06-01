@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures with tension-filled descriptions
 const keyFigures: Person[] = [
@@ -77,6 +77,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with tension and drama
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'iron-curtain-speech-1946',
@@ -367,6 +368,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: Nuclear War
 const nuclearWarTimeline: Timeline = {
@@ -413,7 +415,7 @@ const nuclearWarTimeline: Timeline = {
       impact: 'Global climate catastrophe and agricultural collapse',
       relatedFigures: [],
       location: { lat: 60.0000, lng: 0.0000 },
-      type: 'environmental'
+      type: 'technological'
     },
     {
       id: 'civilization-collapse-1965',
@@ -462,7 +464,7 @@ const nuclearWarTimeline: Timeline = {
     },
     {
       id: 'nuclear-taboo',
-      category: 'military',
+      category: 'political',
       shortTerm: 'Nuclear weapons immediately recognized as unusable',
       longTerm: 'Complete global prohibition on nuclear weapons development',
       globalImpact: 'Alternative security paradigm based on conventional forces'
@@ -729,7 +731,7 @@ const peacefulCoexistenceTimeline: Timeline = {
   consequences: [
     {
       id: 'no-proxy-wars',
-      category: 'military',
+      category: 'political',
       shortTerm: 'No Korean War, Vietnam War, or other proxy conflicts',
       longTerm: 'Millions of lives saved and resources available for development',
       globalImpact: 'Different decolonization process without superpower interference'
@@ -910,8 +912,6 @@ export const coldWarChapter: Chapter = {
   id: 'cold-war',
   title: 'The Cold War',
   period: '1945-1991',
-  startYear: 1945,
-  endYear: 1991,
   startYear: 1945,
   endYear: 1991,
   description: 'The Ultimate Staring Contest: 46 Years of "I\'m Not Touching You!" 👁️❄️ Watch America and the Soviet Union have the world\'s longest, most expensive, and most dangerous argument without actually fighting each other directly. It\'s got spies, nuclear missiles, space races, proxy wars, and enough paranoia to make everyone nervous! The war where nobody fired a shot, but everybody held their breath! 🚀💣',

@@ -1,29 +1,28 @@
 import React, { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Timeline, HistoricalEvent } from '../../types';
-
-interface TimelineVisualizationProps {
-  timeline: Timeline;
-  onEventClick?: (event: HistoricalEvent) => void;
-}
+import { HistoricalEvent, TimelineVisualizationProps } from '../../types';
 
 const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
   timeline,
-  onEventClick
+  startYear: propStartYear,
+  endYear: propEndYear,
+  width,
+  height,
+  onEventClick,
 }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [selectedEvent, setSelectedEvent] = useState<HistoricalEvent | null>(null);
   const [hoveredEvent, setHoveredEvent] = useState<HistoricalEvent | null>(null);
 
   const events = timeline.keyEvents.sort((a, b) => a.year - b.year);
-  const startYear = events[0]?.year || 1900;
-  const endYear = events[events.length - 1]?.year || 2000;
+  const startYear = propStartYear || events[0]?.year || 1900;
+  const endYear = propEndYear || events[events.length - 1]?.year || 2000;
   const totalYears = endYear - startYear;
 
   const getEventPosition = (event: HistoricalEvent, index: number) => {
     const yearProgress = (event.year - startYear) / totalYears;
-    const x = 100 + yearProgress * 800;
-    const y = 200 + (index % 2) * 150;
+    const x = width * 0.1 + yearProgress * (width * 0.8);
+    const y = height * 0.25 + (index % 2) * (height * 0.15);
     return { x, y };
   };
 
@@ -54,8 +53,10 @@ const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
 
       <svg
         ref={svgRef}
-        viewBox="0 0 1000 500"
-        className="w-full h-96 relative z-10"
+        viewBox={`0 0 ${width} ${height}`}
+        width={width}
+        height={height}
+        className="relative z-10"
         preserveAspectRatio="xMidYMid meet"
       >
         <defs>
@@ -75,10 +76,10 @@ const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
         </defs>
 
         <line
-          x1="100"
-          y1="275"
-          x2="900"
-          y2="275"
+          x1={width * 0.1}
+          y1={height * 0.55}
+          x2={width * 0.9}
+          y2={height * 0.55}
           stroke="url(#timelineGradient)"
           strokeWidth="4"
           filter="url(#glow)"
@@ -86,20 +87,20 @@ const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
 
         {Array.from({ length: 6 }, (_, i) => {
           const year = startYear + (totalYears * i) / 5;
-          const x = 100 + (i * 800) / 5;
+          const x = width * 0.1 + (i * width * 0.8) / 5;
           return (
             <g key={year}>
               <line
                 x1={x}
-                y1="265"
+                y1={height * 0.53}
                 x2={x}
-                y2="285"
+                y2={height * 0.57}
                 stroke={timeline.color}
                 strokeWidth="2"
               />
               <text
                 x={x}
-                y="300"
+                y={height * 0.6}
                 textAnchor="middle"
                 className="fill-gray-300 text-xs font-semibold"
               >

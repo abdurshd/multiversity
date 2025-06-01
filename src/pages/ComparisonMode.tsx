@@ -24,11 +24,11 @@ const ComparisonMode: React.FC = () => {
   const [showSelector, setShowSelector] = useState(false);
   const [animationPhase, setAnimationPhase] = useState(0);
   const svgRef = useRef<SVGSVGElement>(null);
-  const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
+  const [dimensions] = useState({ width: 1200, height: 800 });
 
   // Particle system for background
   const particlesRef = useRef<any[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
 
   useEffect(() => {
     // Initialize particle system
@@ -196,7 +196,7 @@ const ComparisonMode: React.FC = () => {
         .attr('opacity', 0.3)
         .transition()
         .duration(800)
-        .delay((d, i) => timelineIndex * 500 + 2000 + i * 100)
+        .delay((_, i) => timelineIndex * 500 + 2000 + i * 100)
         .attr('r', 25);
 
       // Inner event circle
@@ -228,11 +228,11 @@ const ComparisonMode: React.FC = () => {
         })
         .transition()
         .duration(600)
-        .delay((d, i) => timelineIndex * 500 + (animationPhase * 1000) + i * 100)
+        .delay((_, i) => timelineIndex * 500 + (animationPhase * 1000) + i * 100)
         .attr('r', 8);
 
       // Pulse animation for divergence points
-      events.forEach((event, eventIndex) => {
+      events.forEach((event) => {
         if (event.year === timeline.divergenceYear) {
           const divergenceGroup = timelineGroup.append('g')
             .attr('transform', `translate(${xScale(event.year)}, ${yScale(timeline.id)! + yScale.bandwidth() / 2})`);

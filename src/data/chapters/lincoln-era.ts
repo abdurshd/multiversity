@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect, InteractiveScenario } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
 // Key figures with engaging, respectful but fun descriptions
 const keyFigures: Person[] = [
@@ -59,6 +59,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with engaging storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'lincoln-election-1860',
@@ -193,6 +194,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: Lincoln Survives
 const lincolnSurvivesTimeline: Timeline = {

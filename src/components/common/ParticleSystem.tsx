@@ -35,7 +35,7 @@ const ParticleSystem: React.FC<ParticleSystemProps> = ({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const mouseRef = useRef({ x: 0, y: 0, active: false });
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
 
   const createParticle = useCallback((x?: number, y?: number): Particle => {
     const canvas = canvasRef.current;

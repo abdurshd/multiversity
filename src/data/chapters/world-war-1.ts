@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures with engaging battle-focused descriptions
 const keyFigures: Person[] = [
@@ -59,6 +59,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events with battle-focused dramatic storytelling
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'archduke-assassination-1914',
@@ -193,6 +194,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: No Assassination
 const noAssassinationTimeline: Timeline = {

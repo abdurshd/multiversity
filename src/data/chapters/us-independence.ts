@@ -1,4 +1,4 @@
-import { Chapter, Timeline, HistoricalEvent, Person, Consequence, ButterflyEffect } from '../../types';
+import { Chapter, Timeline, Person } from '../../types';
 
 // Key figures in the American Revolution
 const keyFigures: Person[] = [
@@ -41,6 +41,7 @@ const keyFigures: Person[] = [
 ];
 
 // Historical events for the main timeline
+/*
 const mainTimelineEvents: HistoricalEvent[] = [
   {
     id: 'stamp-act-1765',
@@ -127,6 +128,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     type: 'political'
   }
 ];
+*/
 
 // Alternative Timeline 1: British Victory
 const britishVictoryTimeline: Timeline = {

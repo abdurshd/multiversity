@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, SkipForward, RotateCcw, Sword, Shield, Crown, Heart, Zap, Users } from 'lucide-react';
+import { Play, SkipForward, RotateCcw, Sword, Shield, Crown, Heart, Zap, Users } from 'lucide-react';
 
 interface StoryChoice {
   id: string;
