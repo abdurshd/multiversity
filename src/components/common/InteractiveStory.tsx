@@ -271,7 +271,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                 {currentSceneData.characters.map((character, index) => (
                   <motion.div
                     key={character}
-                    className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-xl font-bold text-white shadow-lg"
+                    className="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-xl font-bold text-white shadow-lg"
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{ delay: 0.5 + index * 0.2, type: "spring", stiffness: 200 }}
@@ -309,7 +309,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
               <AnimatePresence>
                 {selectedChoice && (
                   <motion.div
-                    className="bg-gradient-to-r from-green-600 to-blue-600 rounded-xl p-4 max-w-xl mx-auto mb-6"
+                    className="bg-linear-to-r from-green-600 to-blue-600 rounded-xl p-4 max-w-xl mx-auto mb-6"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
@@ -335,7 +335,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                       <motion.button
                         key={choice.id}
                         onClick={() => handleChoiceSelect(choice)}
-                        className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 rounded-lg transition-all duration-300 transform"
+                        className="w-full bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 rounded-lg transition-all duration-300 transform"
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.2 }}
@@ -357,7 +357,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
           {!isPlaying ? (
             <motion.button
               onClick={startScene}
-              className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-full flex items-center space-x-3 transition-all duration-300 text-lg font-semibold"
+              className="bg-linear-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-full flex items-center space-x-3 transition-all duration-300 text-lg font-semibold"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -369,7 +369,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
               {!showChoices && (
                 <motion.button
                   onClick={nextScene}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-full transition-all duration-300 flex items-center space-x-2"
+                  className="bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-full transition-all duration-300 flex items-center space-x-2"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   disabled={displayedText !== currentSceneData.text}
@@ -395,7 +395,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
         <div className="px-6 pb-6">
           <div className="w-full bg-gray-700 rounded-full h-3 mb-3">
             <motion.div
-              className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-3 rounded-full"
+              className="bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 h-3 rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${((currentScene + 1) / scenes.length) * 100}%` }}
               transition={{ duration: 0.8, ease: "easeOut" }}

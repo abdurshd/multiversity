@@ -75,7 +75,7 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
       >
         {/* Character Avatar */}
         <motion.div
-          className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-2xl font-bold text-white mx-auto mb-2 shadow-lg"
+          className="w-16 h-16 rounded-full bg-linear-to-br from-blue-400 to-purple-600 flex items-center justify-center text-2xl font-bold text-white mx-auto mb-2 shadow-lg"
           animate={isClicked ? { rotate: 360, scale: 1.2 } : {}}
           transition={{ duration: 0.5 }}
         >

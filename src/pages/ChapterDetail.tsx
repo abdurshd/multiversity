@@ -35,7 +35,7 @@ const ChapterDetail: React.FC = () => {
         title: 'The Setting',
         text: `Welcome to ${chapter.period}. The world is about to change forever...`,
         emoji: chapter.icon,
-        background: 'bg-gradient-to-br from-purple-600 to-blue-800',
+        background: 'bg-linear-to-br from-purple-600 to-blue-800',
         characters: ['🏛️', '⚡', '🌍'],
         sceneType: 'exploration' as const,
         timelineYear: chapter.startYear,
@@ -46,7 +46,7 @@ const ChapterDetail: React.FC = () => {
         title: 'Meet the Key Players',
         text: `You encounter the most influential figures of this era. ${chapter.keyFigures[0]?.name} approaches you with an urgent matter...`,
         emoji: '👥',
-        background: 'bg-gradient-to-br from-green-600 to-teal-800',
+        background: 'bg-linear-to-br from-green-600 to-teal-800',
         characters: chapter.keyFigures.slice(0, 3).map(f => f.name.charAt(0)),
         sceneType: 'negotiation' as const,
         timelineYear: chapter.startYear + 1,
@@ -74,7 +74,7 @@ const ChapterDetail: React.FC = () => {
         title: 'The Pivotal Moment',
         text: `This is it - the moment that will define history. The ${chapter.divergencePoint} in ${chapter.divergenceYear}. Your next decision will echo through the ages!`,
         emoji: '⚡',
-        background: 'bg-gradient-to-br from-yellow-600 to-red-800',
+        background: 'bg-linear-to-br from-yellow-600 to-red-800',
         characters: ['👑', '⚖️', '🌟'],
         sceneType: 'decision' as const,
         timelineYear: chapter.divergenceYear,
@@ -90,7 +90,7 @@ const ChapterDetail: React.FC = () => {
         title: 'The New World',
         text: `The consequences of your choices ripple through time. History has been rewritten, and the world will never be the same!`,
         emoji: '🌟',
-        background: 'bg-gradient-to-br from-pink-600 to-purple-800',
+        background: 'bg-linear-to-br from-pink-600 to-purple-800',
         characters: ['🔮', '🎭', '🌈'],
         sceneType: 'revelation' as const,
         timelineYear: chapter.endYear,
@@ -188,7 +188,7 @@ const ChapterDetail: React.FC = () => {
   return (
     <div className="min-h-screen bg-dark-900">
       {/* Hero Section */}
-      <section className={`relative py-20 bg-gradient-to-br ${chapter.backgroundColor} overflow-hidden`}>
+      <section className={`relative py-20 bg-linear-to-br ${chapter.backgroundColor} overflow-hidden`}>
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <ParticleSystem 
           particleCount={particleTheme.particleCount}
@@ -265,7 +265,7 @@ const ChapterDetail: React.FC = () => {
             </p>
             <motion.button
               onClick={() => setShowStory(!showStory)}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center space-x-2 mx-auto"
+              className="bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center space-x-2 mx-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -346,7 +346,7 @@ const ChapterDetail: React.FC = () => {
                 >
                   <div className="text-center">
                     <motion.div
-                      className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-4xl font-bold text-white mx-auto mb-6"
+                      className="w-24 h-24 rounded-full bg-linear-to-br from-blue-400 to-purple-600 flex items-center justify-center text-4xl font-bold text-white mx-auto mb-6"
                       animate={{
                         scale: [1, 1.1, 1],
                         rotate: [0, 5, -5, 0],
@@ -397,7 +397,7 @@ const ChapterDetail: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl font-bold text-white mb-6">The Divergence Point</h2>
-            <div className="bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg p-8">
+            <div className="bg-linear-to-r from-primary-600 to-purple-600 rounded-lg p-8">
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-semibold text-white mb-4">{chapter.divergencePoint}</h3>
               <p className="text-lg text-white opacity-90">

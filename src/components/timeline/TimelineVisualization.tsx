@@ -46,10 +46,10 @@ const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
 
   return (
     <div className="relative w-full bg-dark-800 rounded-lg overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-700 to-dark-900" />
+      <div className="absolute inset-0 bg-linear-to-br from-dark-700 to-dark-900" />
       
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary-500/10 to-transparent animate-pulse" />
+        <div className="absolute inset-0 bg-linear-to-r from-transparent via-primary-500/10 to-transparent animate-pulse" />
       </div>
 
       <svg

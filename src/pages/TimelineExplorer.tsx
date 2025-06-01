@@ -106,7 +106,7 @@ const TimelineExplorer: React.FC = () => {
             <h2 className="text-xl font-bold text-white mb-4">Timeline Overview</h2>
             <p className="text-gray-300 mb-4">{timeline.description}</p>
             
-            <div className="bg-gradient-to-r from-yellow-600 to-orange-600 rounded-lg p-4 mb-4">
+            <div className="bg-linear-to-r from-yellow-600 to-orange-600 rounded-lg p-4 mb-4">
               <div className="flex items-center space-x-2 mb-2">
                 <Zap className="w-5 h-5 text-white" />
                 <h3 className="text-lg font-semibold text-white">Divergence Point ({timeline.divergenceYear})</h3>
@@ -237,7 +237,7 @@ const TimelineExplorer: React.FC = () => {
                   initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-6"
+                  className="bg-linear-to-r from-purple-600 to-pink-600 rounded-lg p-6"
                 >
                   <div className="flex items-center space-x-2 mb-3">
                     <GitBranch className="w-5 h-5 text-white" />
@@ -364,7 +364,7 @@ const TimelineExplorer: React.FC = () => {
                         return figure ? (
                           <span 
                             key={figureId}
-                            className="bg-primary-600 text-white px-2 py-1 rounded text-xs"
+                            className="bg-primary-600 text-white px-2 py-1 rounded-sm text-xs"
                           >
                             {figure.name}
                           </span>

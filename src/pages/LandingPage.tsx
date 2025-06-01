@@ -42,7 +42,7 @@ const LandingPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 to-slate-800 relative">
       {/* Sound Effects System */}
       <SoundEffects enabled={true} />
       
@@ -87,7 +87,7 @@ const LandingPage: React.FC = () => {
 
       {/* Mouse trail effect */}
       <motion.div
-        className="fixed w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 pointer-events-none z-50 mix-blend-difference"
+        className="fixed w-6 h-6 rounded-full bg-linear-to-r from-blue-500 to-purple-500 pointer-events-none z-50 mix-blend-difference"
         style={{
           left: mousePosition.x - 12,
           top: mousePosition.y - 12,
@@ -227,7 +227,7 @@ const LandingPage: React.FC = () => {
               </motion.span>
               {" "}with{" "}
               <motion.span
-                className="font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
+                className="font-bold bg-linear-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
                 animate={{
                   scale: [1, 1.05, 1],
                 }}
@@ -316,7 +316,7 @@ const LandingPage: React.FC = () => {
             >
               <Link
                 to="/chapters"
-                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 hover:from-blue-700 hover:via-purple-700 hover:to-blue-700 text-white px-10 py-5 rounded-full text-xl font-bold transition-all duration-300 shadow-2xl overflow-hidden"
+                className="relative inline-flex items-center space-x-3 bg-linear-to-r from-blue-600 via-purple-600 to-blue-600 hover:from-blue-700 hover:via-purple-700 hover:to-blue-700 text-white px-10 py-5 rounded-full text-xl font-bold transition-all duration-300 shadow-2xl overflow-hidden"
                 style={{
                   backgroundSize: '200% 200%',
                   animation: 'gradientShift 3s ease infinite',
@@ -350,7 +350,7 @@ const LandingPage: React.FC = () => {
                 
                 {/* Animated background overlay */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20"
+                  className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent opacity-20"
                   animate={{
                     x: ['-100%', '200%'],
                   }}
@@ -377,7 +377,7 @@ const LandingPage: React.FC = () => {
             >
               <Link
                 to="/compare"
-                className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white border-2 border-purple-500 hover:border-purple-400 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white border-2 border-purple-500 hover:border-purple-400 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 backdrop-blur-xs"
               >
                 <GitBranch className="w-5 h-5" />
                 <span>Compare Timelines</span>

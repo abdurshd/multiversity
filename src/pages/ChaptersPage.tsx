@@ -135,7 +135,7 @@ const ChaptersPage: React.FC = () => {
             >
               <Link to={`/chapter/${chapter.id}`}>
                 <div className="bg-dark-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                  <div className={`h-48 bg-gradient-to-br ${chapter.color} relative`}>
+                  <div className={`h-48 bg-linear-to-br ${chapter.color} relative`}>
                     <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                       <div className="text-center text-white">
                         <Calendar className="w-12 h-12 mx-auto mb-2" />
@@ -162,7 +162,7 @@ const ChaptersPage: React.FC = () => {
                         {chapter.keyEvents.slice(0, 3).map((event, i) => (
                           <span
                             key={i}
-                            className="bg-dark-700 text-gray-300 px-2 py-1 rounded text-sm"
+                            className="bg-dark-700 text-gray-300 px-2 py-1 rounded-sm text-sm"
                           >
                             {event}
                           </span>

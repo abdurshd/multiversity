@@ -228,7 +228,7 @@ const mainTimelineEvents: HistoricalEvent[] = [
     month: 5,
     day: 8,
     title: 'Victory in Europe: The Nazi Nightmare Ends! 🎉🇪🇺',
-    description: 'Germany surrenders unconditionally! Europe celebrates as church bells ring and people dance in the streets. Hitler\'s empire is dead, but the Pacific War continues!',
+    description: 'Germany surrenders unconditionally! Europe celebrates as church bells ring-3 and people dance in the streets. Hitler\'s empire is dead, but the Pacific War continues!',
     impact: 'Ends European war and allows full focus on defeating Japan',
     relatedFigures: [],
     location: { lat: 52.5200, lng: 13.4050 },
