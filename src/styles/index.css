@@ -77,11 +77,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* Custom animations */

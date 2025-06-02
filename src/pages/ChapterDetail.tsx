@@ -35,7 +35,7 @@ const ChapterDetail: React.FC = () => {
         title: 'The Setting',
         text: `Welcome to ${chapter.period}. The world is about to change forever...`,
         emoji: chapter.icon,
-        background: 'bg-linear-to-br from-purple-600 to-blue-800',
+        background: 'bg-gradient-to-br from-purple-600 to-blue-800',
         characters: ['🏛️', '⚡', '🌍'],
         sceneType: 'exploration' as const,
         timelineYear: chapter.startYear,
@@ -46,7 +46,7 @@ const ChapterDetail: React.FC = () => {
         title: 'Meet the Key Players',
         text: `You encounter the most influential figures of this era. ${chapter.keyFigures[0]?.name} approaches you with an urgent matter...`,
         emoji: '👥',
-        background: 'bg-linear-to-br from-green-600 to-teal-800',
+        background: 'bg-gradient-to-br from-green-600 to-teal-800',
         characters: chapter.keyFigures.slice(0, 3).map(f => f.name.charAt(0)),
         sceneType: 'negotiation' as const,
         timelineYear: chapter.startYear + 1,
@@ -74,7 +74,7 @@ const ChapterDetail: React.FC = () => {
         title: 'The Pivotal Moment',
         text: `This is it - the moment that will define history. The ${chapter.divergencePoint} in ${chapter.divergenceYear}. Your next decision will echo through the ages!`,
         emoji: '⚡',
-        background: 'bg-linear-to-br from-yellow-600 to-red-800',
+        background: 'bg-gradient-to-br from-yellow-600 to-red-800',
         characters: ['👑', '⚖️', '🌟'],
         sceneType: 'decision' as const,
         timelineYear: chapter.divergenceYear,
@@ -90,7 +90,7 @@ const ChapterDetail: React.FC = () => {
         title: 'The New World',
         text: `The consequences of your choices ripple through time. History has been rewritten, and the world will never be the same!`,
         emoji: '🌟',
-        background: 'bg-linear-to-br from-pink-600 to-purple-800',
+        background: 'bg-gradient-to-br from-pink-600 to-purple-800',
         characters: ['🔮', '🎭', '🌈'],
         sceneType: 'revelation' as const,
         timelineYear: chapter.endYear,
@@ -168,13 +168,13 @@ const ChapterDetail: React.FC = () => {
 
   if (!chapter) {
     return (
-      <div className="min-h-screen bg-dark-900 flex items-center justify-center">
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Chapter Not Found</h2>
           <p className="text-gray-300 mb-6">This chapter is not yet available.</p>
           <Link
             to="/chapters"
-            className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
           >
             Back to Chapters
           </Link>
@@ -186,9 +186,9 @@ const ChapterDetail: React.FC = () => {
   const particleTheme = getParticleTheme(chapter.id);
 
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className={`relative py-20 bg-linear-to-br ${chapter.backgroundColor} overflow-hidden`}>
+      <section className={`relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br ${chapter.backgroundColor} overflow-hidden`}>
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <ParticleSystem 
           particleCount={particleTheme.particleCount}
@@ -198,20 +198,20 @@ const ChapterDetail: React.FC = () => {
           interactive={false}
           className="opacity-20"
         />
-        <div className="relative max-w-6xl mx-auto px-6">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center text-white"
           >
-            <div className="text-6xl mb-4">{chapter.icon}</div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">{chapter.title}</h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+            <div className="text-4xl sm:text-5xl lg:text-6xl mb-4">{chapter.icon}</div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6">{chapter.title}</h1>
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 px-4">
               {chapter.description}
             </p>
             
-            <div className="flex flex-wrap items-center justify-center gap-6 text-lg">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base lg:text-lg">
               <div className="flex items-center space-x-2">
                 <Calendar className="w-5 h-5" />
                 <span>{chapter.period}</span>
@@ -230,16 +230,16 @@ const ChapterDetail: React.FC = () => {
       </section>
 
       {/* Historical Context */}
-      <section className="py-16 px-6 bg-dark-800">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-slate-800">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-white mb-6 text-center">Historical Context</h2>
-            <div className="bg-dark-700 rounded-lg p-8">
-              <p className="text-lg text-gray-300 leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">Historical Context</h2>
+            <div className="bg-slate-700 rounded-lg p-6 sm:p-8">
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
                 {chapter.historicalContext}
               </p>
             </div>
@@ -248,7 +248,7 @@ const ChapterDetail: React.FC = () => {
       </section>
 
       {/* Interactive Story Section */}
-      <section className="py-16 px-6 bg-dark-800">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-slate-800">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -256,16 +256,16 @@ const ChapterDetail: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-8"
           >
-            <h2 className="text-3xl font-bold text-white mb-4 flex items-center justify-center space-x-2">
-              <PlayCircle className="w-8 h-8 text-primary-500" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center justify-center space-x-2">
+              <PlayCircle className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
               <span>Interactive Story Mode</span>
             </h2>
-            <p className="text-gray-300 mb-6">
+            <p className="text-sm sm:text-base text-gray-300 mb-6 px-4">
               Experience the chapter through an animated story that brings history to life!
             </p>
             <motion.button
               onClick={() => setShowStory(!showStory)}
-              className="bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center space-x-2 mx-auto"
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 mx-auto text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -295,22 +295,22 @@ const ChapterDetail: React.FC = () => {
       </section>
 
       {/* Animated Key Figures */}
-      <section className="py-16 px-6">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-white mb-4 text-center flex items-center justify-center space-x-2"
+            className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center flex items-center justify-center space-x-2"
           >
-            <Users className="w-8 h-8 text-primary-500" />
+            <Users className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
             <span>Meet the Historical Characters</span>
           </motion.h2>
-          <p className="text-gray-300 text-center mb-12">
+          <p className="text-sm sm:text-base text-gray-300 text-center mb-8 sm:mb-12 px-4">
             Click on the characters to interact with them and learn their stories!
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
             {chapter.keyFigures.map((figure, index) => (
               <motion.div
                 key={figure.id}
@@ -341,12 +341,12 @@ const ChapterDetail: React.FC = () => {
                   animate={{ scale: 1, opacity: 1, rotateY: 0 }}
                   exit={{ scale: 0.8, opacity: 0, rotateY: 90 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-dark-800 rounded-2xl max-w-lg w-full p-8 border-2 border-primary-500"
+                  className="bg-slate-800 rounded-2xl max-w-lg w-full p-6 sm:p-8 border-2 border-blue-500 mx-4"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div className="text-center">
                     <motion.div
-                      className="w-24 h-24 rounded-full bg-linear-to-br from-blue-400 to-purple-600 flex items-center justify-center text-4xl font-bold text-white mx-auto mb-6"
+                      className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-3xl sm:text-4xl font-bold text-white mx-auto mb-6"
                       animate={{
                         scale: [1, 1.1, 1],
                         rotate: [0, 5, -5, 0],
@@ -360,10 +360,10 @@ const ChapterDetail: React.FC = () => {
                       {selectedCharacter.name.charAt(0)}
                     </motion.div>
                     
-                    <h3 className="text-2xl font-bold text-white mb-2">{selectedCharacter.name}</h3>
-                    <p className="text-primary-400 mb-4">{selectedCharacter.role}</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{selectedCharacter.name}</h3>
+                    <p className="text-blue-400 mb-4">{selectedCharacter.role}</p>
                     
-                    <div className="bg-dark-700 rounded-lg p-4 mb-6">
+                    <div className="bg-slate-700 rounded-lg p-4 mb-6">
                       <p className="text-sm text-gray-400 mb-2">
                         {selectedCharacter.born} - {selectedCharacter.died || 'Present'}
                       </p>
@@ -374,7 +374,7 @@ const ChapterDetail: React.FC = () => {
                     
                     <motion.button
                       onClick={() => setSelectedCharacter(null)}
-                      className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full transition-colors"
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -389,18 +389,18 @@ const ChapterDetail: React.FC = () => {
       </section>
 
       {/* Divergence Point */}
-      <section className="py-16 px-6 bg-dark-800">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-slate-800">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-white mb-6">The Divergence Point</h2>
-            <div className="bg-linear-to-r from-primary-600 to-purple-600 rounded-lg p-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Divergence Point</h2>
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 sm:p-8">
               <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-semibold text-white mb-4">{chapter.divergencePoint}</h3>
-              <p className="text-lg text-white opacity-90">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">{chapter.divergencePoint}</h3>
+              <p className="text-base sm:text-lg text-white opacity-90">
                 This pivotal moment in {chapter.divergenceYear} created multiple possible paths for history. 
                 Explore how different decisions and circumstances could have led to entirely different worlds.
               </p>
@@ -410,18 +410,18 @@ const ChapterDetail: React.FC = () => {
       </section>
 
       {/* Alternative Timelines */}
-      <section className="py-16 px-6">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-white mb-12 text-center"
+            className="text-2xl sm:text-3xl font-bold text-white mb-8 sm:mb-12 text-center"
           >
             Alternative Timelines
           </motion.h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {chapter.alternativeTimelines.map((timeline, index) => (
               <motion.div
                 key={timeline.id}
@@ -432,10 +432,10 @@ const ChapterDetail: React.FC = () => {
                 className="group cursor-pointer"
                 onClick={() => setSelectedTimeline(timeline.id)}
               >
-                <div className="bg-dark-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                   <div className="h-4" style={{ backgroundColor: timeline.color }}></div>
                   
-                  <div className="p-6">
+                  <div className="p-4 sm:p-6">
                     <div className="flex items-center justify-between mb-4">
                       <div className="text-3xl">{timeline.icon}</div>
                       <div className="flex items-center space-x-1 text-sm text-gray-400">
@@ -444,7 +444,7 @@ const ChapterDetail: React.FC = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                       {timeline.title}
                     </h3>
                     
@@ -452,7 +452,7 @@ const ChapterDetail: React.FC = () => {
                       {timeline.description}
                     </p>
 
-                    <div className="bg-dark-700 rounded-lg p-3 mb-4">
+                    <div className="bg-slate-700 rounded-lg p-3 mb-4">
                       <p className="text-sm text-gray-400 mb-1">Divergence Point:</p>
                       <p className="text-sm text-white">{timeline.divergenceDescription}</p>
                     </div>
@@ -465,7 +465,7 @@ const ChapterDetail: React.FC = () => {
                       
                       <Link
                         to={`/timeline/${chapter.id}/${timeline.id}`}
-                        className="flex items-center space-x-1 text-primary-400 hover:text-primary-300 transition-colors"
+                        className="flex items-center space-x-1 text-blue-400 hover:text-blue-300 transition-colors"
                       >
                         <span className="text-sm font-semibold">Explore</span>
                         <ArrowRight className="w-4 h-4" />
@@ -490,7 +490,7 @@ const ChapterDetail: React.FC = () => {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
-                className="bg-dark-800 rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto"
+                className="bg-slate-800 rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto mx-4"
                 onClick={(e) => e.stopPropagation()}
               >
                 {(() => {
@@ -514,7 +514,7 @@ const ChapterDetail: React.FC = () => {
                       
                       <p className="text-gray-300 mb-6">{timeline.description}</p>
                       
-                      <div className="bg-dark-700 rounded-lg p-4 mb-6">
+                      <div className="bg-slate-700 rounded-lg p-4 mb-6">
                         <h4 className="text-lg font-semibold text-white mb-2">Present Day Status</h4>
                         <p className="text-gray-300 text-sm">{timeline.presentDayStatus}</p>
                       </div>
@@ -528,7 +528,7 @@ const ChapterDetail: React.FC = () => {
                         </button>
                         <Link
                           to={`/timeline/${chapter.id}/${timeline.id}`}
-                          className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors flex items-center space-x-2"
+                          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors flex items-center space-x-2"
                         >
                           <span>Explore Timeline</span>
                           <ArrowRight className="w-4 h-4" />
@@ -544,7 +544,7 @@ const ChapterDetail: React.FC = () => {
       </section>
 
       {/* Navigation */}
-      <section className="py-16 px-6 bg-dark-800">
+      <section className="py-16 px-6 bg-slate-800">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -562,7 +562,7 @@ const ChapterDetail: React.FC = () => {
               </Link>
               <Link
                 to="/compare"
-                className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center space-x-2"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center space-x-2"
               >
                 <GitBranch className="w-4 h-4" />
                 <span>Compare Timelines</span>

@@ -1,23 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight, Clock, Globe, BookOpen, GitBranch, Sparkles } from 'lucide-react';
 import ParticleSystem from '../components/common/ParticleSystem';
 import SoundEffects from '../components/common/SoundEffects';
 
 const LandingPage: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const { scrollYProgress } = useScroll();
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
+  const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
+    const handleResize = () => {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    };
+
+    // Set initial window size
+    handleResize();
+    
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const chapters = [
@@ -35,7 +44,7 @@ const LandingPage: React.FC = () => {
 
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-900 to-slate-800 relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-x-hidden w-full">
       {/* Sound Effects System */}
       <SoundEffects enabled={true} />
       
@@ -49,41 +58,35 @@ const LandingPage: React.FC = () => {
         className="opacity-30"
       />
 
-      {/* Dynamic background elements */}
-      <motion.div 
-        className="absolute inset-0 pointer-events-none"
-        style={{ y: backgroundY }}
-      >
-        {[...Array(20)].map((_, i) => (
+      {/* Dynamic background elements - Simplified */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-blue-400 rounded-full opacity-30"
+            className="absolute w-1 h-1 bg-blue-400 rounded-full opacity-20"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${20 + i * 10}%`,
+              top: `${20 + (i % 3) * 20}%`,
             }}
             animate={{
-              scale: [1, 2, 1],
-              opacity: [0.3, 0.8, 0.3],
-              x: [0, Math.random() * 100 - 50, 0],
-              y: [0, Math.random() * 100 - 50, 0],
+              scale: [1, 1.5, 1],
+              opacity: [0.2, 0.5, 0.2],
             }}
             transition={{
-              duration: 3 + Math.random() * 4,
+              duration: 4 + i,
               repeat: Infinity,
               ease: "easeInOut",
-              delay: Math.random() * 2,
             }}
           />
         ))}
-      </motion.div>
+      </div>
 
       {/* Mouse trail effect */}
       <motion.div
-        className="fixed w-6 h-6 rounded-full bg-linear-to-r from-blue-500 to-purple-500 pointer-events-none z-50 mix-blend-difference"
+        className="fixed w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 pointer-events-none z-50 mix-blend-difference"
         style={{
-          left: mousePosition.x - 12,
-          top: mousePosition.y - 12,
+          left: Math.min(Math.max(mousePosition.x - 12, 0), windowSize.width - 24),
+          top: Math.min(Math.max(mousePosition.y - 12, 0), windowSize.height - 24),
         }}
         animate={{
           scale: [1, 1.5, 1],
@@ -95,156 +98,28 @@ const LandingPage: React.FC = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-6 z-10">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 z-10">
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            style={{ y: textY }}
           >
-            {/* Floating elements around title */}
-            <div className="relative">
-              {[...Array(6)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute text-4xl opacity-20"
-                  style={{
-                    left: `${30 + i * 20}%`,
-                    top: `${-10 + (i % 2) * 20}%`,
-                  }}
-                  animate={{
-                    y: [0, -20, 0],
-                    rotate: [0, 360],
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 4 + i,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  {['⚡', '🌟', '⭐', '✨', '💫', '🔮'][i]}
-                </motion.div>
-              ))}
-              
-              <motion.h1 
-                className="text-7xl md:text-9xl font-black mb-8 relative"
-                style={{
-                  background: 'linear-gradient(45deg, #3B82F6, #8B5CF6, #06B6D4, #10B981, #F59E0B, #EF4444)',
-                  backgroundSize: '300% 300%',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  filter: 'drop-shadow(0 0 30px rgba(59, 130, 246, 0.5))',
-                }}
-                animate={{
-                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-              >
-                <motion.span
-                  animate={{
-                    textShadow: [
-                      '0 0 20px rgba(59, 130, 246, 0.5)',
-                      '0 0 40px rgba(139, 92, 246, 0.5)',
-                      '0 0 20px rgba(59, 130, 246, 0.5)',
-                    ],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  Multi
-                </motion.span>
-                <motion.span
-                  className="relative"
-                  animate={{
-                    scale: [1, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  style={{
-                    background: 'linear-gradient(45deg, #3B82F6, #8B5CF6, #06B6D4, #10B981, #F59E0B, #EF4444)',
-                    backgroundSize: '300% 300%',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
-                  verse
-                  <motion.div
-                    className="absolute -top-4 -right-4 text-2xl"
-                    animate={{
-                      rotate: [0, 360],
-                      scale: [1, 1.3, 1],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                  >
-                    ✨
-                  </motion.div>
-                </motion.span>
-              </motion.h1>
-            </div>
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-8 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">
+              Multiversity
+            </h1>
             
             <motion.p 
-              className="text-2xl md:text-3xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed font-light"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed font-light px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 1 }}
             >
-              <motion.span
-                animate={{
-                  color: ['#E5E7EB', '#3B82F6', '#8B5CF6', '#E5E7EB'],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                Explore 10 major historical events
-              </motion.span>
-              {" "}with{" "}
-              <motion.span
-                className="font-bold bg-linear-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
-                animate={{
-                  scale: [1, 1.05, 1],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
+              Explore 10 major historical events with{" "}
+              <span className="font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 10 alternative timelines each
-              </motion.span>
-              .{" "}
-              <motion.span
-                animate={{
-                  opacity: [0.7, 1, 0.7],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                Journey through the infinite paths history could have taken.
-              </motion.span>
+              </span>
+              . Journey through the infinite paths history could have taken.
             </motion.p>
           </motion.div>
 
@@ -252,7 +127,7 @@ const LandingPage: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-16"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-16 px-4"
           >
             {[
               { icon: Clock, text: "1776 - 2025", color: "text-blue-400" },
@@ -261,7 +136,7 @@ const LandingPage: React.FC = () => {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className={`flex items-center space-x-3 ${item.color} text-lg font-medium`}
+                className={`flex items-center space-x-2 sm:space-x-3 ${item.color} text-sm sm:text-lg font-medium`}
                 whileHover={{ scale: 1.1, y: -5 }}
                 animate={{
                   y: [0, -5, 0],
@@ -297,7 +172,7 @@ const LandingPage: React.FC = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            className="w-full sm:w-auto flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
           >
             <motion.div
               whileHover={{ 
@@ -309,7 +184,7 @@ const LandingPage: React.FC = () => {
             >
               <Link
                 to="/chapters"
-                className="relative inline-flex items-center space-x-3 bg-linear-to-r from-blue-600 via-purple-600 to-blue-600 hover:from-blue-700 hover:via-purple-700 hover:to-blue-700 text-white px-10 py-5 rounded-full text-xl font-bold transition-all duration-300 shadow-2xl overflow-hidden"
+                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 hover:from-blue-700 hover:via-purple-700 hover:to-blue-700 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-full text-lg sm:text-xl font-bold transition-all duration-300 shadow-2xl overflow-hidden"
                 style={{
                   backgroundSize: '200% 200%',
                   animation: 'gradientShift 3s ease infinite',
@@ -370,12 +245,42 @@ const LandingPage: React.FC = () => {
             >
               <Link
                 to="/compare"
-                className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white border-2 border-purple-500 hover:border-purple-400 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 backdrop-blur-xs"
+                className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white border-2 border-purple-500 hover:border-purple-400 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
               >
                 <GitBranch className="w-5 h-5" />
                 <span>Compare Timelines</span>
               </Link>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Project Description */}
+      <section className="py-16 px-6 bg-slate-800/50">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl sm:text-4xl font-bold text-white mb-8"
+          >
+            What is Multiversity?
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="space-y-6 text-gray-200 text-lg leading-relaxed"
+          >
+            <p>
+              Multiversity is an <strong className="text-blue-400">interactive alternate history explorer</strong> that lets you journey through the infinite paths history could have taken. Discover how single moments in time could have changed everything.
+            </p>
+            <p>
+              From the American Revolution to the collapse of the USSR, explore <strong className="text-purple-400">10 major historical chapters</strong> with <strong className="text-green-400">10 alternative timelines each</strong>. See how different decisions, outcomes, or events could have shaped our world differently.
+            </p>
+            <p>
+              Experience <strong className="text-yellow-400">immersive storytelling</strong>, <strong className="text-pink-400">interactive timelines</strong>, and <strong className="text-cyan-400">cause-and-effect visualizations</strong> that bring alternative histories to life.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -387,12 +292,12 @@ const LandingPage: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-white text-center mb-12"
+            className="text-3xl sm:text-4xl font-bold text-white text-center mb-12"
           >
             Historical Chapters
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
             {chapters.map((chapter, index) => (
               <motion.div
                 key={chapter.id}
@@ -403,16 +308,16 @@ const LandingPage: React.FC = () => {
                 className="group"
               >
                 <Link to={`/chapter/${chapter.id}`}>
-                  <div className={`${chapter.color} p-6 rounded-lg h-48 flex flex-col justify-between text-white transition-transform group-hover:scale-105`}>
+                  <div className={`${chapter.color} p-4 sm:p-6 rounded-lg h-40 sm:h-48 flex flex-col justify-between text-white transition-transform group-hover:scale-105 shadow-lg`}>
                     <div>
-                      <h3 className="text-lg font-semibold mb-2 line-clamp-2">
+                      <h3 className="text-sm sm:text-lg font-semibold mb-2 line-clamp-2">
                         {chapter.title}
                       </h3>
-                      <p className="text-sm opacity-90 line-clamp-3">
+                      <p className="text-xs sm:text-sm opacity-90 line-clamp-3">
                         {chapter.description}
                       </p>
                     </div>
-                    <div className="text-sm opacity-75">
+                    <div className="text-xs sm:text-sm opacity-75">
                       10 timelines
                     </div>
                   </div>
@@ -424,29 +329,29 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-6 bg-dark-800">
+      <section className="py-16 px-6 bg-slate-900">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-white text-center mb-12"
+            className="text-3xl sm:text-4xl font-bold text-white text-center mb-12"
           >
             Interactive Experience
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Timeline Navigation</h3>
-              <p className="text-gray-300">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Timeline Navigation</h3>
+              <p className="text-gray-300 text-sm sm:text-base">
                 Navigate through centuries with smooth animations and detailed event exploration.
               </p>
             </motion.div>
@@ -460,8 +365,8 @@ const LandingPage: React.FC = () => {
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GitBranch className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Cause & Effect</h3>
-              <p className="text-gray-300">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Cause & Effect</h3>
+              <p className="text-gray-300 text-sm sm:text-base">
                 Visualize how small changes create massive butterfly effects across history.
               </p>
             </motion.div>
@@ -475,8 +380,8 @@ const LandingPage: React.FC = () => {
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Global Impact</h3>
-              <p className="text-gray-300">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Global Impact</h3>
+              <p className="text-gray-300 text-sm sm:text-base">
                 See how alternative histories shape the world we know today.
               </p>
             </motion.div>

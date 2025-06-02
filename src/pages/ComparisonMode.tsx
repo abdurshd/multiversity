@@ -341,7 +341,7 @@ const ComparisonMode: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-900 to-slate-800 relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-x-hidden">
       {/* Animated background canvas */}
       <canvas
         id="particle-canvas"
@@ -377,7 +377,7 @@ const ComparisonMode: React.FC = () => {
       <div className="relative z-10">
         {/* Hero Header */}
         <motion.section 
-          className="py-20 px-6 text-center"
+          className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -394,11 +394,11 @@ const ComparisonMode: React.FC = () => {
                 scale: { duration: 4, repeat: Infinity, ease: "easeInOut" }
               }}
             >
-              <GitBranch className="w-24 h-24 text-primary-500 mx-auto mb-4" />
+              <GitBranch className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-blue-500 mx-auto mb-4" />
             </motion.div>
             
             <motion.h1 
-              className="text-7xl font-bold bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6"
               animate={{
                 backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
               }}
@@ -412,7 +412,7 @@ const ComparisonMode: React.FC = () => {
             </motion.h1>
             
             <motion.p 
-              className="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
+              className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
@@ -422,14 +422,14 @@ const ComparisonMode: React.FC = () => {
             </motion.p>
 
             <motion.div 
-              className="flex justify-center space-x-4"
+              className="flex flex-col sm:flex-row justify-center items-center gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
               <motion.button
                 onClick={() => setShowSelector(true)}
-                className="bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
                 whileHover={{ 
                   scale: 1.05,
                   boxShadow: "0 0 30px rgba(59, 130, 246, 0.5)"
@@ -443,7 +443,7 @@ const ComparisonMode: React.FC = () => {
               {selectedTimelines.length > 0 && (
                 <motion.button
                   onClick={clearAll}
-                  className="bg-linear-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl"
+                  className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
                   whileHover={{ 
                     scale: 1.05,
                     boxShadow: "0 0 30px rgba(239, 68, 68, 0.5)"
@@ -470,8 +470,8 @@ const ComparisonMode: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold text-white mb-8 text-center">Selected Timelines</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">Selected Timelines</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
                 <AnimatePresence>
                   {selectedTimelines.map((timeline, index) => (
                     <motion.div
@@ -483,7 +483,7 @@ const ComparisonMode: React.FC = () => {
                       className="relative"
                     >
                       <motion.div 
-                        className="bg-linear-to-br from-dark-800 to-dark-700 rounded-2xl p-6 border-2 shadow-2xl relative overflow-hidden"
+                        className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-4 sm:p-6 border-2 shadow-2xl relative overflow-hidden"
                         style={{ borderColor: timeline.color }}
                         whileHover={{ 
                           scale: 1.05,
@@ -520,8 +520,8 @@ const ComparisonMode: React.FC = () => {
                             </div>
                           </div>
                           
-                          <h3 className="text-lg font-bold text-white mb-2">{timeline.title}</h3>
-                          <p className="text-gray-300 text-sm mb-4 line-clamp-2">{timeline.description}</p>
+                          <h3 className="text-base sm:text-lg font-bold text-white mb-2">{timeline.title}</h3>
+                          <p className="text-gray-300 text-xs sm:text-sm mb-4 line-clamp-2">{timeline.description}</p>
                           
                           <div className="flex items-center justify-between text-sm">
                             <div className="flex items-center space-x-1 text-gray-400">

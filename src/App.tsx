@@ -9,7 +9,7 @@ import ComparisonMode from './pages/ComparisonMode';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-dark-900">
+      <div className="w-full overflow-x-hidden">
         <NavigationHeader />
         <Routes>
           <Route path="/" element={<LandingPage />} />

@@ -16,6 +16,7 @@ import {
 import { Chapter, Timeline, HistoricalEvent } from '../types';
 import { getChapterById, getTimelineById } from '../data';
 import TimelineVisualization from '../components/timeline/TimelineVisualization';
+import TimelineScrubber from '../components/common/TimelineScrubber';
 
 const TimelineExplorer: React.FC = () => {
   const { chapterId, timelineId } = useParams<{ chapterId: string; timelineId: string }>();
@@ -23,6 +24,7 @@ const TimelineExplorer: React.FC = () => {
   const [timeline, setTimeline] = useState<Timeline | null>(null);
   const [currentYear, setCurrentYear] = useState<number>(1776);
   const [selectedEvent, setSelectedEvent] = useState<HistoricalEvent | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (chapterId && timelineId) {
@@ -38,9 +40,31 @@ const TimelineExplorer: React.FC = () => {
     }
   }, [chapterId, timelineId]);
 
+  // Playback functionality
+  useEffect(() => {
+    let interval: number;
+    if (isPlaying && timeline && chapter) {
+      interval = setInterval(() => {
+        setCurrentYear(prev => {
+          const next = prev + 1;
+          if (next >= chapter.endYear) {
+            setIsPlaying(false);
+            return chapter.endYear;
+          }
+          return next;
+        });
+      }, 100); // Change year every 100ms for smooth animation
+    }
+    return () => clearInterval(interval);
+  }, [isPlaying, timeline, chapter]);
+
+  const handlePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   if (!chapter || !timeline) {
     return (
-      <div className="min-h-screen bg-dark-900 flex items-center justify-center">
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Timeline Not Found</h2>
           <p className="text-gray-300 mb-6">This timeline is not yet available.</p>
@@ -59,9 +83,9 @@ const TimelineExplorer: React.FC = () => {
   const futureEvents = timeline.keyEvents.filter(event => event.year > currentYear);
 
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-slate-900">
       {/* Header */}
-      <section className="bg-dark-800 border-b border-dark-700 py-6">
+      <section className="bg-slate-800 border-b border-slate-700 py-6">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -113,6 +137,32 @@ const TimelineExplorer: React.FC = () => {
               </div>
               <p className="text-white opacity-90">{timeline.divergenceDescription}</p>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Timeline Scrubber */}
+      <section className="py-8 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <TimelineScrubber
+              startYear={chapter.startYear}
+              endYear={chapter.endYear}
+              currentYear={currentYear}
+              onYearChange={setCurrentYear}
+              majorEvents={timeline.keyEvents.map(event => ({
+                year: event.year,
+                title: event.title,
+                type: event.type
+              }))}
+              isPlaying={isPlaying}
+              onPlayPause={handlePlayPause}
+              playbackSpeed={1}
+            />
           </motion.div>
         </div>
       </section>
