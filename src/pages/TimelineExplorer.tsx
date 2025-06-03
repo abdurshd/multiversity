@@ -5,7 +5,6 @@ import {
   ArrowLeft, 
   Calendar, 
   MapPin, 
-  
   TrendingUp, 
   GitBranch, 
   Clock,
@@ -15,16 +14,13 @@ import {
 } from 'lucide-react';
 import { Chapter, Timeline, HistoricalEvent } from '../types';
 import { getChapterById, getTimelineById } from '../data';
-import TimelineVisualization from '../components/timeline/TimelineVisualization';
-import TimelineScrubber from '../components/common/TimelineScrubber';
+import AnimatedTimeline from '../components/timeline/AnimatedTimeline';
 
 const TimelineExplorer: React.FC = () => {
   const { chapterId, timelineId } = useParams<{ chapterId: string; timelineId: string }>();
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [timeline, setTimeline] = useState<Timeline | null>(null);
-  const [currentYear, setCurrentYear] = useState<number>(1776);
   const [selectedEvent, setSelectedEvent] = useState<HistoricalEvent | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (chapterId && timelineId) {
@@ -33,34 +29,8 @@ const TimelineExplorer: React.FC = () => {
       
       setChapter(foundChapter || null);
       setTimeline(foundTimeline || null);
-      
-      if (foundChapter) {
-        setCurrentYear(foundChapter.startYear);
-      }
     }
   }, [chapterId, timelineId]);
-
-  // Playback functionality
-  useEffect(() => {
-    let interval: number;
-    if (isPlaying && timeline && chapter) {
-      interval = setInterval(() => {
-        setCurrentYear(prev => {
-          const next = prev + 1;
-          if (next >= chapter.endYear) {
-            setIsPlaying(false);
-            return chapter.endYear;
-          }
-          return next;
-        });
-      }, 100); // Change year every 100ms for smooth animation
-    }
-    return () => clearInterval(interval);
-  }, [isPlaying, timeline, chapter]);
-
-  const handlePlayPause = () => {
-    setIsPlaying(!isPlaying);
-  };
 
   if (!chapter || !timeline) {
     return (
@@ -70,7 +40,7 @@ const TimelineExplorer: React.FC = () => {
           <p className="text-gray-300 mb-6">This timeline is not yet available.</p>
           <Link
             to="/chapters"
-            className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
           >
             Back to Chapters
           </Link>
@@ -79,8 +49,6 @@ const TimelineExplorer: React.FC = () => {
     );
   }
 
-  const currentEvents = timeline.keyEvents.filter(event => event.year <= currentYear);
-  const futureEvents = timeline.keyEvents.filter(event => event.year > currentYear);
 
   return (
     <div className="min-h-screen bg-slate-900">
@@ -107,7 +75,7 @@ const TimelineExplorer: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="text-right">
                 <div className="text-sm text-gray-400">Probability</div>
-                <div className="text-lg font-bold text-primary-400">{timeline.probability}%</div>
+                <div className="text-lg font-bold text-blue-400">{timeline.probability}%</div>
               </div>
               <div 
                 className="w-4 h-4 rounded-full"
@@ -125,7 +93,7 @@ const TimelineExplorer: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-dark-800 rounded-lg p-6"
+            className="bg-slate-700 rounded-lg p-6"
           >
             <h2 className="text-xl font-bold text-white mb-4">Timeline Overview</h2>
             <p className="text-gray-300 mb-4">{timeline.description}</p>
@@ -141,55 +109,29 @@ const TimelineExplorer: React.FC = () => {
         </div>
       </section>
 
-      {/* Timeline Scrubber */}
-      <section className="py-8 px-6">
+      {/* Enhanced Timeline */}
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <TimelineScrubber
-              startYear={chapter.startYear}
-              endYear={chapter.endYear}
-              currentYear={currentYear}
-              onYearChange={setCurrentYear}
-              majorEvents={timeline.keyEvents.map(event => ({
-                year: event.year,
-                title: event.title,
-                type: event.type
-              }))}
-              isPlaying={isPlaying}
-              onPlayPause={handlePlayPause}
-              playbackSpeed={1}
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Interactive Timeline */}
-      <section className="py-8 px-6">
-        <div className="max-w-full mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <TimelineVisualization
+            <AnimatedTimeline
               timeline={timeline}
               startYear={chapter.startYear}
               endYear={chapter.endYear}
-              width={Math.min(1200, window.innerWidth - 100)}
-              height={500}
               onEventClick={setSelectedEvent}
-              onYearChange={setCurrentYear}
+              showOnLoad={true}
+              animationDelay={150}
+              compactMode={false}
             />
           </motion.div>
         </div>
       </section>
 
-      {/* Current Status */}
-      <section className="py-8 px-6 bg-dark-800">
+      {/* Key Events Overview */}
+      <section className="py-8 px-6 bg-slate-800">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,69 +139,44 @@ const TimelineExplorer: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl font-bold text-white mb-6 text-center">
-              World Status in {currentYear}
+              Timeline Overview
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Events that have occurred */}
-              <div className="bg-dark-700 rounded-lg p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Key Events */}
+              <div className="bg-slate-700 rounded-lg p-6">
                 <div className="flex items-center space-x-2 mb-4">
-                  <Clock className="w-5 h-5 text-green-500" />
-                  <h3 className="text-lg font-semibold text-white">Events Completed</h3>
+                  <Clock className="w-5 h-5 text-blue-500" />
+                  <h3 className="text-lg font-semibold text-white">Major Events</h3>
                 </div>
                 <div className="space-y-3">
-                  {currentEvents.slice(-3).map((event) => (
+                  {timeline.keyEvents.slice(0, 4).map((event) => (
                     <div 
                       key={event.id}
-                      className="bg-dark-800 rounded-lg p-3 cursor-pointer hover:bg-dark-600 transition-colors"
+                      className="bg-slate-600 rounded-lg p-3 cursor-pointer hover:bg-slate-500 transition-colors"
                       onClick={() => setSelectedEvent(event)}
                     >
                       <div className="text-sm font-semibold text-white">{event.title}</div>
                       <div className="text-xs text-gray-400">{event.year}</div>
                     </div>
                   ))}
-                  {currentEvents.length > 3 && (
+                  {timeline.keyEvents.length > 4 && (
                     <div className="text-sm text-gray-400 text-center">
-                      +{currentEvents.length - 3} more events
+                      +{timeline.keyEvents.length - 4} more events
                     </div>
                   )}
                 </div>
               </div>
 
-              {/* Upcoming events */}
-              <div className="bg-dark-700 rounded-lg p-6">
-                <div className="flex items-center space-x-2 mb-4">
-                  <Calendar className="w-5 h-5 text-blue-500" />
-                  <h3 className="text-lg font-semibold text-white">Upcoming Events</h3>
-                </div>
-                <div className="space-y-3">
-                  {futureEvents.slice(0, 3).map((event) => (
-                    <div 
-                      key={event.id}
-                      className="bg-dark-800 rounded-lg p-3 cursor-pointer hover:bg-dark-600 transition-colors opacity-70"
-                      onClick={() => setSelectedEvent(event)}
-                    >
-                      <div className="text-sm font-semibold text-white">{event.title}</div>
-                      <div className="text-xs text-gray-400">{event.year}</div>
-                    </div>
-                  ))}
-                  {futureEvents.length > 3 && (
-                    <div className="text-sm text-gray-400 text-center">
-                      +{futureEvents.length - 3} more events
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* Consequences so far */}
-              <div className="bg-dark-700 rounded-lg p-6">
+              {/* Consequences */}
+              <div className="bg-slate-700 rounded-lg p-6">
                 <div className="flex items-center space-x-2 mb-4">
                   <TrendingUp className="w-5 h-5 text-purple-500" />
                   <h3 className="text-lg font-semibold text-white">Key Consequences</h3>
                 </div>
                 <div className="space-y-3">
-                  {timeline.consequences.slice(0, 3).map((consequence) => (
-                    <div key={consequence.id} className="bg-dark-800 rounded-lg p-3">
+                  {timeline.consequences.slice(0, 4).map((consequence) => (
+                    <div key={consequence.id} className="bg-slate-600 rounded-lg p-3">
                       <div className="text-xs text-purple-400 mb-1">{consequence.category}</div>
                       <div className="text-sm text-white">{consequence.shortTerm}</div>
                     </div>
@@ -310,7 +227,7 @@ const TimelineExplorer: React.FC = () => {
       </section>
 
       {/* Present Day Status */}
-      <section className="py-8 px-6 bg-dark-800">
+      <section className="py-8 px-6 bg-slate-800">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -319,10 +236,10 @@ const TimelineExplorer: React.FC = () => {
             className="text-center"
           >
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <Globe className="w-8 h-8 text-primary-500" />
+              <Globe className="w-8 h-8 text-blue-500" />
               <h2 className="text-3xl font-bold text-white">Present Day (2025)</h2>
             </div>
-            <div className="bg-dark-700 rounded-lg p-8">
+            <div className="bg-slate-700 rounded-lg p-8">
               <p className="text-lg text-gray-300 leading-relaxed">
                 {timeline.presentDayStatus}
               </p>
@@ -343,7 +260,7 @@ const TimelineExplorer: React.FC = () => {
             </Link>
             <Link
               to="/compare"
-              className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-colors text-center flex items-center justify-center space-x-2"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors text-center flex items-center justify-center space-x-2"
             >
               <GitBranch className="w-4 h-4" />
               <span>Compare Timelines</span>
@@ -372,7 +289,7 @@ const TimelineExplorer: React.FC = () => {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
-            className="bg-dark-800 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto"
+            className="bg-slate-800 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6">
@@ -400,13 +317,13 @@ const TimelineExplorer: React.FC = () => {
                 
                 <p className="text-gray-300">{selectedEvent.description}</p>
                 
-                <div className="bg-dark-700 rounded-lg p-4">
+                <div className="bg-slate-700 rounded-lg p-4">
                   <h4 className="text-sm font-semibold text-white mb-2">Historical Impact</h4>
                   <p className="text-sm text-gray-300">{selectedEvent.impact}</p>
                 </div>
                 
                 {selectedEvent.relatedFigures.length > 0 && (
-                  <div className="bg-dark-700 rounded-lg p-4">
+                  <div className="bg-slate-700 rounded-lg p-4">
                     <h4 className="text-sm font-semibold text-white mb-2">Related Figures</h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedEvent.relatedFigures.map(figureId => {
@@ -414,7 +331,7 @@ const TimelineExplorer: React.FC = () => {
                         return figure ? (
                           <span 
                             key={figureId}
-                            className="bg-primary-600 text-white px-2 py-1 rounded-sm text-xs"
+                            className="bg-blue-600 text-white px-2 py-1 rounded-sm text-xs"
                           >
                             {figure.name}
                           </span>
@@ -427,7 +344,7 @@ const TimelineExplorer: React.FC = () => {
                 <div className="flex justify-end">
                   <button
                     onClick={() => setSelectedEvent(null)}
-                    className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors"
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
                   >
                     Close
                   </button>
