@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  ArrowLeft, 
-  Calendar, 
-  MapPin, 
-  TrendingUp, 
-  GitBranch, 
+import {
+  ArrowLeft,
+  Calendar,
+  MapPin,
+  TrendingUp,
+  GitBranch,
   Clock,
   Zap,
   Globe,
@@ -15,6 +15,7 @@ import {
 import { Chapter, Timeline, HistoricalEvent } from '../types';
 import { getChapterById, getTimelineById } from '../data';
 import AnimatedTimeline from '../components/timeline/AnimatedTimeline';
+import { Breadcrumb } from '../components/common/Breadcrumb';
 
 const TimelineExplorer: React.FC = () => {
   const { chapterId, timelineId } = useParams<{ chapterId: string; timelineId: string }>();
@@ -55,6 +56,13 @@ const TimelineExplorer: React.FC = () => {
       {/* Header */}
       <section className="bg-slate-800 border-b border-slate-700 py-6">
         <div className="max-w-7xl mx-auto px-6">
+          <Breadcrumb
+            items={[
+              { label: 'Chapters', path: '/chapters' },
+              { label: chapter.title, path: `/chapter/${chapterId}` },
+              { label: timeline.title }
+            ]}
+          />
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link

@@ -1,35 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router';
+import React, { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock, Globe, BookOpen, GitBranch, Sparkles } from 'lucide-react';
-import ParticleSystem from '../components/common/ParticleSystem';
-import SoundEffects from '../components/common/SoundEffects';
 
 const LandingPage: React.FC = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    const handleResize = () => {
-      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-    };
-
-    // Set initial window size
-    handleResize();
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const chapters = [
+  const chapters = useMemo(() => [
     { id: 'us-independence', title: 'US Independence (1776)', description: 'Revolutionary War alternatives', color: 'bg-red-600', icon: '🇺🇸', emoji: '⚔️' },
     { id: 'french-revolution', title: 'French Revolution (1789)', description: 'Paths not taken in France', color: 'bg-blue-600', icon: '🇫🇷', emoji: '🗿' },
     { id: 'lincoln-era', title: 'Lincoln Era (1860s)', description: 'Civil War alternate outcomes', color: 'bg-green-600', icon: '⚖️', emoji: '🎩' },
@@ -40,217 +15,76 @@ const LandingPage: React.FC = () => {
     { id: 'world-war-2', title: 'World War II (1939-1945)', description: 'WWII alternative outcomes', color: 'bg-orange-600', icon: '🌍', emoji: '✈️' },
     { id: 'cold-war', title: 'Cold War (1947-1991)', description: 'Superpower rivalry alternatives', color: 'bg-indigo-600', icon: '❄️', emoji: '🚀' },
     { id: 'ussr-collapse', title: 'USSR Collapse (1991)', description: 'Soviet Union\'s different endings', color: 'bg-pink-600', icon: '🔨', emoji: '🧱' },
-  ];
+  ], []);
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-x-hidden w-full">
-      {/* Sound Effects System */}
-      <SoundEffects enabled={true} />
-      
-      {/* Subtle Particle System Background */}
-      <ParticleSystem 
-        particleCount={30}
-        colors={['#64748B', '#94A3B8', '#CBD5E1']}
-        speed={0.2}
-        size={2}
-        interactive={false}
-        className="opacity-30"
-      />
-
-      {/* Dynamic background elements - Simplified */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-blue-400 rounded-full opacity-20"
-            style={{
-              left: `${20 + i * 10}%`,
-              top: `${20 + (i % 3) * 20}%`,
-            }}
-            animate={{
-              scale: [1, 1.5, 1],
-              opacity: [0.2, 0.5, 0.2],
-            }}
-            transition={{
-              duration: 4 + i,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Mouse trail effect */}
-      <motion.div
-        className="fixed w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 pointer-events-none z-50 mix-blend-difference"
-        style={{
-          left: Math.min(Math.max(mousePosition.x - 12, 0), windowSize.width - 24),
-          top: Math.min(Math.max(mousePosition.y - 12, 0), windowSize.height - 24),
-        }}
-        animate={{
-          scale: [1, 1.5, 1],
-        }}
-        transition={{
-          duration: 0.3,
-          ease: "easeOut",
-        }}
-      />
+    <div className="min-h-screen bg-slate-900 relative overflow-x-hidden w-full">
 
       {/* Hero Section */}
       <section className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 z-10">
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 50, scale: 0.8 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-8 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-white">
               Multiversity
             </h1>
-            
-            <motion.p 
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed font-light px-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1 }}
-            >
+
+            <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto px-4">
               Explore 10 major historical events with{" "}
-              <span className="font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+              <span className="font-semibold text-blue-400">
                 10 alternative timelines each
               </span>
               . Journey through the infinite paths history could have taken.
-            </motion.p>
+            </p>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-16 px-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12 px-4"
           >
             {[
               { icon: Clock, text: "1776 - 2025", color: "text-blue-400" },
               { icon: Globe, text: "Global Impact", color: "text-green-400" },
               { icon: BookOpen, text: "100 Timelines", color: "text-purple-400" },
             ].map((item, index) => (
-              <motion.div
-                key={index}
-                className={`flex items-center space-x-2 sm:space-x-3 ${item.color} text-sm sm:text-lg font-medium`}
-                whileHover={{ scale: 1.1, y: -5 }}
-                animate={{
-                  y: [0, -5, 0],
-                }}
-                transition={{
-                  y: {
-                    duration: 2 + index * 0.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  },
-                  hover: { duration: 0.3 },
-                }}
+              <div
+                key={`stat-${index}`}
+                className={`flex items-center space-x-2 ${item.color} text-lg font-medium`}
               >
-                <motion.div
-                  animate={{
-                    rotate: [0, 360],
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 4 + index,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <item.icon className="w-6 h-6" />
-                </motion.div>
-                <span className="font-semibold">{item.text}</span>
-              </motion.div>
+                <item.icon className="w-5 h-5" />
+                <span>{item.text}</span>
+              </div>
             ))}
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 1.5 }}
-            className="w-full sm:w-auto flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <motion.div
-              whileHover={{ 
-                scale: 1.1,
-                boxShadow: "0 0 50px rgba(59, 130, 246, 0.5)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="relative group"
+            <Link
+              to="/chapters"
+              className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
             >
-              <Link
-                to="/chapters"
-                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 hover:from-blue-700 hover:via-purple-700 hover:to-blue-700 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-full text-lg sm:text-xl font-bold transition-all duration-300 shadow-2xl overflow-hidden"
-                style={{
-                  backgroundSize: '200% 200%',
-                  animation: 'gradientShift 3s ease infinite',
-                }}
-              >
-                <motion.div
-                  animate={{
-                    rotate: [0, 360],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                >
-                  <Sparkles className="w-6 h-6" />
-                </motion.div>
-                <span>Begin Exploration</span>
-                <motion.div
-                  animate={{
-                    x: [0, 5, 0],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <ArrowRight className="w-6 h-6" />
-                </motion.div>
-                
-                {/* Animated background overlay */}
-                <motion.div
-                  className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent opacity-20"
-                  animate={{
-                    x: ['-100%', '200%'],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  style={{
-                    width: '50%',
-                    height: '100%',
-                    transform: 'skewX(-20deg)',
-                  }}
-                />
-              </Link>
-            </motion.div>
+              <Sparkles className="w-5 h-5" />
+              <span>Begin Exploration</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
 
-            <motion.div
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: "0 0 30px rgba(139, 92, 246, 0.3)",
-              }}
-              whileTap={{ scale: 0.95 }}
+            <Link
+              to="/compare"
+              className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white border border-slate-600 px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
             >
-              <Link
-                to="/compare"
-                className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white border-2 border-purple-500 hover:border-purple-400 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 backdrop-blur-sm"
-              >
-                <GitBranch className="w-5 h-5" />
-                <span>Compare Timelines</span>
-              </Link>
-            </motion.div>
+              <GitBranch className="w-5 h-5" />
+              <span>Compare Timelines</span>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -7,6 +7,7 @@ import { getChapterById } from '../data';
 import AnimatedCharacter from '../components/common/AnimatedCharacter';
 import InteractiveStory from '../components/common/InteractiveStory';
 import ParticleSystem from '../components/common/ParticleSystem';
+import { Breadcrumb } from '../components/common/Breadcrumb';
 
 const ChapterDetail: React.FC = () => {
   const { chapterId } = useParams<{ chapterId: string }>();
@@ -199,6 +200,12 @@ const ChapterDetail: React.FC = () => {
           className="opacity-20"
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <Breadcrumb
+            items={[
+              { label: 'Chapters', path: '/chapters' },
+              { label: chapter.title }
+            ]}
+          />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
