@@ -298,7 +298,7 @@ const ChaptersPage: React.FC = () => {
                         <div className="flex flex-wrap gap-2">
                           {chapter.keyEvents.slice(0, 3).map((event, i) => (
                             <span
-                              key={i}
+                              key={`${chapter.id}-event-${i}-${event.substring(0, 10)}`}
                               className="bg-slate-700 text-gray-300 px-2 py-1 rounded-sm text-xs sm:text-sm"
                             >
                               {event}
