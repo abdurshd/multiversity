@@ -407,15 +407,7 @@ const ComparisonMode: React.FC = () => {
             </motion.div>
             
             <motion.h1 
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6"
-              animate={{
-                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "linear"
-              }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-200 mb-6"
             >
               Timeline Comparison
             </motion.h1>
@@ -438,7 +430,7 @@ const ComparisonMode: React.FC = () => {
             >
               <motion.button
                 onClick={() => setShowSelector(true)}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
                 whileHover={{ 
                   scale: 1.05,
                   boxShadow: "0 0 30px rgba(59, 130, 246, 0.5)"
@@ -452,7 +444,7 @@ const ComparisonMode: React.FC = () => {
               {selectedTimelines.length > 0 && (
                 <motion.button
                   onClick={clearAll}
-                  className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
+                  className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
                   whileHover={{ 
                     scale: 1.05,
                     boxShadow: "0 0 30px rgba(239, 68, 68, 0.5)"
@@ -613,7 +605,7 @@ const ComparisonMode: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Probability comparison */}
                 <motion.div 
-                  className="bg-linear-to-br from-green-600 to-green-800 rounded-2xl p-6 text-white"
+                  className="bg-green-700 rounded-2xl p-6 text-white"
                   whileHover={{ scale: 1.02, rotate: 1 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -629,7 +621,7 @@ const ComparisonMode: React.FC = () => {
 
                 {/* Divergence comparison */}
                 <motion.div 
-                  className="bg-linear-to-br from-yellow-600 to-orange-600 rounded-2xl p-6 text-white"
+                  className="bg-yellow-600 rounded-2xl p-6 text-white"
                   whileHover={{ scale: 1.02, rotate: -1 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -645,7 +637,7 @@ const ComparisonMode: React.FC = () => {
 
                 {/* Impact comparison */}
                 <motion.div 
-                  className="bg-linear-to-br from-purple-600 to-pink-600 rounded-2xl p-6 text-white"
+                  className="bg-purple-700 rounded-2xl p-6 text-white"
                   whileHover={{ scale: 1.02, rotate: 0.5 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -692,7 +684,7 @@ const ComparisonMode: React.FC = () => {
               </p>
               <motion.button
                 onClick={() => setShowSelector(true)}
-                className="bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-full transition-all duration-300 flex items-center space-x-3 mx-auto shadow-2xl"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full transition-all duration-300 flex items-center space-x-3 mx-auto shadow-2xl"
                 whileHover={{ 
                   scale: 1.1,
                   boxShadow: "0 0 50px rgba(59, 130, 246, 0.5)"

@@ -50,12 +50,18 @@ const TimelineExplorer: React.FC = () => {
     );
   }
 
+  const timelineStats = [
+    { label: 'Divergence Year', value: timeline.divergenceYear, icon: Clock },
+    { label: 'Probability', value: `${timeline.probability}%`, icon: TrendingUp },
+    { label: 'Key Events', value: timeline.keyEvents.length, icon: GitBranch }
+  ];
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-slate-950">
       {/* Header */}
-      <section className="bg-slate-800 border-b border-slate-700 py-6">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black border-b border-white/10 py-10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.35),_transparent_60%)]" />
+        <div className="relative max-w-7xl mx-auto px-6 space-y-8">
           <Breadcrumb
             items={[
               { label: 'Chapters', path: '/chapters' },
@@ -63,7 +69,7 @@ const TimelineExplorer: React.FC = () => {
               { label: timeline.title }
             ]}
           />
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="flex items-center space-x-4">
               <Link
                 to={`/chapter/${chapterId}`}
@@ -76,14 +82,14 @@ const TimelineExplorer: React.FC = () => {
                   <span className="text-2xl">{timeline.icon}</span>
                   <h1 className="text-2xl font-bold text-white">{timeline.title}</h1>
                 </div>
-                <p className="text-gray-400">{chapter.title} • {chapter.period}</p>
+                <p className="text-gray-300">{chapter.title} • {chapter.period}</p>
               </div>
             </div>
             
             <div className="flex items-center space-x-4">
               <div className="text-right">
                 <div className="text-sm text-gray-400">Probability</div>
-                <div className="text-lg font-bold text-blue-400">{timeline.probability}%</div>
+                <div className="text-lg font-bold text-blue-300">{timeline.probability}%</div>
               </div>
               <div 
                 className="w-4 h-4 rounded-full"
@@ -91,7 +97,21 @@ const TimelineExplorer: React.FC = () => {
               ></div>
             </div>
           </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {timelineStats.map((stat) => (
+              <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 flex items-center space-x-4">
+                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                  <stat.icon className="w-5 h-5 text-blue-200" />
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-[0.4em] text-blue-200">{stat.label}</p>
+                  <p className="text-lg font-semibold text-white">{stat.value}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+        <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
       </section>
 
       {/* Timeline Description */}
@@ -101,12 +121,12 @@ const TimelineExplorer: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-slate-700 rounded-lg p-6"
+            className="rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl p-8 shadow-[0_20px_80px_rgba(15,23,42,0.6)]"
           >
             <h2 className="text-xl font-bold text-white mb-4">Timeline Overview</h2>
             <p className="text-gray-300 mb-4">{timeline.description}</p>
             
-            <div className="bg-linear-to-r from-yellow-600 to-orange-600 rounded-lg p-4 mb-4">
+            <div className="bg-yellow-500 rounded-2xl p-5 mb-4">
               <div className="flex items-center space-x-2 mb-2">
                 <Zap className="w-5 h-5 text-white" />
                 <h3 className="text-lg font-semibold text-white">Divergence Point ({timeline.divergenceYear})</h3>
@@ -139,7 +159,7 @@ const TimelineExplorer: React.FC = () => {
       </section>
 
       {/* Key Events Overview */}
-      <section className="py-8 px-6 bg-slate-800">
+      <section className="py-8 px-6 bg-slate-950/70">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,7 +172,7 @@ const TimelineExplorer: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Key Events */}
-              <div className="bg-slate-700 rounded-lg p-6">
+              <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
                 <div className="flex items-center space-x-2 mb-4">
                   <Clock className="w-5 h-5 text-blue-500" />
                   <h3 className="text-lg font-semibold text-white">Major Events</h3>
@@ -161,7 +181,7 @@ const TimelineExplorer: React.FC = () => {
                   {timeline.keyEvents.slice(0, 4).map((event) => (
                     <div 
                       key={event.id}
-                      className="bg-slate-600 rounded-lg p-3 cursor-pointer hover:bg-slate-500 transition-colors"
+                      className="rounded-xl border border-white/10 bg-slate-900/50 p-4 cursor-pointer hover:border-blue-500/50 transition"
                       onClick={() => setSelectedEvent(event)}
                     >
                       <div className="text-sm font-semibold text-white">{event.title}</div>
@@ -177,15 +197,15 @@ const TimelineExplorer: React.FC = () => {
               </div>
 
               {/* Consequences */}
-              <div className="bg-slate-700 rounded-lg p-6">
+              <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
                 <div className="flex items-center space-x-2 mb-4">
                   <TrendingUp className="w-5 h-5 text-purple-500" />
                   <h3 className="text-lg font-semibold text-white">Key Consequences</h3>
                 </div>
                 <div className="space-y-3">
                   {timeline.consequences.slice(0, 4).map((consequence) => (
-                    <div key={consequence.id} className="bg-slate-600 rounded-lg p-3">
-                      <div className="text-xs text-purple-400 mb-1">{consequence.category}</div>
+                    <div key={consequence.id} className="rounded-xl border border-white/10 bg-slate-900/50 p-4">
+                      <div className="text-xs text-purple-400 mb-1 uppercase tracking-wide">{consequence.category}</div>
                       <div className="text-sm text-white">{consequence.shortTerm}</div>
                     </div>
                   ))}
@@ -212,7 +232,7 @@ const TimelineExplorer: React.FC = () => {
                   initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-linear-to-r from-purple-600 to-pink-600 rounded-lg p-6"
+                  className="rounded-2xl border border-white/10 bg-purple-700/70 p-6 shadow-lg"
                 >
                   <div className="flex items-center space-x-2 mb-3">
                     <GitBranch className="w-5 h-5 text-white" />
@@ -247,7 +267,7 @@ const TimelineExplorer: React.FC = () => {
               <Globe className="w-8 h-8 text-blue-500" />
               <h2 className="text-3xl font-bold text-white">Present Day (2025)</h2>
             </div>
-            <div className="bg-slate-700 rounded-lg p-8">
+            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
               <p className="text-lg text-gray-300 leading-relaxed">
                 {timeline.presentDayStatus}
               </p>
@@ -297,7 +317,7 @@ const TimelineExplorer: React.FC = () => {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
-            className="bg-slate-800 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto"
+            className="bg-slate-900/95 border border-white/10 rounded-3xl max-w-xl w-full max-h-[80vh] overflow-y-auto backdrop-blur-xl shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6">
@@ -325,13 +345,13 @@ const TimelineExplorer: React.FC = () => {
                 
                 <p className="text-gray-300">{selectedEvent.description}</p>
                 
-                <div className="bg-slate-700 rounded-lg p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                   <h4 className="text-sm font-semibold text-white mb-2">Historical Impact</h4>
                   <p className="text-sm text-gray-300">{selectedEvent.impact}</p>
                 </div>
                 
                 {selectedEvent.relatedFigures.length > 0 && (
-                  <div className="bg-slate-700 rounded-lg p-4">
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <h4 className="text-sm font-semibold text-white mb-2">Related Figures</h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedEvent.relatedFigures.map(figureId => {

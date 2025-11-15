@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, MapPin, Users, GitBranch, Search, Filter, X, Clock } from 'lucide-react';
+import { Calendar, MapPin, Users, GitBranch, Search, X } from 'lucide-react';
 
 interface ChapterSummary {
   id: string;
@@ -10,7 +10,7 @@ interface ChapterSummary {
   description: string;
   keyEvents: string[];
   alternativeCount: number;
-  color: string;
+  cardClass: string;
   image: string;
 }
 
@@ -22,7 +22,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'The American Revolution and its alternative outcomes',
     keyEvents: ['Declaration of Independence', 'Revolutionary War', 'Constitutional Convention'],
     alternativeCount: 10,
-    color: 'from-red-600 to-red-800',
+    cardClass: 'bg-red-700',
     image: '/images/independence.jpg'
   },
   {
@@ -32,7 +32,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'The fall of the monarchy and paths not taken',
     keyEvents: ['Storming of Bastille', 'Reign of Terror', 'Rise of Napoleon'],
     alternativeCount: 10,
-    color: 'from-blue-600 to-blue-800',
+    cardClass: 'bg-blue-700',
     image: '/images/french-revolution.jpg'
   },
   {
@@ -42,7 +42,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'Civil War, slavery, and reconstruction alternatives',
     keyEvents: ['Lincoln Election', 'Civil War', 'Emancipation Proclamation'],
     alternativeCount: 10,
-    color: 'from-green-600 to-green-800',
+    cardClass: 'bg-green-700',
     image: '/images/lincoln.jpg'
   },
   {
@@ -52,7 +52,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'Tsarist Russia and Central Asian expansion',
     keyEvents: ['Peter the Great', 'Catherine II', 'Crimean War'],
     alternativeCount: 10,
-    color: 'from-purple-600 to-purple-800',
+    cardClass: 'bg-purple-700',
     image: '/images/russian-empire.jpg'
   },
   {
@@ -62,7 +62,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'Bolshevik victory and Soviet state formation',
     keyEvents: ['October Revolution', 'Civil War', 'War Communism'],
     alternativeCount: 10,
-    color: 'from-red-700 to-red-900',
+    cardClass: 'bg-red-800',
     image: '/images/lenin.jpg'
   },
   {
@@ -72,7 +72,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'Nazi Germany and alternative paths of WWII',
     keyEvents: ['Beer Hall Putsch', 'Rise to Power', 'World War II'],
     alternativeCount: 10,
-    color: 'from-gray-700 to-gray-900',
+    cardClass: 'bg-gray-700',
     image: '/images/hitler.jpg'
   },
   {
@@ -82,7 +82,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'The Great War and its alternative outcomes',
     keyEvents: ['Assassination of Archduke', 'Trench Warfare', 'Treaty of Versailles'],
     alternativeCount: 10,
-    color: 'from-yellow-700 to-yellow-900',
+    cardClass: 'bg-yellow-700',
     image: '/images/wwi.jpg'
   },
   {
@@ -92,7 +92,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'Global conflict with dramatically different outcomes',
     keyEvents: ['Invasion of Poland', 'Pearl Harbor', 'D-Day'],
     alternativeCount: 10,
-    color: 'from-orange-600 to-orange-800',
+    cardClass: 'bg-orange-700',
     image: '/images/wwii.jpg'
   },
   {
@@ -102,7 +102,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'Superpower rivalry and nuclear standoff alternatives',
     keyEvents: ['Iron Curtain', 'Cuban Missile Crisis', 'Berlin Wall'],
     alternativeCount: 10,
-    color: 'from-indigo-600 to-indigo-800',
+    cardClass: 'bg-indigo-700',
     image: '/images/cold-war.jpg'
   },
   {
@@ -112,7 +112,7 @@ const CHAPTERS: ChapterSummary[] = [
     description: 'End of Soviet Union and alternative dissolutions',
     keyEvents: ['Gorbachev Reforms', 'August Coup', 'Independence Declarations'],
     alternativeCount: 10,
-    color: 'from-pink-600 to-pink-800',
+    cardClass: 'bg-pink-700',
     image: '/images/ussr-collapse.jpg'
   },
 ];
@@ -120,7 +120,6 @@ const CHAPTERS: ChapterSummary[] = [
 const ChaptersPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState<string>('all');
-  const [showFilters, setShowFilters] = useState(false);
 
   // Extract unique periods for filtering
   const periods = useMemo(() => {
@@ -159,15 +158,26 @@ const ChaptersPage: React.FC = () => {
     });
   }, [searchQuery, selectedPeriod]);
 
+  const chapterStats = useMemo(() => {
+    const alternativeTotal = CHAPTERS.reduce((total, chapter) => total + chapter.alternativeCount, 0);
+    const keyEventTotal = CHAPTERS.reduce((total, chapter) => total + chapter.keyEvents.length, 0);
+    return [
+      { label: 'Chapters', value: CHAPTERS.length },
+      { label: 'Alt. Timelines', value: alternativeTotal },
+      { label: 'Key Events Logged', value: keyEventTotal }
+    ];
+  }, []);
+
   const clearFilters = () => {
     setSearchQuery('');
     setSelectedPeriod('all');
-    setShowFilters(false);
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <div className="min-h-screen bg-slate-950 py-10 relative">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.2),_transparent_60%)]" />
+      <div className="absolute inset-y-0 right-0 w-1/3 bg-blue-950/30 pointer-events-none" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -180,94 +190,66 @@ const ChaptersPage: React.FC = () => {
             showing how different choices could have shaped our world.
           </p>
 
-          {/* Search and Filter Section */}
-          <div className="max-w-2xl mx-auto space-y-4">
-            {/* Search Bar */}
+          <div className="max-w-4xl mx-auto space-y-5 bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-[0_20px_80px_rgba(15,23,42,0.5)]">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="text"
-                placeholder="Search chapters, events, or descriptions..."
+                placeholder="Search chapters, key events, or divergence points..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full bg-slate-900/60 border border-white/10 rounded-2xl pl-12 pr-12 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+                  aria-label="Clear search"
                 >
                   <X className="w-5 h-5" />
                 </button>
               )}
             </div>
 
-            {/* Filter Toggle and Options */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button
-                onClick={() => setShowFilters(!showFilters)}
-                className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
-              >
-                <Filter className="w-4 h-4" />
-                <span>Filters</span>
-                {(searchQuery || selectedPeriod !== 'all') && (
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                )}
-              </button>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {periods.map(period => (
+                <button
+                  key={period}
+                  onClick={() => setSelectedPeriod(period)}
+                  className={`px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-colors ${
+                    selectedPeriod === period
+                      ? 'bg-blue-600 text-white shadow-lg'
+                      : 'bg-slate-900/60 text-slate-200 hover:bg-slate-800'
+                  }`}
+                >
+                  {period === 'all' ? 'All Periods' : period}
+                </button>
+              ))}
+            </div>
 
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-sm text-slate-300">
+              <span>Showing {filteredChapters.length} of {CHAPTERS.length} chapters</span>
               {(searchQuery || selectedPeriod !== 'all') && (
                 <button
                   onClick={clearFilters}
-                  className="flex items-center space-x-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors text-sm"
+                  className="inline-flex items-center gap-2 text-blue-300 hover:text-white transition"
                 >
                   <X className="w-4 h-4" />
-                  <span>Clear All</span>
+                  Clear filters
                 </button>
               )}
-
-              <div className="text-sm text-gray-400">
-                Showing {filteredChapters.length} of {CHAPTERS.length} chapters
-              </div>
             </div>
-
-            {/* Filter Options */}
-            <AnimatePresence>
-              {showFilters && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
-                >
-                  <div className="bg-slate-800 rounded-lg p-4 space-y-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-300 mb-2">
-                        <Clock className="inline w-4 h-4 mr-2" />
-                        Time Period
-                      </label>
-                      <div className="flex flex-wrap gap-2">
-                        {periods.map(period => (
-                          <button
-                            key={period}
-                            onClick={() => setSelectedPeriod(period)}
-                            className={`px-3 py-1 rounded-full text-sm transition-colors ${
-                              selectedPeriod === period
-                                ? 'bg-blue-600 text-white'
-                                : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
-                            }`}
-                          >
-                            {period === 'all' ? 'All Periods' : period}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
           </div>
         </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+          {chapterStats.map(stat => (
+            <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 text-center shadow-inner shadow-black/30">
+              <p className="text-xs uppercase tracking-[0.4em] text-blue-300">{stat.label}</p>
+              <p className="text-2xl font-bold text-white mt-3">{stat.value}</p>
+            </div>
+          ))}
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           <AnimatePresence>
@@ -283,7 +265,7 @@ const ChaptersPage: React.FC = () => {
               >
                 <Link to={`/chapter/${chapter.id}`}>
                   <div className="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                    <div className={`h-40 sm:h-48 bg-gradient-to-br ${chapter.color} relative`}>
+                    <div className={`h-40 sm:h-48 ${chapter.cardClass} relative`}>
                       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                         <div className="text-center text-white">
                           <Calendar className="w-12 h-12 mx-auto mb-2" />

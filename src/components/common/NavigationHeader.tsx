@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, BookOpen, GitBranch, Menu, X } from 'lucide-react';
+import { Home, BookOpen, GitBranch, Menu, X, Sparkles } from 'lucide-react';
 import MultiversityIcon from '../icons/MultiversityIcon';
 
 const NavigationHeader: React.FC = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navItems = useMemo(
+    () => [
+      { path: '/', label: 'Home', icon: Home },
+      { path: '/chapters', label: 'Chapters', icon: BookOpen },
+      { path: '/compare', label: 'Compare', icon: GitBranch },
+    ],
+    [],
+  );
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -21,48 +29,41 @@ const NavigationHeader: React.FC = () => {
 
   return (
     <header className="bg-slate-900 border-b border-slate-700 px-4 sm:px-6 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="relative max-w-7xl mx-auto flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/80 px-4 sm:px-6 py-3 backdrop-blur-xl shadow-[0_20px_50px_rgba(8,112,184,0.15)] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/15 via-blue-500/10 to-blue-400/10 pointer-events-none" />
         <Link to="/" className="flex items-center space-x-3">
-          <MultiversityIcon className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
-          <h1 className="text-xl sm:text-2xl font-bold text-white">Multiversity</h1>
+          <div className="relative">
+            <div className="absolute inset-0 blur-lg bg-blue-500/30" />
+            <MultiversityIcon className="relative w-6 h-6 sm:w-8 sm:h-8 text-blue-400 drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]" />
+          </div>
+          <div>
+            <h1 className="text-xl sm:text-2xl font-bold text-white tracking-wide">Multiversity</h1>
+            <p className="hidden sm:block text-xs uppercase tracking-[0.3em] text-blue-200/80">Alternate History Lab</p>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link
-            to="/"
-            className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors ${
-              isActive('/') 
-                ? 'bg-blue-600 text-white' 
-                : 'text-gray-300 hover:text-white hover:bg-slate-800'
-            }`}
-          >
-            <Home className="w-4 h-4" />
-            <span>Home</span>
-          </Link>
-
+        <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
+          {navItems.map(({ path, label, icon: Icon }) => (
+            <Link
+              key={path}
+              to={path}
+              className={`flex items-center space-x-2 rounded-full px-4 py-2 text-sm font-semibold transition-all ${
+                isActive(path)
+                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
+                  : 'text-slate-200 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <Icon className="w-4 h-4" />
+              <span>{label}</span>
+            </Link>
+          ))}
           <Link
             to="/chapters"
-            className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors ${
-              isActive('/chapters') 
-                ? 'bg-blue-600 text-white' 
-                : 'text-gray-300 hover:text-white hover:bg-slate-800'
-            }`}
+            className="inline-flex items-center space-x-2 rounded-full bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
           >
-            <BookOpen className="w-4 h-4" />
-            <span>Chapters</span>
-          </Link>
-
-          <Link
-            to="/compare"
-            className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors ${
-              isActive('/compare') 
-                ? 'bg-blue-600 text-white' 
-                : 'text-gray-300 hover:text-white hover:bg-slate-800'
-            }`}
-          >
-            <GitBranch className="w-4 h-4" />
-            <span>Compare</span>
+            <Sparkles className="w-4 h-4 text-amber-300" />
+            <span>Start Exploring</span>
           </Link>
         </nav>
 
@@ -78,45 +79,30 @@ const NavigationHeader: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-slate-700 bg-slate-900">
-          <nav className="px-4 py-2 space-y-1">
-            <Link
-              to="/"
-              onClick={closeMenu}
-              className={`flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors ${
-                isActive('/') 
-                  ? 'bg-blue-600 text-white' 
-                  : 'text-gray-300 hover:text-white hover:bg-slate-800'
-              }`}
-            >
-              <Home className="w-5 h-5" />
-              <span>Home</span>
-            </Link>
-
+        <div className="md:hidden border-t border-white/10 bg-slate-900/95 backdrop-blur-xl rounded-2xl mt-3">
+          <nav className="px-4 py-4 space-y-2">
+            {navItems.map(({ path, label, icon: Icon }) => (
+              <Link
+                key={path}
+                to={path}
+                onClick={closeMenu}
+                className={`flex items-center space-x-3 px-3 py-3 rounded-xl transition ${
+                  isActive(path)
+                    ? 'bg-blue-600 text-white'
+                    : 'text-gray-300 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                <Icon className="w-5 h-5" />
+                <span>{label}</span>
+              </Link>
+            ))}
             <Link
               to="/chapters"
               onClick={closeMenu}
-              className={`flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors ${
-                isActive('/chapters') 
-                  ? 'bg-blue-600 text-white' 
-                  : 'text-gray-300 hover:text-white hover:bg-slate-800'
-              }`}
+              className="flex items-center justify-center space-x-2 rounded-xl border border-white/10 px-3 py-3 text-sm font-semibold text-white"
             >
-              <BookOpen className="w-5 h-5" />
-              <span>Chapters</span>
-            </Link>
-
-            <Link
-              to="/compare"
-              onClick={closeMenu}
-              className={`flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors ${
-                isActive('/compare') 
-                  ? 'bg-blue-600 text-white' 
-                  : 'text-gray-300 hover:text-white hover:bg-slate-800'
-              }`}
-            >
-              <GitBranch className="w-5 h-5" />
-              <span>Compare Timelines</span>
+              <Sparkles className="w-4 h-4 text-amber-300" />
+              <span>Start Exploring</span>
             </Link>
           </nav>
         </div>
