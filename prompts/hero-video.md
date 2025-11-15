@@ -28,56 +28,58 @@ Electronic cinematic score with deep bass undertones building to epic synthesize
 ### JSON Structure Prompt
 ```json
 {
-  "subject": "Multiversity concept visualization - journey through alternate historical timelines",
-  "context": "Cosmic temporal space with floating historical moments as holographic islands",
-  "action": "Camera crane rise revealing branching timelines converging into Multiversity logo",
-  "style": "Epic cinematic sci-fi documentary aesthetic with historical drama elements",
+  "subject": "Multiversity digital multiverse visualization - high-speed journey through futuristic quantum timeline network",
+  "context": "Dark cyberspace filled with holographic timeline nodes, digital neural pathways, and neon-lit data streams",
+  "action": "Dynamic camera flight through cascading holographic timeline layers converging into massive 3D Multiversity logo",
+  "style": "Futuristic sci-fi cyberpunk aesthetic with advanced holographic technology and neon digital environments",
   "camera": {
-    "position": "Starting close on antique pocket watch, rising to god's-eye view",
-    "movement": "Smooth crane up 15 feet over 8 seconds with gentle forward dolly",
+    "position": "Starting inside quantum computer core, flying outward into vast digital neural network",
+    "movement": "High-speed dynamic flight with smooth swooping camera movements through holographic layers",
     "lens": "24mm wide-angle",
     "aperture": "f/2.8 for cinematic depth",
-    "framerate": "Slow motion at 40% speed"
+    "framerate": "Dynamic motion with occasional speed ramping"
   },
   "composition": {
     "aspect_ratio": "16:9 cinematic",
-    "framing": "Rule of thirds with central convergence point",
-    "depth_layers": "Multiple overlapping holographic planes"
+    "framing": "Dynamic with central convergence point at climax",
+    "depth_layers": "Multiple cascading holographic planes with UI overlay elements"
   },
   "lighting": {
-    "primary": "Golden hour warm key light from upper right",
-    "secondary": "Cosmic blue fill from left",
-    "accent": "Rim lighting on historical figures",
-    "atmosphere": "Volumetric god rays with particle interaction",
-    "color_temperature": "Warm 3200K transitioning to cool 6500K"
+    "primary": "Electric blue and neon cyan holographic glow from digital elements",
+    "secondary": "Neon magenta and purple accent lighting",
+    "accent": "Orange and red threat matrix indicators, rim lighting on holographic projections",
+    "atmosphere": "Volumetric digital haze with neon light beams cutting through darkness",
+    "color_temperature": "Cool digital blue 8000K with neon accent colors"
   },
   "color_palette": {
-    "primary": ["Rich gold #D4AF37", "Deep blue #1E3A8A", "Ethereal purple #7C3AED"],
-    "accent": ["White light beams", "Particle sparkles"],
-    "grading": "Cinematic with crushed blacks and lifted shadows"
+    "primary": ["Electric blue #0EA5E9", "Neon cyan #06B6D4", "Cyber magenta #EC4899"],
+    "accent": ["Digital orange #F97316", "Neon purple #A855F7", "Matrix green #10B981"],
+    "grading": "High-contrast cyberpunk with crushed blacks and neon-saturated highlights"
   },
   "visual_effects": {
-    "particles": "Golden light particles flowing between timelines",
-    "holographic": "Translucent overlapping historical scenes with scan lines",
-    "temporal": "Ripple distortion effects showing timeline splits",
-    "energy": "Pulsing convergence beams forming MULTIVERSITY text"
+    "particles": "Digital light streams and data particles flowing between timeline nodes",
+    "holographic": "Advanced holographic projections with scan lines, wireframe renders, and HUD interfaces",
+    "digital_elements": "Timeline probability calculations, branching pathway visualizations, UI overlay elements",
+    "glitch": "Occasional digital glitch transitions between timeline layers",
+    "energy": "Neon convergence beams and electric arcs forming MULTIVERSITY in massive 3D holographic text"
   },
   "audio": {
     "music": "Speaking directly to camera saying: (no subtitles)",
-    "description": "Orchestral score building from piano to full symphony over 8 seconds",
-    "sound_design": "Temporal whooshes, distant historical echoes, clock ticking motif, powerful crescendo"
+    "description": "Electronic cinematic score with deep bass building to epic synthesizer crescendo",
+    "sound_design": "Digital data whooshes, futuristic UI beeps, holographic activations, bass drops at timeline splits, quantum computing ambient hum, powerful electronic crescendo"
   },
   "technical": {
     "resolution": "8K",
     "quality": "Maximum cinematic quality",
-    "motion_blur": "Enabled for smooth motion",
-    "anti_aliasing": "High"
+    "motion_blur": "Enabled for dynamic high-speed motion",
+    "anti_aliasing": "High",
+    "effects_intensity": "Maximum for holographic and particle systems"
   }
 }
 ```
 
 ### Alternative Text Prompt (if JSON not supported)
-**Camera positioned close-up on antique brass pocket watch floating in cosmic space, hands spinning backwards rapidly.** Wide-angle 24mm lens, f/2.8 aperture, slow-motion at 40% speed. The watch dissolves into flowing golden particles as camera begins smooth crane rise movement upward. **Historical vignettes appear as holographic, translucent layers:** Revolutionary War soldiers at crossroads, French revolutionaries in candlelit debate, figure before diverging railway tracks, nuclear missiles contrasted with peace doves, Berlin Wall fragmenting into timelines. Each scene shimmers with ethereal light and scan line effects, overlapping in cosmic space. **Camera rises 15 feet over 8 seconds**, revealing these moments as floating islands surrounded by swirling galaxies and temporal rifts. Golden particle streams flow between timelines like liquid light. Timeline branches grow upward like reverse tree roots, creating web of infinite possibilities. **Final composition:** All timeline threads converge, forming the word "MULTIVERSITY" in glowing, pulsing energy against backdrop of infinite historical possibilities. **Lighting:** Dramatic golden hour warmth (3200K) transitioning to cosmic blue tones (6500K), volumetric god rays, rim lighting on figures, atmospheric fog. **Color grading:** Cinematic with rich golds #D4AF37, deep blues #1E3A8A, ethereal purples #7C3AED. **Audio:** Orchestral score building from subtle piano to full symphony; distant historical sound echoes; temporal whooshes; ticking clock motif; powerful crescendo. (no subtitles) 8K cinema quality.
+**Camera positioned inside sleek holographic quantum computer core with glowing circuit pathways and flowing data streams in electric blue (#0EA5E9) and neon cyan (#06B6D4).** Wide-angle 24mm lens, f/2.8 aperture, dynamic motion. The quantum core explodes outward in burst of digital particles, transforming into vast neural network of branching timeline nodes—glowing holographic spheres suspended in dark cyberspace. **Camera flies at high speed through digital neural web** passing holographic historical projections: Revolutionary War soldiers in wireframe blue light, French revolutionaries as pulsing red holograms, Cold War as competing red-blue data streams, nuclear scenarios as orange threat matrices. Each vignette appears as floating holographic display with futuristic HUD interfaces, timeline probability calculations scrolling, branching pathway visualizations. **Camera performs dynamic swooping movement** through cascading holographic timeline layers. Neon-lit timeline branches split and recombine like fiber optic cables. Digital particles stream between nodes creating rivers of luminous data. Advanced UI elements and probability percentages flash across scene. **Final convergence:** All timeline branches spiral together—streams of neon light, digital code, holographic fragments forming "MULTIVERSITY" in massive 3D holographic letters pulsing with electric energy, surrounded by orbiting timeline nodes and flowing digital aurora against infinite black cyberspace with distant data constellations. **Lighting:** High-contrast with neon glow—electric blue and cyan primary, neon magenta (#EC4899) and purple (#A855F7) accents, digital orange (#F97316) threat indicators, rim lighting on holograms, volumetric digital haze. **Color grading:** Cyberpunk high-contrast with crushed blacks and neon-saturated highlights. **Audio:** Electronic score with deep bass building to synthesizer crescendo; digital whooshes; futuristic UI beeps; bass drops; quantum hum; powerful electronic climax. (no subtitles) 8K maximum quality.
 
 ---
 
