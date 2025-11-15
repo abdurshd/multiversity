@@ -49,49 +49,6 @@ multiversity/
 └── docs/
 ```
 
----
-
-## Data Structure
-
-### Chapter Structure
-```typescript
-interface Chapter {
-  id: string;
-  title: string;
-  period: string;
-  description: string;
-  historicalContext: string;
-  keyFigures: Person[];
-  divergencePoint: string;
-  alternativeTimelines: Timeline[];
-  mainImage: string;
-  icon: string;
-}
-
-interface Timeline {
-  id: string;
-  title: string;
-  description: string;
-  divergenceDescription: string;
-  keyEvents: HistoricalEvent[];
-  consequences: Consequence[];
-  presentDayStatus: string;
-  probability: number; // How likely this timeline was
-  butterfly: ButterflyEffect[]; // Chain of consequences
-}
-
-interface HistoricalEvent {
-  year: number;
-  title: string;
-  description: string;
-  impact: string;
-  relatedFigures: string[];
-  image?: string;
-  location: Coordinates;
-}
-```
-
----
 
 ## 10 Main Chapters with Alternative Timelines
 
@@ -338,57 +295,6 @@ Each alternate timeline requires:
 
 ### Component Architecture
 
-#### Core Components
-```typescript
-// Main application shell
-<MultiverseApp>
-  <Router>
-    <NavigationHeader />
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/chapter/:id" element={<ChapterOverview />} />
-      <Route path="/timeline/:chapterId/:timelineId" element={<TimelineExplorer />} />
-      <Route path="/compare" element={<ComparisonMode />} />
-    </Routes>
-  </Router>
-</MultiverseApp>
-
-// Timeline visualization
-<TimelineVisualization
-  events={events}
-  startYear={startYear}
-  endYear={endYear}
-  onEventClick={handleEventClick}
-  onYearChange={handleYearChange}
-/>
-
-// Interactive map component
-<InteractiveMap
-  year={currentYear}
-  timeline={selectedTimeline}
-  territories={territories}
-  onTerritoryClick={handleTerritoryClick}
-/>
-```
-
-#### Data Management
-```typescript
-// Global state structure
-interface AppState {
-  currentChapter: Chapter | null;
-  currentTimeline: Timeline | null;
-  currentYear: number;
-  comparisonTimelines: Timeline[];
-  viewMode: 'overview' | 'detail' | 'comparison';
-}
-
-// Data loading and caching
-const useChapterData = (chapterId: string) => {
-  // Lazy load chapter data
-  // Cache in memory for performance
-  // Handle loading states
-};
-```
 
 ### Animation Implementation
 
