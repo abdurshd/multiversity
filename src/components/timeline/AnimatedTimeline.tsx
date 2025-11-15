@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import { Timeline } from '../../types';
+import type { HistoricalEvent, Timeline } from '../../types';
 
 interface AnimatedTimelineProps {
   timeline: Timeline;
   startYear: number;
   endYear: number;
-  onEventClick?: (event: any) => void;
+  onEventClick?: (event: HistoricalEvent) => void;
   showOnLoad?: boolean;
   animationDelay?: number;
   compactMode?: boolean;
@@ -22,6 +22,11 @@ const eventTypeColors: Record<string, string> = {
   technological: '#06B6D4'
 };
 
+const TIMELINE_DIMENSIONS = {
+  width: 800,
+  height: 200,
+} as const;
+
 export default function AnimatedTimeline({
   timeline,
   startYear,
@@ -31,7 +36,6 @@ export default function AnimatedTimeline({
   animationDelay = 100,
 }: AnimatedTimelineProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  const dimensions = { width: 800, height: 200 };
 
   useEffect(() => {
     if (!svgRef.current) return;
@@ -40,8 +44,8 @@ export default function AnimatedTimeline({
     svg.selectAll("*").remove();
 
     const margin = { top: 40, right: 40, bottom: 60, left: 40 };
-    const width = dimensions.width - margin.left - margin.right;
-    const height = dimensions.height - margin.top - margin.bottom;
+    const width = TIMELINE_DIMENSIONS.width - margin.left - margin.right;
+    const height = TIMELINE_DIMENSIONS.height - margin.top - margin.bottom;
 
     const g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
@@ -84,7 +88,7 @@ export default function AnimatedTimeline({
 
     // Add timeline title
     svg.append('text')
-      .attr('x', dimensions.width / 2)
+      .attr('x', TIMELINE_DIMENSIONS.width / 2)
       .attr('y', 20)
       .attr('text-anchor', 'middle')
       .style('font-size', '18px')
@@ -94,7 +98,7 @@ export default function AnimatedTimeline({
 
     // Add event count
     svg.append('text')
-      .attr('x', dimensions.width / 2)
+      .attr('x', TIMELINE_DIMENSIONS.width / 2)
       .attr('y', 35)
       .attr('text-anchor', 'middle')
       .style('font-size', '12px')
@@ -179,10 +183,10 @@ export default function AnimatedTimeline({
     // Add legend
     const legendData = Object.entries(eventTypeColors);
     const legendWidth = 100;
-    const legendX = (dimensions.width - (legendData.length * legendWidth)) / 2;
+    const legendX = (TIMELINE_DIMENSIONS.width - (legendData.length * legendWidth)) / 2;
 
     const legend = svg.append('g')
-      .attr('transform', `translate(${legendX}, ${dimensions.height - 20})`);
+      .attr('transform', `translate(${legendX}, ${TIMELINE_DIMENSIONS.height - 20})`);
 
     legendData.forEach(([type, color], i) => {
       const legendItem = legend.append('g')
@@ -200,9 +204,9 @@ export default function AnimatedTimeline({
         .text(type.charAt(0).toUpperCase() + type.slice(1));
     });
 
-  }, [timeline, startYear, endYear, showOnLoad, animationDelay]);
+  }, [timeline, startYear, endYear, showOnLoad, animationDelay, onEventClick]);
 
-  const showTooltip = (event: any, data: any) => {
+  const showTooltip = (event: MouseEvent, data: HistoricalEvent) => {
     const tooltip = d3.select('body').append('div')
       .attr('class', 'timeline-tooltip')
       .style('position', 'absolute')
@@ -238,8 +242,8 @@ export default function AnimatedTimeline({
     <div className="w-full bg-white rounded-lg shadow-sm p-4">
       <svg
         ref={svgRef}
-        width={dimensions.width}
-        height={dimensions.height}
+        width={TIMELINE_DIMENSIONS.width}
+        height={TIMELINE_DIMENSIONS.height}
         className="w-full"
         style={{ maxWidth: '100%', height: 'auto' }}
       />

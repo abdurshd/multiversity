@@ -117,17 +117,17 @@ const ParticleSystem: React.FC<ParticleSystemProps> = ({
         }
         break;
 
-      case 'glow':
-        // Draw glowing circle
+      case 'glow': {
         const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, particle.size * 2);
         gradient.addColorStop(0, particle.color);
         gradient.addColorStop(1, 'transparent');
-        
+
         ctx.beginPath();
         ctx.arc(0, 0, particle.size * 2, 0, Math.PI * 2);
         ctx.fillStyle = gradient;
         ctx.fill();
         break;
+      }
 
       case 'trail':
         // Draw trailing particle

@@ -22,8 +22,22 @@ const LandingPage: React.FC = () => {
     <div className="min-h-screen bg-slate-900 relative overflow-x-hidden w-full">
 
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 z-10">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 z-10 overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+          <source src="/Hero.mp4" type="video/mp4" />
+        </video>
+
+        {/* Overlay for better text readability */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-0"></div>
+
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

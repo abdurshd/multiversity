@@ -15,8 +15,17 @@ import {
   Eye,
   BarChart3
 } from 'lucide-react';
-import { Timeline, Chapter } from '../types';
+import { Timeline, Chapter, HistoricalEvent } from '../types';
 import { allChapters } from '../data';
+
+interface Particle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  opacity: number;
+  size: number;
+}
 
 const ComparisonMode: React.FC = () => {
   const [selectedTimelines, setSelectedTimelines] = useState<Timeline[]>([]);
@@ -27,13 +36,13 @@ const ComparisonMode: React.FC = () => {
   const [dimensions] = useState({ width: 1200, height: 800 });
 
   // Particle system for background
-  const particlesRef = useRef<any[]>([]);
+  const particlesRef = useRef<Particle[]>([]);
   const animationRef = useRef<number>(0);
 
   useEffect(() => {
     // Initialize particle system
-    const createParticles = () => {
-      const particles = [];
+    const createParticles = (): Particle[] => {
+      const particles: Particle[] = [];
       for (let i = 0; i < 20; i++) {
         particles.push({
           x: Math.random() * window.innerWidth,
@@ -291,7 +300,7 @@ const ComparisonMode: React.FC = () => {
 
   }, [selectedTimelines, dimensions, animationPhase]);
 
-  const showTooltip = (event: any, data: any, timeline: Timeline) => {
+  const showTooltip = (event: MouseEvent, data: HistoricalEvent, timeline: Timeline) => {
     const tooltip = d3.select('body').append('div')
       .attr('class', 'timeline-tooltip')
       .style('position', 'absolute')

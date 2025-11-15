@@ -3,117 +3,128 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, MapPin, Users, GitBranch, Search, Filter, X, Clock } from 'lucide-react';
 
+interface ChapterSummary {
+  id: string;
+  title: string;
+  period: string;
+  description: string;
+  keyEvents: string[];
+  alternativeCount: number;
+  color: string;
+  image: string;
+}
+
+const CHAPTERS: ChapterSummary[] = [
+  {
+    id: 'us-independence',
+    title: 'US Independence',
+    period: '1776',
+    description: 'The American Revolution and its alternative outcomes',
+    keyEvents: ['Declaration of Independence', 'Revolutionary War', 'Constitutional Convention'],
+    alternativeCount: 10,
+    color: 'from-red-600 to-red-800',
+    image: '/images/independence.jpg'
+  },
+  {
+    id: 'french-revolution',
+    title: 'French Revolution',
+    period: '1789',
+    description: 'The fall of the monarchy and paths not taken',
+    keyEvents: ['Storming of Bastille', 'Reign of Terror', 'Rise of Napoleon'],
+    alternativeCount: 10,
+    color: 'from-blue-600 to-blue-800',
+    image: '/images/french-revolution.jpg'
+  },
+  {
+    id: 'lincoln-era',
+    title: 'Lincoln Era',
+    period: '1860s',
+    description: 'Civil War, slavery, and reconstruction alternatives',
+    keyEvents: ['Lincoln Election', 'Civil War', 'Emancipation Proclamation'],
+    alternativeCount: 10,
+    color: 'from-green-600 to-green-800',
+    image: '/images/lincoln.jpg'
+  },
+  {
+    id: 'russian-empire',
+    title: 'Russian Empire',
+    period: '1721-1917',
+    description: 'Tsarist Russia and Central Asian expansion',
+    keyEvents: ['Peter the Great', 'Catherine II', 'Crimean War'],
+    alternativeCount: 10,
+    color: 'from-purple-600 to-purple-800',
+    image: '/images/russian-empire.jpg'
+  },
+  {
+    id: 'lenin-revolution',
+    title: 'Lenin Revolution',
+    period: '1917',
+    description: 'Bolshevik victory and Soviet state formation',
+    keyEvents: ['October Revolution', 'Civil War', 'War Communism'],
+    alternativeCount: 10,
+    color: 'from-red-700 to-red-900',
+    image: '/images/lenin.jpg'
+  },
+  {
+    id: 'hitler-rise',
+    title: 'Hitler\'s Rise',
+    period: '1920s-1940s',
+    description: 'Nazi Germany and alternative paths of WWII',
+    keyEvents: ['Beer Hall Putsch', 'Rise to Power', 'World War II'],
+    alternativeCount: 10,
+    color: 'from-gray-700 to-gray-900',
+    image: '/images/hitler.jpg'
+  },
+  {
+    id: 'world-war-1',
+    title: 'World War I',
+    period: '1914-1918',
+    description: 'The Great War and its alternative outcomes',
+    keyEvents: ['Assassination of Archduke', 'Trench Warfare', 'Treaty of Versailles'],
+    alternativeCount: 10,
+    color: 'from-yellow-700 to-yellow-900',
+    image: '/images/wwi.jpg'
+  },
+  {
+    id: 'world-war-2',
+    title: 'World War II',
+    period: '1939-1945',
+    description: 'Global conflict with dramatically different outcomes',
+    keyEvents: ['Invasion of Poland', 'Pearl Harbor', 'D-Day'],
+    alternativeCount: 10,
+    color: 'from-orange-600 to-orange-800',
+    image: '/images/wwii.jpg'
+  },
+  {
+    id: 'cold-war',
+    title: 'Cold War',
+    period: '1947-1991',
+    description: 'Superpower rivalry and nuclear standoff alternatives',
+    keyEvents: ['Iron Curtain', 'Cuban Missile Crisis', 'Berlin Wall'],
+    alternativeCount: 10,
+    color: 'from-indigo-600 to-indigo-800',
+    image: '/images/cold-war.jpg'
+  },
+  {
+    id: 'ussr-collapse',
+    title: 'USSR Collapse',
+    period: '1991',
+    description: 'End of Soviet Union and alternative dissolutions',
+    keyEvents: ['Gorbachev Reforms', 'August Coup', 'Independence Declarations'],
+    alternativeCount: 10,
+    color: 'from-pink-600 to-pink-800',
+    image: '/images/ussr-collapse.jpg'
+  },
+];
+
 const ChaptersPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState<string>('all');
   const [showFilters, setShowFilters] = useState(false);
 
-  const chapters = [
-    {
-      id: 'us-independence',
-      title: 'US Independence',
-      period: '1776',
-      description: 'The American Revolution and its alternative outcomes',
-      keyEvents: ['Declaration of Independence', 'Revolutionary War', 'Constitutional Convention'],
-      alternativeCount: 10,
-      color: 'from-red-600 to-red-800',
-      image: '/images/independence.jpg'
-    },
-    {
-      id: 'french-revolution',
-      title: 'French Revolution',
-      period: '1789',
-      description: 'The fall of the monarchy and paths not taken',
-      keyEvents: ['Storming of Bastille', 'Reign of Terror', 'Rise of Napoleon'],
-      alternativeCount: 10,
-      color: 'from-blue-600 to-blue-800',
-      image: '/images/french-revolution.jpg'
-    },
-    {
-      id: 'lincoln-era',
-      title: 'Lincoln Era',
-      period: '1860s',
-      description: 'Civil War, slavery, and reconstruction alternatives',
-      keyEvents: ['Lincoln Election', 'Civil War', 'Emancipation Proclamation'],
-      alternativeCount: 10,
-      color: 'from-green-600 to-green-800',
-      image: '/images/lincoln.jpg'
-    },
-    {
-      id: 'russian-empire',
-      title: 'Russian Empire',
-      period: '1721-1917',
-      description: 'Tsarist Russia and Central Asian expansion',
-      keyEvents: ['Peter the Great', 'Catherine II', 'Crimean War'],
-      alternativeCount: 10,
-      color: 'from-purple-600 to-purple-800',
-      image: '/images/russian-empire.jpg'
-    },
-    {
-      id: 'lenin-revolution',
-      title: 'Lenin Revolution',
-      period: '1917',
-      description: 'Bolshevik victory and Soviet state formation',
-      keyEvents: ['October Revolution', 'Civil War', 'War Communism'],
-      alternativeCount: 10,
-      color: 'from-red-700 to-red-900',
-      image: '/images/lenin.jpg'
-    },
-    {
-      id: 'hitler-rise',
-      title: 'Hitler\'s Rise',
-      period: '1920s-1940s',
-      description: 'Nazi Germany and alternative paths of WWII',
-      keyEvents: ['Beer Hall Putsch', 'Rise to Power', 'World War II'],
-      alternativeCount: 10,
-      color: 'from-gray-700 to-gray-900',
-      image: '/images/hitler.jpg'
-    },
-    {
-      id: 'world-war-1',
-      title: 'World War I',
-      period: '1914-1918',
-      description: 'The Great War and its alternative outcomes',
-      keyEvents: ['Assassination of Archduke', 'Trench Warfare', 'Treaty of Versailles'],
-      alternativeCount: 10,
-      color: 'from-yellow-700 to-yellow-900',
-      image: '/images/wwi.jpg'
-    },
-    {
-      id: 'world-war-2',
-      title: 'World War II',
-      period: '1939-1945',
-      description: 'Global conflict with dramatically different outcomes',
-      keyEvents: ['Invasion of Poland', 'Pearl Harbor', 'D-Day'],
-      alternativeCount: 10,
-      color: 'from-orange-600 to-orange-800',
-      image: '/images/wwii.jpg'
-    },
-    {
-      id: 'cold-war',
-      title: 'Cold War',
-      period: '1947-1991',
-      description: 'Superpower rivalry and nuclear standoff alternatives',
-      keyEvents: ['Iron Curtain', 'Cuban Missile Crisis', 'Berlin Wall'],
-      alternativeCount: 10,
-      color: 'from-indigo-600 to-indigo-800',
-      image: '/images/cold-war.jpg'
-    },
-    {
-      id: 'ussr-collapse',
-      title: 'USSR Collapse',
-      period: '1991',
-      description: 'End of Soviet Union and alternative dissolutions',
-      keyEvents: ['Gorbachev Reforms', 'August Coup', 'Independence Declarations'],
-      alternativeCount: 10,
-      color: 'from-pink-600 to-pink-800',
-      image: '/images/ussr-collapse.jpg'
-    },
-  ];
-
   // Extract unique periods for filtering
   const periods = useMemo(() => {
-    const periodSet = new Set(chapters.map(chapter => {
+    const periodSet = new Set(CHAPTERS.map(chapter => {
       const yearMatch = chapter.period.match(/\d{4}/);
       if (yearMatch) {
         const year = parseInt(yearMatch[0]);
@@ -129,7 +140,7 @@ const ChaptersPage: React.FC = () => {
 
   // Filter chapters based on search and period
   const filteredChapters = useMemo(() => {
-    return chapters.filter(chapter => {
+    return CHAPTERS.filter(chapter => {
       const matchesSearch = chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            chapter.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            chapter.keyEvents.some(event => event.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -146,7 +157,7 @@ const ChaptersPage: React.FC = () => {
       }
       return matchesSearch && selectedPeriod === 'Other';
     });
-  }, [searchQuery, selectedPeriod, chapters]);
+  }, [searchQuery, selectedPeriod]);
 
   const clearFilters = () => {
     setSearchQuery('');
@@ -215,7 +226,7 @@ const ChaptersPage: React.FC = () => {
               )}
 
               <div className="text-sm text-gray-400">
-                Showing {filteredChapters.length} of {chapters.length} chapters
+                Showing {filteredChapters.length} of {CHAPTERS.length} chapters
               </div>
             </div>
 
