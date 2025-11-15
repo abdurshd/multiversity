@@ -85,31 +85,35 @@ Electronic cinematic score with deep bass undertones building to epic synthesize
 
 ## 🎨 TECHNICAL SPECIFICATIONS
 
-### Duration & Pacing
-- **Total Duration:** 8 seconds
-- **Act 1 (0-2s):** Pocket watch close-up and dissolution
-- **Act 2 (2-6s):** Historical vignettes reveal and overlap
-- **Act 3 (6-8s):** Convergence and logo formation
+### Narrative Flow & Pacing
+- **Opening:** Quantum computer core interior with circuit pathways and data streams
+- **Expansion:** Core explosion transforming into vast digital neural network
+- **Journey:** High-speed flight through holographic timeline nodes and historical projections
+- **Climax:** Cascading convergence of all timeline branches
+- **Finale:** MULTIVERSITY logo formation in massive 3D holographic text
 
 ### Visual Effects Breakdown
-1. **Pocket watch particle dissolution:** Realistic brass material, motion blur, energy dissipation
-2. **Holographic historical scenes:** 60% opacity, blue/gold scan lines, subtle flicker
-3. **Timeline branching visualization:** Procedural growth animation, root-like tendrils
-4. **Particle system:** 10,000+ particles, turbulence flow, light interaction
-5. **Logo formation:** Energy beam convergence, glow intensity build, final reveal
+1. **Quantum core explosion:** Digital particle burst, circuit pathways fragmenting, data stream dispersal
+2. **Holographic timeline nodes:** Glowing spheres with wireframe structures, 70% opacity, neon scan lines
+3. **Historical projections:** Wireframe and holographic renders with HUD interfaces, probability calculations
+4. **Digital particle system:** 20,000+ neon particles flowing as data streams, turbulence and light interaction
+5. **Timeline branching:** Fiber optic-style neon pathways splitting and recombining dynamically
+6. **UI/HUD overlays:** Futuristic interface elements, timeline probability percentages, branching visualizations
+7. **Logo convergence:** Neon light beams, electric arcs, holographic fragments spiraling into 3D text formation
 
 ### Color Grading LUT
-- Shadows: Crushed to deep blacks with blue tint
-- Midtones: Warm golden push
-- Highlights: Protected whites with ethereal glow
-- Saturation: +20% for historical vignettes, +40% for particles
-- Contrast: S-curve for cinematic punch
+- Shadows: Crushed to pure blacks for cyberpunk aesthetic
+- Midtones: Cool digital blue push with neon accent saturation
+- Highlights: Neon-saturated glows with electric intensity
+- Saturation: +40% for neon elements, +60% for holographic particles
+- Contrast: Extreme S-curve for high-contrast cyberpunk look
 
 ### Audio Mixing Levels
-- Music: -6dB, building to -3dB at climax
-- Sound Design: -12dB for subtlety
-- Historical Echoes: -18dB, heavily reverbed
-- Crescendo Peak: -1dB at logo reveal
+- Electronic Music: -6dB, building to -3dB at climax with bass emphasis
+- Digital Sound Design: -10dB for UI beeps and holographic activations
+- Data Transmission Whooshes: -8dB for dynamic movement emphasis
+- Bass Drops: -2dB at key timeline split moments
+- Crescendo Peak: -1dB at logo reveal with synthesizer lead
 
 ---
 
@@ -117,59 +121,68 @@ Electronic cinematic score with deep bass undertones building to epic synthesize
 
 ### For Sora 2
 - Keep dialogue section empty or use (no subtitles)
-- Emphasize camera movement explicitly
-- Describe materials and physics (brass, particle flow)
-- Use specific timing for 8-second constraint
-- Request high resolution (8K) for quality
+- Emphasize dynamic camera movement explicitly (high-speed flight, swooping)
+- Describe digital materials and physics (holographic projections, neon light flow, particle streams)
+- Focus on futuristic sci-fi aesthetic and cyberpunk influences
+- Request high resolution (8K) for quality and detail in holographic effects
 
 ### For Veo 3.1
-- JSON structure provides superior control
-- Specify camera position explicitly ("positioned close-up on...")
-- Use technical photography terms (focal length, aperture)
+- JSON structure provides superior control for complex futuristic effects
+- Specify camera position explicitly ("positioned inside quantum core...")
+- Use technical photography terms (focal length, aperture, dynamic motion)
 - Include "no subtitles" directive for cleaner output
-- Color values can be hex codes for precision
+- Color values can be hex codes for precision (#0EA5E9, #EC4899, etc.)
 - Audio description goes after colon to avoid unwanted text overlay
+- Specify effects intensity as "maximum" for holographic and particle systems
 
 ### For Both Platforms
-- Avoid requesting copyrighted styles or brands
-- Emphasize "original" and "creative" aesthetic
-- Use descriptive language for abstract concepts
-- Specify mood and emotion for better atmosphere
-- Include specific technical details for consistency
-- Request cinematic quality and 8K resolution
+- Emphasize "futuristic," "cyberpunk," "holographic," and "neon" aesthetic descriptors
+- Use technical sci-fi language (quantum computing, neural networks, data streams)
+- Specify neon color palette explicitly with hex values
+- Request high-contrast lighting with crushed blacks
+- Include UI/HUD overlay elements for futuristic feel
+- Request cinematic quality and 8K resolution with maximum effects
 
 ---
 
 ## 🎯 GENERATION TIPS
 
-1. **First Generation:** Use the prompt as-is to establish baseline
-2. **Iteration 1:** Adjust pacing if transitions feel rushed
-3. **Iteration 2:** Fine-tune particle density and flow
-4. **Iteration 3:** Refine color grading for brand consistency
-5. **Final Polish:** Ensure logo reveal has maximum impact
+1. **First Generation:** Use the prompt as-is to establish futuristic baseline aesthetic
+2. **Iteration 1:** Adjust camera speed and motion if flight feels too slow or too fast
+3. **Iteration 2:** Fine-tune neon particle density, glow intensity, and holographic opacity
+4. **Iteration 3:** Refine cyberpunk color grading for maximum neon saturation and contrast
+5. **Iteration 4:** Enhance UI/HUD overlay elements and digital effects
+6. **Final Polish:** Ensure logo convergence has maximum electric energy and impact
 
 ### Common Issues & Solutions
-- **Too fast:** Add more slow-motion descriptors or reduce action complexity
-- **Unclear timelines:** Increase holographic opacity to 70-80%
-- **Weak convergence:** Emphasize energy beam intensity and glow
-- **Audio mismatch:** Regenerate with more specific musical descriptors
-- **Low quality:** Explicitly request 8K and maximum quality settings
+- **Not futuristic enough:** Add more neon glow descriptors, holographic scan lines, and digital glitch effects
+- **Unclear holograms:** Increase holographic opacity to 70-80% and emphasize wireframe renders
+- **Weak neon effect:** Boost saturation descriptors and request "maximum neon intensity"
+- **Insufficient digital elements:** Explicitly request UI overlays, HUD interfaces, and probability calculations
+- **Weak convergence:** Emphasize electric arcs, neon beam intensity, and holographic fragment density
+- **Audio mismatch:** Request more bass emphasis, synthesizer leads, and electronic crescendo
+- **Low quality:** Explicitly request 8K, maximum quality settings, and maximum effects intensity
 
 ---
 
 ## ✅ ACCEPTANCE CRITERIA
 
 The final video should:
-- ✓ Run exactly 8 seconds
-- ✓ Smoothly transition through all historical vignettes
-- ✓ Show clear branching timeline visualization
-- ✓ Feature cinematic color grading with gold/blue/purple palette
-- ✓ Include smooth crane camera movement
-- ✓ Display "MULTIVERSITY" logo clearly at end
-- ✓ Have epic orchestral score that builds to crescendo
+- ✓ Feature futuristic cyberpunk aesthetic with strong neon elements
+- ✓ Display quantum computer core opening transformation
+- ✓ Include high-speed dynamic camera flight through digital space
+- ✓ Show clear holographic timeline node network
+- ✓ Feature multiple historical moments as holographic projections with HUD interfaces
+- ✓ Include neon color palette (electric blue, cyan, magenta, purple, orange)
+- ✓ Display UI/HUD overlay elements and timeline probability calculations
+- ✓ Show cascading convergence of neon timeline branches
+- ✓ Display "MULTIVERSITY" in massive 3D holographic letters with electric energy
+- ✓ Feature high-contrast lighting with crushed blacks and neon-saturated highlights
+- ✓ Include electronic score with bass drops and synthesizer crescendo
 - ✓ Maintain 8K quality and cinematic aspect ratio (16:9)
-- ✓ Convey sense of wonder and infinite possibility
-- ✓ No visible text/subtitles during video
+- ✓ Convey sense of advanced technology and infinite digital possibilities
+- ✓ No visible text/subtitles during video (except stylized UI elements)
+- ✓ Maximum particle density and holographic effects intensity
 
 ---
 
