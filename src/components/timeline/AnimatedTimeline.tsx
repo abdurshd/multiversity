@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { Timeline } from '../../types';
 
@@ -29,7 +29,6 @@ export default function AnimatedTimeline({
   onEventClick,
   showOnLoad = true,
   animationDelay = 100,
-  compactMode = false
 }: AnimatedTimelineProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dimensions = { width: 800, height: 200 };
@@ -134,7 +133,7 @@ export default function AnimatedTimeline({
         
         hideTooltip();
       })
-      .on('click', function(event, d) {
+      .on('click', function(_event, d) {
         if (onEventClick) onEventClick(d);
       })
       .transition()
