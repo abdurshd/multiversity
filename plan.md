@@ -25,7 +25,7 @@
 - **State Management:** React Context + useReducer
 - **Routing:** React Router for chapter navigation
 - **Build Tool:** Vite
-- **Deployment:** Vercel/Netlify
+- **Deployment:** Netlify
 
 ### File Structure
 ```
@@ -424,7 +424,7 @@ Each alternate timeline requires:
 ## Deployment and Maintenance
 
 ### Production Infrastructure
-- **Hosting:** Vercel or Netlify for static hosting
+- **Hosting:** Netlify for static hosting
 - **CDN:** Cloudflare for global content delivery
 - **Analytics:** Google Analytics + custom event tracking
 - **Error Monitoring:** Sentry for error tracking

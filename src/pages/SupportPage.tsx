@@ -15,7 +15,7 @@ const SupportPage: React.FC = () => {
         <section className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4">
           <h2 className="text-2xl font-semibold">Contact Channels</h2>
           <ul className="space-y-3 text-slate-300">
-            <li>Email: <a href="mailto:support@multiversity.vercel.app" className="text-blue-300 underline">support@multiversity.vercel.app</a></li>
+            <li>Email: <a href="mailto:support@multiversity.netlify.app" className="text-blue-300 underline">support@multiversity.netlify.app</a></li>
             <li>Phone (KST business hours): +82-2-1234-5678</li>
             <li>Office: 12F, Jongno Tower, Jongno-gu, Seoul, Republic of Korea</li>
           </ul>

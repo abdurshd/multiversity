@@ -30,7 +30,7 @@ const AccessibilityPage: React.FC = () => {
         <section className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3">
           <h2 className="text-2xl font-semibold">Request Assistance</h2>
           <p className="text-slate-300">
-            Email <a href="mailto:accessibility@multiversity.vercel.app" className="text-blue-300 underline">accessibility@multiversity.vercel.app</a> to
+            Email <a href="mailto:accessibility@multiversity.netlify.app" className="text-blue-300 underline">accessibility@multiversity.netlify.app</a> to
             report a barrier or request content in an alternative format. We respond within five business days per Article 22 of the Act on
             Welfare of Persons with Disabilities.
           </p>

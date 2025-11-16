@@ -37,7 +37,7 @@ const PrivacyPolicyPage: React.FC = () => {
         <section className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3">
           <h2 className="text-2xl font-semibold">4. Data Subject Rights</h2>
           <p className="text-slate-300">
-            You may request access, correction, suspension, or deletion via <a href="mailto:privacy@multiversity.vercel.app" className="text-blue-300 underline">privacy@multiversity.vercel.app</a>.
+            You may request access, correction, suspension, or deletion via <a href="mailto:privacy@multiversity.netlify.app" className="text-blue-300 underline">privacy@multiversity.netlify.app</a>.
             We will verify identity through PASS or joint certificate and respond within the statutory period.
           </p>
         </section>
