@@ -11,11 +11,6 @@ An epic, dramatic cartoonish-realistic scene capturing the global scope and mora
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic WWII epic, global theaters composition, darkness vs light symbolism. Center: Iconic D-Day Normandy landings, Allied soldiers storming from Higgins boats, expressive determined faces despite danger. Left side: Eastern Front—Soviet T-34 tanks, Red Army in winter gear battling Stalingrad ruins. Right side: Pacific theater—Marines island-hopping, naval battles, aerial combat vs setting sun. Western European liberation center. Foreground: Diverse Allied forces—American GIs, British Tommies, Free French, Soviets, Chinese troops—global alliance against fascism. Enemy forces historically accurate without glorification. Background stakes: Concentration camp liberation (tasteful horror without graphic details)—emaciated survivors with disbelief at freedom, shocked Allied soldiers discovering. Contrasted liberation celebrations—French welcoming troops, V-E/V-J day joy. Sky: Both darkness (Nazi bombing, Holocaust smoke) and hope (Allied air superiority, dawn breaking). Architecture: Destruction and rebuilding—European city ruins with reconstruction beginning. Lighting: Powerful symbolism—dark storm clouds (Axis) pushed back by bright sunlight (Allied victory)—light defeating darkness. Color palette: United Allied symbols—US stars-stripes red-white-blue, British Union Jack, Soviet red (#DC2626), Free French tricolor vs Nazi black-red-white and Japanese rising sun. Artistic style: Saving Private Ryan visceral realism with Pixar emotional expressiveness, appropriate gravity with clear moral sides. Mood: Epic, sacrificial, ultimately triumphant—greatest generation's finest hour. Camera angle: Dramatic 24mm ultra-wide capturing global scale. Medium: Digital illustration, 4K quality, symbolic dramatic lighting.
-
----
 
 ## 🌍 TIMELINE 1: No Appeasement - Churchill Right from Start
 
@@ -25,11 +20,6 @@ A victorious, preventive cartoonish-realistic scene showing early Allied action 
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: No appeasement, Munich crisis 1938 different outcome. Central: Winston Churchill with bulldog features, cigar, defiant expression at negotiating table with French and Czech representatives, pointing at maps rejecting Hitler's demands. British-French military officers showing resolve. Left: Allied mobilization—RAF Spitfires being prepared, French tanks to defensive positions, Czech fortifications manned ready. Allied flags (Union Jack, French tricolor, Czech colors) unified defense. Right: Frustrated angry Hitler as bluff called, German military unprepared, Wehrmacht generals expressing doubt, not ready for major conflict. Nazi symbols failing. Mid-ground: 1938 Germany surrounded—maps showing allied Britain-France-Czechoslovakia-USSR encirclement, Wehrmacht facing unprepared multiple fronts. Background alternative history: Berlin without victory parades, uncertain German public, Wehrmacht surrendering after brief 1938-1940 conflict. Window views: Prevented horrors—concentration camps never built (construction halted), Holocaust never fully implemented, millions saved symbolically (intact families, preserved communities). Architecture: Munich diplomatic buildings, peace enforced through strength not weakness. Lighting: Determined bright—no appeasement shadows but clear daylight of moral clarity and military resolve. Color palette: Allied unity—British red-white-blue, French blue-white-red, Czech red-white surrounding containing Nazi black-red-white. Artistic style: Churchill's earlier finest hour with Pixar heroic portrayal. Mood: Resolute, preventive, morally clear—war could have been stopped. Camera angle: 40mm emphasizing Churchill defiant stance. Medium: Digital illustration, 4K quality, bright resolute lighting.
-
----
 
 ## 🌍 TIMELINE 2: D-Day Fails - Operation Overlord Disaster
 
@@ -39,11 +29,6 @@ A tragic, dark cartoonish-realistic scene showing D-Day catastrophic failure. Th
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: D-Day disaster, Normandy June 6 1944. Normandy beaches showing failed invasion (respectfully, non-graphically)—destroyed landing craft, abandoned equipment, high Allied casualties. Eisenhower with anguished devastated expression reading pre-written resignation letter, tears in eyes. Terrible weather: Storm waves, low clouds grounding air support, impossible conditions. German defenses fully prepared through better intelligence dominating from clifftop bunkers—intact machine guns, artillery zeroed, effective obstacles. Left consequence: No second front, Soviet Union bearing full European war weight alone, Stalin's forces grinding to Berlin without Western help, maps showing USSR dominating all Europe through sole liberation. Right: Human cost—memorial services for tens of thousands lost, shattered Allied morale, invasion set back years, Churchill-Roosevelt in emergency consultation showing disaster weight. Background outcomes: War extending 1946-1947, possible nuclear weapons in Europe not Japan, Soviet dominance of entire continent. German propaganda celebrating "Atlantic Wall victory" while still losing slowly. Architecture: Normandy cliffs with successful German defenses, war-extended European destruction. Lighting: Bleak stormy—gray skies, cold rain, no breakthrough sunlight—failed liberation. Color palette: Muted tragic gray seas (#6B7280), stormy blue (#1E40AF), Allied flags half-mast, communist red (#DC2626) spreading across Europe map. Artistic style: Grave respectful treatment with expressive faces showing alternative history weight. Mood: Tragic, devastating, historically pivotal—showing how close success was. Camera angle: Somber 50mm showing human cost and strategic disaster. Medium: Digital illustration, 4K quality, bleak stormy lighting.
-
----
 
 ## 🌍 TIMELINE 3: Japan Wins Pacific - Rising Sun Triumphant
 
@@ -53,11 +38,6 @@ A dramatic, alternate-power cartoonish-realistic scene showing Japanese Pacific 
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Japan wins Pacific, Tokyo Bay 1944. Japanese naval dominance—battleships, carriers with Rising Sun flags triumphant in harbor. Central: Imperial Japanese military celebrating Pacific victories with maps showing expanded empire—northern Australia occupied, Hawaii annexed, India liberated from British with Japanese support, Southeast Asia under Greater East Asia Co-Prosperity Sphere. Left: Midway alternative—Japanese carriers victorious (not sunk), destroyed American Pacific fleet, eliminated U.S. naval power enabling expansion. Unchallenged Zero fighters, troop transports to new conquests. Right: Diplomatic consequences—America-Japan peace treaty at negotiation, U.S. recognizing Japanese Pacific sphere, returning isolationism. Maps: Divided world (Japanese East, American West) with uneasy peace. Foreground: Greater East Asia celebration—occupied territory representatives in traditional dress (some willing, some coerced), "Asia for Asians" propaganda with clear Japanese dominance. Indonesian, Vietnamese, Filipino, Indian delegates with complex expressions—European liberation but new masters. Background: Transformed Pacific—Tokyo as power center, Japanese language spreading, yen regional currency, culture export. Architecture: Japanese imperial blended with occupied territories showing Rising Sun flags. Lighting: Japanese Rising Sun symbolism—dramatic red sun rays across Pacific, orange-red atmospheric effects. Color palette: Dominated by Rising Sun red (#DC2626) and white on Pacific blue (#0EA5E9), subdued American stars-stripes and Asian traditional colors. Artistic style: Careful portrayal showing both Japanese pride and occupied peoples' ambiguity. Mood: Triumphant for Japan but complex—alternate world order questioning "liberation" meaning. Camera angle: 35mm emphasizing alternate power balance and naval might. Medium: Digital illustration, 4K quality, Rising Sun dramatic lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

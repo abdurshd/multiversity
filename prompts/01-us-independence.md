@@ -16,11 +16,6 @@ A dramatic wide-angle shot capturing the pivotal moment of American independence
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic illustration of the American Revolution's triumph. Central focus: George Washington in Continental Army blue uniform with gold epaulettes, standing heroically with American flag unfurling behind him, his expression noble and determined with slightly stylized features. Mid-ground: Founding fathers gathered around illuminated Declaration of Independence on wooden table, wearing period 18th-century clothing—tricorn hats, waistcoats, breeches. Background: Independence Hall silhouetted against vibrant sunset sky with dramatic orange, purple, and pink clouds. Setting: Philadelphia's Continental Congress chamber with warm candlelit interior, tall windows with golden light streaming through, creating volumetric god rays. Revolutionary War soldiers stand at attention with muskets. Color palette: Patriotic reds (#DC143C), deep colonial blues (#1E3A8A), warm golds (#FFD700), sunset oranges (#FF6B35). Lighting: Dramatic chiaroscuro with rim lighting on Washington, warm candlelight glow, golden hour exterior light. Artistic style: Disney-Pixar historical animation aesthetic meets Norman Rockwell Americana, semi-realistic proportions with expressive faces, smooth digital painting technique. Mood: Triumphant, hopeful, historically significant. Camera angle: Wide-angle hero shot, slightly low angle to emphasize Washington's leadership. Composition follows rule of thirds with Washington at power point. Medium: Digital illustration, 4K quality, vibrant and saturated colors.
-
----
 
 ## 🌍 TIMELINE 1: British Victory
 
@@ -35,11 +30,6 @@ An alternate history scene rendered in cartoonish-realistic style showing Americ
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history illustration: America under British rule, 1820s Boston. Central element: Large Union Jack flag flying above Georgian-style government building with royal crest. Foreground: Bronze statue of King George III on marble pedestal, colonial Americans walking past—men in tricorn hats and waistcoats, women in bonnets and long dresses, expressions showing quiet resignation. British redcoat soldiers patrol in formation, bright red uniforms (#E4002B) with white crossbelts, muskets shouldered. Left side: Colonial merchant shop with "By Royal Appointment" sign, prices in pounds sterling. Right side: Group of colonists reading "Gradual Liberalization" proclamation on wooden board, faces showing mixed hope and frustration. Architecture: American colonial brick buildings with British Georgian features, royal emblems, Union Jack bunting, tall windows. Weather: Overcast with soft diffused lighting creating gentle shadows, somber atmosphere. Color palette: British red (#C8102E), royal navy blue (#012169), colonial brick browns (#8B4513), muted earth tones, Union Jack colors dominant. Artistic style: Disney-Pixar character expressiveness with historical painting detail, semi-realistic proportions. Mood: Restrained, resigned, but not without hope—freedom delayed not denied. Camera angle: Eye-level 50mm perspective, balanced composition. Medium: Digital illustration with detailed fabric and architectural textures, 4K quality, slightly desaturated colors for historical feel.
-
----
 
 ## 🌍 TIMELINE 2: French America
 
@@ -54,11 +44,6 @@ A vibrant cartoonish-realistic scene depicting America under French protectorate
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: French-controlled America, 1810s New York. Central focus: French Governor-General in ornate Napoleonic military uniform with gold braiding, bicorne hat, reviewing documents at outdoor café. Foreground: American colonists in French Empire fashion—men in long coats with cravats, women in high-waisted Empire gowns, conducting business. Bilingual street signs: "Rue de la Liberté / Liberty Street." Left side: French soldiers in blue uniforms with white belts and red trim, guarding customs house with imperial eagle standard. Right side: Schoolhouse with window view of children learning, French tricolor and American flag displayed together, chalkboard showing "La Grammaire Française." Background: New York harbor with French naval ships bearing fleur-de-lis, colonial buildings with French Baroque features—mansard roofs, dormer windows, ornate balconies. Prominent French tricolor flag flying from government building. Architecture blends American colonial brick with French imperial elegance. Lighting: Golden hour Mediterranean warmth, long shadows, rich warm tones. Color palette: French blue (#0055A4), white, red (#EF4135), gold accents (#FFD700), colonial browns. Artistic style: Pixar animation meets French impressionism, vibrant colors, smooth gradients, expressive characters. Mood: Cosmopolitan, culturally blended, prosperous, enlightenment values. Camera angle: Slightly elevated 35mm perspective showing bustling harbor activity. Medium: Digital illustration with detailed fabric textures and architectural ornamentation, 4K quality, saturated and warm color grading.
-
----
 
 ## 🌍 TIMELINE 3: Loose Confederation
 
@@ -73,11 +58,6 @@ A cartoonish-realistic illustration showing the chaos and variety of a loosely c
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Fragmented America with weak federal government, 1820s border between New York and New Jersey. Central element: Border checkpoint with two different state flags on separate poles—New York's orange and blue Dutch Colonial design, New Jersey's buff and blue. Customs officials in different uniforms collecting tariffs from backed-up wagon line of frustrated merchants with exaggerated animated expressions. Left (New York side): Dutch Colonial architecture with stepped gables, vibrant merchant shops, prices in "York Dollars," businessmen in top hats. Militia in blue uniforms with orange trim. Right (New Jersey side): English Colonial buildings, simpler design, prices in "Jersey Pounds," farmers in practical clothing selling produce. Militia in buff uniforms with blue accents. Background: River with competing bridge toll houses, multiple different state flags creating patchwork. Foreground: Sign reading "Interstate Commerce Checkpoint - Duties Apply." Currency exchange booths on each side. Visual emphasis on fragmentation, inefficiency, and regional differences. Lighting: Bright midday sun, clear skies, strong shadows emphasizing division. Color palette: Deliberately uncoordinated—New York orange (#FF6600) and blue, New Jersey buff (#F0DC82) and blue, multiple competing state colors, no unified aesthetic creating visual chaos. Artistic style: Pixar expressive character work with historical detail, busy cluttered composition showing inefficiency. Mood: Frustrated but lively, state sovereignty over unity. Camera angle: Eye-level 40mm, balanced to show both sides. Medium: Digital illustration with detailed period clothing and architectural textures, 4K quality, saturated and varied colors.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

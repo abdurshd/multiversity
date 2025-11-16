@@ -11,11 +11,6 @@ A majestic cartoonish-realistic scene capturing the grandeur and complexity of t
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic Russian Empire scene, Winter Palace St. Petersburg, late afternoon. Central figure: Tsar Nicholas II in white imperial uniform with gold embroidery, sash, medals, Romanov crown, standing on palace steps with troubled contemplative expression—authority and worry. Background: Winter Palace blue-green façade with golden ornaments, imperial double-headed eagle emblem. Left side: Orthodox priests in ornate gold-silver vestments performing blessing, incense smoke rising. Right side: Cossack cavalry in traditional fur hats with sabers at attention. Mid-ground: Diverse imperial subjects—Russian nobles in Western dress, Siberian indigenous in furs, Central Asian Muslims in turbans, Polish intellectuals, Baltic Germans—multinational character. Background depth: Neva River flowing, Peter and Paul Fortress, merchant ships. Foreground contrast: Gilded carriages vs. common people in simple clothing—wealth and poverty tension. Lighting: Golden hour dramatic shadows, volumetric cathedral light, imperial gold catching warm rays. Color palette: Imperial blue (#1E40AF), Romanov gold (#FFD700), Orthodox white-gold, revolutionary red (#DC2626) foreshadowing. Artistic style: Russian historical painting with Pixar character expressiveness, detailed imperial grandeur. Mood: Magnificent yet troubled, powerful yet unstable. Camera angle: Slightly low 28mm wide showing grandeur and human complexity. Medium: Digital illustration, 4K quality, dramatic golden lighting.
-
----
 
 ## 🌍 TIMELINE 1: Democratic Russia
 
@@ -25,11 +20,6 @@ A bright, progressive cartoonish-realistic scene showing Russia's successful dem
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Democratic Russia, State Duma chamber 1912. Central scene: Reformed Tsar Nicholas II in simple military uniform (minimal ornamentation), signing democratic reforms, genuinely humble progressive expression. Active multiparty parliament: Constitutional Democrats in suits debating Social Revolutionaries in simpler attire, moderate monarchists participating—animated civil political discourse. Left gallery: Diverse Russian citizens observing—workers, farmers, intellectuals, women (notably included)—civic participation. Right side: Large constitutional document "Fundamental Laws - Democratic Constitution" with Western rights and Orthodox iconography—tradition meets progress. Foreground: Voting boxes, various classes casting ballots, soldiers in simple uniforms ensuring orderly process. Window views: Modernizing St. Petersburg with factories showing workers' rights, new schools/universities, newspapers with varied politics, no secret police. Architecture: Imperial Russian elegance with democratic accessibility, open doors, minimal guards. Lighting: Optimistic natural daylight, no dark corners—transparency. Color palette: Democratic blue (#3B82F6), constitutional purple (#8B5CF6), progressive green (#10B981), subdued gold (#FCD34D). Artistic style: Russian imperial aesthetics with parliamentary democracy, Pixar warmth. Mood: Progressive, stable, hopeful—peaceful democratization. Camera angle: Balanced mid-level 35mm showing Tsar-parliament equality. Medium: Digital illustration, 4K quality, bright transparent lighting.
-
----
 
 ## 🌍 TIMELINE 2: Sino-Russian Alliance
 
@@ -39,11 +29,6 @@ A grand, exotic cartoonish-realistic scene showing the Dragon-Bear alliance crea
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Sino-Russian alliance, border fusion city 1900. Central element: Massive ceremonial arch with Russian double-headed eagles and Chinese dragons intertwined in gold and jade. Beneath: Tsar Nicholas II in Russian uniform shaking hands with Chinese Empress Dowager Cixi in Qing robes with phoenix crown, satisfied strategic expressions, advisors in respective national dress. Left: Russian Orthodox churches with Asian-influenced domes incorporating dragon motifs—cultural fusion. Right: Chinese temples with Russian architectural elements, blended pagodas. Foreground: Bustling marketplace, Russian fur-hat merchants trading with Chinese silk-robed traders, goods displayed—Siberian furs, Chinese porcelain, tea, jade. Joint Russo-Chinese soldiers in hybrid uniforms (Cossack+Chinese elements), red-gold schemes. Background: Trans-Eurasian Railway with steam locomotives bearing both flags, tracks to infinity, continental connection. Bilingual signs (Cyrillic+Chinese): "Russo-Chinese Imperial Alliance Treaty." Street scenes: Russian ballet and Chinese opera advertised, Orthodox and Buddhist temples side-by-side, children of both cultures playing. Revitalized Silk Road with modern infrastructure, telegraph lines. Lighting: Vibrant golden hour, exotic atmosphere, incense and industrial steam creating volumetric haze. Color palette: Russian blue (#1E40AF) and gold (#FFD700) with Chinese red (#DC143C) and jade green (#10B981)—harmonious imperial blend. Artistic style: Russian grandeur with Chinese artistic traditions, Pixar expressiveness for diverse cast. Mood: Ambitious, powerful, culturally rich—alternative Eurasian power. Camera angle: 40mm showing grand bilateral cooperation. Medium: Digital illustration, 4K quality, exotic atmospheric lighting.
-
----
 
 ## 🌍 TIMELINE 3: Islamic Russia
 
@@ -53,11 +38,6 @@ A unique, culturally blended cartoonish-realistic scene showing Russia's transfo
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Islamic-Slavic synthesis Russia, Moscow 1910. Central structure: Magnificent hybrid building—half Orthodox cathedral with onion domes, half mosque with minarets—literal architectural fusion. Central figures: Tsar Nicholas II in modified imperial regalia with Islamic elements (green sash, crescent-moon motifs with double-headed eagle), beside Islamic Mufti in traditional robes-turban, both reviewing joint ceremony. Orthodox priests and Islamic imams blessing together. Left: Russian churches with Islamic geometric patterns. Right: Mosques with Slavic architectural elements, colorful tiles meeting Orthodox gold. Mid-ground: Sufi dervishes in white performing mystical ceremonies, Orthodox monks observing with respect—spiritual dialogue. Madrasa with blended Russian-Islamic architecture, interfaith students. Foreground marketplace: Russian fur traders with Central Asian merchants, Tatar businessmen in mixed European-traditional dress, Persian scholars, Turkish diplomats—cosmopolitan. Multilingual signs (Cyrillic, Arabic, hybrid). Background Kremlin: Minarets added, crescent moons with Orthodox crosses—fusion symbolism. Cultural blend details: Samovars with Islamic patterns, Persian carpets in churches, Arabic calligraphy on palaces. Street fashion: Russian coats with Islamic embroidery, fur hats with green bands, women in Russian and modest Islamic dress. Lighting: Golden Orthodox light (west) meets sacred green Islamic light (minarets). Color palette: Orthodox gold (#FFD700) and blue (#1E40AF) with Islamic green (#059669) and turquoise (#14B8A6)—harmonious synthesis. Artistic style: Russian imperial art with Islamic miniature painting, Pixar warmth showing intercultural respect. Mood: Cosmopolitan, spiritually rich, tolerant—religious plurality enriching. Camera angle: 35mm showing architectural fusion magnificence. Medium: Digital illustration, 4K quality, dual-tradition lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

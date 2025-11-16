@@ -11,11 +11,6 @@ A tense, divided cartoonish-realistic scene capturing Cold War tension. The comp
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic Cold War, Berlin Wall 1961, global division physical embodiment. Wall dramatically cutting center—concrete barriers, barbed wire, guard towers with searchlights. Western side (left): Vibrant West Berlin capitalism—colorful advertising, well-dressed citizens, American cars, prosperity, free movement, Coca-Cola signs, allowed democratic protests, JFK "Ich bin ein Berliner," NATO soldiers, McDonald's arches—Western consumer culture, bright varied colors. Eastern side (right): Gray East Berlin communism—Soviet concrete apartment blocks, propaganda posters with red stars and hammers-sickles, military parades, citizens in uniform drab clothing, food queues, Warsaw Pact soldiers, Lenin statues—communist control, muted reds and grays. Foreground: Families separated by wall—East Berliners looking west with longing, West Berliners east with concern, historical escape attempts. Armed guards patrolling, constant tension. Sky above: Larger conflict—American B-52s and Soviet MiGs in standoff, nuclear missiles silhouetted ominously, satellites (space race). Background: Both nuclear weapons and peace symbols—MAD keeping uneasy peace. Cuban Missile Crisis Caribbean map with missile sites. Kennedy-Khrushchev symbolic chess match, world as stakes. Architecture contrast: West with modern glass and neon, East with brutalist Soviet concrete. Lighting: Division emphasis—bright colorful Western light meets dim gray Eastern at wall—ideological divide visual metaphor. Color palette split: Western capitalism vibrant red-white-blue (#DC2626, #FFFFFF, #1E40AF) and commercial vs Eastern communism Soviet red (#B91C1C), gray (#6B7280), muted. Artistic style: Fair portrayal both sides showing human cost of division, Pixar expressiveness for separated families and fearful populations. Mood: Tense, divided, on-edge—46-year dangerous standoff. Camera angle: Perfectly centered 35mm on wall creating symmetrical division. Medium: Digital illustration, 4K quality, dramatically divided lighting.
-
----
 
 ## 🌍 TIMELINE 1: Nuclear War - Cuban Missile Crisis Goes Wrong
 
@@ -25,11 +20,6 @@ A post-apocalyptic, devastating cartoonish-realistic scene showing nuclear excha
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Nuclear war aftermath, devastated Washington D.C. six months after October 1962. Ruined American icons: Capitol dome partially collapsed, Washington Monument cracked leaning, White House burned shell—destroyed but recognizable. Sky: Perpetually gray-brown from nuclear winter, dust-radiation blocking sunlight, dim twilight at midday. Left: Immediate aftermath—abandoned emergency bunkers, survivors emerging to wasteland, makeshift refugee camps, people in protective/improvised gear, harsh yellow-black radiation warnings everywhere. Right: Global catastrophe—maps of destroyed cities (Moscow, NY, London, Leningrad gone), nuclear winter affecting Northern Hemisphere, agricultural collapse, civilization breakdown. Foreground survivors struggling: Small communities farming contaminated soil, medical tents treating radiation sickness (tasteful), masked children playing in ash showing resilience despite horror. Through devastation some hope: Southern Hemisphere (Australia, Brazil, Argentina) sending aid, international cooperation from tragedy, "Never Again" monuments building. Background: Other destroyed capitals sharing fate—global survivor community. Architecture ruins: Destroyed neoclassical American and Soviet structures (global view), no victors only victims. Lighting: Perpetual nuclear winter—gray-brown skies (#8B7355), dim twilight, no direct sunlight, orange-brown atmospheric dust haze. Color palette deliberately bleak: Ash gray (#9CA3AF), radiation warning yellow (#FCD34D), burned blacks, occasional human hope colors (blue #3B82F6, green #10B981) from survivor communities. Artistic style: Serious treatment with expressive characters showing horror and human resilience. Mood: Post-apocalyptic, devastating, cautionary—what nearly happened. Camera angle: Desolate 28mm wide showing destruction scale. Medium: Digital illustration, 4K quality, bleak nuclear winter lighting.
-
----
 
 ## 🌍 TIMELINE 2: Soviet Victory - Communist World
 
@@ -39,11 +29,6 @@ A triumphant-but-controlled cartoonish-realistic scene showing global communist 
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Soviet victory, communist NYC 1985, World Communist Federation. Statue of Liberty modified: Holds hammer-sickle instead of torch (symbolic not desecrated), red star crown—"liberation" representing. Manhattan Soviet-style transformation: Skyscrapers with red stars, propaganda banners Cyrillic-English "Workers of All Nations Unite," massive May Day parades. Left: American Communist Party HQ at former Wall Street, stock exchange now Central Planning Bureau, former traders as economic planners in simple clothing, wealth redistributed, collective farms where suburbs were. Right: Integrated global system—World Communist Federation maps showing unified red globe, international workers' committees, Chinese-European-American communist cooperation. Merged Soviet-Chinese-American flags into single World Federation banner. Foreground transformed life: Former workers in political education, children in Young Pioneers (red scarves), communal dining replacing restaurants, propaganda posters "5-Year Plans Ahead of Schedule." Mixed reactions: Genuine believers, quietly resigned. Streets: Ideological control with social services—free healthcare centers, guaranteed employment bureaus, state housing. Architecture: American Art Deco blended Soviet constructivism—unique hybrid. Lighting: Ideological uniformity—red-tinted atmosphere creating unified appearance, minimal shadows (communist society transparency). Color palette: Dominated by communist red (#DC2626) and workers' grays, capitalist colors (money green, commercial brands) absent—utilitarian design. Artistic style: Serious communist aesthetics portrayal showing believers and quiet dissenters, character expressions showing complex reactions. Mood: Orderly, ideologically controlled, uniform—alternate world where capitalism lost. Camera angle: 35mm showing complete transformation. Medium: Digital illustration, 4K quality, red-tinted uniform lighting.
-
----
 
 ## 🌍 TIMELINE 3: Peaceful Coexistence - Cold War That Never Was
 
@@ -53,11 +38,6 @@ A harmonious, cooperative cartoonish-realistic scene showing successful superpow
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Peaceful coexistence, International Space Station 1975 co-built USSR-USA. American astronauts and Soviet cosmonauts working side-by-side in zero gravity, sharing research, smiling cooperating—Stars-Stripes and Hammer-Sickle flags displayed together peacefully. Station windows: Earth appearing unified peaceful. Left: Cooperative Earth projects—joint US-Soviet factories for civilian goods, cultural exchanges (Bolshoi in NY, American jazz in Moscow), thriving student programs. Right: Peaceful competition—economic productivity contests not arms races, cooperative tech development, joint moon base construction (lunar view). Foreground: Berlin without wall—open city, both systems coexisting, East-West cooperation zones, free sector movement creating hybrid economic model, citizens shopping in both capitalist stores and state centers choosing best of both. Background transformed world: Military budgets to development, proxy wars never happened (Korea, Vietnam peaceful), resources for prosperity not destruction. Architecture synthesis: Soviet collective with American efficiency, American innovation with Soviet social guarantees—evolving hybrid. Lighting: Optimistic natural—no confrontation shadows, cooperation sunlight, colorful space aurora showing unified effort beauty. Color palette: Systems blended peacefully—American red-white-blue (#DC2626, #FFFFFF, #1E40AF) and Soviet red-yellow (#DC2626, #FCD34D) creating purple unity (#8B5CF6), cooperation green (#10B981), peaceful blues. Artistic style: Ideal cooperation with Pixar warmth showing genuine human connection across ideology. Mood: Optimistic, cooperative, prosperous—peace that could have been. Camera angle: Hopeful 35mm showing cooperation benefits. Medium: Digital illustration, 4K quality, bright optimistic lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

@@ -11,11 +11,6 @@ A dramatic cartoonish-realistic scene capturing the explosive energy of the Bols
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic Bolshevik Revolution, Palace Square Petrograd 1917. Central figure: Lenin on armored car, iconic bald head and goatee, intense determined eyes, dark coat and cap, one arm raised in revolutionary gesture, other hand gripping pamphlets. Background: Winter Palace being stormed by revolutionary masses carrying red flags with hammer-sickle, flooding through gates. Left: Cruiser Aurora firing signal shot with dramatic muzzle flash and smoke. Right: Revolutionary crowds toppling Tsarist statues, bronze Romanov eagle crashing down. Foreground surge: Factory workers in caps with tools-as-weapons, worn-uniform soldiers refusing orders, Kronstadt sailors with rifles, peasants with scythes, intellectual Bolsheviks distributing leaflets "All Power to the Soviets!"—faces showing determination, hope, fervor. Dominant red banners with Cyrillic "Мир, Земля, Хлеб" (Peace, Land, Bread) and hammer-sickle symbols. Lighting: Dramatic twilight, blood-red sky behind storm clouds, revolutionary torches and bonfires creating warm light vs. cold blue evening—old world dying, new born. Volumetric gunsmoke atmospheric depth. Color palette: Revolutionary red (#DC2626) dominant, working-class grays-blacks, Imperial gold (#FFD700) cast aside. Artistic style: Soviet propaganda posters with Pixar expressive animation, bold shapes, dynamic composition. Mood: Revolutionary, energetic, chaotic, transformative—Soviet state birth. Camera angle: Dynamic 28mm wide with Dutch tilt creating upheaval energy. Medium: Digital illustration, 4K quality, dramatic contrasted lighting.
-
----
 
 ## 🌍 TIMELINE 1: Menshevik Victory
 
@@ -25,11 +20,6 @@ A moderate, orderly cartoonish-realistic scene showing Russia's democratic socia
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Menshevik democratic socialism, constituent assembly 1918. Central scene: Moderate Menshevik leaders in dark suits and glasses presiding over active parliamentary session. Chamber with multiple parties: Social Revolutionaries, Constitutional Democrats, moderate socialists, trade unions, regional delegates—heated but civil debate. Left: Voting boards showing proportional representation, multiple parties winning seats—genuine multi-party democracy. Right: Constitutional framework being drafted collaboratively, documents on tables, various factions contributing. Foreground: Workers' councils (soviets) sending representatives in working clothes participating in legitimate discourse, farmers' reps, intelligentsia, regional advocates. Window views: Orderly transition—red flags with other political banners, peaceful demonstrations not armed insurrection, factories operating with negotiation not expropriation. Duma-style chamber architecture with public observation galleries. Lighting: Bright natural daylight, transparency, no dark corners. Color palette: Democratic red (#DC2626) with moderate blue (#3B82F6), social democratic purple (#8B5CF6), institutional gray—multi-party cooperation. Signs: "Демократическая Социалистическая Республика," "Свободные Выборы." Artistic style: Parliamentary democracy aesthetics with early 20th-century Russian progressive art, Pixar warmth. Mood: Orderly, democratic, moderate—revolution through ballots not bullets. Camera angle: Balanced eye-level 50mm showing democratic equality. Medium: Digital illustration, 4K quality, bright transparent lighting.
-
----
 
 ## 🌍 TIMELINE 2: Lenin Dies Early (1914)
 
@@ -39,11 +29,6 @@ A transitional, fragmented cartoonish-realistic scene showing Russia's gradual r
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Russia without Lenin, Petrograd park 1917. Deliberately scattered decentralized composition. Multiple moderate socialist leaders addressing separate small gatherings—no dominant figure: Menshevik social democrats, Social Revolutionaries, trade unionists, regional autonomists debating under trees, modest crowds at wooden platforms. Left: Kerensky's Provisional Government (not overthrown) in proper buildings implementing gradual reforms—peaceful land redistribution, democratic elections organized, workers' rights through legal channels. Right: Workers' councils peacefully negotiating with factory owners in conference rooms, cooperative relationships not property seizure. Foreground: Diverse society in legitimate political process—workers registering to vote, peasants receiving legal land titles, soldiers in democratic army councils, intellectuals publishing varied political newspapers. Multiple political party headquarters with different flags. Scene showing evolution not revolution: Orderly political rallies, parliamentary debates, incremental reforms—no armed insurrection or Winter Palace storming. Architecture: Strengthening democratic institutions—expanded Duma, workers' education centers, legal aid societies. Lighting: Diffused natural daylight, no dramatic chiaroscuro—gradual undramatic change. Color palette: Muted and varied—social democratic red (#DC2626), moderate blue (#3B82F6), liberal green (#10B981), no dominant color—political pluralism. Artistic style: Turn-of-century Russian realism with multi-perspective fragmentation. Mood: Moderate, gradual, pluralistic—Nordic social democracy evolution. Camera angle: 35mm showing scattered leaderless nature. Medium: Digital illustration, 4K quality, balanced diffused lighting.
-
----
 
 ## 🌍 TIMELINE 3: Trotsky Leadership - Permanent Revolution
 
@@ -53,11 +38,6 @@ An aggressive, expansionist cartoonish-realistic scene showing Trotsky's permane
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Trotsky's permanent revolution, Moscow command center 1920. Central figure: Trotsky in round glasses, leather commissar coat, military bearing, before enormous world map with red arrows showing international revolutionary expansion. Expression: Intellectual intensity, militant determination. International revolutionary councils: German Spartacists, Hungarian Soviets, Chinese communists, American labor radicals coordinating global strategy. Left: Red Army in dramatic pose—cavalry with red banners, armored trains with slogans, propaganda posters "Workers Unite!" Military serving ideological expansion. Right: Revolutionary propaganda—massive multilingual printing presses, radio transmitters broadcasting globally, agitprop art schools. Foreground: Revolutionary export—weapon crates "To German Workers," funding international parties, literature shipping worldwide, Comintern agents. Map pins showing uprisings: Berlin, Budapest, Shanghai, Mexico—global network. Window views: Moscow as world revolutionary HQ—Lenin Mausoleum, massive May Day parades with international delegations, training academies. Architecture: Revolutionary constructivist—bold angular Soviet industrial design. Lighting: Dramatic militant—harsh spotlights on maps/planning, red revolutionary lights, dramatic shadows—permanent struggle atmosphere. Color palette: Aggressive revolutionary red (#DC2626), militant blacks, ideological propaganda yellow (#FCD34D)—permanent conflict. Artistic style: Soviet constructivist propaganda with global movements, Pixar revolutionary fervor. Mood: Militant, expansionist, ideologically driven—world revolution as active strategy. Camera angle: Dramatic low 28mm emphasizing ambition and global scope. Medium: Digital illustration, 4K quality, harsh militant lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

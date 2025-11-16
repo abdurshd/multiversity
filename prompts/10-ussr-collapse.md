@@ -11,11 +11,6 @@ A dramatic, triumphant cartoonish-realistic scene capturing the peaceful collaps
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic USSR collapse, Berlin Wall demolition November 1989, jubilant crowds with hammers and pickaxes. Center: Ordinary East-West Berliners embracing through broken wall, tears of joy, decades-separated families reuniting—powerful emotional moment with expressive faces. Wall literally crumbling, pieces falling, graffiti-covered concrete breaking. Left: Eastern Europe domino effect—Czechoslovakia Velvet Revolution with peaceful protesters holding keys, Poland Solidarity victory with Walesa, Romanian celebrations, Hungarian border opening—freedom cascade. Right: Moscow transformation—Soviet flag lowered from Kremlin last time December 25 1991, replaced by Russian tricolor, Gorbachev with resigned peaceful expression signing dissolution, Yeltsin determined face for new era. Foreground change symbols: Hammer-sickle monuments removed (respectfully), Moscow McDonald's opening (iconic first), Western products in former Soviet stores, champagne celebrations. Behind wall both sides: East German Trabants driving West, families crossing freely, physical division ending. Background peaceful transition: No civil war or violence, democratic revolutions winning through persistence. Satellite independence: Baltic states, Ukraine, Central Asian republics celebrating with flags. Architecture transformation: Soviet brutalist concrete with emerging democracy—new parliaments, free press, open churches. Lighting: Triumphant dawn—dark communist night to bright democratic morning, golden sunrise behind falling wall symbolizing new era. Color palette shifting: Soviet red (#DC2626) and gray (#6B7280) to democratic rainbow of national colors, hope blue (#3B82F6), freedom green (#10B981), celebration gold (#FFD700). Artistic style: Joyful peaceful revolution chaos with Pixar emotional triumph expressiveness. Mood: Jubilant, peaceful, transformative—communism ending with people choosing freedom. Camera angle: Dynamic 24mm wide emphasizing people power and historical magnitude. Medium: Digital illustration, 4K quality, triumphant dawn lighting.
-
----
 
 ## 🌍 TIMELINE 1: Successful Coup - August Coup Succeeds
 
@@ -25,11 +20,6 @@ A dark, dystopian cartoonish-realistic scene showing successful communist hardli
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Successful August coup, Moscow August 19 1991, tanks suppressing resistance. Red Square military occupation: T-72 tanks surrounding Kremlin, coup leaders in Soviet military uniforms announcing "State of Emergency," Gorbachev under house arrest, hardline Communist Party restoring control. Center: Coup committee—elderly Soviet hardliners in dark suits and military uniforms reviewing documents reversing reforms, expressions showing determination and desperate last-ditch effort. Left: Resistance suppression—Yeltsin captured before famous tank stand, democratic protesters arrested by special forces, independent newspapers shut, reformers fleeing/imprisoned, Soviet flag flying after brief Russian tricolor. Right: Forced restoration—glasnost/perestroika reversed, censorship reimposed, KGB restored, command economy reestablished, maps showing Soviet Union maintained by force—independence movements crushed, Baltic re-occupied, Ukraine subdued. Foreground Moscow citizens: Elderly Soviet nostalgics cautiously supportive, most fearful depressed, young democrats in despair. Concerned foreign embassies, nervous international observers. Background unsustainable: Economic crisis worsening, technological gap growing, empire by force and fear. Architecture: Soviet symbols restored but crumbling buildings, deferred maintenance, failing infrastructure. Lighting: Ominous oppressive—gray overcast Moscow, harsh military spotlights, no bright future—failed history stopping attempt. Color palette: Returning Soviet red (#DC2626) and oppressive gray (#4B5563), democratic colors (blues, greens) painted over. Artistic style: Grimness of authoritarian restoration with expressive faces showing fear and resignation. Mood: Dystopian, unsustainable, desperately clinging to past—successful coup only delays inevitable. Camera angle: Somber 35mm showing hardliners' temporary "victory." Medium: Digital illustration, 4K quality, ominously oppressive lighting.
-
----
 
 ## 🌍 TIMELINE 2: Gradual Reform - USSR Becomes Democratic Federation
 
@@ -39,11 +29,6 @@ A hopeful, reformed cartoonish-realistic scene showing successful Soviet democra
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Gradual reform, transformed Kremlin 1995, Eurasian Democratic Confederation capital. Composition: Gorbachev (still leader) and Yeltsin cooperating, both in civilian suits not Soviet uniforms, signing constitutional documents for democratic federal system. Behind: Newly designed flag—modified hammer-sickle-stars replaced with democratic emblem maintaining Russian heritage showing new values. Left: Successful democratic transition—multi-party elections with various posters (Social Democrats, Liberals, reformed Communists competing fairly), free multilingual press (Russian, Ukrainian, Baltic), open parliament with real debates. Right: Gradual market reforms succeeding—mixed economy with private shops and state services, peaceful foreign investment, Western technology partnerships, steadily improving living standards. Foreground satisfied citizens: Emerging middle class, opening small businesses, students returning from abroad with skills, elderly maintaining pensions/healthcare—preserved social safety net during transition. Former republics as autonomous partners: Baltic states, Ukraine, Central Asia maintaining voluntary confederation association—cooperation replacing forced unity. Architecture: Soviet-era renovated democratically—Kremlin maintaining grandeur with public tours, Stalin buildings repurposed for democracy, new construction blending Russian traditions with modern democracy. Lighting: Bright afternoon sunshine for successful transition—no authoritarian dark corners, clear transparency daylight, hopeful atmosphere. Color palette gradual shift: Soviet red (#DC2626) evolving to democratic federation—Russian white-blue-red plus republics' colors creating rainbow confederation, prosperity green (#10B981), cooperation blue (#3B82F6). Artistic style: Ideal outcome with Pixar warmth showing genuine cooperation and shared prosperity. Mood: Successful, stable, democratic—gradual reform preserving unity while achieving freedom. Camera angle: Optimistic 40mm showing stability and hope. Medium: Digital illustration, 4K quality, bright sunshine optimistic lighting.
-
----
 
 ## 🌍 TIMELINE 3: Peaceful Dissolution - Velvet Divorce
 
@@ -53,11 +38,6 @@ A respectful, orderly cartoonish-realistic scene showing amicable Soviet separat
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Peaceful dissolution, Geneva negotiation chamber 1991, Soviet republics negotiating amicable independence. Composition: Representatives from all 15 Soviet republics at circular table symbolizing equality—Russian, Ukrainian, Baltic, Central Asian, Caucasian delegates in traditional and modern dress. Center: Gorbachev presiding as mediator not dictator, facilitating fair dissolution. Documents: "Treaty of Mutual Respect and Cooperation" being signed. Left: Fair asset division—economic committees calculating equitable Soviet resource distribution (industrial facilities, military equipment) by contribution formula, UN international observers ensuring fairness. Right: Security arrangements—nuclear weapons safely secured under international supervision, former Soviet military peacefully dividing by republics, no border conflicts—all territorial disputes negotiated. Foreground symbolic respect: Russian-Ukrainian delegates warmly shaking hands, Baltic representatives receiving formal occupation apologies, Central Asian leaders receiving development aid commitments. True velvet "divorce"—no hard feelings, mutual recognition union's course run. Background practical cooperation: Commonwealth of Independent States forming for economic coordination, joint infrastructure (pipelines, power grids) cooperative management, inter-republic free trade, continuing cultural exchanges. Architecture: Neutral Geneva international diplomacy hall, 15 republic flags equally displayed, professional translators, legal experts ensuring fair contracts. Lighting: Professional fair balanced natural—no favoritism, equal party illumination—justice and equality in separation. Color palette: Collaborative diversity—all 15 republics' national colors respectfully equally displayed, beautiful independence-within-cooperation tapestry—no single color dominance. Artistic style: Diplomatic maturity with Pixar expressiveness showing genuine mutual respect and maintained friendships despite political separation. Mood: Respectful, fair, mature—nations peacefully separating with good faith. Camera angle: Balanced 50mm showing equality and mutual respect. Medium: Digital illustration, 4K quality, balanced fair professional lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

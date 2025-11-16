@@ -11,11 +11,6 @@ A dark, ominous cartoonish-realistic scene capturing the rise of Nazi power with
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic Hitler's rise scene, Nuremberg rally 1936, historical gravity without glorification. Zeppelinfeld stadium with uniform ranks creating geometric crowd patterns. Foreground: Propaganda machinery—enormous swastika banners, torch-bearing rallies creating dramatic light, Riefenstahl cinematography angles showing choreographed mass spectacle. Architecture: Monumental Albert Speer neoclassical—columns, eagles, imposing stone designed to overwhelm. Left: Totalitarian machinery—Gestapo in black, SA brownshirts, propaganda ministries, "Ein Volk, Ein Reich, Ein Führer" slogans. Right: Victims and resistance—broken Jewish business windows (Kristallnacht), people with yellow stars, subtle resistance symbols showing human cost. Lighting: Deliberately theatrical and manipulative—harsh spotlights creating dramatic shadows, torch flames with orange glow, searchlights piercing night sky cathedral-of-light style—beautiful but sinister. Color palette: Nazi red-black-white (#DC2626, #000000, #FFFFFF) rendered as threatening, dark storm clouds overhead suggesting coming catastrophe. Background: Smoke from burning books. Composition showing seductive danger of fascist spectacle leading to destruction. Artistic style: Historical seriousness with Pixar emotional expressiveness showing perpetrators' fanaticism and victims' fear—documenting, never glorifying. Mood: Ominous, threatening, manipulative—democracy dying to applause. Camera angle: 24mm wide showing overwhelming scale and mass manipulation. Medium: Digital illustration, 4K quality, dramatically lit with moral weight.
-
----
 
 ## 🌍 TIMELINE 1: Art School Acceptance - Hitler the Artist
 
@@ -25,11 +20,6 @@ A peaceful, artistic cartoonish-realistic scene showing Hitler's alternate path.
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Hitler the artist, Vienna gallery 1925. Central: Adolf Hitler as struggling content artist in smock and beret, softer features showing no malice, before his landscape paintings discussing technique with patrons. Competent but uninspired works—Vienna buildings, Alps, bridges—technically adequate watercolors. Vibrant Vienna art scene around: Fellow bohemian artists, gallery visitors appreciating works, art students sketching. Left: Teaching studio where Hitler instructs students in basic technique, showing patience focused on craft not politics. Right: Postcard sales "A. Hitler Paintings & Postcards" providing modest living. Gallery showing diverse artists where he remains mediocre but found peace. Window views: Vienna thriving peacefully—no Nazi rallies or SA, normal Weimar-era European city, cafés with intellectuals debating art/culture not politics/hate. Architecture: Vienna Jugendstil elegance, creative flourishing. Lighting: Warm gallery illumination on artworks—soft, cultured, civilized. Color palette: Artistic variety with warm earth tones, cultural golds and greens, Vienna's refined aesthetic—no Nazi red-black-white, just artistic diversity. Artistic style: Vienna cultural richness with Pixar gentle portrayal of man who never became monster. Mood: Peaceful, creative, unremarkable—millions saved if mediocre artist found acceptance. Camera angle: Eye-level 50mm showing ordinary harmless life. Medium: Digital illustration, 4K quality, warm cultured lighting.
-
----
 
 ## 🌍 TIMELINE 2: July 20 Plot Succeeds - Hitler Assassinated
 
@@ -39,11 +29,6 @@ A dramatic but hopeful cartoonish-realistic scene showing successful Hitler assa
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: July 20 plot succeeds, Wolf's Lair 1944. Central: Explosion-damaged bunker, German officers led by von Stauffenberg in Wehrmacht uniforms with dignity securing bunker, Hitler confirmed dead (tastefully implied). Expressions: Grim determination with relief. Loyal officers being arrested, resistance activating Operation Valkyrie communications. Left: Rapid transition—Berlin Bendlerblock with military resistance taking control, radio broadcasting "Hitler is dead—Germany returns to honor," Wehrmacht removing Nazi symbols replacing with traditional military insignia. Right: Immediate peace—white flags prepared, German envoys contacting Allies with surrender, concentration camp liberation beginning early as Wehrmacht opens gates. Foreground: Resistance destroying Nazi documents and symbols—swastikas torn down, propaganda burning, provisional government forming with anti-Nazi officers and civilian leaders. Window views: Democratic Germany emerging—political prisoners released, Jewish survivors freed early, cautious celebration. Architecture: Bunker damage with Berlin transforming, Nazi iconography removal everywhere. Lighting: Transitioning from explosion smoke to hopeful daylight—darkness ending. Color palette: Shifting from Nazi red-black to democratic blue-green, Weimar Republic black-red-gold returning. Artistic style: WWII historical drama with resistance heroism, Pixar moral courage expressiveness. Mood: Tense but hopeful—German redemption, countless lives saved. Camera angle: Dynamic 35mm showing historical pivot moment. Medium: Digital illustration, 4K quality, transition from dark to hope lighting.
-
----
 
 ## 🌍 TIMELINE 3: Beer Hall Putsch Succeeds - Early Nazi Victory
 
@@ -53,11 +38,6 @@ A dark, dystopian cartoonish-realistic scene showing early Nazi takeover in 1923
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Beer Hall Putsch succeeds, Munich 1923. Central: Bürgerbräukeller beer hall, younger less-polished Hitler in brown SA uniform on tables addressing armed SA stormtroopers who seized Bavarian government. Violent takeover signs: Overturned chairs, broken glass, politicians at gunpoint, swastika armbands everywhere. Left: SA brownshirts violently suppressing opposition—social democrats arrested, trade union offices smashed, political opponents dragged away—fascist violence from start. Right: Rapid expansion from Bavaria—maps showing Nazi control spreading through southern Germany like infection, Berlin Weimar government under siege, regions uncertain. Foreground: Early Nazi policies implemented—Jewish businesses attacked (1923 not 1938), books burning, democratic institutions violently dismantled. Emergency broadcasts, collapsing democracy. Munich police-military divided—some joining, others resisting. Window views: Bavaria transforming to Nazi stronghold—swastika flags replacing Bavarian blue-white, Nazi HQ expanding rapidly, propaganda starting 10 years early. Architecture: Traditional Bavarian corrupted by crude Nazi aesthetics—swastika banners vs beer hall gemütlichkeit, disturbing contrast. Lighting: Chaotic—beer hall chandeliers creating harsh shadows, SA rally torches, political violence fires. Color palette: Nazi red (#DC2626) -black-white violently imposed over Bavarian blue-white, visual conflict. Artistic style: Raw early fascism violence with historical severity. Mood: Violent, chaotic, dystopian—early start made everything worse. Camera angle: Dramatic 28mm wide emphasizing chaos and seizure violence. Medium: Digital illustration, 4K quality, chaotic harsh lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

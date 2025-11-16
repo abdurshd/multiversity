@@ -4,25 +4,6 @@
 
 ---
 
-## 🎬 SORA 2 PROMPT (OpenAI)
-
-### Visual Description
-A stunning futuristic journey through a digital multiverse of alternate realities. The camera begins inside a sleek, holographic quantum computer core with glowing circuit pathways and flowing data streams in electric blue and neon cyan. Suddenly, the core explodes outward in a burst of digital particles, transforming into a vast neural network of branching timeline nodes—each node representing a pivotal historical decision point, rendered as glowing holographic spheres suspended in dark cyberspace. The camera flies through this digital neural web at high speed, passing historical moments displayed as advanced holographic projections: Revolutionary War soldiers rendered in wireframe blue light, French revolutionaries as pulsing red holograms, Cold War tensions shown as competing data streams in red and blue, nuclear scenarios as ominous orange threat matrices. Each historical vignette appears as a floating holographic display with futuristic HUD interfaces, timeline probability calculations scrolling in the background, and branching pathway visualizations connecting decisions to outcomes. The camera performs a dynamic swooping movement through cascading layers of these holographic timelines, with neon-lit timeline branches splitting and recombining like fiber optic cables carrying light. Digital particles stream between nodes creating rivers of luminous data. Advanced UI elements and timeline probability percentages flash across the scene. The final sequence shows all timeline branches converging in spectacular fashion—streams of neon light, digital code, and holographic fragments spiraling together to form the word "MULTIVERSITY" in massive 3D holographic letters that pulse with electric energy, surrounded by orbiting timeline nodes and flowing digital aurora effects against a backdrop of infinite black cyberspace dotted with distant data constellations.
-
-### Style & Cinematography
-Futuristic sci-fi aesthetic with cyberpunk influences; dynamic tracking shot transitioning to crane rise; 24mm lens with shallow depth of field (f/2.8); neon color grading with electric blues, cyber cyans, neon magentas, and digital oranges; volumetric lighting with holographic projections; lens flares from digital light sources; advanced particle simulations; holographic scan line effects; digital glitch transitions; UI/HUD overlay elements; 8K cinema quality
-
-### Lighting & Mood
-High-contrast lighting with neon glow illumination; electric blue and cyan as primary light sources; accent lighting in neon pink, purple, and orange; rim lighting on holographic elements; atmospheric digital haze with light beams cutting through darkness; futuristic, mind-bending, technologically awe-inspiring mood; sense of infinite digital possibilities and advanced computation
-
-### Action/Motion
-High-speed camera flight through digital neural network; smooth swooping camera movements through holographic layers; digital particle effects flowing like streams of light and data; dynamic rotation of timeline nodes and holographic displays; cascading convergence of timeline branches; pulsing energy waves emanating from central convergence point
-
-### Audio Description
-Electronic cinematic score with deep bass undertones building to epic synthesizer crescendo; digital sound design with data transmission whooshes; futuristic UI beeps and holographic activation sounds; bass drops synchronized with timeline branch splits; powerful electronic crescendo as "MULTIVERSITY" materializes; subtle quantum computing hum throughout
-
----
-
 ## 🎬 VEO 3.1 PROMPT (Google)
 
 ### JSON Structure Prompt
@@ -119,13 +100,6 @@ Electronic cinematic score with deep bass undertones building to epic synthesize
 
 ## 📝 PROMPTING NOTES
 
-### For Sora 2
-- Keep dialogue section empty or use (no subtitles)
-- Emphasize dynamic camera movement explicitly (high-speed flight, swooping)
-- Describe digital materials and physics (holographic projections, neon light flow, particle streams)
-- Focus on futuristic sci-fi aesthetic and cyberpunk influences
-- Request high resolution (8K) for quality and detail in holographic effects
-
 ### For Veo 3.1
 - JSON structure provides superior control for complex futuristic effects
 - Specify camera position explicitly ("positioned inside quantum core...")
@@ -134,14 +108,14 @@ Electronic cinematic score with deep bass undertones building to epic synthesize
 - Color values can be hex codes for precision (#0EA5E9, #EC4899, etc.)
 - Audio description goes after colon to avoid unwanted text overlay
 - Specify effects intensity as "maximum" for holographic and particle systems
-
-### For Both Platforms
 - Emphasize "futuristic," "cyberpunk," "holographic," and "neon" aesthetic descriptors
 - Use technical sci-fi language (quantum computing, neural networks, data streams)
 - Specify neon color palette explicitly with hex values
 - Request high-contrast lighting with crushed blacks
 - Include UI/HUD overlay elements for futuristic feel
 - Request cinematic quality and 8K resolution with maximum effects
+- Emphasize dynamic camera movement (high-speed flight, swooping)
+- Describe digital materials and physics (holographic projections, neon light flow, particle streams)
 
 ---
 

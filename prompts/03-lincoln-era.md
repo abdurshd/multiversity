@@ -11,11 +11,6 @@ A powerful cartoonish-realistic scene capturing the pivotal moment of the Americ
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic American Civil War emancipation scene, U.S. Capitol steps, Washington D.C. 1863. Central figure: Abraham Lincoln standing tall in iconic black coat and stovepipe hat, holding unfurling Emancipation Proclamation with visible text "...henceforth shall be free," noble expression with kind eyes. Dramatic sky: Dark storm clouds parting to reveal golden sunlight—darkness to light symbolism. Foreground left: Union soldiers in blue uniforms at attention, determined proud faces. Foreground right: Formerly enslaved people in simple period clothing reaching toward Lincoln, hopeful expressions, joyful tears, families embracing, children with wonder. Background: U.S. Capitol dome under construction with scaffolding (historically accurate), American flag flying prominently. Mid-ground: Union (blue) and Confederate (gray) soldiers facing each other at distance across symbolic divide. Foreground detail: Broken chains scattered on Capitol steps catching golden light. Lighting: Symbolic transition from dark storm (left) to bright golden sunlight (right), Lincoln at transition point. Color palette: Union blue (#1E3A8A), freedom gold (#FFD700), hope white, Confederate gray (#708090), storm dark (#2D3748). Artistic style: Spielberg's Lincoln film aesthetic with Pixar expressiveness, detailed period accuracy. Mood: Triumphant yet solemn, hopeful acknowledging cost. Camera angle: Low-angle 35mm emphasizing Lincoln's moral authority and Capitol grandeur. Medium: Digital illustration, 4K quality, dramatic lighting with high emotional impact.
-
----
 
 ## 🌍 TIMELINE 1: Lincoln Survives
 
@@ -25,11 +20,6 @@ A warm, hopeful cartoonish-realistic scene showing Lincoln's survival and contin
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Lincoln survives, peaceful Reconstruction, Southern town 1868. Central element: Older Lincoln with gray-streaked beard, kind tired but satisfied eyes, shaking hands warmly with former Confederate officer in civilian clothes, mutual respect and reconciliation. Background: Newly built integrated schoolhouse with visible windows showing black and white children together, black female teacher at chalkboard. Left side: Former slaves working own land marked "40 Acres - Property of..." signs, families farming together with dignity and ownership pride. Right side: Active Freedmen's Bureau office helping people with land titles and education enrollment, officials providing support. Foreground: Black and white workers collaborating on rebuilding town hall, working side-by-side, sharing tools. American flag overhead, bronze plaque being installed: "Dedicated to New Birth of Freedom - 1868." Background depth: Thriving mixed community, integrated shops, churches with visible integrated congregations, peaceful commerce. Architecture: Southern renewal—freshly painted, new construction, prosperity. Lighting: Bright afternoon sunshine, warm optimistic golden light, no violent shadows. Color palette: Hopeful blue (#4A90E2), renewal green (#10B981), unity purple (#7C3AED), warm gold (#FFD700)—vibrant healed nation. Artistic style: Norman Rockwell Americana warmth with Pixar expressiveness, detailed period accuracy, genuine emotion. Mood: Peaceful, hopeful, reconciled, just—America's healing potential realized. Camera angle: Eye-level 50mm showing equality. Medium: Digital illustration, 4K quality, warm saturated optimistic colors.
-
----
 
 ## 🌍 TIMELINE 2: Peaceful Abolition
 
@@ -39,11 +29,6 @@ A prosperous, harmonious cartoonish-realistic scene depicting gradual, compensat
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Peaceful compensated abolition, Virginia plantation transition 1868. Central scene: Former plantation house now agricultural cooperative, signing ceremony at outdoor table, owners and formerly enslaved people formalizing land purchases via government compensation bonds, dignified handshakes, negotiated transition. Left side: Industrial transformation—new textile factories with integrated workforce visible through windows, black and white workers at modern machinery, supervisors of both races. Right side: "Gradual Freedom Institute" showing trade education—blacksmithing, carpentry, agriculture science—former slaves and owners' children learning together. Foreground: Mixed-race children playing peacefully in period clothing, parents (black landowners, white merchants) chatting amicably. Fields showing diversified agriculture: wheat, corn, vegetables, orchards replacing cotton monoculture—economic modernization. Signs: "Freedom Through Fair Compensation Act - 1862," "Agricultural Cooperative of Virginia - All Welcome." Background: Intact prosperous Southern landscape, undamaged churches/schools/homes, thriving towns with industrial chimneys, railroad tracks bringing commerce. Lighting: Peaceful mid-morning soft natural light, gentle gradual change. Color palette: Prosperity green (#059669), negotiation blue (#0EA5E9), compensation gold (#FCD34D), cooperation purple (#8B5CF6)—wealth through peace. Artistic style: Period historical illustration with Pixar warmth, detailed economic transformation. Mood: Prosperous, peaceful, gradual, economically sound—freedom through negotiation. Camera angle: Balanced mid-level 40mm showing cooperation. Medium: Digital illustration, 4K quality, soft prosperous lighting.
-
----
 
 ## 🌍 TIMELINE 3: Confederacy Wins
 
@@ -53,11 +38,6 @@ A divided, tense cartoonish-realistic scene showing an independent Confederacy a
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Independent Confederacy, border checkpoint 1880, Mason-Dixon line. Composition dramatically split vertically. Left (U.S. side): Industrial development—factories with chimneys, steam locomotives, telegraph wires, Northern businessmen in top hats, European immigrants, mixed-race communities, reduced-stars U.S. flag. Industrial brick architecture, banks, modern commerce. Right (Confederate side): Plantation economy—cotton fields, enslaved people working (tastefully depicted but clear), overseers, plantation owners in linen suits and wide hats, Confederate Stars and Bars flag, gray-uniformed border guards. Antebellum mansions, agricultural warehouses. Border center: Stark dividing fence, guard posts both sides, customs buildings facing each other, checkpoint traffic. Union blue vs. Confederate gray guards eyeing each other. Foreground: Two mirrored families—Northern mixed family (black and white together) left looking with concern, white Southern family right looking with suspicion and pride. Border infrastructure: Competing railroads with different gauges, incompatible systems. Trade goods piling: Northern manufactured goods (machinery, tools) south-bound, Southern agricultural (cotton, tobacco) north-bound. Lighting contrast: North in bright industrial daylight with filtered sun, South in golden plantation sunshine with dark undertones. Color division: Union blue (#1E3A8A) and industrial gray (#6B7280) left, Confederate gray (#708090) and cotton white (#F9FAFB) right. Ominous storm clouds on horizon. Artistic style: Period accuracy with expressive characters showing moral weight. Mood: Tense, divided, unsustainable, morally troubling. Camera angle: Perfectly centered 35mm on border, visual symmetry emphasizing separation. Medium: Digital illustration, 4K quality, contrasted lighting emphasizing division.
-
----
 
 ## 📋 GENERATION GUIDELINES
 

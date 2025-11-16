@@ -11,11 +11,6 @@ A haunting cartoonish-realistic scene capturing the horror and scale of World Wa
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic World War I, "No Man's Land" 1916, stormy twilight. Foreground: Multinational soldiers (British, French, German) emerging from muddy trenches "over the top," expressive faces showing determination and fear—respectful stylization. Iconic period helmets (Brodie, Stahlhelm, Adrian), gas masks ready, rifles with bayonets catching cold light. Devastated landscape: Blasted splintered tree stumps, massive shell craters with muddy water, barbed wire tangles, no vegetation—mud and desolation, browns and grays. Mid-ground: Industrial warfare technology—tanks rolling with muddy tracks, biplanes in aerial dogfights overhead, artillery firing with muzzle flashes. Background: Ruined French villages, collapsed church steeples, shattered buildings, bombardment smoke. Sky: Dark storm clouds with searchlights cutting through, flares bursting red-white, dramatic atmospheric lighting. Distant explosions with volumetric smoke-fire. Trenches showing French blue and German field-gray opposing—human cost for all. Scattered equipment in mud: Helmets, rifles, letters from home. Lighting: Bleak cold blue-gray overcast with harsh flare-explosion spotlights—film noir mechanized horror. Color palette: Muted mud brown (#6B4423), trench gray (#6B7280), military blues-grays, violent explosion orange (#FF6B35) and red (#DC2626)—war draining life. Artistic style: Historical photography realism with Pixar emotional expressiveness showing human cost despite darkness. Mood: Tragic, horrifying, wasteful—"war to end all wars" devastating generation. Camera angle: Ground-level 35mm soldier perspective showing endless desolation. Medium: Digital illustration, 4K quality, bleak atmospheric lighting.
-
----
 
 ## 🌍 TIMELINE 1: No Assassination - Franz Ferdinand Lives
 
@@ -25,11 +20,6 @@ A peaceful, harmonious cartoonish-realistic scene showing Europe without the Gre
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Franz Ferdinand lives, Vienna constitutional assembly 1920. Central: Archduke Franz Ferdinand alive and mature with characteristic mustache in military uniform, presiding over federal council. Multi-ethnic equal participation: Austrian Germans, Hungarians, Czechs, South Slavs, Poles, Romanians in cultural dress with regional symbols. Chamber with harmoniously displayed constituent flags. Democratic reforms being celebrated, constitutional document "United States of Greater Austria" being signed collaboratively. Left: Peaceful Balkans delegates—Serbian, Bosnian, Croatian in respectful dialogue, agreement "Autonomous Balkan Federation Within Empire." Right: European diplomats observing with satisfaction—British, French, German, Russian witnessing successful multicultural democracy, Concert of Europe functioning. Window views: Peaceful Vienna without war destruction, intact Opera House operating, cafés with intellectual discourse, multi-ethnic university students. Parks with diverse families enjoying peace. Architecture: Austro-Hungarian imperial elegance with democratic accessibility. Lighting: Warm afternoon golden hour, prosperity and hope. Color palette: Peaceful gold (#FFD700), diplomatic blue (#3B82F6), harmonious multicultural blend—Austrian black-gold, Hungarian red-white-green, Czech red-white—rich tapestry not conflict. Artistic style: Austro-Hungarian imperial art with democratic progress, Pixar multicultural cooperation warmth. Mood: Peaceful, progressive, harmonious—war that never was. Camera angle: Balanced 50mm showing cooperation equality. Medium: Digital illustration, 4K quality, warm prosperous lighting.
-
----
 
 ## 🌍 TIMELINE 2: German Victory - Schlieffen Plan Works
 
@@ -39,11 +29,6 @@ A triumphant but ominous cartoonish-realistic scene showing German victory and E
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: German WWI victory, occupied Paris 1915. Central scene: Arc de Triomphe draped in German imperial flags, Kaiser Wilhelm II in spiked Pickelhaube and ornate uniform with Iron Cross before Eiffel Tower, reviewing victorious German troops. Field-gray German soldiers marching with precision, cavalry with lances bearing imperial eagles, artillery pieces as trophies. Left: French POWs marched (respectfully shown), French citizens watching with defeat and resignation, sign "Reichsprotektorat Frankreich." Right: German administrators installing occupation government, French tricolor replaced by German black-white-red everywhere. Mid-ground: German warships dominating Seine, aircraft patrolling overhead—total military control. Background transformation: German signs replacing French, Prussian administrative buildings, German language schools. Louvre with German imperial eagles. Lighting: Cold northern light, Germanic order on Latin culture, dramatic occupation shadows. Color palette: Dominant German black-white-red (#000000, #FFFFFF, #DC2626), Prussian blue (#1E40AF), French tricolor subdued secondary—conquered. German Gothic script on official signs. Artistic style: German imperial militarism with occupied Paris showing cultural clash. Mood: Victorious but oppressive, militaristic, ominous—Kaiser's Europe. Camera angle: Elevated 28mm showing dominance and control. Medium: Digital illustration, 4K quality, cold imperial lighting.
-
----
 
 ## 🌍 TIMELINE 3: Localized Conflict - Just Austria vs. Serbia
 
@@ -53,11 +38,6 @@ A contained, regional cartoonish-realistic scene showing the war that stayed lim
 
 ---
 
-### 🎨 DALL-E 3 PROMPT
-
-Cartoonish-realistic alternate history: Localized WWI, Belgrade 1915 after Third Balkan War. Central: Negotiating table in Belgrade government building, Austro-Hungarian and Serbian delegations signing peace treaty, British, French, German, Russian mediators in diplomatic attire observing. Both Austro-Hungarian double-eagle and Serbian cross-eagle emblems displayed respectfully. Left: Limited conflict evidence—damaged Belgrade buildings being rebuilt, Serbian soldiers reuniting with families, modest war memorials. Right: Peace terms implemented—Balkan Federation documents for regional self-governance, European guarantees, arms limitation treaties sealed. Window views: Peaceful wider Europe—no Western Front, London and Paris with normal pre-war life, German-French peaceful trade, developing Russian cities. Visible newspaper headlines: "Great Powers Prevent European War," "Balkan Conflict Contained," "Diplomacy Triumphs." Architecture: One recovering Serbian city, not continental ruins. International Red Cross workers from all nations cooperating in reconstruction. Lighting: Hopeful mid-day with visible reconstruction progress. Color palette: Diplomatic blue (#3B82F6), mediation purple (#8B5CF6), healing green (#10B981), minimal military colors—peace preserved. Artistic style: Period diplomatic realism with hopeful reconstruction, wisdom of restraint. Mood: Relieved, diplomatic, contained—Great War prevented. Camera angle: 40mm showing international cooperation preventing catastrophe. Medium: Digital illustration, 4K quality, hopeful cooperative lighting.
-
----
 
 ## 📋 GENERATION GUIDELINES
 
