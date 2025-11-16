@@ -104,9 +104,9 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Resources</h4>
             <nav className="flex flex-col gap-2 text-slate-300">
-              <a href="#" className="hover:text-white transition-colors">Documentation</a>
-              <a href="#" className="hover:text-white transition-colors">FAQ</a>
-              <a href="#" className="hover:text-white transition-colors">Support</a>
+              <Link to="/docs" className="hover:text-white transition-colors">Documentation</Link>
+              <Link to="/faq" className="hover:text-white transition-colors">FAQ</Link>
+              <Link to="/support" className="hover:text-white transition-colors">Support</Link>
             </nav>
           </div>
         </div>
@@ -118,15 +118,15 @@ export const Footer: React.FC = () => {
             &copy; {currentYear} Multiversity. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-slate-400">
-            <a href="#" className="hover:text-white transition-colors">
+            <Link to="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
+            </Link>
+            <Link to="/terms" className="hover:text-white transition-colors">
               Terms of Service
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
+            </Link>
+            <Link to="/accessibility" className="hover:text-white transition-colors">
               Accessibility
-            </a>
+            </Link>
           </div>
         </div>
       </div>
