@@ -244,7 +244,7 @@ const LandingPage: React.FC = () => {
                 whileHover={{ y: -5 }}
                 className="group"
               >
-                <Link to={`/chapter/${chapter.id}`}>
+                <Link to={`/chapters/${chapter.id}`}>
                   <div className="relative p-4 sm:p-6 rounded-lg h-40 sm:h-48 flex flex-col justify-between text-white transition-transform group-hover:scale-105 shadow-lg overflow-hidden">
                     {/* Background Image */}
                     <div

@@ -301,7 +301,7 @@ const ChaptersPage: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="group"
               >
-                <Link to={`/chapter/${chapter.id}`}>
+                <Link to={`/chapters/${chapter.id}`}>
                   <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 transition-all duration-500 group-hover:shadow-blue-900/20 group-hover:ring-blue-500/50">
                     {/* Full Background Image */}
                     <div

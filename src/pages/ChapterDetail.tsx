@@ -10,7 +10,7 @@ import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 
 const ChapterDetail: React.FC = () => {
-  const { chapterId } = useParams<{ chapterId: string }>();
+  const { id: chapterId } = useParams<{ id: string }>();
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [selectedTimeline, setSelectedTimeline] = useState<string | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<Person | null>(null);
@@ -265,20 +265,25 @@ const ChapterDetail: React.FC = () => {
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center justify-center space-x-2">
               <PlayCircle className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
-              <span>Interactive Story Mode</span>
+              <span>Interactive Experience</span>
             </h2>
             <p className="text-sm sm:text-base text-gray-300 mb-6 px-4">
-              Experience the chapter through an animated story that brings history to life!
+              Dive into the history yourself. Choose your mode of exploration.
             </p>
-            <motion.button
-              onClick={() => setShowStory(!showStory)}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 mx-auto text-sm sm:text-base"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Sparkles className="w-5 h-5" />
-              <span>{showStory ? 'Hide Story' : 'Start Interactive Story'}</span>
-            </motion.button>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.button
+                onClick={() => setShowStory(!showStory)}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Sparkles className="w-5 h-5" />
+                <span>{showStory ? 'Hide Story' : 'Interactive Story'}</span>
+              </motion.button>
+
+
+            </div>
           </motion.div>
 
           <AnimatePresence>
