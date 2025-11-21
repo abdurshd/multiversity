@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Twitter, Mail, Sparkles, ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Footer: React.FC = () => {
+  const { t } = useTranslation(['common-footer', 'common-nav']);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -19,10 +21,9 @@ export const Footer: React.FC = () => {
         <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-[0_20px_120px_rgba(59,130,246,0.2)]">
           <div>
             <p className="text-sm uppercase tracking-[0.4em] text-blue-200 mb-3">Immersive Alt-History</p>
-            <h2 className="text-3xl font-bold text-white leading-tight">Ready to rewrite history?</h2>
+            <h2 className="text-3xl font-bold text-white leading-tight">{t('common-footer:cta.heading')}</h2>
             <p className="text-slate-300 mt-3 max-w-2xl">
-              Explore living timelines, cinematic timelines and meticulously researched what-ifs. Pick a chapter, choose a divergence,
-              and watch the world shift under your cursor.
+              {t('common-footer:cta.description')}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full max-w-sm">
@@ -31,13 +32,13 @@ export const Footer: React.FC = () => {
               className="flex-1 inline-flex items-center justify-center space-x-2 rounded-2xl bg-blue-600 hover:bg-blue-700 px-5 py-3 text-white font-semibold shadow-lg shadow-blue-600/30 transition-colors"
             >
               <Sparkles className="w-5 h-5" />
-              <span>Explore Chapters</span>
+              <span>{t('common-nav:nav.chapters')}</span>
             </Link>
             <Link
               to="/compare"
               className="flex-1 inline-flex items-center justify-center space-x-2 rounded-2xl border border-white/20 px-5 py-3 text-white/90 hover:text-white"
             >
-              <span>Compare Timelines</span>
+              <span>{t('common-footer:links.compare')}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -46,11 +47,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold text-white mb-4">Multiversity</h3>
+            <h3 className="text-xl font-bold text-white mb-4">{t('common-footer:sections.multiversity')}</h3>
             <p className="text-slate-400 mb-4">
-              Explore alternate histories and divergent timelines. Discover how small changes
-              can create vastly different worlds and understand the interconnected nature of
-              historical events.
+              {t('common-footer:cta.description')}
             </p>
             <div className="flex gap-4">
               <a
@@ -83,30 +82,30 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('common-footer:sections.quick_links')}</h4>
             <nav className="flex flex-col gap-2 text-slate-300">
               <Link to="/" className="group inline-flex items-center gap-2 hover:text-white">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-500 group-hover:bg-white transition" />
-                Home
+                {t('common-nav:nav.home')}
               </Link>
               <Link to="/chapters" className="group inline-flex items-center gap-2 hover:text-white">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-500 group-hover:bg-white transition" />
-                Explore Chapters
+                {t('common-nav:nav.chapters')}
               </Link>
               <Link to="/compare" className="group inline-flex items-center gap-2 hover:text-white">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-500 group-hover:bg-white transition" />
-                Compare Timelines
+                {t('common-footer:links.compare')}
               </Link>
             </nav>
           </div>
 
           {/* Resources */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('common-footer:sections.resources')}</h4>
             <nav className="flex flex-col gap-2 text-slate-300">
-              <Link to="/docs" className="hover:text-white transition-colors">Documentation</Link>
-              <Link to="/faq" className="hover:text-white transition-colors">FAQ</Link>
-              <Link to="/support" className="hover:text-white transition-colors">Support</Link>
+              <Link to="/docs" className="hover:text-white transition-colors">{t('common-footer:links.documentation')}</Link>
+              <Link to="/faq" className="hover:text-white transition-colors">{t('common-footer:links.faq')}</Link>
+              <Link to="/support" className="hover:text-white transition-colors">{t('common-footer:links.support')}</Link>
             </nav>
           </div>
         </div>
@@ -115,17 +114,17 @@ export const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-sm flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-            &copy; {currentYear} Multiversity. All rights reserved.
+            {t('common-footer:legal.copyright', { year: currentYear })}
           </p>
           <div className="flex gap-6 text-sm text-slate-400">
             <Link to="/privacy" className="hover:text-white transition-colors">
-              Privacy Policy
+              {t('common-footer:legal.privacy')}
             </Link>
             <Link to="/terms" className="hover:text-white transition-colors">
-              Terms of Service
+              {t('common-footer:legal.terms')}
             </Link>
             <Link to="/accessibility" className="hover:text-white transition-colors">
-              Accessibility
+              {t('common-footer:legal.accessibility')}
             </Link>
           </div>
         </div>

@@ -1,0 +1,71 @@
+{
+  "buttons": {
+    "start": "Start",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "explore": "Explore",
+    "compare": "Compare",
+    "learn_more": "Learn More",
+    "read_more": "Read More",
+    "view_all": "View All",
+    "show_more": "Show More",
+    "show_less": "Show Less",
+    "go_back": "Go Back",
+    "try_again": "Try Again"
+  },
+  "states": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "empty": "No data available",
+    "not_found": "Not Found",
+    "searching": "Searching...",
+    "processing": "Processing...",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "updating": "Updating..."
+  },
+  "labels": {
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "date": "Date",
+    "category": "Category",
+    "status": "Status",
+    "type": "Type",
+    "name": "Name",
+    "description": "Description",
+    "actions": "Actions"
+  },
+  "placeholders": {
+    "search": "Search...",
+    "enter_text": "Enter text...",
+    "select_option": "Select an option...",
+    "type_here": "Type here..."
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalid_email": "Invalid email address",
+    "min_length": "Minimum {{count}} characters",
+    "max_length": "Maximum {{count}} characters",
+    "invalid_format": "Invalid format"
+  },
+  "common": {
+    "welcome": "Welcome to Multiversity",
+    "language": "Language",
+    "or": "or",
+    "and": "and",
+    "of": "of",
+    "in": "in",
+    "by": "by",
+    "at": "at",
+    "from": "from",
+    "to": "to"
+  }
+}

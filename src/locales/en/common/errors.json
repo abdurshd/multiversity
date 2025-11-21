@@ -1,0 +1,36 @@
+{
+  "general": {
+    "title": "Something went wrong",
+    "description": "We're sorry, an unexpected error occurred.",
+    "reload": "Reload Page",
+    "contact_support": "Contact Support"
+  },
+  "network": {
+    "title": "Network Error",
+    "description": "Please check your internet connection and try again.",
+    "retry": "Retry"
+  },
+  "not_found": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist.",
+    "go_home": "Go to Home"
+  },
+  "chapter_not_found": {
+    "title": "Chapter Not Found",
+    "description": "The chapter you're looking for doesn't exist or has been removed.",
+    "view_all": "View All Chapters"
+  },
+  "timeline_not_found": {
+    "title": "Timeline Not Found",
+    "description": "This timeline doesn't exist or is not available.",
+    "back_to_chapter": "Back to Chapter"
+  },
+  "access_denied": {
+    "title": "Access Denied",
+    "description": "You don't have permission to access this resource."
+  },
+  "server_error": {
+    "title": "Server Error",
+    "description": "Our servers are experiencing issues. Please try again later."
+  }
+}
