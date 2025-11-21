@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="pizzaCrustGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cheeseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="pizzaGlow">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="pizzaFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Delicious glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#pizzaGlow)">
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pizza slice -->
+  <g id="pizzaSlice" filter="url(#pizzaFilter)">
+    <!-- Crust edge -->
+    <path d="M 100 100 L 160 50 A 80 80 0 0 1 160 150 Z"
+          fill="url(#pizzaCrustGradient)"
+          stroke="#b45309"
+          stroke-width="3"/>
+
+    <!-- Cheese layer -->
+    <path d="M 100 100 L 155 55 A 75 75 0 0 1 155 145 Z"
+          fill="url(#cheeseGradient)"
+          opacity="0.9"/>
+
+    <!-- Crust bubbles -->
+    <g fill="#d97706" opacity="0.6">
+      <circle cx="150" cy="60" r="3"/>
+      <circle cx="158" cy="80" r="2.5"/>
+      <circle cx="156" cy="100" r="2"/>
+      <circle cx="158" cy="120" r="2.5"/>
+      <circle cx="152" cy="140" r="3"/>
+    </g>
+
+    <!-- Pepperoni slices -->
+    <g id="pepperoni">
+      <circle cx="125" cy="90" r="8" fill="#dc2626" stroke="#991b1b" stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0.9;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="135" cy="110" r="8" fill="#dc2626" stroke="#991b1b" stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0.9;1" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="145" cy="85" r="7" fill="#dc2626" stroke="#991b1b" stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0.9;1" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="120" cy="120" r="7" fill="#dc2626" stroke="#991b1b" stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0.9;1" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Pepperoni texture -->
+      <g fill="#7f1d1d" opacity="0.4">
+        <circle cx="125" cy="88" r="1.5"/>
+        <circle cx="135" cy="112" r="1.5"/>
+        <circle cx="145" cy="83" r="1.2"/>
+        <circle cx="120" cy="122" r="1.2"/>
+      </g>
+    </g>
+
+    <!-- Cheese stretch -->
+    <g id="cheeseStretch" opacity="0.8">
+      <path d="M 150 95 Q 165 100 180 105"
+            fill="none"
+            stroke="#fbbf24"
+            stroke-width="3"
+            stroke-linecap="round">
+        <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="d"
+                 values="M 150 95 Q 165 100 180 105;
+                         M 150 95 Q 165 95 180 90;
+                         M 150 95 Q 165 100 180 105"
+                 dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 148 110 Q 163 115 178 120"
+            fill="none"
+            stroke="#fbbf24"
+            stroke-width="2.5"
+            stroke-linecap="round">
+        <animate attributeName="opacity" values="0;0.8;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="d"
+                 values="M 148 110 Q 163 115 178 120;
+                         M 148 110 Q 163 110 178 105;
+                         M 148 110 Q 163 115 178 120"
+                 dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Basil leaves -->
+    <g id="basil">
+      <ellipse cx="130" cy="100" rx="6" ry="9" fill="#15803d" opacity="0.9"
+               transform="rotate(-20 130 100)"/>
+      <ellipse cx="140" cy="125" rx="5" ry="8" fill="#16a34a" opacity="0.9"
+               transform="rotate(15 140 125)"/>
+    </g>
+
+    <!-- Olive slices -->
+    <g id="olives" fill="#1e293b" stroke="#0f172a" stroke-width="1">
+      <circle cx="115" cy="105" r="4" opacity="0.9"/>
+      <circle cx="145" cy="105" r="4" opacity="0.9"/>
+      <!-- Olive centers -->
+      <circle cx="115" cy="105" r="1.5" fill="#f59e0b"/>
+      <circle cx="145" cy="105" r="1.5" fill="#f59e0b"/>
+    </g>
+
+    <!-- Shine/grease -->
+    <ellipse cx="135" cy="95" rx="15" ry="10"
+             fill="white"
+             opacity="0.25">
+      <animate attributeName="opacity" values="0.2;0.35;0.2" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Steam rising -->
+  <g id="steam" opacity="0.5">
+    <path d="M 130 85 Q 128 75 130 65"
+          fill="none"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -3,-25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 140 80 Q 142 70 140 60"
+          fill="none"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 2,-28"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 150 90 Q 148 80 150 70"
+          fill="none"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -1,-22"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Aroma particles -->
+  <g id="aromaParticles" opacity="0.6">
+    <circle cx="125" cy="75" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -8,-30"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="78" r="2" fill="#fed7aa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 5,-35"
+        dur="4s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gentle rotation animation -->
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="0 100 100; 2 100 100; 0 100 100; -2 100 100; 0 100 100"
+    dur="8s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

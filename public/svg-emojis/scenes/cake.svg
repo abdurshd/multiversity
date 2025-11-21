@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="cakeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="frostingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="candleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="flameGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.5" />
+    </radialGradient>
+    <radialGradient id="celebrationGlow">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="cakeFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Celebration glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#celebrationGlow)">
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Cake -->
+  <g id="cake" filter="url(#cakeFilter)">
+    <!-- Bottom tier -->
+    <rect x="50" y="130" width="100" height="30"
+          fill="url(#cakeGradient)"
+          stroke="#f59e0b"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Bottom frosting layer -->
+    <rect x="50" y="125" width="100" height="5"
+          fill="url(#frostingGradient)"
+          rx="2"/>
+
+    <!-- Frosting drips bottom -->
+    <g fill="#f87171" opacity="0.9">
+      <path d="M 60 130 L 60 135 L 65 135 L 65 130"/>
+      <path d="M 80 130 L 80 138 L 85 138 L 85 130"/>
+      <path d="M 100 130 L 100 136 L 105 136 L 105 130"/>
+      <path d="M 120 130 L 120 137 L 125 137 L 125 130"/>
+      <path d="M 140 130 L 140 134 L 145 134 L 145 130"/>
+    </g>
+
+    <!-- Middle tier -->
+    <rect x="60" y="100" width="80" height="25"
+          fill="url(#cakeGradient)"
+          stroke="#f59e0b"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Middle frosting layer -->
+    <rect x="60" y="96" width="80" height="4"
+          fill="url(#frostingGradient)"
+          rx="2"/>
+
+    <!-- Frosting drips middle -->
+    <g fill="#f87171" opacity="0.9">
+      <path d="M 70 100 L 70 104 L 74 104 L 74 100"/>
+      <path d="M 90 100 L 90 106 L 94 106 L 94 100"/>
+      <path d="M 110 100 L 110 105 L 114 105 L 114 100"/>
+      <path d="M 130 100 L 130 103 L 134 103 L 134 100"/>
+    </g>
+
+    <!-- Top tier -->
+    <rect x="70" y="75" width="60" height="20"
+          fill="url(#cakeGradient)"
+          stroke="#f59e0b"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Top frosting layer -->
+    <rect x="70" y="71" width="60" height="4"
+          fill="url(#frostingGradient)"
+          rx="2"/>
+
+    <!-- Frosting drips top -->
+    <g fill="#f87171" opacity="0.9">
+      <path d="M 80 75 L 80 78 L 83 78 L 83 75"/>
+      <path d="M 100 75 L 100 80 L 103 80 L 103 75"/>
+      <path d="M 120 75 L 120 79 L 123 79 L 123 75"/>
+    </g>
+
+    <!-- Decorative dots -->
+    <g fill="#ef4444">
+      <circle cx="70" cy="145" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="90" cy="145" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="110" cy="145" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="130" cy="145" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="80" cy="113" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="100" cy="113" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="120" cy="113" r="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Candle -->
+    <rect x="96" y="55" width="8" height="20"
+          fill="url(#candleGradient)"
+          stroke="#d97706"
+          stroke-width="1.5"
+          rx="1">
+      <animate attributeName="height" values="20;19;20" dur="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Wick -->
+    <line x1="100" y1="55" x2="100" y2="48"
+          stroke="#1e293b"
+          stroke-width="1.5"/>
+
+    <!-- Flame -->
+    <ellipse cx="100" cy="45" rx="5" ry="8"
+             fill="url(#flameGradient)">
+      <animate attributeName="ry" values="8;10;8" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Flame core -->
+    <ellipse cx="100" cy="45" rx="3" ry="5"
+             fill="#fef3c7">
+      <animate attributeName="ry" values="5;6;5" dur="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Flame glow -->
+    <circle cx="100" cy="45" r="12"
+            fill="#fbbf24"
+            opacity="0.3">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="12;14;12" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Sparkles -->
+  <g id="sparkles" opacity="0.7">
+    <circle cx="55" cy="120" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="115" r="2" fill="#fde68a">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="65" cy="90" r="2" fill="#fbbf24">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="85" r="2" fill="#f59e0b">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Celebration particles -->
+  <g id="celebrationParticles" opacity="0.6">
+    <circle cx="80" cy="65" r="2" fill="#fca5a5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-30"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="70" r="2" fill="#f87171">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-35"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="60" r="2" fill="#fde68a">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-40"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gentle sway animation -->
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="0 100 140; 1 100 140; 0 100 140; -1 100 140; 0 100 140"
+    dur="6s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

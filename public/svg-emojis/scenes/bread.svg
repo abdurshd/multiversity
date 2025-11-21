@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="breadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="crustGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="breadGlow">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="breadFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fresh baked glow -->
+  <circle cx="100" cy="100" r="70" fill="url(#breadGlow)">
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Bread loaf -->
+  <g id="breadLoaf" filter="url(#breadFilter)">
+    <!-- Main loaf body -->
+    <ellipse cx="100" cy="115" rx="55" ry="35"
+             fill="url(#breadGradient)"
+             stroke="#b45309"
+             stroke-width="2"/>
+
+    <!-- Top crust -->
+    <path d="M 50 105 Q 100 75 150 105"
+          fill="url(#crustGradient)"
+          stroke="#92400e"
+          stroke-width="2"/>
+
+    <!-- Crust texture lines -->
+    <g stroke="#92400e" stroke-width="1.5" fill="none" opacity="0.6">
+      <path d="M 65 95 Q 70 90 75 95">
+        <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 85 88 Q 90 83 95 88">
+        <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 105 88 Q 110 83 115 88">
+        <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 125 95 Q 130 90 135 95">
+        <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Scoring marks (baker's cuts) -->
+    <g stroke="#78350f" stroke-width="2" stroke-linecap="round" opacity="0.7">
+      <line x1="75" y1="95" x2="85" y2="90"/>
+      <line x1="90" y1="87" x2="100" y2="85"/>
+      <line x1="110" y1="87" x2="120" y2="90"/>
+    </g>
+
+    <!-- Air pockets/bubbles in crust -->
+    <g fill="#b45309" opacity="0.5">
+      <ellipse cx="70" cy="100" rx="3" ry="2"/>
+      <ellipse cx="90" cy="93" rx="2.5" ry="1.5"/>
+      <ellipse cx="110" cy="93" rx="2.5" ry="1.5"/>
+      <ellipse cx="130" cy="100" rx="3" ry="2"/>
+      <circle cx="100" cy="89" r="2"/>
+    </g>
+
+    <!-- Shine/gloss on crust -->
+    <ellipse cx="95" cy="92" rx="20" ry="12"
+             fill="white"
+             opacity="0.25">
+      <animate attributeName="opacity" values="0.2;0.35;0.2" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Bottom crust -->
+    <ellipse cx="100" cy="147" rx="50" ry="8"
+             fill="#92400e"
+             opacity="0.7"/>
+
+    <!-- Flour dust -->
+    <g fill="white" opacity="0.4">
+      <circle cx="65" cy="108" r="2"/>
+      <circle cx="80" cy="102" r="1.5"/>
+      <circle cx="105" cy="98" r="2"/>
+      <circle cx="125" cy="105" r="1.5"/>
+      <circle cx="140" cy="110" r="2"/>
+    </g>
+  </g>
+
+  <!-- Bread slices (showing soft interior) -->
+  <g id="sliceDetail" opacity="0.8">
+    <!-- Slice lines -->
+    <line x1="48" y1="110" x2="48" y2="140"
+          stroke="#f59e0b"
+          stroke-width="1.5"
+          opacity="0.6"/>
+
+    <!-- Soft bread texture -->
+    <rect x="42" y="112" width="6" height="26"
+          fill="#fef3c7"
+          opacity="0.7"/>
+
+    <!-- Bread holes in slice -->
+    <g fill="#fbbf24" opacity="0.5">
+      <ellipse cx="44" cy="120" rx="1" ry="1.5"/>
+      <ellipse cx="46" cy="128" rx="0.8" ry="1.2"/>
+      <ellipse cx="44" cy="135" rx="1" ry="1.5"/>
+    </g>
+  </g>
+
+  <!-- Steam rising -->
+  <g id="steam" opacity="0.5">
+    <path d="M 85 80 Q 83 70 85 60"
+          fill="none"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -3,-25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 100 75 Q 102 65 100 55"
+          fill="none"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 2,-28"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 115 80 Q 113 70 115 60"
+          fill="none"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -1,-22"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Aroma particles -->
+  <g id="aromaParticles" opacity="0.6">
+    <circle cx="80" cy="75" r="2" fill="#fed7aa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,-30"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="78" r="2" fill="#fde68a">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,-35"
+        dur="4s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gentle warmth pulse -->
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="1,1; 1.02,1.02; 1,1"
+    dur="4s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

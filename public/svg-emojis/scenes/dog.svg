@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="dogFurGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="loyaltyGlow">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0" />
+    </radialGradient>
+    <filter id="dogFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Loyalty glow -->
+  <circle cx="100" cy="110" r="70" fill="url(#loyaltyGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Dog -->
+  <g id="dog" filter="url(#dogFilter)">
+    <!-- Body -->
+    <ellipse cx="100" cy="125" rx="35" ry="30"
+             fill="url(#dogFurGradient)"
+             stroke="#92400e"
+             stroke-width="2"/>
+
+    <!-- Head -->
+    <ellipse cx="100" cy="85" rx="28" ry="30"
+             fill="url(#dogFurGradient)"
+             stroke="#92400e"
+             stroke-width="2">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Snout -->
+    <ellipse cx="100" cy="95" rx="18" ry="15"
+             fill="#f59e0b"
+             stroke="#92400e"
+             stroke-width="1.5">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Nose -->
+    <ellipse cx="100" cy="100" rx="6" ry="5"
+             fill="#1e293b"
+             stroke="#0f172a"
+             stroke-width="1">
+      <animate attributeName="ry" values="5;5.5;5" dur="2s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Nostrils -->
+    <g fill="#0f172a">
+      <ellipse cx="97" cy="100" rx="1.5" ry="2">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="103" cy="100" rx="1.5" ry="2">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Eyes -->
+    <g id="eyes">
+      <ellipse cx="90" cy="78" rx="4" ry="5" fill="#1e293b">
+        <animate attributeName="ry" values="5;0.5;5" dur="4s" repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+          dur="4s"
+          additive="sum"
+          repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="110" cy="78" rx="4" ry="5" fill="#1e293b">
+        <animate attributeName="ry" values="5;0.5;5" dur="4s" repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+          dur="4s"
+          additive="sum"
+          repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Eye highlights -->
+      <circle cx="91" cy="76" r="1.5" fill="white" opacity="0.8">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </circle>
+      <circle cx="111" cy="76" r="1.5" fill="white" opacity="0.8">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Ears (floppy) -->
+    <g id="ears">
+      <!-- Left ear -->
+      <ellipse cx="75" cy="75" rx="12" ry="20"
+               fill="#b45309"
+               stroke="#92400e"
+               stroke-width="1.5"
+               transform="rotate(-30 75 75)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-30 75 75; -35 75 75; -30 75 75; -25 75 75; -30 75 75"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Right ear -->
+      <ellipse cx="125" cy="75" rx="12" ry="20"
+               fill="#b45309"
+               stroke="#92400e"
+               stroke-width="1.5"
+               transform="rotate(30 125 75)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="30 125 75; 35 125 75; 30 125 75; 25 125 75; 30 125 75"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Tongue (panting) -->
+    <ellipse cx="100" cy="108" rx="4" ry="6"
+             fill="#f87171"
+             stroke="#dc2626"
+             stroke-width="1"
+             opacity="0.9">
+      <animate attributeName="ry" values="6;8;6" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="1s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 85; -3 100 85; 0 100 85; 3 100 85; 0 100 85"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Collar -->
+    <rect x="85" y="110" width="30" height="6"
+          fill="#dc2626"
+          stroke="#991b1b"
+          stroke-width="1.5"
+          rx="3"/>
+
+    <!-- Collar tag -->
+    <circle cx="100" cy="113" r="3"
+            fill="#fbbf24"
+            stroke="#f59e0b"
+            stroke-width="1">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Front legs -->
+    <g id="legs" fill="#b45309" stroke="#92400e" stroke-width="1.5">
+      <rect x="85" y="145" width="8" height="25" rx="3"/>
+      <rect x="107" y="145" width="8" height="25" rx="3"/>
+
+      <!-- Paws -->
+      <ellipse cx="89" cy="170" rx="5" ry="3" fill="#92400e"/>
+      <ellipse cx="111" cy="170" rx="5" ry="3" fill="#92400e"/>
+    </g>
+
+    <!-- Tail (wagging) -->
+    <path d="M 130 120 Q 145 115 155 125"
+          fill="none"
+          stroke="#b45309"
+          stroke-width="8"
+          stroke-linecap="round">
+      <animate attributeName="d"
+               values="M 130 120 Q 145 115 155 125;
+                       M 130 120 Q 145 105 155 105;
+                       M 130 120 Q 145 115 155 125;
+                       M 130 120 Q 145 125 155 135;
+                       M 130 120 Q 145 115 155 125"
+               dur="1.5s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Love hearts -->
+  <g id="loveHearts" opacity="0.7">
+    <path d="M 155 100 Q 155 95 158 95 Q 161 95 161 100 Q 161 105 155 108 Q 149 105 149 100 Q 149 95 152 95 Q 155 95 155 100"
+          fill="#fca5a5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 5,-30"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 165 115 Q 165 111 167 111 Q 169 111 169 115 Q 169 119 165 121 Q 161 119 161 115 Q 161 111 163 111 Q 165 111 165 115"
+          fill="#f87171">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,-35"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Paw prints -->
+  <g id="pawPrints" opacity="0.4">
+    <g transform="translate(45, 140)">
+      <ellipse cx="0" cy="0" rx="3" ry="4" fill="#92400e"/>
+      <circle cx="-3" cy="-4" r="1.5" fill="#92400e"/>
+      <circle cx="3" cy="-4" r="1.5" fill="#92400e"/>
+      <circle cx="-4" cy="-7" r="1.2" fill="#92400e"/>
+      <circle cx="4" cy="-7" r="1.2" fill="#92400e"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

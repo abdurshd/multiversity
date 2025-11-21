@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="birdBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="skyGlow">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+    </radialGradient>
+    <filter id="birdFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky glow -->
+  <circle cx="100" cy="100" r="70" fill="url(#skyGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Bird -->
+  <g id="bird" filter="url(#birdFilter)">
+    <!-- Body -->
+    <ellipse cx="100" cy="105" rx="22" ry="28"
+             fill="url(#birdBodyGradient)"
+             stroke="#2563eb"
+             stroke-width="2">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-3; 0,0; 0,2; 0,0"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Head -->
+    <circle cx="100" cy="75" r="18"
+            fill="url(#birdBodyGradient)"
+            stroke="#2563eb"
+            stroke-width="2">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-3; 0,0; 0,2; 0,0"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 75; -5 100 75; 0 100 75; 5 100 75; 0 100 75"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Beak -->
+    <path d="M 115 75 L 130 73 L 115 78 Z"
+          fill="#fbbf24"
+          stroke="#f59e0b"
+          stroke-width="1.5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-3; 0,0; 0,2; 0,0"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 75; -5 100 75; 0 100 75; 5 100 75; 0 100 75"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Eye -->
+    <circle cx="108" cy="72" r="3" fill="#1e293b">
+      <animate attributeName="r" values="3;0.5;3" dur="4s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-3; 0,0; 0,2; 0,0"
+        dur="2s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 75; -5 100 75; 0 100 75; 5 100 75; 0 100 75"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </circle>
+    <circle cx="109" cy="71" r="1" fill="white" opacity="0.9">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-3; 0,0; 0,2; 0,0"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 75; -5 100 75; 0 100 75; 5 100 75; 0 100 75"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Wings (flapping) -->
+    <g id="wings">
+      <!-- Left wing -->
+      <path d="M 85 100 Q 55 95 40 100 Q 45 105 85 110 Z"
+            fill="url(#wingGradient)"
+            stroke="#2563eb"
+            stroke-width="2"
+            opacity="0.95">
+        <animate attributeName="d"
+                 values="M 85 100 Q 55 95 40 100 Q 45 105 85 110 Z;
+                         M 85 100 Q 50 70 35 65 Q 40 75 85 105 Z;
+                         M 85 100 Q 55 95 40 100 Q 45 105 85 110 Z"
+                 dur="0.8s"
+                 repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          additive="sum"
+          repeatCount="indefinite"/>
+      </path>
+
+      <!-- Right wing -->
+      <path d="M 115 100 Q 145 95 160 100 Q 155 105 115 110 Z"
+            fill="url(#wingGradient)"
+            stroke="#2563eb"
+            stroke-width="2"
+            opacity="0.95">
+        <animate attributeName="d"
+                 values="M 115 100 Q 145 95 160 100 Q 155 105 115 110 Z;
+                         M 115 100 Q 150 70 165 65 Q 160 75 115 105 Z;
+                         M 115 100 Q 145 95 160 100 Q 155 105 115 110 Z"
+                 dur="0.8s"
+                 repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          additive="sum"
+          repeatCount="indefinite"/>
+      </path>
+
+      <!-- Wing feather details -->
+      <g stroke="#2563eb" stroke-width="1" opacity="0.6" fill="none">
+        <path d="M 60 98 Q 55 98 50 100">
+          <animate attributeName="d"
+                   values="M 60 98 Q 55 98 50 100;
+                           M 60 88 Q 55 78 50 75;
+                           M 60 98 Q 55 98 50 100"
+                   dur="0.8s"
+                   repeatCount="indefinite"/>
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            additive="sum"
+            repeatCount="indefinite"/>
+        </path>
+        <path d="M 140 98 Q 145 98 150 100">
+          <animate attributeName="d"
+                   values="M 140 98 Q 145 98 150 100;
+                           M 140 88 Q 145 78 150 75;
+                           M 140 98 Q 145 98 150 100"
+                   dur="0.8s"
+                   repeatCount="indefinite"/>
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            additive="sum"
+            repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+
+    <!-- Tail feathers -->
+    <g id="tail">
+      <path d="M 95 130 L 90 145 L 95 135 Z"
+            fill="#60a5fa"
+            stroke="#2563eb"
+            stroke-width="1.5">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 130; -8 100 130; 0 100 130; 8 100 130; 0 100 130"
+          dur="2s"
+          additive="sum"
+          repeatCount="indefinite"/>
+      </path>
+      <path d="M 100 132 L 100 148 L 100 135 Z"
+            fill="#3b82f6"
+            stroke="#2563eb"
+            stroke-width="1.5">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          repeatCount="indefinite"/>
+      </path>
+      <path d="M 105 130 L 110 145 L 105 135 Z"
+            fill="#60a5fa"
+            stroke="#2563eb"
+            stroke-width="1.5">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 100 130; 8 100 130; 0 100 130; -8 100 130; 0 100 130"
+          dur="2s"
+          additive="sum"
+          repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Feet/legs -->
+    <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round">
+      <line x1="95" y1="130" x2="95" y2="140">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          repeatCount="indefinite"/>
+      </line>
+      <line x1="105" y1="130" x2="105" y2="140">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-3; 0,0; 0,2; 0,0"
+          dur="2s"
+          repeatCount="indefinite"/>
+      </line>
+
+      <!-- Toes -->
+      <g>
+        <line x1="95" y1="140" x2="90" y2="142">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            repeatCount="indefinite"/>
+        </line>
+        <line x1="95" y1="140" x2="95" y2="143">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            repeatCount="indefinite"/>
+        </line>
+        <line x1="95" y1="140" x2="100" y2="142">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            repeatCount="indefinite"/>
+        </line>
+
+        <line x1="105" y1="140" x2="100" y2="142">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            repeatCount="indefinite"/>
+        </line>
+        <line x1="105" y1="140" x2="105" y2="143">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            repeatCount="indefinite"/>
+        </line>
+        <line x1="105" y1="140" x2="110" y2="142">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0; 0,2; 0,0"
+            dur="2s"
+            repeatCount="indefinite"/>
+        </line>
+      </g>
+    </g>
+  </g>
+
+  <!-- Musical notes (chirping) -->
+  <g id="musicNotes" opacity="0.7">
+    <g fill="#1e293b">
+      <circle cx="125" cy="60" r="3"/>
+      <rect x="128" y="50" width="2" height="10"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 5,-20"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2s" repeatCount="indefinite"/>
+    </g>
+
+    <g fill="#1e293b">
+      <circle cx="135" cy="65" r="2.5"/>
+      <rect x="137.5" y="57" width="1.5" height="8"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,-25"
+        dur="2s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Air flow lines -->
+  <g id="airFlow" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" opacity="0.4">
+    <line x1="30" y1="95" x2="45" y2="95">
+      <animate attributeName="x1" values="30;20" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="45;35" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="155" y1="90" x2="170" y2="90">
+      <animate attributeName="x1" values="155;165" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="170;180" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Feathers floating -->
+  <g id="floatingFeathers" opacity="0.5">
+    <ellipse cx="70" cy="120" rx="3" ry="8" fill="#93c5fd" transform="rotate(30 70 120)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,40"
+        dur="5s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="30 70 120; 120 70 120"
+        dur="5s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>

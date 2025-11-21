@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="appleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stemGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#78350f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#451a03;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="appleGlow">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0" />
+    </radialGradient>
+    <filter id="appleFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fresh glow -->
+  <circle cx="100" cy="105" r="70" fill="url(#appleGlow)">
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Apple -->
+  <g id="apple" filter="url(#appleFilter)">
+    <!-- Main apple body -->
+    <ellipse cx="100" cy="110" rx="45" ry="50"
+             fill="url(#appleGradient)"
+             stroke="#991b1b"
+             stroke-width="2"/>
+
+    <!-- Apple indent top -->
+    <ellipse cx="100" cy="65" rx="12" ry="8"
+             fill="#7f1d1d"
+             opacity="0.6"/>
+
+    <!-- Apple bottom dimple -->
+    <ellipse cx="100" cy="158" rx="8" ry="5"
+             fill="#450a0a"
+             opacity="0.5"/>
+
+    <!-- Shading details -->
+    <g opacity="0.3">
+      <ellipse cx="85" cy="100" rx="15" ry="25" fill="#7f1d1d"/>
+      <ellipse cx="115" cy="115" rx="12" ry="20" fill="#991b1b"/>
+    </g>
+
+    <!-- Highlight shine -->
+    <ellipse cx="85" cy="90" rx="18" ry="25"
+             fill="white"
+             opacity="0.35">
+      <animate attributeName="opacity" values="0.3;0.4;0.3" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Secondary highlight -->
+    <ellipse cx="120" cy="105" rx="10" ry="15"
+             fill="white"
+             opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.25;0.15" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Stem -->
+    <rect x="97" y="55" width="6" height="15"
+          fill="url(#stemGradient)"
+          stroke="#451a03"
+          stroke-width="1"
+          rx="2">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 55; -3 100 55; 0 100 55; 3 100 55; 0 100 55"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Leaf -->
+    <ellipse cx="110" cy="58" rx="12" ry="6"
+             fill="url(#leafGradient)"
+             stroke="#14532d"
+             stroke-width="1.5"
+             transform="rotate(25 110 58)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="25 110 58; 30 110 58; 25 110 58; 20 110 58; 25 110 58"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Leaf vein -->
+    <line x1="110" y1="58" x2="117" y2="58"
+          stroke="#14532d"
+          stroke-width="0.5"
+          opacity="0.6"
+          transform="rotate(25 110 58)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="25 110 58; 30 110 58; 25 110 58; 20 110 58; 25 110 58"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </line>
+
+    <!-- Seeds visible (cut view suggestion) -->
+    <g id="seeds" fill="#451a03" opacity="0.7">
+      <ellipse cx="95" cy="110" rx="2" ry="3" transform="rotate(-20 95 110)"/>
+      <ellipse cx="105" cy="115" rx="2" ry="3" transform="rotate(15 105 115)"/>
+    </g>
+  </g>
+
+  <!-- Sparkles (freshness) -->
+  <g id="sparkles" opacity="0.7">
+    <circle cx="70" cy="85" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="95" r="2" fill="#fde68a">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="135" r="2" fill="#fca5a5">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Nutrition particles -->
+  <g id="nutritionParticles" opacity="0.5">
+    <circle cx="75" cy="100" r="2" fill="#4ade80">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-25"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="110" r="2" fill="#86efac">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-30"
+        dur="4s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gentle bob animation -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-3; 0,0; 0,2; 0,0"
+    dur="4s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>
