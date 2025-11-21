@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="tubeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#475569;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lensGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0.7" />
+    </linearGradient>
+    <radialGradient id="starGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="telescopeGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Night sky background -->
+  <rect width="200" height="200" fill="#0f172a" opacity="0.3"/>
+
+  <!-- Stars in background -->
+  <g id="stars" opacity="0.7">
+    <circle cx="30" cy="40" r="1.5" fill="#e0f2fe">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="50" r="2" fill="#dbeafe">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="140" r="1" fill="#f0f9ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="160" r="1.5" fill="#e0f2fe">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Discovery glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#starGlow)">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Telescope -->
+  <g id="telescope" filter="url(#telescopeGlow)" transform="rotate(-30 100 100)">
+    <!-- Tripod legs -->
+    <g id="tripod" stroke="#64748b" stroke-width="3" stroke-linecap="round">
+      <line x1="100" y1="140" x2="80" y2="175" opacity="0.8"/>
+      <line x1="100" y1="140" x2="120" y2="175" opacity="0.8"/>
+      <line x1="100" y1="140" x2="100" y2="175" opacity="0.8"/>
+    </g>
+
+    <!-- Tripod feet -->
+    <circle cx="80" cy="175" r="4" fill="#475569" stroke="#64748b" stroke-width="1"/>
+    <circle cx="120" cy="175" r="4" fill="#475569" stroke="#64748b" stroke-width="1"/>
+    <circle cx="100" cy="175" r="4" fill="#475569" stroke="#64748b" stroke-width="1"/>
+
+    <!-- Mount -->
+    <circle cx="100" cy="140" r="10"
+            fill="#64748b"
+            stroke="#475569"
+            stroke-width="2"/>
+    <circle cx="100" cy="140" r="6"
+            fill="#94a3b8"
+            stroke="#64748b"
+            stroke-width="1"/>
+
+    <!-- Main tube (optical tube assembly) -->
+    <rect x="40" y="125" width="120" height="30"
+          fill="url(#tubeGradient)"
+          stroke="#0f172a"
+          stroke-width="3"
+          rx="15"/>
+
+    <!-- Tube bands/rings -->
+    <g stroke="#94a3b8" stroke-width="2">
+      <line x1="70" y1="125" x2="70" y2="155" opacity="0.6"/>
+      <line x1="130" y1="125" x2="130" y2="155" opacity="0.6"/>
+    </g>
+
+    <!-- Objective lens (front) -->
+    <ellipse cx="40" cy="140" rx="8" ry="18"
+             fill="url(#lensGradient)"
+             stroke="#0ea5e9"
+             stroke-width="2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Lens rim -->
+    <ellipse cx="40" cy="140" rx="11" ry="21"
+             fill="none"
+             stroke="#1e293b"
+             stroke-width="3"/>
+
+    <!-- Eyepiece -->
+    <rect x="158" y="135" width="15" height="10"
+          fill="#475569"
+          stroke="#0f172a"
+          stroke-width="2"
+          rx="2"/>
+    <circle cx="173" cy="140" r="5"
+            fill="#0ea5e9"
+            opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Focuser -->
+    <rect x="120" y="150" width="20" height="8"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1.5"
+          rx="1"/>
+    <circle cx="130" cy="154" r="4"
+            fill="#94a3b8"
+            stroke="#64748b"
+            stroke-width="1">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 130 154"
+        to="360 130 154"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Finder scope (small telescope on top) -->
+    <rect x="80" y="120" width="40" height="6"
+          fill="#1e293b"
+          stroke="#0f172a"
+          stroke-width="1.5"
+          rx="3"/>
+    <circle cx="80" cy="123" r="3" fill="#60a5fa" opacity="0.5"/>
+  </g>
+
+  <!-- Viewing target (distant galaxy/nebula) -->
+  <g id="viewTarget" opacity="0.6">
+    <circle cx="50" cy="60" r="20" fill="#6366f1" opacity="0.3">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="60" r="12" fill="#8b5cf6" opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="60" r="6" fill="#c084fc" opacity="0.5">
+      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Stars in the view -->
+    <circle cx="45" cy="55" r="1" fill="#fef3c7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="55" cy="58" r="1" fill="#fef3c7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Light beam from telescope to target -->
+  <g id="viewLine" opacity="0.2">
+    <line x1="60" y1="130" x2="50" y2="75"
+          stroke="#60a5fa"
+          stroke-width="2"
+          stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Cosmic particles -->
+  <g id="cosmicDust" opacity="0.4">
+    <circle cx="90" cy="70" r="1" fill="#a5f3fc">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-20"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="90" r="1" fill="#93c5fd">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 20,-25"
+        dur="4.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

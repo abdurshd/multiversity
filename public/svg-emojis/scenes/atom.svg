@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="nucleusGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="electronGradient">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="atomicGlow">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+    </radialGradient>
+    <filter id="atomGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Atomic glow -->
+  <circle cx="100" cy="100" r="80" fill="url(#atomicGlow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Atom structure -->
+  <g id="atom" filter="url(#atomGlow)">
+    <!-- Nucleus (protons and neutrons) -->
+    <g id="nucleus">
+      <!-- Central core glow -->
+      <circle cx="100" cy="100" r="20" fill="url(#nucleusGradient)" opacity="0.5">
+        <animate attributeName="r" values="20;22;20" dur="2s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Protons (red) -->
+      <circle cx="95" cy="95" r="6" fill="#ef4444" stroke="#dc2626" stroke-width="1">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="105" cy="95" r="6" fill="#ef4444" stroke="#dc2626" stroke-width="1">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="95" cy="105" r="6" fill="#ef4444" stroke="#dc2626" stroke-width="1">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Neutrons (gray) -->
+      <circle cx="105" cy="105" r="6" fill="#94a3b8" stroke="#64748b" stroke-width="1">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="100" cy="100" r="6" fill="#94a3b8" stroke="#64748b" stroke-width="1">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Nucleus labels -->
+      <text x="95" y="97" font-size="8" fill="white" text-anchor="middle">+</text>
+      <text x="105" y="97" font-size="8" fill="white" text-anchor="middle">+</text>
+      <text x="95" y="107" font-size="8" fill="white" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Electron orbitals -->
+    <!-- Orbital 1 (horizontal) -->
+    <ellipse cx="100" cy="100" rx="60" ry="20"
+             fill="none"
+             stroke="#60a5fa"
+             stroke-width="2"
+             opacity="0.5"
+             stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Orbital 2 (vertical) -->
+    <ellipse cx="100" cy="100" rx="20" ry="60"
+             fill="none"
+             stroke="#34d399"
+             stroke-width="2"
+             opacity="0.5"
+             stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Orbital 3 (diagonal) -->
+    <ellipse cx="100" cy="100" rx="50" ry="20"
+             fill="none"
+             stroke="#a78bfa"
+             stroke-width="2"
+             opacity="0.5"
+             stroke-dasharray="5,5"
+             transform="rotate(60 100 100)">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Electrons orbiting -->
+    <!-- Electron 1 (blue, horizontal orbit) -->
+    <circle cx="100" cy="100" r="5" fill="url(#electronGradient)" stroke="#1e40af" stroke-width="1">
+      <animateMotion
+        path="M 0,0 m -60,0 a 60,20 0 1,1 120,0 a 60,20 0 1,1 -120,0"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Electron 2 (green, vertical orbit) -->
+    <circle cx="100" cy="100" r="5" fill="#34d399" stroke="#059669" stroke-width="1">
+      <animateMotion
+        path="M 0,0 m -20,0 a 20,60 0 1,1 40,0 a 20,60 0 1,1 -40,0"
+        dur="2.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Electron 3 (purple, diagonal orbit) -->
+    <circle cx="100" cy="100" r="5" fill="#a78bfa" stroke="#6d28d9" stroke-width="1">
+      <animateMotion
+        dur="3.5s"
+        repeatCount="indefinite">
+        <mpath href="#diagonalOrbit"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Electron 4 (blue, horizontal orbit, opposite phase) -->
+    <circle cx="100" cy="100" r="5" fill="url(#electronGradient)" stroke="#1e40af" stroke-width="1">
+      <animateMotion
+        path="M 0,0 m -60,0 a 60,20 0 1,1 120,0 a 60,20 0 1,1 -120,0"
+        dur="3s"
+        begin="1.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Hidden path for diagonal orbit -->
+  <defs>
+    <path id="diagonalOrbit" d="M 100,100 m -43.3,-25 a 50,20 60 1,1 86.6,50 a 50,20 60 1,1 -86.6,-50"/>
+  </defs>
+
+  <!-- Quantum field effect -->
+  <g id="quantumField" opacity="0.3">
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#3b82f6" stroke-width="1">
+      <animate attributeName="r" values="70;75;70" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="100" r="85" fill="none" stroke="#3b82f6" stroke-width="1">
+      <animate attributeName="r" values="85;90;85" dur="4s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Energy particles -->
+  <g id="energyParticles" opacity="0.6">
+    <circle cx="60" cy="70" r="2" fill="#60a5fa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,-20"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="80" r="2" fill="#34d399">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 20,-20"
+        dur="2s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="140" r="2" fill="#a78bfa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,20"
+        dur="2s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
