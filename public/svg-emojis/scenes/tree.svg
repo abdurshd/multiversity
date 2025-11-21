@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="trunkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#78350f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#92400e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#78350f;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="foliageGradient">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="natureGlow">
+      <stop offset="0%" style="stop-color:#86efac;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0" />
+    </radialGradient>
+    <filter id="treeGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Nature glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#natureGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Tree -->
+  <g id="tree" filter="url(#treeGlow)">
+    <!-- Trunk -->
+    <path d="M 85 150 Q 85 120 87 100 Q 88 80 90 70 L 110 70 Q 112 80 113 100 Q 115 120 115 150 Z"
+          fill="url(#trunkGradient)"
+          stroke="#78350f"
+          stroke-width="2"/>
+
+    <!-- Bark texture -->
+    <g stroke="#78350f" stroke-width="1" opacity="0.4" fill="none">
+      <path d="M 90 85 Q 92 87 94 85"/>
+      <path d="M 106 95 Q 108 97 110 95"/>
+      <path d="M 92 110 Q 94 112 96 110"/>
+      <path d="M 104 125 Q 106 127 108 125"/>
+    </g>
+
+    <!-- Foliage layers -->
+    <g id="foliage">
+      <!-- Bottom layer -->
+      <ellipse cx="100" cy="80" rx="45" ry="30"
+               fill="url(#foliageGradient)"
+               stroke="#15803d"
+               stroke-width="2"
+               opacity="0.9">
+        <animate attributeName="ry" values="30;32;30" dur="4s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Middle layer -->
+      <ellipse cx="100" cy="60" rx="40" ry="28"
+               fill="url(#foliageGradient)"
+               stroke="#15803d"
+               stroke-width="2"
+               opacity="0.95">
+        <animate attributeName="ry" values="28;30;28" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Top layer -->
+      <ellipse cx="100" cy="45" rx="30" ry="22"
+               fill="url(#foliageGradient)"
+               stroke="#15803d"
+               stroke-width="2">
+        <animate attributeName="ry" values="22;24;22" dur="4s" begin="1s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Leaves detail -->
+    <g fill="#22c55e" opacity="0.6">
+      <ellipse cx="70" cy="70" rx="8" ry="6"
+               transform="rotate(-20 70 70)"/>
+      <ellipse cx="130" cy="75" rx="8" ry="6"
+               transform="rotate(25 130 75)"/>
+      <ellipse cx="65" cy="55" rx="6" ry="5"
+               transform="rotate(-15 65 55)"/>
+      <ellipse cx="135" cy="60" rx="6" ry="5"
+               transform="rotate(20 135 60)"/>
+    </g>
+
+    <!-- Highlight -->
+    <ellipse cx="90" cy="50" rx="15" ry="12"
+             fill="white"
+             opacity="0.3">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Falling leaves -->
+  <g id="fallingLeaves" opacity="0.7">
+    <ellipse cx="120" cy="90" rx="4" ry="6" fill="#4ade80" transform="rotate(45 120 90)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,40"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="45 120 90; 225 120 90"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse cx="80" cy="85" rx="4" ry="6" fill="#22c55e" transform="rotate(-30 80 85)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 12,45"
+        dur="4s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 80 85; 150 80 85"
+        dur="4s"
+        begin="1s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Birds -->
+  <g id="birds" opacity="0.5">
+    <path d="M 40 50 Q 45 48 50 50"
+          fill="none"
+          stroke="#64748b"
+          stroke-width="1.5"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 30,-10; 60,-5"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M 160 45 Q 165 43 170 45"
+          fill="none"
+          stroke="#64748b"
+          stroke-width="1.5"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -40,-12; -80,-8"
+        dur="7s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Nature sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="60" cy="65" r="2" fill="#86efac">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="70" r="2" fill="#4ade80">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="35" r="2" fill="#22c55e">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Swaying animation -->
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="0 100 150; -2 100 150; 0 100 150; 2 100 150; 0 100 150"
+    dur="5s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

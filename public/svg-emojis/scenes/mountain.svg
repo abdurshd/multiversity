@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="snowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="peakGlow">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:0" />
+    </radialGradient>
+    <filter id="mountainGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Peak glow -->
+  <circle cx="100" cy="80" r="75" fill="url(#peakGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Mountains -->
+  <g id="mountains" filter="url(#mountainGlow)">
+    <!-- Back mountain (smaller) -->
+    <path d="M 20 150 L 70 70 L 120 150 Z"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="2"
+          opacity="0.6"/>
+
+    <!-- Snow cap (back) -->
+    <path d="M 70 70 L 60 90 L 80 90 Z"
+          fill="url(#snowGradient)"
+          opacity="0.8"/>
+
+    <!-- Main mountain -->
+    <path d="M 40 150 L 100 50 L 160 150 Z"
+          fill="url(#mountainGradient)"
+          stroke="#475569"
+          stroke-width="2"/>
+
+    <!-- Snow cap (main) -->
+    <path d="M 100 50 L 85 80 L 115 80 Z"
+          fill="url(#snowGradient)"
+          stroke="#cbd5e1"
+          stroke-width="1.5"/>
+
+    <!-- Additional snow details -->
+    <path d="M 90 70 L 95 85 L 100 75 L 105 85 L 110 70"
+          fill="#f8fafc"
+          opacity="0.8"/>
+
+    <!-- Mountain ridges/shadows -->
+    <g stroke="#475569" stroke-width="1.5" opacity="0.4" fill="none">
+      <path d="M 80 100 L 100 70"/>
+      <path d="M 120 100 L 100 70"/>
+      <path d="M 90 120 L 100 90"/>
+      <path d="M 110 120 L 100 90"/>
+    </g>
+
+    <!-- Rock details -->
+    <g fill="#475569" opacity="0.3">
+      <ellipse cx="75" cy="115" rx="8" ry="6"/>
+      <ellipse cx="125" cy="120" rx="7" ry="5"/>
+      <ellipse cx="95" cy="130" rx="6" ry="4"/>
+    </g>
+  </g>
+
+  <!-- Clouds around peak -->
+  <g id="clouds" opacity="0.6">
+    <ellipse cx="80" cy="60" rx="15" ry="8" fill="#f8fafc">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,0; 0,0"
+        dur="8s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.8;0.6" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="125" cy="65" rx="12" ry="7" fill="#f8fafc">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,0; 0,0"
+        dur="7s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.8;0.6" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Snow particles -->
+  <g id="snowParticles" opacity="0.5">
+    <circle cx="90" cy="55" r="1.5" fill="#e0f2fe">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -5,15"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="60" r="1.5" fill="#f0f9ff">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 3,18"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Eagle circling -->
+  <g id="eagle" opacity="0.5">
+    <path d="M 95 45 Q 100 43 105 45"
+          fill="none"
+          stroke="#64748b"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animateMotion
+        path="M 0,0 m -20,-10 a 20,10 0 1,1 40,0 a 20,10 0 1,1 -40,0"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Mountain sparkles -->
+  <g id="sparkles" opacity="0.5">
+    <circle cx="100" cy="55" r="2" fill="#f8fafc">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="85" cy="75" r="2" fill="#e0f2fe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="115" cy="75" r="2" fill="#f0f9ff">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
