@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="syringeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#bae6fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7dd3fc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="liquidGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="medicalGlow">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0" />
+    </radialGradient>
+    <filter id="syringeGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Medical glow -->
+  <circle cx="100" cy="100" r="70" fill="url(#medicalGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Syringe -->
+  <g id="syringe" transform="rotate(-45 100 100)" filter="url(#syringeGlow)">
+    <!-- Plunger end -->
+    <rect x="80" y="60" width="20" height="8"
+          fill="#94a3b8"
+          stroke="#64748b"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Plunger rod -->
+    <rect x="88" y="68" width="4" height="50"
+          fill="#cbd5e1"
+          stroke="#94a3b8"
+          stroke-width="1"/>
+
+    <!-- Barrel (main tube) -->
+    <rect x="80" y="115" width="20" height="60"
+          fill="url(#syringeGradient)"
+          stroke="#0ea5e9"
+          stroke-width="2"
+          rx="3"
+          opacity="0.8"/>
+
+    <!-- Liquid inside -->
+    <rect x="82" y="140" width="16" height="32"
+          fill="url(#liquidGradient)"
+          rx="2">
+      <animate attributeName="height" values="32;28;32" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="140;144;140" dur="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Measurement lines -->
+    <g stroke="#0284c7" stroke-width="0.5" opacity="0.6">
+      <line x1="80" y1="125" x2="100" y2="125"/>
+      <line x1="80" y1="135" x2="100" y2="135"/>
+      <line x1="80" y1="145" x2="100" y2="145"/>
+      <line x1="80" y1="155" x2="100" y2="155"/>
+      <line x1="80" y1="165" x2="100" y2="165"/>
+    </g>
+
+    <!-- Luer lock (connector) -->
+    <path d="M 85 175 L 80 180 L 80 185 L 100 185 L 100 180 L 95 175 Z"
+          fill="#94a3b8"
+          stroke="#64748b"
+          stroke-width="1.5"/>
+
+    <!-- Needle -->
+    <rect x="88" y="185" width="4" height="35"
+          fill="#cbd5e1"
+          stroke="#94a3b8"
+          stroke-width="1"/>
+
+    <!-- Needle tip -->
+    <path d="M 88 220 L 90 225 L 92 220 Z"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="0.5"/>
+
+    <!-- Needle bevel shine -->
+    <line x1="90" y1="185" x2="90" y2="220"
+          stroke="#f1f5f9"
+          stroke-width="1"
+          opacity="0.5"/>
+
+    <!-- Plunger animation (pushing down) -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,5; 0,0"
+      dur="2s"
+      repeatCount="indefinite"
+      additive="sum"/>
+  </g>
+
+  <!-- Liquid droplet coming out -->
+  <g id="droplet" opacity="0">
+    <ellipse cx="135" cy="155" rx="3" ry="4" fill="#22d3ee">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 5,15"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="1.5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Medical cross in background -->
+  <g id="medicalCross" opacity="0.15">
+    <rect x="90" y="40" width="20" height="60" fill="#dc2626" rx="2"/>
+    <rect x="70" y="60" width="60" height="20" fill="#dc2626" rx="2"/>
+  </g>
+
+  <!-- Sterile sparkles -->
+  <g id="sparkles" opacity="0.5">
+    <circle cx="60" cy="70" r="2" fill="#dbeafe">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="90" r="2" fill="#bfdbfe">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="140" r="2" fill="#dbeafe">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

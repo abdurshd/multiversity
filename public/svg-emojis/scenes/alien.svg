@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="alienGradient">
+      <stop offset="0%" style="stop-color:#86efac;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="eyeGradient">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#020617;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="spaceGlow">
+      <stop offset="0%" style="stop-color:#86efac;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0" />
+    </radialGradient>
+    <filter id="alienGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Space background -->
+  <rect width="200" height="200" fill="#0f172a" opacity="0.3"/>
+
+  <!-- Stars -->
+  <g id="stars" opacity="0.6">
+    <circle cx="30" cy="50" r="1" fill="#e0f2fe">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="70" r="1.5" fill="#dbeafe">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="150" r="1" fill="#f0f9ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Alien aura -->
+  <circle cx="100" cy="110" r="70" fill="url(#spaceGlow)">
+    <animate attributeName="r" values="65;75;65" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Alien -->
+  <g id="alien" filter="url(#alienGlow)" transform-origin="100 110">
+    <!-- Head -->
+    <ellipse cx="100" cy="95" rx="45" ry="55"
+             fill="url(#alienGradient)"
+             stroke="#16a34a"
+             stroke-width="2"/>
+
+    <!-- Large alien eyes -->
+    <g id="eyes">
+      <!-- Left eye -->
+      <ellipse cx="82" cy="95" rx="18" ry="25"
+               fill="url(#eyeGradient)"
+               stroke="#0f172a"
+               stroke-width="2">
+        <animate attributeName="ry" values="25;28;25" dur="3s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Left pupil -->
+      <ellipse cx="82" cy="98" rx="8" ry="12" fill="#22c55e" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Left highlight -->
+      <ellipse cx="79" cy="90" rx="5" ry="8" fill="#d1fae5" opacity="0.9"/>
+
+      <!-- Right eye -->
+      <ellipse cx="118" cy="95" rx="18" ry="25"
+               fill="url(#eyeGradient)"
+               stroke="#0f172a"
+               stroke-width="2">
+        <animate attributeName="ry" values="25;28;25" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Right pupil -->
+      <ellipse cx="118" cy="98" rx="8" ry="12" fill="#22c55e" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Right highlight -->
+      <ellipse cx="115" cy="90" rx="5" ry="8" fill="#d1fae5" opacity="0.9"/>
+    </g>
+
+    <!-- Small nose bumps -->
+    <ellipse cx="95" cy="110" rx="2" ry="3" fill="#15803d" opacity="0.6"/>
+    <ellipse cx="105" cy="110" rx="2" ry="3" fill="#15803d" opacity="0.6"/>
+
+    <!-- Subtle smile -->
+    <path d="M 85 120 Q 100 125 115 120"
+          stroke="#15803d"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+          opacity="0.7"/>
+
+    <!-- Body/neck -->
+    <ellipse cx="100" cy="150" rx="30" ry="25"
+             fill="url(#alienGradient)"
+             stroke="#16a34a"
+             stroke-width="2"/>
+
+    <!-- Neck connection -->
+    <rect x="85" y="145" width="30" height="10"
+          fill="#22c55e"
+          opacity="0.8"/>
+
+    <!-- Body details/patterns -->
+    <g opacity="0.3">
+      <ellipse cx="95" cy="145" rx="5" ry="8" fill="#15803d"/>
+      <ellipse cx="105" cy="148" rx="5" ry="8" fill="#15803d"/>
+    </g>
+
+    <!-- Antennae -->
+    <g id="antennae">
+      <!-- Left antenna -->
+      <path d="M 70 75 Q 60 60 55 45"
+            stroke="#22c55e"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 70 75; -5 70 75; 0 70 75"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </path>
+      <circle cx="55" cy="45" r="5" fill="#4ade80" stroke="#22c55e" stroke-width="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Right antenna -->
+      <path d="M 130 75 Q 140 60 145 45"
+            stroke="#22c55e"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 130 75; 5 130 75; 0 130 75"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </path>
+      <circle cx="145" cy="45" r="5" fill="#4ade80" stroke="#22c55e" stroke-width="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Telepathy waves -->
+    <g id="telepathy" stroke="#4ade80" fill="none" opacity="0.4">
+      <circle cx="100" cy="70" r="15">
+        <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="100" cy="70" r="15">
+        <animate attributeName="r" values="15;25;15" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Floating/hovering animation -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,-5; 0,0"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- UFO light beam effect (subtle) -->
+  <g id="beam" opacity="0.2">
+    <path d="M 80 30 L 70 70 L 130 70 L 120 30 Z"
+          fill="#86efac">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Mystery particles -->
+  <g id="particles" opacity="0.5">
+    <circle cx="60" cy="100" r="2" fill="#4ade80">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,30"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="110" r="2" fill="#22c55e">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 25,35"
+        dur="4.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

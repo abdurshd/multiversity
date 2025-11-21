@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="faceGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="fearGlow">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0" />
+    </radialGradient>
+    <filter id="faceGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fear aura -->
+  <circle cx="100" cy="100" r="65" fill="url(#fearGlow)">
+    <animate attributeName="r" values="60;70;60" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Face circle -->
+  <g id="face" transform-origin="100 100">
+    <circle cx="100" cy="100" r="55"
+            fill="url(#faceGradient)"
+            stroke="#f59e0b"
+            stroke-width="3"
+            filter="url(#faceGlow)">
+      <animate attributeName="r" values="55;57;55" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Sweat drops -->
+    <g id="sweatDrops">
+      <ellipse cx="70" cy="80" rx="4" ry="6" fill="#60a5fa" opacity="0.7">
+        <animate attributeName="cy" values="80;95" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0" dur="1.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="130" cy="75" rx="4" ry="6" fill="#60a5fa" opacity="0.7">
+        <animate attributeName="cy" values="75;90" dur="1.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0" dur="1.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="65" cy="70" rx="3" ry="5" fill="#60a5fa" opacity="0.6">
+        <animate attributeName="cy" values="70;85" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0" dur="1.8s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Eyes - wide with fear -->
+    <g id="eyes">
+      <!-- Left eye white -->
+      <ellipse cx="80" cy="90" rx="12" ry="16"
+               fill="#f8fafc"
+               stroke="#1e293b"
+               stroke-width="2">
+        <animate attributeName="ry" values="16;18;16" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Left pupil -->
+      <ellipse cx="80" cy="92" rx="6" ry="8" fill="#1e293b">
+        <animate attributeName="cy" values="92;94;92" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="ry" values="8;9;8" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Left highlight -->
+      <circle cx="78" cy="88" r="3" fill="#f8fafc"/>
+
+      <!-- Right eye white -->
+      <ellipse cx="120" cy="90" rx="12" ry="16"
+               fill="#f8fafc"
+               stroke="#1e293b"
+               stroke-width="2">
+        <animate attributeName="ry" values="16;18;16" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Right pupil -->
+      <ellipse cx="120" cy="92" rx="6" ry="8" fill="#1e293b">
+        <animate attributeName="cy" values="92;94;92" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="ry" values="8;9;8" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Right highlight -->
+      <circle cx="118" cy="88" r="3" fill="#f8fafc"/>
+    </g>
+
+    <!-- Eyebrows raised in fear -->
+    <g id="eyebrows" stroke="#b45309" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M 65 75 Q 75 70 85 75">
+        <animate attributeName="d"
+                 values="M 65 75 Q 75 70 85 75; M 65 73 Q 75 68 85 73; M 65 75 Q 75 70 85 75"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </path>
+      <path d="M 115 75 Q 125 70 135 75">
+        <animate attributeName="d"
+                 values="M 115 75 Q 125 70 135 75; M 115 73 Q 125 68 135 73; M 115 75 Q 125 70 135 75"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Mouth open in shock -->
+    <g id="mouth">
+      <ellipse cx="100" cy="125" rx="12" ry="18"
+               fill="#dc2626"
+               stroke="#991b1b"
+               stroke-width="2">
+        <animate attributeName="ry" values="18;20;18" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="rx" values="12;14;12" dur="0.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Tongue -->
+      <ellipse cx="100" cy="128" rx="8" ry="10" fill="#ef4444" opacity="0.8"/>
+      <!-- Teeth -->
+      <rect x="95" y="117" width="3" height="5" fill="#f8fafc" rx="1"/>
+      <rect x="102" y="117" width="3" height="5" fill="#f8fafc" rx="1"/>
+    </g>
+
+    <!-- Shaking animation -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 100 100; -2 100 100; 2 100 100; -2 100 100; 0 100 100"
+      dur="0.3s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Shock lines radiating outward -->
+  <g id="shockLines" stroke="#f59e0b" stroke-width="2" opacity="0.5">
+    <line x1="100" y1="45" x2="100" y2="35">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="145" y1="70" x2="155" y2="60">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="155" y1="100" x2="165" y2="100">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="145" y1="130" x2="155" y2="140">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1s" begin="0.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="55" y1="70" x2="45" y2="60">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1s" begin="0.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>

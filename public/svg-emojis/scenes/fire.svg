@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef08a;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerFlameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="fireGlow">
+      <stop offset="0%" style="stop-color:#fef08a;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0" />
+    </radialGradient>
+    <filter id="fireBlur">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Heat glow -->
+  <circle cx="100" cy="130" r="70" fill="url(#fireGlow)">
+    <animate attributeName="r" values="65;75;65" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main flame body -->
+  <g id="mainFlame" filter="url(#fireBlur)">
+    <!-- Large outer flame -->
+    <ellipse cx="100" cy="110" rx="35" ry="60"
+             fill="url(#flameGradient)"
+             opacity="0.9">
+      <animate attributeName="ry" values="60;68;60" dur="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="35;38;35" dur="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="110;108;110" dur="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Middle flame -->
+    <ellipse cx="100" cy="115" rx="28" ry="50"
+             fill="url(#innerFlameGradient)"
+             opacity="0.85">
+      <animate attributeName="ry" values="50;56;50" dur="0.35s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="28;31;28" dur="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="115;113;115" dur="0.35s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Inner core -->
+    <ellipse cx="100" cy="120" rx="20" ry="38"
+             fill="#fef3c7"
+             opacity="0.9">
+      <animate attributeName="ry" values="38;44;38" dur="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="20;23;20" dur="0.35s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;118;120" dur="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Flame tip flickers -->
+    <ellipse cx="100" cy="70" rx="12" ry="18"
+             fill="#fef08a"
+             opacity="0.8">
+      <animate attributeName="ry" values="18;25;18" dur="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="12;15;12" dur="0.25s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="70;65;70" dur="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="0.2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Left flame tongue -->
+    <ellipse cx="75" cy="100" rx="15" ry="25"
+             fill="url(#flameGradient)"
+             opacity="0.7"
+             transform="rotate(-25 75 100)">
+      <animate attributeName="ry" values="25;30;25" dur="0.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.35s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Right flame tongue -->
+    <ellipse cx="125" cy="100" rx="15" ry="25"
+             fill="url(#flameGradient)"
+             opacity="0.7"
+             transform="rotate(25 125 100)">
+      <animate attributeName="ry" values="25;30;25" dur="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Embers rising -->
+  <g id="embers">
+    <circle cx="90" cy="150" r="2" fill="#fbbf24" opacity="0.8">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,-80"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="150" r="2" fill="#f97316" opacity="0.8">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,-90"
+        dur="2.3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="145" r="1.5" fill="#fef08a" opacity="0.9">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -5,-95"
+        dur="2.1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95" cy="148" r="2" fill="#fb923c" opacity="0.7">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,-85"
+        dur="1.9s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Heat waves -->
+  <g id="heatWaves" opacity="0.2">
+    <ellipse cx="100" cy="160" rx="40" ry="5" fill="none" stroke="#f97316" stroke-width="2">
+      <animate attributeName="ry" values="5;8;5" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="100" cy="165" rx="50" ry="5" fill="none" stroke="#fbbf24" stroke-width="2">
+      <animate attributeName="ry" values="5;8;5" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Smoke -->
+  <g id="smoke" opacity="0.3">
+    <ellipse cx="100" cy="60" rx="8" ry="12" fill="#64748b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -5,-30"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="8;15" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="100" cy="55" rx="10" ry="15" fill="#475569">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,-35"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="10;18" dur="3.5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>
