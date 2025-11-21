@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, MapPin, GitBranch, Clock, ArrowRight, Percent, PlayCircle, Sparkles } from 'lucide-react';
 import { Chapter, Person } from '../types';
 import { getChapterById } from '../data';
 import AnimatedCharacter from '../components/common/AnimatedCharacter';
-import InteractiveStory from '../components/common/InteractiveStory';
+import { GameContainer } from '../game/GameContainer';
 import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 
 const ChapterDetail: React.FC = () => {
+  const navigate = useNavigate();
   const { id: chapterId } = useParams<{ id: string }>();
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [selectedTimeline, setSelectedTimeline] = useState<string | null>(null);
@@ -22,85 +23,6 @@ const ChapterDetail: React.FC = () => {
       setChapter(foundChapter || null);
     }
   }, [chapterId]);
-
-  const getStoryScenes = (chapter: Chapter) => {
-    // Use chapter's interactive scenarios if available, otherwise fall back to generated ones
-    if (chapter.interactiveScenarios && chapter.interactiveScenarios.length > 0) {
-      return chapter.interactiveScenarios;
-    }
-
-    // Fallback to generated scenarios for chapters without custom ones
-    const scenes = [
-      {
-        id: 'opening',
-        title: 'The Setting',
-        text: `Welcome to ${chapter.period}. The world is about to change forever...`,
-        emoji: chapter.icon,
-        background: 'bg-gradient-to-br from-purple-600 to-blue-800',
-        characters: ['🏛️', '⚡', '🌍'],
-        sceneType: 'exploration' as const,
-        timelineYear: chapter.startYear,
-        timelineEvent: `Beginning of ${chapter.period}`
-      },
-      {
-        id: 'characters',
-        title: 'Meet the Key Players',
-        text: `You encounter the most influential figures of this era. ${chapter.keyFigures[0]?.name} approaches you with an urgent matter...`,
-        emoji: '👥',
-        background: 'bg-gradient-to-br from-green-600 to-teal-800',
-        characters: chapter.keyFigures.slice(0, 3).map(f => f.name.charAt(0)),
-        sceneType: 'negotiation' as const,
-        timelineYear: chapter.startYear + 1,
-        timelineEvent: 'Key alliances being formed',
-        choices: [
-          {
-            id: 'trust',
-            text: 'Trust their judgment and support their cause',
-            consequence: 'Your alliance strengthens their position significantly'
-          },
-          {
-            id: 'question',
-            text: 'Question their motives and demand more information',
-            consequence: 'They respect your caution and reveal crucial intelligence'
-          },
-          {
-            id: 'oppose',
-            text: 'Oppose their plans and propose an alternative',
-            consequence: 'Your bold stance creates a new faction with different goals'
-          }
-        ]
-      },
-      {
-        id: 'divergence',
-        title: 'The Pivotal Moment',
-        text: `This is it - the moment that will define history. The ${chapter.divergencePoint} in ${chapter.divergenceYear}. Your next decision will echo through the ages!`,
-        emoji: '⚡',
-        background: 'bg-gradient-to-br from-yellow-600 to-red-800',
-        characters: ['👑', '⚖️', '🌟'],
-        sceneType: 'decision' as const,
-        timelineYear: chapter.divergenceYear,
-        timelineEvent: chapter.divergencePoint,
-        choices: chapter.alternativeTimelines.slice(0, 3).map((timeline) => ({
-          id: timeline.id,
-          text: `Choose the path: ${timeline.title}`,
-          consequence: `This choice leads to: ${timeline.description.slice(0, 100)}...`
-        }))
-      },
-      {
-        id: 'revelation',
-        title: 'The New World',
-        text: `The consequences of your choices ripple through time. History has been rewritten, and the world will never be the same!`,
-        emoji: '🌟',
-        background: 'bg-gradient-to-br from-pink-600 to-purple-800',
-        characters: ['🔮', '🎭', '🌈'],
-        sceneType: 'revelation' as const,
-        timelineYear: chapter.endYear,
-        timelineEvent: `End of ${chapter.period} - New era begins`
-      }
-    ];
-
-    return scenes;
-  };
 
   const handleCharacterInteraction = (character: Person) => {
     setSelectedCharacter(character);
@@ -279,7 +201,7 @@ const ChapterDetail: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Sparkles className="w-5 h-5" />
-                <span>{showStory ? 'Hide Story' : 'Interactive Story'}</span>
+                <span>{showStory ? 'Hide Simulation' : 'Start Simulation'}</span>
               </motion.button>
 
 
@@ -293,13 +215,20 @@ const ChapterDetail: React.FC = () => {
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.5 }}
-                className="overflow-hidden"
+                className="overflow-hidden rounded-xl border border-slate-700 shadow-2xl"
               >
-                <InteractiveStory
-                  title={chapter.title}
-                  scenes={getStoryScenes(chapter)}
-                  onComplete={() => setShowStory(false)}
-                />
+                <div className="h-[600px] w-full relative">
+                  <GameContainer
+                    levelId="timur-ankara" // In a real app, this would be dynamic based on the chapter
+                    onExit={() => setShowStory(false)}
+                    onTimelineRequest={(targetTimelineId) => {
+                      setShowStory(false);
+                      if (targetTimelineId) {
+                        navigate(`/timeline/${chapter.id}/${targetTimelineId}`);
+                      }
+                    }}
+                  />
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
