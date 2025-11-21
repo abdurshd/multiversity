@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="cameraGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lensGradient">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+    </radialGradient>
+    <radialGradient id="captureGlow">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+    </radialGradient>
+    <filter id="cameraGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Capture glow -->
+  <circle cx="100" cy="100" r="70" fill="url(#captureGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Camera -->
+  <g id="camera" filter="url(#cameraGlow)">
+    <!-- Camera body -->
+    <rect x="50" y="80" width="100" height="65"
+          fill="url(#cameraGradient)"
+          stroke="#0f172a"
+          stroke-width="2"
+          rx="5"/>
+
+    <!-- Top viewfinder bump -->
+    <rect x="70" y="70" width="35" height="10"
+          fill="#1e293b"
+          stroke="#0f172a"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Viewfinder window -->
+    <rect x="78" y="72" width="8" height="6"
+          fill="#60a5fa"
+          rx="1"
+          opacity="0.6"/>
+
+    <!-- Lens housing -->
+    <circle cx="100" cy="112" r="25"
+            fill="#334155"
+            stroke="#0f172a"
+            stroke-width="2"/>
+
+    <!-- Lens -->
+    <circle cx="100" cy="112" r="20"
+            fill="url(#lensGradient)"
+            stroke="#1e40af"
+            stroke-width="2">
+      <animate attributeName="r" values="20;21;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Lens reflection -->
+    <ellipse cx="95" cy="107" rx="8" ry="10"
+             fill="white"
+             opacity="0.5">
+      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Lens inner circle -->
+    <circle cx="100" cy="112" r="12"
+            fill="none"
+            stroke="#60a5fa"
+            stroke-width="1"
+            opacity="0.6"/>
+
+    <!-- Shutter button -->
+    <circle cx="130" cy="85" r="5"
+            fill="#ef4444"
+            stroke="#dc2626"
+            stroke-width="1.5">
+      <animate attributeName="fill"
+               values="#ef4444;#fca5a5;#ef4444"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Flash -->
+    <rect x="115" y="82" width="8" height="6"
+          fill="#fef3c7"
+          stroke="#fbbf24"
+          stroke-width="1"
+          rx="1"
+          opacity="0.8"/>
+
+    <!-- Mode dial -->
+    <circle cx="70" cy="90" r="6"
+            fill="#64748b"
+            stroke="#475569"
+            stroke-width="1.5">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 70 90"
+        to="360 70 90"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="90" r="3" fill="#94a3b8"/>
+    <line x1="70" y1="87" x2="70" y2="84" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Body details -->
+    <rect x="60" y="98" width="25" height="3"
+          fill="#475569"
+          opacity="0.6"
+          rx="1"/>
+
+    <!-- LCD screen -->
+    <rect x="110" y="125" width="35" height="15"
+          fill="#0ea5e9"
+          stroke="#0284c7"
+          stroke-width="1.5"
+          rx="2"
+          opacity="0.7">
+      <animate attributeName="opacity" values="0.6;0.8;0.6" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Screen content -->
+    <rect x="113" y="128" width="10" height="9" fill="#dbeafe" opacity="0.5"/>
+  </g>
+
+  <!-- Flash effect (when taking photo) -->
+  <circle cx="100" cy="100" r="60" fill="#fef3c7" opacity="0">
+    <animate attributeName="opacity"
+             values="0;0.8;0"
+             dur="0.3s"
+             begin="0s;4s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Focus frame -->
+  <g id="focusFrame" opacity="0">
+    <rect x="70" y="80" width="60" height="60"
+          fill="none"
+          stroke="#10b981"
+          stroke-width="2"
+          stroke-dasharray="10,5">
+      <animate attributeName="opacity"
+               values="0;0.7;0"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </rect>
+    <!-- Corner markers -->
+    <line x1="70" y1="80" x2="80" y2="80" stroke="#10b981" stroke-width="3"/>
+    <line x1="70" y1="80" x2="70" y2="90" stroke="#10b981" stroke-width="3"/>
+    <line x1="130" y1="80" x2="120" y2="80" stroke="#10b981" stroke-width="3"/>
+    <line x1="130" y1="80" x2="130" y2="90" stroke="#10b981" stroke-width="3"/>
+    <line x1="70" y1="140" x2="80" y2="140" stroke="#10b981" stroke-width="3"/>
+    <line x1="70" y1="140" x2="70" y2="130" stroke="#10b981" stroke-width="3"/>
+    <line x1="130" y1="140" x2="120" y2="140" stroke="#10b981" stroke-width="3"/>
+    <line x1="130" y1="140" x2="130" y2="130" stroke="#10b981" stroke-width="3"/>
+  </g>
+
+  <!-- Capture sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="55" cy="95" r="2" fill="#dbeafe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="100" r="2" fill="#93c5fd">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="65" r="2" fill="#60a5fa">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Photo particles -->
+  <g id="photoParticles" opacity="0.5">
+    <rect x="75" y="110" width="3" height="4" fill="#dbeafe" rx="0.5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,20"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="125" y="115" width="3" height="4" fill="#93c5fd" rx="0.5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,22"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
