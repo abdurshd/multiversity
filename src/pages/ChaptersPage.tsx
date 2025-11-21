@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, MapPin, Users, GitBranch, Search, X } from 'lucide-react';
+import { Calendar, MapPin, Users, GitBranch, Search, X, ArrowRight } from 'lucide-react';
 
 interface ChapterSummary {
   id: string;
@@ -299,44 +299,47 @@ const ChaptersPage: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
                 className="group"
               >
                 <Link to={`/chapter/${chapter.id}`}>
-                  <div className="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                    <div className={`h-40 sm:h-48 relative overflow-hidden`}>
-                      <div
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style={{ backgroundImage: `url(${chapter.image})` }}
-                      />
-                      <div className={`absolute inset-0 ${chapter.cardClass} opacity-80 mix-blend-multiply transition-opacity group-hover:opacity-70`} />
-                      <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center relative z-10">
-                        <div className="text-center text-white">
-                          <Calendar className="w-12 h-12 mx-auto mb-2 drop-shadow-lg" />
-                          <div className="text-xl sm:text-2xl font-bold drop-shadow-md">{chapter.period}</div>
-                        </div>
+                  <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 transition-all duration-500 group-hover:shadow-blue-900/20 group-hover:ring-blue-500/50">
+                    {/* Full Background Image */}
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                      style={{ backgroundImage: `url(${chapter.image})` }}
+                    />
+
+                    {/* Gradient Overlay for Text Readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent opacity-90" />
+
+                    {/* Top Badge */}
+                    <div className="absolute top-6 left-0 w-full flex justify-center z-10">
+                      <div className="bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full flex items-center gap-2">
+                        <Calendar className="w-4 h-4 text-blue-400" />
+                        <span className="text-white font-semibold tracking-wide text-sm">{chapter.period}</span>
                       </div>
                     </div>
 
-                    <div className="p-4 sm:p-6">
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                    {/* Bottom Content with Backdrop Blur */}
+                    <div className="absolute bottom-0 inset-x-0 p-6 sm:p-8 bg-black/40 backdrop-blur-xl border-t border-white/10 transition-all duration-300 group-hover:bg-black/60">
+                      <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-tight group-hover:text-blue-400 transition-colors">
                         {chapter.title}
                       </h3>
 
-                      <p className="text-sm sm:text-base text-gray-300 mb-4 line-clamp-2">
+                      <p className="text-base text-gray-200 mb-6 line-clamp-2 leading-relaxed opacity-90">
                         {chapter.description}
                       </p>
 
-                      <div className="space-y-3 mb-4">
-                        <div className="flex items-center space-x-2 text-sm text-gray-400">
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-2 text-sm text-blue-200/80 font-medium">
                           <MapPin className="w-4 h-4" />
                           <span>Key Events:</span>
                         </div>
                         <div className="flex flex-wrap gap-2">
                           {chapter.keyEvents.slice(0, 3).map((event, i) => (
                             <span
-                              key={`${chapter.id}-event-${i}-${event.substring(0, 10)}`}
-                              className="bg-slate-700 text-gray-300 px-2 py-1 rounded-sm text-xs sm:text-sm"
+                              key={`${chapter.id}-event-${i}`}
+                              className="bg-white/10 hover:bg-white/20 border border-white/5 text-white px-3 py-1.5 rounded-lg text-xs transition-colors"
                             >
                               {event}
                             </span>
@@ -344,14 +347,15 @@ const ChaptersPage: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between">
+                      <div className="mt-6 flex items-center justify-between pt-4 border-t border-white/10">
                         <div className="flex items-center space-x-2 text-gray-400">
                           <GitBranch className="w-4 h-4" />
-                          <span className="text-xs sm:text-sm">{chapter.alternativeCount} Alternative Timelines</span>
+                          <span className="text-sm font-medium">{chapter.alternativeCount} Timelines</span>
                         </div>
 
-                        <div className="text-blue-400 font-semibold group-hover:text-blue-300 transition-colors text-sm sm:text-base">
-                          Explore →
+                        <div className="flex items-center gap-2 text-blue-400 font-semibold group-hover:translate-x-1 transition-transform">
+                          <span>Explore</span>
+                          <ArrowRight className="w-4 h-4" />
                         </div>
                       </div>
                     </div>
