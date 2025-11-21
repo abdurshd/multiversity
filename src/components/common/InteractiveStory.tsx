@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, SkipForward, RotateCcw, Sword, Shield, Crown, Heart, Zap, Users } from 'lucide-react';
+import AnimatedSvgEmoji from './AnimatedSvgEmoji';
 
 interface StoryChoice {
   id: string;
@@ -128,9 +129,11 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
         return (
           <div className="absolute inset-0 pointer-events-none">
             {[...Array(8)].map((_, i) => (
-              <motion.div
+              <AnimatedSvgEmoji
                 key={i}
-                className="absolute w-3 h-3"
+                emoji="⚔️"
+                className="absolute"
+                size="3rem"
                 style={{
                   left: `${10 + Math.random() * 80}%`,
                   top: `${10 + Math.random() * 80}%`,
@@ -145,9 +148,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                   repeat: Infinity,
                   delay: i * 0.3,
                 }}
-              >
-                ⚔️
-              </motion.div>
+              />
             ))}
           </div>
         );
@@ -155,9 +156,11 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
         return (
           <div className="absolute inset-0 pointer-events-none">
             {[...Array(6)].map((_, i) => (
-              <motion.div
+              <AnimatedSvgEmoji
                 key={i}
-                className="absolute w-4 h-4"
+                emoji="💬"
+                className="absolute"
+                size="4rem"
                 style={{
                   left: `${20 + Math.random() * 60}%`,
                   top: `${20 + Math.random() * 60}%`,
@@ -171,9 +174,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                   repeat: Infinity,
                   delay: i * 0.5,
                 }}
-              >
-                💬
-              </motion.div>
+              />
             ))}
           </div>
         );
@@ -223,8 +224,9 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
             Scene {currentScene + 1} of {scenes.length} • {currentSceneData.sceneType.toUpperCase()}
           </div>
           {currentSceneData.timelineYear && (
-            <div className="text-primary-400 font-semibold">
-              📅 {currentSceneData.timelineYear}
+            <div className="text-primary-400 font-semibold flex items-center justify-center gap-2">
+              <AnimatedSvgEmoji emoji="📅" size="1.2rem" fallbackToEmoji={true} />
+              <span>{currentSceneData.timelineYear}</span>
             </div>
           )}
         </div>
@@ -241,8 +243,10 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
               transition={{ duration: 0.5 }}
             >
               {/* Large Scene Emoji with Dynamic Animation */}
-              <motion.div
-                className="text-9xl mb-6"
+              <AnimatedSvgEmoji
+                emoji={currentSceneData.emoji}
+                className="mb-6"
+                size="10rem"
                 animate={{
                   scale: currentSceneData.sceneType === 'battle' ? [1, 1.3, 1] : [1, 1.1, 1],
                   rotate: currentSceneData.sceneType === 'battle' ? [0, 10, -10, 0] : [0, 3, -3, 0],
@@ -252,9 +256,8 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              >
-                {currentSceneData.emoji}
-              </motion.div>
+                fallbackToEmoji={true}
+              />
 
               {/* Scene Title with Icon */}
               <motion.h4
@@ -270,15 +273,19 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
               <div className="flex justify-center space-x-4 mb-6">
                 {currentSceneData.characters.map((character, index) => (
                   <motion.div
-                    key={character}
-                    className="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-xl font-bold text-white shadow-lg"
+                    key={character + index}
+                    className="w-16 h-16 bg-linear-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg p-2"
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{ delay: 0.5 + index * 0.2, type: "spring", stiffness: 200 }}
                     whileHover={{ scale: 1.3, rotate: 10 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    {character}
+                    <AnimatedSvgEmoji
+                      emoji={character}
+                      size="2.5rem"
+                      fallbackToEmoji={true}
+                    />
                   </motion.div>
                 ))}
               </div>
@@ -314,8 +321,9 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                   >
-                    <p className="text-white font-semibold">
-                      ✨ {selectedChoice.consequence}
+                    <p className="text-white font-semibold flex items-center gap-2">
+                      <AnimatedSvgEmoji emoji="✨" size="1.5rem" fallbackToEmoji={true} />
+                      <span>{selectedChoice.consequence}</span>
                     </p>
                   </motion.div>
                 )}
@@ -405,12 +413,13 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
           {/* Timeline Events */}
           {currentSceneData.timelineEvent && (
             <motion.div
-              className="text-center text-sm text-gray-300 bg-dark-800 rounded-lg p-2"
+              className="text-center text-sm text-gray-300 bg-dark-800 rounded-lg p-2 flex items-center justify-center gap-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              🏛️ {currentSceneData.timelineEvent}
+              <AnimatedSvgEmoji emoji="🏛️" size="1.2rem" fallbackToEmoji={true} />
+              <span>{currentSceneData.timelineEvent}</span>
             </motion.div>
           )}
         </div>
