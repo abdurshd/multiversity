@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="balloonGradient">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="joyGlow">
+      <stop offset="0%" style="stop-color:#fecaca;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0" />
+    </radialGradient>
+    <filter id="balloonGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Joy glow -->
+  <circle cx="100" cy="85" r="65" fill="url(#joyGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Balloon -->
+  <g id="balloon" filter="url(#balloonGlow)">
+    <!-- Balloon body -->
+    <path d="M 100,40
+             C 120,40 135,55 135,75
+             C 135,85 130,95 125,105
+             C 120,115 115,120 110,125
+             L 100,135
+             L 90,125
+             C 85,120 80,115 75,105
+             C 70,95 65,85 65,75
+             C 65,55 80,40 100,40 Z"
+          fill="url(#balloonGradient)"
+          stroke="#b91c1c"
+          stroke-width="2">
+      <animate attributeName="d"
+               values="M 100,40 C 120,40 135,55 135,75 C 135,85 130,95 125,105 C 120,115 115,120 110,125 L 100,135 L 90,125 C 85,120 80,115 75,105 C 70,95 65,85 65,75 C 65,55 80,40 100,40 Z;
+                       M 100,38 C 122,38 137,53 137,75 C 137,86 132,96 127,106 C 122,116 117,121 112,126 L 100,137 L 88,126 C 83,121 78,116 73,106 C 68,96 63,86 63,75 C 63,53 78,38 100,38 Z;
+                       M 100,40 C 120,40 135,55 135,75 C 135,85 130,95 125,105 C 120,115 115,120 110,125 L 100,135 L 90,125 C 85,120 80,115 75,105 C 70,95 65,85 65,75 C 65,55 80,40 100,40 Z"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <!-- Balloon shine/highlight -->
+    <ellipse cx="90" cy="60" rx="12" ry="18"
+             fill="white"
+             opacity="0.5">
+      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Balloon knot -->
+    <ellipse cx="100" cy="135" rx="5" ry="3"
+             fill="#dc2626"
+             stroke="#b91c1c"
+             stroke-width="1"/>
+
+    <!-- String -->
+    <path d="M 100 135 Q 95 150 100 165 Q 105 180 100 195"
+          stroke="#64748b"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round">
+      <animate attributeName="d"
+               values="M 100 135 Q 95 150 100 165 Q 105 180 100 195;
+                       M 100 135 Q 103 150 98 165 Q 93 180 100 195;
+                       M 100 135 Q 95 150 100 165 Q 105 180 100 195"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <!-- Floating upward animation -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,5; 0,0; 0,5"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Additional smaller balloons -->
+  <g id="smallBalloons" opacity="0.6">
+    <!-- Blue balloon -->
+    <g transform="translate(55, 90)">
+      <ellipse cx="0" cy="0" rx="12" ry="15"
+               fill="#60a5fa"
+               stroke="#3b82f6"
+               stroke-width="1.5"/>
+      <ellipse cx="-3" cy="-5" rx="4" ry="6"
+               fill="white"
+               opacity="0.4"/>
+      <path d="M 0 15 Q -2 22 0 30"
+            stroke="#64748b"
+            stroke-width="1.5"
+            fill="none"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="55,90; 55,85; 55,90"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+    </g>
+
+    <!-- Yellow balloon -->
+    <g transform="translate(145, 95)">
+      <ellipse cx="0" cy="0" rx="12" ry="15"
+               fill="#fbbf24"
+               stroke="#f59e0b"
+               stroke-width="1.5"/>
+      <ellipse cx="-3" cy="-5" rx="4" ry="6"
+               fill="white"
+               opacity="0.4"/>
+      <path d="M 0 15 Q 2 22 0 30"
+            stroke="#64748b"
+            stroke-width="1.5"
+            fill="none"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="145,95; 145,90; 145,95"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Celebration confetti -->
+  <g id="confetti" opacity="0.6">
+    <rect x="75" y="50" width="4" height="4" fill="#3b82f6" transform="rotate(20 77 52)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,40"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="20 77 52; 200 77 52"
+        dur="3s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </rect>
+    <rect x="125" y="55" width="4" height="4" fill="#fbbf24" transform="rotate(45 127 57)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 12,42"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="45 127 57; 225 127 57"
+        dur="3s"
+        begin="0.5s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Joy sparkles -->
+  <g id="sparkles" opacity="0.7">
+    <circle cx="65" cy="65" r="2" fill="#fecaca">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="70" r="2" fill="#fca5a5">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="35" r="2" fill="#f87171">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
