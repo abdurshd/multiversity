@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="doveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e2e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="peaceGlow">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0" />
+    </radialGradient>
+    <filter id="doveGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="200" height="200" fill="#e0f2fe" opacity="0.3"/>
+
+  <!-- Peace glow -->
+  <circle cx="100" cy="100" r="70" fill="url(#peaceGlow)">
+    <animate attributeName="r" values="65;75;65" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Dove flying -->
+  <g id="dove" transform-origin="100 100" filter="url(#doveGlow)">
+    <!-- Body -->
+    <ellipse cx="100" cy="100" rx="20" ry="15"
+             fill="url(#doveGradient)"
+             stroke="#94a3b8"
+             stroke-width="1.5"/>
+
+    <!-- Head -->
+    <circle cx="115" cy="95" r="10"
+            fill="url(#doveGradient)"
+            stroke="#94a3b8"
+            stroke-width="1.5"/>
+
+    <!-- Eye -->
+    <circle cx="118" cy="94" r="2" fill="#1e293b"/>
+    <circle cx="119" cy="93" r="0.5" fill="#f8fafc"/>
+
+    <!-- Beak -->
+    <path d="M 124 95 L 128 95 L 126 97 Z"
+          fill="#fbbf24"
+          stroke="#d97706"
+          stroke-width="0.5"/>
+
+    <!-- Olive branch in beak -->
+    <g id="oliveBranch">
+      <path d="M 128 95 Q 135 92 140 95"
+            stroke="#65a30d"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"/>
+      <!-- Leaves -->
+      <ellipse cx="132" cy="93" rx="3" ry="2" fill="#84cc16" transform="rotate(-20 132 93)"/>
+      <ellipse cx="135" cy="94" rx="3" ry="2" fill="#84cc16" transform="rotate(20 135 94)"/>
+      <ellipse cx="138" cy="95" rx="3" ry="2" fill="#84cc16" transform="rotate(-15 138 95)"/>
+    </g>
+
+    <!-- Wings -->
+    <!-- Left wing (back) -->
+    <g id="leftWing" transform-origin="95 100">
+      <ellipse cx="80" cy="100" rx="35" ry="15"
+               fill="url(#wingGradient)"
+               stroke="#94a3b8"
+               stroke-width="1.5"
+               opacity="0.9"/>
+      <!-- Feather details -->
+      <g stroke="#cbd5e1" stroke-width="1" opacity="0.5">
+        <line x1="75" y1="95" x2="70" y2="90"/>
+        <line x1="70" y1="98" x2="65" y2="95"/>
+        <line x1="65" y1="102" x2="60" y2="100"/>
+        <line x1="60" y1="105" x2="55" y2="105"/>
+      </g>
+
+      <!-- Wing flapping -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 95 100; -20 95 100; 0 95 100"
+        dur="1s"
+        repeatCount="indefinite"/>
+    </g>
+
+    <!-- Right wing (front) -->
+    <g id="rightWing" transform-origin="105 100">
+      <ellipse cx="120" cy="100" rx="35" ry="15"
+               fill="url(#wingGradient)"
+               stroke="#94a3b8"
+               stroke-width="1.5"
+               opacity="0.9"/>
+      <!-- Feather details -->
+      <g stroke="#cbd5e1" stroke-width="1" opacity="0.5">
+        <line x1="125" y1="95" x2="130" y2="90"/>
+        <line x1="130" y1="98" x2="135" y2="95"/>
+        <line x1="135" y1="102" x2="140" y2="100"/>
+        <line x1="140" y1="105" x2="145" y2="105"/>
+      </g>
+
+      <!-- Wing flapping -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 105 100; 20 105 100; 0 105 100"
+        dur="1s"
+        repeatCount="indefinite"/>
+    </g>
+
+    <!-- Tail feathers -->
+    <g id="tail">
+      <ellipse cx="85" cy="105" rx="8" ry="12"
+               fill="#e2e8f0"
+               stroke="#94a3b8"
+               stroke-width="1"
+               opacity="0.8"
+               transform="rotate(-30 85 105)"/>
+      <ellipse cx="88" cy="108" rx="8" ry="12"
+               fill="#f1f5f9"
+               stroke="#94a3b8"
+               stroke-width="1"
+               opacity="0.8"
+               transform="rotate(-15 88 108)"/>
+    </g>
+  </g>
+
+  <!-- Flight path trail -->
+  <g id="flightTrail" opacity="0.3">
+    <path d="M 40 120 Q 60 110 80 115"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          fill="none"
+          stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;-100" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Peace symbols floating -->
+  <g id="peaceSymbols" opacity="0.4">
+    <text x="40" y="60" font-size="20" fill="#60a5fa" opacity="0">
+      ☮
+      <animate attributeName="opacity" values="0;0.6;0" dur="4s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,-20"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </text>
+    <text x="150" y="140" font-size="20" fill="#60a5fa" opacity="0">
+      ☮
+      <animate attributeName="opacity" values="0;0.6;0" dur="4s" begin="2s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 10,-20"
+        dur="4s"
+        begin="2s"
+        repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Light rays -->
+  <g id="lightRays" opacity="0.2">
+    <line x1="100" y1="50" x2="100" y2="30" stroke="#fef3c7" stroke-width="2">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="130" y1="70" x2="145" y2="55" stroke="#fef3c7" stroke-width="2">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="70" y1="70" x2="55" y2="55" stroke="#fef3c7" stroke-width="2">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Flying motion -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 5,-3; 0,0; -5,3; 0,0"
+    dur="4s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

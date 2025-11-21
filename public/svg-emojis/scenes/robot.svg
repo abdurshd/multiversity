@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="robotBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eyeGlow">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:0.5" />
+    </radialGradient>
+    <radialGradient id="techGlow">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+    </radialGradient>
+    <filter id="robotGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Tech background glow -->
+  <circle cx="100" cy="110" r="70" fill="url(#techGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Robot body -->
+  <g id="robot" filter="url(#robotGlow)">
+    <!-- Antenna -->
+    <line x1="100" y1="45" x2="100" y2="35"
+          stroke="#64748b"
+          stroke-width="3"
+          stroke-linecap="round"/>
+    <circle cx="100" cy="32" r="4" fill="#dc2626">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="32" r="6" fill="none" stroke="#dc2626" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="4;8;4" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Head -->
+    <rect x="75" y="45" width="50" height="45"
+          fill="url(#robotBodyGradient)"
+          stroke="#475569"
+          stroke-width="2"
+          rx="5"/>
+
+    <!-- Head highlights -->
+    <rect x="78" y="48" width="20" height="15"
+          fill="#e2e8f0"
+          opacity="0.3"
+          rx="2"/>
+
+    <!-- Eyes -->
+    <g id="eyes">
+      <circle cx="87" cy="65" r="6"
+              fill="url(#eyeGlow)"
+              stroke="#15803d"
+              stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="113" cy="65" r="6"
+              fill="url(#eyeGlow)"
+              stroke="#15803d"
+              stroke-width="1.5">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Eye glints -->
+      <circle cx="89" cy="63" r="2" fill="#d1fae5"/>
+      <circle cx="115" cy="63" r="2" fill="#d1fae5"/>
+    </g>
+
+    <!-- Mouth/speaker grill -->
+    <g stroke="#475569" stroke-width="1.5" opacity="0.6">
+      <line x1="85" y1="78" x2="115" y2="78"/>
+      <line x1="85" y1="82" x2="115" y2="82"/>
+      <line x1="85" y1="86" x2="115" y2="86"/>
+    </g>
+
+    <!-- Body -->
+    <rect x="70" y="95" width="60" height="55"
+          fill="url(#robotBodyGradient)"
+          stroke="#475569"
+          stroke-width="2"
+          rx="5"/>
+
+    <!-- Body highlights -->
+    <rect x="73" y="98" width="25" height="20"
+          fill="#e2e8f0"
+          opacity="0.3"
+          rx="2"/>
+
+    <!-- Chest panel/screen -->
+    <rect x="85" y="105" width="30" height="20"
+          fill="url(#screenGradient)"
+          stroke="#0369a1"
+          stroke-width="2"
+          rx="2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Data on screen -->
+    <g stroke="#dbeafe" stroke-width="1.5" opacity="0.7">
+      <line x1="88" y1="110" x2="105" y2="110">
+        <animate attributeName="x2" values="88;105" dur="2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="88" y1="115" x2="108" y2="115">
+        <animate attributeName="x2" values="88;108" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="88" y1="120" x2="102" y2="120">
+        <animate attributeName="x2" values="88;102" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </line>
+    </g>
+
+    <!-- Control buttons -->
+    <circle cx="85" cy="137" r="4" fill="#dc2626" stroke="#991b1b" stroke-width="1"/>
+    <circle cx="100" cy="137" r="4" fill="#fbbf24" stroke="#d97706" stroke-width="1"/>
+    <circle cx="115" cy="137" r="4" fill="#22c55e" stroke="#16a34a" stroke-width="1"/>
+
+    <!-- Arms -->
+    <!-- Left arm -->
+    <g id="leftArm">
+      <rect x="55" y="100" width="12" height="35"
+            fill="url(#robotBodyGradient)"
+            stroke="#475569"
+            stroke-width="2"
+            rx="3"/>
+      <!-- Joint -->
+      <circle cx="61" cy="118" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <!-- Hand -->
+      <rect x="55" y="137" width="12" height="10"
+            fill="#94a3b8"
+            stroke="#64748b"
+            stroke-width="1.5"
+            rx="2"/>
+      <!-- Fingers -->
+      <g fill="#64748b">
+        <rect x="55" y="147" width="3" height="6" rx="1"/>
+        <rect x="59" y="147" width="3" height="6" rx="1"/>
+        <rect x="63" y="147" width="4" height="6" rx="1"/>
+      </g>
+
+      <!-- Arm movement -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 61 100; 5 61 100; 0 61 100; -5 61 100; 0 61 100"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </g>
+
+    <!-- Right arm -->
+    <g id="rightArm">
+      <rect x="133" y="100" width="12" height="35"
+            fill="url(#robotBodyGradient)"
+            stroke="#475569"
+            stroke-width="2"
+            rx="3"/>
+      <!-- Joint -->
+      <circle cx="139" cy="118" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <!-- Hand -->
+      <rect x="133" y="137" width="12" height="10"
+            fill="#94a3b8"
+            stroke="#64748b"
+            stroke-width="1.5"
+            rx="2"/>
+      <!-- Fingers -->
+      <g fill="#64748b">
+        <rect x="133" y="147" width="3" height="6" rx="1"/>
+        <rect x="137" y="147" width="3" height="6" rx="1"/>
+        <rect x="141" y="147" width="4" height="6" rx="1"/>
+      </g>
+
+      <!-- Arm movement -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 139 100; -5 139 100; 0 139 100; 5 139 100; 0 139 100"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </g>
+
+    <!-- Legs -->
+    <!-- Left leg -->
+    <rect x="80" y="155" width="15" height="30"
+          fill="url(#robotBodyGradient)"
+          stroke="#475569"
+          stroke-width="2"
+          rx="3"/>
+    <rect x="80" y="185" width="15" height="8"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1.5"
+          rx="2"/>
+
+    <!-- Right leg -->
+    <rect x="105" y="155" width="15" height="30"
+          fill="url(#robotBodyGradient)"
+          stroke="#475569"
+          stroke-width="2"
+          rx="3"/>
+    <rect x="105" y="185" width="15" height="8"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1.5"
+          rx="2"/>
+  </g>
+
+  <!-- Circuit patterns floating around -->
+  <g id="circuits" stroke="#60a5fa" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M 30 80 L 40 80 L 40 90">
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="40" cy="90" r="2" fill="#60a5fa">
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 170 100 L 160 100 L 160 110">
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="160" cy="110" r="2" fill="#60a5fa">
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Slight hover animation -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-3; 0,0"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

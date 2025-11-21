@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="crownGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="gemGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="rubyGradient">
+      <stop offset="0%" style="stop-color:#fef2f2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="emeraldGradient">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="royalGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <filter id="crownGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Royal glow -->
+  <circle cx="100" cy="110" r="70" fill="url(#royalGlow)">
+    <animate attributeName="r" values="65;75;65" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Crown base/band -->
+  <ellipse cx="100" cy="140" rx="50" ry="10"
+           fill="url(#crownGradient)"
+           stroke="#b45309"
+           stroke-width="2"
+           filter="url(#crownGlow)"/>
+
+  <!-- Crown body -->
+  <path d="M 50 140
+           L 60 100 L 75 120 L 100 85 L 125 120 L 140 100 L 150 140 Z"
+        fill="url(#crownGradient)"
+        stroke="#b45309"
+        stroke-width="2"
+        filter="url(#crownGlow)"/>
+
+  <!-- Inner highlight -->
+  <path d="M 55 138
+           L 63 105 L 77 123 L 100 92 L 123 123 L 137 105 L 145 138 Z"
+        fill="#fef3c7"
+        opacity="0.3"/>
+
+  <!-- Decorative points with gems -->
+  <!-- Left point -->
+  <g id="leftGem">
+    <circle cx="60" cy="95" r="6"
+            fill="url(#rubyGradient)"
+            stroke="#7c2d12"
+            stroke-width="1.5">
+      <animate attributeName="r" values="6;7;6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Sparkle -->
+    <circle cx="60" cy="95" r="8" fill="none" stroke="#fef2f2" stroke-width="1" opacity="0">
+      <animate attributeName="opacity" values="0;0.6;0" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Center point (main gem) -->
+  <g id="centerGem">
+    <circle cx="100" cy="80" r="10"
+            fill="url(#gemGradient)"
+            stroke="#92400e"
+            stroke-width="2">
+      <animate attributeName="r" values="10;11;10" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Main sparkle effect -->
+    <circle cx="100" cy="80" r="12" fill="none" stroke="#fef3c7" stroke-width="1.5" opacity="0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="10;15;10" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Bright flash -->
+    <circle cx="100" cy="80" r="4" fill="#fef3c7" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Right point -->
+  <g id="rightGem">
+    <circle cx="140" cy="95" r="6"
+            fill="url(#emeraldGradient)"
+            stroke="#065f46"
+            stroke-width="1.5">
+      <animate attributeName="r" values="6;7;6" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Sparkle -->
+    <circle cx="140" cy="95" r="8" fill="none" stroke="#d1fae5" stroke-width="1" opacity="0">
+      <animate attributeName="opacity" values="0;0.6;0" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="6;10;6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Side decorative gems on band -->
+  <circle cx="75" cy="115" r="4" fill="url(#rubyGradient)" stroke="#7c2d12" stroke-width="1">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="125" cy="115" r="4" fill="url(#emeraldGradient)" stroke="#065f46" stroke-width="1">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Ornamental details -->
+  <g stroke="#b45309" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M 65 130 Q 70 125 75 130"/>
+    <path d="M 125 130 Q 130 125 135 130"/>
+    <path d="M 85 135 Q 90 132 95 135"/>
+    <path d="M 105 135 Q 110 132 115 135"/>
+  </g>
+
+  <!-- Floating sparkles around crown -->
+  <g id="sparkles">
+    <circle cx="50" cy="110" r="2" fill="#fef3c7" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="110;105;110" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="115" r="2" fill="#fef3c7" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="115;110;115" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="85" cy="75" r="2" fill="#fef3c7" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="75;70;75" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="115" cy="75" r="2" fill="#fef3c7" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="75;70;75" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gentle hovering animation -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-3; 0,0"
+    dur="4s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

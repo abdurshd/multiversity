@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="swordGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e2e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="handleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#78350f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#92400e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#451a03;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Left Sword -->
+  <g id="leftSword" transform-origin="100 100">
+    <!-- Blade -->
+    <path d="M 60 140 L 50 130 L 90 50 L 95 50 L 100 55 L 70 145 Z"
+          fill="url(#swordGradient)"
+          stroke="#475569"
+          stroke-width="1.5"
+          filter="url(#glow)"/>
+    <!-- Edge highlight -->
+    <path d="M 55 135 L 92 52 L 95 52 L 63 140 Z"
+          fill="#f1f5f9"
+          opacity="0.4"/>
+    <!-- Guard -->
+    <rect x="65" y="140" width="30" height="6" rx="2"
+          fill="url(#handleGradient)"
+          stroke="#451a03"
+          stroke-width="1"/>
+    <!-- Handle -->
+    <rect x="75" y="146" width="10" height="25" rx="2"
+          fill="url(#handleGradient)"
+          stroke="#451a03"
+          stroke-width="1"/>
+    <!-- Pommel -->
+    <circle cx="80" cy="173" r="5"
+            fill="#fbbf24"
+            stroke="#92400e"
+            stroke-width="1"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="-15 100 100"
+      to="15 100 100"
+      dur="1.5s"
+      repeatCount="indefinite"
+      additive="sum"/>
+  </g>
+
+  <!-- Right Sword -->
+  <g id="rightSword" transform-origin="100 100">
+    <!-- Blade -->
+    <path d="M 140 140 L 150 130 L 110 50 L 105 50 L 100 55 L 130 145 Z"
+          fill="url(#swordGradient)"
+          stroke="#475569"
+          stroke-width="1.5"
+          filter="url(#glow)"/>
+    <!-- Edge highlight -->
+    <path d="M 145 135 L 108 52 L 105 52 L 137 140 Z"
+          fill="#f1f5f9"
+          opacity="0.4"/>
+    <!-- Guard -->
+    <rect x="105" y="140" width="30" height="6" rx="2"
+          fill="url(#handleGradient)"
+          stroke="#451a03"
+          stroke-width="1"/>
+    <!-- Handle -->
+    <rect x="115" y="146" width="10" height="25" rx="2"
+          fill="url(#handleGradient)"
+          stroke="#451a03"
+          stroke-width="1"/>
+    <!-- Pommel -->
+    <circle cx="120" cy="173" r="5"
+            fill="#fbbf24"
+            stroke="#92400e"
+            stroke-width="1"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="15 100 100"
+      to="-15 100 100"
+      dur="1.5s"
+      repeatCount="indefinite"
+      additive="sum"/>
+  </g>
+
+  <!-- Clash sparks -->
+  <g id="sparks" opacity="0">
+    <circle cx="100" cy="80" r="3" fill="#fbbf24"/>
+    <circle cx="95" cy="75" r="2" fill="#fef3c7"/>
+    <circle cx="105" cy="75" r="2" fill="#fef3c7"/>
+    <circle cx="100" cy="70" r="2" fill="#fef3c7"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;1;0"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+  </g>
+</svg>

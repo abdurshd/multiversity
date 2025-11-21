@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="radioGlow">
+      <stop offset="0%" style="stop-color:#fef08a;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#facc15;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:0" />
+    </radialGradient>
+    <filter id="radioGlowFilter">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Pulsing glow background -->
+  <circle cx="100" cy="100" r="70" fill="url(#radioGlow)">
+    <animate attributeName="r" values="60;80;60" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Warning circle background -->
+  <circle cx="100" cy="100" r="60"
+          fill="#facc15"
+          stroke="#854d0e"
+          stroke-width="4"
+          filter="url(#radioGlowFilter)"/>
+
+  <!-- Center circle -->
+  <circle cx="100" cy="100" r="15"
+          fill="#854d0e"
+          stroke="#713f12"
+          stroke-width="2">
+    <animate attributeName="r" values="15;17;15" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Rotating trefoil symbol -->
+  <g id="trefoil" transform-origin="100 100">
+    <!-- Blade 1 (top) -->
+    <path d="M 100 85 L 85 65 A 20 20 0 0 1 115 65 Z"
+          fill="#854d0e"
+          stroke="#713f12"
+          stroke-width="2"/>
+
+    <!-- Blade 2 (bottom-right) -->
+    <g transform="rotate(120, 100, 100)">
+      <path d="M 100 85 L 85 65 A 20 20 0 0 1 115 65 Z"
+            fill="#854d0e"
+            stroke="#713f12"
+            stroke-width="2"/>
+    </g>
+
+    <!-- Blade 3 (bottom-left) -->
+    <g transform="rotate(240, 100, 100)">
+      <path d="M 100 85 L 85 65 A 20 20 0 0 1 115 65 Z"
+            fill="#854d0e"
+            stroke="#713f12"
+            stroke-width="2"/>
+    </g>
+
+    <!-- Rotation animation -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Radiation waves emanating -->
+  <g opacity="0.6">
+    <circle cx="100" cy="100" r="70"
+            fill="none"
+            stroke="#facc15"
+            stroke-width="2">
+      <animate attributeName="r" values="70;90;70" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="100" r="70"
+            fill="none"
+            stroke="#facc15"
+            stroke-width="2">
+      <animate attributeName="r" values="70;90;70" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Warning text particles -->
+  <g id="particles">
+    <circle cx="100" cy="40" r="2" fill="#eab308" opacity="0.7">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-20"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="140" r="2" fill="#eab308" opacity="0.7">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 20,20"
+        dur="2s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="140" r="2" fill="#eab308" opacity="0.7">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,20"
+        dur="2s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

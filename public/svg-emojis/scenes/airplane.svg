@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+    </linearGradient>
+    <filter id="planeShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <circle cx="100" cy="100" r="80" fill="url(#skyGradient)"/>
+
+  <!-- Contrails -->
+  <g id="contrails" opacity="0.5">
+    <ellipse cx="50" cy="110" rx="30" ry="3" fill="#e0f2fe">
+      <animate attributeName="rx" values="30;45;30" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="45" cy="115" rx="35" ry="2" fill="#dbeafe">
+      <animate attributeName="rx" values="35;50;35" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Airplane -->
+  <g id="airplane" transform-origin="100 100" filter="url(#planeShadow)">
+    <!-- Fuselage -->
+    <ellipse cx="100" cy="105" rx="45" ry="12"
+             fill="url(#planeGradient)"
+             stroke="#475569"
+             stroke-width="2"/>
+
+    <!-- Cockpit windows -->
+    <ellipse cx="125" cy="105" rx="8" ry="6"
+             fill="#0ea5e9"
+             stroke="#0369a1"
+             stroke-width="1">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Main wings -->
+    <ellipse cx="90" cy="105" rx="50" ry="20"
+             fill="#cbd5e1"
+             stroke="#475569"
+             stroke-width="2"
+             opacity="0.9"/>
+
+    <!-- Wing highlights -->
+    <ellipse cx="85" cy="100" rx="30" ry="8"
+             fill="#e2e8f0"
+             opacity="0.6"/>
+
+    <!-- Tail fin -->
+    <path d="M 60 105 L 50 95 L 50 115 Z"
+          fill="url(#planeGradient)"
+          stroke="#475569"
+          stroke-width="2"/>
+
+    <!-- Horizontal stabilizer -->
+    <ellipse cx="55" cy="105" rx="15" ry="5"
+             fill="#cbd5e1"
+             stroke="#475569"
+             stroke-width="1.5"/>
+
+    <!-- Red stripe -->
+    <path d="M 70 105 L 130 105"
+          stroke="#dc2626"
+          stroke-width="3"
+          opacity="0.8"/>
+
+    <!-- Nose cone -->
+    <ellipse cx="135" cy="105" rx="10" ry="8"
+             fill="#94a3b8"
+             stroke="#475569"
+             stroke-width="1.5"/>
+
+    <!-- Flying animation - gentle bobbing -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,-3; 0,0"
+      dur="2s"
+      repeatCount="indefinite"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 100 100; -2 100 100; 0 100 100"
+      dur="3s"
+      additive="sum"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Propeller blur (if front view) -->
+  <ellipse cx="135" cy="105" rx="12" ry="12"
+           fill="#94a3b8"
+           opacity="0.3">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 135 105"
+      to="360 135 105"
+      dur="0.1s"
+      repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Motion lines -->
+  <g id="motionLines" stroke="#94a3b8" stroke-width="2" opacity="0.4" stroke-linecap="round">
+    <line x1="45" y1="95" x2="35" y2="95">
+      <animate attributeName="x1" values="45;25" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="35;10" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="40" y1="105" x2="30" y2="105">
+      <animate attributeName="x1" values="40;20" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="30;5" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="45" y1="115" x2="35" y2="115">
+      <animate attributeName="x1" values="45;25" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="35;10" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Clouds passing by -->
+  <g id="clouds" opacity="0.3">
+    <ellipse cx="160" cy="70" rx="15" ry="8" fill="#e0f2fe">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -200,0"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="180" cy="140" rx="20" ry="10" fill="#dbeafe">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -220,0"
+        dur="10s"
+        repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>

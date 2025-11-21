@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="brickGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#b91c1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="brickPattern" patternUnits="userSpaceOnUse" width="40" height="20">
+      <rect width="40" height="20" fill="#78350f" opacity="0.2"/>
+    </pattern>
+    <filter id="wallShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Wall base shadow -->
+  <ellipse cx="100" cy="165" rx="80" ry="8" fill="#000" opacity="0.2"/>
+
+  <!-- Wall being built - bricks appear from bottom to top -->
+  <g id="wall" filter="url(#wallShadow)">
+    <!-- Row 1 (bottom) - Full bricks -->
+    <g id="row1" opacity="0">
+      <rect x="30" y="150" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="70" y="150" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="110" y="150" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="150" y="150" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0s" fill="freeze"/>
+    </g>
+
+    <!-- Row 2 - Offset pattern -->
+    <g id="row2" opacity="0">
+      <rect x="30" y="130" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="55" y="130" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="95" y="130" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="135" y="130" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.3s" fill="freeze"/>
+    </g>
+
+    <!-- Row 3 -->
+    <g id="row3" opacity="0">
+      <rect x="30" y="110" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="70" y="110" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="110" y="110" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="150" y="110" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.6s" fill="freeze"/>
+    </g>
+
+    <!-- Row 4 -->
+    <g id="row4" opacity="0">
+      <rect x="30" y="90" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="55" y="90" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="95" y="90" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="135" y="90" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.9s" fill="freeze"/>
+    </g>
+
+    <!-- Row 5 -->
+    <g id="row5" opacity="0">
+      <rect x="30" y="70" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="70" y="70" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="110" y="70" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="150" y="70" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/>
+    </g>
+
+    <!-- Row 6 -->
+    <g id="row6" opacity="0">
+      <rect x="30" y="50" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="55" y="50" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="95" y="50" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="135" y="50" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+    </g>
+
+    <!-- Row 7 (top) -->
+    <g id="row7" opacity="0">
+      <rect x="30" y="30" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="70" y="30" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="110" y="30" width="35" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <rect x="150" y="30" width="20" height="15"
+            fill="url(#brickGradient)"
+            stroke="#7f1d1d"
+            stroke-width="1.5"
+            rx="1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze"/>
+    </g>
+  </g>
+
+  <!-- Mortar falling between bricks -->
+  <g id="mortar" opacity="0.5">
+    <circle cx="50" cy="145" r="1.5" fill="#d6d3d1">
+      <animate attributeName="cy" values="140;145" dur="0.3s" begin="0.1s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.7;0.5" dur="0.3s" begin="0.1s" fill="freeze"/>
+    </circle>
+    <circle cx="90" cy="125" r="1.5" fill="#d6d3d1">
+      <animate attributeName="cy" values="120;125" dur="0.3s" begin="0.4s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.7;0.5" dur="0.3s" begin="0.4s" fill="freeze"/>
+    </circle>
+    <circle cx="130" cy="105" r="1.5" fill="#d6d3d1">
+      <animate attributeName="cy" values="100;105" dur="0.3s" begin="0.7s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.7;0.5" dur="0.3s" begin="0.7s" fill="freeze"/>
+    </circle>
+  </g>
+
+  <!-- Construction dust/particles -->
+  <g id="dust" opacity="0.4">
+    <circle cx="40" cy="160" r="2" fill="#92400e">
+      <animate attributeName="cy" values="160;150;160" dur="2s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0" dur="2s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="162" r="2" fill="#92400e">
+      <animate attributeName="cy" values="162;152;162" dur="2s" begin="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0" dur="2s" begin="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="158" r="2" fill="#92400e">
+      <animate attributeName="cy" values="158;148;158" dur="2s" begin="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0" dur="2s" begin="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- After wall is built, add subtle standing animation -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,1; 0,0"
+    dur="3s"
+    begin="2s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

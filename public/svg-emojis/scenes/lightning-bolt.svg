@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="boltGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <filter id="electricGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Glow circle background -->
+  <circle cx="100" cy="100" r="60" fill="url(#glowGradient)" opacity="0.6">
+    <animate attributeName="r" values="50;70;50" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main lightning bolt -->
+  <g id="bolt" filter="url(#electricGlow)">
+    <path d="M 115 30 L 85 95 L 105 95 L 75 170 L 120 110 L 95 110 Z"
+          fill="url(#boltGradient)"
+          stroke="#f59e0b"
+          stroke-width="2"
+          stroke-linejoin="miter">
+      <animate attributeName="opacity"
+               values="1;0.7;1;0.8;1"
+               dur="0.15s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <!-- Inner highlight -->
+    <path d="M 110 35 L 88 95 L 102 95 L 80 160 L 115 115 L 98 115 Z"
+          fill="#fef3c7"
+          opacity="0.6"/>
+  </g>
+
+  <!-- Electric arcs -->
+  <g id="arcs" opacity="0.7">
+    <path d="M 90 60 Q 85 65 88 70"
+          stroke="#fbbf24"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round">
+      <animate attributeName="opacity"
+               values="0;1;0"
+               dur="0.3s"
+               begin="0s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 110 80 Q 115 85 112 90"
+          stroke="#fbbf24"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round">
+      <animate attributeName="opacity"
+               values="0;1;0"
+               dur="0.3s"
+               begin="0.1s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 95 130 Q 90 135 93 140"
+          stroke="#fbbf24"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round">
+      <animate attributeName="opacity"
+               values="0;1;0"
+               dur="0.3s"
+               begin="0.2s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Pulsing animation for entire bolt -->
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="1;1.05;1"
+    dur="2s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

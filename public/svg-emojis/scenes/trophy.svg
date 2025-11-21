@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="shineGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="victoryGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <filter id="trophyGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Victory glow -->
+  <circle cx="100" cy="100" r="80" fill="url(#victoryGlow)">
+    <animate attributeName="r" values="75;85;75" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Trophy -->
+  <g id="trophy" filter="url(#trophyGlow)">
+    <!-- Base -->
+    <rect x="70" y="145" width="60" height="8"
+          fill="url(#goldGradient)"
+          stroke="#b45309"
+          stroke-width="2"
+          rx="2"/>
+    <rect x="75" y="153" width="50" height="6"
+          fill="#d97706"
+          stroke="#92400e"
+          stroke-width="1.5"
+          rx="1"/>
+
+    <!-- Stem -->
+    <rect x="90" y="125" width="20" height="20"
+          fill="url(#goldGradient)"
+          stroke="#b45309"
+          stroke-width="2"/>
+    <!-- Stem ring -->
+    <ellipse cx="100" cy="135" rx="15" ry="4"
+             fill="#d97706"
+             stroke="#b45309"
+             stroke-width="1"/>
+
+    <!-- Main cup body -->
+    <path d="M 70 125 Q 70 75 70 65 L 130 65 Q 130 75 130 125 L 115 125 L 115 80 L 85 80 L 85 125 Z"
+          fill="url(#goldGradient)"
+          stroke="#b45309"
+          stroke-width="2"/>
+
+    <!-- Cup rim -->
+    <ellipse cx="100" cy="65" rx="30" ry="6"
+             fill="#fef3c7"
+             stroke="#d97706"
+             stroke-width="2"/>
+
+    <!-- Inner cup shine -->
+    <ellipse cx="100" cy="67" rx="24" ry="4"
+             fill="#fbbf24"
+             opacity="0.6"/>
+
+    <!-- Handles -->
+    <path d="M 70 75 Q 50 75 50 95 Q 50 105 60 105"
+          fill="none"
+          stroke="url(#goldGradient)"
+          stroke-width="8"
+          stroke-linecap="round"/>
+    <path d="M 70 75 Q 50 75 50 95 Q 50 105 60 105"
+          fill="none"
+          stroke="#fef3c7"
+          stroke-width="3"
+          opacity="0.5"/>
+
+    <path d="M 130 75 Q 150 75 150 95 Q 150 105 140 105"
+          fill="none"
+          stroke="url(#goldGradient)"
+          stroke-width="8"
+          stroke-linecap="round"/>
+    <path d="M 130 75 Q 150 75 150 95 Q 150 105 140 105"
+          fill="none"
+          stroke="#fef3c7"
+          stroke-width="3"
+          opacity="0.5"/>
+
+    <!-- Decorative band -->
+    <rect x="72" y="95" width="56" height="6"
+          fill="#d97706"
+          opacity="0.7"/>
+    <!-- Stars on band -->
+    <g fill="#fef3c7">
+      <path d="M 88 98 L 89 96 L 90 98 L 92 98 L 90 99 L 91 101 L 89 100 L 87 101 L 88 99 L 86 98 Z"/>
+      <path d="M 100 98 L 101 96 L 102 98 L 104 98 L 102 99 L 103 101 L 101 100 L 99 101 L 100 99 L 98 98 Z"/>
+      <path d="M 112 98 L 113 96 L 114 98 L 116 98 L 114 99 L 115 101 L 113 100 L 111 101 L 112 99 L 110 98 Z"/>
+    </g>
+
+    <!-- Shine effect moving across trophy -->
+    <ellipse cx="80" cy="90" rx="8" ry="30"
+             fill="#fef3c7"
+             opacity="0.5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 40,0; 0,0"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Sparkles around trophy -->
+  <g id="sparkles">
+    <circle cx="55" cy="70" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="75" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2;3;2" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="50" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2;3;2" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="55" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2;3;2" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Star burst sparkles -->
+    <g transform="translate(100, 50)">
+      <path d="M 0 -8 L 1 -2 L 0 -8 L -1 -2 Z" fill="#fef3c7" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 0 0; 180 0 0"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </path>
+      <path d="M 8 0 L 2 1 L 8 0 L 2 -1 Z" fill="#fef3c7" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0 0 0; 180 0 0"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Confetti falling -->
+  <g id="confetti">
+    <rect x="60" y="-10" width="3" height="6" fill="#ef4444" rx="1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,180"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 0 0; 360 0 0"
+        dur="3s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="100" y="-10" width="3" height="6" fill="#3b82f6" rx="1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 5,180"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 0 0; 360 0 0"
+        dur="3.5s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="140" y="-10" width="3" height="6" fill="#10b981" rx="1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,180"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 0 0; 360 0 0"
+        dur="4s"
+        additive="sum"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Trophy floating animation -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-5; 0,0"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>
