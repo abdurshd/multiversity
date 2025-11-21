@@ -1,15 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
     <radialGradient id="sunGradient">
-      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
-      <stop offset="70%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fefce8;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#facc15;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
     </radialGradient>
-    <radialGradient id="sunGlow">
-      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    
+    <radialGradient id="rayGradient">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
     </radialGradient>
-    <filter id="sunFilter">
+
+    <filter id="sunGlow">
       <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
@@ -18,169 +20,44 @@
     </filter>
   </defs>
 
-  <!-- Sun glow -->
-  <circle cx="100" cy="100" r="80" fill="url(#sunGlow)">
-    <animate attributeName="r" values="75;85;75" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Sun -->
-  <g id="sun" filter="url(#sunFilter)">
-    <!-- Sun rays -->
-    <g id="sunRays" stroke="#fbbf24" stroke-width="4" stroke-linecap="round">
-      <!-- Main 8 rays -->
-      <line x1="100" y1="35" x2="100" y2="20">
-        <animate attributeName="y2" values="20;15;20" dur="2s" repeatCount="indefinite"/>
-      </line>
-      <line x1="146" y1="54" x2="156" y2="44">
-        <animate attributeName="x2" values="156;161;156" dur="2s" begin="0.25s" repeatCount="indefinite"/>
-        <animate attributeName="y2" values="44;39;44" dur="2s" begin="0.25s" repeatCount="indefinite"/>
-      </line>
-      <line x1="165" y1="100" x2="180" y2="100">
-        <animate attributeName="x2" values="180;185;180" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-      </line>
-      <line x1="146" y1="146" x2="156" y2="156">
-        <animate attributeName="x2" values="156;161;156" dur="2s" begin="0.75s" repeatCount="indefinite"/>
-        <animate attributeName="y2" values="156;161;156" dur="2s" begin="0.75s" repeatCount="indefinite"/>
-      </line>
-      <line x1="100" y1="165" x2="100" y2="180">
-        <animate attributeName="y2" values="180;185;180" dur="2s" begin="1s" repeatCount="indefinite"/>
-      </line>
-      <line x1="54" y1="146" x2="44" y2="156">
-        <animate attributeName="x2" values="44;39;44" dur="2s" begin="1.25s" repeatCount="indefinite"/>
-        <animate attributeName="y2" values="156;161;156" dur="2s" begin="1.25s" repeatCount="indefinite"/>
-      </line>
-      <line x1="35" y1="100" x2="20" y2="100">
-        <animate attributeName="x2" values="20;15;20" dur="2s" begin="1.5s" repeatCount="indefinite"/>
-      </line>
-      <line x1="54" y1="54" x2="44" y2="44">
-        <animate attributeName="x2" values="44;39;44" dur="2s" begin="1.75s" repeatCount="indefinite"/>
-        <animate attributeName="y2" values="44;39;44" dur="2s" begin="1.75s" repeatCount="indefinite"/>
-      </line>
+  <g transform="translate(100, 100)">
+    <!-- Rotating Rays -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+      
+      <!-- 8 Major Rays -->
+      <g stroke="url(#rayGradient)" stroke-width="4" stroke-linecap="round">
+        <line x1="0" y1="-60" x2="0" y2="-85" />
+        <line x1="0" y1="60" x2="0" y2="85" />
+        <line x1="-60" y1="0" x2="-85" y2="0" />
+        <line x1="60" y1="0" x2="85" y2="0" />
+        <line x1="42" y1="-42" x2="60" y2="-60" />
+        <line x1="-42" y1="-42" x2="-60" y2="-60" />
+        <line x1="42" y1="42" x2="60" y2="60" />
+        <line x1="-42" y1="42" x2="-60" y2="60" />
+      </g>
+      
+      <!-- 8 Minor Rays -->
+      <g stroke="url(#rayGradient)" stroke-width="2" stroke-linecap="round" transform="rotate(22.5)">
+        <line x1="0" y1="-55" x2="0" y2="-70" opacity="0.7"/>
+        <line x1="0" y1="55" x2="0" y2="70" opacity="0.7"/>
+        <line x1="-55" y1="0" x2="-70" y2="0" opacity="0.7"/>
+        <line x1="55" y1="0" x2="70" y2="0" opacity="0.7"/>
+        <line x1="39" y1="-39" x2="50" y2="-50" opacity="0.7"/>
+        <line x1="-39" y1="-39" x2="-50" y2="-50" opacity="0.7"/>
+        <line x1="39" y1="39" x2="50" y2="50" opacity="0.7"/>
+        <line x1="-39" y1="39" x2="-50" y2="50" opacity="0.7"/>
+      </g>
     </g>
 
-    <!-- Rotating rays -->
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 100 100"
-      to="360 100 100"
-      dur="20s"
-      repeatCount="indefinite"/>
-
-    <!-- Sun core -->
-    <circle cx="100" cy="100" r="40"
-            fill="url(#sunGradient)"
-            stroke="#f59e0b"
-            stroke-width="2">
-      <animate attributeName="r" values="40;42;40" dur="3s" repeatCount="indefinite"/>
+    <!-- Pulsing Core -->
+    <circle r="45" fill="url(#sunGradient)" filter="url(#sunGlow)">
+      <animate attributeName="r" values="45;48;45" dur="3s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- Inner glow -->
-    <circle cx="100" cy="100" r="35"
-            fill="#fef3c7"
-            opacity="0.6">
-      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" repeatCount="indefinite"/>
+    
+    <!-- Inner Bright Spot -->
+    <circle r="25" fill="#fefce8" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- Highlight -->
-    <ellipse cx="90" cy="90" rx="15" ry="18"
-             fill="white"
-             opacity="0.5">
-      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Surface details -->
-    <g opacity="0.3">
-      <ellipse cx="110" cy="105" rx="8" ry="6" fill="#f59e0b"/>
-      <ellipse cx="92" cy="112" rx="6" ry="5" fill="#f59e0b"/>
-      <ellipse cx="105" cy="92" rx="5" ry="4" fill="#f59e0b"/>
-    </g>
-  </g>
-
-  <!-- Heat waves -->
-  <g id="heatWaves" stroke="#fde68a" stroke-width="2" fill="none" opacity="0.4">
-    <path d="M 60 50 Q 65 48 70 50">
-      <animate attributeName="d"
-               values="M 60 50 Q 65 48 70 50;
-                       M 60 50 Q 65 52 70 50;
-                       M 60 50 Q 65 48 70 50"
-               dur="2s"
-               repeatCount="indefinite"/>
-    </path>
-    <path d="M 130 50 Q 135 48 140 50">
-      <animate attributeName="d"
-               values="M 130 50 Q 135 48 140 50;
-                       M 130 50 Q 135 52 140 50;
-                       M 130 50 Q 135 48 140 50"
-               dur="2s"
-               begin="0.5s"
-               repeatCount="indefinite"/>
-    </path>
-    <path d="M 60 150 Q 65 148 70 150">
-      <animate attributeName="d"
-               values="M 60 150 Q 65 148 70 150;
-                       M 60 150 Q 65 152 70 150;
-                       M 60 150 Q 65 148 70 150"
-               dur="2s"
-               begin="1s"
-               repeatCount="indefinite"/>
-    </path>
-    <path d="M 130 150 Q 135 148 140 150">
-      <animate attributeName="d"
-               values="M 130 150 Q 135 148 140 150;
-                       M 130 150 Q 135 152 140 150;
-                       M 130 150 Q 135 148 140 150"
-               dur="2s"
-               begin="1.5s"
-               repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <!-- Light particles -->
-  <g id="lightParticles" opacity="0.6">
-    <circle cx="75" cy="75" r="2" fill="#fef3c7">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; -20,-20"
-        dur="3s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="125" cy="80" r="2" fill="#fde68a">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 22,-18"
-        dur="3s"
-        begin="0.5s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="80" cy="125" r="2" fill="#fbbf24">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; -18,20"
-        dur="3s"
-        begin="1s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Sparkles -->
-  <g id="sparkles" opacity="0.7">
-    <g transform="translate(50, 60)">
-      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fef3c7" stroke-width="2"/>
-      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fef3c7" stroke-width="2"/>
-      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
-    </g>
-    <g transform="translate(150, 65)">
-      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fde68a" stroke-width="2"/>
-      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fde68a" stroke-width="2"/>
-      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-    </g>
   </g>
 </svg>

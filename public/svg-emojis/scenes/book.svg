@@ -1,168 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="coverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    <linearGradient id="coverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#172554;stop-opacity:1" />
     </linearGradient>
+    
     <linearGradient id="pageGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
     </linearGradient>
-    <radialGradient id="knowledgeGlow">
-      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:0.5" />
-      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0" />
-    </radialGradient>
-    <filter id="bookGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Knowledge glow -->
-  <circle cx="100" cy="100" r="75" fill="url(#knowledgeGlow)">
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Open book -->
-  <g id="book" filter="url(#bookGlow)">
-    <!-- Left page -->
-    <path d="M 50 60 Q 48 100 50 140 L 95 145 L 95 65 Z"
-          fill="url(#pageGradient)"
-          stroke="#f59e0b"
-          stroke-width="2"/>
-
-    <!-- Right page -->
-    <path d="M 150 60 Q 152 100 150 140 L 105 145 L 105 65 Z"
-          fill="url(#pageGradient)"
-          stroke="#f59e0b"
-          stroke-width="2"/>
-
-    <!-- Spine/center -->
-    <rect x="98" y="65" width="4" height="80"
-          fill="#5b21b6"
-          opacity="0.6"/>
-
-    <!-- Page lines (left page) -->
-    <g stroke="#d97706" stroke-width="1" opacity="0.4">
-      <line x1="60" y1="80" x2="90" y2="80"/>
-      <line x1="60" y1="90" x2="90" y2="90"/>
-      <line x1="60" y1="100" x2="90" y2="100"/>
-      <line x1="60" y1="110" x2="90" y2="110"/>
-      <line x1="60" y1="120" x2="90" y2="120"/>
-      <line x1="60" y1="130" x2="90" y2="130"/>
+  <g transform="translate(100, 120)">
+    <!-- Back Cover -->
+    <path d="M -70,20 L 70,20 L 80,-60 L -60,-60 Z" fill="#172554"/>
+    
+    <!-- Pages Block -->
+    <path d="M -65,15 L 65,15 L 75,-55 L -55,-55 Z" fill="#e2e8f0"/>
+    
+    <!-- Left Page (Static) -->
+    <path d="M 0,15 Q -30,25 -65,15 L -55,-55 Q -25,-45 0,-55 Z" fill="url(#pageGradient)" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Right Page (Static) -->
+    <path d="M 0,15 Q 30,25 65,15 L 75,-55 Q 35,-45 0,-55 Z" fill="url(#pageGradient)" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Turning Page -->
+    <g>
+      <path d="M 0,15 Q 30,25 65,15 L 75,-55 Q 35,-45 0,-55 Z" fill="url(#pageGradient)" stroke="#94a3b8" stroke-width="1" opacity="0.9">
+        <animate attributeName="d" 
+                 values="M 0,15 Q 30,25 65,15 L 75,-55 Q 35,-45 0,-55 Z;
+                         M 0,15 Q 0,5 0,15 L 0,-55 Q 0,-65 0,-55 Z;
+                         M 0,15 Q -30,25 -65,15 L -55,-55 Q -25,-45 0,-55 Z"
+                 dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+      </path>
     </g>
-
-    <!-- Page lines (right page) -->
-    <g stroke="#d97706" stroke-width="1" opacity="0.4">
-      <line x1="110" y1="80" x2="140" y2="80"/>
-      <line x1="110" y1="90" x2="140" y2="90"/>
-      <line x1="110" y1="100" x2="140" y2="100"/>
-      <line x1="110" y1="110" x2="140" y2="110"/>
-      <line x1="110" y1="120" x2="140" y2="120"/>
-      <line x1="110" y1="130" x2="140" y2="130"/>
+    
+    <!-- Spine -->
+    <path d="M -5,20 Q 0,25 5,20 L 5,-60 Q 0,-55 -5,-60 Z" fill="#1e3a8a"/>
+    
+    <!-- Magic Sparkles -->
+    <g fill="#facc15">
+      <circle cx="0" cy="-70" r="2">
+        <animate attributeName="cy" values="-70;-90" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-20" cy="-60" r="1.5">
+        <animate attributeName="cy" values="-60;-80" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="20" cy="-60" r="1.5">
+        <animate attributeName="cy" values="-60;-80" dur="2s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
     </g>
-
-    <!-- Left cover (back) -->
-    <path d="M 45 58 L 45 142 Q 47 148 52 148 L 95 143 L 95 63 L 52 58 Q 47 58 45 58 Z"
-          fill="url(#coverGradient)"
-          stroke="#4c1d95"
-          stroke-width="2"
-          opacity="0.8"/>
-
-    <!-- Right cover (front) -->
-    <path d="M 155 58 L 155 142 Q 153 148 148 148 L 105 143 L 105 63 L 148 58 Q 153 58 155 58 Z"
-          fill="url(#coverGradient)"
-          stroke="#4c1d95"
-          stroke-width="2"
-          opacity="0.8"/>
-
-    <!-- Book title decoration -->
-    <text x="100" y="50" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-    </text>
-
-    <!-- Page curl effect (right page) -->
-    <path d="M 145 65 Q 150 65 148 70 L 145 75"
-          fill="#fef3c7"
-          stroke="#f59e0b"
-          stroke-width="1"
-          opacity="0.7">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 2,-2; 0,0"
-        dur="3s"
-        repeatCount="indefinite"/>
-    </path>
-
-    <!-- Bookmark ribbon -->
-    <rect x="98" y="55" width="4" height="50"
-          fill="#ef4444"
-          opacity="0.8">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 0,2; 0,0"
-        dur="2s"
-        repeatCount="indefinite"/>
-    </rect>
   </g>
-
-  <!-- Reading sparkles -->
-  <g id="sparkles" opacity="0.6">
-    <circle cx="70" cy="75" r="2" fill="#c4b5fd">
-      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="130" cy="85" r="2" fill="#a78bfa">
-      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="100" cy="50" r="2" fill="#ddd6fe">
-      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Knowledge particles rising -->
-  <g id="knowledgeParticles" opacity="0.5">
-    <circle cx="75" cy="110" r="2" fill="#fbbf24">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; -10,-30"
-        dur="3s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="125" cy="115" r="2" fill="#a78bfa">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 12,-35"
-        dur="3s"
-        begin="0.5s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="100" cy="105" r="2" fill="#c4b5fd">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 0,-40"
-        dur="3s"
-        begin="1s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="1s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Gentle page turning animation -->
-  <animateTransform
-    attributeName="transform"
-    type="rotate"
-    values="0 100 105; 1 100 105; 0 100 105; -1 100 105; 0 100 105"
-    dur="4s"
-    repeatCount="indefinite"
-    additive="sum"/>
 </svg>

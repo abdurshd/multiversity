@@ -1,163 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="rocketBody" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#e2e8f0;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#cbd5e1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="windowGradient">
-      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0" />
     </linearGradient>
-    <linearGradient id="fireGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fef08a;stop-opacity:1" />
-      <stop offset="30%" style="stop-color:#fbbf24;stop-opacity:1" />
-      <stop offset="60%" style="stop-color:#f97316;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
-    </linearGradient>
-    <filter id="rocketGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Launch effect background -->
-  <ellipse cx="100" cy="170" rx="40" ry="10" fill="#fbbf24" opacity="0.3">
-    <animate attributeName="rx" values="40;50;40" dur="0.3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="0.3s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <!-- Rocket body -->
-  <g id="rocket" transform="translate(0, 0)">
-    <!-- Nose cone -->
-    <path d="M 100 30 L 80 70 L 120 70 Z"
-          fill="#dc2626"
-          stroke="#991b1b"
-          stroke-width="2"/>
-
-    <!-- Main body -->
-    <rect x="80" y="70" width="40" height="70"
-          fill="url(#rocketGradient)"
-          stroke="#64748b"
-          stroke-width="2"
-          filter="url(#rocketGlow)"/>
-
-    <!-- Window -->
-    <circle cx="100" cy="90" r="10"
-            fill="url(#windowGradient)"
-            stroke="#075985"
-            stroke-width="2">
-      <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Red stripes -->
-    <rect x="80" y="100" width="40" height="8" fill="#dc2626" opacity="0.8"/>
-    <rect x="80" y="115" width="40" height="8" fill="#dc2626" opacity="0.8"/>
-
+  <g transform="translate(100, 100) rotate(-45)">
+    <!-- Shake Animation -->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 2,2; -2,-2; 0,0" dur="0.1s" repeatCount="indefinite" additive="sum"/>
+    
+    <!-- Rocket Body -->
+    <path d="M 0,-60 Q 20,-40 20,20 L 20,40 L -20,40 L -20,20 Q -20,-40 0,-60 Z" fill="url(#rocketBody)"/>
+    
     <!-- Fins -->
-    <path d="M 80 120 L 60 160 L 80 140 Z"
-          fill="#94a3b8"
-          stroke="#64748b"
-          stroke-width="2"/>
-    <path d="M 120 120 L 140 160 L 120 140 Z"
-          fill="#94a3b8"
-          stroke="#64748b"
-          stroke-width="2"/>
-
-    <!-- Hover animation -->
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      values="0,0; 0,-5; 0,0"
-      dur="1s"
-      repeatCount="indefinite"/>
-  </g>
-
-  <!-- Exhaust flames -->
-  <g id="flames">
-    <!-- Main flame -->
-    <ellipse cx="100" cy="155" rx="18" ry="30"
-             fill="url(#fireGradient)"
-             opacity="0.9">
-      <animate attributeName="ry" values="30;40;30" dur="0.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="0.2s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Inner flame -->
-    <ellipse cx="100" cy="150" rx="12" ry="20"
-             fill="#fbbf24"
-             opacity="0.8">
-      <animate attributeName="ry" values="20;28;20" dur="0.2s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Core flame -->
-    <ellipse cx="100" cy="148" rx="6" ry="12"
-             fill="#fef08a"
-             opacity="0.9">
-      <animate attributeName="ry" values="12;16;12" dur="0.2s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Side flames left -->
-    <ellipse cx="85" cy="150" rx="8" ry="15"
-             fill="url(#fireGradient)"
-             opacity="0.7">
-      <animate attributeName="ry" values="15;22;15" dur="0.25s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.25s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Side flames right -->
-    <ellipse cx="115" cy="150" rx="8" ry="15"
-             fill="url(#fireGradient)"
-             opacity="0.7">
-      <animate attributeName="ry" values="15;22;15" dur="0.25s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.25s" repeatCount="indefinite"/>
-    </ellipse>
-  </g>
-
-  <!-- Exhaust smoke particles -->
-  <g id="smoke" opacity="0.4">
-    <circle cx="95" cy="175" r="4" fill="#94a3b8">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; -10,30"
-        dur="1.5s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="1.5s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="4;8" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="105" cy="175" r="4" fill="#94a3b8">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 10,30"
-        dur="1.5s"
-        begin="0.5s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="4;8" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Speed lines -->
-  <g id="speedLines" stroke="#60a5fa" stroke-width="2" opacity="0.5">
-    <line x1="70" y1="90" x2="65" y2="90">
-      <animate attributeName="x1" values="70;50" dur="0.5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="65;40" dur="0.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="0.5s" repeatCount="indefinite"/>
-    </line>
-    <line x1="130" y1="100" x2="135" y2="100">
-      <animate attributeName="x1" values="130;150" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="135;160" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
-    </line>
-    <line x1="75" y1="110" x2="70" y2="110">
-      <animate attributeName="x1" values="75;55" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="70;45" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
-    </line>
+    <path d="M -20,20 L -40,50 L -20,50 Z" fill="#dc2626"/>
+    <path d="M 20,20 L 40,50 L 20,50 Z" fill="#dc2626"/>
+    <path d="M 0,20 L 0,50" stroke="#dc2626" stroke-width="4"/>
+    
+    <!-- Window -->
+    <circle cx="0" cy="-10" r="10" fill="#38bdf8" stroke="#94a3b8" stroke-width="2"/>
+    
+    <!-- Exhaust Flame -->
+    <g transform="translate(0, 45)">
+      <path d="M -10,0 Q 0,40 10,0 Q 5,60 0,80 Q -5,60 -10,0 Z" fill="url(#flameGradient)">
+        <animate attributeName="d" 
+                 values="M -10,0 Q 0,40 10,0 Q 5,60 0,80 Q -5,60 -10,0 Z;
+                         M -12,0 Q 0,30 12,0 Q 8,70 0,90 Q -8,70 -12,0 Z;
+                         M -10,0 Q 0,40 10,0 Q 5,60 0,80 Q -5,60 -10,0 Z"
+                 dur="0.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Smoke Particles -->
+    <g opacity="0.5">
+      <circle cx="0" cy="80" r="5" fill="#cbd5e1">
+        <animate attributeName="cy" values="80;120" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="5;15" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-10" cy="80" r="4" fill="#cbd5e1">
+        <animate attributeName="cy" values="80;110" dur="0.6s" begin="0.1s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;12" dur="0.6s" begin="0.1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="0.6s" begin="0.1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
   </g>
 </svg>

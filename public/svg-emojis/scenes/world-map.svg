@@ -1,225 +1,123 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="mapGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="oceanGradient">
-      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.6" />
-      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:0.4" />
-    </linearGradient>
-    <radialGradient id="explorationGlow">
-      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.5" />
-      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    <!-- Ocean Gradient (3D Sphere effect) -->
+    <radialGradient id="oceanGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
     </radialGradient>
-    <filter id="mapGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+
+    <!-- Atmosphere Glow -->
+    <radialGradient id="atmosphereGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" style="stop-color:#93c5fd;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.6" />
+    </radialGradient>
+
+    <!-- Land Pattern (Simplified World Map) -->
+    <!-- We'll use a pattern or just a wide path that moves -->
+    <clipPath id="globeClip">
+      <circle cx="100" cy="100" r="80" />
+    </clipPath>
+
+    <!-- Shadow for 3D depth -->
+    <radialGradient id="sphereShadow" cx="70%" cy="70%" r="80%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0" />
+      <stop offset="80%" style="stop-color:#000000;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.4" />
+    </radialGradient>
   </defs>
 
-  <!-- Exploration glow -->
-  <circle cx="100" cy="100" r="80" fill="url(#explorationGlow)">
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+  <!-- Outer Atmosphere Glow -->
+  <circle cx="100" cy="100" r="85" fill="url(#atmosphereGlow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Map background (parchment) -->
-  <rect x="40" y="40" width="120" height="120"
-        fill="url(#mapGradient)"
-        stroke="#d97706"
-        stroke-width="2"
-        rx="3"
-        filter="url(#mapGlow)"/>
+  <!-- Main Globe Body -->
+  <circle cx="100" cy="100" r="80" fill="url(#oceanGradient)" />
 
-  <!-- Aged paper texture -->
-  <g opacity="0.2">
-    <circle cx="60" cy="60" r="15" fill="#f59e0b"/>
-    <circle cx="140" cy="80" r="12" fill="#f59e0b"/>
-    <circle cx="70" cy="140" r="10" fill="#f59e0b"/>
-  </g>
-
-  <!-- Ocean/water areas -->
-  <g id="oceans" opacity="0.5">
-    <ellipse cx="100" cy="100" rx="50" ry="45"
-             fill="url(#oceanGradient)">
-      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="4s" repeatCount="indefinite"/>
-    </ellipse>
-  </g>
-
-  <!-- Continents (simplified) -->
-  <g id="continents" fill="#10b981" opacity="0.7" stroke="#059669" stroke-width="1">
-    <!-- North America -->
-    <path d="M 60 70 Q 55 75 58 80 L 65 85 Q 70 82 72 78 L 75 72 Q 73 68 68 67 Z"/>
-
-    <!-- South America -->
-    <path d="M 68 90 Q 65 95 67 102 L 70 108 Q 73 106 74 102 L 72 95 Q 70 92 68 90 Z"/>
-
-    <!-- Europe -->
-    <path d="M 95 65 Q 98 68 102 67 L 108 70 Q 106 74 103 75 L 97 73 Q 94 70 95 65 Z"/>
-
-    <!-- Africa -->
-    <path d="M 100 80 Q 97 85 98 92 L 102 100 Q 106 98 108 93 L 107 85 Q 104 81 100 80 Z"/>
-
-    <!-- Asia -->
-    <path d="M 115 60 Q 120 63 128 62 L 135 65 Q 138 70 135 75 L 128 78 Q 122 76 118 73 L 115 68 Q 113 64 115 60 Z"/>
-
-    <!-- Australia -->
-    <path d="M 130 105 Q 128 108 130 112 L 135 115 Q 138 113 139 110 L 137 106 Q 134 104 130 105 Z"/>
-  </g>
-
-  <!-- Grid lines (latitude/longitude) -->
-  <g stroke="#d97706" stroke-width="0.5" opacity="0.3" stroke-dasharray="2,2">
-    <!-- Latitude lines -->
-    <line x1="45" y1="75" x2="155" y2="75"/>
-    <line x1="45" y1="100" x2="155" y2="100"/>
-    <line x1="45" y1="125" x2="155" y2="125"/>
-
-    <!-- Longitude lines -->
-    <line x1="70" y1="45" x2="70" y2="155"/>
-    <line x1="100" y1="45" x2="100" y2="155"/>
-    <line x1="130" y1="45" x2="130" y2="155"/>
-  </g>
-
-  <!-- Compass rose -->
-  <g id="compass" transform="translate(145, 55)">
-    <circle cx="0" cy="0" r="10"
-            fill="#fef3c7"
-            stroke="#d97706"
-            stroke-width="1.5"/>
-
-    <!-- North arrow (red) -->
-    <path d="M 0,-8 L -3,0 L 0,2 Z"
-          fill="#dc2626"
-          stroke="#b91c1c"
-          stroke-width="0.5">
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0 0 0"
-        to="360 0 0"
-        dur="12s"
-        repeatCount="indefinite"/>
-    </path>
-
-    <!-- South arrow (white) -->
-    <path d="M 0,8 L -3,0 L 0,-2 Z"
-          fill="#f8fafc"
-          stroke="#94a3b8"
-          stroke-width="0.5">
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0 0 0"
-        to="360 0 0"
-        dur="12s"
-        repeatCount="indefinite"/>
-    </path>
-
-    <!-- Cardinal points -->
-    <text x="0" y="-13" font-size="6" fill="#dc2626" text-anchor="middle" font-weight="bold">N</text>
-    <text x="13" y="3" font-size="5" fill="#64748b" text-anchor="middle">E</text>
-    <text x="0" y="17" font-size="5" fill="#64748b" text-anchor="middle">S</text>
-    <text x="-13" y="3" font-size="5" fill="#64748b" text-anchor="middle">W</text>
-  </g>
-
-  <!-- Location pins -->
-  <g id="pins" opacity="0.8">
-    <g transform="translate(65, 75)">
-      <path d="M 0,-6 Q -3,-3 -3,0 Q -3,3 0,6 Q 3,3 3,0 Q 3,-3 0,-6 Z"
-            fill="#ef4444"
-            stroke="#dc2626"
-            stroke-width="1">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  <!-- Rotating Continents -->
+  <g clip-path="url(#globeClip)">
+    <g id="continents" fill="#10b981" opacity="0.8">
+      <!-- We repeat the map shape twice for seamless looping -->
+      <path d="
+        M 20,60 Q 30,50 40,60 T 60,60 T 80,50 T 100,60 T 120,70 T 140,60 T 160,50 T 180,60
+        L 180,140 Q 160,150 140,140 T 120,130 T 100,140 T 80,150 T 60,140 T 40,130 T 20,140 Z
+        M 220,60 Q 230,50 240,60 T 260,60 T 280,50 T 300,60 T 320,70 T 340,60 T 360,50 T 380,60
+        L 380,140 Q 360,150 340,140 T 320,130 T 300,140 T 280,150 T 260,140 T 240,130 T 220,140 Z
+      ">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          from="0 0"
+          to="-200 0"
+          dur="8s"
+          repeatCount="indefinite"/>
       </path>
-      <circle cx="0" cy="-2" r="1.5" fill="#fef3c7"/>
+      
+      <!-- Random Islands/Details -->
+      <circle cx="50" cy="90" r="5" fill="#059669">
+         <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150" cy="110" r="8" fill="#059669">
+         <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="250" cy="90" r="5" fill="#059669">
+         <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="350" cy="110" r="8" fill="#059669">
+         <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
     </g>
-
-    <g transform="translate(105, 73)">
-      <path d="M 0,-6 Q -3,-3 -3,0 Q -3,3 0,6 Q 3,3 3,0 Q 3,-3 0,-6 Z"
-            fill="#3b82f6"
-            stroke="#1e40af"
-            stroke-width="1">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    
+    <!-- Grid Lines (Longitude) -->
+    <g stroke="#ffffff" stroke-width="0.5" opacity="0.2" fill="none">
+      <path d="M 100,20 Q 60,100 100,180 M 100,20 Q 140,100 100,180 M 20,100 L 180,100">
+         <!-- Static grid for 3D feel -->
       </path>
-      <circle cx="0" cy="-2" r="1.5" fill="#dbeafe"/>
-    </g>
-
-    <g transform="translate(125, 68)">
-      <path d="M 0,-6 Q -3,-3 -3,0 Q -3,3 0,6 Q 3,3 3,0 Q 3,-3 0,-6 Z"
-            fill="#10b981"
-            stroke="#059669"
-            stroke-width="1">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="1s" repeatCount="indefinite"/>
-      </path>
-      <circle cx="0" cy="-2" r="1.5" fill="#d1fae5"/>
     </g>
   </g>
 
-  <!-- Trade/travel routes -->
-  <g stroke="#dc2626" stroke-width="1" fill="none" opacity="0.5" stroke-dasharray="3,2">
-    <path d="M 65 78 Q 85 70 105 75">
-      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 105 75 Q 115 68 125 70">
-      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="2s" repeatCount="indefinite"/>
-    </path>
+  <!-- Inner Shadow (Night side/Depth) -->
+  <circle cx="100" cy="100" r="80" fill="url(#sphereShadow)" pointer-events="none"/>
+
+  <!-- Orbiting Satellite -->
+  <g>
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="6s"
+      repeatCount="indefinite"/>
+    
+    <g transform="translate(100, 10)">
+      <!-- Satellite Body -->
+      <rect x="-6" y="-3" width="12" height="6" fill="#e2e8f0" rx="1"/>
+      <!-- Solar Panels -->
+      <rect x="-12" y="-2" width="6" height="4" fill="#3b82f6" rx="0.5"/>
+      <rect x="6" y="-2" width="6" height="4" fill="#3b82f6" rx="0.5"/>
+      <!-- Antenna -->
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#94a3b8" stroke-width="1"/>
+      <circle cx="0" cy="6" r="1" fill="#ef4444">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
   </g>
 
-  <!-- Map legend box -->
-  <g id="legend" transform="translate(45, 145)">
-    <rect x="0" y="0" width="30" height="10"
-          fill="#fef3c7"
-          stroke="#d97706"
-          stroke-width="1"
-          opacity="0.8"
-          rx="1"/>
-    <rect x="2" y="3" width="4" height="4" fill="#10b981"/>
-    <line x1="8" y1="5" x2="26" y2="5" stroke="#94a3b8" stroke-width="0.5"/>
+  <!-- Pulsing Location Marker (Fixed on "front" of globe) -->
+  <g transform="translate(100, 100)">
+     <circle r="3" fill="#ef4444">
+       <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+       <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+     </circle>
+     <circle r="2" fill="#ffffff"/>
   </g>
 
-  <!-- Exploration sparkles -->
-  <g id="sparkles" opacity="0.5">
-    <circle cx="55" cy="65" r="2" fill="#fbbf24">
-      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="135" cy="90" r="2" fill="#f59e0b">
-      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="100" cy="55" r="2" fill="#fde68a">
-      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="1s" repeatCount="indefinite"/>
-    </circle>
+  <!-- Stars in background (corners) -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="20" cy="20" r="1"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="30" r="1.5"><animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="30" cy="170" r="1"><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="170" cy="180" r="1"><animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite"/></circle>
   </g>
-
-  <!-- Discovery particles -->
-  <g id="discoveryParticles" opacity="0.4">
-    <circle cx="80" cy="120" r="1.5" fill="#10b981">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; -15,20"
-        dur="4s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="120" cy="125" r="1.5" fill="#3b82f6">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 15,22"
-        dur="4s"
-        begin="0.5s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Paper edge curl -->
-  <path d="M 155 45 Q 158 45 158 48 L 156 52"
-        fill="#fde68a"
-        stroke="#d97706"
-        stroke-width="1"
-        opacity="0.6"/>
 </svg>

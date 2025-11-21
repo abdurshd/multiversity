@@ -1,180 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="flagGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
-    </linearGradient>
     <linearGradient id="poleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#78350f;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#92400e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#78350f;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
     </linearGradient>
-    <radialGradient id="victoryGlow">
-      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:0.5" />
-      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0" />
-    </radialGradient>
-    <filter id="flagGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Victory glow -->
-  <circle cx="110" cy="90" r="70" fill="url(#victoryGlow)">
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Flagpole -->
-  <g id="flagpole" filter="url(#flagGlow)">
-    <rect x="48" y="40" width="4" height="135"
-          fill="url(#poleGradient)"
-          stroke="#78350f"
-          stroke-width="1"/>
-
-    <!-- Pole cap -->
-    <circle cx="50" cy="38" r="4"
-            fill="#fbbf24"
-            stroke="#f59e0b"
-            stroke-width="1.5">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Pole base -->
-    <rect x="45" y="175" width="10" height="8"
-          fill="#64748b"
-          stroke="#475569"
-          stroke-width="1"
-          rx="1"/>
-  </g>
-
-  <!-- Flag -->
-  <g id="flag">
-    <!-- Main flag body -->
-    <path d="M 52 50 L 140 50 L 140 110 L 52 110 Z"
-          fill="url(#flagGradient)"
-          stroke="#b91c1c"
-          stroke-width="2">
-      <animate attributeName="d"
-               values="M 52 50 L 140 50 L 140 110 L 52 110 Z;
-                       M 52 50 L 142 52 L 142 108 L 52 110 Z;
-                       M 52 50 L 140 50 L 140 110 L 52 110 Z;
-                       M 52 50 L 138 48 L 138 112 L 52 110 Z;
-                       M 52 50 L 140 50 L 140 110 L 52 110 Z"
-               dur="3s"
-               repeatCount="indefinite"/>
-    </path>
-
-    <!-- Flag waves/folds -->
-    <g stroke="#b91c1c" stroke-width="1" opacity="0.4" fill="none">
-      <path d="M 70 50 Q 72 80 70 110">
-        <animate attributeName="d"
-                 values="M 70 50 Q 72 80 70 110;
-                         M 70 50 Q 68 80 70 110;
-                         M 70 50 Q 72 80 70 110"
-                 dur="3s"
-                 repeatCount="indefinite"/>
+  <g transform="translate(60, 180)">
+    <!-- Flagpole -->
+    <rect x="-5" y="-160" width="10" height="170" fill="url(#poleGradient)" rx="2"/>
+    <circle cx="0" cy="-165" r="6" fill="#facc15"/>
+    
+    <!-- Flag -->
+    <g transform="translate(5, -160)">
+      <path d="M 0,0 Q 30,-10 60,0 Q 90,10 120,0 L 120,80 Q 90,90 60,80 Q 30,70 0,80 Z" fill="#ef4444">
+        <animate attributeName="d" 
+                 values="M 0,0 Q 30,-10 60,0 Q 90,10 120,0 L 120,80 Q 90,90 60,80 Q 30,70 0,80 Z;
+                         M 0,0 Q 30,10 60,0 Q 90,-10 120,0 L 120,80 Q 90,70 60,80 Q 30,90 0,80 Z;
+                         M 0,0 Q 30,-10 60,0 Q 90,10 120,0 L 120,80 Q 90,90 60,80 Q 30,70 0,80 Z"
+                 dur="2s" repeatCount="indefinite"/>
       </path>
-      <path d="M 95 50 Q 97 80 95 110">
-        <animate attributeName="d"
-                 values="M 95 50 Q 97 80 95 110;
-                         M 95 50 Q 93 80 95 110;
-                         M 95 50 Q 97 80 95 110"
-                 dur="3s"
-                 begin="0.5s"
-                 repeatCount="indefinite"/>
-      </path>
-      <path d="M 120 50 Q 122 80 120 110">
-        <animate attributeName="d"
-                 values="M 120 50 Q 122 80 120 110;
-                         M 120 50 Q 118 80 120 110;
-                         M 120 50 Q 122 80 120 110"
-                 dur="3s"
-                 begin="1s"
-                 repeatCount="indefinite"/>
+      
+      <!-- Flag Shadow/Fold -->
+      <path d="M 0,0 Q 30,-10 60,0 L 60,80 Q 30,70 0,80 Z" fill="#000000" opacity="0.1">
+        <animate attributeName="d" 
+                 values="M 0,0 Q 30,-10 60,0 L 60,80 Q 30,70 0,80 Z;
+                         M 0,0 Q 30,10 60,0 L 60,80 Q 30,90 0,80 Z;
+                         M 0,0 Q 30,-10 60,0 L 60,80 Q 30,70 0,80 Z"
+                 dur="2s" repeatCount="indefinite"/>
       </path>
     </g>
-
-    <!-- Flag highlight -->
-    <ellipse cx="80" cy="70" rx="20" ry="15"
-             fill="white"
-             opacity="0.3">
-      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Symbol/emblem (star) -->
-    <path d="M 96,65 L 100,75 L 110,76 L 102,83 L 104,93 L 96,88 L 88,93 L 90,83 L 82,76 L 92,75 Z"
-          fill="#fef3c7"
-          stroke="#fbbf24"
-          stroke-width="1"
-          opacity="0.9">
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
-    </path>
   </g>
-
-  <!-- Wind effect lines -->
-  <g id="windLines" stroke="#fca5a5" stroke-width="2" stroke-linecap="round" opacity="0.5">
-    <line x1="145" y1="60" x2="160" y2="55">
-      <animate attributeName="opacity" values="0;0.6;0" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="x1" values="145;150" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="160;165" dur="2s" repeatCount="indefinite"/>
-    </line>
-    <line x1="148" y1="80" x2="163" y2="78">
-      <animate attributeName="opacity" values="0;0.6;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
-      <animate attributeName="x1" values="148;153" dur="2s" begin="0.3s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="163;168" dur="2s" begin="0.3s" repeatCount="indefinite"/>
-    </line>
-    <line x1="146" y1="100" x2="161" y2="101">
-      <animate attributeName="opacity" values="0;0.6;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
-      <animate attributeName="x1" values="146;151" dur="2s" begin="0.6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="161;166" dur="2s" begin="0.6s" repeatCount="indefinite"/>
-    </line>
-  </g>
-
-  <!-- Victory sparkles -->
-  <g id="sparkles" opacity="0.7">
-    <circle cx="155" cy="70" r="2" fill="#fef3c7">
-      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="165" cy="90" r="2" fill="#fde68a">
-      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="158" cy="105" r="2" fill="#fca5a5">
-      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Triumph particles -->
-  <g id="triumphParticles" opacity="0.6">
-    <circle cx="130" cy="60" r="2" fill="#fca5a5">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 15,-20"
-        dur="3s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="135" cy="105" r="2" fill="#f87171">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 18,15"
-        dur="3s"
-        begin="0.5s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Waving animation -->
-  <animateTransform
-    attributeName="transform"
-    type="skewY"
-    values="0; -1; 0; 1; 0"
-    dur="3s"
-    repeatCount="indefinite"
-    additive="sum"/>
 </svg>

@@ -1,171 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="stoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="stoneGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#64748b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="roofGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#b91c1c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7f1d1d;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="flagGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    
+    <linearGradient id="roofGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
     </linearGradient>
-    <filter id="castleShadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.4"/>
-    </filter>
   </defs>
 
-  <!-- Ground -->
-  <rect x="0" y="160" width="200" height="40" fill="#65a30d" opacity="0.3"/>
+  <g transform="translate(100, 120)">
+    <!-- Main Keep -->
+    <rect x="-40" y="-20" width="80" height="60" fill="url(#stoneGradient)" stroke="#475569" stroke-width="2"/>
+    
+    <!-- Left Tower -->
+    <rect x="-70" y="-10" width="30" height="50" fill="url(#stoneGradient)" stroke="#475569" stroke-width="2"/>
+    <path d="M -75,-10 L -40,-10 L -57.5,-40 Z" fill="url(#roofGradient)" stroke="#1e3a8a" stroke-width="2"/>
+    
+    <!-- Right Tower -->
+    <rect x="40" y="-10" width="30" height="50" fill="url(#stoneGradient)" stroke="#475569" stroke-width="2"/>
+    <path d="M 40,-10 L 75,-10 L 57.5,-40 Z" fill="url(#roofGradient)" stroke="#1e3a8a" stroke-width="2"/>
+    
+    <!-- Central Tower -->
+    <rect x="-20" y="-50" width="40" height="30" fill="url(#stoneGradient)" stroke="#475569" stroke-width="2"/>
+    <path d="M -25,-50 L 25,-50 L 0,-80 Z" fill="url(#roofGradient)" stroke="#1e3a8a" stroke-width="2"/>
 
-  <!-- Castle structure -->
-  <g id="castle" filter="url(#castleShadow)">
-    <!-- Left tower -->
-    <rect x="40" y="90" width="30" height="70"
-          fill="url(#stoneGradient)"
-          stroke="#334155"
-          stroke-width="2"/>
-    <!-- Battlements -->
-    <rect x="40" y="80" width="6" height="10" fill="#64748b"/>
-    <rect x="49" y="80" width="6" height="10" fill="#64748b"/>
-    <rect x="58" y="80" width="6" height="10" fill="#64748b"/>
-    <rect x="64" y="80" width="6" height="10" fill="#64748b"/>
-    <!-- Roof -->
-    <path d="M 35 90 L 55 65 L 75 90 Z"
-          fill="url(#roofGradient)"
-          stroke="#7f1d1d"
-          stroke-width="1.5"/>
-
-    <!-- Main keep (center) -->
-    <rect x="65" y="70" width="70" height="90"
-          fill="url(#stoneGradient)"
-          stroke="#334155"
-          stroke-width="2"/>
     <!-- Gate -->
-    <rect x="85" y="120" width="30" height="40"
-          fill="#1e293b"
-          stroke="#0f172a"
-          stroke-width="2"
-          rx="15" ry="0"/>
-    <!-- Gate details -->
-    <line x1="85" y1="130" x2="115" y2="130" stroke="#475569" stroke-width="2"/>
-    <line x1="85" y1="140" x2="115" y2="140" stroke="#475569" stroke-width="2"/>
-    <circle cx="93" cy="135" r="2" fill="#78350f"/>
-    <circle cx="107" cy="135" r="2" fill="#78350f"/>
+    <path d="M -15,40 L -15,10 Q 0,-5 15,10 L 15,40 Z" fill="#451a03" stroke="#78350f" stroke-width="2"/>
+    <!-- Portcullis Grid -->
+    <g stroke="#1e293b" stroke-width="1">
+      <line x1="-15" y1="15" x2="15" y2="15"/>
+      <line x1="-15" y1="25" x2="15" y2="25"/>
+      <line x1="-15" y1="35" x2="15" y2="35"/>
+      <line x1="-5" y1="10" x2="-5" y2="40"/>
+      <line x1="5" y1="10" x2="5" y2="40"/>
+    </g>
 
     <!-- Windows -->
-    <rect x="75" y="85" width="12" height="15" fill="#0f172a" rx="6" ry="0"/>
-    <rect x="113" y="85" width="12" height="15" fill="#0f172a" rx="6" ry="0"/>
-    <!-- Battlements -->
-    <rect x="65" y="60" width="9" height="10" fill="#64748b"/>
-    <rect x="78" y="60" width="9" height="10" fill="#64748b"/>
-    <rect x="91" y="60" width="9" height="10" fill="#64748b"/>
-    <rect x="104" y="60" width="9" height="10" fill="#64748b"/>
-    <rect x="117" y="60" width="9" height="10" fill="#64748b"/>
-    <rect x="130" y="60" width="5" height="10" fill="#64748b"/>
+    <rect x="-60" y="5" width="10" height="15" rx="5" fill="#1e293b"/>
+    <rect x="50" y="5" width="10" height="15" rx="5" fill="#1e293b"/>
+    <rect x="-10" y="-35" width="20" height="10" rx="5" fill="#1e293b"/>
 
-    <!-- Right tower -->
-    <rect x="130" y="90" width="30" height="70"
-          fill="url(#stoneGradient)"
-          stroke="#334155"
-          stroke-width="2"/>
-    <!-- Battlements -->
-    <rect x="130" y="80" width="6" height="10" fill="#64748b"/>
-    <rect x="139" y="80" width="6" height="10" fill="#64748b"/>
-    <rect x="148" y="80" width="6" height="10" fill="#64748b"/>
-    <rect x="154" y="80" width="6" height="10" fill="#64748b"/>
-    <!-- Roof -->
-    <path d="M 125 90 L 145 65 L 165 90 Z"
-          fill="url(#roofGradient)"
-          stroke="#7f1d1d"
-          stroke-width="1.5"/>
+    <!-- Flags -->
+    <g transform="translate(0, -80)">
+      <line x1="0" y1="0" x2="0" y2="-20" stroke="#475569" stroke-width="2"/>
+      <path d="M 0,-20 L 20,-15 L 0,-10 Z" fill="#ef4444">
+        <animate attributeName="d" values="M 0,-20 L 20,-15 L 0,-10 Z; M 0,-20 L 20,-20 L 0,-10 Z; M 0,-20 L 20,-15 L 0,-10 Z" dur="1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <g transform="translate(-57.5, -40)">
+      <line x1="0" y1="0" x2="0" y2="-15" stroke="#475569" stroke-width="2"/>
+      <path d="M 0,-15 L 15,-10 L 0,-5 Z" fill="#ef4444">
+        <animate attributeName="d" values="M 0,-15 L 15,-10 L 0,-5 Z; M 0,-15 L 15,-15 L 0,-5 Z; M 0,-15 L 15,-10 L 0,-5 Z" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g transform="translate(57.5, -40)">
+      <line x1="0" y1="0" x2="0" y2="-15" stroke="#475569" stroke-width="2"/>
+      <path d="M 0,-15 L 15,-10 L 0,-5 Z" fill="#ef4444">
+        <animate attributeName="d" values="M 0,-15 L 15,-10 L 0,-5 Z; M 0,-15 L 15,-15 L 0,-5 Z; M 0,-15 L 15,-10 L 0,-5 Z" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
   </g>
-
-  <!-- Flags -->
-  <g id="leftFlag">
-    <!-- Pole -->
-    <line x1="55" y1="65" x2="55" y2="35"
-          stroke="#78350f"
-          stroke-width="2"/>
-    <!-- Flag -->
-    <path d="M 55 40 L 75 45 L 55 50 Z"
-          fill="url(#flagGradient)"
-          stroke="#1e40af"
-          stroke-width="1">
-      <animateTransform
-        attributeName="transform"
-        type="scale"
-        values="1,1; 0.95,1.05; 1,1; 1.05,0.95; 1,1"
-        dur="2s"
-        repeatCount="indefinite"
-        additive="sum"/>
-    </path>
-  </g>
-
-  <g id="rightFlag">
-    <!-- Pole -->
-    <line x1="145" y1="65" x2="145" y2="35"
-          stroke="#78350f"
-          stroke-width="2"/>
-    <!-- Flag -->
-    <path d="M 145 40 L 165 45 L 145 50 Z"
-          fill="url(#flagGradient)"
-          stroke="#1e40af"
-          stroke-width="1">
-      <animateTransform
-        attributeName="transform"
-        type="scale"
-        values="1,1; 1.05,0.95; 1,1; 0.95,1.05; 1,1"
-        dur="2s"
-        begin="1s"
-        repeatCount="indefinite"
-        additive="sum"/>
-    </path>
-  </g>
-
-  <!-- Stone texture details -->
-  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
-    <line x1="42" y1="100" x2="68" y2="100"/>
-    <line x1="42" y1="120" x2="68" y2="120"/>
-    <line x1="42" y1="140" x2="68" y2="140"/>
-    <line x1="70" y1="80" x2="130" y2="80"/>
-    <line x1="70" y1="100" x2="130" y2="100"/>
-    <line x1="132" y1="100" x2="158" y2="100"/>
-    <line x1="132" y1="120" x2="158" y2="120"/>
-    <line x1="132" y1="140" x2="158" y2="140"/>
-  </g>
-
-  <!-- Birds flying around castle -->
-  <g id="birds" stroke="#1e293b" stroke-width="1.5" fill="none" opacity="0.5">
-    <path d="M 20 50 Q 15 48 10 50">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; 180,20"
-        dur="8s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.5;0.5;0.5;0" dur="8s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 185 60 Q 180 58 175 60">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        values="0,0; -180,-10"
-        dur="10s"
-        repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.5;0.5;0.5;0" dur="10s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <!-- Subtle swaying animation -->
-  <animateTransform
-    attributeName="transform"
-    type="rotate"
-    values="0 100 160; 0.5 100 160; 0 100 160; -0.5 100 160; 0 100 160"
-    dur="8s"
-    repeatCount="indefinite"
-    additive="sum"/>
 </svg>
