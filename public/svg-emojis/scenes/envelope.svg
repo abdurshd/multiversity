@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="envelopeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="flapGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e2e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="messageGlow">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:0" />
+    </radialGradient>
+    <filter id="envelopeFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Message glow -->
+  <circle cx="100" cy="105" r="70" fill="url(#messageGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Envelope -->
+  <g id="envelope" filter="url(#envelopeFilter)">
+    <!-- Main envelope body -->
+    <rect x="50" y="85" width="100" height="70"
+          fill="url(#envelopeGradient)"
+          stroke="#cbd5e1"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Bottom edge shadow -->
+    <rect x="50" y="148" width="100" height="7"
+          fill="#cbd5e1"
+          opacity="0.5"
+          rx="2"/>
+
+    <!-- Back flap (showing underneath) -->
+    <path d="M 50 85 L 100 120 L 150 85"
+          fill="#cbd5e1"
+          stroke="#94a3b8"
+          stroke-width="2"/>
+
+    <!-- Front flap (top) -->
+    <path d="M 50 85 L 100 120 L 150 85 L 100 100 Z"
+          fill="url(#flapGradient)"
+          stroke="#94a3b8"
+          stroke-width="2">
+      <animate attributeName="d"
+               values="M 50 85 L 100 120 L 150 85 L 100 100 Z;
+                       M 50 85 L 100 110 L 150 85 L 100 90 Z;
+                       M 50 85 L 100 120 L 150 85 L 100 100 Z"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <!-- Flap detail lines -->
+    <g stroke="#94a3b8" stroke-width="1" opacity="0.5">
+      <line x1="60" y1="88" x2="100" y2="108">
+        <animate attributeName="y2" values="108;100;108" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="100;100;100" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="140" y1="88" x2="100" y2="108">
+        <animate attributeName="y2" values="108;100;108" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="100;100;100" dur="4s" repeatCount="indefinite"/>
+      </line>
+    </g>
+
+    <!-- Seal/stamp -->
+    <circle cx="100" cy="100" r="10"
+            fill="#dc2626"
+            stroke="#991b1b"
+            stroke-width="1.5"
+            opacity="0.9">
+      <animate attributeName="cy" values="100;95;100" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Seal wax texture -->
+    <circle cx="100" cy="100" r="7"
+            fill="#7f1d1d"
+            opacity="0.5">
+      <animate attributeName="cy" values="100;95;100" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Seal impression (letter) -->
+    <text x="100" y="105"
+          font-family="serif"
+          font-size="12"
+          font-weight="bold"
+          fill="#fca5a5"
+          text-anchor="middle"
+          opacity="0.8">
+      M
+      <animate attributeName="y" values="105;100;105" dur="4s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Address lines -->
+    <g opacity="0.4">
+      <rect x="60" y="125" width="40" height="2" fill="#64748b" rx="1"/>
+      <rect x="60" y="132" width="50" height="2" fill="#64748b" rx="1"/>
+      <rect x="60" y="139" width="35" height="2" fill="#64748b" rx="1"/>
+    </g>
+
+    <!-- Stamp -->
+    <rect x="120" y="125" width="20" height="15"
+          fill="#3b82f6"
+          stroke="#2563eb"
+          stroke-width="1.5"
+          rx="1">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Stamp design (mountain) -->
+    <g opacity="0.7">
+      <path d="M 123 137 L 127 130 L 131 137 Z"
+            fill="#dbeafe"/>
+      <path d="M 131 137 L 135 132 L 137 137 Z"
+            fill="#dbeafe"/>
+    </g>
+
+    <!-- Stamp perforations -->
+    <g fill="#1e40af" opacity="0.5">
+      <circle cx="121" cy="126" r="0.5"/>
+      <circle cx="139" cy="126" r="0.5"/>
+      <circle cx="121" cy="139" r="0.5"/>
+      <circle cx="139" cy="139" r="0.5"/>
+    </g>
+  </g>
+
+  <!-- Love hearts (for personal letter) -->
+  <g id="hearts" opacity="0.7">
+    <path d="M 155 95 Q 155 91 157 91 Q 159 91 159 95 Q 159 99 155 101 Q 151 99 151 95 Q 151 91 153 91 Q 155 91 155 95"
+          fill="#fca5a5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 5,-25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 162 105 Q 162 102 163.5 102 Q 165 102 165 105 Q 165 108 162 109.5 Q 159 108 159 105 Q 159 102 160.5 102 Q 162 102 162 105"
+          fill="#f87171">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 8,-30"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Sparkles (new message excitement) -->
+  <g id="sparkles" opacity="0.7">
+    <circle cx="45" cy="95" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="155" cy="115" r="2" fill="#fde68a">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="80" r="2" fill="#93c5fd">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Mail trail particles -->
+  <g id="mailParticles" opacity="0.5">
+    <circle cx="70" cy="80" r="1.5" fill="#cbd5e1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,-15"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="150" r="1.5" fill="#cbd5e1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,20"
+        dur="4s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Arrival animation (gentle float) -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-2; 0,0; 0,2; 0,0"
+    dur="5s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>
