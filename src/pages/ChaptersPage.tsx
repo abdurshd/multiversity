@@ -21,7 +21,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '14th Century',
     description: 'The last great nomadic conqueror and his empire',
     keyEvents: ['Battle of Ankara', 'Invasion of China', 'Timurid Renaissance'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-red-900',
     image: '/images/chapters/timur-legacy/main.png'
   },
@@ -31,7 +31,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1776',
     description: 'The American Revolution and its alternative outcomes',
     keyEvents: ['Declaration of Independence', 'Revolutionary War', 'Constitutional Convention'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-red-700',
     image: '/images/chapters/us-independence/main.png'
   },
@@ -41,7 +41,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1789',
     description: 'The fall of the monarchy and paths not taken',
     keyEvents: ['Storming of Bastille', 'Reign of Terror', 'Rise of Napoleon'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-blue-700',
     image: '/images/chapters/french-revolution/main.png'
   },
@@ -51,7 +51,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1860s',
     description: 'Civil War, slavery, and reconstruction alternatives',
     keyEvents: ['Lincoln Election', 'Civil War', 'Emancipation Proclamation'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-green-700',
     image: '/images/chapters/lincoln-era/main.png'
   },
@@ -61,7 +61,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1721-1917',
     description: 'Tsarist Russia and Central Asian expansion',
     keyEvents: ['Peter the Great', 'Catherine II', 'Crimean War'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-purple-700',
     image: '/images/chapters/russian-empire/main.png'
   },
@@ -71,7 +71,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1917',
     description: 'Bolshevik victory and Soviet state formation',
     keyEvents: ['October Revolution', 'Civil War', 'War Communism'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-red-800',
     image: '/images/chapters/lenin-revolution/main.png'
   },
@@ -81,7 +81,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1920s-1940s',
     description: 'Nazi Germany and alternative paths of WWII',
     keyEvents: ['Beer Hall Putsch', 'Rise to Power', 'World War II'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-gray-700',
     image: '/images/chapters/hitler-rise/main.png'
   },
@@ -91,7 +91,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1914-1918',
     description: 'The Great War and its alternative outcomes',
     keyEvents: ['Assassination of Archduke', 'Trench Warfare', 'Treaty of Versailles'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-yellow-700',
     image: '/images/chapters/world-war-1/main.png'
   },
@@ -101,7 +101,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1939-1945',
     description: 'Global conflict with dramatically different outcomes',
     keyEvents: ['Invasion of Poland', 'Pearl Harbor', 'D-Day'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-orange-700',
     image: '/images/chapters/world-war-2/main.png'
   },
@@ -111,7 +111,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1947-1991',
     description: 'Superpower rivalry and nuclear standoff alternatives',
     keyEvents: ['Iron Curtain', 'Cuban Missile Crisis', 'Berlin Wall'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-indigo-700',
     image: '/images/chapters/cold-war/main.png'
   },
@@ -121,7 +121,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '1991',
     description: 'End of Soviet Union and alternative dissolutions',
     keyEvents: ['Gorbachev Reforms', 'August Coup', 'Independence Declarations'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-pink-700',
     image: '/images/chapters/ussr-collapse/main.png'
   },
@@ -131,7 +131,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '2019',
     description: 'Modern crisis and global response alternatives',
     keyEvents: ['Wuhan Outbreak', 'Global Lockdowns', 'Vaccine Race'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-teal-700',
     image: '/images/chapters/covid-pandemic/main.png'
   },
@@ -141,7 +141,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '2020s',
     description: 'The rise of artificial intelligence and future paths',
     keyEvents: ['GPT-4 Release', 'AGI Breakthrough', 'Regulation Debates'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-blue-900',
     image: '/images/chapters/ai-revolution/main.png'
   },
@@ -151,7 +151,7 @@ const CHAPTERS: ChapterSummary[] = [
     period: '2100+',
     description: 'Long-term future scenarios for humanity and the planet',
     keyEvents: ['Climate Tipping Points', 'Space Colonization', 'Post-Humanism'],
-    alternativeCount: 10,
+    alternativeCount: 3,
     cardClass: 'bg-slate-800',
     image: '/images/chapters/future-earth/main.png'
   },
@@ -226,7 +226,7 @@ const ChaptersPage: React.FC = () => {
         >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Historical Chapters</h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4 mb-8">
-            Explore 10 pivotal moments in history, each with 10 alternative timelines
+            Explore 14 pivotal moments in history, each with 3 alternative timelines
             showing how different choices could have shaped our world.
           </p>
 

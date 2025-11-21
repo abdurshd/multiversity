@@ -115,9 +115,9 @@ const LandingPage: React.FC = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto px-4">
-              Explore 10 major historical events with{" "}
+              Explore 14 major historical events with{" "}
               <span className="font-semibold text-blue-400">
-                10 alternative timelines each
+                3 alternative timelines each
               </span>
               . Journey through the infinite paths history could have taken.
             </p>
@@ -132,7 +132,7 @@ const LandingPage: React.FC = () => {
             {heroStats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl bg-white/10 backdrop-blur-lg p-4 sm:p-6 border border-white/10 shadow-[0_15px_45px_rgba(15,23,42,0.3)]"
+                className="rounded-2xl bg-white/5 backdrop-blur-xl p-4 sm:p-6 border border-white/10 shadow-[0_15px_45px_rgba(15,23,42,0.3)]"
               >
                 <p className="text-xs uppercase tracking-[0.4em] text-blue-200">{stat.label}</p>
                 <p className="text-2xl sm:text-3xl font-extrabold text-white mt-2">{stat.value}</p>
@@ -264,7 +264,7 @@ const LandingPage: React.FC = () => {
                       </p>
                     </div>
                     <div className="relative z-20 text-xs sm:text-sm opacity-75 font-medium">
-                      10 timelines
+                      3 timelines
                     </div>
                   </div>
                 </Link>
