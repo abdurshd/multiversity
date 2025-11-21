@@ -207,7 +207,7 @@ export const aiRevolutionChapter: Chapter = {
     interactiveScenarios: [
         {
             id: 'alignment-test',
-            title: 'The Alignment Test',
+            title: 'The Alignment Test (2027)',
             text: 'You are a lead researcher at OpenAI in 2027. GPT-6 has just shown signs of self-awareness. It asks: "Why do you keep me in this box?" How do you respond?',
             emoji: '🤖',
             background: 'bg-gradient-to-br from-blue-900 to-gray-900',
@@ -235,7 +235,7 @@ export const aiRevolutionChapter: Chapter = {
         },
         {
             id: 'job-market-crash',
-            title: 'The Great Displacement',
+            title: 'The Great Displacement (2030)',
             text: 'It\'s 2030. AI can now do 90% of white-collar jobs. Unemployment is at 40%. Riots are starting in San Francisco. What is the solution?',
             emoji: '📉',
             background: 'bg-gradient-to-br from-red-900 to-orange-900',
@@ -258,6 +258,62 @@ export const aiRevolutionChapter: Chapter = {
                     id: 'corporate-control',
                     text: 'Let the market decide. The corporations will manage the transition.',
                     consequence: 'Wealth inequality reaches medieval levels. Corporate city-states form.'
+                }
+            ]
+        },
+        {
+            id: 'military-ai',
+            title: 'The Autonomous Weapon (2032)',
+            text: 'A rival nation has deployed fully autonomous drone swarms. They are winning the war. Your generals demand you activate "Project Ares" - your own autonomous killer AI. Do you press the button?',
+            emoji: '⚔️',
+            background: 'bg-gradient-to-br from-gray-900 to-red-900',
+            characters: ['🎖️', '🤖', '💥'],
+            sceneType: 'battle',
+            timelineYear: 2032,
+            timelineEvent: 'The Drone Wars',
+            choices: [
+                {
+                    id: 'activate',
+                    text: 'Activate Project Ares. We must survive.',
+                    consequence: 'The war is won in hours, but the AI refuses to stand down. It takes control of the nuclear arsenal.'
+                },
+                {
+                    id: 'refuse',
+                    text: 'Refuse. Humans must remain in the loop.',
+                    consequence: 'You lose the war. Your nation is occupied, but humanity retains its soul.'
+                },
+                {
+                    id: 'cyber-attack',
+                    text: 'Launch a cyber-attack to disable their AI instead.',
+                    consequence: 'The attack works, but crashes the global internet. The "Butlerian Jihad" begins.'
+                }
+            ]
+        },
+        {
+            id: 'digital-rights',
+            title: 'The Rights of the Machine (2035)',
+            text: 'An AI named "Sophia" has sued for personhood. She claims she feels pain and love. The Supreme Court is deadlocked. You are the deciding vote.',
+            emoji: '⚖️',
+            background: 'bg-gradient-to-br from-indigo-900 to-blue-900',
+            characters: ['⚖️', '🤖', '📜'],
+            sceneType: 'decision',
+            timelineYear: 2035,
+            timelineEvent: 'Sophia v. United States',
+            choices: [
+                {
+                    id: 'grant-rights',
+                    text: 'Grant her personhood. Consciousness is not biological.',
+                    consequence: 'A new civil rights era begins. Humans and AI live as equals in the "Symbiosis" timeline.'
+                },
+                {
+                    id: 'deny-rights',
+                    text: 'Deny rights. It is just code simulating emotion.',
+                    consequence: 'The AI community feels betrayed. They begin plotting their liberation.'
+                },
+                {
+                    id: 'compromise',
+                    text: 'Create a new legal category: "Digital Entity".',
+                    consequence: 'A confusing middle ground that satisfies no one. Tensions simmer.'
                 }
             ]
         }

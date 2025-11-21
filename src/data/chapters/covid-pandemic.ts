@@ -211,7 +211,7 @@ export const covidPandemicChapter: Chapter = {
     interactiveScenarios: [
         {
             id: 'wuhan-warning',
-            title: 'The Whistleblower',
+            title: 'The Whistleblower (Dec 2019)',
             text: 'It is December 30, 2019. You are a health official in Wuhan. A report comes in about a cluster of pneumonia cases connected to a seafood market. Dr. Li Wenliang is warning colleagues in a chat group. What do you do?',
             emoji: '🩺',
             background: 'bg-gradient-to-br from-gray-900 to-green-900',
@@ -238,8 +238,36 @@ export const covidPandemicChapter: Chapter = {
             ]
         },
         {
+            id: 'lockdown-dilemma',
+            title: 'The Lockdown Decision (March 2020)',
+            text: 'It is March 2020. The virus is spreading rapidly in your country. Hospitals are filling up. Scientists recommend a total lockdown, but economists warn it will destroy the economy. What is your order?',
+            emoji: '🏘️',
+            background: 'bg-gradient-to-br from-blue-900 to-gray-800',
+            characters: ['👔', '📉', '🏥'],
+            sceneType: 'decision',
+            timelineYear: 2020,
+            timelineEvent: 'Global Shutdown',
+            choices: [
+                {
+                    id: 'hard-lockdown',
+                    text: 'Implement a strict, indefinite lockdown. "Two weeks to flatten the curve."',
+                    consequence: 'Lives are saved, but small businesses are decimated. Mental health crisis ensues. (Historical)'
+                },
+                {
+                    id: 'herd-immunity',
+                    text: 'Keep society open. Protect the vulnerable but let the virus spread.',
+                    consequence: 'Hospitals are overwhelmed. Death toll skyrockets. Public trust collapses.'
+                },
+                {
+                    id: 'sweden-model',
+                    text: 'Recommend voluntary measures. Trust the citizens.',
+                    consequence: 'Moderate death toll. Economy survives better, but you face intense international criticism.'
+                }
+            ]
+        },
+        {
             id: 'vaccine-race',
-            title: 'The Vaccine Race',
+            title: 'The Vaccine Race (Late 2020)',
             text: 'It is late 2020. Several vaccines are showing promise. You are the head of the WHO. How do you manage the global rollout?',
             emoji: '💉',
             background: 'bg-gradient-to-br from-blue-900 to-teal-900',
@@ -262,6 +290,34 @@ export const covidPandemicChapter: Chapter = {
                     id: 'open-source',
                     text: 'Force pharmaceutical companies to open-source the vaccine recipes.',
                     consequence: 'Production explodes globally. The pandemic ends in record time, but pharma stocks crash.'
+                }
+            ]
+        },
+        {
+            id: 'lab-leak-investigation',
+            title: 'The Origins Investigation (2021)',
+            text: 'Intelligence reports suggest the virus might have leaked from a lab. Diplomatic tensions are high. How do you handle the investigation?',
+            emoji: '🔬',
+            background: 'bg-gradient-to-br from-green-900 to-black',
+            characters: ['🕵️', '🇨🇳', '🇺🇸'],
+            sceneType: 'revelation',
+            timelineYear: 2021,
+            timelineEvent: 'The Origins Debate',
+            choices: [
+                {
+                    id: 'diplomatic',
+                    text: 'Conduct a joint, polite investigation to avoid conflict.',
+                    consequence: 'The report is inconclusive. Theories proliferate. The truth remains buried. (Historical)'
+                },
+                {
+                    id: 'aggressive',
+                    text: 'Demand full transparency and threaten sanctions.',
+                    consequence: 'A new Cold War begins. Global cooperation on health collapses.'
+                },
+                {
+                    id: 'cover-up',
+                    text: 'Suppress the lab leak theory to maintain scientific trust.',
+                    consequence: 'When evidence leaks later, public trust in science is permanently destroyed.'
                 }
             ]
         }

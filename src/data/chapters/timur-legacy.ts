@@ -219,8 +219,36 @@ export const timurLegacyChapter: Chapter = {
     icon: '🗡️',
     interactiveScenarios: [
         {
+            id: 'ankara-strategy',
+            title: 'The Battle of Ankara (1402)',
+            text: 'You are Timur. The Ottoman Sultan Bayezid I stands before you with a massive army. He is arrogant but powerful. Your scouts report he has marched his troops to exhaustion to find you. How do you engage?',
+            emoji: '⚔️',
+            background: 'bg-gradient-to-br from-orange-900 to-red-900',
+            characters: ['👑', '🐎', '⚔️'],
+            sceneType: 'battle',
+            timelineYear: 1402,
+            timelineEvent: 'Clash of Titans',
+            choices: [
+                {
+                    id: 'cut-water',
+                    text: 'Divert the local stream and force them to fight thirsty.',
+                    consequence: 'The Ottoman troops panic from thirst. Their Tatar allies defect to you. You win a crushing victory. (Historical)'
+                },
+                {
+                    id: 'direct-charge',
+                    text: 'Charge their center immediately with elephants.',
+                    consequence: 'The Janissaries hold the line. The battle is a bloody stalemate. Bayezid escapes to fight another day.'
+                },
+                {
+                    id: 'feigned-retreat',
+                    text: 'Feign a retreat to draw them out of position.',
+                    consequence: 'Bayezid is too experienced to fall for it. He fortifies his position. The siege of Ankara drags on for months.'
+                }
+            ]
+        },
+        {
             id: 'otrar-crisis',
-            title: 'The Winter at Otrar',
+            title: 'The Winter at Otrar (1405)',
             text: 'It is February 1405. The Great Emir Timur lies dying in his tent at Otrar. The Chinese border is weeks away. His physicians offer a risky new treatment. What do you advise?',
             emoji: '❄️',
             background: 'bg-gradient-to-br from-red-900 to-gray-900',
@@ -248,9 +276,9 @@ export const timurLegacyChapter: Chapter = {
         },
         {
             id: 'succession-crisis',
-            title: 'The Council of War',
+            title: 'The Council of War (1405)',
             text: 'Timur is dead. The army is leaderless. The princes are drawing their swords. You are the Grand Vizier. Who do you support?',
-            emoji: '⚔️',
+            emoji: '👑',
             background: 'bg-gradient-to-br from-yellow-900 to-red-900',
             characters: ['🤴', '📜', '🗡️'],
             sceneType: 'decision',
@@ -260,7 +288,7 @@ export const timurLegacyChapter: Chapter = {
                 {
                     id: 'pir-muhammad',
                     text: 'Support Pir Muhammad, Timur\'s designated heir.',
-                    consequence: 'He is weak and distant. The empire fractures immediately.'
+                    consequence: 'He is weak and distant. The empire fractures immediately. (Historical)'
                 },
                 {
                     id: 'shah-rukh',
@@ -271,6 +299,34 @@ export const timurLegacyChapter: Chapter = {
                     id: 'khalil-sultan',
                     text: 'Support Khalil Sultan, the charismatic warrior.',
                     consequence: 'He seizes Samarkand but squanders the treasury on love and war.'
+                }
+            ]
+        },
+        {
+            id: 'ulugh-beg-dilemma',
+            title: 'The Astronomer\'s Choice (1449)',
+            text: 'You are Ulugh Beg, the grandson of Timur. You are a brilliant scientist but a poor general. Your son Abdal-Latif is rebelling, supported by religious hardliners who hate your observatory. What do you do?',
+            emoji: '🔭',
+            background: 'bg-gradient-to-br from-blue-900 to-purple-900',
+            characters: ['🔭', '👳', '⚔️'],
+            sceneType: 'decision',
+            timelineYear: 1449,
+            timelineEvent: 'The Fall of the Astronomer King',
+            choices: [
+                {
+                    id: 'surrender',
+                    text: 'Surrender and ask to be allowed to go on pilgrimage to Mecca.',
+                    consequence: 'Your son has you assassinated on the way. Your observatory is destroyed. (Historical)'
+                },
+                {
+                    id: 'fight',
+                    text: 'Rally your loyal troops and fight. Science must prevail over dogma!',
+                    consequence: 'You win a bloody civil war. The Timurid Renaissance continues, leading to an early scientific revolution.'
+                },
+                {
+                    id: 'flee',
+                    text: 'Flee to China with your star charts and books.',
+                    consequence: 'You are welcomed by the Ming Emperor. Your knowledge sparks a Chinese scientific golden age.'
                 }
             ]
         }

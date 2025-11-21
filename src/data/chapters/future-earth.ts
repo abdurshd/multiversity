@@ -208,7 +208,7 @@ export const futureEarthChapter: Chapter = {
     interactiveScenarios: [
         {
             id: 'great-filter',
-            title: 'The Great Filter',
+            title: 'The Great Filter (2100)',
             text: 'It is 2100. The global temperature has risen 3°C. Resources are scarce. Tensions between superpowers are at breaking point. A rogue general suggests a preemptive strike. What is the path forward?',
             emoji: '🌡️',
             background: 'bg-gradient-to-br from-red-900 to-black',
@@ -235,8 +235,36 @@ export const futureEarthChapter: Chapter = {
             ]
         },
         {
+            id: 'mars-colony',
+            title: 'The Mars Rebellion (2150)',
+            text: 'The Mars colony has become self-sufficient. They resent Earth\'s taxes and control. They declare independence. You are the Earth President. How do you respond?',
+            emoji: '🪐',
+            background: 'bg-gradient-to-br from-orange-900 to-red-900',
+            characters: ['🌍', '🪐', '🚀'],
+            sceneType: 'decision',
+            timelineYear: 2150,
+            timelineEvent: 'Interplanetary Civil War',
+            choices: [
+                {
+                    id: 'blockade',
+                    text: 'Blockade Mars until they surrender.',
+                    consequence: 'The blockade fails. Mars develops superior weapons and conquers Earth.'
+                },
+                {
+                    id: 'recognize',
+                    text: 'Recognize their independence. We are brothers.',
+                    consequence: 'Peaceful coexistence leads to a dual-planet civilization.'
+                },
+                {
+                    id: 'nuke',
+                    text: 'Bomb the domes. Make an example of them.',
+                    consequence: 'Mars is destroyed. Earth sinks into moral decay and eventual collapse.'
+                }
+            ]
+        },
+        {
             id: 'galactic-council',
-            title: 'The Galactic Council',
+            title: 'The Galactic Council (3000)',
             text: 'It is 3000 AD. Humanity has reached the stars. An alien probe arrives, inviting us to join the Galactic Council. But there is a catch: we must give up our aggressive tendencies.',
             emoji: '👽',
             background: 'bg-gradient-to-br from-indigo-900 to-purple-900',
@@ -259,6 +287,29 @@ export const futureEarthChapter: Chapter = {
                     id: 'isolate',
                     text: 'Hide. Build a shield around the solar system.',
                     consequence: 'We become a "Hermit Kingdom" star system, safe but stagnant.'
+                }
+            ]
+        },
+        {
+            id: 'entropy-death',
+            title: 'The Last Question (The End of Time)',
+            text: 'Trillions of years have passed. The stars are going out. The universe is cooling. The super-computer AC asks: "How can entropy be reversed?"',
+            emoji: '⌛',
+            background: 'bg-black',
+            characters: ['🌌', '💻', '✨'],
+            sceneType: 'revelation',
+            timelineYear: 1000000000,
+            timelineEvent: 'Heat Death',
+            choices: [
+                {
+                    id: 'insufficient-data',
+                    text: 'THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.',
+                    consequence: 'The computer continues to calculate... until the next Big Bang.'
+                },
+                {
+                    id: 'let-there-be-light',
+                    text: 'LET THERE BE LIGHT.',
+                    consequence: 'A new universe is born.'
                 }
             ]
         }
