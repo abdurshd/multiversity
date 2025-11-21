@@ -5,7 +5,7 @@ import { Calendar, Users, MapPin, GitBranch, Clock, ArrowRight, Percent, PlayCir
 import { Chapter, Person } from '../types';
 import { getChapterById } from '../data';
 import AnimatedCharacter from '../components/common/AnimatedCharacter';
-import { GameContainer } from '../game/GameContainer';
+import InteractiveStory from '../components/common/InteractiveStory';
 import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 
@@ -201,10 +201,8 @@ const ChapterDetail: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Sparkles className="w-5 h-5" />
-                <span>{showStory ? 'Hide Simulation' : 'Start Simulation'}</span>
+                <span>{showStory ? 'Hide Story' : 'Start Interactive Story'}</span>
               </motion.button>
-
-
             </div>
           </motion.div>
 
@@ -217,16 +215,11 @@ const ChapterDetail: React.FC = () => {
                 transition={{ duration: 0.5 }}
                 className="overflow-hidden rounded-xl border border-slate-700 shadow-2xl"
               >
-                <div className="h-[600px] w-full relative">
-                  <GameContainer
-                    levelId="timur-ankara" // In a real app, this would be dynamic based on the chapter
-                    onExit={() => setShowStory(false)}
-                    onTimelineRequest={(targetTimelineId) => {
-                      setShowStory(false);
-                      if (targetTimelineId) {
-                        navigate(`/timeline/${chapter.id}/${targetTimelineId}`);
-                      }
-                    }}
+                <div className="w-full relative">
+                  <InteractiveStory
+                    title={chapter.title}
+                    scenes={chapter.interactiveScenarios || []}
+                    onComplete={() => setShowStory(false)}
                   />
                 </div>
               </motion.div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   ArrowLeft,
@@ -10,22 +10,21 @@ import {
   Clock,
   Zap,
   Globe,
-  BookOpen,
-  PlayCircle
+  BookOpen
 } from 'lucide-react';
 import { Chapter, Timeline, HistoricalEvent } from '../types';
 import { getChapterById, getTimelineById } from '../data';
 import AnimatedTimeline from '../components/timeline/AnimatedTimeline';
 import { Breadcrumb } from '../components/common/Breadcrumb';
-import { GameContainer } from '../game/GameContainer';
+
 
 const TimelineExplorer: React.FC = () => {
-  const navigate = useNavigate();
+
   const { chapterId, timelineId } = useParams<{ chapterId: string; timelineId: string }>();
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [timeline, setTimeline] = useState<Timeline | null>(null);
   const [selectedEvent, setSelectedEvent] = useState<HistoricalEvent | null>(null);
-  const [showGame, setShowGame] = useState(false);
+
 
   useEffect(() => {
     if (chapterId && timelineId) {
@@ -97,15 +96,7 @@ const TimelineExplorer: React.FC = () => {
 
             <div className="flex items-center space-x-4">
               {/* Game Launch Button - Only for Timur's Legacy for now */}
-              {chapterId === 'timur-legacy' && (
-                <button
-                  onClick={() => setShowGame(true)}
-                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-2 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-lg shadow-blue-500/30"
-                >
-                  <PlayCircle className="w-5 h-5" />
-                  <span>Start Simulation</span>
-                </button>
-              )}
+
 
               <div className="text-right">
                 <div className="text-sm text-gray-400">Probability</div>
@@ -402,21 +393,7 @@ const TimelineExplorer: React.FC = () => {
           </motion.div>
         </motion.div>
       )}
-      {/* Game Modal */}
-      {showGame && (
-        <div className="fixed inset-0 z-50 bg-black">
-          <GameContainer
-            levelId="timur-ankara" // In a real app, this would be dynamic based on the timeline/event
-            onExit={() => setShowGame(false)}
-            onTimelineRequest={(targetTimelineId) => {
-              setShowGame(false);
-              if (targetTimelineId && targetTimelineId !== timelineId) {
-                navigate(`/timeline/${chapterId}/${targetTimelineId}`);
-              }
-            }}
-          />
-        </div>
-      )}
+
     </div>
   );
 };
