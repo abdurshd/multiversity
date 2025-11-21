@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="clockGradient">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="timeGlow">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:0" />
+    </radialGradient>
+    <filter id="clockGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Time glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#timeGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Clock -->
+  <g id="clock" filter="url(#clockGlow)">
+    <!-- Outer frame -->
+    <circle cx="100" cy="100" r="55"
+            fill="url(#frameGradient)"
+            stroke="#475569"
+            stroke-width="3"/>
+
+    <!-- Clock face -->
+    <circle cx="100" cy="100" r="50"
+            fill="url(#clockGradient)"
+            stroke="#94a3b8"
+            stroke-width="2"/>
+
+    <!-- Hour markers -->
+    <g id="hourMarkers" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round">
+      <!-- 12 -->
+      <line x1="100" y1="55" x2="100" y2="62"/>
+      <!-- 3 -->
+      <line x1="145" y1="100" x2="138" y2="100"/>
+      <!-- 6 -->
+      <line x1="100" y1="145" x2="100" y2="138"/>
+      <!-- 9 -->
+      <line x1="55" y1="100" x2="62" y2="100"/>
+    </g>
+
+    <!-- Minor hour markers -->
+    <g id="minorMarkers" stroke="#64748b" stroke-width="1.5" stroke-linecap="round" opacity="0.6">
+      <!-- 1 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(30 100 100)"/>
+      <!-- 2 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(60 100 100)"/>
+      <!-- 4 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(120 100 100)"/>
+      <!-- 5 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(150 100 100)"/>
+      <!-- 7 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(210 100 100)"/>
+      <!-- 8 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(240 100 100)"/>
+      <!-- 10 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(300 100 100)"/>
+      <!-- 11 -->
+      <line x1="113" y1="58" x2="113" y2="64" transform="rotate(330 100 100)"/>
+    </g>
+
+    <!-- Hour hand (pointing to 10) -->
+    <g id="hourHand">
+      <line x1="100" y1="100" x2="100" y2="75"
+            stroke="#1e293b"
+            stroke-width="4"
+            stroke-linecap="round"
+            transform="rotate(-60 100 100)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="-60 100 100"
+          to="300 100 100"
+          dur="43200s"
+          repeatCount="indefinite"
+          additive="replace"/>
+      </line>
+    </g>
+
+    <!-- Minute hand (pointing to 2) -->
+    <g id="minuteHand">
+      <line x1="100" y1="100" x2="100" y2="65"
+            stroke="#475569"
+            stroke-width="3"
+            stroke-linecap="round"
+            transform="rotate(60 100 100)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="60 100 100"
+          to="420 100 100"
+          dur="3600s"
+          repeatCount="indefinite"
+          additive="replace"/>
+      </line>
+    </g>
+
+    <!-- Second hand (sweeping) -->
+    <g id="secondHand">
+      <line x1="100" y1="100" x2="100" y2="60"
+            stroke="#ef4444"
+            stroke-width="1.5"
+            stroke-linecap="round">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 100 100"
+          to="360 100 100"
+          dur="60s"
+          repeatCount="indefinite"
+          additive="replace"/>
+      </line>
+      <!-- Second hand tail -->
+      <line x1="100" y1="100" x2="100" y2="110"
+            stroke="#ef4444"
+            stroke-width="1.5"
+            stroke-linecap="round">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 100 100"
+          to="360 100 100"
+          dur="60s"
+          repeatCount="indefinite"
+          additive="replace"/>
+      </line>
+    </g>
+
+    <!-- Center cap -->
+    <circle cx="100" cy="100" r="5"
+            fill="#1e293b"
+            stroke="#0f172a"
+            stroke-width="1"/>
+    <circle cx="100" cy="100" r="2.5"
+            fill="#ef4444">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Clock numbers -->
+    <g font-size="14" fill="#1e293b" font-weight="bold" text-anchor="middle">
+      <text x="100" y="68">12</text>
+      <text x="130" y="108">3</text>
+      <text x="100" y="144">6</text>
+      <text x="70" y="108">9</text>
+    </g>
+
+    <!-- Inner ring detail -->
+    <circle cx="100" cy="100" r="45"
+            fill="none"
+            stroke="#cbd5e1"
+            stroke-width="0.5"
+            opacity="0.5"/>
+  </g>
+
+  <!-- Time particles -->
+  <g id="timeParticles" opacity="0.5">
+    <circle cx="60" cy="70" r="2" fill="#93c5fd">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-20"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="75" r="2" fill="#60a5fa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-22"
+        dur="4s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="45" r="2" fill="#dbeafe">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-25"
+        dur="4s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Tick sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="50" cy="85" r="2" fill="#e0f2fe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="115" r="2" fill="#bae6fd">
+      <animate attributeName="opacity" values="0;0.8;0" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Time waves -->
+  <g id="timeWaves" stroke="#93c5fd" fill="none" opacity="0.3">
+    <circle cx="100" cy="100" r="60">
+      <animate attributeName="r" values="60;70;60" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="100" r="60">
+      <animate attributeName="r" values="60;70;60" dur="4s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Subtle tick sound effect (visual) -->
+  <g id="tickEffect" opacity="0">
+    <circle cx="100" cy="100" r="52" fill="none" stroke="#ef4444" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="poleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="freedomGlow">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0" />
+    </radialGradient>
+    <filter id="flagGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Freedom glow -->
+  <circle cx="110" cy="90" r="75" fill="url(#freedomGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Flagpole -->
+  <g id="flagpole" filter="url(#flagGlow)">
+    <rect x="48" y="40" width="4" height="135"
+          fill="url(#poleGradient)"
+          stroke="#475569"
+          stroke-width="1"/>
+
+    <!-- Pole cap -->
+    <circle cx="50" cy="38" r="4"
+            fill="#fbbf24"
+            stroke="#f59e0b"
+            stroke-width="1.5">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Pole base -->
+    <rect x="45" y="175" width="10" height="8"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1"
+          rx="1"/>
+  </g>
+
+  <!-- American flag -->
+  <g id="flag">
+    <!-- Red stripes -->
+    <g id="stripes">
+      <rect x="52" y="50" width="100" height="8" fill="#dc2626">
+        <animate attributeName="d"
+                 values="M 52,50 Q 102,48 152,50 L 152,58 Q 102,60 52,58 Z;
+                         M 52,50 Q 102,52 152,50 L 152,58 Q 102,56 52,58 Z;
+                         M 52,50 Q 102,48 152,50 L 152,58 Q 102,60 52,58 Z"
+                 dur="3s"
+                 repeatCount="indefinite"/>
+      </rect>
+      <rect x="52" y="66" width="100" height="8" fill="#dc2626"/>
+      <rect x="52" y="82" width="100" height="8" fill="#dc2626"/>
+      <rect x="52" y="98" width="100" height="8" fill="#dc2626"/>
+      <rect x="52" y="114" width="100" height="8" fill="#dc2626"/>
+      <rect x="52" y="130" width="100" height="8" fill="#dc2626"/>
+      <rect x="52" y="146" width="100" height="8" fill="#dc2626"/>
+    </g>
+
+    <!-- White stripes -->
+    <g id="whiteStripes">
+      <rect x="52" y="58" width="100" height="8" fill="#f8fafc"/>
+      <rect x="52" y="74" width="100" height="8" fill="#f8fafc"/>
+      <rect x="52" y="90" width="100" height="8" fill="#f8fafc"/>
+      <rect x="52" y="106" width="100" height="8" fill="#f8fafc"/>
+      <rect x="52" y="122" width="100" height="8" fill="#f8fafc"/>
+      <rect x="52" y="138" width="100" height="8" fill="#f8fafc"/>
+    </g>
+
+    <!-- Blue canton (union) -->
+    <rect x="52" y="50" width="45" height="56"
+          fill="#1e40af"
+          stroke="#1e3a8a"
+          stroke-width="1"/>
+
+    <!-- Stars (simplified, 50 stars pattern) -->
+    <g fill="#f8fafc" opacity="0.9">
+      <!-- Row 1 (6 stars) -->
+      <circle cx="60" cy="58" r="1.5"/>
+      <circle cx="68" cy="58" r="1.5"/>
+      <circle cx="76" cy="58" r="1.5"/>
+      <circle cx="84" cy="58" r="1.5"/>
+      <circle cx="92" cy="58" r="1.5"/>
+
+      <!-- Row 2 (5 stars offset) -->
+      <circle cx="64" cy="64" r="1.5"/>
+      <circle cx="72" cy="64" r="1.5"/>
+      <circle cx="80" cy="64" r="1.5"/>
+      <circle cx="88" cy="64" r="1.5"/>
+
+      <!-- Row 3 (6 stars) -->
+      <circle cx="60" cy="70" r="1.5"/>
+      <circle cx="68" cy="70" r="1.5"/>
+      <circle cx="76" cy="70" r="1.5"/>
+      <circle cx="84" cy="70" r="1.5"/>
+      <circle cx="92" cy="70" r="1.5"/>
+
+      <!-- Row 4 (5 stars offset) -->
+      <circle cx="64" cy="76" r="1.5"/>
+      <circle cx="72" cy="76" r="1.5"/>
+      <circle cx="80" cy="76" r="1.5"/>
+      <circle cx="88" cy="76" r="1.5"/>
+
+      <!-- Row 5 (6 stars) -->
+      <circle cx="60" cy="82" r="1.5"/>
+      <circle cx="68" cy="82" r="1.5"/>
+      <circle cx="76" cy="82" r="1.5"/>
+      <circle cx="84" cy="82" r="1.5"/>
+      <circle cx="92" cy="82" r="1.5"/>
+
+      <!-- Row 6 (5 stars offset) -->
+      <circle cx="64" cy="88" r="1.5"/>
+      <circle cx="72" cy="88" r="1.5"/>
+      <circle cx="80" cy="88" r="1.5"/>
+      <circle cx="88" cy="88" r="1.5"/>
+
+      <!-- Row 7 (6 stars) -->
+      <circle cx="60" cy="94" r="1.5"/>
+      <circle cx="68" cy="94" r="1.5"/>
+      <circle cx="76" cy="94" r="1.5"/>
+      <circle cx="84" cy="94" r="1.5"/>
+      <circle cx="92" cy="94" r="1.5"/>
+
+      <!-- Row 8 (5 stars offset) -->
+      <circle cx="64" cy="100" r="1.5"/>
+      <circle cx="72" cy="100" r="1.5"/>
+      <circle cx="80" cy="100" r="1.5"/>
+      <circle cx="88" cy="100" r="1.5"/>
+    </g>
+
+    <!-- Flag wave path (right edge) -->
+    <path d="M 152 50 Q 155 70 152 90 Q 155 110 152 130 Q 155 146 152 154"
+          stroke="#b91c1c"
+          stroke-width="0.5"
+          fill="none"
+          opacity="0.3"/>
+
+    <!-- Waving animation -->
+    <animateTransform
+      attributeName="transform"
+      type="skewY"
+      values="0; -2; 0; 2; 0"
+      dur="3s"
+      repeatCount="indefinite"
+      additive="sum"/>
+  </g>
+
+  <!-- Patriotic sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="160" cy="70" r="2" fill="#dbeafe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="165" cy="110" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="158" cy="140" r="2" fill="#fca5a5">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Freedom particles -->
+  <g id="freedomParticles" opacity="0.4">
+    <circle cx="140" cy="60" r="2" fill="#60a5fa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,-20"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="120" r="2" fill="#ef4444">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,15"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Flag ripple effect -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 2,0; 0,0; -2,0; 0,0"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

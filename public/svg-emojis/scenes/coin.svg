@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="coinGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="wealthGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <filter id="coinGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Wealth glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#wealthGlow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main coin -->
+  <g id="coin" filter="url(#coinGlow)">
+    <!-- Coin body -->
+    <circle cx="100" cy="100" r="45"
+            fill="url(#coinGradient)"
+            stroke="#d97706"
+            stroke-width="3">
+      <animate attributeName="r" values="45;46;45" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Coin edge detail -->
+    <circle cx="100" cy="100" r="42"
+            fill="none"
+            stroke="#f59e0b"
+            stroke-width="2"
+            opacity="0.8"/>
+
+    <!-- Inner circle -->
+    <circle cx="100" cy="100" r="38"
+            fill="none"
+            stroke="#d97706"
+            stroke-width="1.5"
+            stroke-dasharray="3,2"
+            opacity="0.6"/>
+
+    <!-- Dollar sign -->
+    <g id="dollarSign">
+      <!-- S curve -->
+      <path d="M 100 80 Q 90 80 90 87 Q 90 93 100 95 Q 110 97 110 103 Q 110 110 100 110"
+            stroke="#d97706"
+            stroke-width="5"
+            fill="none"
+            stroke-linecap="round"/>
+
+      <!-- Vertical bars -->
+      <line x1="100" y1="75" x2="100" y2="115"
+            stroke="#d97706"
+            stroke-width="3"
+            stroke-linecap="round"/>
+
+      <!-- Dollar sign fill/shadow -->
+      <path d="M 100 80 Q 90 80 90 87 Q 90 93 100 95 Q 110 97 110 103 Q 110 110 100 110"
+            stroke="#fef3c7"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round"
+            opacity="0.6"/>
+    </g>
+
+    <!-- Coin ridges (edge pattern) -->
+    <g id="ridges" opacity="0.5">
+      <path d="M 100,55 A 45,45 0 0,1 130,68" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 132,72 A 45,45 0 0,1 145,100" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 145,105 A 45,45 0 0,1 130,132" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 128,136 A 45,45 0 0,1 100,145" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 95,145 A 45,45 0 0,1 70,132" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 68,128 A 45,45 0 0,1 55,100" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 55,95 A 45,45 0 0,1 70,68" stroke="#b45309" stroke-width="1" fill="none"/>
+      <path d="M 72,64 A 45,45 0 0,1 95,55" stroke="#b45309" stroke-width="1" fill="none"/>
+    </g>
+
+    <!-- Shine/reflection -->
+    <ellipse cx="85" cy="85" rx="15" ry="20"
+             fill="white"
+             opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Coin rotation effect -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="12s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Additional coins (stack effect) -->
+  <g id="stackedCoins" opacity="0.6">
+    <!-- Back coin 1 -->
+    <ellipse cx="85" cy="130" rx="35" ry="8"
+             fill="#fbbf24"
+             stroke="#d97706"
+             stroke-width="2"/>
+    <!-- Back coin 2 -->
+    <ellipse cx="115" cy="132" rx="32" ry="7"
+             fill="#f59e0b"
+             stroke="#d97706"
+             stroke-width="2"/>
+  </g>
+
+  <!-- Gold sparkles -->
+  <g id="sparkles" opacity="0.7">
+    <g transform="translate(60, 75)">
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fef3c7" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fef3c7" stroke-width="2"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(140, 80)">
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fde68a" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fde68a" stroke-width="2"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(100, 50)">
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fbbf24" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fbbf24" stroke-width="2"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Wealth particles -->
+  <g id="wealthParticles" opacity="0.6">
+    <circle cx="70" cy="110" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="115" r="2" fill="#f59e0b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 22,28"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="145" r="2" fill="#fde68a">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,30"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Value indicators (rising) -->
+  <g id="valueIndicators" opacity="0.5">
+    <text x="50" y="90" font-size="14" fill="#fbbf24" font-weight="bold">
+      $
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -10,-30"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="145" y="95" font-size="14" fill="#f59e0b" font-weight="bold">
+      $
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 12,-32"
+        dur="4s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Prosperity waves -->
+  <g id="prosperityWaves" stroke="#fbbf24" fill="none" opacity="0.3">
+    <circle cx="100" cy="100" r="55">
+      <animate attributeName="r" values="55;70;55" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="100" r="55">
+      <animate attributeName="r" values="55;70;55" dur="4s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Coin flip effect -->
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="1,1; 1.05,1.05; 1,1"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

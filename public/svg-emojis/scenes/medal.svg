@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="medalGradient">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="ribbonGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ribbonGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dbeafe;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="victoryGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <filter id="medalGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Victory glow -->
+  <circle cx="100" cy="115" r="70" fill="url(#victoryGlow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Medal -->
+  <g id="medal" filter="url(#medalGlow)">
+    <!-- Ribbons -->
+    <g id="ribbons">
+      <!-- Left ribbon (red) -->
+      <path d="M 75 45 L 70 110 L 85 110 L 90 45 Z"
+            fill="url(#ribbonGradient1)"
+            stroke="#b91c1c"
+            stroke-width="2">
+        <animateTransform
+          attributeName="transform"
+          type="skewX"
+          values="0; -2; 0; 2; 0"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </path>
+      <!-- Left ribbon stripes -->
+      <line x1="78" y1="50" x2="75" y2="105" stroke="#fca5a5" stroke-width="1.5" opacity="0.6"/>
+
+      <!-- Right ribbon (white/blue) -->
+      <path d="M 125 45 L 130 110 L 115 110 L 110 45 Z"
+            fill="url(#ribbonGradient2)"
+            stroke="#60a5fa"
+            stroke-width="2">
+        <animateTransform
+          attributeName="transform"
+          type="skewX"
+          values="0; 2; 0; -2; 0"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </path>
+      <!-- Right ribbon stripes -->
+      <line x1="122" y1="50" x2="125" y2="105" stroke="#93c5fd" stroke-width="1.5" opacity="0.6"/>
+
+      <!-- Ribbon ends (notched) -->
+      <path d="M 70 45 L 65 35 L 70 40 L 75 35 L 75 45 Z"
+            fill="#dc2626"
+            stroke="#b91c1c"
+            stroke-width="1"/>
+      <path d="M 130 45 L 135 35 L 130 40 L 125 35 L 125 45 Z"
+            fill="#dbeafe"
+            stroke="#60a5fa"
+            stroke-width="1"/>
+    </g>
+
+    <!-- Medal disc -->
+    <circle cx="100" cy="130" r="35"
+            fill="url(#medalGradient)"
+            stroke="#d97706"
+            stroke-width="3">
+      <animate attributeName="r" values="35;36;35" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Medal border ring -->
+    <circle cx="100" cy="130" r="32"
+            fill="none"
+            stroke="#f59e0b"
+            stroke-width="2"
+            opacity="0.8"/>
+
+    <!-- Star in center -->
+    <g id="star" transform="translate(100, 130)">
+      <path d="M 0,-15 L -4,-5 L -15,-5 L -6,2 L -10,12 L 0,5 L 10,12 L 6,2 L 15,-5 L 4,-5 Z"
+            fill="#fef3c7"
+            stroke="#f59e0b"
+            stroke-width="1.5">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 0 0"
+          to="360 0 0"
+          dur="8s"
+          repeatCount="indefinite"/>
+      </path>
+      <!-- Star center highlight -->
+      <circle cx="0" cy="0" r="3" fill="#fbbf24">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Achievement text arc -->
+    <path id="textArc" d="M 70,130 A 30,30 0 0,1 130,130" fill="none"/>
+    <text font-size="8" fill="#d97706" font-weight="bold" opacity="0.8">
+      <textPath href="#textArc" startOffset="50%" text-anchor="middle">
+        1ST PLACE
+      </textPath>
+    </text>
+
+    <!-- Medal details/pattern -->
+    <g opacity="0.3">
+      <circle cx="100" cy="130" r="25" fill="none" stroke="#f59e0b" stroke-width="0.5" stroke-dasharray="2,2"/>
+      <circle cx="100" cy="130" r="20" fill="none" stroke="#fbbf24" stroke-width="0.5" stroke-dasharray="2,2"/>
+    </g>
+
+    <!-- Shine effect -->
+    <ellipse cx="90" cy="118" rx="10" ry="15"
+             fill="white"
+             opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Victory sparkles -->
+  <g id="sparkles" opacity="0.7">
+    <g id="sparkle1" transform="translate(60, 120)">
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fef3c7" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fef3c7" stroke-width="2"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </g>
+    <g id="sparkle2" transform="translate(140, 125)">
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fde68a" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fde68a" stroke-width="2"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    <g id="sparkle3" transform="translate(100, 80)">
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#fbbf24" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#fbbf24" stroke-width="2"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Achievement particles rising -->
+  <g id="achievementParticles" opacity="0.6">
+    <circle cx="80" cy="150" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-40"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="155" r="2" fill="#f59e0b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-45"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="165" r="2" fill="#fde68a">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0,-50"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Glory rays -->
+  <g id="rays" stroke="#fde68a" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <line x1="100" y1="95" x2="100" y2="80">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="130" y1="105" x2="142" y2="95">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="140" y1="130" x2="155" y2="130">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="70" y1="105" x2="58" y2="95">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="0.9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="60" y1="130" x2="45" y2="130">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Gentle swaying -->
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="0 100 50; -3 100 50; 0 100 50; 3 100 50; 0 100 50"
+    dur="4s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

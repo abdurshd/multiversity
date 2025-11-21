@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#bae6fd;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#7dd3fc;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="liquidGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:0.7" />
+    </linearGradient>
+    <radialGradient id="scienceGlow">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+    </radialGradient>
+    <filter id="tubeGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Science glow -->
+  <circle cx="100" cy="120" r="65" fill="url(#scienceGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Test tube -->
+  <g id="testTube" filter="url(#tubeGlow)" transform="rotate(-15 100 100)">
+    <!-- Glass tube body -->
+    <rect x="85" y="60" width="30" height="100"
+          fill="url(#glassGradient)"
+          stroke="#0ea5e9"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Rounded bottom -->
+    <ellipse cx="100" cy="160" rx="15" ry="8"
+             fill="url(#glassGradient)"
+             stroke="#0ea5e9"
+             stroke-width="2"/>
+
+    <!-- Tube opening/rim -->
+    <rect x="82" y="58" width="36" height="4"
+          fill="#cbd5e1"
+          stroke="#94a3b8"
+          stroke-width="1.5"
+          rx="1"/>
+    <ellipse cx="100" cy="60" rx="18" ry="4"
+             fill="#e0f2fe"
+             stroke="#0ea5e9"
+             stroke-width="1"/>
+
+    <!-- Liquid inside -->
+    <g id="liquid">
+      <!-- Main liquid body -->
+      <rect x="88" y="100" width="24" height="58"
+            fill="url(#liquidGradient)"
+            rx="1">
+        <animate attributeName="height" values="58;60;58" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="100;98;100" dur="3s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Liquid bottom curve -->
+      <ellipse cx="100" cy="158" rx="12" ry="5"
+               fill="#10b981"
+               opacity="0.9"/>
+
+      <!-- Liquid meniscus (top surface) -->
+      <ellipse cx="100" cy="100" rx="12" ry="3"
+               fill="#34d399"
+               opacity="0.8">
+        <animate attributeName="cy" values="100;98;100" dur="3s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Bubbles rising -->
+      <g id="bubbles">
+        <circle cx="95" cy="140" r="2" fill="#a7f3d0" opacity="0.8">
+          <animate attributeName="cy" values="140;100" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8;0" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="105" cy="150" r="1.5" fill="#d1fae5" opacity="0.7">
+          <animate attributeName="cy" values="150;100" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="98" cy="135" r="1.5" fill="#a7f3d0" opacity="0.7">
+          <animate attributeName="cy" values="135;100" dur="3s" begin="1s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+
+    <!-- Measurement markings -->
+    <g stroke="#64748b" stroke-width="1" opacity="0.6">
+      <line x1="85" y1="110" x2="90" y2="110"/>
+      <line x1="85" y1="120" x2="88" y2="120"/>
+      <line x1="85" y1="130" x2="90" y2="130"/>
+      <line x1="85" y1="140" x2="88" y2="140"/>
+      <line x1="85" y1="150" x2="90" y2="150"/>
+    </g>
+
+    <!-- Volume labels -->
+    <g font-size="6" fill="#64748b" opacity="0.7">
+      <text x="78" y="112">10ml</text>
+      <text x="78" y="132">5ml</text>
+    </g>
+
+    <!-- Glass reflections -->
+    <ellipse cx="92" cy="80" rx="5" ry="20"
+             fill="white"
+             opacity="0.4"/>
+    <ellipse cx="92" cy="140" rx="4" ry="15"
+             fill="white"
+             opacity="0.3"/>
+
+    <!-- Cork/stopper -->
+    <ellipse cx="100" cy="57" rx="16" ry="4"
+             fill="#78350f"
+             stroke="#451a03"
+             stroke-width="1.5"
+             opacity="0.8"/>
+    <rect x="92" y="50" width="16" height="7"
+          fill="#92400e"
+          stroke="#78350f"
+          stroke-width="1"
+          rx="2"
+          opacity="0.8"/>
+  </g>
+
+  <!-- Chemical reaction sparkles -->
+  <g id="reaction" opacity="0.7">
+    <circle cx="95" cy="120" r="2" fill="#6ee7b7">
+      <animate attributeName="r" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="105" cy="130" r="2" fill="#34d399">
+      <animate attributeName="r" values="2;3;2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="115" r="1.5" fill="#a7f3d0">
+      <animate attributeName="r" values="1.5;2.5;1.5" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Experiment particles -->
+  <g id="particles" opacity="0.5">
+    <circle cx="75" cy="110" r="2" fill="#10b981">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="120" r="2" fill="#34d399">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-30"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Science sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="70" cy="90" r="2" fill="#dbeafe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="100" r="2" fill="#bfdbfe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="65" r="2" fill="#a7f3d0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gentle swaying -->
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    values="0 100 100; -1 100 100; 0 100 100; 1 100 100; 0 100 100"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>
