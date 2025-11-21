@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="micGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="audioGlow">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0" />
+    </radialGradient>
+    <filter id="micGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Audio glow -->
+  <circle cx="100" cy="90" r="70" fill="url(#audioGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Microphone -->
+  <g id="microphone" filter="url(#micGlow)">
+    <!-- Mic head/capsule -->
+    <ellipse cx="100" cy="80" rx="22" ry="28"
+             fill="url(#micGradient)"
+             stroke="#475569"
+             stroke-width="2"/>
+
+    <!-- Grille pattern -->
+    <g stroke="#94a3b8" stroke-width="0.5" opacity="0.6">
+      <line x1="85" y1="65" x2="115" y2="65"/>
+      <line x1="83" y1="70" x2="117" y2="70"/>
+      <line x1="82" y1="75" x2="118" y2="75"/>
+      <line x1="82" y1="80" x2="118" y2="80"/>
+      <line x1="82" y1="85" x2="118" y2="85"/>
+      <line x1="83" y1="90" x2="117" y2="90"/>
+      <line x1="85" y1="95" x2="115" y2="95"/>
+    </g>
+
+    <!-- Mic body/handle -->
+    <rect x="92" y="105" width="16" height="45"
+          fill="url(#micGradient)"
+          stroke="#475569"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Handle grip lines -->
+    <g stroke="#475569" stroke-width="1" opacity="0.5">
+      <line x1="92" y1="115" x2="108" y2="115"/>
+      <line x1="92" y1="125" x2="108" y2="125"/>
+      <line x1="92" y1="135" x2="108" y2="135"/>
+    </g>
+
+    <!-- Stand mount -->
+    <rect x="95" y="150" width="10" height="8"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Base -->
+    <ellipse cx="100" cy="163" rx="20" ry="4"
+             fill="#64748b"
+             stroke="#475569"
+             stroke-width="2"/>
+
+    <!-- Shine/reflection -->
+    <ellipse cx="92" cy="70" rx="8" ry="12"
+             fill="white"
+             opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- On indicator -->
+    <circle cx="100" cy="120" r="3" fill="#10b981">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Sound waves -->
+  <g id="soundWaves" stroke="#a78bfa" fill="none" opacity="0.6">
+    <path d="M 135 70 Q 145 80 135 90">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 145 65 Q 160 80 145 95">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 65 70 Q 55 80 65 90">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 55 65 Q 40 80 55 95">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Audio level indicator -->
+  <g id="audioLevel" opacity="0.7">
+    <rect x="135" y="95" width="4" height="8" fill="#10b981" rx="1">
+      <animate attributeName="height" values="8;15;8" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="95;88;95" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="141" y="90" width="4" height="18" fill="#10b981" rx="1">
+      <animate attributeName="height" values="18;25;18" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="90;83;90" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="147" y="85" width="4" height="28" fill="#fbbf24" rx="1">
+      <animate attributeName="height" values="28;35;28" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="85;78;85" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="153" y="80" width="4" height="38" fill="#ef4444" rx="1">
+      <animate attributeName="height" values="38;45;38" dur="0.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="80;73;80" dur="0.5s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Voice particles -->
+  <g id="voiceParticles" opacity="0.5">
+    <circle cx="70" cy="80" r="2" fill="#c4b5fd">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,-15"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="85" r="2" fill="#a78bfa">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 22,-18"
+        dur="2s"
+        begin="0.3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Recording sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="50" cy="75" r="2" fill="#ddd6fe">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="80" r="2" fill="#c4b5fd">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

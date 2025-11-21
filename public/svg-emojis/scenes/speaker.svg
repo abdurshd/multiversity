@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="speakerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="coneGradient">
+      <stop offset="0%" style="stop-color:#cbd5e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="soundGlow">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="speakerGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sound glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#soundGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Speaker -->
+  <g id="speaker" filter="url(#speakerGlow)">
+    <!-- Speaker cabinet -->
+    <rect x="60" y="50" width="80" height="110"
+          fill="url(#speakerGradient)"
+          stroke="#0f172a"
+          stroke-width="3"
+          rx="8"/>
+
+    <!-- Tweeter (small speaker) -->
+    <circle cx="100" cy="80" r="12"
+            fill="url(#coneGradient)"
+            stroke="#475569"
+            stroke-width="2"/>
+    <circle cx="100" cy="80" r="8"
+            fill="#1e293b"
+            stroke="#334155"
+            stroke-width="1"/>
+    <circle cx="100" cy="80" r="4"
+            fill="#64748b"/>
+
+    <!-- Woofer (large speaker) -->
+    <circle cx="100" cy="125" r="28"
+            fill="url(#coneGradient)"
+            stroke="#475569"
+            stroke-width="3"/>
+    <circle cx="100" cy="125" r="22"
+            fill="#1e293b"
+            stroke="#334155"
+            stroke-width="2"/>
+    <circle cx="100" cy="125" r="15"
+            fill="#334155">
+      <animate attributeName="r" values="15;16;15" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="125" r="8"
+            fill="#64748b">
+      <animate attributeName="r" values="8;9;8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Corner screws -->
+    <g fill="#334155" opacity="0.7">
+      <circle cx="68" cy="58" r="2"/>
+      <circle cx="132" cy="58" r="2"/>
+      <circle cx="68" cy="152" r="2"/>
+      <circle cx="132" cy="152" r="2"/>
+    </g>
+
+    <!-- Grille texture -->
+    <g opacity="0.2">
+      <circle cx="100" cy="80" r="14" fill="none" stroke="#94a3b8" stroke-width="0.5"/>
+      <circle cx="100" cy="125" r="30" fill="none" stroke="#94a3b8" stroke-width="0.5"/>
+    </g>
+  </g>
+
+  <!-- Sound waves emanating -->
+  <g id="soundWaves" stroke="#fbbf24" fill="none" opacity="0.6">
+    <path d="M 150 90 Q 165 100 150 110">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 160 80 Q 180 100 160 120">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 170 70 Q 195 100 170 130">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Bass waves (from woofer) -->
+  <g id="bassWaves" stroke="#f59e0b" fill="none" opacity="0.5" stroke-width="3">
+    <circle cx="100" cy="125" r="35">
+      <animate attributeName="r" values="35;50;35" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="125" r="35">
+      <animate attributeName="r" values="35;50;35" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Volume indicator -->
+  <g id="volumeBars" opacity="0.7">
+    <rect x="150" y="105" width="3" height="8" fill="#10b981" rx="1">
+      <animate attributeName="height" values="8;12;8" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="105;101;105" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="155" y="100" width="3" height="18" fill="#fbbf24" rx="1">
+      <animate attributeName="height" values="18;22;18" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="100;96;100" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="160" y="95" width="3" height="28" fill="#ef4444" rx="1">
+      <animate attributeName="height" values="28;32;28" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="95;91;95" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Music notes -->
+  <g id="musicNotes" opacity="0.6" fill="#fbbf24">
+    <g>
+      <ellipse cx="40" cy="110" rx="3" ry="2"/>
+      <rect x="42" y="95" width="1.5" height="15"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -5,-25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <ellipse cx="45" cy="100" rx="3" ry="2"/>
+      <rect x="47" y="85" width="1.5" height="15"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -8,-30"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Sound particles -->
+  <g id="soundParticles" opacity="0.5">
+    <circle cx="130" cy="100" r="2" fill="#fde68a">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 20,-10"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="120" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 25,15"
+        dur="2s"
+        begin="0.3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Vibration effect -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0.5,0; 0,0; -0.5,0; 0,0"
+    dur="0.5s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

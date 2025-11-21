@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="briefcaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#92400e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#78350f;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="businessGlow">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#92400e;stop-opacity:0" />
+    </radialGradient>
+    <filter id="briefcaseGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Business glow -->
+  <circle cx="100" cy="110" r="70" fill="url(#businessGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Briefcase -->
+  <g id="briefcase" filter="url(#briefcaseGlow)">
+    <!-- Main body -->
+    <rect x="50" y="90" width="100" height="65"
+          fill="url(#briefcaseGradient)"
+          stroke="#78350f"
+          stroke-width="3"
+          rx="5"/>
+
+    <!-- Top flap -->
+    <rect x="50" y="85" width="100" height="5"
+          fill="#a16207"
+          stroke="#78350f"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Handle base -->
+    <rect x="80" y="70" width="40" height="8"
+          fill="#78350f"
+          stroke="#451a03"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Handle -->
+    <path d="M 85 70 Q 85 55 100 55 Q 115 55 115 70"
+          fill="none"
+          stroke="url(#briefcaseGradient)"
+          stroke-width="6"
+          stroke-linecap="round"/>
+    <path d="M 87 70 Q 87 58 100 58 Q 113 58 113 70"
+          fill="none"
+          stroke="#a16207"
+          stroke-width="3"
+          stroke-linecap="round"/>
+
+    <!-- Lock/clasp -->
+    <rect x="95" y="87" width="10" height="8"
+          fill="#fbbf24"
+          stroke="#f59e0b"
+          stroke-width="1.5"
+          rx="2"/>
+    <circle cx="100" cy="91" r="2" fill="#78350f"/>
+
+    <!-- Corner reinforcements -->
+    <g fill="#a16207" opacity="0.8">
+      <circle cx="55" cy="95" r="3"/>
+      <circle cx="145" cy="95" r="3"/>
+      <circle cx="55" cy="150" r="3"/>
+      <circle cx="145" cy="150" r="3"/>
+    </g>
+
+    <!-- Stitching detail -->
+    <g stroke="#a16207" stroke-width="1" opacity="0.5" stroke-dasharray="2,3">
+      <rect x="55" y="95" width="90" height="55" fill="none" rx="3"/>
+    </g>
+
+    <!-- Panels/sections -->
+    <line x1="100" y1="90" x2="100" y2="155"
+          stroke="#78350f"
+          stroke-width="2"
+          opacity="0.5"/>
+
+    <!-- Leather texture -->
+    <g opacity="0.2">
+      <path d="M 70 100 Q 75 105 70 110" fill="none" stroke="#451a03" stroke-width="0.5"/>
+      <path d="M 130 115 Q 125 120 130 125" fill="none" stroke="#451a03" stroke-width="0.5"/>
+      <path d="M 85 135 Q 90 140 85 145" fill="none" stroke="#451a03" stroke-width="0.5"/>
+    </g>
+
+    <!-- Shine/reflection -->
+    <ellipse cx="75" cy="105" rx="12" ry="15"
+             fill="white"
+             opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Professional sparkles -->
+  <g id="sparkles" opacity="0.5">
+    <circle cx="45" cy="100" r="2" fill="#fbbf24">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="155" cy="110" r="2" fill="#f59e0b">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="65" r="2" fill="#d97706">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Success particles -->
+  <g id="successParticles" opacity="0.4">
+    <circle cx="70" cy="140" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,20"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="145" r="2" fill="#f59e0b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,22"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
