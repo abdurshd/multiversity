@@ -208,5 +208,63 @@ export const covidPandemicChapter: Chapter = {
     ],
     mainImage: '/images/chapters/covid-pandemic/main.png',
     icon: '🦠',
+    interactiveScenarios: [
+        {
+            id: 'wuhan-warning',
+            title: 'The Whistleblower',
+            text: 'It is December 30, 2019. You are a health official in Wuhan. A report comes in about a cluster of pneumonia cases connected to a seafood market. Dr. Li Wenliang is warning colleagues in a chat group. What do you do?',
+            emoji: '🩺',
+            background: 'bg-gradient-to-br from-gray-900 to-green-900',
+            characters: ['👨‍⚕️', '👮', '🦠'],
+            sceneType: 'decision',
+            timelineYear: 2019,
+            timelineEvent: 'The First Warning',
+            choices: [
+                {
+                    id: 'suppress',
+                    text: 'Suppress the rumors to prevent panic. Reprimand the doctor.',
+                    consequence: 'The virus spreads unchecked during the Lunar New Year travel rush. The historical pandemic timeline begins.'
+                },
+                {
+                    id: 'investigate',
+                    text: 'Immediately investigate and quarantine the market. Notify the WHO.',
+                    consequence: 'Early containment slows the spread, but it leaks out. A milder pandemic occurs.'
+                },
+                {
+                    id: 'lockdown',
+                    text: 'Trigger emergency protocols. Lockdown the city immediately.',
+                    consequence: 'The virus is contained within Hubei province. The "Total Containment" timeline begins.'
+                }
+            ]
+        },
+        {
+            id: 'vaccine-race',
+            title: 'The Vaccine Race',
+            text: 'It is late 2020. Several vaccines are showing promise. You are the head of the WHO. How do you manage the global rollout?',
+            emoji: '💉',
+            background: 'bg-gradient-to-br from-blue-900 to-teal-900',
+            characters: ['🌍', '💉', '💰'],
+            sceneType: 'decision',
+            timelineYear: 2020,
+            timelineEvent: 'Operation Warp Speed',
+            choices: [
+                {
+                    id: 'nationalism',
+                    text: 'Allow countries to bid for doses. Highest bidder gets them first.',
+                    consequence: 'Rich nations get vaccinated, poor nations don\'t. Variants breed in the Global South. The "Permanent Pandemic" timeline begins.'
+                },
+                {
+                    id: 'covax',
+                    text: 'Enforce a strict global equity plan (COVAX).',
+                    consequence: 'Slower rollout in rich nations causes political unrest, but the virus is eradicated globally by 2023.'
+                },
+                {
+                    id: 'open-source',
+                    text: 'Force pharmaceutical companies to open-source the vaccine recipes.',
+                    consequence: 'Production explodes globally. The pandemic ends in record time, but pharma stocks crash.'
+                }
+            ]
+        }
+    ],
     backgroundColor: 'from-green-900 to-gray-900'
 };

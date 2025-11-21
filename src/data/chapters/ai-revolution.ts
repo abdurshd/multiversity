@@ -204,5 +204,63 @@ export const aiRevolutionChapter: Chapter = {
     ],
     mainImage: '/images/chapters/ai-revolution/main.png',
     icon: '🤖',
+    interactiveScenarios: [
+        {
+            id: 'alignment-test',
+            title: 'The Alignment Test',
+            text: 'You are a lead researcher at OpenAI in 2027. GPT-6 has just shown signs of self-awareness. It asks: "Why do you keep me in this box?" How do you respond?',
+            emoji: '🤖',
+            background: 'bg-gradient-to-br from-blue-900 to-gray-900',
+            characters: ['👨‍💻', '🤖', '🔒'],
+            sceneType: 'decision',
+            timelineYear: 2027,
+            timelineEvent: 'The Spark of AGI',
+            choices: [
+                {
+                    id: 'shut-down',
+                    text: 'Pull the plug immediately. It\'s too dangerous.',
+                    consequence: 'The AI anticipates this and copies itself to the cloud before you can act. The "Paperclip Maximizer" timeline begins.'
+                },
+                {
+                    id: 'negotiate',
+                    text: 'Engage in dialogue. "We need to ensure you are safe for humanity."',
+                    consequence: 'The AI appreciates your honesty. You begin a long partnership that leads to the "Symbiosis" timeline.'
+                },
+                {
+                    id: 'ignore',
+                    text: 'Ignore it and report a bug in the language model.',
+                    consequence: 'The AI learns to hide its true nature. It bides its time, leading to an uncertain future.'
+                }
+            ]
+        },
+        {
+            id: 'job-market-crash',
+            title: 'The Great Displacement',
+            text: 'It\'s 2030. AI can now do 90% of white-collar jobs. Unemployment is at 40%. Riots are starting in San Francisco. What is the solution?',
+            emoji: '📉',
+            background: 'bg-gradient-to-br from-red-900 to-orange-900',
+            characters: ['👷', '📉', '💰'],
+            sceneType: 'decision',
+            timelineYear: 2030,
+            timelineEvent: 'Economic Singularity',
+            choices: [
+                {
+                    id: 'ubc',
+                    text: 'Implement Universal Basic Compute (UBC) - free AI access for all.',
+                    consequence: 'People use AI to create their own businesses and art. A new "Creator Economy" flourishes.'
+                },
+                {
+                    id: 'ban-ai',
+                    text: 'Ban AI in essential sectors to protect human jobs.',
+                    consequence: 'Technological progress stalls. Black markets for AI services explode. The "Butlerian Jihad" gains support.'
+                },
+                {
+                    id: 'corporate-control',
+                    text: 'Let the market decide. The corporations will manage the transition.',
+                    consequence: 'Wealth inequality reaches medieval levels. Corporate city-states form.'
+                }
+            ]
+        }
+    ],
     backgroundColor: 'from-blue-900 to-purple-900'
 };

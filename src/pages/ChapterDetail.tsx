@@ -191,7 +191,7 @@ const ChapterDetail: React.FC = () => {
       {/* Hero Section */}
       <section className={`relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br ${chapter.backgroundColor} overflow-hidden`}>
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <ParticleSystem 
+        <ParticleSystem
           particleCount={particleTheme.particleCount}
           colors={particleTheme.colors}
           speed={particleTheme.speed}
@@ -217,7 +217,7 @@ const ChapterDetail: React.FC = () => {
             <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 px-4">
               {chapter.description}
             </p>
-            
+
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base lg:text-lg">
               <div className="flex items-center space-x-2">
                 <Calendar className="w-5 h-5" />
@@ -366,10 +366,10 @@ const ChapterDetail: React.FC = () => {
                     >
                       {selectedCharacter.name.charAt(0)}
                     </motion.div>
-                    
+
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{selectedCharacter.name}</h3>
                     <p className="text-blue-400 mb-4">{selectedCharacter.role}</p>
-                    
+
                     <div className="bg-slate-700 rounded-lg p-4 mb-6">
                       <p className="text-sm text-gray-400 mb-2">
                         {selectedCharacter.born} - {selectedCharacter.died || 'Present'}
@@ -378,7 +378,7 @@ const ChapterDetail: React.FC = () => {
                         {selectedCharacter.description}
                       </p>
                     </div>
-                    
+
                     <motion.button
                       onClick={() => setSelectedCharacter(null)}
                       className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-colors"
@@ -408,7 +408,7 @@ const ChapterDetail: React.FC = () => {
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">{chapter.divergencePoint}</h3>
               <p className="text-base sm:text-lg text-white opacity-90">
-                This pivotal moment in {chapter.divergenceYear} created multiple possible paths for history. 
+                This pivotal moment in {chapter.divergenceYear} created multiple possible paths for history.
                 Explore how different decisions and circumstances could have led to entirely different worlds.
               </p>
             </div>
@@ -440,8 +440,17 @@ const ChapterDetail: React.FC = () => {
                 onClick={() => setSelectedTimeline(timeline.id)}
               >
                 <div className="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                  <div className="h-4" style={{ backgroundColor: timeline.color }}></div>
-                  
+                  <div className="h-32 sm:h-40 relative overflow-hidden">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                      style={{ backgroundImage: `url(${timeline.image || '/images/placeholder.jpg'})` }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-90" />
+                    <div className="absolute bottom-0 left-0 p-4 w-full">
+                      <div className="h-1 w-12 rounded-full mb-2" style={{ backgroundColor: timeline.color }}></div>
+                    </div>
+                  </div>
+
                   <div className="p-4 sm:p-6">
                     <div className="flex items-center justify-between mb-4">
                       <div className="text-3xl">{timeline.icon}</div>
@@ -450,11 +459,11 @@ const ChapterDetail: React.FC = () => {
                         <span>{timeline.probability}%</span>
                       </div>
                     </div>
-                    
+
                     <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                       {timeline.title}
                     </h3>
-                    
+
                     <p className="text-gray-300 mb-4 line-clamp-3">
                       {timeline.description}
                     </p>
@@ -469,7 +478,7 @@ const ChapterDetail: React.FC = () => {
                         <MapPin className="w-4 h-4" />
                         <span className="text-sm">{timeline.keyEvents.length} Key Events</span>
                       </div>
-                      
+
                       <Link
                         to={`/timeline/${chapter.id}/${timeline.id}`}
                         className="flex items-center space-x-1 text-blue-400 hover:text-blue-300 transition-colors"
@@ -503,7 +512,7 @@ const ChapterDetail: React.FC = () => {
                 {(() => {
                   const timeline = chapter.alternativeTimelines.find(t => t.id === selectedTimeline);
                   if (!timeline) return null;
-                  
+
                   return (
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-6">
@@ -518,14 +527,14 @@ const ChapterDetail: React.FC = () => {
                           ✕
                         </button>
                       </div>
-                      
+
                       <p className="text-gray-300 mb-6">{timeline.description}</p>
-                      
+
                       <div className="bg-slate-700 rounded-lg p-4 mb-6">
                         <h4 className="text-lg font-semibold text-white mb-2">Present Day Status</h4>
                         <p className="text-gray-300 text-sm">{timeline.presentDayStatus}</p>
                       </div>
-                      
+
                       <div className="flex justify-between">
                         <button
                           onClick={() => setSelectedTimeline(null)}

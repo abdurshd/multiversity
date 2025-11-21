@@ -17,16 +17,20 @@ import {
 
 const LandingPage: React.FC = () => {
   const chapters = useMemo(() => [
-    { id: 'us-independence', title: 'US Independence (1776)', description: 'Revolutionary War alternatives', color: 'bg-red-600', icon: '🇺🇸', emoji: '⚔️' },
-    { id: 'french-revolution', title: 'French Revolution (1789)', description: 'Paths not taken in France', color: 'bg-blue-600', icon: '🇫🇷', emoji: '🗿' },
-    { id: 'lincoln-era', title: 'Lincoln Era (1860s)', description: 'Civil War alternate outcomes', color: 'bg-green-600', icon: '⚖️', emoji: '🎩' },
-    { id: 'russian-empire', title: 'Russian Empire (1721-1917)', description: 'Tsarist Russia alternatives', color: 'bg-purple-600', icon: '👑', emoji: '🐻' },
-    { id: 'lenin-revolution', title: 'Lenin Revolution (1917)', description: 'Bolshevik victory alternatives', color: 'bg-red-700', icon: '⚡', emoji: '🚩' },
-    { id: 'hitler-rise', title: 'Hitler\'s Rise (1920s-1940s)', description: 'Preventing or changing WWII', color: 'bg-gray-700', icon: '⚠️', emoji: '🔨' },
-    { id: 'world-war-1', title: 'World War I (1914-1918)', description: 'The Great War reimagined', color: 'bg-yellow-700', icon: '⚔️', emoji: '🎖️' },
-    { id: 'world-war-2', title: 'World War II (1939-1945)', description: 'WWII alternative outcomes', color: 'bg-orange-600', icon: '🌍', emoji: '✈️' },
-    { id: 'cold-war', title: 'Cold War (1947-1991)', description: 'Superpower rivalry alternatives', color: 'bg-indigo-600', icon: '❄️', emoji: '🚀' },
-    { id: 'ussr-collapse', title: 'USSR Collapse (1991)', description: 'Soviet Union\'s different endings', color: 'bg-pink-600', icon: '🔨', emoji: '🧱' },
+    { id: 'timur-legacy', title: 'Timur\'s Legacy (14th Century)', description: 'The last great nomadic conqueror', color: 'bg-red-900', icon: '🗡️', emoji: '🏰', image: '/images/chapters/timur-legacy/main.png' },
+    { id: 'us-independence', title: 'US Independence (1776)', description: 'Revolutionary War alternatives', color: 'bg-red-600', icon: '🇺🇸', emoji: '⚔️', image: '/images/chapters/us-independence/main.png' },
+    { id: 'french-revolution', title: 'French Revolution (1789)', description: 'Paths not taken in France', color: 'bg-blue-600', icon: '🇫🇷', emoji: '🗿', image: '/images/chapters/french-revolution/main.png' },
+    { id: 'lincoln-era', title: 'Lincoln Era (1860s)', description: 'Civil War alternate outcomes', color: 'bg-green-600', icon: '⚖️', emoji: '🎩', image: '/images/chapters/lincoln-era/main.png' },
+    { id: 'russian-empire', title: 'Russian Empire (1721-1917)', description: 'Tsarist Russia alternatives', color: 'bg-purple-600', icon: '👑', emoji: '🐻', image: '/images/chapters/russian-empire/main.png' },
+    { id: 'lenin-revolution', title: 'Lenin Revolution (1917)', description: 'Bolshevik victory alternatives', color: 'bg-red-700', icon: '⚡', emoji: '🚩', image: '/images/chapters/lenin-revolution/main.png' },
+    { id: 'hitler-rise', title: 'Hitler\'s Rise (1920s-1940s)', description: 'Preventing or changing WWII', color: 'bg-gray-700', icon: '⚠️', emoji: '🔨', image: '/images/chapters/hitler-rise/main.png' },
+    { id: 'world-war-1', title: 'World War I (1914-1918)', description: 'The Great War reimagined', color: 'bg-yellow-700', icon: '⚔️', emoji: '🎖️', image: '/images/chapters/world-war-1/main.png' },
+    { id: 'world-war-2', title: 'World War II (1939-1945)', description: 'WWII alternative outcomes', color: 'bg-orange-600', icon: '🌍', emoji: '✈️', image: '/images/chapters/world-war-2/main.png' },
+    { id: 'cold-war', title: 'Cold War (1947-1991)', description: 'Superpower rivalry alternatives', color: 'bg-indigo-600', icon: '❄️', emoji: '🚀', image: '/images/chapters/cold-war/main.png' },
+    { id: 'ussr-collapse', title: 'USSR Collapse (1991)', description: 'Soviet Union\'s different endings', color: 'bg-pink-600', icon: '🔨', emoji: '🧱', image: '/images/chapters/ussr-collapse/main.png' },
+    { id: 'covid-pandemic', title: 'COVID-19 Pandemic (2019)', description: 'Modern crisis alternatives', color: 'bg-teal-600', icon: '🦠', emoji: '😷', image: '/images/chapters/covid-pandemic/main.png' },
+    { id: 'ai-revolution', title: 'AI Revolution (2020s)', description: 'The future of intelligence', color: 'bg-blue-900', icon: '🤖', emoji: '🧠', image: '/images/chapters/ai-revolution/main.png' },
+    { id: 'future-earth', title: 'Future Earth (2100+)', description: 'Post-human scenarios', color: 'bg-slate-800', icon: '🚀', emoji: '🌌', image: '/images/chapters/future-earth/main.png' },
   ], []);
 
   const heroStats = useMemo(() => [
@@ -241,16 +245,25 @@ const LandingPage: React.FC = () => {
                 className="group"
               >
                 <Link to={`/chapter/${chapter.id}`}>
-                  <div className={`${chapter.color} p-4 sm:p-6 rounded-lg h-40 sm:h-48 flex flex-col justify-between text-white transition-transform group-hover:scale-105 shadow-lg`}>
-                    <div>
-                      <h3 className="text-sm sm:text-lg font-semibold mb-2 line-clamp-2">
+                  <div className="relative p-4 sm:p-6 rounded-lg h-40 sm:h-48 flex flex-col justify-between text-white transition-transform group-hover:scale-105 shadow-lg overflow-hidden">
+                    {/* Background Image */}
+                    <div
+                      className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-700 group-hover:scale-110"
+                      style={{ backgroundImage: `url(${chapter.image})` }}
+                    />
+                    {/* Gradient Overlay */}
+                    <div className={`absolute inset-0 ${chapter.color} opacity-80 mix-blend-multiply z-10 transition-opacity group-hover:opacity-70`} />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
+
+                    <div className="relative z-20">
+                      <h3 className="text-sm sm:text-lg font-semibold mb-2 line-clamp-2 text-shadow-sm">
                         {chapter.title}
                       </h3>
-                      <p className="text-xs sm:text-sm opacity-90 line-clamp-3">
+                      <p className="text-xs sm:text-sm opacity-90 line-clamp-3 text-shadow-sm">
                         {chapter.description}
                       </p>
                     </div>
-                    <div className="text-xs sm:text-sm opacity-75">
+                    <div className="relative z-20 text-xs sm:text-sm opacity-75 font-medium">
                       10 timelines
                     </div>
                   </div>

@@ -16,6 +16,16 @@ interface ChapterSummary {
 
 const CHAPTERS: ChapterSummary[] = [
   {
+    id: 'timur-legacy',
+    title: 'Timur\'s Legacy',
+    period: '14th Century',
+    description: 'The last great nomadic conqueror and his empire',
+    keyEvents: ['Battle of Ankara', 'Invasion of China', 'Timurid Renaissance'],
+    alternativeCount: 10,
+    cardClass: 'bg-red-900',
+    image: '/images/chapters/timur-legacy/main.png'
+  },
+  {
     id: 'us-independence',
     title: 'US Independence',
     period: '1776',
@@ -23,7 +33,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Declaration of Independence', 'Revolutionary War', 'Constitutional Convention'],
     alternativeCount: 10,
     cardClass: 'bg-red-700',
-    image: '/images/independence.jpg'
+    image: '/images/chapters/us-independence/main.png'
   },
   {
     id: 'french-revolution',
@@ -33,7 +43,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Storming of Bastille', 'Reign of Terror', 'Rise of Napoleon'],
     alternativeCount: 10,
     cardClass: 'bg-blue-700',
-    image: '/images/french-revolution.jpg'
+    image: '/images/chapters/french-revolution/main.png'
   },
   {
     id: 'lincoln-era',
@@ -43,7 +53,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Lincoln Election', 'Civil War', 'Emancipation Proclamation'],
     alternativeCount: 10,
     cardClass: 'bg-green-700',
-    image: '/images/lincoln.jpg'
+    image: '/images/chapters/lincoln-era/main.png'
   },
   {
     id: 'russian-empire',
@@ -53,7 +63,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Peter the Great', 'Catherine II', 'Crimean War'],
     alternativeCount: 10,
     cardClass: 'bg-purple-700',
-    image: '/images/russian-empire.jpg'
+    image: '/images/chapters/russian-empire/main.png'
   },
   {
     id: 'lenin-revolution',
@@ -63,7 +73,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['October Revolution', 'Civil War', 'War Communism'],
     alternativeCount: 10,
     cardClass: 'bg-red-800',
-    image: '/images/lenin.jpg'
+    image: '/images/chapters/lenin-revolution/main.png'
   },
   {
     id: 'hitler-rise',
@@ -73,7 +83,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Beer Hall Putsch', 'Rise to Power', 'World War II'],
     alternativeCount: 10,
     cardClass: 'bg-gray-700',
-    image: '/images/hitler.jpg'
+    image: '/images/chapters/hitler-rise/main.png'
   },
   {
     id: 'world-war-1',
@@ -83,7 +93,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Assassination of Archduke', 'Trench Warfare', 'Treaty of Versailles'],
     alternativeCount: 10,
     cardClass: 'bg-yellow-700',
-    image: '/images/wwi.jpg'
+    image: '/images/chapters/world-war-1/main.png'
   },
   {
     id: 'world-war-2',
@@ -93,7 +103,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Invasion of Poland', 'Pearl Harbor', 'D-Day'],
     alternativeCount: 10,
     cardClass: 'bg-orange-700',
-    image: '/images/wwii.jpg'
+    image: '/images/chapters/world-war-2/main.png'
   },
   {
     id: 'cold-war',
@@ -103,7 +113,7 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Iron Curtain', 'Cuban Missile Crisis', 'Berlin Wall'],
     alternativeCount: 10,
     cardClass: 'bg-indigo-700',
-    image: '/images/cold-war.jpg'
+    image: '/images/chapters/cold-war/main.png'
   },
   {
     id: 'ussr-collapse',
@@ -113,7 +123,37 @@ const CHAPTERS: ChapterSummary[] = [
     keyEvents: ['Gorbachev Reforms', 'August Coup', 'Independence Declarations'],
     alternativeCount: 10,
     cardClass: 'bg-pink-700',
-    image: '/images/ussr-collapse.jpg'
+    image: '/images/chapters/ussr-collapse/main.png'
+  },
+  {
+    id: 'covid-pandemic',
+    title: 'COVID-19 Pandemic',
+    period: '2019',
+    description: 'Modern crisis and global response alternatives',
+    keyEvents: ['Wuhan Outbreak', 'Global Lockdowns', 'Vaccine Race'],
+    alternativeCount: 10,
+    cardClass: 'bg-teal-700',
+    image: '/images/chapters/covid-pandemic/main.png'
+  },
+  {
+    id: 'ai-revolution',
+    title: 'AI Revolution',
+    period: '2020s',
+    description: 'The rise of artificial intelligence and future paths',
+    keyEvents: ['GPT-4 Release', 'AGI Breakthrough', 'Regulation Debates'],
+    alternativeCount: 10,
+    cardClass: 'bg-blue-900',
+    image: '/images/chapters/ai-revolution/main.png'
+  },
+  {
+    id: 'future-earth',
+    title: 'Future Earth',
+    period: '2100+',
+    description: 'Long-term future scenarios for humanity and the planet',
+    keyEvents: ['Climate Tipping Points', 'Space Colonization', 'Post-Humanism'],
+    alternativeCount: 10,
+    cardClass: 'bg-slate-800',
+    image: '/images/chapters/future-earth/main.png'
   },
 ];
 
@@ -141,17 +181,17 @@ const ChaptersPage: React.FC = () => {
   const filteredChapters = useMemo(() => {
     return CHAPTERS.filter(chapter => {
       const matchesSearch = chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                           chapter.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                           chapter.keyEvents.some(event => event.toLowerCase().includes(searchQuery.toLowerCase()));
-      
+        chapter.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        chapter.keyEvents.some(event => event.toLowerCase().includes(searchQuery.toLowerCase()));
+
       if (selectedPeriod === 'all') return matchesSearch;
-      
+
       const yearMatch = chapter.period.match(/\d{4}/);
       if (yearMatch) {
         const year = parseInt(yearMatch[0]);
         const chapterPeriod = year < 1800 ? '18th Century' :
-                             year < 1900 ? '19th Century' :
-                             year < 2000 ? '20th Century' : '21st Century';
+          year < 1900 ? '19th Century' :
+            year < 2000 ? '20th Century' : '21st Century';
         return matchesSearch && chapterPeriod === selectedPeriod;
       }
       return matchesSearch && selectedPeriod === 'Other';
@@ -186,7 +226,7 @@ const ChaptersPage: React.FC = () => {
         >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Historical Chapters</h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4 mb-8">
-            Explore 10 pivotal moments in history, each with 10 alternative timelines 
+            Explore 10 pivotal moments in history, each with 10 alternative timelines
             showing how different choices could have shaped our world.
           </p>
 
@@ -216,11 +256,10 @@ const ChaptersPage: React.FC = () => {
                 <button
                   key={period}
                   onClick={() => setSelectedPeriod(period)}
-                  className={`px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-colors ${
-                    selectedPeriod === period
-                      ? 'bg-blue-600 text-white shadow-lg'
-                      : 'bg-slate-900/60 text-slate-200 hover:bg-slate-800'
-                  }`}
+                  className={`px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-colors ${selectedPeriod === period
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-slate-900/60 text-slate-200 hover:bg-slate-800'
+                    }`}
                 >
                   {period === 'all' ? 'All Periods' : period}
                 </button>
@@ -265,11 +304,16 @@ const ChaptersPage: React.FC = () => {
               >
                 <Link to={`/chapter/${chapter.id}`}>
                   <div className="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                    <div className={`h-40 sm:h-48 ${chapter.cardClass} relative`}>
-                      <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <div className={`h-40 sm:h-48 relative overflow-hidden`}>
+                      <div
+                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style={{ backgroundImage: `url(${chapter.image})` }}
+                      />
+                      <div className={`absolute inset-0 ${chapter.cardClass} opacity-80 mix-blend-multiply transition-opacity group-hover:opacity-70`} />
+                      <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center relative z-10">
                         <div className="text-center text-white">
-                          <Calendar className="w-12 h-12 mx-auto mb-2" />
-                          <div className="text-xl sm:text-2xl font-bold">{chapter.period}</div>
+                          <Calendar className="w-12 h-12 mx-auto mb-2 drop-shadow-lg" />
+                          <div className="text-xl sm:text-2xl font-bold drop-shadow-md">{chapter.period}</div>
                         </div>
                       </div>
                     </div>
@@ -278,7 +322,7 @@ const ChaptersPage: React.FC = () => {
                       <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                         {chapter.title}
                       </h3>
-                      
+
                       <p className="text-sm sm:text-base text-gray-300 mb-4 line-clamp-2">
                         {chapter.description}
                       </p>
@@ -305,7 +349,7 @@ const ChaptersPage: React.FC = () => {
                           <GitBranch className="w-4 h-4" />
                           <span className="text-xs sm:text-sm">{chapter.alternativeCount} Alternative Timelines</span>
                         </div>
-                        
+
                         <div className="text-blue-400 font-semibold group-hover:text-blue-300 transition-colors text-sm sm:text-base">
                           Explore →
                         </div>
@@ -351,7 +395,7 @@ const ChaptersPage: React.FC = () => {
             <Users className="w-10 h-10 sm:w-12 sm:h-12 text-blue-500 mx-auto mb-4" />
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2">Interactive Timeline Experience</h3>
             <p className="text-sm sm:text-base text-gray-300">
-              Each chapter contains detailed timelines with cause-and-effect visualizations, 
+              Each chapter contains detailed timelines with cause-and-effect visualizations,
               showing how small changes could have dramatically altered the course of history.
             </p>
           </div>

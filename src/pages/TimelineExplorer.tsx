@@ -27,7 +27,7 @@ const TimelineExplorer: React.FC = () => {
     if (chapterId && timelineId) {
       const foundChapter = getChapterById(chapterId);
       const foundTimeline = getTimelineById(chapterId, timelineId);
-      
+
       setChapter(foundChapter || null);
       setTimeline(foundTimeline || null);
     }
@@ -59,9 +59,14 @@ const TimelineExplorer: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black border-b border-white/10 py-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.35),_transparent_60%)]" />
-        <div className="relative max-w-7xl mx-auto px-6 space-y-8">
+      <section className="relative overflow-hidden bg-slate-950 border-b border-white/10 py-10 min-h-[400px] flex flex-col justify-end">
+        <div
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{ backgroundImage: `url(${timeline.image || '/images/placeholder.jpg'})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.35),_transparent_60%)] z-10 mix-blend-overlay" />
+        <div className="relative max-w-7xl mx-auto px-6 space-y-8 z-20">
           <Breadcrumb
             items={[
               { label: 'Chapters', path: '/chapters' },
@@ -85,13 +90,13 @@ const TimelineExplorer: React.FC = () => {
                 <p className="text-gray-300">{chapter.title} • {chapter.period}</p>
               </div>
             </div>
-            
+
             <div className="flex items-center space-x-4">
               <div className="text-right">
                 <div className="text-sm text-gray-400">Probability</div>
                 <div className="text-lg font-bold text-blue-300">{timeline.probability}%</div>
               </div>
-              <div 
+              <div
                 className="w-4 h-4 rounded-full"
                 style={{ backgroundColor: timeline.color }}
               ></div>
@@ -125,7 +130,7 @@ const TimelineExplorer: React.FC = () => {
           >
             <h2 className="text-xl font-bold text-white mb-4">Timeline Overview</h2>
             <p className="text-gray-300 mb-4">{timeline.description}</p>
-            
+
             <div className="bg-yellow-500 rounded-2xl p-5 mb-4">
               <div className="flex items-center space-x-2 mb-2">
                 <Zap className="w-5 h-5 text-white" />
@@ -169,7 +174,7 @@ const TimelineExplorer: React.FC = () => {
             <h2 className="text-2xl font-bold text-white mb-6 text-center">
               Timeline Overview
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Key Events */}
               <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
@@ -179,7 +184,7 @@ const TimelineExplorer: React.FC = () => {
                 </div>
                 <div className="space-y-3">
                   {timeline.keyEvents.slice(0, 4).map((event) => (
-                    <div 
+                    <div
                       key={event.id}
                       className="rounded-xl border border-white/10 bg-slate-900/50 p-4 cursor-pointer hover:border-blue-500/50 transition"
                       onClick={() => setSelectedEvent(event)}
@@ -330,7 +335,7 @@ const TimelineExplorer: React.FC = () => {
                   ✕
                 </button>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center space-x-4 text-sm text-gray-400">
                   <div className="flex items-center space-x-1">
@@ -342,14 +347,14 @@ const TimelineExplorer: React.FC = () => {
                     <span>{selectedEvent.type}</span>
                   </div>
                 </div>
-                
+
                 <p className="text-gray-300">{selectedEvent.description}</p>
-                
+
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                   <h4 className="text-sm font-semibold text-white mb-2">Historical Impact</h4>
                   <p className="text-sm text-gray-300">{selectedEvent.impact}</p>
                 </div>
-                
+
                 {selectedEvent.relatedFigures.length > 0 && (
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <h4 className="text-sm font-semibold text-white mb-2">Related Figures</h4>
@@ -357,7 +362,7 @@ const TimelineExplorer: React.FC = () => {
                       {selectedEvent.relatedFigures.map(figureId => {
                         const figure = chapter.keyFigures.find(f => f.id === figureId);
                         return figure ? (
-                          <span 
+                          <span
                             key={figureId}
                             className="bg-blue-600 text-white px-2 py-1 rounded-sm text-xs"
                           >
@@ -368,7 +373,7 @@ const TimelineExplorer: React.FC = () => {
                     </div>
                   </div>
                 )}
-                
+
                 <div className="flex justify-end">
                   <button
                     onClick={() => setSelectedEvent(null)}

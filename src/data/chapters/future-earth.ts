@@ -205,5 +205,63 @@ export const futureEarthChapter: Chapter = {
     ],
     mainImage: '/images/chapters/future-earth/main.png',
     icon: '🔮',
+    interactiveScenarios: [
+        {
+            id: 'great-filter',
+            title: 'The Great Filter',
+            text: 'It is 2100. The global temperature has risen 3°C. Resources are scarce. Tensions between superpowers are at breaking point. A rogue general suggests a preemptive strike. What is the path forward?',
+            emoji: '🌡️',
+            background: 'bg-gradient-to-br from-red-900 to-black',
+            characters: ['🌍', '☢️', '🕊️'],
+            sceneType: 'decision',
+            timelineYear: 2100,
+            timelineEvent: 'The Crisis of the 22nd Century',
+            choices: [
+                {
+                    id: 'nuclear-war',
+                    text: 'Launch the strike. Better us than them.',
+                    consequence: 'Mutually Assured Destruction. The "Silent Earth" timeline begins.'
+                },
+                {
+                    id: 'unification',
+                    text: 'Surrender sovereignty to a Global Federation to manage resources.',
+                    consequence: 'Painful transition, but war is averted. Humanity unites to reach the stars. The "Star Trek" timeline begins.'
+                },
+                {
+                    id: 'upload',
+                    text: 'Abandon the physical world. Upload humanity to the cloud.',
+                    consequence: 'Physical bodies are discarded. We become the "Dyson Swarm".'
+                }
+            ]
+        },
+        {
+            id: 'galactic-council',
+            title: 'The Galactic Council',
+            text: 'It is 3000 AD. Humanity has reached the stars. An alien probe arrives, inviting us to join the Galactic Council. But there is a catch: we must give up our aggressive tendencies.',
+            emoji: '👽',
+            background: 'bg-gradient-to-br from-indigo-900 to-purple-900',
+            characters: ['👨‍🚀', '👽', '📜'],
+            sceneType: 'decision',
+            timelineYear: 3000,
+            timelineEvent: 'Admission to the Galaxy',
+            choices: [
+                {
+                    id: 'join',
+                    text: 'Accept the terms. Peace is the only way.',
+                    consequence: 'We become a respected elder race. The "Federation" timeline is solidified.'
+                },
+                {
+                    id: 'refuse',
+                    text: 'Refuse. We will not be tamed. We will conquer.',
+                    consequence: 'We become the scourge of the galaxy. A Great War begins.'
+                },
+                {
+                    id: 'isolate',
+                    text: 'Hide. Build a shield around the solar system.',
+                    consequence: 'We become a "Hermit Kingdom" star system, safe but stagnant.'
+                }
+            ]
+        }
+    ],
     backgroundColor: 'from-indigo-900 to-black'
 };

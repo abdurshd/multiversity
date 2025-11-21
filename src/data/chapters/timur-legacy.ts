@@ -217,5 +217,63 @@ export const timurLegacyChapter: Chapter = {
     ],
     mainImage: '/images/chapters/timur-legacy/main.png',
     icon: '🗡️',
+    interactiveScenarios: [
+        {
+            id: 'otrar-crisis',
+            title: 'The Winter at Otrar',
+            text: 'It is February 1405. The Great Emir Timur lies dying in his tent at Otrar. The Chinese border is weeks away. His physicians offer a risky new treatment. What do you advise?',
+            emoji: '❄️',
+            background: 'bg-gradient-to-br from-red-900 to-gray-900',
+            characters: ['👑', '💊', '❄️'],
+            sceneType: 'decision',
+            timelineYear: 1405,
+            timelineEvent: 'Death of Timur',
+            choices: [
+                {
+                    id: 'risky-treatment',
+                    text: 'Administer the experimental elixir. It might kill him, or save him.',
+                    consequence: 'The elixir works! Timur recovers and leads his army into China. The "Immortal Emir" timeline begins.'
+                },
+                {
+                    id: 'rest',
+                    text: 'Let him rest and prepare for the worst. Call the scribes.',
+                    consequence: 'Timur dies, but uses his last breath to dictate a clear will. The "Unified Succession" timeline begins.'
+                },
+                {
+                    id: 'turn-back',
+                    text: 'Advise the generals to turn back West. The omen is bad.',
+                    consequence: 'The army abandons the China campaign and returns to ravage Europe. The "Western Campaign" timeline begins.'
+                }
+            ]
+        },
+        {
+            id: 'succession-crisis',
+            title: 'The Council of War',
+            text: 'Timur is dead. The army is leaderless. The princes are drawing their swords. You are the Grand Vizier. Who do you support?',
+            emoji: '⚔️',
+            background: 'bg-gradient-to-br from-yellow-900 to-red-900',
+            characters: ['🤴', '📜', '🗡️'],
+            sceneType: 'decision',
+            timelineYear: 1405,
+            timelineEvent: 'The War of Succession',
+            choices: [
+                {
+                    id: 'pir-muhammad',
+                    text: 'Support Pir Muhammad, Timur\'s designated heir.',
+                    consequence: 'He is weak and distant. The empire fractures immediately.'
+                },
+                {
+                    id: 'shah-rukh',
+                    text: 'Support Shah Rukh, the intellectual son.',
+                    consequence: 'He secures Herat and begins a cultural golden age, but loses the military edge.'
+                },
+                {
+                    id: 'khalil-sultan',
+                    text: 'Support Khalil Sultan, the charismatic warrior.',
+                    consequence: 'He seizes Samarkand but squanders the treasury on love and war.'
+                }
+            ]
+        }
+    ],
     backgroundColor: 'from-red-900 to-yellow-900'
 };
