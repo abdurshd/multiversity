@@ -9,9 +9,14 @@ import { hitlerRiseChapter } from './chapters/hitler-rise';
 import { worldWarTwoChapter } from './chapters/world-war-2';
 import { coldWarChapter } from './chapters/cold-war';
 import { ussrCollapseChapter } from './chapters/ussr-collapse';
+import { timurLegacyChapter } from './chapters/timur-legacy';
+import { covidPandemicChapter } from './chapters/covid-pandemic';
+import { aiRevolutionChapter } from './chapters/ai-revolution';
+import { futureEarthChapter } from './chapters/future-earth';
 
 // Central data management for all chapters
 export const allChapters: Chapter[] = [
+  timurLegacyChapter, // Chronologically first
   usIndependenceChapter,
   frenchRevolutionChapter,
   lincolnEraChapter,
@@ -22,7 +27,9 @@ export const allChapters: Chapter[] = [
   worldWarTwoChapter,
   coldWarChapter,
   ussrCollapseChapter,
-  // All 10 chapters are now complete!
+  covidPandemicChapter,
+  aiRevolutionChapter,
+  futureEarthChapter
 ];
 
 // Helper functions for data access
@@ -36,7 +43,7 @@ export const getTimelineById = (chapterId: string, timelineId: string) => {
 };
 
 export const getAllTimelines = () => {
-  return allChapters.flatMap(chapter => 
+  return allChapters.flatMap(chapter =>
     chapter.alternativeTimelines.map(timeline => ({
       ...timeline,
       chapterId: chapter.id,
@@ -51,10 +58,10 @@ export const getChaptersByPeriod = () => {
 
 export const searchChapters = (query: string) => {
   const lowercaseQuery = query.toLowerCase();
-  return allChapters.filter(chapter => 
+  return allChapters.filter(chapter =>
     chapter.title.toLowerCase().includes(lowercaseQuery) ||
     chapter.description.toLowerCase().includes(lowercaseQuery) ||
-    chapter.keyFigures.some(figure => 
+    chapter.keyFigures.some(figure =>
       figure.name.toLowerCase().includes(lowercaseQuery)
     )
   );
@@ -65,15 +72,19 @@ export const getRandomTimeline = () => {
   return allTimelines[Math.floor(Math.random() * allTimelines.length)];
 };
 
-export { 
-  usIndependenceChapter, 
-  frenchRevolutionChapter, 
-  lincolnEraChapter, 
+export {
+  usIndependenceChapter,
+  frenchRevolutionChapter,
+  lincolnEraChapter,
   russianEmpireChapter,
   leninRevolutionChapter,
   worldWarOneChapter,
   hitlerRiseChapter,
   worldWarTwoChapter,
   coldWarChapter,
-  ussrCollapseChapter
+  ussrCollapseChapter,
+  timurLegacyChapter,
+  covidPandemicChapter,
+  aiRevolutionChapter,
+  futureEarthChapter
 };

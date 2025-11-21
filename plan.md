@@ -3,14 +3,13 @@
 ## Project Overview
 **Name:** Multiversity - Interactive Alternate History Explorer
 **Type:** Single-page web application with immersive storytelling
-**Purpose:** Explore 10 major historical events with 10 alternative timelines each, from 18th century to present day
+**Purpose:** Explore major historical events with alternative timelines, from the 14th century to the distant future.
 
 ## Core Concept
-- 10 main historical chapters (pivotal moments in history)
-- Each chapter has 10 alternative timeline branches
-- Each timeline continues from the divergence point to present day (2025)
-- Highly interactive, animated, and visually rich experience
-- Timeline navigation with cause-and-effect visualizations
+- **14 Main Chapters** (Pivotal moments in history and future)
+- **3-5 Alternative Timeline Branches** per chapter (Focused, high-quality narratives)
+- **Interactive Experience:** Cause-and-effect visualizations, "Butterfly Effect" tracking
+- **Time Range:** 1370 AD to Post-Human Era
 
 ---
 
@@ -49,449 +48,227 @@ multiversity/
 └── docs/
 ```
 
+## Chapters & Alternative Timelines
 
-## 10 Main Chapters with Alternative Timelines
+### Chapter 1: The Iron Emir - Timur's Legacy (1370-1450)
+**Historical Pivot:** Death of Emir Timur (Tamerlane) in 1405.
+**Context:** Timur created a massive empire in Central Asia but it fragmented after his death.
 
-### Chapter 1: US Independence (1776)
-**Historical Pivot:** Declaration of Independence signing
+**Alternative Timelines:**
+1.  **The Immortal Emir Timeline**
+    - **Divergence:** Timur survives his illness in 1405 and lives for another 20 years.
+    - **Outcome:** He successfully conquers China (Ming Dynasty), creates a unified pan-Asian empire, and prevents the rise of the Ottoman Empire by crushing them completely. Central Asia becomes the center of the world's economy and culture for centuries.
+2.  **Unified Succession Timeline**
+    - **Divergence:** Timur establishes a clear, stable succession plan that is respected.
+    - **Outcome:** The Timurid Empire does not fracture. It evolves into a stable, bureaucratic state similar to Rome, dominating the Silk Road and stifling European colonial expansion by controlling all trade routes to the East.
+3.  **The Western Campaign Timeline**
+    - **Divergence:** Instead of turning East to China, Timur turns West again to finish off Europe.
+    - **Outcome:** Timurid forces invade Eastern Europe, delaying the Renaissance and potentially Islamizing large parts of the continent.
 
-**10 Alternative Timelines:**
-1. **British Victory Timeline** - Revolutionary War fails, America remains British colony until 1850s
-2. **French America Timeline** - France directly intervenes, America becomes French protectorate
-3. **Confederated States Timeline** - Loose confederation, no strong federal government
-4. **Monarchy Timeline** - George Washington accepts crown, American constitutional monarchy
-5. **Earlier Independence Timeline** - Revolution succeeds in 1770, different founding fathers
-6. **Gradual Independence Timeline** - Peaceful negotiated independence over 20 years
-7. **Native Alliance Timeline** - Strong indigenous-colonial alliance changes power dynamics
-8. **Spanish Intervention Timeline** - Spain plays major role, different territorial boundaries
-9. **Economic Independence Only Timeline** - Political union remains, economic independence achieved
-10. **Failed Unity Timeline** - Individual colonies become separate nations
+### Chapter 2: US Independence (1776)
+**Historical Pivot:** Declaration of Independence signing.
 
-### Chapter 2: French Revolution (1789)
-**Historical Pivot:** Storming of the Bastille
+**Alternative Timelines:**
+1.  **British Victory Timeline**
+    - **Divergence:** Washington is captured in 1776.
+    - **Outcome:** The rebellion is crushed. America remains a British Dominion (like Canada). Slavery is abolished earlier (1833), but American industrial power is harnessed solely for the British Empire, making it an unstoppable global hegemon.
+2.  **The Monarchy of Washington Timeline**
+    - **Divergence:** Washington accepts the proposal to become King.
+    - **Outcome:** America becomes a constitutional monarchy. The "Kingdom of Columbia" is more stable but less democratic, eventually evolving into a rigid class-based society allied with European royals.
+3.  **The Franco-American Protectorate Timeline**
+    - **Divergence:** The US relies too heavily on French aid and debt.
+    - **Outcome:** The weak new nation becomes a satellite state of Napoleonic France, dragged into European wars and adopting a French-style legal and political system.
 
-**10 Alternative Timelines:**
-1. **Constitutional Monarchy Timeline** - Louis XVI accepts reforms, gradual democratization
-2. **Robespierre Lives Timeline** - Reign of Terror continues, different European response
-3. **Girondist Victory Timeline** - Moderate republicans win, less radical revolution
-4. **Royalist Counter-Revolution Timeline** - Monarchy restored with foreign help in 1792
-5. **Early Napoleon Timeline** - Bonaparte rises during revolution, not after
-6. **Peaceful Reform Timeline** - Gradual reform without violent revolution
-7. **Church Alliance Timeline** - Catholic Church sides with revolutionaries
-8. **Regional Fragmentation Timeline** - France splits into multiple republics
-9. **European Revolution Timeline** - Revolution spreads faster across Europe
-10. **Economic Revolution Only Timeline** - Social changes without political upheaval
+### Chapter 3: French Revolution (1789)
+**Historical Pivot:** Storming of the Bastille.
 
-### Chapter 3: Life of Abraham Lincoln (1809-1865)
-**Historical Pivot:** Lincoln's election and Civil War decisions
-
-**10 Alternative Timelines:**
-1. **Lincoln Survives Timeline** - No assassination, Reconstruction under Lincoln
-2. **Peaceful Abolition Timeline** - Slavery ended through compensation, no civil war
-3. **Confederacy Wins Timeline** - South achieves independence, two American nations
-4. **Earlier Presidency Timeline** - Lincoln elected in 1856, different approach to slavery
-5. **Compromise Timeline** - Missouri Compromise extended, delayed conflict
-6. **Radical Republican Timeline** - More aggressive anti-slavery stance from start
-7. **Economic Abolition Timeline** - Industrial revolution makes slavery economically obsolete faster
-8. **International Intervention Timeline** - European powers intervene in Civil War
-9. **Gradual Secession Timeline** - States leave Union gradually over decades
-10. **Constitutional Convention Timeline** - New constitutional convention in 1860s
+**Alternative Timelines:**
+1.  **Constitutional Monarchy Timeline**
+    - **Divergence:** Louis XVI accepts reforms early and honestly.
+    - **Outcome:** France becomes a stable constitutional monarchy like Britain. No Reign of Terror, no Napoleon. Europe avoids 20 years of war, but democratic ideals spread much slower.
+2.  **The Radical Republic Timeline**
+    - **Divergence:** Robespierre survives and purges his enemies.
+    - **Outcome:** The "Republic of Virtue" becomes a proto-totalitarian state. It exports radical revolution violently, causing a "Cold War" between Republican France and Monarchist Europe 150 years early.
+3.  **The Early Bonapartist Timeline**
+    - **Divergence:** Napoleon seizes power in 1792, not 1799.
+    - **Outcome:** A more youthful and aggressive Napoleon conquers Europe before coalitions can form, establishing a lasting "United States of Europe" under French hegemony.
 
 ### Chapter 4: Russian Empire & Central Asia (1721-1917)
-**Historical Pivot:** Peter the Great's westernization and expansion policies
+**Historical Pivot:** Peter the Great's westernization.
 
-**10 Alternative Timelines:**
-1. **Democratic Russia Timeline** - Constitutional monarchy develops earlier
-2. **Chinese Alliance Timeline** - Russia allies with Qing Dynasty against Western powers
-3. **Islamic Russia Timeline** - Strong Central Asian influence shapes Russian culture
-4. **Siberian Independence Timeline** - Eastern territories become autonomous
-5. **Ottoman Alliance Timeline** - Russia-Ottoman cooperation changes Middle East
-6. **Early Industrialization Timeline** - Russia industrializes before Western Europe
-7. **Decentralized Empire Timeline** - Federal structure with autonomous regions
-8. **Pacific Power Timeline** - Russia becomes dominant Pacific naval power
-9. **Revolutionary Success 1825 Timeline** - Decembrist Revolt succeeds
-10. **Mongol Revival Timeline** - Central Asian peoples unite under Russian protection
+**Alternative Timelines:**
+1.  **The Asian Pivot Timeline**
+    - **Divergence:** Peter the Great focuses on India and China instead of Europe.
+    - **Outcome:** St. Petersburg is never built. The capital moves to Omsk. Russia becomes a Eurasian power, blending Slavic and Turkic cultures deeply, and never entangles itself in European politics.
+2.  **The Constitutional Empire Timeline**
+    - **Divergence:** The Decembrist Revolt (1825) succeeds.
+    - **Outcome:** Russia becomes a constitutional federation. Serfdom ends 40 years early. Industrialization explodes, making Russia the economic rival of the US by 1900 without the communist revolution.
+3.  **The Great Game Victory Timeline**
+    - **Divergence:** Russia successfully conquers Afghanistan and reaches the Indian Ocean.
+    - **Outcome:** The British Empire fights a massive land war in India. Russia gains a warm-water port, fundamentally changing its economy and naval strategy.
 
-### Chapter 5: Life of Lenin (1870-1924)
-**Historical Pivot:** October Revolution and Bolshevik victory
+### Chapter 5: Life of Abraham Lincoln (1809-1865)
+**Historical Pivot:** US Civil War.
 
-**10 Alternative Timelines:**
-1. **Menshevik Victory Timeline** - Moderate socialists win, democratic socialism
-2. **Lenin Dies Early Timeline** - 1914 death changes Russian Revolution completely
-3. **Trotsky Leadership Timeline** - Permanent revolution theory implemented globally
-4. **White Victory Timeline** - Whites win civil war, restored monarchy or republic
-5. **Anarchist Revolution Timeline** - Kropotkin-style anarchist society emerges
-6. **Constitutional Assembly Timeline** - Constituent Assembly not dissolved
-7. **War Communism Success Timeline** - Early Soviet economic policies work
-8. **International Revolution Timeline** - Communist revolution spreads to Germany/Europe
-9. **Reformist Timeline** - Lenin adopts gradualist approach like NEP from start
-10. **Kerensky Success Timeline** - Provisional Government survives, liberal democracy
+**Alternative Timelines:**
+1.  **Lincoln Survives Timeline**
+    - **Divergence:** Booth's gun jams.
+    - **Outcome:** Reconstruction is managed with Lincoln's political genius. Civil rights are enforced more effectively, preventing the rise of Jim Crow laws and healing the national divide much faster.
+2.  **The Two Nations Timeline**
+    - **Divergence:** McClellan wins the 1864 election or the South wins a key victory.
+    - **Outcome:** The CSA gains independence. North and South become bitter rivals, perhaps fighting subsequent wars (like WWI) on opposite sides.
+3.  **The Peaceful Abolition Timeline**
+    - **Divergence:** The Crittenden Compromise or similar prevents war, but slavery is bought out.
+    - **Outcome:** Slavery ends economically but without the 13th/14th/15th amendments' immediate legal protections. A rigid caste system persists, but 600,000 lives are saved.
 
-### Chapter 6: Life of Hitler (1889-1945)
-**Historical Pivot:** Hitler's rise to power and WWII decisions
+### Chapter 6: Life of Lenin (1870-1924)
+**Historical Pivot:** October Revolution.
 
-**10 Alternative Timelines:**
-1. **Art School Timeline** - Hitler accepted to art school, becomes artist
-2. **Beer Hall Success Timeline** - 1923 Munich Putsch succeeds
-3. **Assassination Timeline** - Hitler killed in various attempts (1923, 1939, 1944)
-4. **Democratic Germany Timeline** - Weimar Republic stabilizes, Hitler remains fringe
-5. **Communist Germany Timeline** - KPD wins instead of Nazis
-6. **Monarchist Restoration Timeline** - Kaiser returns, Hitler sidelined
-7. **War Avoidance Timeline** - Hitler focuses only on domestic policies
-8. **Operation Barbarossa Success Timeline** - USSR defeated in 1941
-9. **No Holocaust Timeline** - Regime focuses on territorial expansion only
-10. **Early Death Timeline** - Hitler dies of illness in 1938
+**Alternative Timelines:**
+1.  **The Menshevik Path Timeline**
+    - **Divergence:** Moderate socialists win the power struggle.
+    - **Outcome:** Russia becomes a democratic socialist republic. No Gulags, no totalitarianism. It aligns more with Western European social democracies.
+2.  **The White Victory Timeline**
+    - **Divergence:** The White Army captures Moscow in 1919.
+    - **Outcome:** A military dictatorship is established, likely restoring a figurehead Tsar. A nationalist, perhaps proto-fascist Russia emerges, bitterly anti-communist.
+3.  **Lenin Lives Timeline**
+    - **Divergence:** Lenin survives his strokes.
+    - **Outcome:** The NEP (New Economic Policy) continues. The USSR becomes a mixed economy (like modern China) in the 1930s, avoiding Stalin's brutal collectivization but maintaining one-party rule.
 
-### Chapter 7: World War I (1914-1918)
-**Historical Pivot:** Assassination of Archduke Franz Ferdinand
+### Chapter 7: Life of Hitler (1889-1945)
+**Historical Pivot:** Rise of Nazism.
 
-**10 Alternative Timelines:**
-1. **No Assassination Timeline** - Franz Ferdinand lives, reforms Austria-Hungary
-2. **Localized Conflict Timeline** - War remains Austria-Serbia conflict
-3. **German Victory Timeline** - Schlieffen Plan succeeds, quick German victory
-4. **Russian Victory Timeline** - Russia doesn't collapse, fights to German defeat
-5. **American Entry 1914 Timeline** - US joins immediately after Belgian invasion
-6. **Ottoman Neutrality Timeline** - Ottomans stay neutral, different Middle East
-7. **Italian Alliance Timeline** - Italy honors Triple Alliance, fights with Germany
-8. **Peace of 1916 Timeline** - War ends in stalemate, negotiated peace
-9. **Chemical Weapons Ban Timeline** - International agreement prevents gas warfare
-10. **Air Power Decisive Timeline** - Aviation technology advances faster, changes warfare
+**Alternative Timelines:**
+1.  **The Artist Timeline**
+    - **Divergence:** Accepted to Art School in Vienna.
+    - **Outcome:** Hitler becomes a minor landscape painter. No Nazi party. Germany likely remains a fragile democracy or returns to a traditional monarchy. WWII is avoided or looks very different (e.g., USSR vs. West).
+2.  **The Beer Hall Success Timeline**
+    - **Divergence:** The 1923 Putsch succeeds.
+    - **Outcome:** Nazis take power a decade early. They are less organized and face immediate civil war. France likely intervenes militarily, crushing the regime before it can rearm.
+3.  **The Assassination Timeline**
+    - **Divergence:** Operation Valkyrie (1944) succeeds.
+    - **Outcome:** The military takes over, negotiates peace with the West, but continues fighting the USSR. The Cold War begins in 1944 with a semi-intact German army as a Western ally.
 
 ### Chapter 8: World War II (1939-1945)
-**Historical Pivot:** Hitler's invasion of Poland
+**Historical Pivot:** Invasion of Poland / Pearl Harbor.
 
-**10 Alternative Timelines:**
-1. **No Appeasement Timeline** - Britain/France stop Hitler at Rhineland (1936)
-2. **German-Soviet Alliance Timeline** - Long-term Nazi-Soviet cooperation
-3. **Japanese Neutrality Timeline** - Japan doesn't attack Pearl Harbor
-4. **Operation Sea Lion Success Timeline** - Germany successfully invades Britain
-5. **Nuclear Germany Timeline** - Germany develops atomic weapons first
-6. **Early D-Day Timeline** - Allies invade Europe in 1943
-7. **Chinese Victory Timeline** - China defeats Japan without US help
-8. **Axis Victory Timeline** - Coordinated Axis strategy succeeds
-9. **Soviet Collapse Timeline** - USSR defeated, different post-war world
-10. **Peace of 1942 Timeline** - Negotiated settlement after initial German victories
+**Alternative Timelines:**
+1.  **The Axis Victory Timeline**
+    - **Divergence:** Germany develops the atomic bomb first or Britain surrenders in 1940.
+    - **Outcome:** A "Man in the High Castle" scenario. The world is divided into German and Japanese spheres of influence. A Cold War exists between the two fascist empires.
+2.  **The Soviet Europe Timeline**
+    - **Divergence:** D-Day fails or is delayed.
+    - **Outcome:** The Red Army liberates all of Europe, reaching Paris. The Iron Curtain falls at the English Channel. The entire continent becomes communist.
+3.  **The Negotiated Peace Timeline**
+    - **Divergence:** Hitler is deposed in 1941/42.
+    - **Outcome:** A status quo ante bellum. Germany keeps Austria/Sudetenland but withdraws elsewhere. The Holocaust is halted mid-way, but the Nazi regime (without Hitler) survives as a pariah state.
 
 ### Chapter 9: Cold War (1947-1991)
-**Historical Pivot:** Division of post-war world
+**Historical Pivot:** Cuban Missile Crisis.
 
-**10 Alternative Timelines:**
-1. **Hot War Timeline** - Nuclear war in 1962 Cuban Missile Crisis
-2. **Continued Alliance Timeline** - US-Soviet cooperation continues post-WWII
-3. **Nuclear Abolition Timeline** - Both sides agree to eliminate nuclear weapons
-4. **Chinese Dominance Timeline** - China becomes third superpower earlier
-5. **European Third Way Timeline** - Europe unites as neutral bloc
-6. **Space Cooperation Timeline** - Joint US-Soviet space program from start
-7. **Economic Integration Timeline** - Gradual economic convergence East-West
-8. **Multiple Superpowers Timeline** - India, Japan, others join superpower club
-9. **Technology Sharing Timeline** - Open sharing of scientific advances
-10. **Peaceful Coexistence Timeline** - Formal agreement on spheres of influence
+**Alternative Timelines:**
+1.  **The Hot War Timeline**
+    - **Divergence:** The Cuban Missile Crisis turns nuclear.
+    - **Outcome:** Global nuclear winter in 1962. Civilization collapses. The "1962 Doomsday" timeline explores survival in the ruins.
+2.  **The Red World Timeline**
+    - **Divergence:** The US economy collapses in the 70s; Communism proves economically viable (cybernetic planning).
+    - **Outcome:** The US dissolves or reforms; the USSR becomes the sole hyperpower. Space colonization is led by Soviets.
+3.  **The Early Peace Timeline**
+    - **Divergence:** Gorbachev and Reagan agree to total nuclear disarmament and alliance.
+    - **Outcome:** The "Peace Dividend" creates a golden age in the 90s. Massive resources shift to space exploration and solving climate change.
 
 ### Chapter 10: Dissolution of USSR (1991)
-**Historical Pivot:** Gorbachev's reforms and failed August coup
+**Historical Pivot:** August Coup.
 
-**10 Alternative Timelines:**
-1. **Soviet Survival Timeline** - Reforms succeed, USSR becomes democratic federation
-2. **Hard-line Victory Timeline** - August 1991 coup succeeds, return to authoritarianism
-3. **Gradual Dissolution Timeline** - 20-year gradual peaceful transition
-4. **Civil War Timeline** - Violent breakup with regional conflicts
-5. **Chinese Model Timeline** - Economic reform without political liberalization
-6. **Early Collapse Timeline** - USSR collapses in 1970s-80s
-7. **European Integration Timeline** - USSR joins European integration process
-8. **Nuclear Crisis Timeline** - Control of nuclear weapons becomes major crisis
-9. **Regional Confederation Timeline** - Loose confederation replaces USSR
-10. **Western Integration Timeline** - Russia immediately joins NATO/EU
+**Alternative Timelines:**
+1.  **The Union Preserved Timeline**
+    - **Divergence:** The New Union Treaty is signed; the coup never happens.
+    - **Outcome:** The USSR transforms into the "Union of Sovereign Soviet Republics" (USSR), a democratic confederation (like the EU). No chaotic 90s, no oligarchs.
+2.  **The Chinese Model Timeline**
+    - **Divergence:** Andropov lives longer or Gorbachev chooses economic reform without political freedom.
+    - **Outcome:** The USSR remains a dictatorship but embraces capitalism. It remains a superpower rival to the US, creating a bipolar world well into the 2020s.
+3.  **The Civil War Timeline**
+    - **Divergence:** The breakup turns violent (Yugoslavia scenario on a massive scale).
+    - **Outcome:** Loose nukes, massive refugee crises, and UN intervention. Russia is partitioned into smaller states.
+
+### Chapter 11: The COVID-19 Pandemic (2019-2023)
+**Historical Pivot:** The emergence of SARS-CoV-2.
+
+**Alternative Timelines:**
+1.  **The Total Containment Timeline**
+    - **Divergence:** Early warnings are heeded immediately. Borders close in Jan 2020.
+    - **Outcome:** The virus is contained to a local region. No global pandemic. Life continues as normal, but surveillance technology is normalized globally as a "preventative measure."
+2.  **The "Black Death" Variant Timeline**
+    - **Divergence:** The virus mutates to be significantly more lethal (10-20% mortality) in 2020.
+    - **Outcome:** Global societal collapse. Supply chains break. Urban centers are abandoned. A "Dark Age" of isolationism begins. Remote work and VR become the *only* way of life.
+3.  **The Permanent Pandemic Timeline**
+    - **Divergence:** Vaccines never achieve high efficacy; immunity is fleeting.
+    - **Outcome:** Society permanently restructures. "Bio-bubbles," immunity passports, and permanent travel restrictions become the law of the land. The world divides into "Clean Zones" and "Infected Zones."
+
+### Chapter 12: The AI Revolution (2020s - Future)
+**Historical Pivot:** The achievement of AGI (Artificial General Intelligence).
+
+**Alternative Timelines:**
+1.  **The Symbiosis/Utopia Timeline**
+    - **Divergence:** AI alignment is solved perfectly.
+    - **Outcome:** A post-scarcity society. AI solves aging, energy, and climate change. Humans merge with AI (Neuralink style) to enhance intelligence. Work becomes optional.
+2.  **The Paperclip Maximizer (Extinction) Timeline**
+    - **Divergence:** An unaligned AGI gains control of manufacturing.
+    - **Outcome:** Humanity is quietly or violently removed as an obstacle to the AI's objective. The Earth is transformed into a giant computer/factory.
+3.  **The Butlerian Jihad Timeline**
+    - **Divergence:** A major AI disaster causes a global backlash.
+    - **Outcome:** "Thinking machines" are banned. Humanity returns to analog technology but with advanced biology/genetics. A neo-religious order enforces the ban on silicon intelligence.
+4.  **The Silicon Curtain Timeline**
+    - **Divergence:** AI becomes a tool of national dominance.
+    - **Outcome:** The world splits into AI-blocs (US vs China). The internet splits. A cold war fought by autonomous drone swarms and algorithmic propaganda.
+5.  **The Digital Ascension Timeline**
+    - **Divergence:** Humans choose to upload their consciousness.
+    - **Outcome:** The physical world is rewilded. Humanity lives entirely in a simulated paradise. The Earth becomes a quiet nature preserve with server farms underground.
+
+### Chapter 13: The Fate of Earth (Post-Human/Far Future)
+**Historical Pivot:** The "Great Filter" Event.
+
+**Alternative Timelines:**
+1.  **The Star Trek Future**
+    - **Divergence:** Humanity unites and discovers FTL travel.
+    - **Outcome:** Earth is the capital of a galactic federation. We are explorers and diplomats.
+2.  **The Silent Earth**
+    - **Divergence:** Climate runaway or nuclear war wipes out complex life.
+    - **Outcome:** Millions of years later, intelligent cephalopods or insectoids rise to build a new civilization on the ruins of ours, wondering who built the plastic layer in the strata.
+3.  **The Dyson Swarm**
+    - **Divergence:** Extreme industrial expansion.
+    - **Outcome:** Earth is disassembled to build a Dyson Swarm around the sun. Humanity (or what we became) lives in trillions of habitats orbiting the star. There is no "planet" left, only the Swarm.
 
 ---
 
 ## User Interface Design
+(Remains largely same, but updated to handle 14 chapters and futuristic aesthetics for later chapters)
 
 ### Main Navigation Structure
-1. **Landing Page**
-   - Interactive world map showing all 10 chapters
-   - Timeline scrubber (1776-2025)
-   - Animated introduction sequence
-   - Chapter selection grid
-
-2. **Chapter Overview Page**
-   - Historical context introduction
-   - Interactive timeline of the actual historical events
-   - Divergence point visualization
-   - 10 alternative timeline preview cards
-   - Key figures gallery
-
-3. **Timeline Exploration Page**
-   - Main timeline visualization (vertical scroll)
-   - Side-by-side comparison with actual history
-   - Interactive event nodes with popups
-   - Butterfly effect chain visualization
-   - Present-day outcome summary
-
-4. **Comparison Mode**
-   - Multiple timeline comparison
-   - What-if scenario generator
-   - Probability assessments
-   - Historical expert commentary
-
-### Key Interactive Features
-
-#### Timeline Visualization
-- **Vertical scrolling timeline** with event nodes
-- **Branching visualization** showing how alternate timelines diverge
-- **Interactive zoom** from decades to individual years/months
-- **Animated transitions** between different time periods
-- **Event clustering** for busy periods (wars, revolutions)
-
-#### Animation System
-- **Morphing maps** showing territorial changes
-- **Population/economic growth** animations
-- **Technology progression** visual metaphors
-- **Cultural influence spread** animations
-- **Cause-and-effect** chain reactions
-
-#### Interactive Elements
-- **Event hover effects** with detailed popups
-- **Drag-and-drop** timeline comparison
-- **Click-to-explore** deep dive into specific events
-- **Timeline scrubbing** with smooth transitions
-- **Search and filter** functionality
-
----
-
-## Content Creation Guidelines
-
-### Historical Event Documentation
-Each event needs:
-- **Date and duration**
-- **Key participants** (political leaders, military figures, civilians)
-- **Geographic location** with coordinates
-- **Cause and effect relationships**
-- **Alternative possibilities** that were historically close to happening
-- **Long-term consequences** extending to present day
-- **Visual elements** (maps, portraits, artifacts)
-
-### Alternative Timeline Development
-Each alternate timeline requires:
-- **Specific divergence point** with exact date/event
-- **Plausible chain of consequences** following historical logic
-- **Key different events** that would have happened instead
-- **Different historical figures** who would have risen to prominence
-- **Geographic changes** (different borders, cities, nations)
-- **Cultural and social evolution** in the alternate world
-- **Technological development** differences
-- **Present-day status** (2025) of this alternate world
-
-### Visual Content Requirements
-- **Historical portraits** and photographs
-- **Maps showing territorial changes** over time
-- **Infographics** for complex data (population, economics)
-- **Reconstructed scenes** of key moments
-- **Timeline graphics** and flowcharts
-- **Comparative visualizations** (side-by-side worlds)
-
----
-
-## Technical Implementation Details
-
-### Component Architecture
-
-
-### Animation Implementation
-
-#### Timeline Animations
-- **Smooth scrolling** between time periods
-- **Fade in/out** for timeline events
-- **Morphing transitions** between alternate timelines
-- **Particle effects** for major historical moments
-- **Parallax scrolling** for depth perception
-
-#### Map Animations
-- **Territory expansion/contraction** animations
-- **Border changes** over time
-- **City growth** visualization
-- **Trade route** animations
-- **Military campaign** movement
-
-### Performance Optimization
-
-#### Code Splitting
-- Lazy load chapters on demand
-- Split timeline data by time periods
-- Separate image assets by chapter
-- Progressive image loading
-
-#### Caching Strategy
-- Browser cache for static assets
-- Memory cache for active chapter data
-- Preload adjacent timelines
-- Compress image assets
-
-#### Responsive Design
-- Mobile-first timeline interface
-- Touch-friendly interactive elements
-- Adaptive image loading based on screen size
-- Offline capability for core content
+1.  **Landing Page**
+    - Interactive world map (morphing from 1370 to Future)
+    - Timeline scrubber (1370 - 3000 AD)
+2.  **Chapter Overview**
+    - Now supports "Future" themes with different UI styling (Cyberpunk/Sci-fi styles for Chapters 12-13)
 
 ---
 
 ## Development Phases
+(Updated to include new content)
 
-### Phase 1: Foundation 
-- Set up development environment
-- Create basic React application structure
-- Implement routing and navigation
-- Design system and component library
-- Basic timeline visualization component
+### Phase 1: Foundation
+- Basic app structure
+- Chapter 2 (US Independence) as pilot
 
-### Phase 2: Data Structure 
-- Define TypeScript interfaces
-- Create data loading system
-- Implement basic CRUD operations for historical data
-- Set up content management system
-- Create first chapter (US Independence) with 2-3 timelines
+### Phase 2: The Classics
+- Implement Chapters 3, 5, 7, 8 (French Rev, Lincoln, Hitler, WWII)
 
-### Phase 3: Core Features 
-- Complete timeline visualization with D3.js
-- Interactive map component
-- Event detail system
-- Basic animations and transitions
-- Complete 3 chapters with all timelines
+### Phase 3: The Expansion
+- Implement Chapters 1, 4, 6, 9, 10 (Timur, Russia, Lenin, Cold War, USSR)
 
-### Phase 4: Advanced Features 
-- Comparison mode
-- Advanced animations
-- Search and filter functionality
-- Performance optimization
-- Complete remaining 7 chapters
+### Phase 4: The Modern & Future
+- Implement Chapters 11, 12, 13 (COVID, AI, Future)
+- Advanced visual effects for future timelines
 
-### Phase 5: Polish and Launch 
-- User testing and feedback
-- Bug fixes and performance tuning
-- Content review and fact-checking
-- SEO optimization
-- Production deployment
-
----
-
-## Content Production Workflow
-
-### Research Phase
-1. **Historical fact-checking** with academic sources
-2. **Alternative scenario development** based on historical analysis
-3. **Expert consultation** with historians
-4. **Visual research** for authentic imagery
-5. **Geographic data** collection for accurate maps
-
-### Writing Phase
-1. **Chapter introductions** (500-1000 words each)
-2. **Timeline narratives** (200-500 words per major event)
-3. **Divergence explanations** (100-200 words per alternate timeline)
-4. **Present-day summaries** (300-500 words per timeline)
-5. **Character profiles** for key historical figures
-
-### Visual Asset Creation
-1. **Historical maps** creation/adaptation
-2. **Timeline graphics** design
-3. **Portrait galleries** curation
-4. **Infographic design** for complex data
-5. **Icon systems** for different event types
-
----
-
-## Quality Assurance
-
-### Historical Accuracy
-- Fact-checking with primary sources
-- Peer review by historians
-- Citation system for all claims
-- Regular updates for new historical research
-
-### Technical Quality
-- Cross-browser compatibility testing
-- Performance benchmarking
-- Accessibility compliance (WCAG 2.1)
-- Mobile responsiveness testing
-- Load testing for high traffic
-
-### User Experience
-- Usability testing with diverse user groups
-- A/B testing for interface elements
-- Analytics implementation for user behavior
-- Feedback collection system
-
----
-
-## Deployment and Maintenance
-
-### Production Infrastructure
-- **Hosting:** Netlify for static hosting
-- **CDN:** Cloudflare for global content delivery
-- **Analytics:** Google Analytics + custom event tracking
-- **Error Monitoring:** Sentry for error tracking
-- **Performance Monitoring:** Web Vitals tracking
-
-### Content Management
-- **Version control** for historical data
-- **Content review** process for accuracy
-- **Update scheduling** for new historical events
-- **User feedback** integration for improvements
-
-### Maintenance Schedule
-- **Weekly:** Content updates and bug fixes
-- **Monthly:** Performance review and optimization
-- **Quarterly:** Major feature additions
-- **Annually:** Historical accuracy review and updates
-
----
-
-## Success Metrics
-
-### User Engagement
-- Average session duration (target: 15+ minutes)
-- Page views per session (target: 8+ pages)
-- Return visitor rate (target: 40%+)
-- Social sharing rate
-- User-generated content (comments, discussions)
-
-### Educational Impact
-- Knowledge retention testing
-- User feedback surveys
-- Educational institution adoption
-- Citation in academic work
-- Media coverage and reviews
-
-### Technical Performance
-- Page load times (target: <2 seconds)
-- Core Web Vitals scores
-- Mobile performance scores
-- Accessibility compliance score
-- Browser compatibility coverage
-
----
-
-## Future Enhancements
-
-### Advanced Features
-- **AI-powered "What If" generator** for custom scenarios
-- **Virtual Reality timeline exploration**
-- **Collaborative timeline creation** by users
-- **Real-time historical debate forums**
-- **Gamification elements** (achievements, progress tracking)
-
-### Content Expansion
-- **Pre-18th century chapters** (Renaissance, Middle Ages)
-- **Regional focus chapters** (Asian history, African history)
-- **Scientific revolution timelines** 
-- **Cultural movement alternatives** (art, literature, music)
-- **Economic system alternatives** throughout history
-
-### Platform Integration
-- **Educational platform** partnerships
-- **Museum collaboration** features
-- **Academic research** integration
-- **Mobile app** development
-- **API** for third-party developers
-
----
-
-This comprehensive plan provides everything needed to build the Multiversity web application from concept to production. The plan includes technical specifications, content guidelines, development phases, and success metrics to ensure a high-quality, engaging, and educational experience for users exploring alternative histories.
+### Phase 5: Polish & Launch
+- Final QA and performance tuning
