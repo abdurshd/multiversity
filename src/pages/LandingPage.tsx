@@ -17,75 +17,76 @@ import {
 } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['pages-landing', 'common-ui']);
+
   const chapters = useMemo(() => [
-    { id: 'timur-legacy', title: 'Timur\'s Legacy (14th Century)', description: 'The last great nomadic conqueror', color: 'bg-red-900', icon: '🗡️', emoji: '🏰', image: '/images/chapters/timur-legacy/main.png' },
-    { id: 'us-independence', title: 'US Independence (1776)', description: 'Revolutionary War alternatives', color: 'bg-red-600', icon: '🇺🇸', emoji: '⚔️', image: '/images/chapters/us-independence/main.png' },
-    { id: 'french-revolution', title: 'French Revolution (1789)', description: 'Paths not taken in France', color: 'bg-blue-600', icon: '🇫🇷', emoji: '🗿', image: '/images/chapters/french-revolution/main.png' },
-    { id: 'lincoln-era', title: 'Lincoln Era (1860s)', description: 'Civil War alternate outcomes', color: 'bg-green-600', icon: '⚖️', emoji: '🎩', image: '/images/chapters/lincoln-era/main.png' },
-    { id: 'russian-empire', title: 'Russian Empire (1721-1917)', description: 'Tsarist Russia alternatives', color: 'bg-purple-600', icon: '👑', emoji: '🐻', image: '/images/chapters/russian-empire/main.png' },
-    { id: 'lenin-revolution', title: 'Lenin Revolution (1917)', description: 'Bolshevik victory alternatives', color: 'bg-red-700', icon: '⚡', emoji: '🚩', image: '/images/chapters/lenin-revolution/main.png' },
-    { id: 'hitler-rise', title: 'Hitler\'s Rise (1920s-1940s)', description: 'Preventing or changing WWII', color: 'bg-gray-700', icon: '⚠️', emoji: '🔨', image: '/images/chapters/hitler-rise/main.png' },
-    { id: 'world-war-1', title: 'World War I (1914-1918)', description: 'The Great War reimagined', color: 'bg-yellow-700', icon: '⚔️', emoji: '🎖️', image: '/images/chapters/world-war-1/main.png' },
-    { id: 'world-war-2', title: 'World War II (1939-1945)', description: 'WWII alternative outcomes', color: 'bg-orange-600', icon: '🌍', emoji: '✈️', image: '/images/chapters/world-war-2/main.png' },
-    { id: 'cold-war', title: 'Cold War (1947-1991)', description: 'Superpower rivalry alternatives', color: 'bg-indigo-600', icon: '❄️', emoji: '🚀', image: '/images/chapters/cold-war/main.png' },
-    { id: 'ussr-collapse', title: 'USSR Collapse (1991)', description: 'Soviet Union\'s different endings', color: 'bg-pink-600', icon: '🔨', emoji: '🧱', image: '/images/chapters/ussr-collapse/main.png' },
-    { id: 'covid-pandemic', title: 'COVID-19 Pandemic (2019)', description: 'Modern crisis alternatives', color: 'bg-teal-600', icon: '🦠', emoji: '😷', image: '/images/chapters/covid-pandemic/main.png' },
-    { id: 'ai-revolution', title: 'AI Revolution (2020s)', description: 'The future of intelligence', color: 'bg-blue-900', icon: '🤖', emoji: '🧠', image: '/images/chapters/ai-revolution/main.png' },
-    { id: 'future-earth', title: 'Future Earth (2100+)', description: 'Post-human scenarios', color: 'bg-slate-800', icon: '🚀', emoji: '🌌', image: '/images/chapters/future-earth/main.png' },
+    { id: 'timur-legacy', translationKey: 'timur_legacy', color: 'bg-red-900', icon: '🗡️', emoji: '🏰', image: '/images/chapters/timur-legacy/main.png' },
+    { id: 'us-independence', translationKey: 'us_independence', color: 'bg-red-600', icon: '🇺🇸', emoji: '⚔️', image: '/images/chapters/us-independence/main.png' },
+    { id: 'french-revolution', translationKey: 'french_revolution', color: 'bg-blue-600', icon: '🇫🇷', emoji: '🗿', image: '/images/chapters/french-revolution/main.png' },
+    { id: 'lincoln-era', translationKey: 'lincoln_era', color: 'bg-green-600', icon: '⚖️', emoji: '🎩', image: '/images/chapters/lincoln-era/main.png' },
+    { id: 'russian-empire', translationKey: 'russian_empire', color: 'bg-purple-600', icon: '👑', emoji: '🐻', image: '/images/chapters/russian-empire/main.png' },
+    { id: 'lenin-revolution', translationKey: 'lenin_revolution', color: 'bg-red-700', icon: '⚡', emoji: '🚩', image: '/images/chapters/lenin-revolution/main.png' },
+    { id: 'hitler-rise', translationKey: 'hitler_rise', color: 'bg-gray-700', icon: '⚠️', emoji: '🔨', image: '/images/chapters/hitler-rise/main.png' },
+    { id: 'world-war-1', translationKey: 'world_war_1', color: 'bg-yellow-700', icon: '⚔️', emoji: '🎖️', image: '/images/chapters/world-war-1/main.png' },
+    { id: 'world-war-2', translationKey: 'world_war_2', color: 'bg-orange-600', icon: '🌍', emoji: '✈️', image: '/images/chapters/world-war-2/main.png' },
+    { id: 'cold-war', translationKey: 'cold_war', color: 'bg-indigo-600', icon: '❄️', emoji: '🚀', image: '/images/chapters/cold-war/main.png' },
+    { id: 'ussr-collapse', translationKey: 'ussr_collapse', color: 'bg-pink-600', icon: '🔨', emoji: '🧱', image: '/images/chapters/ussr-collapse/main.png' },
+    { id: 'covid-pandemic', translationKey: 'covid_pandemic', color: 'bg-teal-600', icon: '🦠', emoji: '😷', image: '/images/chapters/covid-pandemic/main.png' },
+    { id: 'ai-revolution', translationKey: 'ai_revolution', color: 'bg-blue-900', icon: '🤖', emoji: '🧠', image: '/images/chapters/ai-revolution/main.png' },
+    { id: 'future-earth', translationKey: 'future_earth', color: 'bg-slate-800', icon: '🚀', emoji: '🌌', image: '/images/chapters/future-earth/main.png' },
   ], []);
 
   const heroStats = useMemo(() => [
-    { label: t('landing.stats.divergence.label'), value: t('landing.stats.divergence.value'), detail: t('landing.stats.divergence.detail') },
-    { label: t('landing.stats.events.label'), value: t('landing.stats.events.value'), detail: t('landing.stats.events.detail') },
-    { label: t('landing.stats.coverage.label'), value: t('landing.stats.coverage.value'), detail: t('landing.stats.coverage.detail') }
+    { label: t('pages-landing:stats.divergence.label'), value: t('pages-landing:stats.divergence.value'), detail: t('pages-landing:stats.divergence.detail') },
+    { label: t('pages-landing:stats.events.label'), value: t('pages-landing:stats.events.value'), detail: t('pages-landing:stats.events.detail') },
+    { label: t('pages-landing:stats.coverage.label'), value: t('pages-landing:stats.coverage.value'), detail: t('pages-landing:stats.coverage.detail') }
   ], [t]);
 
   const timelineThreads = useMemo(() => [
     {
-      tag: 'US Independence',
-      title: 'Washington captured at Valley Forge',
-      effect: 'British victory signals colonial collapse, sparking a delayed independence movement decades later.'
+      tag: t('pages-landing:timeline_threads.us_independence.tag'),
+      title: t('pages-landing:timeline_threads.us_independence.title'),
+      effect: t('pages-landing:timeline_threads.us_independence.effect')
     },
     {
-      tag: 'Cold War',
-      title: 'Cosmonaut first on the Moon',
-      effect: 'Soviet prestige accelerates detente and redraws alliances across Asia & Africa.'
+      tag: t('pages-landing:timeline_threads.cold_war.tag'),
+      title: t('pages-landing:timeline_threads.cold_war.title'),
+      effect: t('pages-landing:timeline_threads.cold_war.effect')
     },
     {
-      tag: 'French Revolution',
-      title: 'Constitutional Monarchy succeeds',
-      effect: 'Gradual reform averts the Terror and reshapes European liberalism.'
+      tag: t('pages-landing:timeline_threads.french_revolution.tag'),
+      title: t('pages-landing:timeline_threads.french_revolution.title'),
+      effect: t('pages-landing:timeline_threads.french_revolution.effect')
     },
-  ], []);
+  ], [t]);
 
   const immersionModes = useMemo(() => [
     {
-      title: 'Story Navigator',
-      description: 'Guided prose with interactive decisions, adaptive soundscapes, and cinematic cues.',
+      title: t('pages-landing:immersion_modes.story_navigator.title'),
+      description: t('pages-landing:immersion_modes.story_navigator.description'),
       backgroundClass: 'bg-blue-600/10',
       icon: <BookOpen className="w-5 h-5 text-blue-200" />
     },
     {
-      title: 'Data Atlas',
-      description: 'Dense cards, impact charts, and diplomatic stats for quick research sprints.',
+      title: t('pages-landing:immersion_modes.data_atlas.title'),
+      description: t('pages-landing:immersion_modes.data_atlas.description'),
       backgroundClass: 'bg-emerald-600/10',
       icon: <Layers className="w-5 h-5 text-emerald-200" />
     },
     {
-      title: 'Comparison Lab',
-      description: 'Stack timelines, animate divergences, and compare butterfly effects in real time.',
+      title: t('pages-landing:immersion_modes.comparison_lab.title'),
+      description: t('pages-landing:immersion_modes.comparison_lab.description'),
       backgroundClass: 'bg-purple-600/10',
       icon: <GitBranch className="w-5 h-5 text-purple-200" />
     }
-  ], []);
+  ], [t]);
 
   const researchPillars = useMemo(() => [
-    { title: 'Primary Sources', detail: 'archival maps, letters, and dispatches', icon: Shield },
-    { title: 'Scholarly Review', detail: 'built with historian feedback loops', icon: FlaskConical },
-    { title: 'Geopolitical Modeling', detail: 'economic + military heuristics', icon: Compass },
-    { title: 'Narrative Craft', detail: 'story arcs tuned for immersion', icon: Flame }
-  ], []);
+    { title: t('pages-landing:research_pillars.primary_sources.title'), detail: t('pages-landing:research_pillars.primary_sources.detail'), icon: Shield },
+    { title: t('pages-landing:research_pillars.scholarly_review.title'), detail: t('pages-landing:research_pillars.scholarly_review.detail'), icon: FlaskConical },
+    { title: t('pages-landing:research_pillars.geopolitical_modeling.title'), detail: t('pages-landing:research_pillars.geopolitical_modeling.detail'), icon: Compass },
+    { title: t('pages-landing:research_pillars.narrative_craft.title'), detail: t('pages-landing:research_pillars.narrative_craft.detail'), icon: Flame }
+  ], [t]);
 
   return (
     <div className="min-h-screen bg-slate-950 relative overflow-x-hidden w-full">
@@ -113,11 +114,11 @@ const LandingPage: React.FC = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-white">
-              {t('landing.title')}
+              {t('pages-landing:hero.title')}
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto px-4">
-              {t('landing.subtitle')}
+              {t('pages-landing:hero.subtitle')}
             </p>
           </motion.div>
 
@@ -150,7 +151,7 @@ const LandingPage: React.FC = () => {
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
             >
               <Sparkles className="w-5 h-5" />
-              <span>{t('landing.cta')}</span>
+              <span>{t('pages-landing:hero.cta.primary')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
 
@@ -159,7 +160,7 @@ const LandingPage: React.FC = () => {
               className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 text-white border border-slate-600 px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
             >
               <GitBranch className="w-5 h-5" />
-              <span>Compare Timelines</span>
+              <span>{t('pages-landing:hero.cta.secondary')}</span>
             </Link>
           </motion.div>
         </div>
@@ -188,18 +189,15 @@ const LandingPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-sm uppercase tracking-[0.4em] text-blue-300">What is Multiversity?</p>
+              <p className="text-sm uppercase tracking-[0.4em] text-blue-300">{t('pages-landing:about.badge')}</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mt-3 mb-6">
-                A cinematic lab for alternate history that fuses storytelling with data.
+                {t('pages-landing:about.heading')}
               </h2>
               <p className="text-gray-200 text-lg leading-relaxed mb-4">
-                Trace ripples from one decision to tectonic shifts across continents. Every chapter offers
-                a carefully researched baseline, then splinters into ten plausible what-ifs that you can explore,
-                compare, and remix.
+                {t('pages-landing:about.description_1')}
               </p>
               <p className="text-gray-300">
-                We pair historian-reviewed narratives with interactive charts, giving you both the poetry and
-                the provenance of each timeline.
+                {t('pages-landing:about.description_2')}
               </p>
             </motion.div>
             <motion.div
@@ -229,7 +227,7 @@ const LandingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl font-bold text-white text-center mb-12"
           >
-            Historical Chapters
+            {t('pages-landing:chapters.heading')}
           </motion.h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
@@ -255,14 +253,14 @@ const LandingPage: React.FC = () => {
 
                     <div className="relative z-20">
                       <h3 className="text-sm sm:text-lg font-semibold mb-2 line-clamp-2 text-shadow-sm">
-                        {chapter.title}
+                        {t(`pages-landing:chapters.list.${chapter.translationKey}.title`)}
                       </h3>
                       <p className="text-xs sm:text-sm opacity-90 line-clamp-3 text-shadow-sm">
-                        {chapter.description}
+                        {t(`pages-landing:chapters.list.${chapter.translationKey}.description`)}
                       </p>
                     </div>
                     <div className="relative z-20 text-xs sm:text-sm opacity-75 font-medium">
-                      3 timelines
+                      {t('pages-landing:chapters.timelines_count')}
                     </div>
                   </div>
                 </Link>
@@ -281,7 +279,7 @@ const LandingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl font-bold text-white text-center mb-12"
           >
-            Choose your way to explore
+            {t('pages-landing:immersion_modes.heading')}
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -313,7 +311,7 @@ const LandingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl font-bold text-white text-center mb-12"
           >
-            Interactive Experience
+            {t('pages-landing:features.heading')}
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
@@ -326,9 +324,9 @@ const LandingPage: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Timeline Navigation</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{t('pages-landing:features.timeline_navigation.title')}</h3>
               <p className="text-gray-300 text-sm sm:text-base">
-                Navigate through centuries with smooth animations and detailed event exploration.
+                {t('pages-landing:features.timeline_navigation.description')}
               </p>
             </motion.div>
 
@@ -341,9 +339,9 @@ const LandingPage: React.FC = () => {
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GitBranch className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Cause & Effect</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{t('pages-landing:features.cause_effect.title')}</h3>
               <p className="text-gray-300 text-sm sm:text-base">
-                Visualize how small changes create massive butterfly effects across history.
+                {t('pages-landing:features.cause_effect.description')}
               </p>
             </motion.div>
 
@@ -356,9 +354,9 @@ const LandingPage: React.FC = () => {
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Global Impact</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{t('pages-landing:features.global_impact.title')}</h3>
               <p className="text-gray-300 text-sm sm:text-base">
-                See how alternative histories shape the world we know today.
+                {t('pages-landing:features.global_impact.description')}
               </p>
             </motion.div>
           </div>
