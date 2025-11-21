@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="heliGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="flightGlow">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+    </radialGradient>
+    <filter id="heliGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Flight glow -->
+  <circle cx="100" cy="90" r="70" fill="url(#flightGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Helicopter -->
+  <g id="helicopter" filter="url(#heliGlow)">
+    <!-- Main rotor (spinning) -->
+    <g id="mainRotor">
+      <ellipse cx="100" cy="60" rx="60" ry="3"
+               fill="#64748b"
+               opacity="0.6">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 100 60"
+          to="360 100 60"
+          dur="0.3s"
+          repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Rotor hub -->
+      <circle cx="100" cy="60" r="4" fill="#475569"/>
+    </g>
+
+    <!-- Rotor mast -->
+    <rect x="98" y="60" width="4" height="15"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1"/>
+
+    <!-- Main body/cabin -->
+    <ellipse cx="100" cy="90" rx="35" ry="20"
+             fill="url(#heliGradient)"
+             stroke="#059669"
+             stroke-width="2"/>
+
+    <!-- Cockpit window -->
+    <ellipse cx="110" cy="85" rx="15" ry="12"
+             fill="#bae6fd"
+             stroke="#3b82f6"
+             stroke-width="1.5"
+             opacity="0.7"/>
+
+    <!-- Tail boom -->
+    <rect x="130" y="87" width="40" height="6"
+          fill="url(#heliGradient)"
+          stroke="#059669"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Tail rotor -->
+    <g id="tailRotor" transform="translate(172, 90)">
+      <line x1="-5" y1="0" x2="5" y2="0"
+            stroke="#64748b"
+            stroke-width="2"
+            opacity="0.6">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 0 0"
+          to="360 0 0"
+          dur="0.2s"
+          repeatCount="indefinite"/>
+      </line>
+      <circle cx="0" cy="0" r="2" fill="#475569"/>
+    </g>
+
+    <!-- Skids/landing gear -->
+    <g id="skids" stroke="#475569" stroke-width="3" stroke-linecap="round">
+      <!-- Left skid -->
+      <path d="M 75 105 L 75 112 L 95 112" fill="none"/>
+      <line x1="85" y1="105" x2="85" y2="112"/>
+
+      <!-- Right skid -->
+      <path d="M 105 105 L 105 112 L 125 112" fill="none"/>
+      <line x1="115" y1="105" x2="115" y2="112"/>
+    </g>
+
+    <!-- Body details -->
+    <ellipse cx="90" cy="85" rx="8" ry="6" fill="white" opacity="0.3"/>
+    <circle cx="120" cy="90" r="2" fill="#1e293b" opacity="0.5"/>
+
+    <!-- Hovering animation -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,-3; 0,0; 0,3; 0,0"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Air distortion/downdraft -->
+  <g id="downdraft" opacity="0.3">
+    <ellipse cx="100" cy="115" rx="30" ry="5" fill="#94a3b8">
+      <animate attributeName="rx" values="30;35;30" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="100" cy="120" rx="35" ry="4" fill="#cbd5e1">
+      <animate attributeName="rx" values="35;40;35" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Motion lines -->
+  <g id="motionLines" stroke="#34d399" stroke-width="2" stroke-linecap="round" opacity="0.4">
+    <line x1="145" y1="75" x2="155" y2="70">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="145" y1="90" x2="155" y2="90">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="145" y1="105" x2="155" y2="110">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Flight sparkles -->
+  <g id="sparkles" opacity="0.6">
+    <circle cx="65" cy="70" r="2" fill="#6ee7b7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="75" r="2" fill="#34d399">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

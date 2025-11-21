@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="tankGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="combatGlow">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="tankGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Combat glow -->
+  <circle cx="100" cy="110" r="70" fill="url(#combatGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Tank -->
+  <g id="tank" filter="url(#tankGlow)">
+    <!-- Tracks -->
+    <g id="tracks">
+      <!-- Left track -->
+      <rect x="50" y="125" width="100" height="18"
+            fill="#1e293b"
+            stroke="#0f172a"
+            stroke-width="2"
+            rx="9"/>
+      <g fill="#475569" opacity="0.6">
+        <rect x="55" y="128" width="8" height="12" rx="2"/>
+        <rect x="68" y="128" width="8" height="12" rx="2"/>
+        <rect x="81" y="128" width="8" height="12" rx="2"/>
+        <rect x="94" y="128" width="8" height="12" rx="2"/>
+        <rect x="107" y="128" width="8" height="12" rx="2"/>
+        <rect x="120" y="128" width="8" height="12" rx="2"/>
+        <rect x="133" y="128" width="8" height="12" rx="2"/>
+      </g>
+
+      <!-- Track movement -->
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -1,0; 0,0"
+        dur="0.5s"
+        repeatCount="indefinite"/>
+    </g>
+
+    <!-- Hull -->
+    <path d="M 60 110 L 55 125 L 145 125 L 140 110 Z"
+          fill="url(#tankGradient)"
+          stroke="#1e293b"
+          stroke-width="2"/>
+
+    <!-- Upper hull details -->
+    <rect x="65" y="105" width="70" height="5"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1"/>
+
+    <!-- Turret -->
+    <ellipse cx="100" cy="95" rx="30" ry="18"
+             fill="url(#tankGradient)"
+             stroke="#1e293b"
+             stroke-width="2"/>
+
+    <!-- Turret top -->
+    <ellipse cx="100" cy="90" rx="25" ry="15"
+             fill="#64748b"
+             stroke="#475569"
+             stroke-width="1.5"/>
+
+    <!-- Main gun barrel -->
+    <rect x="115" y="92" width="50" height="6"
+          fill="url(#tankGradient)"
+          stroke="#1e293b"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Gun muzzle -->
+    <rect x="162" y="90" width="8" height="10"
+          fill="#475569"
+          stroke="#1e293b"
+          stroke-width="1.5"
+          rx="2"/>
+
+    <!-- Hatch -->
+    <circle cx="100" cy="85" r="6"
+            fill="#1e293b"
+            stroke="#0f172a"
+            stroke-width="1.5"/>
+    <circle cx="100" cy="85" r="3" fill="#64748b"/>
+
+    <!-- Armor plates -->
+    <g stroke="#475569" stroke-width="1" opacity="0.5" fill="none">
+      <line x1="70" y1="115" x2="70" y2="125"/>
+      <line x1="85" y1="115" x2="85" y2="125"/>
+      <line x1="115" y1="115" x2="115" y2="125"/>
+      <line x1="130" y1="115" x2="130" y2="125"/>
+    </g>
+
+    <!-- Vision slits -->
+    <rect x="105" y="100" width="8" height="2"
+          fill="#1e293b"
+          rx="1"
+          opacity="0.7"/>
+
+    <!-- Camouflage pattern -->
+    <g opacity="0.3">
+      <path d="M 75 115 Q 80 112 85 115 L 85 125 L 75 125 Z"
+            fill="#0f172a"/>
+      <path d="M 110 115 Q 115 112 120 115 L 120 125 L 110 125 Z"
+            fill="#0f172a"/>
+    </g>
+  </g>
+
+  <!-- Muzzle flash (firing) -->
+  <g id="muzzleFlash" opacity="0">
+    <circle cx="170" cy="95" r="8" fill="#fbbf24">
+      <animate attributeName="opacity"
+               values="0;1;0"
+               dur="0.3s"
+               begin="0s;3s"
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="95" r="12" fill="#f59e0b" opacity="0.6">
+      <animate attributeName="opacity"
+               values="0;0.6;0"
+               dur="0.3s"
+               begin="0s;3s"
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Dust/dirt kicked up -->
+  <g id="dust" opacity="0.4">
+    <ellipse cx="60" cy="145" rx="12" ry="5" fill="#94a3b8">
+      <animate attributeName="rx" values="12;18;12" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="140" cy="145" rx="12" ry="5" fill="#94a3b8">
+      <animate attributeName="rx" values="12;18;12" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Ground/terrain -->
+  <rect x="0" y="148" width="200" height="3" fill="#64748b" opacity="0.3"/>
+
+  <!-- Movement vibration -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0.5,0; 0,0; -0.5,0; 0,0"
+    dur="0.3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

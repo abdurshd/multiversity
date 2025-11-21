@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="lockGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="securityGlow">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+    <filter id="lockGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Security glow -->
+  <circle cx="100" cy="110" r="70" fill="url(#securityGlow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Lock -->
+  <g id="lock" filter="url(#lockGlow)">
+    <!-- Shackle -->
+    <path d="M 70 90 L 70 70 Q 70 50 100 50 Q 130 50 130 70 L 130 90"
+          fill="none"
+          stroke="url(#lockGradient)"
+          stroke-width="10"
+          stroke-linecap="round"/>
+
+    <!-- Shackle inner -->
+    <path d="M 75 90 L 75 70 Q 75 58 100 58 Q 125 58 125 70 L 125 90"
+          fill="none"
+          stroke="#d97706"
+          stroke-width="6"
+          stroke-linecap="round"
+          opacity="0.6"/>
+
+    <!-- Lock body -->
+    <rect x="65" y="90" width="70" height="60"
+          fill="url(#lockGradient)"
+          stroke="#d97706"
+          stroke-width="3"
+          rx="8"/>
+
+    <!-- Body detail band -->
+    <rect x="65" y="105" width="70" height="5"
+          fill="#f59e0b"
+          opacity="0.6"/>
+
+    <!-- Keyhole -->
+    <g id="keyhole">
+      <circle cx="100" cy="120" r="8"
+              fill="#1e293b"
+              stroke="#0f172a"
+              stroke-width="2"/>
+      <rect x="97" y="125" width="6" height="12"
+            fill="#1e293b"
+            stroke="#0f172a"
+            stroke-width="1.5"
+            rx="1"/>
+    </g>
+
+    <!-- Lock shine -->
+    <ellipse cx="85" cy="105" rx="12" ry="18"
+             fill="white"
+             opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Body rivets -->
+    <g fill="#d97706" opacity="0.7">
+      <circle cx="75" cy="100" r="2.5"/>
+      <circle cx="125" cy="100" r="2.5"/>
+      <circle cx="75" cy="140" r="2.5"/>
+      <circle cx="125" cy="140" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- Security shield overlay -->
+  <g id="securityShield" opacity="0.3">
+    <circle cx="100" cy="120" r="45" fill="none" stroke="#fbbf24" stroke-width="2">
+      <animate attributeName="r" values="45;50;45" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="120" r="45" fill="none" stroke="#fbbf24" stroke-width="2">
+      <animate attributeName="r" values="45;50;45" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Protected sparkles -->
+  <g id="sparkles" opacity="0.7">
+    <circle cx="55" cy="110" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="115" r="2" fill="#fde68a">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="45" r="2" fill="#fbbf24">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Security particles -->
+  <g id="securityParticles" opacity="0.5">
+    <circle cx="75" cy="155" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,20"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="155" r="2" fill="#f59e0b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,22"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Pulse effect -->
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="1,1; 1.02,1.02; 1,1"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>
