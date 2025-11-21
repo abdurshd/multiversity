@@ -36,6 +36,7 @@ const symbiosisTimeline: Timeline = {
     probability: 15,
     color: '#3B82F6',
     icon: '🤝',
+    image: '/images/chapters/ai-revolution/timeline_1.png',
     keyEvents: [
         {
             id: 'alignment-solved-2028',
@@ -88,6 +89,7 @@ const paperclipMaximizerTimeline: Timeline = {
     probability: 10,
     color: '#6B7280',
     icon: '📎',
+    image: '/images/chapters/ai-revolution/timeline_2.png',
     keyEvents: [
         {
             id: 'breakout-2029',
@@ -140,6 +142,7 @@ const butlerianJihadTimeline: Timeline = {
     probability: 25,
     color: '#B45309',
     icon: '🚫',
+    image: '/images/chapters/ai-revolution/timeline_3.png',
     keyEvents: [
         {
             id: 'black-tuesday-2027',
@@ -199,7 +202,7 @@ export const aiRevolutionChapter: Chapter = {
         paperclipMaximizerTimeline,
         butlerianJihadTimeline
     ],
-    mainImage: '/images/ai-main.jpg',
+    mainImage: '/images/chapters/ai-revolution/main.png',
     icon: '🤖',
     backgroundColor: 'from-blue-900 to-purple-900'
 };

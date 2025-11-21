@@ -206,6 +206,7 @@ const noAssassinationTimeline: Timeline = {
   probability: 40,
   color: '#10B981',
   icon: '🕊️',
+  image: '/images/chapters/world-war-1/timeline_1.png',
   keyEvents: [
     {
       id: 'assassination-fails-1914',
@@ -320,6 +321,7 @@ const localizedConflictTimeline: Timeline = {
   probability: 25,
   color: '#F59E0B',
   icon: '⚔️',
+  image: '/images/chapters/world-war-1/timeline_2.png',
   keyEvents: [
     {
       id: 'germany-refuses-support-1914',
@@ -435,6 +437,7 @@ const germanVictoryTimeline: Timeline = {
   probability: 20,
   color: '#6B7280',
   icon: '🇩🇪',
+  image: '/images/chapters/world-war-1/timeline_3.png',
   keyEvents: [
     {
       id: 'schlieffen-plan-succeeds-1914',
@@ -702,7 +705,7 @@ export const worldWarOneChapter: Chapter = {
     germanVictoryTimeline,
     // Additional timelines can be added here...
   ],
-  mainImage: '/images/world-war-1-main.jpg',
+  mainImage: '/images/chapters/world-war-1/main.png',
   icon: '⚔️',
   backgroundColor: 'from-gray-600 to-red-800',
   interactiveScenarios

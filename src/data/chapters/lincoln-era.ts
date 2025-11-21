@@ -206,6 +206,7 @@ const lincolnSurvivesTimeline: Timeline = {
   probability: 30,
   color: '#10B981',
   icon: '🎩',
+  image: '/images/chapters/lincoln-era/timeline_1.png',
   keyEvents: [
     {
       id: 'booth-foiled-1865',
@@ -320,6 +321,7 @@ const peacefulAbolitionTimeline: Timeline = {
   probability: 15,
   color: '#3B82F6',
   icon: '🕊️',
+  image: '/images/chapters/lincoln-era/timeline_2.png',
   keyEvents: [
     {
       id: 'compensation-plan-1861',
@@ -434,6 +436,7 @@ const confederacyWinsTimeline: Timeline = {
   probability: 25,
   color: '#6B7280',
   icon: '🏴',
+  image: '/images/chapters/lincoln-era/timeline_3.png',
   keyEvents: [
     {
       id: 'gettysburg-confederate-victory-1863',
@@ -786,7 +789,7 @@ export const lincolnEraChapter: Chapter = {
     // Additional timelines can be added here...
   ],
   interactiveScenarios,
-  mainImage: '/images/lincoln-era-main.jpg',
+  mainImage: '/images/chapters/lincoln-era/main.png',
   icon: '🎩',
   backgroundColor: 'from-blue-800 to-gray-600'
 };

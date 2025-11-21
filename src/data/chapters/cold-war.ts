@@ -380,6 +380,7 @@ const nuclearWarTimeline: Timeline = {
   probability: 15,
   color: '#FF0000',
   icon: '☢️',
+  image: '/images/chapters/cold-war/timeline_1.png',
   keyEvents: [
     {
       id: 'nuclear-exchange-1962',
@@ -499,6 +500,7 @@ const sovietVictoryTimeline: Timeline = {
   probability: 25,
   color: '#DC2626',
   icon: '🚩',
+  image: '/images/chapters/cold-war/timeline_2.png',
   keyEvents: [
     {
       id: 'soviet-economic-miracle-1970',
@@ -618,6 +620,7 @@ const peacefulCoexistenceTimeline: Timeline = {
   probability: 30,
   color: '#10B981',
   icon: '🕊️',
+  image: '/images/chapters/cold-war/timeline_3.png',
   keyEvents: [
     {
       id: 'yalta-cooperation-1945',

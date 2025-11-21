@@ -203,6 +203,7 @@ const democraticRussiaTimeline: Timeline = {
   probability: 30,
   color: '#10B981',
   icon: '🗳️',
+  image: '/images/chapters/russian-empire/timeline_1.png',
   keyEvents: [
     {
       id: 'real-constitution-1906',
@@ -316,6 +317,7 @@ const chineseAllianceTimeline: Timeline = {
   probability: 20,
   color: '#F59E0B',
   icon: '🐉',
+  image: '/images/chapters/russian-empire/timeline_2.png',
   keyEvents: [
     {
       id: 'treaty-of-friendship-1860',
@@ -429,6 +431,7 @@ const islamicRussiaTimeline: Timeline = {
   probability: 15,
   color: '#059669',
   icon: '☪️',
+  image: '/images/chapters/russian-empire/timeline_3.png',
   keyEvents: [
     {
       id: 'mass-conversion-1850',
@@ -694,7 +697,7 @@ export const russianEmpireChapter: Chapter = {
     islamicRussiaTimeline,
     // Additional timelines can be added here...
   ],
-  mainImage: '/images/russian-empire-main.jpg',
+  mainImage: '/images/chapters/russian-empire/main.png',
   icon: '🐻',
   backgroundColor: 'from-red-600 to-blue-800',
   interactiveScenarios

@@ -37,6 +37,7 @@ const totalContainmentTimeline: Timeline = {
     probability: 5,
     color: '#10B981',
     icon: '🛡️',
+    image: '/images/chapters/covid-pandemic/timeline_1.png',
     keyEvents: [
         {
             id: 'global-lockdown-jan-2020',
@@ -91,6 +92,7 @@ const blackDeathVariantTimeline: Timeline = {
     probability: 10,
     color: '#18181B',
     icon: '☠️',
+    image: '/images/chapters/covid-pandemic/timeline_2.png',
     keyEvents: [
         {
             id: 'omega-variant-2020',
@@ -144,6 +146,7 @@ const permanentPandemicTimeline: Timeline = {
     probability: 40,
     color: '#F59E0B',
     icon: '😷',
+    image: '/images/chapters/covid-pandemic/timeline_3.png',
     keyEvents: [
         {
             id: 'vaccine-failure-2021',
@@ -203,7 +206,7 @@ export const covidPandemicChapter: Chapter = {
         blackDeathVariantTimeline,
         permanentPandemicTimeline
     ],
-    mainImage: '/images/covid-main.jpg',
+    mainImage: '/images/chapters/covid-pandemic/main.png',
     icon: '🦠',
     backgroundColor: 'from-green-900 to-gray-900'
 };

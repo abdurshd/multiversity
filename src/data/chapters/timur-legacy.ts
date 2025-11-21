@@ -39,6 +39,7 @@ const immortalEmirTimeline: Timeline = {
     probability: 20,
     color: '#DC2626',
     icon: '🐉',
+    image: '/images/chapters/timur-legacy/timeline_1.png',
     keyEvents: [
         {
             id: 'survival-1405',
@@ -101,6 +102,7 @@ const unifiedSuccessionTimeline: Timeline = {
     probability: 30,
     color: '#2563EB',
     icon: '⚖️',
+    image: '/images/chapters/timur-legacy/timeline_2.png',
     keyEvents: [
         {
             id: 'council-of-samarkand-1404',
@@ -153,6 +155,7 @@ const westernCampaignTimeline: Timeline = {
     probability: 15,
     color: '#7C3AED',
     icon: '🏰',
+    image: '/images/chapters/timur-legacy/timeline_3.png',
     keyEvents: [
         {
             id: 'invasion-of-europe-1403',
@@ -212,7 +215,7 @@ export const timurLegacyChapter: Chapter = {
         unifiedSuccessionTimeline,
         westernCampaignTimeline
     ],
-    mainImage: '/images/timur-main.jpg',
+    mainImage: '/images/chapters/timur-legacy/main.png',
     icon: '🗡️',
     backgroundColor: 'from-red-900 to-yellow-900'
 };

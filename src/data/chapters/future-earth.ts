@@ -37,6 +37,7 @@ const starTrekTimeline: Timeline = {
     probability: 10,
     color: '#6366F1',
     icon: '🚀',
+    image: '/images/chapters/future-earth/timeline_1.png',
     keyEvents: [
         {
             id: 'first-contact-2063',
@@ -89,6 +90,7 @@ const silentEarthTimeline: Timeline = {
     probability: 30,
     color: '#166534',
     icon: '🌿',
+    image: '/images/chapters/future-earth/timeline_2.png',
     keyEvents: [
         {
             id: 'the-great-silence-2050',
@@ -141,6 +143,7 @@ const dysonSwarmTimeline: Timeline = {
     probability: 20,
     color: '#FACC15',
     icon: '⚙️',
+    image: '/images/chapters/future-earth/timeline_3.png',
     keyEvents: [
         {
             id: 'mercury-dismantling-2200',
@@ -200,7 +203,7 @@ export const futureEarthChapter: Chapter = {
         silentEarthTimeline,
         dysonSwarmTimeline
     ],
-    mainImage: '/images/future-main.jpg',
+    mainImage: '/images/chapters/future-earth/main.png',
     icon: '🔮',
     backgroundColor: 'from-indigo-900 to-black'
 };

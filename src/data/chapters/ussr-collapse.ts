@@ -332,6 +332,7 @@ const successfulCoupTimeline: Timeline = {
   probability: 35,
   color: '#DC2626',
   icon: '💀',
+  image: '/images/chapters/ussr-collapse/timeline_1.png',
   keyEvents: [
     {
       id: 'coup-succeeds-1991',
@@ -451,6 +452,7 @@ const gradualReformTimeline: Timeline = {
   probability: 40,
   color: '#10B981',
   icon: '🐻',
+  image: '/images/chapters/ussr-collapse/timeline_2.png',
   keyEvents: [
     {
       id: 'constitutional-convention-1988',
@@ -570,6 +572,7 @@ const peacefulDissolutionTimeline: Timeline = {
   probability: 25,
   color: '#8B5CF6',
   icon: '🕊️',
+  image: '/images/chapters/ussr-collapse/timeline_3.png',
   keyEvents: [
     {
       id: 'union-treaty-negotiations-1990',

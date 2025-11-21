@@ -272,6 +272,7 @@ const noAppeasementTimeline: Timeline = {
   probability: 45,
   color: '#1E40AF',
   icon: '🦁',
+  image: '/images/chapters/world-war-2/timeline_1.png',
   keyEvents: [
     {
       id: 'munich-crisis-war-1938',
@@ -391,6 +392,7 @@ const dDayFailsTimeline: Timeline = {
   probability: 25,
   color: '#DC2626',
   icon: '💀',
+  image: '/images/chapters/world-war-2/timeline_2.png',
   keyEvents: [
     {
       id: 'd-day-disaster-1944',
@@ -510,6 +512,7 @@ const japanWinsPacificTimeline: Timeline = {
   probability: 20,
   color: '#EF4444',
   icon: '🌅',
+  image: '/images/chapters/world-war-2/timeline_3.png',
   keyEvents: [
     {
       id: 'midway-victory-1942',

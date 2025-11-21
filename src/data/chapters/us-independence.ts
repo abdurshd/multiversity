@@ -140,6 +140,7 @@ const britishVictoryTimeline: Timeline = {
   probability: 25,
   color: '#DC2626',
   icon: '🇬🇧',
+  image: '/images/chapters/us-independence/timeline_1.png',
   keyEvents: [
     {
       id: 'washington-captured-1778',
@@ -242,6 +243,7 @@ const frenchAmericaTimeline: Timeline = {
   probability: 15,
   color: '#2563EB',
   icon: '🇫🇷',
+  image: '/images/chapters/us-independence/timeline_2.png',
   keyEvents: [
     {
       id: 'massive-french-intervention-1777',
@@ -344,6 +346,7 @@ const confederatedStatesTimeline: Timeline = {
   probability: 30,
   color: '#059669',
   icon: '🤝',
+  image: '/images/chapters/us-independence/timeline_3.png',
   keyEvents: [
     {
       id: 'constitutional-convention-fails-1787',
@@ -599,7 +602,7 @@ export const usIndependenceChapter: Chapter = {
     // Additional timelines would be added here...
   ],
   interactiveScenarios,
-  mainImage: '/images/independence-main.jpg',
+  mainImage: '/images/chapters/us-independence/main.png',
   icon: '🗽',
   backgroundColor: 'from-red-600 to-blue-600'
 };

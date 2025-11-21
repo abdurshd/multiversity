@@ -183,6 +183,7 @@ const constitutionalMonarchyTimeline: Timeline = {
   probability: 35,
   color: '#10B981',
   icon: '👑',
+  image: '/images/chapters/french-revolution/timeline_1.png',
   keyEvents: [
     {
       id: 'louis-accepts-constitution-1789',
@@ -285,6 +286,7 @@ const robespierreLivesTimeline: Timeline = {
   probability: 20,
   color: '#DC2626',
   icon: '🗡️',
+  image: '/images/chapters/french-revolution/timeline_2.png',
   keyEvents: [
     {
       id: 'robespierre-survives-1794',
@@ -387,6 +389,7 @@ const girondistVictoryTimeline: Timeline = {
   probability: 25,
   color: '#3B82F6',
   icon: '🕊️',
+  image: '/images/chapters/french-revolution/timeline_3.png',
   keyEvents: [
     {
       id: 'girondist-coalition-1793',
@@ -642,7 +645,7 @@ export const frenchRevolutionChapter: Chapter = {
     // Additional timelines can be added here...
   ],
   interactiveScenarios,
-  mainImage: '/images/french-revolution-main.jpg',
+  mainImage: '/images/chapters/french-revolution/main.png',
   icon: '🇫🇷',
   backgroundColor: 'from-blue-600 to-red-600'
 };

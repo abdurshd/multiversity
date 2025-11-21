@@ -203,6 +203,7 @@ const menshevikVictoryTimeline: Timeline = {
   probability: 35,
   color: '#3B82F6',
   icon: '🗳️',
+  image: '/images/chapters/lenin-revolution/timeline_1.png',
   keyEvents: [
     {
       id: 'menshevik-coalition-1917',
@@ -316,6 +317,7 @@ const leninDiesEarlyTimeline: Timeline = {
   probability: 25,
   color: '#6B7280',
   icon: '💀',
+  image: '/images/chapters/lenin-revolution/timeline_2.png',
   keyEvents: [
     {
       id: 'lenin-death-1914',
@@ -429,6 +431,7 @@ const trotskyLeadershipTimeline: Timeline = {
   probability: 30,
   color: '#DC2626',
   icon: '🌍',
+  image: '/images/chapters/lenin-revolution/timeline_3.png',
   keyEvents: [
     {
       id: 'trotsky-wins-succession-1924',
@@ -695,7 +698,7 @@ export const leninRevolutionChapter: Chapter = {
     // Additional timelines can be added here...
   ],
   interactiveScenarios,
-  mainImage: '/images/lenin-revolution-main.jpg',
+  mainImage: '/images/chapters/lenin-revolution/main.png',
   icon: '⚡',
   backgroundColor: 'from-red-600 to-yellow-600'
 };

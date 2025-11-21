@@ -204,6 +204,7 @@ const artSchoolTimelineAccepted: Timeline = {
   probability: 60,
   color: '#8B5CF6',
   icon: '🎨',
+  image: '/images/chapters/hitler-rise/timeline_1.png',
   keyEvents: [
     {
       id: 'art-school-acceptance-1907',
@@ -317,6 +318,7 @@ const beerHallSuccessTimeline: Timeline = {
   probability: 15,
   color: '#DC2626',
   icon: '🍺',
+  image: '/images/chapters/hitler-rise/timeline_2.png',
   keyEvents: [
     {
       id: 'bavaria-captured-1923',
@@ -433,6 +435,7 @@ const assassinationSuccessTimeline: Timeline = {
   probability: 35,
   color: '#059669',
   icon: '🎯',
+  image: '/images/chapters/hitler-rise/timeline_3.png',
   keyEvents: [
     {
       id: 'july-20-success-1944',

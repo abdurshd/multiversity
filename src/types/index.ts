@@ -58,6 +58,7 @@ export interface Timeline {
   butterfly: ButterflyEffect[];
   color: string; // for visualization
   icon: string;
+  image?: string;
 }
 
 export interface StoryChoice {
