@@ -149,8 +149,9 @@ const TimelineExplorer: React.FC = () => {
       </section>
 
       {/* Enhanced Timeline */}
-      <section className="py-12 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-12 px-6 bg-slate-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(30,41,59,0.3),_transparent_70%)]" />
+        <div className="max-w-6xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
