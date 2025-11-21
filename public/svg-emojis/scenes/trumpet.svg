@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="trumpetGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="brassGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="trumpetFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Brass glow -->
+  <circle cx="110" cy="100" r="70" fill="url(#brassGlow)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Trumpet -->
+  <g id="trumpet" filter="url(#trumpetFilter)">
+    <!-- Bell (front opening) -->
+    <ellipse cx="155" cy="100" rx="20" ry="25"
+             fill="url(#trumpetGradient)"
+             stroke="#d97706"
+             stroke-width="2">
+      <animate attributeName="rx" values="20;22;20" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="25;27;25" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Bell inner shadow -->
+    <ellipse cx="155" cy="100" rx="15" ry="20"
+             fill="#b45309"
+             opacity="0.6"/>
+
+    <!-- Main tube -->
+    <rect x="70" y="92" width="90" height="16"
+          fill="url(#trumpetGradient)"
+          stroke="#d97706"
+          stroke-width="2"
+          rx="3"/>
+
+    <!-- Tube shine -->
+    <rect x="75" y="94" width="80" height="4"
+          fill="#fef3c7"
+          opacity="0.4"
+          rx="2">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Valve casing -->
+    <rect x="90" y="88" width="30" height="24"
+          fill="#f59e0b"
+          stroke="#d97706"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Valves -->
+    <g>
+      <rect x="95" y="83" width="6" height="10"
+            fill="#fbbf24"
+            stroke="#d97706"
+            stroke-width="1.5"
+            rx="2">
+        <animate attributeName="y" values="83;80;83" dur="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="105" y="83" width="6" height="10"
+            fill="#fbbf24"
+            stroke="#d97706"
+            stroke-width="1.5"
+            rx="2">
+        <animate attributeName="y" values="83;80;83" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="115" y="83" width="6" height="10"
+            fill="#fbbf24"
+            stroke="#d97706"
+            stroke-width="1.5"
+            rx="2">
+        <animate attributeName="y" values="83;80;83" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Valve buttons -->
+      <circle cx="98" cy="82" r="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1">
+        <animate attributeName="cy" values="82;79;82" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="108" cy="82" r="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1">
+        <animate attributeName="cy" values="82;79;82" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="118" cy="82" r="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1">
+        <animate attributeName="cy" values="82;79;82" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Valve slides -->
+    <g stroke="#d97706" stroke-width="2" fill="#f59e0b">
+      <rect x="95" y="112" width="5" height="15" rx="1"/>
+      <rect x="105" y="112" width="5" height="18" rx="1"/>
+      <rect x="115" y="112" width="5" height="15" rx="1"/>
+    </g>
+
+    <!-- Leadpipe (mouthpiece connection) -->
+    <rect x="45" y="95" width="30" height="10"
+          fill="url(#trumpetGradient)"
+          stroke="#d97706"
+          stroke-width="2"
+          rx="2"/>
+
+    <!-- Mouthpiece -->
+    <g>
+      <ellipse cx="40" cy="100" rx="5" ry="7"
+               fill="#fbbf24"
+               stroke="#d97706"
+               stroke-width="1.5"/>
+      <rect x="35" y="98" width="10" height="4"
+            fill="#f59e0b"
+            stroke="#d97706"
+            stroke-width="1.5"/>
+    </g>
+
+    <!-- Water key -->
+    <circle cx="135" cy="108" r="2" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="135" y1="108" x2="135" y2="113"
+          stroke="#94a3b8"
+          stroke-width="2"
+          stroke-linecap="round"/>
+
+    <!-- Bell brace -->
+    <path d="M 130 100 L 145 100"
+          stroke="#d97706"
+          stroke-width="2"
+          fill="none"/>
+
+    <!-- Decorative engravings -->
+    <g stroke="#b45309" stroke-width="0.5" opacity="0.5" fill="none">
+      <path d="M 150 95 Q 155 97 150 99"/>
+      <path d="M 148 101 Q 153 103 148 105"/>
+    </g>
+  </g>
+
+  <!-- Sound waves -->
+  <g id="soundWaves" opacity="0.6">
+    <path d="M 175 90 Q 185 95 180 100"
+          fill="none"
+          stroke="#fbbf24"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 175 90 Q 185 95 180 100;
+                       M 180 90 Q 190 95 185 100;
+                       M 175 90 Q 185 95 180 100"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 175 100 Q 185 100 180 100"
+          fill="none"
+          stroke="#f59e0b"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 175 100 Q 185 100 180 100;
+                       M 180 100 Q 190 100 185 100;
+                       M 175 100 Q 185 100 180 100"
+               dur="2s"
+               begin="0.3s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 175 110 Q 185 105 180 100"
+          fill="none"
+          stroke="#fbbf24"
+          stroke-width="2"
+          stroke-linecap="round">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 175 110 Q 185 105 180 100;
+                       M 180 110 Q 190 105 185 100;
+                       M 175 110 Q 185 105 180 100"
+               dur="2s"
+               begin="0.6s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Musical notes -->
+  <g id="musicNotes" opacity="0.7">
+    <g fill="#1e293b">
+      <circle cx="165" cy="80" r="3"/>
+      <rect x="168" y="70" width="2" height="10"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,-25"
+        dur="3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" repeatCount="indefinite"/>
+    </g>
+
+    <g fill="#1e293b">
+      <circle cx="170" cy="100" r="2.5"/>
+      <rect x="172.5" y="92" width="1.5" height="8"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 20,-30"
+        dur="3s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+
+    <g fill="#1e293b">
+      <circle cx="168" cy="120" r="3"/>
+      <rect x="171" y="110" width="2" height="10"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-28"
+        dur="3s"
+        begin="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Jazz sparkles -->
+  <g id="sparkles" opacity="0.7">
+    <circle cx="145" cy="85" r="2" fill="#fef3c7">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="95" r="2" fill="#fde68a">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="115" r="2" fill="#fbbf24">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Vibrato effect -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,1; 0,0; 0,-1; 0,0"
+    dur="0.5s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

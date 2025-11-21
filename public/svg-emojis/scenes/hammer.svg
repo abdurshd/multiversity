@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="hammerHeadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="handleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#92400e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="impactGlow">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="hammerFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Impact glow -->
+  <circle cx="85" cy="70" r="60" fill="url(#impactGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Hammer -->
+  <g id="hammer" filter="url(#hammerFilter)">
+    <!-- Handle -->
+    <rect x="115" y="90" width="12" height="80"
+          fill="url(#handleGradient)"
+          stroke="#78350f"
+          stroke-width="2"
+          rx="3"
+          transform="rotate(-30 121 130)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 121 130; -40 121 130; -30 121 130"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Wood grain on handle -->
+    <g stroke="#78350f" stroke-width="0.5" opacity="0.4" fill="none">
+      <line x1="118" y1="100" x2="122" y2="100" transform="rotate(-30 121 130)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-30 121 130; -40 121 130; -30 121 130"
+          dur="1.5s"
+          repeatCount="indefinite"/>
+      </line>
+      <line x1="118" y1="120" x2="122" y2="120" transform="rotate(-30 121 130)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-30 121 130; -40 121 130; -30 121 130"
+          dur="1.5s"
+          repeatCount="indefinite"/>
+      </line>
+      <line x1="118" y1="140" x2="122" y2="140" transform="rotate(-30 121 130)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-30 121 130; -40 121 130; -30 121 130"
+          dur="1.5s"
+          repeatCount="indefinite"/>
+      </line>
+    </g>
+
+    <!-- Hammer head -->
+    <rect x="55" y="55" width="50" height="25"
+          fill="url(#hammerHeadGradient)"
+          stroke="#475569"
+          stroke-width="2"
+          rx="2"
+          transform="rotate(-30 80 67)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 80 67; -40 80 67; -30 80 67"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Hammer face (striking surface) -->
+    <rect x="102" y="58" width="5" height="19"
+          fill="#cbd5e1"
+          stroke="#94a3b8"
+          stroke-width="1"
+          transform="rotate(-30 104.5 67.5)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 104.5 67.5; -40 104.5 67.5; -30 104.5 67.5"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Claw (back of hammer) -->
+    <path d="M 55 60 Q 45 55 40 60 Q 38 65 40 70 Q 45 75 55 70"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="2"
+          transform="rotate(-30 47 65)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 47 65; -40 47 65; -30 47 65"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Claw detail -->
+    <path d="M 50 65 Q 45 62 42 65"
+          fill="none"
+          stroke="#475569"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          transform="rotate(-30 46 65)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 46 65; -40 46 65; -30 46 65"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Metal shine on head -->
+    <rect x="75" y="60" width="15" height="8"
+          fill="white"
+          opacity="0.3"
+          rx="2"
+          transform="rotate(-30 82.5 64)">
+      <animate attributeName="opacity" values="0.25;0.35;0.25" dur="2s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 82.5 64; -40 82.5 64; -30 82.5 64"
+        dur="1.5s"
+        additive="sum"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Handle grip -->
+    <ellipse cx="121" cy="155" rx="8" ry="5"
+             fill="#451a03"
+             opacity="0.7"
+             transform="rotate(-30 121 155)">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-30 121 155; -40 121 155; -30 121 155"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Impact sparks -->
+  <g id="sparks" opacity="0.8">
+    <path d="M 105 60 L 115 55 L 110 62 Z"
+          fill="#fbbf24">
+      <animate attributeName="opacity" values="0;0.9;0" dur="1.5s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,-10"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M 108 65 L 118 62 L 112 68 Z"
+          fill="#f59e0b">
+      <animate attributeName="opacity" values="0;0.9;0" dur="1.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-5"
+        dur="1.5s"
+        begin="0.1s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M 110 70 L 120 72 L 112 75 Z"
+          fill="#fbbf24">
+      <animate attributeName="opacity" values="0;0.9;0" dur="1.5s" begin="0.2s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 20,5"
+        dur="1.5s"
+        begin="0.2s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Impact waves -->
+  <g id="impactWaves" opacity="0.6">
+    <circle cx="105" cy="65" r="5" fill="none" stroke="#fbbf24" stroke-width="2">
+      <animate attributeName="r" values="5;20;5" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="105" cy="65" r="5" fill="none" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="r" values="5;20;5" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Work particles -->
+  <g id="workParticles" opacity="0.5">
+    <circle cx="100" cy="60" r="2" fill="#cbd5e1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 12,-20"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="68" r="2" fill="#94a3b8">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-15"
+        dur="2s"
+        begin="0.3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="108" cy="72" r="2" fill="#cbd5e1">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 15,10"
+        dur="2s"
+        begin="0.5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Nail (being hammered) -->
+  <g id="nail">
+    <rect x="102" y="80" width="4" height="20"
+          fill="#64748b"
+          stroke="#475569"
+          stroke-width="1"
+          rx="1">
+      <animate attributeName="height" values="20;15;20" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="80;85;80" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="104" cy="80" r="3" fill="#475569">
+      <animate attributeName="cy" values="80;85;80" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Strike motion blur -->
+  <rect x="75" y="62" width="30" height="10"
+        fill="#94a3b8"
+        opacity="0"
+        transform="rotate(-30 90 67)">
+    <animate attributeName="opacity" values="0;0.3;0" dur="1.5s" repeatCount="indefinite"/>
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="-30 90 67; -40 90 67; -30 90 67"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+  </rect>
+</svg>

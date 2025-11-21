@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="electricGlow">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="lightningFilter">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Electric glow -->
+  <circle cx="100" cy="100" r="80" fill="url(#electricGlow)">
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Lightning bolt -->
+  <g id="lightning" filter="url(#lightningFilter)">
+    <!-- Main bolt -->
+    <path d="M 110 30 L 95 85 L 115 85 L 90 150 L 108 100 L 88 100 L 110 30 Z"
+          fill="url(#lightningGradient)"
+          stroke="#fef3c7"
+          stroke-width="2">
+      <animate attributeName="opacity" values="1;0.95;1" dur="0.3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Bright core -->
+    <path d="M 110 35 L 98 85 L 112 85 L 93 145 L 106 100 L 91 100 L 110 35 Z"
+          fill="#fef3c7"
+          opacity="0.8">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Side branches -->
+    <g fill="url(#lightningGradient)" stroke="#fef3c7" stroke-width="1.5">
+      <!-- Top left branch -->
+      <path d="M 100 60 L 80 70 L 85 72 L 75 80">
+        <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Top right branch -->
+      <path d="M 105 75 L 125 82 L 120 85 L 130 92">
+        <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Middle left branch -->
+      <path d="M 95 95 L 70 105 L 75 108 L 65 115">
+        <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Lower right branch -->
+      <path d="M 102 125 L 120 135 L 115 138 L 125 145">
+        <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Flash effect -->
+  <rect x="0" y="0" width="200" height="200" fill="#fef3c7" opacity="0">
+    <animate attributeName="opacity" values="0;0.4;0" dur="0.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Electric arcs -->
+  <g id="electricArcs" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M 75 50 Q 70 55 68 60">
+      <animate attributeName="opacity" values="0;0.8;0" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 75 50 Q 70 55 68 60;
+                       M 75 50 Q 65 53 60 58;
+                       M 75 50 Q 70 55 68 60"
+               dur="0.5s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 115 90 Q 125 95 130 100">
+      <animate attributeName="opacity" values="0;0.8;0" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 115 90 Q 125 95 130 100;
+                       M 115 90 Q 130 93 138 98;
+                       M 115 90 Q 125 95 130 100"
+               dur="0.5s"
+               begin="0.2s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Energy particles -->
+  <g id="energyParticles" opacity="0.8">
+    <circle cx="85" cy="70" r="2" fill="#fef3c7">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -15,-20"
+        dur="1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="115" cy="85" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 18,-15"
+        dur="1s"
+        begin="0.1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="90" cy="100" r="2" fill="#fef3c7">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,0"
+        dur="1s"
+        begin="0.2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="108" cy="115" r="2" fill="#f59e0b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 22,10"
+        dur="1s"
+        begin="0.3s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95" cy="135" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -12,25"
+        dur="1s"
+        begin="0.4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Thunder waves -->
+  <g id="thunderWaves" opacity="0.5">
+    <circle cx="100" cy="90" r="20" fill="none" stroke="#fbbf24" stroke-width="2">
+      <animate attributeName="r" values="20;40;20" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="90" r="20" fill="none" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="r" values="20;40;20" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Storm cloud (top) -->
+  <g id="stormCloud" opacity="0.6">
+    <ellipse cx="100" cy="25" rx="40" ry="15"
+             fill="#64748b"
+             stroke="#475569"
+             stroke-width="1">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="80" cy="20" rx="25" ry="10"
+             fill="#64748b"
+             stroke="#475569"
+             stroke-width="1">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="120" cy="22" rx="30" ry="12"
+             fill="#64748b"
+             stroke="#475569"
+             stroke-width="1">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Ground impact -->
+  <g id="groundImpact" opacity="0.7">
+    <ellipse cx="90" cy="155" rx="15" ry="5"
+             fill="#fbbf24"
+             opacity="0.6">
+      <animate attributeName="rx" values="15;25;15" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="90" cy="155" r="8" fill="none" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="r" values="8;20;8" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Rapid flicker -->
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="1,1; 1.01,1.01; 1,1; 0.99,0.99; 1,1"
+    dur="0.3s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>

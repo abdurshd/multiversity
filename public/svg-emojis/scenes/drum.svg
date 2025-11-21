@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="drumBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="drumTopGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fde68a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="beatGlow">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0" />
+    </radialGradient>
+    <filter id="drumFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Beat glow -->
+  <circle cx="100" cy="100" r="70" fill="url(#beatGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Drum -->
+  <g id="drum" filter="url(#drumFilter)">
+    <!-- Drum body/shell -->
+    <ellipse cx="100" cy="130" rx="45" ry="15"
+             fill="#7f1d1d"
+             opacity="0.8"/>
+
+    <rect x="55" y="80" width="90" height="50"
+          fill="url(#drumBodyGradient)"
+          stroke="#7f1d1d"
+          stroke-width="2"/>
+
+    <!-- Shell rim bottom -->
+    <ellipse cx="100" cy="130" rx="45" ry="8"
+             fill="#450a0a"
+             stroke="#7f1d1d"
+             stroke-width="1.5"/>
+
+    <!-- Drum top -->
+    <ellipse cx="100" cy="80" rx="45" ry="15"
+             fill="url(#drumTopGradient)"
+             stroke="#f59e0b"
+             stroke-width="2">
+      <animate attributeName="ry" values="15;13;15" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Drumhead tension ring -->
+    <ellipse cx="100" cy="80" rx="42" ry="13"
+             fill="none"
+             stroke="#d97706"
+             stroke-width="2"
+             opacity="0.7"/>
+
+    <!-- Drumhead center highlight -->
+    <ellipse cx="100" cy="78" rx="25" ry="8"
+             fill="white"
+             opacity="0.3">
+      <animate attributeName="opacity" values="0.25;0.35;0.25" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Tension rods -->
+    <g>
+      <circle cx="70" cy="82" r="3" fill="#94a3b8" stroke="#64748b" stroke-width="1"/>
+      <circle cx="85" cy="75" r="3" fill="#94a3b8" stroke="#64748b" stroke-width="1"/>
+      <circle cx="100" cy="72" r="3" fill="#94a3b8" stroke="#64748b" stroke-width="1"/>
+      <circle cx="115" cy="75" r="3" fill="#94a3b8" stroke="#64748b" stroke-width="1"/>
+      <circle cx="130" cy="82" r="3" fill="#94a3b8" stroke="#64748b" stroke-width="1"/>
+    </g>
+
+    <!-- Lugs on shell -->
+    <g fill="#1e293b" stroke="#0f172a" stroke-width="1">
+      <rect x="63" y="95" width="6" height="8" rx="1"/>
+      <rect x="131" y="95" width="6" height="8" rx="1"/>
+      <rect x="63" y="115" width="6" height="8" rx="1"/>
+      <rect x="131" y="115" width="8" height="8" rx="1"/>
+    </g>
+  </g>
+
+  <!-- Drumsticks -->
+  <g id="drumsticks">
+    <!-- Left stick -->
+    <g>
+      <rect x="75" y="45" width="4" height="35"
+            fill="#d97706"
+            stroke="#92400e"
+            stroke-width="1"
+            rx="2"
+            transform="rotate(-25 77 62)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-25 77 62; -35 77 62; -25 77 62"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </g>
+
+      <!-- Left stick tip -->
+      <ellipse cx="75" cy="42" rx="3" ry="5"
+               fill="#fbbf24"
+               stroke="#f59e0b"
+               stroke-width="1"
+               transform="rotate(-25 75 42)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-25 75 42; -35 75 42; -25 75 42"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Right stick -->
+    <g>
+      <rect x="121" y="45" width="4" height="35"
+            fill="#d97706"
+            stroke="#92400e"
+            stroke-width="1"
+            rx="2"
+            transform="rotate(25 123 62)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="25 123 62; 35 123 62; 25 123 62"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Right stick tip -->
+      <ellipse cx="125" cy="42" rx="3" ry="5"
+               fill="#fbbf24"
+               stroke="#f59e0b"
+               stroke-width="1"
+               transform="rotate(25 125 42)">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="25 125 42; 35 125 42; 25 125 42"
+          dur="1s"
+          repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+  </g>
+
+  <!-- Impact effects -->
+  <g id="impactEffects" opacity="0.7">
+    <circle cx="85" cy="78" r="8" fill="none" stroke="#fbbf24" stroke-width="2">
+      <animate attributeName="r" values="0;12;0" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="115" cy="78" r="8" fill="none" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="r" values="0;12;0" dur="1s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Sound waves -->
+  <g id="soundWaves" stroke="#ef4444" stroke-width="2" stroke-linecap="round" opacity="0.6" fill="none">
+    <path d="M 50 100 Q 45 100 40 100">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 50 100 Q 45 100 40 100;
+                       M 50 100 Q 40 100 30 100;
+                       M 50 100 Q 45 100 40 100"
+               dur="1.5s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 150 100 Q 155 100 160 100">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 150 100 Q 155 100 160 100;
+                       M 150 100 Q 160 100 170 100;
+                       M 150 100 Q 155 100 160 100"
+               dur="1.5s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 100 50 Q 100 45 100 40">
+      <animate attributeName="opacity" values="0;0.7;0" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="d"
+               values="M 100 50 Q 100 45 100 40;
+                       M 100 50 Q 100 40 100 30;
+                       M 100 50 Q 100 45 100 40"
+               dur="1.5s"
+               begin="0.3s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Beat particles -->
+  <g id="beatParticles" opacity="0.6">
+    <circle cx="75" cy="75" r="2" fill="#fca5a5">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -20,-25"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="75" r="2" fill="#f87171">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 22,-28"
+        dur="2s"
+        begin="0.1s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="100" r="2" fill="#fbbf24">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; -25,0"
+        dur="2s"
+        begin="0.2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="100" r="2" fill="#f59e0b">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 28,0"
+        dur="2s"
+        begin="0.2s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Rhythm pulse -->
+  <animateTransform
+    attributeName="transform"
+    type="scale"
+    values="1,1; 1.02,1.02; 1,1"
+    dur="1s"
+    repeatCount="indefinite"
+    additive="sum"/>
+</svg>
