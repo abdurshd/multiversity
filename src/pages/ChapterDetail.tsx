@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, MapPin, GitBranch, Clock, ArrowRight, Percent, PlayCircle, Sparkles } from 'lucide-react';
 import { Chapter, Person } from '../types';
@@ -10,7 +10,6 @@ import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 
 const ChapterDetail: React.FC = () => {
-  const navigate = useNavigate();
   const { id: chapterId } = useParams<{ id: string }>();
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [selectedTimeline, setSelectedTimeline] = useState<string | null>(null);

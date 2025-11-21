@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Person } from '../../types';
+import AnimatedSvgEmoji from './AnimatedSvgEmoji';
 
 interface AnimatedCharacterProps {
   character: Person;
@@ -91,8 +92,21 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
         </motion.div>
 
         {/* Floating Emoji based on character */}
-        <motion.div
-          className="absolute -top-2 -right-2 text-lg"
+        <AnimatedSvgEmoji
+          emoji={
+            character.role.includes('King') || character.role.includes('Tsar') || character.role.includes('Emperor') ? '👑' :
+            character.role.includes('General') || character.role.includes('Military') ? '⚔️' :
+            character.role.includes('President') ? '🎩' :
+            character.role.includes('Queen') ? '💎' :
+            character.role.includes('Revolutionary') || character.role.includes('Activist') ? '✊' :
+            character.role.includes('Writer') || character.role.includes('Author') ? '✍️' :
+            character.role.includes('Scientist') || character.role.includes('Inventor') ? '🔬' :
+            character.role.includes('Artist') || character.role.includes('Painter') ? '🎨' :
+            character.role.includes('Monk') || character.role.includes('Religious') ? '🙏' :
+            '⭐'
+          }
+          className="absolute -top-2 -right-2"
+          size="1.5rem"
           animate={{
             rotate: [0, 10, -10, 0],
             scale: [1, 1.2, 1],
@@ -102,18 +116,8 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
             repeat: Infinity,
             ease: "easeInOut",
           }}
-        >
-          {character.role.includes('King') || character.role.includes('Tsar') || character.role.includes('Emperor') ? '👑' :
-           character.role.includes('General') || character.role.includes('Military') ? '⚔️' :
-           character.role.includes('President') ? '🎩' :
-           character.role.includes('Queen') ? '💎' :
-           character.role.includes('Revolutionary') || character.role.includes('Activist') ? '✊' :
-           character.role.includes('Writer') || character.role.includes('Author') ? '✍️' :
-           character.role.includes('Scientist') || character.role.includes('Inventor') ? '🔬' :
-           character.role.includes('Artist') || character.role.includes('Painter') ? '🎨' :
-           character.role.includes('Monk') || character.role.includes('Religious') ? '🙏' :
-           '⭐'}
-        </motion.div>
+          fallbackToEmoji={true}
+        />
 
         {/* Interactive sparkles when hovered */}
         <AnimatePresence>
