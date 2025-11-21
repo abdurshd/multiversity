@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -16,6 +17,7 @@ import {
 } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
+  const { t } = useTranslation();
   const chapters = useMemo(() => [
     { id: 'timur-legacy', title: 'Timur\'s Legacy (14th Century)', description: 'The last great nomadic conqueror', color: 'bg-red-900', icon: '🗡️', emoji: '🏰', image: '/images/chapters/timur-legacy/main.png' },
     { id: 'us-independence', title: 'US Independence (1776)', description: 'Revolutionary War alternatives', color: 'bg-red-600', icon: '🇺🇸', emoji: '⚔️', image: '/images/chapters/us-independence/main.png' },
@@ -34,10 +36,10 @@ const LandingPage: React.FC = () => {
   ], []);
 
   const heroStats = useMemo(() => [
-    { label: 'Divergence Points', value: '250+', detail: 'hand-crafted turning points' },
-    { label: 'Interactive Events', value: '1,200+', detail: 'scored for impact' },
-    { label: 'Coverage', value: '1776 → 2025', detail: 'global span & regional focus' }
-  ], []);
+    { label: t('landing.stats.divergence.label'), value: t('landing.stats.divergence.value'), detail: t('landing.stats.divergence.detail') },
+    { label: t('landing.stats.events.label'), value: t('landing.stats.events.value'), detail: t('landing.stats.events.detail') },
+    { label: t('landing.stats.coverage.label'), value: t('landing.stats.coverage.value'), detail: t('landing.stats.coverage.detail') }
+  ], [t]);
 
   const timelineThreads = useMemo(() => [
     {
@@ -54,7 +56,7 @@ const LandingPage: React.FC = () => {
       tag: 'French Revolution',
       title: 'Constitutional Monarchy succeeds',
       effect: 'Gradual reform averts the Terror and reshapes European liberalism.'
-    }
+    },
   ], []);
 
   const immersionModes = useMemo(() => [
@@ -111,15 +113,11 @@ const LandingPage: React.FC = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-white">
-              Multiversity
+              {t('landing.title')}
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto px-4">
-              Explore 14 major historical events with{" "}
-              <span className="font-semibold text-blue-400">
-                3 alternative timelines each
-              </span>
-              . Journey through the infinite paths history could have taken.
+              {t('landing.subtitle')}
             </p>
           </motion.div>
 
@@ -152,7 +150,7 @@ const LandingPage: React.FC = () => {
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
             >
               <Sparkles className="w-5 h-5" />
-              <span>Begin Exploration</span>
+              <span>{t('landing.cta')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
 

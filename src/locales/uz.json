@@ -1,0 +1,37 @@
+{
+    "common": {
+        "welcome": "Multiversity-ga xush kelibsiz",
+        "language": "Til",
+        "loading": "Yuklanmoqda...",
+        "error": "Xatolik yuz berdi",
+        "notFound": "Sahifa topilmadi"
+    },
+    "nav": {
+        "home": "Bosh sahifa",
+        "chapters": "Bo'limlar",
+        "compare": "Taqqoslash",
+        "documentation": "Hujjatlar"
+    },
+    "landing": {
+        "title": "Muqobil Tarixlarni O'rganing",
+        "subtitle": "Agar tarix boshqacha tus olganida nima bo'lar edi?",
+        "cta": "O'rganishni boshlash",
+        "stats": {
+            "divergence": {
+                "label": "Divergence Points",
+                "value": "40+",
+                "detail": "qo'lda yaratilgan burilish nuqtalari"
+            },
+            "events": {
+                "label": "Interaktiv Voqealar",
+                "value": "70+",
+                "detail": "ta'sir uchun baholangan"
+            },
+            "coverage": {
+                "label": "Qamrov",
+                "value": "1370 → 2100+",
+                "detail": "global qamrov va mintaqaviy fokus"
+            }
+        }
+    }
+}

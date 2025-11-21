@@ -1,0 +1,37 @@
+{
+    "common": {
+        "welcome": "Welcome to Multiversity",
+        "language": "Language",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "notFound": "Page not found"
+    },
+    "nav": {
+        "home": "Home",
+        "chapters": "Chapters",
+        "compare": "Compare",
+        "documentation": "Documentation"
+    },
+    "landing": {
+        "title": "Explore Alternative Histories",
+        "subtitle": "What if history took a different turn?",
+        "cta": "Start Exploring",
+        "stats": {
+            "divergence": {
+                "label": "Divergence Points",
+                "value": "40+",
+                "detail": "hand-crafted turning points"
+            },
+            "events": {
+                "label": "Interactive Events",
+                "value": "70+",
+                "detail": "scored for impact"
+            },
+            "coverage": {
+                "label": "Coverage",
+                "value": "1370 → 2100+",
+                "detail": "global span & regional focus"
+            }
+        }
+    }
+}
