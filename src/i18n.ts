@@ -13,6 +13,10 @@ import uzCommonNav from './locales/uz/common/navigation.json';
 import uzCommonFooter from './locales/uz/common/footer.json';
 import uzCommonErrors from './locales/uz/common/errors.json';
 
+// Import page namespaces
+import enPagesLanding from './locales/en/pages/landing.json';
+import uzPagesLanding from './locales/uz/pages/landing.json';
+
 // For backward compatibility with existing code
 const enLegacy = {
     common: {
@@ -91,6 +95,7 @@ i18n
                 'common-nav': enCommonNav,
                 'common-footer': enCommonFooter,
                 'common-errors': enCommonErrors,
+                'pages-landing': enPagesLanding,
             },
             uz: {
                 translation: uzLegacy, // For backward compatibility
@@ -98,12 +103,13 @@ i18n
                 'common-nav': uzCommonNav,
                 'common-footer': uzCommonFooter,
                 'common-errors': uzCommonErrors,
+                'pages-landing': uzPagesLanding,
             },
         },
         defaultNS: 'translation',
         fallbackNS: 'translation',
         fallbackLng: 'en',
-        ns: ['translation', 'common-ui', 'common-nav', 'common-footer', 'common-errors'],
+        ns: ['translation', 'common-ui', 'common-nav', 'common-footer', 'common-errors', 'pages-landing'],
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         },
