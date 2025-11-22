@@ -10,7 +10,7 @@
     "no_results_description": "Ko'proq boblarni topish uchun qidiruv so'zlaringizni yoki filtrlaringizni sozlang."
   },
   "filters": {
-    "all_periods": "Barcha davrlar",
+    "all": "Barcha davrlar",
     "18th_century": "XVIII asr",
     "19th_century": "XIX asr",
     "20th_century": "XX asr",
