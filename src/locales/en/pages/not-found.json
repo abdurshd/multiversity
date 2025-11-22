@@ -1,0 +1,10 @@
+{
+  "title": "Timeline Not Found",
+  "description": "Looks like you've wandered into an alternate reality that doesn't exist. This page may have been lost in the multiverse or never existed in this timeline.",
+  "buttons": {
+    "go_home": "Go Home",
+    "explore_chapters": "Explore Chapters",
+    "go_back": "Go Back"
+  },
+  "help_text": "If you believe this is an error, please check the URL or contact support."
+}

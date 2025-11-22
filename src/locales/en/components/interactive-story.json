@@ -1,0 +1,8 @@
+{
+  "labels": {
+    "scene_of": "Scene {current} of {total}",
+    "choose_action": "Choose your action:",
+    "begin_story": "Begin Interactive Story",
+    "continue": "Continue"
+  }
+}

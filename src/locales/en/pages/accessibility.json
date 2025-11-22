@@ -1,0 +1,27 @@
+{
+  "header": {
+    "category": "Legal",
+    "title": "Accessibility Statement",
+    "subtitle": "Aligned with WCAG 2.1 AA standards."
+  },
+  "sections": [
+    {
+      "title": "Commitment",
+      "content": "Multiversity ensures equal access for learners, researchers, and educators. We strive to adhere to WCAG 2.1 AA guidelines, testing keyboard navigation and screen reader compatibility to ensure a seamless experience for all users."
+    },
+    {
+      "title": "Recent Improvements",
+      "list": [
+        "High contrast color scheme for improved readability.",
+        "Alternative text provided for all chapter and timeline images.",
+        "Keyboard navigation support for all interactive elements.",
+        "Semantic HTML structure for better screen reader navigation."
+      ]
+    },
+    {
+      "title": "Request Assistance",
+      "content": "Email accessibility@multiversity.netlify.app to report a barrier or request content in an alternative format. We aim to respond within five business days.",
+      "email": "accessibility@multiversity.netlify.app"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import type { HistoricalEvent, Timeline } from '../../types';
+import { useTranslation } from 'react-i18next';
 
 interface AnimatedTimelineProps {
   timeline: Timeline;
@@ -36,6 +37,7 @@ export default function AnimatedTimeline({
   animationDelay = 100,
 }: AnimatedTimelineProps) {
   const svgRef = useRef<SVGSVGElement>(null);
+  const { t } = useTranslation('components-animated-timeline');
 
   useEffect(() => {
     if (!svgRef.current) return;
@@ -403,7 +405,7 @@ export default function AnimatedTimeline({
         .style('font-weight', '700')
         .style('font-family', '"JetBrains Mono", monospace')
         .style('letter-spacing', '2px')
-        .text('DIVERGENCE');
+        .text(t('divergence_label'));
 
       labelGroup.transition()
         .duration(800)
@@ -439,7 +441,7 @@ export default function AnimatedTimeline({
         .text(type);
     });
 
-  }, [timeline, startYear, endYear, showOnLoad, animationDelay, onEventClick]);
+  }, [timeline, startYear, endYear, showOnLoad, animationDelay, onEventClick, t]);
 
   const showTooltip = (event: MouseEvent, data: HistoricalEvent) => {
     const tooltip = d3.select('body').append('div')

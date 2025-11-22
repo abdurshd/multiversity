@@ -1,0 +1,31 @@
+{
+  "header": {
+    "category": "Resurslar",
+    "title": "Multiversity hujjatlari",
+    "subtitle": "Muqobil tarix vaqt jadvallarini yaratish uchun arxitektura, ma'lumotlar kuratsiyasi jarayoni va mintaqaviy muvofiqlik tafsilotlari."
+  },
+  "sections": [
+    {
+      "title": "Platforma sharhi",
+      "content": "Multiversity mahalliy TypeScript modullaridan vaqt jadvali ma'lumotlarini oladigan Vite + React 19 bir sahifali ilovasi. Global holat engil ilgaklar va memoizatsiyalangan selektorlar bilan boshqariladi, shuning uchun vaqt jadvallari o'nlab voqealar bilan ham samarali ko'rsatiladi. Animatsiyalar Framer Motion tomonidan quvvatlanadi va taqqoslash jadvallarini chizish uchun D3 ishlatiladi."
+    },
+    {
+      "title": "Ma'lumotlar boshqaruvi va Janubiy Koreya muvofiqlik",
+      "content": "Tarixiy stsenariylar shaxsiy ma'lumotlarga tayanmaydi, ammo biz hali ham Koreya Respublikasining Shaxsiy Ma'lumotlarni Himoya Qilish Qonuniga (PIPA) amal qilamiz. Foydalanuvchilar fikr-mulohazalarni yuborgan  paytda, shaxsiy ma'lumotlar dam olish vaqtida shifrlangan, Seul (ap-northeast-2) mintaqasida saqlangan va tasdiqlangan so'rov bo'yicha o'chiriladi. Kontent joylashuvi Telekommunikatsiya Biznes Qonuniga mos keladi va barcha yoshga oid interaktiv modullar Yoshlarni Himoya Qilish Qonuniga amal qiladi.",
+      "list": [
+        "PIPA 17-22 moddalari biz analitikani to'plaganimizda rozilik va maqsad cheklovini boshqaradi.",
+        "Foydalanuvchi roziligi va oshkor qilish so'rovlari yozuvlari Elektron Tijorat Qonuniga muvofiq uch yil saqlanadi.",
+        "Barcha xarita qatlamlari Milliy Fazoviy Ma'lumotlar Infratuzilmasi Qonuni tomonidan tasdiqlangan ochiq ma'lumotlar portallaridan olingan."
+      ]
+    },
+    {
+      "title": "Kontent jarayoni",
+      "list": [
+        "Milliy arxivlar va universitet hujjatlaridan foydalangan holda asosiy tadqiqot.",
+        "Tarixchi ko'rib chiqishi va metama'lumotlarni belgilash bilan stsenariy loyihalash.",
+        "Terminologiya tegishli joylarda Koreya tili me'yorlariga hurmat qilishini ta'minlash uchun lokalizatsiya.",
+        "Milliy Xavfsizlik Qonuniga ko'ra cheklangan tasvirlar kontekstsiz ko'rsatilmasligini tasdiqlovchi muvofiqlik tekshiruvi."
+      ]
+    }
+  ]
+}

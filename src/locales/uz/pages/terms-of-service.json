@@ -1,0 +1,25 @@
+{
+  "header": {
+    "category": "Yuridik",
+    "title": "Xizmat ko'rsatish shartlari",
+    "subtitle": "Bu shartlar Janubiy Koreya qonunchiligiga muvofiq Multiversity'dan foydalanishni tartibga soladi."
+  },
+  "sections": [
+    {
+      "title": "1. Mosligi va hisob",
+      "content": "Foydalanuvchilar Yoshlarni Himoya Qilish Qonunini aks ettiruvchi 14 yoki undan katta yoshda bo'lishi kerak. Hisob yaratish bu shartlarni qabul qilishingizni va ma'lumotlaringiz mahalliy darajada qayta ishlanishi mumkinligini tan olishingizni ko'rsatadi."
+    },
+    {
+      "title": "2. Qabul qilinadigan foydalanish",
+      "content": "Siz Milliy Xavfsizlik Qonunini yoki Axborot va Kommunikatsiya Tarmog'ini Rivojlantirishni Rag'batlantirish to'g'risidagi Qonunni buzadigan noqonuniy material yoki kontentni yuklamaslikka rozi bo'lasiz. Ta'lim maqsadida foydalanish rag'batlantiriladi, ammo tijoriy qayta tarqatish yozma litsenziya talab qiladi."
+    },
+    {
+      "title": "3. Pullik xizmatlar va qaytarish",
+      "content": "Obuna to'lovlari Elektron Tijorat Qonuniga amal qiladi; mijozlar muhim qiymat allaqachon etkazib berilmagan bo'lsa (masalan, eksklyuziv ma'lumotlar to'plamini yuklash), yetti kun ichida bekor qilishlari mumkin. Qaytarishlar KRW da amalga oshiriladi."
+    },
+    {
+      "title": "4. Boshqaruvchi qonun",
+      "content": "Bu shartlar Koreya Respublikasi qonunlari bilan tartibga solinadi. Nizolar Seul Markaziy Tuman Sudiga yuborilishi kerak."
+    }
+  ]
+}

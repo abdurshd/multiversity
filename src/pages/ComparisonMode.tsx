@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import * as d3 from 'd3';
-import { 
-  GitBranch, 
-  Plus, 
-  X, 
-  Zap, 
-  TrendingUp, 
-  Globe, 
-  Clock, 
+import {
+  GitBranch,
+  Plus,
+  X,
+  Zap,
+  TrendingUp,
+  Globe,
+  Clock,
   Percent,
   ArrowRight,
   Shuffle,
@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { Timeline, Chapter, HistoricalEvent } from '../types';
 import { allChapters } from '../data';
+import { useTranslation } from 'react-i18next';
 
 interface Particle {
   x: number;
@@ -28,6 +29,7 @@ interface Particle {
 }
 
 const ComparisonMode: React.FC = () => {
+  const { t } = useTranslation('pages-comparison-mode');
   const [selectedTimelines, setSelectedTimelines] = useState<Timeline[]>([]);
   const [availableChapters] = useState<Chapter[]>(allChapters);
   const [showSelector, setShowSelector] = useState(false);
@@ -406,20 +408,19 @@ const ComparisonMode: React.FC = () => {
               <GitBranch className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-blue-500 mx-auto mb-4" />
             </motion.div>
             
-            <motion.h1 
+            <motion.h1
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-200 mb-6"
             >
-              Timeline Comparison
+              {t('title')}
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              Witness the spectacular dance of alternate histories. Compare timelines side by side 
-              and discover how small changes create vast differences across centuries.
+              {t('subtitle')}
             </motion.p>
 
             <motion.div 
@@ -438,14 +439,14 @@ const ComparisonMode: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Plus className="w-5 h-5" />
-                <span className="font-semibold">Add Timeline</span>
+                <span className="font-semibold">{t('buttons.add_timeline')}</span>
               </motion.button>
 
               {selectedTimelines.length > 0 && (
                 <motion.button
                   onClick={clearAll}
                   className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     boxShadow: "0 0 30px rgba(239, 68, 68, 0.5)"
                   }}
@@ -455,7 +456,7 @@ const ComparisonMode: React.FC = () => {
                   exit={{ opacity: 0, x: 20 }}
                 >
                   <Shuffle className="w-5 h-5" />
-                  <span className="font-semibold">Clear All</span>
+                  <span className="font-semibold">{t('buttons.clear_all')}</span>
                 </motion.button>
               )}
             </motion.div>
@@ -471,7 +472,7 @@ const ComparisonMode: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">Selected Timelines</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">{t('sections.selected_timelines')}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
                 <AnimatePresence>
                   {selectedTimelines.map((timeline, index) => (
@@ -527,11 +528,11 @@ const ComparisonMode: React.FC = () => {
                           <div className="flex items-center justify-between text-sm">
                             <div className="flex items-center space-x-1 text-gray-400">
                               <Percent className="w-4 h-4" />
-                              <span>{timeline.probability}% likely</span>
+                              <span>{timeline.probability}% {t('stats.likely')}</span>
                             </div>
                             <div className="flex items-center space-x-1 text-gray-400">
                               <Clock className="w-4 h-4" />
-                              <span>{timeline.keyEvents.length} events</span>
+                              <span>{timeline.keyEvents.length} {t('stats.events')}</span>
                             </div>
                           </div>
                         </div>
@@ -557,10 +558,10 @@ const ComparisonMode: React.FC = () => {
                 <div className="flex items-center justify-between mb-8">
                   <h2 className="text-3xl font-bold text-white flex items-center space-x-3">
                     <BarChart3 className="w-8 h-8 text-primary-500" />
-                    <span>Timeline Visualization</span>
+                    <span>{t('sections.timeline_visualization')}</span>
                   </h2>
                   <div className="text-sm text-gray-400">
-                    {selectedTimelines.length} timeline{selectedTimelines.length !== 1 ? 's' : ''} selected
+                    {selectedTimelines.length} {selectedTimelines.length !== 1 ? t('stats.timelines') : t('stats.timeline')} {t('stats.selected')}
                   </div>
                 </div>
                 
@@ -583,7 +584,7 @@ const ComparisonMode: React.FC = () => {
                     onClick={() => setAnimationPhase(prev => prev + 1)}
                   >
                     <Eye className="w-4 h-4" />
-                    <span>Animate</span>
+                    <span>{t('buttons.animate')}</span>
                   </motion.button>
                 </div>
               </div>
@@ -600,7 +601,7 @@ const ComparisonMode: React.FC = () => {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-white mb-8 text-center">Timeline Insights</h2>
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">{t('sections.timeline_insights')}</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Probability comparison */}
@@ -610,12 +611,12 @@ const ComparisonMode: React.FC = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <TrendingUp className="w-8 h-8 mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Most Likely</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('insights.most_likely')}</h3>
                   <p className="text-green-100">
                     {selectedTimelines.reduce((max, t) => t.probability > max.probability ? t : max).title}
                   </p>
                   <p className="text-green-200 text-sm mt-2">
-                    {Math.max(...selectedTimelines.map(t => t.probability))}% probability
+                    {Math.max(...selectedTimelines.map(t => t.probability))}% {t('stats.probability')}
                   </p>
                 </motion.div>
 
@@ -626,12 +627,12 @@ const ComparisonMode: React.FC = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Zap className="w-8 h-8 mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Earliest Divergence</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('insights.earliest_divergence')}</h3>
                   <p className="text-yellow-100">
                     {selectedTimelines.reduce((min, t) => t.divergenceYear < min.divergenceYear ? t : min).title}
                   </p>
                   <p className="text-yellow-200 text-sm mt-2">
-                    Diverges in {Math.min(...selectedTimelines.map(t => t.divergenceYear))}
+                    {t('insights.diverges_in')} {Math.min(...selectedTimelines.map(t => t.divergenceYear))}
                   </p>
                 </motion.div>
 
@@ -642,12 +643,12 @@ const ComparisonMode: React.FC = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Globe className="w-8 h-8 mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Most Events</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('insights.most_events')}</h3>
                   <p className="text-purple-100">
                     {selectedTimelines.reduce((max, t) => t.keyEvents.length > max.keyEvents.length ? t : max).title}
                   </p>
                   <p className="text-purple-200 text-sm mt-2">
-                    {Math.max(...selectedTimelines.map(t => t.keyEvents.length))} key events
+                    {Math.max(...selectedTimelines.map(t => t.keyEvents.length))} {t('stats.events')}
                   </p>
                 </motion.div>
               </div>
@@ -677,22 +678,21 @@ const ComparisonMode: React.FC = () => {
               >
                 <GitBranch className="w-32 h-32 text-gray-600 mx-auto mb-8" />
               </motion.div>
-              <h2 className="text-4xl font-bold text-white mb-4">No Timelines Selected</h2>
+              <h2 className="text-4xl font-bold text-white mb-4">{t('sections.no_timelines_selected')}</h2>
               <p className="text-xl text-gray-400 mb-8">
-                Choose multiple timelines to see how history could have unfolded differently. 
-                Watch as parallel worlds reveal their secrets through spectacular visualizations.
+                {t('empty_state.description')}
               </p>
               <motion.button
                 onClick={() => setShowSelector(true)}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full transition-all duration-300 flex items-center space-x-3 mx-auto shadow-2xl"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.1,
                   boxShadow: "0 0 50px rgba(59, 130, 246, 0.5)"
                 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Plus className="w-6 h-6" />
-                <span className="text-lg font-semibold">Add Your First Timeline</span>
+                <span className="text-lg font-semibold">{t('buttons.add_first_timeline')}</span>
                 <ArrowRight className="w-6 h-6" />
               </motion.button>
             </div>
@@ -720,7 +720,7 @@ const ComparisonMode: React.FC = () => {
             >
               <div className="p-8">
                 <div className="flex items-center justify-between mb-8">
-                  <h2 className="text-3xl font-bold text-white">Select Timelines to Compare</h2>
+                  <h2 className="text-3xl font-bold text-white">{t('sections.select_timelines_to_compare')}</h2>
                   <button
                     onClick={() => setShowSelector(false)}
                     className="text-gray-400 hover:text-white text-2xl"

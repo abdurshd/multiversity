@@ -1,0 +1,34 @@
+{
+  "title": "Timeline Not Found",
+  "description": "This timeline is not yet available.",
+  "buttons": {
+    "back_to_chapters": "Back to Chapters",
+    "back_to_chapter": "Back to Chapter",
+    "compare_timelines": "Compare Timelines",
+    "explore_other_chapters": "Explore Other Chapters",
+    "close": "Close"
+  },
+  "stats": {
+    "divergence_year": "Divergence Year",
+    "probability": "Probability",
+    "key_events": "Key Events"
+  },
+  "sections": {
+    "timeline_overview": "Timeline Overview",
+    "divergence_point": "Divergence Point",
+    "major_events": "Major Events",
+    "key_consequences": "Key Consequences",
+    "butterfly_effects": "Butterfly Effects",
+    "present_day": "Present Day (2025)",
+    "historical_impact": "Historical Impact",
+    "related_figures": "Related Figures"
+  },
+  "labels": {
+    "more_events": "+{count} more events",
+    "trigger": "Trigger",
+    "consequence": "Consequence",
+    "timeline": "Timeline",
+    "years": "years",
+    "impact": "Impact"
+  }
+}

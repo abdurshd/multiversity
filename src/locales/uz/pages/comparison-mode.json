@@ -1,0 +1,34 @@
+{
+  "title": "Vaqt jadvallarini solishtirish",
+  "subtitle": "Muqobil tarixlarning ajoyib raqsiga guvoh bo'ling. Vaqt jadvallarini yonma-yon solishtiring va kichik o'zgarishlar asrlar davomida qanday katta farqlarga olib kelishini kashf eting.",
+  "buttons": {
+    "add_timeline": "Vaqt jadvalini qo'shish",
+    "clear_all": "Hammasini tozalash",
+    "animate": "Animatsiya qilish",
+    "add_first_timeline": "Birinchi vaqt jadvalingizni qo'shing"
+  },
+  "sections": {
+    "selected_timelines": "Tanlangan vaqt jadvallari",
+    "timeline_visualization": "Vaqt jadvali vizualizatsiyasi",
+    "timeline_insights": "Vaqt jadvali tushunchalari",
+    "no_timelines_selected": "Vaqt jadvallari tanlanmagan",
+    "select_timelines_to_compare": "Solishtirish uchun vaqt jadvallarini tanlang"
+  },
+  "empty_state": {
+    "description": "Tarix qanday boshqacha rivojlanishi mumkinligini ko'rish uchun bir nechta vaqt jadvallarini tanlang. Parallel olamlar o'zlarining sirlarini ajoyib vizualizatsiyalar orqali ochib berishlarini tomosha qiling."
+  },
+  "stats": {
+    "likely": "ehtimol",
+    "probability": "ehtimollik",
+    "events": "voqealar",
+    "selected": "tanlangan",
+    "timeline": "vaqt jadvali",
+    "timelines": "vaqt jadvallari"
+  },
+  "insights": {
+    "most_likely": "Eng ehtimol",
+    "earliest_divergence": "Eng erta tarqalish",
+    "most_events": "Eng ko'p voqealar",
+    "diverges_in": "Tarqaladi"
+  }
+}

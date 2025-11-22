@@ -1,0 +1,34 @@
+{
+  "title": "Timeline Comparison",
+  "subtitle": "Witness the spectacular dance of alternate histories. Compare timelines side by side and discover how small changes create vast differences across centuries.",
+  "buttons": {
+    "add_timeline": "Add Timeline",
+    "clear_all": "Clear All",
+    "animate": "Animate",
+    "add_first_timeline": "Add Your First Timeline"
+  },
+  "sections": {
+    "selected_timelines": "Selected Timelines",
+    "timeline_visualization": "Timeline Visualization",
+    "timeline_insights": "Timeline Insights",
+    "no_timelines_selected": "No Timelines Selected",
+    "select_timelines_to_compare": "Select Timelines to Compare"
+  },
+  "empty_state": {
+    "description": "Choose multiple timelines to see how history could have unfolded differently. Watch as parallel worlds reveal their secrets through spectacular visualizations."
+  },
+  "stats": {
+    "likely": "likely",
+    "probability": "probability",
+    "events": "events",
+    "selected": "selected",
+    "timeline": "timeline",
+    "timelines": "timelines"
+  },
+  "insights": {
+    "most_likely": "Most Likely",
+    "earliest_divergence": "Earliest Divergence",
+    "most_events": "Most Events",
+    "diverges_in": "Diverges in"
+  }
+}

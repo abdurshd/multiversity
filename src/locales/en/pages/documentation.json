@@ -1,0 +1,31 @@
+{
+  "header": {
+    "category": "Resources",
+    "title": "Multiversity Documentation",
+    "subtitle": "Architecture, data curation workflow, and regional compliance details for building alternate history timelines."
+  },
+  "sections": [
+    {
+      "title": "Platform Overview",
+      "content": "Multiversity is a Vite + React 19 single-page application that fetches timeline data from local TypeScript modules. Global state is managed with lightweight hooks and memoized selectors so timelines render efficiently even with dozens of events. Animations are powered by Framer Motion and D3 is used to paint comparison charts."
+    },
+    {
+      "title": "Data Governance & South Korean Compliance",
+      "content": "Historical scenarios do not rely on personal data, yet we still follow the Personal Information Protection Act (PIPA) of the Republic of Korea. When users submit feedback, personally identifiable data is encrypted at rest, stored inside the Seoul (ap-northeast-2) region, and deleted upon verified request. Content hosting complies with the Telecommunications Business Act and all age-related interactive modules follow the Youth Protection Act.",
+      "list": [
+        "PIPA Articles 17-22 guide consent and purpose limitation when we collect analytics.",
+        "Records of user consent and disclosure requests are retained for three years, aligning with the Electronic Commerce Act.",
+        "All map layers are sourced from open-data portals cleared by the National Spatial Data Infrastructure Act."
+      ]
+    },
+    {
+      "title": "Content Workflow",
+      "list": [
+        "Primary research using national archives and university papers.",
+        "Scenario drafting with historian review and metadata tagging.",
+        "Localization pass to ensure terminology respects Korean language norms where relevant.",
+        "Compliance check confirming no restricted imagery (per National Security Law) is shown without context."
+      ]
+    }
+  ]
+}

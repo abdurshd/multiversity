@@ -2,26 +2,39 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, MapPin, GitBranch, Clock, ArrowRight, Percent, PlayCircle, Sparkles } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Chapter, Person } from '../types';
 import { getChapterById } from '../data';
 import AnimatedCharacter from '../components/common/AnimatedCharacter';
 import InteractiveStory from '../components/common/InteractiveStory';
 import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
+import { loadChapterTranslations } from '../i18n';
 
 const ChapterDetail: React.FC = () => {
   const { id: chapterId } = useParams<{ id: string }>();
+  const { t, i18n } = useTranslation(['common-ui', 'common-nav']);
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [selectedTimeline, setSelectedTimeline] = useState<string | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<Person | null>(null);
   const [showStory, setShowStory] = useState(false);
+  const [chapterNamespace, setChapterNamespace] = useState<string | null>(null);
+  const [translationsLoaded, setTranslationsLoaded] = useState(false);
 
   useEffect(() => {
     if (chapterId) {
       const foundChapter = getChapterById(chapterId);
       setChapter(foundChapter || null);
+
+      // Load chapter translations
+      loadChapterTranslations(chapterId, i18n.language).then((namespace) => {
+        if (namespace) {
+          setChapterNamespace(namespace);
+          setTranslationsLoaded(true);
+        }
+      });
     }
-  }, [chapterId]);
+  }, [chapterId, i18n.language]);
 
   const handleCharacterInteraction = (character: Person) => {
     setSelectedCharacter(character);
@@ -88,18 +101,41 @@ const ChapterDetail: React.FC = () => {
     };
   };
 
+  // Helper function to get translated text
+  const getTranslation = (key: string, options?: any): string => {
+    if (!chapterNamespace || !translationsLoaded) return '';
+    const result = t(`${chapterNamespace}:${key}`, options);
+    return typeof result === 'string' ? result : '';
+  };
+
+  // Convert timeline ID to translation key (convert hyphens to underscores)
+  const getTimelineKey = (timelineId: string) => {
+    return timelineId.replace(/-/g, '_');
+  };
+
   if (!chapter) {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Chapter Not Found</h2>
-          <p className="text-gray-300 mb-6">This chapter is not yet available.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">{t('common-ui:states.not_found')}</h2>
+          <p className="text-gray-300 mb-6">{t('common-ui:messages.chapter_not_available')}</p>
           <Link
             to="/chapters"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
           >
-            Back to Chapters
+            {t('common-ui:buttons.back_to_chapters')}
           </Link>
+        </div>
+      </div>
+    );
+  }
+
+  if (!translationsLoaded) {
+    return (
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+          <p className="text-gray-300">{t('common-ui:states.loading')}</p>
         </div>
       </div>
     );
@@ -123,8 +159,8 @@ const ChapterDetail: React.FC = () => {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <Breadcrumb
             items={[
-              { label: 'Chapters', path: '/chapters' },
-              { label: chapter.title }
+              { label: t('common-nav:nav.chapters'), path: '/chapters' },
+              { label: getTranslation('meta.title') }
             ]}
           />
           <motion.div
@@ -134,15 +170,17 @@ const ChapterDetail: React.FC = () => {
             className="text-center text-white"
           >
             <div className="text-4xl sm:text-5xl lg:text-6xl mb-4">{chapter.icon}</div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6">{chapter.title}</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6">
+              {getTranslation('meta.title')}
+            </h1>
             <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 px-4">
-              {chapter.description}
+              {getTranslation('meta.description')}
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base lg:text-lg">
               <div className="flex items-center space-x-2">
                 <Calendar className="w-5 h-5" />
-                <span>{chapter.period}</span>
+                <span>{getTranslation('meta.period')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="w-5 h-5" />
@@ -150,7 +188,7 @@ const ChapterDetail: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <GitBranch className="w-5 h-5" />
-                <span>{chapter.alternativeTimelines.length} Alternative Timelines</span>
+                <span>{chapter.alternativeTimelines.length} {t('common-ui:labels.alternative_timelines')}</span>
               </div>
             </div>
           </motion.div>
@@ -165,10 +203,12 @@ const ChapterDetail: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">Historical Context</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">
+              {t('common-ui:labels.historical_context')}
+            </h2>
             <div className="bg-slate-700 rounded-lg p-6 sm:p-8">
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                {chapter.historicalContext}
+                {getTranslation('meta.historical_context')}
               </p>
             </div>
           </motion.div>
@@ -186,10 +226,10 @@ const ChapterDetail: React.FC = () => {
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center justify-center space-x-2">
               <PlayCircle className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
-              <span>Interactive Experience</span>
+              <span>{t('common-ui:labels.interactive_experience')}</span>
             </h2>
             <p className="text-sm sm:text-base text-gray-300 mb-6 px-4">
-              Dive into the history yourself. Choose your mode of exploration.
+              {t('common-ui:messages.dive_into_history')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -200,7 +240,7 @@ const ChapterDetail: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Sparkles className="w-5 h-5" />
-                <span>{showStory ? 'Hide Story' : 'Start Interactive Story'}</span>
+                <span>{showStory ? t('common-ui:buttons.hide_story') : t('common-ui:buttons.start_interactive_story')}</span>
               </motion.button>
             </div>
           </motion.div>
@@ -237,10 +277,10 @@ const ChapterDetail: React.FC = () => {
             className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center flex items-center justify-center space-x-2"
           >
             <Users className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
-            <span>Meet the Historical Characters</span>
+            <span>{t('common-ui:labels.meet_historical_characters')}</span>
           </motion.h2>
           <p className="text-sm sm:text-base text-gray-300 text-center mb-8 sm:mb-12 px-4">
-            Click on the characters to interact with them and learn their stories!
+            {t('common-ui:messages.click_characters_interact')}
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
@@ -329,13 +369,16 @@ const ChapterDetail: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">The Divergence Point</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+              {t('common-ui:labels.divergence_point')}
+            </h2>
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 sm:p-8">
               <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">{chapter.divergencePoint}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">
+                {getTranslation('meta.divergence_point')}
+              </h3>
               <p className="text-base sm:text-lg text-white opacity-90">
-                This pivotal moment in {chapter.divergenceYear} created multiple possible paths for history.
-                Explore how different decisions and circumstances could have led to entirely different worlds.
+                {t('common-ui:messages.pivotal_moment', { year: chapter.divergenceYear })}
               </p>
             </div>
           </motion.div>
@@ -351,7 +394,7 @@ const ChapterDetail: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-2xl sm:text-3xl font-bold text-white mb-8 sm:mb-12 text-center"
           >
-            Alternative Timelines
+            {t('common-ui:labels.alternative_timelines')}
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -387,29 +430,29 @@ const ChapterDetail: React.FC = () => {
                     </div>
 
                     <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                      {timeline.title}
+                      {getTranslation(`timelines.${getTimelineKey(timeline.id)}.title`)}
                     </h3>
 
                     <p className="text-gray-300 mb-4 line-clamp-3">
-                      {timeline.description}
+                      {getTranslation(`timelines.${getTimelineKey(timeline.id)}.description`)}
                     </p>
 
                     <div className="bg-slate-700 rounded-lg p-3 mb-4">
-                      <p className="text-sm text-gray-400 mb-1">Divergence Point:</p>
-                      <p className="text-sm text-white">{timeline.divergenceDescription}</p>
+                      <p className="text-sm text-gray-400 mb-1">{t('common-ui:labels.divergence_point')}:</p>
+                      <p className="text-sm text-white">{getTranslation(`timelines.${getTimelineKey(timeline.id)}.divergence_description`)}</p>
                     </div>
 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2 text-gray-400">
                         <MapPin className="w-4 h-4" />
-                        <span className="text-sm">{timeline.keyEvents.length} Key Events</span>
+                        <span className="text-sm">{timeline.keyEvents.length} {t('common-ui:labels.key_events')}</span>
                       </div>
 
                       <Link
                         to={`/timeline/${chapter.id}/${timeline.id}`}
                         className="flex items-center space-x-1 text-blue-400 hover:text-blue-300 transition-colors"
                       >
-                        <span className="text-sm font-semibold">Explore</span>
+                        <span className="text-sm font-semibold">{t('common-ui:buttons.explore')}</span>
                         <ArrowRight className="w-4 h-4" />
                       </Link>
                     </div>
@@ -439,12 +482,15 @@ const ChapterDetail: React.FC = () => {
                   const timeline = chapter.alternativeTimelines.find(t => t.id === selectedTimeline);
                   if (!timeline) return null;
 
+                  const timelineKey = getTimelineKey(timeline.id);
                   return (
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-3">
                           <div className="text-3xl">{timeline.icon}</div>
-                          <h3 className="text-2xl font-bold text-white">{timeline.title}</h3>
+                          <h3 className="text-2xl font-bold text-white">
+                            {getTranslation(`timelines.${timelineKey}.title`)}
+                          </h3>
                         </div>
                         <button
                           onClick={() => setSelectedTimeline(null)}
@@ -454,11 +500,17 @@ const ChapterDetail: React.FC = () => {
                         </button>
                       </div>
 
-                      <p className="text-gray-300 mb-6">{timeline.description}</p>
+                      <p className="text-gray-300 mb-6">
+                        {getTranslation(`timelines.${timelineKey}.description`)}
+                      </p>
 
                       <div className="bg-slate-700 rounded-lg p-4 mb-6">
-                        <h4 className="text-lg font-semibold text-white mb-2">Present Day Status</h4>
-                        <p className="text-gray-300 text-sm">{timeline.presentDayStatus}</p>
+                        <h4 className="text-lg font-semibold text-white mb-2">
+                          {t('common-ui:labels.present_day_status')}
+                        </h4>
+                        <p className="text-gray-300 text-sm">
+                          {getTranslation(`timelines.${timelineKey}.present_day_status`)}
+                        </p>
                       </div>
 
                       <div className="flex justify-between">
@@ -466,13 +518,13 @@ const ChapterDetail: React.FC = () => {
                           onClick={() => setSelectedTimeline(null)}
                           className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors"
                         >
-                          Close
+                          {t('common-ui:buttons.close')}
                         </button>
                         <Link
                           to={`/timeline/${chapter.id}/${timeline.id}`}
                           className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors flex items-center space-x-2"
                         >
-                          <span>Explore Timeline</span>
+                          <span>{t('common-ui:buttons.explore_timeline')}</span>
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                       </div>
@@ -494,20 +546,22 @@ const ChapterDetail: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h2 className="text-2xl font-bold text-white mb-8">Continue Your Journey</h2>
+            <h2 className="text-2xl font-bold text-white mb-8">
+              {t('common-ui:labels.continue_journey')}
+            </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/chapters"
                 className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors"
               >
-                Back to All Chapters
+                {t('common-ui:buttons.back_to_all_chapters')}
               </Link>
               <Link
                 to="/compare"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center space-x-2"
               >
                 <GitBranch className="w-4 h-4" />
-                <span>Compare Timelines</span>
+                <span>{t('common-ui:buttons.compare_timelines')}</span>
               </Link>
             </div>
           </motion.div>
