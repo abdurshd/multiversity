@@ -680,7 +680,7 @@ export const worldWarTwoChapter: Chapter = {
     japanWinsPacificTimeline,
     // Additional timelines can be added here...
   ],
-  mainImage: '/images/world-war-2-main.jpg',
+  mainImage: '/images/chapters/world-war-2/main.png',
   icon: '🌍',
   backgroundColor: 'from-blue-800 to-red-900',
   interactiveScenarios

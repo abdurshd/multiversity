@@ -599,7 +599,7 @@ export const ussrCollapseChapter: Chapter = {
     peacefulDissolutionTimeline,
     // Additional timelines can be added here...
   ],
-  mainImage: '/images/ussr-collapse-main.jpg',
+  mainImage: '/images/chapters/ussr-collapse/main.png',
   icon: '🔨',
   backgroundColor: 'from-red-800 to-gray-900',
   interactiveScenarios

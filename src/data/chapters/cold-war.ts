@@ -636,7 +636,7 @@ export const coldWarChapter: Chapter = {
     // Additional timelines can be added here...
   ],
   interactiveScenarios,
-  mainImage: '/images/cold-war-main.jpg',
+  mainImage: '/images/chapters/cold-war/main.png',
   icon: '❄️',
   backgroundColor: 'from-blue-900 to-red-800'
 };

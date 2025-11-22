@@ -9,10 +9,10 @@ interface AnimatedCharacterProps {
   style?: React.CSSProperties;
 }
 
-const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({ 
-  character, 
-  onInteract, 
-  style 
+const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
+  character,
+  onInteract,
+  style
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
@@ -88,22 +88,22 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
           className="text-center text-white text-xs font-semibold px-2 py-1 bg-dark-800 rounded-lg"
           animate={isHovered ? { y: -5 } : {}}
         >
-          {character.name.split(' ')[0]}
+          {character.name}
         </motion.div>
 
         {/* Floating Emoji based on character */}
         <AnimatedSvgEmoji
           emoji={
             character.role.includes('King') || character.role.includes('Tsar') || character.role.includes('Emperor') ? '👑' :
-            character.role.includes('General') || character.role.includes('Military') ? '⚔️' :
-            character.role.includes('President') ? '🎩' :
-            character.role.includes('Queen') ? '💎' :
-            character.role.includes('Revolutionary') || character.role.includes('Activist') ? '✊' :
-            character.role.includes('Writer') || character.role.includes('Author') ? '✍️' :
-            character.role.includes('Scientist') || character.role.includes('Inventor') ? '🔬' :
-            character.role.includes('Artist') || character.role.includes('Painter') ? '🎨' :
-            character.role.includes('Monk') || character.role.includes('Religious') ? '🙏' :
-            '⭐'
+              character.role.includes('General') || character.role.includes('Military') ? '⚔️' :
+                character.role.includes('President') ? '🎩' :
+                  character.role.includes('Queen') ? '💎' :
+                    character.role.includes('Revolutionary') || character.role.includes('Activist') ? '✊' :
+                      character.role.includes('Writer') || character.role.includes('Author') ? '✍️' :
+                        character.role.includes('Scientist') || character.role.includes('Inventor') ? '🔬' :
+                          character.role.includes('Artist') || character.role.includes('Painter') ? '🎨' :
+                            character.role.includes('Monk') || character.role.includes('Religious') ? '🙏' :
+                              '⭐'
           }
           className="absolute -top-2 -right-2"
           size="1.5rem"
@@ -132,14 +132,14 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
                     top: `${Math.random() * 100}%`,
                   }}
                   initial={{ scale: 0, opacity: 0 }}
-                  animate={{ 
-                    scale: [0, 1, 0], 
+                  animate={{
+                    scale: [0, 1, 0],
                     opacity: [0, 1, 0],
                     x: [0, (Math.random() - 0.5) * 40],
                     y: [0, (Math.random() - 0.5) * 40],
                   }}
                   exit={{ scale: 0, opacity: 0 }}
-                  transition={{ 
+                  transition={{
                     duration: 1,
                     delay: i * 0.1,
                     repeat: Infinity,
@@ -163,10 +163,10 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
             >
               <div className="text-center font-semibold">
                 {character.role.includes('King') || character.role.includes('Tsar') ? "Royal vibes!" :
-                 character.role.includes('Revolutionary') ? "Viva la revolución!" :
-                 character.role.includes('General') ? "Ready for battle!" :
-                 character.role.includes('President') ? "Democracy rules!" :
-                 "Hello there!"}
+                  character.role.includes('Revolutionary') ? "Viva la revolución!" :
+                    character.role.includes('General') ? "Ready for battle!" :
+                      character.role.includes('President') ? "Democracy rules!" :
+                        "Hello there!"}
               </div>
               {/* Speech bubble tail */}
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-white"></div>

@@ -212,11 +212,20 @@ export const loadChapterTranslations = async (chapterId: string, language: strin
     }
 
     try {
-        const path = `./locales/${language}/chapters/${chapterId}/chapter.json`;
+        // Normalize language code (e.g., 'en-US' -> 'en') if the specific one isn't found
+        // We try the exact match first, then the base language
+        let targetLang = language;
+        let path = `./locales/${targetLang}/chapters/${chapterId}/chapter.json`;
+
+        if (!chapterTranslationLoaders[path] && language.includes('-')) {
+            targetLang = language.split('-')[0];
+            path = `./locales/${targetLang}/chapters/${chapterId}/chapter.json`;
+        }
+
         const loader = chapterTranslationLoaders[path];
 
         if (!loader) {
-            throw new Error(`Translation file not found: ${path}`);
+            throw new Error(`Translation file not found: ${path} (tried: ${language})`);
         }
 
         // Dynamically import the chapter translation

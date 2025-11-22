@@ -568,7 +568,7 @@ export const hitlerRiseChapter: Chapter = {
     assassinationSuccessTimeline,
     // Additional timelines can be added here...
   ],
-  mainImage: '/images/hitler-rise-main.jpg',
+  mainImage: '/images/chapters/hitler-rise/main.png',
   icon: '⚠️',
   backgroundColor: 'from-gray-800 to-red-900',
   interactiveScenarios
