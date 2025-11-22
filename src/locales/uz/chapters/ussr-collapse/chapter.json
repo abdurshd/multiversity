@@ -1,112 +1,304 @@
 {
   "meta": {
-    "title": "Sovet Ittifoqining qulashi",
+    "title": "SSSRning Qulashi",
     "period": "1985-1991",
-    "description": "Superкучning tinch tugashi va uning muqobil tugatilishi",
-    "historical_context": "Sovet Ittifoqining qulashi 20-asrning eng muhim voqealaridan biri edi. Gorbachyovning kommunizmni saqlab qolish uchun mo'ljallangan islohotlari o'rniga SSSRni yo'q qilgan kuchlarni bo'shatib yubordi. Nisbatan tinch tarqalish muqarrar emas edi - bu zo'ravonli bo'lishi yoki butunlay oldini olish mumkin edi.",
-    "divergence_point": "SSSRni saqlab qolishi yoki zo'ravonli qulashga olib kelishi mumkin bo'lgan kech Sovet davridagi muhim qarorlar"
+    "description": "Tarixdagi Eng Katta Syujet Burilishi: Dunyoning Eng Katta Mamlakati Qanday Qilib Shunchaki... G'oyib Bo'ldi! 🐻💥 Gorbachyovning Sovet Ittifoqini saqlab qolishga urinib, tasodifan uni yo'q qilganini tomosha qiling! Unda muvaffaqiyatsiz to'ntarishlar, qulayotgan devorlar, baxmal inqiloblar va superkuch uchun eng kutilmagan yakun bor. Ba'zan biror narsani tuzatishga urinish uni butunlay sindiradi! 🔨💔",
+    "historical_context": "1985-yilga kelib, Sovet Ittifoqi skotch va kommunistik mafkura bilan ushlab turilgan eski mashinaga o'xshardi! 🚗💨 Iqtisodiyot turg'unlikda, xalq bezovta va rahbarlar tom ma'noda qarilikdan o'layotgan edi. Dvigatelni sozlay olaman deb o'ylagan yosh islohotchi Mixail Gorbachyov kirib keldi... lekin o'rniga mashina qabristoniga tushdi! Uning oshkoralik va qayta qurish siyosati tizimni saqlab qolishi kerak edi, lekin yolg'onga asoslangan tizim haqida haqiqatni aytishni boshlaganingizda, narsalar juda tez parchalanishi ma'lum bo'ldi! 🏗️💀",
+    "divergence_point": "Gorbachyovning Islohot Dasturlari"
   },
   "figures": {
-    "mikhail_gorbachev": {
+    "mikhail-gorbachev-collapse": {
       "name": "Mixail Gorbachyov",
-      "role": "Oxirgi Sovet rahbari",
-      "description": "Tizimni saqlab qolishga uringan, ammo oxir-oqibat uning tarqalishini boshqargan islohotchi."
+      "role": "Sovet Ittifoqini Tasodifan Yo'q Qilgan Odam",
+      "description": "Sovet Ittifoqini saqlab qolishga harakat qilgan va tasodifan uni yo'q qilgan islohotchi! 🔨💔 Uning oshkoralik va qayta qurish siyosati Pandora qutisini ochdi. Ba'zan yaxshi niyatlar juda kutilmagan oqibatlarga olib keladi!"
     },
-    "boris_yeltsin": {
+    "boris-yeltsin": {
       "name": "Boris Yeltsin",
-      "role": "Rossiya prezidenti",
-      "description": "Millatchilik kayfiyatidan foydalanib hokimiyatga kelgan va Sovet Ittifoqini tarqatib yuborgan populist."
+      "role": "Tanklar Ustida Turgan Isyonkor Ayiq",
+      "description": "Demokratiyani himoya qilish uchun tom ma'noda tank ustida turgan rus siyosatchisi! 🐻🛡️ Kommunistik partiya a'zosidan Sovet buzuvchisiga va Rossiya prezidentiga aylandi. Karyera o'zgarishi haqida gapiring!"
     },
-    "august_coup_plotters": {
-      "name": "Avgust to'ntarishi ishtirokchilari",
-      "role": "Qattiq kommunistlar",
-      "description": "Muvaffaqiyatsiz to'ntarishi oldini olmoqchi bo'lgan qulashni tezlashtirgan umidsiz qattiq tarafdorlar."
+    "ronald-reagan-collapse": {
+      "name": "Ronald Reygan",
+      "role": "Sovuq Urushda G'alaba Qozongan Gollivud Prezidenti",
+      "description": "Sovetlarni o'zlarini yo'q qilish darajasida xarajat qilishga ishontirgan sobiq aktyor! 🎬💸 'Janob Gorbachyov, bu devorni buzib tashlang!' haqiqatga aylandi. Ba'zan optimizm haqiqatan ham dunyoni o'zgartirishi mumkin!"
+    },
+    "lech-walesa": {
+      "name": "Lex Valensa",
+      "role": "Tizimni Larzaga Keltirgan Elektrik",
+      "description": "'Birdamlik'ga asos solgan va kommunizmni ag'darishga yordam bergan polshalik kemasozlik zavodi ishchisi! ⚡🔧 Ba'zan oddiy elektrik butun siyosiy tizimni qayta ulashi mumkinligini isbotladi!"
+    },
+    "vaclav-havel": {
+      "name": "Vatslav Havel",
+      "role": "Tarixni Qayta Yozgan Dramaturg",
+      "description": "Baxmal Inqilobga rahbarlik qilgan va prezident bo'lgan chex dramaturgi! 🎭👑 Pyesalar yozishdan konstitutsiyalar yozishgacha - qalam qilichdan o'tkirroq ekanligini isbotladi!"
+    },
+    "erich-honecker": {
+      "name": "Erix Xonekker",
+      "role": "Xabarni Olmagan Oxirgi Qattiqqo'l",
+      "description": "Devor abadiy turadi deb o'ylagan Sharqiy Germaniya rahbari! 🧱😴 Devor 100 yil turadi deb mashhur gapirgan... u 10 oydan keyin quladi. Vaqtni to'g'ri tanlash hamma narsa!"
+    },
+    "nicolae-ceausescu": {
+      "name": "Nikolae Chaushesku",
+      "role": "Buni Kelayotganini Ko'rmagan Zolim",
+      "description": "Oxirigacha o'zini sevimli deb o'ylagan Ruminiya diktatori! 👑💥 Uning oxirgi nutqi real vaqtda inqilobga aylandi. Ba'zan sarob haqiqat bilan juda to'satdan to'qnashadi!"
+    },
+    "helmut-kohl": {
+      "name": "Gelmut Kol",
+      "role": "Birlik Kansleri",
+      "description": "Lahzani ushlab qolgan va Germaniyani qayta birlashtirgan G'arbiy Germaniya rahbari! 🇩🇪🤝 Devor qulaganda, u ikkilanmadi - 'Biz bir xalqmiz!' Rahbarlik orqali birlik!"
     }
   },
   "timelines": {
-    "violent_collapse": {
-      "title": "Qizil Terror qaytadi: Zo'ravonlik bilan bosish",
-      "description": "Agar 1991-yil avgustdagi to'ntarish muvaffaqiyatga erishsa va qattiq tarafdorlar mustaqillik harakatlarini zo'ravonlik bilan bosgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Avgust to'ntarishi ishtirokchilari aniqroq harakat qiladi. Yeltsin hibsga olinadi. Harbiy kuch qarshilikni yo'q qilish uchun ishlatiladi.",
+    "successful-coup": {
+      "title": "Avgust To'ntarishi Muvaffaqiyatli: Qattiqqo'llar Nazoratni O'z Qo'liga Oldi! 💀🚩",
+      "description": "Agar 1991 yil avgustdagi to'ntarish muvaffaqiyatli bo'lib, kommunistik qattiqqo'llar qulashni to'xtatganida nima bo'lar edi?",
+      "divergence_description": "Avgust to'ntarishi muvaffaqiyatli bo'ladi, Gorbachyov olib tashlanadi va qattiqqo'l kommunistlar Sovet nazoratini tiklaydilar",
       "events": {
-        "successful_coup_1991": {
-          "title": "Tanklar harakatlanadi",
-          "description": "Bizning tariximizdan farqli o'laroq, to'ntarish rahbarlari qo'shinlarga Rossiya parlamentiga hujum qilishni buyuradilar. Yeltsin qo'lga olinadi. Gorbachyov iste'foga majbur qilinadi.",
-          "impact": "Qattiq kommunistlar hokimiyatga qaytadi. Butun SSSR bo'ylab harbiy holat e'lon qilinadi."
+        "coup-succeeds-1991": {
+          "title": "Avgust To'ntarishi Muvaffaqiyatli: Eski Gvardiya G'alaba Qozondi! 💀👑",
+          "description": "Harbiylar qattiqqo'llarni qo'llab-quvvatlaydi, Yeltsin hibsga olinadi va Gorbachyov uy qamog'ida qoladi. Sovet Ittifoqi ikkinchi hayotga ega bo'ladi!",
+          "impact": "Qattiqqo'l kommunistik nazoratni tiklaydi va demokratik islohotlarni to'xtatadi"
         },
-        "civil_wars_1992": {
-          "title": "Sovet vorislik urushlari",
-          "description": "Boltiqbo'yi davlatlari harbiy qarshilik ko'rsatadi. Ukraina va Gruziya mustaqillik uchun kurashadi. Shafqatsiz bosish kampaniyalari boshlanadi.",
-          "impact": "SSSR zo'ravonlik bilan parchalanadi. Sobiq Sovet fazosida yuz minglab odamlar fuqarolar urushlarida vafot etadi."
+        "martial-law-declared-1991": {
+          "title": "Butun SSSR Bo'ylab Harbiy Holat: Temir Musht Qaytmoqda! ✊⚔️",
+          "description": "Yangi rahbariyat harbiy holat e'lon qiladi, demokratlarni hibsga oladi va mustaqil OAVni yopadi. Ozodlikning qisqa bahori qish bilan tugaydi.",
+          "impact": "Demokratik harakatlarni bostiradi va avtoritar nazoratni tiklaydi"
         },
-        "nuclear_crisis_1994": {
-          "title": "Erkin yadro qurollari",
-          "description": "SSSR parchalanar ekan, yadro qurollari ustidan nazorat noaniq bo'ladi. Tasodifiy uchirish bilan bir nechta yaqin holatlar.",
-          "impact": "Dunyo qulayotgan, urushayotgan davlatlarda yadro qurollarining dahshatli ehtimoli bilan duch keladi."
+        "eastern-europe-crackdown-1992": {
+          "title": "Sharqiy Yevropada Bosim: Temir Parda Qayta Qurilmoqda! 🧱🔄",
+          "description": "Qattiqqo'l SSSR Sharqiy Yevropaga aralashib, demokratik o'tishlarni orqaga qaytaradi. Berlin Devori qayta quriladi (majoziy ma'noda).",
+          "impact": "Sharqiy Yevropadagi demokratik o'tishlarni orqaga qaytaradi"
+        },
+        "new-cold-war-1993": {
+          "title": "Sovuq Urush 2.0: Hech Kim Xohlamagan Davomi! ❄️🔄",
+          "description": "Tiklangan Sovet Ittifoqi yangi Sovuq Urushda G'arbiy demokratiyalarga qarshi turadi. Tarix takrorlanmaydi, lekin u albatta qofiyadosh!",
+          "impact": "Superkuchlar qarama-qarshiligi va mafkuraviy mojaroni yangilaydi"
+        },
+        "economic-stagnation-1995": {
+          "title": "Iqtisodiy Qulash: Eski Tizim Ishlay Olmaydi! 📉💔",
+          "description": "Siyosiy nazoratga qaramay, Sovet iqtisodiyoti pasayishda davom etmoqda. Kelajak allaqachon boshlanganda o'tmishni tiklay olmaysiz.",
+          "impact": "Iqtisodiy muammolar tiklangan kommunistik tizimni zaiflashtiradi"
+        },
+        "second-collapse-2001": {
+          "title": "Ikkinchi Sovet Qulashi: Tarixni To'xtatib Bo'lmaydi! 💀🔄",
+          "description": "Iqtisodiy haqiqat siyosiy fantaziyaga yetib oladi. Ikkinchi Sovet Ittifoqi birinchisidan roppa-rosa 10 yil o'tib qulaydi. Yana o'sha eski holat!",
+          "impact": "Kommunistik tizimning yakuniy qulashi tarixiy muqarrarlikni isbotlaydi"
         }
       },
       "consequences": {
-        "short_term": "Zo'ravonlik bilan bosish fuqarolar urushlarini boshlaydi. SSSR tinchlik emas, qonda tarqaladi.",
-        "long_term": "Sovetdan keyingi davlatlar ko'proq travmalangan va avtoritar. Etnik mojarolar o'nlab yillar davom etadi.",
-        "global_impact": "Zo'ravonli Sovet qulashi butun Yevroosiyo bo'ylab beqarorlik yaratadi. Yadro tarqalishi xavotirlari 1990-yillarda hukmronlik qiladi."
+        "short_term": "Sharqiy Yevropa bo'ylab demokratik o'tishlar 10 yilga kechiktirildi",
+        "long_term": "Rossiya va sobiq Sovet davlatlari avtoritar meros bilan boshqacha rivojlanadi",
+        "global_impact": "Davom etayotgan superkuch raqobati bilan boshqacha Sovuq Urushdan keyingi tartib"
       },
-      "present_day_status": "Zo'ravonli Sovet qulashi doimiy travma yaratdi. 1990-yillar davomida fuqarolar urushlari davom etdi va bir milliondan ortiq odam halok bo'ldi. Bir nechta yadro qurollari yo'qolgan va ehtimol davlatsiz aktyorlarga sotilgan. Tartibsizlik tufayli Sovetdan keyingi avtoritarizm yanada kuchliroq. Demokratik rivojlanish bir avlod orqaga surildi."
+      "butterfly": [
+        {
+          "trigger": "Davom etayotgan Sovuq Urush iqtisodiy integratsiyani kechiktiradi",
+          "consequence": "Ko'proq raqobatdosh bloklar bilan globallashuvning boshqacha namunasi"
+        },
+        {
+          "trigger": "Davom etayotgan superkuch raqobati qurollanish poygasini tezlashtiradi",
+          "consequence": "Xavfsizlik uchun ko'proq mamlakatlar yadro qurollarini ishlab chiqadi"
+        }
+      ],
+      "present_day_status": "2001 yildagi 'Ikkinchi Sovet Qulashi' 'uyga qaytib bo'lmasligi'ning isboti sifatida eslanadi. 19-avgust Yeltsinning jasoratini nishonlovchi 'Demokratiya Omon Qolish Kuni' sifatida nishonlanadi. To'ntarish rahbarlari 'To'g'ri Ota Olmagan To'da' sifatida eslanadi. 🏛️💔"
     },
-    "ussr_survives": {
-      "title": "Isloh qilingan Ittifoq: SSSR omon qoladi",
-      "description": "Agar Gorbachyovning islohotlari demokratik, federal Sovet Ittifoqini yaratishda muvaffaqiyatga erishgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Gorbachyov siyosiy nazoratni saqlab qolgan holda iqtisodiy islohot ustida tezroq harakat qiladi. Avgust to'ntarishining oldini oladi.",
+    "gradual-reform": {
+      "title": "Bosqichma-bosqich Islohot: SSSR Demokratik Federatsiyaga Aylanmoqda! 🐻🗳️",
+      "description": "Agar Gorbachyov Sovet Ittifoqini saqlab qolgan holda bosqichma-bosqich demokratik islohotlarni amalga oshirganida nima bo'lar edi?",
+      "divergence_description": "Gorbachyov demokratik sovet federatsiyasini yaratuvchi konstitutsiyaviy islohotlarni muvaffaqiyatli amalga oshiradi",
       "events": {
-        "successful_reforms_1989": {
-          "title": "Ishlagan shok terapiya",
-          "description": "Gorbachyov Xitoy uslubidagi bozor islohotlarini ertaroq amalga oshiradi. Kommunistik partiya nazoratni saqlab qolgan holda iqtisodiy o'sish qaytadi.",
-          "impact": "Turmush darajasi yaxshilanadi. Tizimga qo'llab-quvvatlash oshadi. Mustaqillik harakatlari tezligini yo'qotadi."
+        "constitutional-convention-1988": {
+          "title": "Sovet Konstitutsiyaviy Konvensiyasi: Demokratiya Moskvaga Keldi! 🏛️📜",
+          "description": "Gorbachyov federatsiyani saqlab qolgan holda Sovet Ittifoqini demokratlashtirish uchun konstitutsiyaviy konvensiyani chaqiradi. Qulash o'rniga bosqichma-bosqich o'zgarish!",
+          "impact": "Demokratik federal tizimga o'tishni boshlaydi"
         },
-        "new_union_treaty_1991": {
-          "title": "Yangilangan Federatsiya",
-          "description": "Yangi ittifoq shartnomasi SSSRni respublika avtonomiyasiga ega haqiqiy federatsiyaga aylantiradi. Boltiqbo'yi davlatlari ittifoq doirasida mustaqillikka yaqin bo'ladi.",
-          "impact": "SSSR demokratik federatsiya sifatida omon qoladi. Kommunistik partiya ijtimoiy demokratik partiyaga aylanadi."
+        "free-elections-1989": {
+          "title": "Erkin Sovet Saylovlari: Xalq Demokratiyani Tanlamoqda! 🗳️🚩",
+          "description": "Sovet tarixidagi birinchi erkin saylovlar demokratik parlamentni yaratadi. Kommunistlar ba'zi o'rinlarni, demokratlar ko'proq o'rinlarni egallaydi. Tinch o'tish boshlanadi!",
+          "impact": "Ittifoqni saqlab qolgan holda demokratik qonuniylikni o'rnatadi"
         },
-        "eurasian_union_2000": {
-          "title": "Demokratik superkuch",
-          "description": "Isloh qilingan SSSR Yevropa va Osiyoni bog'lovchi yirik demokratik kuchga aylanadi. Yevropa institutlariga qo'shiladi.",
-          "impact": "Demokratik Sovet Ittifoqi global geosiyosatni butunlay o'zgartiradi. Sovetdan keyingi betartiblik yo'q."
+        "market-reforms-1990": {
+          "title": "Bozor Iqtisodiyotiga O'tish: Bosqichma-bosqich Kapitalizm! 💰🔄",
+          "description": "Ijtimoiy xavfsizlik tarmog'ini saqlab qolgan holda bozor mexanizmlarini ehtiyotkorlik bilan joriy etish. Xitoy uslubidagi islohotlar Sovet Ittifoqiga keladi!",
+          "impact": "Shok terapiyasi vayronagarchiligisiz iqtisodiy o'tish"
+        },
+        "peaceful-independence-1991": {
+          "title": "Muzokara Qilingan Mustaqillik: Tinch Ajrashish! 🤝🕊️",
+          "description": "Boltiqbo'yi davlatlari va boshqa respublikalar inqiroz o'rniga muzokaralar orqali mustaqillikka erishadilar. Tartibsiz qulash o'rniga do'stona ajralish!",
+          "impact": "Tinch o'tish mojaro o'rniga hamkorlikka imkon beradi"
+        },
+        "democratic-russian-federation-1991": {
+          "title": "Demokratik Rossiya Federatsiyasi: Silliq O'tish! 🇷🇺🗳️",
+          "description": "Rossiya tartibsiz post-sovet davlati o'rniga barqaror demokratik federatsiya sifatida paydo bo'ladi. Bosqichma-bosqich o'zgarish oligarx kapitalizmining oldini oladi!",
+          "impact": "Barqaror demokratik Rossiya davlatini yaratadi"
+        },
+        "eurasian-confederation-1995": {
+          "title": "Yevroosiyo Demokratik Konfederatsiyasi: Ixtiyoriy Ittifoq! 🌍🤝",
+          "description": "Sobiq Sovet davlatlari ixtiyoriy demokratik konfederatsiyani tuzadilar. Yevropa Ittifoqiga o'xshash, lekin ko'proq aroq va yaxshiroq adabiyot bilan!",
+          "impact": "Post-sovet rivojlanishi uchun hamkorlik ramkasini yaratadi"
         }
       },
       "consequences": {
-        "short_term": "Iqtisodiy va siyosiy islohotlar muvaffaqiyatga erishadi. SSSR isloh qilingan holatda omon qoladi.",
-        "long_term": "Demokratik Sovet federatsiyasi yirik global kuchga aylanadi. Sovetdan keyingi mojarolar yo'q.",
-        "global_impact": "Isloh qilingan, demokratik SSSR butun Sovuq urushdan keyingi tartibni o'zgartiradi. Ertaroq global hamkorlik."
+        "short_term": "Tartibsizlik yoki qulashsiz bosqichma-bosqich demokratik o'tish",
+        "long_term": "Barqaror demokratik institutlar organik ravishda rivojlanadi",
+        "global_impact": "Avtoritarizmdan demokratiyaga o'tishning boshqacha modeli"
       },
-      "present_day_status": "Suveren Sovet Respublikalari Ittifoqi (isloh qilingan SSSR) dunyoning yetakchi demokratiyalari va iqtisodlaridan biri. Bozor sotsializmi sof kommunizm muvaffaqiyatsizlikka uchraganida muvaffaqiyatga erishdi. Tinch transformatsiya boshqa avtoritar davlatlarga ilhom berdi. G'arb bilan munosabatlar hamkorlik asosida. Sovetdan keyingi fazo mojarolari sodir bo'lmadi."
+      "butterfly": [
+        {
+          "trigger": "Bosqichma-bosqich islohot aktivlarni talon-taroj qilish va oligarxlar paydo bo'lishining oldini oladi",
+          "consequence": "Adolatliroq iqtisodiy rivojlanish va kuchliroq demokratiya"
+        },
+        {
+          "trigger": "Tinch o'tish davomiy hamkorlikka imkon beradi",
+          "consequence": "Yevroosiyo integratsiyasi G'arb hukmronligiga muqobil taklif qiladi"
+        }
+      ],
+      "present_day_status": "Yevroosiyo Demokratik Konfederatsiyasi dunyoning eng muvaffaqiyatli ko'p millatli federatsiyalaridan biridir. Gorbachyov o'zgarish qulashni talab qilmasligini isbotlagan 'Buyuk Islohotchi' sifatida eslanadi. 11-mart 'Bosqichma-bosqich O'zgarish Kuni' sifatida nishonlanadi. 🐻🗳️"
     },
-    "russian_empire_restored": {
-      "title": "Imperiya tiklanishi: Millatchilar hokimiyati",
-      "description": "Agar Sovet qulashidan demokratlar emas, balki qattiq rossiyalik millatchilar paydo bo'lganida nima bo'lar edi?",
-      "divergence_description": "1993-yilda millatchi harbiy to'ntarish Yeltsinni ag'daradi va avtoritar Rossiya imperiyasini o'rnatadi.",
+    "peaceful-dissolution": {
+      "title": "Baxmal Ajrashish: SSSR Do'stona Bo'linmoqda! 🕊️💔",
+      "description": "Agar Sovet Ittifoqi inqiroz va qulash o'rniga muzokaralar orqali tinch yo'l bilan tarqalib ketganida nima bo'lar edi?",
+      "divergence_description": "Sovet respublikalari 1990 yilda konstitutsiyaviy jarayon orqali tinch yo'l bilan tarqalishni muzokara qiladilar",
       "events": {
-        "nationalist_coup_1993": {
-          "title": "Oktyabr to'ntarishi",
-          "description": "Yeltsinning 1993-yildagi inqirozda g'alaba qozonishi o'rniga, millatchi harbiy zobitlar muvaffaqiyatli to'ntarishni boshlaydilar. Ular avtoritar boshqaruvni o'rnatadilar.",
-          "impact": "Rossiyada demokratiyaning qisqa lahzasi tugaydi. Avtoritar millatchilik kommunizmni almashtiradi."
+        "union-treaty-negotiations-1990": {
+          "title": "Ittifoq Shartnomasi Muzokaralari: Keling, Buni Gaplashib Olaylik! 🤝📝",
+          "description": "Barcha Sovet respublikalari yangi ittifoq shartnomasi yoki tinch ajralishni muzokara qilishga rozi bo'ladilar. Yetuk suhbat qurayotgan yetuk kattalar!",
+          "impact": "Tinch tarqalish uchun ramka yaratadi"
         },
-        "imperial_restoration_1995": {
-          "title": "Yangi Rossiya imperiyasi",
-          "description": "Millatchi rejim o'zini Uchinchi Rossiya imperiyasi sifatida qayta nomlaydi. Imperiya ramzlari va ritorikasi qaytadi. Tajovuzkor tashqi siyosat boshlanadi.",
-          "impact": "Rossiya ochiq imperiyalistik va kengaytiruvchi bo'ladi. Sobiq Sovet davlatlari yangilangan bosimga duch keladilar."
+        "referendum-on-independence-1990": {
+          "title": "Mustaqillik Referendumlari: Demokratiya Harakatda! 🗳️🕊️",
+          "description": "Har bir respublika mustaqillik yoki ittifoqqa a'zolik bo'yicha erkin referendum o'tkazadi. Xalq bir marta bo'lsa ham o'z taqdirini o'zi tanlaydi!",
+          "impact": "Mustaqillik yoki ittifoq a'zoligi uchun demokratik qonuniylik"
         },
-        "new_cold_war_2000": {
-          "title": "Millatchi asr",
-          "description": "Imperiya Rossiyasi sobiq Sovet hududlarini qaytarib olishga intiladi. Millatchi Rossiya va G'arb o'rtasida yangi sovuq urush paydo bo'ladi.",
-          "impact": "Sovuq urushdan keyingi tinchlik dividendi yo'qoladi. Yevropa yangilangan bo'linish va harbiy tahdidga duch keladi."
+        "asset-division-agreement-1991": {
+          "title": "Aktivlarni Adolatli Bo'lish: Oilaviy Boylikni Bo'lish! 💰⚖️",
+          "description": "Respublikalar Sovet aktivlari, qarzlari va harbiylarini adolatli bo'lishga kelishib oladilar. Buvining yadro qurollarini kim olishi ustida urush yo'q!",
+          "impact": "Resurslar va harbiy aktivlar bo'yicha mojarolarning oldini oladi"
+        },
+        "coordinated-independence-1991": {
+          "title": "Muvofiqlashtirilgan Mustaqillik: Hamma Hovuzdan Chiqsin! 🏊‍♂️🚪",
+          "description": "Barcha respublikalar bir vaqtning o'zida muvofiqlashtirilgan holda mustaqillik e'lon qiladilar. Tarixdagi eng uyushgan ajralish!",
+          "impact": "Inqiroz yoki tartibsizliksiz silliq o'tish"
+        },
+        "successor-states-cooperation-1992": {
+          "title": "Post-Sovet Hamkorlik Shartnomasi: Hali Ham Do'stmiz! 🤝🌍",
+          "description": "Yangi mustaqil davlatlar savdo, xavfsizlik va madaniyat bo'yicha keng qamrovli hamkorlik shartnomasini imzolaydilar. Ajrashish do'st bo'la olmasligimizni anglatmaydi!",
+          "impact": "Mustaqillikdan keyin foydali munosabatlarni saqlab qoladi"
+        },
+        "economic-union-1995": {
+          "title": "Post-Sovet Iqtisodiy Ittifoqi: Odatiy Biznes! 💼🤝",
+          "description": "Sobiq Sovet davlatlari foydali savdo aloqalarini saqlab qoluvchi iqtisodiy ittifoq tuzadilar. Siyosiy mustaqillik, iqtisodiy hamkorlik!",
+          "impact": "Suverenitetni saqlab qolgan holda iqtisodiy foydalarni saqlaydi"
         }
       },
       "consequences": {
-        "short_term": "Rossiyada demokratik lahza eziladi. Avtoritar millatchilik hokimiyatga keladi.",
-        "long_term": "Rossiya tajovuzkor millatchi va imperiyalistikka aylanadi. G'arb bilan doimiy keskinlik.",
-        "global_impact": "Tinchlik dividendi yo'q. Davom etayotgan buyuk kuch raqobati. Sobiq Sovet davlatlari doimiy bosim ostida."
+        "short_term": "Tinch tarqalish etnik mojarolar va urushlarning oldini oladi",
+        "long_term": "Sobiq Sovet xalqlari o'rtasida yaxshiroq munosabatlar",
+        "global_impact": "Ko'p millatli davlatlarning tinch tarqalishi uchun model"
       },
-      "present_day_status": "Rossiya imperiyasi Sovet davridagi ta'sirni tiklashga intilayotgan avtoritar, millatchi davlat bo'lib qolmoqda. Sobiq Sovet respublikalari bilan bir nechta urushlar sodir bo'ldi. G'arb bilan munosabatlar dushman. 1990-yillarning demokratik imkoniyati yo'qotildi. Rossiya izolyatsiya qilingan, ammo harbiy jihatdan kuchli."
+      "butterfly": [
+        {
+          "trigger": "Tinch tarqalish Kavkaz va Markaziy Osiyoda urushlarning oldini oladi",
+          "consequence": "Millionlab hayotlar saqlab qolindi va boshqacha mintaqaviy rivojlanish"
+        },
+        {
+          "trigger": "Muvaffaqiyatli tinch tarqalish pretsedent yaratadi",
+          "consequence": "Boshqa ko'p millatli davlatlar islohot uchun shunga o'xshash modeldan foydalanadilar"
+        }
+      ],
+      "present_day_status": "'Baxmal Tarqalish' butun dunyo bo'ylab imperiyani qanday qilib tinch yo'l bilan tugatishning mukammal namunasi sifatida o'rganiladi. 25-dekabr barcha sobiq Sovet davlatlarida 'Do'stlik Kuni' sifatida nishonlanadi. Post-Sovet Hamkorlik Tashkiloti kutilganidan ham muvaffaqiyatliroq! 🕊️🤝"
     }
-  }
+  },
+  "interactive_scenarios": [
+    {
+      "title": "Gorbachyovning Islohot Dilemmasi",
+      "text": "Moskva, 1987. Siz Gorbachyovga uning islohot dasturi bo'yicha maslahat bermoqdasiz. Iqtisodiyot turg'unlikda, ammo ochilish siz nazorat qila olmaydigan kuchlarni bo'shatib yuborishi mumkin...",
+      "choices": [
+        {
+          "text": "To'liq oshkoralikni qabul qiling - haqiqat va demokratiya gullab-yashnasin",
+          "consequence": "Sizning idealizmingiz Sovet tizimini o'zgartiradigan va oxir-oqibat yo'q qiladigan kuchlarni bo'shatib yuboradi"
+        },
+        {
+          "text": "Barqarorlikni saqlash uchun cheklangan, nazorat qilinadigan islohotlarni amalga oshiring",
+          "consequence": "Sizning ehtiyotkorligingiz nazoratni saqlab qoladi, ammo asosiy iqtisodiy muammolarni hal qila olmaydi"
+        },
+        {
+          "text": "Islohotlardan voz keching va an'anaviy Sovet usullariga qayting",
+          "consequence": "Sizning konservatizmingiz tizimni saqlab qoladi, ammo iqtisodiy pasayishni tezlashtiradi"
+        }
+      ]
+    },
+    {
+      "title": "Chernobilni Yashirish",
+      "text": "Kiev, 1986 yil 26 aprel. Chernobil 4-reaktori portladi! Siz ushbu falokatni qanday hal qilishni hal qilayotgan Sovet amaldorisiz. Haqiqatni aytasizmi yoki tizimni himoya qilasizmi?",
+      "choices": [
+        {
+          "text": "Dunyoga falokat haqidagi haqiqatni darhol ayting",
+          "consequence": "Sizning halolligingiz hayotlarni saqlab qoladi, ammo Sovet layoqatsizligini dunyoga fosh qiladi"
+        },
+        {
+          "text": "Hisobotlarni minimallashtiring - bu kichik hodisa ekanligini ayting",
+          "consequence": "Sizning yashirishingiz Sovet obro'sini himoya qiladi, ammo evakuatsiyani kechiktiradi va qurbonlarni oshiradi"
+        },
+        {
+          "text": "Mas'uliyatni chalg'itish uchun xorijiy sabotajni ayblang",
+          "consequence": "Sizning propagandangiz tizimning imidjini saqlab qoladi, ammo haqiqat yuzaga chiqqanda ishonchni yo'q qiladi"
+        }
+      ]
+    },
+    {
+      "title": "Devor Qulashi Kerak",
+      "text": "Sharqiy Berlin, 1989 yil 9 noyabr. Siz Sharqiy Germaniya chegara soqchisisiz. Amaldor yanglishib chegara ochiqligini e'lon qildi! Minglab Sharqiy Berlinliklar o'tishni talab qilmoqdalar...",
+      "choices": [
+        {
+          "text": "Darvozalarni oching - xalq gapirdi",
+          "consequence": "Sizning jasoratingiz Sovuq Urushni tugatishga yordam beradi, ammo siz aniq buyruqlarsiz harakat qilmoqdasiz"
+        },
+        {
+          "text": "Bosh qarorgohdan rasmiy tasdiqni kuting",
+          "consequence": "Sizning ehtiyotkorligingiz protsessual jihatdan to'g'ri, ammo olomon g'azablanib, xavfliroq bo'lib bormoqda"
+        },
+        {
+          "text": "Chegara xavfsizligini ta'minlash uchun kuch ishlating",
+          "consequence": "Sizning buyruqlarga bo'lgan burchingiz qirg'in va xalqaro inqirozni keltirib chiqarishi mumkin"
+        }
+      ]
+    },
+    {
+      "title": "Avgust To'ntarishi",
+      "text": "Moskva, 1991 yil 19 avgust. Siz Sovet harbiy ofitserisiz. Qattiqqo'llar Gorbachyovni hibsga olib, favqulodda holat e'lon qilishdi. Siz to'ntarishni qo'llab-quvvatlaysizmi yoki demokratiyani himoya qilasizmi?",
+      "choices": [
+        {
+          "text": "To'ntarishni qo'llab-quvvatlang - tartibni va Sovet hokimiyatini tiklang",
+          "consequence": "Sizning qattiqqo'llarni qo'llab-quvvatlashingiz SSSRni saqlab qolishi mumkin, ammo demokratik umidlarni yo'q qiladi"
+        },
+        {
+          "text": "Yeltsin va Rossiya Oq Uyini himoya qiling",
+          "consequence": "Sizning jasoratingiz to'ntarishni mag'lub etishga yordam beradi va Sovet Ittifoqining tugashini tezlashtiradi"
+        },
+        {
+          "text": "Betaraf qoling - siyosatchilar o'zaro hal qilsin",
+          "consequence": "Sizning betarafligingiz shaxsiy xavfdan qochadi, ammo ushbu muhim lahzani shakllantira olmaydi"
+        }
+      ]
+    },
+    {
+      "title": "Oxirgi Ittifoq Shartnomasi",
+      "text": "Moskva, 1991 yil dekabr. Siz yangi Ittifoq Shartnomasi bo'yicha muzokaralarda respublikangizni vakillik qilmoqdasiz. Siz SSSRni qandaydir shaklda saqlab qolishingiz kerakmi yoki to'liq mustaqillik e'lon qilishingiz kerakmi?",
+      "choices": [
+        {
+          "text": "Demokratik SSSRni saqlab qolish uchun yangi shartnomani imzolang",
+          "consequence": "Sizning birlikka sodiqligingiz federatsiyani saqlab qolishi mumkin, ammo qiyin murosalar talab qiladi"
+        },
+        {
+          "text": "To'liq mustaqillik e'lon qiling - SSSR tugadi",
+          "consequence": "Sizning mustaqilligingiz Sovet qulashini tezlashtiradi, ammo respublikangiz erkinligini ta'minlaydi"
+        },
+        {
+          "text": "Har qanday ittifoqni ko'rib chiqishdan oldin katta imtiyozlarni talab qiling",
+          "consequence": "Sizning qattiq savdolashishingiz yaxshiroq shartlarga olib kelishi mumkin, ammo muzokaralarni butunlay yo'qqa chiqarishi mumkin"
+        }
+      ]
+    }
+  ]
 }

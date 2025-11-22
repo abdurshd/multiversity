@@ -199,6 +199,10 @@ i18n
     });
 
 // Dynamic chapter translation loader
+// Dynamic chapter translation loader
+// We use import.meta.glob to ensure Vite can statically analyze the files to include
+const chapterTranslationLoaders = import.meta.glob('./locales/*/chapters/*/chapter.json');
+
 export const loadChapterTranslations = async (chapterId: string, language: string = i18n.language) => {
     const namespace = `chapter-${chapterId}`;
 
@@ -208,8 +212,15 @@ export const loadChapterTranslations = async (chapterId: string, language: strin
     }
 
     try {
+        const path = `./locales/${language}/chapters/${chapterId}/chapter.json`;
+        const loader = chapterTranslationLoaders[path];
+
+        if (!loader) {
+            throw new Error(`Translation file not found: ${path}`);
+        }
+
         // Dynamically import the chapter translation
-        const chapterTranslation = await import(`./locales/${language}/chapters/${chapterId}/chapter.json`);
+        const chapterTranslation = await loader() as any;
 
         // Add the resource bundle
         i18n.addResourceBundle(language, namespace, chapterTranslation.default, true, true);

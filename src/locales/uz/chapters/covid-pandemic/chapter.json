@@ -1,112 +1,189 @@
 {
   "meta": {
-    "title": "COVID-19 pandemiyasi",
-    "period": "2019-Hozirgi kunda",
-    "description": "Global sog'liq inqirozi va uning muqobil javoblari va natijalari",
-    "historical_context": "COVID-19 pandemiyasi millionlab odamni o'ldirdi, global jamiyatni buzdi va butun dunyo bo'ylab institutlarni sinab ko'rdi. Turli siyosiy javoblar juda boshqacha natijalarga olib keldi. Pandemiya 21-asrni shakllantiruvchi texnologik va ijtimoiy o'zgarishlarni tezlashtirdi. Muqobil qarorlar pandemiyani butunlay oldini olishi yoki uni ancha yomonlashtirishi mumkin edi.",
-    "divergence_point": "Tarqalishning oldini olishi yoki halokatli natijalarga olib kelishi mumkin bo'lgan pandemiya javobidagi muhim qarorlar"
+    "title": "COVID-19 Pandemiyasi",
+    "period": "2019-2023",
+    "description": "Dunyoni To'xtatgan Ko'rinmas Dushman. 🦠🛑 Nam bozorlardan tortib to qulflargacha, ushbu bob mikroskopik virus global jamiyat, iqtisodiyot va siyosatni abadiy o'zgartirganini o'rganadi.",
+    "historical_context": "2019 yil oxirida Xitoyning Uxan shahrida yangi koronavirus paydo bo'ldi. Bir necha oy ichida u global miqyosda tarqalib, bir asrdagi eng katta sog'liqni saqlash inqirozini keltirib chiqardi. Hukumatlar misli ko'rilmagan qulflar, niqob taqish majburiyatlari va tezkor vaksina ishlab chiqish bilan javob berishdi. Pandemiya raqamli transformatsiyani tezlashtirdi, ammo chuqur ijtimoiy tengsizliklarni ham fosh qildi.",
+    "divergence_point": "SARS-CoV-2 ning Paydo Bo'lishi"
   },
   "figures": {
-    "who_officials": {
-      "name": "JSST rahbariyati",
-      "role": "Global sog'liq koordinatorlari",
-      "description": "Erta ogohlantirishlari va muvofiqlashtirish harakatlari global javobni shakllantirgan xalqaro sog'liqni saqlash xodimlari."
+    "dr-li-wenliang": {
+      "name": "Dr. Li Venlyan",
+      "role": "Xabar Beruvchi",
+      "description": "Dunyoni yangi virus haqida ogohlantirishga uringan oftalmolog. 🩺⚠️ Uning ogohlantirishi bostirildi, ammo merosi yashamoqda."
     },
-    "vaccine_developers": {
-      "name": "Vaksina ishlab chiquvchilar",
-      "role": "Olimlar",
-      "description": "Rekord vaqt ichida samarali vaksinalarni ishlab chiqib, ehtimol o'nlab millionlab hayotni saqlab qolgan tadqiqotchilar."
+    "anthony-fauci": {
+      "name": "Dr. Entoni Fauchi",
+      "role": "Jamoat Sog'liqni Saqlash Rahbari",
+      "description": "AQSh pandemiya javobining yuzi. 👨‍⚕️🇺🇸 Fan va siyosat o'rtasidagi xavfli suvlarda harakat qildi."
     },
-    "political_leaders": {
-      "name": "Milliy rahbarlar",
-      "role": "Qaror qabul qiluvchilar",
-      "description": "O'z mamlakatlarida qancha odam yashashi yoki o'lishini aniqlaydigan qarorlar qabul qilgan turli siyosiy rahbarlar."
+    "tedros-adhanom": {
+      "name": "Tedros Adhanom",
+      "role": "JSST Bosh Direktori",
+      "description": "Eng katta inqiroz davrida Jahon Sog'liqni Saqlash Tashkiloti rahbari. 🌍🇺🇳 Global muvofiqlashtirish harakatlari uchun tanqid va maqtovlarga duch keldi."
     }
   },
   "timelines": {
-    "early_containment": {
-      "title": "Bo'lmagan avj: Erta cheklashning muvaffaqiyati",
-      "description": "Agar tajovuzkor erta cheklash COVID-19ning pandemiyaga aylanishining oldini olgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Xitoy 2019-yil dekabrda Uxanda tajovuzkor aloqa kuzatish va qulfni amalga oshiradi. Xalqaro sayohat darhol cheklanadi.",
+    "total-containment": {
+      "title": "To'liq Cheklash: O'qdan Qochildi 🛡️🌏",
+      "description": "Agar dunyo 2020 yil yanvar oyida darhol va samarali munosabat bildirganida nima bo'lar edi?",
+      "divergence_description": "2020 yil yanvar oyining boshida global sayohat taqiqlari va qattiq qulflar joriy etiladi.",
       "events": {
-        "december_lockdown_2019": {
-          "title": "Uxan javobi",
-          "description": "Xitoy hukumati birinchi g'ayritabiiy pnevmoniya holatlari paydo bo'lganda hal qiluvchi harakat qiladi. To'liq qulf va aloqa kuzatish darhol boshlanadi.",
-          "impact": "Virus Uxan ichida cheklangan. Xalqaro tarqalishning oldini olish."
+        "global-lockdown-jan-2020": {
+          "title": "Buyuk Muhr",
+          "description": "Davlatlar birinchi ketma-ketlik chiqarilgandan so'ng darhol barcha chegaralarni yopish va parvozlarni to'xtatishni muvofiqlashtiradilar.",
+          "impact": "Virus Uxan va bir nechta izolyatsiya qilingan klasterlar bilan cheklanadi."
         },
-        "global_cooperation_2020": {
-          "title": "Yaqindan o'tgan",
-          "description": "JSST xalqaro javobni muvofiqlashtiradi. Barcha davlatlar chegara nazorati va testni amalga oshiradi. Avj Xitoyda cheklangan.",
-          "impact": "Pandemiya yo'q. Yuz millionlab holat o'rniga yuz minglab holat. Jami 10,000 dan kam o'lim."
-        },
-        "pandemic_prepared_2021": {
-          "title": "Ogohlantiruvchi qo'ng'iroq",
-          "description": "Yaqindan o'tgan voqea global pandemiya tayyorligini jonlantiradi. Kuzatuv, vaksinalar va muvofiqlashtirish tizimlariga katta investitsiyalar.",
-          "impact": "Insoniyat keyingi potentsial pandemiyaga ancha yaxshi tayyorlangan. COVIDning oldini olishi mumkin bo'lgan tizimlar mavjud."
+        "virus-eliminated-2020": {
+          "title": "G'alaba Deklaratsiyasi",
+          "description": "JSST SARS-CoV-2 inson populyatsiyasidan yo'q qilinganligini e'lon qiladi.",
+          "impact": "Hayot normal holatga qaytadi. Global retsessiya yo'q."
         }
       },
       "consequences": {
-        "short_term": "Global pandemiya yo'q. Iqtisodiy buzilish minimal va lokal.",
-        "long_term": "Pandemiya tayyorligiga investitsiyalarning oshishi. Ertaroq ogohlantirish tizimlari ishlab chiqilgan.",
-        "global_impact": "Millionlab hayotlar va trillionlab iqtisodiy zarar saqlanadi. Jamiyat buzilishsiz davom etadi."
+        "short_term": "Pandemiyaning oldini olindi, ammo maxfiylik huquqlari yemiriladi.",
+        "long_term": "Global bio-kuzatuv tarmog'i doimiy bo'lib qoladi.",
+        "global_impact": "Sog'liqni saqlash ma'lumotlari doimiy ravishda nazorat qilinadigan xavfsizroq, ammo kamroq erkin dunyo."
       },
-      "present_day_status": "COVID-19 avji 2020-yil boshida muvaffaqiyatli cheklandi va belgilovchi voqea o'rniga izoh bo'ldi. Yaqindan o'tgan voqea global sog'liqni kuzatishga misli ko'rilmagan investitsiyaga olib keldi. Keyingi potentsial pandemiya 2023-yilda paydo bo'lganda, bir necha hafta ichida aniqlandi va cheklandi. Masofaviy ish va raqamli transformatsiya hali ham sodir bo'ldi, ammo bosqichma-bosqich."
+      "butterfly": [
+        {
+          "trigger": "Qulflar yo'qligi majburiy masofaviy ish tajribasi yo'qligini anglatadi",
+          "consequence": "Ofis madaniyati hukmron bo'lib qolmoqda. Raqamli ko'chmanchi turmush tarzi o'ziga xos bo'lib qolmoqda."
+        }
+      ],
+      "present_day_status": "COVID-19 tibbiyot darsliklarida 'Uxan Qo'rquvi' sifatida tanilgan izohdir. Biroq, hozir hamma haroratini hukumatga har kuni xabar qiladigan aqlli soatlar taqadi. 'Sizning xavfsizligingiz uchun', deyishadi ular. ⌚👀"
     },
-    "catastrophic_pandemic": {
-      "title": "Ikkinchi Qora O'lim: Halokatli natija",
-      "description": "Agar COVID-19 ko'proq o'limga olib kelgan va vaksinalar muvaffaqiyatsiz bo'lgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Virus ko'proq o'limga olib kelish uchun mutatsiyaga uchraydi. Vaksina ishlab chiqish yengib bo'lmaydigan to'siqlarga duch keladi. O'lim soni halokatli.",
+    "black-death-variant": {
+      "title": "Qora O'lim Varianti: Jamiyat Qulashi ☠️🏚️",
+      "description": "Agar virus sezilarli darajada o'limga olib keladigan mutatsiyaga uchraganida nima bo'lar edi?",
+      "divergence_description": "2020 yil oxiridagi mutatsiya o'lim darajasini 15% ga oshiradi.",
       "events": {
-        "lethal_mutation_2020": {
-          "title": "Delta dahshati",
-          "description": "2020-yil o'rtalaridagi mutatsiya COVID-19ning o'lim darajasini 15% ga oshiradi. Butun dunyo bo'ylab sog'liqni saqlash tizimlari qulaydi.",
-          "impact": "Yuz millionlab odam vafot etadi. Ko'pgina mamlakatlarda ijtimoiy tartib buziladi. Iqtisodiy depressiya."
+        "omega-variant-2020": {
+          "title": "Omega Varianti",
+          "description": "Yuqori darajada o'limga olib keladigan variant paydo bo'ladi. Kasalxonalar bir necha hafta ichida global miqyosda qulaydi.",
+          "impact": "Ommaviy vahima. Ta'minot zanjirlari buziladi. Shaharlar tashlab ketiladi."
         },
-        "vaccine_failure_2021": {
-          "title": "Yo'qotilgan umid",
-          "description": "Vaksinalar yangi variantlarga qarshi samarasiz ekanligi isbotlandi. Virus yuqori o'lim darajasida endemikka aylanadi. Vaqt o'tishi bilan milliardlab yuqtirish.",
-          "impact": "Zamonaviy jamiyat Jahon urushlaridan beri eng katta qiyinchilikka duch keladi. Aholi sezilarli darajada kamayadi."
-        },
-        "new_normal_2025": {
-          "title": "Decimation",
-          "description": "2025-yilga kelib, COVID-19 global miqyosda 300 milliondan ortiq odamni o'ldirdi. Jamiyat doimiy ravishda o'zgargan. Izolyatsiya normalaga aylanadi.",
-          "impact": "Global aholi kamayishi. Katta iqtisodiy qisqarish. Texnologiya izolyatsiya qilingan yashashga imkon berish uchun rivojlanadi."
+        "great-deurbanization-2021": {
+          "title": "Buyuk De-urbanizatsiya",
+          "description": "Odamlar infektsiyadan qochish uchun shaharlardan qishloq joylarga qochishadi. Zamonaviy sivilizatsiya parchalanadi.",
+          "impact": "Globallashgan iqtisodiyotning oxiri. Mahalliy tirikchilik dehqonchiligiga qaytish."
         }
       },
       "consequences": {
-        "short_term": "Halokatli o'lim soni jamiyatlarni bosib oladi. Iqtisodiy qulash. Siyosiy beqarorlik.",
-        "long_term": "Doimiy aholi kamayishi. Jamiyat inson aloqasini minimallashtirishga qayta tashkil topadi.",
-        "global_impact": "Qora O'lim bilan taqqoslanadigan. Tsivilizatsiya omon qoladi, ammo asosiy ravishda o'zgaradi."
+        "short_term": "Milliardlab odamlar o'ladi. Global infratuzilma ishlamay qoladi.",
+        "long_term": "Insoniyat faqat internet orqali bog'langan izolyatsiya qilingan, yuqori texnologiyali anklavlarda omon qoladi.",
+        "global_impact": "'Toza Zonalar' va 'Yovvoyi Yerlar'ning neo-feodal dunyosi."
       },
-      "present_day_status": "Halokatli COVID-19 pandemiyasi 2025-yilga kelib 400 milliondan ortiq odamni o'ldirdi. Global aholi Qora O'limdan keyin birinchi marta kamaydi. Keng qamrovli avtomatlashtirish va masofaviy ish majburiy bo'ldi. Zich shaharlar asosan tark etildi. Tug'ilish darajasi yanada pasaydi. Insoniyat sekin qayta tiklanmoqda, ammo jamiyat izolyatsiya qilingan va travmalangan bo'lib qolmoqda."
+      "butterfly": [
+        {
+          "trigger": "Jismoniy aloqa o'limga olib keladi",
+          "consequence": "Jamiyat butunlay Virtual Reallikka o'tadi. Metavers haqiqiy dunyoga aylanadi."
+        }
+      ],
+      "present_day_status": "Shaharlar o't bosgan xarobalar. Omon qolganlar germetik muhrlangan bunkerlarda yashaydilar, faqat yuqori aniqlikdagi VR avatarlari orqali o'zaro aloqada bo'lishadi. Qo'l siqish qotillikka urinish hisoblanadi. 🥽🏙️"
     },
-    "coordinated_response": {
-      "title": "Birlik pandemiyasi: Mukammal global hamkorlik",
-      "description": "Agar barcha davlatlar COVID-19ga javob berishda mukammal muvofiqlashtirgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Davlatlar raqobatni chetga qo'yib, to'liq muvofiqlashtiradilar. Resurslar almashiladi. Ma'lumot erkin oqadi.",
+    "permanent-pandemic": {
+      "title": "Abadiy Vabo: Bo'lingan Dunyo 😷🌐",
+      "description": "Agar immunitet vaqtinchalik bo'lsa va vaksinalar yuqishni to'xtata olmasa nima bo'lar edi?",
+      "divergence_description": "Yangi variantlar doimiy ravishda immunitetdan qochadi. Pandemiya hech qachon rasman tugamaydi.",
       "events": {
-        "global_accord_2020": {
-          "title": "Jeneva sog'liqni saqlash kelishuvi",
-          "description": "2020-yil martda barcha yirik davlatlar pandemiya javobini to'liq muvofiqlashtirish bo'yicha misli ko'rilmagan kelishuvga imzo chekadi. Chegaralar bir vaqtda yopiladi, test protokollari standartlashtiriladi.",
-          "impact": "Muvofiqlashtirilgan harakat tarqalishni sezilarli darajada kamaytiradi. Egri chiziq haqiqatan tekislanadi."
+        "vaccine-failure-2021": {
+          "title": "Qochish Inqirozi",
+          "description": "Vaksinalar o'limni oldini olishi, ammo infektsiyani emasligi va immunitet faqat oylar davom etishi ma'lum bo'ladi.",
+          "impact": "'Poda Immuniteti'ga bo'lgan umid yo'qoladi. Doimiy yumshatish strategiyaga aylanadi."
         },
-        "vaccine_triumph_2020": {
-          "title": "Global operatsiya Warp Speed",
-          "description": "Birlashtirilgan resurslar va baham ko'rilgan tadqiqotlar vaksina ishlab chiqishni tezlashtiradi. Vaksinalar 2020-yil dekabrga qadar mavjud va butun dunyo bo'ylab teng taqsimlanadi.",
-          "impact": "Pandemiya 2021-yil o'rtalariga qadar nazorat ostiga olinadi. O'lim soni bizning tariximizning o'ndan bir qismi."
-        },
-        "new_cooperation_2022": {
-          "title": "Pandemiya dividendi",
-          "description": "COVID-19ni mag'lub etishda muvaffaqiyat iqlim o'zgarishi, qashshoqlik va boshqa muammolar bo'yicha global hamkorlik uchun turtki yaratadi.",
-          "impact": "Pandemiya haqiqiy global boshqaruv va hamkorlik tomon burilish nuqtasiga aylanadi."
+        "bio-passports-2022": {
+          "title": "Bio-Pasport Qonuni",
+          "description": "Xalqaro sayohat faqat haqiqiy 'Yashil Maqom'ga (3 oy ichida kuchaytirilgan) ega bo'lganlar uchun cheklangan.",
+          "impact": "Ikki toifali jamiyat yaratilishi: Kuchaytirilganlar va Cheklanganlar."
         }
       },
       "consequences": {
-        "short_term": "Muvofiqlashtirilgan javob o'limlar va iqtisodiy zararni minimallashtiradi. Pandemiya tez nazorat ostiga olinadi.",
-        "long_term": "Muvaffaqiyat boshqa muammolar bo'yicha global hamkorlik uchun shablon yaratadi.",
-        "global_impact": "COVID-19 misli ko'rilmagan xalqaro muvofiqlashtirish va ishonch uchun katalizatorga aylanadi."
+        "short_term": "Doimiy favqulodda holat.",
+        "long_term": "Sog'liqni saqlash holati barcha fuqarolik huquqlarini belgilaydi.",
+        "global_impact": "Demokratiya Texnokratik Bio-xavfsizlik Davlatlari bilan almashtiriladi."
       },
-      "present_day_status": "COVID-19ga muvofiqlashtirilgan global javob o'limlarni 500,000 dan pastda saqladi va 2021-yil oxirida pandemiyani tugatdi. Muvaffaqiyat iqlim o'zgarishi bo'yicha hamkorlik uchun turtki yaratdi va majburiy emissiya kelishuvlariga olib keldi. Xalqaro Pandemiya Javobi Shartnomasi doimiy global sog'liqni muvofiqlashtirish o'rnatdi. Xalqaro institutlarga ishonch sezilarli darajada oshdi."
+      "butterfly": [
+        {
+          "trigger": "Doimiy virusli tahdid",
+          "consequence": "Biotexnologiyaga katta sarmoyalar saraton va qarishni davolashga olib keladi, ammo faqat boylar uchun."
+        }
+      ],
+      "present_day_status": "Oziq-ovqat do'koniga kirish uchun sizga QR kod kerak. Niqoblar moda bayonoti va qonuniy talabdir. Dunyo 'Yashil Zonalar' (boy, har kuni tekshiriladigan) va 'Qizil Zonalar' (kambag'al, endemik infektsiya) ga bo'lingan. Lekin, mRNK texnologiyasi saratonni davoladi! 🧬🎫"
     }
-  }
+  },
+  "interactive_scenarios": [
+    {
+      "title": "Xabar Beruvchi (Dek 2019)",
+      "text": "2019 yil 30 dekabr. Siz Uxandagi sog'liqni saqlash xodimisiz. Dengiz mahsulotlari bozori bilan bog'liq pnevmoniya holatlari klasteri haqida hisobot keladi. Dr. Li Venlyan chat guruhida hamkasblarini ogohlantirmoqda. Nima qilasiz?",
+      "choices": [
+        {
+          "text": "Vahima oldini olish uchun mish-mishlarni bostiring. Doktorni tanbehlang.",
+          "consequence": "Virus Oy Yangi Yili sayohat shoshilinchida nazoratsiz tarqaladi. Tarixiy pandemiya xronologiyasi boshlanadi."
+        },
+        {
+          "text": "Darhol tekshiring va bozorni karantin qiling. JSSTga xabar bering.",
+          "consequence": "Erta cheklash tarqalishni sekinlashtiradi, ammo u sizib chiqadi. Yengilroq pandemiya sodir bo'ladi."
+        },
+        {
+          "text": "Favqulodda protokollarni ishga tushiring. Shaharni darhol qulflang.",
+          "consequence": "Virus Xubey provinsiyasi ichida cheklanadi. 'To'liq Cheklash' xronologiyasi boshlanadi."
+        }
+      ]
+    },
+    {
+      "title": "Qulflash Dilemmasi (Mart 2020)",
+      "text": "2020 yil mart. Virus mamlakatingizda tez tarqalmoqda. Kasalxonalar to'lmoqda. Olimlar to'liq qulflashni tavsiya qilmoqdalar, ammo iqtisodchilar bu iqtisodiyotni yo'q qilishini ogohlantirmoqdalar. Buyrug'ingiz qanday?",
+      "choices": [
+        {
+          "text": "Qattiq, muddatsiz qulflashni amalga oshiring. 'Egri chiziqni tekislash uchun ikki hafta.'",
+          "consequence": "Hayotlar saqlab qolinadi, ammo kichik bizneslar yo'q qilinadi. Ruhiy salomatlik inqirozi yuzaga keladi. (Tarixiy)"
+        },
+        {
+          "text": "Jamiyatni ochiq tuting. Zaiflarni himoya qiling, ammo virus tarqalishiga yo'l qo'ying.",
+          "consequence": "Kasalxonalar to'lib toshadi. O'lim soni keskin oshadi. Jamoatchilik ishonchi qulaydi."
+        },
+        {
+          "text": "Ixtiyoriy choralarni tavsiya eting. Fuqarolarga ishoning.",
+          "consequence": "O'rtacha o'lim soni. Iqtisodiyot yaxshiroq omon qoladi, ammo siz kuchli xalqaro tanqidga duch kelasiz."
+        }
+      ]
+    },
+    {
+      "title": "Vaksina Poygasi (2020 oxiri)",
+      "text": "2020 yil oxiri. Bir nechta vaksinalar umid baxsh etmoqda. Siz JSST rahbarisiz. Global tarqatishni qanday boshqarasiz?",
+      "choices": [
+        {
+          "text": "Mamlakatlarga dozalar uchun taklif kiritishga ruxsat bering. Eng yuqori taklif bergan birinchi bo'lib oladi.",
+          "consequence": "Boy davlatlar emlanadi, kambag'al davlatlar esa yo'q. Variantlar Global Janubda ko'payadi. 'Abadiy Pandemiya' xronologiyasi boshlanadi."
+        },
+        {
+          "text": "Qattiq global tenglik rejasini (COVAX) majburlang.",
+          "consequence": "Boy davlatlarda sekinroq tarqatish siyosiy tartibsizliklarga olib keladi, ammo virus 2023 yilga kelib global miqyosda yo'q qilinadi."
+        },
+        {
+          "text": "Farmatsevtika kompaniyalarini vaksina retseptlarini ochiq manba qilishga majburlang.",
+          "consequence": "Ishlab chiqarish global miqyosda portlaydi. Pandemiya rekord vaqt ichida tugaydi, ammo farmatsevtika aktsiyalari qulaydi."
+        }
+      ]
+    },
+    {
+      "title": "Kelib Chiqishini Tekshirish (2021)",
+      "text": "Razvedka hisobotlari virus laboratoriyadan sizib chiqqan bo'lishi mumkinligini ko'rsatmoqda. Diplomatik keskinlik yuqori. Tekshiruvni qanday hal qilasiz?",
+      "choices": [
+        {
+          "text": "Mojarodan qochish uchun qo'shma, xushmuomala tekshiruv o'tkazing.",
+          "consequence": "Hisobot noaniq. Nazariyalar ko'payadi. Haqiqat ko'milgan holda qoladi. (Tarixiy)"
+        },
+        {
+          "text": "To'liq shaffoflikni talab qiling va sanktsiyalar bilan tahdid qiling.",
+          "consequence": "Yangi Sovuq Urush boshlanadi. Sog'liqni saqlash bo'yicha global hamkorlik qulaydi."
+        },
+        {
+          "text": "Ilmiy ishonchni saqlab qolish uchun laboratoriya sizib chiqish nazariyasini bostiring.",
+          "consequence": "Keyinchalik dalillar sizib chiqqanda, fanga bo'lgan jamoatchilik ishonchi butunlay yo'qoladi."
+        }
+      ]
+    }
+  ]
 }

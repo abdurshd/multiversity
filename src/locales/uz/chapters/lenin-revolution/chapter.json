@@ -1,112 +1,294 @@
 {
   "meta": {
-    "title": "Bolsheviklar inqilobi",
+    "title": "Lenin Inqilobi",
     "period": "1917-1924",
-    "description": "Leninning hokimiyatni egallashi va Sovet davlatining tug'ilishi",
-    "historical_context": "1917-yilda Rossiyada ikkita inqilob sodir bo'ldi. Fevral inqilobi podshoни ag'darди. Oktyabr inqilobi bolsheviklarnI hokimiyatga keltirdi. Leninning shafqatsiz qat'iyati va tashkiliy dahosi muvaffaqiyatsiz davlatni tarixdagi birinchi kommunistik diktaturaga aylantirdi va yetmish yillik Sovet hukmronligi va global mafkuraviy mojaro uchun asos yaratdi.",
-    "divergence_point": "1917-1918-yillardagi bolsheviklar g'alabasining oldini olishi yoki Sovet tizimini o'zgartirishi mumkin bo'lgan muhim qarorlar"
+    "description": "Yakuniy Inqilobiy Egallab Olish: Qanday Qilib Kal Daho Dunyoni O'zgartirdi! 💀⚡ Leninning Shveytsariya surgunidan Rossiyaning mutlaq hukmdorigacha bo'lgan aql bovar qilmas sayohatini kuzating. Unda fitna, xiyonat, ajoyib strategiya va tarixdagi eng muvaffaqiyatli dushmanona egallab olish bor. Plyus poyezdlar, ko'plab dramatik nutqlar va zamonaviy politsiya davlatining ixtirosi! 🚂🔴",
+    "historical_context": "1917-yilda Rossiya o'nlab yillar davomida bug'lanib kelayotgan bosimli qozonga o'xshardi - va keyin kimdir olovni o'chirishni unutdi! 💥 Birinchi Jahon urushi falokat edi, Podshoh befahm edi, odamlar ochlikdan o'layotgan edi va hamma 'avtokratiya' narsasidan charchagan edi. Vladimir Lenin sahnaga chiqdi, u yillar davomida Shveytsariya qahvaxonalarida aynan shu lahzani kutib fitna uyushtirgan professional inqilobchi edi. Keyin sodir bo'lgan narsa dunyodagi birinchi muvaffaqiyatli kommunistik inqilob bo'ldi va u har qanday filmdan ko'ra ancha dramatik edi! 🎬⚡",
+    "divergence_point": "Leninning Qaytishi va Oktyabr Inqilobi"
   },
   "figures": {
-    "vladimir_lenin": {
+    "vladimir-lenin": {
       "name": "Vladimir Lenin",
-      "role": "Bolsheviklar rahbari",
-      "description": "Sovet Ittifoqini yaratgan bir maqsadga intilgan qat'iyat va taktik zukkoligi bilan ajralib turgan inqilobiy nazariyotchi."
+      "role": "Inqilobiy Daho va Kal Daho",
+      "description": "Yakuniy inqilobiy a'lochi! 💀⚡ Bu kal daho o'zining 'Nima Qilish Kerak?' energiyasi bilan Rossiyani ostin-ustun qildi. Poyezdlarni yaxshi ko'rardi, kapitalizmdan nafratlanardi va qandaydir qilib millionlab odamlarni o'zining aqldan ozgan orzusiga ergashishga ishontirdi."
     },
-    "alexander_kerensky": {
-      "name": "Aleksandr Kerenskiy",
-      "role": "Vaqtinchalik hukumat rahbari",
-      "description": "Ikkilanish va zaifligi bolsheviklar hokimiyatni egallashiga imkon bergan demokratik sotsialist."
-    },
-    "leon_trotsky": {
+    "leon-trotsky": {
       "name": "Lev Trotskiy",
-      "role": "Qizil armiya asoschisi",
-      "description": "Qizil armiyani qurgan va bolsheviklar uchun fuqarolar urushida g'alaba qozongan ajoyib tashkilotchi."
+      "role": "Olovli Notiq va Abadiy Inqilobchi",
+      "description": "Inqilobning eng dramatik notig'i! 🔥📢 Faqat ovozi bilan inqilob boshlashi mumkin edi, Qizil Armiyani xo'jayindek tashkil qildi va Stalin bilan kelishmagani uchun muz bolta bilan o'ldirildi. Abadiy inqilobchi!"
+    },
+    "joseph-stalin": {
+      "name": "Iosif Stalin",
+      "role": "Yakuniy Xo'jayinga Aylangan Jim Gruzin",
+      "description": "Hammadan o'zib ketgan sabrli fitnachi! 🐺🎭 'Zerikarli byurokrat' sifatida boshlangan, mutlaq hukmdor sifatida tugagan. Ba'zan jim yurganlar eng xavfli ekanligini isbotladi."
+    },
+    "alexandra-kollontai": {
+      "name": "Aleksandra Kollontay",
+      "role": "Feminist Inqilobchi va Sevgi Nazariyotchisi",
+      "description": "Inqilobni inqilob qilgan ayol! 👩‍💼💕 O'qlar va byurokratlardan qochib, ayollar huquqlari, erkin sevgi va gender tengligi uchun kurashdi. O'z vaqtidan ancha oldinda!"
+    },
+    "nikolai-bukharin": {
+      "name": "Nikolay Buxarin",
+      "role": "Sevimli Nazariyotchi va Fojiali Intellektual",
+      "description": "Leninning sevimli intellektuali! 🤓💭 Ajoyib nazariya yozgan, inson yaxshiligiga ishongan va afsuski, paranoid diktatorlar optimistlarni qadrlamasligini aniqlagan partiyaning oltin bolasi."
+    },
+    "felix-dzerzhinsky": {
+      "name": "Feliks Dzerjinskiy",
+      "role": "Temir Feliks va Maxfiy Politsiya Yaratuvchisi",
+      "description": "Yuragi... temirdan bo'lgan inqilob ijrochisi! 🔒⚔️ Cheka (maxfiy politsiya)ni yaratdi va ba'zan inqiloblar hammani tartibda ushlab turish uchun qo'rqinchli odamga muhtojligini isbotladi."
     }
   },
   "timelines": {
-    "white_victory": {
-      "title": "Oq Rossiya: Anti-bolsheviklar g'alabasi",
-      "description": "Agar Oq kuchlar fuqarolar urushida bolsheviklarni mag'lub etgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Oq qo'shinlar o'z hujumlarini samarali muvofiqlashtiradi. Xorijiy aralashuv ko'proq. Bolsheviklar 1919-yilda mag'lub bo'ladi.",
+    "menshevik-victory": {
+      "title": "Mensheviklar G'alaba Qozondi: Rus Xususiyatlariga Ega Demokratiya! 🗳️🐻",
+      "description": "Agar mo''tadil Mensheviklar fraktsiyasi Leninning Bolsheviklarini mag'lub etib, demokratik sotsialistik davlat yaratganida nima bo'lar edi?",
+      "divergence_description": "Mensheviklar kengroq koalitsiyani muvaffaqiyatli tashkil qiladilar va 1917 yil oktyabr oyida Bolsheviklar to'ntarishining oldini oladilar",
       "events": {
-        "coordinated_offensive_1919": {
-          "title": "Oq to'lqin",
-          "description": "Kolchak, Denikin va Yudenich hujumlarini muvofiqlashtiradi. Ittifoqchilar yordami zamonaviy qurollarni taqdim etadi. Qizil armiya mag'lub bo'ladi.",
-          "impact": "Bolsheviklar hukumati qulaydi. Lenin va omon qolgan bolsheviklar rahbarlari surgunga qochadi."
+        "menshevik-coalition-1917": {
+          "title": "Mensheviklar Demokratik Koalitsiya Tuzdilar! 🤝🏛️",
+          "description": "Mo''tadil sotsialistlar barqaror demokratik hukumat tuzish uchun liberallar va Sotsial-Revolyutsionerlar bilan muvaffaqiyatli birlashadilar.",
+          "impact": "Bolsheviklar egallab olishining oldini oluvchi keng ko'lamli demokratik koalitsiyani yaratadi"
         },
-        "military_dictatorship_1920": {
-          "title": "Rossiya Direktoriyasi",
-          "description": "Oqlar g'alabasi demokratiya emas, balki harbiy diktaturani keltiradi. Generallar kommunizm va demokratiyaga qarshi avtoritar rejim o'rnatadilar.",
-          "impact": "Rossiya Frankoning Ispaniyasiga o'xshash o'ng qanot avtoritar davlatga aylanadi."
+        "constituent-assembly-success-1918": {
+          "title": "Ta'sis Majlisi Haqiqatan ham Ishlamoqda! 🏛️✨",
+          "description": "Demokratik parlament konstitutsiyani muvaffaqiyatli qabul qiladi va Lenin uni yopib qo'ygan o'sha noqulay kundan farqli o'laroq, yer islohotini boshlaydi.",
+          "impact": "Xalq qo'llab-quvvatlashi bilan qonuniy demokratik institutlarni o'rnatadi"
         },
-        "alliance_with_germany_1935": {
-          "title": "Sharqiy pakt",
-          "description": "Avtoritar Rossiya G'arbiy demokratiyalar va ehtimol Yaponiya kengayishiga qarshi natsistik Germaniya bilan ittifoq tuzadi.",
-          "impact": "Ikkinchi jahon urushida butunlay boshqacha ittifoqlar va natijalar."
+        "gradual-land-reform-1918": {
+          "title": "Tartibsizliksiz Yer Islohoti! 🌾📋",
+          "description": "Zo'ravonlik bilan tortib olish o'rniga qonuniy jarayon orqali yerni dehqonlarga tinch yo'l bilan qayta taqsimlash.",
+          "impact": "Qishloq xo'jaligi mahsuldorligini saqlagan holda dehqonlar talablarini qondiradi"
+        },
+        "avoid-civil-war-1918": {
+          "title": "Fuqarolar Urushi Yo'q: Hamma Kelishib Yashamoqda! 🕊️❤️",
+          "description": "Demokratik qonuniylik fuqarolar urushining oldini oladi, chunki ko'pchilik guruhlar yangi tizimni qabul qiladi.",
+          "impact": "Millionlab hayotlarni saqlab qoladi va Rossiya infratuzilmasini asraydi"
+        },
+        "mixed-economy-1920": {
+          "title": "Aralash Iqtisodiyot Muvaffaqiyati: Ikkala Dunyoning Eng Yaxshisi! 💼🏭",
+          "description": "Demokratik Rossiya xususiy tadbirkorlikni ijtimoiy himoya bilan birlashtirgan muvaffaqiyatli aralash iqtisodiyotni rivojlantiradi.",
+          "impact": "Ijtimoiy himoya bilan bozor mexanizmlari orqali iqtisodiy farovonlik"
+        },
+        "federal-democracy-1925": {
+          "title": "Rossiya Federal Respublikasi Tashkil Etildi! 🇷🇺🏛️",
+          "description": "Rossiya birlikni saqlagan holda etnik avtonomiyani hurmat qiladigan federal demokratiyaga aylanadi.",
+          "impact": "Kuch ishlatish o'rniga federalizm orqali millat masalasini hal qiladi"
         }
       },
       "consequences": {
-        "short_term": "Bolshevizm mag'lub bo'ladi, ammo demokratiya paydo bo'lmaydi. Harbiy diktatura Rossiyada hukmronlik qiladi.",
-        "long_term": "Sovet Ittifoqi yo'q, ammo demokratik Rossiya ham yo'q. Ikkinchi jahon urushida boshqacha ittifoqlar.",
-        "global_impact": "Butun dunyo bo'ylab kommunistik harakatlar uchun Sovet modeli yo'q. Ammo fashizm Sovet qarshiligilarisiz kuchliroq bo'lishi mumkin."
+        "short_term": "Barqaror demokratik institutlar avtoritar egallab olishning oldini oladi",
+        "long_term": "Rossiya butun dunyo bo'ylab demokratik sotsializm modeli bo'ladi",
+        "global_impact": "Sovet tahdidi yo'qligi boshqacha Sovuq Urush yoki umuman Sovuq Urush yo'qligiga imkon beradi"
       },
-      "present_day_status": "Rossiya 20-asr davomida avtoritar davlat bo'lib qoldi va oxir-oqibat 1990-yillarda demokratlashdi. Biz bilgan Sovuq urush bo'lmadi. Sovet yordamisiz butun dunyo bo'ylab kommunistik harakatlar zaifroq edi, ammo Rossiyada demokratik rivojlanish ancha kechroq keldi."
+      "butterfly": [
+        {
+          "trigger": "Demokratik tizim avtoritar mustahkamlashning oldini oladi",
+          "consequence": "Stalinistik terror, gulaglar yoki majburiy kollektivlashtirish yo'q"
+        },
+        {
+          "trigger": "Demokratik Rossiya G'arbiy demokratiyalar bilan ertaroq ittifoq tuzishi mumkin",
+          "consequence": "Gitler boshidanoq birlashgan demokratik frontga duch keladi"
+        }
+      ],
+      "present_day_status": "Rossiya Federal Demokratik Respublikasi 2017-yilda o'zining 100 yilligini nishonladi. Bu dunyodagi eng barqaror demokratiyalardan biri bo'lib, o'zining ajoyib sog'liqni saqlash, ta'lim va aroq sifati nazorati bilan mashhur. Mensheviklar diktaturadan ko'ra demokratiyani tanlaganliklaridan hali ham faxrlanadilar! 🎉🗳️"
     },
-    "democratic_revolution": {
-      "title": "Xalq demokratiyasi: Kerenskiy muvaffaqiyatga erishadi",
-      "description": "Agar Kerenskiyning Vaqtinchalik hukumati demokratiyani muvaffaqiyatli o'rnatgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Kerenskiy yer islohotini birinchi o'ringa qo'yadi va Rossiyani Birinchi jahon urushidan darhol chiqaradi. Bolsheviklar to'ntarishining oldini oladi.",
+    "lenin-dies-early": {
+      "title": "Lenin 1914 Yilda Vafot Etadi: Inqilobchisiz Inqilob! 💀🔄",
+      "description": "Agar Lenin inqilobdan oldin vafot etganida nima bo'lar edi? Rus sotsializmi o'z dahosisiz qanday rivojlangan bo'lar edi?",
+      "divergence_description": "Lenin 1914 yilda Shveytsariya surgunida insultdan vafot etadi, bu esa Bolsheviklar Inqilobining asosiy tashkilotchisini yo'q qiladi",
       "events": {
-        "land_reform_1917": {
-          "title": "Tinchlik, yer va non",
-          "description": "Kerenskiy darhol yerni qayta taqsimlashni amalga oshiradi va Germaniya bilan sulh shartnoma imzolaydi. Bu bolsheviklarning asosiy masalalarini o'g'irlaydi.",
-          "impact": "Xalq qo'llab-quvvatlashi Vaqtinchalik hukumatga o'tadi. Bolsheviklar tezligini yo'qotadi."
+        "lenin-death-1914": {
+          "title": "Leninning Kutilmagan Ketishi: Hech Kim Kutmagan Syujet Burilishi! 💀😱",
+          "description": "Vladimir Lenin Shveytsariya surgunida insultdan vafot etadi, Bolsheviklarni rahbarsiz va sarosimada qoldiradi.",
+          "impact": "Asosiy inqilobiy strateg va tashkilotchini yo'q qiladi"
         },
-        "constituent_assembly_1918": {
-          "title": "Rossiya demokratiyasi tug'ildi",
-          "description": "Erkin saylovlar Sotsialist-Revolyutsionerlar va Mensheviklar koalitsion hukumatini yaratadi. Konstitutsiya demokratik respublikani o'rnatadi.",
-          "impact": "Rossiya dunyoning eng katta demokratiyasiga aylanadi. Kommunistik inqilobdan qochiladi."
+        "bolshevik-fragmentation-1915": {
+          "title": "Bolsheviklar Yomon Munosabatlar Kabi Parchalanmoqda! 💔🔨",
+          "description": "Leninning birlashtiruvchi rahbarligisiz, Bolsheviklar turli strategiyalarga ega raqobatdosh fraktsiyalarga bo'linadi.",
+          "impact": "Radikal sotsialistik harakatni zaiflashtiradi va inqilobiy salohiyatni kamaytiradi"
         },
-        "economic_recovery_1925": {
-          "title": "Demokratik mo''jiza",
-          "description": "Siyosiy barqarorlik iqtisodiy tiklanishga imkon beradi. Demokratik Rossiya Stalinning kollektivlashtirishining shafqatsizligisiz sanoatlashadi.",
-          "impact": "Rossiya G'arbiy demokratiyalar bilan birga yirik demokratik kuch sifatida rivojlanadi."
+        "trotsky-leadership-1917": {
+          "title": "Trotskiy Oldinga Chiqdi: 'Menimcha, Endi Men Boshqaraman!' 🎭⚡",
+          "description": "Lev Trotskiy Leninning rolini to'ldirishga harakat qiladi, ammo uning strategik dahosi va partiya obro'siga ega emas.",
+          "impact": "Xalqaro inqilobga ko'proq urg'u beruvchi boshqacha inqilobiy strategiya"
+        },
+        "failed-october-1917": {
+          "title": "Oktyabr Inqilobi Muvaffaqiyatsiz: Noto'g'ri Vaqt, Noto'g'ri Rahbar! ❌🏛️",
+          "description": "Leninning vaqti va taktikasisiz, Bolsheviklar to'ntarish urinishi sharmandali tarzda muvaffaqiyatsizlikka uchraydi.",
+          "impact": "Vaqtinchalik Hukumatni saqlab qoladi va kommunistik egallab olishning oldini oladi"
+        },
+        "social-democratic-russia-1918": {
+          "title": "Sotsial-Demokratik Rossiya Paydo Bo'ldi! 🌹🏛️",
+          "description": "Mo''tadil sotsialistlar Germaniya Sotsial-Demokratlariga o'xshash hukumat tuzadilar.",
+          "impact": "Kommunistik ekstremizmsiz demokratik sotsialistik davlat yaratadi"
+        },
+        "evolutionary-socialism-1920": {
+          "title": "Bosqichma-bosqich Sotsializm: Tartibsizliksiz O'zgarish! 🐌🌹",
+          "description": "Rossiya demokratik institutlarni saqlab qolgan holda bosqichma-bosqich sotsialistik islohotlarni qabul qiladi.",
+          "impact": "Demokratik vositalar orqali sotsialistik iqtisodiyotga tinch o'tish"
         }
       },
       "consequences": {
-        "short_term": "Demokratik hukumat o'zini muvaffaqiyatli o'rnatadi. Rossiya tinch yo'l bilan modernizatsiya qilinadi.",
-        "long_term": "Stalin yo'q. Buyuk Terror yo'q. Kollektivlashtirish ocharчилиги yo'q. Demokratik Rossiya tabiiy G'arbiy ittifoqchi.",
-        "global_impact": "Global kommunizm uchun Sovet modeli yo'q. Sovuq urush yo'q. 20-asrda demokratiya kuchliroq."
+        "short_term": "Inqilobiy ekstremizmsiz mo''tadil sotsialistik hukumat",
+        "long_term": "Skandinaviya modeliga o'xshash demokratik sotsialistik rivojlanish",
+        "global_impact": "Kommunistik tahdid yo'qligi butun 20-asr dinamikasini o'zgartiradi"
       },
-      "present_day_status": "Rossiya Demokratik Respublikasi dunyoning yetakchi demokratiyalari va iqtisodlaridan biri. U 1970-yillarda Yevropa Ittifoqiga qo'shildi. Kommunistik mafkura hech qachon katta global kuchga aylanmadi. 20-asr buyuk kuchlar o'rtasida Sovuq urush o'rniga hamkorlikni ko'rdi."
+      "butterfly": [
+        {
+          "trigger": "Sovet Ittifoqi yo'q, demak kapitalizm bilan mafkuraviy qarama-qarshilik yo'q",
+          "consequence": "Demokratik raqobatga asoslangan boshqacha Ikkinchi Jahon Urushidan keyingi dunyo tartibi"
+        },
+        {
+          "trigger": "Mao Tszedun ergashishi uchun Sovet modeli yo'q",
+          "consequence": "Xitoy inqilobi boshqacha shakl oladi yoki sodir bo'lmaydi"
+        }
+      ],
+      "present_day_status": "Rossiya Sotsial-Demokratik Respublikasi Yevropaning eng farovon mamlakatlaridan biridir. U kuchli ijtimoiy himoya tarmoqlari bilan kapitalizmning 'Shimoliy modeli'ga asos solgan. Kinoyali tomoni shundaki, ular o'zlarining asosiy aeroportini Lenin nomi bilan atashgan - muhim paytda u yerda bo'lmagan yigit! ✈️😅"
     },
-    "permanent_revolution": {
-      "title": "Trotskiyning tasavvuri: Doimiy inqilob",
-      "description": "Agar Stalin emas, Trotskiy Leninning vorisi bo'lganida nima bo'lar edi?",
-      "divergence_description": "Lenin insultdan qisqa vaqt tuzalib ketadi va Trotskiyni o'zining vorisi sifatida tayinlaydi. Trotskiy Stalin o'rniga hokimiyatni mustahkamlaydi.",
+    "trotsky-leadership": {
+      "title": "Doimiy Inqilob: Trotskiyning Dunyoni Zabt Etishi! 🌍⚡",
+      "description": "Agar Leninning o'rniga Stalin emas, Trotskiy kelganida nima bo'lar edi? Bir mamlakatda sotsializm o'rniga global inqilob!",
+      "divergence_description": "Trotskiy Lenin vafotidan keyin vorislik kurashida g'alaba qozonadi va doimiy inqilob strategiyasini amalga oshiradi",
       "events": {
-        "trotsky_succession_1924": {
-          "title": "Voris",
-          "description": "Leninning Stalinni qoralagan o'lim to'shagidagi vasiyati ommaga e'lon qilinadi. Partiya qurultoyi Trotskiyni Bosh kotib sifatida tanlaydi.",
-          "impact": "Trotskiyning xalqaro inqilobiy tasavvuri Stalinning bir mamlakatda sotsializm o'rniga Sovet siyosatini shakllantiradi."
+        "trotsky-wins-succession-1924": {
+          "title": "Trotskiy Stalinni Dog'da Qoldirdi: Syujet Burilishi! 🎭👑",
+          "description": "Olovli notiq Leninning vorisligi uchun kurashda jim gruzinni mag'lub etadi. Xarizma byurokratiyani yengadi!",
+          "impact": "Sovet rivojlanishining butun yo'nalishini xalqaro inqilobga o'zgartiradi"
         },
-        "world_revolution_1930": {
-          "title": "Inqilobni eksport qilish",
-          "description": "Chet elda inqilob qo'zg'atishga katta resurslar ajratiladi. Germaniya, Ispaniya va Xitoyda muvaffaqiyatli kommunistik inqilобlar ertaroq sodir bo'ladi.",
-          "impact": "Global kommunistik harakat kuchliroq va ko'proq muvofiqlashtіrilgan. G'arbiy demokratiyalar haqiqatan tahdid ostida."
+        "permanent-revolution-launched-1925": {
+          "title": "Doimiy Inqilob Boshlandi: 'Dunyo Ishchilari, BIRLASHING!' 🌍🔥",
+          "description": "Trotskiy qo'shni davlatlardan boshlab inqilobni global miqyosda tarqatish uchun tajovuzkor kampaniyani boshlaydi.",
+          "impact": "Sovet Ittifoqi global kommunistik harakatlarda faol aralashuvchiga aylanadi"
         },
-        "ideological_war_1940": {
-          "title": "Qizil asr",
-          "description": "1940-yilga kelib, kommunistik hukumatlar Sovet bosqinchiligi orqali emas, balki inqilob orqali Yevropa va Osiyoning ko'p qismini boshqaradi.",
-          "impact": "Kommunizm va kapitalizm mojarosi yanada shiddatliroq. Ikkinchi jahon urushi kattaroq mafkuraviy kurashning bir qismiga aylanadi."
+        "german-revolution-1926": {
+          "title": "Germaniya Inqilobi Muvaffaqiyatli: Yevropa Qizilga Aylanmoqda! 🔴🇩🇪",
+          "description": "Sovet yordami nemis kommunistlariga Veymar Respublikasini ag'darishga yordam beradi. Ikkita kommunistik superkuch paydo bo'ladi!",
+          "impact": "Markaziy va Sharqiy Yevropada hukmronlik qiluvchi Sovet-Germaniya kommunistik blokini yaratadi"
+        },
+        "european-revolution-1928": {
+          "title": "Kommunistik Dominolar Yevropa Bo'ylab Yiqilmoqda! 🔴🌍",
+          "description": "Inqilobiy to'lqin Polsha, Vengriya va Fransiyaga tarqaladi. Trotskiyning orzusi haqiqatga aylanadi!",
+          "impact": "Yevropaning katta qismi Sovet rahbarligida kommunistik bo'ladi"
+        },
+        "global-revolutionary-war-1930": {
+          "title": "Uchinchi Jahon Urushi: Kommunizm Kapitalizmga Qarshi! ⚔️🌍",
+          "description": "Kommunistik Yevropa kapitalistik Amerika va Britaniyaga duch kelganda global mafkuraviy urush boshlanadi.",
+          "impact": "Dunyo yakuniy mafkuraviy mojaroda ikkita dushman lagerga bo'linadi"
+        },
+        "revolutionary-empire-1935": {
+          "title": "Trotskiyning Inqilobiy Imperiyasi: Missiya Bajarildi! 👑🔴",
+          "description": "Kommunistik inqilobiy imperiya Trotskiy rahbarligida Lissabondan Vladivostokgacha cho'ziladi.",
+          "impact": "Doimiy inqilobga asoslangan dunyodagi birinchi mafkuraviy imperiyani yaratadi"
         }
       },
       "consequences": {
-        "short_term": "Sovet Ittifoqi ichki rivojlanish o'rniga jahon inqilobiga e'tibor qaratadi.",
-        "long_term": "Kommunizm uzoqroq va tezroq tarqaladi. Ammo haddan tashqari kengayish tufayli tezroq yonib ketadi.",
-        "global_impact": "Ko'proq shiddatli mafkuraviy mojaro. Ammo Trotskiycha kommunizm Stalinizmdan kamroq shafqatsiz bo'lishi mumkin edi va boshqacha natijalarga olib kelishi mumkin."
+        "short_term": "Inqilobning Yevropa va undan tashqariga muvaffaqiyatli eksporti",
+        "long_term": "Dunyo kommunistik va kapitalistik bloklar o'rtasida ancha oldin bo'lingan",
+        "global_impact": "1930-yillarda mafkuraviy tizimlar o'rtasidagi boshqacha jahon urushi"
       },
-      "present_day_status": "Trotskiyning doimiy inqilobi haddan tashqari kengaydi. 1960-yillarga kelib, kommunistik rejimlar ichki ziddiyatlardan qulardi. Stalinistik terror apparatisiz, kommunistik tizimlar kamroq barqaror, ammo kamroq shafqatsiz edi. Ko'pchilik 1980-yillarga kelib demokratik sotsializmga o'tdi."
+      "butterfly": [
+        {
+          "trigger": "Kommunistik Germaniya Natsistlarning hokimiyatga kelishini oldini oladi",
+          "consequence": "Xolokost hech qachon sodir bo'lmaydi, boshqacha Yevropa rivojlanishi"
+        },
+        {
+          "trigger": "Global kommunistik inqilob kapitalistik javobni keltirib chiqaradi",
+          "consequence": "Keyinroq Sovuq Urush o'rniga 1930-yillarda Uchinchi Jahon Urushi"
+        }
+      ],
+      "present_day_status": "Trotskiyning Inqilobiy Federatsiyasi 1989-yilda 65 yillik doimiy inqilobdan keyin charchoqdan quladi. Ma'lum bo'lishicha, hukumatlarni doimiy ravishda ag'darish haqiqatan ham toliqtiruvchi! Bugungi kunda sobiq kommunistik mamlakatlar har yili 'Inqilob Charchoqligi Kuni'ni nishonlaydilar. 😴🔴"
     }
-  }
+  },
+  "interactive_scenarios": [
+    {
+      "title": "Fevral Inqilobi",
+      "text": "Fevral 1917, Petrograd. Podshoh taxtdan voz kechdi! Ishchilar va askarlar ko'chalarni to'ldirmoqda. Siz Vaqtinchalik Hukumatni yoki radikal Sovetlarni qo'llab-quvvatlashni tanlashingiz kerak...",
+      "choices": [
+        {
+          "text": "Vaqtinchalik Hukumatni va demokratik o'tishni qo'llab-quvvatlang",
+          "consequence": "Sizning yordamingiz mo''tadil kuchlarni mustahkamlaydi, ammo radikal o'zgarishlarni kechiktirishi mumkin"
+        },
+        {
+          "text": "Ishchilar va askarlar kengashlariga (Sovetlar) qo'shiling",
+          "consequence": "Sizning radikalizmingiz inqilobiy jadallikni oshiradi, ammo hukumatni beqarorlashtiradi"
+        },
+        {
+          "text": "Saylovlar o'tkazilgunga qadar qonun va tartibga chaqiring",
+          "consequence": "Sizning mo''tadilligingiz barqarorlikni saqlaydi, ammo inqilobiy umidlarni puchga chiqaradi"
+        }
+      ]
+    },
+    {
+      "title": "Leninning Muhrlangan Poyezdi",
+      "text": "Aprel 1917. Lenin o'zining radikal 'Aprel Teziuslari' bilan Finlyandiya Vokzaliga yetib keladi. U darhol inqilobni talab qilmoqda. Olomon sizga qarayapti - siz bu ekstremistni qo'llab-quvvatlaysizmi?",
+      "choices": [
+        {
+          "text": "Leninning darhol sotsialistik inqilob chaqirig'ini qabul qiling",
+          "consequence": "Sizning yordamingiz Bolsheviklarni radikallashtiradi va Oktyabr Inqilobi sari undaydi"
+        },
+        {
+          "text": "Partiya birligi uchun Lenindan o'z pozitsiyasini yumshatishni talab qiling",
+          "consequence": "Sizning pragmatizmingiz ichki Bolsheviklar bo'linishini yaratadi, ammo kengroq koalitsiyani saqlab qoladi"
+        },
+        {
+          "text": "Leninning ekstremizmini rad eting va Bolsheviklar bilan aloqani uzing",
+          "consequence": "Sizning ajralishingiz Leninni zaiflashtiradi, ammo mo''tadil sotsialistik muqobillarni kuchaytiradi"
+        }
+      ]
+    },
+    {
+      "title": "Iyul Kunlari Inqirozi",
+      "text": "Iyul 1917. Qurollangan ishchilar va askarlar 'Barcha Hokimiyat Sovetlarga!' deb talab qilib yurishmoqda. Hukumat qo'zg'olonni bostirishga tayyorlanmoqda. Lenin ikkilanmoqda - Bolsheviklar boshchilik qilishi kerakmi yoki o'zini tiyishi kerakmi?",
+      "choices": [
+        {
+          "text": "Vaqtinchalik Hukumatga qarshi qurolli qo'zg'olonga boshchilik qiling",
+          "consequence": "Sizning rahbarligingiz hukumatni ag'darishda muvaffaqiyat qozonishi yoki falokatga olib kelishi mumkin"
+        },
+        {
+          "text": "Inqilobiy kuchlarni saqlab qolish uchun strategik chekinishga buyruq bering",
+          "consequence": "Sizning ehtiyotkorligingiz partiyani saqlab qoladi, ammo inqilobiy imkoniyatni qo'ldan boy beradi"
+        },
+        {
+          "text": "Ishchilarni qo'llab-quvvatlang, lekin to'g'ridan-to'g'ri Bolsheviklar ishtirokidan qoching",
+          "consequence": "Sizning murosangiz ishonchli rad etishni saqlaydi, ammo tarafdorlaringizni chalg'itadi"
+        }
+      ]
+    },
+    {
+      "title": "Oktyabr Inqilobi",
+      "text": "1917 yil 25 oktyabr. Bolshevik kuchlari Qishki Saroyni o'rab oldi. Kerenskiy qochib ketdi. Bu ayni lahza - proletariat nomidan hokimiyatni egallang yoki koalitsiya muzokara qiling?",
+      "choices": [
+        {
+          "text": "Ishchilar sinfi nomidan to'liq hokimiyatni egallang",
+          "consequence": "Sizning jasoratingiz Sovet davlatini yaratadi, ammo fuqarolar urushini keltirib chiqaradi"
+        },
+        {
+          "text": "Boshqa sotsialistik partiyalar bilan koalitsiya muzokara qiling",
+          "consequence": "Sizning murosangiz hokimiyatni bo'lishadi, ammo inqilobiy soflikni zaiflashtirishi mumkin"
+        },
+        {
+          "text": "Har qanday yangi hukumatni qonuniylashtirish uchun darhol saylovlarni talab qiling",
+          "consequence": "Sizning demokratik printsiplaringiz hokimiyatni mo''tadilroq partiyalarga yo'qotish xavfini tug'diradi"
+        }
+      ]
+    },
+    {
+      "title": "Rossiya Fuqarolar Urushi",
+      "text": "Noyabr 1917. Oq Armiya generallari muxolifatni yig'moqda. Xorijiy kuchlar aralashuv bilan tahdid qilmoqda. Inqilobni qanday himoya qilasiz?",
+      "choices": [
+        {
+          "text": "Inqilobning barcha dushmanlariga qarshi total urushni safarbar qiling",
+          "consequence": "Sizning harbiylashtirishingiz urushda g'alaba qozonadi, ammo Rossiyani qurolli lagerga aylantiradi"
+        },
+        {
+          "text": "Turli Oq fraktsiyalar bilan alohida tinchlik bitimlarini muzokara qilishga harakat qiling",
+          "consequence": "Sizning diplomatiyangiz dushmanlarni bo'lishi mumkin, ammo zaiflik sifatida ko'rilishi mumkin"
+        },
+        {
+          "text": "Xorijiy kommunistik ittifoqchilar va xalqaro inqilobni qidiring",
+          "consequence": "Sizning internatsionalizmingiz inqilobni tarqatadi, ammo xorijiy aralashuvni oshiradi"
+        }
+      ]
+    }
+  ]
 }

@@ -1,112 +1,319 @@
 {
   "meta": {
-    "title": "Sovuq urush",
-    "period": "1947-1991",
-    "description": "Zamonaviy dunyoni shakllantirgan superkuchlar raqobati",
-    "historical_context": "Yaqin yarim asr davomida yadro qurollari bilan qurollangan ikkita superkuch mafkuraviy chiziqlar bo'ylab to'qnash keldi. Sovuq urush koinotni o'rganishdan Uchinchi dunyo inqiloblarigacha, madaniy ishlab chiqarishdan qurol poygasigacha hamma narsani shakllantirdi. Mojaro Sovet qulashi bilan yakunlandi, ammo juda boshqacha kechishi mumkin edi.",
-    "divergence_point": "Sovuq urush issiq urushga aylanishi, ertaroq tugashi yoki boshqacha yakunlanishi mumkin bo'lgan muhim lahzalar"
+    "title": "Sovuq Urush",
+    "period": "1945-1991",
+    "description": "Yakuniy Tikilish Musobaqasi: 46 Yillik 'Men Senga Tegmayapman!' 👁️❄️ Amerika va Sovet Ittifoqi bir-biri bilan to'g'ridan-to'g'ri urushmasdan dunyodagi eng uzun, eng qimmat va eng xavfli bahsni o'tkazishini tomosha qiling. Unda josuslar, yadro raketalari, kosmik poygalar, proksi urushlar va hammani asabiylashtirish uchun yetarli paranoya bor! Hech kim o'q uzmagan, ammo hamma nafasini ushlab turgan urush! 🚀💣",
+    "historical_context": "Fashizmni birgalikda mag'lub etgandan so'ng, sobiq ittifoqchilar darhol bo'lingan dunyo bo'ylab bir-birlariga tikilib qarashni boshladilar! 😠🌍 Amerika va Sovet Ittifoqi har biri o'z tizimini eng yaxshisi deb o'ylardi va nega boshqasi buni shunchaki tan olmasligini tushunolmadi. Yadro qurollari, raqobatdosh mafkuralar va dunyodagi eng katta ikkita egoni qo'shing va siz 46 yillik 'sen nima qila olsang, men yaxshiroq qila olaman' degan bahsni olasiz - kosmik poygalardan shaxmat o'yinlarigacha va kim ko'proq raketa qura olishigacha. Bu hamma kimdir stolni ag'darib yuborishidan qo'rqqan juda uzun, juda tarang oilaviy kechki ovqatga o'xshardi! 🍽️💥",
+    "divergence_point": "Ikkinchi Jahon Urushidan Keyingi Superkuchlar Munosabatlari"
   },
   "figures": {
-    "joseph_stalin": {
+    "harry-truman": {
+      "name": "Garri S. Trumen",
+      "role": "Hammasini Boshlagan Tasodifiy Prezident",
+      "description": "To'satdan Stalin va atom bombalari bilan shug'ullanishga majbur bo'lgan Missurilik galantereyachi! 💣🤠 Kichik shaharcha siyosatchisidan butun dunyoni shakllantiradigan qarorlar qabul qilishgacha bordi. 'Mas'uliyat shu yerda tugaydi' haqiqatan ham!"
+    },
+    "joseph-stalin-cold-war": {
       "name": "Iosif Stalin",
-      "role": "Sovet rahbari",
-      "description": "G'arbdan shubhalanishi Sovuq urushni boshlashga yordam bergan paranoid diktator."
+      "role": "Hech Kimga Ishonmagan Paranoid Diktator",
+      "description": "Temir Pardani qurgan va o'zi ishonmagan fitnani uchratmagan gruzin! 🐻🕵️ Sharqiy Yevropani o'zining shaxsiy qal'asiga aylantirdi va 'Iosif amaki'ni dunyoning eng qo'rqinchli amakisiga aylantirdi."
     },
-    "harry_truman": {
-      "name": "Garri Trumen",
-      "role": "AQSH prezidenti",
-      "description": "Amerikani butun dunyo bo'ylab Sovet kengayishini to'xtatishga majburiyatli qilgan prezident."
+    "winston-churchill-cold-war": {
+      "name": "Uinston Cherchill",
+      "role": "Buni Oldindan Ko'rgan Payg'ambar",
+      "description": "'Temir Parda' atamasini o'ylab topgan va hammani Sovet niyatlari haqida ogohlantirgan buldog! 🐕🔮 Urush davridagi ittifoqchidan Sovuq Urush payg'ambarigacha - uning Fulton nutqi hammasini boshlab berdi!"
     },
-    "mikhail_gorbachev": {
+    "nikita-khrushchev": {
+      "name": "Nikita Xrushchyov",
+      "role": "BMTda Poyabzalini Urib, Dunyoni Deyarli Tugatgan Bosh Vazir",
+      "description": "BMTda poyabzalini urgan va Kubaga raketalar joylashtirgan ukrainalik dehqon! 👞💥 Mixdek qattiq, lekin yadro urushidan qochish uchun yetarlicha aqlli. 'Biz sizni ko'mamiz!' (Spoyler: ular ko'mishmadi)"
+    },
+    "john-f-kennedy": {
+      "name": "Jon F. Kennedi",
+      "role": "Armageddonga Tik Qarab Turgan Yosh Prezident",
+      "description": "Yadro urushiga tik qarab turgan va bir avlodni ilhomlantirgan xarizmatik prezident! 🌟🚀 Cho'chqalar ko'rfazi falokatidan Kuba raketa inqirozi qahramonigacha va Oyga qo'nish vizionerigacha. Kamelotning o'z lahzalari bor edi!"
+    },
+    "ronald-reagan": {
+      "name": "Ronald Reygan",
+      "role": "Buni Yovuz Imperiya Deb Atagan Gollivud Aktyori",
+      "description": "Gorbachyovni 'bu devorni buzib tashlang!' deb chaqirgan sobiq kino yulduzi. 🎬🧱 Ba'zan optimistik kovboy Sovuq Urushni tugatish uchun dunyoga aynan kerak bo'lgan narsa ekanligini isbotladi."
+    },
+    "mikhail-gorbachev": {
       "name": "Mixail Gorbachyov",
-      "role": "Oxirgi Sovet rahbari",
-      "description": "Kommunizmni saqlab qolish urinishlari kutilmagan holda Sovet Ittifoqini tugatgan islohotchi."
+      "role": "Sovet Ittifoqini Tasodifan Tugatgan Islohotchi",
+      "description": "Kommunizmni saqlab qolishga harakat qilgan va tasodifan uni yo'q qilgan Sovet rahbari! 🔨💔 Oshkoralik, qayta qurish va dunyoni o'zgartirgan tug'ma dog'. Ba'zan yaxshi niyatlar kutilmagan oqibatlarga olib keladi!"
+    },
+    "fidel-castro": {
+      "name": "Fidel Kastro",
+      "role": "Uchinchi Jahon Urushini Deyarli Boshlagan Karib Inqilobchisi",
+      "description": "Floridadan 90 mil uzoqlikka kommunizmni olib kelgan soqolli inqilobchi! 🇨🇺⚔️ Cho'chqalar ko'rfazidan omon qoldi, Sovet raketalarini qabul qildi va 10 ta AQSh prezidentidan o'zib ketdi. Yakuniy omon qoluvchi!"
     }
   },
   "timelines": {
-    "nuclear_war": {
-      "title": "Oxirgi urush: Yadro apokalipsisi",
-      "description": "Agar Kuba raketa inqirozi 1962-yilda yadro urushiga aylanganida nima bo'lar edi?",
-      "divergence_description": "Kuba raketa inqirozi paytidagi tushunmovchilik AQSH va SSSR o'rtasida yadroviy almashinuvga olib keladi.",
+    "nuclear-war": {
+      "title": "Yadro Urushi: Kuba Raketa Inqirozi Noto'g'ri Ketdi! ☢️💀",
+      "description": "Agar Kuba raketa inqirozi superkuchlar o'rtasida to'liq yadroviy almashinuvga aylanganida nima bo'lar edi?",
+      "divergence_description": "Kuba raketa inqirozi paytida aloqa uzilishi AQSh va SSSR o'rtasida yadroviy almashinuvga olib keladi",
       "events": {
-        "missiles_launched_1962": {
-          "title": "1962-yil 27-oktabr",
-          "description": "Sovet suv osti kemasi komandiri urush boshlangan deb hisoblab, yadro torpedalarini uchiradi. AQSH javob beradi. Bir necha soat ichida MBRlar uchadi.",
-          "impact": "Ikkala superkuchdagi asosiy shaharlar vayron bo'ladi. Yuzlab millionlar birinchi soatlarda vafot etadi."
+        "nuclear-exchange-1962": {
+          "title": "Yadroviy Almashinuv: Dunyo Tugagan Kun! ☢️💥",
+          "description": "Sovet B-59 suv osti kemasi yadroviy torpedani uchiradi va avtomatik javoblarni ishga tushiradi. Bir necha soat ichida har ikki tomondagi yirik shaharlar vayron bo'ladi.",
+          "impact": "Shimoliy yarim sharni vayron qiluvchi yadro urushining boshlanishi"
         },
-        "nuclear_winter_1963": {
-          "title": "Qorong'u yillar",
-          "description": "Yadro qishi boshlanadi. Global harorat pasayadi. Butun dunyo bo'ylab ekinlar nobud bo'ladi. Milliardlab odam ochlikka duch keladi.",
-          "impact": "Inson tsivilizatsiyasi qulaydi. Insoniyatning ko'pchiligi keyingi besh yil ichida halok bo'ladi."
+        "global-devastation-1962": {
+          "title": "Global Yadroviy Vayronagarchilik: Shaharlar Shishaga Aylandi! 🏙️💀",
+          "description": "Moskva, Vashington, Nyu-York, Leningrad va o'nlab boshqa shaharlar yadroviy almashinuvda vayron bo'ladi. Birinchi kunda 100+ million o'lik.",
+          "impact": "Asosiy aholi markazlari va hukumat infratuzilmasini yo'q qiladi"
         },
-        "remnant_civilizations_1975": {
-          "title": "Tarqoq omon qolganlar",
-          "description": "Faqat Janubiy yarim shardagi va chekka hududlardagi izolyatsiya qilingan jamoalar omon qoladi. Global aholi 90% ga qisqaradi.",
-          "impact": "Insoniyat asrlar orqaga qaytadi. Yadro urushi insoniyatning buyuk filtriga aylanadi."
+        "nuclear-winter-1963": {
+          "title": "Yadro Qishi Boshlandi: Quyosh Qoraydi! ❄️🌑",
+          "description": "Chang va radiatsiya quyosh nurini to'sib qo'yadi, bu esa global haroratning pasayishiga va ekinlarning nobud bo'lishiga olib keladi. Yadro qishi bombalardan ko'ra ko'proq odamni o'ldiradi.",
+          "impact": "Global iqlim halokati va qishloq xo'jaligi qulashi"
+        },
+        "civilization-collapse-1965": {
+          "title": "Tsivilizatsiya Quladi: Tosh Asriga Qaytish! 🏛️💔",
+          "description": "Shimoliy yarim sharda sanoat tsivilizatsiyasi qulaydi. Omon qolganlar agrar jamoalarda kurashadilar. Texnologiya asrlar orqaga qaytadi.",
+          "impact": "Zamonaviy sanoat jamiyatining to'liq parchalanishi"
+        },
+        "southern-hemisphere-rises-1970": {
+          "title": "Janubiy Yarim Shar Hokimiyatni Egalladi: Yangi Dunyo Tartibi! 🌍🔄",
+          "description": "Avstraliya, Braziliya, Argentina va Janubiy Afrika yangi dunyo kuchlariga aylanadi, chunki Shimoliy yarim shar sekin tiklanadi.",
+          "impact": "Global kuch muvozanatining to'liq Janubiy yarim sharga o'tishi"
+        },
+        "nuclear-abolition-treaty-1975": {
+          "title": "Yadroviy Bekor Qilish Shartnomasi: 'Boshqa Hech Qachon!' 🚫☢️",
+          "description": "Omon qolgan davlatlar yadro qurollarini butunlay taqiqlovchi shartnomani imzolaydilar. 1962 yil dahshati yadro qurollari boshqa hech qachon yaratilmasligini ta'minlaydi.",
+          "impact": "Global miqyosda yadro qurollarini to'liq yo'q qilish"
         }
       },
       "consequences": {
-        "short_term": "Yadro urushi milliardlab odamni o'ldiradi. Tsivilizatsiya global miqyosda qulaydi.",
-        "long_term": "Inson aholisi sanoatdan oldingi darajaga tushadi. Tiklanish uchun asrlar kerak.",
-        "global_impact": "Yadro apokalipsisi insoniyat tsivilizatsiyasini deyarli tugatadi. Omon qolganlar vayronalardan yangi jamiyatlar quradi."
+        "short_term": "Shimoliy yarim sharda sanoat tsivilizatsiyasi qulaydi",
+        "long_term": "Texnologiya va ijtimoiy tashkilot asrlar orqaga qaytadi",
+        "global_impact": "O'sishga emas, omon qolishga asoslangan inson rivojlanishining boshqacha yo'li"
       },
-      "present_day_status": "Insoniyat yo'q bo'lib ketish chekkasidan sekin tiklandi. 2025-yilga kelib, global aholi faqat 2 milliardga yetdi. Texnologiya qayta tiklandi, ammo yadro qurollari umummilliy tarzda taqiqlangan va ularning bilimlari faol ravishda bostiriladi. 1962-yilgi Buyuk O'lim barcha inson madaniyati va siyosatini belgilaydi."
+      "butterfly": [
+        {
+          "trigger": "Yadro qishi insonning atrof-muhitni yo'q qilish qobiliyatini namoyish etadi",
+          "consequence": "Ertaroq va kuchliroq atrof-muhit harakati"
+        },
+        {
+          "trigger": "Shimoliy yarim sharning vayron bo'lishi kuchni Janubiy yarim sharga o'tkazadi",
+          "consequence": "Global Janub boshchiligidagi boshqacha rivojlanish modeli"
+        }
+      ],
+      "present_day_status": "27-oktyabr global miqyosda 'Yadroviy Dahshat Kuni' sifatida nishonlanadi - insoniyatning yo'q bo'lib ketishga eng yaqin kelgan yilligi. Janubiy Yarim Shar Ittifoqi qayta tiklanadigan energiya va tinchlik tadqiqotlari bo'yicha dunyoda yetakchilik qiladi. Yadro qurollari xalqaro huquq tomonidan taqiqlangan va qoidabuzarliklar uchun o'lim jazosi belgilangan. 🕊️☢️"
     },
-    "soviet_victory": {
-      "title": "Qizil tong: Sovuq urushda Sovet g'alabasi",
-      "description": "Agar Sovet Ittifoqi ustun iqtisodiy samaradorlik orqali Sovuq urushda g'alaba qozongan bo'lsa nima bo'lar edi?",
-      "divergence_description": "1960-yillardagi Sovet iqtisodiy islohotlari muvaffaqiyatga erishadi. SSSR iqtisodiy va siyosiy jihatdan G'arbni ortda qoldiradi.",
+    "soviet-victory": {
+      "title": "Kommunistik Dunyo: SSSR Sovuq Urushda G'alaba Qozondi! 🚩🌍",
+      "description": "Agar Sovet Ittifoqi kommunizmni global miqyosda tarqatishda muvaffaqiyat qozonib, kapitalizmni mag'lub etganida nima bo'lar edi?",
+      "divergence_description": "Sovet Ittifoqi iqtisodiy o'sishni saqlab qoladi, Amerika tanazzulga yuz tutadi va kommunistik inqilob global miqyosda tarqaladi",
       "events": {
-        "kosygin_reforms_1965": {
-          "title": "Sovet iqtisodiy mo''jizasi",
-          "description": "Kosiginning bozor islohotlari to'liq amalga oshiriladi. Sovet iqtisоdiyoti sotsialistik tamoyillarni saqlab qolgan holda markaziy rejalashtirishdan ko'ra samaraliroq bo'ladi.",
-          "impact": "1980-yilga kelib Sovet turmush darajasi G'arb darajasidan yuqori bo'ladi. Sotsialistik model butun dunyo bo'ylab ishonch qozonadi."
+        "soviet-economic-miracle-1970": {
+          "title": "Sovet Iqtisodiy Mo''jizasi: Rejali Iqtisodiyot Ishlaydi! 🏭📈",
+          "description": "Sovet iqtisodiy islohotlari ajoyib tarzda muvaffaqiyat qozonib, barqaror 8% o'sishga erishadi, Amerika esa turg'unlikka uchraydi. Kommunizm o'z ustunligini isbotlaydi!",
+          "impact": "Kommunistik tizimning iqtisodiy hayotiyligini namoyish etadi"
         },
-        "western_decline_1980": {
-          "title": "Kapitalizmning inqirozi",
-          "description": "Stagflyatsiya va ijtimoiy tartibsizlik G'arbiy demokratiyalarni qoplaydi. Kommunistik partiyalar Fransiya va Italiyada hokimiyatga keladi.",
-          "impact": "G'arb mudofaada. Sotsialistik harakatlar global miqyosda o'sadi."
+        "american-economic-crisis-1975": {
+          "title": "Amerika Iqtisodiy Inqirozi: Kapitalizm Inqirozda! 💰💔",
+          "description": "Vetnam urushi, neft shoklari va stagflyatsiya Amerika iqtisodiyotini vayron qiladi. Ishsizlik 15% ga yetadi, tengsizlik oshadi. Kapitalizm muvaffaqiyatsizlikka uchrayaptimi?",
+          "impact": "Amerikaning global mavqei va ichki ishonchini zaiflashtiradi"
         },
-        "global_socialism_2000": {
-          "title": "Sotsialistik asr",
-          "description": "2000-yilga kelib, dunyoning ko'p qismi demokratik sotsializmni qabul qildi. Bozor iqtisоdiyotlari qattiq tartibga solingan. Boylik tengsizligi minimal.",
-          "impact": "Ijtimoiy demokratik qadriyatlar hukmronlik qiladigan dunyo. Kapitalizm faqat kamaytirilgan shaklda omon qoladi."
+        "european-communist-parties-win-1976": {
+          "title": "Yevrokommunizm G'alaba Qozondi: Yevropa Qizilga Aylanmoqda! 🇪🇺🚩",
+          "description": "Kommunistik partiyalar Italiya, Fransiya va Ispaniyada saylovlarda g'alaba qozonadi. G'arbiy Yevropa kapitalizmdan ko'ra demokratik sotsializmni tanlaydi.",
+          "impact": "Kommunistik ta'sirni G'arbiy Yevropaning yuragiga kengaytiradi"
+        },
+        "third-world-goes-communist-1980": {
+          "title": "Uchinchi Dunyo Ozodligi: Global Janub Kommunistik Bo'lmoqda! 🌍🚩",
+          "description": "Filippin, Tailand, Chili va Nigeriyada muvaffaqiyatli kommunistik inqiloblar. Dunyo aholisining uchdan ikki qismi kommunistik boshqaruv ostida.",
+          "impact": "Dunyoning ko'pchiligi kommunistik yoki sotsialistik tizimlarni qabul qiladi"
+        },
+        "american-communist-party-1984": {
+          "title": "Amerika Kommunistik Partiyasi G'alaba Qozondi: Oxirgi Domino! 🇺🇸🚩",
+          "description": "Iqtisodiy inqiroz va ijtimoiy tartibsizliklar AQSh saylovlarida Kommunistik partiyaning g'alabasiga olib keladi. Kapitalizmning so'nggi qal'asi qulaydi!",
+          "impact": "Kommunistik mafkuraning global g'alabasini yakunlaydi"
+        },
+        "world-communist-federation-1990": {
+          "title": "Dunyo Kommunistik Federatsiyasi: Bir Dunyo, Bir Tizim! 🌍🚩",
+          "description": "Barcha kommunistik davlatlar Dunyo Kommunistik Federatsiyasiga birlashadilar. Xususiy mulk global miqyosda bekor qilinadi. 'Dunyo ishchilari' nihoyat birlashadilar!",
+          "impact": "Birlashgan global kommunistik davlatni yaratadi"
         }
       },
       "consequences": {
-        "short_term": "Sovet iqtisodiy islohotlari muvaffaqiyatga erishadi. SSSR kapitalizm bilan iqtisodiy raqobatda g'alaba qozonadi.",
-        "long_term": "Global miqyosda demokratik sotsializmga siljish. Bozor kapitalizma marginalлashadi.",
-        "global_impact": "Ko'proq tenglikka asoslangan, ammo ehtimol kamroq innovatsion dunyo. Boshqacha texnologik rivojlanish yo'li."
+        "short_term": "Rejali iqtisodiyot hukmron global tizimga aylanadi",
+        "long_term": "O'sishdan ko'ra tenglikka qaratilgan boshqacha rivojlanish modeli",
+        "global_impact": "Xususiy mulksiz inson tashkilotining muqobil modeli"
       },
-      "present_day_status": "Dunyo kuchli ishchilar huquqlari, umumiy sog'liqni saqlash va cheklangan boylik tengsizligi bilan demokratik sotsialistik iqtisоdiyotlar tomonidan boshqariladi. Innovatsiya sekinroq, ammo ko'proq adolatli taqsimlanadi. Atrof-muhitni muhofaza qilish kuchliroq. Sovuq urush g'oyalar bozoridagi sotsializmning tinch g'alabasi bilan yakunlandi."
+      "butterfly": [
+        {
+          "trigger": "Markaziy rejalashtirish foydadan ko'ra atrof-muhitni muhofaza qilishni birinchi o'ringa qo'yadi",
+          "consequence": "Iqlim o'zgarishiga ertaroq va samaraliroq javob"
+        },
+        {
+          "trigger": "Raqobatsiz fan va texnologiyada global hamkorlik",
+          "consequence": "Texnologik taraqqiyotning boshqacha namunasi"
+        }
+      ],
+      "present_day_status": "Dunyo Kommunistik Federatsiyasi 2025-yilda o'zining 35 yilligini nishonladi. 1-may (Ishchilar kuni) global bayram bo'lib, Internatsional butun dunyo bo'ylab milliy madhiyalarni almashtirdi. Xususiy mulk muzeylarda o'rganiladigan tarixiy qiziqishdir. 🚩🌍"
     },
-    "early_detente": {
-      "title": "Tinchlik dividendi: Sovuq urushning erta tugashi",
-      "description": "Agar Stalin ertaroq vafot etsa va Xrushchyovning tinch yashash siyosati 1950-yillarda muvaffaqiyatga erishgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Stalin 1950-yilda vafot etadi. Xrushchyov ertaroq yuksaladi va chuqur islohotlarni amalga oshiradi. 1950-yillarda haqiqiy detant paydo bo'ladi.",
+    "peaceful-coexistence": {
+      "title": "Tinch-Totuv Yashash: Hech Qachon Bo'lmagan Sovuq Urush! 🕊️🤝",
+      "description": "Agar superkuchlar boshidanoq qarama-qarshilik o'rniga hamkorlikni tanlaganida nima bo'lar edi?",
+      "divergence_description": "Stalin va Trumen Ikkinchi Jahon Urushidan keyin ta'sir doiralari va tinch raqobatga kelishib oladilar",
       "events": {
-        "stalin_death_1950": {
-          "title": "Zodavoz yiqiladi",
-          "description": "Stalin uch yil oldinroq vafot etadi. Xrushchyov tez hokimiyatni mustahkamlaydi va darhol de-Stalinizatsiyani boshlaydi.",
-          "impact": "Sovet Ittifoqi ertaroq va chuqurroq isloh qilinadi. Sovuq urushning eng yomoni hech qachon sodir bo'lmaydi."
+        "yalta-cooperation-1945": {
+          "title": "Yalta Muvaffaqiyati: Katta Uchlik Haqiqatan ham Kelishdi! 🤝🌍",
+          "description": "Ruzvelt, Cherchill va Stalin doimiy ta'sir doiralari kelishuvini muvaffaqiyatli muzokara qiladilar. Aniq chegaralar kelajakdagi mojarolarning oldini oladi.",
+          "impact": "Tinch superkuchlar hamkorligi uchun ramka yaratadi"
         },
-        "geneva_accord_1955": {
-          "title": "Haqiqiy tinch yashash",
-          "description": "Eyzenhauer va Xrushchyov haqiqiy kelishuvga erishadilar. Yadro arsenallari cheklangan. Ikkala tomon ta'sir sohalari ni qabul qiladi.",
-          "impact": "Sovuq urush hech qachon xavfli bo'lmaydi. Qurol poygasi cheklangan. Resurslar rivojlanishga ketadi."
+        "cooperative-nuclear-control-1946": {
+          "title": "Yadroviy Hamkorlik: Tinchlik Uchun Atomlar Boshidanoq! ☢️🕊️",
+          "description": "AQSh va SSSR qo'shma yadroviy nazorat va bosqichma-bosqich qurolsizlanishga kelishib oladilar. Yadro texnologiyasi qurol emas, balki energiya uchun ishlatiladi.",
+          "impact": "Yadroviy qurollanish poygasining oldini oladi va tinch yadroviy rivojlanishni rag'batlantiradi"
         },
-        "cooperative_space_program_1969": {
-          "title": "Apollon-Soyuz Oyga parvoz",
-          "description": "AQSH va SSSR qo'shma missiyada birga Oyga yetishadi. Ilmiy hamkorlik normalaga aylanadi.",
-          "impact": "Sovuq urush hamkorlik doirasidagi raqobatga aylanadi. Proksi urushlardan qochiladi."
+        "cooperative-marshall-plan-1947": {
+          "title": "Hamkorlikda Qayta Qurish: Sharq va G'arb Birgalikda Qayta Qurmoqda! 🏗️🤝",
+          "description": "Marshall rejasi Sovet Ittifoqi va Sharqiy Yevropani o'z ichiga oladi. Hamkorlikda qayta qurish iqtisodiy o'zaro bog'liqlikni yaratadi.",
+          "impact": "Kapitalistik va kommunistik bloklar o'rtasida iqtisodiy hamkorlikni yaratadi"
+        },
+        "joint-space-program-1957": {
+          "title": "Qo'shma Kosmik Dastur: Yulduzlarga Birgalikda! 🚀🌟",
+          "description": "Kosmik poyga o'rniga AQSh va SSSR qo'shma kosmik dasturni ishga tushiradilar. Sputnik ham Amerika, ham Sovet asboblarini olib yuradi.",
+          "impact": "Koinotni o'rganish raqobat emas, balki hamkorlik ramziga aylanadi"
+        },
+        "berlin-international-city-1961": {
+          "title": "Berlin Xalqaro Shahri: Devor Kerak Emas! 🏛️🕊️",
+          "description": "Devor qurish o'rniga Berlin Sharq va G'arb tomonidan birgalikda boshqariladigan xalqaro shaharga aylanadi. Hamkorlik ramzi!",
+          "impact": "Berlin Sharq-G'arb hamkorligi modeli bo'ladi"
+        },
+        "peaceful-competition-1962": {
+          "title": "Raketalar O'rniga Iqtisodiy Raqobat! 💰🏭",
+          "description": "Kubaga raketalar joylashtirish o'rniga superkuchlar tinch iqtisodiy raqobatga kelishib oladilar. Farovonlik orqali eng yaxshi tizim g'alaba qozonsin!",
+          "impact": "Superkuchlar raqobatini konstruktiv iqtisodiy raqobatga yo'naltiradi"
+        },
+        "joint-moon-landing-1969": {
+          "title": "Oyga Birgalikda Qo'nish: 'Biz Butun Insoniyat Uchun Tinchlik Bilan Keldik!' 🌙👨‍🚀",
+          "description": "Amerika va Sovet kosmonavtlari Oyga birga qo'nadilar. Birinchi so'zlar: 'Biz butun insoniyat uchun tinchlik bilan keldik - butun insoniyatdan!'",
+          "impact": "Kosmik hamkorlik global birlik imkoniyatini namoyish etadi"
+        },
+        "convergence-theory-1975": {
+          "title": "Tizimlar Yaqinlashuvi: Ikkala Dunyoning Eng Yaxshisi! 🔄🌍",
+          "description": "Kapitalistik va kommunistik tizimlar bir-birining eng yaxshi xususiyatlarini qabul qilib, yaqinlasha boshlaydi. Hamma joyda aralash iqtisodiyotlar paydo bo'ladi.",
+          "impact": "Iqtisodiy tizimlar optimal aralash modelga qarab rivojlanadi"
+        },
+        "global-cooperation-1985": {
+          "title": "Global Hamkorlik Ramkasi: Dunyo Federatsiyasi! 🌍🤝",
+          "description": "Muvaffaqiyatli superkuchlar hamkorligi global muammolarni birgalikda boshqarish bilan global federatsiyaga olib keladi.",
+          "impact": "Samarali global boshqaruv tizimini yaratadi"
         }
       },
       "consequences": {
-        "short_term": "Sovuq urush keskinligi 1950-yillarda susayadi. Qurol poygasi cheklangan. Proksi urushlardan qochiladi.",
-        "long_term": "Tizimlarning bosqichma-bosqich yaqinlashuvi. SSSR sekin demokratiyaga isloh qilinadi. G'arb ko'proq ijtimoiy ta'minotni qabul qiladi.",
-        "global_impact": "Qurol poygasidan saqlab qolingan resurslar rivojlanishga ketadi. Ertaroq koinotni o'rganish va ilmiy yutuqlar."
+        "short_term": "Koreya urushi, Vetnam urushi yoki boshqa proksi mojarolar yo'q",
+        "long_term": "Millionlab hayotlar saqlab qolindi va resurslar rivojlanish uchun mavjud",
+        "global_impact": "Superkuchlar aralashuvisiz boshqacha dekolonizatsiya jarayoni"
       },
-      "present_day_status": "Erta detant Sovet va G'arbiy tizimlarning bosqichma-bosqich yaqinlashuviga olib keldi. SSSR 1980-yillarga kelib ijtimoiy demokratik federatsiyaga aylandi. Shiddatli Sovuq urushsiz, dekolonizatsiya kamroq zo'ravonli va rivojlanish tezroq bo'ldi. Tinchlik dividendi inson taraqqiyotini o'nlab yillar tezlashtirdi."
+      "butterfly": [
+        {
+          "trigger": "Erta hamkorlik atrof-muhit harakati uchun ramka yaratadi",
+          "consequence": "Iqlim o'zgarishi inqirozga aylanishidan oldin hal qilinadi"
+        },
+        {
+          "trigger": "Hamkorlikdagi kosmik dastur koinotni o'rganishni tezlashtiradi",
+          "consequence": "Ertaroq kosmik aholi punktlari va resurslardan foydalanish"
+        }
+      ],
+      "present_day_status": "Global Hamkorlik Federatsiyasi 40 yil davomida xalqaro munosabatlarni muvaffaqiyatli boshqarib kelmoqda. Iqlim o'zgarishi 2000-yilga kelib hal qilindi, Marsda doimiy aholi punktlari bor va qashshoqlik yo'qoldi. Eski 'Sharq G'arbga qarshi' keraksiz mojaro namunasi sifatida o'rganiladi. 🌍🚀"
     }
-  }
+  },
+  "interactive_scenarios": [
+    {
+      "title": "Temir Parda Ogohlantirishi",
+      "text": "1946 yil mart, Fulton, Missuri. Uinston Cherchill sizdan Sovet niyatlari haqidagi nutqini ko'rib chiqishingizni so'raydi. Bu yo Sovuq Urushni boshlaydi yoki uning oldini oladi...",
+      "choices": [
+        {
+          "text": "Cherchillning Sovet kengayishi haqidagi ogohlantirishini qo'llab-quvvatlang",
+          "consequence": "Sizning yordamingiz tiyib turish siyosatini belgilashga yordam beradi va Sovuq Urushni boshlaydi"
+        },
+        {
+          "text": "Stalin bilan diplomatiya va hamkorlikni davom ettirishga undash",
+          "consequence": "Sizning diplomatiyangiz qarama-qarshilikni kechiktiradi, ammo Sovet kengayishiga imkon berishi mumkin"
+        },
+        {
+          "text": "Yevropa ishlarida Amerika betarafligini taklif qiling",
+          "consequence": "Sizning izolyatsionizmingiz Yevropani Sovet ta'siriga qoldiradi, ammo global keskinlikdan qochadi"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Inqirozi",
+      "text": "Iyun 1948. Stalin G'arbiy Berlinga barcha kirish yo'llarini to'sib qo'ydi, 2 million odamni qopqonga tushirdi. Harbiy rahbarlar blokadani kuch bilan yorib o'tishni taklif qilmoqdalar. Nima qilasiz?",
+      "choices": [
+        {
+          "text": "Berlinni ta'minlash uchun ommaviy havo ko'prigini tashkil qiling",
+          "consequence": "Sizning havo ko'prigingiz ajoyib tarzda muvaffaqiyat qozonadi va urushsiz G'arb qat'iyatini ko'rsatadi"
+        },
+        {
+          "text": "Blokadani yorib o'tish uchun qurolli karvonlarni yuboring",
+          "consequence": "Sizning harbiy harakatingiz Uchinchi Jahon Urushi xavfini tug'diradi, ammo mutlaq qat'iyatni ko'rsatadi"
+        },
+        {
+          "text": "Stalin bilan yuzni saqlab qoladigan murosa muzokara qiling",
+          "consequence": "Sizning diplomatiyangiz inqirozni tugatadi, ammo zaiflik sifatida ko'rilishi mumkin"
+        }
+      ]
+    },
+    {
+      "title": "Oktyabrda O'n Uch Kun",
+      "text": "Oktyabr 1962. Sovet raketalari Kubada, Floridadan 90 mil uzoqlikda. Generallaringiz havo hujumlarini xohlaydi, Xrushchyov yadro urushi bilan tahdid qilmoqda. Dunyo nafasini ushlab turibdi...",
+      "choices": [
+        {
+          "text": "Dengiz karantini joriy qiling va xususiy ravishda muzokara qiling",
+          "consequence": "Sizning o'lchovli javobingiz urushdan qochadi va Sovetlarni olib chiqishga majbur qiladi"
+        },
+        {
+          "text": "Raketa maydonlarini yo'q qilish uchun havo hujumlarini boshlang",
+          "consequence": "Sizning harbiy harakatingiz tahdidni yo'q qiladi, ammo yadroviy kuchayish xavfini tug'diradi"
+        },
+        {
+          "text": "Kafolatlar evaziga Sovet raketalarini qabul qiling",
+          "consequence": "Sizning qabulingiz urushdan qochadi, ammo yadroviy muvozanatni abadiy o'zgartiradi"
+        }
+      ]
+    },
+    {
+      "title": "Devor Ko'tarilmoqda",
+      "text": "Avgust 1961. Sharqiy nemislar tunda Berlin bo'ylab devor qurmoqdalar. Maslahatchilaringiz u bitmasidan oldin uni buzib tashlash uchun harbiy harakatni taklif qilmoqdalar...",
+      "choices": [
+        {
+          "text": "Devorni buzib tashlash uchun darhol harakatga buyruq bering",
+          "consequence": "Sizning harakatingiz devorning oldini oladi, ammo Sovetlar bilan qurolli to'qnashuv xavfini tug'diradi"
+        },
+        {
+          "text": "Kuchli diplomatik norozilik bildiring, ammo harbiy harakatdan qoching",
+          "consequence": "Sizning vazminligingiz urushning oldini oladi, ammo devor Berlinni o'nlab yillar davomida bo'lib turadi"
+        },
+        {
+          "text": "Sharqiy Germaniya suverenitetini o'z hududida qabul qiling",
+          "consequence": "Sizning qabulingiz keskinlikni kamaytiradi, ammo Sharqiy Berlinliklarni kommunistik boshqaruvga tashlab qo'yadi"
+        }
+      ]
+    },
+    {
+      "title": "Kosmik Poyga Chaqirig'i",
+      "text": "Oktyabr 1957. Sputnik bosh uzra aylanib, dunyoga Sovet ustunligini signal qilmoqda. Kongress harakat talab qilmoqda. Siz ushbu kosmik asr kamsitilishiga qanday javob berasiz?",
+      "choices": [
+        {
+          "text": "Sovetlarni Oyga yetishda mag'lub etish uchun tezkor dasturni ishga tushiring",
+          "consequence": "Sizning ambitsiyali dasturingiz oxir-oqibat muvaffaqiyat qozonadi, ammo katta resurslarni talab qiladi"
+        },
+        {
+          "text": "Kosmik texnologiyaning harbiy qo'llanilishiga e'tibor qarating",
+          "consequence": "Sizning harbiy urg'uingiz strategik ustunlik beradi, ammo jamoatchilik qiziqishi kamroq"
+        },
+        {
+          "text": "Koinotni o'rganishda xalqaro hamkorlikni taklif qiling",
+          "consequence": "Sizning hamkorligingiz xarajatlarni kamaytiradi, ammo Amerika kosmik yetakchiligini cheklashi mumkin"
+        }
+      ]
+    }
+  ]
 }
