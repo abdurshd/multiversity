@@ -49,11 +49,12 @@ const TimelineExplorer: React.FC = () => {
   }, [chapterId, timelineId, i18n.language]);
 
   // Helper function to get timeline translation object
+  const normalizeKeyVariants = (id: string) => [id, id.replace(/-/g, '_')];
+
   const getTimelineTranslation = (timelineId: string): any => {
     if (!chapterNamespace || !translationsLoaded) return null;
-    const timelineKey = timelineId.replace(/-/g, '_');
-    const result = t(`${chapterNamespace}:timelines.${timelineKey}`, { returnObjects: true });
-    return result;
+    const result = t(`${chapterNamespace}:timelines.${timelineId}`, { returnObjects: true });
+    return typeof result === 'string' ? null : result;
   };
 
   // Helper to get translated chapter data
@@ -65,23 +66,46 @@ const TimelineExplorer: React.FC = () => {
 
   // Helper to get event translation
   const getEventTranslation = (eventId: string): any => {
-    if (!timelineTrans) return null;
-    const eventKey = eventId.replace(/-/g, '_');
-    return timelineTrans?.events?.[eventKey];
+    if (!timelineTrans?.events) return null;
+    const [originalKey, underscoredKey] = normalizeKeyVariants(eventId);
+    return timelineTrans.events[originalKey] || timelineTrans.events[underscoredKey];
   };
 
-  // Helper to get consequence translation
-  const getConsequenceTranslation = (consequenceId: string): any => {
-    if (!timelineTrans) return null;
-    const consequenceKey = consequenceId.replace(/-/g, '_');
-    return timelineTrans?.consequences?.[consequenceKey];
+  // Helper to get consequence translation (supports id map, array, or single object legacy shape)
+  const getConsequenceTranslation = (consequenceId: string, index: number, total: number): any => {
+    if (!timelineTrans?.consequences) return null;
+    const consequences = timelineTrans.consequences;
+    const [originalKey, underscoredKey] = normalizeKeyVariants(consequenceId);
+
+    if (Array.isArray(consequences)) {
+      return consequences[index] || null;
+    }
+
+    const keyedTranslation = consequences[originalKey] || consequences[underscoredKey];
+    if (keyedTranslation) return keyedTranslation;
+
+    // Legacy shape: a single consequence object with short/long/global_impact fields
+    if (consequences.short_term || consequences.long_term || consequences.global_impact || consequences.category) {
+      if (total === 1 || index === 0) {
+        return consequences;
+      }
+    }
+
+    return null;
   };
 
-  // Helper to get butterfly effect translation
-  const getButterflyTranslation = (butterflyId: string): any => {
-    if (!timelineTrans) return null;
-    const butterflyKey = butterflyId.replace(/-/g, '_');
-    return timelineTrans?.butterfly_effects?.[butterflyKey];
+  // Helper to get butterfly effect translation (supports id map or ordered arrays)
+  const getButterflyTranslation = (butterflyId: string, index: number): any => {
+    const butterflySource = timelineTrans?.butterfly_effects || timelineTrans?.butterfly;
+    if (!butterflySource) return null;
+
+    const [originalKey, underscoredKey] = normalizeKeyVariants(butterflyId);
+
+    if (Array.isArray(butterflySource)) {
+      return butterflySource[index] || null;
+    }
+
+    return butterflySource[originalKey] || butterflySource[underscoredKey];
   };
 
   if (!chapter || !timeline) {
@@ -130,8 +154,8 @@ const TimelineExplorer: React.FC = () => {
         impact: eventTrans?.impact || event.impact,
       };
     }),
-    consequences: timeline.consequences.map(consequence => {
-      const consequenceTrans = getConsequenceTranslation(consequence.id);
+    consequences: timeline.consequences.map((consequence, index) => {
+      const consequenceTrans = getConsequenceTranslation(consequence.id, index, timeline.consequences.length);
       return {
         ...consequence,
         category: consequenceTrans?.category || consequence.category,
@@ -140,8 +164,8 @@ const TimelineExplorer: React.FC = () => {
         globalImpact: consequenceTrans?.global_impact || consequence.globalImpact,
       };
     }),
-    butterfly: timeline.butterfly.map(effect => {
-      const butterflyTrans = getButterflyTranslation(effect.id);
+    butterfly: timeline.butterfly.map((effect, index) => {
+      const butterflyTrans = getButterflyTranslation(effect.id, index);
       return {
         ...effect,
         trigger: butterflyTrans?.trigger || effect.trigger,
