@@ -17,7 +17,13 @@
     "show_more": "Show More",
     "show_less": "Show Less",
     "go_back": "Go Back",
-    "try_again": "Try Again"
+    "try_again": "Try Again",
+    "back_to_chapters": "Back to Chapters",
+    "back_to_all_chapters": "Back to All Chapters",
+    "compare_timelines": "Compare Timelines",
+    "explore_timeline": "Explore Timeline",
+    "hide_story": "Hide Story",
+    "start_interactive_story": "Start Interactive Story"
   },
   "states": {
     "loading": "Loading...",
@@ -41,7 +47,21 @@
     "type": "Type",
     "name": "Name",
     "description": "Description",
-    "actions": "Actions"
+    "actions": "Actions",
+    "historical_context": "Historical Context",
+    "interactive_experience": "Interactive Experience",
+    "meet_historical_characters": "Meet the Historical Characters",
+    "divergence_point": "The Divergence Point",
+    "alternative_timelines": "Alternative Timelines",
+    "present_day_status": "Present Day Status",
+    "key_events": "Key Events",
+    "continue_journey": "Continue Your Journey"
+  },
+  "messages": {
+    "chapter_not_available": "This chapter is not yet available.",
+    "dive_into_history": "Dive into the history yourself. Choose your mode of exploration.",
+    "click_characters_interact": "Click on the characters to interact with them and learn their stories!",
+    "pivotal_moment": "This pivotal moment in {{year}} created multiple possible paths for history. Explore how different decisions and circumstances could have led to entirely different worlds."
   },
   "placeholders": {
     "search": "Search...",

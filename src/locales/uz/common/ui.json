@@ -17,7 +17,13 @@
     "show_more": "Ko'proq ko'rsatish",
     "show_less": "Kamroq ko'rsatish",
     "go_back": "Orqaga qaytish",
-    "try_again": "Qayta urinish"
+    "try_again": "Qayta urinish",
+    "back_to_chapters": "Boblarga qaytish",
+    "back_to_all_chapters": "Barcha boblarga qaytish",
+    "compare_timelines": "Vaqt jadvallarini solishtirish",
+    "explore_timeline": "Vaqt jadvalini o'rganish",
+    "hide_story": "Hikoyani yashirish",
+    "start_interactive_story": "Interaktiv hikoyani boshlash"
   },
   "states": {
     "loading": "Yuklanmoqda...",
@@ -41,7 +47,21 @@
     "type": "Turi",
     "name": "Nomi",
     "description": "Tavsif",
-    "actions": "Harakatlar"
+    "actions": "Harakatlar",
+    "historical_context": "Tarixiy kontekst",
+    "interactive_experience": "Interaktiv tajriba",
+    "meet_historical_characters": "Tarixiy qahramon larni tanishtiring",
+    "divergence_point": "Tarqalish nuqtasi",
+    "alternative_timelines": "Muqobil vaqt jadvallari",
+    "present_day_status": "Hozirgi kun holati",
+    "key_events": "Asosiy voqealar",
+    "continue_journey": "Sayohatingizni davom ettiring"
+  },
+  "messages": {
+    "chapter_not_available": "Ushbu bob hali mavjud emas.",
+    "dive_into_history": "Tarixga o'zingiz sho'ng'ing. O'rganish usulini tanlang.",
+    "click_characters_interact": "Qahramonlar bilan muloqot qilish va ularning hikoyalarini o'rganish uchun ularga bosing!",
+    "pivotal_moment": "{{year}}-yildagi bu muhim lahza tarix uchun bir nechta yo'llarni yaratdi. Turli qarorlar va vaziyatlar butunlay boshqacha dunyolarga qanday olib kelishi mumkinligini o'rganing."
   },
   "placeholders": {
     "search": "Qidiring...",
