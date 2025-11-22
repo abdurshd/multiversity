@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1870,
     died: 1924,
     description: 'The ultimate revolutionary overachiever! 💀⚡ This bald genius turned Russia upside down with his "What Is To Be Done?" energy. Loved trains, hated capitalism, and somehow convinced millions to follow his crazy dream.',
-    image: '/images/lenin.jpg'
+    image: '/images/chapters/lenin-revolution/people/vladimir-lenin.png'
   },
   {
     id: 'leon-trotsky',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1879,
     died: 1940,
     description: 'The revolution\'s most dramatic speaker! 🔥📢 Could start a revolution with just his voice, organized the Red Army like a boss, and got ice-picked for disagreeing with Stalin. Forever revolutionary!',
-    image: '/images/trotsky.jpg'
+    image: '/images/chapters/lenin-revolution/people/leon-trotsky.png'
   },
   {
     id: 'joseph-stalin',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1878,
     died: 1953,
     description: 'The patient plotter who outmaneuvered everyone! 🐺🎭 Started as "boring bureaucrat," ended as absolute ruler. Proved that sometimes the quiet ones are the most dangerous.',
-    image: '/images/stalin.jpg'
+    image: '/images/chapters/lenin-revolution/people/joseph-stalin.png'
   },
   {
     id: 'alexandra-kollontai',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1872,
     died: 1952,
     description: 'The woman who revolutionized revolution! 👩‍💼💕 Fought for women\'s rights, free love, and gender equality while dodging bullets and bureaucrats. Way ahead of her time!',
-    image: '/images/kollontai.jpg'
+    image: '/images/chapters/lenin-revolution/people/alexandra-kollontai.png'
   },
   {
     id: 'nikolai-bukharin',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1888,
     died: 1938,
     description: 'Lenin\'s favorite intellectual! 🤓💭 The party\'s golden boy who wrote brilliant theory, believed in human goodness, and sadly discovered that paranoid dictators don\'t appreciate optimists.',
-    image: '/images/bukharin.jpg'
+    image: '/images/chapters/lenin-revolution/people/nikolai-bukharin.png'
   },
   {
     id: 'felix-dzerzhinsky',
@@ -54,144 +54,9 @@ const keyFigures: Person[] = [
     born: 1877,
     died: 1926,
     description: 'The revolution\'s enforcer with a heart of... well, iron! 🔒⚔️ Created the Cheka (secret police) and proved that sometimes revolutions need a scary person to keep everyone in line.',
-    image: '/images/dzerzhinsky.jpg'
+    image: '/images/chapters/lenin-revolution/people/felix-dzerzhinsky.png'
   }
 ];
-
-// Historical events with dramatic storytelling
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'february-revolution-1917',
-    year: 1917,
-    month: 3,
-    day: 8,
-    title: 'February Revolution: The Tsar\'s Empire Crumbles! 👑💥',
-    description: 'Hungry workers and fed-up soldiers decide they\'ve had enough of Tsar Nicholas II. In just a few days, 300 years of Romanov rule collapses like a house of cards!',
-    impact: 'End of tsarist autocracy and beginning of dual power with Provisional Government',
-    relatedFigures: [],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'lenin-returns-1917',
-    year: 1917,
-    month: 4,
-    day: 16,
-    title: 'Lenin\'s Epic Return: The Sealed Train Arrives! 🚂⚡',
-    description: 'Lenin returns from exile in a sealed train provided by Germany (awkward!). He immediately drops his "April Theses" bombshell: "All power to the Soviets!"',
-    impact: 'Radicalizes Bolshevik position and rejects cooperation with Provisional Government',
-    relatedFigures: ['vladimir-lenin'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'july-days-1917',
-    year: 1917,
-    month: 7,
-    day: 16,
-    title: 'July Days: Lenin\'s First Revolution Attempt Fails! 💥😅',
-    description: 'Bolsheviks try to seize power but it\'s too early! Lenin has to flee in disguise while Trotsky gets arrested. Sometimes you have to fail before you succeed!',
-    impact: 'Temporary setback forces Bolsheviks underground and tests their resolve',
-    relatedFigures: ['vladimir-lenin', 'leon-trotsky'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'kornilov-affair-1917',
-    year: 1917,
-    month: 9,
-    day: 8,
-    title: 'Kornilov Affair: The General Who Saved Lenin! ⚔️🤝',
-    description: 'General Kornilov tries to stage a military coup, but accidentally helps the Bolsheviks by making them look like heroes defending the revolution. Thanks, General!',
-    impact: 'Discredits Provisional Government and rehabilitates Bolsheviks as defenders of revolution',
-    relatedFigures: [],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'military'
-  },
-  {
-    id: 'october-revolution-1917',
-    year: 1917,
-    month: 11,
-    day: 7,
-    title: 'October Revolution: Lenin\'s Master Plan Works! 🔴🏛️',
-    description: 'The Bolsheviks storm the Winter Palace while the government is basically just sitting there. It\'s like the world\'s most important game of capture the flag!',
-    impact: 'Bolsheviks seize power and begin the world\'s first communist state',
-    relatedFigures: ['vladimir-lenin', 'leon-trotsky'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'constituent-assembly-dissolved-1918',
-    year: 1918,
-    month: 1,
-    day: 18,
-    title: 'Lenin Cancels Democracy: "We Know Better!" 🗳️❌',
-    description: 'When the democratically elected Constituent Assembly doesn\'t vote the way Lenin wants, he simply dissolves it after one day. Democracy? More like "Demo-crazy!"',
-    impact: 'Establishes Bolshevik dictatorship and abandons democratic legitimacy',
-    relatedFigures: ['vladimir-lenin'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'treaty-brest-litovsk-1918',
-    year: 1918,
-    month: 3,
-    day: 3,
-    title: 'Peace at Any Price: Lenin Surrenders to Germany! 🏳️💔',
-    description: 'Lenin signs a humiliating peace treaty with Germany, giving up huge territories. "Better to lose land than lose power," he says. Priorities!',
-    impact: 'Ends Russian participation in WWI but triggers opposition and civil war',
-    relatedFigures: ['vladimir-lenin'],
-    location: { lat: 52.2297, lng: 23.8173 },
-    type: 'political'
-  },
-  {
-    id: 'russian-civil-war-1918',
-    year: 1918,
-    month: 6,
-    title: 'Civil War Erupts: Reds vs. Whites vs. Everyone! ⚔️🌈',
-    description: 'Russia explodes into civil war! Reds (Bolsheviks) vs. Whites (anti-Bolsheviks) vs. Greens (peasants) vs. foreign interventionists. It\'s like a very deadly rainbow!',
-    impact: 'Devastating civil war that shapes Soviet state through violence and militarization',
-    relatedFigures: ['leon-trotsky'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'military'
-  },
-  {
-    id: 'war-communism-1918',
-    year: 1918,
-    month: 8,
-    title: 'War Communism: When Theory Meets Reality! 💭💥',
-    description: 'Lenin implements "War Communism" - basically seizing everything from everyone. Turns out people don\'t like having their stuff taken. Who knew?',
-    impact: 'Economic policy devastates agriculture and creates massive famine',
-    relatedFigures: ['vladimir-lenin'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'economic'
-  },
-  {
-    id: 'kronstadt-rebellion-1921',
-    year: 1921,
-    month: 3,
-    day: 1,
-    title: 'Kronstadt Revolt: When Your Own Sailors Rebel! ⚓😤',
-    description: 'The sailors who helped Lenin win now revolt against him! They want "Soviets without Bolsheviks." Lenin crushes them brutally. Revolution eating its own children!',
-    impact: 'Marks end of revolutionary idealism and beginning of authoritarian consolidation',
-    relatedFigures: ['vladimir-lenin', 'leon-trotsky'],
-    location: { lat: 60.0071, lng: 29.7743 },
-    type: 'political'
-  },
-  {
-    id: 'nep-introduced-1921',
-    year: 1921,
-    month: 3,
-    title: 'NEP: Lenin\'s "Oops, Maybe Some Capitalism?" Moment! 💰🔄',
-    description: 'Lenin introduces the New Economic Policy, bringing back some private trade. "Strategic retreat," he calls it. AKA "Communism isn\'t working yet!"',
-    impact: 'Economic liberalization stabilizes the country but creates ideological tensions',
-    relatedFigures: ['vladimir-lenin'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'economic'
-  }
-];
-*/
 
 // Alternative Timeline 1: Menshevik Victory
 const menshevikVictoryTimeline: Timeline = {

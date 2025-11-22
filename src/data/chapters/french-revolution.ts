@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1755,
     died: 1793,
     description: 'The cake-loving queen who allegedly said "Let them eat cake!" 🍰 Known for her extravagant parties and love of fancy dresses while people starved.',
-    image: '/images/marie-antoinette.jpg'
+    image: '/images/chapters/french-revolution/people/marie-antoinette.png'
   },
   {
     id: 'robespierre',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1758,
     died: 1794,
     description: 'The obsessively clean revolutionary who loved his guillotine a bit too much! 🗡️ Started as a defender of the people, ended as the Terror\'s chief architect.',
-    image: '/images/robespierre.jpg'
+    image: '/images/chapters/french-revolution/people/robespierre.png'
   },
   {
     id: 'louis-xvi',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1754,
     died: 1793,
     description: 'Poor Louis! 👑 Loved making locks more than making decisions. His hobby was locksmithing while his kingdom fell apart!',
-    image: '/images/louis-xvi.jpg'
+    image: '/images/chapters/french-revolution/people/louis-xvi.png'
   },
   {
     id: 'napoleon-bonaparte',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1769,
     died: 1821,
     description: 'The short general who conquered most of Europe! ⚡ Rose from the chaos to become Emperor and reshape the world.',
-    image: '/images/napoleon.jpg'
+    image: '/images/chapters/french-revolution/people/napoleon-bonaparte.png'
   },
   {
     id: 'jacques-danton',
@@ -44,134 +44,11 @@ const keyFigures: Person[] = [
     role: 'The Thunderous Voice of Revolution',
     born: 1759,
     died: 1794,
-    description: 'The booming orator who could shake buildings with his voice! 📢 Unfortunately, even his powerful speeches couldn\'t save him from the guillotine.',
-    image: '/images/danton.jpg'
+    description: 'The booming orator who could shake buildings with his voice! 📢 Unfortunately, even his powerful voice couldn\'t save him from Robespierre.',
+    image: '/images/chapters/french-revolution/people/jacques-danton.png'
   }
 ];
 
-// Historical events with fun, engaging descriptions
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'financial-crisis-1787',
-    year: 1787,
-    month: 5,
-    title: 'France Goes Bankrupt! 💰💸',
-    description: 'France is so broke they can\'t even afford to pay their debt interest! The government is basically running on IOUs and prayer.',
-    impact: 'Sets the stage for revolution as the economy crumbles like a stale croissant',
-    relatedFigures: ['louis-xvi'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'economic'
-  },
-  {
-    id: 'estates-general-1789',
-    year: 1789,
-    month: 5,
-    day: 5,
-    title: 'The Estates-General: Medieval Politics Meeting! 🏰',
-    description: 'Louis XVI calls the first Estates-General since 1614! It\'s like dusting off a 175-year-old board game and expecting it to work.',
-    impact: 'Third Estate realizes they\'re getting a raw deal and decides to do something about it',
-    relatedFigures: ['louis-xvi'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'tennis-court-oath-1789',
-    year: 1789,
-    month: 6,
-    day: 20,
-    title: 'The Tennis Court Oath: Revolution on the Court! 🎾',
-    description: 'Locked out of their meeting hall, the Third Estate meets in a tennis court and swears to create a new constitution. Talk about a power serve!',
-    impact: 'Marks the beginning of the National Assembly and constitutional government',
-    relatedFigures: [],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'storming-bastille-1789',
-    year: 1789,
-    month: 7,
-    day: 14,
-    title: 'Storming the Bastille: The Ultimate Prison Break! 🏰⚔️',
-    description: 'Angry Parisians storm the Bastille fortress for gunpowder and free the... 7 prisoners inside! Not quite the dramatic rescue they expected!',
-    impact: 'Symbolic victory that launched the revolution and gave France a national holiday',
-    relatedFigures: [],
-    location: { lat: 48.8532, lng: 2.3692 },
-    type: 'political'
-  },
-  {
-    id: 'declaration-rights-1789',
-    year: 1789,
-    month: 8,
-    day: 26,
-    title: 'Declaration of Rights: Freedom for Everyone! 📜✊',
-    description: 'The National Assembly adopts the Declaration of the Rights of Man and Citizen. Liberty, Equality, Fraternity becomes the motto!',
-    impact: 'Establishes fundamental human rights that inspire revolutions worldwide',
-    relatedFigures: [],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'women-march-versailles-1789',
-    year: 1789,
-    month: 10,
-    day: 5,
-    title: 'Women\'s March on Versailles: No Bread, Big Problems! 🥖👑',
-    description: 'Thousands of women march to Versailles demanding bread and bring the royal family back to Paris. Don\'t mess with hungry French women!',
-    impact: 'Forces the royal family to leave Versailles and live under popular scrutiny',
-    relatedFigures: ['marie-antoinette', 'louis-xvi'],
-    location: { lat: 48.8049, lng: 2.1204 },
-    type: 'social'
-  },
-  {
-    id: 'king-execution-1793',
-    year: 1793,
-    month: 1,
-    day: 21,
-    title: 'Off With His Head! The King\'s Final Day 👑🗡️',
-    description: 'Louis XVI loses his head to the guillotine. The crowd cheers as the divine right of kings dies with him.',
-    impact: 'Shocks European monarchs and triggers international intervention',
-    relatedFigures: ['louis-xvi'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'reign-of-terror-1793',
-    year: 1793,
-    month: 9,
-    title: 'The Reign of Terror: Guillotine Goes Brrr! 😱🗡️',
-    description: 'Robespierre\'s guillotine works overtime! About 17,000 people lose their heads. Even looking suspicious could be fatal!',
-    impact: 'Radical phase eliminates enemies but also terrorizes the population',
-    relatedFigures: ['robespierre'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'robespierre-execution-1794',
-    year: 1794,
-    month: 7,
-    day: 28,
-    title: 'Robespierre Gets a Taste of His Own Medicine! 🗡️😵',
-    description: 'The guillotine master becomes the guillotine victim! Robespierre and his allies are executed, ending the Terror.',
-    impact: 'Ends the radical phase and moves toward more moderate government',
-    relatedFigures: ['robespierre'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'napoleon-coup-1799',
-    year: 1799,
-    month: 11,
-    day: 9,
-    title: 'Napoleon\'s Coup: Enter the Little Emperor! ⚡👑',
-    description: 'Napoleon Bonaparte stages a coup and seizes power. The short general with big ambitions ends the revolution and starts his empire!',
-    impact: 'Ends the revolutionary period and begins the Napoleonic era',
-    relatedFigures: ['napoleon-bonaparte'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  }
-];
-*/
 
 // Alternative Timeline 1: Constitutional Monarchy Success
 const constitutionalMonarchyTimeline: Timeline = {

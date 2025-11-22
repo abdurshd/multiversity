@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1874,
     died: 1965,
     description: 'The ultimate wartime leader with the best one-liners! 🐕⚡ This cigar-smoking, brandy-drinking, speech-giving legend basically out-stubborned Hitler. His "We shall never surrender" attitude saved democracy!',
-    image: '/images/churchill.jpg'
+    image: '/images/chapters/world-war-2/people/winston-churchill.png'
   },
   {
     id: 'franklin-roosevelt',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1882,
     died: 1945,
     description: 'The president who couldn\'t walk but made America run! 🦅💪 Led America from Depression to victory while managing Stalin, Churchill, and Congress. Talk about multitasking!',
-    image: '/images/roosevelt.jpg'
+    image: '/images/chapters/world-war-2/people/franklin-d-roosevelt.png'
   },
   {
     id: 'joseph-stalin',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1878,
     died: 1953,
     description: 'The paranoid dictator who somehow became democracy\'s ally! ⚔️🐻 Brutal at home, essential against Hitler. Proved that sometimes you need a monster to fight a monster.',
-    image: '/images/stalin-ww2.jpg'
+    image: '/images/chapters/world-war-2/people/joseph-stalin.png'
   },
   {
     id: 'dwight-eisenhower',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1890,
     died: 1969,
     description: 'The Kansas farm boy who organized the biggest invasion in history! 🏖️⚔️ Managed to get Americans, British, French, and Canadians to actually work together. Diplomatic genius!',
-    image: '/images/eisenhower.jpg'
+    image: '/images/chapters/world-war-2/people/dwight-d-eisenhower.png'
   },
   {
     id: 'george-patton',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1885,
     died: 1945,
     description: 'The general who thought he was a reincarnated warrior! 🏺⚔️ Loved tanks, hated paperwork, and scared the Germans more than anyone. "Lead me, follow me, or get out of my way!"',
-    image: '/images/patton.jpg'
+    image: '/images/chapters/world-war-2/people/george-s-patton.png'
   },
   {
     id: 'bernard-montgomery',
@@ -54,7 +54,7 @@ const keyFigures: Person[] = [
     born: 1887,
     died: 1976,
     description: 'The methodical British general who beat Rommel! 🏜️🦊 Careful planner, terrible with people, but absolutely brilliant at winning battles. El Alamein was his masterpiece!',
-    image: '/images/montgomery.jpg'
+    image: '/images/chapters/world-war-2/people/bernard-montgomery.png'
   },
   {
     id: 'erwin-rommel',
@@ -63,7 +63,7 @@ const keyFigures: Person[] = [
     born: 1891,
     died: 1944,
     description: 'The German general even his enemies respected! 🏜️🦊 Master of tank warfare, treated prisoners well, and eventually plotted against Hitler. Honor in a dishonorable war.',
-    image: '/images/rommel.jpg'
+    image: '/images/chapters/world-war-2/people/erwin-rommel.png'
   },
   {
     id: 'hirohito',
@@ -72,195 +72,9 @@ const keyFigures: Person[] = [
     born: 1901,
     died: 1989,
     description: 'The reluctant emperor who finally said "enough!" 🌸⚔️ Watched Japan go from empire to ashes, then made the hardest decision of his life: surrender and save his people.',
-    image: '/images/hirohito.jpg'
+    image: '/images/chapters/world-war-2/people/emperor-hirohito.png'
   }
 ];
-
-// Historical events with global drama and visual storytelling
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'germany-invades-poland-1939',
-    year: 1939,
-    month: 9,
-    day: 1,
-    title: 'Germany Invades Poland: The War Begins! ⚔️🇵🇱',
-    description: 'Hitler launches Blitzkrieg against Poland, officially starting WWII. Britain and France declare war, but Poland gets crushed in 5 weeks. The "Phoney War" begins!',
-    impact: 'Triggers World War II and demonstrates devastating effectiveness of combined arms warfare',
-    relatedFigures: [],
-    location: { lat: 52.2297, lng: 21.0122 },
-    type: 'military'
-  },
-  {
-    id: 'battle-of-britain-1940',
-    year: 1940,
-    month: 8,
-    day: 13,
-    title: 'Battle of Britain: Spitfires vs. the Luftwaffe! ✈️🇬🇧',
-    description: 'The RAF\'s "Few" defend Britain from German air invasion. Churchill\'s "Never was so much owed by so many to so few" becomes reality. David beats Goliath in the sky!',
-    impact: 'Prevents German invasion of Britain and maintains Allied base for future operations',
-    relatedFigures: ['winston-churchill'],
-    location: { lat: 51.5074, lng: -0.1278 },
-    type: 'military'
-  },
-  {
-    id: 'operation-barbarossa-1941',
-    year: 1941,
-    month: 6,
-    day: 22,
-    title: 'Barbarossa: Hitler\'s Biggest Mistake! ❄️⚔️',
-    description: 'Hitler invades Soviet Union with 4 million troops! Stalin is shocked (literally hiding for days). The largest military operation in history begins... and ultimately dooms Nazi Germany!',
-    impact: 'Opens Eastern Front and ultimately leads to German defeat through two-front war',
-    relatedFigures: ['joseph-stalin'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'military'
-  },
-  {
-    id: 'pearl-harbor-1941',
-    year: 1941,
-    month: 12,
-    day: 7,
-    title: 'Pearl Harbor: Japan Awakens the Giant! 🛩️💥',
-    description: '"A date which will live in infamy!" Japan\'s sneak attack brings America into the war. Roosevelt gets his war declaration, and Japan gets way more than they bargained for!',
-    impact: 'Brings United States fully into World War II and transforms it into truly global conflict',
-    relatedFigures: ['franklin-roosevelt', 'hirohito'],
-    location: { lat: 21.3619, lng: -157.9565 },
-    type: 'military'
-  },
-  {
-    id: 'battle-of-midway-1942',
-    year: 1942,
-    month: 6,
-    day: 4,
-    title: 'Midway: Japan\'s Luck Runs Out! 🛩️🌊',
-    description: 'The turning point in the Pacific! American codebreakers and dive bombers sink 4 Japanese carriers in one day. From offensive to defensive in 5 minutes!',
-    impact: 'Turns tide of Pacific War and begins Japanese retreat',
-    relatedFigures: [],
-    location: { lat: 28.2072, lng: -177.3735 },
-    type: 'military'
-  },
-  {
-    id: 'stalingrad-1942',
-    year: 1942,
-    month: 8,
-    day: 23,
-    title: 'Stalingrad: The Beginning of the End! 🏢⚔️',
-    description: 'The most brutal urban warfare in history! Germans control 90% of the city but can\'t finish the job. Winter comes, Soviets surround them. Game over for the Wehrmacht!',
-    impact: 'Marks turning point on Eastern Front and beginning of German retreat',
-    relatedFigures: ['joseph-stalin'],
-    location: { lat: 48.7080, lng: 44.5133 },
-    type: 'military'
-  },
-  {
-    id: 'allied-invasion-italy-1943',
-    year: 1943,
-    month: 9,
-    day: 9,
-    title: 'Italy Invasion: The Soft Underbelly? Not So Much! 🇮🇹⛰️',
-    description: 'Allies invade Italy expecting easy victory. Instead get mountains, mud, and German defense lines. "Soft underbelly" becomes "tough spine!" Rome takes 9 months!',
-    impact: 'Opens second front in Europe but proves more difficult than expected',
-    relatedFigures: [],
-    location: { lat: 40.0583, lng: 18.0108 },
-    type: 'military'
-  },
-  {
-    id: 'd-day-1944',
-    year: 1944,
-    month: 6,
-    day: 6,
-    title: 'D-Day: The Greatest Invasion Ever! 🏖️⚔️',
-    description: 'Operation Overlord lands 150,000 troops in Normandy! Eisenhower\'s "Great Crusade" begins. The Atlantic Wall crumbles, and Hitler\'s Fortress Europe gets breached!',
-    impact: 'Opens Western Front and begins liberation of Nazi-occupied Europe',
-    relatedFigures: ['dwight-eisenhower'],
-    location: { lat: 49.3390, lng: -0.4894 },
-    type: 'military'
-  },
-  {
-    id: 'liberation-of-paris-1944',
-    year: 1944,
-    month: 8,
-    day: 25,
-    title: 'Paris Liberated: "Paree" is Free! 🇫🇷🗼',
-    description: 'After 4 years of occupation, Paris is free! Free French forces enter first (for pride), Americans follow (for photos). Hitler\'s order to burn the city is ignored!',
-    impact: 'Symbolic victory showing inevitable German defeat and Allied momentum',
-    relatedFigures: [],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'battle-of-bulge-1944',
-    year: 1944,
-    month: 12,
-    day: 16,
-    title: 'Battle of the Bulge: Hitler\'s Last Gamble! 🌲❄️',
-    description: 'Hitler\'s final offensive in the Ardennes! Initial success creates huge "bulge" in Allied lines, but American resilience and German fuel shortages doom the attack!',
-    impact: 'Final German offensive exhausts last reserves and hastens collapse',
-    relatedFigures: ['george-patton'],
-    location: { lat: 49.9664, lng: 5.8048 },
-    type: 'military'
-  },
-  {
-    id: 'yalta-conference-1945',
-    year: 1945,
-    month: 2,
-    day: 4,
-    title: 'Yalta: The Big Three Divide the World! 🌍👑',
-    description: 'Roosevelt, Churchill, and Stalin meet to plan post-war world. They agree on UN, disagree on Poland, and accidentally set up the Cold War. Oops!',
-    impact: 'Sets framework for post-war world order and future superpower rivalry',
-    relatedFigures: ['franklin-roosevelt', 'winston-churchill', 'joseph-stalin'],
-    location: { lat: 44.4952, lng: 34.1615 },
-    type: 'political'
-  },
-  {
-    id: 'hitler-suicide-1945',
-    year: 1945,
-    month: 4,
-    day: 30,
-    title: 'Hitler\'s Final Act: Bunker to Eternity! 💀🔥',
-    description: 'With Soviets 300 yards away, Hitler shoots himself in his bunker. Eva Braun joins him. The Thousand Year Reich ends after 12 years and 3 months. Awkward!',
-    impact: 'Removes Nazi leadership and accelerates German surrender',
-    relatedFigures: [],
-    location: { lat: 52.5074, lng: 13.3765 },
-    type: 'political'
-  },
-  {
-    id: 've-day-1945',
-    year: 1945,
-    month: 5,
-    day: 8,
-    title: 'Victory in Europe: The Nazi Nightmare Ends! 🎉🇪🇺',
-    description: 'Germany surrenders unconditionally! Europe celebrates as church bells ring-3 and people dance in the streets. Hitler\'s empire is dead, but the Pacific War continues!',
-    impact: 'Ends European war and allows full focus on defeating Japan',
-    relatedFigures: [],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'hiroshima-nagasaki-1945',
-    year: 1945,
-    month: 8,
-    day: 6,
-    title: 'Atomic Bombs: The Nuclear Age Begins! ☢️💥',
-    description: 'America drops atomic bombs on Hiroshima and Nagasaki. The age of conventional warfare ends forever. Japan realizes further resistance is futile.',
-    impact: 'Forces Japanese surrender and ushers in nuclear age',
-    relatedFigures: ['franklin-roosevelt', 'hirohito'],
-    location: { lat: 34.3853, lng: 132.4553 },
-    type: 'military'
-  },
-  {
-    id: 'japanese-surrender-1945',
-    year: 1945,
-    month: 9,
-    day: 2,
-    title: 'Japan Surrenders: World War II Finally Ends! 🕊️🌍',
-    description: 'On the USS Missouri in Tokyo Bay, Japan formally surrenders. MacArthur accepts as the world watches. After 6 years and 50 million deaths, the war is over!',
-    impact: 'Ends World War II and begins new era of American-led international order',
-    relatedFigures: ['hirohito'],
-    location: { lat: 35.6528, lng: 139.7594 },
-    type: 'political'
-  }
-];
-*/
 
 // Alternative Timeline 1: No Appeasement
 const noAppeasementTimeline: Timeline = {

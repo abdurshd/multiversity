@@ -8,7 +8,7 @@ const keyFigures: Person[] = [
         born: 1336,
         died: 1405,
         description: 'The last of the great nomadic conquerors. A military genius who sought to restore the Mongol Empire. 🗡️👑',
-        image: '/images/timur.jpg'
+        image: '/images/chapters/timur-legacy/people/emir-timur.png'
     },
     {
         id: 'shahrukh',
@@ -17,7 +17,7 @@ const keyFigures: Person[] = [
         born: 1377,
         died: 1447,
         description: 'Timur\'s youngest son who turned the empire from a war machine into a center of art and science. 🎨📚',
-        image: '/images/shahrukh.jpg'
+        image: '/images/chapters/timur-legacy/people/shahrukh.png'
     },
     {
         id: 'ulugh-beg',
@@ -26,7 +26,7 @@ const keyFigures: Person[] = [
         born: 1394,
         died: 1449,
         description: 'A ruler who preferred stars to swords. Built one of the greatest observatories in history in Samarkand. 🔭✨',
-        image: '/images/ulughbeg.jpg'
+        image: '/images/chapters/timur-legacy/people/ulugh-beg.png'
     }
 ];
 

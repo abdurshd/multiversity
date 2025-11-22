@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1672,
     died: 1725,
     description: 'Standing 6\'8" tall, this giant tsar was obsessed with modernizing Russia! ⚓🧔 Cut off nobles\' beards personally, built a navy from scratch, and created St. Petersburg in a swamp. Also loved carpentry and dentistry (yikes!).',
-    image: '/images/peter-the-great.jpg'
+    image: '/images/chapters/russian-empire/people/peter-the-great.png'
   },
   {
     id: 'catherine-the-great',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1729,
     died: 1796,
     description: 'This German-born empress conquered more territory than any Russian ruler! 👑⚔️ Corresponded with Voltaire, collected art like Pokemon cards, and somehow made autocracy look enlightened. Talk about overachieving!',
-    image: '/images/catherine-the-great.jpg'
+    image: '/images/chapters/russian-empire/people/catherine-the-great.png'
   },
   {
     id: 'ivan-the-terrible',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1530,
     died: 1584,
     description: 'Russia\'s first official Tsar who was... intense. 😤💥 Unified Russia through conquest and terror, accidentally killed his own son in a rage, and created the first secret police. His temper tantrums shaped a nation!',
-    image: '/images/ivan-the-terrible.jpg'
+    image: '/images/chapters/russian-empire/people/ivan-the-terrible.png'
   },
   {
     id: 'alexander-ii',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1818,
     died: 1881,
     description: 'The reformer tsar who said "Better to abolish serfdom from above than wait for it to abolish itself from below!" ⛓️💔 Freed the serfs, modernized courts, and got blown up by revolutionaries for his trouble.',
-    image: '/images/alexander-ii.jpg'
+    image: '/images/chapters/russian-empire/people/alexander-ii.png'
   },
   {
     id: 'rasputin',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1869,
     died: 1916,
     description: 'The mystical peasant who hypnotized the royal family! 🔮👁️ Claimed to heal the sick prince, partied like a rockstar, and survived poisoning, shooting, and drowning before finally dying. Legend!',
-    image: '/images/rasputin.jpg'
+    image: '/images/chapters/russian-empire/people/rasputin.png'
   },
   {
     id: 'nicholas-ii',
@@ -54,145 +54,9 @@ const keyFigures: Person[] = [
     born: 1868,
     died: 1918,
     description: 'Poor Nicky! 😔👑 Never wanted to be tsar, just wanted a quiet family life. Instead got World War I, revolutions, and... well, let\'s just say it didn\'t end well for the Romanovs.',
-    image: '/images/nicholas-ii.jpg'
+    image: '/images/chapters/russian-empire/people/nicholas-ii.png'
   }
 ];
-
-// Historical events with engaging, character-driven storytelling
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'peter-modernization-1700',
-    year: 1700,
-    month: 1,
-    title: 'Peter\'s Extreme Makeover: Russia Edition! ✂️🏗️',
-    description: 'Peter the Great forces nobles to shave their beards, wear Western clothes, and learn European manners. Those who refuse pay a "beard tax!" Russia goes from medieval to modern overnight.',
-    impact: 'Rapid westernization transforms Russian society and military capability',
-    relatedFigures: ['peter-the-great'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'cultural'
-  },
-  {
-    id: 'st-petersburg-founded-1703',
-    year: 1703,
-    month: 5,
-    day: 27,
-    title: 'Building Venice in a Swamp: Peter\'s Crazy Dream! 🏙️🌊',
-    description: 'Peter builds St. Petersburg in a mosquito-infested swamp, calling it his "Window to Europe." Thousands die building it, but the result is magnificent!',
-    impact: 'Creates Russia\'s European capital and symbol of westernization',
-    relatedFigures: ['peter-the-great'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'great-northern-war-victory-1721',
-    year: 1721,
-    month: 9,
-    day: 10,
-    title: 'Russia Beats Sweden: David vs Goliath, Russian Style! ⚔️🇷🇺',
-    description: 'After 21 years of war, Russia defeats mighty Sweden and becomes a European great power. Peter celebrates by declaring himself Emperor!',
-    impact: 'Establishes Russia as major European power and Baltic Sea dominance',
-    relatedFigures: ['peter-the-great'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'military'
-  },
-  {
-    id: 'catherine-enlightenment-1767',
-    year: 1767,
-    month: 7,
-    title: 'Catherine Tries to Rewrite Russian Law... With Style! 📚⚖️',
-    description: 'Catherine the Great attempts to create a new legal code based on Enlightenment principles. It\'s like trying to teach quantum physics to medieval knights!',
-    impact: 'Introduces Enlightenment ideas to Russian governance and legal system',
-    relatedFigures: ['catherine-the-great'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'political'
-  },
-  {
-    id: 'pugachev-rebellion-1774',
-    year: 1774,
-    month: 1,
-    title: 'Pugachev\'s Revolt: When Peasants Say "Enough!" 🔥👨‍🌾',
-    description: 'Emelyan Pugachev leads massive peasant revolt, claiming to be the "real" tsar. Catherine crushes it brutally, but gets the message about serfdom.',
-    impact: 'Massive peasant uprising reveals deep social tensions in Russian society',
-    relatedFigures: ['catherine-the-great'],
-    location: { lat: 51.5074, lng: 46.0096 },
-    type: 'social'
-  },
-  {
-    id: 'decembrist-revolt-1825',
-    year: 1825,
-    month: 12,
-    day: 26,
-    title: 'The Decembrists: Russia\'s First Democracy Attempt! 🗽⚔️',
-    description: 'Liberal officers try to establish constitutional monarchy when Nicholas I becomes tsar. They fail spectacularly but inspire generations of revolutionaries.',
-    impact: 'First organized attempt at constitutional government in Russia',
-    relatedFigures: [],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'crimean-war-defeat-1856',
-    year: 1856,
-    month: 3,
-    day: 30,
-    title: 'The Crimean Disaster: When the "Sick Man" Beats the Bear! 😷🐻',
-    description: 'Russia loses the Crimean War to Britain, France, and Turkey. It\'s a wake-up call that Russia needs serious modernization... again!',
-    impact: 'Military defeat exposes Russian backwardness and triggers reform era',
-    relatedFigures: [],
-    location: { lat: 44.9572, lng: 34.1108 },
-    type: 'military'
-  },
-  {
-    id: 'serf-emancipation-1861',
-    year: 1861,
-    month: 3,
-    day: 3,
-    title: 'Freedom Day: 23 Million Serfs Get Their Liberation! ⛓️💥🎉',
-    description: 'Alexander II frees the serfs on the same day Lincoln is inaugurated! Coincidence? Maybe not! It\'s freedom everywhere in 1861!',
-    impact: 'Abolishes serfdom and begins modernization of Russian society',
-    relatedFigures: ['alexander-ii'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'social'
-  },
-  {
-    id: 'trans-siberian-railway-1891',
-    year: 1891,
-    month: 5,
-    day: 31,
-    title: 'The Great Siberian Railroad Adventure Begins! 🚂🌍',
-    description: 'Russia starts building the world\'s longest railroad across Siberia. It\'s like connecting New York to Los Angeles, but with more bears and permafrost!',
-    impact: 'Connects European Russia to Pacific, enabling development of Siberia',
-    relatedFigures: ['alexander-ii'],
-    location: { lat: 43.1056, lng: 131.8735 },
-    type: 'economic'
-  },
-  {
-    id: 'bloody-sunday-1905',
-    year: 1905,
-    month: 1,
-    day: 9,
-    title: 'Bloody Sunday: When Faith in the Tsar Dies 💔⛪',
-    description: 'Peaceful protesters marching to petition the tsar are shot down. Father Gapon leads them singing hymns, but bullets answer their prayers.',
-    impact: 'Shatters traditional faith in the tsar and sparks 1905 Revolution',
-    relatedFigures: ['nicholas-ii'],
-    location: { lat: 59.9311, lng: 30.3609 },
-    type: 'political'
-  },
-  {
-    id: 'october-manifesto-1905',
-    year: 1905,
-    month: 10,
-    day: 30,
-    title: 'Nicholas II Promises Democracy... Sort Of! 📜🤞',
-    description: 'Faced with revolution, Nicholas II promises a constitution and parliament (Duma). He crosses his fingers behind his back while signing it.',
-    impact: 'Creates first constitutional limits on tsarist autocracy',
-    relatedFigures: ['nicholas-ii'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'political'
-  }
-];
-*/
-
 // Alternative Timeline 1: Democratic Russia
 const democraticRussiaTimeline: Timeline = {
   id: 'democratic-russia',

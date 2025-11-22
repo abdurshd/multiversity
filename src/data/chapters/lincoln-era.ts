@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1808,
     died: 1889,
     description: 'The other president during the Civil War! ⚔️ Led the Confederacy with determination but questionable fashion sense (that goatee!). Ended up in prison after the war.',
-    image: '/images/jefferson-davis.jpg'
+    image: '/images/chapters/lincoln-era/people/jefferson-davis.png'
   },
   {
     id: 'robert-e-lee',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1807,
     died: 1870,
     description: 'The South\'s most brilliant general who almost won the war! 🎖️ Chose his state over his country, then spent the rest of his life regretting it. Great at tactics, terrible at picking sides.',
-    image: '/images/robert-e-lee.jpg'
+    image: '/images/chapters/lincoln-era/people/robert-e-lee.png'
   },
   {
     id: 'ulysses-s-grant',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1822,
     died: 1885,
     description: 'The cigar-smoking, whiskey-drinking general who won the war! 🚬🥃 Started as a failed businessman, became the Union\'s savior. Proof that sometimes the quiet ones surprise you.',
-    image: '/images/ulysses-grant.jpg'
+    image: '/images/chapters/lincoln-era/people/ulysses-s-grant.png'
   },
   {
     id: 'frederick-douglass',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1818,
     died: 1895,
     description: 'From slavery to becoming one of America\'s greatest orators! 📢✊ His autobiography shocked the nation and his speeches moved hearts. Proved that education is the path from slavery to freedom.',
-    image: '/images/frederick-douglass.jpg'
+    image: '/images/chapters/lincoln-era/people/frederick-douglass.png'
   },
   {
     id: 'harriet-tubman',
@@ -54,147 +54,9 @@ const keyFigures: Person[] = [
     born: 1822,
     died: 1913,
     description: 'The Moses of her people! 🌟 Led hundreds to freedom through the Underground Railroad and never lost a passenger. Later became a Union spy and women\'s rights activist. Total badass!',
-    image: '/images/harriet-tubman.jpg'
+    image: '/images/chapters/lincoln-era/people/harriet-tubman.png'
   }
 ];
-
-// Historical events with engaging storytelling
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'lincoln-election-1860',
-    year: 1860,
-    month: 11,
-    day: 6,
-    title: 'Lincoln Wins! The South Says "Nah" 🗳️😤',
-    description: 'Abraham Lincoln wins the presidency without getting a single vote in 10 Southern states! The South takes this about as well as you\'d expect.',
-    impact: 'Triggers secession crisis as Southern states refuse to accept the election results',
-    relatedFigures: ['abraham-lincoln'],
-    location: { lat: 39.8283, lng: -98.5795 },
-    type: 'political'
-  },
-  {
-    id: 'south-carolina-secession-1860',
-    year: 1860,
-    month: 12,
-    day: 20,
-    title: 'South Carolina Throws the Ultimate Tantrum! 😭🚪',
-    description: 'South Carolina becomes the first state to secede, declaring they\'re taking their ball and going home. Other Southern states quickly follow suit.',
-    impact: 'Begins the breakup of the United States as more states join the secession movement',
-    relatedFigures: [],
-    location: { lat: 33.8361, lng: -81.1637 },
-    type: 'political'
-  },
-  {
-    id: 'confederacy-formed-1861',
-    year: 1861,
-    month: 2,
-    day: 4,
-    title: 'The Confederate States: America\'s Awkward Cousin 🤠⚔️',
-    description: 'Eleven states form the Confederate States of America with Jefferson Davis as president. It\'s like starting a rival company but with cannons.',
-    impact: 'Creates two competing governments claiming to represent America',
-    relatedFigures: ['jefferson-davis'],
-    location: { lat: 32.361538, lng: -86.279118 },
-    type: 'political'
-  },
-  {
-    id: 'fort-sumter-1861',
-    year: 1861,
-    month: 4,
-    day: 12,
-    title: 'Fort Sumter: The War\'s Opening Act! 💥🏰',
-    description: 'Confederate forces fire on Fort Sumter, officially starting the Civil War. Like the world\'s deadliest fireworks show, but less fun.',
-    impact: 'First shots of the Civil War galvanize both sides for the conflict ahead',
-    relatedFigures: [],
-    location: { lat: 32.7516, lng: -79.8745 },
-    type: 'military'
-  },
-  {
-    id: 'first-bull-run-1861',
-    year: 1861,
-    month: 7,
-    day: 21,
-    title: 'First Battle of Bull Run: Reality Check Time! 💥😵',
-    description: 'Both sides discover that war isn\'t a picnic (literally - spectators came with picnic baskets!). The Confederates win and everyone realizes this won\'t be over quickly.',
-    impact: 'Shatters illusions about a quick war and leads to serious military preparation',
-    relatedFigures: [],
-    location: { lat: 38.8462, lng: -77.5211 },
-    type: 'military'
-  },
-  {
-    id: 'emancipation-proclamation-1863',
-    year: 1863,
-    month: 1,
-    day: 1,
-    title: 'Lincoln Drops the Emancipation Mic! 📜✊',
-    description: 'Lincoln declares slaves in rebellious states to be free! It\'s a legal masterstroke that changes the war from preserving the Union to ending slavery.',
-    impact: 'Transforms the war into a moral crusade and prevents European intervention',
-    relatedFigures: ['abraham-lincoln'],
-    location: { lat: 38.9072, lng: -77.0369 },
-    type: 'political'
-  },
-  {
-    id: 'gettysburg-battle-1863',
-    year: 1863,
-    month: 7,
-    day: 1,
-    title: 'Gettysburg: The War\'s Turning Point! ⚔️🎯',
-    description: 'Three days of intense fighting end Lee\'s invasion of the North. The Confederacy\'s high-water mark literally has a monument marking the spot!',
-    impact: 'Decisive Union victory that begins Confederate decline',
-    relatedFigures: ['robert-e-lee'],
-    location: { lat: 39.8309, lng: -77.2361 },
-    type: 'military'
-  },
-  {
-    id: 'gettysburg-address-1863',
-    year: 1863,
-    month: 11,
-    day: 19,
-    title: 'Lincoln\'s Greatest Speech: 272 Words of Pure Gold! 🎤✨',
-    description: 'In just 2 minutes, Lincoln redefines the war and American democracy itself. The other guy spoke for 2 hours and nobody remembers what he said!',
-    impact: 'Reframes the war as a new birth of freedom and democratic renewal',
-    relatedFigures: ['abraham-lincoln'],
-    location: { lat: 39.8309, lng: -77.2361 },
-    type: 'political'
-  },
-  {
-    id: 'shermans-march-1864',
-    year: 1864,
-    month: 11,
-    day: 16,
-    title: 'Sherman\'s March: Total War Comes to Georgia! 🔥🚂',
-    description: 'General Sherman marches through Georgia like a destructive hurricane, proving that war is indeed hell. The South learns what "total war" really means.',
-    impact: 'Devastates Confederate logistics and civilian morale',
-    relatedFigures: [],
-    location: { lat: 33.76, lng: -84.39 },
-    type: 'military'
-  },
-  {
-    id: 'lee-surrender-1865',
-    year: 1865,
-    month: 4,
-    day: 9,
-    title: 'Lee Surrenders: Game Over, Man! 🏳️🤝',
-    description: 'Robert E. Lee surrenders to Ulysses S. Grant at Appomattox Court House. Grant lets the Confederates keep their horses because they\'ll need them for spring plowing. Classy move!',
-    impact: 'Effectively ends the Civil War and begins Reconstruction',
-    relatedFigures: ['robert-e-lee', 'ulysses-s-grant'],
-    location: { lat: 37.3760, lng: -78.7965 },
-    type: 'military'
-  },
-  {
-    id: 'lincoln-assassination-1865',
-    year: 1865,
-    month: 4,
-    day: 14,
-    title: 'Lincoln\'s Tragic End: The Play That Changed Everything 🎭💔',
-    description: 'John Wilkes Booth shoots Lincoln at Ford\'s Theatre during a comedy. The irony is tragic - Lincoln dies just as his greatest triumph is achieved.',
-    impact: 'Martyrs Lincoln and transforms Reconstruction politics',
-    relatedFigures: ['abraham-lincoln'],
-    location: { lat: 38.8966, lng: -77.0252 },
-    type: 'political'
-  }
-];
-*/
 
 // Alternative Timeline 1: Lincoln Survives
 const lincolnSurvivesTimeline: Timeline = {
@@ -777,7 +639,8 @@ export const lincolnEraChapter: Chapter = {
   period: '1860s',
   startYear: 1850,
   endYear: 1877,
-  description: 'The Great American Drama: A house divided against itself cannot stand! 🏠💔 Follow the incredible journey of a rail-splitter who became the Great Emancipator, saving the Union and freeing four million enslaved people. It\'s got everything: political intrigue, moral courage, epic battles, and the most famous beard in American history! 🎩⚔️',
+  description: 'The 16th President who led the nation through the Civil War and ended slavery. 🎩📜 "A house divided against itself cannot stand."',
+
   historicalContext: 'By 1860, America was like a marriage on the rocks - two fundamentally different societies trying to share one house. 🏠💥 The North was becoming industrial and urban while the South remained agricultural and dependent on enslaved labor. When Lincoln won the presidency without getting a single Southern vote, it was the last straw. What followed was four years of the bloodiest conflict in American history, a moral reckoning with slavery, and the transformation of the United States from a loose confederation into a true nation. It was messy, tragic, and ultimately transformative - like all the best American stories! 🇺🇸💫',
   keyFigures,
   divergencePoint: 'Lincoln\'s Election and the Secession Crisis',

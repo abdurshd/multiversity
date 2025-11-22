@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1889,
     died: 1945,
     description: 'The Austrian painter who was rejected from art school and unfortunately decided politics was his backup plan. 🎨➡️💀 His rise shows how economic chaos and social resentment can enable terrible leaders.',
-    image: '/images/hitler.jpg'
+    image: '/images/chapters/hitler-rise/people/adolf-hitler.png'
   },
   {
     id: 'heinrich-himmler',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1900,
     died: 1945,
     description: 'The chicken farmer who became one of history\'s most evil administrators. 📋💀 Proved that bureaucratic efficiency applied to evil purposes creates unimaginable horror.',
-    image: '/images/himmler.jpg'
+    image: '/images/chapters/hitler-rise/people/heinrich-himmler.png'
   },
   {
     id: 'joseph-goebbels',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1897,
     died: 1945,
     description: 'The failed novelist who perfected the art of political lying. 📢🎭 His propaganda techniques unfortunately influenced political communication forever.',
-    image: '/images/goebbels.jpg'
+    image: '/images/chapters/hitler-rise/people/joseph-goebbels.png'
   },
   {
     id: 'ernst-rohm',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1887,
     died: 1934,
     description: 'The tough street fighter who helped Hitler rise to power, only to be killed by him in the Night of Long Knives. 💀🗡️ Lesson: enabling dictators is dangerous even for enablers.',
-    image: '/images/rohm.jpg'
+    image: '/images/chapters/hitler-rise/people/ernst-rohm.png'
   },
   {
     id: 'paul-von-hindenburg',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1847,
     died: 1934,
     description: 'The aging war hero who thought he could control Hitler by making him Chancellor. 👴🤦‍♂️ History\'s most catastrophic political miscalculation.',
-    image: '/images/hindenburg.jpg'
+    image: '/images/chapters/hitler-rise/people/paul-von-hindenburg.png'
   },
   {
     id: 'gustav-stresemann',
@@ -54,145 +54,9 @@ const keyFigures: Person[] = [
     born: 1878,
     died: 1929,
     description: 'The brilliant diplomat who stabilized Germany in the 1920s but died too soon. 🕊️💔 His death removed the last moderate voice that might have stopped Hitler.',
-    image: '/images/stresemann.jpg'
+    image: '/images/chapters/hitler-rise/people/gustav-stresemann.png'
   }
 ];
-
-// Historical events with serious but accessible storytelling
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'hitler-art-rejection-1907',
-    year: 1907,
-    month: 10,
-    title: 'Art School Rejection: The World\'s Most Consequential "No" 🎨❌',
-    description: 'Hitler is rejected from Vienna Academy of Fine Arts. One admissions decision that changed world history. Sometimes saying "no" has bigger consequences than anyone could imagine.',
-    impact: 'Personal failure shapes Hitler\'s resentment and worldview',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 48.2082, lng: 16.3738 },
-    type: 'social'
-  },
-  {
-    id: 'beer-hall-putsch-1923',
-    year: 1923,
-    month: 11,
-    day: 8,
-    title: 'Beer Hall Putsch: Hitler\'s Failed Coup Attempt 🍺💥',
-    description: 'Hitler tries to overthrow the Bavarian government in Munich and fails spectacularly. Gets arrested, but the trial makes him famous. Sometimes failing upward is a real thing.',
-    impact: 'Failed coup gives Hitler national platform and martyrdom narrative',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 48.1351, lng: 11.5820 },
-    type: 'political'
-  },
-  {
-    id: 'mein-kampf-written-1925',
-    year: 1925,
-    month: 7,
-    title: 'Mein Kampf Published: Blueprint for Disaster 📖💀',
-    description: 'Hitler writes his autobiography and political manifesto while in prison. Unfortunately, people should have taken his horrific plans more seriously.',
-    impact: 'Lays out Nazi ideology and future plans that few people believed',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 48.1351, lng: 11.5820 },
-    type: 'cultural'
-  },
-  {
-    id: 'golden-age-ends-1929',
-    year: 1929,
-    month: 10,
-    day: 24,
-    title: 'Wall Street Crash: Germany\'s Stability Crumbles 📉💔',
-    description: 'The Wall Street Crash devastates Germany\'s economy and ends the "Golden Twenties." Economic desperation creates perfect conditions for extremism.',
-    impact: 'Economic crisis destroys moderate parties and enables radical solutions',
-    relatedFigures: ['gustav-stresemann'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'economic'
-  },
-  {
-    id: 'nazi-electoral-breakthrough-1930',
-    year: 1930,
-    month: 9,
-    day: 14,
-    title: 'Nazi Electoral Breakthrough: From Fringe to Mainstream 📊⚡',
-    description: 'Nazis jump from 12 to 107 seats in Reichstag elections. Suddenly Hitler\'s party is no longer a joke but a major political force.',
-    impact: 'Legitimizes Nazi party and makes Hitler a serious political player',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'presidential-election-1932',
-    year: 1932,
-    month: 4,
-    day: 10,
-    title: 'Hitler vs. Hindenburg: The Election That Decided Everything 🗳️⚡',
-    description: 'Hitler loses presidential election to Hindenburg but gets 37% of vote. Shows how close Germany came to electing Hitler directly.',
-    impact: 'Demonstrates Hitler\'s mass appeal and legitimizes his political ambitions',
-    relatedFigures: ['adolf-hitler', 'paul-von-hindenburg'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'hitler-becomes-chancellor-1933',
-    year: 1933,
-    month: 1,
-    day: 30,
-    title: 'Hitler Becomes Chancellor: The Fatal Appointment 👑💀',
-    description: 'President Hindenburg appoints Hitler as Chancellor, thinking conservative politicians can control him. History\'s worst political miscalculation.',
-    impact: 'Gives Hitler legal path to power and beginning of Nazi dictatorship',
-    relatedFigures: ['adolf-hitler', 'paul-von-hindenburg'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'reichstag-fire-1933',
-    year: 1933,
-    month: 2,
-    day: 27,
-    title: 'Reichstag Fire: Democracy Burns Down 🔥🏛️',
-    description: 'The German parliament building burns down. Hitler uses the crisis to suspend civil liberties and arrest political opponents. Never waste a good crisis!',
-    impact: 'Enables Hitler to suspend constitution and eliminate political opposition',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'enabling-act-1933',
-    year: 1933,
-    month: 3,
-    day: 23,
-    title: 'Enabling Act: Democracy Votes Itself Out of Existence 🗳️💀',
-    description: 'German parliament votes to give Hitler dictatorial powers. Democracy literally votes to end democracy. Sometimes the system destroys itself.',
-    impact: 'Legalizes Hitler\'s dictatorship and ends German democracy',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'night-of-long-knives-1934',
-    year: 1934,
-    month: 6,
-    day: 30,
-    title: 'Night of Long Knives: Hitler Eliminates His Own Allies 🗡️🌙',
-    description: 'Hitler orders the murder of SA leader Ernst Röhm and other rivals. Shows that even helping a dictator rise doesn\'t guarantee survival.',
-    impact: 'Consolidates Hitler\'s power and shows willingness to kill anyone',
-    relatedFigures: ['adolf-hitler', 'ernst-rohm'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'political'
-  },
-  {
-    id: 'nuremberg-laws-1935',
-    year: 1935,
-    month: 9,
-    day: 15,
-    title: 'Nuremberg Laws: Legal Persecution Begins 📋💔',
-    description: 'Nazi Germany passes laws stripping Jews of citizenship and civil rights. Shows how quickly legal systems can be perverted to enable oppression.',
-    impact: 'Legalizes systematic persecution and sets stage for Holocaust',
-    relatedFigures: ['adolf-hitler'],
-    location: { lat: 49.4521, lng: 11.0767 },
-    type: 'social'
-  }
-];
-*/
 
 // Alternative Timeline 1: Art School Acceptance
 const artSchoolTimelineAccepted: Timeline = {

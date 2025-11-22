@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1884,
     died: 1972,
     description: 'The haberdasher from Missouri who suddenly had to deal with Stalin and atomic bombs! 💣🤠 Went from small-town politician to making decisions that shaped the entire world. "The buck stops here" indeed!',
-    image: '/images/truman.jpg'
+    image: '/images/chapters/cold-war/people/harry-s-truman.png'
   },
   {
     id: 'joseph-stalin-cold-war',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1878,
     died: 1953,
     description: 'The Georgian who built an Iron Curtain and never met a conspiracy he didn\'t believe! 🐻🕵️ Turned Eastern Europe into his personal fortress and made "Uncle Joe" the world\'s most feared uncle.',
-    image: '/images/stalin-cold-war.jpg'
+    image: '/images/chapters/cold-war/people/joseph-stalin.png'
   },
   {
     id: 'winston-churchill-cold-war',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1874,
     died: 1965,
     description: 'The bulldog who coined "Iron Curtain" and warned everyone about Soviet intentions! 🐕🔮 From wartime ally to Cold War prophet - his Fulton speech started the whole thing!',
-    image: '/images/churchill-cold-war.jpg'
+    image: '/images/chapters/cold-war/people/winston-churchill.png'
   },
   {
     id: 'nikita-khrushchev',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1894,
     died: 1971,
     description: 'The Ukrainian peasant who banged his shoe at the UN and put missiles in Cuba! 👞💥 Tough as nails but smart enough to avoid nuclear war. "We will bury you!" (Spoiler: they didn\'t)',
-    image: '/images/khrushchev.jpg'
+    image: '/images/chapters/cold-war/people/nikita-khrushchev.png'
   },
   {
     id: 'john-f-kennedy',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1917,
     died: 1963,
     description: 'The charismatic president who stared down nuclear war and inspired a generation! 🌟🚀 From Bay of Pigs disaster to Cuban Missile Crisis hero to moon landing visionary. Camelot had its moments!',
-    image: '/images/jfk.jpg'
+    image: '/images/chapters/cold-war/people/john-f-kennedy.png'
   },
   {
     id: 'ronald-reagan',
@@ -54,7 +54,7 @@ const keyFigures: Person[] = [
     born: 1911,
     died: 2004,
     description: 'The former movie star who challenged Gorbachev to "tear down this wall!" 🎬🧱 Proved that sometimes an optimistic cowboy is exactly what the world needs to end a Cold War.',
-    image: '/images/reagan.jpg'
+    image: '/images/chapters/cold-war/people/ronald-reagan.png'
   },
   {
     id: 'mikhail-gorbachev',
@@ -63,7 +63,7 @@ const keyFigures: Person[] = [
     born: 1931,
     died: 2022,
     description: 'The Soviet leader who tried to save communism and accidentally destroyed it! 🔨💔 Glasnost, perestroika, and the birthmark that changed the world. Sometimes good intentions have unexpected consequences!',
-    image: '/images/gorbachev.jpg'
+    image: '/images/chapters/cold-war/people/mikhail-gorbachev.png'
   },
   {
     id: 'fidel-castro',
@@ -72,303 +72,10 @@ const keyFigures: Person[] = [
     born: 1926,
     died: 2016,
     description: 'The bearded revolutionary who brought communism 90 miles from Florida! 🇨🇺⚔️ Survived Bay of Pigs, hosted Soviet missiles, and outlasted 10 US presidents. Ultimate survivor!',
-    image: '/images/castro.jpg'
+    image: '/images/chapters/cold-war/people/fidel-castro.png'
   }
 ];
 
-// Historical events with tension and drama
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'iron-curtain-speech-1946',
-    year: 1946,
-    month: 3,
-    day: 5,
-    title: 'Iron Curtain Speech: Churchill Drops the Truth Bomb! 🗣️🔥',
-    description: 'Churchill declares "An iron curtain has descended across the continent" at tiny Westminster College in Missouri. The Cold War officially begins with a speech!',
-    impact: 'Publicly identifies Soviet threat and begins ideological confrontation',
-    relatedFigures: ['winston-churchill-cold-war'],
-    location: { lat: 38.8136, lng: -91.8369 },
-    type: 'political'
-  },
-  {
-    id: 'truman-doctrine-1947',
-    year: 1947,
-    month: 3,
-    day: 12,
-    title: 'Truman Doctrine: America Says "We\'re In!" 🇺🇸⚡',
-    description: 'Truman promises to support free peoples everywhere against communist expansion. America officially becomes world\'s policeman. Greece and Turkey are just the beginning!',
-    impact: 'Commits America to global containment of communism',
-    relatedFigures: ['harry-truman'],
-    location: { lat: 38.9072, lng: -77.0369 },
-    type: 'political'
-  },
-  {
-    id: 'marshall-plan-1947',
-    year: 1947,
-    month: 6,
-    day: 5,
-    title: 'Marshall Plan: America Rebuilds Europe with Dollars! 💰🏗️',
-    description: 'America offers $13 billion to rebuild Europe (and keep it capitalist). Stalin says "nyet" for Eastern Europe. Money talks, and it says "democracy!"',
-    impact: 'Rebuilds Western Europe and creates economic alliance against Soviet Union',
-    relatedFigures: ['harry-truman'],
-    location: { lat: 42.3601, lng: -71.0589 },
-    type: 'economic'
-  },
-  {
-    id: 'berlin-blockade-1948',
-    year: 1948,
-    month: 6,
-    day: 24,
-    title: 'Berlin Blockade: Stalin\'s Big Squeeze! 🚫✈️',
-    description: 'Stalin blocks all land routes to West Berlin, trying to starve it into submission. America responds with massive airlift. "Raisin bombers" save the day!',
-    impact: 'First major Cold War crisis demonstrates Western resolve',
-    relatedFigures: ['joseph-stalin-cold-war', 'harry-truman'],
-    location: { lat: 52.5200, lng: 13.4050 },
-    type: 'military'
-  },
-  {
-    id: 'nato-formation-1949',
-    year: 1949,
-    month: 4,
-    day: 4,
-    title: 'NATO Forms: "An Attack on One is an Attack on All!" 🛡️🤝',
-    description: 'Western allies form NATO to contain Soviet expansion. Article 5 means messing with Belgium means fighting America. Stalin is not amused.',
-    impact: 'Creates permanent Western military alliance against Soviet expansion',
-    relatedFigures: ['harry-truman'],
-    location: { lat: 38.9072, lng: -77.0369 },
-    type: 'military'
-  },
-  {
-    id: 'soviet-atomic-bomb-1949',
-    year: 1949,
-    month: 8,
-    day: 29,
-    title: 'Soviet A-Bomb Test: "We Have It Too!" ☢️🐻',
-    description: 'Soviet Union successfully tests atomic bomb, ending American nuclear monopoly. The arms race officially begins. MAD (Mutually Assured Destruction) is born!',
-    impact: 'Begins nuclear arms race and balance of terror',
-    relatedFigures: ['joseph-stalin-cold-war'],
-    location: { lat: 49.7649, lng: 78.0614 },
-    type: 'military'
-  },
-  {
-    id: 'korean-war-1950',
-    year: 1950,
-    month: 6,
-    day: 25,
-    title: 'Korean War: The Cold War Gets Hot! 🔥⚔️',
-    description: 'North Korea invades South Korea, and suddenly the Cold War isn\'t so cold anymore! UN forces (mostly American) fight Chinese "volunteers." Nobody wins, everyone loses.',
-    impact: 'First hot war of Cold War era, establishes pattern of proxy conflicts',
-    relatedFigures: ['harry-truman'],
-    location: { lat: 37.5665, lng: 126.9780 },
-    type: 'military'
-  },
-  {
-    id: 'stalin-dies-1953',
-    year: 1953,
-    month: 3,
-    day: 5,
-    title: 'Stalin Dies: The Tyrant\'s Final Curtain! 💀👑',
-    description: 'Stalin drops dead (possibly poisoned?), and nobody knows what happens next. Power struggle in Kremlin while the world holds its breath. Change is coming!',
-    impact: 'Opens possibility for Soviet reforms and reduced tensions',
-    relatedFigures: ['joseph-stalin-cold-war'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'political'
-  },
-  {
-    id: 'hungarian-revolution-1956',
-    year: 1956,
-    month: 10,
-    day: 23,
-    title: 'Hungarian Revolution: Freedom Crushed by Tanks! 🏛️💔',
-    description: 'Hungarians revolt against Soviet rule, briefly taste freedom, then get crushed by Red Army tanks. The West watches and does nothing. Cold War reality check!',
-    impact: 'Demonstrates limits of liberation rhetoric and Soviet determination',
-    relatedFigures: ['nikita-khrushchev'],
-    location: { lat: 47.4979, lng: 19.0402 },
-    type: 'political'
-  },
-  {
-    id: 'sputnik-launch-1957',
-    year: 1957,
-    month: 10,
-    day: 4,
-    title: 'Sputnik: "Beep Beep" Goes the Space Race! 🛰️🚀',
-    description: 'Soviet Union launches first artificial satellite, shocking America. If they can put a beach ball in space, they can put a nuke anywhere! Space race begins!',
-    impact: 'Begins space race and demonstrates Soviet technological capability',
-    relatedFigures: ['nikita-khrushchev'],
-    location: { lat: 45.6200, lng: 63.3050 },
-    type: 'technological'
-  },
-  {
-    id: 'u2-incident-1960',
-    year: 1960,
-    month: 5,
-    day: 1,
-    title: 'U-2 Incident: Spy Plane Goes Down! ✈️💥',
-    description: 'Soviet missile shoots down American spy plane over Russia. Eisenhower first denies it, then admits it. Paris Summit collapses. Trust? What trust?',
-    impact: 'Ruins superpower summit and increases mutual suspicion',
-    relatedFigures: ['nikita-khrushchev'],
-    location: { lat: 56.5430, lng: 61.3430 },
-    type: 'political'
-  },
-  {
-    id: 'berlin-wall-built-1961',
-    year: 1961,
-    month: 8,
-    day: 13,
-    title: 'Berlin Wall Built: The Ultimate Room Divider! 🧱💔',
-    description: 'East Germans build wall overnight to stop people escaping to freedom. Berlin becomes symbol of divided world. "Mr. Gorbachev, tear down this wall!" comes later...',
-    impact: 'Physically divides Berlin and symbolizes Cold War division',
-    relatedFigures: ['nikita-khrushchev'],
-    location: { lat: 52.5074, lng: 13.3765 },
-    type: 'political'
-  },
-  {
-    id: 'bay-of-pigs-1961',
-    year: 1961,
-    month: 4,
-    day: 17,
-    title: 'Bay of Pigs: America\'s Epic Fail in Cuba! 🏖️💥',
-    description: 'CIA-trained Cuban exiles try to overthrow Castro and fail spectacularly. JFK learns that inherited plans can be really, really bad ideas.',
-    impact: 'Pushes Cuba firmly into Soviet camp and embarrasses America',
-    relatedFigures: ['john-f-kennedy', 'fidel-castro'],
-    location: { lat: 22.0773, lng: -81.1550 },
-    type: 'military'
-  },
-  {
-    id: 'cuban-missile-crisis-1962',
-    year: 1962,
-    month: 10,
-    day: 14,
-    title: 'Cuban Missile Crisis: 13 Days to Armageddon! 🚀💀',
-    description: 'Soviet missiles in Cuba bring world closest to nuclear war ever. JFK and Khrushchev play ultimate game of chicken. Spoiler: sanity wins, barely!',
-    impact: 'Closest approach to nuclear war, leads to détente efforts',
-    relatedFigures: ['john-f-kennedy', 'nikita-khrushchev', 'fidel-castro'],
-    location: { lat: 22.0773, lng: -81.1550 },
-    type: 'military'
-  },
-  {
-    id: 'vietnam-war-escalation-1965',
-    year: 1965,
-    month: 3,
-    day: 8,
-    title: 'Vietnam Escalation: America Gets Stuck in the Jungle! 🌴💔',
-    description: 'First US combat troops land in Vietnam. What starts as "advisors" becomes America\'s longest war. Containment meets reality in Southeast Asian jungle.',
-    impact: 'Major Cold War proxy conflict that divides American society',
-    relatedFigures: [],
-    location: { lat: 16.0678, lng: 108.2208 },
-    type: 'military'
-  },
-  {
-    id: 'moon-landing-1969',
-    year: 1969,
-    month: 7,
-    day: 20,
-    title: 'Moon Landing: "That\'s One Giant Leap!" 🌙🚀',
-    description: 'America wins the space race! Neil Armstrong plants flag on moon while world watches. Take that, Sputnik! Technology beats ideology in space.',
-    impact: 'America wins space race and demonstrates technological superiority',
-    relatedFigures: ['john-f-kennedy'],
-    location: { lat: 28.5721, lng: -80.6480 },
-    type: 'technological'
-  },
-  {
-    id: 'detente-begins-1972',
-    year: 1972,
-    month: 5,
-    day: 26,
-    title: 'Détente: Nixon and Brezhnev Play Nice! 🤝😊',
-    description: 'Nixon visits Moscow, signs SALT I treaty. Superpowers decide maybe they don\'t need to destroy the world after all. Peaceful coexistence is possible!',
-    impact: 'Begins period of reduced tensions and arms control',
-    relatedFigures: [],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'political'
-  },
-  {
-    id: 'fall-of-saigon-1975',
-    year: 1975,
-    month: 4,
-    day: 30,
-    title: 'Fall of Saigon: America\'s Vietnam Nightmare Ends! 🚁💔',
-    description: 'Last helicopter leaves embassy roof as North Vietnam conquers South. America\'s first major Cold War defeat. Containment has limits.',
-    impact: 'Major blow to American credibility and containment strategy',
-    relatedFigures: [],
-    location: { lat: 10.8231, lng: 106.6297 },
-    type: 'military'
-  },
-  {
-    id: 'reagan-evil-empire-1983',
-    year: 1983,
-    month: 3,
-    day: 8,
-    title: 'Reagan\'s "Evil Empire" Speech: No More Mr. Nice Guy! 👨‍🎬⚔️',
-    description: 'Reagan calls Soviet Union "evil empire" and proposes Star Wars missile defense. Détente is dead, Cold War 2.0 begins! Hollywood meets geopolitics.',
-    impact: 'Escalates Cold War rhetoric and begins massive military buildup',
-    relatedFigures: ['ronald-reagan'],
-    location: { lat: 28.5383, lng: -81.3792 },
-    type: 'political'
-  },
-  {
-    id: 'gorbachev-reforms-1985',
-    year: 1985,
-    month: 3,
-    day: 11,
-    title: 'Gorbachev\'s Reforms: The Soviet Union Tries to Change! 🔨🔄',
-    description: 'New Soviet leader introduces glasnost (openness) and perestroika (restructuring). Tries to save communism, accidentally destroys Soviet Union instead!',
-    impact: 'Begins reforms that ultimately lead to Soviet collapse',
-    relatedFigures: ['mikhail-gorbachev'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'political'
-  },
-  {
-    id: 'reykjavik-summit-1986',
-    year: 1986,
-    month: 10,
-    day: 11,
-    title: 'Reykjavik Summit: Almost Peace, But Not Quite! 🏔️🤝',
-    description: 'Reagan and Gorbachev nearly agree to eliminate all nuclear weapons, but Star Wars program kills the deal. So close to ending nuclear nightmare!',
-    impact: 'Nearly achieves nuclear disarmament but fails over SDI',
-    relatedFigures: ['ronald-reagan', 'mikhail-gorbachev'],
-    location: { lat: 64.1466, lng: -21.9426 },
-    type: 'political'
-  },
-  {
-    id: 'tear-down-wall-1987',
-    year: 1987,
-    month: 6,
-    day: 12,
-    title: 'Reagan: "Tear Down This Wall!" 🧱⚡',
-    description: 'Reagan challenges Gorbachev to destroy Berlin Wall at Brandenburg Gate. Bold words that seemed impossible... until they weren\'t!',
-    impact: 'Symbolic challenge that presages end of divided Berlin',
-    relatedFigures: ['ronald-reagan', 'mikhail-gorbachev'],
-    location: { lat: 52.5163, lng: 13.3777 },
-    type: 'political'
-  },
-  {
-    id: 'berlin-wall-falls-1989',
-    year: 1989,
-    month: 11,
-    day: 9,
-    title: 'Berlin Wall Falls: "Die Mauer ist Weg!" 🧱💥',
-    description: 'East Germans with hammers and pickaxes destroy the symbol of Cold War division! Freedom breaks through concrete. The party lasts for days!',
-    impact: 'Symbolic end of Cold War and beginning of German reunification',
-    relatedFigures: ['mikhail-gorbachev'],
-    location: { lat: 52.5074, lng: 13.3765 },
-    type: 'political'
-  },
-  {
-    id: 'soviet-union-ends-1991',
-    year: 1991,
-    month: 12,
-    day: 25,
-    title: 'Soviet Union Dissolves: "That\'s All Folks!" 🐻💀',
-    description: 'Gorbachev resigns, Soviet flag comes down for last time. The Cold War officially ends not with nuclear war, but with paperwork and a whimper.',
-    impact: 'Ends Cold War with American victory and unipolar world order',
-    relatedFigures: ['mikhail-gorbachev'],
-    location: { lat: 55.7558, lng: 37.6176 },
-    type: 'political'
-  }
-];
-*/
 
 // Alternative Timeline 1: Nuclear War
 const nuclearWarTimeline: Timeline = {

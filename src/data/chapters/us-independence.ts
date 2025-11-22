@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1732,
     died: 1799,
     description: 'Leader of the Continental Army and first President of the United States',
-    image: '/images/washington.jpg'
+    image: '/images/chapters/us-independence/people/george-washington.png'
   },
   {
     id: 'benjamin-franklin',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1706,
     died: 1790,
     description: 'Diplomat who secured French alliance and helped draft the Declaration of Independence',
-    image: '/images/franklin.jpg'
+    image: '/images/chapters/us-independence/people/benjamin-franklin.png'
   },
   {
     id: 'king-george-iii',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1738,
     died: 1820,
     description: 'British monarch during the American Revolution',
-    image: '/images/george-iii.jpg'
+    image: '/images/chapters/us-independence/people/king-george-iii.png'
   },
   {
     id: 'thomas-jefferson',
@@ -36,99 +36,9 @@ const keyFigures: Person[] = [
     born: 1743,
     died: 1826,
     description: 'Third President and primary author of the Declaration of Independence',
-    image: '/images/jefferson.jpg'
+    image: '/images/chapters/us-independence/people/thomas-jefferson.png'
   }
 ];
-
-// Historical events for the main timeline
-/*
-const mainTimelineEvents: HistoricalEvent[] = [
-  {
-    id: 'stamp-act-1765',
-    year: 1765,
-    month: 3,
-    day: 22,
-    title: 'Stamp Act Passed',
-    description: 'British Parliament passes the Stamp Act, requiring stamps on all printed materials in the colonies',
-    impact: 'First direct tax on colonists, sparking widespread resistance',
-    relatedFigures: ['king-george-iii'],
-    location: { lat: 51.5074, lng: -0.1278 },
-    type: 'political'
-  },
-  {
-    id: 'boston-tea-party-1773',
-    year: 1773,
-    month: 12,
-    day: 16,
-    title: 'Boston Tea Party',
-    description: 'Colonists dump British tea into Boston Harbor in protest of the Tea Act',
-    impact: 'Escalated tensions between Britain and the colonies',
-    relatedFigures: [],
-    location: { lat: 42.3601, lng: -71.0589 },
-    type: 'political'
-  },
-  {
-    id: 'lexington-concord-1775',
-    year: 1775,
-    month: 4,
-    day: 19,
-    title: 'Battles of Lexington and Concord',
-    description: 'First military engagements of the American Revolutionary War',
-    impact: 'Marked the beginning of armed conflict between Britain and the colonies',
-    relatedFigures: [],
-    location: { lat: 42.4472, lng: -71.2289 },
-    type: 'military'
-  },
-  {
-    id: 'declaration-independence-1776',
-    year: 1776,
-    month: 7,
-    day: 4,
-    title: 'Declaration of Independence',
-    description: 'Continental Congress adopts the Declaration of Independence',
-    impact: 'Formally declared American independence from Great Britain',
-    relatedFigures: ['thomas-jefferson'],
-    location: { lat: 39.9496, lng: -75.1503 },
-    type: 'political'
-  },
-  {
-    id: 'french-alliance-1778',
-    year: 1778,
-    month: 2,
-    day: 6,
-    title: 'French Alliance',
-    description: 'France formally allies with the United States against Britain',
-    impact: 'Provided crucial military and naval support to the American cause',
-    relatedFigures: ['benjamin-franklin'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  },
-  {
-    id: 'yorktown-1781',
-    year: 1781,
-    month: 10,
-    day: 19,
-    title: 'Siege of Yorktown',
-    description: 'British General Cornwallis surrenders, effectively ending the war',
-    impact: 'Decisive American victory that led to British defeat',
-    relatedFigures: ['george-washington'],
-    location: { lat: 37.2388, lng: -76.5089 },
-    type: 'military'
-  },
-  {
-    id: 'treaty-paris-1783',
-    year: 1783,
-    month: 9,
-    day: 3,
-    title: 'Treaty of Paris',
-    description: 'Treaty officially ends the Revolutionary War and recognizes American independence',
-    impact: 'Established the United States as an independent nation',
-    relatedFigures: ['benjamin-franklin'],
-    location: { lat: 48.8566, lng: 2.3522 },
-    type: 'political'
-  }
-];
-*/
 
 // Alternative Timeline 1: British Victory
 const britishVictoryTimeline: Timeline = {
