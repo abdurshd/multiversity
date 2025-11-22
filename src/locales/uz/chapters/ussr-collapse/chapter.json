@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Sovet Ittifoqining qulashi",
+    "period": "1985-1991",
+    "description": "Superкучning tinch tugashi va uning muqobil tugatilishi",
+    "historical_context": "Sovet Ittifoqining qulashi 20-asrning eng muhim voqealaridan biri edi. Gorbachyovning kommunizmni saqlab qolish uchun mo'ljallangan islohotlari o'rniga SSSRni yo'q qilgan kuchlarni bo'shatib yubordi. Nisbatan tinch tarqalish muqarrar emas edi - bu zo'ravonli bo'lishi yoki butunlay oldini olish mumkin edi.",
+    "divergence_point": "SSSRni saqlab qolishi yoki zo'ravonli qulashga olib kelishi mumkin bo'lgan kech Sovet davridagi muhim qarorlar"
+  },
+  "figures": {
+    "mikhail_gorbachev": {
+      "name": "Mixail Gorbachyov",
+      "role": "Oxirgi Sovet rahbari",
+      "description": "Tizimni saqlab qolishga uringan, ammo oxir-oqibat uning tarqalishini boshqargan islohotchi."
+    },
+    "boris_yeltsin": {
+      "name": "Boris Yeltsin",
+      "role": "Rossiya prezidenti",
+      "description": "Millatchilik kayfiyatidan foydalanib hokimiyatga kelgan va Sovet Ittifoqini tarqatib yuborgan populist."
+    },
+    "august_coup_plotters": {
+      "name": "Avgust to'ntarishi ishtirokchilari",
+      "role": "Qattiq kommunistlar",
+      "description": "Muvaffaqiyatsiz to'ntarishi oldini olmoqchi bo'lgan qulashni tezlashtirgan umidsiz qattiq tarafdorlar."
+    }
+  },
+  "timelines": {
+    "violent_collapse": {
+      "title": "Qizil Terror qaytadi: Zo'ravonlik bilan bosish",
+      "description": "Agar 1991-yil avgustdagi to'ntarish muvaffaqiyatga erishsa va qattiq tarafdorlar mustaqillik harakatlarini zo'ravonlik bilan bosgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Avgust to'ntarishi ishtirokchilari aniqroq harakat qiladi. Yeltsin hibsga olinadi. Harbiy kuch qarshilikni yo'q qilish uchun ishlatiladi.",
+      "events": {
+        "successful_coup_1991": {
+          "title": "Tanklar harakatlanadi",
+          "description": "Bizning tariximizdan farqli o'laroq, to'ntarish rahbarlari qo'shinlarga Rossiya parlamentiga hujum qilishni buyuradilar. Yeltsin qo'lga olinadi. Gorbachyov iste'foga majbur qilinadi.",
+          "impact": "Qattiq kommunistlar hokimiyatga qaytadi. Butun SSSR bo'ylab harbiy holat e'lon qilinadi."
+        },
+        "civil_wars_1992": {
+          "title": "Sovet vorislik urushlari",
+          "description": "Boltiqbo'yi davlatlari harbiy qarshilik ko'rsatadi. Ukraina va Gruziya mustaqillik uchun kurashadi. Shafqatsiz bosish kampaniyalari boshlanadi.",
+          "impact": "SSSR zo'ravonlik bilan parchalanadi. Sobiq Sovet fazosida yuz minglab odamlar fuqarolar urushlarida vafot etadi."
+        },
+        "nuclear_crisis_1994": {
+          "title": "Erkin yadro qurollari",
+          "description": "SSSR parchalanar ekan, yadro qurollari ustidan nazorat noaniq bo'ladi. Tasodifiy uchirish bilan bir nechta yaqin holatlar.",
+          "impact": "Dunyo qulayotgan, urushayotgan davlatlarda yadro qurollarining dahshatli ehtimoli bilan duch keladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Zo'ravonlik bilan bosish fuqarolar urushlarini boshlaydi. SSSR tinchlik emas, qonda tarqaladi.",
+        "long_term": "Sovetdan keyingi davlatlar ko'proq travmalangan va avtoritar. Etnik mojarolar o'nlab yillar davom etadi.",
+        "global_impact": "Zo'ravonli Sovet qulashi butun Yevroosiyo bo'ylab beqarorlik yaratadi. Yadro tarqalishi xavotirlari 1990-yillarda hukmronlik qiladi."
+      },
+      "present_day_status": "Zo'ravonli Sovet qulashi doimiy travma yaratdi. 1990-yillar davomida fuqarolar urushlari davom etdi va bir milliondan ortiq odam halok bo'ldi. Bir nechta yadro qurollari yo'qolgan va ehtimol davlatsiz aktyorlarga sotilgan. Tartibsizlik tufayli Sovetdan keyingi avtoritarizm yanada kuchliroq. Demokratik rivojlanish bir avlod orqaga surildi."
+    },
+    "ussr_survives": {
+      "title": "Isloh qilingan Ittifoq: SSSR omon qoladi",
+      "description": "Agar Gorbachyovning islohotlari demokratik, federal Sovet Ittifoqini yaratishda muvaffaqiyatga erishgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Gorbachyov siyosiy nazoratni saqlab qolgan holda iqtisodiy islohot ustida tezroq harakat qiladi. Avgust to'ntarishining oldini oladi.",
+      "events": {
+        "successful_reforms_1989": {
+          "title": "Ishlagan shok terapiya",
+          "description": "Gorbachyov Xitoy uslubidagi bozor islohotlarini ertaroq amalga oshiradi. Kommunistik partiya nazoratni saqlab qolgan holda iqtisodiy o'sish qaytadi.",
+          "impact": "Turmush darajasi yaxshilanadi. Tizimga qo'llab-quvvatlash oshadi. Mustaqillik harakatlari tezligini yo'qotadi."
+        },
+        "new_union_treaty_1991": {
+          "title": "Yangilangan Federatsiya",
+          "description": "Yangi ittifoq shartnomasi SSSRni respublika avtonomiyasiga ega haqiqiy federatsiyaga aylantiradi. Boltiqbo'yi davlatlari ittifoq doirasida mustaqillikka yaqin bo'ladi.",
+          "impact": "SSSR demokratik federatsiya sifatida omon qoladi. Kommunistik partiya ijtimoiy demokratik partiyaga aylanadi."
+        },
+        "eurasian_union_2000": {
+          "title": "Demokratik superkuch",
+          "description": "Isloh qilingan SSSR Yevropa va Osiyoni bog'lovchi yirik demokratik kuchga aylanadi. Yevropa institutlariga qo'shiladi.",
+          "impact": "Demokratik Sovet Ittifoqi global geosiyosatni butunlay o'zgartiradi. Sovetdan keyingi betartiblik yo'q."
+        }
+      },
+      "consequences": {
+        "short_term": "Iqtisodiy va siyosiy islohotlar muvaffaqiyatga erishadi. SSSR isloh qilingan holatda omon qoladi.",
+        "long_term": "Demokratik Sovet federatsiyasi yirik global kuchga aylanadi. Sovetdan keyingi mojarolar yo'q.",
+        "global_impact": "Isloh qilingan, demokratik SSSR butun Sovuq urushdan keyingi tartibni o'zgartiradi. Ertaroq global hamkorlik."
+      },
+      "present_day_status": "Suveren Sovet Respublikalari Ittifoqi (isloh qilingan SSSR) dunyoning yetakchi demokratiyalari va iqtisodlaridan biri. Bozor sotsializmi sof kommunizm muvaffaqiyatsizlikka uchraganida muvaffaqiyatga erishdi. Tinch transformatsiya boshqa avtoritar davlatlarga ilhom berdi. G'arb bilan munosabatlar hamkorlik asosida. Sovetdan keyingi fazo mojarolari sodir bo'lmadi."
+    },
+    "russian_empire_restored": {
+      "title": "Imperiya tiklanishi: Millatchilar hokimiyati",
+      "description": "Agar Sovet qulashidan demokratlar emas, balki qattiq rossiyalik millatchilar paydo bo'lganida nima bo'lar edi?",
+      "divergence_description": "1993-yilda millatchi harbiy to'ntarish Yeltsinni ag'daradi va avtoritar Rossiya imperiyasini o'rnatadi.",
+      "events": {
+        "nationalist_coup_1993": {
+          "title": "Oktyabr to'ntarishi",
+          "description": "Yeltsinning 1993-yildagi inqirozda g'alaba qozonishi o'rniga, millatchi harbiy zobitlar muvaffaqiyatli to'ntarishni boshlaydilar. Ular avtoritar boshqaruvni o'rnatadilar.",
+          "impact": "Rossiyada demokratiyaning qisqa lahzasi tugaydi. Avtoritar millatchilik kommunizmni almashtiradi."
+        },
+        "imperial_restoration_1995": {
+          "title": "Yangi Rossiya imperiyasi",
+          "description": "Millatchi rejim o'zini Uchinchi Rossiya imperiyasi sifatida qayta nomlaydi. Imperiya ramzlari va ritorikasi qaytadi. Tajovuzkor tashqi siyosat boshlanadi.",
+          "impact": "Rossiya ochiq imperiyalistik va kengaytiruvchi bo'ladi. Sobiq Sovet davlatlari yangilangan bosimga duch keladilar."
+        },
+        "new_cold_war_2000": {
+          "title": "Millatchi asr",
+          "description": "Imperiya Rossiyasi sobiq Sovet hududlarini qaytarib olishga intiladi. Millatchi Rossiya va G'arb o'rtasida yangi sovuq urush paydo bo'ladi.",
+          "impact": "Sovuq urushdan keyingi tinchlik dividendi yo'qoladi. Yevropa yangilangan bo'linish va harbiy tahdidga duch keladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Rossiyada demokratik lahza eziladi. Avtoritar millatchilik hokimiyatga keladi.",
+        "long_term": "Rossiya tajovuzkor millatchi va imperiyalistikka aylanadi. G'arb bilan doimiy keskinlik.",
+        "global_impact": "Tinchlik dividendi yo'q. Davom etayotgan buyuk kuch raqobati. Sobiq Sovet davlatlari doimiy bosim ostida."
+      },
+      "present_day_status": "Rossiya imperiyasi Sovet davridagi ta'sirni tiklashga intilayotgan avtoritar, millatchi davlat bo'lib qolmoqda. Sobiq Sovet respublikalari bilan bir nechta urushlar sodir bo'ldi. G'arb bilan munosabatlar dushman. 1990-yillarning demokratik imkoniyati yo'qotildi. Rossiya izolyatsiya qilingan, ammo harbiy jihatdan kuchli."
+    }
+  }
+}

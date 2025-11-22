@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The Russian Empire",
+    "period": "1721-1917",
+    "description": "Tsarist expansion, modernization struggles, and paths to reform or revolution",
+    "historical_context": "The Russian Empire stretched from Poland to the Pacific, from the Arctic to Central Asia. Peter the Great's westernization, Catherine's enlightened despotism, and the conquest of Central Asian khanates created a vast multiethnic empire. But resistance to reform, serfdom, and autocracy created revolutionary pressures that finally exploded in 1917.",
+    "divergence_point": "Critical decisions in Russian history that could have led to reform instead of revolution"
+  },
+  "figures": {
+    "peter_the_great": {
+      "name": "Peter I (Peter the Great)",
+      "role": "Tsar and Emperor of Russia",
+      "description": "The revolutionary tsar who forced Russia to modernize, building St. Petersburg and creating a European-style empire."
+    },
+    "catherine_the_great": {
+      "name": "Catherine II (Catherine the Great)",
+      "role": "Empress of Russia",
+      "description": "The enlightened despot who expanded the empire massively while maintaining autocracy and serfdom."
+    },
+    "alexander_ii": {
+      "name": "Alexander II",
+      "role": "Tsar-Liberator",
+      "description": "The reforming tsar who freed the serfs but was assassinated before completing reforms."
+    }
+  },
+  "timelines": {
+    "constitutional_reform": {
+      "title": "The Reformist Path: Constitutional Monarchy",
+      "description": "What if Alexander II survived and successfully transformed Russia into a constitutional monarchy?",
+      "divergence_description": "Alexander II's security prevents his assassination in 1881. He completes his reform program, establishing a constitutional monarchy.",
+      "events": {
+        "assassination_prevented_1881": {
+          "title": "The Tsar Lives",
+          "description": "Enhanced security foils the People's Will assassination plot. Alexander II survives to implement his planned constitutional reforms.",
+          "impact": "The reform program continues. A constitution and parliament are established."
+        },
+        "duma_established_1885": {
+          "title": "The First Russian Parliament",
+          "description": "A genuine parliament with real power is created. Representative government begins alongside continued tsarist authority.",
+          "impact": "Russia becomes a constitutional monarchy, balancing tradition with modernization."
+        },
+        "industrial_prosperity_1900": {
+          "title": "The Russian Miracle",
+          "description": "Political stability enables rapid industrialization. Foreign investment floods in. Russia becomes an economic powerhouse.",
+          "impact": "Constitutional Russia rivals Britain and Germany. Revolution is avoided through reform."
+        }
+      },
+      "consequences": {
+        "short_term": "Peaceful reform prevents revolutionary violence. Russia modernizes gradually.",
+        "long_term": "No Bolshevik Revolution. Russia develops as a constitutional monarchy and industrial power.",
+        "global_impact": "No Soviet Union means no Cold War. 20th century politics develop completely differently."
+      },
+      "present_day_status": "The Russian Empire evolved into a constitutional monarchy similar to Britain. Gradual democratization occurred throughout the 20th century. The empire peacefully devolved into a commonwealth of Slavic and Central Asian states. No communist revolution means global politics took a completely different path."
+    },
+    "central_asian_liberation": {
+      "title": "The Silk Road Renascence: Central Asian Independence",
+      "description": "What if the Central Asian khanates successfully resisted Russian conquest?",
+      "divergence_description": "The Bukhara Emirate and Khivan Khanate modernize their armies with Ottoman and Persian help, successfully resisting Russian expansion in the 1860s-1870s.",
+      "events": {
+        "resistance_success_1868": {
+          "title": "The Battle of Samarkand",
+          "description": "Reformed Central Asian armies, equipped with modern rifles and artillery, decisively defeat Russian forces at Samarkand.",
+          "impact": "Russian expansion into Central Asia is halted. The khanates remain independent."
+        },
+        "central_asian_federation_1880": {
+          "title": "The Turkestan Federation",
+          "description": "Bukhara, Khiva, and Kokand unite into a defensive federation. Modernization programs follow the Japanese model.",
+          "impact": "Central Asia remains independent and begins modernizing on its own terms."
+        },
+        "silk_road_revival_1900": {
+          "title": "The New Silk Road",
+          "description": "Independent Central Asia becomes a bridge between Russia, Persia, India, and China. Economic and cultural flowering.",
+          "impact": "Central Asian cities become centers of trade, learning, and Islamic modernism."
+        }
+      },
+      "consequences": {
+        "short_term": "Central Asia avoids Russian colonization and maintains independence.",
+        "long_term": "Independent Central Asian states modernize in the late 19th century, avoiding Soviet control.",
+        "global_impact": "A powerful Islamic modernist region emerges. Different balance of power in Asia. No Soviet Central Asia."
+      },
+      "present_day_status": "The Turkestan Federation is a major regional power, a prosperous democracy with deep Islamic and Turkic cultural roots. Samarkand and Bukhara are world-class cities. The region never experienced communist rule or Soviet-era ecological disasters. Central Asian languages and cultures flourished without Russification."
+    },
+    "total_collapse": {
+      "title": "The Fragmented Empire: Complete Dissolution",
+      "description": "What if Russia lost World War I catastrophically and the empire completely fragmented?",
+      "divergence_description": "Germany wins decisively on the Eastern Front in 1915. The Russian Empire collapses into dozens of independent states.",
+      "events": {
+        "military_disaster_1915": {
+          "title": "The Great Retreat",
+          "description": "German offensives destroy Russian armies. The front collapses. Poland, Ukraine, and Baltic states are occupied.",
+          "impact": "The tsarist government loses all credibility. Regional independence movements explode."
+        },
+        "empire_fragments_1916": {
+          "title": "The Dissolution",
+          "description": "Finland, Poland, Ukraine, Georgia, Armenia, and Central Asian states all declare independence. Russia shrinks to Muscovy.",
+          "impact": "The Russian Empire ceases to exist. Dozens of new nations emerge."
+        },
+        "german_hegemony_1920": {
+          "title": "Mitteleuropa Realized",
+          "description": "Germany dominates Eastern Europe through a network of client states. Russia becomes a weak, isolated rump state.",
+          "impact": "Germany wins World War I. A German-dominated Europe emerges."
+        }
+      },
+      "consequences": {
+        "short_term": "The Russian Empire completely disintegrates. Germany dominates Eastern Europe.",
+        "long_term": "No Soviet Union. No Russian superpower. Germany is the dominant Eurasian power.",
+        "global_impact": "Completely different World War outcomes. No Cold War. Different global order centered on German power."
+      },
+      "present_day_status": "Russia is a mid-sized country similar to France, limited to ethnic Russian lands. Poland, Ukraine, Finland, and the Baltic states gained independence a century ago. Central Asia was never conquered by Russia. Germany remains the dominant European power. World War II never happened as we know it."
+    }
+  }
+}

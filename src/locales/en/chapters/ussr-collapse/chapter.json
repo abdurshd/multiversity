@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The Collapse of the Soviet Union",
+    "period": "1985-1991",
+    "description": "The peaceful end of a superpower and its alternative endings",
+    "historical_context": "The Soviet Union's collapse was one of the most consequential events of the 20th century. Gorbachev's reforms, intended to save communism, instead unleashed forces that destroyed the USSR. The relatively peaceful dissolution was not inevitable - it could have been violent, or prevented entirely.",
+    "divergence_point": "Critical decisions in the late Soviet period that could have preserved the USSR or led to violent collapse"
+  },
+  "figures": {
+    "mikhail_gorbachev": {
+      "name": "Mikhail Gorbachev",
+      "role": "Last Soviet Leader",
+      "description": "The reformer who tried to save the system but ended up presiding over its dissolution."
+    },
+    "boris_yeltsin": {
+      "name": "Boris Yeltsin",
+      "role": "Russian President",
+      "description": "The populist who rode nationalist sentiment to power and dissolved the Soviet Union."
+    },
+    "august_coup_plotters": {
+      "name": "The August Coup Plotters",
+      "role": "Hardline Communists",
+      "description": "The desperate hardliners whose failed coup accelerated the collapse they hoped to prevent."
+    }
+  },
+  "timelines": {
+    "violent_collapse": {
+      "title": "The Red Terror Returns: Violent Suppression",
+      "description": "What if the August 1991 coup succeeded and hardliners violently suppressed independence movements?",
+      "divergence_description": "The August coup plotters act more decisively. Yeltsin is arrested. Military force is used to crush resistance.",
+      "events": {
+        "successful_coup_1991": {
+          "title": "The Tanks Roll",
+          "description": "Unlike our timeline, coup leaders order troops to storm the Russian Parliament. Yeltsin is captured. Gorbachev is forced to resign.",
+          "impact": "Hardline communists return to power. Martial law is declared across the USSR."
+        },
+        "civil_wars_1992": {
+          "title": "The Wars of Soviet Succession",
+          "description": "Baltic states resist militarily. Ukraine and Georgia fight for independence. Brutal suppression campaigns begin.",
+          "impact": "The USSR fragments violently. Hundreds of thousands die in civil wars across former Soviet space."
+        },
+        "nuclear_crisis_1994": {
+          "title": "The Loose Nukes",
+          "description": "As the USSR fractures, control over nuclear weapons becomes unclear. Several close calls with accidental launches.",
+          "impact": "The world faces the terrifying prospect of nuclear weapons in collapsing, warring states."
+        }
+      },
+      "consequences": {
+        "short_term": "Violent suppression triggers civil wars. The USSR disintegrates in blood rather than peace.",
+        "long_term": "Post-Soviet states are more traumatized and authoritarian. Ethnic conflicts persist for decades.",
+        "global_impact": "Violent Soviet collapse creates instability across Eurasia. Nuclear proliferation concerns dominate 1990s."
+      },
+      "present_day_status": "The violent Soviet collapse created lasting trauma. Civil wars raged through the 1990s, killing over a million. Several nuclear weapons were lost and possibly sold to rogue states. Post-Soviet authoritarianism is even stronger due to the chaos. Democratic development was set back a generation."
+    },
+    "ussr_survives": {
+      "title": "The Reformed Union: USSR Survives",
+      "description": "What if Gorbachev's reforms succeeded in creating a democratic, federal Soviet Union?",
+      "divergence_description": "Gorbachev moves faster on economic reform while maintaining political control. The August coup is prevented.",
+      "events": {
+        "successful_reforms_1989": {
+          "title": "Shock Therapy That Works",
+          "description": "Gorbachev implements Chinese-style market reforms earlier. Economic growth returns while the Communist Party maintains control.",
+          "impact": "Living standards improve. Support for the system increases. Independence movements lose momentum."
+        },
+        "new_union_treaty_1991": {
+          "title": "The Renewed Federation",
+          "description": "A new union treaty transforms the USSR into a genuine federation with republican autonomy. Baltic states gain near-independence within the union.",
+          "impact": "The USSR survives as a democratic federation. The Communist Party evolves into a social democratic party."
+        },
+        "eurasian_union_2000": {
+          "title": "The Democratic Superpower",
+          "description": "The reformed USSR becomes a major democratic power, bridging Europe and Asia. It joins European institutions.",
+          "impact": "A democratic Soviet Union changes global geopolitics entirely. No post-Soviet chaos."
+        }
+      },
+      "consequences": {
+        "short_term": "Economic and political reforms succeed. The USSR survives in reformed state.",
+        "long_term": "Democratic Soviet federation becomes a major global power. No post-Soviet conflicts.",
+        "global_impact": "A reformed, democratic USSR changes the entire post-Cold War order. Earlier global cooperation."
+      },
+      "present_day_status": "The Union of Sovereign Soviet Republics (reformed USSR) is one of the world's leading democracies and economies. Market socialism succeeded where pure communism failed. The peaceful transformation inspired other authoritarian states. Relations with the West are cooperative. No post-Soviet space conflicts occurred."
+    },
+    "russian_empire_restored": {
+      "title": "The Imperial Restoration: Nationalist Takeover",
+      "description": "What if hardline Russian nationalists rather than democrats emerged from the Soviet collapse?",
+      "divergence_description": "A nationalist military coup in 1993 overthrows Yeltsin and establishes authoritarian Russian Empire.",
+      "events": {
+        "nationalist_coup_1993": {
+          "title": "The October Putsch",
+          "description": "Instead of Yeltsin prevailing in the 1993 crisis, nationalist military officers launch a successful coup. They establish authoritarian rule.",
+          "impact": "Democracy's brief moment in Russia ends. Authoritarian nationalism replaces communism."
+        },
+        "imperial_restoration_1995": {
+          "title": "The New Russian Empire",
+          "description": "The nationalist regime restyles itself as the Third Russian Empire. Imperial symbols and rhetoric return. Aggressive foreign policy begins.",
+          "impact": "Russia becomes explicitly imperialist and expansionist. Former Soviet states face renewed pressure."
+        },
+        "new_cold_war_2000": {
+          "title": "The Nationalist Century",
+          "description": "Imperial Russia seeks to reclaim former Soviet territories. A new cold war emerges between nationalist Russia and the West.",
+          "impact": "The post-Cold War peace dividend is lost. Europe faces renewed division and military threat."
+        }
+      },
+      "consequences": {
+        "short_term": "Democratic moment in Russia is crushed. Authoritarian nationalism takes power.",
+        "long_term": "Russia becomes aggressively nationalist and imperialist. Permanent tension with the West.",
+        "global_impact": "No peace dividend. Continued great power rivalry. Former Soviet states face constant pressure."
+      },
+      "present_day_status": "The Russian Empire remains an authoritarian, nationalist state seeking to restore Soviet-era influence. Multiple wars with former Soviet republics occurred. Relations with the West are hostile. The democratic opportunity of the 1990s was lost. Russia is isolated but militarily strong."
+    }
+  }
+}

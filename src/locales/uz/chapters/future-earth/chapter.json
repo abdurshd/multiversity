@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Kelajak Yer",
+    "period": "2100+",
+    "description": "Insoniyat va sayyora uchun uzoq muddatli stsenariylar",
+    "historical_context": "21-asrda qabul qilingan qarorlar ming yillar davomida aks-sado beradi. Iqlim o'zgarishi, texnologik rivojlanish, ijtimoiy evolyutsiya va ekzistensial xavflar insoniyatning gullash, kamaytirilgan holda omon qolish yoki butunlay yo'q bo'lib ketishini belgilaydi. Kelajak yozilmagan - bu bugun qabul qilingan tanlovlarga bog'liq.",
+    "divergence_point": "Insoniyat radikal ravishda boshqacha uzoq muddatli kelajaklarga olib kelishi mumkin bo'lgan muhim yo'llar"
+  },
+  "figures": {
+    "future_generations": {
+      "name": "Bizning avlodlarimiz",
+      "role": "Merosxo'rlar",
+      "description": "Yaxshilik yoki yomonlik uchun bizning tanlovlarimiz oqibatlari bilan yashaydigan milliardlar."
+    },
+    "ai_systems": {
+      "name": "Sun'iy onglar",
+      "role": "Hamkorlar yoki vorislar",
+      "description": "Insoniyat bilan hamkorlik qilishi, undan oshib ketishi yoki uni almashtirishi mumkin bo'lgan sun'iy intellektlar."
+    },
+    "earth_itself": {
+      "name": "Tirik sayyora",
+      "role": "Asos",
+      "description": "Bizni saqlab qoluvchi biosfera, chidamli, ammo bizning harakatlarimizga zaif."
+    }
+  },
+  "timelines": {
+    "climate_catastrophe": {
+      "title": "Kuygan dunyo: Iqlim falokatı",
+      "description": "Agar iqlim o'zgarishi nazorat qilinmasdan davom etsa va deyarli yashash mumkin bo'lgan sayyorani yaratsa nima bo'lar edi?",
+      "divergence_description": "Iqlim harakati muvaffaqiyatsiz bo'ladi. Burilish nuqtalari kaskad. Yer iqlim tizimi yangi, dushman muvozanatga o'tadi.",
+      "events": {
+        "tipping_cascade_2050": {
+          "title": "Buyuk parchalanish",
+          "description": "Bir nechta iqlim burilish nuqtalaridan o'tiladi: Arktika muzi yo'q, Amazon yomg'ir o'rmoni quladi, permafrost eriydi. Qayta aloqa tsikllari isishni tezlashtiradi.",
+          "impact": "Global o'rtacha harorat sanoatdan oldingi davrdan 5°C yuqori ko'tariladi. Ob-havo ekstremal va oldindan aytib bo'lmaydigan bo'ladi."
+        },
+        "civilization_retreat_2100": {
+          "title": "Buyuk migratsiya",
+          "description": "Ekvatorial hududlar yashash uchun yaroqsiz bo'ladi. Sohil shaharlari tashlab ketiladi. Milliardlab odamlar qisqarib borayotgan yashash mumkin bo'lgan zonalarga ko'chishga harakat qiladi.",
+          "impact": "Tsivilizatsiya qisqaradi. Resurslar uchun urushlar. Aholi keskin kamayadi. Texnologiya orqaga ketadi."
+        },
+        "remnant_humanity_2200": {
+          "title": "Omon qolganlar",
+          "description": "Inson aholisi 1 milliarddan kam bo'ldi, qutb hududlari va baland joylarda to'plangan. Mustahkamlangan aholi punktlarida yashaydi.",
+          "impact": "Insoniyat omon qoladi, ammo tsivilizatsiya quladi. Ko'p texnologiya va bilim yo'qolgan. Yangi qorong'u asr."
+        }
+      },
+      "consequences": {
+        "short_term": "Halokatli iqlim o'zgarishi tsivilizatsiyani buzadi. Ommaviy migratsiya va mojaro.",
+        "long_term": "Aholi qulashi. Texnologiya va bilimning yo'qolishi. Tiklanishdan oldin asrlar davom etadigan qorong'u asr.",
+        "global_impact": "Yer yashash mumkin, ammo dushman bo'lib qoladi. Inson potentsiali keskin kamayadi. Tiklanish ming yillar olishi mumkin."
+      },
+      "present_day_status": "2200-yilga kelib, Yer yangi, issiqroq muvozanatda barqarorlashdi. Inson aholisi taxminan 800 million, asosan Kanada, Rossiya, Antarktida va tog' hududlarida. Texnologiya taxminan 19-asr darajasiga qaytdi. Okean kislotalangan va asosan o'lik. Sobiq buyuk shaharlar suv bosgan va vayron bo'lgan. Tiklanish ko'p asrlar oladi."
+    },
+    "post_human": {
+      "title": "Transsendentsiya: Insоndan keyingi kelajak",
+      "description": "Agar insoniyat biologik shakldan butunlay yangi narsaga aylanib rivojlansa nima bo'lar edi?",
+      "divergence_description": "Biotexnologiya va AI birlashadi. Odamlar o'zlarini tanib bo'lmas darajada yaxshilashadi. Biologik va sun'iy o'rtasidagi chegara loyqalashadi va yo'qoladi.",
+      "events": {
+        "enhancement_cascade_2060": {
+          "title": "Yangilanish",
+          "description": "Genetik muhandislik, neyron implantlari va AI integratsiyasi oddiy holga aylanadi. Yaxshilangan odamlar bazaviy darajadan ancha yuqori qobiliyatlarga ega.",
+          "impact": "Insoniyat bazaviy odamlar va turli yaxshilangan kichik turlarga bo'linishni boshlaydi."
+        },
+        "digital_consciousness_2100": {
+          "title": "Yuklash",
+          "description": "Ongni yuklash mumkin bo'ladi. Millionlab odamlar o'z onglarini raqamli substratga o'tkazishni tanlaydi. Jismoniy tanalar ixtiyoriy bo'ladi.",
+          "impact": "Insoniyatning tabiati asosiy ravishda o'zgaradi. Raqamli onglar o'zlarini nusxalash, birlashtirish va o'zgartirish mumkin."
+        },
+        "dyson_swarm_2200": {
+          "title": "Yulduz tsivilizatsiyasi",
+          "description": "Biologiya bilan cheklanmagan insоndan keyingi onglar Quyosh atrofida Dyson to'plamini qurishni boshlaydilar. Yer milliardlab yashash joylari orasida faqat bitta kichik joy.",
+          "impact": "Insoniyatning avlodlari tanib bo'lmaydigan narsaga aylandi. Ular quyosh tizimi bo'ylab hisoblash substratida yashaydilar."
+        }
+      },
+      "consequences": {
+        "short_term": "Inson yaxshilanishi tezlashadi. An'anaviy insoniyat yo'qola boshlaydi.",
+        "long_term": "Insоndan keyingi tsivilizatsiya quyosh tizimi va ehtimol undan tashqariga tarqaladi.",
+        "global_impact": "Insoniyat o'zining biologik kelib chiqishidan oshadi. Bu omon qolish yoki yo'q bo'lib ketish sifatida hisoblanishi falsafiy."
+      },
+      "present_day_status": "2200-yilga kelib, bazaviy biologik odamlar kichik ozchilik bo'lib, himoya qilinadigan muhitlarda yashaydilar. Insoniyat avlodlarining ko'pchiligi quyosh energiyasi bilan quvvatlanadigan keng hisoblash massivlarida raqamli onglar sifatida mavjud. Ular boshqa yulduz tizimlariga urug' kemalarini yuborishni boshlаdilar. Ular bizga nisbatan biz bir hujayrali organizmlarga nisbatan - bir xil nasldan deyarli tanib bo'lmaydigan."
+    },
+    "sustainable_prosperity": {
+      "title": "Bog' dunyo: Barqaror farovonlik",
+      "description": "Agar insoniyat haqiqiy barqarorlikka erishsa va biosfera bilan uyg'unlikda yashasa nima bo'lar edi?",
+      "divergence_description": "Toza energiya inqilobi muvaffaqiyatga erishadi. Aholi barqarorlashadi. Texnologiya atrof-muhitni vayron qilmasdan farovonlikka imkon beradi.",
+      "events": {
+        "green_transition_2050": {
+          "title": "Buyuk shifolanish",
+          "description": "Toza energiya qazilma yoqilg'idan arzonroq bo'ladi. Uglerodni ushlash isishni teskari o'zgartiradi. Ekotizimlar tiklanishni boshlaydi.",
+          "impact": "Iqlim barqarorlashtiriladi. Biologik xilma-xillik yo'qolishi to'xtatiladi va teskari aylantiriladi. Havo va suv toza bo'ladi."
+        },
+        "post_scarcity_ecology_2100": {
+          "title": "Muvozanatli tsivilizatsiya",
+          "description": "Ilg'or texnologiya ekologik chegaralarni hurmat qilgan holda mo'lchilikni ta'minlaydi. Aholi qulay va barqaror yashayotgan 10 milliardda barqarorlashadi.",
+          "impact": "Insoniyat bir vaqtlar imkonsiz ko'ringan narsaga erishadi: farovonlik, barqarorlik va ekologik salomatlik birga."
+        },
+        "planetary_garden_2200": {
+          "title": "Tirik dunyo",
+          "description": "Yer boshqariladigan bog'ga aylandi - yovvoyi tabiat barqaror inson yashash joyi bilan birga gullaydi. Texnologiya ko'rinmas, tabiat bilan birlashtirilgan.",
+          "impact": "Millionlab yillar davom etishi mumkin bo'lgan barqaror, farovon, ekologik jihatdan boy tsivilizatsiya."
+        }
+      },
+      "consequences": {
+        "short_term": "Barqarorlikka muvaffaqiyatli o'tish. Iqtisodiy farovonlik atrof-muhitni tiklash bilan davom etadi.",
+        "long_term": "Biosfera bilan muvozanatda barqaror, barqaror tsivilizatsiya.",
+        "global_impact": "Ehtimol eng yaxshi realistik natija. Farovonlik, ekologiya va insoniyat cheksiz birga mavjud."
+      },
+      "present_day_status": "2200-yilga kelib, Yer barqaror farovonlikda yashovchi 10 milliard odamga ega. Shaharlar yashil va tabiat bilan birlashtirilgan. Yovvoyi tabiat sog'lom holatga tikланди. Toza energiya hamma narsani quvvatlantiradi. Texnologiya rivojlandi, ammo ekologiya bilan uyg'unlikda. Madaniyat gullab-yashaydi. Koinotni mustamlaka qilish boshlandi, ammo Yer gavhar bo'lib qoladi. Bu ajdodlarimiz bizning qurishimizni umid qilgan kelajak."
+    }
+  }
+}

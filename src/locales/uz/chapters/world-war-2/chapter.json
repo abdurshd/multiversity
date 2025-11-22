@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "Ikkinchi jahon urushi",
+    "period": "1939-1945",
+    "description": "Insoniyat tarixidagi eng halokatli mojaro va uning muqobil natijalari",
+    "historical_context": "Ikkinchi jahon urushi 70 milliondan ortiq odamni o'ldirdi, imperiyalarni vayron qildi, superкuchларни yaratdi va insoniyatning texnologiya va ommaviy zo'ravonlik bilan munosabatini abadiy o'zgartirdi. Urush bir nechta muhim nuqtalarda juda boshqacha tugashi mumkin edi, ularning har biri radikal ravishda boshqacha zamonaviy dunyolarga olib keladi.",
+    "divergence_point": "Urushning natijasi va urushdan keyingi tartibni o'zgartirishi mumkin bo'lgan muhim qarorlar va janglar"
+  },
+  "figures": {
+    "adolf_hitler": {
+      "name": "Adolf Gitler",
+      "role": "Germaniya Fyureri",
+      "description": "Irqiy mafkurasi va hududiy ambitsiyalari tarixdagi eng halokatli urushni qo'zg'atgan diktator."
+    },
+    "winston_churchill": {
+      "name": "Uinston Cherchill",
+      "role": "Britaniya bosh vaziri",
+      "description": "Taslim bo'lishdan bosh tortishi Britaniyani eng qorong'u soatida kurashda saqlab qolgan buldog."
+    },
+    "joseph_stalin": {
+      "name": "Iosif Stalin",
+      "role": "Sovet rahbari",
+      "description": "Millati natsist tajovuzining asosiy yukini ko'targan va superkuch sifatida paydo bo'lgan shafqatsiz diktator."
+    },
+    "franklin_roosevelt": {
+      "name": "Franklin Ruzvelt",
+      "role": "AQSH prezidenti",
+      "description": "Amerikani izolyatsiyadan g'alabaga olib borgan va urushdan keyingi xalqaro tartibni loyihalashtirgan prezident."
+    }
+  },
+  "timelines": {
+    "axis_victory": {
+      "title": "Qorong'u g'alaba: O'q Kuchlari g'alabasi",
+      "description": "Agar Germaniya Sovet Ittifoqini mag'lub etgan va Britaniya tinchlik so'ragan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Barbarossa operatsiyasi muvaffaqiyatga erishadi. Moskva 1941-yilda qulaydi. Britaniya tinchlik muzokaralariga kirishadi. Amerika neytral qoladi.",
+      "events": {
+        "barbarossa_succeeds_1941": {
+          "title": "Moskvaning qulashi",
+          "description": "Germaniya kuchlari qishdan oldin Moskvaga yetadi. Stalin o'ldiriladi. Sovet Ittifoqi betartiblikka parchalanadi.",
+          "impact": "Natsistik Germaniya Atlantikadan Uralgacha bo'lgan Yevropani boshqaradi. Britaniya tinchlik shartlarini qabul qiladi."
+        },
+        "fortress_america_1943": {
+          "title": "Yarim sharni himoya qilish",
+          "description": "Yevropaga aralasha olmaydigan Amerika G'arbiy yarim sharni himoya qilishga e'tibor qaratadi. Natsistik Yevropa va Demokratik Amerika o'rtasida sovuq urush boshlanadi.",
+          "impact": "Dunyo natsistik hukmronlik va Amerika qarshiligi o'rtasida bo'linadi."
+        },
+        "perpetual_cold_war_1950": {
+          "title": "Uzoq qorong'i kurash",
+          "description": "Natsistik Germaniya va Qo'shma Shtatlar sovuq urushda to'qnash keladi. Lotin Amerikasi, Afrika va Osiyoda proksi mojarolar avj oladi.",
+          "impact": "Demokratiya faqat Amerikada omon qoladi. Insoniyatning ko'pchiligi totalitar hukmronlik ostida yashaydi."
+        }
+      },
+      "consequences": {
+        "short_term": "Natsistik Germaniya Yevroosiyo ustida hukmronlik qiladi. Xolokost yakunlanadi. O'nlab millionlar qul qilinadi.",
+        "long_term": "Natsistik Yevropa va Demokratik Amerika o'rtasidagi sovuq urush 20-asr oxirini belgilaydi.",
+        "global_impact": "Inson huquqlari avlodlarga orqaga suriladi. Demokratiya omon qoladi, ammo zaiflashgan, izolyatsiya qilingan shaklda."
+      },
+      "present_day_status": "Buyuk Germaniya Reyxi 1980-yillarda ichki ziddiyatlar, genotsiddan demografik inqirozlar va iqtisodiy turg'unlikdan quladi. Ozod qilish zo'ravon va tartibsiz edi. Yevropa hali ham natsistik hukmronlik merosi bilan kurashmoqda. Amerika rahbarligidagi demokratiya faqat 1990-yillarda global miqyosda tarqaldi."
+    },
+    "early_allied_victory": {
+      "title": "Qal'a Evropa hech qachon qurilmadi: Erta g'alaba",
+      "description": "Agar D-Day 1943-yilda sodir bo'lgan va Germaniya V-qurollarni ishlab chiqishdan oldin mag'lub bo'lgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Ittifoqchilar 1943-yilda Fransiyaga bostirib kiradi. Germaniya V-2 raketalari va reaktiv samolyotlar qo'llanilgunga qadar mag'lub bo'ladi.",
+      "events": {
+        "dday_1943": {
+          "title": "Sledgehammer operatsiyasi",
+          "description": "Amerika ikkilanishiga qarshi, Cherchill Ruzvel'tni 1943-yilda Fransiyaga bostirib kirishga ko'ndiradi. Bosqinchilik muvaffaqiyatga erishadi.",
+          "impact": "Germaniya bir yil oldinroq ikki frontli urushda kurashadi. Vermаxt bosib olinadi."
+        },
+        "germany_defeated_1944": {
+          "title": "Shartsiz taslim bo'lish",
+          "description": "Germaniya 1944-yil o'rtalarida taslim bo'ladi. Millionlab hayotlar saqlanadi. Xolokost to'xtatiladi va yuz minglab odamlar saqlab qolinadi.",
+          "impact": "Yevropaning vayronasі kamayadi. Atom bombasi hech qachon ishlatilmaydi. Sovetlarning Yevropaga yurishi cheklangan."
+        },
+        "democratic_eastern_europe_1945": {
+          "title": "Erkin saylovlar",
+          "description": "G'arbiy kuchlar Sharqiy Yevropaning ko'proq qismini ozod qilishi bilan erkin saylovlar o'tkaziladi. Polsha, Chexoslovakiya va Vengriya demokratiyaga aylanadi.",
+          "impact": "Temir parda yo'q. Sovuq urush yo'q. Demokratik Yevropa 1950-yilga qadar birlashadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Urush bir yil oldinroq tugaydi. Millionlab hayotlar saqlanadi. Sharqiy Yevropaning kamroq Sovet ishg'oli.",
+        "long_term": "Yevropaning Sovuq urush bo'linishi yo'q. Ertaroq Yevropa integratsiyasi. Tezroq urushdan keyingi tiklanish.",
+        "global_impact": "Sovuq urushsiz, dekolonizatsiya kamroq zo'ravonli. Ertaroq global hamkorlik va rivojlanish."
+      },
+      "present_day_status": "Yevropa 1950-yilga qadar demokratik tarzda birlashdi. Sovuq urush yo'qligi resurslarning qurol poygasi o'rniga rivojlanishga ketishini anglatdi. Koinotni o'rganish va ilmiy taraqqiyot tezlashdi. 20-asr dahshatli emas, farovon bo'ldi. Sovet Ittifoqi 1960-yillarda tinch yo'l bilan demokratlashdi."
+    },
+    "negotiated_peace_1943": {
+      "title": "Murosa tinchlik: 1943 kelishuvi",
+      "description": "Agar Gitlerga qarshi to'ntarish muvaffaqiyatga erishgan va Germaniya tinchlik muzokaralarini olib borgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "1944-yil iyuldagi fitna ertaroq, 1943-yilda muvaffaqiyatga erishadi. Germaniya generallari Gitlerni ag'daradilar va sulh so'raydilar.",
+      "events": {
+        "successful_coup_1943": {
+          "title": "Valkiriya operatsiyasi muvaffaqiyatga erishadi",
+          "description": "Natsistlarga qarshi zobitlar Gitler va natsist rahbarlarni muvaffaqiyatli yo'q qiladilar. Harbiy hukumat tinchlik so'raydi.",
+          "impact": "Urush shartsiz taslim bo'lishsiz tugaydi. Germaniya 1939 chegaralariga chekinadi."
+        },
+        "partial_justice_1944": {
+          "title": "To'liq bo'lmagan hisob",
+          "description": "Ba'zi natsist rahbarlar sudlanadilar, ammo ko'pчилigi adolatdan qochadi. Xolokostning to'liq darajasi yashiriladi. Germaniya ishg'oldan qochadi.",
+          "impact": "Adolat to'liq emas. Germaniyada demokratik islohot sekinroq va sayozroq."
+        },
+        "cold_war_with_germany_1950": {
+          "title": "Bezovta tinchlik",
+          "description": "Germaniya qisman isloh qilingan, ammo avtoritar bo'lib qoladi. Uch tomonlama sovuq urush rivojlanadi: SSSR, Germaniya va G'arb.",
+          "impact": "Urushdan keyingi tartib murakkabroq va beqarorroq. Germaniya demokratiya va diktatura o'rtasidagi kulrang zonada qoladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Urush 1943-44-yillarda muzokara orqali tugaydi. Germaniya ishg'ol va bo'linishdan qochadi.",
+        "long_term": "To'liq bo'lmagan denatsifikatsiya. Germaniya 1960-yillarga qadar qisman avtoritar bo'lib qoladi.",
+        "global_impact": "Noaniq natija aniq axloqiy saboqlarning oldini oladi. Sovuq urush uch tomonlama va murakkabroq."
+      },
+      "present_day_status": "Muzokara tinchlik ba'zi natsistlarning adolatdan qochishiga imkon berdi va Germaniyaning to'liq demokratik transformatsiyasiga to'sqinlik qildi. Mamlakat faqat 1970-yillarda to'liq demokratlashdi. Xolokost bilan to'liq bo'lmagan hisob takrorlanuvchi tarixiy bahs-munozaralarga olib keldi. Yevropaning urushdan keyingi integratsiyasi sekinroq va qiyinroq bo'ldi."
+    }
+  }
+}

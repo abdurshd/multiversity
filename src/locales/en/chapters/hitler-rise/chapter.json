@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Hitler's Rise to Power",
+    "period": "1919-1945",
+    "description": "The Nazi seizure of power and World War II's alternative paths",
+    "historical_context": "Adolf Hitler's rise from obscure agitator to dictator of Germany led directly to history's most destructive war and the Holocaust. The Nazi regime's twelve-year existence killed tens of millions and reshaped the world. Yet Hitler's rise was not inevitable - several inflection points could have prevented the catastrophe.",
+    "divergence_point": "Critical moments when Hitler's rise could have been stopped or World War II prevented"
+  },
+  "figures": {
+    "adolf_hitler": {
+      "name": "Adolf Hitler",
+      "role": "Nazi Party Leader",
+      "description": "The Austrian corporal whose demagogic gifts and apocalyptic vision led Germany and the world to ruin."
+    },
+    "paul_von_hindenburg": {
+      "name": "Paul von Hindenburg",
+      "role": "President of Germany",
+      "description": "The aging Field Marshal whose decision to appoint Hitler as Chancellor opened the gates to hell."
+    },
+    "winston_churchill": {
+      "name": "Winston Churchill",
+      "role": "British Prime Minister",
+      "description": "The prophetic voice who warned against appeasement and led Britain through its darkest hour."
+    }
+  },
+  "timelines": {
+    "nazi_germany_defeated": {
+      "title": "The Beer Hall End: Early Nazi Defeat",
+      "description": "What if Hitler died in the Beer Hall Putsch of 1923?",
+      "divergence_description": "Police fire more accurately during the Beer Hall Putsch. Hitler is killed alongside other Nazi leaders.",
+      "events": {
+        "beer_hall_death_1923": {
+          "title": "The End at Feldherrnhalle",
+          "description": "Police bullets find Hitler in the chaos of the failed putsch. The Nazi leader dies in the Munich streets.",
+          "impact": "The Nazi Party collapses without its charismatic leader. Germany's far-right remains fragmented."
+        },
+        "weimar_survives_1930": {
+          "title": "Democracy Endures",
+          "description": "Without Hitler, the Nazi Party never becomes a mass movement. Other far-right parties are too divided to seize power.",
+          "impact": "Weimar democracy survives the Depression. Germany remains democratic through the 1930s."
+        },
+        "no_world_war_1939": {
+          "title": "Peace in Our Time",
+          "description": "Democratic Germany has no territorial ambitions. No World War II in Europe. The Holocaust never happens.",
+          "impact": "Millions of lives saved. European Jews survive. Completely different 20th century."
+        }
+      },
+      "consequences": {
+        "short_term": "Nazi movement dies with Hitler. Weimar democracy stabilizes.",
+        "long_term": "No World War II in Europe. No Holocaust. Democratic Germany develops peacefully.",
+        "global_impact": "Perhaps 50-70 million lives saved. Jewish communities of Europe survive. No Cold War division of Europe."
+      },
+      "present_day_status": "Germany remained a democracy throughout the 20th century. No World War II means European integration happened peacefully and much earlier. The Holocaust never occurred - European Jewish culture flourished. The Soviet Union fell in the 1960s without the boost from defeating Nazi Germany."
+    },
+    "appeasement_succeeds": {
+      "title": "The Peaceful Reich: Appeasement Works",
+      "description": "What if Britain and France granted all of Hitler's demands and he was satisfied?",
+      "divergence_description": "Hitler accepts the Munich Agreement as final. Germany gets the Sudetenland but seeks no further territorial expansion.",
+      "events": {
+        "munich_final_1938": {
+          "title": "Hitler's Satisfaction",
+          "description": "Hitler genuinely accepts the Munich settlement. German territorial ambitions are limited to uniting ethnic Germans.",
+          "impact": "War is averted. Europe accepts German hegemony over Central Europe."
+        },
+        "german_europe_1945": {
+          "title": "The German Hegemony",
+          "description": "Germany dominates Europe economically and politically but through influence rather than conquest. France and Britain maintain independence.",
+          "impact": "Nazi Germany becomes the dominant European power without a major war."
+        },
+        "cold_peace_1950": {
+          "title": "The Nazi State Endures",
+          "description": "The Third Reich survives into the postwar era. The Holocaust occurs but is hidden from the world. A cold war between Nazi Germany and the USSR.",
+          "impact": "The world is forced to coexist with Nazi Germany as a permanent fixture."
+        }
+      },
+      "consequences": {
+        "short_term": "World War II is avoided through appeasement. Nazi Germany dominates Central Europe.",
+        "long_term": "Nazi regime endures as a European power. The Holocaust still happens but slower, more hidden.",
+        "global_impact": "The world accepts fascist Germany. Different Cold War between Nazis and Soviets. Democracy's credibility is damaged by coexistence with evil."
+      },
+      "present_day_status": "Nazi Germany evolved into an authoritarian but non-expansionist state, similar to Franco's Spain. It finally democratized in the 1980s after Hitler's death. The Holocaust's full extent only became known during the transition, causing immense historical trauma. European integration was delayed by decades."
+    },
+    "nazi_victory": {
+      "title": "The Thousand Year Reich: Nazi Victory",
+      "description": "What if Germany won World War II by defeating the Soviet Union?",
+      "divergence_description": "Operation Barbarossa succeeds. The Soviet Union collapses in 1942. Britain sues for peace.",
+      "events": {
+        "moscow_falls_1942": {
+          "title": "The Swastika Over the Kremlin",
+          "description": "German forces capture Moscow. Stalin is killed. The Soviet Union disintegrates into chaos.",
+          "impact": "Nazi Germany controls Europe from the Atlantic to the Urals."
+        },
+        "holocaust_completed_1945": {
+          "title": "The Final Solution Completed",
+          "description": "With no opposition, the Nazis complete the Holocaust. European Jewry is almost entirely annihilated. Slavic populations face mass enslavement and deportation.",
+          "impact": "The greatest crime in human history is completed. Tens of millions die in the camps and through starvation."
+        },
+        "german_world_order_1960": {
+          "title": "The New Dark Age",
+          "description": "Nazi racial ideology governs half the world. A cold war exists between Nazi Europe and America.",
+          "impact": "Democracy survives only in the Americas and parts of Asia. Most of the world lives under fascist tyranny."
+        }
+      },
+      "consequences": {
+        "short_term": "Nazi Germany wins World War II and dominates Eurasia.",
+        "long_term": "The Holocaust is completed. Millions enslaved. Fascism dominates much of the world.",
+        "global_impact": "Human rights and democracy survive in greatly weakened form. The world is split between fascist and democratic blocs."
+      },
+      "present_day_status": "The Greater Germanic Reich began collapsing in the 1970s from internal contradictions. Slave revolts, economic crisis, and succession struggles fragmented it. Europe finally liberated itself in the 1990s. The trauma of Nazi rule still defines European politics. The demographic catastrophe - tens of millions murdered - permanently altered Europe's cultural landscape."
+    }
+  }
+}

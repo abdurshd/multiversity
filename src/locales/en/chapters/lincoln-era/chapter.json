@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The Lincoln Era",
+    "period": "1860-1865",
+    "description": "Civil War, emancipation, and the paths to reunion or permanent division",
+    "historical_context": "Abraham Lincoln's presidency coincided with America's greatest crisis. The Civil War tested whether a nation conceived in liberty could endure. Lincoln's assassination at the moment of victory left Reconstruction incomplete and the struggle for racial justice unfinished.",
+    "divergence_point": "Critical decisions during the Civil War and Reconstruction that could have changed America's path"
+  },
+  "figures": {
+    "abraham_lincoln": {
+      "name": "Abraham Lincoln",
+      "role": "16th President of the United States",
+      "description": "The Great Emancipator whose moral clarity and political genius saved the Union and freed the enslaved."
+    },
+    "jefferson_davis": {
+      "name": "Jefferson Davis",
+      "role": "President of the Confederate States",
+      "description": "The Confederate leader whose rigid ideology and poor judgment undermined his cause."
+    },
+    "frederick_douglass": {
+      "name": "Frederick Douglass",
+      "role": "Abolitionist Leader",
+      "description": "The escaped slave who became the conscience of the nation, pushing Lincoln toward full emancipation."
+    }
+  },
+  "timelines": {
+    "confederate_victory": {
+      "title": "A House Divided: Confederate Independence",
+      "description": "What if the Confederacy won its independence after the Battle of Gettysburg?",
+      "divergence_description": "Lee's Army of Northern Virginia wins decisively at Gettysburg, threatening Washington and forcing Union negotiations.",
+      "events": {
+        "gettysburg_disaster_1863": {
+          "title": "The Gettysburg Victory",
+          "description": "General Lee's tactical brilliance succeeds. Pickett's Charge breaks the Union lines. The Army of the Potomac is destroyed.",
+          "impact": "Northern morale collapses. Peace Democrats demand negotiations. Lincoln faces enormous pressure to recognize Confederate independence."
+        },
+        "treaty_of_philadelphia_1864": {
+          "title": "The Divided Nation",
+          "description": "After Confederate forces threaten Washington, Lincoln is forced to negotiate. The Treaty of Philadelphia recognizes Confederate independence.",
+          "impact": "North America is permanently divided. Four million enslaved people remain in bondage."
+        },
+        "perpetual_slavery_1900": {
+          "title": "The Slave Empire",
+          "description": "The Confederacy expands slavery into Latin America. A rigid caste system persists into the 20th century.",
+          "impact": "American power is diminished. Two hostile nations on one continent. Slavery lasts into the modern era in North America."
+        }
+      },
+      "consequences": {
+        "short_term": "The United States is permanently divided, weakening both nations.",
+        "long_term": "No united American superpower. Different World War outcomes. Slavery persists far longer.",
+        "global_impact": "A divided, weakened America changes the entire 20th century. Soviet Union might have won the Cold War."
+      },
+      "present_day_status": "The Confederate States of America abolished slavery in 1946 under international pressure but remains economically backward and politically authoritarian. The United States is smaller and less powerful. Racial tensions are even worse than in our timeline. The two nations almost went to war several times."
+    },
+    "lincoln_survives": {
+      "title": "The Second Founding: Lincoln Survives",
+      "description": "What if John Wilkes Booth's assassination attempt failed and Lincoln completed Reconstruction?",
+      "divergence_description": "Lincoln's bodyguard stops Booth at Ford's Theatre. Lincoln survives to implement his vision of Reconstruction.",
+      "events": {
+        "assassination_foiled_1865": {
+          "title": "The Failed Assassination",
+          "description": "Guard John Parker remains at his post. Booth is stopped before reaching Lincoln's box. Lincoln survives with his political capital at its peak.",
+          "impact": "Lincoln implements his moderate Reconstruction plan with his full political authority intact."
+        },
+        "reconstruction_success_1870": {
+          "title": "Reconciliation with Justice",
+          "description": "Lincoln balances forgiveness for ex-Confederates with protection for freedmen. Federal troops ensure voting rights. Land reform provides economic foundation.",
+          "impact": "Genuine multiracial democracy takes root in the South. Jim Crow never emerges."
+        },
+        "second_founding_1875": {
+          "title": "The Second American Revolution",
+          "description": "Constitutional amendments guarantee civil rights, voting rights, and economic opportunity. A new social contract is forged.",
+          "impact": "America fulfills the promise of equality a century earlier than in our timeline."
+        }
+      },
+      "consequences": {
+        "short_term": "Reconstruction succeeds in creating genuine democracy and opportunity for freed slaves.",
+        "long_term": "No Jim Crow. Earlier civil rights. More just and prosperous society emerges generations sooner.",
+        "global_impact": "A more unified, less racially divided America is stronger in the 20th century. Better model for decolonization worldwide."
+      },
+      "present_day_status": "America achieved racial equality far earlier, though still imperfectly. The Civil Rights era happened in the 1890s instead of the 1960s. Economic and educational equality was established through successful Reconstruction. America is more unified and its democratic ideals more credible internationally."
+    },
+    "gradual_emancipation": {
+      "title": "Compromise and Delay: Gradual Emancipation",
+      "description": "What if Lincoln adopted a gradual emancipation plan that preserved the Union without war?",
+      "divergence_description": "Lincoln and moderate border state politicians develop a compensated, gradual emancipation plan that prevents secession.",
+      "events": {
+        "compromise_of_1861": {
+          "title": "The Grand Compromise",
+          "description": "Lincoln proposes a 20-year gradual emancipation plan with compensation to slaveholders. Border states accept, preventing some Southern states from seceding.",
+          "impact": "Civil War is averted or reduced in scale. Slavery ends slowly through legislation rather than war."
+        },
+        "incomplete_freedom_1880": {
+          "title": "Freedom Delayed",
+          "description": "Gradual emancipation proceeds unevenly. Some states drag their feet. Former slaves gain freedom slowly, without land or political power.",
+          "impact": "Slavery ends without war but also without transformation of Southern society."
+        },
+        "continued_oppression_1900": {
+          "title": "Freedom Without Justice",
+          "description": "Legal slavery ends but is replaced by peonage, convict leasing, and systematic disenfranchisement. Little real change for Black Americans.",
+          "impact": "Slavery's formal end doesn't produce justice or equality. Oppression continues under different names."
+        }
+      },
+      "consequences": {
+        "short_term": "The Union is preserved without war, but slavery continues for decades.",
+        "long_term": "Gradual emancipation allows old power structures to adapt and survive. Real freedom is delayed even longer.",
+        "global_impact": "Without the Emancipation Proclamation and Union victory, the global antislavery movement loses its most powerful symbol."
+      },
+      "present_day_status": "Slavery ended peacefully but Black Americans endured an even longer and more gradual path to civil rights. Full legal equality didn't come until the 1950s. The moral clarity of Union victory and emancipation was lost. Racial inequality persists even more deeply due to the lack of a clean break with slavery."
+    }
+  }
+}

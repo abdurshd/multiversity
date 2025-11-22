@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "COVID-19 pandemiyasi",
+    "period": "2019-Hozirgi kunda",
+    "description": "Global sog'liq inqirozi va uning muqobil javoblari va natijalari",
+    "historical_context": "COVID-19 pandemiyasi millionlab odamni o'ldirdi, global jamiyatni buzdi va butun dunyo bo'ylab institutlarni sinab ko'rdi. Turli siyosiy javoblar juda boshqacha natijalarga olib keldi. Pandemiya 21-asrni shakllantiruvchi texnologik va ijtimoiy o'zgarishlarni tezlashtirdi. Muqobil qarorlar pandemiyani butunlay oldini olishi yoki uni ancha yomonlashtirishi mumkin edi.",
+    "divergence_point": "Tarqalishning oldini olishi yoki halokatli natijalarga olib kelishi mumkin bo'lgan pandemiya javobidagi muhim qarorlar"
+  },
+  "figures": {
+    "who_officials": {
+      "name": "JSST rahbariyati",
+      "role": "Global sog'liq koordinatorlari",
+      "description": "Erta ogohlantirishlari va muvofiqlashtirish harakatlari global javobni shakllantirgan xalqaro sog'liqni saqlash xodimlari."
+    },
+    "vaccine_developers": {
+      "name": "Vaksina ishlab chiquvchilar",
+      "role": "Olimlar",
+      "description": "Rekord vaqt ichida samarali vaksinalarni ishlab chiqib, ehtimol o'nlab millionlab hayotni saqlab qolgan tadqiqotchilar."
+    },
+    "political_leaders": {
+      "name": "Milliy rahbarlar",
+      "role": "Qaror qabul qiluvchilar",
+      "description": "O'z mamlakatlarida qancha odam yashashi yoki o'lishini aniqlaydigan qarorlar qabul qilgan turli siyosiy rahbarlar."
+    }
+  },
+  "timelines": {
+    "early_containment": {
+      "title": "Bo'lmagan avj: Erta cheklashning muvaffaqiyati",
+      "description": "Agar tajovuzkor erta cheklash COVID-19ning pandemiyaga aylanishining oldini olgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Xitoy 2019-yil dekabrda Uxanda tajovuzkor aloqa kuzatish va qulfni amalga oshiradi. Xalqaro sayohat darhol cheklanadi.",
+      "events": {
+        "december_lockdown_2019": {
+          "title": "Uxan javobi",
+          "description": "Xitoy hukumati birinchi g'ayritabiiy pnevmoniya holatlari paydo bo'lganda hal qiluvchi harakat qiladi. To'liq qulf va aloqa kuzatish darhol boshlanadi.",
+          "impact": "Virus Uxan ichida cheklangan. Xalqaro tarqalishning oldini olish."
+        },
+        "global_cooperation_2020": {
+          "title": "Yaqindan o'tgan",
+          "description": "JSST xalqaro javobni muvofiqlashtiradi. Barcha davlatlar chegara nazorati va testni amalga oshiradi. Avj Xitoyda cheklangan.",
+          "impact": "Pandemiya yo'q. Yuz millionlab holat o'rniga yuz minglab holat. Jami 10,000 dan kam o'lim."
+        },
+        "pandemic_prepared_2021": {
+          "title": "Ogohlantiruvchi qo'ng'iroq",
+          "description": "Yaqindan o'tgan voqea global pandemiya tayyorligini jonlantiradi. Kuzatuv, vaksinalar va muvofiqlashtirish tizimlariga katta investitsiyalar.",
+          "impact": "Insoniyat keyingi potentsial pandemiyaga ancha yaxshi tayyorlangan. COVIDning oldini olishi mumkin bo'lgan tizimlar mavjud."
+        }
+      },
+      "consequences": {
+        "short_term": "Global pandemiya yo'q. Iqtisodiy buzilish minimal va lokal.",
+        "long_term": "Pandemiya tayyorligiga investitsiyalarning oshishi. Ertaroq ogohlantirish tizimlari ishlab chiqilgan.",
+        "global_impact": "Millionlab hayotlar va trillionlab iqtisodiy zarar saqlanadi. Jamiyat buzilishsiz davom etadi."
+      },
+      "present_day_status": "COVID-19 avji 2020-yil boshida muvaffaqiyatli cheklandi va belgilovchi voqea o'rniga izoh bo'ldi. Yaqindan o'tgan voqea global sog'liqni kuzatishga misli ko'rilmagan investitsiyaga olib keldi. Keyingi potentsial pandemiya 2023-yilda paydo bo'lganda, bir necha hafta ichida aniqlandi va cheklandi. Masofaviy ish va raqamli transformatsiya hali ham sodir bo'ldi, ammo bosqichma-bosqich."
+    },
+    "catastrophic_pandemic": {
+      "title": "Ikkinchi Qora O'lim: Halokatli natija",
+      "description": "Agar COVID-19 ko'proq o'limga olib kelgan va vaksinalar muvaffaqiyatsiz bo'lgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Virus ko'proq o'limga olib kelish uchun mutatsiyaga uchraydi. Vaksina ishlab chiqish yengib bo'lmaydigan to'siqlarga duch keladi. O'lim soni halokatli.",
+      "events": {
+        "lethal_mutation_2020": {
+          "title": "Delta dahshati",
+          "description": "2020-yil o'rtalaridagi mutatsiya COVID-19ning o'lim darajasini 15% ga oshiradi. Butun dunyo bo'ylab sog'liqni saqlash tizimlari qulaydi.",
+          "impact": "Yuz millionlab odam vafot etadi. Ko'pgina mamlakatlarda ijtimoiy tartib buziladi. Iqtisodiy depressiya."
+        },
+        "vaccine_failure_2021": {
+          "title": "Yo'qotilgan umid",
+          "description": "Vaksinalar yangi variantlarga qarshi samarasiz ekanligi isbotlandi. Virus yuqori o'lim darajasida endemikka aylanadi. Vaqt o'tishi bilan milliardlab yuqtirish.",
+          "impact": "Zamonaviy jamiyat Jahon urushlaridan beri eng katta qiyinchilikka duch keladi. Aholi sezilarli darajada kamayadi."
+        },
+        "new_normal_2025": {
+          "title": "Decimation",
+          "description": "2025-yilga kelib, COVID-19 global miqyosda 300 milliondan ortiq odamni o'ldirdi. Jamiyat doimiy ravishda o'zgargan. Izolyatsiya normalaga aylanadi.",
+          "impact": "Global aholi kamayishi. Katta iqtisodiy qisqarish. Texnologiya izolyatsiya qilingan yashashga imkon berish uchun rivojlanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Halokatli o'lim soni jamiyatlarni bosib oladi. Iqtisodiy qulash. Siyosiy beqarorlik.",
+        "long_term": "Doimiy aholi kamayishi. Jamiyat inson aloqasini minimallashtirishga qayta tashkil topadi.",
+        "global_impact": "Qora O'lim bilan taqqoslanadigan. Tsivilizatsiya omon qoladi, ammo asosiy ravishda o'zgaradi."
+      },
+      "present_day_status": "Halokatli COVID-19 pandemiyasi 2025-yilga kelib 400 milliondan ortiq odamni o'ldirdi. Global aholi Qora O'limdan keyin birinchi marta kamaydi. Keng qamrovli avtomatlashtirish va masofaviy ish majburiy bo'ldi. Zich shaharlar asosan tark etildi. Tug'ilish darajasi yanada pasaydi. Insoniyat sekin qayta tiklanmoqda, ammo jamiyat izolyatsiya qilingan va travmalangan bo'lib qolmoqda."
+    },
+    "coordinated_response": {
+      "title": "Birlik pandemiyasi: Mukammal global hamkorlik",
+      "description": "Agar barcha davlatlar COVID-19ga javob berishda mukammal muvofiqlashtirgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Davlatlar raqobatni chetga qo'yib, to'liq muvofiqlashtiradilar. Resurslar almashiladi. Ma'lumot erkin oqadi.",
+      "events": {
+        "global_accord_2020": {
+          "title": "Jeneva sog'liqni saqlash kelishuvi",
+          "description": "2020-yil martda barcha yirik davlatlar pandemiya javobini to'liq muvofiqlashtirish bo'yicha misli ko'rilmagan kelishuvga imzo chekadi. Chegaralar bir vaqtda yopiladi, test protokollari standartlashtiriladi.",
+          "impact": "Muvofiqlashtirilgan harakat tarqalishni sezilarli darajada kamaytiradi. Egri chiziq haqiqatan tekislanadi."
+        },
+        "vaccine_triumph_2020": {
+          "title": "Global operatsiya Warp Speed",
+          "description": "Birlashtirilgan resurslar va baham ko'rilgan tadqiqotlar vaksina ishlab chiqishni tezlashtiradi. Vaksinalar 2020-yil dekabrga qadar mavjud va butun dunyo bo'ylab teng taqsimlanadi.",
+          "impact": "Pandemiya 2021-yil o'rtalariga qadar nazorat ostiga olinadi. O'lim soni bizning tariximizning o'ndan bir qismi."
+        },
+        "new_cooperation_2022": {
+          "title": "Pandemiya dividendi",
+          "description": "COVID-19ni mag'lub etishda muvaffaqiyat iqlim o'zgarishi, qashshoqlik va boshqa muammolar bo'yicha global hamkorlik uchun turtki yaratadi.",
+          "impact": "Pandemiya haqiqiy global boshqaruv va hamkorlik tomon burilish nuqtasiga aylanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Muvofiqlashtirilgan javob o'limlar va iqtisodiy zararni minimallashtiradi. Pandemiya tez nazorat ostiga olinadi.",
+        "long_term": "Muvaffaqiyat boshqa muammolar bo'yicha global hamkorlik uchun shablon yaratadi.",
+        "global_impact": "COVID-19 misli ko'rilmagan xalqaro muvofiqlashtirish va ishonch uchun katalizatorga aylanadi."
+      },
+      "present_day_status": "COVID-19ga muvofiqlashtirilgan global javob o'limlarni 500,000 dan pastda saqladi va 2021-yil oxirida pandemiyani tugatdi. Muvaffaqiyat iqlim o'zgarishi bo'yicha hamkorlik uchun turtki yaratdi va majburiy emissiya kelishuvlariga olib keldi. Xalqaro Pandemiya Javobi Shartnomasi doimiy global sog'liqni muvofiqlashtirish o'rnatdi. Xalqaro institutlarga ishonch sezilarli darajada oshdi."
+    }
+  }
+}

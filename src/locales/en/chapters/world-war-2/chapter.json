@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "World War II",
+    "period": "1939-1945",
+    "description": "The deadliest conflict in human history and its alternative outcomes",
+    "historical_context": "World War II killed over 70 million people, destroyed empires, created superpowers, and forever changed humanity's relationship with technology and mass violence. The war could have ended very differently at multiple critical junctures, each leading to radically different modern worlds.",
+    "divergence_point": "Critical decisions and battles that could have changed the war's outcome and postwar order"
+  },
+  "figures": {
+    "adolf_hitler": {
+      "name": "Adolf Hitler",
+      "role": "German Führer",
+      "description": "The dictator whose racial ideology and territorial ambitions unleashed the deadliest war in history."
+    },
+    "winston_churchill": {
+      "name": "Winston Churchill",
+      "role": "British Prime Minister",
+      "description": "The bulldog whose refusal to surrender kept Britain in the fight during its darkest hour."
+    },
+    "joseph_stalin": {
+      "name": "Joseph Stalin",
+      "role": "Soviet Leader",
+      "description": "The brutal dictator whose nation bore the brunt of Nazi aggression and emerged as a superpower."
+    },
+    "franklin_roosevelt": {
+      "name": "Franklin D. Roosevelt",
+      "role": "US President",
+      "description": "The president who led America from isolation to victory and designed the postwar international order."
+    }
+  },
+  "timelines": {
+    "axis_victory": {
+      "title": "The Dark Victory: Axis Powers Triumph",
+      "description": "What if Germany defeated the Soviet Union and Britain sued for peace?",
+      "divergence_description": "Operation Barbarossa succeeds. Moscow falls in 1941. Britain negotiates peace. America remains neutral.",
+      "events": {
+        "barbarossa_succeeds_1941": {
+          "title": "The Fall of Moscow",
+          "description": "German forces reach Moscow before winter. Stalin is killed. The Soviet Union fragments into chaos.",
+          "impact": "Nazi Germany controls Europe from the Atlantic to the Urals. Britain accepts peace terms."
+        },
+        "fortress_america_1943": {
+          "title": "Hemispheric Defense",
+          "description": "America, unable to intervene in Europe, focuses on defending the Western Hemisphere. A cold war between Nazi Europe and Democratic America begins.",
+          "impact": "The world is divided between Nazi domination and American resistance."
+        },
+        "perpetual_cold_war_1950": {
+          "title": "The Long Twilight Struggle",
+          "description": "Nazi Germany and the United States face off in a cold war. Proxy conflicts rage in Latin America, Africa, and Asia.",
+          "impact": "Democracy survives only in the Americas. Most of humanity lives under totalitarian rule."
+        }
+      },
+      "consequences": {
+        "short_term": "Nazi Germany dominates Eurasia. The Holocaust is completed. Tens of millions enslaved.",
+        "long_term": "A cold war between Nazi Europe and Democratic America defines the late 20th century.",
+        "global_impact": "Human rights are set back generations. Democracy survives but in weakened, isolated form."
+      },
+      "present_day_status": "The Greater Germanic Reich collapsed in the 1980s from internal contradictions, demographic crises from genocide, and economic stagnation. The liberation was violent and chaotic. Europe still struggles with the legacy of Nazi rule. American-led democracy finally spread globally only in the 1990s."
+    },
+    "early_allied_victory": {
+      "title": "Fortress Europa Never Built: Early Victory",
+      "description": "What if D-Day happened in 1943 and Germany was defeated before developing V-weapons?",
+      "divergence_description": "The Allies invade France in 1943. Germany is defeated before V-2 rockets and jet aircraft are deployed.",
+      "events": {
+        "dday_1943": {
+          "title": "Operation Sledgehammer",
+          "description": "Against American hesitation, Churchill convinces Roosevelt to invade France in 1943. The invasion succeeds.",
+          "impact": "Germany fights a two-front war a year earlier. Wehrmacht is overwhelmed."
+        },
+        "germany_defeated_1944": {
+          "title": "Unconditional Surrender",
+          "description": "Germany surrenders in mid-1944. Millions of lives are saved. The Holocaust is interrupted, saving hundreds of thousands.",
+          "impact": "Europe's devastation is reduced. The atomic bomb is never used. Soviet advance into Europe is limited."
+        },
+        "democratic_eastern_europe_1945": {
+          "title": "Free Elections",
+          "description": "With Western forces liberating more of Eastern Europe, free elections occur. Poland, Czechoslovakia, and Hungary become democracies.",
+          "impact": "No Iron Curtain. No Cold War. Democratic Europe is unified by 1950."
+        }
+      },
+      "consequences": {
+        "short_term": "War ends a year earlier. Millions of lives saved. Less Soviet occupation of Eastern Europe.",
+        "long_term": "No Cold War division of Europe. Earlier European integration. Faster postwar recovery.",
+        "global_impact": "Without the Cold War, decolonization is less violent. Earlier global cooperation and development."
+      },
+      "present_day_status": "Europe unified democratically by 1950. No Cold War meant resources went to development instead of arms races. Space exploration and scientific advancement accelerated. The 20th century was prosperous rather than terrifying. The Soviet Union peacefully democratized in the 1960s."
+    },
+    "negotiated_peace_1943": {
+      "title": "The Compromise Peace: 1943 Settlement",
+      "description": "What if a coup against Hitler succeeded and Germany negotiated peace?",
+      "divergence_description": "The July 1944 plot succeeds early, in 1943. German generals overthrow Hitler and seek armistice.",
+      "events": {
+        "successful_coup_1943": {
+          "title": "Operation Valkyrie Succeeds",
+          "description": "Anti-Nazi officers successfully eliminate Hitler and Nazi leadership. A military government sues for peace.",
+          "impact": "The war ends without unconditional surrender. Germany retreats to 1939 borders."
+        },
+        "partial_justice_1944": {
+          "title": "The Incomplete Reckoning",
+          "description": "Some Nazi leaders are tried, but many escape justice. The Holocaust's full extent is hidden. Germany avoids occupation.",
+          "impact": "Justice is incomplete. Democratic reform in Germany is slower and shallower."
+        },
+        "cold_war_with_germany_1950": {
+          "title": "The Uneasy Peace",
+          "description": "Germany remains partially reformed but authoritarian. A three-way cold war develops: USSR, Germany, and the West.",
+          "impact": "Postwar order is more complex and unstable. Germany remains a grey area between democracy and dictatorship."
+        }
+      },
+      "consequences": {
+        "short_term": "War ends in 1943-44 through negotiation. Germany avoids occupation and partition.",
+        "long_term": "Incomplete denazification. Germany remains partially authoritarian into the 1960s.",
+        "global_impact": "Ambiguous outcome prevents clear moral lessons. Cold War is three-way and more complex."
+      },
+      "present_day_status": "The negotiated peace allowed some Nazis to escape justice and prevented full democratic transformation of Germany. The country fully democratized only in the 1970s. The incomplete reckoning with the Holocaust led to recurring historical controversies. Europe's postwar integration was slower and more difficult."
+    }
+  }
+}

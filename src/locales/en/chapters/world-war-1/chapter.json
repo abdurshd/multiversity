@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The Great War",
+    "period": "1914-1918",
+    "description": "The war to end all wars and its alternative endings",
+    "historical_context": "World War I shattered the old European order. Four empires collapsed. Ten million soldiers died, often for gains measured in yards. The war's resolution - or lack thereof - set the stage for an even more destructive sequel. The question remains: could different decisions have led to a more lasting peace?",
+    "divergence_point": "Critical moments when the war could have been prevented, ended earlier, or concluded differently"
+  },
+  "figures": {
+    "archduke_franz_ferdinand": {
+      "name": "Archduke Franz Ferdinand",
+      "role": "Heir to Austria-Hungary",
+      "description": "The reformist archduke whose assassination triggered the war that destroyed his empire."
+    },
+    "kaiser_wilhelm_ii": {
+      "name": "Kaiser Wilhelm II",
+      "role": "German Emperor",
+      "description": "The impulsive kaiser whose aggressive policies and blank check to Austria helped start the war."
+    },
+    "woodrow_wilson": {
+      "name": "Woodrow Wilson",
+      "role": "US President",
+      "description": "The idealistic president whose Fourteen Points promised a just peace but couldn't overcome European cynicism."
+    }
+  },
+  "timelines": {
+    "assassination_foiled": {
+      "title": "The Averted Catastrophe: Assassination Prevented",
+      "description": "What if Franz Ferdinand's security prevented the Sarajevo assassination?",
+      "divergence_description": "Franz Ferdinand's motorcade takes a different route. Gavrilo Princip never gets his shot.",
+      "events": {
+        "sarajevo_1914": {
+          "title": "The Route Changed",
+          "description": "Franz Ferdinand's driver takes the planned route instead of the wrong turn. The Archduke survives the visit to Sarajevo.",
+          "impact": "The immediate trigger for World War I is removed. The July Crisis doesn't occur."
+        },
+        "reforms_1916": {
+          "title": "The United States of Greater Austria",
+          "description": "Franz Ferdinand implements his reform plan, transforming Austria-Hungary into a federal state giving autonomy to Slavic peoples.",
+          "impact": "Serbian nationalism is defused. Austria-Hungary adapts and survives into the modern era."
+        },
+        "peaceful_century_1920": {
+          "title": "The Long Peace Continues",
+          "description": "Without World War I, the European order continues. No Bolshevik Revolution. No interwar chaos. No Hitler.",
+          "impact": "The 20th century develops peacefully. Democracy and monarchy coexist. Technological progress without world wars."
+        }
+      },
+      "consequences": {
+        "short_term": "World War I is prevented entirely. European empires continue their gradual evolution.",
+        "long_term": "No World War I means no World War II, no Holocaust, no Soviet Union. Completely different 20th century.",
+        "global_impact": "Perhaps 100 million lives saved across the century. Democratic and monarchical systems coexist. Gradual rather than revolutionary change."
+      },
+      "present_day_status": "The great European empires evolved into constitutional federations similar to the European Union but a century earlier. Austria-Hungary, Russia, and the Ottoman Empire all reformed rather than collapsed. No world wars means earlier prosperity and democratic development globally."
+    },
+    "early_peace": {
+      "title": "Peace Without Victory: 1916 Negotiated Settlement",
+      "description": "What if Britain and Germany agreed to a negotiated peace in 1916?",
+      "divergence_description": "After the horrific losses at the Somme and Verdun, war exhaustion leads to serious peace negotiations.",
+      "events": {
+        "somme_shock_1916": {
+          "title": "The Awakening",
+          "description": "The staggering casualties at the Somme shock both sides into recognizing the war is unwinnable. Secret peace feelers succeed.",
+          "impact": "Negotiations begin. Both sides accept status quo ante bellum with minor adjustments."
+        },
+        "peace_of_brussels_1917": {
+          "title": "The Compromise Peace",
+          "description": "A negotiated peace returns most territories to prewar status. Germany withdraws from Belgium. Austria keeps its empire.",
+          "impact": "No clear victor. All empires survive but exhausted. Millions of lives saved."
+        },
+        "fragile_peace_1930": {
+          "title": "The Unstable Order",
+          "description": "The inconclusive peace satisfies no one. Revanchist movements simmer. But another great war is avoided through weariness.",
+          "impact": "Europe remains tense but peaceful. No Soviet Union. Different path to modernity."
+        }
+      },
+      "consequences": {
+        "short_term": "War ends in 1917 without clear victor. Millions of lives saved.",
+        "long_term": "European empires survive but weakened. Gradual democratization. No World War II as we know it.",
+        "global_impact": "Inconclusive peace prevents both fascism and communism from rising. Slower but more stable path to modern world."
+      },
+      "present_day_status": "The compromise peace of 1917 left all parties somewhat dissatisfied but too exhausted for another war. The empires gradually democratized and decentralized over the 20th century. No genocides or totalitarian experiments. Europe integrated peacefully by the 1960s."
+    },
+    "german_victory": {
+      "title": "The German Peace: Central Powers Victory",
+      "description": "What if Germany won World War I decisively in 1918?",
+      "divergence_description": "The Spring Offensive of 1918 succeeds completely. France sues for peace. Germany wins the war.",
+      "events": {
+        "spring_offensive_success_1918": {
+          "title": "The Breakthrough",
+          "description": "German stormtroopers break the Western Front. Paris is threatened. France collapses before American reinforcements arrive.",
+          "impact": "France signs humiliating peace. Germany dominates continental Europe."
+        },
+        "treaty_of_versailles_reversed_1919": {
+          "title": "The German Peace",
+          "description": "Germany imposes harsh terms on France and Belgium. Massive reparations. Territorial losses. Colonial seizures.",
+          "impact": "Germany becomes the dominant European power. France is humiliated and impoverished."
+        },
+        "mitteleuropa_realized_1930": {
+          "title": "The German Century",
+          "description": "Germany creates an economic and political bloc dominating Europe. Democratic at home but imperial abroad.",
+          "impact": "German hegemony replaces the balance of power. No Nazi rise because Germany never experienced defeat and humiliation."
+        }
+      },
+      "consequences": {
+        "short_term": "Germany wins World War I and dominates Europe.",
+        "long_term": "German hegemony over Europe but without Nazi ideology. Democratic German empire.",
+        "global_impact": "Different great power dynamics. No Nazi Germany. Different World War II or none at all."
+      },
+      "present_day_status": "The German Empire dominated Europe throughout the mid-20th century but eventually evolved into a democratic federation. The harsh peace imposed on France created lasting resentment but no second world war. Germany's democratic traditions prevented fascism despite victory. Europe united under German leadership by 2000."
+    }
+  }
+}

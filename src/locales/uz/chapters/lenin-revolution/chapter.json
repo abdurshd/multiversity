@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Bolsheviklar inqilobi",
+    "period": "1917-1924",
+    "description": "Leninning hokimiyatni egallashi va Sovet davlatining tug'ilishi",
+    "historical_context": "1917-yilda Rossiyada ikkita inqilob sodir bo'ldi. Fevral inqilobi podshoни ag'darди. Oktyabr inqilobi bolsheviklarnI hokimiyatga keltirdi. Leninning shafqatsiz qat'iyati va tashkiliy dahosi muvaffaqiyatsiz davlatni tarixdagi birinchi kommunistik diktaturaga aylantirdi va yetmish yillik Sovet hukmronligi va global mafkuraviy mojaro uchun asos yaratdi.",
+    "divergence_point": "1917-1918-yillardagi bolsheviklar g'alabasining oldini olishi yoki Sovet tizimini o'zgartirishi mumkin bo'lgan muhim qarorlar"
+  },
+  "figures": {
+    "vladimir_lenin": {
+      "name": "Vladimir Lenin",
+      "role": "Bolsheviklar rahbari",
+      "description": "Sovet Ittifoqini yaratgan bir maqsadga intilgan qat'iyat va taktik zukkoligi bilan ajralib turgan inqilobiy nazariyotchi."
+    },
+    "alexander_kerensky": {
+      "name": "Aleksandr Kerenskiy",
+      "role": "Vaqtinchalik hukumat rahbari",
+      "description": "Ikkilanish va zaifligi bolsheviklar hokimiyatni egallashiga imkon bergan demokratik sotsialist."
+    },
+    "leon_trotsky": {
+      "name": "Lev Trotskiy",
+      "role": "Qizil armiya asoschisi",
+      "description": "Qizil armiyani qurgan va bolsheviklar uchun fuqarolar urushida g'alaba qozongan ajoyib tashkilotchi."
+    }
+  },
+  "timelines": {
+    "white_victory": {
+      "title": "Oq Rossiya: Anti-bolsheviklar g'alabasi",
+      "description": "Agar Oq kuchlar fuqarolar urushida bolsheviklarni mag'lub etgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Oq qo'shinlar o'z hujumlarini samarali muvofiqlashtiradi. Xorijiy aralashuv ko'proq. Bolsheviklar 1919-yilda mag'lub bo'ladi.",
+      "events": {
+        "coordinated_offensive_1919": {
+          "title": "Oq to'lqin",
+          "description": "Kolchak, Denikin va Yudenich hujumlarini muvofiqlashtiradi. Ittifoqchilar yordami zamonaviy qurollarni taqdim etadi. Qizil armiya mag'lub bo'ladi.",
+          "impact": "Bolsheviklar hukumati qulaydi. Lenin va omon qolgan bolsheviklar rahbarlari surgunga qochadi."
+        },
+        "military_dictatorship_1920": {
+          "title": "Rossiya Direktoriyasi",
+          "description": "Oqlar g'alabasi demokratiya emas, balki harbiy diktaturani keltiradi. Generallar kommunizm va demokratiyaga qarshi avtoritar rejim o'rnatadilar.",
+          "impact": "Rossiya Frankoning Ispaniyasiga o'xshash o'ng qanot avtoritar davlatga aylanadi."
+        },
+        "alliance_with_germany_1935": {
+          "title": "Sharqiy pakt",
+          "description": "Avtoritar Rossiya G'arbiy demokratiyalar va ehtimol Yaponiya kengayishiga qarshi natsistik Germaniya bilan ittifoq tuzadi.",
+          "impact": "Ikkinchi jahon urushida butunlay boshqacha ittifoqlar va natijalar."
+        }
+      },
+      "consequences": {
+        "short_term": "Bolshevizm mag'lub bo'ladi, ammo demokratiya paydo bo'lmaydi. Harbiy diktatura Rossiyada hukmronlik qiladi.",
+        "long_term": "Sovet Ittifoqi yo'q, ammo demokratik Rossiya ham yo'q. Ikkinchi jahon urushida boshqacha ittifoqlar.",
+        "global_impact": "Butun dunyo bo'ylab kommunistik harakatlar uchun Sovet modeli yo'q. Ammo fashizm Sovet qarshiligilarisiz kuchliroq bo'lishi mumkin."
+      },
+      "present_day_status": "Rossiya 20-asr davomida avtoritar davlat bo'lib qoldi va oxir-oqibat 1990-yillarda demokratlashdi. Biz bilgan Sovuq urush bo'lmadi. Sovet yordamisiz butun dunyo bo'ylab kommunistik harakatlar zaifroq edi, ammo Rossiyada demokratik rivojlanish ancha kechroq keldi."
+    },
+    "democratic_revolution": {
+      "title": "Xalq demokratiyasi: Kerenskiy muvaffaqiyatga erishadi",
+      "description": "Agar Kerenskiyning Vaqtinchalik hukumati demokratiyani muvaffaqiyatli o'rnatgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Kerenskiy yer islohotini birinchi o'ringa qo'yadi va Rossiyani Birinchi jahon urushidan darhol chiqaradi. Bolsheviklar to'ntarishining oldini oladi.",
+      "events": {
+        "land_reform_1917": {
+          "title": "Tinchlik, yer va non",
+          "description": "Kerenskiy darhol yerni qayta taqsimlashni amalga oshiradi va Germaniya bilan sulh shartnoma imzolaydi. Bu bolsheviklarning asosiy masalalarini o'g'irlaydi.",
+          "impact": "Xalq qo'llab-quvvatlashi Vaqtinchalik hukumatga o'tadi. Bolsheviklar tezligini yo'qotadi."
+        },
+        "constituent_assembly_1918": {
+          "title": "Rossiya demokratiyasi tug'ildi",
+          "description": "Erkin saylovlar Sotsialist-Revolyutsionerlar va Mensheviklar koalitsion hukumatini yaratadi. Konstitutsiya demokratik respublikani o'rnatadi.",
+          "impact": "Rossiya dunyoning eng katta demokratiyasiga aylanadi. Kommunistik inqilobdan qochiladi."
+        },
+        "economic_recovery_1925": {
+          "title": "Demokratik mo''jiza",
+          "description": "Siyosiy barqarorlik iqtisodiy tiklanishga imkon beradi. Demokratik Rossiya Stalinning kollektivlashtirishining shafqatsizligisiz sanoatlashadi.",
+          "impact": "Rossiya G'arbiy demokratiyalar bilan birga yirik demokratik kuch sifatida rivojlanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Demokratik hukumat o'zini muvaffaqiyatli o'rnatadi. Rossiya tinch yo'l bilan modernizatsiya qilinadi.",
+        "long_term": "Stalin yo'q. Buyuk Terror yo'q. Kollektivlashtirish ocharчилиги yo'q. Demokratik Rossiya tabiiy G'arbiy ittifoqchi.",
+        "global_impact": "Global kommunizm uchun Sovet modeli yo'q. Sovuq urush yo'q. 20-asrda demokratiya kuchliroq."
+      },
+      "present_day_status": "Rossiya Demokratik Respublikasi dunyoning yetakchi demokratiyalari va iqtisodlaridan biri. U 1970-yillarda Yevropa Ittifoqiga qo'shildi. Kommunistik mafkura hech qachon katta global kuchga aylanmadi. 20-asr buyuk kuchlar o'rtasida Sovuq urush o'rniga hamkorlikni ko'rdi."
+    },
+    "permanent_revolution": {
+      "title": "Trotskiyning tasavvuri: Doimiy inqilob",
+      "description": "Agar Stalin emas, Trotskiy Leninning vorisi bo'lganida nima bo'lar edi?",
+      "divergence_description": "Lenin insultdan qisqa vaqt tuzalib ketadi va Trotskiyni o'zining vorisi sifatida tayinlaydi. Trotskiy Stalin o'rniga hokimiyatni mustahkamlaydi.",
+      "events": {
+        "trotsky_succession_1924": {
+          "title": "Voris",
+          "description": "Leninning Stalinni qoralagan o'lim to'shagidagi vasiyati ommaga e'lon qilinadi. Partiya qurultoyi Trotskiyni Bosh kotib sifatida tanlaydi.",
+          "impact": "Trotskiyning xalqaro inqilobiy tasavvuri Stalinning bir mamlakatda sotsializm o'rniga Sovet siyosatini shakllantiradi."
+        },
+        "world_revolution_1930": {
+          "title": "Inqilobni eksport qilish",
+          "description": "Chet elda inqilob qo'zg'atishga katta resurslar ajratiladi. Germaniya, Ispaniya va Xitoyda muvaffaqiyatli kommunistik inqilобlar ertaroq sodir bo'ladi.",
+          "impact": "Global kommunistik harakat kuchliroq va ko'proq muvofiqlashtіrilgan. G'arbiy demokratiyalar haqiqatan tahdid ostida."
+        },
+        "ideological_war_1940": {
+          "title": "Qizil asr",
+          "description": "1940-yilga kelib, kommunistik hukumatlar Sovet bosqinchiligi orqali emas, balki inqilob orqali Yevropa va Osiyoning ko'p qismini boshqaradi.",
+          "impact": "Kommunizm va kapitalizm mojarosi yanada shiddatliroq. Ikkinchi jahon urushi kattaroq mafkuraviy kurashning bir qismiga aylanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Sovet Ittifoqi ichki rivojlanish o'rniga jahon inqilobiga e'tibor qaratadi.",
+        "long_term": "Kommunizm uzoqroq va tezroq tarqaladi. Ammo haddan tashqari kengayish tufayli tezroq yonib ketadi.",
+        "global_impact": "Ko'proq shiddatli mafkuraviy mojaro. Ammo Trotskiycha kommunizm Stalinizmdan kamroq shafqatsiz bo'lishi mumkin edi va boshqacha natijalarga olib kelishi mumkin."
+      },
+      "present_day_status": "Trotskiyning doimiy inqilobi haddan tashqari kengaydi. 1960-yillarga kelib, kommunistik rejimlar ichki ziddiyatlardan qulardi. Stalinistik terror apparatisiz, kommunistik tizimlar kamroq barqaror, ammo kamroq shafqatsiz edi. Ko'pchilik 1980-yillarga kelib demokratik sotsializmga o'tdi."
+    }
+  }
+}

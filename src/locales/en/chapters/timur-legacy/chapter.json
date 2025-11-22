@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The Legacy of Timur",
+    "period": "1370-1405",
+    "description": "The last great nomadic conqueror and his empire's alternative paths",
+    "historical_context": "Timur (Tamerlane) built the last great nomadic empire, conquering vast territories from India to Anatolia. His sudden death in 1405 during a campaign to China left questions about what could have been.",
+    "divergence_point": "The succession crisis and strategic decisions following Timur's death in 1405"
+  },
+  "figures": {
+    "emir_timur": {
+      "name": "Emir Timur (Tamerlane)",
+      "role": "Founder of the Timurid Empire",
+      "description": "The last of the great nomadic conquerors. A military genius who sought to restore the Mongol Empire."
+    },
+    "shahrukh": {
+      "name": "Shah Rukh",
+      "role": "Timur's Successor",
+      "description": "Timur's youngest son who turned the empire from a war machine into a center of art and science."
+    },
+    "ulugh_beg": {
+      "name": "Ulugh Beg",
+      "role": "Astronomer King",
+      "description": "A ruler who preferred stars to swords. Built one of the greatest observatories in history in Samarkand."
+    }
+  },
+  "timelines": {
+    "immortal_emir": {
+      "title": "The Immortal Emir: Conquest of China",
+      "description": "What if Timur survived his illness in 1405 and led his massive army into China?",
+      "divergence_description": "Timur recovers from his illness in Otrar and launches the invasion of Ming China.",
+      "events": {
+        "survival_1405": {
+          "title": "The Miracle at Otrar",
+          "description": "Timur recovers from his winter illness. The army marches East instead of dispersing.",
+          "impact": "The campaign against China proceeds as planned."
+        },
+        "fall_of_beijing_1407": {
+          "title": "The Fall of Beijing",
+          "description": "Timurid forces, utilizing superior cavalry and gunpowder, breach the Great Wall and sack Beijing.",
+          "impact": "End of the Ming Dynasty. Establishment of the Timurid Dynasty in China."
+        },
+        "silk_road_monopoly_1410": {
+          "title": "The Silk Road Monopoly",
+          "description": "With control from Anatolia to the Pacific, Timur establishes absolute control over the Silk Road.",
+          "impact": "Europe is starved of trade, delaying the Renaissance. Central Asia becomes the world's economic hub."
+        }
+      },
+      "consequences": {
+        "short_term": "Central Asia becomes the wealthiest region on Earth.",
+        "long_term": "Global power center remains in Asia. European colonialism never starts.",
+        "global_impact": "A completely different modern world dominated by Turko-Mongol culture."
+      },
+      "present_day_status": "The Great Timurid Federation spans from Turkey to Korea. Samarkand is the world's capital of science and culture. Europe is a collection of backward feudal states. The primary global language is Chagatai Turkic."
+    },
+    "unified_succession": {
+      "title": "The Pax Timuridea: A Stable Empire",
+      "description": "What if Timur established a clear succession plan that prevented civil war?",
+      "divergence_description": "Timur designates a clear heir and administrative structure before his death.",
+      "events": {
+        "succession_plan_1404": {
+          "title": "The Grand Assembly",
+          "description": "Timur calls all his sons and grandsons to Samarkand, establishing clear succession rules.",
+          "impact": "Civil war is prevented through institutional reform."
+        },
+        "shah_rukh_reforms_1410": {
+          "title": "The Administrative Revolution",
+          "description": "Shah Rukh implements bureaucratic reforms modeled on Persian and Chinese systems.",
+          "impact": "The empire transforms from tribal confederation to modern state."
+        },
+        "ulugh_beg_renaissance_1425": {
+          "title": "The Samarkand Renaissance",
+          "description": "Massive investment in science, art, and architecture makes Samarkand the intellectual capital of the world.",
+          "impact": "Attracts scholars from Europe, China, and India. Scientific revolution begins in Central Asia."
+        }
+      },
+      "consequences": {
+        "short_term": "Political stability allows cultural and economic flourishing.",
+        "long_term": "The Timurid Empire becomes a lasting civilization rather than a fleeting conquest.",
+        "global_impact": "Central Asia leads the Renaissance and Scientific Revolution."
+      },
+      "present_day_status": "The Timurid Commonwealth remains a major world power. Uzbekistan and surrounding regions lead in science and technology. Islam underwent an enlightenment similar to Europe's Renaissance."
+    },
+    "empire_fragments": {
+      "title": "The Shattered Crown: Total Collapse",
+      "description": "What if the succession wars completely destroyed the Timurid legacy?",
+      "divergence_description": "All of Timur's sons and grandsons wage total war for succession.",
+      "events": {
+        "civil_war_1405": {
+          "title": "The War of Six Princes",
+          "description": "Timur's death triggers immediate warfare among all claimants to the throne.",
+          "impact": "The empire fractures into warring kingdoms."
+        },
+        "mongol_resurgence_1415": {
+          "title": "The Return of the Mongols",
+          "description": "Weakened Timurid states fall to resurgent Mongol tribes from the steppes.",
+          "impact": "Central Asia returns to tribal chaos and economic decline."
+        },
+        "ottoman_dominance_1425": {
+          "title": "The Ottoman Opportunity",
+          "description": "With Timurid collapse, the Ottomans rapidly expand eastward.",
+          "impact": "The Ottoman Empire becomes even more powerful, dominating from Vienna to Persia."
+        }
+      },
+      "consequences": {
+        "short_term": "Central Asia descends into centuries of warfare and poverty.",
+        "long_term": "The region never recovers its former glory. Becomes a backwater.",
+        "global_impact": "Ottoman and later Russian domination of Central Asia accelerates."
+      },
+      "present_day_status": "Central Asia is even more fragmented and economically underdeveloped than in our timeline. The Timurid era is remembered only as a brief flash of greatness between Mongol and Russian empires."
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Sovuq urush",
+    "period": "1947-1991",
+    "description": "Zamonaviy dunyoni shakllantirgan superkuchlar raqobati",
+    "historical_context": "Yaqin yarim asr davomida yadro qurollari bilan qurollangan ikkita superkuch mafkuraviy chiziqlar bo'ylab to'qnash keldi. Sovuq urush koinotni o'rganishdan Uchinchi dunyo inqiloblarigacha, madaniy ishlab chiqarishdan qurol poygasigacha hamma narsani shakllantirdi. Mojaro Sovet qulashi bilan yakunlandi, ammo juda boshqacha kechishi mumkin edi.",
+    "divergence_point": "Sovuq urush issiq urushga aylanishi, ertaroq tugashi yoki boshqacha yakunlanishi mumkin bo'lgan muhim lahzalar"
+  },
+  "figures": {
+    "joseph_stalin": {
+      "name": "Iosif Stalin",
+      "role": "Sovet rahbari",
+      "description": "G'arbdan shubhalanishi Sovuq urushni boshlashga yordam bergan paranoid diktator."
+    },
+    "harry_truman": {
+      "name": "Garri Trumen",
+      "role": "AQSH prezidenti",
+      "description": "Amerikani butun dunyo bo'ylab Sovet kengayishini to'xtatishga majburiyatli qilgan prezident."
+    },
+    "mikhail_gorbachev": {
+      "name": "Mixail Gorbachyov",
+      "role": "Oxirgi Sovet rahbari",
+      "description": "Kommunizmni saqlab qolish urinishlari kutilmagan holda Sovet Ittifoqini tugatgan islohotchi."
+    }
+  },
+  "timelines": {
+    "nuclear_war": {
+      "title": "Oxirgi urush: Yadro apokalipsisi",
+      "description": "Agar Kuba raketa inqirozi 1962-yilda yadro urushiga aylanganida nima bo'lar edi?",
+      "divergence_description": "Kuba raketa inqirozi paytidagi tushunmovchilik AQSH va SSSR o'rtasida yadroviy almashinuvga olib keladi.",
+      "events": {
+        "missiles_launched_1962": {
+          "title": "1962-yil 27-oktabr",
+          "description": "Sovet suv osti kemasi komandiri urush boshlangan deb hisoblab, yadro torpedalarini uchiradi. AQSH javob beradi. Bir necha soat ichida MBRlar uchadi.",
+          "impact": "Ikkala superkuchdagi asosiy shaharlar vayron bo'ladi. Yuzlab millionlar birinchi soatlarda vafot etadi."
+        },
+        "nuclear_winter_1963": {
+          "title": "Qorong'u yillar",
+          "description": "Yadro qishi boshlanadi. Global harorat pasayadi. Butun dunyo bo'ylab ekinlar nobud bo'ladi. Milliardlab odam ochlikka duch keladi.",
+          "impact": "Inson tsivilizatsiyasi qulaydi. Insoniyatning ko'pchiligi keyingi besh yil ichida halok bo'ladi."
+        },
+        "remnant_civilizations_1975": {
+          "title": "Tarqoq omon qolganlar",
+          "description": "Faqat Janubiy yarim shardagi va chekka hududlardagi izolyatsiya qilingan jamoalar omon qoladi. Global aholi 90% ga qisqaradi.",
+          "impact": "Insoniyat asrlar orqaga qaytadi. Yadro urushi insoniyatning buyuk filtriga aylanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Yadro urushi milliardlab odamni o'ldiradi. Tsivilizatsiya global miqyosda qulaydi.",
+        "long_term": "Inson aholisi sanoatdan oldingi darajaga tushadi. Tiklanish uchun asrlar kerak.",
+        "global_impact": "Yadro apokalipsisi insoniyat tsivilizatsiyasini deyarli tugatadi. Omon qolganlar vayronalardan yangi jamiyatlar quradi."
+      },
+      "present_day_status": "Insoniyat yo'q bo'lib ketish chekkasidan sekin tiklandi. 2025-yilga kelib, global aholi faqat 2 milliardga yetdi. Texnologiya qayta tiklandi, ammo yadro qurollari umummilliy tarzda taqiqlangan va ularning bilimlari faol ravishda bostiriladi. 1962-yilgi Buyuk O'lim barcha inson madaniyati va siyosatini belgilaydi."
+    },
+    "soviet_victory": {
+      "title": "Qizil tong: Sovuq urushda Sovet g'alabasi",
+      "description": "Agar Sovet Ittifoqi ustun iqtisodiy samaradorlik orqali Sovuq urushda g'alaba qozongan bo'lsa nima bo'lar edi?",
+      "divergence_description": "1960-yillardagi Sovet iqtisodiy islohotlari muvaffaqiyatga erishadi. SSSR iqtisodiy va siyosiy jihatdan G'arbni ortda qoldiradi.",
+      "events": {
+        "kosygin_reforms_1965": {
+          "title": "Sovet iqtisodiy mo''jizasi",
+          "description": "Kosiginning bozor islohotlari to'liq amalga oshiriladi. Sovet iqtisоdiyoti sotsialistik tamoyillarni saqlab qolgan holda markaziy rejalashtirishdan ko'ra samaraliroq bo'ladi.",
+          "impact": "1980-yilga kelib Sovet turmush darajasi G'arb darajasidan yuqori bo'ladi. Sotsialistik model butun dunyo bo'ylab ishonch qozonadi."
+        },
+        "western_decline_1980": {
+          "title": "Kapitalizmning inqirozi",
+          "description": "Stagflyatsiya va ijtimoiy tartibsizlik G'arbiy demokratiyalarni qoplaydi. Kommunistik partiyalar Fransiya va Italiyada hokimiyatga keladi.",
+          "impact": "G'arb mudofaada. Sotsialistik harakatlar global miqyosda o'sadi."
+        },
+        "global_socialism_2000": {
+          "title": "Sotsialistik asr",
+          "description": "2000-yilga kelib, dunyoning ko'p qismi demokratik sotsializmni qabul qildi. Bozor iqtisоdiyotlari qattiq tartibga solingan. Boylik tengsizligi minimal.",
+          "impact": "Ijtimoiy demokratik qadriyatlar hukmronlik qiladigan dunyo. Kapitalizm faqat kamaytirilgan shaklda omon qoladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Sovet iqtisodiy islohotlari muvaffaqiyatga erishadi. SSSR kapitalizm bilan iqtisodiy raqobatda g'alaba qozonadi.",
+        "long_term": "Global miqyosda demokratik sotsializmga siljish. Bozor kapitalizma marginalлashadi.",
+        "global_impact": "Ko'proq tenglikka asoslangan, ammo ehtimol kamroq innovatsion dunyo. Boshqacha texnologik rivojlanish yo'li."
+      },
+      "present_day_status": "Dunyo kuchli ishchilar huquqlari, umumiy sog'liqni saqlash va cheklangan boylik tengsizligi bilan demokratik sotsialistik iqtisоdiyotlar tomonidan boshqariladi. Innovatsiya sekinroq, ammo ko'proq adolatli taqsimlanadi. Atrof-muhitni muhofaza qilish kuchliroq. Sovuq urush g'oyalar bozoridagi sotsializmning tinch g'alabasi bilan yakunlandi."
+    },
+    "early_detente": {
+      "title": "Tinchlik dividendi: Sovuq urushning erta tugashi",
+      "description": "Agar Stalin ertaroq vafot etsa va Xrushchyovning tinch yashash siyosati 1950-yillarda muvaffaqiyatga erishgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Stalin 1950-yilda vafot etadi. Xrushchyov ertaroq yuksaladi va chuqur islohotlarni amalga oshiradi. 1950-yillarda haqiqiy detant paydo bo'ladi.",
+      "events": {
+        "stalin_death_1950": {
+          "title": "Zodavoz yiqiladi",
+          "description": "Stalin uch yil oldinroq vafot etadi. Xrushchyov tez hokimiyatni mustahkamlaydi va darhol de-Stalinizatsiyani boshlaydi.",
+          "impact": "Sovet Ittifoqi ertaroq va chuqurroq isloh qilinadi. Sovuq urushning eng yomoni hech qachon sodir bo'lmaydi."
+        },
+        "geneva_accord_1955": {
+          "title": "Haqiqiy tinch yashash",
+          "description": "Eyzenhauer va Xrushchyov haqiqiy kelishuvga erishadilar. Yadro arsenallari cheklangan. Ikkala tomon ta'sir sohalari ni qabul qiladi.",
+          "impact": "Sovuq urush hech qachon xavfli bo'lmaydi. Qurol poygasi cheklangan. Resurslar rivojlanishga ketadi."
+        },
+        "cooperative_space_program_1969": {
+          "title": "Apollon-Soyuz Oyga parvoz",
+          "description": "AQSH va SSSR qo'shma missiyada birga Oyga yetishadi. Ilmiy hamkorlik normalaga aylanadi.",
+          "impact": "Sovuq urush hamkorlik doirasidagi raqobatga aylanadi. Proksi urushlardan qochiladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Sovuq urush keskinligi 1950-yillarda susayadi. Qurol poygasi cheklangan. Proksi urushlardan qochiladi.",
+        "long_term": "Tizimlarning bosqichma-bosqich yaqinlashuvi. SSSR sekin demokratiyaga isloh qilinadi. G'arb ko'proq ijtimoiy ta'minotni qabul qiladi.",
+        "global_impact": "Qurol poygasidan saqlab qolingan resurslar rivojlanishga ketadi. Ertaroq koinotni o'rganish va ilmiy yutuqlar."
+      },
+      "present_day_status": "Erta detant Sovet va G'arbiy tizimlarning bosqichma-bosqich yaqinlashuviga olib keldi. SSSR 1980-yillarga kelib ijtimoiy demokratik federatsiyaga aylandi. Shiddatli Sovuq urushsiz, dekolonizatsiya kamroq zo'ravonli va rivojlanish tezroq bo'ldi. Tinchlik dividendi inson taraqqiyotini o'nlab yillar tezlashtirdi."
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Linkoln davri",
+    "period": "1860-1865",
+    "description": "Fuqarolar urushi, qullikni bekor qilish va birlashtirish yoki doimiy bo'linish yo'llari",
+    "historical_context": "Авраham Linkolnning prezidentligi Amerikaning eng katta inqirozi bilan bir vaqtga to'g'ri keldi. Fuqarolar urushi erkinlikda tug'ilgan davlat bardosh bera oladimi yoki yo'qligini sinab ko'rdi. Linkolnning g'alaba paytidagi suiqasdi Rekonstruksiyani tugallanmagan va irqiy adolat uchun kurashni yakunlanmagan qoldirdi.",
+    "divergence_point": "Fuqarolar urushi va Rekonstruksiya davridagi Amerikaning yo'lini o'zgartirishi mumkin bo'lgan muhim qarorlar"
+  },
+  "figures": {
+    "abraham_lincoln": {
+      "name": "Avraam Linkoln",
+      "role": "AQShning 16-prezidenti",
+      "description": "Buyuk Ozod qiluvchi, uning axloqiy ravshanligi va siyosiy dahosi Ittifoqni saqlab qoldi va qullarga ozodlik berdi."
+    },
+    "jefferson_davis": {
+      "name": "Jefferson Devis",
+      "role": "Konfederatsiya Shtatlari prezidenti",
+      "description": "Konfederatsiya rahbari, uning qattiq mafkurasi va yomon hukmronligi o'z maqsadiga putur yetkazdi."
+    },
+    "frederick_douglass": {
+      "name": "Frederik Duglas",
+      "role": "Quldorlikka qarshi harakat rahbari",
+      "description": "Qochgan qul millat vijdoniga aylandi va Linkolnni to'liq ozodlik tomon surdi."
+    }
+  },
+  "timelines": {
+    "confederate_victory": {
+      "title": "Bo'lingan uy: Konfederatsiya mustaqilligi",
+      "description": "Agar Konfederatsiya Gettisburg jangidan keyin mustaqillikka erishgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Lining Shimoliy Virjiniya armiyasi Gettisburgda hal qiluvchi g'alaba qozonib, Vashingtonga tahdid soladi va Ittifoqni muzokaralarga majbur qiladi.",
+      "events": {
+        "gettysburg_disaster_1863": {
+          "title": "Gettisburg g'alabasi",
+          "description": "General Lining taktik dahosi muvaffaqiyatga erishadi. Pikettning hujumi Ittifoq saflarini buzadi. Potomak armiyasi yo'q qilinadi.",
+          "impact": "Shimoliy ma'naviyat qulaydi. Tinchlik demokratlari muzokaralarni talab qiladi. Linkoln Konfederatsiya mustaqilligini tan olishga katta bosim ostida qoladi."
+        },
+        "treaty_of_philadelphia_1864": {
+          "title": "Bo'lingan davlat",
+          "description": "Konfederatsiya kuchlari Vashingtonga tahdid qilgandan keyin, Linkoln muzokara qilishga majbur bo'ladi. Filadelfiya shartnomasi Konfederatsiya mustaqilligini tan oladi.",
+          "impact": "Shimoliy Amerika doimiy ravishda bo'linadi. To'rt million qul qullikda qoladi."
+        },
+        "perpetual_slavery_1900": {
+          "title": "Qul imperiyasi",
+          "description": "Konfederatsiya qullikni Lotin Amerikasiga kengaytiradi. Qattiq kasta tizimi 20-asrga qadar davom etadi.",
+          "impact": "Amerika kuchi zaiflanadi. Bir qit'ada ikkita dushman davlat. Qullik Shimoliy Amerikada zamonaviy davrga qadar davom etadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Qo'shma Shtatlar doimiy ravishda bo'linib, ikkala davlatni ham zaiflashtiradi.",
+        "long_term": "Birlashgan Amerika superkuchi yo'q. Jahon urushlari boshqacha natija beradi. Qullik ancha uzoqroq davom etadi.",
+        "global_impact": "Bo'lingan, zaiflashgan Amerika butun 20-asrni o'zgartiradi. Sovet Ittifoqi Sovuq urushda g'alaba qozongan bo'lishi mumkin."
+      },
+      "present_day_status": "Amerika Konfederatsiyasi 1946-yilda xalqaro bosim ostida qullikni bekor qildi, ammo iqtisodiy jihatdan orqada qolgan va siyosiy jihatdan avtoritar bo'lib qolmoqda. Qo'shma Shtatlar kichikroq va kamroq qudratli. Irqiy keskinliklar bizning tariximizdagidan ham yomonroq. Ikki davlat bir necha marta urushga yaqinlashdi."
+    },
+    "lincoln_survives": {
+      "title": "Ikkinchi asos: Linkoln omon qoladi",
+      "description": "Agar Jon Uilks Butning suiqasd urinishi muvaffaqiyatsiz bo'lsa va Linkoln Rekonstruksiyani yakunlagan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Linkolnning qo'riqchisi Ford teatrida Butni to'xtatadi. Linkoln Rekonstruksiya haqidagi o'z tasavvurini amalga oshirish uchun omon qoladi.",
+      "events": {
+        "assassination_foiled_1865": {
+          "title": "Muvaffaqiyatsiz suiqasd",
+          "description": "Qo'riqchi Jon Parker o'z joyida qoladi. But Linkolnning lojiasiga yetib borishidan oldin to'xtatiladi. Linkoln o'zining siyosiy mavqei eng yuqori cho'qqida omon qoladi.",
+          "impact": "Linkoln o'zining to'liq siyosiy obro'si bilan mo''tadil Rekonstruksiya rejasini amalga oshiradi."
+        },
+        "reconstruction_success_1870": {
+          "title": "Adolat bilan yarashish",
+          "description": "Linkoln sobiq konfederatlarni kechirish va ozod qilinganlarni himoya qilish o'rtasida muvozanat saqlaydi. Federal qo'shinlar ovoz berish huquqlarini ta'minlaydi. Yer islohoti iqtisodiy asos yaratadi.",
+          "impact": "Janubda haqiqiy ko'p irqli demokratiya ildiz otadi. Jim Krou hech qachon paydo bo'lmaydi."
+        },
+        "second_founding_1875": {
+          "title": "Ikkinchi Amerika inqilobi",
+          "description": "Konstitutsiyaviy tuzatishlar fuqarolik huquqlari, ovoz berish huquqlari va iqtisodiy imkoniyatlarni kafolatlaydi. Yangi ijtimoiy shartnoma tuziladi.",
+          "impact": "Amerika tenglik va'dasini bizning tariximizdan bir asr oldin amalga oshiradi."
+        }
+      },
+      "consequences": {
+        "short_term": "Rekonstruksiya ozod qilingan qullar uchun haqiqiy demokratiya va imkoniyat yaratishda muvaffaqiyat qozonadi.",
+        "long_term": "Jim Krou yo'q. Ertaroq fuqarolik huquqlari. Ko'proq adolatli va farovon jamiyat avlodlar oldinroq paydo bo'ladi.",
+        "global_impact": "Ko'proq birlashgan, kamroq irqiy jihatdan bo'lingan Amerika 20-asrda kuchliroq. Butun dunyo bo'ylab dekolonizatsiya uchun yaxshiroq model."
+      },
+      "present_day_status": "Amerika irqiy tenglikka ancha ertaroq erishdi, garchi hali ham nomukammal. Fuqarolik huquqlari davri 1960-yillar o'rniga 1890-yillarda sodir bo'ldi. Iqtisodiy va ta'lim tengligi muvaffaqiyatli Rekonstruksiya orqali o'rnatildi. Amerika ko'proq birlashgan va uning demokratik ideallari xalqaro miqyosda ishonchliroq."
+    },
+    "gradual_emancipation": {
+      "title": "Murosa va kechikish: Bosqichli ozodlik",
+      "description": "Agar Linkoln urushsiz Ittifoqni saqlab qoladigan bosqichma-bosqich ozodlik rejasini qabul qilgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Linkoln va mo''tadil chegara shtatlari siyosatchilari ajralishni oldini oladigan kompensatsiyali, bosqichma-bosqich ozodlik rejasini ishlab chiqadilar.",
+      "events": {
+        "compromise_of_1861": {
+          "title": "Buyuk murosa",
+          "description": "Linkoln qul egalariga kompensatsiya bilan 20 yillik bosqichma-bosqich ozodlik rejasini taklif qiladi. Chegara shtatlari qabul qiladi, ba'zi Janubiy shtatlarning ajralishini oldini oladi.",
+          "impact": "Fuqarolar urushidan qochiladi yoki miqyosi qisqartiriladi. Qullik urush orqali emas, qonunchilik orqali sekin tugaydi."
+        },
+        "incomplete_freedom_1880": {
+          "title": "Ozodlik kechiktirildi",
+          "description": "Bosqichma-bosqich ozodlik notekis davom etadi. Ba'zi shtatlar sekin ishlaydi. Sobiq qullar asta-sekin ozodlikka erishadi, yer yoki siyosiy kuchsiz.",
+          "impact": "Qullik urushsiz tugaydi, ammo Janubiy jamiyatning o'zgarishi ham yo'q."
+        },
+        "continued_oppression_1900": {
+          "title": "Adolatsiz ozodlik",
+          "description": "Qonuniy qullik tugaydi, lekin o'rniga peonaj, mahkumlarni ijaraga berish va tizimli saylov huquqidan mahrum qilish keladi. Qora tanli amerikaliklar uchun haqiqiy o'zgarish kam.",
+          "impact": "Qullikning rasmiy tugashi adolat yoki tenglik keltirmaydi. Zulm boshqa nomlar ostida davom etadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Ittifoq urushsiz saqlanadi, ammo qullik o'nlab yillar davom etadi.",
+        "long_term": "Bosqichma-bosqich ozodlik eski hokimiyat tuzilmalariga moslashish va omon qolish imkonini beradi. Haqiqiy ozodlik yanada uzoqroq kechiktiriladi.",
+        "global_impact": "Ozodlik Deklaratsiyasi va Ittifoq g'alabasisiz, global qullikka qarshi harakat o'zining eng qudratli ramzini yo'qotadi."
+      },
+      "present_day_status": "Qullik tinch yo'l bilan tugadi, ammo qora tanli amerikaliklar fuqarolik huquqlariga yanada uzoqroq va bosqichmaroq yo'l o'tdi. To'liq qonuniy tenglik 1950-yillarga qadar kelmadi. Ittifoq g'alabasi va ozodlikning axloqiy ravshanligi yo'qoldi. Qullik bilan toza uzilishning yo'qligi sababli irqiy tengsizlik yanada chuqurroq davom etmoqda."
+    }
+  }
+}
