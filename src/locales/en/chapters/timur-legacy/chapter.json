@@ -24,7 +24,7 @@
     }
   },
   "timelines": {
-    "immortal_emir": {
+    "immortal-emir": {
       "title": "The Immortal Emir: Conquest of China",
       "description": "What if Timur survived his illness in 1405 and led his massive army into China?",
       "divergence_description": "Timur recovers from his illness in Otrar and launches the invasion of Ming China.",
@@ -52,7 +52,7 @@
       },
       "present_day_status": "The Great Timurid Federation spans from Turkey to Korea. Samarkand is the world's capital of science and culture. Europe is a collection of backward feudal states. The primary global language is Chagatai Turkic."
     },
-    "unified_succession": {
+    "unified-succession": {
       "title": "The Pax Timuridea: A Stable Empire",
       "description": "What if Timur established a clear succession plan that prevented civil war?",
       "divergence_description": "Timur designates a clear heir and administrative structure before his death.",
@@ -80,7 +80,7 @@
       },
       "present_day_status": "The Timurid Commonwealth remains a major world power. Uzbekistan and surrounding regions lead in science and technology. Islam underwent an enlightenment similar to Europe's Renaissance."
     },
-    "empire_fragments": {
+    "empire-fragments": {
       "title": "The Shattered Crown: Total Collapse",
       "description": "What if the succession wars completely destroyed the Timurid legacy?",
       "divergence_description": "All of Timur's sons and grandsons wage total war for succession.",
