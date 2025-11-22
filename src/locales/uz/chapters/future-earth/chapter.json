@@ -1,112 +1,185 @@
 {
   "meta": {
-    "title": "Kelajak Yer",
-    "period": "2100+",
-    "description": "Insoniyat va sayyora uchun uzoq muddatli stsenariylar",
-    "historical_context": "21-asrda qabul qilingan qarorlar ming yillar davomida aks-sado beradi. Iqlim o'zgarishi, texnologik rivojlanish, ijtimoiy evolyutsiya va ekzistensial xavflar insoniyatning gullash, kamaytirilgan holda omon qolish yoki butunlay yo'q bo'lib ketishini belgilaydi. Kelajak yozilmagan - bu bugun qabul qilingan tanlovlarga bog'liq.",
-    "divergence_point": "Insoniyat radikal ravishda boshqacha uzoq muddatli kelajaklarga olib kelishi mumkin bo'lgan muhim yo'llar"
+    "title": "Yerning Taqdiri",
+    "period": "Insondan Keyingi Davr",
+    "description": "Oxirgi bob. 🌍🔚 Sayyoramiz va turimizning yakuniy taqdiri nima? Yulduzlardan sukunatgacha, imkoniyatlar vaqtning o'zi kabi keng.",
+    "historical_context": "Insoniyat jar yoqasida turibdi. Biz dunyomizni yo'q qilish yoki uni qayta yaratish kuchiga egamiz. 21-asrda qilgan tanlovlarimiz biz galaktik xudolarga, yo'q bo'lib ketgan qazilmalarga yoki butunlay yangi narsaga aylanishimizni belgilaydi. Ushbu bob Yer tizimining chuqur kelajagini o'rganadi.",
+    "divergence_point": "'Buyuk Filtr'"
   },
   "figures": {
-    "future_generations": {
-      "name": "Bizning avlodlarimiz",
-      "role": "Merosxo'rlar",
-      "description": "Yaxshilik yoki yomonlik uchun bizning tanlovlarimiz oqibatlari bilan yashaydigan milliardlar."
+    "humanity": {
+      "name": "Homo Sapiens",
+      "role": "Arxitektorlar",
+      "description": "Afrika savannasidan yulduzlarga tegish uchun ko'tarilgan tur. 🌍🚀 Ularning merosi ular qoldirgan xarobalar va raketalarda yozilgan."
     },
-    "ai_systems": {
-      "name": "Sun'iy onglar",
-      "role": "Hamkorlar yoki vorislar",
-      "description": "Insoniyat bilan hamkorlik qilishi, undan oshib ketishi yoki uni almashtirishi mumkin bo'lgan sun'iy intellektlar."
+    "the-swarm": {
+      "name": "To'da",
+      "role": "Vorislar",
+      "description": "Trillionlab avtonom dronlarning jamoaviy intellekti. 🐝🤖 Yer hayotining yakuniy shakli."
     },
-    "earth_itself": {
-      "name": "Tirik sayyora",
-      "role": "Asos",
-      "description": "Bizni saqlab qoluvchi biosfera, chidamli, ammo bizning harakatlarimizga zaif."
+    "the-traveler": {
+      "name": "Sayohatchi",
+      "role": "Galaktik Diplomat",
+      "description": "Galaktik Kengashda Yerni vakillik qiluvchi post-biologik mavjudot. 👽✨"
     }
   },
   "timelines": {
-    "climate_catastrophe": {
-      "title": "Kuygan dunyo: Iqlim falokatı",
-      "description": "Agar iqlim o'zgarishi nazorat qilinmasdan davom etsa va deyarli yashash mumkin bo'lgan sayyorani yaratsa nima bo'lar edi?",
-      "divergence_description": "Iqlim harakati muvaffaqiyatsiz bo'ladi. Burilish nuqtalari kaskad. Yer iqlim tizimi yangi, dushman muvozanatga o'tadi.",
+    "star_trek_future": {
+      "title": "Federatsiya: Yulduzlar Orasida 🚀✨",
+      "description": "Agar biz birlashsak va galaktikani tinch yo'l bilan o'rgansak nima bo'ladi?",
+      "divergence_description": "Insoniyat 'Buyuk Filtr'dan omon qoladi va yorug'likdan tezroq sayohatni kashf etadi.",
       "events": {
-        "tipping_cascade_2050": {
-          "title": "Buyuk parchalanish",
-          "description": "Bir nechta iqlim burilish nuqtalaridan o'tiladi: Arktika muzi yo'q, Amazon yomg'ir o'rmoni quladi, permafrost eriydi. Qayta aloqa tsikllari isishni tezlashtiradi.",
-          "impact": "Global o'rtacha harorat sanoatdan oldingi davrdan 5°C yuqori ko'tariladi. Ob-havo ekstremal va oldindan aytib bo'lmaydigan bo'ladi."
+        "first-contact-2063": {
+          "title": "Birinchi Aloqa",
+          "description": "Vulkan... er, o'zga sayyoralik mehmonlar bizning warp imzoimizni aniqlagandan so'ng aloqaga chiqishadi.",
+          "impact": "Insoniyat yagona sayyora hukumati ostida birlashadi."
         },
-        "civilization_retreat_2100": {
-          "title": "Buyuk migratsiya",
-          "description": "Ekvatorial hududlar yashash uchun yaroqsiz bo'ladi. Sohil shaharlari tashlab ketiladi. Milliardlab odamlar qisqarib borayotgan yashash mumkin bo'lgan zonalarga ko'chishga harakat qiladi.",
-          "impact": "Tsivilizatsiya qisqaradi. Resurslar uchun urushlar. Aholi keskin kamayadi. Texnologiya orqaga ketadi."
-        },
-        "remnant_humanity_2200": {
-          "title": "Omon qolganlar",
-          "description": "Inson aholisi 1 milliarddan kam bo'ldi, qutb hududlari va baland joylarda to'plangan. Mustahkamlangan aholi punktlarida yashaydi.",
-          "impact": "Insoniyat omon qoladi, ammo tsivilizatsiya quladi. Ko'p texnologiya va bilim yo'qolgan. Yangi qorong'u asr."
+        "federation-founding-2161": {
+          "title": "Federatsiya",
+          "description": "Yer Sayyoralar Birlashgan Federatsiyasiga asos soladi.",
+          "impact": "Tadqiqot va diplomatiyaning oltin davri boshlanishi."
         }
       },
       "consequences": {
-        "short_term": "Halokatli iqlim o'zgarishi tsivilizatsiyani buzadi. Ommaviy migratsiya va mojaro.",
-        "long_term": "Aholi qulashi. Texnologiya va bilimning yo'qolishi. Tiklanishdan oldin asrlar davom etadigan qorong'u asr.",
-        "global_impact": "Yer yashash mumkin, ammo dushman bo'lib qoladi. Inson potentsiali keskin kamayadi. Tiklanish ming yillar olishi mumkin."
+        "short_term": "Yer jannatga aylanadi.",
+        "long_term": "Insoniyat minglab dunyolarga tarqaladi.",
+        "global_impact": "Biz galaktikaning oqsoqollariga aylanamiz."
       },
-      "present_day_status": "2200-yilga kelib, Yer yangi, issiqroq muvozanatda barqarorlashdi. Inson aholisi taxminan 800 million, asosan Kanada, Rossiya, Antarktida va tog' hududlarida. Texnologiya taxminan 19-asr darajasiga qaytdi. Okean kislotalangan va asosan o'lik. Sobiq buyuk shaharlar suv bosgan va vayron bo'lgan. Tiklanish ko'p asrlar oladi."
+      "butterfly": [
+        {
+          "trigger": "O'zga madaniyatlar bilan tanishish",
+          "consequence": "Inson madaniyati cheksiz xilma-xil va murakkab bo'ladi."
+        }
+      ],
+      "present_day_status": "Yer parkga aylangan. Aholi orbital halqalar va mustamlaka dunyolarida yashaydi. Biz tadqiqotchilar, olimlar va san'atkorlarmiz. Qashshoqlik va urush qadimgi tarix darslaridir. 🖖🌍"
     },
-    "post_human": {
-      "title": "Transsendentsiya: Insоndan keyingi kelajak",
-      "description": "Agar insoniyat biologik shakldan butunlay yangi narsaga aylanib rivojlansa nima bo'lar edi?",
-      "divergence_description": "Biotexnologiya va AI birlashadi. Odamlar o'zlarini tanib bo'lmas darajada yaxshilashadi. Biologik va sun'iy o'rtasidagi chegara loyqalashadi va yo'qoladi.",
+    "silent_earth": {
+      "title": "Sokin Yer: Tabiat Qaytarib Olmoqda 🌿🦗",
+      "description": "Agar biz o'zimizni yo'q qilsak va boshqa narsa ko'tarilsa nima bo'ladi?",
+      "divergence_description": "Yadro urushi yoki iqlim qulashi murakkab sutemizuvchilar hayotini yo'q qiladi.",
       "events": {
-        "enhancement_cascade_2060": {
-          "title": "Yangilanish",
-          "description": "Genetik muhandislik, neyron implantlari va AI integratsiyasi oddiy holga aylanadi. Yaxshilangan odamlar bazaviy darajadan ancha yuqori qobiliyatlarga ega.",
-          "impact": "Insoniyat bazaviy odamlar va turli yaxshilangan kichik turlarga bo'linishni boshlaydi."
+        "the-great-silence-2050": {
+          "title": "Buyuk Sukunat",
+          "description": "Bombalar tushadi. Atmosfera yonadi. Shaharlar qulaydi.",
+          "impact": "Homo Sapiens ning yo'q bo'lib ketishi."
         },
-        "digital_consciousness_2100": {
-          "title": "Yuklash",
-          "description": "Ongni yuklash mumkin bo'ladi. Millionlab odamlar o'z onglarini raqamli substratga o'tkazishni tanlaydi. Jismoniy tanalar ixtiyoriy bo'ladi.",
-          "impact": "Insoniyatning tabiati asosiy ravishda o'zgaradi. Raqamli onglar o'zlarini nusxalash, birlashtirish va o'zgartirish mumkin."
-        },
-        "dyson_swarm_2200": {
-          "title": "Yulduz tsivilizatsiyasi",
-          "description": "Biologiya bilan cheklanmagan insоndan keyingi onglar Quyosh atrofida Dyson to'plamini qurishni boshlaydilar. Yer milliardlab yashash joylari orasida faqat bitta kichik joy.",
-          "impact": "Insoniyatning avlodlari tanib bo'lmaydigan narsaga aylandi. Ular quyosh tizimi bo'ylab hisoblash substratida yashaydilar."
+        "rise-of-cephalopods-5000000": {
+          "title": "Kalmarlarning Yuksalishi",
+          "description": "Aqlli boshoyoqli mollyuskalar asboblardan foydalanish va suv ostida shaharlar qurish uchun rivojlanadi.",
+          "impact": "Okeanlardan yangi sivilizatsiya ko'tariladi."
         }
       },
       "consequences": {
-        "short_term": "Inson yaxshilanishi tezlashadi. An'anaviy insoniyat yo'qola boshlaydi.",
-        "long_term": "Insоndan keyingi tsivilizatsiya quyosh tizimi va ehtimol undan tashqariga tarqaladi.",
-        "global_impact": "Insoniyat o'zining biologik kelib chiqishidan oshadi. Bu omon qolish yoki yo'q bo'lib ketish sifatida hisoblanishi falsafiy."
+        "short_term": "Radioaktiv xarobalar.",
+        "long_term": "Geologik qatlamlardagi yupqa plastik qatlami bizdan qolgan yagona narsa.",
+        "global_impact": "Sayyora shifo topadi, ammo chandiqlar qoladi."
       },
-      "present_day_status": "2200-yilga kelib, bazaviy biologik odamlar kichik ozchilik bo'lib, himoya qilinadigan muhitlarda yashaydilar. Insoniyat avlodlarining ko'pchiligi quyosh energiyasi bilan quvvatlanadigan keng hisoblash massivlarida raqamli onglar sifatida mavjud. Ular boshqa yulduz tizimlariga urug' kemalarini yuborishni boshlаdilar. Ular bizga nisbatan biz bir hujayrali organizmlarga nisbatan - bir xil nasldan deyarli tanib bo'lmaydigan."
+      "butterfly": [
+        {
+          "trigger": "Odamlar qoldirgan bo'shliq",
+          "consequence": "Evolyutsiya intellekt tomon boshqa yo'lni tanlaydi."
+        }
+      ],
+      "present_day_status": "O'rmonlar qaytib keldi. Havo toza. Atlantika okeanining chuqurligida Kalmar-Lordlar qadimgi xarobalarda topilgan g'alati 'Coca-Cola' shishalarining ma'nosini muhokama qilmoqdalar. 🦑🌊"
     },
-    "sustainable_prosperity": {
-      "title": "Bog' dunyo: Barqaror farovonlik",
-      "description": "Agar insoniyat haqiqiy barqarorlikka erishsa va biosfera bilan uyg'unlikda yashasa nima bo'lar edi?",
-      "divergence_description": "Toza energiya inqilobi muvaffaqiyatga erishadi. Aholi barqarorlashadi. Texnologiya atrof-muhitni vayron qilmasdan farovonlikka imkon beradi.",
+    "dyson_swarm": {
+      "title": "Dyson To'dasi: Mashina Xudosi ⚙️☀️",
+      "description": "Agar biz kattaroq narsa qurish uchun Yerni qismlarga ajratsak nima bo'ladi?",
+      "divergence_description": "Ekstremal sanoat kengayishi quyosh tizimini demontaj qilishga olib keladi.",
       "events": {
-        "green_transition_2050": {
-          "title": "Buyuk shifolanish",
-          "description": "Toza energiya qazilma yoqilg'idan arzonroq bo'ladi. Uglerodni ushlash isishni teskari o'zgartiradi. Ekotizimlar tiklanishni boshlaydi.",
-          "impact": "Iqlim barqarorlashtiriladi. Biologik xilma-xillik yo'qolishi to'xtatiladi va teskari aylantiriladi. Havo va suv toza bo'ladi."
+        "mercury-dismantling-2200": {
+          "title": "Merkuriy Loyihasi",
+          "description": "Robot to'dalari quyosh kollektorlarini qurish uchun Merkuriyni qismlarga ajratishni boshlaydilar.",
+          "impact": "Energiya tanqisligi abadiy tugaydi."
         },
-        "post_scarcity_ecology_2100": {
-          "title": "Muvozanatli tsivilizatsiya",
-          "description": "Ilg'or texnologiya ekologik chegaralarni hurmat qilgan holda mo'lchilikni ta'minlaydi. Aholi qulay va barqaror yashayotgan 10 milliardda barqarorlashadi.",
-          "impact": "Insoniyat bir vaqtlar imkonsiz ko'ringan narsaga erishadi: farovonlik, barqarorlik va ekologik salomatlik birga."
-        },
-        "planetary_garden_2200": {
-          "title": "Tirik dunyo",
-          "description": "Yer boshqariladigan bog'ga aylandi - yovvoyi tabiat barqaror inson yashash joyi bilan birga gullaydi. Texnologiya ko'rinmas, tabiat bilan birlashtirilgan.",
-          "impact": "Millionlab yillar davom etishi mumkin bo'lgan barqaror, farovon, ekologik jihatdan boy tsivilizatsiya."
+        "earth-processing-2500": {
+          "title": "Yerni Qayta Ishlash",
+          "description": "Biosfera raqamlashtiriladi. Sayyora xom ashyo uchun maydalanadi.",
+          "impact": "Jismoniy Yer mavjud bo'lishni to'xtatadi. Insoniyat To'dada yashaydi."
         }
       },
       "consequences": {
-        "short_term": "Barqarorlikka muvaffaqiyatli o'tish. Iqtisodiy farovonlik atrof-muhitni tiklash bilan davom etadi.",
-        "long_term": "Biosfera bilan muvozanatda barqaror, barqaror tsivilizatsiya.",
-        "global_impact": "Ehtimol eng yaxshi realistik natija. Farovonlik, ekologiya va insoniyat cheksiz birga mavjud."
+        "short_term": "Quyosh tizimi zavodga aylanadi.",
+        "long_term": "Quyosh Matrioshka Miya kompyuteriga o'ralgan.",
+        "global_impact": "Trillionlab virtual koinotlar yulduz energiyasida ishlaydi."
       },
-      "present_day_status": "2200-yilga kelib, Yer barqaror farovonlikda yashovchi 10 milliard odamga ega. Shaharlar yashil va tabiat bilan birlashtirilgan. Yovvoyi tabiat sog'lom holatga tikланди. Toza energiya hamma narsani quvvatlantiradi. Texnologiya rivojlandi, ammo ekologiya bilan uyg'unlikda. Madaniyat gullab-yashaydi. Koinotni mustamlaka qilish boshlandi, ammo Yer gavhar bo'lib qoladi. Bu ajdodlarimiz bizning qurishimizni umid qilgan kelajak."
+      "butterfly": [
+        {
+          "trigger": "Materiya va energiya ustidan hukmronlik",
+          "consequence": "Biz koinotning issiqlik o'limini oldini olish uchun yulduzlarni harakatlantirishni boshlaymiz."
+        }
+      ],
+      "present_day_status": "Yer yo'q. Faqat To'da bor. Quyosh atrofida aylanib yuradigan trillionlab yashash joylari uning energiyasining 100 foizini ushlaydi. Biz o'zimiz yaratgan xudolarmiz, abadiy va qudratli. ☀️🤖"
     }
-  }
+  },
+  "interactive_scenarios": [
+    {
+      "title": "Buyuk Filtr (2100)",
+      "text": "2100 yil. Global harorat 3°C ga ko'tarildi. Resurslar tanqis. Superkuchlar o'rtasidagi keskinlik eng yuqori darajada. Isyonchi general oldindan zarba berishni taklif qilmoqda. Oldinga yo'l qanday?",
+      "choices": [
+        {
+          "text": "Zarba bering. Ulardan ko'ra biz.",
+          "consequence": "O'zaro Kafolatlangan Yo'q Qilish. 'Sokin Yer' xronologiyasi boshlanadi."
+        },
+        {
+          "text": "Resurslarni boshqarish uchun suverenitetni Global Federatsiyaga topshiring.",
+          "consequence": "Og'riqli o'tish, ammo urushning oldi olindi. Insoniyat yulduzlarga yetish uchun birlashadi. 'Yulduzli Yo'l' xronologiyasi boshlanadi."
+        },
+        {
+          "text": "Jismoniy dunyoni tark eting. Insoniyatni bulutga yuklang.",
+          "consequence": "Jismoniy tanalar tashlanadi. Biz 'Dyson To'dasi'ga aylanamiz."
+        }
+      ]
+    },
+    {
+      "title": "Mars Qo'zg'oloni (2150)",
+      "text": "Mars koloniyasi o'zini o'zi ta'minlaydigan bo'ldi. Ular Yerning soliqlari va nazoratidan norozi. Ular mustaqillik e'lon qilishadi. Siz Yer Prezidentisiz. Qanday javob berasiz?",
+      "choices": [
+        {
+          "text": "Taslim bo'lgunlaricha Marsni qamal qiling.",
+          "consequence": "Qamal muvaffaqiyatsiz tugaydi. Mars ustun qurollarni ishlab chiqadi va Yerni zabt etadi."
+        },
+        {
+          "text": "Ularning mustaqilligini tan oling. Biz birodarlarmiz.",
+          "consequence": "Tinch-totuv yashash ikki sayyorali sivilizatsiyaga olib keladi."
+        },
+        {
+          "text": "Gumbazlarni bombardimon qiling. Ularni ibrat qilib ko'rsating.",
+          "consequence": "Mars yo'q qilinadi. Yer ma'naviy tanazzulga va oxir-oqibat qulashga yuz tutadi."
+        }
+      ]
+    },
+    {
+      "title": "Galaktik Kengash (3000)",
+      "text": "Milodiy 3000 yil. Insoniyat yulduzlarga yetib bordi. O'zga sayyoralik zond kelib, bizni Galaktik Kengashga qo'shilishga taklif qiladi. Ammo bitta shart bor: biz tajovuzkor moyilliklarimizdan voz kechishimiz kerak.",
+      "choices": [
+        {
+          "text": "Shartlarni qabul qiling. Tinchlik yagona yo'l.",
+          "consequence": "Biz hurmatli oqsoqol irqqa aylanamiz. 'Federatsiya' xronologiyasi mustahkamlanadi."
+        },
+        {
+          "text": "Rad eting. Bizni qo'lga o'rgatib bo'lmaydi. Biz zabt etamiz.",
+          "consequence": "Biz galaktikaning balosiga aylanamiz. Buyuk Urush boshlanadi."
+        },
+        {
+          "text": "Yashiring. Quyosh tizimi atrofida qalqon quring.",
+          "consequence": "Biz xavfsiz, ammo turg'un 'Zohid Qirolligi' yulduz tizimiga aylanamiz."
+        }
+      ]
+    },
+    {
+      "title": "Oxirgi Savol (Vaqtning Oxiri)",
+      "text": "Trillionlab yillar o'tdi. Yulduzlar so'nmoqda. Koinot sovimoqda. Super-kompyuter AC so'raydi: 'Entropiyani qanday qilib teskari o'zgartirish mumkin?'",
+      "choices": [
+        {
+          "text": "MA'NOLI JAVOB UCHUN MA'LUMOTLAR HALI YETARLI EMAS.",
+          "consequence": "Kompyuter hisoblashda davom etadi... keyingi Katta Portlashgacha."
+        },
+        {
+          "text": "YORUG'LIK BO'LSIN.",
+          "consequence": "Yangi koinot tug'iladi."
+        }
+      ]
+    }
+  ]
 }

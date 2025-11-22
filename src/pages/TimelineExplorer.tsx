@@ -114,10 +114,48 @@ const TimelineExplorer: React.FC = () => {
 
   const timelineTrans = getTimelineTranslation(timeline.id);
 
+  // Construct fully translated timeline object
+  const translatedTimeline: Timeline = {
+    ...timeline,
+    title: timelineTrans?.title || timeline.title,
+    description: timelineTrans?.description || timeline.description,
+    divergenceDescription: timelineTrans?.divergence_description || timeline.divergenceDescription,
+    presentDayStatus: timelineTrans?.present_day_status || timeline.presentDayStatus,
+    keyEvents: timeline.keyEvents.map(event => {
+      const eventTrans = getEventTranslation(event.id);
+      return {
+        ...event,
+        title: eventTrans?.title || event.title,
+        description: eventTrans?.description || event.description,
+        impact: eventTrans?.impact || event.impact,
+      };
+    }),
+    consequences: timeline.consequences.map(consequence => {
+      const consequenceTrans = getConsequenceTranslation(consequence.id);
+      return {
+        ...consequence,
+        category: consequenceTrans?.category || consequence.category,
+        shortTerm: consequenceTrans?.short_term || consequence.shortTerm,
+        longTerm: consequenceTrans?.long_term || consequence.longTerm,
+        globalImpact: consequenceTrans?.global_impact || consequence.globalImpact,
+      };
+    }),
+    butterfly: timeline.butterfly.map(effect => {
+      const butterflyTrans = getButterflyTranslation(effect.id);
+      return {
+        ...effect,
+        trigger: butterflyTrans?.trigger || effect.trigger,
+        consequence: butterflyTrans?.consequence || effect.consequence,
+        magnitude: butterflyTrans?.magnitude || effect.magnitude,
+        timespan: butterflyTrans?.timespan || effect.timespan,
+      };
+    })
+  };
+
   const timelineStats = [
-    { label: t('pages-timeline-explorer:stats.divergence_year'), value: timeline.divergenceYear, icon: Clock },
-    { label: t('pages-timeline-explorer:stats.probability'), value: `${timeline.probability}%`, icon: TrendingUp },
-    { label: t('pages-timeline-explorer:stats.key_events'), value: timeline.keyEvents.length, icon: GitBranch }
+    { label: t('pages-timeline-explorer:stats.divergence_year'), value: translatedTimeline.divergenceYear, icon: Clock },
+    { label: t('pages-timeline-explorer:stats.probability'), value: `${translatedTimeline.probability}%`, icon: TrendingUp },
+    { label: t('pages-timeline-explorer:stats.key_events'), value: translatedTimeline.keyEvents.length, icon: GitBranch }
   ];
 
   return (
@@ -216,7 +254,7 @@ const TimelineExplorer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <AnimatedTimeline
-              timeline={timeline}
+              timeline={translatedTimeline}
               startYear={chapter.startYear}
               endYear={chapter.endYear}
               onEventClick={setSelectedEvent}
@@ -348,7 +386,7 @@ const TimelineExplorer: React.FC = () => {
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
               <p className="text-lg text-gray-300 leading-relaxed">
-                {timelineTrans?.present_day_status || timeline.presentDayStatus}
+                {translatedTimeline.presentDayStatus}
               </p>
             </div>
           </motion.div>
@@ -431,24 +469,26 @@ const TimelineExplorer: React.FC = () => {
                     <p className="text-sm text-gray-300">{selectedEventTrans?.impact || selectedEvent.impact}</p>
                   </div>
 
-                {selectedEvent.relatedFigures.length > 0 && (
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">{t('pages-timeline-explorer:sections.related_figures')}</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedEvent.relatedFigures.map(figureId => {
-                        const figure = chapter.keyFigures.find(f => f.id === figureId);
-                        return figure ? (
-                          <span
-                            key={figureId}
-                            className="bg-blue-600 text-white px-2 py-1 rounded-sm text-xs"
-                          >
-                            {figure.name}
-                          </span>
-                        ) : null;
-                      })}
+                  {selectedEvent.relatedFigures.length > 0 && (
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <h4 className="text-sm font-semibold text-white mb-2">{t('pages-timeline-explorer:sections.related_figures')}</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {selectedEvent.relatedFigures.map(figureId => {
+                          const figure = chapter.keyFigures.find(f => f.id === figureId);
+                          const figureKey = `figures.${figureId}`;
+                          const translatedName = t(`${chapterNamespace}:${figureKey}.name`, { defaultValue: figure?.name });
+                          return figure ? (
+                            <span
+                              key={figureId}
+                              className="bg-blue-600 text-white px-2 py-1 rounded-sm text-xs"
+                            >
+                              {translatedName}
+                            </span>
+                          ) : null;
+                        })}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
 
                   <div className="flex justify-end">
                     <button

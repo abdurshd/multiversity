@@ -121,6 +121,40 @@ const ChapterDetail: React.FC = () => {
     return timelineId.replace(/-/g, '_');
   };
 
+  // Helper to get translated figures
+  const getTranslatedFigures = () => {
+    if (!chapter || !chapterNamespace || !translationsLoaded) return chapter?.keyFigures || [];
+
+    return chapter.keyFigures.map(figure => {
+      const figureKey = `figures.${figure.id}`;
+      return {
+        ...figure,
+        name: t(`${chapterNamespace}:${figureKey}.name`, { defaultValue: figure.name }),
+        role: t(`${chapterNamespace}:${figureKey}.role`, { defaultValue: figure.role }),
+        description: t(`${chapterNamespace}:${figureKey}.description`, { defaultValue: figure.description }),
+      };
+    });
+  };
+
+  // Helper to get translated scenarios
+  const getTranslatedScenarios = () => {
+    if (!chapter?.interactiveScenarios || !chapterNamespace || !translationsLoaded) return chapter?.interactiveScenarios || [];
+
+    return chapter.interactiveScenarios.map((scenario, index) => {
+      const scenarioKey = `interactive_scenarios.${index}`;
+      return {
+        ...scenario,
+        title: t(`${chapterNamespace}:${scenarioKey}.title`, { defaultValue: scenario.title }),
+        text: t(`${chapterNamespace}:${scenarioKey}.text`, { defaultValue: scenario.text }),
+        choices: scenario.choices?.map((choice, choiceIndex) => ({
+          ...choice,
+          text: t(`${chapterNamespace}:${scenarioKey}.choices.${choiceIndex}.text`, { defaultValue: choice.text }),
+          consequence: t(`${chapterNamespace}:${scenarioKey}.choices.${choiceIndex}.consequence`, { defaultValue: choice.consequence }),
+        }))
+      };
+    });
+  };
+
   if (!chapter) {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
@@ -264,8 +298,8 @@ const ChapterDetail: React.FC = () => {
               >
                 <div className="w-full relative">
                   <InteractiveStory
-                    title={chapter.title}
-                    scenes={chapter.interactiveScenarios || []}
+                    title={getTranslation('meta.title')}
+                    scenes={getTranslatedScenarios()}
                     onComplete={() => setShowStory(false)}
                   />
                 </div>
@@ -292,7 +326,7 @@ const ChapterDetail: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
-            {chapter.keyFigures.map((figure, index) => (
+            {getTranslatedFigures().map((figure, index) => (
               <motion.div
                 key={figure.id}
                 initial={{ opacity: 0, y: 20, scale: 0.8 }}

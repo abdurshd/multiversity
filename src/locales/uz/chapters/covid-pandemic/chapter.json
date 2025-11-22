@@ -24,7 +24,7 @@
     }
   },
   "timelines": {
-    "total-containment": {
+    "total_containment": {
       "title": "To'liq Cheklash: O'qdan Qochildi 🛡️🌏",
       "description": "Agar dunyo 2020 yil yanvar oyida darhol va samarali munosabat bildirganida nima bo'lar edi?",
       "divergence_description": "2020 yil yanvar oyining boshida global sayohat taqiqlari va qattiq qulflar joriy etiladi.",
@@ -53,7 +53,7 @@
       ],
       "present_day_status": "COVID-19 tibbiyot darsliklarida 'Uxan Qo'rquvi' sifatida tanilgan izohdir. Biroq, hozir hamma haroratini hukumatga har kuni xabar qiladigan aqlli soatlar taqadi. 'Sizning xavfsizligingiz uchun', deyishadi ular. ⌚👀"
     },
-    "black-death-variant": {
+    "black_death_variant": {
       "title": "Qora O'lim Varianti: Jamiyat Qulashi ☠️🏚️",
       "description": "Agar virus sezilarli darajada o'limga olib keladigan mutatsiyaga uchraganida nima bo'lar edi?",
       "divergence_description": "2020 yil oxiridagi mutatsiya o'lim darajasini 15% ga oshiradi.",
@@ -82,7 +82,7 @@
       ],
       "present_day_status": "Shaharlar o't bosgan xarobalar. Omon qolganlar germetik muhrlangan bunkerlarda yashaydilar, faqat yuqori aniqlikdagi VR avatarlari orqali o'zaro aloqada bo'lishadi. Qo'l siqish qotillikka urinish hisoblanadi. 🥽🏙️"
     },
-    "permanent-pandemic": {
+    "permanent_pandemic": {
       "title": "Abadiy Vabo: Bo'lingan Dunyo 😷🌐",
       "description": "Agar immunitet vaqtinchalik bo'lsa va vaksinalar yuqishni to'xtata olmasa nima bo'lar edi?",
       "divergence_description": "Yangi variantlar doimiy ravishda immunitetdan qochadi. Pandemiya hech qachon rasman tugamaydi.",
