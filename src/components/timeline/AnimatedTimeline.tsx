@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import type { HistoricalEvent, Timeline } from '../../types';
 import { useTranslation } from 'react-i18next';
@@ -36,18 +36,45 @@ export default function AnimatedTimeline({
   showOnLoad = true,
   animationDelay = 100,
 }: AnimatedTimelineProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const { t } = useTranslation('components-animated-timeline');
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    if (!svgRef.current) return;
+    if (!containerRef.current) return;
+
+    const resizeObserver = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        setWidth(entry.contentRect.width);
+      }
+    });
+
+    resizeObserver.observe(containerRef.current);
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!svgRef.current || width === 0) return;
 
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 
-    const margin = { top: 80, right: 60, bottom: 80, left: 60 };
-    const width = TIMELINE_DIMENSIONS.width - margin.left - margin.right;
-    const height = TIMELINE_DIMENSIONS.height - margin.top - margin.bottom;
+    // Responsive dimensions
+    const isMobile = width < 640;
+    const margin = {
+      top: 80,
+      right: isMobile ? 20 : 60,
+      bottom: isMobile ? 100 : 80, // More bottom space for wrapped legend
+      left: isMobile ? 20 : 60
+    };
+
+    // Calculate height based on width to maintain aspect ratio but ensure minimum height
+    const baseHeight = TIMELINE_DIMENSIONS.height;
+    const height = isMobile ? 400 : baseHeight; // Taller on mobile for vertical spacing
+
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
 
     // Add definitions for glow effects
     const defs = svg.append('defs');
@@ -91,7 +118,7 @@ export default function AnimatedTimeline({
       .attr('gradientUnits', 'userSpaceOnUse')
       .attr('x1', 0)
       .attr('y1', 0)
-      .attr('x2', width)
+      .attr('x2', innerWidth)
       .attr('y2', 0);
 
     lineGradient.append('stop')
@@ -133,8 +160,8 @@ export default function AnimatedTimeline({
 
     // Draw subtle background glow
     svg.append('rect')
-      .attr('width', TIMELINE_DIMENSIONS.width)
-      .attr('height', TIMELINE_DIMENSIONS.height)
+      .attr('width', width)
+      .attr('height', height)
       .attr('fill', 'url(#bg-gradient)');
 
     const g = svg.append('g')
@@ -148,16 +175,16 @@ export default function AnimatedTimeline({
     // Create scale
     const xScale = d3.scaleLinear()
       .domain([startYear, endYear])
-      .range([0, width]);
+      .range([0, innerWidth]);
 
     // --- Draw Main Timeline (Neon Tube Effect) ---
 
     // 1. Dark core background
     g.append('line')
       .attr('x1', 0)
-      .attr('y1', height / 2)
-      .attr('x2', width)
-      .attr('y2', height / 2)
+      .attr('y1', innerHeight / 2)
+      .attr('x2', innerWidth)
+      .attr('y2', innerHeight / 2)
       .attr('stroke', '#0F172A')
       .attr('stroke-width', 6)
       .attr('stroke-linecap', 'round');
@@ -165,9 +192,9 @@ export default function AnimatedTimeline({
     // 2. Colored glow layer (wide)
     g.append('line')
       .attr('x1', 0)
-      .attr('y1', height / 2)
-      .attr('x2', width)
-      .attr('y2', height / 2)
+      .attr('y1', innerHeight / 2)
+      .attr('x2', innerWidth)
+      .attr('y2', innerHeight / 2)
       .attr('stroke', 'url(#line-gradient)')
       .attr('stroke-width', 4)
       .attr('stroke-linecap', 'round')
@@ -177,9 +204,9 @@ export default function AnimatedTimeline({
     // 3. Main visible line
     g.append('line')
       .attr('x1', 0)
-      .attr('y1', height / 2)
-      .attr('x2', width)
-      .attr('y2', height / 2)
+      .attr('y1', innerHeight / 2)
+      .attr('x2', innerWidth)
+      .attr('y2', innerHeight / 2)
       .attr('stroke', 'url(#line-gradient)')
       .attr('stroke-width', 2)
       .attr('stroke-linecap', 'round')
@@ -188,22 +215,23 @@ export default function AnimatedTimeline({
     // 4. White hot core (thin)
     g.append('line')
       .attr('x1', 0)
-      .attr('y1', height / 2)
-      .attr('x2', width)
-      .attr('y2', height / 2)
+      .attr('y1', innerHeight / 2)
+      .attr('x2', innerWidth)
+      .attr('y2', innerHeight / 2)
       .attr('stroke', '#FFFFFF')
       .attr('stroke-width', 0.5)
       .attr('stroke-linecap', 'round')
       .style('opacity', 0.8);
 
     // --- Year Ticks ---
-    const ticks = xScale.ticks(5);
+    // Reduce ticks on mobile
+    const ticks = xScale.ticks(isMobile ? 3 : 5);
     g.selectAll('.tick')
       .data(ticks)
       .enter()
       .append('g')
       .attr('class', 'tick')
-      .attr('transform', d => `translate(${xScale(d)}, ${height / 2})`)
+      .attr('transform', d => `translate(${xScale(d)}, ${innerHeight / 2})`)
       .each(function (d) {
         const tick = d3.select(this);
 
@@ -226,10 +254,10 @@ export default function AnimatedTimeline({
 
     // --- Timeline Title ---
     svg.append('text')
-      .attr('x', TIMELINE_DIMENSIONS.width / 2)
+      .attr('x', width / 2)
       .attr('y', 40)
       .attr('text-anchor', 'middle')
-      .style('font-size', '24px')
+      .style('font-size', isMobile ? '18px' : '24px')
       .style('font-weight', '800')
       .style('fill', '#F8FAFC') // Slate-50
       .style('text-transform', 'uppercase')
@@ -243,7 +271,7 @@ export default function AnimatedTimeline({
       .enter()
       .append('g')
       .attr('class', 'event-node')
-      .attr('transform', d => `translate(${xScale(d.year)}, ${height / 2})`);
+      .attr('transform', d => `translate(${xScale(d.year)}, ${innerHeight / 2})`);
 
     // Vertical Stems (Gradient Fade)
     const stemGradientId = (d: HistoricalEvent) => `stem-gradient-${d.id}`;
@@ -251,7 +279,8 @@ export default function AnimatedTimeline({
     eventGroups.each(function (d) {
       const group = d3.select(this);
       const isTop = events.indexOf(d) % 2 === 0;
-      const yOffset = isTop ? -40 : 40;
+      // Reduce offset on mobile to keep it compact
+      const yOffset = isTop ? (isMobile ? -30 : -40) : (isMobile ? 30 : 40);
       const color = eventTypeColors[d.type] || eventTypeColors.political;
 
       // Define gradient for stem
@@ -358,7 +387,7 @@ export default function AnimatedTimeline({
     const divergenceEvent = events.find(e => e.year === timeline.divergenceYear);
     if (divergenceEvent) {
       const divergenceGroup = g.append('g')
-        .attr('transform', `translate(${xScale(divergenceEvent.year)}, ${height / 2})`);
+        .attr('transform', `translate(${xScale(divergenceEvent.year)}, ${innerHeight / 2})`);
 
       // Pulse Ring
       divergenceGroup.append('circle')
@@ -415,15 +444,28 @@ export default function AnimatedTimeline({
 
     // --- Legend ---
     const legendData = Object.entries(eventTypeColors);
-    const legendWidth = 110;
-    const legendX = (TIMELINE_DIMENSIONS.width - (legendData.length * legendWidth)) / 2;
+    const legendItemWidth = 110;
+    const legendRowHeight = 25;
+
+    // Calculate layout
+    const maxItemsPerRow = Math.floor(width / legendItemWidth);
+    const itemsPerRow = isMobile ? Math.min(2, maxItemsPerRow) : maxItemsPerRow;
+    const totalRows = Math.ceil(legendData.length / itemsPerRow);
+
+    // Center the block of legend items
+    const legendBlockWidth = Math.min(legendData.length, itemsPerRow) * legendItemWidth;
+    const legendX = (width - legendBlockWidth) / 2;
+    const legendY = height - (totalRows * legendRowHeight) - 20;
 
     const legend = svg.append('g')
-      .attr('transform', `translate(${legendX}, ${TIMELINE_DIMENSIONS.height - 40})`);
+      .attr('transform', `translate(${legendX}, ${legendY})`);
 
     legendData.forEach(([type, color], i) => {
+      const row = Math.floor(i / itemsPerRow);
+      const col = i % itemsPerRow;
+
       const legendItem = legend.append('g')
-        .attr('transform', `translate(${i * legendWidth}, 0)`)
+        .attr('transform', `translate(${col * legendItemWidth}, ${row * legendRowHeight})`)
         .style('cursor', 'default');
 
       legendItem.append('circle')
@@ -441,7 +483,7 @@ export default function AnimatedTimeline({
         .text(type);
     });
 
-  }, [timeline, startYear, endYear, showOnLoad, animationDelay, onEventClick, t]);
+  }, [timeline, startYear, endYear, showOnLoad, animationDelay, onEventClick, t, width]);
 
   const showTooltip = (event: MouseEvent, data: HistoricalEvent) => {
     const tooltip = d3.select('body').append('div')
@@ -486,11 +528,14 @@ export default function AnimatedTimeline({
   };
 
   return (
-    <div className="w-full bg-slate-950/80 rounded-2xl border border-white/5 shadow-2xl overflow-hidden backdrop-blur-sm">
+    <div
+      ref={containerRef}
+      className="w-full bg-slate-950/80 rounded-2xl border border-white/5 shadow-2xl overflow-hidden backdrop-blur-sm"
+    >
       <svg
         ref={svgRef}
-        width={TIMELINE_DIMENSIONS.width}
-        height={TIMELINE_DIMENSIONS.height}
+        width={width}
+        height={width < 640 ? 400 : TIMELINE_DIMENSIONS.height}
         className="w-full"
         style={{ maxWidth: '100%', height: 'auto' }}
       />
