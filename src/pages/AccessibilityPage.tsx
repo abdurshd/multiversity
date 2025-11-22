@@ -1,40 +1,43 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AccessibilityPage: React.FC = () => {
+  const { t } = useTranslation('pages-accessibility');
+  const sections = t('sections', { returnObjects: true }) as Array<{title: string; content?: string; list?: string[]; email?: string}>;
+
   return (
     <div className="min-h-screen bg-slate-950 text-white py-16 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto space-y-8">
         <header className="space-y-3 text-center">
-          <p className="text-sm uppercase tracking-[0.4em] text-blue-300">Legal</p>
-          <h1 className="text-4xl font-bold">Accessibility Statement</h1>
-          <p className="text-slate-300">Aligned with WCAG 2.1 AA standards.</p>
+          <p className="text-sm uppercase tracking-[0.4em] text-blue-300">{t('header.category')}</p>
+          <h1 className="text-4xl font-bold">{t('header.title')}</h1>
+          <p className="text-slate-300">{t('header.subtitle')}</p>
         </header>
 
-        <section className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3">
-          <h2 className="text-2xl font-semibold">Commitment</h2>
-          <p className="text-slate-300">
-            Multiversity ensures equal access for learners, researchers, and educators. We strive to adhere to WCAG 2.1 AA
-            guidelines, testing keyboard navigation and screen reader compatibility to ensure a seamless experience for all users.
-          </p>
-        </section>
-
-        <section className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3">
-          <h2 className="text-2xl font-semibold">Recent Improvements</h2>
-          <ul className="list-disc list-inside text-slate-300 space-y-2">
-            <li>High contrast color scheme for improved readability.</li>
-            <li>Alternative text provided for all chapter and timeline images.</li>
-            <li>Keyboard navigation support for all interactive elements.</li>
-            <li>Semantic HTML structure for better screen reader navigation.</li>
-          </ul>
-        </section>
-
-        <section className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3">
-          <h2 className="text-2xl font-semibold">Request Assistance</h2>
-          <p className="text-slate-300">
-            Email <a href="mailto:accessibility@multiversity.netlify.app" className="text-blue-300 underline">accessibility@multiversity.netlify.app</a> to
-            report a barrier or request content in an alternative format. We aim to respond within five business days.
-          </p>
-        </section>
+        {sections.map((section, index) => (
+          <section key={index} className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3">
+            <h2 className="text-2xl font-semibold">{section.title}</h2>
+            {section.content && (
+              <p className="text-slate-300">
+                {section.email ? (
+                  <>
+                    Email <a href={`mailto:${section.email}`} className="text-blue-300 underline">{section.email}</a> to
+                    report a barrier or request content in an alternative format. We aim to respond within five business days.
+                  </>
+                ) : (
+                  section.content
+                )}
+              </p>
+            )}
+            {section.list && (
+              <ul className="list-disc list-inside text-slate-300 space-y-2">
+                {section.list.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            )}
+          </section>
+        ))}
       </div>
     </div>
   );
