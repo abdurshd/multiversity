@@ -108,6 +108,14 @@ const ChapterDetail: React.FC = () => {
     return typeof result === 'string' ? result : '';
   };
 
+  // Helper function to get timeline translation object
+  const getTimelineTranslation = (timelineId: string): any => {
+    if (!chapterNamespace || !translationsLoaded) return null;
+    const timelineKey = getTimelineKey(timelineId);
+    const result = t(`${chapterNamespace}:timelines.${timelineKey}`, { returnObjects: true });
+    return result;
+  };
+
   // Convert timeline ID to translation key (convert hyphens to underscores)
   const getTimelineKey = (timelineId: string) => {
     return timelineId.replace(/-/g, '_');
@@ -430,16 +438,16 @@ const ChapterDetail: React.FC = () => {
                     </div>
 
                     <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                      {getTranslation(`timelines.${getTimelineKey(timeline.id)}.title`)}
+                      {getTimelineTranslation(timeline.id)?.title || timeline.title}
                     </h3>
 
                     <p className="text-gray-300 mb-4 line-clamp-3">
-                      {getTranslation(`timelines.${getTimelineKey(timeline.id)}.description`)}
+                      {getTimelineTranslation(timeline.id)?.description || timeline.description}
                     </p>
 
                     <div className="bg-slate-700 rounded-lg p-3 mb-4">
                       <p className="text-sm text-gray-400 mb-1">{t('common-ui:labels.divergence_point')}:</p>
-                      <p className="text-sm text-white">{getTranslation(`timelines.${getTimelineKey(timeline.id)}.divergence_description`)}</p>
+                      <p className="text-sm text-white">{getTimelineTranslation(timeline.id)?.divergence_description || timeline.divergenceDescription}</p>
                     </div>
 
                     <div className="flex items-center justify-between">
@@ -482,14 +490,14 @@ const ChapterDetail: React.FC = () => {
                   const timeline = chapter.alternativeTimelines.find(t => t.id === selectedTimeline);
                   if (!timeline) return null;
 
-                  const timelineKey = getTimelineKey(timeline.id);
+                  const timelineTrans = getTimelineTranslation(timeline.id);
                   return (
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-3">
                           <div className="text-3xl">{timeline.icon}</div>
                           <h3 className="text-2xl font-bold text-white">
-                            {getTranslation(`timelines.${timelineKey}.title`)}
+                            {timelineTrans?.title || timeline.title}
                           </h3>
                         </div>
                         <button
@@ -501,7 +509,7 @@ const ChapterDetail: React.FC = () => {
                       </div>
 
                       <p className="text-gray-300 mb-6">
-                        {getTranslation(`timelines.${timelineKey}.description`)}
+                        {timelineTrans?.description || timeline.description}
                       </p>
 
                       <div className="bg-slate-700 rounded-lg p-4 mb-6">
@@ -509,7 +517,7 @@ const ChapterDetail: React.FC = () => {
                           {t('common-ui:labels.present_day_status')}
                         </h4>
                         <p className="text-gray-300 text-sm">
-                          {getTranslation(`timelines.${timelineKey}.present_day_status`)}
+                          {timelineTrans?.present_day_status || timeline.presentDayStatus}
                         </p>
                       </div>
 
