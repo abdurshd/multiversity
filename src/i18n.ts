@@ -16,6 +16,8 @@ import uzCommonErrors from './locales/uz/common/errors.json';
 // Import page namespaces
 import enPagesLanding from './locales/en/pages/landing.json';
 import uzPagesLanding from './locales/uz/pages/landing.json';
+import enPagesChaptersList from './locales/en/pages/chapters-list.json';
+import uzPagesChaptersList from './locales/uz/pages/chapters-list.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -96,6 +98,7 @@ i18n
                 'common-footer': enCommonFooter,
                 'common-errors': enCommonErrors,
                 'pages-landing': enPagesLanding,
+                'pages-chapters-list': enPagesChaptersList,
             },
             uz: {
                 translation: uzLegacy, // For backward compatibility
@@ -104,12 +107,13 @@ i18n
                 'common-footer': uzCommonFooter,
                 'common-errors': uzCommonErrors,
                 'pages-landing': uzPagesLanding,
+                'pages-chapters-list': uzPagesChaptersList,
             },
         },
         defaultNS: 'translation',
         fallbackNS: 'translation',
         fallbackLng: 'en',
-        ns: ['translation', 'common-ui', 'common-nav', 'common-footer', 'common-errors', 'pages-landing'],
+        ns: ['translation', 'common-ui', 'common-nav', 'common-footer', 'common-errors', 'pages-landing', 'pages-chapters-list'],
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         },

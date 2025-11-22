@@ -1,0 +1,178 @@
+{
+  "page": {
+    "title": "Historical Chapters",
+    "description": "Explore 14 pivotal moments in history, each with 3 alternative timelines showing how different choices could have shaped our world."
+  },
+  "search": {
+    "placeholder": "Search chapters, key events, or divergence points...",
+    "clear": "Clear search",
+    "no_results": "No chapters found",
+    "no_results_description": "Try adjusting your search terms or filters to find more chapters."
+  },
+  "filters": {
+    "all_periods": "All Periods",
+    "18th_century": "18th Century",
+    "19th_century": "19th Century",
+    "20th_century": "20th Century",
+    "21st_century": "21st Century",
+    "other": "Other",
+    "showing": "Showing {{count}} of {{total}} chapters",
+    "clear_filters": "Clear filters"
+  },
+  "stats": {
+    "chapters": "Chapters",
+    "alt_timelines": "Alt. Timelines",
+    "key_events": "Key Events Logged"
+  },
+  "card": {
+    "key_events": "Key Events:",
+    "timelines": "{{count}} Timelines",
+    "explore": "Explore"
+  },
+  "chapters": {
+    "timur_legacy": {
+      "title": "Timur's Legacy",
+      "period": "14th Century",
+      "description": "The last great nomadic conqueror and his empire",
+      "key_events": [
+        "Battle of Ankara",
+        "Invasion of China",
+        "Timurid Renaissance"
+      ]
+    },
+    "us_independence": {
+      "title": "US Independence",
+      "period": "1776",
+      "description": "The American Revolution and its alternative outcomes",
+      "key_events": [
+        "Declaration of Independence",
+        "Revolutionary War",
+        "Constitutional Convention"
+      ]
+    },
+    "french_revolution": {
+      "title": "French Revolution",
+      "period": "1789",
+      "description": "The fall of the monarchy and paths not taken",
+      "key_events": [
+        "Storming of Bastille",
+        "Reign of Terror",
+        "Rise of Napoleon"
+      ]
+    },
+    "lincoln_era": {
+      "title": "Lincoln Era",
+      "period": "1860s",
+      "description": "Civil War, slavery, and reconstruction alternatives",
+      "key_events": [
+        "Lincoln Election",
+        "Civil War",
+        "Emancipation Proclamation"
+      ]
+    },
+    "russian_empire": {
+      "title": "Russian Empire",
+      "period": "1721-1917",
+      "description": "Tsarist Russia and Central Asian expansion",
+      "key_events": [
+        "Peter the Great",
+        "Catherine II",
+        "Crimean War"
+      ]
+    },
+    "lenin_revolution": {
+      "title": "Lenin Revolution",
+      "period": "1917",
+      "description": "Bolshevik victory and Soviet state formation",
+      "key_events": [
+        "October Revolution",
+        "Civil War",
+        "War Communism"
+      ]
+    },
+    "hitler_rise": {
+      "title": "Hitler's Rise",
+      "period": "1920s-1940s",
+      "description": "Nazi Germany and alternative paths of WWII",
+      "key_events": [
+        "Beer Hall Putsch",
+        "Rise to Power",
+        "World War II"
+      ]
+    },
+    "world_war_1": {
+      "title": "World War I",
+      "period": "1914-1918",
+      "description": "The Great War and its alternative outcomes",
+      "key_events": [
+        "Assassination of Archduke",
+        "Trench Warfare",
+        "Treaty of Versailles"
+      ]
+    },
+    "world_war_2": {
+      "title": "World War II",
+      "period": "1939-1945",
+      "description": "Global conflict with dramatically different outcomes",
+      "key_events": [
+        "Invasion of Poland",
+        "Pearl Harbor",
+        "D-Day"
+      ]
+    },
+    "cold_war": {
+      "title": "Cold War",
+      "period": "1947-1991",
+      "description": "Superpower rivalry and nuclear standoff alternatives",
+      "key_events": [
+        "Iron Curtain",
+        "Cuban Missile Crisis",
+        "Berlin Wall"
+      ]
+    },
+    "ussr_collapse": {
+      "title": "USSR Collapse",
+      "period": "1991",
+      "description": "End of Soviet Union and alternative dissolutions",
+      "key_events": [
+        "Gorbachev Reforms",
+        "August Coup",
+        "Independence Declarations"
+      ]
+    },
+    "covid_pandemic": {
+      "title": "COVID-19 Pandemic",
+      "period": "2019",
+      "description": "Modern crisis and global response alternatives",
+      "key_events": [
+        "Wuhan Outbreak",
+        "Global Lockdowns",
+        "Vaccine Race"
+      ]
+    },
+    "ai_revolution": {
+      "title": "AI Revolution",
+      "period": "2020s",
+      "description": "The rise of artificial intelligence and future paths",
+      "key_events": [
+        "GPT-4 Release",
+        "AGI Breakthrough",
+        "Regulation Debates"
+      ]
+    },
+    "future_earth": {
+      "title": "Future Earth",
+      "period": "2100+",
+      "description": "Long-term future scenarios for humanity and the planet",
+      "key_events": [
+        "Climate Tipping Points",
+        "Space Colonization",
+        "Post-Humanism"
+      ]
+    }
+  },
+  "bottom_section": {
+    "title": "Interactive Timeline Experience",
+    "description": "Each chapter contains detailed timelines with cause-and-effect visualizations, showing how small changes could have dramatically altered the course of history."
+  }
+}
