@@ -1,112 +1,348 @@
 {
   "meta": {
-    "title": "Linkoln davri",
+    "title": "Linkoln Davri",
     "period": "1860-1865",
     "description": "Fuqarolar urushi, qullikni bekor qilish va birlashtirish yoki doimiy bo'linish yo'llari",
-    "historical_context": "Авраham Linkolnning prezidentligi Amerikaning eng katta inqirozi bilan bir vaqtga to'g'ri keldi. Fuqarolar urushi erkinlikda tug'ilgan davlat bardosh bera oladimi yoki yo'qligini sinab ko'rdi. Linkolnning g'alaba paytidagi suiqasdi Rekonstruksiyani tugallanmagan va irqiy adolat uchun kurashni yakunlanmagan qoldirdi.",
+    "historical_context": "Avraam Linkolnning prezidentligi Amerikaning eng katta inqirozi bilan bir vaqtga to'g'ri keldi. Fuqarolar urushi erkinlikda tug'ilgan davlat bardosh bera oladimi yoki yo'qligini sinab ko'rdi. Linkolnning g'alaba paytidagi suiqasdi Rekonstruksiyani tugallanmagan va irqiy adolat uchun kurashni yakunlanmagan qoldirdi.",
     "divergence_point": "Fuqarolar urushi va Rekonstruksiya davridagi Amerikaning yo'lini o'zgartirishi mumkin bo'lgan muhim qarorlar"
   },
   "figures": {
-    "abraham_lincoln": {
+    "abraham-lincoln": {
       "name": "Avraam Linkoln",
-      "role": "AQShning 16-prezidenti",
-      "description": "Buyuk Ozod qiluvchi, uning axloqiy ravshanligi va siyosiy dahosi Ittifoqni saqlab qoldi va qullarga ozodlik berdi."
+      "role": "Buyuk Ozod Qiluvchi va Prezident",
+      "description": "Yog'och kulbadan Oq Uygacha! 🏠➡️🏛️ Bu baland bo'yli, soqolli prezident Ittifoqni saqlab qoldi, qullarni ozod qildi va Amerika tarixidagi eng mashhur nutqni so'zladi."
     },
-    "jefferson_davis": {
+    "jefferson-davis": {
       "name": "Jefferson Devis",
-      "role": "Konfederatsiya Shtatlari prezidenti",
-      "description": "Konfederatsiya rahbari, uning qattiq mafkurasi va yomon hukmronligi o'z maqsadiga putur yetkazdi."
+      "role": "Konfederatsiya Shtatlari Prezidenti",
+      "description": "Fuqarolar urushi davridagi boshqa prezident! ⚔️ Konfederatsiyani qat'iyat bilan boshqardi, ammo moda didi shubhali edi (o'sha soqol!). Urushdan keyin qamoqqa tushdi."
     },
-    "frederick_douglass": {
+    "robert-e-lee": {
+      "name": "Robert E. Li",
+      "role": "Konfederatsiya Generali va Ikkilanuvchi Isyonchi",
+      "description": "Urushda deyarli g'alaba qozongan Janubning eng yorqin generali! 🎖️ O'z mamlakatidan ko'ra o'z shtatini tanladi, keyin butun umri davomida afsuslandi. Taktikada zo'r, tomon tanlashda yomon."
+    },
+    "ulysses-s-grant": {
+      "name": "Uliss S. Grant",
+      "role": "Ittifoq Generali va Bo'lajak Prezident",
+      "description": "Urushda g'alaba qozongan sigara chekuvchi, viski ichuvchi general! 🚬🥃 Muvaffaqiyatsiz tadbirkor sifatida boshlangan, Ittifoqning xaloskoriga aylandi. Ba'zan jim yurganlar sizni hayratda qoldirishi mumkinligining isboti."
+    },
+    "frederick-douglass": {
       "name": "Frederik Duglas",
-      "role": "Quldorlikka qarshi harakat rahbari",
-      "description": "Qochgan qul millat vijdoniga aylandi va Linkolnni to'liq ozodlik tomon surdi."
+      "role": "Qochgan Qul va Abolitsionist Rahbar",
+      "description": "Qullikdan Amerikaning eng buyuk notiqlaridan biriga aylandi! 📢✊ Uning avtobiografiyasi millatni larzaga soldi va nutqlari yuraklarni harakatga keltirdi. Ta'lim qullikdan ozodlikka yo'l ekanligini isbotladi."
+    },
+    "harriet-tubman": {
+      "name": "Harriet Tubman",
+      "role": "Yerosti Temir Yo'li Boshqaruvchisi va Ittifoq Josusi",
+      "description": "O'z xalqining Musosi! 🌟 Yuzlab odamlarni Yerosti Temir Yo'li orqali ozodlikka olib chiqdi va hech qachon birorta yo'lovchini yo'qotmadi. Keyinchalik Ittifoq josusi va ayollar huquqlari faoli bo'ldi. Haqiqiy qahramon!"
     }
   },
   "timelines": {
-    "confederate_victory": {
-      "title": "Bo'lingan uy: Konfederatsiya mustaqilligi",
-      "description": "Agar Konfederatsiya Gettisburg jangidan keyin mustaqillikka erishgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Lining Shimoliy Virjiniya armiyasi Gettisburgda hal qiluvchi g'alaba qozonib, Vashingtonga tahdid soladi va Ittifoqni muzokaralarga majbur qiladi.",
+    "lincoln-survives": {
+      "title": "Linkoln Omon Qoladi: Buyuk Shifokor Davom Etadi! 🩹❤️",
+      "description": "Agar Jon Uilks But o'tkazib yuborgan yoki to'xtatilgan bo'lsa nima bo'lar edi? Linkolnning omon qolishi Rekonstruksiya va Amerika irqiy munosabatlarini qanday o'zgartirgan bo'lar edi?",
+      "divergence_description": "Jon Uilks Butning suiqasd urinishi muvaffaqiyatsiz tugaydi - u o'tkazib yuboradi, quroli otilmaydi yoki xavfsizlik tomonidan to'xtatiladi",
       "events": {
-        "gettysburg_disaster_1863": {
-          "title": "Gettisburg g'alabasi",
-          "description": "General Lining taktik dahosi muvaffaqiyatga erishadi. Pikettning hujumi Ittifoq saflarini buzadi. Potomak armiyasi yo'q qilinadi.",
-          "impact": "Shimoliy ma'naviyat qulaydi. Tinchlik demokratlari muzokaralarni talab qiladi. Linkoln Konfederatsiya mustaqilligini tan olishga katta bosim ostida qoladi."
+        "booth-foiled-1865": {
+          "title": "Butning Rejasi Barbat Bo'ldi! 🎭🛡️",
+          "description": "Jon Uilks Butning quroli otilmaydi va u tomoshabinlar tomonidan ushlanadi. Linkoln 'Bizning Amerikalik Amakivachchamiz'ni tinchlikda tomosha qiladi.",
+          "impact": "Linkoln o'zining mo''tadil yondashuvi bilan Rekonstruksiyani boshqarish uchun omon qoladi"
         },
-        "treaty_of_philadelphia_1864": {
-          "title": "Bo'lingan davlat",
-          "description": "Konfederatsiya kuchlari Vashingtonga tahdid qilgandan keyin, Linkoln muzokara qilishga majbur bo'ladi. Filadelfiya shartnomasi Konfederatsiya mustaqilligini tan oladi.",
-          "impact": "Shimoliy Amerika doimiy ravishda bo'linadi. To'rt million qul qullikda qoladi."
+        "lincolns-reconstruction-1865": {
+          "title": "Linkolnning 'Hech Kimga Gina Saqlamaslik' Rekonstruksiyasi 🤝🕊️",
+          "description": "Linkoln jazolashdan ko'ra yarashishga urg'u beruvchi mo''tadil Rekonstruksiya rejasini amalga oshiradi.",
+          "impact": "Ozod qilingan qullarning muvaffaqiyatli integratsiyasi va kamroq Janubiy nafrat"
         },
-        "perpetual_slavery_1900": {
-          "title": "Qul imperiyasi",
-          "description": "Konfederatsiya qullikni Lotin Amerikasiga kengaytiradi. Qattiq kasta tizimi 20-asrga qadar davom etadi.",
-          "impact": "Amerika kuchi zaiflanadi. Bir qit'ada ikkita dushman davlat. Qullik Shimoliy Amerikada zamonaviy davrga qadar davom etadi."
+        "freedmens-education-1866": {
+          "title": "Buyuk Ta'lim Kampaniyasi Boshlanadi! 📚✊",
+          "description": "Linkoln ozod qilingan qullarni o'qitishga katta federal sarmoya kiritishni qo'llab-quvvatlaydi, ta'limni haqiqiy erkinlik kaliti deb biladi.",
+          "impact": "Afro-amerikaliklar uchun o'nlab yillar oldin keng qamrovli ta'lim tizimini yaratadi"
+        },
+        "economic-integration-1867": {
+          "title": "Yerni Qayta Taqsimlash: Haqiqiy 40 Akr va Xachir! 🐴🌾",
+          "description": "Linkoln ma'muriyati yerni qayta taqsimlashni muvaffaqiyatli amalga oshirib, ozod qilingan qullarga iqtisodiy mustaqillik beradi.",
+          "impact": "Qora tanli o'rta sinfni yaratadi va oq tanli yer egalariga iqtisodiy qaramlikni kamaytiradi"
+        },
+        "lincoln-re-election-1868": {
+          "title": "Linkoln Yana G'alaba Qozondi: Xalq Tanlovi! 🗳️🎉",
+          "description": "Linkoln muvaffaqiyatli Rekonstruksiya va milliy davolanish platformasida qayta saylanadi. Hatto ba'zi sobiq konfederatlar ham unga ovoz berishadi!",
+          "impact": "Mo''tadil Rekonstruksiyani tasdiqlaydi va siyosatning davomiyligini ta'minlaydi"
+        },
+        "racial-reconciliation-1870": {
+          "title": "Buyuk Yarashish Sammiti! 🤝🌈",
+          "description": "Linkoln irqiy keskinliklarni hal qilish uchun Qora va oq Janubiy rahbarlar o'rtasida misli ko'rilmagan uchrashuv tashkil qiladi.",
+          "impact": "Fuqarolik huquqlari harakatidan 100 yil oldin irqiy munosabatlar haqida haqiqiy muloqotni boshlaydi"
         }
       },
       "consequences": {
-        "short_term": "Qo'shma Shtatlar doimiy ravishda bo'linib, ikkala davlatni ham zaiflashtiradi.",
-        "long_term": "Birlashgan Amerika superkuchi yo'q. Jahon urushlari boshqacha natija beradi. Qullik ancha uzoqroq davom etadi.",
-        "global_impact": "Bo'lingan, zaiflashgan Amerika butun 20-asrni o'zgartiradi. Sovet Ittifoqi Sovuq urushda g'alaba qozongan bo'lishi mumkin."
+        "short_term": "Mo''tadil Rekonstruksiya siyosati Janubiy nafratni kamaytiradi va Qora tanlilar huquqlarini himoya qiladi",
+        "long_term": "'Yo'qotilgan Sabab' mifologiyasi rivojlanmaydi, tezroq milliy davolanish",
+        "global_impact": "Amerika mojarodan keyingi yarashish uchun global modelga aylanadi"
       },
-      "present_day_status": "Amerika Konfederatsiyasi 1946-yilda xalqaro bosim ostida qullikni bekor qildi, ammo iqtisodiy jihatdan orqada qolgan va siyosiy jihatdan avtoritar bo'lib qolmoqda. Qo'shma Shtatlar kichikroq va kamroq qudratli. Irqiy keskinliklar bizning tariximizdagidan ham yomonroq. Ikki davlat bir necha marta urushga yaqinlashdi."
+      "butterfly": [
+        {
+          "trigger": "Muvaffaqiyatli Rekonstruksiya segregatsiya tizimining oldini oladi",
+          "consequence": "Jim Krou qonunlari yo'q, bu Amerikaning irqiy tarixini o'zgartiradi"
+        },
+        {
+          "trigger": "Respublikachilar partiyasi Qora saylovchilarni tashlab ketmaydi",
+          "consequence": "Siyosiy partiyalarning evolyutsiyasi va saylovchilar koalitsiyalari boshqacha bo'ladi"
+        }
+      ],
+      "present_day_status": "Avraam Linkoln 1877-yilgacha xizmat qilib, ortda chinakam birlashgan millat qoldirdi. Uning Rekonstruksiyaga mo''tadil yondashuvi 1900-yilga kelib haqiqiy irqiy yarashishga olib keldi. Qo'shma Shtatlar o'nlab yillar oldin irqiy tenglik mayoqiga aylandi va global fuqarolik huquqlari harakatlariga ilhom berdi. Bugungi kunda Linkolnning tug'ilgan kuni hamma ahil bo'lgan barbekyular bilan 'Milliy Yarashish Kuni' sifatida nishonlanadi! 🎂🤝"
     },
-    "lincoln_survives": {
-      "title": "Ikkinchi asos: Linkoln omon qoladi",
-      "description": "Agar Jon Uilks Butning suiqasd urinishi muvaffaqiyatsiz bo'lsa va Linkoln Rekonstruksiyani yakunlagan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Linkolnning qo'riqchisi Ford teatrida Butni to'xtatadi. Linkoln Rekonstruksiya haqidagi o'z tasavvurini amalga oshirish uchun omon qoladi.",
+    "peaceful-abolition": {
+      "title": "Qullik Urushsiz Tugaydi: Buyuk Murosa! 🕊️⛓️💔",
+      "description": "Agar qullik fuqarolar urushi o'rniga bosqichma-bosqich kompensatsiya orqali bekor qilingan bo'lsa nima bo'lar edi? Amerika o'zining eng qonli mojarosidan qochishi mumkin edimi?",
+      "divergence_description": "Linkoln taklif qiladi va Kongress Janubiy shtatlar istamay qabul qiladigan bosqichma-bosqich, kompensatsiyali ozodlik rejasini qabul qiladi",
       "events": {
-        "assassination_foiled_1865": {
-          "title": "Muvaffaqiyatsiz suiqasd",
-          "description": "Qo'riqchi Jon Parker o'z joyida qoladi. But Linkolnning lojiasiga yetib borishidan oldin to'xtatiladi. Linkoln o'zining siyosiy mavqei eng yuqori cho'qqida omon qoladi.",
-          "impact": "Linkoln o'zining to'liq siyosiy obro'si bilan mo''tadil Rekonstruksiya rejasini amalga oshiradi."
+        "compensation-plan-1861": {
+          "title": "Buyuk Sotib Olish: Amerika Ozodlikni Sotib Oladi! 💰⛓️",
+          "description": "Linkoln qul egalariga har bir qul uchun 300 dollar (bugungi kunda taxminan 10,000 dollar) to'lashni va 20 yil davomida bosqichma-bosqich ozod qilishni taklif qiladi.",
+          "impact": "Qullikka iqtisodiy yechim taklif qilish orqali darhol ajralishning oldini oladi"
         },
-        "reconstruction_success_1870": {
-          "title": "Adolat bilan yarashish",
-          "description": "Linkoln sobiq konfederatlarni kechirish va ozod qilinganlarni himoya qilish o'rtasida muvozanat saqlaydi. Federal qo'shinlar ovoz berish huquqlarini ta'minlaydi. Yer islohoti iqtisodiy asos yaratadi.",
-          "impact": "Janubda haqiqiy ko'p irqli demokratiya ildiz otadi. Jim Krou hech qachon paydo bo'lmaydi."
+        "border-states-accept-1861": {
+          "title": "Chegara Shtatlari Rozi! Dominolar Yiqila Boshladi! 🎯⬇️",
+          "description": "Delaver, Merilend, Kentukki va Missuri kompensatsiya rejasini qabul qiladi. Ularning muvaffaqiyati boshqa shtatlarni buni ko'rib chiqishga undaydi.",
+          "impact": "Tinch yo'l bilan bekor qilish uchun turtki yaratadi va Chuqur Janubni izolyatsiya qiladi"
         },
-        "second_founding_1875": {
-          "title": "Ikkinchi Amerika inqilobi",
-          "description": "Konstitutsiyaviy tuzatishlar fuqarolik huquqlari, ovoz berish huquqlari va iqtisodiy imkoniyatlarni kafolatlaydi. Yangi ijtimoiy shartnoma tuziladi.",
-          "impact": "Amerika tenglik va'dasini bizning tariximizdan bir asr oldin amalga oshiradi."
+        "economic-incentives-1862": {
+          "title": "Shirin Kelishuv: Ozodlik uchun Federal Infratuzilma! 🚂💎",
+          "description": "Federal hukumat ozodlikni qabul qilgan shtatlarga katta infratuzilma sarmoyalarini (temir yo'llar, portlar, fabrikalar) taklif qiladi.",
+          "impact": "Bekor qilishni tahdidli emas, balki iqtisodiy jihatdan jozibador qiladi"
+        },
+        "gradual-freedom-1863": {
+          "title": "Ozodlik Kuni Boshlanadi: Birinchi To'lqin Ozod! 🌊✊",
+          "description": "Qullarning birinchi guruhi (18 yoshgacha bo'lgan bolalar) ta'lim va kasbiy tayyorgarlik bilan qonuniy ravishda ozod qilinadi.",
+          "impact": "Ozodlik iqtisodiy va ijtimoiy jihatdan ishlashi mumkinligini namoyish etadi"
+        },
+        "industrial-transformation-1865": {
+          "title": "Janub Sanoatlashmoqda: Paxta Dalalari O'rniga Paxta Zavodlari! 🏭🌱",
+          "description": "Federal sarmoya Janubiy iqtisodiyotni qishloq xo'jaligidan ishlab chiqarishga o'zgartiradi, ozod qilingan qullarni yollanma ishchilar sifatida ishlatadi.",
+          "impact": "Iqtisodiy o'zgarish qullikni shunchaki noqonuniy emas, balki eskirgan qiladi"
+        },
+        "final-emancipation-1870": {
+          "title": "Ozodlik Yakunlandi: Oxirgi Zanjirlar Uzildi! ⛓️💥🎆",
+          "description": "Qullarning oxirgi guruhi 1870-yil 4-iyulda ozod qilindi. Butun jarayon birorta jangsiz yakunlandi.",
+          "impact": "Qullik tinch, kompensatsiyali bekor qilish orqali butunlay tugaydi"
         }
       },
       "consequences": {
-        "short_term": "Rekonstruksiya ozod qilingan qullar uchun haqiqiy demokratiya va imkoniyat yaratishda muvaffaqiyat qozonadi.",
-        "long_term": "Jim Krou yo'q. Ertaroq fuqarolik huquqlari. Ko'proq adolatli va farovon jamiyat avlodlar oldinroq paydo bo'ladi.",
-        "global_impact": "Ko'proq birlashgan, kamroq irqiy jihatdan bo'lingan Amerika 20-asrda kuchliroq. Butun dunyo bo'ylab dekolonizatsiya uchun yaxshiroq model."
+        "short_term": "Fuqarolar urushidan qochish orqali 620,000 hayot saqlab qolindi",
+        "long_term": "Janubiy infratuzilma va iqtisodiyot vayron bo'lmadi",
+        "global_impact": "Amerika iqtisodiy jihatdan kuchliroq bo'lib qoladi, global iqtisodiyotga ko'proq ta'sir qiladi"
       },
-      "present_day_status": "Amerika irqiy tenglikka ancha ertaroq erishdi, garchi hali ham nomukammal. Fuqarolik huquqlari davri 1960-yillar o'rniga 1890-yillarda sodir bo'ldi. Iqtisodiy va ta'lim tengligi muvaffaqiyatli Rekonstruksiya orqali o'rnatildi. Amerika ko'proq birlashgan va uning demokratik ideallari xalqaro miqyosda ishonchliroq."
+      "butterfly": [
+        {
+          "trigger": "Vayronagarchiliksiz fuqarolar urushi milliy birlikni saqlab qoladi",
+          "consequence": "Kuchliroq Amerika 30 yil oldin jahon kuchi sifatida paydo bo'ladi"
+        },
+        {
+          "trigger": "Tinch yo'l bilan bekor qilish modeli mavjud",
+          "consequence": "Braziliya va boshqa davlatlar majburiy bekor qilish o'rniga kompensatsiyani qabul qiladilar"
+        }
+      ],
+      "present_day_status": "Tinch yo'l bilan bekor qilish modeli 1870-yilda yakunlanib, Amerikani progressiv islohotlar mayoqiga aylantirdi. Kompensatsiya fondi (1860-yillar pulida 2 milliard dollar) 1900-yilga kelib iqtisodiy o'sish hisobiga to'landi. Irqiy munosabatlar mukammal bo'lmasa-da, bosqichma-bosqich va tinch rivojlandi. Bugungi kunda 4-iyul ham Mustaqillik Kuni, ham Ozodlik Kuni sifatida nishonlanadi! 🇺🇸✊"
     },
-    "gradual_emancipation": {
-      "title": "Murosa va kechikish: Bosqichli ozodlik",
-      "description": "Agar Linkoln urushsiz Ittifoqni saqlab qoladigan bosqichma-bosqich ozodlik rejasini qabul qilgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Linkoln va mo''tadil chegara shtatlari siyosatchilari ajralishni oldini oladigan kompensatsiyali, bosqichma-bosqich ozodlik rejasini ishlab chiqadilar.",
+    "confederacy-wins": {
+      "title": "Janub Ko'tarilmoqda: Konfederatsiya G'alabasi! 🏴⚡",
+      "description": "Agar Konfederatsiya mustaqillikka erishgan bo'lsa nima bo'lar edi? Ikki Amerika davlati yonma-yon qanday rivojlangan bo'lar edi?",
+      "divergence_description": "Lining Pensilvaniyaga bostirib kirishi muvaffaqiyatli bo'ladi, Yevropa kuchlari Konfederatsiyani tan oladi va Linkoln 1864 yilgi saylovda yutqazadi",
       "events": {
-        "compromise_of_1861": {
-          "title": "Buyuk murosa",
-          "description": "Linkoln qul egalariga kompensatsiya bilan 20 yillik bosqichma-bosqich ozodlik rejasini taklif qiladi. Chegara shtatlari qabul qiladi, ba'zi Janubiy shtatlarning ajralishini oldini oladi.",
-          "impact": "Fuqarolar urushidan qochiladi yoki miqyosi qisqartiriladi. Qullik urush orqali emas, qonunchilik orqali sekin tugaydi."
+        "gettysburg-confederate-victory-1863": {
+          "title": "Li Gettisburgda G'alaba Qozondi: Oqim Janubga Burildi! ⚔️🏆",
+          "description": "Taktik o'zgarish Liga Gettisburgda Ittifoq armiyasini mag'lub etishga imkon beradi, Vashington D.C.ga yo'l ochadi.",
+          "impact": "Konfederatsiya g'alabasi Shimoliy ma'naviyatni va Yevropa qarashlarini o'zgartiradi"
         },
-        "incomplete_freedom_1880": {
-          "title": "Ozodlik kechiktirildi",
-          "description": "Bosqichma-bosqich ozodlik notekis davom etadi. Ba'zi shtatlar sekin ishlaydi. Sobiq qullar asta-sekin ozodlikka erishadi, yer yoki siyosiy kuchsiz.",
-          "impact": "Qullik urushsiz tugaydi, ammo Janubiy jamiyatning o'zgarishi ham yo'q."
+        "european-recognition-1863": {
+          "title": "Yevropa 'Klubga Xush Kelibsiz!' Deydi 🌍🤝",
+          "description": "Britaniya va Fransiya Konfederatsiya mustaqilligini rasman tan oladi va ilg'or qurollar va dengiz yordamini yetkazib berishni boshlaydi.",
+          "impact": "Xalqaro yordam Konfederatsiya g'alabasini ehtimolliroq qiladi"
         },
-        "continued_oppression_1900": {
-          "title": "Adolatsiz ozodlik",
-          "description": "Qonuniy qullik tugaydi, lekin o'rniga peonaj, mahkumlarni ijaraga berish va tizimli saylov huquqidan mahrum qilish keladi. Qora tanli amerikaliklar uchun haqiqiy o'zgarish kam.",
-          "impact": "Qullikning rasmiy tugashi adolat yoki tenglik keltirmaydi. Zulm boshqa nomlar ostida davom etadi."
+        "washington-threatened-1863": {
+          "title": "Li Vashington Eshigini Taqillatmoqda! 🚪👋",
+          "description": "Konfederatsiya kuchlari Vashington D.C. ko'rinadigan joyga qadar oldinga siljiydi, Linkolnni tinchlik muzokaralarini ko'rib chiqishga majbur qiladi.",
+          "impact": "Harbiy bosim Shimolda siyosiy inqiroz yaratadi"
+        },
+        "peace-of-philadelphia-1864": {
+          "title": "Filadelfiya Tinchligi: Amerika Ikkiga Bo'lindi! ✂️🇺🇸",
+          "description": "Linkoln 1864 yilgi saylovda yutqazgandan so'ng, Prezident Makklellan Konfederatsiya mustaqilligini tan oluvchi tinchlik shartnomasini imzolaydi.",
+          "impact": "Turli iqtisodiy va ijtimoiy tizimlarga ega ikkita alohida Amerika davlatini yaratadi"
+        },
+        "slavery-expansion-1865": {
+          "title": "Konfederatsiya Janubga Qaraydi: Taqdir Qaytmoqda! 🌎⬇️",
+          "description": "Mustaqil Konfederatsiya Karib havzasi va Markaziy Amerikaga kengayishni boshlaydi, qul imperiyasini yaratadi.",
+          "impact": "Qullik bekor qilinish o'rniga geografik jihatdan kengayadi"
+        },
+        "economic-competition-1870": {
+          "title": "Ikki Amerika: Sanoatlashgan Shimol va Agrar Janub! 🏭🌾",
+          "description": "Aniq iqtisodiy bo'linish paydo bo'ladi: sanoatlashgan Qo'shma Shtatlar va agrar Konfederatsiya Shtatlari.",
+          "impact": "Turli iqtisodiy tizimlar doimiy keskinlik va raqobatni yaratadi"
         }
       },
       "consequences": {
-        "short_term": "Ittifoq urushsiz saqlanadi, ammo qullik o'nlab yillar davom etadi.",
-        "long_term": "Bosqichma-bosqich ozodlik eski hokimiyat tuzilmalariga moslashish va omon qolish imkonini beradi. Haqiqiy ozodlik yanada uzoqroq kechiktiriladi.",
-        "global_impact": "Ozodlik Deklaratsiyasi va Ittifoq g'alabasisiz, global qullikka qarshi harakat o'zining eng qudratli ramzini yo'qotadi."
+        "short_term": "Tubdan farq qiluvchi qadriyatlarga ega ikkita Amerika davlati",
+        "long_term": "AQSh va KSh o'rtasida doimiy keskinlik va chegara nizolari",
+        "global_impact": "Zaiflashgan Amerika ta'siri Yevropa kuchlariga uzoqroq hukmronlik qilish imkonini beradi"
       },
-      "present_day_status": "Qullik tinch yo'l bilan tugadi, ammo qora tanli amerikaliklar fuqarolik huquqlariga yanada uzoqroq va bosqichmaroq yo'l o'tdi. To'liq qonuniy tenglik 1950-yillarga qadar kelmadi. Ittifoq g'alabasi va ozodlikning axloqiy ravshanligi yo'qoldi. Qullik bilan toza uzilishning yo'qligi sababli irqiy tengsizlik yanada chuqurroq davom etmoqda."
+      "butterfly": [
+        {
+          "trigger": "Bo'lingan Amerika xalqaro miqyosda kuchsizroq",
+          "consequence": "Yevropa kuchlari hukmron bo'lib qoladi, jahon urushi natijalari boshqacha bo'ladi"
+        },
+        {
+          "trigger": "Ikkita raqobatdosh Amerika manzili",
+          "consequence": "Immigratsiya naqshlari erkin Shimol va qul Janub o'rtasida bo'linadi"
+        }
+      ],
+      "present_day_status": "Konfederatsiya Shtatlari iqtisodiy bosim va xalqaro izolyatsiya tufayli 1920-yilda qullikni bekor qildi. Ikki Amerika davlati Ikkinchi Jahon urushida birga jang qilgandan keyin 1945-yilda qayta birlashdi. Bugungi kunda bo'linish davri oilaviy uchrashuvlar haqiqatan ham murakkab bo'lgan 'Noqulay Yillar' sifatida eslanadi! 🤔👨‍👩‍👧‍👦"
     }
-  }
+  },
+  "interactive_scenarios": [
+    {
+      "title": "Amerikani Buzgan Saylov",
+      "text": "Noyabr 1860. Siz Avraam Linkolnsiz, 10 ta Janubiy shtatda birorta ham ovoz olmasdan prezidentlikni yutdingiz. Janubiy Karolina allaqachon ajralish haqida gapirayotgani haqida xabarlar kelmoqda. Millat parchalanish yoqasida turibdi. Ushbu konstitutsiyaviy inqirozga qanday javob berasiz?",
+      "choices": [
+        {
+          "text": "Janubiy manfaatlarni himoya qilishga va'da beruvchi yarashuvchi bayonotlar bering",
+          "consequence": "Sizning mo''tadil ohangingiz ajralishni sekinlashtiradi, ammo zaiflikni ko'rgan radikallarni ruhlantiradi"
+        },
+        {
+          "text": "Ittifoq abadiy va ajralish noqonuniy ekanligini e'lon qiling",
+          "consequence": "Sizning qat'iyatingiz Shimoliy yordamni to'playdi, ammo Janubiy ketishni tezlashtiradi"
+        },
+        {
+          "text": "Janubiy xavotirlarni hal qilish uchun konstitutsiyaviy konventsiyani chaqiring",
+          "consequence": "Sizning taklifingiz moslashuvchanlikni ko'rsatadi, ammo konstitutsiyaviy o'zgarishlar uchun xavfli pretsedent yaratadi"
+        }
+      ]
+    },
+    {
+      "title": "Haqiqat Lahzasi",
+      "text": "Aprel 1861. Charleston bandargohidagi Fort Samterda ta'minot tugamoqda. Konfederatsiya kuchlari uni o'rab olib, taslim bo'lishni talab qilmoqda. Siz yakuniy qaror oldidasiz: ta'minlash va urush xavfini olish yoki qal'ani tashlab, kuchsiz ko'rinish. Ittifoq taqdiri tarozida.",
+      "choices": [
+        {
+          "text": "Konfederatsiya hujumi xavfi ostida Fort Samterga ta'minot kemalarini yuboring",
+          "consequence": "Sizning qaroringiz Janubni birinchi bo'lib o't ochishga majbur qiladi, urush uchun Shimoliy yordamni to'playdi"
+        },
+        {
+          "text": "Qal'adan yuzni saqlab qolgan holda chiqib ketishni muzokara qiling",
+          "consequence": "Sizning murosangiz darhol urushning oldini oladi, ammo ajralishni qonuniylashtiradi"
+        },
+        {
+          "text": "Qal'ani kuchaytirish uchun qo'shimcha qo'shin yuboring",
+          "consequence": "Sizning tajovuzkor harakatingiz Shimoliy tajovuz sifatida ko'riladi, axloqiy ustunlikni yo'qotadi"
+        }
+      ]
+    },
+    {
+      "title": "Buyuk Axloqiy Tanlov",
+      "text": "Sentyabr 1862. Antietam jangidan so'ng, sizda Ozodlik Proklamatsiyasini chiqarish uchun siyosiy kapital bor. Kabinetingiz ikkiga bo'lingan - ba'zilar buni harbiy zarurat desa, boshqalar chegara shtatlarini begonalashtirishdan qo'rqishadi. Bu qaror urushning o'zini qayta belgilaydi.",
+      "choices": [
+        {
+          "text": "Isyonchi shtatlardagi barcha qullarni ozod deb e'lon qiling",
+          "consequence": "Sizning jasur axloqiy pozitsiyangiz urushni o'zgartiradi, ammo chegara shtatlari yordamini yo'qotish xavfi bor"
+        },
+        {
+          "text": "Bir necha yil davomida bosqichma-bosqich, kompensatsiyali ozodlikni taklif qiling",
+          "consequence": "Sizning mo''tadil yondashuvingiz birlikni saqlaydi, ammo abolitsionistlarni hafsalasini pir qiladi"
+        },
+        {
+          "text": "Faqat Ittifoq armiyasiga qo'shilgan qullarni ozod qiling",
+          "consequence": "Sizning pragmatik tanlovingiz siyosiy xavfni cheklagan holda askarlarni to'playdi"
+        }
+      ]
+    },
+    {
+      "title": "Vaqt Osha Aks Etuvchi So'zlar",
+      "text": "Noyabr 1863. Siz Gettisburg qabristonida turibsiz, ko'pchilik halok bo'lgan jang maydonini bag'ishlash vazifasi yuklangan. Asosiy notiq ikki soat gapirdi. Endi sizning navbatingiz. Bir necha daqiqa ichida siz ushbu qirg'inning ma'nosini tushuntirishingiz va urushdan charchagan millatni ilhomlantirishingiz kerak.",
+      "choices": [
+        {
+          "text": "Jang maydonini qisqa, ruhiy bag'ishlashni yetkazing",
+          "consequence": "Sizning qisqa so'zlaringiz o'lmas bo'lib, Amerika demokratiyasining o'zini qayta belgilaydi"
+        },
+        {
+          "text": "Jang va uning ahamiyati haqida batafsil hisobot bering",
+          "consequence": "Sizning keng qamrovli nutqingiz ma'lumot beradi, ammo qisqalikning poetik kuchiga ega emas"
+        },
+        {
+          "text": "Lahzadan siyosiy miting va urushni oqlash uchun foydalaning",
+          "consequence": "Sizning partiyaviy xabaringiz tarafdorlarni g'ayratlantiradi, ammo tinglovchilarni bo'lib yuboradi"
+        }
+      ]
+    },
+    {
+      "title": "Urush Davridagi Demokratiya",
+      "text": "Noyabr 1864. Urush oxiri ko'rinmay davom etmoqda. General Makklellan sizga qarshi tinchlik platformasida, Konfederatsiya bilan muzokara qilishni va'da qilib qatnashmoqda. Ko'pchilik urush paytida saylovlar o'tkazilishi kerakmi degan savolni bermoqda. Bu yerdagi qarorlaringiz Amerika demokratiyasini belgilaydi.",
+      "choices": [
+        {
+          "text": "Urush bo'lishiga qaramay, saylovlar rejalashtirilganidek o'tishi kerakligini talab qiling",
+          "consequence": "Demokratiyaga sodiqligingiz dunyoni ilhomlantiradi, ammo hokimiyatni yo'qotish xavfi bor"
+        },
+        {
+          "text": "Urush tugaguncha saylovlarni kechiktirishni taklif qiling",
+          "consequence": "Sizning amaliy qaroringiz barqarorlikni saqlaydi, ammo xavfli pretsedent yaratadi"
+        },
+        {
+          "text": "Askarlar jang maydonidan ovoz berishini ta'minlang",
+          "consequence": "Sizning innovatsiyangiz demokratiyani mustahkamlaydi va harbiy yordamni ta'minlaydi"
+        }
+      ]
+    },
+    {
+      "title": "Sharaf bilan G'alaba",
+      "text": "Aprel 1865. Li Appomattoxda taslim bo'ldi. Urush asosan tugadi, ammo mag'lub bo'lgan Konfederatsiyaga qanday munosabatda bo'lishingiz Amerikaning kelajagini shakllantiradi. Grant saxiy shartlarni xohlaydi, Kongressdagi ko'pchilik esa qattiq jazo talab qilmoqda. Sizning tanlovingiz Rekonstruksiyani belgilaydi.",
+      "choices": [
+        {
+          "text": "'Hech kimga gina saqlamaslik, hamma uchun xayriya' yarashuvini davom ettiring",
+          "consequence": "Sizning saxiy yondashuvingiz davolanishni rag'batlantiradi, ammo ozod qilingan qullarni yetarli darajada himoya qilmasligi mumkin"
+        },
+        {
+          "text": "Xiyonat uchun javobgarlikni va ozod qilingan qullar uchun himoyani talab qiling",
+          "consequence": "Sizning qat'iy pozitsiyangiz adolatni ta'minlaydi, ammo bo'lginchilik nafratini chuqurlashtirishi mumkin"
+        },
+        {
+          "text": "Iqtisodiy qayta qurish va infratuzilma sarmoyasiga e'tibor qarating",
+          "consequence": "Sizning pragmatik yondashuvingiz tezda qayta quradi, ammo chuqurroq ijtimoiy muammolardan qochadi"
+        }
+      ]
+    },
+    {
+      "title": "Teatrdagi Tun",
+      "text": "14 Aprel, 1865. Meri urush tugashini nishonlash uchun Ford teatrida 'Bizning Amerikalik Amakivachchamiz'ga borishni talab qilmoqda. Qo'riqchingiz ishonchsiz va tahdidlar bo'lgan. Siz charchadingiz va uyda qolishni xohlaysiz, ammo odamlar o'z prezidentini omma oldida ko'rishlari kerak.",
+      "choices": [
+        {
+          "text": "Normallikni ko'rsatish va xalq bilan nishonlash uchun spektaklga boring",
+          "consequence": "Sizning ommaviy ko'rinishingiz yetakchilikni namoyish etadi, ammo sizni xavf ostiga qo'yadi"
+        },
+        {
+          "text": "Uyda qoling va o'rniga Rekonstruksiya rejalari ustida ishlang",
+          "consequence": "Sizning ehtiyotkorligingiz xavfsizligingizni saqlaydi, ammo jamoatchilikni hafsalasini pir qiladi"
+        },
+        {
+          "text": "Boring, lekin kuchli xavfsizlik mavjudligini talab qiling",
+          "consequence": "Sizning ehtiyot choralaringiz xavfsizlikni ta'minlaydi, ammo xalqdan masofa yaratadi"
+        }
+      ]
+    },
+    {
+      "title": "Millat Yaralarini Bog'lash",
+      "text": "Aprel 1865. Urush tugashi bilan siz Rekonstruksiya siyosatini ishlab chiqishingiz kerak. To'rt million yangi ozod qilingan qul himoya va imkoniyatga muhtoj. Janub vayronaga aylangan. Kongress qasos olishni xohlaydi, siz esa yarashishni targ'ib qilasiz. Sizning rejangiz Amerikani avlodlar uchun shakllantiradi.",
+      "choices": [
+        {
+          "text": "Ozod qilingan qullarning huquqlarini himoya qilish uchun kuchli federal nazorat o'rnating",
+          "consequence": "Sizning aralashuvingiz fuqarolik huquqlarini ta'minlaydi, ammo doimiy federal-shtat keskinliklarini yaratadi"
+        },
+        {
+          "text": "Janubiy shtatlarni minimal shartlar bilan tezda tiklang",
+          "consequence": "Sizning rahm-shafqatingiz qayta birlashishni tezlashtiradi, ammo ozod qilingan qullarni zulmga tashlab qo'yishi mumkin"
+        },
+        {
+          "text": "Ta'lim va iqtisodiy yordam bilan bosqichma-bosqich integratsiyani amalga oshiring",
+          "consequence": "Sizning sabrli yondashuvingiz doimiy o'zgarishlarni yaratadi, ammo adolat uchun juda sekin bo'lishi mumkin"
+        }
+      ]
+    }
+  ]
 }
