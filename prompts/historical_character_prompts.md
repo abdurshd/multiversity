@@ -132,8 +132,8 @@ This document contains **standalone, copy-pasteable prompts** for generating cha
 *   **Nikita Khrushchev**
     > "High-end 3D animated character portrait of Nikita Khrushchev, style of Pixar or Fortnite cinematic. Bald, round face. Wearing a suit. Animated, emotional expression. Caricature-style 3D render. Subsurface scattering, rim light. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
 
-*   **John F. Kennedy**
-    > "High-end 3D animated character portrait of John F. Kennedy, style of Pixar or Fortnite cinematic. Young, handsome, thick hair. Charismatic smile. 'Camelot' vibe. Vibrant, clean 3D render. Studio lighting. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
+<!-- *   **John F. Kennedy**
+    > "High-end 3D animated character portrait of John F. Kennedy, style of Pixar or Fortnite cinematic. Young, handsome, thick hair. Charismatic smile. 'Camelot' vibe. Vibrant, clean 3D render. Studio lighting. Maximum 3D depth and volume. Caricatured realism, instantly recognizable." -->
 
 *   **Ronald Reagan**
     > "High-end 3D animated character portrait of Ronald Reagan, style of Pixar or Fortnite cinematic. Pompadour hair, Hollywood charm. Wearing a suit. Warm but authoritative. Polished 3D style. Volumetric lighting, rim light. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
@@ -146,8 +146,8 @@ This document contains **standalone, copy-pasteable prompts** for generating cha
 
 ## Chapter 11: USSR Collapse
 
-*   **Boris Yeltsin**
-    > "High-end 3D animated character portrait of Boris Yeltsin, style of Pixar or Fortnite cinematic. White hair, flushed face. Wearing a suit. Boisterous energy. Distinctive 3D caricature. Volumetric lighting, rim light. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
+<!-- *   **Boris Yeltsin**
+    > "High-end 3D animated character portrait of Boris Yeltsin, style of Pixar or Fortnite cinematic. White hair, flushed face. Wearing a suit. Boisterous energy. Distinctive 3D caricature. Volumetric lighting, rim light. Maximum 3D depth and volume. Caricatured realism, instantly recognizable." -->
 
 *   **Lech Wałęsa**
     > "High-end 3D animated character portrait of Lech Wałęsa, style of Pixar or Fortnite cinematic. Large, drooping walrus mustache. Wearing a casual jacket. Worker-leader vibe. 3D character art. Ambient occlusion. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
@@ -180,8 +180,8 @@ This document contains **standalone, copy-pasteable prompts** for generating cha
 *   **Sam Altman**
     > "High-end 3D animated character portrait of Sam Altman, style of Pixar or Fortnite cinematic. Short dark hair, blue eyes. Wearing a t-shirt. Tech visionary look. Clean, modern 3D style. Studio lighting, rim light. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
 
-*   **Demis Hassabis**
-    > "High-end 3D animated character portrait of Demis Hassabis, style of Pixar or Fortnite cinematic. Short dark hair, glasses. Wearing a smart shirt. Intellectual, focused look. 3D render. Volumetric lighting. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
+<!-- *   **Demis Hassabis**
+    > "High-end 3D animated character portrait of Demis Hassabis, style of Pixar or Fortnite cinematic. Short dark hair, glasses. Wearing a smart shirt. Intellectual, focused look. 3D render. Volumetric lighting. Maximum 3D depth and volume. Caricatured realism, instantly recognizable." -->
 
 *   **Geoffrey Hinton**
     > "High-end 3D animated character portrait of Geoffrey Hinton, style of Pixar or Fortnite cinematic. Grey hair, glasses. Wearing a dark shirt. Thoughtful 'Godfather of AI' look. 3D character art. Subsurface scattering, ambient occlusion. Maximum 3D depth and volume. Caricatured realism, instantly recognizable."
@@ -191,8 +191,8 @@ This document contains **standalone, copy-pasteable prompts** for generating cha
 *   **Homo Sapiens**
     > "High-end 3D animated cinematic shot of a diverse group of humans looking at the stars, style of Pixar or Fortnite cinematic. Silhouetted against a vibrant, glowing 3D Earth. Inspiring atmosphere. Volumetric lighting, rim light. Maximum 3D depth and volume."
 
-*   **The Swarm**
-    > "High-end 3D animated depiction of a swarm of metallic nanobots, style of Pixar or Fortnite cinematic. Glowing blue lights, intricate mechanical details. Forming a cloud shape. Sci-fi 3D art. Volumetric lighting, bloom. Maximum 3D depth and volume."
+<!-- *   **The Swarm**
+    > "High-end 3D animated depiction of a swarm of metallic nanobots, style of Pixar or Fortnite cinematic. Glowing blue lights, intricate mechanical details. Forming a cloud shape. Sci-fi 3D art. Volumetric lighting, bloom. Maximum 3D depth and volume." -->
 
-*   **The Traveler**
-    > "High-end 3D animated portrait of a futuristic interstellar traveler, style of Pixar or Fortnite cinematic. Wearing a chunky, detailed high-tech spacesuit. Helmet visor reflecting a vibrant nebula. Cinematic sci-fi 3D style. Strong rim light, subsurface scattering. Maximum 3D depth and volume."
+<!-- *   **The Traveler**
+    > "High-end 3D animated portrait of a futuristic interstellar traveler, style of Pixar or Fortnite cinematic. Wearing a chunky, detailed high-tech spacesuit. Helmet visor reflecting a vibrant nebula. Cinematic sci-fi 3D style. Strong rim light, subsurface scattering. Maximum 3D depth and volume." -->
