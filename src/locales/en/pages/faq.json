@@ -11,7 +11,7 @@
     },
     {
       "question": "Do you collect personal data?",
-      "answer": "Only minimal analytics (page views and anonymous device info) are collected. If you create an account, we store your email address on infrastructure hosted in South Korea or equivalent jurisdictions and process it under PIPA consent rules."
+      "answer": "No, we do not collect or store any personal data. All your progress is stored locally on your device."
     },
     {
       "question": "Can educators reuse the material?",

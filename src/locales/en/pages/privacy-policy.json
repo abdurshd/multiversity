@@ -7,23 +7,19 @@
   "sections": [
     {
       "title": "1. Data Controller",
-      "content": "Multiversity Labs Co., Ltd., Business Registration No. 123-45-67890, with offices in Seoul, is responsible for processing."
+      "content": "Multiversity Labs Co., Ltd., Business Registration No. 123-45-67890, with offices in Seoul, is responsible for the application."
     },
     {
-      "title": "2. Collected Data & Purpose",
-      "list": [
-        "Account data (email, hashed password) – for authentication and personalized timelines.",
-        "Analytics data (page views, device type) – service improvement, stored anonymously.",
-        "Feedback submissions – to respond to inquiries and comply with Article 31 reporting duties."
-      ]
+      "title": "2. No Data Collection",
+      "content": "We do not collect, store, or process any personal data from our users. No account creation is required to use our services."
     },
     {
-      "title": "3. Retention & Cross-Border Transfer",
-      "content": "Personal data stays in Korean data centers. If transfer is unavoidable, we sign Standard Contractual Clauses and notify users per PIPA Article 17. Account records are retained for three years, transaction logs for five years."
+      "title": "3. Data Retention",
+      "content": "Since we do not collect any personal data, there is no data to retain or transfer. All application state is stored locally on your device."
     },
     {
-      "title": "4. Data Subject Rights",
-      "content": "You may request access, correction, suspension, or deletion via privacy@multiversity.netlify.app. We will verify identity through PASS or joint certificate and respond within the statutory period.",
+      "title": "4. Your Rights",
+      "content": "As we do not hold any of your personal data, there is no information to request access to, correct, or delete.",
       "email": "privacy@multiversity.netlify.app"
     }
   ]

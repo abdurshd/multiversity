@@ -7,23 +7,19 @@
   "sections": [
     {
       "title": "1. Ma'lumotlar nazoratchisi",
-      "content": "Multiversity Labs Co., Ltd., Biznes ro'yxatga olish raqami 123-45-67890, Seulda joylashgan ofislari bilan qayta ishlash uchun javobgardir."
+      "content": "Multiversity Labs Co., Ltd., Biznes ro'yxatga olish raqami 123-45-67890, Seulda joylashgan ofislari bilan ilova uchun javobgardir."
     },
     {
-      "title": "2. To'plangan ma'lumotlar va maqsad",
-      "list": [
-        "Hisob ma'lumotlari (elektron pochta, xeshirlangan parol) – autentifikatsiya va shaxsiy vaqt jadvallari uchun.",
-        "Analitik ma'lumotlar (sahifa ko'rishlari, qurilma turi) – xizmatni yaxshilash, anonim saqlanadi.",
-        "Fikr-mulohaza yuborish – so'rovlarga javob berish va 31-modda hisobot majburiyatlariga rioya qilish uchun."
-      ]
+      "title": "2. Ma'lumotlarni to'plamaslik",
+      "content": "Biz foydalanuvchilarimizdan hech qanday shaxsiy ma'lumotlarni to'plamaymiz, saqlamaymiz va qayta ishlamaymiz. Xizmatlarimizdan foydalanish uchun hisob yaratish talab qilinmaydi."
     },
     {
-      "title": "3. Saqlash va transchegaraviy o'tkazish",
-      "content": "Shaxsiy ma'lumotlar Koreya ma'lumotlar markazlarida qoladi. Agar o'tkazish muqarrar bo'lsa, biz Standart Shartnoma Shartlarini imzolaymiz va PIPA 17-moddasiga muvofiq foydalanuvchilarga xabar beramiz. Hisob yozuvlari uch yil, tranzaksiya jurnallari besh yil saqlanadi."
+      "title": "3. Ma'lumotlarni saqlash",
+      "content": "Biz hech qanday shaxsiy ma'lumotlarni to'plamaganimiz sababli, saqlash yoki o'tkazish uchun ma'lumot yo'q. Ilovaning barcha holati qurilmangizda mahalliy ravishda saqlanadi."
     },
     {
-      "title": "4. Ma'lumot sub'ekti huquqlari",
-      "content": "Siz privacy@multiversity.netlify.app orqali kirish, to'g'rilash, to'xtatish yoki o'chirishni so'rashingiz mumkin. Biz PASS yoki qo'shma sertifikat orqali shaxsni tasdiqlаymiz va qonuniy muddat ichida javob beramiz.",
+      "title": "4. Sizning huquqlaringiz",
+      "content": "Biz sizning shaxsiy ma'lumotlaringizni saqlamaganimiz sababli, kirish, tuzatish yoki o'chirishni so'rash uchun hech qanday ma'lumot mavjud emas.",
       "email": "privacy@multiversity.netlify.app"
     }
   ]
