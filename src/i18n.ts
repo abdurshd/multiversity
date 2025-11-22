@@ -114,8 +114,31 @@ const uzLegacy = {
     }
 };
 
+// Add a custom detector for location-based default
+const customLocationDetector = {
+    name: 'customLocationDetector',
+    lookup(options: any) {
+        try {
+            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            // Check for Uzbekistan timezones
+            if (timeZone === 'Asia/Tashkent' || timeZone === 'Asia/Samarkand') {
+                return 'uz';
+            }
+        } catch (e) {
+            console.error('Failed to detect timezone:', e);
+        }
+        return undefined;
+    },
+    cacheUserLanguage(lng: string, options: any) {
+        // Optional: cache logic if needed, but localStorage is handled by the main plugin
+    }
+};
+
+const languageDetector = new LanguageDetector();
+languageDetector.addDetector(customLocationDetector);
+
 i18n
-    .use(LanguageDetector)
+    .use(languageDetector)
     .use(initReactI18next)
     .init({
         resources: {
@@ -193,8 +216,9 @@ i18n
             escapeValue: false, // not needed for react as it escapes by default
         },
         detection: {
-            order: ['localStorage', 'navigator'],
+            order: ['localStorage', 'customLocationDetector', 'navigator'],
             caches: ['localStorage'],
+            lookupLocalStorage: 'i18nextLng',
         },
     });
 

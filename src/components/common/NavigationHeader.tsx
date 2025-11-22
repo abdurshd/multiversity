@@ -31,7 +31,7 @@ const NavigationHeader: React.FC = () => {
   };
 
   return (
-    <header className="bg-slate-900 border-b border-slate-700 px-4 sm:px-6 py-4">
+    <header className="bg-slate-900 border-b border-slate-700 px-4 sm:px-6 py-4 relative z-50">
       <div className="relative max-w-7xl mx-auto">
         {/* Background Container with Clipping */}
         <div className="absolute inset-0 rounded-2xl border border-white/10 bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_50px_rgba(8,112,184,0.15)] overflow-hidden pointer-events-none">
@@ -58,8 +58,8 @@ const NavigationHeader: React.FC = () => {
                 key={path}
                 to={path}
                 className={`flex items-center space-x-2 rounded-full px-4 py-2 text-sm font-semibold transition-all ${isActive(path)
-                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
-                    : 'text-slate-200 hover:text-white hover:bg-white/5'
+                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
+                  : 'text-slate-200 hover:text-white hover:bg-white/5'
                   }`}
               >
                 <Icon className="w-4 h-4" />
@@ -89,16 +89,16 @@ const NavigationHeader: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-slate-900/95 backdrop-blur-xl rounded-2xl mt-3">
-          <nav className="px-4 py-4 space-y-2">
+        <div className="absolute top-full left-0 right-0 md:hidden border-t border-white/10 bg-slate-900/95 backdrop-blur-xl rounded-b-2xl shadow-xl z-50 px-4 pb-4">
+          <nav className="space-y-2">
             {navItems.map(({ path, label, icon: Icon }) => (
               <Link
                 key={path}
                 to={path}
                 onClick={closeMenu}
                 className={`flex items-center space-x-3 px-3 py-3 rounded-xl transition ${isActive(path)
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-300 hover:text-white hover:bg-white/5'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-300 hover:text-white hover:bg-white/5'
                   }`}
               >
                 <Icon className="w-5 h-5" />
@@ -113,6 +113,9 @@ const NavigationHeader: React.FC = () => {
               <Sparkles className="w-4 h-4 text-amber-300" />
               <span>{t('common-ui:buttons.explore')}</span>
             </Link>
+            <div className="pt-2 flex justify-center">
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       )}
