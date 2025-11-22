@@ -8,7 +8,7 @@ const keyFigures: Person[] = [
         born: -300000,
         died: 3000,
         description: 'The species that rose from the African savannah to touch the stars. 🌍🚀 Their legacy is written in the ruins and the rockets they left behind.',
-        image: '/images/humanity.jpg'
+        image: '/images/chapters/future-earth/people/homo-sapiens.png'
     },
     {
         id: 'the-swarm',
@@ -16,7 +16,7 @@ const keyFigures: Person[] = [
         role: 'The Successors',
         born: 2500,
         description: 'A collective intelligence of trillions of autonomous drones. 🐝🤖 The final form of terrestrial life.',
-        image: '/images/swarm.jpg'
+        image: '/images/chapters/future-earth/people/the-swarm.png'
     },
     {
         id: 'the-traveler',
@@ -24,7 +24,7 @@ const keyFigures: Person[] = [
         role: 'Galactic Diplomat',
         born: 3000,
         description: 'A post-biological entity representing Earth in the Galactic Council. 👽✨',
-        image: '/images/traveler.jpg'
+        image: '/images/chapters/future-earth/people/the-traveler.png'
     }
 ];
 

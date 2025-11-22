@@ -9,7 +9,7 @@ const keyFigures: Person[] = [
     born: 1931,
     died: 2022,
     description: 'The reformer who tried to save the Soviet Union and accidentally destroyed it instead! 🔨💔 His glasnost and perestroika opened Pandora\'s box. Sometimes good intentions have very unintended consequences!',
-    image: '/images/gorbachev-collapse.jpg'
+    image: '/images/chapters/ussr-collapse/people/mikhail-gorbachev.png'
   },
   {
     id: 'boris-yeltsin',
@@ -18,7 +18,7 @@ const keyFigures: Person[] = [
     born: 1931,
     died: 2007,
     description: 'The Russian politician who literally stood on a tank to defend democracy! 🐻🛡️ From Communist Party member to Soviet destroyer to Russian president. Talk about a career change!',
-    image: '/images/yeltsin.jpg'
+    image: '/images/chapters/ussr-collapse/people/boris-yeltsin.png'
   },
   {
     id: 'ronald-reagan-collapse',
@@ -27,7 +27,7 @@ const keyFigures: Person[] = [
     born: 1911,
     died: 2004,
     description: 'The former actor who convinced the Soviets to spend themselves into oblivion! 🎬💸 "Mr. Gorbachev, tear down this wall!" became reality. Sometimes optimism really can change the world!',
-    image: '/images/reagan-collapse.jpg'
+    image: '/images/chapters/ussr-collapse/people/ronald-reagan.png'
   },
   {
     id: 'lech-walesa',
@@ -36,7 +36,7 @@ const keyFigures: Person[] = [
     born: 1943,
     died: undefined,
     description: 'The Polish shipyard worker who founded Solidarity and helped bring down communism! ⚡🔧 Proved that sometimes a simple electrician can rewire an entire political system!',
-    image: '/images/walesa.jpg'
+    image: '/images/chapters/ussr-collapse/people/lech-walesa.png'
   },
   {
     id: 'vaclav-havel',
@@ -45,7 +45,7 @@ const keyFigures: Person[] = [
     born: 1936,
     died: 2011,
     description: 'The Czech playwright who led the Velvet Revolution and became president! 🎭👑 From writing plays to writing constitutions - proving that the pen really is mightier than the sword!',
-    image: '/images/havel.jpg'
+    image: '/images/chapters/ussr-collapse/people/vaclav-havel.png'
   },
   {
     id: 'erich-honecker',
@@ -54,7 +54,7 @@ const keyFigures: Person[] = [
     born: 1912,
     died: 1994,
     description: 'The East German leader who thought the Wall would last forever! 🧱😴 Famously said the Wall would stand for 100 years... it fell 10 months later. Timing is everything!',
-    image: '/images/honecker.jpg'
+    image: '/images/chapters/ussr-collapse/people/erich-honecker.png'
   },
   {
     id: 'nicolae-ceausescu',
@@ -63,7 +63,7 @@ const keyFigures: Person[] = [
     born: 1918,
     died: 1989,
     description: 'The Romanian dictator who thought he was beloved until the very end! 👑💥 His last speech turned into a revolution in real time. Sometimes delusion meets reality very suddenly!',
-    image: '/images/ceausescu.jpg'
+    image: '/images/chapters/ussr-collapse/people/nicolae-ceausescu.png'
   },
   {
     id: 'helmut-kohl',
@@ -72,7 +72,7 @@ const keyFigures: Person[] = [
     born: 1930,
     died: 2017,
     description: 'The West German leader who seized the moment and reunified Germany! 🇩🇪🤝 When the Wall fell, he didn\'t hesitate - "We are one people!" Unity through leadership!',
-    image: '/images/kohl.jpg'
+    image: '/images/chapters/ussr-collapse/people/helmut-kohl.png'
   }
 ];
 

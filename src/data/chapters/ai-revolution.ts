@@ -7,7 +7,7 @@ const keyFigures: Person[] = [
         role: 'CEO of OpenAI',
         born: 1985,
         description: 'The face of the generative AI boom. 🤖💼 Led the charge towards AGI with ChatGPT.',
-        image: '/images/altman.jpg'
+        image: '/images/chapters/ai-revolution/people/sam-altman.png'
     },
     {
         id: 'demis-hassabis',
@@ -15,7 +15,7 @@ const keyFigures: Person[] = [
         role: 'CEO of Google DeepMind',
         born: 1976,
         description: 'The neuroscientist-programmer who sought to solve intelligence to solve everything else. 🧠♟️',
-        image: '/images/hassabis.jpg'
+        image: '/images/chapters/ai-revolution/people/demis-hassabis.png'
     },
     {
         id: 'geoffrey-hinton',
@@ -23,7 +23,7 @@ const keyFigures: Person[] = [
         role: 'The Godfather of AI',
         born: 1947,
         description: 'The pioneer of deep learning who later warned the world about the existential risks of his creation. 👴⚠️',
-        image: '/images/hinton.jpg'
+        image: '/images/chapters/ai-revolution/people/geoffrey-hinton.png'
     }
 ];
 

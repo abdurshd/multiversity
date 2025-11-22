@@ -8,7 +8,7 @@ const keyFigures: Person[] = [
         born: 1986,
         died: 2020,
         description: 'The ophthalmologist who tried to warn the world about the new virus. 🩺⚠️ His warning was silenced, but his legacy lives on.',
-        image: '/images/li-wenliang.jpg'
+        image: '/images/chapters/covid-pandemic/people/dr-li-wenliang.png'
     },
     {
         id: 'anthony-fauci',
@@ -16,7 +16,7 @@ const keyFigures: Person[] = [
         role: 'Public Health Leader',
         born: 1940,
         description: 'The face of the US pandemic response. 👨‍⚕️🇺🇸 Navigated the treacherous waters between science and politics.',
-        image: '/images/fauci.jpg'
+        image: '/images/chapters/covid-pandemic/people/anthony-fauci.png'
     },
     {
         id: 'tedros-adhanom',
@@ -24,7 +24,7 @@ const keyFigures: Person[] = [
         role: 'WHO Director-General',
         born: 1965,
         description: 'Leader of the World Health Organization during its greatest crisis. 🌍🇺🇳 Faced criticism and praise for global coordination efforts.',
-        image: '/images/tedros.jpg'
+        image: '/images/chapters/covid-pandemic/people/tedros-adhanom.png'
     }
 ];
 
