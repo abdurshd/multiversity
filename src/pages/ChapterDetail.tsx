@@ -188,17 +188,26 @@ const ChapterDetail: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className={`relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br ${chapter.backgroundColor} overflow-hidden`}>
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <section className={`relative py-12 sm:py-16 lg:py-20 bg-slate-900 overflow-hidden`}>
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{ backgroundImage: `url(${chapter.mainImage})` }}
+        />
+
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
+
         <ParticleSystem
           particleCount={particleTheme.particleCount}
           colors={particleTheme.colors}
           speed={particleTheme.speed}
           size={2}
           interactive={false}
-          className="opacity-20"
+          className="opacity-20 z-10"
         />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 z-20">
           <Breadcrumb
             items={[
               { label: t('common-nav:nav.chapters'), path: '/chapters' },
