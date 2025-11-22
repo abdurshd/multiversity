@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, SkipForward, RotateCcw, Sword, Shield, Crown, Heart, Zap, Users } from 'lucide-react';
 import AnimatedSvgEmoji from './AnimatedSvgEmoji';
+import { useTranslation } from 'react-i18next';
 
 interface StoryChoice {
   id: string;
@@ -36,6 +37,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
   scenes,
   onComplete
 }) => {
+  const { t } = useTranslation('components-interactive-story');
   const [currentScene, setCurrentScene] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showText, setShowText] = useState(false);
@@ -221,7 +223,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
             </h3>
           </motion.div>
           <div className="text-sm text-white opacity-75 mb-2">
-            Scene {currentScene + 1} of {scenes.length} • {currentSceneData.sceneType.toUpperCase()}
+            {t('labels.scene_of', { current: currentScene + 1, total: scenes.length })} • {currentSceneData.sceneType.toUpperCase()}
           </div>
           {currentSceneData.timelineYear && (
             <div className="text-primary-400 font-semibold flex items-center justify-center gap-2">
@@ -338,7 +340,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                   >
-                    <p className="text-primary-300 font-semibold mb-4">Choose your action:</p>
+                    <p className="text-primary-300 font-semibold mb-4">{t('labels.choose_action')}</p>
                     {currentSceneData.choices.map((choice, index) => (
                       <motion.button
                         key={choice.id}
@@ -370,7 +372,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
               whileTap={{ scale: 0.95 }}
             >
               <Play className="w-5 h-5" />
-              <span>Begin Interactive Story</span>
+              <span>{t('labels.begin_story')}</span>
             </motion.button>
           ) : (
             <>
@@ -382,7 +384,7 @@ const InteractiveStory: React.FC<InteractiveStoryProps> = ({
                   whileTap={{ scale: 0.95 }}
                   disabled={displayedText !== currentSceneData.text}
                 >
-                  <span>Continue</span>
+                  <span>{t('labels.continue')}</span>
                   <SkipForward className="w-4 h-4" />
                 </motion.button>
               )}
