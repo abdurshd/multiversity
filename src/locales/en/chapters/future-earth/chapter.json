@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Future Earth",
+    "period": "2100+",
+    "description": "Long-term scenarios for humanity and the planet",
+    "historical_context": "The decisions made in the 21st century will echo for millennia. Climate change, technological development, social evolution, and existential risks will determine whether humanity thrives, survives diminished, or disappears entirely. The future is not written - it depends on choices made today.",
+    "divergence_point": "Critical paths humanity could take that lead to radically different long-term futures"
+  },
+  "figures": {
+    "future_generations": {
+      "name": "Our Descendants",
+      "role": "Inheritors",
+      "description": "The billions who will live with the consequences of our choices, for better or worse."
+    },
+    "ai_systems": {
+      "name": "Artificial Minds",
+      "role": "Partners or Successors",
+      "description": "The artificial intelligences that may collaborate with, surpass, or replace humanity."
+    },
+    "earth_itself": {
+      "name": "The Living Planet",
+      "role": "Foundation",
+      "description": "The biosphere that sustains us, resilient yet vulnerable to our actions."
+    }
+  },
+  "timelines": {
+    "climate_catastrophe": {
+      "title": "The Burned World: Climate Catastrophe",
+      "description": "What if climate change proceeds unchecked and creates a barely habitable planet?",
+      "divergence_description": "Climate action fails. Tipping points cascade. Earth's climate system shifts to a new, hostile equilibrium.",
+      "events": {
+        "tipping_cascade_2050": {
+          "title": "The Great Unraveling",
+          "description": "Multiple climate tipping points are crossed: Arctic ice gone, Amazon rainforest collapsed, permafrost melted. Feedback loops accelerate warming.",
+          "impact": "Global average temperature rises 5°C above pre-industrial. Weather becomes extreme and unpredictable."
+        },
+        "civilization_retreat_2100": {
+          "title": "The Great Migration",
+          "description": "Equatorial regions become uninhabitable. Coastal cities are abandoned. Billions attempt to migrate to shrinking habitable zones.",
+          "impact": "Civilization contracts. Wars over resources. Population declines sharply. Technology regresses."
+        },
+        "remnant_humanity_2200": {
+          "title": "The Survivors",
+          "description": "Human population has fallen to under 1 billion, concentrated in polar regions and high altitudes. Living in fortified settlements.",
+          "impact": "Humanity survives but civilization has collapsed. Most technology and knowledge lost. New dark age."
+        }
+      },
+      "consequences": {
+        "short_term": "Catastrophic climate change disrupts civilization. Mass migration and conflict.",
+        "long_term": "Population crash. Loss of technology and knowledge. Centuries of dark age before recovery.",
+        "global_impact": "Earth remains habitable but hostile. Human potential is drastically reduced. Recovery may take millennia."
+      },
+      "present_day_status": "By 2200, Earth has stabilized at a new, hotter equilibrium. Human population is around 800 million, mostly in Canada, Russia, Antarctica, and mountain regions. Technology has regressed to roughly 19th century levels. The ocean is acidified and mostly dead. Former great cities lie flooded and ruined. Recovery will take many centuries."
+    },
+    "post_human": {
+      "title": "The Transcendence: Post-Human Future",
+      "description": "What if humanity evolves beyond biological form into something entirely new?",
+      "divergence_description": "Biotechnology and AI merge. Humans enhance themselves beyond recognition. The line between biological and artificial blurs and disappears.",
+      "events": {
+        "enhancement_cascade_2060": {
+          "title": "The Upgrade",
+          "description": "Genetic engineering, neural implants, and AI integration become commonplace. Enhanced humans have capabilities far beyond baseline.",
+          "impact": "Humanity begins fragmenting into baseline humans and various enhanced subspecies."
+        },
+        "digital_consciousness_2100": {
+          "title": "The Upload",
+          "description": "Consciousness uploading becomes possible. Millions choose to transfer their minds to digital substrate. Physical bodies become optional.",
+          "impact": "The nature of humanity fundamentally changes. Digital minds can copy, merge, and modify themselves."
+        },
+        "dyson_swarm_2200": {
+          "title": "The Stellar Civilization",
+          "description": "Post-human minds, no longer constrained by biology, begin constructing a Dyson swarm around the Sun. Earth is just one small habitat among billions.",
+          "impact": "Humanity's descendants have become something unrecognizable. They inhabit computational substrate throughout the solar system."
+        }
+      },
+      "consequences": {
+        "short_term": "Human enhancement accelerates. Traditional humanity begins to disappear.",
+        "long_term": "Post-human civilization spreads through the solar system and potentially beyond.",
+        "global_impact": "Humanity transcends its biological origins. Whether this counts as survival or extinction is philosophical."
+      },
+      "present_day_status": "By 2200, baseline biological humans are a small minority, living in preserve-like environments. Most of humanity's descendants exist as digital consciousnesses in vast computational arrays powered by solar energy. They have begun sending seed ships to other star systems. They are to us as we are to single-celled organisms - barely recognizable as the same lineage."
+    },
+    "sustainable_prosperity": {
+      "title": "The Garden World: Sustainable Prosperity",
+      "description": "What if humanity achieves genuine sustainability and lives in harmony with the biosphere?",
+      "divergence_description": "Clean energy revolution succeeds. Population stabilizes. Technology enables prosperity without environmental destruction.",
+      "events": {
+        "green_transition_2050": {
+          "title": "The Great Healing",
+          "description": "Clean energy becomes cheaper than fossil fuels. Carbon capture reverses warming. Ecosystems begin recovering.",
+          "impact": "Climate is stabilized. Biodiversity loss is halted and reversed. Air and water become clean."
+        },
+        "post_scarcity_ecology_2100": {
+          "title": "The Balanced Civilization",
+          "description": "Advanced technology provides abundance while respecting ecological limits. Population stabilizes at 10 billion living comfortably and sustainably.",
+          "impact": "Humanity achieves what once seemed impossible: prosperity, sustainability, and ecological health together."
+        },
+        "planetary_garden_2200": {
+          "title": "The Living World",
+          "description": "Earth has become a managed garden - wilderness thrives alongside sustainable human habitation. Technology is invisible, integrated with nature.",
+          "impact": "A stable, prosperous, ecologically rich civilization that could persist for millions of years."
+        }
+      },
+      "consequences": {
+        "short_term": "Successful transition to sustainability. Economic prosperity continues with environmental restoration.",
+        "long_term": "Stable, sustainable civilization in balance with the biosphere.",
+        "global_impact": "Perhaps the best realistic outcome. Prosperity, ecology, and humanity coexist indefinitely."
+      },
+      "present_day_status": "By 2200, Earth hosts 10 billion humans living in sustainable prosperity. Cities are green and integrated with nature. Wilderness has been restored to health. Clean energy powers everything. Technology has advanced but in harmony with ecology. Culture flourishes. Space colonization has begun but Earth remains the jewel. This is the future our ancestors hoped we would build."
+    }
+  }
+}

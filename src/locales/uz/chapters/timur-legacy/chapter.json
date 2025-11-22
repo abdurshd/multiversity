@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Temurning merosi",
+    "period": "1370-1405",
+    "description": "Oxirgi buyuk ko'chmanchi bosqinchi va uning imperiyasining muqobil yo'llari",
+    "historical_context": "Temur (Temurlan) oxirgi buyuk ko'chmanchi imperiyasini qurdi va Hindistondan Anadolugacha bo'lgan ulkan hududlarni zabt etdi. Uning 1405-yilda Xitoyga yurish paytida kutilmagan o'limi nima bo'lishi mumkinligi haqida savollar qoldirdi.",
+    "divergence_point": "1405-yilda Temurning o'limidan keyin yuzaga kelgan vorislik inqirozi va strategik qarorlar"
+  },
+  "figures": {
+    "emir_timur": {
+      "name": "Amir Temur (Temurlan)",
+      "role": "Temuriylar imperiyasining asoschisi",
+      "description": "Oxirgi buyuk ko'chmanchi bosqinchilardan biri. Mo'g'ullar imperiyasini tiklashga intilgan harbiy daho."
+    },
+    "shahrukh": {
+      "name": "Shohruh",
+      "role": "Temurning vorisi",
+      "description": "Temurning eng kichik o'g'li, imperiyani urush mashinasidan san'at va fan markaziga aylantirdi."
+    },
+    "ulugh_beg": {
+      "name": "Ulug'bek",
+      "role": "Astronom shoh",
+      "description": "Qilichdan ko'ra yulduzlarni afzal ko'rgan hukmdor. Samarqandda tarixdagi eng buyuk rasadxonalardan birini qurdi."
+    }
+  },
+  "timelines": {
+    "immortal_emir": {
+      "title": "O'lmas Amir: Xitoyni zabt etish",
+      "description": "Agar Temur 1405-yilda kasalligidan sog'ayib qolsa va ulkan qo'shinini Xitoyga boshqarsa nima bo'lar edi?",
+      "divergence_description": "Temur Otror shahrida kasalligidan tuzalib ketadi va Xitoyga bosqinchilikni boshlaydi.",
+      "events": {
+        "survival_1405": {
+          "title": "Otrordagi mo''jiza",
+          "description": "Temur qishki kasalligidan tuzalib ketadi. Qo'shin tarqalib ketish o'rniga Sharqqa yo'l oladi.",
+          "impact": "Xitoyga qarshi yurishlar rejaga ko'ra davom etadi."
+        },
+        "fall_of_beijing_1407": {
+          "title": "Pekinging qulashi",
+          "description": "Temuriy kuchlar ustun otliq qo'shin va porox qurollaridan foydalanib, Buyuk Devordan o'tib, Pekinni bosib oladi.",
+          "impact": "Min sulolasining tugashi. Xitoyda Temuriylar sulolasining tashkil topishi."
+        },
+        "silk_road_monopoly_1410": {
+          "title": "Ipak yo'li monopoliyasi",
+          "description": "Anadoludan Tinch okeanigacha bo'lgan hududlarni nazorat ostiga olib, Temur Ipak yo'li ustidan mutlaq hukmronlik o'rnatadi.",
+          "impact": "Yevropa savdodan mahrum bo'ladi, Uyg'onish davri kechiktiriladi. Markaziy Osiyo dunyoning iqtisodiy markazi bo'ladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Markaziy Osiyo Yer yuzidagi eng boy mintaqa bo'ladi.",
+        "long_term": "Global kuch markazi Osiyoda qoladi. Yevropa mustamlakachiligi hech qachon boshlanmaydi.",
+        "global_impact": "Turk-mo'g'ul madaniyati hukmronlik qiladigan butunlay boshqacha zamonaviy dunyo."
+      },
+      "present_day_status": "Buyuk Temuriylar Federatsiyasi Turkiyadan Koreyagacha cho'zilgan. Samarqand dunyoning fan va madaniyat poytaxti. Yevropa orqada qolgan feodal davlatlar to'plami. Asosiy global til - Chig'atoy turkiy tili."
+    },
+    "unified_succession": {
+      "title": "Pax Timuridea: Barqaror imperiya",
+      "description": "Agar Temur fuqarolar urushining oldini oluvchi aniq vorislik rejasini o'rnatgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Temur o'limidan oldin aniq voris va ma'muriy tuzilmani tayinlaydi.",
+      "events": {
+        "succession_plan_1404": {
+          "title": "Buyuk Majlis",
+          "description": "Temur barcha o'g'illari va nabiralarini Samarqandga chaqirib, aniq vorislik qoidalarini o'rnatadi.",
+          "impact": "Institutsional islohot orqali fuqarolar urushining oldini olish."
+        },
+        "shah_rukh_reforms_1410": {
+          "title": "Ma'muriy inqilob",
+          "description": "Shohruh Fors va Xitoy tizimlariga asoslangan byurokratik islohotlarni amalga oshiradi.",
+          "impact": "Imperiya qabilaviy ittifoqdan zamonaviy davlatga aylanadi."
+        },
+        "ulugh_beg_renaissance_1425": {
+          "title": "Samarqand Uyg'onishi",
+          "description": "Fan, san'at va arxitekturaga katta sarmoya kiritilishi Samarqandni dunyoning intellektual poytaxtiga aylantiradi.",
+          "impact": "Yevropa, Xitoy va Hindistondan olimlarni jalb qiladi. Ilmiy inqilob Markaziy Osiyoda boshlanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Siyosiy barqarorlik madaniy va iqtisodiy gullab-yashnashga imkon beradi.",
+        "long_term": "Temuriylar imperiyasi vaqtinchalik zabt etish o'rniga doimiy tsivilizatsiyaga aylanadi.",
+        "global_impact": "Markaziy Osiyo Uyg'onish va Ilmiy inqilobga rahbarlik qiladi."
+      },
+      "present_day_status": "Temuriylar Hamdo'stligi yirik jahon kuchi bo'lib qoladi. O'zbekiston va uning atrofi fan va texnologiyada yetakchilik qiladi. Islom Yevropaning Uyg'onish davriga o'xshash ma'rifatdan o'tdi."
+    },
+    "empire_fragments": {
+      "title": "Singan toj: To'liq qulash",
+      "description": "Agar vorislik urushlari Temuriylar merosini butunlay yo'q qilsa nima bo'lar edi?",
+      "divergence_description": "Temurning barcha o'g'illari va nabiralari vorislik uchun to'liq urush olib borishadi.",
+      "events": {
+        "civil_war_1405": {
+          "title": "Olti shahzodalar urushi",
+          "description": "Temurning o'limi taxtga da'vogarlar o'rtasida darhol urushni boshlaydi.",
+          "impact": "Imperiya urushayotgan qirolliklariga bo'linadi."
+        },
+        "mongol_resurgence_1415": {
+          "title": "Mo'g'ullarning qaytishi",
+          "description": "Zaiflashgan Temuriy davlatlari dashtlardan kelgan mo'g'ul qabilalariga yiqiladi.",
+          "impact": "Markaziy Osiyo qabilaviy tartibsizlik va iqtisodiy tanazzulga qaytadi."
+        },
+        "ottoman_dominance_1425": {
+          "title": "Usmonlilar imkoniyati",
+          "description": "Temuriylar qulashi bilan usmonlilar sharqqa tez sur'atlarda kengayadi.",
+          "impact": "Usmonlilar imperiyasi yanada kuchliroq bo'lib, Venadan Forsga qadar hukmronlik qiladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Markaziy Osiyo asrlar davom etadigan urush va qashshoqlikka tushib qoladi.",
+        "long_term": "Mintaqa hech qachon o'zining avvalgi shon-shuhratiga qaytmaydi. Orqada qolgan hududga aylanadi.",
+        "global_impact": "Usmonlilar va keyinchalik Rossiyaning Markaziy Osiyo ustidan hukmronligi tezlashadi."
+      },
+      "present_day_status": "Markaziy Osiyo bizning tariximizdagidan ham ko'proq parchalangan va iqtisodiy jihatdan rivojlanmagan. Temuriylar davri faqat Mo'g'ullar va Rossiya imperiyalari orasidagi qisqa muddatli buyuklik sifatida eslanadi."
+    }
+  }
+}

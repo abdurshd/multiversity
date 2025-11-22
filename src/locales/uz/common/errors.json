@@ -1,0 +1,36 @@
+{
+  "general": {
+    "title": "Nimadir noto'g'ri ketdi",
+    "description": "Kechirasiz, kutilmagan xatolik yuz berdi.",
+    "reload": "Sahifani qayta yuklash",
+    "contact_support": "Yordam xizmatiga murojaat qilish"
+  },
+  "network": {
+    "title": "Tarmoq xatoligi",
+    "description": "Iltimos, internet aloqangizni tekshiring va qayta urinib ko'ring.",
+    "retry": "Qayta urinish"
+  },
+  "not_found": {
+    "title": "Sahifa topilmadi",
+    "description": "Siz qidirayotgan sahifa mavjud emas.",
+    "go_home": "Bosh sahifaga o'tish"
+  },
+  "chapter_not_found": {
+    "title": "Bob topilmadi",
+    "description": "Siz qidirayotgan bob mavjud emas yoki o'chirilgan.",
+    "view_all": "Barcha boblarni ko'rish"
+  },
+  "timeline_not_found": {
+    "title": "Vaqt chizig'i topilmadi",
+    "description": "Ushbu vaqt chizig'i mavjud emas yoki mavjud emas.",
+    "back_to_chapter": "Bobga qaytish"
+  },
+  "access_denied": {
+    "title": "Ruxsat berilmadi",
+    "description": "Sizda ushbu manbaga kirish huquqi yo'q."
+  },
+  "server_error": {
+    "title": "Server xatoligi",
+    "description": "Serverlarimizda muammolar mavjud. Iltimos, keyinroq qayta urinib ko'ring."
+  }
+}

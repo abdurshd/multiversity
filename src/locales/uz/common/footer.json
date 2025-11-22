@@ -1,0 +1,38 @@
+{
+  "cta": {
+    "heading": "Tarixni qayta yozishga tayyormisiz?",
+    "description": "Muqobil tarix yo'nalishlarini o'rganing va kichik o'zgarishlar dunyomizni qanday o'zgartirishi mumkinligini kashf eting.",
+    "button": "O'rganishni boshlash"
+  },
+  "sections": {
+    "multiversity": "Multiversity",
+    "quick_links": "Tezkor havolalar",
+    "resources": "Manbalar"
+  },
+  "links": {
+    "about": "Biz haqimizda",
+    "methodology": "Metodologiya",
+    "team": "Jamoa",
+    "careers": "Karyera",
+    "documentation": "Hujjatlar",
+    "api": "API",
+    "tutorials": "Qo'llanmalar",
+    "blog": "Blog",
+    "chapters": "Boblar",
+    "compare": "Vaqt chiziqlarini solishtirish",
+    "faq": "Ko'p so'raladigan savollar",
+    "support": "Yordam"
+  },
+  "legal": {
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Xizmat shartlari",
+    "accessibility": "Qulaylik",
+    "copyright": "© {{year}} Multiversity. Barcha huquqlar himoyalangan."
+  },
+  "social": {
+    "follow": "Bizni kuzating",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}

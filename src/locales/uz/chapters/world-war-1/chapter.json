@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Buyuk urush",
+    "period": "1914-1918",
+    "description": "Barcha urushlarni tugatish uchun urush va uning muqobil tugatilishi",
+    "historical_context": "Birinchi jahon urushi eski Yevropa tartibini vayron qildi. To'rtta imperiya quladi. O'n million askar vafot etdi, ko'pincha yardlarda o'lchangan yutuqlar uchun. Urushning hal qilinishi - yoki uning yo'qligi - yanada halokatli davomiga asos bo'ldi. Savol qolmoqda: boshqacha qarorlar ko'proq barqaror tinchlikka olib kelishi mumkin edimi?",
+    "divergence_point": "Urushni oldini olish, ertaroq tugatish yoki boshqacha yakunlash mumkin bo'lgan muhim lahzalar"
+  },
+  "figures": {
+    "archduke_franz_ferdinand": {
+      "name": "Ertsgertsog Frants Ferdinand",
+      "role": "Avstriya-Vengriya vorisi",
+      "description": "O'ldirilishi imperiyasini yo'q qilgan urushni boshlagan islohotchi ertsgertsog."
+    },
+    "kaiser_wilhelm_ii": {
+      "name": "Kayzer Vilgelm II",
+      "role": "Germaniya imperatori",
+      "description": "Tajovuzkor siyosati va Avstriyaga bo'sh chek berish urushni boshlashga yordam bergan impulsiv kayzer."
+    },
+    "woodrow_wilson": {
+      "name": "Vudro Vilson",
+      "role": "AQSH prezidenti",
+      "description": "O'n to'rt nuqtasi adolatli tinchlikka va'da bergan, ammo Yevropa kinizmini yengib o'tolmagan idealistik prezident."
+    }
+  },
+  "timelines": {
+    "assassination_foiled": {
+      "title": "Oldini olingan falokat: Suiqasdning oldini olish",
+      "description": "Agar Frants Ferdinandning xavfsizligi Sarayevo suiqasdini oldini olgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Frants Ferdinandning kortej boshqa yo'ldan o'tadi. Gavrilo Prinsip hech qachon otish imkoniyatiga ega bo'lmaydi.",
+      "events": {
+        "sarajevo_1914": {
+          "title": "Yo'l o'zgartirildi",
+          "description": "Frants Ferdinandning haydovchisi noto'g'ri burilish o'rniga rejalashtirilgan yo'ldan boradi. Ertsgertsog Sarayevoga tashrifdan omon qoladi.",
+          "impact": "Birinchi jahon urushi uchun bevosita sabab olib tashlanadi. Iyul inqirozi sodir bo'lmaydi."
+        },
+        "reforms_1916": {
+          "title": "Buyuk Avstriyaning Qo'shma Shtatlari",
+          "description": "Frants Ferdinand o'z islohot rejasini amalga oshiradi va Avstriya-Vengriyani slavyan xalqlarga avtonomiya beruvchi federal davlatga aylantiradi.",
+          "impact": "Serb millatчилиги zararlanadi. Avstriya-Vengriya moslashadi va zamonaviy davrga omon qoladi."
+        },
+        "peaceful_century_1920": {
+          "title": "Uzoq tinchlik davom etadi",
+          "description": "Birinchi jahon urushisiz, Yevropa tartibi davom etadi. Bolsheviklar inqilobi yo'q. Urushlararo betartiblik yo'q. Gitler yo'q.",
+          "impact": "20-asr tinch rivojlanadi. Demokratiya va monarxiya birga mavjud. Jahon urushlari holda texnologik taraqqiyot."
+        }
+      },
+      "consequences": {
+        "short_term": "Birinchi jahon urushining butunlay oldini olish. Yevropa imperiyalari bosqichma-bosqich evolyutsiyasini davom ettiradi.",
+        "long_term": "Birinchi jahon urushi yo'q, demak Ikkinchi jahon urushi yo'q, Xolokost yo'q, Sovet Ittifoqi yo'q. Butunlay boshqacha 20-asr.",
+        "global_impact": "Asr davomida ehtimol 100 million hayot saqlanadi. Demokratik va monarxik tizimlar birga mavjud. Inqilobiy emas, balki bosqichma-bosqich o'zgarish."
+      },
+      "present_day_status": "Buyuk Yevropa imperiyalari Yevropa Ittifoqiga o'xshash konstitutsiyaviy federatsiyalarga aylandi, ammo bir asr oldinroq. Avstriya-Vengriya, Rossiya va Usmonlilar imperiyasi hammasi qulash o'rniga isloh qilindi. Jahon urushlari yo'q, global miqyosda ertaroq farovonlik va demokratik rivojlanish."
+    },
+    "early_peace": {
+      "title": "G'alabasiz tinchlik: 1916 muzokara kelishuvi",
+      "description": "Agar Britaniya va Germaniya 1916-yilda muzokara tinchligiga rozi bo'lgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Somme va Verdundagi dahshatli yo'qotishlardan keyin, urush charchoqligi jiddiy tinchlik muzokaralariga olib keladi.",
+      "events": {
+        "somme_shock_1916": {
+          "title": "Uyg'onish",
+          "description": "Sommedagi hayratlanarli yo'qotishlar ikkala tomonni ham urushni g'alab qilib bo'lmasligini tan olishga majbur qiladi. Maxfiy tinchlik urinishlari muvaffaqiyatga erishadi.",
+          "impact": "Muzokaralar boshlanadi. Ikkala tomon ham kichik tuzatishlar bilan status quo ante bellum qabul qiladi."
+        },
+        "peace_of_brussels_1917": {
+          "title": "Murosa tinchlik",
+          "description": "Muzokara tinchlik ko'pgina hududlarni urushdan oldingi holatga qaytaradi. Germaniya Belgiyadan chiqadi. Avstriya o'z imperiyasini saqlaydi.",
+          "impact": "Aniq g'olib yo'q. Barcha imperiyalar omon qoladi, ammo charchagan. Millionlab hayotlar saqlanadi."
+        },
+        "fragile_peace_1930": {
+          "title": "Beqaror tartib",
+          "description": "Yakunlanmagan tinchlik hech kimni qanoatlantirib bo'lmaydi. Qasos harakatlari qaynaydi. Ammo boshqa buyuk urushdan charchoqlikdan qochiladi.",
+          "impact": "Yevropa keskin, ammo tinch qoladi. Sovet Ittifoqi yo'q. Zamonaviylikka boshqacha yo'l."
+        }
+      },
+      "consequences": {
+        "short_term": "Urush 1917-yilda aniq g'olibsiz tugaydi. Millionlab hayotlar saqlanadi.",
+        "long_term": "Yevropa imperiyalari omon qoladi, ammo zaiflashadi. Bosqichma-bosqich demokratlashtirish. Biz bilgan Ikkinchi jahon urushi yo'q.",
+        "global_impact": "Yakunlanmagan tinchlik fashizm va kommunizmning yuksalishiga yo'l qo'ymaydi. Sekinroq, ammo barqarorroq yo'l zamonaviy dunyoga."
+      },
+      "present_day_status": "1917-yilgi murosa tinchlik barcha tomonlarni biroz qoniqtirmadi, ammo boshqa urush uchun juda charchagan edi. Imperiyalar 20-asr davomida bosqichma-bosqich demokratlashdi va markazsizlashdi. Genotsidlar yoki totalitar tajribalar yo'q. Yevropa 1960-yillarga qadar tinch yo'l bilan birlashdi."
+    },
+    "german_victory": {
+      "title": "Germaniya tinchlik: Markaziy kuchlar g'alabasi",
+      "description": "Agar Germaniya 1918-yilda Birinchi jahon urushida hal qiluvchi g'alaba qozongan bo'lsa nima bo'lar edi?",
+      "divergence_description": "1918-yilgi Bahor hujumi butunlay muvaffaqiyatga erishadi. Fransiya tinchlik so'raydi. Germaniya urushda g'alaba qozonadi.",
+      "events": {
+        "spring_offensive_success_1918": {
+          "title": "Bosib o'tish",
+          "description": "Germaniya shturmoviklari G'arbiy frontni buzadi. Parijga tahdid solinadi. Fransiya Amerika qo'shimcha kuchlari kelishidan oldin qulaydi.",
+          "impact": "Fransiya sharmandali tinchlikka imzo chekadi. Germaniya kontinental Yevropada hukmronlik qiladi."
+        },
+        "treaty_of_versailles_reversed_1919": {
+          "title": "Germaniya tinchlik",
+          "description": "Germaniya Fransiya va Belgiyaga qattiq shartlar qo'yadi. Katta reparatsiyalar. Hududiy yo'qotishlar. Koloniyalarni egallab olish.",
+          "impact": "Germaniya hukmron Yevropa kuchiga aylanadi. Fransiya xo'rlanadi va qashshoqlashadi."
+        },
+        "mitteleuropa_realized_1930": {
+          "title": "Germaniya asri",
+          "description": "Germaniya Yevropada hukmronlik qiluvchi iqtisodiy va siyosiy blok yaratadi. Ichkarida demokratik, ammo tashqarida imperial.",
+          "impact": "Germaniya gegemoniyasi kuchlar muvozanatini almashtiradi. Natsistlar yuksalishi yo'q, chunki Germaniya hech qachon mag'lubiyat va xo'rlanishni boshdan kechirmadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Germaniya Birinchi jahon urushida g'alaba qozonadi va Yevropada hukmronlik qiladi.",
+        "long_term": "Yevropa ustida Germaniya gegemoniyasi, ammo natsistik mafkurasiz. Demokratik Germaniya imperiyasi.",
+        "global_impact": "Boshqacha buyuk kuch dinamikasi. Natsistik Germaniya yo'q. Boshqacha Ikkinchi jahon urushi yoki umuman yo'q."
+      },
+      "present_day_status": "Germaniya imperiyasi 20-asr o'rtalarida Yevropada hukmronlik qildi, ammo oxir-oqibat demokratik federatsiyaga aylandi. Fransiyaga yuklangan qattiq tinchlik doimiy norozilik yaratdi, ammo ikkinchi jahon urushi yo'q. Germaniyaning demokratik an'analari g'alabaga qaramay fashizmning oldini oldi. Yevropa 2000-yilga qadar Germaniya rahbarligida birlashdi."
+    }
+  }
+}

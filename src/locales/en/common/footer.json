@@ -1,0 +1,38 @@
+{
+  "cta": {
+    "heading": "Ready to rewrite history?",
+    "description": "Explore alternate timelines and discover how small changes can reshape our world.",
+    "button": "Start Exploring"
+  },
+  "sections": {
+    "multiversity": "Multiversity",
+    "quick_links": "Quick Links",
+    "resources": "Resources"
+  },
+  "links": {
+    "about": "About",
+    "methodology": "Methodology",
+    "team": "Team",
+    "careers": "Careers",
+    "documentation": "Documentation",
+    "api": "API",
+    "tutorials": "Tutorials",
+    "blog": "Blog",
+    "chapters": "Chapters",
+    "compare": "Compare Timelines",
+    "faq": "FAQ",
+    "support": "Support"
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "accessibility": "Accessibility",
+    "copyright": "© {{year}} Multiversity. All rights reserved."
+  },
+  "social": {
+    "follow": "Follow us",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}

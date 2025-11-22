@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The Bolshevik Revolution",
+    "period": "1917-1924",
+    "description": "Lenin's seizure of power and the birth of the Soviet state",
+    "historical_context": "In 1917, Russia experienced two revolutions. The February Revolution overthrew the Tsar. The October Revolution brought the Bolsheviks to power. Lenin's ruthless determination and organizational genius transformed a failed state into history's first communist dictatorship, setting the stage for seventy years of Soviet rule and global ideological conflict.",
+    "divergence_point": "Critical decisions in 1917-1918 that could have prevented Bolshevik victory or changed the Soviet system"
+  },
+  "figures": {
+    "vladimir_lenin": {
+      "name": "Vladimir Lenin",
+      "role": "Bolshevik Leader",
+      "description": "The revolutionary theorist whose single-minded determination and tactical brilliance created the Soviet Union."
+    },
+    "alexander_kerensky": {
+      "name": "Alexander Kerensky",
+      "role": "Provisional Government Leader",
+      "description": "The democratic socialist whose indecision and weakness allowed the Bolshevik takeover."
+    },
+    "leon_trotsky": {
+      "name": "Leon Trotsky",
+      "role": "Red Army Founder",
+      "description": "The brilliant organizer who built the Red Army and won the Civil War for the Bolsheviks."
+    }
+  },
+  "timelines": {
+    "white_victory": {
+      "title": "The White Russia: Anti-Bolshevik Victory",
+      "description": "What if the White forces defeated the Bolsheviks in the Civil War?",
+      "divergence_description": "The White armies coordinate their offensives effectively. Foreign intervention is more substantial. The Bolsheviks are defeated in 1919.",
+      "events": {
+        "coordinated_offensive_1919": {
+          "title": "The White Tide",
+          "description": "Kolchak, Denikin, and Yudenich coordinate their attacks. Allied support provides modern weapons. The Red Army is overwhelmed.",
+          "impact": "Bolshevik government collapses. Lenin and surviving Bolshevik leaders flee to exile."
+        },
+        "military_dictatorship_1920": {
+          "title": "The Russian Directory",
+          "description": "White victory brings not democracy but military dictatorship. Generals establish an authoritarian regime hostile to both communism and democracy.",
+          "impact": "Russia becomes a right-wing authoritarian state, similar to Franco's Spain."
+        },
+        "alliance_with_germany_1935": {
+          "title": "The Eastern Pact",
+          "description": "Authoritarian Russia allies with Nazi Germany against Western democracies and potential Japanese expansion.",
+          "impact": "World War II has completely different alliances and outcomes."
+        }
+      },
+      "consequences": {
+        "short_term": "Bolshevism is defeated but democracy doesn't emerge. Military dictatorship rules Russia.",
+        "long_term": "No Soviet Union but also no democratic Russia. Different World War II alliances.",
+        "global_impact": "No Soviet model for communist movements worldwide. But fascism may be stronger without Soviet opposition."
+      },
+      "present_day_status": "Russia remained an authoritarian state throughout the 20th century, eventually democratizing in the 1990s. No Cold War as we knew it. Communist movements worldwide were weaker without Soviet support but democratic development in Russia came much later."
+    },
+    "democratic_revolution": {
+      "title": "The People's Democracy: Kerensky Succeeds",
+      "description": "What if Kerensky's Provisional Government successfully established democracy?",
+      "divergence_description": "Kerensky makes land reform his priority and withdraws Russia from World War I immediately. The Bolshevik coup is prevented.",
+      "events": {
+        "land_reform_1917": {
+          "title": "Peace, Land, and Bread",
+          "description": "Kerensky implements immediate land redistribution and signs armistice with Germany. This steals the Bolsheviks' key issues.",
+          "impact": "Popular support shifts to the Provisional Government. Bolsheviks lose momentum."
+        },
+        "constituent_assembly_1918": {
+          "title": "Russian Democracy Born",
+          "description": "Free elections create a coalition government of Socialist Revolutionaries and Mensheviks. A constitution establishes a democratic republic.",
+          "impact": "Russia becomes the world's largest democracy. Communist revolution is averted."
+        },
+        "economic_recovery_1925": {
+          "title": "The Democratic Miracle",
+          "description": "Political stability enables economic recovery. Democratic Russia industrializes without the brutality of Stalin's collectivization.",
+          "impact": "Russia develops as a major democratic power alongside Western democracies."
+        }
+      },
+      "consequences": {
+        "short_term": "Democratic government successfully establishes itself. Russia modernizes peacefully.",
+        "long_term": "No Stalin. No Great Terror. No collectivization famine. Democratic Russia is a natural Western ally.",
+        "global_impact": "No Soviet model for global communism. No Cold War. Democracy stronger in 20th century."
+      },
+      "present_day_status": "The Russian Democratic Republic is one of the world's leading democracies and economies. It joined the European Union in the 1970s. Communist ideology never became a major global force. The 20th century saw cooperation rather than Cold War between the great powers."
+    },
+    "permanent_revolution": {
+      "title": "Trotsky's Vision: Permanent Revolution",
+      "description": "What if Trotsky, not Stalin, succeeded Lenin?",
+      "divergence_description": "Lenin recovers briefly from his stroke and designates Trotsky as his successor. Trotsky consolidates power instead of Stalin.",
+      "events": {
+        "trotsky_succession_1924": {
+          "title": "The Heir Apparent",
+          "description": "Lenin's deathbed testament denouncing Stalin is made public. The Party Congress chooses Trotsky as General Secretary.",
+          "impact": "Trotsky's international revolutionary vision shapes Soviet policy instead of Stalin's socialism in one country."
+        },
+        "world_revolution_1930": {
+          "title": "Export the Revolution",
+          "description": "Massive resources devoted to fomenting revolutions abroad. Successful communist revolutions in Germany, Spain, and China happen earlier.",
+          "impact": "Global communist movement is stronger and more coordinated. Western democracies are genuinely threatened."
+        },
+        "ideological_war_1940": {
+          "title": "The Red Century",
+          "description": "By 1940, communist governments control much of Europe and Asia through revolution rather than Soviet conquest.",
+          "impact": "Communism vs. capitalism conflict is even more intense. World War II becomes part of a larger ideological struggle."
+        }
+      },
+      "consequences": {
+        "short_term": "Soviet Union focuses on world revolution rather than internal development.",
+        "long_term": "Communism spreads further and faster. But also burns out quicker due to overextension.",
+        "global_impact": "More intense ideological conflict. But Trotskyist communism might have been less brutal than Stalinism, leading to different outcomes."
+      },
+      "present_day_status": "Trotskyist permanent revolution overextended itself. By the 1960s, communist regimes were collapsing from internal contradictions. Without Stalinist terror apparatus, communist systems were less stable but also less brutal. Most transitioned to democratic socialism by the 1980s."
+    }
+  }
+}

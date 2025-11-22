@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "Muqobil Tarixlarni O'rganing",
+    "subtitle": "Agar tarix boshqacha yo'l olsa-chi?",
+    "cta": {
+      "primary": "O'rganishni boshlash",
+      "secondary": "Vaqt chiziqlarini solishtirish"
+    }
+  },
+  "stats": {
+    "divergence": {
+      "label": "Tarqalish nuqtalari",
+      "value": "40+",
+      "detail": "qo'lda yaratilgan burilish nuqtalari"
+    },
+    "events": {
+      "label": "Interaktiv voqealar",
+      "value": "70+",
+      "detail": "ta'sir uchun baholangan"
+    },
+    "coverage": {
+      "label": "Qamrov",
+      "value": "1370 → 2100+",
+      "detail": "global qamrov va mintaqaviy fokus"
+    }
+  },
+  "timeline_threads": {
+    "us_independence": {
+      "tag": "AQSH Mustaqilligi",
+      "title": "Vashington Valley Forge'da asirga olindi",
+      "effect": "Britaniya g'alabasi mustamlakalar qulashini anglatadi va o'nlab yillar o'tgach kechiktirilgan mustaqillik harakatini boshlaydi."
+    },
+    "cold_war": {
+      "tag": "Sovuq urush",
+      "title": "Kosmonavt Oyda birinchi",
+      "effect": "Sovet obro'si detentni tezlashtiradi va Osiyo va Afrikadagi ittifoqlarni qayta tuzadi."
+    },
+    "french_revolution": {
+      "tag": "Fransuz inqilobi",
+      "title": "Konstitutsiyaviy monarxiya muvaffaqiyatga erishdi",
+      "effect": "Bosqichma-bosqich islohot Terror davriga yo'l qo'ymaydi va Yevropa liberalizmini o'zgartiradi."
+    }
+  },
+  "about": {
+    "badge": "Multiversity nima?",
+    "heading": "Hikoyachilik va ma'lumotlarni birlashtirgan muqobil tarix uchun kinematik laboratoriya.",
+    "description_1": "Bitta qarordan qit'alar bo'ylab tektonik siljishlargacha bo'lgan to'lqinlarni kuzating. Har bir bob diqqat bilan o'rganilgan asos taqdim etadi, so'ngra siz o'rganishingiz, solishtirishingiz va aralashtirishingiz mumkin bo'lgan o'nta ehtimoliy 'agar'larga bo'linadi.",
+    "description_2": "Biz tarixchi tomonidan ko'rib chiqilgan hikoyalarni interaktiv diagrammalar bilan birlashtiramiz, sizga har bir vaqt chizig'ining she'riyati va kelib chiqishini taqdim etamiz."
+  },
+  "research_pillars": {
+    "primary_sources": {
+      "title": "Birlamchi manbalar",
+      "detail": "arxiv xaritalari, xatlar va jo'natmalar"
+    },
+    "scholarly_review": {
+      "title": "Ilmiy ko'rib chiqish",
+      "detail": "tarixchilar fikrlari asosida qurilgan"
+    },
+    "geopolitical_modeling": {
+      "title": "Geosiyosiy modellashtirish",
+      "detail": "iqtisodiy va harbiy evristika"
+    },
+    "narrative_craft": {
+      "title": "Hikoya san'ati",
+      "detail": "chuqur tajriba uchun sozlangan hikoya yo'nalishlari"
+    }
+  },
+  "chapters": {
+    "heading": "Tarixiy boblar",
+    "timelines_count": "3 ta vaqt chizig'i",
+    "list": {
+      "timur_legacy": {
+        "title": "Temurning merosi (XIV asr)",
+        "description": "Oxirgi buyuk ko'chmanchi bosqinchi"
+      },
+      "us_independence": {
+        "title": "AQSH Mustaqilligi (1776)",
+        "description": "Inqilobiy urush muqobillari"
+      },
+      "french_revolution": {
+        "title": "Fransuz inqilobi (1789)",
+        "description": "Fransiyada tanlangan yo'llar"
+      },
+      "lincoln_era": {
+        "title": "Linkoln davri (1860-yillar)",
+        "description": "Fuqarolar urushining muqobil natijalari"
+      },
+      "russian_empire": {
+        "title": "Rossiya imperiyasi (1721-1917)",
+        "description": "Podshohlik Rossiyasi muqobillari"
+      },
+      "lenin_revolution": {
+        "title": "Lenin inqilobi (1917)",
+        "description": "Bolsheviklar g'alabasining muqobillari"
+      },
+      "hitler_rise": {
+        "title": "Gitlerning kuchi oshishi (1920-1940-yillar)",
+        "description": "Ikkinchi jahon urushini oldini olish yoki o'zgartirish"
+      },
+      "world_war_1": {
+        "title": "Birinchi jahon urushi (1914-1918)",
+        "description": "Buyuk urush qayta tasavvur qilingan"
+      },
+      "world_war_2": {
+        "title": "Ikkinchi jahon urushi (1939-1945)",
+        "description": "Ikkinchi jahon urushining muqobil natijalari"
+      },
+      "cold_war": {
+        "title": "Sovuq urush (1947-1991)",
+        "description": "Superkuchlar raqobatining muqobillari"
+      },
+      "ussr_collapse": {
+        "title": "SSSR qulashi (1991)",
+        "description": "Sovet Ittifoqining turli tugatilishlari"
+      },
+      "covid_pandemic": {
+        "title": "COVID-19 pandemiyasi (2019)",
+        "description": "Zamonaviy inqiroz muqobillari"
+      },
+      "ai_revolution": {
+        "title": "AI inqilobi (2020-yillar)",
+        "description": "Aqlning kelajagi"
+      },
+      "future_earth": {
+        "title": "Kelajak Yer (2100+)",
+        "description": "Inson keyingi stsenariylar"
+      }
+    }
+  },
+  "immersion_modes": {
+    "heading": "O'rganish usulini tanlang",
+    "story_navigator": {
+      "title": "Hikoya navigatori",
+      "description": "Interaktiv qarorlar, moslashuvchan ovoz manzaralari va kinematik belgilar bilan boshqariladigan nasr."
+    },
+    "data_atlas": {
+      "title": "Ma'lumotlar atlasi",
+      "description": "Tez tadqiqot uchun zich kartalar, ta'sir diagrammalari va diplomatik statistikalar."
+    },
+    "comparison_lab": {
+      "title": "Solishtirish laboratoriyasi",
+      "description": "Vaqt chiziqlarini yig'ish, tarqalishlarni jonlantirish va kapalak effektlarini real vaqtda solishtirish."
+    }
+  },
+  "features": {
+    "heading": "Interaktiv tajriba",
+    "timeline_navigation": {
+      "title": "Vaqt chizig'i navigatsiyasi",
+      "description": "Silliq animatsiyalar va batafsil voqealarni o'rganish bilan asrlar bo'ylab harakatlaning."
+    },
+    "cause_effect": {
+      "title": "Sabab va oqibat",
+      "description": "Kichik o'zgarishlar tarix bo'ylab qanday katta kapalak effektlarini yaratishini ko'ring."
+    },
+    "global_impact": {
+      "title": "Global ta'sir",
+      "description": "Muqobil tarixlar bugungi dunyoni qanday shakllantirishini ko'ring."
+    }
+  }
+}

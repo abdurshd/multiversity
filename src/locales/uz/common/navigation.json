@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "chapters": "Boblar",
+    "compare": "Solishtirish",
+    "documentation": "Hujjatlar",
+    "faq": "Ko'p so'raladigan savollar",
+    "support": "Yordam",
+    "privacy": "Maxfiylik",
+    "terms": "Shartlar",
+    "accessibility": "Qulaylik"
+  },
+  "breadcrumb": {
+    "home": "Bosh sahifa",
+    "chapters": "Boblar",
+    "chapter": "Bob",
+    "timeline": "Vaqt chizig'i",
+    "compare": "Solishtirish",
+    "back_to": "{{page}}ga qaytish"
+  },
+  "language": {
+    "label": "Til",
+    "switch": "Tilni o'zgartirish",
+    "english": "English",
+    "uzbek": "O'zbekcha"
+  },
+  "mobile": {
+    "menu": "Menyu",
+    "close_menu": "Menyuni yopish",
+    "open_menu": "Menyuni ochish"
+  }
+}

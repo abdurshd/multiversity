@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Fransuz inqilobi",
+    "period": "1789-1799",
+    "description": "Monarxiyaning ag'darilishi va zamonaviy siyosiy mafkuralarning tug'ilishi",
+    "historical_context": "Fransuz inqilobi qadimiy tuzumni vayron qildi va Yevropa va dunyoni qayta shakllantiruvchi kuchlarni bo'shatib yubordi. Konstitutsiyaviy monarxiyadan respublika tajribasigacha, Terror davridan Napoleonning yuksalishigacha - bu inqilobiy o'zgarishlarning va'dasi ham, xavfi ham namoyish etildi.",
+    "divergence_point": "Fransiyani turli inqilobiy natijalarga olib kelishi mumkin bo'lgan muhim qarorlar"
+  },
+  "figures": {
+    "louis_xvi": {
+      "name": "Qirol Lyudovik XVI",
+      "role": "Fransiyaning oxirgi qiroli",
+      "description": "Yaxshi niyatli, ammo qaror qabul qilishda ikkilanuvchi monarx, uning inqiroz paytidagi zaifligi ham o'zini, ham monarxiyani halokatga olib keldi."
+    },
+    "robespierre": {
+      "name": "Maksimilien Robesper",
+      "role": "Yakobinlar rahbari",
+      "description": "Buzilmas. Inqilobiy fazilatlarga chin dildan ishongan, uning idealizmi boshqalarni va oxir-oqibat o'zini gilotinaga olib keldi."
+    },
+    "napoleon": {
+      "name": "Napoleon Bonapart",
+      "role": "Inqilobiy general",
+      "description": "Imperator bo'lgan korsikalik artilleriya zobiti, inqilobiy ideallar va avtoritar hokimiyatni o'zida mujassam etgan."
+    }
+  },
+  "timelines": {
+    "constitutional_monarchy": {
+      "title": "Mo''tadil yo'l: Konstitutsiyaviy monarxiya muvaffaqiyatga erishadi",
+      "description": "Agar Lyudovik XVI 1789-yilda konstitutsiyaviy islohotni chinakam qabul qilgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Qirol Lyudovik XVI mo''tadil inqilobchilar tomonidan taklif qilingan konstitutsiyaviy monarxiyani qat'iy qabul qiladi.",
+      "events": {
+        "royal_acceptance_1789": {
+          "title": "Qirolning tanlovi",
+          "description": "Lyudovik XVI hammani hayratga solib, Huquqlar Deklaratsiyasi va konstitutsiyaviy islohotlarni g'ayrat bilan ma'qullaydi. U Fransiyaning birinchi konstitutsiyaviy monarxi bo'ladi.",
+          "impact": "Radikal inqilobchilar qo'llab-quvvatlashni yo'qotadi. Mo''tadil islohotchilar Milliy Assambleyani boshqaradi."
+        },
+        "peaceful_reforms_1791": {
+          "title": "Qonsiz inqilob",
+          "description": "Yangi konstitutsiya qirol hokimiyatini parlament demokratiyasi bilan muvozanatlaydi. Zodagonlar zo'ravonlik bilan mulkdan mahrum bo'lishdan ko'ra bosqichma-bosqich islohotlarni qabul qilishadi.",
+          "impact": "Fransiya terror yoki urushsiz konstitutsiyaviy monarxiyaga o'tadi."
+        },
+        "model_for_europe_1795": {
+          "title": "Fransuz modeli",
+          "description": "Fransiyaning tinch o'tish davri butun Yevropa bo'ylab shunga o'xshash islohotlarga ilhom beradi. Monarxiyalar inqilobdan qochish uchun konstitutsiyalarni qabul qiladilar.",
+          "impact": "Konstitutsiyaviy monarxiya Yevropada normalaga aylanadi, o'nlab yillar davom etadigan urushning oldini oladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Fransiya Terror davri qon to'kish yoki urush betartibligi holda modernizatsiya qilinadi.",
+        "long_term": "Zo'ravonli inqilob o'rniga bosqichma-bosqich islohot Yevropada siyosiy o'zgarishlar uchun model bo'ladi.",
+        "global_impact": "Napoleon urushlari yo'q, demak Yevropa resurslari vayron bo'lmaydi. Ilgariroq sanoatlashish va liberalizatsiya."
+      },
+      "present_day_status": "Fransiya Buyuk Britaniyaga o'xshash konstitutsiyaviy monarxiya bo'lib qoladi. Burbon sulolasi ag'darilish o'rniga demokratiya bilan birga rivojlandi. Yevropa millатchilik mojаrolаrisiz ertaroq tinch yo'l bilan birlashdi."
+    },
+    "radical_triumph": {
+      "title": "Doimiy inqilob: Yakobin respublikasi davom etadi",
+      "description": "Agar Robesper omon qolgan va radikal inqilob davom etgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Termidor reaktsiyasi muvaffaqiyatsizlikka uchraydi. Robesper hokimiyatni mustahkamlaydi va Fransiyani doimiy radikal respublikaga aylantiradi.",
+      "events": {
+        "robespierre_survives_1794": {
+          "title": "Muvaffaqiyatsiz to'ntarish",
+          "description": "Robesper o'ziga qarshi fitnadan xabardor bo'ladi va birinchi bo'lib zarba beradi. Uning raqiblari o'rniga gilotinaga ketadi.",
+          "impact": "Terror davom etadi, ammo ko'proq tizimli va mafkuraviy jihatdan yo'naltiriladi."
+        },
+        "revolutionary_state_1800": {
+          "title": "Yakobin Hamdo'stligi",
+          "description": "Robesper fuqarolik fazilati, davlat ta'limi va radikal demokratiyaga asoslangan inqilobiy davlatni quradi. Mulk qayta taqsimlanadi, cherkov bostiriladi.",
+          "impact": "Fransiya ma'rifat prinsipalariga qurilgan dunyodagi birinchi zamonaviy totalitar davlatga aylanadi."
+        },
+        "export_revolution_1810": {
+          "title": "Inqilobiy urushlar",
+          "description": "Fransiya butun Yevropa bo'ylab inqilobni eksport qiladi, lekin Napoleon bosqinchiligi orqali emas, balki mafkura orqali. Inqilobiy guruhlаr monarxiyalarni beqarorlashtiradì.",
+          "impact": "Yevropa inqilobiy va reaktsion bloklarga bo'linadi. Doimiy mafkuraviy urush."
+        }
+      },
+      "consequences": {
+        "short_term": "Fransiya ko'proq radikal va tenglikka asoslangan, ammo ko'proq repressiv va izolyatsiya qilingan.",
+        "long_term": "Inqilobiy-reaktsion bo'linish 19-asr siyosatida yanada shiddatliroq hukmronlik qiladi.",
+        "global_impact": "Sotsialistik va kommunistik harakatlar ertaroq va kuchliroq paydo bo'ladi. Zamonaviy so'lchi siyosatga boshqacha yo'l."
+      },
+      "present_day_status": "Fransuz Yakobin Respublikasi zamonaviy davrga qadar omon qoldi va o'ziga xos radikal demokratiya shakliga aylandi. U butun dunyo bo'ylab sotsialistik harakatlarga ilhom berdi, ammo zamonaviy avtoritarizmga ham kashshof bo'ldi. Yakobin va liberal demokratiyalar o'rtasidagi mafkuraviy bo'linish hali ham global siyosatni belgilaydi."
+    },
+    "royal_restoration": {
+      "title": "Aksinqilob: Royalistlar g'alabasi",
+      "description": "Agar Vande qo'zg'oloni monarxiyani tiklashda muvaffaqiyatga erishgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Royalistik Vande qo'zg'oloni xorijiy yordam oladi va inqilobiy hukumatni ag'darishda muvaffaqiyat qozonadi.",
+      "events": {
+        "vendee_triumph_1793": {
+          "title": "Oq terror",
+          "description": "Britaniya va Avstriya yordami bilan royalistik kuchlar hal qiluvchi g'alabalarga erishadi. Inqilobiy hukumat qulaydi.",
+          "impact": "Royalistlar inqilobiy rahbarlarni qatl qiladi. Minglab kishi Amerika va Shveytsariyaga qochadi."
+        },
+        "restoration_1795": {
+          "title": "Burbon qayta tiklanishi",
+          "description": "Lyudovik XVII toj kiyadi. Eski zodagonlar qaytib keladi, qasos va mulkni qaytarishni talab qiladi.",
+          "impact": "Fransiya mutlaq monarxiyaga qaytadi, 1789-yildan oldinroq reaktsion."
+        },
+        "reactionary_alliance_1800": {
+          "title": "Muqaddas Ittifoqning g'alabasi",
+          "description": "Fransiya butun Yevropa bo'ylab liberalizmni yo'q qilish uchun reaktsion monarxiyalar koalitsiyasini boshqaradi.",
+          "impact": "Demokratik harakatlar bostiriladi. Yevropa uzoqroq feodal bo'lib qoladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Inqilobiy ideallar er ostiga tushadi, ammo yo'q qilinmaydi. Norozilik kuchayib boradi.",
+        "long_term": "Fransuz inqilobi namunasisiz, demokratik harakatlar butun dunyoda sekinroq rivojlanadi.",
+        "global_impact": "Aristokratik va monarxik tizimlar uzoqroq davom etadi. Keyinchalik, nihoyat kelganda, ko'proq zo'ravon inqiloblar."
+      },
+      "present_day_status": "Fransiya 1860-yillarda kechiktirilgan inqilobni boshdan kechirdi, 1848 inqiloblariga o'xshash, ammo ko'proq zo'ravonli. Demokratiya Yevropaga kechroq keldi. Monarxiyalar uzoqroq omon qoldi, ammo 20-asrda nihoyat qulagan paytda qattiqroq yiqildi."
+    }
+  }
+}

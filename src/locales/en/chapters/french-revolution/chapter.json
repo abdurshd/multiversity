@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The French Revolution",
+    "period": "1789-1799",
+    "description": "The overthrow of monarchy and the birth of modern political ideologies",
+    "historical_context": "The French Revolution shattered the ancien régime and unleashed forces that would reshape Europe and the world. From constitutional monarchy to republican experiment to Reign of Terror to Napoleon's rise, it demonstrated both the promise and peril of revolutionary change.",
+    "divergence_point": "Critical decisions that could have steered France toward different revolutionary outcomes"
+  },
+  "figures": {
+    "louis_xvi": {
+      "name": "King Louis XVI",
+      "role": "Last King of France",
+      "description": "A well-meaning but indecisive monarch whose weakness in crisis doomed both himself and the monarchy."
+    },
+    "robespierre": {
+      "name": "Maximilien Robespierre",
+      "role": "Leader of the Jacobins",
+      "description": "The Incorruptible. A true believer in revolutionary virtue whose idealism led to the guillotine - for others and ultimately himself."
+    },
+    "napoleon": {
+      "name": "Napoleon Bonaparte",
+      "role": "Revolutionary General",
+      "description": "The Corsican artillery officer who rose to become Emperor, embodying both revolutionary ideals and authoritarian power."
+    }
+  },
+  "timelines": {
+    "constitutional_monarchy": {
+      "title": "The Moderate Path: Constitutional Monarchy Succeeds",
+      "description": "What if Louis XVI genuinely embraced constitutional reform in 1789?",
+      "divergence_description": "King Louis XVI decisively accepts the constitutional monarchy proposed by moderate revolutionaries.",
+      "events": {
+        "royal_acceptance_1789": {
+          "title": "The King's Choice",
+          "description": "Louis XVI surprises everyone by enthusiastically endorsing the Declaration of Rights and constitutional reforms. He becomes France's first constitutional monarch.",
+          "impact": "Radical revolutionaries lose support. Moderate reformers control the National Assembly."
+        },
+        "peaceful_reforms_1791": {
+          "title": "The Bloodless Revolution",
+          "description": "A new constitution balances royal authority with parliamentary democracy. The nobility accept gradual reforms rather than face violent expropriation.",
+          "impact": "France transitions to constitutional monarchy without terror or war."
+        },
+        "model_for_europe_1795": {
+          "title": "The French Model",
+          "description": "France's peaceful transition inspires similar reforms across Europe. Monarchies adopt constitutions to avoid revolution.",
+          "impact": "Constitutional monarchy becomes the norm in Europe, preventing decades of war."
+        }
+      },
+      "consequences": {
+        "short_term": "France modernizes without the bloodshed of the Terror or the chaos of war.",
+        "long_term": "Gradual reform rather than violent revolution becomes the model for political change in Europe.",
+        "global_impact": "No Napoleonic Wars means European resources aren't devastated. Earlier industrialization and liberalization."
+      },
+      "present_day_status": "France remains a constitutional monarchy similar to the United Kingdom. The Bourbon dynasty evolved with democracy rather than being overthrown. Europe unified peacefully earlier, with less nationalist conflict."
+    },
+    "radical_triumph": {
+      "title": "Permanent Revolution: Jacobin Republic Endures",
+      "description": "What if Robespierre survived and the radical revolution continued?",
+      "divergence_description": "The Thermidorian Reaction fails. Robespierre consolidates power and transforms France into a lasting radical republic.",
+      "events": {
+        "robespierre_survives_1794": {
+          "title": "The Failed Coup",
+          "description": "Robespierre learns of the plot against him and strikes first. His opponents go to the guillotine instead.",
+          "impact": "The Terror continues but becomes more systematic and ideologically focused."
+        },
+        "revolutionary_state_1800": {
+          "title": "The Jacobin Commonwealth",
+          "description": "Robespierre builds a revolutionary state based on civic virtue, public education, and radical democracy. Property is redistributed, the Church is suppressed.",
+          "impact": "France becomes the world's first modern totalitarian state, built on enlightenment principles."
+        },
+        "export_revolution_1810": {
+          "title": "The Revolutionary Wars",
+          "description": "France exports revolution throughout Europe, but through ideology rather than Napoleonic conquest. Revolutionary cells destabilize monarchies.",
+          "impact": "Europe fractures into revolutionary and reactionary blocs. Constant ideological warfare."
+        }
+      },
+      "consequences": {
+        "short_term": "France is more radical and egalitarian but also more repressive and isolated.",
+        "long_term": "The revolutionary-reactionary split dominates 19th century politics even more intensely.",
+        "global_impact": "Socialist and communist movements emerge earlier and stronger. Different path to modern leftist politics."
+      },
+      "present_day_status": "The French Jacobin Republic survived into the modern era, evolving into a unique form of radical democracy. It inspired socialist movements worldwide but also pioneered modern authoritarianism. The ideological split between Jacobin and liberal democracies still defines global politics."
+    },
+    "royal_restoration": {
+      "title": "The Counter-Revolution: Royalist Victory",
+      "description": "What if the Vendée Uprising succeeded in restoring the monarchy?",
+      "divergence_description": "The royalist Vendée Uprising receives foreign support and succeeds in overthrowing the revolutionary government.",
+      "events": {
+        "vendee_triumph_1793": {
+          "title": "The White Terror",
+          "description": "With British and Austrian support, royalist forces win decisive victories. The revolutionary government collapses.",
+          "impact": "Royalists execute revolutionary leaders. Thousands flee to America and Switzerland."
+        },
+        "restoration_1795": {
+          "title": "The Bourbon Restoration",
+          "description": "Louis XVII is crowned. The old aristocracy returns, demanding revenge and property restoration.",
+          "impact": "France returns to absolute monarchy, more reactionary than before 1789."
+        },
+        "reactionary_alliance_1800": {
+          "title": "The Holy Alliance Triumphant",
+          "description": "France leads a coalition of reactionary monarchies to crush liberalism throughout Europe.",
+          "impact": "Democratic movements are suppressed. Europe remains feudal longer."
+        }
+      },
+      "consequences": {
+        "short_term": "Revolutionary ideals go underground but aren't eliminated. Resentment festers.",
+        "long_term": "Without French Revolutionary example, democratic movements develop more slowly worldwide.",
+        "global_impact": "Aristocratic and monarchical systems persist longer. Later, more violent revolutions when they finally come."
+      },
+      "present_day_status": "France experienced a delayed revolution in the 1860s, similar to the 1848 revolutions but more violent. Democracy came later to Europe. Monarchies survived longer but fell harder when they finally collapsed in the 20th century."
+    }
+  }
+}

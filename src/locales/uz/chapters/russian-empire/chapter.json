@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Rossiya imperiyasi",
+    "period": "1721-1917",
+    "description": "Podshohlik kengayishi, modernizatsiya kurashlari va islohot yoki inqilobga olib boruvchi yo'llar",
+    "historical_context": "Rossiya imperiyasi Polshadan Tinch okeanigacha, Arktikadan Markaziy Osiyogacha cho'zilgan. Buyuk Pyotrning g'arbiylashtirishi, Yekaterinaning ma'rifatli despotizmi va Markaziy Osiyo xonliklarini zabt etish ulkan ko'p millatli imperiyani yaratdi. Ammo islohotlarga qarshilik, krepostnoylik va avtokratiya inqilobiy bosimni yaratdi va nihoyat 1917-yilda portladi.",
+    "divergence_point": "Rossiya tarixidagi inqilob o'rniga islohotga olib kelishi mumkin bo'lgan muhim qarorlar"
+  },
+  "figures": {
+    "peter_the_great": {
+      "name": "Pyotr I (Buyuk Pyotr)",
+      "role": "Rossiya podshоhi va imperatori",
+      "description": "Rossiyani modernizatsiya qilishga majbur qilgan inqilobiy podshoh, Sankt-Peterburgni qurdi va Yevropa uslubidagi imperiya yaratdi."
+    },
+    "catherine_the_great": {
+      "name": "Yekaterina II (Buyuk Yekaterina)",
+      "role": "Rossiya imperatorligi",
+      "description": "Imperiyani katta miqyosda kengaytirgan ma'rifatli despot, avtokratiya va krepostnoylikni saqlab qoldi."
+    },
+    "alexander_ii": {
+      "name": "Aleksandr II",
+      "role": "Ozod qiluvchi podshoh",
+      "description": "Krepostnoylarni ozod qilgan islohotchi podshoh, ammo islohotlarni yakunlashdan oldin o'ldirildi."
+    }
+  },
+  "timelines": {
+    "constitutional_reform": {
+      "title": "Islohotchi yo'l: Konstitutsiyaviy monarxiya",
+      "description": "Agar Aleksandr II omon qolib, Rossiyani konstitutsiyaviy monarxiyaga muvaffaqiyatli aylantirgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Aleksandr II ning xavfsizligi 1881-yilda uning o'ldirilishining oldini oladi. U o'z islohot dasturini yakunlaydi va konstitutsiyaviy monarxiya o'rnatadi.",
+      "events": {
+        "assassination_prevented_1881": {
+          "title": "Podshoh tirik qoldi",
+          "description": "Kuchaytirilgan xavfsizlik Xalq irodasi suiqasd rejasini barbod qiladi. Aleksandr II o'zi rejalashtirgan konstitutsiyaviy islohotlarni amalga oshirish uchun omon qoladi.",
+          "impact": "Islohot dasturi davom etadi. Konstitutsiya va parlament o'rnatiladi."
+        },
+        "duma_established_1885": {
+          "title": "Birinchi Rossiya parlamenti",
+          "description": "Haqiqiy kuchga ega bo'lgan haqiqiy parlament yaratiladi. Podshoh hokimiyati bilan bir qatorda vakillik hukumati boshlanadi.",
+          "impact": "Rossiya konstitutsiyaviy monarxiyaga aylanadi, an'anani modernizatsiya bilan muvozanatlaydi."
+        },
+        "industrial_prosperity_1900": {
+          "title": "Rossiya mo''jizasi",
+          "description": "Siyosiy barqarorlik tez sanoatlashishga imkon beradi. Xorijiy investitsiyalar oqib keladi. Rossiya iqtisodiy kuchga aylanadi.",
+          "impact": "Konstitutsiyaviy Rossiya Britaniya va Germaniya bilan raqobatlashadi. Islohot orqali inqilobdan qochiladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Tinch islohot inqilobiy zo'ravonlikning oldini oladi. Rossiya bosqichma-bosqich modernizatsiya qilinadi.",
+        "long_term": "Bolsheviklar inqilobi yo'q. Rossiya konstitutsiyaviy monarxiya va sanoat kuchi sifatida rivojlanadi.",
+        "global_impact": "Sovet Ittifoqi yo'q, demak Sovuq urush yo'q. 20-asr siyosati butunlay boshqacha rivojlanadi."
+      },
+      "present_day_status": "Rossiya imperiyasi Britaniyaga o'xshash konstitutsiyaviy monarxiyaga aylandi. 20-asr davomida bosqichma-bosqich demokratlashtirish sodir bo'ldi. Imperiya tinch yo'l bilan slavyan va Markaziy Osiyo davlatlarining hamdo'stligiga aylandi. Kommunistik inqilob yo'qligi global siyosatni butunlay boshqacha yo'lga olib keldi."
+    },
+    "central_asian_liberation": {
+      "title": "Ipak yo'li Uyg'onishi: Markaziy Osiyo mustaqilligi",
+      "description": "Agar Markaziy Osiyo xonliklari Rossiya bosqinchiligiga muvaffaqiyatli qarshilik ko'rsatgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Buxoro Amirligi va Xiva xonligi usmonlilar va fors yordami bilan o'z qo'shinlarini modernizatsiya qiladi va 1860-1870-yillarda Rossiya kengayishiga muvaffaqiyatli qarshilik qiladi.",
+      "events": {
+        "resistance_success_1868": {
+          "title": "Samarqand jangi",
+          "description": "Zamonaviy miltiq va artilleriya bilan jihozlangan isloh qilingan Markaziy Osiyo qo'shinlari Samarqandda Rossiya kuchlarini hal qiluvchi tarzda mag'lub etadi.",
+          "impact": "Rossiyaning Markaziy Osiyoga kengayishi to'xtatiladi. Xonliklar mustaqil qoladi."
+        },
+        "central_asian_federation_1880": {
+          "title": "Turkiston Federatsiyasi",
+          "description": "Buxoro, Xiva va Qo'qon mudofaa federatsiyasiga birlashadi. Modernizatsiya dasturlari yapon modeliga amal qiladi.",
+          "impact": "Markaziy Osiyo mustaqil bo'lib qoladi va o'z shartlariga ko'ra modernizatsiya qilishni boshlaydi."
+        },
+        "silk_road_revival_1900": {
+          "title": "Yangi Ipak yo'li",
+          "description": "Mustaqil Markaziy Osiyo Rossiya, Fors, Hindiston va Xitoy o'rtasidagi ko'prikka aylanadi. Iqtisodiy va madaniy gullab-yashnash.",
+          "impact": "Markaziy Osiyo shaharlari savdo, ta'lim va islom modernizmi markazlariga aylanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Markaziy Osiyo Rossiya mustamlakachiligi va mustaqillikni saqlab qoladi.",
+        "long_term": "Mustaqil Markaziy Osiyo davlatlari 19-asr oxirida modernizatsiya qiladi va Sovet nazoratidan qochadi.",
+        "global_impact": "Kuchli islom modernisti mintaqasi paydo bo'ladi. Osiyoda kuchlar muvozanati boshqacha. Sovet Markaziy Osiyosi yo'q."
+      },
+      "present_day_status": "Turkiston Federatsiyasi yirik mintaqaviy kuch, chuqur islom va turkiy madaniy ildizlarga ega farovon demokratiya. Samarqand va Buxoro jahon darajasidagi shaharlar. Mintaqa hech qachon kommunistik boshqaruv yoki Sovet davridagi ekologik falokatlarni boshdan kechirmadi. Markaziy Osiyo tillari va madaniyatlari ruslashtiriшsiz gullab-yashadi."
+    },
+    "total_collapse": {
+      "title": "Parchalangan imperiya: To'liq tarqalish",
+      "description": "Agar Rossiya Birinchi jahon urushida halokatli mag'lubiyatga uchragan va imperiya butunlay parchalangan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Germaniya 1915-yilda Sharqiy frontda hal qiluvchi g'alaba qozonadi. Rossiya imperiyasi o'nlab mustaqil davlatlarga parchalanadi.",
+      "events": {
+        "military_disaster_1915": {
+          "title": "Buyuk chekinish",
+          "description": "Germaniya hujumlari Rossiya qo'shinlarini yo'q qiladi. Front qulaydi. Polsha, Ukraina va Boltiqbo'yi davlatlari ishg'ol qilinadi.",
+          "impact": "Podshohlik hukumati barcha ishonchini yo'qotadi. Mintaqaviy mustaqillik harakatlari portlaydi."
+        },
+        "empire_fragments_1916": {
+          "title": "Tarqalish",
+          "description": "Finlyandiya, Polsha, Ukraina, Gruziya, Armaniston va Markaziy Osiyo davlatlari mustaqillikni e'lon qiladi. Rossiya Moskvaga qadar qisqaradi.",
+          "impact": "Rossiya imperiyasi mavjud bo'lmay qoladi. O'nlab yangi davlatlar paydo bo'ladi."
+        },
+        "german_hegemony_1920": {
+          "title": "Mitteleuropa amalga oshirildi",
+          "description": "Germaniya Sharqiy Yevropada mijoz davlatlar tarmog'i orqali hukmronlik qiladi. Rossiya zaif, izolyatsiya qilingan qoldiq davlatga aylanadi.",
+          "impact": "Germaniya Birinchi jahon urushida g'alaba qozonadi. Germaniya hukmronligidagi Yevropa paydo bo'ladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Rossiya imperiyasi butunlay parchalanadi. Germaniya Sharqiy Yevropada hukmronlik qiladi.",
+        "long_term": "Sovet Ittifoqi yo'q. Rossiya superкuchи yo'q. Germaniya hukmron Yevroosiyo kuchi.",
+        "global_impact": "Jahon urushlari butunlay boshqacha natijalar. Sovuq urush yo'q. Germaniya kuchiga asoslangan boshqacha global tartib."
+      },
+      "present_day_status": "Rossiya Fransiyaga o'xshash o'rta o'lchamli mamlakat, faqat etnik rus yerlariga cheklangan. Polsha, Ukraina, Finlyandiya va Boltiqbo'yi davlatlari bir asr oldin mustaqillikka erishdi. Markaziy Osiyo hech qachon Rossiya tomonidan bosib olinmagan. Germaniya hukmron Yevropa kuchi bo'lib qolmoqda. Ikkinchi jahon urushi biz bilgan tarzda sodir bo'lmagan."
+    }
+  }
+}

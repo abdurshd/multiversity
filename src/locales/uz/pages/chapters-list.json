@@ -1,0 +1,178 @@
+{
+  "page": {
+    "title": "Tarixiy boblar",
+    "description": "Tarixdagi 14 ta muhim lahzani o'rganing, ularning har birida turli tanlovlar dunyomizni qanday shakllantirishi mumkinligini ko'rsatuvchi 3 ta muqobil vaqt chizig'i mavjud."
+  },
+  "search": {
+    "placeholder": "Boblarni, asosiy voqealarni yoki tarqalish nuqtalarini qidiring...",
+    "clear": "Qidiruvni tozalash",
+    "no_results": "Boblar topilmadi",
+    "no_results_description": "Ko'proq boblarni topish uchun qidiruv so'zlaringizni yoki filtrlaringizni sozlang."
+  },
+  "filters": {
+    "all_periods": "Barcha davrlar",
+    "18th_century": "XVIII asr",
+    "19th_century": "XIX asr",
+    "20th_century": "XX asr",
+    "21st_century": "XXI asr",
+    "other": "Boshqa",
+    "showing": "{{total}} bobdan {{count}} tasi ko'rsatilmoqda",
+    "clear_filters": "Filtrlarni tozalash"
+  },
+  "stats": {
+    "chapters": "Boblar",
+    "alt_timelines": "Muqobil tarix chiziqlari",
+    "key_events": "Asosiy voqealar"
+  },
+  "card": {
+    "key_events": "Asosiy voqealar:",
+    "timelines": "{{count}} ta vaqt chizig'i",
+    "explore": "O'rganish"
+  },
+  "chapters": {
+    "timur_legacy": {
+      "title": "Temurning merosi",
+      "period": "XIV asr",
+      "description": "Oxirgi buyuk ko'chmanchi bosqinchi va uning imperiyasi",
+      "key_events": [
+        "Anqara jangi",
+        "Xitoyga bosqinchilik",
+        "Temuriylar Uyg'onishi"
+      ]
+    },
+    "us_independence": {
+      "title": "AQSH Mustaqilligi",
+      "period": "1776",
+      "description": "Amerika inqilobi va uning muqobil natijalari",
+      "key_events": [
+        "Mustaqillik deklaratsiyasi",
+        "Inqilobiy urush",
+        "Konstitutsiyaviy konventsiya"
+      ]
+    },
+    "french_revolution": {
+      "title": "Fransuz inqilobi",
+      "period": "1789",
+      "description": "Monarxiyaning qulashi va tanlangan yo'llar",
+      "key_events": [
+        "Bastiliyaga hujum",
+        "Terror hukmronligi",
+        "Napoleonning kuchi oshishi"
+      ]
+    },
+    "lincoln_era": {
+      "title": "Linkoln davri",
+      "period": "1860-yillar",
+      "description": "Fuqarolar urushi, qulchilik va qayta qurish muqobillari",
+      "key_events": [
+        "Linkoln saylovi",
+        "Fuqarolar urushi",
+        "Ozodlik deklaratsiyasi"
+      ]
+    },
+    "russian_empire": {
+      "title": "Rossiya imperiyasi",
+      "period": "1721-1917",
+      "description": "Podshohlik Rossiyasi va Markaziy Osiyoga kengayish",
+      "key_events": [
+        "Buyuk Pyotr",
+        "Yekaterina II",
+        "Qrim urushi"
+      ]
+    },
+    "lenin_revolution": {
+      "title": "Lenin inqilobi",
+      "period": "1917",
+      "description": "Bolsheviklar g'alabasi va Sovet davlati shakllanishi",
+      "key_events": [
+        "Oktyabr inqilobi",
+        "Fuqarolar urushi",
+        "Harbiy kommunizm"
+      ]
+    },
+    "hitler_rise": {
+      "title": "Gitlerning kuchi oshishi",
+      "period": "1920-1940-yillar",
+      "description": "Natsistlar Germaniyasi va Ikkinchi jahon urushining muqobil yo'llari",
+      "key_events": [
+        "Pivo zali to'ntarishi",
+        "Hokimiyatga kelishi",
+        "Ikkinchi jahon urushi"
+      ]
+    },
+    "world_war_1": {
+      "title": "Birinchi jahon urushi",
+      "period": "1914-1918",
+      "description": "Buyuk urush va uning muqobil natijalari",
+      "key_events": [
+        "Gertsogning o'ldirilishi",
+        "Xandaq janglar",
+        "Versal shartnomasi"
+      ]
+    },
+    "world_war_2": {
+      "title": "Ikkinchi jahon urushi",
+      "period": "1939-1945",
+      "description": "Jiddiy har xil natijalarga ega global to'qnashuv",
+      "key_events": [
+        "Polshaga bosqinchilik",
+        "Pearl Harbor",
+        "D-Day"
+      ]
+    },
+    "cold_war": {
+      "title": "Sovuq urush",
+      "period": "1947-1991",
+      "description": "Superkuchlar raqobati va yadro qarama-qarshiligi muqobillari",
+      "key_events": [
+        "Temir parda",
+        "Kuba raketa inqirozi",
+        "Berlin devori"
+      ]
+    },
+    "ussr_collapse": {
+      "title": "SSSR qulashi",
+      "period": "1991",
+      "description": "Sovet Ittifoqining tugashi va muqobil parchalanishlar",
+      "key_events": [
+        "Gorbachyov islohotlari",
+        "Avgust to'ntarishi",
+        "Mustaqillik e'lonlari"
+      ]
+    },
+    "covid_pandemic": {
+      "title": "COVID-19 pandemiyasi",
+      "period": "2019",
+      "description": "Zamonaviy inqiroz va global javob muqobillari",
+      "key_events": [
+        "Vuhan avj olishi",
+        "Global karantinlar",
+        "Vaktsina poygasi"
+      ]
+    },
+    "ai_revolution": {
+      "title": "AI inqilobi",
+      "period": "2020-yillar",
+      "description": "Sun'iy intellektning yuksalishi va kelajak yo'llari",
+      "key_events": [
+        "GPT-4 ning chiqarilishi",
+        "AGI yutuqlari",
+        "Tartibga solish munozaralari"
+      ]
+    },
+    "future_earth": {
+      "title": "Kelajak Yer",
+      "period": "2100+",
+      "description": "Insoniyat va sayyora uchun uzoq muddatli kelajak stsenariylari",
+      "key_events": [
+        "Iqlim burilish nuqtalari",
+        "Koinotni mustamlaka qilish",
+        "Insondan keyingi davr"
+      ]
+    }
+  },
+  "bottom_section": {
+    "title": "Interaktiv vaqt chizig'i tajribasi",
+    "description": "Har bir bob kichik o'zgarishlar tarix yo'nalishini qanday keskin o'zgartirishi mumkinligini ko'rsatuvchi sabab va oqibat vizualizatsiyalari bilan batafsil vaqt chiziqlarini o'z ichiga oladi."
+  }
+}

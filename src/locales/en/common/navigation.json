@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "chapters": "Chapters",
+    "compare": "Compare",
+    "documentation": "Documentation",
+    "faq": "FAQ",
+    "support": "Support",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "accessibility": "Accessibility"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "chapters": "Chapters",
+    "chapter": "Chapter",
+    "timeline": "Timeline",
+    "compare": "Compare",
+    "back_to": "Back to {{page}}"
+  },
+  "language": {
+    "label": "Language",
+    "switch": "Switch Language",
+    "english": "English",
+    "uzbek": "O'zbekcha"
+  },
+  "mobile": {
+    "menu": "Menu",
+    "close_menu": "Close Menu",
+    "open_menu": "Open Menu"
+  }
+}

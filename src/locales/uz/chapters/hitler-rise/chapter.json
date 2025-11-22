@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Gitlerning hokimiyatga kelishi",
+    "period": "1919-1945",
+    "description": "Natsistlarning hokimiyatni egallashi va Ikkinchi jahon urushining muqobil yo'llari",
+    "historical_context": "Adolf Gitlerning noma'lum agitatordan Germaniya diktatoriga aylanishi tarixdagi eng halokatli urush va Xoloкostga to'g'ridan-to'g'ri olib keldi. Natsistik rejimning o'n ikki yillik mavjudligi o'nlab millionlarni o'ldirdi va dunyoni qayta shakllantirdi. Ammo Gitlerning yuksalishi muqarrar emas edi - bir nechta nuqtalar falokat oldini olishi mumkin edi.",
+    "divergence_point": "Gitlerning yuksalishi to'xtatilishi yoki Ikkinchi jahon urushining oldini olish mumkin bo'lgan muhim lahzalar"
+  },
+  "figures": {
+    "adolf_hitler": {
+      "name": "Adolf Gitler",
+      "role": "Natsistlar partiyasi rahbari",
+      "description": "Demagogik iste'dodi va apokaliptik tasavvuri Germaniya va dunyoni halokatga olib kelgan avstriyalik kapral."
+    },
+    "paul_von_hindenburg": {
+      "name": "Paul fon Gindenburg",
+      "role": "Germaniya prezidenti",
+      "description": "Gitlerni kansler etib tayinlash qaroри do'zax darvozalarini ochgan qarigan feldмarshal."
+    },
+    "winston_churchill": {
+      "name": "Uinston Cherchill",
+      "role": "Britaniya bosh vaziri",
+      "description": "Muloyimlikka qarshi ogohlantirgan va Britaniyani eng qorong'u soatlarida boshqargan bashoratli ovoz."
+    }
+  },
+  "timelines": {
+    "nazi_germany_defeated": {
+      "title": "Pivo zalining oxiri: Erta natsistik mag'lubiyat",
+      "description": "Agar Gitler 1923-yildagi Pivo zali to'ntarishida o'lgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Politsiya Pivo zali to'ntarishi paytida aniqroq o'q uzadi. Gitler boshqa natsist rahbarlar bilan birga o'ldiriladi.",
+      "events": {
+        "beer_hall_death_1923": {
+          "title": "Feldherrnhalleda oxir",
+          "description": "Politsiya o'qlari muvaffaqiyatsiz to'ntarish tartibsizligida Gitlerni topadi. Natsist rahbari Myunxen ko'chalarida vafot etadi.",
+          "impact": "Natsistlar partiyasi o'zining xarizmatik rahbarisiz qulaydi. Germaniyaning o'ng qanoti parchalangan bo'lib qoladi."
+        },
+        "weimar_survives_1930": {
+          "title": "Demokratiya davom etadi",
+          "description": "Gitlersiz natsistlar partiyasi hech qachon ommaviy harakatga aylanmaydi. Boshqa o'ng qanot partiyalar hokimiyatni egallash uchun juda bo'lingan.",
+          "impact": "Veymar demokratiyasi Depressiyadan omon qoladi. Germaniya 1930-yillar davomida demokratik bo'lib qoladi."
+        },
+        "no_world_war_1939": {
+          "title": "Bizning davrimizda tinchlik",
+          "description": "Demokratik Germaniyaning hech qanday hududiy da'volari yo'q. Yevropada Ikkinchi jahon urushi yo'q. Xolokost hech qachon sodir bo'lmaydi.",
+          "impact": "Millionlab hayotlar saqlanadi. Yevropa yahudiylari omon qoladi. Butunlay boshqacha 20-asr."
+        }
+      },
+      "consequences": {
+        "short_term": "Natsistik harakat Gitler bilan birga o'ladi. Veymar demokratiyasi barqarorlashadi.",
+        "long_term": "Yevropada Ikkinchi jahon urushi yo'q. Xolokost yo'q. Demokratik Germaniya tinch yo'l bilan rivojlanadi.",
+        "global_impact": "Ehtimol 50-70 million hayot saqlanadi. Yevropaning yahudiy jamoalari omon qoladi. Yevropaning Sovuq urush bo'linishi yo'q."
+      },
+      "present_day_status": "Germaniya 20-asr davomida demokratiya bo'lib qoldi. Ikkinchi jahon urushi yo'qligi Yevropa integratsiyasini tinch va ancha ertaroq amalga oshirilishini anglatadi. Xolokost hech qachon sodir bo'lmagan - Yevropa yahudiy madaniyati gullab-yashadi. Sovet Ittifoqi natsistik Germaniyani mag'lub etishdan kuchayishsiz 1960-yillarda quladi."
+    },
+    "appeasement_succeeds": {
+      "title": "Tinch Reyx: Muloyimlik ishlaydi",
+      "description": "Agar Britaniya va Fransiya Gitlerning barcha talablarini qondirib, u qoniqgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Gitler Myunxen kelishuvini yakuniy deb qabul qiladi. Germaniya Sudetenlandni oladi, ammo boshqa hududiy kengayish izlamaydi.",
+      "events": {
+        "munich_final_1938": {
+          "title": "Gitlerning qoniqishi",
+          "description": "Gitler Myunxen kelishuvini chinakam qabul qiladi. Germaniyaning hududiy ambitsiyalari etnik nemislarni birlashtirishga cheklangan.",
+          "impact": "Urushdan qochiladi. Yevropa Markaziy Yevropa ustidan Germaniya gегемонiyasini qabul qiladi."
+        },
+        "german_europe_1945": {
+          "title": "Germaniya gegemoniyasi",
+          "description": "Germaniya bosqinchilik orqali emas, balki ta'sir orqali Yevropada iqtisodiy va siyosiy jihatdan hukmronlik qiladi. Fransiya va Britaniya mustaqilligini saqlab qoladi.",
+          "impact": "Natsistik Germaniya katta urushsiz hukmron Yevropa kuchiga aylanadi."
+        },
+        "cold_peace_1950": {
+          "title": "Natsistik davlat davom etadi",
+          "description": "Uchinchi Reyx urushdan keyingi davrga omon qoladi. Xolokost sodir bo'ladi, ammo dunyodan yashirin. Natsistik Germaniya va SSSR o'rtasida sovuq urush.",
+          "impact": "Dunyo natsistik Germaniya bilan doimiy element sifatida yashashga majbur."
+        }
+      },
+      "consequences": {
+        "short_term": "Muloyimlik orqali Ikkinchi jahon urushidan qochiladi. Natsistik Germaniya Markaziy Yevropada hukmronlik qiladi.",
+        "long_term": "Natsistik rejim Yevropa kuchi sifatida davom etadi. Xolokost hali ham sodir bo'ladi, ammo sekinroq, ko'proq yashirin.",
+        "global_impact": "Dunyo fashistik Germaniyani qabul qiladi. Natsistlar va Sovetlar o'rtasida boshqacha Sovuq urush. Demokratiyaning ishonchi yovuzlik bilan birgalikda yashash tufayli zarar ko'radi."
+      },
+      "present_day_status": "Natsistik Germaniya avtoritar, ammo kengaytirmaydigan davlatga aylandi, Frankoning Ispaniyasiga o'xshash. U nihoyat Gitlerning o'limidan keyin 1980-yillarda demokratlashdi. Xolokostning to'liq darajasi faqat o'tish paytida ma'lum bo'ldi va katta tarixiy travma keltirib chiqardi. Yevropa integratsiyasi o'nlab yillar kechiktirildi."
+    },
+    "nazi_victory": {
+      "title": "Ming yillik Reyx: Natsistlar g'alabasi",
+      "description": "Agar Germaniya Sovet Ittifoqini mag'lub etish orqali Ikkinchi jahon urushida g'alaba qozongan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Barbarossa operatsiyasi muvaffaqiyatga erishadi. Sovet Ittifoqi 1942-yilda qulaydi. Britaniya sulh so'raydi.",
+      "events": {
+        "moscow_falls_1942": {
+          "title": "Kreml ustida svastika",
+          "description": "Germaniya kuchlari Moskvani egallaydi. Stalin o'ldiriladi. Sovet Ittifoqi betartiblikka parchalanadi.",
+          "impact": "Natsistik Germaniya Atlantikadan Uralgacha bo'lgan Yevropani boshqaradi."
+        },
+        "holocaust_completed_1945": {
+          "title": "Yakuniy yechim yakunlandi",
+          "description": "Hech qanday qarshiliksiz, natsistlar Xolokostni yakunlaydilar. Yevropa yahudiylar deyarli butunlay yo'q qilinadi. Slavyan аholisi ommaviy qullikka va deportatsiyaga duch keladi.",
+          "impact": "Insoniyat tarixidagi eng katta jinoyat yakunlandi. O'nlab millionlar lagerlarda va ochlikdan vafot etadi."
+        },
+        "german_world_order_1960": {
+          "title": "Yangi qorong'u asr",
+          "description": "Natsistik irqiy mafkura dunyoning yarmini boshqaradi. Natsistik Yevropa va Amerika o'rtasida sovuq urush mavjud.",
+          "impact": "Demokratiya faqat Amerikada va Osiyoning bir qismida omon qoladi. Dunyoning ko'p qismi fashistik zulm ostida yashaydi."
+        }
+      },
+      "consequences": {
+        "short_term": "Natsistik Germaniya Ikkinchi jahon urushida g'alaba qozonadi va Yevroosiyo ustida hukmronlik qiladi.",
+        "long_term": "Xolokost yakunlanadi. Millionlab qul. Fashizm dunyoning ko'p qismida hukmronlik qiladi.",
+        "global_impact": "Inson huquqlari va demokratiya juda zaiflashgan shaklda omon qoladi. Dunyo fashistik va demokratik bloklarga bo'linadi."
+      },
+      "present_day_status": "Buyuk Germaniya Reyxi 1970-yillarda ichki ziddiyatlardan qulashni boshladi. Qul qo'zg'olonlari, iqtisodiy inqiroz va vorislik kurashlari uni parchaladi. Yevropa nihoyat 1990-yillarda o'zini ozod qildi. Natsistik hukmronlik travmasi hali ham Yevropa siyosatini belgilaydi. Demografik falokat - o'nlab millionlar qotil qilingan - Yevropaning madaniy manzarasini butunlay o'zgartirdi."
+    }
+  }
+}

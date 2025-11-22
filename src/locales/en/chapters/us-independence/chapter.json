@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "The American Revolution",
+    "period": "1775-1783",
+    "description": "The birth of a nation and its alternative paths to independence",
+    "historical_context": "The American Revolution transformed thirteen British colonies into an independent nation. The conflict tested revolutionary ideals against military reality, with victory far from certain at many critical junctures.",
+    "divergence_point": "Critical decisions during the Revolutionary War that could have changed the outcome"
+  },
+  "figures": {
+    "george_washington": {
+      "name": "George Washington",
+      "role": "Commander-in-Chief of Continental Army",
+      "description": "The indispensable man whose leadership held the revolutionary cause together through its darkest hours."
+    },
+    "benjamin_franklin": {
+      "name": "Benjamin Franklin",
+      "role": "Diplomat and Founding Father",
+      "description": "The sage whose diplomacy secured crucial French support for the revolutionary cause."
+    },
+    "king_george_iii": {
+      "name": "King George III",
+      "role": "British Monarch",
+      "description": "The king whose stubbornness prolonged the war but whose flexibility could have prevented it."
+    }
+  },
+  "timelines": {
+    "british_victory": {
+      "title": "The Loyalist States: British Victory",
+      "description": "What if Washington was captured at Valley Forge and the revolution collapsed?",
+      "divergence_description": "British forces launch a surprise winter attack on Valley Forge, capturing Washington and destroying the Continental Army.",
+      "events": {
+        "valley_forge_disaster_1778": {
+          "title": "The Valley Forge Catastrophe",
+          "description": "British intelligence discovers the weakness of the Continental Army's winter position. A coordinated assault captures Washington and scatters his forces.",
+          "impact": "The revolutionary cause loses its symbol of unity. Colonial resistance fragments into guerrilla warfare."
+        },
+        "reconciliation_act_1780": {
+          "title": "The Reconciliation Act",
+          "description": "Britain offers amnesty and limited self-governance to colonies that lay down arms. Most accept, fearing further bloodshed.",
+          "impact": "The thirteen colonies remain British, gaining parliamentary representation but not independence."
+        },
+        "loyalist_dominance_1790": {
+          "title": "The Loyalist Ascendancy",
+          "description": "Former loyalists dominate colonial governments. Revolutionary sympathizers emigrate to French Louisiana or Spanish Florida.",
+          "impact": "North America develops differently, with closer ties to the British Empire."
+        }
+      },
+      "consequences": {
+        "short_term": "Revolutionary ideals are suppressed but not extinguished. Underground resistance continues.",
+        "long_term": "No American Revolution inspires French and Latin American independence movements less effectively.",
+        "global_impact": "The British Empire remains stronger into the 20th century. Democracy spreads more slowly worldwide."
+      },
+      "present_day_status": "The Commonwealth of American States remains part of a constitutional British Empire. Independence came gradually through negotiation in the 1920s. North America is more culturally British, with stronger monarchist traditions."
+    },
+    "early_independence": {
+      "title": "The Olive Branch Accepted: Peaceful Resolution",
+      "description": "What if King George III accepted the Olive Branch Petition in 1775?",
+      "divergence_description": "Parliament moderates convince the King to accept colonial demands for representation without taxation.",
+      "events": {
+        "olive_branch_accepted_1775": {
+          "title": "The Royal Compromise",
+          "description": "King George III, swayed by moderate advisors, accepts the Olive Branch Petition and suspends the Intolerable Acts.",
+          "impact": "Armed conflict is averted. Negotiations begin for colonial representation in Parliament."
+        },
+        "imperial_parliament_1780": {
+          "title": "The Imperial Parliament Act",
+          "description": "A reformed Parliament includes representatives from all colonies, creating a true trans-Atlantic legislature.",
+          "impact": "The British Empire becomes the world's first transcontinental democracy."
+        },
+        "peaceful_evolution_1800": {
+          "title": "Dominion Status Achieved",
+          "description": "The American colonies achieve dominion status, gaining autonomy while maintaining ties to Britain.",
+          "impact": "A peaceful model for decolonization emerges a century early."
+        }
+      },
+      "consequences": {
+        "short_term": "Revolutionary sentiment channels into reformist politics rather than armed rebellion.",
+        "long_term": "A united Anglo-American Empire dominates the 19th century economically and militarily.",
+        "global_impact": "Democratic ideals spread through reform rather than revolution. Less violent path to independence for other colonies."
+      },
+      "present_day_status": "The American Dominion remains Britain's closest ally in a reformed Commonwealth. The special relationship is literal political union. English-speaking democracies form an even more dominant global bloc."
+    },
+    "fragmented_states": {
+      "title": "The Disunited States: Failed Federation",
+      "description": "What if the Constitutional Convention of 1787 failed and the states went separate ways?",
+      "divergence_description": "Deep divisions over slavery, trade, and state sovereignty cause the Constitutional Convention to collapse.",
+      "events": {
+        "convention_failure_1787": {
+          "title": "The Philadelphia Breakdown",
+          "description": "Irreconcilable differences between northern and southern states doom the Constitutional Convention. Delegates return home in bitter failure.",
+          "impact": "The Articles of Confederation collapse. States begin acting as independent nations."
+        },
+        "trade_wars_1790": {
+          "title": "The Tariff Wars",
+          "description": "States impose tariffs on each other. New York and Pennsylvania nearly go to war over river navigation rights.",
+          "impact": "Economic fragmentation weakens all former colonies. European powers exploit divisions."
+        },
+        "regional_blocs_1800": {
+          "title": "The Three Americas",
+          "description": "Three regional confederations emerge: New England Federation, Mid-Atlantic Alliance, and Southern Confederacy.",
+          "impact": "North America fragments like South America did in our timeline."
+        }
+      },
+      "consequences": {
+        "short_term": "Economic depression and interstate conflict weaken all regions.",
+        "long_term": "No united America means no westward expansion. European powers maintain control of western territories.",
+        "global_impact": "No American superpower in the 20th century. Britain and France dominate longer. Different World War outcomes."
+      },
+      "present_day_status": "North America is divided into seven independent nations: New England, New York Republic, Pennsylvania Commonwealth, Virginia Union, Carolina Federation, Georgia and the Gulf States. Constant rivalries prevent unification. British Canada is the dominant North American power."
+    }
+  }
+}

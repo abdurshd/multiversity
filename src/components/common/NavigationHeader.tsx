@@ -7,13 +7,13 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 const NavigationHeader: React.FC = () => {
   const location = useLocation();
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common-nav', 'common-ui']);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = useMemo(
     () => [
-      { path: '/', label: t('nav.home'), icon: Home },
-      { path: '/chapters', label: t('nav.chapters'), icon: BookOpen },
-      { path: '/compare', label: t('nav.compare'), icon: GitBranch },
+      { path: '/', label: t('common-nav:nav.home'), icon: Home },
+      { path: '/chapters', label: t('common-nav:nav.chapters'), icon: BookOpen },
+      { path: '/compare', label: t('common-nav:nav.compare'), icon: GitBranch },
     ],
     [t],
   );
@@ -72,7 +72,7 @@ const NavigationHeader: React.FC = () => {
               className="inline-flex items-center space-x-2 rounded-full bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
             >
               <Sparkles className="w-4 h-4 text-amber-300" />
-              <span>Start Exploring</span>
+              <span>{t('common-ui:buttons.explore')}</span>
             </Link>
           </nav>
 
@@ -111,7 +111,7 @@ const NavigationHeader: React.FC = () => {
               className="flex items-center justify-center space-x-2 rounded-xl border border-white/10 px-3 py-3 text-sm font-semibold text-white"
             >
               <Sparkles className="w-4 h-4 text-amber-300" />
-              <span>Start Exploring</span>
+              <span>{t('common-ui:buttons.explore')}</span>
             </Link>
           </nav>
         </div>

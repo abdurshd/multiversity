@@ -1,0 +1,71 @@
+{
+  "buttons": {
+    "start": "Boshlash",
+    "continue": "Davom etish",
+    "back": "Orqaga",
+    "next": "Keyingi",
+    "previous": "Oldingi",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "confirm": "Tasdiqlash",
+    "close": "Yopish",
+    "explore": "O'rganish",
+    "compare": "Solishtirish",
+    "learn_more": "Batafsil",
+    "read_more": "Ko'proq o'qish",
+    "view_all": "Hammasini ko'rish",
+    "show_more": "Ko'proq ko'rsatish",
+    "show_less": "Kamroq ko'rsatish",
+    "go_back": "Orqaga qaytish",
+    "try_again": "Qayta urinish"
+  },
+  "states": {
+    "loading": "Yuklanmoqda...",
+    "error": "Xatolik",
+    "success": "Muvaffaqiyat",
+    "empty": "Ma'lumot mavjud emas",
+    "not_found": "Topilmadi",
+    "searching": "Qidirilmoqda...",
+    "processing": "Qayta ishlanmoqda...",
+    "saving": "Saqlanmoqda...",
+    "deleting": "O'chirilmoqda...",
+    "updating": "Yangilanmoqda..."
+  },
+  "labels": {
+    "search": "Qidirish",
+    "filter": "Filtrlash",
+    "sort": "Saralash",
+    "date": "Sana",
+    "category": "Kategoriya",
+    "status": "Holat",
+    "type": "Turi",
+    "name": "Nomi",
+    "description": "Tavsif",
+    "actions": "Harakatlar"
+  },
+  "placeholders": {
+    "search": "Qidiring...",
+    "enter_text": "Matn kiriting...",
+    "select_option": "Variantni tanlang...",
+    "type_here": "Bu yerga yozing..."
+  },
+  "validation": {
+    "required": "Ushbu maydon to'ldirilishi shart",
+    "invalid_email": "Noto'g'ri elektron pochta manzili",
+    "min_length": "Kamida {{count}} belgidan iborat bo'lishi kerak",
+    "max_length": "Ko'pi bilan {{count}} belgidan iborat bo'lishi kerak",
+    "invalid_format": "Noto'g'ri format"
+  },
+  "common": {
+    "welcome": "Multiversity'ga xush kelibsiz",
+    "language": "Til",
+    "or": "yoki",
+    "and": "va",
+    "of": "ning",
+    "in": "da",
+    "by": "tomonidan",
+    "at": "da",
+    "from": "dan",
+    "to": "ga"
+  }
+}

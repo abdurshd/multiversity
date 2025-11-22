@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "Explore Alternative Histories",
+    "subtitle": "What if history took a different turn?",
+    "cta": {
+      "primary": "Start Exploring",
+      "secondary": "Compare Timelines"
+    }
+  },
+  "stats": {
+    "divergence": {
+      "label": "Divergence Points",
+      "value": "40+",
+      "detail": "hand-crafted turning points"
+    },
+    "events": {
+      "label": "Interactive Events",
+      "value": "70+",
+      "detail": "scored for impact"
+    },
+    "coverage": {
+      "label": "Coverage",
+      "value": "1370 → 2100+",
+      "detail": "global span & regional focus"
+    }
+  },
+  "timeline_threads": {
+    "us_independence": {
+      "tag": "US Independence",
+      "title": "Washington captured at Valley Forge",
+      "effect": "British victory signals colonial collapse, sparking a delayed independence movement decades later."
+    },
+    "cold_war": {
+      "tag": "Cold War",
+      "title": "Cosmonaut first on the Moon",
+      "effect": "Soviet prestige accelerates detente and redraws alliances across Asia & Africa."
+    },
+    "french_revolution": {
+      "tag": "French Revolution",
+      "title": "Constitutional Monarchy succeeds",
+      "effect": "Gradual reform averts the Terror and reshapes European liberalism."
+    }
+  },
+  "about": {
+    "badge": "What is Multiversity?",
+    "heading": "A cinematic lab for alternate history that fuses storytelling with data.",
+    "description_1": "Trace ripples from one decision to tectonic shifts across continents. Every chapter offers a carefully researched baseline, then splinters into ten plausible what-ifs that you can explore, compare, and remix.",
+    "description_2": "We pair historian-reviewed narratives with interactive charts, giving you both the poetry and the provenance of each timeline."
+  },
+  "research_pillars": {
+    "primary_sources": {
+      "title": "Primary Sources",
+      "detail": "archival maps, letters, and dispatches"
+    },
+    "scholarly_review": {
+      "title": "Scholarly Review",
+      "detail": "built with historian feedback loops"
+    },
+    "geopolitical_modeling": {
+      "title": "Geopolitical Modeling",
+      "detail": "economic + military heuristics"
+    },
+    "narrative_craft": {
+      "title": "Narrative Craft",
+      "detail": "story arcs tuned for immersion"
+    }
+  },
+  "chapters": {
+    "heading": "Historical Chapters",
+    "timelines_count": "3 timelines",
+    "list": {
+      "timur_legacy": {
+        "title": "Timur's Legacy (14th Century)",
+        "description": "The last great nomadic conqueror"
+      },
+      "us_independence": {
+        "title": "US Independence (1776)",
+        "description": "Revolutionary War alternatives"
+      },
+      "french_revolution": {
+        "title": "French Revolution (1789)",
+        "description": "Paths not taken in France"
+      },
+      "lincoln_era": {
+        "title": "Lincoln Era (1860s)",
+        "description": "Civil War alternate outcomes"
+      },
+      "russian_empire": {
+        "title": "Russian Empire (1721-1917)",
+        "description": "Tsarist Russia alternatives"
+      },
+      "lenin_revolution": {
+        "title": "Lenin Revolution (1917)",
+        "description": "Bolshevik victory alternatives"
+      },
+      "hitler_rise": {
+        "title": "Hitler's Rise (1920s-1940s)",
+        "description": "Preventing or changing WWII"
+      },
+      "world_war_1": {
+        "title": "World War I (1914-1918)",
+        "description": "The Great War reimagined"
+      },
+      "world_war_2": {
+        "title": "World War II (1939-1945)",
+        "description": "WWII alternative outcomes"
+      },
+      "cold_war": {
+        "title": "Cold War (1947-1991)",
+        "description": "Superpower rivalry alternatives"
+      },
+      "ussr_collapse": {
+        "title": "USSR Collapse (1991)",
+        "description": "Soviet Union's different endings"
+      },
+      "covid_pandemic": {
+        "title": "COVID-19 Pandemic (2019)",
+        "description": "Modern crisis alternatives"
+      },
+      "ai_revolution": {
+        "title": "AI Revolution (2020s)",
+        "description": "The future of intelligence"
+      },
+      "future_earth": {
+        "title": "Future Earth (2100+)",
+        "description": "Post-human scenarios"
+      }
+    }
+  },
+  "immersion_modes": {
+    "heading": "Choose your way to explore",
+    "story_navigator": {
+      "title": "Story Navigator",
+      "description": "Guided prose with interactive decisions, adaptive soundscapes, and cinematic cues."
+    },
+    "data_atlas": {
+      "title": "Data Atlas",
+      "description": "Dense cards, impact charts, and diplomatic stats for quick research sprints."
+    },
+    "comparison_lab": {
+      "title": "Comparison Lab",
+      "description": "Stack timelines, animate divergences, and compare butterfly effects in real time."
+    }
+  },
+  "features": {
+    "heading": "Interactive Experience",
+    "timeline_navigation": {
+      "title": "Timeline Navigation",
+      "description": "Navigate through centuries with smooth animations and detailed event exploration."
+    },
+    "cause_effect": {
+      "title": "Cause & Effect",
+      "description": "Visualize how small changes create massive butterfly effects across history."
+    },
+    "global_impact": {
+      "title": "Global Impact",
+      "description": "See how alternative histories shape the world we know today."
+    }
+  }
+}

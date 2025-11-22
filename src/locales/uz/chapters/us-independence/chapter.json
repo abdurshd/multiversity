@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Amerika inqilobi",
+    "period": "1775-1783",
+    "description": "Millat tug'ilishi va mustaqillikka olib boruvchi muqobil yo'llar",
+    "historical_context": "Amerika inqilobi o'n uch Britaniya mustamlakasini mustaqil davlatga aylantirdi. Mojaro inqilobiy g'oyalarni harbiy haqiqatga sinab ko'rdi, ko'plab muhim daqiqalarda g'alaba yaqindan ham emas edi.",
+    "divergence_point": "Inqilobiy urush davridagi natijani o'zgartirishi mumkin bo'lgan muhim qarorlar"
+  },
+  "figures": {
+    "george_washington": {
+      "name": "Jorj Vashington",
+      "role": "Kontinental armiya bosh qo'mondoni",
+      "description": "Inqilobiy harakatni eng qorong'u soatlarda birlashtirib turgan eng zarur shaxs."
+    },
+    "benjamin_franklin": {
+      "name": "Benjamin Franklin",
+      "role": "Diplomat va ta'sischi ota",
+      "description": "Diplomatiasi inqilobiy harakatga muhim frantsuz yordamini ta'minlagan donishmand."
+    },
+    "king_george_iii": {
+      "name": "Qirol Jorj III",
+      "role": "Britaniya monarxi",
+      "description": "Qaysar karakterdagi qirol urushni uzaytirib yubordi, ammo moslashuvchanligi uni oldini olishi mumkin edi."
+    }
+  },
+  "timelines": {
+    "british_victory": {
+      "title": "Sodiq davlatlar: Britaniya g'alabasi",
+      "description": "Agar Vashington Valley Forge'da asirga olinsa va inqilob qulagan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Britaniya kuchlari Valley Forge'ga kutilmagan qishki hujum uyushtiradi, Vashingtonni asirga oladi va Kontinental armiyani yo'q qiladi.",
+      "events": {
+        "valley_forge_disaster_1778": {
+          "title": "Valley Forge falokatI",
+          "description": "Britaniya razvedkasi Kontinental armiyaning qishki pozitsiyasining zaifligini aniqlaydi. Muvofiqlashtírilgan hujum Vashingtonni asirga oladi va uning kuchlarini tarqatib yuboradi.",
+          "impact": "Inqilobiy harakat o'zining birlik ramzini yo'qotadi. Mustamlaka qarshiligi partizan urushiga bo'linadi."
+        },
+        "reconciliation_act_1780": {
+          "title": "Yarashish akti",
+          "description": "Britaniya qurolni qo'ygan mustamlakalar uchun amnistiya va cheklangan o'zini o'zi boshqarishni taklif qiladi. Ko'pchilik qo'shimcha qon to'kilishidan qo'rqib, qabul qiladi.",
+          "impact": "O'n uch mustamlaka Britaniya tarkibida qoladi, parlament vakilligini oladi, lekin mustaqillikka erisha olmaydi."
+        },
+        "loyalist_dominance_1790": {
+          "title": "Sodiqlarning hukmronligi",
+          "description": "Sobiq sodiqlar mustamlaka hukumatlarida hukmronlik qiladi. Inqilobiy tarafdorlar frantsuz Luizianasi yoki ispan Floridagasiga ko'chib o'tadi.",
+          "impact": "Shimoliy Amerika boshqacha rivojlanadi, Britaniya imperiyasi bilan yaqinroq aloqalarga ega bo'ladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Inqilobiy g'oyalar bostiriladi, ammo yo'q qilinmaydi. Yashirin qarshilik davom etadi.",
+        "long_term": "Amerika inqilobi frantsuz va Lotin Amerikasi mustaqillik harakatlariga kamroq samarali ilhom beradi.",
+        "global_impact": "Britaniya imperiyasi 20-asrga qadar kuchliroq bo'lib qoladi. Demokratiya butun dunyoda sekinroq tarqaladi."
+      },
+      "present_day_status": "Amerika Shtatlari Hamdo'stligi konstitutsiyaviy Britaniya imperiyasining bir qismi bo'lib qoladi. Mustaqillik 1920-yillarda muzokaralar orqali asta-sekin keldi. Shimoliy Amerika madaniy jihatdan ko'proq britaniyalik, kuchliroq monarxistik an'analarga ega."
+    },
+    "early_independence": {
+      "title": "Zaytun shoxchasi qabul qilindi: Tinch yo'l bilan hal qilish",
+      "description": "Agar qirol Jorj III 1775-yilda Zaytun shoxchasi petitsiyasini qabul qilgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Parliament mo''tadillari qirolni soliqsiz vakillik talablarini qabul qilishga ko'ndiradi.",
+      "events": {
+        "olive_branch_accepted_1775": {
+          "title": "Qirollik murosasi",
+          "description": "Qirol Jorj III mo''tadil maslahatchilar ta'sirida Zaytun shoxchasi petitsiyasini qabul qiladi va Chidab bo'lmas aktlarni to'xtatadi.",
+          "impact": "Qurolli mojaro oldini olish. Parlamentda mustamlaka vakilligini o'rnatish bo'yicha muzokaralar boshlanadi."
+        },
+        "imperial_parliament_1780": {
+          "title": "Imperiya Parlamenti akti",
+          "description": "Isloh qilingan parlament barcha mustamlakalardan vakillarni o'z ichiga oladi va haqiqiy trans-Atlantik qonun chiqaruvchi organni yaratadi.",
+          "impact": "Britaniya imperiyasi dunyodagi birinchi qit'alararo demokratiyaga aylanadi."
+        },
+        "peaceful_evolution_1800": {
+          "title": "Dominion maqomiga erishish",
+          "description": "Amerika mustamlakалari dominion maqomiga erishib, Britaniya bilan aloqalarni saqlab qolgan holda avtonomiyaga ega bo'ladi.",
+          "impact": "Dekolonizatsiya uchun tinch model bir asr oldin paydo bo'ladi."
+        }
+      },
+      "consequences": {
+        "short_term": "Inqilobiy kayfiyat qurolli qo'zg'olon o'rniga islohotchi siyosatga yo'naltiriladi.",
+        "long_term": "Birlashgan Anglo-Amerika imperiyasi 19-asrda iqtisodiy va harbiy jihatdan hukmronlik qiladi.",
+        "global_impact": "Demokratik g'oyalar inqilob orqali emas, balki islohot orqali tarqaladi. Boshqa mustamlakalar uchun mustaqillikka kamroq zo'ravonlik bilan erishish yo'li."
+      },
+      "present_day_status": "Amerika Dominionu isloh qilingan Hamdo'stlikda Britaniyaning eng yaqin ittifoqchisi bo'lib qoladi. Maxsus munosabatlar tom ma'noda siyosiy ittifoqdir. Ingliz tilida so'zlashuvchi demokratiyalar yanada hukmronroq global blok hosil qiladi."
+    },
+    "fragmented_states": {
+      "title": "Birlashmagan Shtatlar: Muvaffaqiyatsiz Federatsiya",
+      "description": "Agar 1787-yildagi Konstitutsiyaviy Konventsiya muvaffaqiyatsizlikka uchraganida va shtatlar alohida yo'l olgan bo'lsa nima bo'lar edi?",
+      "divergence_description": "Qullik, savdo va shtat suvereniteti bo'yicha chuqur kelishmovchiliklar Konstitutsiyaviy Konventsiyani barbod qiladi.",
+      "events": {
+        "convention_failure_1787": {
+          "title": "Filadelfiya buzilishi",
+          "description": "Shimoliy va janubiy shtatlar o'rtasidagi kelishib bo'lmaydigan farqlar Konstitutsiyaviy Konventsiyani halokatga olib keladi. Delegatlar achchiq muvaffaqiyatsizlik bilan uylariga qaytadi.",
+          "impact": "Konfederatsiya moddalari qulaydi. Shtatlar mustaqil davlatlar sifatida harakat qila boshlaydi."
+        },
+        "trade_wars_1790": {
+          "title": "Tarif urushlari",
+          "description": "Shtatlar bir-biriga tariflar qo'yadi. Nyu-York va Pensilvaniya daryo navigatsiyasi huquqlari ustidan deyarli urushga kirishadi.",
+          "impact": "Iqtisodiy parchalanish barcha sobiq mustamlakalarni zaiflashtiradi. Yevropa kuchlari tafovutlardan foydalanadi."
+        },
+        "regional_blocs_1800": {
+          "title": "Uch Amerika",
+          "description": "Uchta mintaqaviy konfederatsiya paydo bo'ladi: Yangi Angliya Federatsiyasi, O'rta-Atlantika Ittifoqi va Janubiy Konfederatsiya.",
+          "impact": "Shimoliy Amerika bizning tariximizdagi Janubiy Amerika kabi parchalanadi."
+        }
+      },
+      "consequences": {
+        "short_term": "Iqtisodiy inqiroz va shtatlararo mojarolar barcha mintaqalarni zaiflashtiradi.",
+        "long_term": "Birlashgan Amerika yo'q, demak g'arbga kengayish yo'q. Yevropa kuchlari g'arbiy hududlar ustidan nazoratni saqlab qoladi.",
+        "global_impact": "20-asrda Amerika superкuchи yo'q. Britaniya va Fransiya uzoqroq hukmronlik qiladi. Jahon urushlari boshqacha natijalarga olib keladi."
+      },
+      "present_day_status": "Shimoliy Amerika yetti mustaqil davlatga bo'lingan: Yangi Angliya, Nyu-York Respublikasi, Pensilvaniya Hamdo'stligi, Virjiniya Ittifoqi, Karolina Federatsiyasi, Jorjiya va Ko'rfaz Shtatlari. Doimiy raqobat birlashishga yo'l qo'ymaydi. Britaniya Kanadasi hukmron Shimoliy Amerika kuchi."
+    }
+  }
+}
