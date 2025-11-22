@@ -123,4 +123,27 @@ i18n
         },
     });
 
+// Dynamic chapter translation loader
+export const loadChapterTranslations = async (chapterId: string, language: string = i18n.language) => {
+    const namespace = `chapter-${chapterId}`;
+
+    // Check if already loaded
+    if (i18n.hasResourceBundle(language, namespace)) {
+        return namespace;
+    }
+
+    try {
+        // Dynamically import the chapter translation
+        const chapterTranslation = await import(`./locales/${language}/chapters/${chapterId}/chapter.json`);
+
+        // Add the resource bundle
+        i18n.addResourceBundle(language, namespace, chapterTranslation.default, true, true);
+
+        return namespace;
+    } catch (error) {
+        console.error(`Failed to load chapter translation for ${chapterId} in ${language}:`, error);
+        return null;
+    }
+};
+
 export default i18n;
