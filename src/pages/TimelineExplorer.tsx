@@ -16,10 +16,11 @@ import { Chapter, Timeline, HistoricalEvent } from '../types';
 import { getChapterById, getTimelineById } from '../data';
 import AnimatedTimeline from '../components/timeline/AnimatedTimeline';
 import { Breadcrumb } from '../components/common/Breadcrumb';
+import { useTranslation } from 'react-i18next';
 
 
 const TimelineExplorer: React.FC = () => {
-
+  const { t } = useTranslation(['pages-timeline-explorer', 'common-ui']);
   const { chapterId, timelineId } = useParams<{ chapterId: string; timelineId: string }>();
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [timeline, setTimeline] = useState<Timeline | null>(null);
@@ -40,13 +41,13 @@ const TimelineExplorer: React.FC = () => {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Timeline Not Found</h2>
-          <p className="text-gray-300 mb-6">This timeline is not yet available.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">{t('pages-timeline-explorer:title')}</h2>
+          <p className="text-gray-300 mb-6">{t('pages-timeline-explorer:description')}</p>
           <Link
             to="/chapters"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
           >
-            Back to Chapters
+            {t('pages-timeline-explorer:buttons.back_to_chapters')}
           </Link>
         </div>
       </div>
@@ -54,9 +55,9 @@ const TimelineExplorer: React.FC = () => {
   }
 
   const timelineStats = [
-    { label: 'Divergence Year', value: timeline.divergenceYear, icon: Clock },
-    { label: 'Probability', value: `${timeline.probability}%`, icon: TrendingUp },
-    { label: 'Key Events', value: timeline.keyEvents.length, icon: GitBranch }
+    { label: t('pages-timeline-explorer:stats.divergence_year'), value: timeline.divergenceYear, icon: Clock },
+    { label: t('pages-timeline-explorer:stats.probability'), value: `${timeline.probability}%`, icon: TrendingUp },
+    { label: t('pages-timeline-explorer:stats.key_events'), value: timeline.keyEvents.length, icon: GitBranch }
   ];
 
   return (
@@ -72,7 +73,7 @@ const TimelineExplorer: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-6 space-y-8 z-20">
           <Breadcrumb
             items={[
-              { label: 'Chapters', path: '/chapters' },
+              { label: t('common-ui:nav.chapters'), path: '/chapters' },
               { label: chapter.title, path: `/chapters/${chapterId}` },
               { label: timeline.title }
             ]}
@@ -95,11 +96,8 @@ const TimelineExplorer: React.FC = () => {
             </div>
 
             <div className="flex items-center space-x-4">
-              {/* Game Launch Button - Only for Timur's Legacy for now */}
-
-
               <div className="text-right">
-                <div className="text-sm text-gray-400">Probability</div>
+                <div className="text-sm text-gray-400">{t('pages-timeline-explorer:stats.probability')}</div>
                 <div className="text-lg font-bold text-blue-300">{timeline.probability}%</div>
               </div>
               <div
@@ -134,13 +132,13 @@ const TimelineExplorer: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl p-8 shadow-[0_20px_80px_rgba(15,23,42,0.6)]"
           >
-            <h2 className="text-xl font-bold text-white mb-4">Timeline Overview</h2>
+            <h2 className="text-xl font-bold text-white mb-4">{t('pages-timeline-explorer:sections.timeline_overview')}</h2>
             <p className="text-gray-300 mb-4">{timeline.description}</p>
 
             <div className="bg-yellow-500 rounded-2xl p-5 mb-4">
               <div className="flex items-center space-x-2 mb-2">
                 <Zap className="w-5 h-5 text-white" />
-                <h3 className="text-lg font-semibold text-white">Divergence Point ({timeline.divergenceYear})</h3>
+                <h3 className="text-lg font-semibold text-white">{t('pages-timeline-explorer:sections.divergence_point')} ({timeline.divergenceYear})</h3>
               </div>
               <p className="text-white opacity-90">{timeline.divergenceDescription}</p>
             </div>
@@ -179,7 +177,7 @@ const TimelineExplorer: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl font-bold text-white mb-6 text-center">
-              Timeline Overview
+              {t('pages-timeline-explorer:sections.timeline_overview')}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -187,7 +185,7 @@ const TimelineExplorer: React.FC = () => {
               <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
                 <div className="flex items-center space-x-2 mb-4">
                   <Clock className="w-5 h-5 text-blue-500" />
-                  <h3 className="text-lg font-semibold text-white">Major Events</h3>
+                  <h3 className="text-lg font-semibold text-white">{t('pages-timeline-explorer:sections.major_events')}</h3>
                 </div>
                 <div className="space-y-3">
                   {timeline.keyEvents.slice(0, 4).map((event) => (
@@ -202,7 +200,7 @@ const TimelineExplorer: React.FC = () => {
                   ))}
                   {timeline.keyEvents.length > 4 && (
                     <div className="text-sm text-gray-400 text-center">
-                      +{timeline.keyEvents.length - 4} more events
+                      {t('pages-timeline-explorer:labels.more_events', { count: timeline.keyEvents.length - 4 })}
                     </div>
                   )}
                 </div>
@@ -212,7 +210,7 @@ const TimelineExplorer: React.FC = () => {
               <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
                 <div className="flex items-center space-x-2 mb-4">
                   <TrendingUp className="w-5 h-5 text-purple-500" />
-                  <h3 className="text-lg font-semibold text-white">Key Consequences</h3>
+                  <h3 className="text-lg font-semibold text-white">{t('pages-timeline-explorer:sections.key_consequences')}</h3>
                 </div>
                 <div className="space-y-3">
                   {timeline.consequences.slice(0, 4).map((consequence) => (
@@ -236,7 +234,7 @@ const TimelineExplorer: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">Butterfly Effects</h2>
+            <h2 className="text-2xl font-bold text-white mb-6 text-center">{t('pages-timeline-explorer:sections.butterfly_effects')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {timeline.butterfly.map((effect, index) => (
                 <motion.div
@@ -249,15 +247,15 @@ const TimelineExplorer: React.FC = () => {
                   <div className="flex items-center space-x-2 mb-3">
                     <GitBranch className="w-5 h-5 text-white" />
                     <span className="text-sm font-semibold text-white uppercase tracking-wide">
-                      {effect.magnitude} Impact
+                      {effect.magnitude} {t('pages-timeline-explorer:labels.impact')}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">Trigger</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">{t('pages-timeline-explorer:labels.trigger')}</h3>
                   <p className="text-white opacity-90 mb-3">{effect.trigger}</p>
-                  <h3 className="text-lg font-bold text-white mb-2">Consequence</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">{t('pages-timeline-explorer:labels.consequence')}</h3>
                   <p className="text-white opacity-90 mb-3">{effect.consequence}</p>
                   <div className="text-sm text-white opacity-75">
-                    Timeline: {effect.timespan} years
+                    {t('pages-timeline-explorer:labels.timeline')}: {effect.timespan} {t('pages-timeline-explorer:labels.years')}
                   </div>
                 </motion.div>
               ))}
@@ -277,7 +275,7 @@ const TimelineExplorer: React.FC = () => {
           >
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Globe className="w-8 h-8 text-blue-500" />
-              <h2 className="text-3xl font-bold text-white">Present Day (2025)</h2>
+              <h2 className="text-3xl font-bold text-white">{t('pages-timeline-explorer:sections.present_day')}</h2>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
               <p className="text-lg text-gray-300 leading-relaxed">
@@ -296,21 +294,21 @@ const TimelineExplorer: React.FC = () => {
               to={`/chapters/${chapterId}`}
               className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors text-center"
             >
-              Back to Chapter
+              {t('pages-timeline-explorer:buttons.back_to_chapter')}
             </Link>
             <Link
               to="/compare"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors text-center flex items-center justify-center space-x-2"
             >
               <GitBranch className="w-4 h-4" />
-              <span>Compare Timelines</span>
+              <span>{t('pages-timeline-explorer:buttons.compare_timelines')}</span>
             </Link>
             <Link
               to="/chapters"
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors text-center flex items-center justify-center space-x-2"
             >
               <BookOpen className="w-4 h-4" />
-              <span>Explore Other Chapters</span>
+              <span>{t('pages-timeline-explorer:buttons.explore_other_chapters')}</span>
             </Link>
           </div>
         </div>
@@ -358,13 +356,13 @@ const TimelineExplorer: React.FC = () => {
                 <p className="text-gray-300">{selectedEvent.description}</p>
 
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <h4 className="text-sm font-semibold text-white mb-2">Historical Impact</h4>
+                  <h4 className="text-sm font-semibold text-white mb-2">{t('pages-timeline-explorer:sections.historical_impact')}</h4>
                   <p className="text-sm text-gray-300">{selectedEvent.impact}</p>
                 </div>
 
                 {selectedEvent.relatedFigures.length > 0 && (
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">Related Figures</h4>
+                    <h4 className="text-sm font-semibold text-white mb-2">{t('pages-timeline-explorer:sections.related_figures')}</h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedEvent.relatedFigures.map(figureId => {
                         const figure = chapter.keyFigures.find(f => f.id === figureId);
@@ -386,7 +384,7 @@ const TimelineExplorer: React.FC = () => {
                     onClick={() => setSelectedEvent(null)}
                     className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
                   >
-                    Close
+                    {t('pages-timeline-explorer:buttons.close')}
                   </button>
                 </div>
               </div>
