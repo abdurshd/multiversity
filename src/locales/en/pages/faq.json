@@ -1,0 +1,25 @@
+{
+  "header": {
+    "category": "Resources",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers for researchers, educators, and South Korean partners."
+  },
+  "faqs": [
+    {
+      "question": "How accurate are the timelines?",
+      "answer": "Each divergence is peer reviewed by at least two historians and a regional expert. We cite primary sources in our internal CMS and follow the Korean Fair Labeling and Advertising Act when describing hypothetical outcomes."
+    },
+    {
+      "question": "Do you collect personal data?",
+      "answer": "Only minimal analytics (page views and anonymous device info) are collected. If you create an account, we store your email address on infrastructure hosted in South Korea or equivalent jurisdictions and process it under PIPA consent rules."
+    },
+    {
+      "question": "Can educators reuse the material?",
+      "answer": "Yes. Our classroom packets are released under a Creative Commons BY-NC license. When distributing in South Korea, please include our company registration number as required by the Electronic Commerce Act."
+    },
+    {
+      "question": "How do you handle takedown requests?",
+      "answer": "Requests citing defamation, copyright, or National Security Law concerns can be submitted via the Support page. We respond within 72 hours in accordance with the Korean Communications Standards Commission guidelines."
+    }
+  ]
+}

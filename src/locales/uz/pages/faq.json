@@ -1,0 +1,25 @@
+{
+  "header": {
+    "category": "Resurslar",
+    "title": "Tez-tez so'raladigan savollar",
+    "subtitle": "Tadqiqotchilar, o'qituvchilar va Janubiy Koreya hamkorlari uchun javoblar."
+  },
+  "faqs": [
+    {
+      "question": "Vaqt jadvallari qanchalik aniq?",
+      "answer": "Har bir tarqalish kamida ikki tarixchi va mintaqaviy mutaxassis tomonidan ko'rib chiqiladi. Biz ichki CMS tizimimizda asosiy manbalarni keltiramiz va faraziy natijalarni tavsiflaganda Koreya Adolatli Etiketlash va Reklama Qonuniga amal qilamiz."
+    },
+    {
+      "question": "Shaxsiy ma'lumotlarni to'playsizmi?",
+      "answer": "Faqat minimal analitika (sahifa ko'rishlari va anonim qurilma ma'lumotlari) to'planadi. Agar hisob yaratgan bo'lsangiz, elektron pochta manzilingizni Janubiy Koreya yoki ekvivalent yurisdiktsiyalarda joylashgan infratuzilmada saqlaymiz va uni PIPA rozilik qoidalari asosida qayta ishlaymiz."
+    },
+    {
+      "question": "O'qituvchilar materialni qayta ishlatishlari mumkinmi?",
+      "answer": "Ha. Bizning sinf paketlarimiz Creative Commons BY-NC litsenziyasi ostida chiqariladi. Janubiy Koreyada tarqatishda, Elektron Tijorat Qonuni talablariga muvofiq kompaniyamizning ro'yxatdan o'tish raqamini kiriting."
+    },
+    {
+      "question": "O'chirish so'rovlarini qanday hal qilasiz?",
+      "answer": "Tuhmat, mualliflik huquqi yoki Milliy Xavfsizlik Qonuni bo'yicha tashvishlarni ko'rsatuvchi so'rovlar Yordam sahifasi orqali yuborilishi mumkin. Biz Koreya Aloqa Standartlari Komissiyasi yo'riqnomalariga muvofiq 72 soat ichida javob beramiz."
+    }
+  ]
+}

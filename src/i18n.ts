@@ -18,6 +18,34 @@ import enPagesLanding from './locales/en/pages/landing.json';
 import uzPagesLanding from './locales/uz/pages/landing.json';
 import enPagesChaptersList from './locales/en/pages/chapters-list.json';
 import uzPagesChaptersList from './locales/uz/pages/chapters-list.json';
+import enPagesNotFound from './locales/en/pages/not-found.json';
+import uzPagesNotFound from './locales/uz/pages/not-found.json';
+import enPagesTimelineExplorer from './locales/en/pages/timeline-explorer.json';
+import uzPagesTimelineExplorer from './locales/uz/pages/timeline-explorer.json';
+import enPagesComparisonMode from './locales/en/pages/comparison-mode.json';
+import uzPagesComparisonMode from './locales/uz/pages/comparison-mode.json';
+import enPagesFAQ from './locales/en/pages/faq.json';
+import uzPagesFAQ from './locales/uz/pages/faq.json';
+import enPagesDocumentation from './locales/en/pages/documentation.json';
+import uzPagesDocumentation from './locales/uz/pages/documentation.json';
+import enPagesAccessibility from './locales/en/pages/accessibility.json';
+import uzPagesAccessibility from './locales/uz/pages/accessibility.json';
+import enPagesPrivacyPolicy from './locales/en/pages/privacy-policy.json';
+import uzPagesPrivacyPolicy from './locales/uz/pages/privacy-policy.json';
+import enPagesTermsOfService from './locales/en/pages/terms-of-service.json';
+import uzPagesTermsOfService from './locales/uz/pages/terms-of-service.json';
+import enPagesSupport from './locales/en/pages/support.json';
+import uzPagesSupport from './locales/uz/pages/support.json';
+
+// Import component namespaces
+import enComponentsErrorBoundary from './locales/en/components/error-boundary.json';
+import uzComponentsErrorBoundary from './locales/uz/components/error-boundary.json';
+import enComponentsBreadcrumb from './locales/en/components/breadcrumb.json';
+import uzComponentsBreadcrumb from './locales/uz/components/breadcrumb.json';
+import enComponentsAnimatedTimeline from './locales/en/components/animated-timeline.json';
+import uzComponentsAnimatedTimeline from './locales/uz/components/animated-timeline.json';
+import enComponentsInteractiveStory from './locales/en/components/interactive-story.json';
+import uzComponentsInteractiveStory from './locales/uz/components/interactive-story.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -99,6 +127,19 @@ i18n
                 'common-errors': enCommonErrors,
                 'pages-landing': enPagesLanding,
                 'pages-chapters-list': enPagesChaptersList,
+                'pages-not-found': enPagesNotFound,
+                'pages-timeline-explorer': enPagesTimelineExplorer,
+                'pages-comparison-mode': enPagesComparisonMode,
+                'pages-faq': enPagesFAQ,
+                'pages-documentation': enPagesDocumentation,
+                'pages-accessibility': enPagesAccessibility,
+                'pages-privacy-policy': enPagesPrivacyPolicy,
+                'pages-terms-of-service': enPagesTermsOfService,
+                'pages-support': enPagesSupport,
+                'components-error-boundary': enComponentsErrorBoundary,
+                'components-breadcrumb': enComponentsBreadcrumb,
+                'components-animated-timeline': enComponentsAnimatedTimeline,
+                'components-interactive-story': enComponentsInteractiveStory,
             },
             uz: {
                 translation: uzLegacy, // For backward compatibility
@@ -108,12 +149,46 @@ i18n
                 'common-errors': uzCommonErrors,
                 'pages-landing': uzPagesLanding,
                 'pages-chapters-list': uzPagesChaptersList,
+                'pages-not-found': uzPagesNotFound,
+                'pages-timeline-explorer': uzPagesTimelineExplorer,
+                'pages-comparison-mode': uzPagesComparisonMode,
+                'pages-faq': uzPagesFAQ,
+                'pages-documentation': uzPagesDocumentation,
+                'pages-accessibility': uzPagesAccessibility,
+                'pages-privacy-policy': uzPagesPrivacyPolicy,
+                'pages-terms-of-service': uzPagesTermsOfService,
+                'pages-support': uzPagesSupport,
+                'components-error-boundary': uzComponentsErrorBoundary,
+                'components-breadcrumb': uzComponentsBreadcrumb,
+                'components-animated-timeline': uzComponentsAnimatedTimeline,
+                'components-interactive-story': uzComponentsInteractiveStory,
             },
         },
         defaultNS: 'translation',
         fallbackNS: 'translation',
         fallbackLng: 'en',
-        ns: ['translation', 'common-ui', 'common-nav', 'common-footer', 'common-errors', 'pages-landing', 'pages-chapters-list'],
+        ns: [
+            'translation',
+            'common-ui',
+            'common-nav',
+            'common-footer',
+            'common-errors',
+            'pages-landing',
+            'pages-chapters-list',
+            'pages-not-found',
+            'pages-timeline-explorer',
+            'pages-comparison-mode',
+            'pages-faq',
+            'pages-documentation',
+            'pages-accessibility',
+            'pages-privacy-policy',
+            'pages-terms-of-service',
+            'pages-support',
+            'components-error-boundary',
+            'components-breadcrumb',
+            'components-animated-timeline',
+            'components-interactive-story',
+        ],
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         },

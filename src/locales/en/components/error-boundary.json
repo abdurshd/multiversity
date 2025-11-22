@@ -1,0 +1,8 @@
+{
+  "title": "Oops! Something went wrong",
+  "description": "We encountered an unexpected error. Don't worry, your data is safe.",
+  "buttons": {
+    "reload_page": "Reload Page",
+    "go_home": "Go Home"
+  }
+}

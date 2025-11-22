@@ -1,0 +1,10 @@
+{
+  "title": "Vaqt jadvali topilmadi",
+  "description": "Siz mavjud bo'lmagan muqobil haqiqatga kirib qoldingiz. Bu sahifa ko'p koinotda yo'qolgan yoki ushbu vaqt jadvalida hech qachon mavjud bo'lmagan bo'lishi mumkin.",
+  "buttons": {
+    "go_home": "Bosh sahifaga",
+    "explore_chapters": "Boblarni o'rganish",
+    "go_back": "Orqaga"
+  },
+  "help_text": "Agar bu xatolik deb hisoblasangiz, iltimos URL manzilini tekshiring yoki yordam xizmatiga murojaat qiling."
+}

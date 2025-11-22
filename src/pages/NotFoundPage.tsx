@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home, ArrowLeft, Search } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export const NotFoundPage: React.FC = () => {
+  const { t } = useTranslation('pages-not-found');
+
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center px-6">
       <div className="max-w-2xl w-full text-center">
@@ -24,13 +27,12 @@ export const NotFoundPage: React.FC = () => {
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Timeline Not Found
+            {t('title')}
           </h1>
 
           {/* Description */}
           <p className="text-lg text-slate-400 mb-8">
-            Looks like you've wandered into an alternate reality that doesn't exist.
-            This page may have been lost in the multiverse or never existed in this timeline.
+            {t('description')}
           </p>
 
           {/* Decorative Elements */}
@@ -59,27 +61,27 @@ export const NotFoundPage: React.FC = () => {
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
             >
               <Home className="w-5 h-5" />
-              Go Home
+              {t('buttons.go_home')}
             </Link>
             <Link
               to="/chapters"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
             >
               <Search className="w-5 h-5" />
-              Explore Chapters
+              {t('buttons.explore_chapters')}
             </Link>
             <button
               onClick={() => window.history.back()}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 rounded-lg transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
-              Go Back
+              {t('buttons.go_back')}
             </button>
           </div>
 
           {/* Additional Help */}
           <div className="mt-12 text-sm text-slate-500">
-            <p>If you believe this is an error, please check the URL or contact support.</p>
+            <p>{t('help_text')}</p>
           </div>
         </motion.div>
       </div>

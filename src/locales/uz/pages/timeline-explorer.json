@@ -1,0 +1,34 @@
+{
+  "title": "Vaqt jadvali topilmadi",
+  "description": "Bu vaqt jadvali hali mavjud emas.",
+  "buttons": {
+    "back_to_chapters": "Boblarga qaytish",
+    "back_to_chapter": "Bobga qaytish",
+    "compare_timelines": "Vaqt jadvallarini solishtirish",
+    "explore_other_chapters": "Boshqa boblarni o'rganish",
+    "close": "Yopish"
+  },
+  "stats": {
+    "divergence_year": "Tarqalish yili",
+    "probability": "Ehtimollik",
+    "key_events": "Asosiy voqealar"
+  },
+  "sections": {
+    "timeline_overview": "Vaqt jadvali sharhi",
+    "divergence_point": "Tarqalish nuqtasi",
+    "major_events": "Asosiy voqealar",
+    "key_consequences": "Asosiy oqibatlar",
+    "butterfly_effects": "Kapalak effektlari",
+    "present_day": "Hozirgi kun (2025)",
+    "historical_impact": "Tarixiy ta'sir",
+    "related_figures": "Tegishli shaxslar"
+  },
+  "labels": {
+    "more_events": "+{count} qo'shimcha voqealar",
+    "trigger": "Sabab",
+    "consequence": "Oqibat",
+    "timeline": "Vaqt jadvali",
+    "years": "yillar",
+    "impact": "Ta'sir"
+  }
+}

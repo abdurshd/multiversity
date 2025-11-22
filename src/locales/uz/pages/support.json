@@ -1,0 +1,33 @@
+{
+  "header": {
+    "category": "Aloqa",
+    "title": "Qo'llab-quvvatlash va muvofiqlik",
+    "subtitle": "Koreya Respublikasida ilova, ma'lumotlar so'rovlari yoki yuridik savollar bo'yicha yordam oling."
+  },
+  "sections": [
+    {
+      "title": "Aloqa kanallari",
+      "contacts": [
+        {
+          "label": "Elektron pochta",
+          "value": "support@multiversity.netlify.app"
+        },
+        {
+          "label": "Telefon (KST ish soatlari)",
+          "value": "+82-2-1234-5678"
+        },
+        {
+          "label": "Ofis",
+          "value": "12F, Jongno Tower, Jongno-gu, Seul, Koreya Respublikasi"
+        }
+      ]
+    },
+    {
+      "title": "Tartibga solish so'rovlari",
+      "paragraphs": [
+        "Maxfiylikka kirish, to'g'rilash yoki o'chirish so'rovlari uchun biz PIPA 35-37-modda tartiblariga amal qilamiz. PASS yoki akkreditatsiyalangan sertifikat orqali tasdiqlangan raqamli identifikatsiya bilan birga sub'ekt kirish formasini yuboring. Ijro Farmonida talab qilinganidek, biz o'n ish kuni ichida javob beramiz.",
+        "Axborot va Kommunikatsiya Tarmog'i Qonunining 44-2-moddasiga havola qiluvchi o'chirish so'rovlari bizning muvofiqlik xodimimizga yuboriladi va kamida olti oy davomida qayd etiladi."
+      ]
+    }
+  ]
+}

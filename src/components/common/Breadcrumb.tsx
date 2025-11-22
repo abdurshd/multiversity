@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export interface BreadcrumbItem {
   label: string;
@@ -12,15 +13,17 @@ interface BreadcrumbProps {
 }
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
+  const { t } = useTranslation('components-breadcrumb');
+
   return (
-    <nav aria-label="Breadcrumb" className="mb-6">
+    <nav aria-label={t('aria_label')} className="mb-6">
       <ol className="flex items-center gap-2 text-sm">
         {/* Home Link */}
         <li>
           <Link
             to="/"
             className="flex items-center text-slate-400 hover:text-white transition-colors"
-            aria-label="Home"
+            aria-label={t('home_label')}
           >
             <Home className="w-4 h-4" />
           </Link>

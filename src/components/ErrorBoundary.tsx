@@ -1,7 +1,8 @@
 import { Component, ErrorInfo, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { WithTranslation, withTranslation } from 'react-i18next';
 
-interface Props {
+interface Props extends WithTranslation {
   children: ReactNode;
 }
 
@@ -10,7 +11,7 @@ interface State {
   error: Error | null;
 }
 
-export class ErrorBoundary extends Component<Props, State> {
+class ErrorBoundaryComponent extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
@@ -31,6 +32,8 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   render() {
+    const { t } = this.props;
+
     if (this.state.hasError) {
       return (
         <div className="min-h-screen bg-slate-900 flex items-center justify-center px-6">
@@ -38,10 +41,10 @@ export class ErrorBoundary extends Component<Props, State> {
             <div className="bg-slate-800 border border-slate-700 rounded-lg p-8 shadow-xl">
               <div className="text-red-500 text-6xl mb-6">⚠️</div>
               <h1 className="text-3xl font-bold text-white mb-4">
-                Oops! Something went wrong
+                {t('components-error-boundary:title')}
               </h1>
               <p className="text-slate-300 mb-6">
-                We encountered an unexpected error. Don't worry, your data is safe.
+                {t('components-error-boundary:description')}
               </p>
               {this.state.error && (
                 <div className="bg-slate-900 border border-slate-700 rounded p-4 mb-6 text-left">
@@ -55,13 +58,13 @@ export class ErrorBoundary extends Component<Props, State> {
                   onClick={() => window.location.reload()}
                   className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                 >
-                  Reload Page
+                  {t('components-error-boundary:buttons.reload_page')}
                 </button>
                 <Link
                   to="/"
                   className="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors inline-block"
                 >
-                  Go Home
+                  {t('components-error-boundary:buttons.go_home')}
                 </Link>
               </div>
             </div>
@@ -73,3 +76,5 @@ export class ErrorBoundary extends Component<Props, State> {
     return this.props.children;
   }
 }
+
+export const ErrorBoundary = withTranslation()(ErrorBoundaryComponent);

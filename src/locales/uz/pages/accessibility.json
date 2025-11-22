@@ -1,0 +1,27 @@
+{
+  "header": {
+    "category": "Yuridik",
+    "title": "Foydalanish imkoniyati bayonoti",
+    "subtitle": "WCAG 2.1 AA standartlariga moslashtirilgan."
+  },
+  "sections": [
+    {
+      "title": "Majburiyat",
+      "content": "Multiversity o'quvchilar, tadqiqotchilar va o'qituvchilar uchun teng kirishni ta'minlaydi. Biz WCAG 2.1 AA yo'riqnomalariga rioya qilishga intilamiz, klaviatura navigatsiyasi va ekranni o'quvchi mosligini sinab ko'rish orqali barcha foydalanuvchilar uchun muammosiz tajribani ta'minlaymiz."
+    },
+    {
+      "title": "So'nggi yaxshilanishlar",
+      "list": [
+        "Yaxshilangan o'qish uchun yuqori kontrastli rang sxemasi.",
+        "Barcha bob va vaqt jadvali rasmlari uchun muqobil matn taqdim etilgan.",
+        "Barcha interaktiv elementlar uchun klaviatura navigatsiyasi qo'llab-quvvatlash.",
+        "Ekran o'quvchisi navigatsiyasini yaxshilash uchun semantik HTML tuzilmasi."
+      ]
+    },
+    {
+      "title": "Yordam so'rash",
+      "content": "To'siqni xabar qilish yoki muqobil formatda kontent so'rash uchun accessibility@multiversity.netlify.app elektron pochtasiga yozing. Biz besh ish kuni ichida javob berishni maqsad qilamiz.",
+      "email": "accessibility@multiversity.netlify.app"
+    }
+  ]
+}
