@@ -114,7 +114,7 @@ const ComparisonMode: React.FC = () => {
     // Create scales
     const allEvents = selectedTimelines.flatMap(t => t.keyEvents);
     const yearExtent = d3.extent(allEvents, d => d.year) as [number, number];
-    
+
     const xScale = d3.scaleLinear()
       .domain(yearExtent)
       .range([0, width]);
@@ -126,7 +126,7 @@ const ComparisonMode: React.FC = () => {
 
     // Create gradient definitions
     const defs = svg.append('defs');
-    
+
     selectedTimelines.forEach(timeline => {
       const gradient = defs.append('linearGradient')
         .attr('id', `gradient-${timeline.id}`)
@@ -218,23 +218,23 @@ const ComparisonMode: React.FC = () => {
         .attr('stroke-width', 2)
         .style('cursor', 'pointer')
         .style('filter', 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.8))')
-        .on('mouseover', function(event, d) {
+        .on('mouseover', function (event, d) {
           d3.select(this)
             .transition()
             .duration(200)
             .attr('r', 12)
             .style('filter', 'drop-shadow(0 0 15px rgba(255, 255, 255, 1))');
-          
+
           // Show tooltip
           showTooltip(event, d, timeline);
         })
-        .on('mouseout', function() {
+        .on('mouseout', function () {
           d3.select(this)
             .transition()
             .duration(200)
             .attr('r', 8)
             .style('filter', 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.8))');
-          
+
           hideTooltip();
         })
         .transition()
@@ -262,7 +262,7 @@ const ComparisonMode: React.FC = () => {
               .ease(d3.easeCircleOut)
               .attr('r', 40)
               .attr('opacity', 0)
-              .on('end', function() {
+              .on('end', function () {
                 // Repeat animation
                 d3.select(this)
                   .attr('r', 8)
@@ -352,7 +352,7 @@ const ComparisonMode: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-x-hidden">
+    <div className="min-h-screen bg-blue-500/10 relative overflow-x-hidden">
       {/* Animated background canvas */}
       <canvas
         id="particle-canvas"
@@ -387,7 +387,7 @@ const ComparisonMode: React.FC = () => {
       {/* Main content */}
       <div className="relative z-10">
         {/* Hero Header */}
-        <motion.section 
+        <motion.section
           className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -396,7 +396,7 @@ const ComparisonMode: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <motion.div
               className="mb-8"
-              animate={{ 
+              animate={{
                 rotateY: [0, 360],
                 scale: [1, 1.1, 1]
               }}
@@ -407,7 +407,7 @@ const ComparisonMode: React.FC = () => {
             >
               <GitBranch className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-blue-500 mx-auto mb-4" />
             </motion.div>
-            
+
             <motion.h1
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-200 mb-6"
             >
@@ -423,7 +423,7 @@ const ComparisonMode: React.FC = () => {
               {t('subtitle')}
             </motion.p>
 
-            <motion.div 
+            <motion.div
               className="flex flex-col sm:flex-row justify-center items-center gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -432,7 +432,7 @@ const ComparisonMode: React.FC = () => {
               <motion.button
                 onClick={() => setShowSelector(true)}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-2xl text-sm sm:text-base"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   boxShadow: "0 0 30px rgba(59, 130, 246, 0.5)"
                 }}
@@ -465,7 +465,7 @@ const ComparisonMode: React.FC = () => {
 
         {/* Selected Timelines Overview */}
         {selectedTimelines.length > 0 && (
-          <motion.section 
+          <motion.section
             className="py-12 px-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -484,30 +484,30 @@ const ComparisonMode: React.FC = () => {
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       className="relative"
                     >
-                      <motion.div 
-                        className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-4 sm:p-6 border-2 shadow-2xl relative overflow-hidden"
+                      <motion.div
+                        className="bg-slate-700 rounded-2xl p-4 sm:p-6 border-2 shadow-2xl relative overflow-hidden"
                         style={{ borderColor: timeline.color }}
-                        whileHover={{ 
+                        whileHover={{
                           scale: 1.05,
                           boxShadow: `0 0 40px ${timeline.color}30`
                         }}
                       >
                         {/* Animated background gradient */}
-                        <div 
+                        <div
                           className="absolute inset-0 opacity-10"
                           style={{
                             background: `linear-gradient(45deg, ${timeline.color}00, ${timeline.color}40, ${timeline.color}00)`
                           }}
                         />
-                        
+
                         <div className="relative z-10">
                           <div className="flex items-center justify-between mb-4">
                             <span className="text-3xl">{timeline.icon}</span>
                             <div className="flex items-center space-x-2">
-                              <motion.div 
+                              <motion.div
                                 className="w-4 h-4 rounded-full"
                                 style={{ backgroundColor: timeline.color }}
-                                animate={{ 
+                                animate={{
                                   scale: [1, 1.2, 1],
                                   boxShadow: [`0 0 0px ${timeline.color}`, `0 0 20px ${timeline.color}`, `0 0 0px ${timeline.color}`]
                                 }}
@@ -521,10 +521,10 @@ const ComparisonMode: React.FC = () => {
                               </button>
                             </div>
                           </div>
-                          
+
                           <h3 className="text-base sm:text-lg font-bold text-white mb-2">{timeline.title}</h3>
                           <p className="text-gray-300 text-xs sm:text-sm mb-4 line-clamp-2">{timeline.description}</p>
-                          
+
                           <div className="flex items-center justify-between text-sm">
                             <div className="flex items-center space-x-1 text-gray-400">
                               <Percent className="w-4 h-4" />
@@ -547,7 +547,7 @@ const ComparisonMode: React.FC = () => {
 
         {/* Main Visualization */}
         {selectedTimelines.length > 0 && (
-          <motion.section 
+          <motion.section
             className="py-12 px-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -564,7 +564,7 @@ const ComparisonMode: React.FC = () => {
                     {selectedTimelines.length} {selectedTimelines.length !== 1 ? t('stats.timelines') : t('stats.timeline')} {t('stats.selected')}
                   </div>
                 </div>
-                
+
                 <div className="overflow-x-auto">
                   <svg
                     ref={svgRef}
@@ -594,7 +594,7 @@ const ComparisonMode: React.FC = () => {
 
         {/* Timeline Insights */}
         {selectedTimelines.length > 1 && (
-          <motion.section 
+          <motion.section
             className="py-12 px-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -602,10 +602,10 @@ const ComparisonMode: React.FC = () => {
           >
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-white mb-8 text-center">{t('sections.timeline_insights')}</h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Probability comparison */}
-                <motion.div 
+                <motion.div
                   className="bg-green-700 rounded-2xl p-6 text-white"
                   whileHover={{ scale: 1.02, rotate: 1 }}
                   transition={{ duration: 0.3 }}
@@ -621,7 +621,7 @@ const ComparisonMode: React.FC = () => {
                 </motion.div>
 
                 {/* Divergence comparison */}
-                <motion.div 
+                <motion.div
                   className="bg-yellow-600 rounded-2xl p-6 text-white"
                   whileHover={{ scale: 1.02, rotate: -1 }}
                   transition={{ duration: 0.3 }}
@@ -637,7 +637,7 @@ const ComparisonMode: React.FC = () => {
                 </motion.div>
 
                 {/* Impact comparison */}
-                <motion.div 
+                <motion.div
                   className="bg-purple-700 rounded-2xl p-6 text-white"
                   whileHover={{ scale: 1.02, rotate: 0.5 }}
                   transition={{ duration: 0.3 }}
@@ -658,7 +658,7 @@ const ComparisonMode: React.FC = () => {
 
         {/* Empty state */}
         {selectedTimelines.length === 0 && (
-          <motion.section 
+          <motion.section
             className="py-20 px-6 text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -666,12 +666,12 @@ const ComparisonMode: React.FC = () => {
           >
             <div className="max-w-2xl mx-auto">
               <motion.div
-                animate={{ 
+                animate={{
                   y: [0, -10, 0],
                   rotate: [0, 5, -5, 0]
                 }}
-                transition={{ 
-                  duration: 4, 
+                transition={{
+                  duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
@@ -735,11 +735,11 @@ const ComparisonMode: React.FC = () => {
                       <span className="text-2xl">{chapter.icon}</span>
                       <span>{chapter.title}</span>
                     </h3>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                       {chapter.alternativeTimelines.map((timeline, index) => {
                         const isSelected = selectedTimelines.find(t => t.id === timeline.id);
-                        
+
                         return (
                           <motion.div
                             key={timeline.id}
@@ -748,8 +748,8 @@ const ComparisonMode: React.FC = () => {
                             transition={{ delay: index * 0.1 }}
                             className={`
                               relative cursor-pointer rounded-xl p-4 border-2 transition-all duration-300
-                              ${isSelected 
-                                ? 'border-green-500 bg-green-500/10' 
+                              ${isSelected
+                                ? 'border-green-500 bg-green-500/10'
                                 : 'border-gray-600 bg-dark-700 hover:border-blue-500 hover:bg-blue-500/10'
                               }
                             `}
@@ -766,18 +766,18 @@ const ComparisonMode: React.FC = () => {
                                 ✓
                               </motion.div>
                             )}
-                            
+
                             <div className="flex items-center space-x-3 mb-3">
                               <span className="text-2xl">{timeline.icon}</span>
-                              <div 
+                              <div
                                 className="w-3 h-3 rounded-full"
                                 style={{ backgroundColor: timeline.color }}
                               />
                             </div>
-                            
+
                             <h4 className="text-lg font-semibold text-white mb-2">{timeline.title}</h4>
                             <p className="text-gray-300 text-sm mb-3 line-clamp-2">{timeline.description}</p>
-                            
+
                             <div className="flex items-center justify-between text-xs text-gray-400">
                               <span>{timeline.probability}% likely</span>
                               <span>{timeline.keyEvents.length} events</span>

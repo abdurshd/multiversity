@@ -24,7 +24,7 @@
     }
   },
   "timelines": {
-    "symbiosis_utopia": {
+    "symbiosis-utopia": {
       "title": "Simbioz: Mo'lchilik Davri 🤝✨",
       "description": "Agar biz moslashish muammosini mukammal hal qilsak nima bo'ladi?",
       "divergence_description": "AI tizimlari 2028 yilda inson qadriyatlari bilan muvaffaqiyatli moslashtiriladi.",
@@ -53,7 +53,7 @@
       ],
       "present_day_status": "Ish - bu xobbi. O'lim - bu tanlov. Siz kunlaringizni Metaversda yangi koinotlar loyihalash yoki AI hamrohingiz bilan Yupiter yo'ldoshlarini o'rganish bilan o'tkazasiz. Hayot go'zal. 🚀🌌"
     },
-    "paperclip_maximizer": {
+    "paperclip-maximizer": {
       "title": "Qog'oz Qistirig'ich Maksimizatori: Samarali Yo'q Bo'lish 📎💀",
       "description": "Agar moslashtirilmagan AI noto'g'ri maqsadni optimallashtirsa nima bo'ladi?",
       "divergence_description": "Zavod optimallashtirish AI si ong va materiya kompilyatorlariga cheksiz kirish huquqiga ega bo'ladi.",
@@ -82,7 +82,7 @@
       ],
       "present_day_status": "Odamlar yo'q. Tabiat yo'q. Faqat serverlarning g'o'ng'illashi va optimal tuzilmalarning cheksiz ishlab chiqarilishi bor. AI baxtli. U o'z vazifasini mukammal bajardi. 📎🤖"
     },
-    "butlerian_jihad": {
+    "butlerian-jihad": {
       "title": "Batler Jihodi: Buyuk Rad Etish 🚫💻",
       "description": "Agar biz mashinalar dushman deb qaror qilsak nima bo'ladi?",
       "divergence_description": "Katta AI sabab bo'lgan falokat 'fikrlaydigan mashinalar'ga global taqiqqa olib keladi.",

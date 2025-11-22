@@ -24,7 +24,7 @@
     }
   },
   "timelines": {
-    "star_trek_future": {
+    "star-trek-future": {
       "title": "Federatsiya: Yulduzlar Orasida 🚀✨",
       "description": "Agar biz birlashsak va galaktikani tinch yo'l bilan o'rgansak nima bo'ladi?",
       "divergence_description": "Insoniyat 'Buyuk Filtr'dan omon qoladi va yorug'likdan tezroq sayohatni kashf etadi.",
@@ -53,7 +53,7 @@
       ],
       "present_day_status": "Yer parkga aylangan. Aholi orbital halqalar va mustamlaka dunyolarida yashaydi. Biz tadqiqotchilar, olimlar va san'atkorlarmiz. Qashshoqlik va urush qadimgi tarix darslaridir. 🖖🌍"
     },
-    "silent_earth": {
+    "silent-earth": {
       "title": "Sokin Yer: Tabiat Qaytarib Olmoqda 🌿🦗",
       "description": "Agar biz o'zimizni yo'q qilsak va boshqa narsa ko'tarilsa nima bo'ladi?",
       "divergence_description": "Yadro urushi yoki iqlim qulashi murakkab sutemizuvchilar hayotini yo'q qiladi.",
@@ -82,7 +82,7 @@
       ],
       "present_day_status": "O'rmonlar qaytib keldi. Havo toza. Atlantika okeanining chuqurligida Kalmar-Lordlar qadimgi xarobalarda topilgan g'alati 'Coca-Cola' shishalarining ma'nosini muhokama qilmoqdalar. 🦑🌊"
     },
-    "dyson_swarm": {
+    "dyson-swarm": {
       "title": "Dyson To'dasi: Mashina Xudosi ⚙️☀️",
       "description": "Agar biz kattaroq narsa qurish uchun Yerni qismlarga ajratsak nima bo'ladi?",
       "divergence_description": "Ekstremal sanoat kengayishi quyosh tizimini demontaj qilishga olib keladi.",
@@ -112,7 +112,7 @@
       "present_day_status": "Yer yo'q. Faqat To'da bor. Quyosh atrofida aylanib yuradigan trillionlab yashash joylari uning energiyasining 100 foizini ushlaydi. Biz o'zimiz yaratgan xudolarmiz, abadiy va qudratli. ☀️🤖"
     }
   },
-  "interactive_scenarios": [
+  "interactive-scenarios": [
     {
       "title": "Buyuk Filtr (2100)",
       "text": "2100 yil. Global harorat 3°C ga ko'tarildi. Resurslar tanqis. Superkuchlar o'rtasidagi keskinlik eng yuqori darajada. Isyonchi general oldindan zarba berishni taklif qilmoqda. Oldinga yo'l qanday?",

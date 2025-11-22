@@ -191,7 +191,7 @@ const ChaptersPage: React.FC = () => {
                     />
 
                     {/* Gradient Overlay for Text Readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent opacity-90" />
+                    <div className="absolute inset-0 bg-blue-500/10 opacity-90" />
 
                     {/* Top Badge */}
                     <div className="absolute top-6 left-0 w-full flex justify-center z-10">

@@ -116,9 +116,9 @@ const ChapterDetail: React.FC = () => {
     return result;
   };
 
-  // Convert timeline ID to translation key (convert hyphens to underscores)
+  // Convert timeline ID to translation key (use ID directly)
   const getTimelineKey = (timelineId: string) => {
-    return timelineId.replace(/-/g, '_');
+    return timelineId;
   };
 
   // Helper to get translated figures
@@ -196,7 +196,7 @@ const ChapterDetail: React.FC = () => {
         />
 
         {/* Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-blue-500/10 z-10" />
         <div className="absolute inset-0 bg-black/40 z-10" />
 
         <ParticleSystem
@@ -286,7 +286,7 @@ const ChapterDetail: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
                 onClick={() => setShowStory(!showStory)}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -370,7 +370,7 @@ const ChapterDetail: React.FC = () => {
                 >
                   <div className="text-center">
                     <motion.div
-                      className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-3xl sm:text-4xl font-bold text-white mx-auto mb-6"
+                      className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-blue-500 flex items-center justify-center text-3xl sm:text-4xl font-bold text-white mx-auto mb-6"
                       animate={{
                         scale: [1, 1.1, 1],
                         rotate: [0, 5, -5, 0],
@@ -423,7 +423,7 @@ const ChapterDetail: React.FC = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
               {t('common-ui:labels.divergence_point')}
             </h2>
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 sm:p-8">
+            <div className="bg-blue-500 rounded-lg p-6 sm:p-8">
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">
                 {getTranslation('meta.divergence_point')}
@@ -465,7 +465,7 @@ const ChapterDetail: React.FC = () => {
                       className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                       style={{ backgroundImage: `url(${timeline.image || '/images/placeholder.jpg'})` }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-90" />
+                    <div className="absolute inset-0 bg-blue-500/10 opacity-90" />
                     <div className="absolute bottom-0 left-0 p-4 w-full">
                       <div className="h-1 w-12 rounded-full mb-2" style={{ backgroundColor: timeline.color }}></div>
                     </div>

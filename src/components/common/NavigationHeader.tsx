@@ -35,7 +35,7 @@ const NavigationHeader: React.FC = () => {
       <div className="relative max-w-7xl mx-auto">
         {/* Background Container with Clipping */}
         <div className="absolute inset-0 rounded-2xl border border-white/10 bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_50px_rgba(8,112,184,0.15)] overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/15 via-blue-500/10 to-blue-400/10" />
+          <div className="absolute inset-0 bg-blue-500/10" />
         </div>
 
         {/* Content Container - No Overflow Hidden */}
