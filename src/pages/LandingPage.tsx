@@ -250,7 +250,7 @@ const LandingPage: React.FC = () => {
                       style={{ backgroundImage: `url(${chapter.image})` }}
                     />
                     {/* Gradient Overlay */}
-                    <div className={`absolute inset-0 ${chapter.color} opacity-80 mix-blend-multiply z-10 transition-opacity group-hover:opacity-70`} />
+                    <div className={`absolute inset-0 ${chapter.color} opacity-80 mix-blend-multiply z-10 transition-opacity group-hover:opacity-0`} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
 
                     <div className="relative z-20">
