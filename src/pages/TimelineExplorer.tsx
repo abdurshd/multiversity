@@ -338,8 +338,8 @@ const TimelineExplorer: React.FC = () => {
                   <h3 className="text-lg font-semibold text-white">{t('pages-timeline-explorer:sections.key_consequences')}</h3>
                 </div>
                 <div className="space-y-3">
-                  {timeline.consequences.slice(0, 4).map((consequence) => {
-                    const consequenceTrans = getConsequenceTranslation(consequence.id);
+                  {timeline.consequences.slice(0, 4).map((consequence, index) => {
+                    const consequenceTrans = getConsequenceTranslation(consequence.id, index, timeline.consequences.length);
                     return (
                       <div key={consequence.id} className="rounded-xl border border-white/10 bg-slate-900/50 p-4">
                         <div className="text-xs text-purple-400 mb-1 uppercase tracking-wide">{consequenceTrans?.category || consequence.category}</div>
@@ -365,7 +365,7 @@ const TimelineExplorer: React.FC = () => {
             <h2 className="text-2xl font-bold text-white mb-6 text-center">{t('pages-timeline-explorer:sections.butterfly_effects')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {timeline.butterfly.map((effect, index) => {
-                const butterflyTrans = getButterflyTranslation(effect.id);
+                const butterflyTrans = getButterflyTranslation(effect.id, index);
                 return (
                   <motion.div
                     key={effect.id}

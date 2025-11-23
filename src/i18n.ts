@@ -117,7 +117,7 @@ const uzLegacy = {
 // Add a custom detector for location-based default
 const customLocationDetector = {
     name: 'customLocationDetector',
-    lookup(options: any) {
+    lookup(_options?: unknown) {
         try {
             const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
             // Check for Uzbekistan timezones
@@ -129,7 +129,7 @@ const customLocationDetector = {
         }
         return undefined;
     },
-    cacheUserLanguage(lng: string, options: any) {
+    cacheUserLanguage(_lng: string, _options?: unknown) {
         // Optional: cache logic if needed, but localStorage is handled by the main plugin
     }
 };
@@ -253,7 +253,7 @@ export const loadChapterTranslations = async (chapterId: string, language: strin
         }
 
         // Dynamically import the chapter translation
-        const chapterTranslation = await loader() as any;
+        const chapterTranslation = await loader() as { default: Record<string, unknown> };
 
         // Add the resource bundle
         i18n.addResourceBundle(language, namespace, chapterTranslation.default, true, true);
