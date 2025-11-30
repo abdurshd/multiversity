@@ -74,13 +74,33 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
           ease: "easeInOut",
         }}
       >
-        {/* Character Avatar */}
+        {/* Character Avatar or Image */}
         <motion.div
-          className="w-16 h-16 rounded-full bg-linear-to-br from-blue-400 to-purple-600 flex items-center justify-center text-2xl font-bold text-white mx-auto mb-2 shadow-lg"
+          className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-2 shadow-lg overflow-hidden ${character.image ? 'bg-transparent' : 'bg-linear-to-br from-blue-400 to-purple-600'
+            }`}
           animate={isClicked ? { rotate: 360, scale: 1.2 } : {}}
           transition={{ duration: 0.5 }}
         >
-          {character.name.charAt(0)}
+          {character.image ? (
+            <img
+              src={character.image}
+              alt={character.name}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // Fallback to initials if image fails to load
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement?.classList.add('bg-linear-to-br', 'from-blue-400', 'to-purple-600');
+                const fallback = document.createElement('div');
+                fallback.className = 'text-2xl font-bold text-white';
+                fallback.innerText = character.name.charAt(0);
+                e.currentTarget.parentElement?.appendChild(fallback);
+              }}
+            />
+          ) : (
+            <div className="text-2xl font-bold text-white">
+              {character.name.charAt(0)}
+            </div>
+          )}
         </motion.div>
 
         {/* Character Name */}
@@ -195,7 +215,7 @@ const AnimatedCharacter: React.FC<AnimatedCharacterProps> = ({
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </motion.div >
   );
 };
 
