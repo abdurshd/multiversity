@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import ChaptersPage from './pages/ChaptersPage';
 import ChapterDetail from './pages/ChapterDetail';
 import TimelineExplorer from './pages/TimelineExplorer';
+import SimulationHub from './pages/SimulationHub';
 import ComparisonMode from './pages/ComparisonMode';
 import { NotFoundPage } from './pages/NotFoundPage';
 import DocumentationPage from './pages/DocumentationPage';
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/chapters" element={<ChaptersPage />} />
             <Route path="/chapters/:id" element={<ChapterDetail />} />
+            <Route path="/simulation/:chapterId" element={<SimulationHub />} />
             <Route path="/timeline/:chapterId/:timelineId" element={<TimelineExplorer />} />
             <Route path="/compare" element={<ComparisonMode />} />
             <Route path="/documentation" element={<DocumentationPage />} />

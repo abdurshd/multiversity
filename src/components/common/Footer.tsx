@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Mail, Sparkles, ArrowRight } from 'lucide-react';
+import { Github, Twitter, Mail, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export const Footer: React.FC = () => {
@@ -31,7 +31,6 @@ export const Footer: React.FC = () => {
               to="/chapters"
               className="flex-1 inline-flex items-center justify-center space-x-2 rounded-2xl bg-blue-600 hover:bg-blue-700 px-5 py-3 text-white font-semibold shadow-lg shadow-blue-600/30 transition-colors"
             >
-              <Sparkles className="w-5 h-5" />
               <span>{t('common-nav:nav.chapters')}</span>
             </Link>
             <Link

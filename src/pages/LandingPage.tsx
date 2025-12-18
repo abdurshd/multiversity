@@ -8,7 +8,6 @@ import {
   Globe,
   BookOpen,
   GitBranch,
-  Sparkles,
   Shield,
   Layers,
   Compass,
@@ -150,7 +149,6 @@ const LandingPage: React.FC = () => {
               to="/chapters"
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
             >
-              <Sparkles className="w-5 h-5" />
               <span>{t('pages-landing:hero.cta.primary')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, BookOpen, GitBranch, Menu, X, Sparkles } from 'lucide-react';
+import { Home, BookOpen, GitBranch, Menu, X } from 'lucide-react';
 import MultiversityIcon from '../icons/MultiversityIcon';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -71,7 +71,6 @@ const NavigationHeader: React.FC = () => {
               to="/chapters"
               className="inline-flex items-center space-x-2 rounded-full bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
             >
-              <Sparkles className="w-4 h-4 text-amber-300" />
               <span>{t('common-ui:buttons.explore')}</span>
             </Link>
           </nav>
@@ -110,7 +109,6 @@ const NavigationHeader: React.FC = () => {
               onClick={closeMenu}
               className="flex items-center justify-center space-x-2 rounded-xl border border-white/10 px-3 py-3 text-sm font-semibold text-white"
             >
-              <Sparkles className="w-4 h-4 text-amber-300" />
               <span>{t('common-ui:buttons.explore')}</span>
             </Link>
             <div className="pt-2 flex justify-center">

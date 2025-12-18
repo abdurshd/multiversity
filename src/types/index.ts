@@ -66,6 +66,7 @@ export interface StoryChoice {
   text: string;
   consequence: string;
   nextSceneId?: string;
+  linkedTimelineId?: string;
 }
 
 export interface InteractiveScenario {

@@ -101,7 +101,7 @@ const SimulationHub: React.FC = () => {
                     >
                         <div className="absolute top-0 left-0 w-full h-1 bg-green-500/50"></div>
 
-                        <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 uppercase">
+                        <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600 uppercase">
                             {chapter.title}
                         </h1>
 
