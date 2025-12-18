@@ -169,6 +169,16 @@
         "Koinotni mustamlaka qilish",
         "Insondan keyingi davr"
       ]
+    },
+    "korea_destiny": {
+      "title": "Koreya Yarim Orolining Taqdiri",
+      "period": "1945-2025",
+      "description": "Bo'lingan millatning taqdiri: Birlashish, Urush yoki Tinchlik",
+      "key_events": [
+        "1945-yilgi bo'linish",
+        "Koreya urushi",
+        "Iqtisodiy mo''jiza"
+      ]
     }
   },
   "bottom_section": {

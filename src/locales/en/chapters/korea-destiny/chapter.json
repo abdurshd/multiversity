@@ -1,0 +1,203 @@
+{
+    "meta": {
+        "title": "Korean Peninsula Destiny",
+        "description": "The Shrimp Between Whales. A divided nation that became a flashpoint for global powers.",
+        "period": "1945-2025",
+        "historical_context": "In 1945, after 35 years of Japanese occupation, Korea was liberated but immediately divided by the US and Soviet Union. This division led to a devastating war in 1950 and a 70-year standoff. But what if decisions made in those critical early years had been different?",
+        "divergence_point": "1945 Liberation & Division"
+    },
+    "timelines": {
+        "neutral-korea": {
+            "title": "The Fortress of the East",
+            "description": "Korea unifies as a heavily armed neutral power. A 'porcupine' state that no great power dares to touch.",
+            "divergence_description": "US and Soviets agree to a unified trusteeship government.",
+            "present_day_status": "Korea is a fortress of neutrality. Every citizen is a soldier, but no war is fought. Seoul is the diplomatic capital of Asia. 🕊️🛡️",
+            "events": {
+                "unified-election": {
+                    "title": "The Great Election",
+                    "description": "A coalition government is formed. Foreign troops leave.",
+                    "impact": "Peace."
+                }
+            },
+            "consequences": {
+                "economic-hub": {
+                    "category": "economic",
+                    "short_term": "Slow growth",
+                    "long_term": "Hub of Asian trade",
+                    "global_impact": "No Korean War"
+                }
+            },
+            "butterfly_effects": {
+                "no-cold-war-hot-war": {
+                    "trigger": "No Korean War",
+                    "consequence": "Cold War remains colder. China focuses on development earlier.",
+                    "magnitude": "large",
+                    "timespan": 50
+                }
+            }
+        },
+        "red-korea": {
+            "title": "The Red Peninsula",
+            "description": "North Korea conquers the South in 1950, creating a unified communist state.",
+            "divergence_description": "US intervention fails and Pusan collapses.",
+            "present_day_status": "The United Republic of Korea is a militarized industrial giant and nuclear superpower. 🎵🛑",
+            "events": {
+                "fall-of-pusan": {
+                    "title": "Fall of Pusan",
+                    "description": "The KPA pushes the US into the sea.",
+                    "impact": "Unification under communism."
+                }
+            },
+            "consequences": {
+                "nuclear-power": {
+                    "category": "political",
+                    "short_term": "Purges",
+                    "long_term": "A Nuclear Superpower rivaling China",
+                    "global_impact": "US influence in Asia shattered"
+                }
+            },
+            "butterfly_effects": {
+                "japan-remilitarized": {
+                    "trigger": "Red neighbor",
+                    "consequence": "Japan becomes a nuclear power to deter Korea",
+                    "magnitude": "massive",
+                    "timespan": 30
+                }
+            }
+        },
+        "blue-korea": {
+            "title": "The Miracle on the Han",
+            "description": "The UN forces unite the peninsula in 1951, leading to a unified democratic powerhouse.",
+            "divergence_description": "China does not intervene, allowing UN victory.",
+            "present_day_status": "Korea is the 3rd largest economy in the world. Pyongyang is a tech hub known as 'Silicon Valley of the North'. 🌌💻",
+            "events": {
+                "yalu-victory": {
+                    "title": "Christmas Home",
+                    "description": "UN forces secure the border. China stays out.",
+                    "impact": "Unification under democracy."
+                }
+            },
+            "consequences": {
+                "g7-power": {
+                    "category": "economic",
+                    "short_term": "Reconstruction",
+                    "long_term": "Korea becomes a G7 economy by 1990",
+                    "global_impact": "Strong US ally on China's border"
+                }
+            },
+            "butterfly_effects": {
+                "liberal-china": {
+                    "trigger": "Democratic neighbor",
+                    "consequence": "Pressure for reform in China accelerates",
+                    "magnitude": "medium",
+                    "timespan": 40
+                }
+            }
+        }
+    },
+    "figures": {
+        "kim-il-sung": {
+            "name": "Kim Il-sung",
+            "role": "The Great Leader",
+            "description": "Guerrilla leader turned dictator. Founder of North Korea."
+        },
+        "syngman-rhee": {
+            "name": "Syngman Rhee",
+            "role": "The First President",
+            "description": "Stubborn nationalist who led South Korea through its darkest hour."
+        },
+        "douglas-macarthur": {
+            "name": "Douglas MacArthur",
+            "role": "The American Caesar",
+            "description": "Supreme Commander who wanted to use nukes to win the war."
+        }
+    },
+    "scenarios": {
+        "liberation-1945": {
+            "title": "The Division (1945)",
+            "text": "Japan has surrendered. The US and Soviets are drawing a line at the 38th parallel. You are a Korean independence leader. What do you advocate?",
+            "choices": {
+                "trusteeship": {
+                    "text": "Accept trusteeship. Work for unified elections.",
+                    "consequence": "Hard negotiations, but it prevents the split."
+                },
+                "separate-gov": {
+                    "text": "Reject trusteeship. Establish a government in the South NOW.",
+                    "consequence": "The division solidifies. The North does the same."
+                }
+            }
+        },
+        "korean-war-start": {
+            "title": "The Invasion (1950)",
+            "text": "June 25, 1950. Northern tanks are crossing the border. Seoul is falling. The US is deciding whether to intervene.",
+            "choices": {
+                "inchon": {
+                    "text": "Organize a risky amphibious landing at Inchon.",
+                    "consequence": "It works! The North is cut off. We push to the North."
+                },
+                "retreat": {
+                    "text": "Hold the Pusan perimeter. Wait for reinforcements.",
+                    "consequence": "We hold, but the counter-attack is slow."
+                },
+                "collapse": {
+                    "text": "Evacuate to Japan. The position is lost.",
+                    "consequence": "The peninsula is lost. The Red Flag flies over Pusan."
+                }
+            }
+        },
+        "china-intervention": {
+            "title": "The Yalu River (1950)",
+            "text": "We have reached the Chinese border. Intelligence says 300,000 Chinese troops are waiting. MacArthur wants to bomb the bridges.",
+            "choices": {
+                "halt": {
+                    "text": "Halt the advance. Dig in at the narrow neck.",
+                    "consequence": "China feels safe and does not invade. We keep 90% of Korea."
+                },
+                "attack": {
+                    "text": "Attack! \"Home by Christmas!\"",
+                    "consequence": "Disaster. The Chinese trap us. We are pushed back to the 38th parallel."
+                },
+                "nukes": {
+                    "text": "Authorize MacArthur's request for nukes.",
+                    "consequence": "We win the war, but at what cost? WW3 begins."
+                }
+            }
+        },
+        "axe-murder-incident": {
+            "title": "Operation Paul Bunyan (1976)",
+            "text": "It is 1976. Two US officers were killed by North Koreans while trimming a tree in the DMZ. The US military is furious. DEFCON 3.",
+            "choices": {
+                "show-force": {
+                    "text": "Cut the tree down with massive overwhelming force. Do not shoot.",
+                    "consequence": "The North backs down. Historical timeline preserved."
+                },
+                "airstrike": {
+                    "text": "Launch an airstrike on the KPA barracks.",
+                    "consequence": "War erupts again. China is too weak to help the North this time."
+                },
+                "withdraw": {
+                    "text": "Pull back troops to avoid escalation.",
+                    "consequence": "The North sees this as weakness and ramps up aggression."
+                }
+            }
+        },
+        "nuclear-crisis-1994": {
+            "title": "The Nuclear Crisis (1994)",
+            "text": "North Korea is threatening to withdraw from the NPT and process plutonium. The Pentagon has drawn up plans for a strike on Yongbyon.",
+            "choices": {
+                "carter-deal": {
+                    "text": "Send Jimmy Carter to negotiate a freeze (Agreed Framework).",
+                    "consequence": "Crisis averted for now. They will likely cheat later."
+                },
+                "strike": {
+                    "text": "Execute the surgical strike on the reactor.",
+                    "consequence": "The reactor is destroyed, but Seoul is shelled. 2nd Korean War begins."
+                },
+                "coup-plot": {
+                    "text": "Fund a military coup against the leadership.",
+                    "consequence": "High risk. If it works, we get a neutral state."
+                }
+            }
+        }
+    }
+}

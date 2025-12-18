@@ -22,6 +22,7 @@ const CHAPTERS: ChapterSummary[] = [
   { id: 'hitler-rise', translationKey: 'hitler_rise', alternativeCount: 3, cardClass: 'bg-gray-700', image: '/images/chapters/hitler-rise/main.png' },
   { id: 'world-war-1', translationKey: 'world_war_1', alternativeCount: 3, cardClass: 'bg-yellow-700', image: '/images/chapters/world-war-1/main.png' },
   { id: 'world-war-2', translationKey: 'world_war_2', alternativeCount: 3, cardClass: 'bg-orange-700', image: '/images/chapters/world-war-2/main.png' },
+  { id: 'korea-destiny', translationKey: 'korea_destiny', alternativeCount: 3, cardClass: 'bg-indigo-800', image: '/images/chapters/korea-destiny/main.png' },
   { id: 'cold-war', translationKey: 'cold_war', alternativeCount: 3, cardClass: 'bg-indigo-700', image: '/images/chapters/cold-war/main.png' },
   { id: 'ussr-collapse', translationKey: 'ussr_collapse', alternativeCount: 3, cardClass: 'bg-pink-700', image: '/images/chapters/ussr-collapse/main.png' },
   { id: 'covid-pandemic', translationKey: 'covid_pandemic', alternativeCount: 3, cardClass: 'bg-teal-700', image: '/images/chapters/covid-pandemic/main.png' },

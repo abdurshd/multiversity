@@ -244,6 +244,10 @@ export const emojiToSvgMap: EmojiMapping = {
   '🤴': 'crown', // Prince -> crown
   '🐉': 'fire', // Dragon -> fire
   '👳': 'scroll', // Religious figure -> scroll
+  '🇰🇷': 'flag',
+  '🇰🇵': 'flag',
+  '🚄': 'airplane', // Train -> airplane (transport)
+  '🏙️': 'castle', // City -> castle
 };
 
 /**

@@ -8,6 +8,8 @@ import { Play, SkipBack, AlertOctagon, Activity, Shield, Zap, Globe, Sparkles, C
 import { useSimulation } from '../hooks/useSimulation';
 import { useTranslation } from 'react-i18next';
 
+import { loadChapterTranslations } from '../i18n';
+
 const StatCard: React.FC<{ label: string; value: number; color: string; icon: React.ReactNode }> = ({ label, value, color, icon }) => (
     <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-4 rounded-xl flex flex-col justify-between h-full relative overflow-hidden group hover:border-blue-500/30 transition-colors">
         <div className={`absolute top-0 right-0 p-2 opacity-20 group-hover:opacity-40 transition-opacity`}>
@@ -43,6 +45,9 @@ const SimulationHub: React.FC = () => {
     const { t } = useTranslation(['pages-simulation-hub']);
     const [chapter, setChapter] = useState<Chapter | null>(null);
     const [mode, setMode] = useState<'briefing' | 'simulation' | 'analyzing' | 'result'>('briefing');
+    const [chapterNamespace, setChapterNamespace] = useState<string | null>(null);
+    const [translationsLoaded, setTranslationsLoaded] = useState(false);
+    const { i18n } = useTranslation();
 
     // Use the simulation hook
     const { simulationState, makeChoice, advanceScenario, resetSimulation } = useSimulation();
@@ -52,8 +57,19 @@ const SimulationHub: React.FC = () => {
         if (chapterId) {
             const data = getChapterById(chapterId);
             setChapter(data || null);
+
+            // Load chapter translations
+            loadChapterTranslations(chapterId, i18n.language).then((namespace) => {
+                if (namespace) {
+                    setChapterNamespace(namespace);
+                    setTranslationsLoaded(true);
+                } else {
+                    // Fallback if loading fails, still consider loaded to show default English
+                    setTranslationsLoaded(true);
+                }
+            });
         }
-    }, [chapterId]);
+    }, [chapterId, i18n.language]);
 
     // Handle Autoplay from query params
     useEffect(() => {
@@ -261,7 +277,22 @@ const SimulationHub: React.FC = () => {
                             {/* Main Scenario Runner */}
                             <div className="lg:col-span-9 order-1 lg:order-2">
                                 <ScenarioRunner
-                                    scenario={chapter.interactiveScenarios[currentScenarioIndex]}
+                                    scenario={(() => {
+                                        const originalScenario = chapter.interactiveScenarios[currentScenarioIndex];
+                                        if (!chapterNamespace || !translationsLoaded) return originalScenario;
+
+                                        // Apply translations if available
+                                        return {
+                                            ...originalScenario,
+                                            title: t(`${chapterNamespace}:scenarios.${originalScenario.id}.title`, { defaultValue: originalScenario.title }),
+                                            text: t(`${chapterNamespace}:scenarios.${originalScenario.id}.text`, { defaultValue: originalScenario.text }),
+                                            choices: (originalScenario.choices || []).map(choice => ({
+                                                ...choice,
+                                                text: t(`${chapterNamespace}:scenarios.${originalScenario.id}.choices.${choice.id}.text`, { defaultValue: choice.text }),
+                                                consequence: t(`${chapterNamespace}:scenarios.${originalScenario.id}.choices.${choice.id}.consequence`, { defaultValue: choice.consequence })
+                                            }))
+                                        };
+                                    })()}
                                     onChoiceSelected={handleChoice}
                                     onComplete={() => { }}
                                 />

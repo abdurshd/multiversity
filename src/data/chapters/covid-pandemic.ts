@@ -1,38 +1,40 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
+// Key figures
 const keyFigures: Person[] = [
     {
-        id: 'dr-li-wenliang',
+        id: 'li-wenliang',
         name: 'Dr. Li Wenliang',
         role: 'The Whistleblower',
         born: 1986,
         died: 2020,
-        description: 'The ophthalmologist who tried to warn the world about the new virus. 🩺⚠️ His warning was silenced, but his legacy lives on.',
+        description: 'Warned the world and paid the ultimate price. 🩺',
         image: '/images/chapters/covid-pandemic/people/dr-li-wenliang.png'
     },
     {
         id: 'anthony-fauci',
         name: 'Dr. Anthony Fauci',
-        role: 'Public Health Leader',
+        role: 'The Doctor',
         born: 1940,
-        description: 'The face of the US pandemic response. 👨‍⚕️🇺🇸 Navigated the treacherous waters between science and politics.',
+        description: 'Trusted science over politics. 🔬',
         image: '/images/chapters/covid-pandemic/people/anthony-fauci.png'
     },
     {
-        id: 'tedros-adhanom',
-        name: 'Tedros Adhanom',
-        role: 'WHO Director-General',
-        born: 1965,
-        description: 'Leader of the World Health Organization during its greatest crisis. 🌍🇺🇳 Faced criticism and praise for global coordination efforts.',
-        image: '/images/chapters/covid-pandemic/people/tedros-adhanom.png'
+        id: 'jacinda-ardern',
+        name: 'Jacinda Ardern',
+        role: 'The Leader',
+        born: 1980,
+        description: 'Proved that empathy constitutes strong leadership. 🇳🇿',
+        image: '/images/chapters/covid-pandemic/people/jacinda-ardern.png'
     }
 ];
 
+// 1. Total Containment (The Miracle)
 const totalContainmentTimeline: Timeline = {
     id: 'total-containment',
-    title: 'Total Containment: The Bullet Dodged 🛡️🌏',
-    description: 'What if the world reacted immediately and effectively in January 2020?',
-    divergenceDescription: 'Global travel bans and strict lockdowns are implemented in early January 2020.',
+    title: 'The Wuhan Scare 🛡️🌏',
+    description: 'The virus is contained in January 2020. No global pandemic.',
+    divergenceDescription: 'Early and total lockdown of Hubei province.',
     divergenceYear: 2020,
     probability: 5,
     color: '#10B981',
@@ -40,287 +42,223 @@ const totalContainmentTimeline: Timeline = {
     image: '/images/chapters/covid-pandemic/timeline_1.png',
     keyEvents: [
         {
-            id: 'global-lockdown-jan-2020',
+            id: 'virus-crushed',
             year: 2020,
-            month: 1,
-            title: 'The Great Seal',
-            description: 'Nations coordinate to close all borders and ground flights immediately after the first sequence is released.',
-            impact: 'Virus is contained to Wuhan and a few isolated clusters.',
-            relatedFigures: ['tedros-adhanom'],
+            title: 'Virus Eliminated',
+            description: 'The WHO declares the outbreak over in March 2020.',
+            impact: 'Normalcy.',
+            relatedFigures: ['li-wenliang'],
             location: { lat: 30.5928, lng: 114.3055 },
-            type: 'political'
-        },
-        {
-            id: 'virus-eliminated-2020',
-            year: 2020,
-            month: 6,
-            title: 'Declaration of Victory',
-            description: 'WHO declares SARS-CoV-2 eliminated from the human population.',
-            impact: 'Life returns to normal. No global recession.',
-            relatedFigures: ['tedros-adhanom'],
-            location: { lat: 46.2044, lng: 6.1432 },
             type: 'social'
         }
     ],
     consequences: [
         {
-            id: 'surveillance-state',
-            category: 'political',
-            shortTerm: 'Pandemic averted, but privacy rights eroded.',
-            longTerm: 'Global bio-surveillance network becomes permanent.',
-            globalImpact: 'A safer but less free world where health data is constantly monitored.'
+            id: 'better-prepared',
+            category: 'social',
+            shortTerm: 'Relief',
+            longTerm: 'Better pandemic treaties',
+            globalImpact: 'A close call'
         }
     ],
     butterfly: [
         {
-            id: 'no-remote-work-revolution',
-            trigger: 'No lockdowns means no forced remote work experiment',
-            consequence: 'Office culture remains dominant. Digital nomad lifestyle remains niche.',
-            magnitude: 'medium',
-            timespan: 10
+            id: 'trump-reelection',
+            trigger: 'Strong Economy',
+            consequence: 'Trump wins 2020 without COVID recession',
+            magnitude: 'large',
+            timespan: 4
         }
     ],
-    presentDayStatus: 'COVID-19 is a footnote in medical textbooks, known as the "Wuhan Scare." However, everyone now wears smart-watches that report their temperature to the government daily. "For your safety," they say. ⌚👀'
+    presentDayStatus: 'COVID-19 is a trivia question. "Remember that scary virus in China?" Remote work is still a niche concept. 💼🚫'
 };
 
+// 2. Black Death Variant (Collapse)
 const blackDeathVariantTimeline: Timeline = {
     id: 'black-death-variant',
-    title: 'The Black Death Variant: Societal Collapse ☠️🏚️',
-    description: 'What if the virus mutated to be significantly more lethal?',
-    divergenceDescription: 'A mutation in late 2020 increases the mortality rate to 15%.',
-    divergenceYear: 2020,
+    title: 'The Delta Collapse ☠️🏚️',
+    description: 'A lethal mutation destroys global civilization.',
+    divergenceDescription: 'The Delta variant is 20% lethal.',
+    divergenceYear: 2021,
     probability: 10,
     color: '#18181B',
     icon: '☠️',
     image: '/images/chapters/covid-pandemic/timeline_2.png',
     keyEvents: [
         {
-            id: 'omega-variant-2020',
-            year: 2020,
-            month: 11,
-            title: 'The Omega Variant',
-            description: 'A highly lethal variant emerges. Hospitals collapse globally within weeks.',
-            impact: 'Mass panic. Supply chains break down. Cities are abandoned.',
-            relatedFigures: ['anthony-fauci'],
-            location: { lat: 40.7128, lng: -74.0060 },
-            type: 'social'
-        },
-        {
-            id: 'great-deurbanization-2021',
+            id: 'societal-breakdown',
             year: 2021,
-            title: 'The Great De-urbanization',
-            description: 'People flee cities to rural areas to escape infection. Modern civilization fractures.',
-            impact: 'End of the globalized economy. Return to local subsistence farming.',
+            title: 'Great Panic',
+            description: 'Supply chains fail. Cities empty.',
+            impact: 'Collapse.',
             relatedFigures: [],
             location: { lat: 0, lng: 0 },
-            type: 'economic'
+            type: 'social'
         }
     ],
     consequences: [
         {
-            id: 'digital-dark-age',
+            id: 'deurbanization',
             category: 'social',
-            shortTerm: 'Billions die. Global infrastructure fails.',
-            longTerm: 'Humanity survives in isolated, high-tech enclaves connected only by the internet.',
-            globalImpact: 'A neo-feudal world of "Clean Zones" and "Wildlands".'
+            shortTerm: 'Flight to country',
+            longTerm: 'Feudalism returns',
+            globalImpact: 'Dark Age'
         }
     ],
     butterfly: [
         {
-            id: 'vr-society',
-            trigger: 'Physical contact becomes deadly',
-            consequence: 'Society moves entirely into Virtual Reality. The Metaverse becomes the real world.',
-            magnitude: 'massive',
+            id: 'local-internet',
+            trigger: 'Fragile web',
+            consequence: 'Mesh networks replace the global internet',
+            magnitude: 'medium',
             timespan: 50
         }
     ],
-    presentDayStatus: 'The cities are overgrown ruins. The survivors live in hermetically sealed bunkers, interacting only through high-fidelity VR avatars. A handshake is considered a murder attempt. 🥽🏙️'
+    presentDayStatus: 'People live in isolated villages. Strangers are shot on sight. Zoom is the only government. 💻🔫'
 };
 
-const permanentPandemicTimeline: Timeline = {
-    id: 'permanent-pandemic',
-    title: 'The Forever Plague: A Divided World 😷🌐',
-    description: 'What if immunity was fleeting and vaccines failed to stop transmission?',
-    divergenceDescription: 'New variants constantly evade immunity. The pandemic never officially ends.',
+// 3. Open Source Vaccine (Global Equity)
+const openSourceTimeline: Timeline = {
+    id: 'open-source-vaccine',
+    title: 'Vaccine for All 💉🌍',
+    description: 'Patents are waived. The Global South is vaccinated by mid-2021.',
+    divergenceDescription: 'US/EU force IP waiver.',
     divergenceYear: 2021,
-    probability: 40,
-    color: '#F59E0B',
-    icon: '😷',
+    probability: 20,
+    color: '#3B82F6',
+    icon: '💉',
     image: '/images/chapters/covid-pandemic/timeline_3.png',
     keyEvents: [
         {
-            id: 'vaccine-failure-2021',
+            id: 'global-immunity',
             year: 2021,
-            title: 'The Evasion Crisis',
-            description: 'It becomes clear that vaccines prevent death but not infection, and immunity lasts only months.',
-            impact: 'Hope for "Herd Immunity" vanishes. Permanent mitigation becomes the strategy.',
+            title: 'Herd Immunity',
+            description: 'The virus runs out of hosts. Variants stop evolving.',
+            impact: 'End of Pandemic.',
             relatedFigures: ['anthony-fauci'],
-            location: { lat: 38.8977, lng: -77.0365 },
+            location: { lat: 0, lng: 0 },
             type: 'social'
-        },
-        {
-            id: 'bio-passports-2022',
-            year: 2022,
-            title: 'The Bio-Passport Act',
-            description: 'International travel is restricted to those with valid "Green Status" (boosted within 3 months).',
-            impact: 'Creation of a two-tier society: The Boosted and The Restricted.',
-            relatedFigures: [],
-            location: { lat: 46.2044, lng: 6.1432 },
-            type: 'political'
         }
     ],
     consequences: [
         {
-            id: 'sanitary-authoritarianism',
+            id: 'global-trust',
             category: 'political',
-            shortTerm: 'Permanent state of emergency.',
-            longTerm: 'Health status determines all civil rights.',
-            globalImpact: 'Democracy is replaced by Technocratic Biosecurity States.'
+            shortTerm: 'North-South trust restored',
+            longTerm: 'Stronger WHO',
+            globalImpact: 'Health equity'
         }
     ],
     butterfly: [
         {
-            id: 'medical-acceleration',
-            trigger: 'Constant viral threat',
-            consequence: 'Massive investment in biotech leads to cures for cancer and aging, but only for the rich.',
-            magnitude: 'large',
-            timespan: 20
+            id: 'biotech-boom',
+            trigger: 'Shared mRNA tech',
+            consequence: 'Malaria and HIV cured by 2025',
+            magnitude: 'massive',
+            timespan: 10
         }
     ],
-    presentDayStatus: 'You need a QR code to enter a grocery store. Masks are a fashion statement and a legal requirement. The world is divided into "Green Zones" (wealthy, tested daily) and "Red Zones" (poor, endemic infection). But hey, mRNA technology cured cancer! 🧬🎫'
+    presentDayStatus: 'The "Helsinki Accords" guarantee medicine as a human right. The Global South is rising fast. 🌍🚀'
 };
 
+const interactiveScenarios: InteractiveScenario[] = [
+    {
+        id: 'wuhan-warning',
+        title: 'The Whistleblower (Dec 2019)',
+        text: 'Wuhan. Dr. Li Wenliang has posted a warning about "SARS-like pneumonia". The police summon you. Do you silence him?',
+        emoji: '🩺',
+        background: 'from-gray-900 to-red-900',
+        characters: ['🩺', '👮', '🦠'],
+        sceneType: 'decision',
+        timelineYear: 2019,
+        timelineEvent: 'Patient Zero',
+        choices: [
+            {
+                id: 'silence',
+                text: 'Silence him. Prevent panic.',
+                consequence: 'The virus spreads in secret. The global pandemic becomes inevitable.',
+                // Historical
+                nextSceneId: 'lockdown-decision'
+            },
+            {
+                id: 'listen',
+                text: 'Listen to him. Quarantine the city NOW.',
+                consequence: 'It is drastic, but effective. The virus is trapped.',
+                linkedTimelineId: 'total-containment'
+            }
+        ]
+    },
+    {
+        id: 'lockdown-decision',
+        title: 'To Close or Not to Close (March 2020)',
+        text: 'The virus is here. Scientists want a lockdown. The economy will crash. What is more important?',
+        emoji: '📉',
+        background: 'from-blue-900 to-black',
+        characters: ['📉', '🏥', '👔'],
+        sceneType: 'decision',
+        timelineYear: 2020,
+        choices: [
+            {
+                id: 'lockdown',
+                text: 'Lock it down. Save lives.',
+                consequence: 'The economy tanks, but hospitals survive. (Historical)',
+                modifiers: [{ stat: 'diplomacy', value: 20 }, { stat: 'freedom', value: -30 }],
+                nextSceneId: 'vaccine-equity'
+            },
+            {
+                id: 'open',
+                text: 'Keep it open. "It\'s just the flu."',
+                consequence: 'Mass death. Healthcare collapse. You are voted out.',
+                modifiers: [{ stat: 'chaos', value: 50 }],
+                linkedTimelineId: 'black-death-variant' // Leads to worse variant
+            }
+        ]
+    },
+    {
+        id: 'vaccine-equity',
+        title: 'The Vaccine Apartheid (2021)',
+        text: 'We have the vaccine. The Global South has none. Pharma wants to protect patents.',
+        emoji: '💉',
+        background: 'from-green-900 to-blue-900',
+        characters: ['💉', '💰', '🌍'],
+        sceneType: 'decision',
+        timelineYear: 2021,
+        choices: [
+            {
+                id: 'protect-patents',
+                text: 'Protect the patents. Incentivize innovation.',
+                consequence: 'Poor countries wait. Omicron emerges from the unvaccinated.',
+                // Historical
+            },
+            {
+                id: 'waive-patents',
+                text: 'Waive the patents. Share the recipe.',
+                consequence: 'Factories open worldwide. The virus is cornered.',
+                linkedTimelineId: 'open-source-vaccine'
+            }
+        ]
+    }
+];
+
+// Main chapter data
 export const covidPandemicChapter: Chapter = {
     id: 'covid-pandemic',
-    title: 'The COVID-19 Pandemic',
+    title: 'The Pandemic',
     period: '2019-2023',
     startYear: 2019,
     endYear: 2025,
-    description: 'The invisible enemy that stopped the world. 🦠🛑 From wet markets to lockdowns, this chapter explores how a microscopic virus reshaped global society, economy, and politics forever.',
-    historicalContext: 'In late 2019, a novel coronavirus emerged in Wuhan, China. Within months, it spread globally, causing the greatest public health crisis in a century. Governments responded with unprecedented lockdowns, masking mandates, and rapid vaccine development. The pandemic accelerated digital transformation but also exposed deep social inequalities.',
+    description: 'The years we stayed home. 😷🏠',
+    historicalContext: 'A microscopic enemy.',
     keyFigures,
-    divergencePoint: 'Emergence of SARS-CoV-2',
+    divergencePoint: 'Wuhan Response',
     divergenceYear: 2019,
     alternativeTimelines: [
         totalContainmentTimeline,
         blackDeathVariantTimeline,
-        permanentPandemicTimeline
+        openSourceTimeline,
     ],
+    interactiveScenarios,
     mainImage: '/images/chapters/covid-pandemic/main.png',
     icon: '🦠',
-    interactiveScenarios: [
-        {
-            id: 'wuhan-warning',
-            title: 'The Whistleblower (Dec 2019)',
-            text: 'It is December 30, 2019. You are a health official in Wuhan. A report comes in about a cluster of pneumonia cases connected to a seafood market. Dr. Li Wenliang is warning colleagues in a chat group. What do you do?',
-            emoji: '🩺',
-            background: 'bg-gray-900',
-            characters: ['👨‍⚕️', '👮', '🦠'],
-            sceneType: 'decision',
-            timelineYear: 2019,
-            timelineEvent: 'The First Warning',
-            choices: [
-                {
-                    id: 'suppress',
-                    text: 'Suppress the rumors to prevent panic. Reprimand the doctor.',
-                    consequence: 'The virus spreads unchecked during the Lunar New Year travel rush. The historical pandemic timeline begins.'
-                },
-                {
-                    id: 'investigate',
-                    text: 'Immediately investigate and quarantine the market. Notify the WHO.',
-                    consequence: 'Early containment slows the spread, but it leaks out. A milder pandemic occurs.'
-                },
-                {
-                    id: 'lockdown',
-                    text: 'Trigger emergency protocols. Lockdown the city immediately.',
-                    consequence: 'The virus is contained within Hubei province. The "Total Containment" timeline begins.'
-                }
-            ]
-        },
-        {
-            id: 'lockdown-dilemma',
-            title: 'The Lockdown Decision (March 2020)',
-            text: 'It is March 2020. The virus is spreading rapidly in your country. Hospitals are filling up. Scientists recommend a total lockdown, but economists warn it will destroy the economy. What is your order?',
-            emoji: '🏘️',
-            background: 'bg-blue-900',
-            characters: ['👔', '📉', '🏥'],
-            sceneType: 'decision',
-            timelineYear: 2020,
-            timelineEvent: 'Global Shutdown',
-            choices: [
-                {
-                    id: 'hard-lockdown',
-                    text: 'Implement a strict, indefinite lockdown. "Two weeks to flatten the curve."',
-                    consequence: 'Lives are saved, but small businesses are decimated. Mental health crisis ensues. (Historical)'
-                },
-                {
-                    id: 'herd-immunity',
-                    text: 'Keep society open. Protect the vulnerable but let the virus spread.',
-                    consequence: 'Hospitals are overwhelmed. Death toll skyrockets. Public trust collapses.'
-                },
-                {
-                    id: 'sweden-model',
-                    text: 'Recommend voluntary measures. Trust the citizens.',
-                    consequence: 'Moderate death toll. Economy survives better, but you face intense international criticism.'
-                }
-            ]
-        },
-        {
-            id: 'vaccine-race',
-            title: 'The Vaccine Race (Late 2020)',
-            text: 'It is late 2020. Several vaccines are showing promise. You are the head of the WHO. How do you manage the global rollout?',
-            emoji: '💉',
-            background: 'bg-blue-900',
-            characters: ['🌍', '💉', '💰'],
-            sceneType: 'decision',
-            timelineYear: 2020,
-            timelineEvent: 'Operation Warp Speed',
-            choices: [
-                {
-                    id: 'nationalism',
-                    text: 'Allow countries to bid for doses. Highest bidder gets them first.',
-                    consequence: 'Rich nations get vaccinated, poor nations don\'t. Variants breed in the Global South. The "Permanent Pandemic" timeline begins.'
-                },
-                {
-                    id: 'covax',
-                    text: 'Enforce a strict global equity plan (COVAX).',
-                    consequence: 'Slower rollout in rich nations causes political unrest, but the virus is eradicated globally by 2023.'
-                },
-                {
-                    id: 'open-source',
-                    text: 'Force pharmaceutical companies to open-source the vaccine recipes.',
-                    consequence: 'Production explodes globally. The pandemic ends in record time, but pharma stocks crash.'
-                }
-            ]
-        },
-        {
-            id: 'lab-leak-investigation',
-            title: 'The Origins Investigation (2021)',
-            text: 'Intelligence reports suggest the virus might have leaked from a lab. Diplomatic tensions are high. How do you handle the investigation?',
-            emoji: '🔬',
-            background: 'bg-green-900',
-            characters: ['🕵️', '🇨🇳', '🇺🇸'],
-            sceneType: 'revelation',
-            timelineYear: 2021,
-            timelineEvent: 'The Origins Debate',
-            choices: [
-                {
-                    id: 'diplomatic',
-                    text: 'Conduct a joint, polite investigation to avoid conflict.',
-                    consequence: 'The report is inconclusive. Theories proliferate. The truth remains buried. (Historical)'
-                },
-                {
-                    id: 'aggressive',
-                    text: 'Demand full transparency and threaten sanctions.',
-                    consequence: 'A new Cold War begins. Global cooperation on health collapses.'
-                },
-                {
-                    id: 'cover-up',
-                    text: 'Suppress the lab leak theory to maintain scientific trust.',
-                    consequence: 'When evidence leaks later, public trust in science is permanently destroyed.'
-                }
-            ]
-        }
-    ],
     backgroundColor: 'from-green-900 to-gray-900'
 };

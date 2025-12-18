@@ -1,0 +1,203 @@
+{
+    "meta": {
+        "title": "Koreya Yarim Orolining Taqdiri",
+        "description": "Kitlar orasidagi qisqichbaqa. Global kuchlar uchun olovli nuqtaga aylangan bo'lingan millat.",
+        "period": "1945-2025",
+        "historical_context": "1945 yilda, 35 yillik Yaponiya istilosidan so'ng, Koreya ozod qilindi, ammo darhol AQSh va Sovet Ittifoqi tomonidan bo'lib tashlandi. Bu bo'linish 1950 yilda vayronagarchilik urushiga va 70 yillik qarama-qarshilikka olib keldi. Ammo o'sha dastlabki yillarda qabul qilingan qarorlar boshqacha bo'lganida-chi?",
+        "divergence_point": "1945 Ozodlik va Bo'linish"
+    },
+    "timelines": {
+        "neutral-korea": {
+            "title": "Sharqiy Qal'a",
+            "description": "Koreya kuchli qurollangan neytral davlat sifatida birlashadi. Hech qanday buyuk kuch tegishga jur'at eta olmaydigan 'tipratikan' davlat.",
+            "divergence_description": "AQSh va Sovetlar yagona vasiylik hukumatiga ro'zi bo'lishadi.",
+            "present_day_status": "Koreya neytralitet qal'asi. Har bir fuqaro askar, ammo urush bo'lmaydi. Seul Osiyoning diplomatik poytaxti. 🕊️🛡️",
+            "events": {
+                "unified-election": {
+                    "title": "Buyuk Saylov",
+                    "description": "Koalitsion hukumat tuzildi. Xorijiy qo'shinlar chiqib ketdi.",
+                    "impact": "Tinchlik."
+                }
+            },
+            "consequences": {
+                "economic-hub": {
+                    "category": "iqtisodiy",
+                    "short_term": "Sekin o'sish",
+                    "long_term": "Osiyo savdo markazi",
+                    "global_impact": "Koreya urushi yo'q"
+                }
+            },
+            "butterfly_effects": {
+                "no-cold-war-hot-war": {
+                    "trigger": "Koreya urushi yo'q",
+                    "consequence": "Sovuq urush sovuqroq qoladi. Xitoy rivojlanishga ertaroq e'tibor qaratadi.",
+                    "magnitude": "katta",
+                    "timespan": 50
+                }
+            }
+        },
+        "red-korea": {
+            "title": "Qizil Yarim Orol",
+            "description": "Shimoliy Koreya 1950 yilda Janubni bosib olib, yagona kommunistik davlat yaratadi.",
+            "divergence_description": "AQSh aralashuvi muvaffaqiyatsizlikka uchraydi va Pusan qulab tushadi.",
+            "present_day_status": "Birlashgan Koreya Respublikasi harbiylashgan sanoat giganti va yadroviy superkuch. 🎵🛑",
+            "events": {
+                "fall-of-pusan": {
+                    "title": "Pusanning qulashi",
+                    "description": "KPA AQShni dengizga surib chiqaradi.",
+                    "impact": "Kommunizm ostida birlashish."
+                }
+            },
+            "consequences": {
+                "nuclear-power": {
+                    "category": "siyosiy",
+                    "short_term": "Tozalashlar",
+                    "long_term": "Xitoyga raqib yadroviy superkuch",
+                    "global_impact": "AQShning Osiyodagi ta'siri parchalandi"
+                }
+            },
+            "butterfly_effects": {
+                "japan-remilitarized": {
+                    "trigger": "Qizil qo'shni",
+                    "consequence": "Yaponiya Koreyani tiyib turish uchun yadroviy kuchga aylanadi",
+                    "magnitude": "juda katta",
+                    "timespan": 30
+                }
+            }
+        },
+        "blue-korea": {
+            "title": "Xan daryosidagi mo'jiza",
+            "description": "BMT kuchlari 1951 yilda yarim orolni birlashtirib, yagona demokratik kuch markaziga olib keladi.",
+            "divergence_description": "Xitoy aralashmaydi, bu BMT g'alabasiga imkon beradi.",
+            "present_day_status": "Koreya dunyodagi 3-eng yirik iqtisodiyotdir. Pxenyan 'Shimolning Silikon vodiysi' sifatida tanilgan texnologik markaz. 🌌💻",
+            "events": {
+                "yalu-victory": {
+                    "title": "Rojdestvo Uyi",
+                    "description": "BMT kuchlari chegarani himoya qiladi. Xitoy aralashmaydi.",
+                    "impact": "Demokratiya ostida birlashish."
+                }
+            },
+            "consequences": {
+                "g7-power": {
+                    "category": "iqtisodiy",
+                    "short_term": "Qayta qurish",
+                    "long_term": "Koreya 1990 yilga kelib G7 iqtisodiyotiga aylanadi",
+                    "global_impact": "Xitoy chegarasida kuchli AQSh ittifoqchisi"
+                }
+            },
+            "butterfly_effects": {
+                "liberal-china": {
+                    "trigger": "Demokratik qo'shni",
+                    "consequence": "Xitoyda islohotlar uchun bosim kuchayadi",
+                    "magnitude": "o'rta",
+                    "timespan": 40
+                }
+            }
+        }
+    },
+    "figures": {
+        "kim-il-sung": {
+            "name": "Kim Ir Sen",
+            "role": "Buyuk Yetakchi",
+            "description": "Partizan yetakchisidan diktatorga aylangan. Shimoliy Koreya asoschisi."
+        },
+        "syngman-rhee": {
+            "name": "Li Sin Man",
+            "role": "Birinchi Prezident",
+            "description": "Janubiy Koreyani eng qorong'u soatlarda boshqargan qaysar millatparvar."
+        },
+        "douglas-macarthur": {
+            "name": "Duglas Mak Artur",
+            "role": "Amerika Sezari",
+            "description": "Urushda g'alaba qozonish uchun yadro qurolidan foydalanishni istagan Oliy qo'mondon."
+        }
+    },
+    "scenarios": {
+        "liberation-1945": {
+            "title": "Bo'linish (1945)",
+            "text": "Yaponiya taslim bo'ldi. AQSh va Sovetlar 38-parallel bo'ylab chiziq chizmoqda. Siz Koreya mustaqilligi yetakchisisiz. Nima qilasiz?",
+            "choices": {
+                "trusteeship": {
+                    "text": "Vasiylikni qabul qilish. Birlashgan saylovlar uchun ishlash.",
+                    "consequence": "Qiyin muzokaralar, ammo bu bo'linishning oldini oladi."
+                },
+                "separate-gov": {
+                    "text": "Vasiylikni rad etish. Hozir Janubda hukumat tuzish.",
+                    "consequence": "Bo'linish kuchayadi. Shimol ham shunday qiladi."
+                }
+            }
+        },
+        "korean-war-start": {
+            "title": "Bosqin (1950)",
+            "text": "1950 yil 25 iyun. Shimoliy tanklar chegarani kesib o'tmoqda. Seul qulamoqda. AQSh aralashish yoki aralashmaslikni hal qilmoqda.",
+            "choices": {
+                "inchon": {
+                    "text": "Inchondagi xavfli desant tushirishni tashkil etish.",
+                    "consequence": "Bu ish berdi! Shimol kesib tashlandi. Biz Shimolga yuramiz."
+                },
+                "retreat": {
+                    "text": "Pusan perimetrini ushlab turish. Kuchlarni kutish.",
+                    "consequence": "Biz ushlab turibmiz, ammo qarshi hujum sekin."
+                },
+                "collapse": {
+                    "text": "Yaponiyaga evakuatsiya qilish. Pozitsiya boy berildi.",
+                    "consequence": "Yarim orol boy berildi. Qizil bayroq Pusan uzra hilpiramoqda."
+                }
+            }
+        },
+        "china-intervention": {
+            "title": "Yalu Daryosi (1950)",
+            "text": "Biz Xitoy chegarasiga yetdik. Razvedka 300,000 Xitoy askari kutayotganini aytmoqda. Mak Artur ko'priklarni bombardimon qilmoqchi.",
+            "choices": {
+                "halt": {
+                    "text": "Hujumni to'xtatish. Tor bo'yin qismida mustahkamlanish.",
+                    "consequence": "Xitoy o'zini xavfsiz his qiladi va bostirib kirmaydi. Biz Koreyaning 90% ini saqlab qolamiz."
+                },
+                "attack": {
+                    "text": "Hujum! \"Rojdestvogacha uyda bo'lamiz!\"",
+                    "consequence": "Falokat. Xitoyliklar bizni tuzoqqa tushirishdi. Biz 38-parallelgacha ortga surildik."
+                },
+                "nukes": {
+                    "text": "Mak Arturning yadro quroli bo'yicha so'rovini tasdiqlash.",
+                    "consequence": "Biz urushda yutdik, ammo qanday narx evaziga? Uchinchi jahon urushi boshlandi."
+                }
+            }
+        },
+        "axe-murder-incident": {
+            "title": "Pol Bunyan Operatsiyasi (1976)",
+            "text": "1976 yil. Ikki AQSh ofitseri DMZda daraxt kesayotganda Shimoliy Koreyaliklar tomonidan o'ldirildi. AQSh harbiylari g'azabda. DEFCON 3.",
+            "choices": {
+                "show-force": {
+                    "text": "Daraxtni katta kuch bilan kesib tashlash. Otilmasa, otmaslik.",
+                    "consequence": "Shimol chekinadi. Tarixiy voqealar saqlanib qoldi."
+                },
+                "airstrike": {
+                    "text": "KPA kazarmalariga havo hujumi uyushtirish.",
+                    "consequence": "Urush yana boshlanadi. Xitoy bu safar Shimolga yordam berish uchun juda kuchsiz."
+                },
+                "withdraw": {
+                    "text": "Kuchayib ketmasligi uchun qo'shinlarni olib chiqish.",
+                    "consequence": "Shimol buni zaiflik deb biladi va tajovuzkorlikni kuchaytiradi."
+                }
+            }
+        },
+        "nuclear-crisis-1994": {
+            "title": "Yadroviy Inqiroz (1994)",
+            "text": "Shimoliy Koreya NPTdan chiqish va plutoniyni qayta ishlash bilan tahdid qilmoqda. Pentagon Yonbyonga zarba berish rejalarini tuzdi.",
+            "choices": {
+                "carter-deal": {
+                    "text": "Jimmi Karterni kelishuv muzokaralari uchun yuborish (Kelishilgan doiralar).",
+                    "consequence": "Inqiroz hozircha bartaraf etildi. Ular keyinchalik aldaydilar."
+                },
+                "strike": {
+                    "text": "Reaktorga jarrohlik zarbasini berish.",
+                    "consequence": "Reaktor yo'q qilindi, ammo Seul o'qqa tutildi. 2-Koreya urushi boshlandi."
+                },
+                "coup-plot": {
+                    "text": "Rahbariyatga qarshi harbiy to'ntarishni moliyalashtirish.",
+                    "consequence": "Yuqori xavf. Agar ish bersa, biz neytral davlatga ega bo'lamiz."
+                }
+            }
+        }
+    }
+}

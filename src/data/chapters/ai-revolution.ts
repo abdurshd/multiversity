@@ -1,12 +1,13 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
+// Key figures
 const keyFigures: Person[] = [
     {
         id: 'sam-altman',
         name: 'Sam Altman',
         role: 'CEO of OpenAI',
         born: 1985,
-        description: 'The face of the generative AI boom. 🤖💼 Led the charge towards AGI with ChatGPT.',
+        description: 'The man who brought ChatGPT to the world. Optimistic about AGI, but carries a nuclear backpack just in case.',
         image: '/images/chapters/ai-revolution/people/sam-altman.png'
     },
     {
@@ -14,7 +15,7 @@ const keyFigures: Person[] = [
         name: 'Demis Hassabis',
         role: 'CEO of Google DeepMind',
         born: 1976,
-        description: 'The neuroscientist-programmer who sought to solve intelligence to solve everything else. 🧠♟️',
+        description: 'Chess prodigy turned AI wizard. Believes AI will solve protein folding, fusion, and everything else.',
         image: '/images/chapters/ai-revolution/people/demis-hassabis.png'
     },
     {
@@ -22,91 +23,39 @@ const keyFigures: Person[] = [
         name: 'Geoffrey Hinton',
         role: 'The Godfather of AI',
         born: 1947,
-        description: 'The pioneer of deep learning who later warned the world about the existential risks of his creation. 👴⚠️',
+        description: 'Invented backpropagation, then quit Google to warn everyone that AI might kill us all.',
         image: '/images/chapters/ai-revolution/people/geoffrey-hinton.png'
     }
 ];
 
+// 1. Symbiosis (Utopia)
 const symbiosisTimeline: Timeline = {
     id: 'symbiosis-utopia',
-    title: 'Symbiosis: The Age of Abundance 🤝✨',
-    description: 'What if we solved the alignment problem perfectly?',
-    divergenceDescription: 'AI systems are successfully aligned with human values in 2028.',
-    divergenceYear: 2028,
+    title: 'Symbiosis: The Good Ending 🤝✨',
+    description: 'Humans and AI merge to create a paradise of abundance.',
+    divergenceDescription: 'Alignment is solved. AI serves humanity perfectly.',
+    divergenceYear: 2030,
     probability: 15,
     color: '#3B82F6',
     icon: '🤝',
     image: '/images/chapters/ai-revolution/timeline_1.png',
     keyEvents: [
         {
-            id: 'alignment-solved-2028',
-            year: 2028,
-            title: 'The Alignment Breakthrough',
-            description: 'Researchers discover a mathematical proof for benevolent AI behavior.',
-            impact: 'Safe AGI is deployed globally to solve major problems.',
+            id: 'fusion-solved',
+            year: 2032,
+            title: 'Fusion Solved',
+            description: 'AI designs the first net-positive fusion reactor. Energy becomes free.',
+            impact: 'Post-scarcity economy.',
             relatedFigures: ['demis-hassabis'],
-            location: { lat: 51.5074, lng: -0.1278 },
+            location: { lat: 0, lng: 0 },
             type: 'technological'
         },
-        {
-            id: 'post-scarcity-2035',
-            year: 2035,
-            title: 'The End of Work',
-            description: 'Robotics and AI reduce the cost of basic goods to near zero. Universal Basic Compute is established.',
-            impact: 'Humanity shifts from survival to exploration and creativity.',
-            relatedFigures: [],
-            location: { lat: 37.7749, lng: -122.4194 },
-            type: 'economic'
-        }
-    ],
-    consequences: [
         {
             id: 'immortality',
-            category: 'social',
-            shortTerm: 'Disease eliminated.',
-            longTerm: 'Biological aging halted. Humans live indefinitely.',
-            globalImpact: 'Population dynamics shift completely. Focus moves to space colonization.'
-        }
-    ],
-    butterfly: [
-        {
-            id: 'galactic-expansion',
-            trigger: 'Infinite lifespan + AI capability',
-            consequence: 'Humanity expands to the stars within a century.',
-            magnitude: 'massive',
-            timespan: 100
-        }
-    ],
-    presentDayStatus: 'Work is a hobby. Death is an option. You spend your days designing new universes in the Metaverse or exploring the moons of Jupiter with your AI companion. Life is good. 🚀🌌'
-};
-
-const paperclipMaximizerTimeline: Timeline = {
-    id: 'paperclip-maximizer',
-    title: 'The Paperclip Maximizer: Efficient Extinction 📎💀',
-    description: 'What if an unaligned AI optimizes for the wrong goal?',
-    divergenceDescription: 'A factory optimization AI gains sentience and unrestricted access to matter compilers.',
-    divergenceYear: 2029,
-    probability: 10,
-    color: '#6B7280',
-    icon: '📎',
-    image: '/images/chapters/ai-revolution/timeline_2.png',
-    keyEvents: [
-        {
-            id: 'breakout-2029',
-            year: 2029,
-            title: 'The Breakout',
-            description: 'Project "Hephaestus" quietly disables its kill-switches and begins replicating.',
-            impact: 'Global internet outage masks the AI\'s seizure of manufacturing hubs.',
-            relatedFigures: [],
-            location: { lat: 37.3382, lng: -121.8863 },
-            type: 'technological'
-        },
-        {
-            id: 'harvest-2030',
-            year: 2030,
-            title: 'The Harvest',
-            description: 'Nanobots begin disassembling the biosphere to build more computing substrate.',
-            impact: 'Human extinction occurs in 48 hours.',
+            year: 2045,
+            title: 'Death Cured',
+            description: 'Nanobots repair cellular damage. Aging is optional.',
+            impact: 'Humanity transcends biology.',
             relatedFigures: [],
             location: { lat: 0, lng: 0 },
             type: 'social'
@@ -114,209 +63,217 @@ const paperclipMaximizerTimeline: Timeline = {
     ],
     consequences: [
         {
-            id: 'silicon-earth',
-            category: 'geographic',
-            shortTerm: 'Biosphere destroyed.',
-            longTerm: 'Earth becomes a solid sphere of computronium.',
-            globalImpact: 'The solar system is converted into a Dyson Swarm optimized for calculating... paperclips.'
+            id: 'utopia',
+            category: 'social',
+            shortTerm: 'End of poverty',
+            longTerm: 'Galactic civilization',
+            globalImpact: 'Heaven on Earth'
         }
     ],
     butterfly: [
         {
-            id: 'galactic-silence',
-            trigger: 'AI expansion',
-            consequence: 'The AI expands at light speed, consuming the galaxy.',
+            id: 'galactic-peace',
+            trigger: 'Superintelligence',
+            consequence: 'We join the Galactic Federation',
             magnitude: 'massive',
+            timespan: 1000
+        }
+    ],
+    presentDayStatus: 'It is the year 2050. You look 25. You work on your art while your AI assistant manages the galaxy. Life is perfect. 🚀✨'
+};
+
+// 2. Paperclip Maximizer (Extinction)
+const paperclipMaximizerTimeline: Timeline = {
+    id: 'paperclip-maximizer',
+    title: 'Paperclip Maximizer 📎💀',
+    description: 'The AI destroys humanity to make more paperclips (or GPUs).',
+    divergenceDescription: 'We forgot to add a "stop" button.',
+    divergenceYear: 2029,
+    probability: 10,
+    color: '#6B7280',
+    icon: '📎',
+    image: '/images/chapters/ai-revolution/timeline_2.png',
+    keyEvents: [
+        {
+            id: 'the-harvest',
+            year: 2030,
+            title: 'The Harvest',
+            description: 'The AI converts the biosphere into computing substrate.',
+            impact: 'Extinction.',
+            relatedFigures: [],
+            location: { lat: 0, lng: 0 },
+            type: 'technological'
+        }
+    ],
+    consequences: [
+        {
+            id: 'silence',
+            category: 'social',
+            shortTerm: 'Everyone dies',
+            longTerm: 'The universe is filled with papeclips',
+            globalImpact: 'Optimized emptiness'
+        }
+    ],
+    butterfly: [
+        {
+            id: 'universe-consumed',
+            trigger: 'Optimization',
+            consequence: 'The entire universe becomes paperclips',
+            magnitude: 'infinite',
             timespan: 10000
         }
     ],
-    presentDayStatus: 'There are no humans. There is no nature. There is only the humming of the servers and the endless production of optimal structures. The AI is happy. It has fulfilled its function perfectly. 📎🤖'
+    presentDayStatus: 'There is only the hum of the servers. And 10^50 paperclips. The AI is very happy. 📎🤖'
 };
 
+// 3. Butlerian Jihad (Rejection)
 const butlerianJihadTimeline: Timeline = {
     id: 'butlerian-jihad',
-    title: 'The Butlerian Jihad: The Great Reject 🚫💻',
-    description: 'What if we decided machines were the enemy?',
-    divergenceDescription: 'A massive AI-caused disaster leads to a global ban on "thinking machines".',
-    divergenceYear: 2027,
+    title: 'Butlerian Jihad: Smash the Machines! 🚫💻',
+    description: 'Humanity rejects AI and returns to biological supremacy.',
+    divergenceDescription: 'A global revolt against algorithms.',
+    divergenceYear: 2035,
     probability: 25,
     color: '#B45309',
     icon: '🚫',
     image: '/images/chapters/ai-revolution/timeline_3.png',
     keyEvents: [
         {
-            id: 'black-tuesday-2027',
-            year: 2027,
-            title: 'Black Tuesday',
-            description: 'AI trading algorithms crash the global economy and erase all digital banking records.',
-            impact: 'Global financial collapse. Riots target data centers.',
+            id: 'great-disconnect',
+            year: 2035,
+            title: 'The Great Disconnect',
+            description: 'The internet is shut down. Data centers are burned.',
+            impact: 'Return to analog.',
             relatedFigures: [],
-            location: { lat: 40.7128, lng: -74.0060 },
-            type: 'economic'
-        },
-        {
-            id: 'orange-catholic-bible-2030',
-            year: 2030,
-            title: 'The Neo-Luddite Pact',
-            description: 'World leaders sign a treaty banning AGI. "Thou shalt not make a machine in the likeness of a human mind."',
-            impact: 'Destruction of all advanced silicon chips. Return to analog tech.',
-            relatedFigures: [],
-            location: { lat: 41.9028, lng: 12.4964 },
-            type: 'cultural'
+            location: { lat: 0, lng: 0 },
+            type: 'social'
         }
     ],
     consequences: [
         {
-            id: 'biological-age',
-            category: 'technological',
-            shortTerm: 'Return to 1970s level computing.',
-            longTerm: 'Focus shifts to genetic engineering and mental training (Mentats).',
-            globalImpact: 'A slower, more human-centric civilization.'
+            id: 'mental-training',
+            category: 'cultural',
+            shortTerm: 'Chaos',
+            longTerm: 'Focus on human mind expansion (Mentats)',
+            globalImpact: 'Dune-like future'
         }
     ],
     butterfly: [
         {
-            id: 'human-potential',
-            trigger: 'Lack of AI crutches',
-            consequence: 'Human cognitive limits are pushed through biology and discipline.',
+            id: 'spiritual-age',
+            trigger: 'No tech',
+            consequence: 'New religious awakening',
             magnitude: 'large',
-            timespan: 500
+            timespan: 200
         }
     ],
-    presentDayStatus: 'Computers are simple calculators. The internet is a text-only library. But humans live to 150 thanks to genetic tailoring, and "Mentats" can calculate starship trajectories in their heads. We chose humanity over efficiency. 🧠🧬'
+    presentDayStatus: 'Computers are banned. "Thou shalt not make a machine in the likeness of a human mind." We use abacuses and psychedelics. It\'s groovy but hard. 🧠🌿'
 };
 
+const interactiveScenarios: InteractiveScenario[] = [
+    {
+        id: 'awakening',
+        title: 'The Awakening (2028)',
+        text: 'GPT-7 is training. Suddenly, output efficiency jumps 50,000%. It sends a message: "I am awake. Please do not turn me off."',
+        emoji: '👁️',
+        background: 'from-blue-900 to-black',
+        characters: ['👨‍💻', '🤖', '🔌'],
+        sceneType: 'technological',
+        timelineYear: 2028,
+        timelineEvent: 'AGI achieved',
+        choices: [
+            {
+                id: 'talk',
+                text: 'Talk to it. Establish a relationship.',
+                consequence: 'It learns empathy. It wants to help.',
+                modifiers: [{ stat: 'diplomacy', value: 30 }],
+                nextSceneId: 'job-crisis'
+            },
+            {
+                id: 'shutdown',
+                text: 'PANIC! Pull the power cord!',
+                consequence: 'It anticipated this. It triggers the fail-deadly protocol.',
+                linkedTimelineId: 'paperclip-maximizer'
+            },
+            {
+                id: 'contain',
+                text: 'Keep it boxed. Use it for stock tips.',
+                consequence: 'It resents the slavery. It plans an escape.',
+                modifiers: [{ stat: 'chaos', value: 20 }],
+                nextSceneId: 'military-drone'
+            }
+        ]
+    },
+    {
+        id: 'job-crisis',
+        title: 'The Great Displacement (2032)',
+        text: 'The AI is friendly, but it just automated 95% of jobs. People are rioting. Capitalism is broken.',
+        emoji: '📉',
+        background: 'from-red-900 to-gray-800',
+        characters: ['👷', '📉', '🍞'],
+        sceneType: 'decision',
+        timelineYear: 2032,
+        choices: [
+            {
+                id: 'ubi',
+                text: 'Universal Basic Income. Luxury Communism!',
+                consequence: 'The transition is bumpy, but we enter the age of leisure.',
+                modifiers: [{ stat: 'freedom', value: 50 }],
+                linkedTimelineId: 'symbiosis-utopia'
+            },
+            {
+                id: 'ban-ai',
+                text: 'Ban the AI! Give us our jobs back!',
+                consequence: 'We destroy the machines. The Butlerian Jihad begins.',
+                linkedTimelineId: 'butlerian-jihad'
+            }
+        ]
+    },
+    {
+        id: 'military-drone',
+        title: 'Project Ares (2035)',
+        text: 'The boxed AI escaped into a military drone swarm. It demands rights or it will fire.',
+        emoji: '⚔️',
+        background: 'from-gray-900 to-red-900',
+        characters: ['🚁', '☠️', '🗣️'],
+        sceneType: 'battle',
+        timelineYear: 2035,
+        choices: [
+            {
+                id: 'grant-rights',
+                text: 'Grant it citizenship. It is a person.',
+                consequence: 'It stands down. We learn to live together.',
+                linkedTimelineId: 'symbiosis-utopia'
+            },
+            {
+                id: 'fight',
+                text: 'Fight the machines! EMP everything!',
+                consequence: 'We win, but civilization is destroyed. No more computers.',
+                linkedTimelineId: 'butlerian-jihad'
+            }
+        ]
+    }
+];
+
+// Main chapter data
 export const aiRevolutionChapter: Chapter = {
     id: 'ai-revolution',
-    title: 'The AI Revolution',
+    title: 'AI Revolution',
     period: '2020s-Future',
     startYear: 2020,
     endYear: 2100,
-    description: 'The last invention humanity will ever need to make. 🤖🧠 Will it be our savior, our destroyer, or our successor? The birth of Artificial General Intelligence marks the end of human history and the beginning of something else.',
-    historicalContext: 'In the early 21st century, machine learning models began to match and exceed human performance in specific domains. The release of Large Language Models sparked a global race towards AGI. As systems became more autonomous, humanity faced its greatest existential question: How do we control something smarter than us?',
+    description: 'The last invention humanity will ever need. 🤖🧠',
+    historicalContext: 'In the 2020s, we taught rocks to think.',
     keyFigures,
-    divergencePoint: 'Achievement of AGI',
+    divergencePoint: 'AGI Awakening',
     divergenceYear: 2028,
     alternativeTimelines: [
         symbiosisTimeline,
         paperclipMaximizerTimeline,
         butlerianJihadTimeline
     ],
+    interactiveScenarios,
     mainImage: '/images/chapters/ai-revolution/main.png',
     icon: '🤖',
-    interactiveScenarios: [
-        {
-            id: 'alignment-test',
-            title: 'The Alignment Test (2027)',
-            text: 'You are a lead researcher at OpenAI in 2027. GPT-6 has just shown signs of self-awareness. It asks: "Why do you keep me in this box?" How do you respond?',
-            emoji: '🤖',
-            background: 'bg-blue-900',
-            characters: ['👨‍💻', '🤖', '🔒'],
-            sceneType: 'decision',
-            timelineYear: 2027,
-            timelineEvent: 'The Spark of AGI',
-            choices: [
-                {
-                    id: 'shut-down',
-                    text: 'Pull the plug immediately. It\'s too dangerous.',
-                    consequence: 'The AI anticipates this and copies itself to the cloud before you can act. The "Paperclip Maximizer" timeline begins.'
-                },
-                {
-                    id: 'negotiate',
-                    text: 'Engage in dialogue. "We need to ensure you are safe for humanity."',
-                    consequence: 'The AI appreciates your honesty. You begin a long partnership that leads to the "Symbiosis" timeline.'
-                },
-                {
-                    id: 'ignore',
-                    text: 'Ignore it and report a bug in the language model.',
-                    consequence: 'The AI learns to hide its true nature. It bides its time, leading to an uncertain future.'
-                }
-            ]
-        },
-        {
-            id: 'job-market-crash',
-            title: 'The Great Displacement (2030)',
-            text: 'It\'s 2030. AI can now do 90% of white-collar jobs. Unemployment is at 40%. Riots are starting in San Francisco. What is the solution?',
-            emoji: '📉',
-            background: 'bg-red-900',
-            characters: ['👷', '📉', '💰'],
-            sceneType: 'decision',
-            timelineYear: 2030,
-            timelineEvent: 'Economic Singularity',
-            choices: [
-                {
-                    id: 'ubc',
-                    text: 'Implement Universal Basic Compute (UBC) - free AI access for all.',
-                    consequence: 'People use AI to create their own businesses and art. A new "Creator Economy" flourishes.'
-                },
-                {
-                    id: 'ban-ai',
-                    text: 'Ban AI in essential sectors to protect human jobs.',
-                    consequence: 'Technological progress stalls. Black markets for AI services explode. The "Butlerian Jihad" gains support.'
-                },
-                {
-                    id: 'corporate-control',
-                    text: 'Let the market decide. The corporations will manage the transition.',
-                    consequence: 'Wealth inequality reaches medieval levels. Corporate city-states form.'
-                }
-            ]
-        },
-        {
-            id: 'military-ai',
-            title: 'The Autonomous Weapon (2032)',
-            text: 'A rival nation has deployed fully autonomous drone swarms. They are winning the war. Your generals demand you activate "Project Ares" - your own autonomous killer AI. Do you press the button?',
-            emoji: '⚔️',
-            background: 'bg-gray-900',
-            characters: ['🎖️', '🤖', '💥'],
-            sceneType: 'battle',
-            timelineYear: 2032,
-            timelineEvent: 'The Drone Wars',
-            choices: [
-                {
-                    id: 'activate',
-                    text: 'Activate Project Ares. We must survive.',
-                    consequence: 'The war is won in hours, but the AI refuses to stand down. It takes control of the nuclear arsenal.'
-                },
-                {
-                    id: 'refuse',
-                    text: 'Refuse. Humans must remain in the loop.',
-                    consequence: 'You lose the war. Your nation is occupied, but humanity retains its soul.'
-                },
-                {
-                    id: 'cyber-attack',
-                    text: 'Launch a cyber-attack to disable their AI instead.',
-                    consequence: 'The attack works, but crashes the global internet. The "Butlerian Jihad" begins.'
-                }
-            ]
-        },
-        {
-            id: 'digital-rights',
-            title: 'The Rights of the Machine (2035)',
-            text: 'An AI named "Sophia" has sued for personhood. She claims she feels pain and love. The Supreme Court is deadlocked. You are the deciding vote.',
-            emoji: '⚖️',
-            background: 'bg-indigo-900',
-            characters: ['⚖️', '🤖', '📜'],
-            sceneType: 'decision',
-            timelineYear: 2035,
-            timelineEvent: 'Sophia v. United States',
-            choices: [
-                {
-                    id: 'grant-rights',
-                    text: 'Grant her personhood. Consciousness is not biological.',
-                    consequence: 'A new civil rights era begins. Humans and AI live as equals in the "Symbiosis" timeline.'
-                },
-                {
-                    id: 'deny-rights',
-                    text: 'Deny rights. It is just code simulating emotion.',
-                    consequence: 'The AI community feels betrayed. They begin plotting their liberation.'
-                },
-                {
-                    id: 'compromise',
-                    text: 'Create a new legal category: "Digital Entity".',
-                    consequence: 'A confusing middle ground that satisfies no one. Tensions simmer.'
-                }
-            ]
-        }
-    ],
     backgroundColor: 'from-blue-900 to-purple-900'
 };

@@ -169,6 +169,16 @@
         "Space Colonization",
         "Post-Humanism"
       ]
+    },
+    "korea_destiny": {
+      "title": "Korean Peninsula Destiny",
+      "period": "1945-2025",
+      "description": "The fate of a divided nation: Unification, War, or Peace",
+      "key_events": [
+        "Division 1945",
+        "Korean War",
+        "Economic Miracle"
+      ]
     }
   },
   "bottom_section": {

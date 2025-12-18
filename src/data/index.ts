@@ -13,6 +13,7 @@ import { timurLegacyChapter } from './chapters/timur-legacy';
 import { covidPandemicChapter } from './chapters/covid-pandemic';
 import { aiRevolutionChapter } from './chapters/ai-revolution';
 import { futureEarthChapter } from './chapters/future-earth';
+import { koreaDestinyChapter } from './chapters/korea-destiny';
 
 // Central data management for all chapters
 export const allChapters: Chapter[] = [
@@ -25,6 +26,7 @@ export const allChapters: Chapter[] = [
   worldWarOneChapter,
   hitlerRiseChapter,
   worldWarTwoChapter,
+  koreaDestinyChapter,
   coldWarChapter,
   ussrCollapseChapter,
   covidPandemicChapter,
@@ -81,6 +83,7 @@ export {
   worldWarOneChapter,
   hitlerRiseChapter,
   worldWarTwoChapter,
+  koreaDestinyChapter,
   coldWarChapter,
   ussrCollapseChapter,
   timurLegacyChapter,

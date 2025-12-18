@@ -1,543 +1,266 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
-// Key figures with fun, animated character descriptions
+// Key figures
 const keyFigures: Person[] = [
   {
     id: 'peter-the-great',
-    name: 'Peter I "The Great"',
-    role: 'The Giant Tsar Who Loved Boats & Beards',
+    name: 'Peter the Great',
+    role: 'The Reformer',
     born: 1672,
     died: 1725,
-    description: 'Standing 6\'8" tall, this giant tsar was obsessed with modernizing Russia! ⚓🧔 Cut off nobles\' beards personally, built a navy from scratch, and created St. Petersburg in a swamp. Also loved carpentry and dentistry (yikes!).',
+    description: 'Drags Russia into modern times by its beard. 6\'8" tall and carries scissors.',
     image: '/images/chapters/russian-empire/people/peter-the-great.png'
   },
   {
     id: 'catherine-the-great',
-    name: 'Catherine II "The Great"',
-    role: 'The German Princess Who Out-Russiaed the Russians',
+    name: 'Catherine the Great',
+    role: 'The Enlightened Despot',
     born: 1729,
     died: 1796,
-    description: 'This German-born empress conquered more territory than any Russian ruler! 👑⚔️ Corresponded with Voltaire, collected art like Pokemon cards, and somehow made autocracy look enlightened. Talk about overachieving!',
+    description: 'German princess who became the greatest Russian Empress. Friend of Voltaire.',
     image: '/images/chapters/russian-empire/people/catherine-the-great.png'
-  },
-  {
-    id: 'ivan-the-terrible',
-    name: 'Ivan IV "The Terrible"',
-    role: 'The Tsar with Serious Anger Management Issues',
-    born: 1530,
-    died: 1584,
-    description: 'Russia\'s first official Tsar who was... intense. 😤💥 Unified Russia through conquest and terror, accidentally killed his own son in a rage, and created the first secret police. His temper tantrums shaped a nation!',
-    image: '/images/chapters/russian-empire/people/ivan-the-terrible.png'
-  },
-  {
-    id: 'alexander-ii',
-    name: 'Alexander II "The Liberator"',
-    role: 'The Tsar Who Freed 23 Million Serfs',
-    born: 1818,
-    died: 1881,
-    description: 'The reformer tsar who said "Better to abolish serfdom from above than wait for it to abolish itself from below!" ⛓️💔 Freed the serfs, modernized courts, and got blown up by revolutionaries for his trouble.',
-    image: '/images/chapters/russian-empire/people/alexander-ii.png'
   },
   {
     id: 'rasputin',
     name: 'Grigori Rasputin',
-    role: 'The Mad Monk Who Wouldn\'t Die',
+    role: 'The Mad Monk',
     born: 1869,
     died: 1916,
-    description: 'The mystical peasant who hypnotized the royal family! 🔮👁️ Claimed to heal the sick prince, partied like a rockstar, and survived poisoning, shooting, and drowning before finally dying. Legend!',
+    description: 'Mystic healer who refused to die. Brought down an empire.',
     image: '/images/chapters/russian-empire/people/rasputin.png'
-  },
-  {
-    id: 'nicholas-ii',
-    name: 'Nicholas II',
-    role: 'The Last Tsar & Ultimate Tragic Figure',
-    born: 1868,
-    died: 1918,
-    description: 'Poor Nicky! 😔👑 Never wanted to be tsar, just wanted a quiet family life. Instead got World War I, revolutions, and... well, let\'s just say it didn\'t end well for the Romanovs.',
-    image: '/images/chapters/russian-empire/people/nicholas-ii.png'
   }
 ];
-// Alternative Timeline 1: Democratic Russia
-const democraticRussiaTimeline: Timeline = {
-  id: 'democratic-russia',
-  title: 'Tsar Nicholas Becomes a Democrat! 🗳️👑',
-  description: 'What if Nicholas II had genuinely embraced constitutional monarchy after 1905 and created a real democracy?',
-  divergenceDescription: 'Nicholas II takes the 1905 October Manifesto seriously and creates genuine constitutional monarchy with real parliamentary power',
-  divergenceYear: 1905,
-  probability: 30,
+
+// 1. Constitutional Russia (Decembrist Success)
+const constitutionalRussiaTimeline: Timeline = {
+  id: 'constitutional-russia',
+  title: 'Constitutional Monarchy 📜👑',
+  description: 'The Decembrist Revolt succeeds. Russia becomes a democracy in 1825.',
+  divergenceDescription: 'The army supports the Constitution instead of Nicholas I.',
+  divergenceYear: 1825,
+  probability: 20,
   color: '#10B981',
-  icon: '🗳️',
+  icon: '📜',
   image: '/images/chapters/russian-empire/timeline_1.png',
   keyEvents: [
     {
-      id: 'real-constitution-1906',
-      year: 1906,
-      month: 4,
-      title: 'Nicholas II: "Democracy Doesn\'t Look So Bad!" 🤔👑',
-      description: 'Nicholas II genuinely accepts constitutional limits and allows the Duma real power over legislation and budgets.',
-      impact: 'Creates functioning constitutional monarchy with democratic institutions',
-      relatedFigures: ['nicholas-ii'],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'political'
-    },
-    {
-      id: 'stolypin-agrarian-success-1907',
-      year: 1907,
-      month: 11,
-      title: 'Stolypin\'s Agricultural Revolution Works! 🌾🚜',
-      description: 'Prime Minister Stolypin\'s land reforms create millions of prosperous peasant farmers, building a rural middle class.',
-      impact: 'Land reform creates stable rural middle class supporting democracy',
+      id: 'constitution-1825',
+      year: 1825,
+      title: 'The Constitution',
+      description: 'Tsar Constantine signs the Constitution. Serfdom is abolished early.',
+      impact: 'Modernization.',
       relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'economic'
-    },
-    {
-      id: 'education-expansion-1910',
-      year: 1910,
-      month: 9,
-      title: 'Russia Goes Back to School: Education for Everyone! 📚🎓',
-      description: 'Massive expansion of public education creates literate citizenry capable of democratic participation.',
-      impact: 'Educational reforms create informed electorate for democratic system',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'social'
-    },
-    {
-      id: 'industrial-boom-1912',
-      year: 1912,
-      month: 1,
-      title: 'Russian Industrial Miracle: The Bear Learns to Build! 🏭⚡',
-      description: 'Political stability enables rapid industrialization. Russia becomes major industrial power by 1914.',
-      impact: 'Economic growth creates urban middle class supporting democratic institutions',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'economic'
-    },
-    {
-      id: 'avoid-world-war-1914',
-      year: 1914,
-      month: 7,
-      title: 'Russia Says "Nyet" to World War! ❌⚔️',
-      description: 'Democratic Russia chooses diplomatic solution to July Crisis, avoiding World War I.',
-      impact: 'Avoiding WWI prevents revolution and allows continued democratic development',
-      relatedFigures: ['nicholas-ii'],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'political'
-    },
-    {
-      id: 'federal-structure-1920',
-      year: 1920,
-      month: 1,
-      title: 'The Russian Federation is Born! 🇷🇺🤝',
-      description: 'Russia adopts federal structure giving autonomy to different ethnic regions while maintaining unity.',
-      impact: 'Federal system manages ethnic diversity while preserving Russian unity',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
+      location: { lat: 59.9311, lng: 30.3609 },
       type: 'political'
     }
   ],
   consequences: [
     {
-      id: 'stable-democracy',
+      id: 'no-bolsheviks',
       category: 'political',
-      shortTerm: 'Constitutional monarchy with real parliamentary power established',
-      longTerm: 'Gradual evolution to full democracy by 1950',
-      globalImpact: 'Democratic Russia prevents World War I and changes 20th century'
-    },
-    {
-      id: 'economic-prosperity',
-      category: 'economic',
-      shortTerm: 'Rapid industrialization and agricultural modernization',
-      longTerm: 'Russia becomes major economic power rivaling Germany and Britain',
-      globalImpact: 'Earlier global economic integration and technological development'
+      shortTerm: 'Liberal reforms',
+      longTerm: 'No Soviet Union',
+      globalImpact: 'A peaceful 20th century'
     }
   ],
   butterfly: [
     {
-      id: 'no-world-war-one',
-      trigger: 'Democratic Russia avoids mobilization in 1914',
-      consequence: 'July Crisis resolved diplomatically, preventing World War I',
-      magnitude: 'massive',
+      id: 'industrial-giant',
+      trigger: 'Free labor',
+      consequence: 'Russia becomes industrial giant by 1880',
+      magnitude: 'large',
       timespan: 100
-    },
-    {
-      id: 'no-soviet-union',
-      trigger: 'Successful constitutional monarchy prevents revolution',
-      consequence: 'No communist experiment in Russia or global communist movement',
-      magnitude: 'massive',
-      timespan: 150
     }
   ],
-  presentDayStatus: 'The Russian Constitutional Federation became one of the world\'s oldest continuous democracies. By avoiding World War I, Russia developed into a prosperous federal democracy with strong institutions. The Romanov dynasty still reigns as constitutional monarchs, beloved for their role in democratization. Today, Russia is known for its literature, ballet, and surprisingly good record on human rights! 🎭📚'
+  presentDayStatus: 'The Russian Federation is a constitutional monarchy similar to the UK. St. Petersburg is the "Paris of the North". 🇷🇺👑'
 };
 
-// Alternative Timeline 2: Chinese Alliance
-const chineseAllianceTimeline: Timeline = {
-  id: 'chinese-alliance',
-  title: 'The Dragon and the Bear: Sino-Russian Alliance! 🐉🐻',
-  description: 'What if Russia had allied with China instead of competing, creating an unstoppable Eurasian empire?',
-  divergenceDescription: 'Russia and Qing China form defensive alliance against Western imperialism instead of fighting over Central Asia',
-  divergenceYear: 1860,
-  probability: 20,
-  color: '#F59E0B',
-  icon: '🐉',
+// 2. Traditionalist Russia (Peter Fails)
+const traditionalistRussiaTimeline: Timeline = {
+  id: 'traditionalist-russia',
+  title: 'Old Muscovy 🐻⛪',
+  description: 'Peter reforms fail. Russia remains an isolated, medieval state.',
+  divergenceDescription: 'The Streltsy Rebellion succeeds.',
+  divergenceYear: 1698,
+  probability: 15,
+  color: '#B45309',
+  icon: '⛪',
   image: '/images/chapters/russian-empire/timeline_2.png',
   keyEvents: [
     {
-      id: 'treaty-of-friendship-1860',
-      year: 1860,
-      month: 10,
-      title: 'The Dragon-Bear Pact: East Meets East! 🐉🤝🐻',
-      description: 'Instead of territorial disputes, Russia and China sign mutual defense treaty against Western colonialism.',
-      impact: 'Creates massive Eurasian alliance against Western imperial powers',
-      relatedFigures: ['alexander-ii'],
-      location: { lat: 39.9042, lng: 116.4074 },
-      type: 'political'
-    },
-    {
-      id: 'joint-modernization-1865',
-      year: 1865,
-      month: 3,
-      title: 'Technology Transfer Express: Sharing is Caring! 🚂💡',
-      description: 'Russia shares military technology while China provides manufacturing expertise and labor for joint development projects.',
-      impact: 'Accelerated modernization for both empires through cooperation',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'economic'
-    },
-    {
-      id: 'central-asian-development-1870',
-      year: 1870,
-      month: 6,
-      title: 'The Great Silk Road Revival: Ancient Routes, Modern Power! 🐪💫',
-      description: 'Joint Russian-Chinese development of Central Asian trade routes creates massive economic boom.',
-      impact: 'Central Asia becomes prosperous bridge between European and East Asian markets',
-      relatedFigures: [],
-      location: { lat: 41.2995, lng: 69.2401 },
-      type: 'economic'
-    },
-    {
-      id: 'opium-wars-victory-1875',
-      year: 1875,
-      month: 8,
-      title: 'Bye Bye Britain: The Opium Wars End Differently! 👋🇬🇧',
-      description: 'Russian naval support helps China defeat British forces and end the opium trade permanently.',
-      impact: 'China maintains sovereignty and avoids "Century of Humiliation"',
-      relatedFigures: [],
-      location: { lat: 31.2304, lng: 121.4737 },
-      type: 'military'
-    },
-    {
-      id: 'eurasian-economic-union-1880',
-      year: 1880,
-      month: 1,
-      title: 'The Eurasian Economic Miracle Begins! 💰🌏',
-      description: 'Russo-Chinese economic union creates world\'s largest free trade zone from Moscow to Shanghai.',
-      impact: 'Economic integration creates Eurasian economic powerhouse',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'economic'
-    },
-    {
-      id: 'technological-revolution-1890',
-      year: 1890,
-      month: 12,
-      title: 'Eastern Innovation Explosion: Inventions Galore! 🔧⚡',
-      description: 'Joint research programs lead to major technological breakthroughs in transportation and communication.',
-      impact: 'Eurasian alliance becomes global technology leader',
-      relatedFigures: [],
-      location: { lat: 39.9042, lng: 116.4074 },
-      type: 'technological'
+      id: 'isolation',
+      year: 1700,
+      title: 'The Great Wall of Russia',
+      description: 'Russia closes its borders to the corrupted West.',
+      impact: 'Stagnation.',
+      relatedFigures: ['peter-the-great'],
+      location: { lat: 0, lng: 0 },
+      type: 'cultural'
     }
   ],
   consequences: [
     {
-      id: 'eurasian-dominance',
+      id: 'partition',
       category: 'political',
-      shortTerm: 'Russo-Chinese alliance dominates Asian politics',
-      longTerm: 'Eurasian confederation becomes alternative to Western dominance',
-      globalImpact: 'Multipolar world emerges 100 years earlier with Eastern power center'
-    },
-    {
-      id: 'technological-advancement',
-      category: 'technological',
-      shortTerm: 'Joint research accelerates innovation in both countries',
-      longTerm: 'Alternative technological development path independent of West',
-      globalImpact: 'Different global technology standards and innovation patterns'
+      shortTerm: 'Weakness',
+      longTerm: 'Russia is partitioned by Sweden and Turkey',
+      globalImpact: 'No Russian Empire'
     }
   ],
   butterfly: [
     {
-      id: 'different-colonialism',
-      trigger: 'Strong Eurasian alliance resists Western imperialism',
-      consequence: 'Colonialism fails in Asia, different global power balance',
+      id: 'swedish-empire',
+      trigger: 'Weak Russia',
+      consequence: 'Sweden rules Northern Europe',
       magnitude: 'massive',
-      timespan: 100
-    },
-    {
-      id: 'early-globalization',
-      trigger: 'Eurasian economic integration',
-      consequence: 'Different model of globalization based on land routes',
-      magnitude: 'large',
-      timespan: 150
+      timespan: 200
     }
   ],
-  presentDayStatus: 'The Russo-Chinese Alliance evolved into the Eurasian Confederation by 1950. Today it\'s the world\'s largest economic bloc, stretching from Vladivostok to Lisbon. The Trans-Eurasian Railway (completed in 1920) is the economic backbone connecting 50 countries. Beijing and Moscow are twin capitals of this peaceful confederation! 🚂🌏'
+  presentDayStatus: 'The Principality of Moscow is a small, quiet nation known for its churches and fur trade. The Swedish Empire controls the Baltic. 🇸🇪🏰'
 };
 
-// Alternative Timeline 3: Islamic Russia
-const islamicRussiaTimeline: Timeline = {
-  id: 'islamic-russia',
-  title: 'Islamic Russia: When the Crescent Meets the Bear! ☪️🐻',
-  description: 'What if Russian expansion into Central Asia had resulted in Islamic influence transforming Russian culture and religion?',
-  divergenceDescription: 'Russian nobles in Central Asia convert to Islam en masse, creating cultural synthesis between Slavic and Islamic traditions',
-  divergenceYear: 1850,
-  probability: 15,
-  color: '#059669',
-  icon: '☪️',
+// 3. Sino-Russian Alliance
+const sinoRussianTimeline: Timeline = {
+  id: 'sino-russian',
+  title: 'The Dragon and Bear 🐉🐻',
+  description: 'Russia turns East instead of West.',
+  divergenceDescription: 'Russia allies with Qing China.',
+  divergenceYear: 1860,
+  probability: 10,
+  color: '#F59E0B',
+  icon: '🐉',
   image: '/images/chapters/russian-empire/timeline_3.png',
   keyEvents: [
     {
-      id: 'mass-conversion-1850',
-      year: 1850,
-      month: 6,
-      title: 'Russian Nobles Discover Islam: "This Makes Sense!" ☪️💡',
-      description: 'Russian military officers and administrators in Central Asia begin converting to Islam, impressed by its sophisticated culture and governance.',
-      impact: 'Begins cultural and religious transformation of Russian elite',
-      relatedFigures: [],
-      location: { lat: 41.2995, lng: 69.2401 },
-      type: 'cultural'
-    },
-    {
-      id: 'cultural-synthesis-1855',
-      year: 1855,
-      month: 9,
-      title: 'East Meets West: Russian-Islamic Fusion Culture! 🎭🕌',
-      description: 'New cultural synthesis emerges combining Slavic traditions with Islamic art, architecture, and philosophy.',
-      impact: 'Creates unique Russo-Islamic cultural identity',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'cultural'
-    },
-    {
-      id: 'islamic-learning-1860',
-      year: 1860,
-      month: 3,
-      title: 'Madrasas in Moscow: Islamic Education Goes North! 📚🕌',
-      description: 'Islamic schools and universities established in Russian cities, creating bilingual, bicultural educated class.',
-      impact: 'Islamic educational system influences Russian intellectual development',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'social'
-    },
-    {
-      id: 'ottoman-alliance-1865',
-      year: 1865,
-      month: 11,
-      title: 'Russia and Ottoman Empire: Former Enemies, New Friends! 🤝🇹🇷',
-      description: 'Islamic Russia forms unexpected alliance with Ottoman Empire against common European adversaries.',
-      impact: 'Fundamental shift in European balance of power',
-      relatedFigures: [],
-      location: { lat: 41.0082, lng: 28.9784 },
-      type: 'political'
-    },
-    {
-      id: 'sufi-influence-1870',
+      id: 'eurasian-pact',
       year: 1870,
-      month: 5,
-      title: 'Sufi Mysticism Meets Russian Soul: Spiritual Revolution! 🌟💫',
-      description: 'Sufi mystical traditions deeply influence Russian spirituality, creating new forms of Islamic-Orthodox synthesis.',
-      impact: 'Religious transformation affects Russian literature, music, and philosophy',
+      title: 'Eurasian Pact',
+      description: 'A military alliance that dominates Asia.',
+      impact: 'End of Western colonialism in Asia.',
       relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'cultural'
-    },
-    {
-      id: 'alexander-ii-conversion-1875',
-      year: 1875,
-      month: 12,
-      title: 'Tsar Alexander II Converts: The Ultimate Plot Twist! 👑☪️',
-      description: 'Tsar Alexander II secretly converts to Islam while maintaining Orthodox facade for political reasons.',
-      impact: 'Islamic influence reaches highest levels of Russian government',
-      relatedFigures: ['alexander-ii'],
-      location: { lat: 55.7558, lng: 37.6176 },
+      location: { lat: 0, lng: 0 },
       type: 'political'
     }
   ],
   consequences: [
     {
-      id: 'religious-transformation',
-      category: 'cultural',
-      shortTerm: 'Significant Islamic influence on Russian culture and governance',
-      longTerm: 'Russia becomes bridge between Islamic and Christian worlds',
-      globalImpact: 'Different relationship between Islam and European Christianity'
-    },
-    {
-      id: 'political-realignment',
+      id: 'eastern-century',
       category: 'political',
-      shortTerm: 'Alliance with Ottoman Empire changes European balance',
-      longTerm: 'Russia becomes leader of Islamic modernization movement',
-      globalImpact: 'Alternative model for Islamic state modernization'
+      shortTerm: 'British Empire checked',
+      longTerm: 'Asia rises early',
+      globalImpact: 'Multipolar world'
     }
   ],
   butterfly: [
     {
-      id: 'different-crimean-war',
-      trigger: 'Russia-Ottoman alliance prevents traditional conflicts',
-      consequence: 'European great power system reorganizes around religious lines',
+      id: 'no-opium-wars',
+      trigger: 'Russian help',
+      consequence: 'China avoids Century of Humiliation',
       magnitude: 'large',
       timespan: 100
-    },
-    {
-      id: 'islamic-modernization',
-      trigger: 'Russian technological advancement combined with Islamic governance',
-      consequence: 'Alternative path for Islamic world modernization',
-      magnitude: 'large',
-      timespan: 150
     }
   ],
-  presentDayStatus: 'Islamic Russia evolved into a unique civilization blending Orthodox, Islamic, and secular traditions. Today it leads the "Eurasian Islamic Federation" with its capital in Kazan. The country is known for its beautiful mosque-cathedral architecture and its role as a bridge between civilizations. Friday prayers in the Kremlin are quite a sight! 🕌⛪'
+  presentDayStatus: 'The Eurasian Union is the world\'s superpower. The Silk Road is a high-speed rail network. 🌏🚂'
 };
 
-// Interactive story scenarios for Russian Empire
-const interactiveScenarios = [
+const interactiveScenarios: InteractiveScenario[] = [
   {
-    id: 'peter-beard-tax',
-    title: 'Peter\'s Beard Tax Revolution',
-    text: 'Moscow, 1705. You\'re a Russian noble facing Peter the Great\'s new beard tax. He wants to westernize Russia by forcing everyone to shave. Your magnificent beard is your pride!',
+    id: 'beard-tax',
+    title: 'The Beard Tax (1698)',
+    text: 'Moscow. Tsar Peter has returned from Europe. He holds a pair of scissors. "The beard is a useless burden," he says. "Pay the tax or shave!"',
     emoji: '🧔',
-    background: 'bg-linear-to-br from-blue-800 to-white',
-    characters: ['🧔', '✂️', '💰'],
-    sceneType: 'decision' as const,
-    timelineYear: 1705,
-    timelineEvent: 'Peter the Great\'s westernization reforms',
+    background: 'from-blue-900 to-gray-800',
+    characters: ['🧔', '✂️', '👑'],
+    sceneType: 'decision',
+    timelineYear: 1698,
+    timelineEvent: 'Westernization',
     choices: [
       {
-        id: 'shave-beard',
-        text: 'Shave your beard and embrace Western fashion',
-        consequence: 'Your compliance with Peter\'s reforms earns royal favor but loses traditional Russian identity'
+        id: 'shave',
+        text: 'Submit. Shave the beard.',
+        consequence: 'You lose your dignity but gain the Tsar\'s favor. Russia modernizes.',
+        modifiers: [{ stat: 'technology', value: 30 }],
+        nextSceneId: 'decembrist-revolt'
       },
       {
-        id: 'pay-beard-tax',
-        text: 'Pay the beard tax and keep your traditional appearance',
-        consequence: 'Your wealth preserves tradition but marks you as resistant to modernization'
-      },
-      {
-        id: 'rebel-against-reforms',
-        text: 'Organize resistance against these Western impositions',
-        consequence: 'Your traditionalism rallies others but risks Peter\'s wrath and possible exile'
-      }
-    ]
-  },
-  {
-    id: 'st-petersburg-construction',
-    title: 'Building Venice in a Swamp',
-    text: 'Baltic Coast, 1703. You\'re overseeing construction of Peter\'s new capital, St. Petersburg. Thousands of workers are dying in the marshes, but Peter demands his "Window to Europe"...',
-    emoji: '🏗️',
-    background: 'bg-linear-to-br from-gray-600 to-blue-700',
-    characters: ['🏗️', '💀', '👑'],
-    sceneType: 'decision' as const,
-    timelineYear: 1703,
-    timelineEvent: 'Construction of St. Petersburg',
-    choices: [
-      {
-        id: 'improve-conditions',
-        text: 'Improve working conditions to save lives',
-        consequence: 'Your humanity saves workers but slows construction, risking Peter\'s displeasure'
-      },
-      {
-        id: 'meet-deadline',
-        text: 'Push workers harder to meet Peter\'s impossible deadline',
-        consequence: 'Your efficiency pleases the Tsar but costs thousands of lives in the swamps'
-      },
-      {
-        id: 'request-more-resources',
-        text: 'Ask Peter for more resources and time',
-        consequence: 'Your reasonable request might save lives but could be seen as questioning imperial will'
+        id: 'rebel',
+        text: 'Refuse! The beard is sacred!',
+        consequence: 'The Streltsy rebel. Peter is overthrown. Russia stays medieval.',
+        linkedTimelineId: 'traditionalist-russia'
       }
     ]
   },
   {
     id: 'decembrist-revolt',
-    title: 'The Decembrist Dilemma',
-    text: 'St. Petersburg, December 26, 1825. You\'re a liberal officer in Senate Square. When Alexander I died, should Constantine or Nicholas become Tsar? Some officers want a constitution...',
-    emoji: '🗽',
-    background: 'bg-linear-to-br from-white to-red-700',
-    characters: ['⚔️', '📜', '👑'],
-    sceneType: 'battle' as const,
+    title: 'Senate Square (1825)',
+    text: 'Alexander I is dead. The army is in the square. They shout "Constantine and Constitution!" Nicholas I orders the cannons loaded.',
+    emoji: '❄️',
+    background: 'from-white to-red-900',
+    characters: ['⚔️', '📜', '💣'],
+    sceneType: 'battle',
     timelineYear: 1825,
-    timelineEvent: 'Decembrist Revolt for constitutional monarchy',
     choices: [
       {
-        id: 'join-revolt',
-        text: 'Join the Decembrists and fight for constitutional monarchy',
-        consequence: 'Your idealism advances the cause of freedom but risks execution or Siberian exile'
+        id: 'crush',
+        text: 'Fire the cannons! Order must be maintained.',
+        consequence: 'The revolt is crushed. Autocracy survives.',
+        modifiers: [{ stat: 'strength', value: 30 }, { stat: 'freedom', value: -30 }],
+        nextSceneId: 'emancipation'
       },
       {
-        id: 'stay-loyal',
-        text: 'Remain loyal to the new Tsar Nicholas I',
-        consequence: 'Your loyalty preserves your career but enables continued autocracy'
-      },
-      {
-        id: 'try-mediation',
-        text: 'Attempt to mediate between rebels and loyalists',
-        consequence: 'Your diplomacy might prevent bloodshed but satisfies neither side completely'
+        id: 'join',
+        text: 'Join the rebels! For the Constitution!',
+        consequence: ' The army mutinies. Nicholas flees. A Republic is born.',
+        linkedTimelineId: 'constitutional-russia'
       }
     ]
   },
   {
-    id: 'serf-emancipation',
-    title: 'The Great Emancipation',
-    text: 'St. Petersburg, 1861. You\'re advising Tsar Alexander II on serf emancipation. Freeing 23 million serfs will transform Russia, but how much land should they get?',
+    id: 'emancipation',
+    title: 'The Serf Question (1861)',
+    text: 'Tsar Alexander II asks your advice. "It is better to abolish serfdom from above than have it abolished from below." But the nobles are angry.',
     emoji: '⛓️',
-    background: 'bg-linear-to-br from-brown-600 to-green-700',
-    characters: ['⛓️', '🌾', '💰'],
-    sceneType: 'decision' as const,
+    background: 'from-green-900 to-brown-900',
+    characters: ['⛓️', '🌾', '👑'],
+    sceneType: 'decision',
     timelineYear: 1861,
-    timelineEvent: 'Emancipation of the serfs',
     choices: [
       {
-        id: 'generous-land-grants',
-        text: 'Give serfs generous land grants for true freedom',
-        consequence: 'Your generosity creates a prosperous peasantry but angers noble landowners'
+        id: 'land',
+        text: 'Give the peasants land. Full freedom.',
+        consequence: 'The nobles are furious, but the peasants prosper. Revolution is averted.',
+        modifiers: [{ stat: 'freedom', value: 50 }],
+        nextSceneId: 'rasputin'
       },
       {
-        id: 'minimal-compensation',
-        text: 'Provide minimal land to protect noble interests',
-        consequence: 'Your compromise preserves the aristocracy but leaves serfs in poverty'
-      },
-      {
-        id: 'gradual-transition',
-        text: 'Implement gradual transition over 20 years',
-        consequence: 'Your caution reduces disruption but delays true freedom for millions'
+        id: 'east',
+        text: 'Forget Europe. Look East to China.',
+        consequence: 'We forge a new destiny in Asia.',
+        linkedTimelineId: 'sino-russian'
       }
     ]
   },
   {
-    id: 'rasputin-influence',
-    title: 'The Mad Monk\'s Influence',
-    text: 'Tsarskoye Selo, 1915. You\'re a court advisor watching Rasputin\'s growing influence over the Tsarina. His mystic healing of the young Tsarevich gives him dangerous power...',
-    emoji: '🔮',
-    background: 'bg-linear-to-br from-purple-900 to-black',
-    characters: ['🔮', '👑', '💀'],
-    sceneType: 'decision' as const,
-    timelineYear: 1915,
-    timelineEvent: 'Rasputin\'s influence on the royal family',
+    id: 'rasputin',
+    title: 'The Mad Monk (1916)',
+    text: 'Rasputin is throwing a party. The Tsarina listens only to him. Russia is losing the war. Prince Yusupov offers you a poisoned cake.',
+    emoji: '🍰',
+    background: 'from-purple-900 to-black',
+    characters: ['🎭', '🍷', '☠️'],
+    sceneType: 'decision',
+    timelineYear: 1916,
     choices: [
       {
-        id: 'expose-rasputin',
-        text: 'Expose Rasputin\'s corruption and demand his removal',
-        consequence: 'Your courage might save the monarchy but risks the Tsarina\'s wrath and your position'
+        id: 'kill',
+        text: 'Help kill him. Save the reputation of the throne.',
+        consequence: 'It is too late. The revolution comes anyway.',
+        // Leads to Lenin chapter effectively
       },
       {
-        id: 'work-with-rasputin',
-        text: 'Try to work with Rasputin to limit his influence',
-        consequence: 'Your pragmatism might contain the damage but legitimizes his presence'
-      },
-      {
-        id: 'plot-against-rasputin',
-        text: 'Join the plot to eliminate Rasputin permanently',
-        consequence: 'Your drastic action might save Russia but involves you in murder'
+        id: 'save',
+        text: 'Warn him. He is the only one who opposes the war.',
+        consequence: 'Rasputin convinces the Tsar to make peace. The Empire survives (barely).',
+        linkedTimelineId: 'constitutional-russia' // Converges
       }
     ]
   }
@@ -547,22 +270,21 @@ const interactiveScenarios = [
 export const russianEmpireChapter: Chapter = {
   id: 'russian-empire',
   title: 'Russian Empire',
-  period: '1721-1917',
+  period: '1700-1917',
   startYear: 1700,
-  endYear: 1920,
-  description: 'From Arctic Wasteland to Global Superpower: The Russian Adventure! 🐻⚡ Watch as a collection of frozen principalities transforms into the world\'s largest empire through sheer determination, questionable fashion choices, and an impressive tolerance for cold weather. It\'s got westernization, wars, reforms, revolutions, and the occasional mad monk! 🏰❄️',
-  historicalContext: 'Russia in 1700 was like that friend who shows up to a party wearing last century\'s clothes - technically invited, but clearly not fitting in! 😅 While Western Europe was having its Enlightenment and drinking tea with their pinkies up, Russia was still very much medieval. But then came Peter the Great, who decided Russia needed a SERIOUS makeover. What followed was 200 years of the most dramatic transformation in history: building cities in swamps, conquering everything in sight, freeing serfs, building the world\'s longest railroad, and somehow ending up with Rasputin. It\'s like a historical soap opera with real consequences! 🎭⚡',
+  endYear: 1917,
+  description: 'Tsars, samovars, and expansion. 🐻🏰',
+  historicalContext: 'From Peter to Nicholas.',
   keyFigures,
-  divergencePoint: 'Peter the Great\'s Westernization and Imperial Expansion',
-  divergenceYear: 1721,
+  divergencePoint: 'Peter Reforms',
+  divergenceYear: 1698,
   alternativeTimelines: [
-    democraticRussiaTimeline,
-    chineseAllianceTimeline,
-    islamicRussiaTimeline,
-    // Additional timelines can be added here...
+    constitutionalRussiaTimeline,
+    traditionalistRussiaTimeline,
+    sinoRussianTimeline,
   ],
+  interactiveScenarios,
   mainImage: '/images/chapters/russian-empire/main.png',
   icon: '🐻',
-  backgroundColor: 'from-red-600 to-blue-800',
-  interactiveScenarios
+  backgroundColor: 'from-red-700 to-blue-900'
 };

@@ -1,549 +1,266 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
-// Key figures with engaging battle-focused descriptions
+// Key figures
 const keyFigures: Person[] = [
   {
     id: 'kaiser-wilhelm-ii',
     name: 'Kaiser Wilhelm II',
-    role: 'The Hot-Headed Emperor with Bad Timing',
+    role: 'The Emperor',
     born: 1859,
     died: 1941,
-    description: 'Germany\'s last emperor who managed to start a world war by being really, really bad at diplomacy! ⚔️👑 Had a withered arm, an inferiority complex, and zero understanding of when to stop talking.',
-    image: '/images/kaiser-wilhelm.jpg'
+    description: 'The last German Emperor. Wanted a "Place in the Sun". Got a world war instead.',
+    image: '/images/chapters/world-war-1/people/kaiser-wilhelm-ii.png'
   },
   {
     id: 'archduke-franz-ferdinand',
-    name: 'Archduke Franz Ferdinand',
-    role: 'The Heir Who Started It All (By Dying)',
+    name: 'Franz Ferdinand',
+    role: 'The Target',
     born: 1863,
     died: 1914,
-    description: 'The Austro-Hungarian heir whose assassination triggered WWI! 💥🎯 Ironically, he was actually a reformer who wanted to give Slavs more rights. Wrong place, wrong time, wrong sandwich shop!',
-    image: '/images/franz-ferdinand.jpg'
+    description: 'Austrian heir. His death triggered the apocalypse.',
+    image: '/images/chapters/world-war-1/people/archduke-franz-ferdinand.png'
   },
   {
-    id: 'erich-von-falkenhayn',
-    name: 'Erich von Falkenhayn',
-    role: 'The General Who Invented Modern Hell',
-    born: 1861,
-    died: 1922,
-    description: 'The German general who created the meat grinder strategy at Verdun! 🥩⚔️ His idea: "Let\'s bleed France white!" Spoiler alert: it didn\'t work as planned.',
-    image: '/images/falkenhayn.jpg'
-  },
-  {
-    id: 'ferdinand-foch',
-    name: 'Ferdinand Foch',
-    role: 'The French Marshal Who Never Gave Up',
-    born: 1851,
-    died: 1929,
-    description: 'The French general who said "My center is giving way, my right is in retreat, situation excellent. I attack!" 🇫🇷⚡ Basically the military version of toxic positivity, but it worked!',
-    image: '/images/foch.jpg'
-  },
-  {
-    id: 'douglas-haig',
-    name: 'Douglas Haig',
-    role: 'The British General Who Loved Frontal Attacks',
-    born: 1861,
-    died: 1928,
-    description: 'The British commander who kept sending men "over the top" into machine gun fire! 🇬🇧⚔️ Eventually won, but at a cost that makes your bank account cry.',
-    image: '/images/haig.jpg'
-  },
-  {
-    id: 'manfred-von-richthofen',
-    name: 'Manfred von Richthofen',
-    role: 'The Red Baron & Sky Knight',
-    born: 1892,
-    died: 1918,
-    description: 'The most famous fighter pilot ever! ✈️🔴 Shot down 80 enemy planes in his bright red aircraft. Proof that being flashy in combat can actually work... until it doesn\'t.',
-    image: '/images/red-baron.jpg'
+    id: 'woodrow-wilson',
+    name: 'Woodrow Wilson',
+    role: 'The Idealist',
+    born: 1856,
+    died: 1924,
+    description: 'American President. Wanted to make the world "safe for democracy".',
+    image: '/images/chapters/world-war-1/people/woodrow-wilson.png'
   }
 ];
 
-// Alternative Timeline 1: No Assassination
-const noAssassinationTimeline: Timeline = {
-  id: 'no-assassination',
-  title: 'Franz Ferdinand Lives: The War That Never Was! 🕊️👑',
-  description: 'What if the assassination plot had failed and Franz Ferdinand survived to reform Austria-Hungary?',
-  divergenceDescription: 'Franz Ferdinand\'s car takes a different route, avoiding the assassin, and he survives to implement reforms',
+// 1. The Long Peace (No War)
+const longPeaceTimeline: Timeline = {
+  id: 'long-peace',
+  title: 'The Long Peace 🕊️🌍',
+  description: 'The assassination fails. The 20th century is peaceful.',
+  divergenceDescription: 'The driver takes the correct turn in Sarajevo.',
   divergenceYear: 1914,
-  probability: 40,
+  probability: 10,
   color: '#10B981',
   icon: '🕊️',
   image: '/images/chapters/world-war-1/timeline_1.png',
   keyEvents: [
     {
-      id: 'assassination-fails-1914',
-      year: 1914,
-      month: 6,
-      day: 28,
-      title: 'Wrong Turn Saves the World! 🚗✨',
-      description: 'Franz Ferdinand\'s driver doesn\'t take the wrong turn, avoiding Gavrilo Princip completely. Sometimes getting lost is actually finding your way!',
-      impact: 'Prevents July Crisis and maintains European peace',
-      relatedFigures: ['archduke-franz-ferdinand'],
-      location: { lat: 43.8563, lng: 18.4131 },
-      type: 'political'
-    },
-    {
-      id: 'austro-hungarian-reforms-1915',
-      year: 1915,
-      month: 1,
-      title: 'Franz Ferdinand\'s Great Reforms Begin! 🏛️🌈',
-      description: 'As heir apparent, Franz Ferdinand begins implementing his plan for "United States of Greater Austria" giving Slavs equal rights.',
-      impact: 'Satisfies South Slav nationalism and reduces tensions in Balkans',
+      id: 'federal-austria',
+      year: 1920,
+      title: 'United States of Greater Austria',
+      description: 'Franz Ferdinand reforms the empire into a federation of equals.',
+      impact: 'Stability in the Balkans.',
       relatedFigures: ['archduke-franz-ferdinand'],
       location: { lat: 48.2082, lng: 16.3738 },
-      type: 'political'
-    },
-    {
-      id: 'peaceful-balkans-1916',
-      year: 1916,
-      month: 7,
-      title: 'Balkans Actually Become Peaceful! 🕊️⛰️',
-      description: 'Reformed Austria-Hungary becomes model for multi-ethnic democracy. Serbs get autonomy, everyone\'s happy!',
-      impact: 'Resolves major source of European tension through peaceful reform',
-      relatedFigures: ['archduke-franz-ferdinand'],
-      location: { lat: 44.0165, lng: 21.0059 },
-      type: 'political'
-    },
-    {
-      id: 'german-isolation-1917',
-      year: 1917,
-      month: 3,
-      title: 'Germany Finds Itself Alone: "Where Did Everyone Go?" 🇩🇪😕',
-      description: 'Without war crisis, Germany\'s aggressive diplomacy isolates it as other powers form defensive alliances.',
-      impact: 'Peaceful pressure forces Germany to moderate its policies',
-      relatedFigures: ['kaiser-wilhelm-ii'],
-      location: { lat: 52.5200, lng: 13.4050 },
-      type: 'political'
-    },
-    {
-      id: 'conference-of-berlin-1918',
-      year: 1918,
-      month: 6,
-      title: 'Conference of Berlin: European Peace Summit! 🤝🌍',
-      description: 'Major European conference redesigns international system to prevent future conflicts.',
-      impact: 'Creates new international order based on negotiation rather than force',
-      relatedFigures: [],
-      location: { lat: 52.5200, lng: 13.4050 },
-      type: 'political'
-    },
-    {
-      id: 'democratic-europe-1920',
-      year: 1920,
-      month: 1,
-      title: 'Democratic Wave Sweeps Europe! 🗳️🌊',
-      description: 'Peaceful resolution of crises leads to democratic reforms across Europe, including Germany.',
-      impact: 'Constitutional monarchies evolve into parliamentary democracies',
-      relatedFigures: [],
-      location: { lat: 52.5200, lng: 13.4050 },
       type: 'political'
     }
   ],
   consequences: [
     {
-      id: 'no-world-war',
-      category: 'political',
-      shortTerm: 'Avoids World War I entirely, saving 17 million lives',
-      longTerm: 'No wartime devastation allows continued European cultural development',
-      globalImpact: 'Different 20th century without the trauma of total war'
-    },
-    {
-      id: 'gradual-democratization',
-      category: 'political',
-      shortTerm: 'Peaceful reform rather than revolutionary change',
-      longTerm: 'European empires evolve into federal democracies',
-      globalImpact: 'Different model of political development worldwide'
+      id: 'golden-age',
+      category: 'cultural',
+      shortTerm: 'Continued Belle Époque',
+      longTerm: 'Technological progress without war trauma',
+      globalImpact: 'European dominance continues'
     }
   ],
   butterfly: [
     {
-      id: 'no-russian-revolution',
-      trigger: 'No war means no revolutionary pressure in Russia',
-      consequence: 'Russian monarchy reforms gradually, no Soviet Union',
-      magnitude: 'massive',
+      id: 'slow-decolonization',
+      trigger: 'Strong Europe',
+      consequence: 'Colonial empires last until 2000',
+      magnitude: 'large',
       timespan: 100
-    },
-    {
-      id: 'no-hitler',
-      trigger: 'No war means no German defeat and humiliation',
-      consequence: 'No conditions for Nazi rise, Holocaust never happens',
-      magnitude: 'massive',
-      timespan: 50
     }
   ],
-  presentDayStatus: 'The Austro-Hungarian Federation is one of Europe\'s most successful multicultural democracies. Emperor Franz Ferdinand IV still reigns as constitutional monarch. The Sarajevo Sandwich Shop where the assassination was supposed to happen is now a peace museum! 🥪🕊️'
+  presentDayStatus: 'Europe is a collection of constitutional monarchies. Biplanes are still popular for sport. The world is nostalgic for an era that never ended. 🎩🚂'
 };
 
-// Alternative Timeline 2: Localized Conflict
-const localizedConflictTimeline: Timeline = {
-  id: 'localized-conflict',
-  title: 'Just Austria vs. Serbia: The Tiny War! ⚔️🏰',
-  description: 'What if the conflict had remained between Austria-Hungary and Serbia without escalating to world war?',
-  divergenceDescription: 'Germany refuses to give Austria-Hungary a "blank check" and other powers successfully contain the conflict',
+// 2. German Victory (Kaiserreich)
+const germanVictoryTimeline: Timeline = {
+  id: 'german-victory',
+  title: 'Pax Germanica 🇩🇪👑',
+  description: 'Germany wins the war in 1914.',
+  divergenceDescription: 'The Schlieffen Plan encircles Paris successfully.',
   divergenceYear: 1914,
-  probability: 25,
-  color: '#F59E0B',
-  icon: '⚔️',
+  probability: 20,
+  color: '#1F2937',
+  icon: '🇩🇪',
   image: '/images/chapters/world-war-1/timeline_2.png',
   keyEvents: [
     {
-      id: 'germany-refuses-support-1914',
+      id: 'fall-of-paris',
       year: 1914,
-      month: 7,
-      day: 5,
-      title: 'Germany Says "Handle Your Own Problems!" 🇩🇪🤷‍♂️',
-      description: 'Kaiser Wilhelm II refuses to give Austria-Hungary unconditional support, forcing them to negotiate rather than fight.',
-      impact: 'Prevents escalation through alliance system',
-      relatedFigures: ['kaiser-wilhelm-ii'],
-      location: { lat: 52.5200, lng: 13.4050 },
-      type: 'political'
-    },
-    {
-      id: 'third-balkan-war-1914',
-      year: 1914,
-      month: 8,
-      day: 12,
-      title: 'Third Balkan War: The Sequel Nobody Wanted! ⚔️3️⃣',
-      description: 'Austria-Hungary invades Serbia in what becomes just another Balkan conflict. Other powers stay out of this regional mess.',
-      impact: 'Conflict remains regional rather than becoming world war',
+      title: 'Fall of Paris',
+      description: 'The German army marches under the Arc de Triomphe.',
+      impact: 'French surrender.',
       relatedFigures: [],
-      location: { lat: 44.0165, lng: 21.0059 },
+      location: { lat: 0, lng: 0 },
       type: 'military'
-    },
-    {
-      id: 'great-power-mediation-1914',
-      year: 1914,
-      month: 10,
-      title: 'Great Powers Play Peacemaker! 🕊️👑',
-      description: 'Britain, France, Germany, and Russia successfully mediate end to Austro-Serbian conflict.',
-      impact: 'Demonstrates that great power cooperation can prevent wider wars',
-      relatedFigures: [],
-      location: { lat: 51.5074, lng: -0.1278 },
-      type: 'political'
-    },
-    {
-      id: 'balkan-federation-1915',
-      year: 1915,
-      month: 6,
-      title: 'Balkan Federation Created: "Can\'t We All Just Get Along?" 🤝⛰️',
-      description: 'Peace settlement creates Balkan Federation under great power guarantee, finally solving the "Eastern Question."',
-      impact: 'Resolves Balkan tensions through federal solution',
-      relatedFigures: [],
-      location: { lat: 41.9029, lng: 21.4285 },
-      type: 'political'
-    },
-    {
-      id: 'naval-arms-limitation-1916',
-      year: 1916,
-      month: 3,
-      title: 'Naval Arms Limitation Treaty: "Let\'s Not Build So Many Battleships!" 🚢📉',
-      description: 'Success in Balkans leads to broader arms limitation agreements between great powers.',
-      impact: 'Reduces military tensions and arms race pressures',
-      relatedFigures: [],
-      location: { lat: 51.5074, lng: -0.1278 },
-      type: 'political'
-    },
-    {
-      id: 'concert-of-europe-renewed-1918',
-      year: 1918,
-      month: 1,
-      title: 'Concert of Europe 2.0: The Peaceful Sequel! 🎵🌍',
-      description: 'Great powers renew Concert of Europe system with better crisis management mechanisms.',
-      impact: 'Creates stable international system for managing conflicts',
-      relatedFigures: [],
-      location: { lat: 48.2082, lng: 16.3738 },
-      type: 'political'
     }
   ],
   consequences: [
     {
-      id: 'limited-warfare',
+      id: 'mitteleuropa',
       category: 'political',
-      shortTerm: 'Regional war with limited casualties compared to world war',
-      longTerm: 'Military technology develops more slowly without total war pressure',
-      globalImpact: 'Different pace of military and technological development'
-    },
-    {
-      id: 'diplomatic-success',
-      category: 'political',
-      shortTerm: 'Successful great power mediation restores confidence in diplomacy',
-      longTerm: 'Strengthened international system prevents future major wars',
-      globalImpact: 'Earlier development of international conflict resolution mechanisms'
+      shortTerm: 'German dominance',
+      longTerm: 'No WWII, no Hitler',
+      globalImpact: 'Germany leads the world'
     }
   ],
   butterfly: [
     {
-      id: 'stable-empires',
-      trigger: 'No total war means European empires remain stable',
-      consequence: 'Different decolonization process, gradual rather than revolutionary',
-      magnitude: 'large',
-      timespan: 100
-    },
-    {
-      id: 'slower-modernization',
-      trigger: 'No war-driven technological acceleration',
-      consequence: 'Different pace of social and economic change',
-      magnitude: 'medium',
+      id: 'syndicalism',
+      trigger: 'French defeat',
+      consequence: 'France and Britain become Syndicalist (Communist)',
+      magnitude: 'massive',
       timespan: 50
     }
   ],
-  presentDayStatus: 'The Third Balkan War lasted only 3 months and killed about 50,000 people instead of 17 million. The Balkan Federation became a model for peaceful multi-ethnic cooperation. Today they celebrate "Tiny War Day" where people have miniature food fights! 🥧⚔️'
+  presentDayStatus: 'The German Empire is the world\'s superpower. Berlin is the capital of the world. 🌍🏰'
 };
 
-// Alternative Timeline 3: German Victory
-const germanVictoryTimeline: Timeline = {
-  id: 'german-victory',
-  title: 'German Victory: The Schlieffen Plan Actually Works! 🇩🇪⚡',
-  description: 'What if Germany\'s lightning war strategy had succeeded and they had won World War I quickly?',
-  divergenceDescription: 'Schlieffen Plan succeeds in capturing Paris within 6 weeks, forcing French surrender and quick German victory',
-  divergenceYear: 1914,
-  probability: 20,
+// 3. Negotiated Peace (1917)
+const negotiatedPeaceTimeline: Timeline = {
+  id: 'negotiated-peace',
+  title: 'Peace Without Victory 🤝🏳️',
+  description: 'The war ends in 1917 without a clear winner.',
+  divergenceDescription: 'The US stays out. Exhaustion leads to truce.',
+  divergenceYear: 1917,
+  probability: 30,
   color: '#6B7280',
-  icon: '🇩🇪',
+  icon: '🏳️',
   image: '/images/chapters/world-war-1/timeline_3.png',
   keyEvents: [
     {
-      id: 'schlieffen-plan-succeeds-1914',
-      year: 1914,
-      month: 9,
-      day: 15,
-      title: 'Schlieffen Plan Works: "We Actually Did It!" 🇩🇪🎯',
-      description: 'German forces capture Paris after defeating French army in Belgium. The impossible plan somehow works perfectly!',
-      impact: 'Quick German victory prevents prolonged trench warfare',
+      id: 'peace-treaty',
+      year: 1917,
+      title: 'Treaty of Stockholm',
+      description: 'Status quo ante bellum. Everyone goes home.',
+      impact: 'Monarchies survive.',
       relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'military'
-    },
-    {
-      id: 'french-surrender-1914',
-      year: 1914,
-      month: 9,
-      day: 20,
-      title: 'France Surrenders: "Au Revoir, We\'ll Try Again Later!" 🇫🇷🏳️',
-      description: 'With Paris captured and army defeated, France signs armistice. The Third Republic falls after just 6 weeks of war.',
-      impact: 'Eliminates France as major European power and German rival',
-      relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
+      location: { lat: 0, lng: 0 },
       type: 'political'
-    },
-    {
-      id: 'russia-makes-peace-1914',
-      year: 1914,
-      month: 11,
-      title: 'Russia Backs Down: "Maybe This Wasn\'t a Good Idea!" 🇷🇺😰',
-      description: 'Seeing French defeat, Russia signs separate peace rather than face Germany alone.',
-      impact: 'Avoids Eastern Front and preserves German resources',
-      relatedFigures: [],
-      location: { lat: 55.7558, lng: 37.6176 },
-      type: 'political'
-    },
-    {
-      id: 'german-empire-dominance-1915',
-      year: 1915,
-      month: 1,
-      title: 'German Empire Dominates Europe: "We\'re Number One!" 🇩🇪👑',
-      description: 'Germany becomes the undisputed master of continental Europe with French resources and Russian submission.',
-      impact: 'Creates German hegemony over Europe 30 years early',
-      relatedFigures: ['kaiser-wilhelm-ii'],
-      location: { lat: 52.5200, lng: 13.4050 },
-      type: 'political'
-    },
-    {
-      id: 'colonial-expansion-1916',
-      year: 1916,
-      month: 6,
-      title: 'German Colonial Empire Expands: "More Sausage for Everyone!" 🌍🌭',
-      description: 'Victorious Germany seizes French and Belgian colonies, creating massive global empire.',
-      impact: 'Germany becomes major colonial power rivaling Britain',
-      relatedFigures: [],
-      location: { lat: -4.0435, lng: 21.7587 },
-      type: 'political'
-    },
-    {
-      id: 'anglo-german-naval-race-1918',
-      year: 1918,
-      month: 1,
-      title: 'Anglo-German Naval Showdown: "Rule Britannia vs. Deutschland!" 🚢⚔️',
-      description: 'With continental dominance secured, Germany challenges British naval supremacy directly.',
-      impact: 'Sets up major naval confrontation between Germany and Britain',
-      relatedFigures: [],
-      location: { lat: 54.5973, lng: 5.9301 },
-      type: 'military'
     }
   ],
   consequences: [
     {
-      id: 'german-hegemony',
+      id: 'bitter-peace',
       category: 'political',
-      shortTerm: 'Germany becomes dominant European power through military victory',
-      longTerm: 'German-dominated Europe develops differently from democratic model',
-      globalImpact: 'Authoritarian rather than democratic model dominates 20th century'
-    },
-    {
-      id: 'colonial-reshuffling',
-      category: 'political',
-      shortTerm: 'German victory redistributes colonial empires',
-      longTerm: 'Different colonial development and decolonization patterns',
-      globalImpact: 'German rather than British colonial model spreads worldwide'
+      shortTerm: 'Unresolved issues',
+      longTerm: 'Cold War between Monarchies and Democracies',
+      globalImpact: 'A weary world'
     }
   ],
   butterfly: [
     {
-      id: 'no-american-rise',
-      trigger: 'Quick war means America doesn\'t become major power',
-      consequence: 'Different global balance with Germany as dominant power',
-      magnitude: 'massive',
-      timespan: 100
-    },
-    {
-      id: 'authoritarian-europe',
-      trigger: 'German victory validates authoritarian model',
-      consequence: 'Democracy develops more slowly worldwide',
+      id: 'russian-survival',
+      trigger: 'Early peace',
+      consequence: 'Russian weak democracy survives',
       magnitude: 'large',
-      timespan: 75
+      timespan: 50
     }
   ],
-  presentDayStatus: 'The German Empire dominated Europe until 1945 when it finally democratized after losing World War II (which started in 1935 when Britain finally challenged German hegemony). Today, Germany leads the "European Imperial Federation" and makes really good cars! 🚗🇩🇪'
+  presentDayStatus: 'The world is multipolar. The League of Nations is actually effective. 🌐'
 };
 
-// Interactive story scenarios for World War I
-const interactiveScenarios = [
+const interactiveScenarios: InteractiveScenario[] = [
   {
-    id: 'archduke-assassination-choice',
-    title: 'The Archduke\'s Fatal Route',
-    text: 'Sarajevo, June 28, 1914. You are Archduke Franz Ferdinand\'s driver. After the failed first assassination attempt, you\'re told to take a different route. But you\'re confused about the directions...',
-    emoji: '🚗',
-    background: 'bg-linear-to-br from-gray-700 to-red-800',
-    characters: ['👑', '🚗', '💣'],
-    sceneType: 'decision' as const,
+    id: 'sarajevo',
+    title: 'The Wrong Turn (1914)',
+    text: 'Sarajevo. The Archduke\'s driver has taken a wrong turn. He stops to reverse. Gavrilo Princip is standing at the corner with a pistol.',
+    emoji: '🔫',
+    background: 'from-gray-800 to-red-900',
+    characters: ['👑', '🚗', '🔫'],
+    sceneType: 'decision',
     timelineYear: 1914,
-    timelineEvent: 'Assassination of Archduke Franz Ferdinand',
+    timelineEvent: 'The Assassination',
     choices: [
       {
-        id: 'take-planned-route',
-        text: 'Follow the new, safer route as instructed',
-        consequence: 'You avoid the assassin completely - Franz Ferdinand lives and WWI might be prevented!'
+        id: 'reverse',
+        text: 'Reverse the car (Historical).',
+        consequence: 'Princip fires. The Archduke dies. War begins.',
+        modifiers: [{ stat: 'chaos', value: 50 }],
+        nextSceneId: 'schlieffen'
       },
       {
-        id: 'take-wrong-turn',
-        text: 'Get confused and take the wrong turn onto Franz Joseph Street',
-        consequence: 'Your mistake brings you right to Gavrilo Princip - the shot that starts WWI is fired'
-      },
-      {
-        id: 'stop-and-ask-directions',
-        text: 'Stop the car and ask for directions to be sure',
-        consequence: 'While stopped, you\'re spotted by another conspirator - history takes a different but equally dangerous turn'
+        id: 'speed-away',
+        text: 'Hit the gas! Go forward!',
+        consequence: 'Princip misses his chance. The Archduke survives.',
+        linkedTimelineId: 'long-peace'
       }
     ]
   },
   {
-    id: 'christmas-truce-decision',
-    title: 'The Christmas Truce',
-    text: 'December 24, 1914. No Man\'s Land, Western Front. It\'s Christmas Eve and you hear German soldiers singing "Silent Night." Someone suggests a truce...',
-    emoji: '🎄',
-    background: 'bg-linear-to-br from-green-800 to-red-900',
-    characters: ['🎄', '⚔️', '🤝'],
-    sceneType: 'decision' as const,
-    timelineYear: 1914,
-    timelineEvent: 'Christmas Truce across No Man\'s Land',
-    choices: [
-      {
-        id: 'join-truce',
-        text: 'Climb out of the trench and join the Christmas celebration',
-        consequence: 'You share cigarettes, photos, and football with the "enemy" - a moment of humanity in hell'
-      },
-      {
-        id: 'stay-vigilant',
-        text: 'Remain at your post - this could be a trick',
-        consequence: 'Your caution is noted by officers, but you miss a historic moment of peace'
-      },
-      {
-        id: 'report-to-officers',
-        text: 'Report the fraternization to your commanding officer',
-        consequence: 'Your report leads to orders ending the truce - duty over humanity'
-      }
-    ]
-  },
-  {
-    id: 'verdun-defense',
-    title: 'The Hell of Verdun',
-    text: 'February 1916. Verdun, France. The Germans launch their massive offensive to "bleed France white." You\'re a French officer deciding how to respond to this meat grinder...',
+    id: 'schlieffen',
+    title: 'The Schlieffen Plan (1914)',
+    text: 'Belgium. The German army is marching on Paris. The plan requires speed. But the Belgians are resisting.',
     emoji: '⚔️',
-    background: 'bg-linear-to-br from-red-900 to-black',
-    characters: ['🇫🇷', '💀', '🔥'],
-    sceneType: 'battle' as const,
-    timelineYear: 1916,
-    timelineEvent: 'Battle of Verdun - the longest battle of WWI',
+    background: 'from-black to-gray-700',
+    characters: ['⚔️', '🏰', '🗺️'],
+    sceneType: 'battle',
+    timelineYear: 1914,
     choices: [
       {
-        id: 'fight-to-last-man',
-        text: 'Fight to the last man - "They shall not pass!"',
-        consequence: 'Your heroic defense becomes legendary, but at a terrible cost in French lives'
+        id: 'turn',
+        text: 'Turn inwards. Attack the French army.',
+        consequence: 'The Miracle of the Marne. The trench lines form.',
+        modifiers: [{ stat: 'strength', value: 20 }],
+        nextSceneId: 'zimmermann'
       },
       {
-        id: 'strategic-withdrawal',
-        text: 'Conduct strategic withdrawal to better positions',
-        consequence: 'Your tactical wisdom saves lives but may be seen as retreating'
-      },
-      {
-        id: 'counter-attack',
-        text: 'Launch immediate counter-attack to retake lost ground',
-        consequence: 'Your aggression catches Germans off-guard but leads to massive casualties'
+        id: 'encircle',
+        text: 'Ignore the flank. March on Paris!',
+        consequence: 'A gamble. But it pays off. Paris falls.',
+        linkedTimelineId: 'german-victory'
       }
     ]
   },
   {
-    id: 'us-entry-decision',
-    title: 'The Zimmermann Telegram',
-    text: 'February 1917. Washington D.C. You\'re President Wilson\'s advisor. British intelligence just handed you the Zimmermann Telegram - Germany is asking Mexico to attack the US!',
-    emoji: '📜',
-    background: 'bg-linear-to-br from-blue-800 to-red-700',
-    characters: ['🇺🇸', '📮', '⚔️'],
-    sceneType: 'decision' as const,
+    id: 'zimmermann',
+    title: 'The Telegram (1917)',
+    text: 'We are starving. The U-boats are our only hope. Should we ask Mexico to attack the USA?',
+    emoji: '📮',
+    background: 'from-blue-900 to-black',
+    characters: ['📮', '🇺🇸', '🇲🇽'],
+    sceneType: 'decision',
     timelineYear: 1917,
-    timelineEvent: 'Zimmermann Telegram pushes America toward war',
     choices: [
       {
-        id: 'immediate-war',
-        text: 'Recommend immediate declaration of war on Germany',
-        consequence: 'Your quick action gets America into the war early, potentially saving Allied lives'
+        id: 'send',
+        text: 'Send the telegram. Unrestricted submarine warfare.',
+        consequence: 'The US decrypts it and declares war. We are doomed.',
+        // Historical
+        nextSceneId: 'armistice'
       },
       {
-        id: 'verify-authenticity',
-        text: 'Demand verification - this could be British propaganda',
-        consequence: 'Your caution delays American entry but ensures you\'re making the right decision'
-      },
-      {
-        id: 'diplomatic-solution',
-        text: 'Try one more diplomatic solution before war',
-        consequence: 'Your peace efforts are noble but may allow Germany to gain more ground'
+        id: 'cancel',
+        text: 'Cancel the plan. It is too risky.',
+        consequence: 'The US stays neutral. The war ends in a stalemate.',
+        linkedTimelineId: 'negotiated-peace'
       }
     ]
   },
   {
-    id: 'armistice-negotiation',
-    title: 'The Armistice Decision',
-    text: 'November 1918. Compiègne Forest, France. You\'re negotiating the Armistice. Germany is beaten but still fighting. How harsh should the terms be?',
-    emoji: '🕊️',
-    background: 'bg-linear-to-br from-green-700 to-gray-800',
-    characters: ['📜', '🕊️', '⚔️'],
-    sceneType: 'decision' as const,
+    id: 'armistice',
+    title: 'The Railway Carriage (1918)',
+    text: 'Foch dictates terms. Germany must surrender heavy weapons, navy, and accept guilt.',
+    emoji: '🚂',
+    background: 'from-green-900 to-gray-800',
+    characters: ['🚂', '✍️', '🤬'],
+    sceneType: 'negotiation',
     timelineYear: 1918,
-    timelineEvent: 'Armistice negotiations end the Great War',
     choices: [
       {
-        id: 'harsh-terms',
-        text: 'Impose harsh terms - Germany must pay for this war',
-        consequence: 'Your tough stance ensures German defeat but may breed resentment for the future'
+        id: 'accept',
+        text: 'Accept all terms. End the suffering.',
+        consequence: 'Germany is humiliated. Seeds of WWII are sown.',
+        // Historical End
       },
       {
-        id: 'moderate-terms',
-        text: 'Seek moderate terms that Germany can accept',
-        consequence: 'Your reasonableness ends the war quickly and may prevent future conflicts'
-      },
-      {
-        id: 'unconditional-surrender',
-        text: 'Demand nothing less than unconditional surrender',
-        consequence: 'Your absolutism might prolong fighting but ensures total victory'
+        id: 'refuse',
+        text: 'Refuse. Fight to the end.',
+        consequence: 'The Allies invade Germany. Total destruction.',
+        // Even worse outcome
       }
     ]
   }
@@ -555,20 +272,19 @@ export const worldWarOneChapter: Chapter = {
   title: 'World War I',
   period: '1914-1918',
   startYear: 1914,
-  endYear: 1919,
-  description: 'The Great War: When Europe Decided to Have the World\'s Worst Family Fight! 💥⚔️ Watch as a single assassination in Sarajevo somehow triggers the first global industrial war. It\'s got trenches, poison gas, tanks, airplanes, and enough explosions to make Michael Bay jealous! Plus the most expensive family feud in history! 💸💀',
-  historicalContext: 'Europe in 1914 was like a powder keg surrounded by people playing with matches! 💥 Everyone was allied with everyone else in a web of treaties so complicated that even the diplomats got confused. Add in some serious nationalism, an arms race that got way out of hand, and emperors with more ego than sense, and you\'ve got the perfect recipe for disaster. What started as "the war to end all wars" ended up being "the war that made everyone want to have another war." Go figure! 🤷‍♂️⚔️',
+  endYear: 1918,
+  description: 'The suicide of Europe. ⚔️🥀',
+  historicalContext: 'A family feud that killed millions.',
   keyFigures,
-  divergencePoint: 'Assassination of Archduke Franz Ferdinand',
+  divergencePoint: 'Assassination',
   divergenceYear: 1914,
   alternativeTimelines: [
-    noAssassinationTimeline,
-    localizedConflictTimeline,
+    longPeaceTimeline,
     germanVictoryTimeline,
-    // Additional timelines can be added here...
+    negotiatedPeaceTimeline,
   ],
+  interactiveScenarios,
   mainImage: '/images/chapters/world-war-1/main.png',
   icon: '⚔️',
-  backgroundColor: 'from-gray-600 to-red-800',
-  interactiveScenarios
+  backgroundColor: 'from-gray-700 to-red-900'
 };
