@@ -1,0 +1,58 @@
+{
+    "common": {
+        "loading": "Simulyatsiya ma'lumotlari yuklanmoqda...",
+        "abort": "Bekor qilish",
+        "return_to_modules": "Modullarga qaytish",
+        "initialize_simulation": "Simulyatsiyani Boshlash",
+        "re_run_simulation": "Simulyatsiyani qayta ishga tushirish",
+        "active": "SIMULYATSIYA AKTIV",
+        "ready": "SIMULYATSIYA TAYYOR"
+    },
+    "briefing": {
+        "start_simulation": "Simulyatsiyani Boshlash",
+        "based_on_history": "Tarixiy yozuvlarga asoslanib",
+        "time_period": "Vaqt davri",
+        "divergence_point": "Tarqalish nuqtasi",
+        "no_scenarios": "Ushbu modul uchun ssenariylar mavjud emas"
+    },
+    "stats": {
+        "freedom": "Erkinlik",
+        "chaos": "Xaos",
+        "diplomacy": "Diplomatiya",
+        "strength": "Kuch"
+    },
+    "status": {
+        "simulation_active": "Holat: Simulyatsiya faol",
+        "divergence_prob": "Tarqalish ehtimoli"
+    },
+    "analyzing": {
+        "detecting_divergence": "Vaqt chizig'i tarqalishi aniqlanmoqda...",
+        "analyzing_causality": "Sabab-oqibat zanjirlari tahlil qilinmoqda"
+    },
+    "outcomes": {
+        "destabilized": {
+            "title": "Vaqt chizig'i beqarorlashdi",
+            "desc": "Kritik entropiya darajasi. Reallik butunligi buzilgan."
+        },
+        "libertarian": {
+            "title": "Libertarian Utopiya",
+            "desc": "Ijtimoiy hamjihatlik evaziga maksimal individual erkinlikka erishildi."
+        },
+        "imperial": {
+            "title": "Imperial Gegemonlik",
+            "desc": "Absolyut kuch orqali tartib saqlanmoqda. O'zgacha fikr yo'q qilindi."
+        },
+        "federation": {
+            "title": "Global Federatsiya",
+            "desc": "Misli ko'rilmagan hamkorlik va byurokratiya orqali tinchlikka erishildi."
+        },
+        "equilibrium": {
+            "title": "Tarixiy Muvozanat",
+            "desc": "Vaqt chizig'i barqaror. Standart og'ish qabul qilinadigan chegaralarda."
+        }
+    },
+    "world_status": {
+        "title": "Hozirgi Kundagi Holat",
+        "default": "Vaqt chizig'i bizning tariximizga o'xshash tarzda barqarorlashdi, kichik o'zgarishlar bilan."
+    }
+}

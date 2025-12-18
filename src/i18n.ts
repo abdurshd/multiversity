@@ -36,6 +36,8 @@ import enPagesTermsOfService from './locales/en/pages/terms-of-service.json';
 import uzPagesTermsOfService from './locales/uz/pages/terms-of-service.json';
 import enPagesSupport from './locales/en/pages/support.json';
 import uzPagesSupport from './locales/uz/pages/support.json';
+import enPagesSimulationHub from './locales/en/pages/simulation-hub.json';
+import uzPagesSimulationHub from './locales/uz/pages/simulation-hub.json';
 
 // Import component namespaces
 import enComponentsErrorBoundary from './locales/en/components/error-boundary.json';
@@ -163,6 +165,7 @@ i18n
                 'components-breadcrumb': enComponentsBreadcrumb,
                 'components-animated-timeline': enComponentsAnimatedTimeline,
                 'components-interactive-story': enComponentsInteractiveStory,
+                'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
                 translation: uzLegacy, // For backward compatibility
@@ -185,6 +188,7 @@ i18n
                 'components-breadcrumb': uzComponentsBreadcrumb,
                 'components-animated-timeline': uzComponentsAnimatedTimeline,
                 'components-interactive-story': uzComponentsInteractiveStory,
+                'pages-simulation-hub': uzPagesSimulationHub,
             },
         },
         defaultNS: 'translation',
@@ -211,6 +215,7 @@ i18n
             'components-breadcrumb',
             'components-animated-timeline',
             'components-interactive-story',
+            'pages-simulation-hub',
         ],
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default

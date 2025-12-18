@@ -1,0 +1,58 @@
+{
+    "common": {
+        "loading": "Loading Simulation Data...",
+        "abort": "Abort",
+        "return_to_modules": "Return to Modules",
+        "initialize_simulation": "Initialize Simulation",
+        "re_run_simulation": "Re-Run Simulation",
+        "active": "SIMULATION ACTIVE",
+        "ready": "SIMULATION READY"
+    },
+    "briefing": {
+        "start_simulation": "Start Simulation",
+        "based_on_history": "Based on historical records",
+        "time_period": "Time Period",
+        "divergence_point": "Divergence Point",
+        "no_scenarios": "No scenarios available for this module"
+    },
+    "stats": {
+        "freedom": "Freedom",
+        "chaos": "Chaos",
+        "diplomacy": "Diplomacy",
+        "strength": "Strength"
+    },
+    "status": {
+        "simulation_active": "Status: Simulation Active",
+        "divergence_prob": "Divergence Probability"
+    },
+    "analyzing": {
+        "detecting_divergence": "Detecting Timeline Divergence...",
+        "analyzing_causality": "Analyzing causality chains"
+    },
+    "outcomes": {
+        "destabilized": {
+            "title": "Timeline Destabilized",
+            "desc": "Critical entropy levels reached. Reality integrity compromised."
+        },
+        "libertarian": {
+            "title": "Libertarian Utopia",
+            "desc": "Maximum individual liberty achieved at the cost of social cohesion."
+        },
+        "imperial": {
+            "title": "Imperial Hegemony",
+            "desc": "Order maintained through absolute power. Dissent eliminated."
+        },
+        "federation": {
+            "title": "Global Federation",
+            "desc": "Peace achieved through unparalleled cooperation and bureaucracy."
+        },
+        "equilibrium": {
+            "title": "Historical Equilibrium",
+            "desc": "Timeline remains stable. Standard deviation within acceptable limits."
+        }
+    },
+    "world_status": {
+        "title": "Present Day Status",
+        "default": "The timeline has stabilized similar to our own history, with minor variations."
+    }
+}
