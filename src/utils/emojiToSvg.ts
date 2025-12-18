@@ -224,6 +224,26 @@ export const emojiToSvgMap: EmojiMapping = {
   // Religious/Cultural symbols
   '✡️': 'star', // Star of David
   '✡': 'star',
+
+  // Interactive Story Specific Mappings
+  '🎭': 'celebration', // Performing arts -> celebration
+  '🛒': 'briefcase', // Commerce -> business/briefcase
+  '⚓': 'ship', // Anchor -> ship
+  '🎩': 'crown', // Top hat -> crown/leadership
+  '✒️': 'scroll', // Pen -> scroll/writing
+  '✒': 'scroll',
+  '🥶': 'snowflake', // Cold face -> snowflake
+  '🏃': 'raised-fist', // Runner -> action/fist
+  '🗽': 'american-flag', // Statue of Liberty -> US Flag
+
+  // Future Earth & Timur Legacy Mappings
+  '🐝': 'robot', // Swarm -> robot
+  '👨‍🚀': 'rocket', // Astronaut -> rocket
+  '🌌': 'star', // Galaxy -> star
+  '💊': 'thermometer', // Medicine -> thermometer
+  '🤴': 'crown', // Prince -> crown
+  '🐉': 'fire', // Dragon -> fire
+  '👳': 'scroll', // Religious figure -> scroll
 };
 
 /**

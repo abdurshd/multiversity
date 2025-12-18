@@ -384,7 +384,7 @@ const interactiveScenarios = [
     title: 'The Continental Congress Debates',
     text: 'Philadelphia, 1776. You sit in the Continental Congress as delegates passionately debate whether to declare independence. Benjamin Franklin catches your eye...',
     emoji: '📜',
-    background: 'bg-linear-to-br from-amber-800 to-red-900',
+    background: 'bg-linear-to-br from-amber-800 to-amber-950',
     characters: ['🎩', '✒️', '📖'],
     sceneType: 'negotiation' as const,
     timelineYear: 1776,
@@ -412,7 +412,7 @@ const interactiveScenarios = [
     title: 'Valley Forge Winter',
     text: 'Winter 1777-78. The Continental Army shivers at Valley Forge. Soldiers are deserting, supplies are gone. Washington asks for your counsel on a critical decision...',
     emoji: '❄️',
-    background: 'bg-linear-to-br from-gray-700 to-blue-900',
+    background: 'bg-linear-to-br from-slate-700 to-slate-900',
     characters: ['🥶', '⚔️', '🏃'],
     sceneType: 'battle' as const,
     timelineYear: 1777,
@@ -440,7 +440,7 @@ const interactiveScenarios = [
     title: 'The French Question',
     text: 'Paris, 1778. Benjamin Franklin negotiates with French ministers. They offer military aid, but demand America become a French protectorate. How do you advise?',
     emoji: '🇫🇷',
-    background: 'bg-linear-to-br from-blue-600 to-purple-800',
+    background: 'bg-linear-to-br from-blue-600 to-blue-800',
     characters: ['👑', '🎭', '⚖️'],
     sceneType: 'negotiation' as const,
     timelineYear: 1778,
@@ -468,7 +468,7 @@ const interactiveScenarios = [
     title: 'Victory at Yorktown',
     text: 'October 1781. British General Cornwallis is trapped at Yorktown. The war could end here, but how you handle victory will shape the new nation...',
     emoji: '🏆',
-    background: 'bg-linear-to-br from-yellow-600 to-green-800',
+    background: 'bg-linear-to-br from-amber-600 to-amber-800',
     characters: ['🎺', '🏴', '🕊️'],
     sceneType: 'revelation' as const,
     timelineYear: 1781,
@@ -514,5 +514,5 @@ export const usIndependenceChapter: Chapter = {
   interactiveScenarios,
   mainImage: '/images/chapters/us-independence/main.png',
   icon: '🗽',
-  backgroundColor: 'from-red-600 to-blue-600'
+  backgroundColor: 'from-blue-600 to-blue-800'
 };

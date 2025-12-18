@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Users, MapPin, GitBranch, Clock, ArrowRight, Percent, PlayCircle, Sparkles } from 'lucide-react';
+import { Calendar, Users, MapPin, GitBranch, Clock, ArrowRight, Percent, PlayCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Chapter, Person } from '../types';
 import { getChapterById } from '../data';
 import AnimatedCharacter from '../components/common/AnimatedCharacter';
-import InteractiveStory from '../components/common/InteractiveStory';
 import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 import { loadChapterTranslations } from '../i18n';
@@ -17,7 +16,6 @@ const ChapterDetail: React.FC = () => {
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [selectedTimeline, setSelectedTimeline] = useState<string | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<Person | null>(null);
-  const [showStory, setShowStory] = useState(false);
   const [chapterNamespace, setChapterNamespace] = useState<string | null>(null);
   const [translationsLoaded, setTranslationsLoaded] = useState(false);
 
@@ -136,24 +134,7 @@ const ChapterDetail: React.FC = () => {
     });
   };
 
-  // Helper to get translated scenarios
-  const getTranslatedScenarios = () => {
-    if (!chapter?.interactiveScenarios || !chapterNamespace || !translationsLoaded) return chapter?.interactiveScenarios || [];
 
-    return chapter.interactiveScenarios.map((scenario, index) => {
-      const scenarioKey = `interactive_scenarios.${index}`;
-      return {
-        ...scenario,
-        title: t(`${chapterNamespace}:${scenarioKey}.title`, { defaultValue: scenario.title }),
-        text: t(`${chapterNamespace}:${scenarioKey}.text`, { defaultValue: scenario.text }),
-        choices: scenario.choices?.map((choice, choiceIndex) => ({
-          ...choice,
-          text: t(`${chapterNamespace}:${scenarioKey}.choices.${choiceIndex}.text`, { defaultValue: choice.text }),
-          consequence: t(`${chapterNamespace}:${scenarioKey}.choices.${choiceIndex}.consequence`, { defaultValue: choice.consequence }),
-        }))
-      };
-    });
-  };
 
   if (!chapter) {
     return (
@@ -266,66 +247,41 @@ const ChapterDetail: React.FC = () => {
         </div>
       </section>
 
-      {/* Interactive Story Section */}
+      {/* Simulation Hub Entry Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-slate-800">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-8"
+            className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 border border-slate-700 shadow-2xl"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center justify-center space-x-2">
-              <PlayCircle className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
-              <span>{t('common-ui:labels.interactive_experience')}</span>
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center">
+                <PlayCircle className="w-8 h-8 text-blue-500" />
+              </div>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              Enter the Simulation Hub
             </h2>
-            <p className="text-sm sm:text-base text-gray-300 mb-6 px-4">
+            <p className="text-base text-gray-300 mb-8 max-w-2xl mx-auto">
               {t('common-ui:messages.dive_into_history')}
+              <br />
+              Test your decisions in the interactive simulation engine.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to={`/simulation/${chapter.id}?autoplay=true`}>
               <motion.button
-                onClick={() => setShowStory(!showStory)}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base shadow-lg shadow-blue-600/30"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-3 text-lg font-semibold shadow-lg shadow-blue-600/30 mx-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Sparkles className="w-5 h-5" />
-                <span>{showStory ? t('common-ui:buttons.hide_story') : t('common-ui:buttons.start_interactive_story')}</span>
+                <PlayCircle className="w-6 h-6" />
+                <span>Initialize Simulation</span>
               </motion.button>
-
-              <Link to={`/simulation/${chapter.id}`}>
-                <motion.div
-                  className="bg-slate-800 hover:bg-slate-700 border border-green-500/30 text-green-400 hover:text-green-300 px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <PlayCircle className="w-5 h-5" />
-                  <span>Enter Simulation Hub</span>
-                </motion.div>
-              </Link>
-            </div>
+            </Link>
           </motion.div>
-
-          <AnimatePresence>
-            {showStory && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-xl border border-slate-700 shadow-2xl"
-              >
-                <div className="w-full relative">
-                  <InteractiveStory
-                    title={getTranslation('meta.title')}
-                    scenes={getTranslatedScenarios()}
-                    onComplete={() => setShowStory(false)}
-                  />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
       </section>
 

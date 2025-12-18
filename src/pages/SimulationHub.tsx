@@ -1,28 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import { getChapterById } from '../data';
 import { Chapter, StoryChoice } from '../types';
 import ScenarioRunner from '../components/simulation/ScenarioRunner';
-import { Play, SkipBack, AlertOctagon, Activity, Shield, Zap, Globe } from 'lucide-react';
+import { Play, SkipBack, AlertOctagon, Activity, Shield, Zap, Globe, Sparkles, ChevronLeft } from 'lucide-react';
 import { useSimulation } from '../hooks/useSimulation';
 
-const StatBar: React.FC<{ label: string; value: number; color: string; icon: React.ReactNode }> = ({ label, value, color, icon }) => (
-    <div className="flex items-center space-x-2 w-full">
-        <div className={`p-1 rounded-sm ${color} bg-opacity-20`}>
+const StatCard: React.FC<{ label: string; value: number; color: string; icon: React.ReactNode }> = ({ label, value, color, icon }) => (
+    <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-4 rounded-xl flex flex-col justify-between h-full relative overflow-hidden group hover:border-blue-500/30 transition-colors">
+        <div className={`absolute top-0 right-0 p-2 opacity-20 group-hover:opacity-40 transition-opacity`}>
             {icon}
         </div>
-        <div className="flex-grow">
-            <div className="flex justify-between text-[10px] font-mono uppercase text-gray-500 mb-1">
-                <span>{label}</span>
-                <span>{value}%</span>
+
+        <div className="flex justify-between items-start mb-2 z-10">
+            <span className="text-slate-400 text-xs font-semibold uppercase tracking-wider">{label}</span>
+        </div>
+
+        <div className="z-10">
+            <div className="flex items-end space-x-2 mb-2">
+                <span className="text-2xl font-bold text-white">{value}</span>
+                <span className="text-xs text-slate-500 mb-1">/ 100</span>
             </div>
-            <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
+
+            <div className="h-1.5 bg-slate-700/50 rounded-full overflow-hidden">
                 <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${value}%` }}
                     transition={{ type: "spring", stiffness: 50 }}
-                    className={`h-full ${color.replace('text-', 'bg-')}`}
+                    className={`h-full ${color.replace('text-', 'bg-')} shadow-[0_0_10px_rgba(0,0,0,0.3)]`}
                 />
             </div>
         </div>
@@ -32,6 +38,7 @@ const StatBar: React.FC<{ label: string; value: number; color: string; icon: Rea
 const SimulationHub: React.FC = () => {
     const { chapterId } = useParams<{ chapterId: string }>();
     const navigate = useNavigate();
+    const location = useLocation();
     const [chapter, setChapter] = useState<Chapter | null>(null);
     const [mode, setMode] = useState<'briefing' | 'simulation' | 'analyzing' | 'result'>('briefing');
 
@@ -45,6 +52,14 @@ const SimulationHub: React.FC = () => {
             setChapter(data || null);
         }
     }, [chapterId]);
+
+    // Handle Autoplay from query params
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        if (params.get('autoplay') === 'true' && mode === 'briefing') {
+            startSimulation();
+        }
+    }, [location.search, mode]); // Depend on mode to avoid loop if logic was different
 
     const startSimulation = () => {
         resetSimulation();
@@ -62,15 +77,10 @@ const SimulationHub: React.FC = () => {
                 navigate(`/timeline/${chapterId}/${choice.linkedTimelineId}`);
             }, 2000);
         } else {
-            // Standard timeline preserved
-            // In a real app we'd have a nice transition.
-            // For MVP, we just advance or show a "Stability Preserved" message then advance.
-
-            // If there are more scenarios, advance
             if (chapter?.interactiveScenarios && currentScenarioIndex < chapter.interactiveScenarios.length - 1) {
                 setTimeout(() => {
                     advanceScenario();
-                }, 1000);
+                }, 800);
             } else {
                 setMode('result');
             }
@@ -79,175 +89,225 @@ const SimulationHub: React.FC = () => {
 
     const getOutcome = () => {
         const { chaos, freedom, strength, diplomacy } = stats;
-        if (chaos > 80) return { title: 'Timeline Destabilized', desc: 'Entropy levels critical. Reality fragmentation imminent.', color: 'text-red-500' };
-        if (freedom > 80) return { title: 'Anarcho-Utopian State', desc: 'Maximum individual liberty achieved at the cost of social cohesion.', color: 'text-blue-400' };
-        if (strength > 80) return { title: 'Totalitarian Hegemony', desc: 'Order maintained through absolute power. Dissent eliminated.', color: 'text-yellow-600' };
-        if (diplomacy > 80) return { title: 'Global Federation', desc: 'World peace achieved through bureaucracy. Slightly boring.', color: 'text-purple-400' };
-        return { title: 'Historical Equilibrium', desc: 'Standard deviation within acceptable limits. Timeline stable.', color: 'text-green-500' };
+        if (chaos > 80) return { title: 'Timeline Destabilized', desc: 'Critical entropy levels reached. Reality integrity compromised.', color: 'text-red-500', bg: 'from-red-900/20 to-slate-900' };
+        if (freedom > 80) return { title: 'Libertarian Utopia', desc: 'Maximum individual liberty achieved at the cost of social cohesion.', color: 'text-blue-400', bg: 'from-blue-900/20 to-slate-900' };
+        if (strength > 80) return { title: 'Imperial Hegemony', desc: 'Order maintained through absolute power. Dissent eliminated.', color: 'text-amber-500', bg: 'from-amber-900/20 to-slate-900' };
+        if (diplomacy > 80) return { title: 'Global Federation', desc: 'Peace achieved through unparalleled cooperation and bureaucracy.', color: 'text-purple-400', bg: 'from-purple-900/20 to-slate-900' };
+        return { title: 'Historical Equilibrium', desc: 'Timeline remains stable. Standard deviation within acceptable limits.', color: 'text-emerald-500', bg: 'from-emerald-900/20 to-slate-900' };
     };
 
-    if (!chapter) return <div className="min-h-screen bg-black text-green-500 font-mono p-10">LOADING DATA...</div>;
+    if (!chapter) return (
+        <div className="min-h-screen bg-slate-900 flex items-center justify-center text-slate-400">
+            <div className="flex flex-col items-center">
+                <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin mb-4" />
+                <span>Loading Simulation Data...</span>
+            </div>
+        </div>
+    );
 
     const outcome = getOutcome();
 
     return (
-        <div className="min-h-screen bg-black text-white pt-20 px-4">
-            {mode === 'briefing' && (
-                <div className="max-w-4xl mx-auto">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="border border-green-900/50 bg-black/50 p-8 rounded-lg relative overflow-hidden"
+        <div className="min-h-screen bg-slate-900 text-slate-100 font-sans pb-20">
+            {/* Navigation Header */}
+            <div className="fixed top-0 left-0 right-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 h-16 flex items-center px-6 justify-between">
+                <div className="flex items-center space-x-4">
+                    <button
+                        onClick={() => navigate('/chapters')}
+                        className="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"
                     >
-                        <div className="absolute top-0 left-0 w-full h-1 bg-green-500/50"></div>
-
-                        <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600 uppercase">
-                            {chapter.title}
-                        </h1>
-
-                        <div className="flex items-center space-x-4 mb-8 text-green-500/80 font-mono text-sm">
-                            <span className="border border-green-500/30 px-2 py-1 rounded-sm">YEAR: {chapter.period}</span>
-                            <span className="border border-green-500/30 px-2 py-1 rounded-sm">DIV_POINT: {chapter.divergencePoint}</span>
-                        </div>
-
-                        <div className="prose prose-invert prose-lg max-w-none text-gray-300 mb-12 font-mono">
-                            <p>{chapter.description}</p>
-                            <p className="text-sm opacity-70 border-l-2 border-green-500 pl-4 italic">
-                                "{chapter.historicalContext}"
-                            </p>
-                        </div>
-
-                        <div className="flex gap-4">
-                            {chapter.interactiveScenarios && chapter.interactiveScenarios.length > 0 ? (
-                                <button
-                                    onClick={startSimulation}
-                                    className="group flex items-center space-x-3 bg-green-600 hover:bg-green-500 text-black px-8 py-4 font-bold tracking-widest uppercase transition-all hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] clip-path-slant"
-                                >
-                                    <Play className="w-5 h-5 fill-current" />
-                                    <span>Initialize Simulation</span>
-                                </button>
-                            ) : (
-                                <div className="bg-red-900/20 text-red-500 border border-red-500/30 px-6 py-4 flex items-center space-x-3">
-                                    <AlertOctagon className="w-5 h-5" />
-                                    <span>SIMULATION DATA CORRUPTED (No scenarios found)</span>
-                                </div>
-                            )}
-
-                            <button
-                                onClick={() => navigate('/chapters')}
-                                className="flex items-center space-x-3 text-gray-500 hover:text-white px-6 py-4 font-mono uppercase tracking-wider transition-colors"
-                            >
-                                <SkipBack className="w-4 h-4" />
-                                <span>Abort</span>
-                            </button>
-                        </div>
-                    </motion.div>
+                        <ChevronLeft className="w-5 h-5" />
+                        <span className="hidden sm:inline">Modules</span>
+                    </button>
+                    <div className="h-6 w-px bg-slate-700 mx-2"></div>
+                    <h1 className="text-lg font-bold text-slate-200 truncate max-w-[200px] sm:max-w-md">
+                        {chapter.title}
+                    </h1>
                 </div>
-            )}
 
-            {mode === 'simulation' && chapter.interactiveScenarios && (
-                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
-                    {/* Left: Stats Dashboard */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="lg:col-span-1 space-y-4"
-                    >
-                        <div className="bg-black border border-green-900/50 p-4 rounded-lg">
-                            <h3 className="text-green-500 font-mono text-xs uppercase tracking-widest mb-4 border-b border-green-900/50 pb-2">
-                                Global State
-                            </h3>
-                            <div className="space-y-4">
-                                <StatBar label="Freedom" value={stats.freedom} color="text-blue-500" icon={<Globe className="w-3 h-3 text-blue-500" />} />
-                                <StatBar label="Chaos" value={stats.chaos} color="text-red-500" icon={<Activity className="w-3 h-3 text-red-500" />} />
-                                <StatBar label="Diplomacy" value={stats.diplomacy} color="text-purple-500" icon={<Shield className="w-3 h-3 text-purple-500" />} />
-                                <StatBar label="Strength" value={stats.strength} color="text-yellow-500" icon={<Zap className="w-3 h-3 text-yellow-500" />} />
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    {/* Center: Scenario Runner */}
-                    <div className="lg:col-span-3">
-                        <ScenarioRunner
-                            scenario={chapter.interactiveScenarios[currentScenarioIndex]}
-                            onChoiceSelected={handleChoice}
-                            onComplete={() => { }}
-                        />
-                    </div>
+                <div className="flex items-center space-x-3 text-xs md:text-sm font-mono text-blue-400 bg-blue-500/10 px-3 py-1.5 rounded-full border border-blue-500/20">
+                    <Activity className="w-4 h-4 animate-pulse" />
+                    <span>SIMULATION {mode === 'simulation' ? 'ACTIVE' : 'READY'}</span>
                 </div>
-            )}
+            </div>
 
-            {mode === 'result' && (
-                <div className="max-w-4xl mx-auto">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        className="bg-black border border-green-500/50 p-10 rounded-lg text-center shadow-[0_0_50px_rgba(34,197,94,0.1)]"
-                    >
-                        <div className="inline-block px-4 py-1 border border-green-500/50 text-green-500 text-xs font-mono mb-6 tracking-[0.3em]">
-                            SIMULATION REPORT
-                        </div>
-
-                        <h2 className={`text-4xl md:text-5xl font-black mb-4 uppercase ${outcome.color}`}>
-                            {outcome.title}
-                        </h2>
-
-                        <p className="text-gray-400 font-mono text-lg mb-10 max-w-2xl mx-auto">
-                            {outcome.desc}
-                        </p>
-
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                            <div className="p-4 bg-white/5 rounded-lg border border-white/10">
-                                <div className="text-xs text-gray-500 mb-1">FREEDOM</div>
-                                <div className="text-2xl font-mono text-blue-500">{stats.freedom}</div>
-                            </div>
-                            <div className="p-4 bg-white/5 rounded-lg border border-white/10">
-                                <div className="text-xs text-gray-500 mb-1">CHAOS</div>
-                                <div className="text-2xl font-mono text-red-500">{stats.chaos}</div>
-                            </div>
-                            <div className="p-4 bg-white/5 rounded-lg border border-white/10">
-                                <div className="text-xs text-gray-500 mb-1">DIPLOMACY</div>
-                                <div className="text-2xl font-mono text-purple-500">{stats.diplomacy}</div>
-                            </div>
-                            <div className="p-4 bg-white/5 rounded-lg border border-white/10">
-                                <div className="text-xs text-gray-500 mb-1">STRENGTH</div>
-                                <div className="text-2xl font-mono text-yellow-500">{stats.strength}</div>
-                            </div>
-                        </div>
-
-                        <div className="flex justify-center gap-4">
-                            <button
-                                onClick={startSimulation}
-                                className="flex items-center space-x-2 bg-green-600 hover:bg-green-500 text-black px-6 py-3 font-bold uppercase tracking-wider transition-colors rounded-sm"
-                            >
-                                <Play className="w-4 h-4" />
-                                <span>Re-Run</span>
-                            </button>
-                            <button
-                                onClick={() => navigate('/chapters')}
-                                className="flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 font-bold uppercase tracking-wider transition-colors rounded-sm"
-                            >
-                                <Globe className="w-4 h-4" />
-                                <span>Exit</span>
-                            </button>
-                        </div>
-                    </motion.div>
-                </div>
-            )}
-
-            {mode === 'analyzing' && (
-                <div className="fixed inset-0 z-50 bg-black flex flex-col items-center justify-center">
-                    <div className="text-green-500 font-mono text-xl animate-pulse mb-4">CALCULATING TEMPORAL SHIFT...</div>
-                    <div className="w-64 h-2 bg-green-900 rounded-full overflow-hidden">
+            <div className="pt-24 px-4 sm:px-6 max-w-7xl mx-auto">
+                <AnimatePresence mode="wait">
+                    {mode === 'briefing' && (
                         <motion.div
-                            initial={{ width: 0 }}
-                            animate={{ width: "100%" }}
-                            transition={{ duration: 2, ease: "linear" }}
-                            className="h-full bg-green-500 shadow-[0_0_10px_#22c55e]"
-                        />
-                    </div>
-                </div>
-            )}
+                            key="briefing"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            className="max-w-4xl mx-auto"
+                        >
+                            <div className="bg-slate-800 rounded-2xl border border-slate-700 shadow-2xl overflow-hidden">
+                                {/* Hero Image Banner */}
+                                <div className="h-48 sm:h-64 relative bg-slate-900 overflow-hidden">
+                                    <div className="absolute inset-0 bg-cover bg-center opacity-60" style={{ backgroundImage: `url(${chapter.mainImage})` }} />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent" />
+                                    <div className="absolute bottom-0 left-0 p-8">
+                                        <div className="text-blue-400 text-sm font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+                                            <Sparkles className="w-4 h-4" />
+                                            Start Simulation
+                                        </div>
+                                        <h2 className="text-3xl sm:text-5xl font-bold text-white shadow-black drop-shadow-lg">
+                                            {chapter.title}
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div className="p-8 sm:p-10">
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                                        <div className="col-span-2 prose prose-invert prose-lg text-slate-300">
+                                            <p className="lead">{chapter.description}</p>
+                                            <p className="text-sm border-l-4 border-blue-500/50 pl-4 italic text-slate-400">
+                                                Based on historical records: "{chapter.historicalContext}"
+                                            </p>
+                                        </div>
+                                        <div className="space-y-4">
+                                            <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-700/50">
+                                                <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Time Period</div>
+                                                <div className="font-semibold text-white">{chapter.period}</div>
+                                            </div>
+                                            <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-700/50">
+                                                <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Divergence Point</div>
+                                                <div className="font-semibold text-white">{chapter.divergencePoint}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+                                        {chapter.interactiveScenarios && chapter.interactiveScenarios.length > 0 ? (
+                                            <button
+                                                onClick={startSimulation}
+                                                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl shadow-lg shadow-blue-600/25 transition-all text-lg font-semibold flex items-center justify-center space-x-3 active:scale-95"
+                                            >
+                                                <Play className="w-5 h-5 fill-current" />
+                                                <span>Initialize Simulation</span>
+                                            </button>
+                                        ) : (
+                                            <div className="bg-red-500/10 text-red-400 px-6 py-4 rounded-xl flex items-center space-x-3 border border-red-500/20">
+                                                <AlertOctagon className="w-5 h-5" />
+                                                <span>No scenarios available for this module</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    )}
+
+                    {mode === 'simulation' && chapter.interactiveScenarios && (
+                        <motion.div
+                            key="simulation"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8"
+                        >
+                            {/* Desktop Sidebar (Stats) */}
+                            <div className="lg:col-span-3 order-2 lg:order-1 space-y-4">
+                                <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
+                                    <StatCard label="Freedom" value={stats.freedom} color="text-blue-500" icon={<Globe className="w-6 h-6 text-blue-500" />} />
+                                    <StatCard label="Chaos" value={stats.chaos} color="text-red-500" icon={<Activity className="w-6 h-6 text-red-500" />} />
+                                    <StatCard label="Diplomacy" value={stats.diplomacy} color="text-purple-500" icon={<Shield className="w-6 h-6 text-purple-500" />} />
+                                    <StatCard label="Strength" value={stats.strength} color="text-amber-500" icon={<Zap className="w-6 h-6 text-amber-500" />} />
+                                </div>
+                            </div>
+
+                            {/* Main Scenario Runner */}
+                            <div className="lg:col-span-9 order-1 lg:order-2">
+                                <ScenarioRunner
+                                    scenario={chapter.interactiveScenarios[currentScenarioIndex]}
+                                    onChoiceSelected={handleChoice}
+                                    onComplete={() => { }}
+                                />
+                            </div>
+                        </motion.div>
+                    )}
+
+                    {mode === 'result' && (
+                        <motion.div
+                            key="result"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            className="max-w-3xl mx-auto"
+                        >
+                            <div className={`bg-gradient-to-br ${outcome.bg} border border-slate-700/50 p-1 rounded-2xl shadow-2xl`}>
+                                <div className="bg-slate-900/90 backdrop-blur-xl rounded-xl p-8 sm:p-12 text-center h-full">
+                                    <div className="inline-flex items-center justify-center p-3 bg-slate-800 rounded-full mb-6">
+                                        <Sparkles className={`w-8 h-8 ${outcome.color}`} />
+                                    </div>
+
+                                    <h2 className={`text-4xl sm:text-5xl font-bold mb-4 ${outcome.color}`}>
+                                        {outcome.title}
+                                    </h2>
+
+                                    <p className="text-xl text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
+                                        {outcome.desc}
+                                    </p>
+
+                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+                                        <div className="p-4 bg-slate-800 rounded-lg">
+                                            <div className="text-xs text-slate-500 uppercase font-bold mb-1">Freedom</div>
+                                            <div className="text-2xl font-bold text-white">{stats.freedom}</div>
+                                        </div>
+                                        <div className="p-4 bg-slate-800 rounded-lg">
+                                            <div className="text-xs text-slate-500 uppercase font-bold mb-1">Chaos</div>
+                                            <div className="text-2xl font-bold text-white">{stats.chaos}</div>
+                                        </div>
+                                        <div className="p-4 bg-slate-800 rounded-lg">
+                                            <div className="text-xs text-slate-500 uppercase font-bold mb-1">Diplomacy</div>
+                                            <div className="text-2xl font-bold text-white">{stats.diplomacy}</div>
+                                        </div>
+                                        <div className="p-4 bg-slate-800 rounded-lg">
+                                            <div className="text-xs text-slate-500 uppercase font-bold mb-1">Strength</div>
+                                            <div className="text-2xl font-bold text-white">{stats.strength}</div>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                                        <button
+                                            onClick={startSimulation}
+                                            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg shadow-blue-600/20 transition-all flex items-center justify-center space-x-2"
+                                        >
+                                            <Play className="w-5 h-5" />
+                                            <span>Re-Run Simulation</span>
+                                        </button>
+                                        <button
+                                            onClick={() => navigate('/chapters')}
+                                            className="bg-slate-700 hover:bg-slate-600 text-white px-8 py-3 rounded-xl font-semibold transition-all flex items-center justify-center space-x-2"
+                                        >
+                                            <SkipBack className="w-5 h-5" />
+                                            <span>Return to Modules</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    )}
+
+                    {mode === 'analyzing' && (
+                        <motion.div
+                            key="analyzing"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="fixed inset-0 z-50 bg-slate-900 flex flex-col items-center justify-center"
+                        >
+                            <div className="relative">
+                                <div className="w-24 h-24 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin"></div>
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <Zap className="w-8 h-8 text-blue-500 animate-pulse" />
+                                </div>
+                            </div>
+                            <h2 className="mt-8 text-2xl font-bold text-white">Detecting Timeline Divergence...</h2>
+                            <p className="text-slate-400 mt-2">Analyzing causality chains</p>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
         </div>
     );
 };

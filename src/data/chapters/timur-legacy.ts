@@ -331,5 +331,5 @@ export const timurLegacyChapter: Chapter = {
             ]
         }
     ],
-    backgroundColor: 'from-red-900 to-yellow-900'
+    backgroundColor: 'from-red-900 to-red-950'
 };
