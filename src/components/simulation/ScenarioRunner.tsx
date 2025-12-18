@@ -25,19 +25,23 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
         setShowChoices(false);
         let i = 0;
         const text = scenario.text;
+
+        // Immediate start
         const interval = setInterval(() => {
-            if (i < text.length) {
-                setTypedText((prev) => prev + text.charAt(i));
-                i++;
-            } else {
+            i++;
+            // Use slice instead of accumulation to match the current text exactly
+            // This prevents issues if text changes or renders overlap
+            setTypedText(text.slice(0, i));
+
+            if (i >= text.length) {
                 setIsTyping(false);
                 setShowChoices(true);
                 clearInterval(interval);
             }
-        }, 20); // Slightly faster typing
+        }, 20);
 
         return () => clearInterval(interval);
-    }, [scenario]);
+    }, [scenario.id, scenario.text]); // Depend on content/ID, not the object reference
 
     const getSceneIcon = (sceneType: string) => {
         switch (sceneType) {

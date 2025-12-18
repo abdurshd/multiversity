@@ -336,10 +336,11 @@ const ComparisonMode: React.FC = () => {
     d3.selectAll('.timeline-tooltip').remove();
   };
 
-  const addTimeline = (timeline: Timeline) => {
-    if (!selectedTimelines.find(t => t.id === timeline.id)) {
+  const toggleTimelineSelection = (timeline: Timeline) => {
+    if (selectedTimelines.find(t => t.id === timeline.id)) {
+      setSelectedTimelines(prev => prev.filter(t => t.id !== timeline.id));
+    } else {
       setSelectedTimelines(prev => [...prev, timeline]);
-      setShowSelector(false);
     }
   };
 
@@ -753,7 +754,7 @@ const ComparisonMode: React.FC = () => {
                                 : 'border-gray-600 bg-dark-700 hover:border-blue-500 hover:bg-blue-500/10'
                               }
                             `}
-                            onClick={() => addTimeline(timeline)}
+                            onClick={() => toggleTimelineSelection(timeline)}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                           >
