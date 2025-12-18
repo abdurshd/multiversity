@@ -1,4 +1,4 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
 // Key figures in the French Revolution with cartoonish descriptions
 const keyFigures: Person[] = [
@@ -54,8 +54,8 @@ const keyFigures: Person[] = [
 const constitutionalMonarchyTimeline: Timeline = {
   id: 'constitutional-monarchy',
   title: 'King Louis Learns to Share! 👑🤝',
-  description: 'What if Louis XVI had embraced constitutional monarchy and worked with the revolutionaries instead of resisting change?',
-  divergenceDescription: 'Louis XVI genuinely accepts constitutional limits and works with the National Assembly in good faith',
+  description: 'What if Louis XVI had embraced constitutional monarchy?',
+  divergenceDescription: 'Louis XVI genuinely accepts constitutional limits.',
   divergenceYear: 1789,
   probability: 35,
   color: '#10B981',
@@ -63,56 +63,21 @@ const constitutionalMonarchyTimeline: Timeline = {
   image: '/images/chapters/french-revolution/timeline_1.png',
   keyEvents: [
     {
-      id: 'louis-accepts-constitution-1789',
+      id: 'louis-accepts-constitution',
       year: 1789,
-      month: 9,
-      title: 'Louis XVI: "You Know What? This Constitution Looks Great!" 👑📜',
-      description: 'Instead of resisting, Louis XVI enthusiastically embraces constitutional monarchy and becomes a model constitutional king.',
-      impact: 'Prevents radicalization and establishes stable constitutional government',
+      title: 'Louis XVI Accepts Constitution',
+      description: 'Louis becomes a model constitutional king.',
+      impact: 'Prevents radicalization.',
       relatedFigures: ['louis-xvi'],
       location: { lat: 48.8566, lng: 2.3522 },
       type: 'political'
     },
     {
-      id: 'economic-reforms-1790',
-      year: 1790,
-      month: 3,
-      title: 'France Gets Its Financial House in Order! 💰📈',
-      description: 'Successful financial reforms solve the debt crisis through fair taxation and economic modernization.',
-      impact: 'Economic stability prevents social unrest and radical politics',
-      relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'economic'
-    },
-    {
-      id: 'peaceful-church-reform-1790',
-      year: 1790,
-      month: 7,
-      title: 'Church and State Find Middle Ground ⛪🤝',
-      description: 'Moderate church reforms are negotiated peacefully without alienating Catholic population.',
-      impact: 'Prevents religious civil war and maintains social cohesion',
-      relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'social'
-    },
-    {
-      id: 'no-foreign-wars-1792',
-      year: 1792,
-      month: 4,
-      title: 'France Says "Non!" to War 🕊️❌⚔️',
-      description: 'Constitutional France avoids foreign wars by diplomatic solutions with European monarchies.',
-      impact: 'No war means no radicalization and economic resources for domestic development',
-      relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'political'
-    },
-    {
-      id: 'industrial-revolution-1800',
+      id: 'industrial-revolution-france',
       year: 1800,
-      month: 1,
-      title: 'France Becomes the Industrial Powerhouse! 🏭⚡',
-      description: 'Political stability enables France to lead the Industrial Revolution in continental Europe.',
-      impact: 'France becomes the dominant European industrial and economic power',
+      title: 'French Industrial Revolution',
+      description: 'Stability leads to early industrialization.',
+      impact: 'France becomes economic superpower.',
       relatedFigures: [],
       location: { lat: 48.8566, lng: 2.3522 },
       type: 'economic'
@@ -122,43 +87,29 @@ const constitutionalMonarchyTimeline: Timeline = {
     {
       id: 'stable-democracy',
       category: 'political',
-      shortTerm: 'Constitutional monarchy provides stable government for 30 years',
-      longTerm: 'France becomes a model constitutional democracy inspiring peaceful reforms across Europe',
-      globalImpact: 'Slower but more stable spread of democratic ideals without revolutionary violence'
-    },
-    {
-      id: 'no-napoleon',
-      category: 'political',
-      shortTerm: 'No chaos means no opportunity for Napoleon\'s rise',
-      longTerm: 'No Napoleonic Wars reshape European borders very differently',
-      globalImpact: 'European balance of power remains stable, no need for Congress of Vienna'
+      shortTerm: 'Stable government for 30 years',
+      longTerm: 'France becomes model constitutional democracy',
+      globalImpact: 'Peaceful spread of democratic ideals'
     }
   ],
   butterfly: [
     {
       id: 'peaceful-europe',
-      trigger: 'No revolutionary wars and Napoleon',
-      consequence: 'European powers focus on colonial expansion and industrial development instead of fighting each other',
+      trigger: 'No Napoleonic Wars',
+      consequence: 'Europe focuses on trade',
       magnitude: 'massive',
       timespan: 100
-    },
-    {
-      id: 'earlier-democracy',
-      trigger: 'Successful constitutional monarchy example',
-      consequence: 'Other European monarchies adopt constitutional reforms peacefully',
-      magnitude: 'large',
-      timespan: 50
     }
   ],
-  presentDayStatus: 'The French Constitutional Monarchy evolved into a modern parliamentary democracy by 1850. France leads the European Union as its most economically powerful member. The Bourbon dynasty still reigns as ceremonial monarchs, beloved for their role in peaceful democratization. No guillotines were harmed in the making of this timeline! 🇫🇷👑'
+  presentDayStatus: 'France leads the European Union as a Constitutional Monarchy. The Bourbons are beloved figureheads. Paris is the capital of peace. 🇫🇷👑'
 };
 
-// Alternative Timeline 2: Robespierre Lives and Continues Terror
+// Alternative Timeline 2: Robespierre Lives
 const robespierreLivesTimeline: Timeline = {
   id: 'robespierre-eternal',
   title: 'Robespierre\'s Eternal Terror! 😱🗡️',
-  description: 'What if Robespierre had survived and continued the Reign of Terror for decades, creating a revolutionary police state?',
-  divergenceDescription: 'Robespierre\'s allies prevent the Thermidorian Reaction and he consolidates power as revolutionary dictator',
+  description: 'What if Robespierre had survived?',
+  divergenceDescription: 'Robespierre purges his enemies before Thermidor.',
   divergenceYear: 1794,
   probability: 20,
   color: '#DC2626',
@@ -166,102 +117,53 @@ const robespierreLivesTimeline: Timeline = {
   image: '/images/chapters/french-revolution/timeline_2.png',
   keyEvents: [
     {
-      id: 'robespierre-survives-1794',
+      id: 'robespierre-survives',
       year: 1794,
-      month: 7,
-      title: 'Robespierre Dodges the Guillotine! 🗡️🏃‍♂️',
-      description: 'Robespierre\'s spy network uncovers the plot against him and he purges his enemies first.',
-      impact: 'Consolidates revolutionary dictatorship and intensifies the Terror',
+      title: 'Robespierre Survives',
+      description: 'The plot fails. The Terror intensifies.',
+      impact: 'Revolutionary dictatorship consolidated.',
       relatedFigures: ['robespierre'],
       location: { lat: 48.8566, lng: 2.3522 },
       type: 'political'
     },
     {
-      id: 'revolutionary-police-state-1795',
-      year: 1795,
-      month: 1,
-      title: 'France Becomes the Ultimate Police State! 👁️🚨',
-      description: 'Robespierre creates an extensive surveillance network with neighbors spying on neighbors.',
-      impact: 'Creates totalitarian state 150 years before Orwell imagined it',
-      relatedFigures: ['robespierre'],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'political'
-    },
-    {
-      id: 'export-revolution-1796',
-      year: 1796,
-      month: 4,
-      title: 'Revolution Express: Now Delivering Terror Worldwide! 🚂💥',
-      description: 'Robespierre sends revolutionary armies to "liberate" all of Europe from monarchy.',
-      impact: 'Creates revolutionary empire based on ideological purity rather than Napoleon\'s pragmatism',
-      relatedFigures: ['robespierre'],
-      location: { lat: 50.8503, lng: 4.3517 },
-      type: 'political'
-    },
-    {
-      id: 'cult-supreme-being-1798',
+      id: 'cult-supreme-being',
       year: 1798,
-      month: 6,
-      title: 'Robespierre Declares Himself High Priest! ⛪😇',
-      description: 'The Cult of the Supreme Being becomes mandatory state religion with Robespierre as divine interpreter.',
-      impact: 'Creates revolutionary theocracy combining political and religious authority',
+      title: 'Cult of the Supreme Being',
+      description: 'New state religion enforced.',
+      impact: 'Theocracy established.',
       relatedFigures: ['robespierre'],
       location: { lat: 48.8566, lng: 2.3522 },
       type: 'social'
-    },
-    {
-      id: 'revolutionary-calendar-enforced-1800',
-      year: 1800,
-      month: 1,
-      title: 'Goodbye Monday, Hello Primidi! 📅🔄',
-      description: 'Revolutionary calendar is strictly enforced with severe penalties for using "counter-revolutionary" dates.',
-      impact: 'Complete cultural transformation as traditional timekeeping becomes illegal',
-      relatedFigures: ['robespierre'],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'cultural'
     }
   ],
   consequences: [
     {
       id: 'totalitarian-state',
       category: 'political',
-      shortTerm: 'France becomes world\'s first modern totalitarian state',
-      longTerm: 'Revolutionary terror continues for 30 years under Robespierre\'s rule',
-      globalImpact: 'Provides template for 20th century totalitarian movements'
-    },
-    {
-      id: 'revolutionary-wars',
-      category: 'political',
-      shortTerm: 'Ideological wars against all European monarchies',
-      longTerm: 'Different style of European conquest based on revolutionary ideology',
-      globalImpact: 'Earlier development of ideological warfare and propaganda techniques'
+      shortTerm: 'First modern totalitarian state',
+      longTerm: 'Terror lasts decades',
+      globalImpact: 'Template for future dictators'
     }
   ],
   butterfly: [
     {
-      id: 'no-napoleon-empire',
-      trigger: 'Robespierre prevents Napoleon\'s rise',
-      consequence: 'Revolutionary France develops differently without Napoleonic genius',
-      magnitude: 'massive',
-      timespan: 50
-    },
-    {
       id: 'early-totalitarianism',
-      trigger: 'Revolutionary police state techniques perfected',
-      consequence: 'Totalitarian methods spread to other revolutions 100 years earlier',
+      trigger: 'Police state perfected',
+      consequence: 'Totalitarianism spreads earlier',
       magnitude: 'large',
       timespan: 200
     }
   ],
-  presentDayStatus: 'The French Revolutionary Republic finally collapsed in 1824 when Robespierre died of old age (and probably exhaustion from all that guillotining). The restored monarchy was surprisingly popular after 30 years of terror. Modern France has an annual "Never Again Day" featuring guillotine-shaped piñatas. 🎭🗡️'
+  presentDayStatus: 'The Republic of Virtue collapsed in 1824. It is remembered as a dark age. Annual "Never Again" parades feature guillotine piñatas. 🎭🗡️'
 };
 
 // Alternative Timeline 3: Girondist Victory
 const girondistVictoryTimeline: Timeline = {
   id: 'girondist-victory',
-  title: 'The Girondists Win! Democracy Lite Edition 🕊️🏛️',
-  description: 'What if the moderate Girondist faction had defeated the radical Jacobins and created a federal republic?',
-  divergenceDescription: 'Girondists successfully resist Jacobin coup attempts and maintain moderate control of the revolution',
+  title: 'The Girondists Win! Democracy Lite 🕊️🏛️',
+  description: 'What if the moderate Girondists defeated the Jacobins?',
+  divergenceDescription: 'Girondists resist Jacobin coup.',
   divergenceYear: 1793,
   probability: 25,
   color: '#3B82F6',
@@ -269,58 +171,13 @@ const girondistVictoryTimeline: Timeline = {
   image: '/images/chapters/french-revolution/timeline_3.png',
   keyEvents: [
     {
-      id: 'girondist-coalition-1793',
+      id: 'federal-republic',
       year: 1793,
-      month: 6,
-      title: 'Girondists Form the Ultimate Alliance! 🤝⚡',
-      description: 'Moderate Girondists successfully rally provincial support against Jacobin extremism in Paris.',
-      impact: 'Prevents radical takeover and maintains moderate revolutionary government',
-      relatedFigures: [],
-      location: { lat: 44.8378, lng: -0.5792 },
-      type: 'political'
-    },
-    {
-      id: 'federal-republic-1793',
-      year: 1793,
-      month: 9,
-      title: 'France Discovers Federalism! 🏛️🌟',
-      description: 'Girondists establish a federal republic with strong regional autonomy, like America but with better food.',
-      impact: 'Creates decentralized democracy respecting regional differences',
+      title: 'Federal Republic Established',
+      description: 'Decentralized democracy like the USA.',
+      impact: 'Respects regional autonomy.',
       relatedFigures: [],
       location: { lat: 48.8566, lng: 2.3522 },
-      type: 'political'
-    },
-    {
-      id: 'economic-liberalism-1794',
-      year: 1794,
-      month: 3,
-      title: 'Free Market Revolution! 💰📈',
-      description: 'Girondist economic policies promote free trade and business development without radical redistribution.',
-      impact: 'Rapid economic recovery through market-oriented reforms',
-      relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'economic'
-    },
-    {
-      id: 'religious-tolerance-1794',
-      year: 1794,
-      month: 12,
-      title: 'Everyone Gets to Believe What They Want! ⛪🕌🕍',
-      description: 'Girondist government establishes genuine religious freedom without anti-clerical persecution.',
-      impact: 'Maintains social cohesion while modernizing church-state relations',
-      relatedFigures: [],
-      location: { lat: 48.8566, lng: 2.3522 },
-      type: 'social'
-    },
-    {
-      id: 'peaceful-expansion-1796',
-      year: 1796,
-      month: 5,
-      title: 'France Spreads Democracy Through Friendship! 🤗🌍',
-      description: 'Instead of conquest, France promotes democratic ideals through cultural and economic influence.',
-      impact: 'Gradual democratization of Europe without devastating wars',
-      relatedFigures: [],
-      location: { lat: 50.8503, lng: 4.3517 },
       type: 'political'
     }
   ],
@@ -328,176 +185,181 @@ const girondistVictoryTimeline: Timeline = {
     {
       id: 'moderate-democracy',
       category: 'political',
-      shortTerm: 'Stable federal republic with strong civil liberties',
-      longTerm: 'France becomes model for federal democratic systems',
-      globalImpact: 'Influences American federal system development and German unification'
-    },
-    {
-      id: 'economic-prosperity',
-      category: 'economic',
-      shortTerm: 'Free market policies stimulate rapid economic growth',
-      longTerm: 'France leads European economic development',
-      globalImpact: 'Earlier development of global free trade systems'
+      shortTerm: 'Stable federal republic',
+      longTerm: 'Model for federalism',
+      globalImpact: 'Influences German unification'
     }
   ],
   butterfly: [
     {
-      id: 'no-napoleonic-wars',
-      trigger: 'Peaceful foreign policy prevents major European wars',
-      consequence: 'Resources devoted to economic and cultural development instead of military conquest',
-      magnitude: 'massive',
-      timespan: 100
-    },
-    {
       id: 'federal-europe',
-      trigger: 'Successful French federalism',
-      consequence: 'European states adopt federal systems earlier, leading to peaceful European federation',
+      trigger: 'Successful federalism',
+      consequence: 'Early European Federal Union',
       magnitude: 'large',
       timespan: 150
     }
   ],
-  presentDayStatus: 'The French Federal Republic became the heart of a peaceful European confederation by 1850. Today it leads the "European Federal Union" - like the EU but with even more cheese varieties and regional autonomy. The Girondist model inspired federal systems worldwide. Très magnifique! 🇫🇷🧀'
+  presentDayStatus: 'The French Federal Republic is the heart of a federal Europe. The Girondist model inspired the world. 🇫🇷🧀'
 };
 
-// Interactive story scenarios for French Revolution
-const interactiveScenarios = [
+const interactiveScenarios: InteractiveScenario[] = [
   {
-    id: 'estates-general-crisis',
-    title: 'The Estates-General Crisis',
-    text: 'Versailles, May 1789. You are a delegate to the Estates-General. The Third Estate is locked out of their meeting hall. What do you do?',
-    emoji: '🏰',
-    background: 'bg-linear-to-br from-purple-800 to-blue-900',
-    characters: ['👨‍💼', '⚖️', '🗝️'],
-    sceneType: 'decision' as const,
+    id: 'estates-general',
+    title: 'The Tennis Court Oath (1789)',
+    text: 'Versailles. The King has locked you out. The people are angry. The rain is falling. Where do we meet?',
+    emoji: '🎾',
+    background: 'from-blue-900 to-slate-900',
+    characters: ['👑', '🔒', '🗣️'],
+    sceneType: 'decision',
     timelineYear: 1789,
-    timelineEvent: 'Estates-General convenes for first time in 175 years',
+    timelineEvent: 'Tennis Court Oath',
     choices: [
       {
-        id: 'tennis-court-oath',
-        text: 'Join the Tennis Court Oath and swear to create a new constitution',
-        consequence: 'Your bold action helps spark the revolution and establish the National Assembly'
+        id: 'oath',
+        text: 'To the Tennis Court! Swear a new Constitution!',
+        consequence: 'The National Assembly is born. The Revolution begins.',
+        modifiers: [{ stat: 'freedom', value: 30 }],
+        nextSceneId: 'storming-bastille'
       },
       {
-        id: 'negotiate-compromise',
-        text: 'Try to negotiate a compromise with the other estates',
-        consequence: 'Your diplomacy delays revolution but builds more moderate coalition'
+        id: 'compromise',
+        text: 'Petition the Kind humbly.',
+        consequence: 'Louis is touched by your loyalty. He grants a constitution peacefully.',
+        linkedTimelineId: 'constitutional-monarchy'
       },
       {
-        id: 'demand-king-intervene',
-        text: 'Demand the king intervene and restore order',
-        consequence: 'Your loyalty to tradition puts you at odds with revolutionary sentiment'
+        id: 'go-home',
+        text: 'This is treason. Go home.',
+        consequence: 'The revolution happens without you. You are forgotten.',
+        // Game Over or standard linear
+        nextSceneId: 'storming-bastille'
       }
     ]
   },
   {
     id: 'storming-bastille',
-    title: 'The Storming of the Bastille',
-    text: 'July 14, 1789. Paris erupts! Angry crowds gather outside the Bastille fortress. They need gunpowder, but the governor refuses. The crowd turns to you...',
+    title: 'July 14th (1789)',
+    text: 'The Bastille looms above Paris. It holds gunpowder. The mob looks to you for leadership.',
     emoji: '🏰',
-    background: 'bg-linear-to-br from-red-700 to-orange-800',
-    characters: ['⚔️', '🧨', '🗡️'],
-    sceneType: 'battle' as const,
+    background: 'from-red-800 to-orange-900',
+    characters: ['🏰', '🔥', '🗡️'],
+    sceneType: 'battle',
     timelineYear: 1789,
-    timelineEvent: 'Storming of the Bastille - Revolution begins',
     choices: [
       {
-        id: 'lead-assault',
-        text: 'Lead the assault on the fortress',
-        consequence: 'Your courage inspires the crowd and the Bastille falls, but violence escalates'
+        id: 'assault',
+        text: 'Storm the fortress!',
+        consequence: 'The Bastille falls! The King is terrified.',
+        modifiers: [{ stat: 'chaos', value: 30 }, { stat: 'freedom', value: 20 }],
+        nextSceneId: 'flight-varennes'
       },
       {
-        id: 'negotiate-surrender',
-        text: 'Try to negotiate a peaceful surrender',
-        consequence: 'Your diplomacy prevents some bloodshed but may be seen as weakness'
-      },
-      {
-        id: 'organize-siege',
-        text: 'Organize a proper siege with strategy',
-        consequence: 'Your military planning ensures victory with fewer casualties'
+        id: 'negotiate',
+        text: 'Negotiate with the Governor.',
+        consequence: 'He opens fire while you talk. The mob massacres everyone. You failed.',
+        modifiers: [{ stat: 'chaos', value: 50 }],
+        nextSceneId: 'flight-varennes'
       }
     ]
   },
   {
-    id: 'kings-fate',
-    title: 'The Fate of the King',
-    text: 'January 1793. Louis XVI stands trial for treason. The Convention is divided - death or exile? Your vote could determine the king\'s fate...',
-    emoji: '👑',
-    background: 'bg-linear-to-br from-gray-800 to-black',
-    characters: ['⚖️', '🗡️', '🕊️'],
-    sceneType: 'decision' as const,
-    timelineYear: 1793,
-    timelineEvent: 'Trial of Louis XVI',
+    id: 'flight-varennes',
+    title: 'The King Escapes (1791)',
+    text: 'The King has fled Paris in disguise! He is stopped at Varennes. The crowd surrounds his carriage.',
+    emoji: '🐴',
+    background: 'from-slate-800 to-black',
+    characters: ['👑', '🛑', '🌾'],
+    sceneType: 'decision',
+    timelineYear: 1791,
     choices: [
       {
-        id: 'vote-execution',
-        text: 'Vote for execution - the king must pay for his crimes',
-        consequence: 'Your vote helps seal the king\'s fate, shocking Europe and radicalizing the revolution'
+        id: 'arrest',
+        text: 'Arrest him! He is a traitor.',
+        consequence: 'The Monarchy is dead. The Republic is born.',
+        modifiers: [{ stat: 'freedom', value: 20 }],
+        nextSceneId: 'kings-trial'
       },
       {
-        id: 'vote-exile',
-        text: 'Vote for exile - show mercy and avoid bloodshed',
-        consequence: 'Your mercy preserves the possibility of reconciliation but angers radicals'
+        id: 'let-go',
+        text: 'Let him pass. France needs a King.',
+        consequence: 'He returns with an Austrian army. The Revolution is crushed.',
+        // Game Over
+      }
+    ]
+  },
+  {
+    id: 'kings-trial',
+    title: 'Trial of Citizen Capet (1793)',
+    text: 'Louis XVI is on trial. The Jacobins want blood. The Girondins want mercy. How do you vote?',
+    emoji: '⚖️',
+    background: 'from-gray-900 to-black',
+    characters: ['⚖️', '👑', '💀'],
+    sceneType: 'decision',
+    timelineYear: 1793,
+    choices: [
+      {
+        id: 'execute',
+        text: 'Death! The King must die so the nation may live.',
+        consequence: 'The guillotine falls. Europe declares war.',
+        modifiers: [{ stat: 'chaos', value: 40 }, { stat: 'strength', value: 20 }],
+        nextSceneId: 'reign-of-terror'
       },
       {
-        id: 'abstain-vote',
-        text: 'Abstain - this decision is too momentous for you',
-        consequence: 'Your indecision reflects the nation\'s uncertainty about revolutionary justice'
+        id: 'exile',
+        text: 'Exile. Do not stain the Republic with blood.',
+        consequence: 'The King is banished. The Moderates win.',
+        linkedTimelineId: 'girondist-victory'
       }
     ]
   },
   {
     id: 'reign-of-terror',
-    title: 'The Reign of Terror',
-    text: 'September 1793. Robespierre declares "Terror is the order of the day!" The guillotine works overtime. A friend whispers: someone accused you of counter-revolutionary activities...',
+    title: 'The Great Terror (1793)',
+    text: 'Robespierre rules. The Committee of Public Safety sees enemies everywhere. Your neighbor has been arrested.',
     emoji: '😱',
-    background: 'bg-linear-to-br from-red-900 to-black',
-    characters: ['🗡️', '😰', '👁️'],
-    sceneType: 'battle' as const,
+    background: 'from-red-950 to-black',
+    characters: ['🗡️', '📋', '👀'],
+    sceneType: 'decision',
     timelineYear: 1793,
-    timelineEvent: 'Reign of Terror begins',
     choices: [
       {
-        id: 'flee-paris',
-        text: 'Flee Paris immediately before you\'re arrested',
-        consequence: 'Your escape saves your life but you lose all political influence'
+        id: 'purge',
+        text: 'Support the purges. Purity is essential.',
+        consequence: 'You survive, but at what cost?',
+        modifiers: [{ stat: 'chaos', value: 50 }],
+        linkedTimelineId: 'robespierre-eternal'
       },
       {
-        id: 'defend-yourself',
-        text: 'Stay and defend yourself before the Committee',
-        consequence: 'Your brave defense might save you or make you a martyr to revolutionary excess'
-      },
-      {
-        id: 'denounce-others',
-        text: 'Denounce others to prove your revolutionary loyalty',
-        consequence: 'Your betrayal saves you but perpetuates the cycle of terror and fear'
+        id: 'thermidor',
+        text: 'Plot against Robespierre.',
+        consequence: 'The coup succeeds! The Terror ends.',
+        modifiers: [{ stat: 'freedom', value: 30 }],
+        nextSceneId: 'napoleon-rises'
       }
     ]
   },
   {
     id: 'napoleon-rises',
-    title: 'The Rise of Napoleon',
-    text: 'November 1799. General Bonaparte has returned from Egypt. The Directory is weak and unpopular. He approaches you about supporting his coup...',
+    title: '18 Brumaire (1799)',
+    text: 'General Bonaparte has returned. He plans a coup to restore order. He asks for your support.',
     emoji: '⚡',
-    background: 'bg-linear-to-br from-gold-600 to-purple-800',
-    characters: ['👑', '⚔️', '🌟'],
-    sceneType: 'negotiation' as const,
+    background: 'from-blue-700 to-gold-600',
+    characters: ['🤴', '🗡️', '🇫🇷'],
+    sceneType: 'decision',
     timelineYear: 1799,
-    timelineEvent: 'Napoleon\'s coup d\'état - 18 Brumaire',
     choices: [
       {
-        id: 'support-napoleon',
-        text: 'Support Napoleon - France needs strong leadership',
-        consequence: 'Your support helps end the revolution but begins military dictatorship'
+        id: 'emperor',
+        text: 'Hail Caesar! France needs a strongman.',
+        consequence: 'The Empire begins. Glory and war await.',
+        modifiers: [{ stat: 'strength', value: 50 }],
+        // Historical End
       },
       {
-        id: 'oppose-coup',
-        text: 'Oppose the coup and defend the Directory',
-        consequence: 'Your defense of democracy might preserve the republic or get you exiled'
-      },
-      {
-        id: 'negotiate-terms',
-        text: 'Negotiate terms - support him only if he promises constitutional limits',
-        consequence: 'Your conditions might moderate Napoleon\'s power or be ignored entirely'
+        id: 'republic',
+        text: 'Defend the Constitution.',
+        consequence: 'Napoleon is arrested. The Republic survives (weakly).',
+        linkedTimelineId: 'girondist-victory'
       }
     ]
   }
@@ -510,16 +372,15 @@ export const frenchRevolutionChapter: Chapter = {
   period: '1789',
   startYear: 1780,
   endYear: 1815,
-  description: 'Liberty, Equality, Fraternity... and Lots of Guillotines! The French Revolution turned the world upside down with dramatic flair, revolutionary passion, and an unfortunate obsession with chopping off heads. 🇫🇷⚡',
-  historicalContext: 'By 1789, France was a powder keg ready to explode! 💥 The country was bankrupt, the people were hungry, and the king was more interested in making locks than making decisions. When the Estates-General met for the first time in 175 years, it was like opening a very angry bottle of champagne that had been shaken for centuries. What started as a demand for financial reform became a complete transformation of society, politics, and even the calendar! The revolution would inspire democratic movements worldwide while also demonstrating that sometimes changing the world can get a bit... messy. 🗡️',
+  description: 'Liberty, Equality, Fraternity... and lots of guillotines! 🇫🇷⚡',
+  historicalContext: 'By 1789, France was bankrupt and hungry.',
   keyFigures,
-  divergencePoint: 'Storming of the Bastille and Revolutionary Radicalization',
+  divergencePoint: 'Storming of the Bastille',
   divergenceYear: 1789,
   alternativeTimelines: [
     constitutionalMonarchyTimeline,
     robespierreLivesTimeline,
     girondistVictoryTimeline,
-    // Additional timelines can be added here...
   ],
   interactiveScenarios,
   mainImage: '/images/chapters/french-revolution/main.png',

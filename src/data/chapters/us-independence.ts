@@ -1,4 +1,4 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
 // Key figures in the American Revolution
 const keyFigures: Person[] = [
@@ -84,28 +84,6 @@ const britishVictoryTimeline: Timeline = {
       relatedFigures: ['king-george-iii'],
       location: { lat: 40.7128, lng: -74.0060 },
       type: 'political'
-    },
-    {
-      id: 'gradual-liberalization-1820',
-      year: 1820,
-      month: 1,
-      title: 'Gradual Liberalization Begins',
-      description: 'Britain begins granting more autonomy to American colonies',
-      impact: 'Slow path toward self-governance within the British Empire',
-      relatedFigures: [],
-      location: { lat: 51.5074, lng: -0.1278 },
-      type: 'political'
-    },
-    {
-      id: 'dominion-status-1850',
-      year: 1850,
-      month: 7,
-      title: 'American Dominion Status',
-      description: 'America granted dominion status similar to Canada',
-      impact: 'Self-governance while remaining part of British Empire',
-      relatedFigures: [],
-      location: { lat: 38.9072, lng: -77.0369 },
-      type: 'political'
     }
   ],
   consequences: [
@@ -115,13 +93,6 @@ const britishVictoryTimeline: Timeline = {
       shortTerm: 'America remains under British rule with harsh restrictions',
       longTerm: 'Independence delayed by 75 years, achieved through negotiation rather than revolution',
       globalImpact: 'French Revolution might not have occurred without American example'
-    },
-    {
-      id: 'different-constitution',
-      category: 'political',
-      shortTerm: 'No American Constitution or Bill of Rights created',
-      longTerm: 'Parliamentary system adopted instead of presidential system',
-      globalImpact: 'Democratic ideals spread more slowly worldwide'
     }
   ],
   butterfly: [
@@ -131,13 +102,6 @@ const britishVictoryTimeline: Timeline = {
       consequence: 'French Revolution delayed or takes different form',
       magnitude: 'massive',
       timespan: 50
-    },
-    {
-      id: 'slower-westward-expansion',
-      trigger: 'British control limits rapid territorial expansion',
-      consequence: 'Western territories developed more slowly and systematically',
-      magnitude: 'large',
-      timespan: 100
     }
   ],
   presentDayStatus: 'The United States exists as the American Commonwealth, a semi-autonomous region within a reformed British Empire. Parliamentary democracy with the British monarch as ceremonial head of state. Economy similar to our timeline but with stronger ties to Commonwealth nations.'
@@ -176,39 +140,6 @@ const frenchAmericaTimeline: Timeline = {
       relatedFigures: ['benjamin-franklin'],
       location: { lat: 39.9496, lng: -75.1503 },
       type: 'political'
-    },
-    {
-      id: 'french-governor-general-1783',
-      year: 1783,
-      month: 1,
-      title: 'French Governor-General Appointed',
-      description: 'France appoints a Governor-General to oversee American administration',
-      impact: 'French administrative system imposed on former colonies',
-      relatedFigures: [],
-      location: { lat: 40.7128, lng: -74.0060 },
-      type: 'political'
-    },
-    {
-      id: 'napoleonic-influence-1804',
-      year: 1804,
-      month: 5,
-      title: 'Napoleonic Administrative Reforms',
-      description: 'Napoleon extends his administrative reforms to French America',
-      impact: 'Legal system, education, and government reorganized on French model',
-      relatedFigures: [],
-      location: { lat: 38.9072, lng: -77.0369 },
-      type: 'political'
-    },
-    {
-      id: 'american-revolution-1848',
-      year: 1848,
-      month: 7,
-      title: 'Second American Revolution',
-      description: 'Americans revolt against French rule during the revolutions of 1848',
-      impact: 'Finally achieves true independence from European powers',
-      relatedFigures: [],
-      location: { lat: 39.9496, lng: -75.1503 },
-      type: 'political'
     }
   ],
   consequences: [
@@ -218,13 +149,6 @@ const frenchAmericaTimeline: Timeline = {
       shortTerm: 'French language and culture become dominant in America',
       longTerm: 'Bilingual French-English speaking nation with strong European ties',
       globalImpact: 'Catholic rather than Protestant cultural influence in North America'
-    },
-    {
-      id: 'different-legal-system',
-      category: 'political',
-      shortTerm: 'Napoleonic Code adopted instead of English common law',
-      longTerm: 'Civil law system influences legal development',
-      globalImpact: 'Different model of law spreads to other former colonies'
     }
   ],
   butterfly: [
@@ -234,13 +158,6 @@ const frenchAmericaTimeline: Timeline = {
       consequence: 'France remains dominant European power through 19th century',
       magnitude: 'massive',
       timespan: 150
-    },
-    {
-      id: 'different-louisiana-purchase',
-      trigger: 'France controls both Louisiana and eastern America',
-      consequence: 'No Louisiana Purchase, different continental development',
-      magnitude: 'large',
-      timespan: 200
     }
   ],
   presentDayStatus: 'The French American Republic is a bilingual nation with strong cultural ties to France. Constitutional democracy with a civil law system. Major power in both Atlantic and Pacific, with special relationship to EU rather than Britain.'
@@ -268,50 +185,6 @@ const confederatedStatesTimeline: Timeline = {
       relatedFigures: [],
       location: { lat: 39.9496, lng: -75.1503 },
       type: 'political'
-    },
-    {
-      id: 'trade-wars-1790s',
-      year: 1795,
-      month: 1,
-      title: 'Interstate Trade Wars',
-      description: 'States impose tariffs on each other, economic conflicts arise',
-      impact: 'Economic inefficiency and interstate tensions',
-      relatedFigures: [],
-      location: { lat: 40.7128, lng: -74.0060 },
-      type: 'economic'
-    },
-    {
-      id: 'foreign-policy-crisis-1812',
-      year: 1812,
-      month: 6,
-      title: 'War of 1812 Crisis',
-      description: 'States cannot coordinate response to British invasion',
-      impact: 'Military defeats due to lack of unified command',
-      relatedFigures: [],
-      location: { lat: 38.9072, lng: -77.0369 },
-      type: 'military'
-    },
-    {
-      id: 'gradual-cooperation-1820s',
-      year: 1825,
-      month: 1,
-      title: 'Interstate Cooperation Agreements',
-      description: 'States begin forming regional compacts for trade and defense',
-      impact: 'Gradual movement toward closer cooperation',
-      relatedFigures: [],
-      location: { lat: 42.3601, lng: -71.0589 },
-      type: 'political'
-    },
-    {
-      id: 'federal-union-1850',
-      year: 1850,
-      month: 7,
-      title: 'Federal Union Finally Formed',
-      description: 'Crisis forces states to create stronger federal government',
-      impact: 'Modern federal system finally established after 75 years',
-      relatedFigures: [],
-      location: { lat: 38.9072, lng: -77.0369 },
-      type: 'political'
     }
   ],
   consequences: [
@@ -321,23 +194,9 @@ const confederatedStatesTimeline: Timeline = {
       shortTerm: 'Slow economic development due to trade barriers between states',
       longTerm: 'Industrialization delayed by several decades',
       globalImpact: 'America remains primarily agricultural power longer'
-    },
-    {
-      id: 'regional-identity',
-      category: 'cultural',
-      shortTerm: 'Strong state and regional identities develop',
-      longTerm: 'More decentralized culture with regional differences preserved',
-      globalImpact: 'Model for other federal systems worldwide'
     }
   ],
   butterfly: [
-    {
-      id: 'slower-westward-expansion',
-      trigger: 'Lack of federal coordination slows territorial expansion',
-      consequence: 'Western territories remain independent longer',
-      magnitude: 'large',
-      timespan: 75
-    },
     {
       id: 'different-civil-war',
       trigger: 'Weaker federal government cannot prevent secession',
@@ -346,148 +205,216 @@ const confederatedStatesTimeline: Timeline = {
       timespan: 50
     }
   ],
-  presentDayStatus: 'The Confederated States of America operates as a loose federal system with very strong state governments. Similar to Switzerland or early EU model. Economic development similar to our timeline but achieved more slowly and with greater regional variation.'
+  presentDayStatus: 'The Confederated States of America operates as a loose federal system with very strong state governments. Similar to Switzerland or early EU model. Economic development similar to our timeline but with stronger ties to Commonwealth nations.'
 };
 
 // Interactive story scenarios
-const interactiveScenarios = [
+const interactiveScenarios: InteractiveScenario[] = [
   {
     id: 'colonial-uprising',
-    title: 'The Colonial Uprising Begins',
-    text: 'You are in Boston, 1773. British soldiers patrol the streets as tensions rise. The Sons of Liberty are planning something big at the harbor tonight...',
+    title: 'The Boston Tea Party (1773)',
+    text: 'You are a merchant in Boston. The Sons of Liberty are gathering at the harbor. They plan to dump British tea into the ocean. The Redcoats are watching. What do you do?',
     emoji: '⚡',
-    background: 'bg-linear-to-br from-blue-900 to-gray-800',
+    background: 'from-blue-900 to-gray-800', // Single hue
     characters: ['🎭', '🛒', '⚓'],
-    sceneType: 'decision' as const,
+    sceneType: 'decision',
     timelineYear: 1773,
-    timelineEvent: 'Boston Tea Party planned',
+    timelineEvent: 'Boston Tea Party',
     choices: [
       {
-        id: 'join-tea-party',
-        text: 'Join the Sons of Liberty in dumping British tea',
-        consequence: 'Your participation helps escalate the conflict, making reconciliation harder'
+        id: 'join',
+        text: 'Put on a disguise and join them. Liberty or death!',
+        consequence: 'You become a marked man, but a hero to the patriots. The revolution begins.',
+        modifiers: [{ stat: 'chaos', value: 20 }, { stat: 'freedom', value: 20 }],
+        nextSceneId: 'continental-congress'
       },
       {
-        id: 'warn-authorities',
-        text: 'Warn the British authorities about the planned protest',
-        consequence: 'The tea is saved but colonial anger intensifies, hastening revolution'
+        id: 'report',
+        text: 'Report them to the Governor. This is destruction of property!',
+        consequence: 'The British arrest the ringleaders. The rebellion is stifled for now.',
+        modifiers: [{ stat: 'strength', value: 20 }, { stat: 'freedom', value: -20 }],
+        nextSceneId: 'reconciliation-effort'
       },
       {
-        id: 'stay-neutral',
-        text: 'Stay home and avoid taking sides',
-        consequence: 'You remain safe but miss a chance to influence history'
+        id: 'watch',
+        text: 'Watch from the shadows. Keep your head down.',
+        consequence: 'The event happens without you. You survive, but have no voice in what comes next.',
+        modifiers: [{ stat: 'diplomacy', value: 10 }],
+        nextSceneId: 'continental-congress'
+      }
+    ]
+  },
+  {
+    id: 'reconciliation-effort',
+    title: 'The King\'s Peace (1774)',
+    text: 'Thanks to loyal subjects like you, the "Tea Party" was thwarted. But anger remains. You are invited to London to speak to Parliament.',
+    emoji: '👑',
+    background: 'from-red-900 to-red-950',
+    characters: ['👑', '📜', '🗣️'],
+    sceneType: 'negotiation',
+    choices: [
+      {
+        id: 'demand-rights',
+        text: 'Demand representation for the colonies.',
+        consequence: 'Parliament laughs at you. You return home radicalized.',
+        modifiers: [{ stat: 'freedom', value: 10 }],
+        nextSceneId: 'continental-congress'
+      },
+      {
+        id: 'accept-status',
+        text: 'Accept a minor trade deal and pledge loyalty.',
+        consequence: 'You prevent war, but America remains a colony forever.',
+        linkedTimelineId: 'british-victory'
       }
     ]
   },
   {
     id: 'continental-congress',
-    title: 'The Continental Congress Debates',
-    text: 'Philadelphia, 1776. You sit in the Continental Congress as delegates passionately debate whether to declare independence. Benjamin Franklin catches your eye...',
+    title: 'Independence Hall (1776)',
+    text: 'Philadelphia. The delegates are debating. Jefferson has drafted a Declaration of Independence. Some say it is treason. How do you vote?',
     emoji: '📜',
-    background: 'bg-linear-to-br from-amber-800 to-amber-950',
+    background: 'from-amber-800 to-amber-950',
     characters: ['🎩', '✒️', '📖'],
-    sceneType: 'negotiation' as const,
+    sceneType: 'decision',
     timelineYear: 1776,
-    timelineEvent: 'Declaration of Independence being drafted',
     choices: [
       {
-        id: 'support-independence',
-        text: 'Strongly advocate for immediate independence',
-        consequence: 'Your passionate speech helps sway undecided delegates toward revolution'
+        id: 'vote-yes',
+        text: 'Vote YES. "We must all hang together!"',
+        consequence: 'The Declaration is signed. War is declared.',
+        modifiers: [{ stat: 'freedom', value: 30 }, { stat: 'chaos', value: 10 }],
+        nextSceneId: 'long-island'
       },
       {
-        id: 'compromise-solution',
-        text: 'Propose a compromise with Britain for greater autonomy',
-        consequence: 'Some delegates consider reconciliation, potentially delaying war'
+        id: 'vote-no',
+        text: 'Vote NO. We cannot win against the British Empire.',
+        consequence: 'The motion fails. The colonies remain divided. The British pick them off one by one.',
+        modifiers: [{ stat: 'strength', value: -10 }],
+        nextSceneId: 'reconciliation-effort' // Loop back or fail
+      }
+    ]
+  },
+  {
+    id: 'long-island',
+    title: 'Disaster at Long Island (1776)',
+    text: 'The British have landed a massive army in New York. Washington\'s forces are outnumbered and outflanked. The river is at your back.',
+    emoji: '⚔️',
+    background: 'from-slate-700 to-slate-900',
+    characters: ['⚔️', '🌊', '🚣'],
+    sceneType: 'battle',
+    timelineYear: 1776,
+    choices: [
+      {
+        id: 'retreat-night',
+        text: 'Retreat across the river under cover of fog.',
+        consequence: 'A miraculous escape! The army lives to fight another day.',
+        modifiers: [{ stat: 'diplomacy', value: 10 }, { stat: 'chaos', value: -10 }],
+        nextSceneId: 'valley-forge'
       },
       {
-        id: 'demand-guarantees',
-        text: 'Support independence but demand guarantees about slavery',
-        consequence: 'You force a difficult conversation that shapes the new nation\'s future'
+        id: 'stand-ground',
+        text: 'Stand and fight! "No retreat, no surrender!"',
+        consequence: 'Your brave stand is doomed. The army is surrounded and crushed.',
+        modifiers: [{ stat: 'strength', value: -50 }],
+        nextSceneId: 'washington-captured'
+      }
+    ]
+  },
+  {
+    id: 'washington-captured',
+    title: 'The End of the Revolution (1776)',
+    text: 'General Washington is in chains. The Continental Army is no more. The King offers a pardon to all who swear allegiance.',
+    emoji: '⛓️',
+    background: 'from-red-900 to-black',
+    characters: ['⛓️', '👑', '🏳️'],
+    sceneType: 'revelation',
+    choices: [
+      {
+        id: 'submit',
+        text: 'Swear allegiance to King George III.',
+        consequence: 'The revolution is over. Order is restored.',
+        linkedTimelineId: 'british-victory'
+      },
+      {
+        id: 'guerilla',
+        text: 'Flee to the hills and fight a guerilla war.',
+        consequence: 'You fight for years, but without leadership, it is just banditry.',
+        linkedTimelineId: 'british-victory'
       }
     ]
   },
   {
     id: 'valley-forge',
-    title: 'Valley Forge Winter',
-    text: 'Winter 1777-78. The Continental Army shivers at Valley Forge. Soldiers are deserting, supplies are gone. Washington asks for your counsel on a critical decision...',
+    title: 'Winter of Despair (1777)',
+    text: 'Valley Forge. Cold, hunger, and smallpox are killing your men. Baron von Steuben offers to train them, but morale is breaking.',
     emoji: '❄️',
-    background: 'bg-linear-to-br from-slate-700 to-slate-900',
-    characters: ['🥶', '⚔️', '🏃'],
-    sceneType: 'battle' as const,
+    background: 'from-slate-800 to-blue-950',
+    characters: ['🥶', '⛺', '💉'],
+    sceneType: 'decision',
     timelineYear: 1777,
-    timelineEvent: 'Continental Army winter at Valley Forge',
     choices: [
       {
-        id: 'attack-philadelphia',
-        text: 'Launch a desperate winter attack on British-held Philadelphia',
-        consequence: 'A risky gamble that could end the war quickly or destroy the army'
+        id: 'inoculate',
+        text: 'Order mass inoculation against smallpox. Risky but necessary.',
+        consequence: 'Many die, but the epidemic stops. The army emerges stronger.',
+        modifiers: [{ stat: 'strength', value: 20 }],
+        nextSceneId: 'french-alliance'
       },
       {
-        id: 'endure-winter',
-        text: 'Endure the winter and wait for spring reinforcements',
-        consequence: 'Your patience allows Von Steuben to train the army into a professional force'
-      },
-      {
-        id: 'seek-negotiations',
-        text: 'Secretly send peace feelers to the British',
-        consequence: 'Your diplomatic efforts could end the suffering but at what cost?'
+        id: 'attack-philly',
+        text: 'Attack Philadelphia to get warm quarters.',
+        consequence: 'The attack is a disaster. The army is destroyed in the snow.',
+        modifiers: [{ stat: 'chaos', value: 30 }],
+        nextSceneId: 'washington-captured'
       }
     ]
   },
   {
     id: 'french-alliance',
-    title: 'The French Question',
-    text: 'Paris, 1778. Benjamin Franklin negotiates with French ministers. They offer military aid, but demand America become a French protectorate. How do you advise?',
+    title: 'The French Court (1778)',
+    text: 'Ben Franklin is in Paris. The King of France offers an alliance, but demands the US become a protectorate under French law.',
     emoji: '🇫🇷',
-    background: 'bg-linear-to-br from-blue-600 to-blue-800',
-    characters: ['👑', '🎭', '⚖️'],
-    sceneType: 'negotiation' as const,
-    timelineYear: 1778,
-    timelineEvent: 'French Alliance negotiations',
+    background: 'from-blue-600 to-blue-800',
+    characters: ['👑', '🍷', '📜'],
+    sceneType: 'negotiation',
     choices: [
       {
         id: 'accept-protectorate',
-        text: 'Accept French protection to guarantee victory',
-        consequence: 'French control ensures victory but compromises true independence'
+        text: 'Accept. We need their navy at any cost.',
+        consequence: 'The French fleet arrives and crushes the British. But now you answer to Versailles.',
+        linkedTimelineId: 'french-america'
       },
       {
-        id: 'negotiate-alliance',
-        text: 'Negotiate for military aid without political control',
-        consequence: 'Your diplomacy secures crucial French support while maintaining sovereignty'
-      },
-      {
-        id: 'reject-french-aid',
-        text: 'Reject French aid to maintain complete independence',
-        consequence: 'American self-reliance is preserved but victory becomes much harder'
+        id: 'demand-equal',
+        text: 'Refuse. "Equal partners or nothing."',
+        consequence: 'Franklin charms the court. They agree to an equal alliance!',
+        modifiers: [{ stat: 'diplomacy', value: 40 }],
+        nextSceneId: 'yorktown-finale'
       }
     ]
   },
   {
     id: 'yorktown-finale',
-    title: 'Victory at Yorktown',
-    text: 'October 1781. British General Cornwallis is trapped at Yorktown. The war could end here, but how you handle victory will shape the new nation...',
+    title: 'Victory at Yorktown (1781)',
+    text: 'Cornwallis is trapped. The British surrender. You have won the war! Now you must win the peace.',
     emoji: '🏆',
-    background: 'bg-linear-to-br from-amber-600 to-amber-800',
-    characters: ['🎺', '🏴', '🕊️'],
-    sceneType: 'revelation' as const,
+    background: 'from-amber-600 to-amber-800',
+    characters: ['🎺', '🏳️', '🇺🇸'],
+    sceneType: 'revelation',
     timelineYear: 1781,
-    timelineEvent: 'Siege of Yorktown - British surrender',
     choices: [
       {
-        id: 'magnanimous-victory',
-        text: 'Show magnanimity and honor to defeated British forces',
-        consequence: 'Your noble conduct sets a precedent for American values and international respect'
+        id: 'federal-constitution',
+        text: 'Draft a strong Constitution with a central government.',
+        consequence: 'The United States of America is born. A new superpower rises.',
+        modifiers: [{ stat: 'freedom', value: 50 }, { stat: 'strength', value: 50 }],
+        // End of standard game
       },
       {
-        id: 'demand-reparations',
-        text: 'Demand harsh reparations and concessions from Britain',
-        consequence: 'Your demands secure more territory but create lasting resentment'
-      },
-      {
-        id: 'immediate-constitution',
-        text: 'Push for immediate constitutional convention',
-        consequence: 'Your urgency helps create a stronger federal government from the start'
+        id: 'keep-confederation',
+        text: 'Keep power with the states. No more kings!',
+        consequence: 'The states bicker and fight. The union is weak.',
+        linkedTimelineId: 'confederated-states'
       }
     ]
   }
@@ -509,7 +436,6 @@ export const usIndependenceChapter: Chapter = {
     britishVictoryTimeline,
     frenchAmericaTimeline,
     confederatedStatesTimeline,
-    // Additional timelines would be added here...
   ],
   interactiveScenarios,
   mainImage: '/images/chapters/us-independence/main.png',

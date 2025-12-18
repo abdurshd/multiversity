@@ -35,7 +35,10 @@ export const useSimulation = () => {
             const newStats = { ...prev.stats };
 
             modifiers.forEach(mod => {
-                newStats[mod.stat] = Math.max(0, Math.min(100, newStats[mod.stat] + mod.value));
+                const statKey = mod.stat as keyof SimulationStats;
+                if (newStats[statKey] !== undefined) {
+                    newStats[statKey] = Math.max(0, Math.min(100, newStats[statKey] + mod.value));
+                }
             });
 
             return {
@@ -45,10 +48,10 @@ export const useSimulation = () => {
         });
     };
 
-    const advanceScenario = useCallback(() => {
+    const advanceScenario = useCallback((targetIndex?: number) => {
         setState(prev => ({
             ...prev,
-            currentScenarioIndex: prev.currentScenarioIndex + 1
+            currentScenarioIndex: targetIndex !== undefined ? targetIndex : prev.currentScenarioIndex + 1
         }));
     }, []);
 

@@ -1,4 +1,4 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
 const keyFigures: Person[] = [
     {
@@ -199,14 +199,236 @@ const westernCampaignTimeline: Timeline = {
     presentDayStatus: 'Europe is a collection of poor, agrarian vassal states of the Golden Horde. The Americas are dominated by the modernized Aztec and Inca Federations. The world is multipolar and vastly different. 🌎🏛️'
 };
 
+const interactiveScenarios: InteractiveScenario[] = [
+    {
+        id: 'ankara-strategy',
+        title: 'The Battle of Ankara (1402)',
+        text: 'The Ottoman Sultan Bayezid I stands before you. His army is exhausted from a forced march, but his Janissaries are fresh. Your scouts report a stream that supplies their camp. What is your command?',
+        emoji: '⚔️',
+        background: 'from-amber-800 to-amber-950',
+        characters: ['👑', '🐎', '⚔️'],
+        sceneType: 'battle',
+        timelineYear: 1402,
+        timelineEvent: 'Clash of Titans',
+        choices: [
+            {
+                id: 'cut-water',
+                text: 'Divert the stream. Force them to fight thirsty.',
+                consequence: 'The Ottomans panic. Their Tatar allies defect. You win a crushing victory.',
+                modifiers: [{ stat: 'strength', value: 20 }, { stat: 'chaos', value: 10 }],
+                nextSceneId: 'otrar-crisis'
+            },
+            {
+                id: 'direct-charge',
+                text: 'Charge the Janissaries directly with war elephants.',
+                consequence: 'The elephants cause chaos, but the Janissaries hold. The battle turns into a bloodbath.',
+                modifiers: [{ stat: 'strength', value: 10 }, { stat: 'chaos', value: 30 }],
+                nextSceneId: 'pyrrhic-victory'
+            },
+            {
+                id: 'feigned-retreat',
+                text: 'Feign a retreat to draw them out.',
+                consequence: 'Bayezid is wary but his commanders are rash. They break formation, but your ambush is late.',
+                modifiers: [{ stat: 'diplomacy', value: 10 }, { stat: 'strength', value: -10 }],
+                nextSceneId: 'defense-of-samarkand'
+            }
+        ]
+    },
+    {
+        id: 'pyrrhic-victory',
+        title: 'A Costly Triumph (1402)',
+        text: 'You have won, but at a terrible cost. Thousands of your best cavalry are dead. Bayezid escaped. The road to the West is open, but your army is bleeding.',
+        emoji: '🩸',
+        background: 'from-red-900 to-slate-900',
+        characters: ['💀', '🩹', '👑'],
+        sceneType: 'decision',
+        choices: [
+            {
+                id: 'consolidate',
+                text: 'Halt the campaign. Return to Samarkand to rebuild.',
+                consequence: 'You secure your empire but lose momentum. Europe is spared.',
+                modifiers: [{ stat: 'diplomacy', value: 20 }, { stat: 'strength', value: -20 }],
+                nextSceneId: 'otrar-crisis'
+            },
+            {
+                id: 'raid-pillage',
+                text: 'Raid Anatolia for loot to pay mercenaries.',
+                consequence: 'You burn cities to the ground. Your treasury fills, but your legacy is one of terror.',
+                modifiers: [{ stat: 'chaos', value: 40 }, { stat: 'strength', value: 10 }],
+                nextSceneId: 'otrar-crisis'
+            }
+        ]
+    },
+    {
+        id: 'defense-of-samarkand',
+        title: 'Retreat to the Oxus (1403)',
+        text: 'The Ankara campaign failed. Bayezid is countering. You have retreated to your capital, Samarkand. The enemy is approaching the Oxus river.',
+        emoji: '🏰',
+        background: 'from-slate-800 to-slate-950',
+        characters: ['🏰', '🛡️', '🔥'],
+        sceneType: 'battle',
+        choices: [
+            {
+                id: 'scorched-earth',
+                text: 'Burn the fields. Leave them nothing but ash.',
+                consequence: 'The Ottoman army starves in the desert. You survive, but your lands are ruined.',
+                modifiers: [{ stat: 'chaos', value: 50 }, { stat: 'diplomacy', value: -30 }],
+                nextSceneId: 'otrar-crisis' // Eventually leads back to deathbed
+            },
+            {
+                id: 'diplomatic-peace',
+                text: 'Sue for peace. Offer tribute to Bayezid.',
+                consequence: 'History laughs at the "Great" Timur who paid tribute. Your empire crumbles from within.',
+                modifiers: [{ stat: 'strength', value: -50 }, { stat: 'diplomacy', value: 10 }],
+                nextSceneId: 'succession-crisis' // Skip Otrar, go straight to civil war
+            }
+        ]
+    },
+    {
+        id: 'otrar-crisis',
+        title: 'The Winter at Otrar (1405)',
+        text: 'It is February 1405. You lie dying in your tent. The Chinese border is weeks away. The campaign of a lifetime hangs in the balance.',
+        emoji: '❄️',
+        background: 'from-blue-900 to-slate-900',
+        characters: ['👑', '💊', '❄️'],
+        sceneType: 'decision',
+        timelineYear: 1405,
+        timelineEvent: 'Death of Timur',
+        choices: [
+            {
+                id: 'elixir',
+                text: 'Take the alchemist\'s experimental mercury elixir.',
+                consequence: 'Fire courses through your veins. You awake, stronger than ever. The invasion proceeds!',
+                modifiers: [{ stat: 'chaos', value: 20 }, { stat: 'strength', value: 30 }],
+                nextSceneId: 'great-wall'
+            },
+            {
+                id: 'write-will',
+                text: 'Accept fate. Dictate a clear law of succession.',
+                consequence: 'You name an heir and a council. You die peacefully, leaving a stable roadmap.',
+                modifiers: [{ stat: 'diplomacy', value: 50 }, { stat: 'chaos', value: -20 }],
+                nextSceneId: 'succession-crisis'
+            },
+            {
+                id: 'turn-west',
+                text: 'Order the army to turn back West. "China is too far."',
+                consequence: 'The generals are confused but obedient. The army marches back towards Europe.',
+                modifiers: [{ stat: 'chaos', value: 30 }],
+                nextSceneId: 'bosphorus-crossing'
+            }
+        ]
+    },
+    {
+        id: 'great-wall',
+        title: 'Breaching the Great Wall (1406)',
+        text: 'The Ming defenses are formidable. The Great Wall stands before you. Your artillery is positioned. How do you breach?',
+        emoji: '🧱',
+        background: 'from-red-800 to-stone-900',
+        characters: ['🧱', '💣', '🐎'],
+        sceneType: 'battle',
+        choices: [
+            {
+                id: 'concentrated-fire',
+                text: 'Concentrate all gunpowder artillery on one gate.',
+                consequence: 'The gate shatters. The Timurid heavy cavalry pours through. The road to Beijing is open.',
+                modifiers: [{ stat: 'strength', value: 30 }],
+                linkedTimelineId: 'immortal-emir'
+            },
+            {
+                id: 'bribe-general',
+                text: 'Send gold to the Ming border commander.',
+                consequence: 'The gates open at night. You take the fort without a fight.',
+                modifiers: [{ stat: 'diplomacy', value: 30 }, { stat: 'chaos', value: 10 }],
+                linkedTimelineId: 'immortal-emir'
+            }
+        ]
+    },
+    {
+        id: 'bosphorus-crossing',
+        title: 'Crossing the Bosphorus (1406)',
+        text: 'You have returned to Anatolia. Europe lies across the water. The Venetians offer ships... for a price.',
+        emoji: '🌊',
+        background: 'from-blue-800 to-slate-900',
+        characters: ['🚢', '💰', '🏰'],
+        sceneType: 'negotiation',
+        choices: [
+            {
+                id: 'pay-venice',
+                text: 'Pay the Venetians to ferry your army.',
+                consequence: 'You land in Thrace. Europe trembles.',
+                modifiers: [{ stat: 'diplomacy', value: 10 }],
+                linkedTimelineId: 'western-campaign'
+            },
+            {
+                id: 'build-ships',
+                text: 'Force the locals to build a bridge of boats.',
+                consequence: 'It takes months, but you cross on your own terms. The shock is absolute.',
+                modifiers: [{ stat: 'strength', value: 20 }],
+                linkedTimelineId: 'western-campaign'
+            }
+        ]
+    },
+    {
+        id: 'succession-crisis',
+        title: 'The Council of Princes (1405)',
+        text: 'Timur is dead. The will is read, but ambition runs deep. Pir Muhammad is the heir, but he is far away.',
+        emoji: '📜',
+        background: 'from-purple-900 to-slate-900',
+        characters: ['👑', '⚖️', '🗡️'],
+        sceneType: 'decision',
+        choices: [
+            {
+                id: 'enforce-will',
+                text: 'Back Pir Muhammad with the elite guard.',
+                consequence: 'The other princes back down... for now. A fragile peace holds.',
+                modifiers: [{ stat: 'diplomacy', value: 30 }],
+                nextSceneId: 'ulugh-beg-dilemma'
+            },
+            {
+                id: 'seize-power',
+                text: 'Take power yourself as Regent.',
+                consequence: 'Civil war erupts immediately. The empire burns.',
+                modifiers: [{ stat: 'chaos', value: 50 }],
+                nextSceneId: 'ulugh-beg-dilemma' // Or game over
+            }
+        ]
+    },
+    {
+        id: 'ulugh-beg-dilemma',
+        title: 'The Scholar on the Throne (1449)',
+        text: 'Decades later. Ulugh Beg rules in Samarkand. His son is rebelling, claiming the King cares more for stars than god.',
+        emoji: '🔭',
+        background: 'from-indigo-900 to-slate-900',
+        characters: ['🔭', '⚔️', '🌙'],
+        sceneType: 'decision',
+        timelineYear: 1449,
+        choices: [
+            {
+                id: 'fight-hard',
+                text: 'Crush the rebellion with mercenaries.',
+                consequence: 'You win, but the treasury is empty. The Renaissance continues.',
+                modifiers: [{ stat: 'freedom', value: 30 }, { stat: 'strength', value: 10 }],
+                linkedTimelineId: 'unified-succession'
+            },
+            {
+                id: 'abdicate',
+                text: 'Abdicate to avoid bloodshed.',
+                consequence: 'You are executed. The observatory is destroyed.',
+                modifiers: [{ stat: 'chaos', value: 20 }, { stat: 'strength', value: -20 }],
+                // No linked timeline, goes to standard result
+            }
+        ]
+    }
+];
+
 export const timurLegacyChapter: Chapter = {
     id: 'timur-legacy',
     title: 'The Iron Emir: Timur\'s Legacy',
     period: '14th-15th Century',
     startYear: 1370,
     endYear: 1450,
-    description: 'The last great nomadic conqueror stands at the crossroads of history. 🗡️🌍 Will he turn East to China, stabilize his empire, or crush Europe? The fate of the modern world hangs on the decisions of one man in Samarkand.',
-    historicalContext: 'Emir Timur (Tamerlane) was the most powerful ruler of the 14th century. He defeated the Ottomans, the Golden Horde, the Delhi Sultanate, and the Mamluks. His empire was a military juggernaut but lacked administrative stability. His death in 1405 on the way to China marked the end of the age of great nomadic conquests.',
+    description: 'The last great nomadic conqueror stands at the crossroads of history. 🗡️🌍 Will he turn East to China, stabilize his empire, or crush Europe?',
+    historicalContext: 'Emir Timur (Tamerlane) was the most powerful ruler of the 14th century. His empire was a military juggernaut but lacked administrative stability.',
     keyFigures,
     divergencePoint: 'Death of Timur in 1405',
     divergenceYear: 1405,
@@ -217,119 +439,6 @@ export const timurLegacyChapter: Chapter = {
     ],
     mainImage: '/images/chapters/timur-legacy/main.png',
     icon: '🗡️',
-    interactiveScenarios: [
-        {
-            id: 'ankara-strategy',
-            title: 'The Battle of Ankara (1402)',
-            text: 'You are Timur. The Ottoman Sultan Bayezid I stands before you with a massive army. He is arrogant but powerful. Your scouts report he has marched his troops to exhaustion to find you. How do you engage?',
-            emoji: '⚔️',
-            background: 'bg-red-900',
-            characters: ['👑', '🐎', '⚔️'],
-            sceneType: 'battle',
-            timelineYear: 1402,
-            timelineEvent: 'Clash of Titans',
-            choices: [
-                {
-                    id: 'cut-water',
-                    text: 'Divert the local stream and force them to fight thirsty.',
-                    consequence: 'The Ottoman troops panic from thirst. Their Tatar allies defect to you. You win a crushing victory. (Historical)'
-                },
-                {
-                    id: 'direct-charge',
-                    text: 'Charge their center immediately with elephants.',
-                    consequence: 'The Janissaries hold the line. The battle is a bloody stalemate. Bayezid escapes to fight another day.'
-                },
-                {
-                    id: 'feigned-retreat',
-                    text: 'Feign a retreat to draw them out of position.',
-                    consequence: 'Bayezid is too experienced to fall for it. He fortifies his position. The siege of Ankara drags on for months.'
-                }
-            ]
-        },
-        {
-            id: 'otrar-crisis',
-            title: 'The Winter at Otrar (1405)',
-            text: 'It is February 1405. The Great Emir Timur lies dying in his tent at Otrar. The Chinese border is weeks away. His physicians offer a risky new treatment. What do you advise?',
-            emoji: '❄️',
-            background: 'bg-red-900',
-            characters: ['👑', '💊', '❄️'],
-            sceneType: 'decision',
-            timelineYear: 1405,
-            timelineEvent: 'Death of Timur',
-            choices: [
-                {
-                    id: 'risky-treatment',
-                    text: 'Administer the experimental elixir. It might kill him, or save him.',
-                    consequence: 'The elixir works! Timur recovers and leads his army into China. The "Immortal Emir" timeline begins.'
-                },
-                {
-                    id: 'rest',
-                    text: 'Let him rest and prepare for the worst. Call the scribes.',
-                    consequence: 'Timur dies, but uses his last breath to dictate a clear will. The "Unified Succession" timeline begins.'
-                },
-                {
-                    id: 'turn-back',
-                    text: 'Advise the generals to turn back West. The omen is bad.',
-                    consequence: 'The army abandons the China campaign and returns to ravage Europe. The "Western Campaign" timeline begins.'
-                }
-            ]
-        },
-        {
-            id: 'succession-crisis',
-            title: 'The Council of War (1405)',
-            text: 'Timur is dead. The army is leaderless. The princes are drawing their swords. You are the Grand Vizier. Who do you support?',
-            emoji: '👑',
-            background: 'bg-yellow-900',
-            characters: ['🤴', '📜', '🗡️'],
-            sceneType: 'decision',
-            timelineYear: 1405,
-            timelineEvent: 'The War of Succession',
-            choices: [
-                {
-                    id: 'pir-muhammad',
-                    text: 'Support Pir Muhammad, Timur\'s designated heir.',
-                    consequence: 'He is weak and distant. The empire fractures immediately. (Historical)'
-                },
-                {
-                    id: 'shah-rukh',
-                    text: 'Support Shah Rukh, the intellectual son.',
-                    consequence: 'He secures Herat and begins a cultural golden age, but loses the military edge.'
-                },
-                {
-                    id: 'khalil-sultan',
-                    text: 'Support Khalil Sultan, the charismatic warrior.',
-                    consequence: 'He seizes Samarkand but squanders the treasury on love and war.'
-                }
-            ]
-        },
-        {
-            id: 'ulugh-beg-dilemma',
-            title: 'The Astronomer\'s Choice (1449)',
-            text: 'You are Ulugh Beg, the grandson of Timur. You are a brilliant scientist but a poor general. Your son Abdal-Latif is rebelling, supported by religious hardliners who hate your observatory. What do you do?',
-            emoji: '🔭',
-            background: 'bg-blue-900',
-            characters: ['🔭', '👳', '⚔️'],
-            sceneType: 'decision',
-            timelineYear: 1449,
-            timelineEvent: 'The Fall of the Astronomer King',
-            choices: [
-                {
-                    id: 'surrender',
-                    text: 'Surrender and ask to be allowed to go on pilgrimage to Mecca.',
-                    consequence: 'Your son has you assassinated on the way. Your observatory is destroyed. (Historical)'
-                },
-                {
-                    id: 'fight',
-                    text: 'Rally your loyal troops and fight. Science must prevail over dogma!',
-                    consequence: 'You win a bloody civil war. The Timurid Renaissance continues, leading to an early scientific revolution.'
-                },
-                {
-                    id: 'flee',
-                    text: 'Flee to China with your star charts and books.',
-                    consequence: 'You are welcomed by the Ming Emperor. Your knowledge sparks a Chinese scientific golden age.'
-                }
-            ]
-        }
-    ],
-    backgroundColor: 'from-red-900 to-red-950'
+    backgroundColor: 'from-red-900 to-red-950',
+    interactiveScenarios
 };

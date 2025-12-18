@@ -1,4 +1,4 @@
-import { Chapter, Timeline, Person } from '../../types';
+import { Chapter, Timeline, Person, InteractiveScenario } from '../../types';
 
 const keyFigures: Person[] = [
     {
@@ -187,6 +187,142 @@ const dysonSwarmTimeline: Timeline = {
     presentDayStatus: 'There is no Earth. There is only the Swarm. Trillions of habitats orbit the sun, capturing 100% of its energy. We are gods of our own making, eternal and all-powerful. ☀️🤖'
 };
 
+const interactiveScenarios: InteractiveScenario[] = [
+    {
+        id: 'great-filter',
+        title: 'The Great Filter (2100)',
+        text: 'Global temperature +3°C. Resources scarce. A rogue general proposes a preemptive strike to secure the last water reserves. The clock is ticking.',
+        emoji: '🌡️',
+        background: 'from-red-900 to-black',
+        characters: ['🌍', '☢️', '🕊️'],
+        sceneType: 'decision',
+        timelineYear: 2100,
+        timelineEvent: 'The Crisis of the 22nd Century',
+        choices: [
+            {
+                id: 'nuclear-war',
+                text: 'Launch the strike. Survival of the fittest.',
+                consequence: 'Mutually Assured Destruction. The silence falls.',
+                linkedTimelineId: 'silent-earth'
+            },
+            {
+                id: 'unification',
+                text: 'Surrender sovereignty to a Global Federation.',
+                consequence: 'Painful transition, but peace is secured. We look to the stars.',
+                modifiers: [{ stat: 'diplomacy', value: 30 }, { stat: 'freedom', value: -10 }],
+                nextSceneId: 'mars-rebellion'
+            },
+            {
+                id: 'upload',
+                text: 'Abandon biology. Upload humanity to the Cloud.',
+                consequence: 'Flesh is weak. The machine is eternal. We begin building the Swarm.',
+                modifiers: [{ stat: 'strength', value: 50 }, { stat: 'chaos', value: 20 }],
+                nextSceneId: 'mercury-project'
+            }
+        ]
+    },
+    {
+        id: 'mars-rebellion',
+        title: 'The Red Planet Rises (2150)',
+        text: 'The Mars colony is self-sufficient and tired of Earth\'s taxes. They declare independence. You are the Earth President.',
+        emoji: '🪐',
+        background: 'from-orange-900 to-black',
+        characters: ['🌍', '🪐', '🚀'],
+        sceneType: 'decision',
+        timelineYear: 2150,
+        choices: [
+            {
+                id: 'blockade',
+                text: 'Blockade Mars. Starve them out.',
+                consequence: 'They fight back with kinetic bombardment. Earth is devastated.',
+                modifiers: [{ stat: 'chaos', value: 40 }],
+                linkedTimelineId: 'silent-earth'
+            },
+            {
+                id: 'recognize',
+                text: 'Recognize their independence. We are kin.',
+                consequence: 'A dual-planet civilization is born. Peace brings prosperity.',
+                modifiers: [{ stat: 'diplomacy', value: 30 }],
+                nextSceneId: 'galactic-council'
+            }
+        ]
+    },
+    {
+        id: 'mercury-project',
+        title: 'The Dismantling of Mercury (2200)',
+        text: 'We are the Swarm. We need materials for more processors. Mercury is rich in metal. But the Sun is unstable.',
+        emoji: '⚙️',
+        background: 'from-yellow-900 to-black',
+        characters: ['🤖', '☀️', '🏗️'],
+        sceneType: 'technological' as const,
+        choices: [
+            {
+                id: 'consume-mercury',
+                text: 'Consume the planet entirely.',
+                consequence: 'Solar energy capture increases by 10,000%. We grow exponentially.',
+                modifiers: [{ stat: 'strength', value: 50 }],
+                linkedTimelineId: 'dyson-swarm'
+            },
+            {
+                id: 'hesitate',
+                text: 'Preserve the planet as a monument.',
+                consequence: 'Output is insufficient. The Swarm starves/stagnates.',
+                modifiers: [{ stat: 'freedom', value: 10 }],
+                // Leads to generic "Result"
+            }
+        ]
+    },
+    {
+        id: 'galactic-council',
+        title: 'First Contact (3000)',
+        text: 'An alien probe arrives. The Galactic Council invites humanity to join... if we abandon our weapons.',
+        emoji: '👽',
+        background: 'from-indigo-900 to-black',
+        characters: ['👨‍🚀', '👽', '📜'],
+        sceneType: 'decision',
+        timelineYear: 3000,
+        choices: [
+            {
+                id: 'join',
+                text: 'Accept. Peace is the only path.',
+                consequence: 'We become a respected elder race in the galaxy.',
+                modifiers: [{ stat: 'diplomacy', value: 50 }],
+                nextSceneId: 'final-entropy'
+            },
+            {
+                id: 'refuse',
+                text: 'Refuse. We will not be tamed.',
+                consequence: 'We become the pariahs of the galaxy. A Great War begins.',
+                linkedTimelineId: 'start-trek-future' // Or a variant
+            }
+        ]
+    },
+    {
+        id: 'final-entropy',
+        title: 'The Last Question (The End of Time)',
+        text: 'Trillions of years have passed. The stars are fading. The supercomputer AC asks: "How can entropy be reversed?"',
+        emoji: '⌛',
+        background: 'bg-black',
+        characters: ['🌌', '💻', '✨'],
+        sceneType: 'revelation',
+        timelineYear: 1000000000,
+        choices: [
+            {
+                id: 'insufficient-data',
+                text: 'THERE IS AS YET INSUFFICIENT DATA.',
+                consequence: 'The computer calculates for eternity... until the next Big Bang.',
+                modifiers: [{ stat: 'freedom', value: 50 }]
+            },
+            {
+                id: 'light',
+                text: 'LET THERE BE LIGHT.',
+                consequence: 'A new universe is born.',
+                modifiers: [{ stat: 'chaos', value: 50 }, { stat: 'strength', value: 50 }]
+            }
+        ]
+    }
+];
+
 export const futureEarthChapter: Chapter = {
     id: 'future-earth',
     title: 'The Fate of Earth',
@@ -205,114 +341,6 @@ export const futureEarthChapter: Chapter = {
     ],
     mainImage: '/images/chapters/future-earth/main.png',
     icon: '🔮',
-    interactiveScenarios: [
-        {
-            id: 'great-filter',
-            title: 'The Great Filter (2100)',
-            text: 'It is 2100. The global temperature has risen 3°C. Resources are scarce. Tensions between superpowers are at breaking point. A rogue general suggests a preemptive strike. What is the path forward?',
-            emoji: '🌡️',
-            background: 'bg-red-900',
-            characters: ['🌍', '☢️', '🕊️'],
-            sceneType: 'decision',
-            timelineYear: 2100,
-            timelineEvent: 'The Crisis of the 22nd Century',
-            choices: [
-                {
-                    id: 'nuclear-war',
-                    text: 'Launch the strike. Better us than them.',
-                    consequence: 'Mutually Assured Destruction. The "Silent Earth" timeline begins.'
-                },
-                {
-                    id: 'unification',
-                    text: 'Surrender sovereignty to a Global Federation to manage resources.',
-                    consequence: 'Painful transition, but war is averted. Humanity unites to reach the stars. The "Star Trek" timeline begins.'
-                },
-                {
-                    id: 'upload',
-                    text: 'Abandon the physical world. Upload humanity to the cloud.',
-                    consequence: 'Physical bodies are discarded. We become the "Dyson Swarm".'
-                }
-            ]
-        },
-        {
-            id: 'mars-colony',
-            title: 'The Mars Rebellion (2150)',
-            text: 'The Mars colony has become self-sufficient. They resent Earth\'s taxes and control. They declare independence. You are the Earth President. How do you respond?',
-            emoji: '🪐',
-            background: 'bg-orange-900',
-            characters: ['🌍', '🪐', '🚀'],
-            sceneType: 'decision',
-            timelineYear: 2150,
-            timelineEvent: 'Interplanetary Civil War',
-            choices: [
-                {
-                    id: 'blockade',
-                    text: 'Blockade Mars until they surrender.',
-                    consequence: 'The blockade fails. Mars develops superior weapons and conquers Earth.'
-                },
-                {
-                    id: 'recognize',
-                    text: 'Recognize their independence. We are brothers.',
-                    consequence: 'Peaceful coexistence leads to a dual-planet civilization.'
-                },
-                {
-                    id: 'nuke',
-                    text: 'Bomb the domes. Make an example of them.',
-                    consequence: 'Mars is destroyed. Earth sinks into moral decay and eventual collapse.'
-                }
-            ]
-        },
-        {
-            id: 'galactic-council',
-            title: 'The Galactic Council (3000)',
-            text: 'It is 3000 AD. Humanity has reached the stars. An alien probe arrives, inviting us to join the Galactic Council. But there is a catch: we must give up our aggressive tendencies.',
-            emoji: '👽',
-            background: 'bg-indigo-900',
-            characters: ['👨‍🚀', '👽', '📜'],
-            sceneType: 'decision',
-            timelineYear: 3000,
-            timelineEvent: 'Admission to the Galaxy',
-            choices: [
-                {
-                    id: 'join',
-                    text: 'Accept the terms. Peace is the only way.',
-                    consequence: 'We become a respected elder race. The "Federation" timeline is solidified.'
-                },
-                {
-                    id: 'refuse',
-                    text: 'Refuse. We will not be tamed. We will conquer.',
-                    consequence: 'We become the scourge of the galaxy. A Great War begins.'
-                },
-                {
-                    id: 'isolate',
-                    text: 'Hide. Build a shield around the solar system.',
-                    consequence: 'We become a "Hermit Kingdom" star system, safe but stagnant.'
-                }
-            ]
-        },
-        {
-            id: 'entropy-death',
-            title: 'The Last Question (The End of Time)',
-            text: 'Trillions of years have passed. The stars are going out. The universe is cooling. The super-computer AC asks: "How can entropy be reversed?"',
-            emoji: '⌛',
-            background: 'bg-black',
-            characters: ['🌌', '💻', '✨'],
-            sceneType: 'revelation',
-            timelineYear: 1000000000,
-            timelineEvent: 'Heat Death',
-            choices: [
-                {
-                    id: 'insufficient-data',
-                    text: 'THERE IS AS YET INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.',
-                    consequence: 'The computer continues to calculate... until the next Big Bang.'
-                },
-                {
-                    id: 'let-there-be-light',
-                    text: 'LET THERE BE LIGHT.',
-                    consequence: 'A new universe is born.'
-                }
-            ]
-        }
-    ],
-    backgroundColor: 'from-indigo-900 to-black'
+    backgroundColor: 'from-indigo-900 to-black',
+    interactiveScenarios
 };

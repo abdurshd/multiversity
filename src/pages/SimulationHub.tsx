@@ -79,6 +79,19 @@ const SimulationHub: React.FC = () => {
                 navigate(`/timeline/${chapterId}/${choice.linkedTimelineId}`);
             }, 2000);
         } else {
+            // Check for branching
+            if (choice.nextSceneId && chapter?.interactiveScenarios) {
+                const nextIndex = chapter.interactiveScenarios.findIndex(s => s.id === choice.nextSceneId);
+                if (nextIndex !== -1) {
+                    setTimeout(() => {
+                        advanceScenario(nextIndex);
+                    }, 800);
+                    return;
+                }
+                console.warn(`Target scenario ${choice.nextSceneId} not found, falling back to linear progression`);
+            }
+
+            // Linear fallback
             if (chapter?.interactiveScenarios && currentScenarioIndex < chapter.interactiveScenarios.length - 1) {
                 setTimeout(() => {
                     advanceScenario();

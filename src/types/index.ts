@@ -61,13 +61,18 @@ export interface Timeline {
   image?: string;
 }
 
+export interface StatModifier {
+  stat: string;
+  value: number;
+}
+
 export interface StoryChoice {
   id: string;
   text: string;
   consequence: string;
   nextSceneId?: string;
   linkedTimelineId?: string;
-  modifiers?: { stat: string; value: number }[];
+  modifiers?: StatModifier[];
 }
 
 export interface InteractiveScenario {
@@ -77,7 +82,7 @@ export interface InteractiveScenario {
   emoji: string;
   background: string;
   characters: string[];
-  sceneType: 'battle' | 'negotiation' | 'exploration' | 'decision' | 'revelation';
+  sceneType: 'battle' | 'negotiation' | 'exploration' | 'decision' | 'revelation' | 'technological';
   visualEffects?: string[];
   choices?: StoryChoice[];
   timelineYear?: number;
