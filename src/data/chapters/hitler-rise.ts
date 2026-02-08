@@ -295,7 +295,7 @@ const interactiveScenarios: InteractiveScenario[] = [
         id: 'purge',
         text: 'Kill them all. No rivals allowed.',
         consequence: 'The SS rises. The Army swears loyalty to you.',
-        modifiers: [{ stat: 'fear', value: 100 } as any],
+        modifiers: [{ stat: 'fear', value: 100 }],
         nextSceneId: 'valkyrie'
       },
       {

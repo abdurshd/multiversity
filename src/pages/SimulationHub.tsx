@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getChapterById } from '../data';
@@ -71,18 +71,18 @@ const SimulationHub: React.FC = () => {
         }
     }, [chapterId, i18n.language]);
 
+    const startSimulation = useCallback(() => {
+        resetSimulation();
+        setMode('simulation');
+    }, [resetSimulation]);
+
     // Handle Autoplay from query params
     useEffect(() => {
         const params = new URLSearchParams(location.search);
         if (params.get('autoplay') === 'true' && mode === 'briefing') {
             startSimulation();
         }
-    }, [location.search, mode]);
-
-    const startSimulation = () => {
-        resetSimulation();
-        setMode('simulation');
-    };
+    }, [location.search, mode, startSimulation]);
 
     const handleChoice = (choice: StoryChoice) => {
         // Update global state
@@ -277,6 +277,7 @@ const SimulationHub: React.FC = () => {
                             {/* Main Scenario Runner */}
                             <div className="lg:col-span-9 order-1 lg:order-2">
                                 <ScenarioRunner
+                                    chapterId={chapter.id}
                                     scenario={(() => {
                                         const originalScenario = chapter.interactiveScenarios[currentScenarioIndex];
                                         if (!chapterNamespace || !translationsLoaded) return originalScenario;
@@ -293,6 +294,11 @@ const SimulationHub: React.FC = () => {
                                             }))
                                         };
                                     })()}
+                                    allScenarios={chapter.interactiveScenarios}
+                                    alternativeTimelines={chapter.alternativeTimelines}
+                                    stats={stats}
+                                    history={simulationState.history}
+                                    currentScenarioIndex={currentScenarioIndex}
                                     onChoiceSelected={handleChoice}
                                     onComplete={() => { }}
                                 />

@@ -26,20 +26,20 @@ export interface HistoricalEvent {
   relatedFigures: string[];
   image?: string;
   location: Coordinates;
-  type: 'political' | 'military' | 'social' | 'economic' | 'cultural' | 'technological';
+  type: 'political' | 'military' | 'social' | 'economic' | 'cultural' | 'technological' | 'battle';
 }
 
 export interface ButterflyEffect {
   id: string;
   trigger: string;
   consequence: string;
-  magnitude: 'small' | 'medium' | 'large' | 'massive';
+  magnitude: 'small' | 'medium' | 'large' | 'massive' | 'infinite';
   timespan: number; // years
 }
 
 export interface Consequence {
   id: string;
-  category: 'political' | 'social' | 'economic' | 'cultural' | 'technological' | 'geographic';
+  category: 'political' | 'social' | 'economic' | 'cultural' | 'technological' | 'geographic' | 'military' | 'humanitarian';
   shortTerm: string;
   longTerm: string;
   globalImpact: string;

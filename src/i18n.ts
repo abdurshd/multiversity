@@ -119,7 +119,7 @@ const uzLegacy = {
 // Add a custom detector for location-based default
 const customLocationDetector = {
     name: 'customLocationDetector',
-    lookup(_options?: unknown) {
+    lookup() {
         try {
             const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
             // Check for Uzbekistan timezones
@@ -131,7 +131,7 @@ const customLocationDetector = {
         }
         return undefined;
     },
-    cacheUserLanguage(_lng: string, _options?: unknown) {
+    cacheUserLanguage() {
         // Optional: cache logic if needed, but localStorage is handled by the main plugin
     }
 };

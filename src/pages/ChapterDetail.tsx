@@ -10,6 +10,13 @@ import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 import { loadChapterTranslations } from '../i18n';
 
+interface TimelineTranslation {
+  title?: string;
+  description?: string;
+  divergence_description?: string;
+  present_day_status?: string;
+}
+
 const ChapterDetail: React.FC = () => {
   const { id: chapterId } = useParams<{ id: string }>();
   const { t, i18n } = useTranslation(['common-ui', 'common-nav']);
@@ -100,18 +107,18 @@ const ChapterDetail: React.FC = () => {
   };
 
   // Helper function to get translated text
-  const getTranslation = (key: string, options?: any): string => {
+  const getTranslation = (key: string, options?: Record<string, unknown>): string => {
     if (!chapterNamespace || !translationsLoaded) return '';
     const result = t(`${chapterNamespace}:${key}`, options);
     return typeof result === 'string' ? result : '';
   };
 
   // Helper function to get timeline translation object
-  const getTimelineTranslation = (timelineId: string): any => {
+  const getTimelineTranslation = (timelineId: string): TimelineTranslation | null => {
     if (!chapterNamespace || !translationsLoaded) return null;
     const timelineKey = getTimelineKey(timelineId);
     const result = t(`${chapterNamespace}:timelines.${timelineKey}`, { returnObjects: true });
-    return result;
+    return typeof result === 'object' && result !== null ? (result as TimelineTranslation) : null;
   };
 
   // Convert timeline ID to translation key (use ID directly)

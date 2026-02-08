@@ -19,6 +19,53 @@ import { Breadcrumb } from '../components/common/Breadcrumb';
 import { useTranslation } from 'react-i18next';
 import { loadChapterTranslations } from '../i18n';
 
+interface TimelineEventTranslation {
+  title?: string;
+  description?: string;
+  impact?: string;
+}
+
+interface TimelineConsequenceTranslation {
+  category?: string;
+  short_term?: string;
+  long_term?: string;
+  global_impact?: string;
+}
+
+interface TimelineButterflyTranslation {
+  trigger?: string;
+  consequence?: string;
+  magnitude?: string;
+  timespan?: number;
+}
+
+interface TimelineTranslation {
+  title?: string;
+  description?: string;
+  divergence_description?: string;
+  present_day_status?: string;
+  events?: Record<string, TimelineEventTranslation>;
+  consequences?:
+  | Record<string, TimelineConsequenceTranslation>
+  | TimelineConsequenceTranslation[]
+  | TimelineConsequenceTranslation;
+  butterfly_effects?: Record<string, TimelineButterflyTranslation> | TimelineButterflyTranslation[];
+  butterfly?: Record<string, TimelineButterflyTranslation> | TimelineButterflyTranslation[];
+}
+
+const VALID_CONSEQUENCE_CATEGORIES = new Set([
+  'political',
+  'social',
+  'economic',
+  'cultural',
+  'technological',
+  'geographic',
+  'military',
+  'humanitarian',
+]);
+
+const VALID_BUTTERFLY_MAGNITUDES = new Set(['small', 'medium', 'large', 'massive', 'infinite']);
+
 
 const TimelineExplorer: React.FC = () => {
   const { t, i18n } = useTranslation(['pages-timeline-explorer', 'common-ui']);
@@ -51,10 +98,10 @@ const TimelineExplorer: React.FC = () => {
   // Helper function to get timeline translation object
   const normalizeKeyVariants = (id: string) => [id, id.replace(/-/g, '_')];
 
-  const getTimelineTranslation = (timelineId: string): any => {
+  const getTimelineTranslation = (timelineId: string): TimelineTranslation | null => {
     if (!chapterNamespace || !translationsLoaded) return null;
     const result = t(`${chapterNamespace}:timelines.${timelineId}`, { returnObjects: true });
-    return typeof result === 'string' ? null : result;
+    return typeof result === 'object' && result !== null ? (result as TimelineTranslation) : null;
   };
 
   // Helper to get translated chapter data
@@ -65,14 +112,18 @@ const TimelineExplorer: React.FC = () => {
   };
 
   // Helper to get event translation
-  const getEventTranslation = (eventId: string): any => {
+  const getEventTranslation = (eventId: string): TimelineEventTranslation | null => {
     if (!timelineTrans?.events) return null;
     const [originalKey, underscoredKey] = normalizeKeyVariants(eventId);
     return timelineTrans.events[originalKey] || timelineTrans.events[underscoredKey];
   };
 
   // Helper to get consequence translation (supports id map, array, or single object legacy shape)
-  const getConsequenceTranslation = (consequenceId: string, index: number, total: number): any => {
+  const getConsequenceTranslation = (
+    consequenceId: string,
+    index: number,
+    total: number,
+  ): TimelineConsequenceTranslation | null => {
     if (!timelineTrans?.consequences) return null;
     const consequences = timelineTrans.consequences;
     const [originalKey, underscoredKey] = normalizeKeyVariants(consequenceId);
@@ -81,13 +132,20 @@ const TimelineExplorer: React.FC = () => {
       return consequences[index] || null;
     }
 
-    const keyedTranslation = consequences[originalKey] || consequences[underscoredKey];
+    const consequenceMap = consequences as Record<string, TimelineConsequenceTranslation>;
+    const keyedTranslation = consequenceMap[originalKey] || consequenceMap[underscoredKey];
     if (keyedTranslation) return keyedTranslation;
 
     // Legacy shape: a single consequence object with short/long/global_impact fields
-    if (consequences.short_term || consequences.long_term || consequences.global_impact || consequences.category) {
+    const legacyConsequence = consequences as TimelineConsequenceTranslation;
+    if (
+      legacyConsequence.short_term ||
+      legacyConsequence.long_term ||
+      legacyConsequence.global_impact ||
+      legacyConsequence.category
+    ) {
       if (total === 1 || index === 0) {
-        return consequences;
+        return legacyConsequence;
       }
     }
 
@@ -95,7 +153,10 @@ const TimelineExplorer: React.FC = () => {
   };
 
   // Helper to get butterfly effect translation (supports id map or ordered arrays)
-  const getButterflyTranslation = (butterflyId: string, index: number): any => {
+  const getButterflyTranslation = (
+    butterflyId: string,
+    index: number,
+  ): TimelineButterflyTranslation | null => {
     const butterflySource = timelineTrans?.butterfly_effects || timelineTrans?.butterfly;
     if (!butterflySource) return null;
 
@@ -156,9 +217,17 @@ const TimelineExplorer: React.FC = () => {
     }),
     consequences: timeline.consequences.map((consequence, index) => {
       const consequenceTrans = getConsequenceTranslation(consequence.id, index, timeline.consequences.length);
+      const translatedCategory = consequenceTrans?.category;
+      const category = (
+        translatedCategory &&
+        VALID_CONSEQUENCE_CATEGORIES.has(translatedCategory)
+          ? translatedCategory
+          : consequence.category
+      ) as typeof consequence.category;
+
       return {
         ...consequence,
-        category: consequenceTrans?.category || consequence.category,
+        category,
         shortTerm: consequenceTrans?.short_term || consequence.shortTerm,
         longTerm: consequenceTrans?.long_term || consequence.longTerm,
         globalImpact: consequenceTrans?.global_impact || consequence.globalImpact,
@@ -166,11 +235,19 @@ const TimelineExplorer: React.FC = () => {
     }),
     butterfly: timeline.butterfly.map((effect, index) => {
       const butterflyTrans = getButterflyTranslation(effect.id, index);
+      const translatedMagnitude = butterflyTrans?.magnitude;
+      const magnitude = (
+        translatedMagnitude &&
+        VALID_BUTTERFLY_MAGNITUDES.has(translatedMagnitude)
+          ? translatedMagnitude
+          : effect.magnitude
+      ) as typeof effect.magnitude;
+
       return {
         ...effect,
         trigger: butterflyTrans?.trigger || effect.trigger,
         consequence: butterflyTrans?.consequence || effect.consequence,
-        magnitude: butterflyTrans?.magnitude || effect.magnitude,
+        magnitude,
         timespan: butterflyTrans?.timespan || effect.timespan,
       };
     })
