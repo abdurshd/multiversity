@@ -16,56 +16,10 @@ DARKER ATMOSPHERE WITH VIBRANT COLORS WHERE PRESENT: A haunting realistic oil pa
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "World War I No Man's Land with soldiers going over the top into battle",
-  "context": "WWI trenches 1916, devastated landscape, industrial warfare, multiple nations fighting",
-  "action": "Camera starts in trench, follows soldiers climbing over top into No Man's Land, tracks across devastation showing tanks, aerial combat, explosions, ending on ruined village",
-  "style": "DARK realistic oil painting with WWI somber realism YET VIBRANT explosion colors, photorealistic soldiers with fear, muted but saturated where lit",
-  "camera": {
-    "position": "Starting in trench at soldier eye level, rising over top, tracking across No Man's Land",
-    "movement": "Dynamic dolly forward with crane up, following charge into devastation",
-    "lens": "35mm wide-angle for WWI battlefield scope",
-    "aperture": "f/2.8 for dramatic war depth",
-    "framerate": "24fps with slow-motion on explosions showing horror"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Ground-level soldier perspective emphasizing desolation and terror",
-    "depth_layers": "Foreground soldiers charging, mid-ground No Man's Land devastation, background ruined villages"
-  },
-  "lighting": {
-    "primary": "DARK cold blue-gray overcast creating bleak WWI atmosphere",
-    "secondary": "Harsh flare and explosion light cutting through darkness",
-    "accent": "VIBRANT orange explosions and red flares against dark sky maintaining saturation",
-    "atmosphere": "Volumetric gunsmoke and explosion haze, somber atmospheric darkness with color where lit",
-    "color_temperature": "Cold 6000K overcast with VIBRANT 2800K explosion warmth"
-  },
-  "color_palette": {
-    "primary": ["Mud brown #6B4423 RICH", "Trench gray #6B7280 varied", "Dark storm #2D3748"],
-    "accent": ["VIBRANT explosion orange #FF6B35", "VIBRANT flare red #DC2626", "Military colors maintained"],
-    "grading": "DARK muted atmosphere with VIBRANT saturated colors on explosions and flares - somber with intense moments"
-  },
-  "visual_effects": {
-    "oil_painting": "Somber WWI brush strokes, DARK shadows, yet VIBRANT impasto on fire and explosions",
-    "atmospheric": "Heavy volumetric smoke, explosion effects with saturated color, bleak war haze",
-    "realistic_details": "Photorealistic terrified faces, authentic WWI equipment, period tanks and aircraft, mud and destruction texture",
-    "darkness": "Deep shadows throughout while maintaining FULL color saturation on explosions and illuminated areas"
-  },
-  "audio": {
-    "music": "Somber WWI orchestral theme building to tragic climax, representing lost generation",
-    "sound_design": "Artillery bombardment, rifle fire, explosions, soldiers shouting, tank engines, aircraft overhead, mud squelching"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with DARK yet selectively COLORFUL WWI oil painting aesthetic",
-    "motion_blur": "Cinematic blur with emphasis on horror of mechanized warfare",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for war devastation atmosphere while maintaining vibrant explosion colors"
-  }
-}
+```
+Photorealistic oil painting of World War I soldiers going over the top into No Man's Land in 1916. British, French, and German troops climb from muddy trenches with terror and determination on their faces, steel helmets and fixed bayonets catching the light as tanks roll forward, biplanes dogfight overhead, and shell craters scar the devastated earth toward a ruined village. The camera rises slowly from the trench and tracks forward across the battlefield. Cold blue-gray overcast light hangs over the scene while vibrant orange explosions and red flares cut through the darkness. Rich mud brown, varied trench gray, and dark storm tones dominate, with fully saturated fire. Cinematic 16:9, somber visible brushstrokes with vibrant impasto on the flames, tragic and horrifying, carried by a mournful orchestral theme.
 ```
 
 ---
@@ -84,56 +38,10 @@ A peaceful, harmonious realistic oil painting showing Europe without the Great W
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Franz Ferdinand presiding over successful Austro-Hungarian federal reforms preventing WWI",
-  "context": "Vienna constitutional assembly 1920, multiethnic cooperation, democratic reforms, peaceful Europe",
-  "action": "Camera tracks through diverse assembly showing ethnic delegates collaborating, moving to Franz Ferdinand signing reforms, ending on windows showing peaceful thriving Vienna",
-  "style": "Peaceful realistic oil painting with warm golden hour light, photorealistic multicultural harmony, vibrant diverse regional colors",
-  "camera": {
-    "position": "Starting on ethnic delegates in cooperation, tracking to Franz Ferdinand, ending on Vienna vista",
-    "movement": "Smooth tracking shot showing democratic process and cultural harmony",
-    "lens": "50mm standard lens for balanced cooperative perspective",
-    "aperture": "f/2.8 for pleasant depth showing peace",
-    "framerate": "24fps with warm, optimistic pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing ethnic equality and democratic cooperation",
-    "depth_layers": "Foreground diverse delegates, mid-ground Franz Ferdinand and reforms, background peaceful Vienna"
-  },
-  "lighting": {
-    "primary": "Warm golden hour afternoon light suggesting prosperity",
-    "secondary": "Soft natural fill creating hopeful atmosphere",
-    "accent": "Highlights on constitutional documents and diverse regional costumes",
-    "atmosphere": "Clear, peaceful atmospheric warmth showing cooperation",
-    "color_temperature": "Warm 3600K golden hour prosperity light"
-  },
-  "color_palette": {
-    "primary": ["Peaceful gold #FFD700", "Diplomatic blue #3B82F6", "Multicultural regional variety"],
-    "accent": ["Austrian black-gold", "Hungarian red-white-green", "Czech red-white", "Balkan diversity"],
-    "grading": "Vibrant harmonious oil painting palette celebrating ethnic cooperation and peace"
-  },
-  "visual_effects": {
-    "oil_painting": "Luminous peaceful brush strokes, warm impasto on flags and costumes, harmonious texture",
-    "atmospheric": "Golden hour atmospheric glow, peaceful Vienna clarity",
-    "realistic_details": "Photorealistic multiethnic faces with cooperation, authentic regional costumes, Viennese architecture",
-    "harmony": "Visual emphasis on cultural diversity enriching unity"
-  },
-  "audio": {
-    "music": "Harmonious Central European themes blending various ethnic musical traditions, celebration of cooperation",
-    "sound_design": "Multilingual conversations in harmony, document signing, Vienna street sounds through windows showing peace"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with peaceful harmonious oil painting aesthetic",
-    "motion_blur": "Natural blur on cooperative activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for warm golden prosperity and cultural richness"
-  }
-}
+```
+Photorealistic peaceful oil painting of Archduke Franz Ferdinand presiding over a Vienna constitutional assembly in 1920, the Great War prevented. Diverse ethnic delegates in Austrian, Hungarian, Czech, Polish, and Balkan regional dress collaborate around the council as Franz Ferdinand signs the federal reforms, regional flags displayed in harmony. The camera glides slowly through the delegates toward him, then settles on tall windows revealing a thriving, peaceful Vienna beyond. Warm golden-hour afternoon light fills the chamber with a soft hopeful glow. Peaceful gold, diplomatic blue, and rich multicultural colors blend across the scene. Cinematic 16:9, luminous visible brushstrokes, harmonious and optimistic, over blended Central European musical themes.
 ```
 
 ---
@@ -152,56 +60,10 @@ DARKER ATMOSPHERE WITH VIBRANT COLORS: A triumphant but ominous realistic oil pa
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Paris under German occupation with Kaiser Wilhelm II reviewing victory parade",
-  "context": "Paris 1915, Arc de Triomphe with German flags, occupation forces, transformed French capital",
-  "action": "Camera starts on Kaiser at Eiffel Tower, pans across German victory parade, tracks through occupied Paris showing transformation, ending on Louvre with German eagles",
-  "style": "DARK realistic oil painting with ominous occupation atmosphere YET VIBRANT German imperial colors, photorealistic victory and defeat expressions",
-  "camera": {
-    "position": "Starting elevated on Kaiser, descending through parade, tracking through occupied streets",
-    "movement": "Crane down combined with forward dolly showing German dominance",
-    "lens": "28mm wide-angle for occupation scope",
-    "aperture": "f/2.8 for dramatic occupation depth",
-    "framerate": "24fps with imposing, militaristic pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Elevated German dominance composition showing occupation control",
-    "depth_layers": "Foreground German parade, mid-ground occupation administration, background transformed Paris"
-  },
-  "lighting": {
-    "primary": "DARK cold northern light creating ominous occupation atmosphere",
-    "secondary": "Harsh shadows from German military forces creating oppression",
-    "accent": "VIBRANT German black-white-red flags and uniforms maintaining full saturation",
-    "atmosphere": "DARK Germanic order imposed yet colors remain vibrant, creating oppressive colorful atmosphere",
-    "color_temperature": "Cool 6000K northern light with dark shadows yet saturated colors"
-  },
-  "color_palette": {
-    "primary": ["German black #000000 VIBRANT", "Imperial white #FFFFFF", "German red #DC2626 SATURATED"],
-    "accent": ["Prussian blue #1E40AF vibrant", "Subdued but still colorful French elements"],
-    "grading": "DARK atmosphere with DOMINANT vibrant German colors - ominous yet saturated imperial palette"
-  },
-  "visual_effects": {
-    "oil_painting": "Imposing Germanic brush strokes, DARK shadows, yet VIBRANT impasto on imperial flags and insignia",
-    "atmospheric": "Cold northern atmospheric quality, occupation tension, yet color maintained",
-    "realistic_details": "Photorealistic faces showing victory and defeat, authentic WWI German military detail, occupied Paris architecture",
-    "occupation": "Visual emphasis on German color dominance while maintaining vibrancy despite darkness"
-  },
-  "audio": {
-    "music": "German imperial marches with ominous undertones, Prussian military themes showing dominance",
-    "sound_design": "German military boots marching in formation, Gothic German commands, ships on Seine, aircraft overhead, occupation administration"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with DARK yet COLORFUL occupation oil painting aesthetic",
-    "motion_blur": "Natural blur on military parade movements",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for ominous atmosphere while maintaining vibrant German imperial colors"
-  }
-}
+```
+Photorealistic oil painting of Paris under German occupation in 1915, Kaiser Wilhelm II in spiked Pickelhaube and Iron Cross reviewing a victory parade before the Eiffel Tower. Field-gray German troops march in precise formation beneath imperial black-white-red flags draping the Arc de Triomphe, cavalry bearing imperial eagles while defeated French citizens look on. The camera descends slowly from the Kaiser and moves forward through the occupied streets toward the Louvre crowned with German eagles. Cold northern light casts ominous shadows while the German flags and uniforms hold vibrant black, white, and red against Prussian blue. Cinematic 16:9, imposing visible brushstrokes, oppressive and ominous, beneath solemn Prussian military marches.
 ```
 
 ---
@@ -220,56 +82,10 @@ A contained, regional realistic oil painting showing the war that stayed limited
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Belgrade peace treaty signing preventing WWI through successful Great Power diplomacy",
-  "context": "Belgrade 1915, limited Balkan conflict concluded, international mediation, wider Europe at peace",
-  "action": "Camera starts on treaty signing ceremony, pans to show limited Belgrade war damage being rebuilt, tracks through windows showing peaceful European capitals, ending on international cooperation",
-  "style": "Hopeful realistic oil painting with diplomatic lighting, photorealistic relief expressions, vibrant cooperative colors",
-  "camera": {
-    "position": "Starting on signing table, panning to windows, ending on wide shot of reconstruction",
-    "movement": "Smooth pan and dolly showing diplomatic success and limited damage",
-    "lens": "40mm lens for balanced diplomatic perspective",
-    "aperture": "f/2.8 for pleasant cooperative depth",
-    "framerate": "24fps with relieved, hopeful pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing international cooperation and contained conflict",
-    "depth_layers": "Foreground peace treaty, mid-ground reconstruction, background peaceful Europe"
-  },
-  "lighting": {
-    "primary": "Hopeful mid-day sunlight showing reconstruction progress",
-    "secondary": "Clear diplomatic lighting representing successful mediation",
-    "accent": "Highlights on peace treaty documents and cooperative activities",
-    "atmosphere": "Clear, hopeful atmospheric quality showing catastrophe averted",
-    "color_temperature": "Neutral 5200K clear daylight"
-  },
-  "color_palette": {
-    "primary": ["Diplomatic blue #3B82F6", "Mediation purple #8B5CF6", "Healing green #10B981"],
-    "accent": ["Relief tones", "Minimal military colors", "International cooperation variety"],
-    "grading": "Vibrant hopeful oil painting palette celebrating diplomatic success"
-  },
-  "visual_effects": {
-    "oil_painting": "Diplomatic brush strokes, hopeful impasto on treaty and cooperation, recovery texture",
-    "atmospheric": "Clear hopeful atmosphere, reconstruction progress visible",
-    "realistic_details": "Photorealistic diplomatic faces with relief, limited war damage being repaired, authentic period diplomacy",
-    "prevention": "Visual emphasis on wisdom preventing catastrophe through cooperation"
-  },
-  "audio": {
-    "music": "Relieved diplomatic themes with hope, celebrating peaceful resolution",
-    "sound_design": "Treaty signing, reconstruction hammering, peaceful European city sounds through windows, international cooperation"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with hopeful diplomatic oil painting aesthetic",
-    "motion_blur": "Natural blur on reconstruction activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for authentic diplomatic success and modest recovery"
-  }
-}
+```
+Photorealistic hopeful oil painting of a Belgrade peace treaty signing in 1915, the Great War prevented through Great Power diplomacy. Austro-Hungarian and Serbian delegates sign the treaty at a modest table with expressions of relief while British, French, German, and Russian mediators look on, the double-eagle and Serbian emblems displayed in respect. The camera pans smoothly from the signing toward tall windows revealing reconstruction crews rebuilding Belgrade and peaceful European capitals beyond. Clear hopeful mid-day sunlight fills the room, lighting the documents. Diplomatic blue, mediation purple, and healing green warm the scene with minimal military color. Cinematic 16:9, vibrant visible brushstrokes, relieved and uplifting, over gentle hopeful diplomatic themes.
 ```
 
 ---

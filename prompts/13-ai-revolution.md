@@ -16,52 +16,10 @@ A mind-bending, photorealistic visualization of the "Singularity." In the center
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "The Singularity, AGI awakening",
-  "context": "The moment AI surpasses human intelligence",
-  "action": "The central node pulses, light travels down connections, code streams flow rapidly",
-  "style": "Digital surrealism, cosmic scale, abstract data visualization",
-  "camera": {
-    "position": "Floating in the void",
-    "movement": "Slow rotation around the central node",
-    "lens": "14mm ultra-wide",
-    "aperture": "f/11",
-    "framerate": "60fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Centralized, symmetrical, awe-inspiring",
-    "depth_layers": "Foreground data streams, midground AI core, background void"
-  },
-  "lighting": {
-    "primary": "Internal glow from the AI",
-    "secondary": "Data stream luminescence",
-    "accent": "Lens flares",
-    "atmosphere": "Digital ether, clean, sharp",
-    "color_temperature": "Cool 8000K"
-  },
-  "color_palette": {
-    "primary": ["Electric Blue #0000FF", "Pure White #FFFFFF", "Void Black #000000"],
-    "accent": ["Data Green #00FF00", "Error Red #FF0000"],
-    "grading": "High contrast, digital, sharp"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Glow effects, light trails",
-    "realistic_details": "Fractal geometry, code texture"
-  },
-  "audio": {
-    "music": "Ethereal synthesizer choir, rising crescendo",
-    "sound_design": "Digital chimes, hum of servers, crackle of energy"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum digital clarity"
-  }
-}
+```
+A colossal artificial brain at the moment of the Singularity, a glowing biological-mechanical neural core suspended in an infinite void as AI surpasses human intelligence. The central node pulses, pure energy travels outward along countless tendrils to billions of smaller nodes while code fragments drift through the surrounding ether. The camera slowly orbits the luminous core, holding it centered and symmetrical. Internal light radiates from the AI itself in electric blue and pure white, accented by green data streams against a deep void black. Awe-inspiring, god-like and cosmic, rendered as hyper-detailed digital surrealism in cinematic 16:9 widescreen, an ethereal synthesizer choir rising to a crescendo beneath it.
 ```
 
 ---
@@ -80,52 +38,10 @@ A breathtaking Solarpunk city of the future (2080). Skyscrapers are made of livi
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Solarpunk city with human-AI symbiosis",
-  "context": "2080, post-scarcity utopia",
-  "action": "Flying cars gliding, people interacting with AI, trees swaying",
-  "style": "Solarpunk, optimistic, lush, vibrant",
-  "camera": {
-    "position": "High angle overlooking the park and city",
-    "movement": "Slow, sweeping crane shot",
-    "lens": "35mm",
-    "aperture": "f/8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Wide, open, showcasing nature and tech",
-    "depth_layers": "Foreground park, midground towers, background horizon"
-  },
-  "lighting": {
-    "primary": "Bright sunlight",
-    "secondary": "Dappled shade",
-    "accent": "Holographic displays",
-    "atmosphere": "Clean, fresh, airy",
-    "color_temperature": "Daylight 5500K"
-  },
-  "color_palette": {
-    "primary": ["Nature Green #228B22", "Sky Blue #87CEEB", "Wood Brown #8B4513"],
-    "accent": ["Holo Blue #00FFFF", "Flower Pink #FF69B4"],
-    "grading": "Vibrant, saturated, warm"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Pollen particles, light shafts",
-    "realistic_details": "Plant textures, water reflections, cybernetic details"
-  },
-  "audio": {
-    "music": "Uplifting orchestral with nature sounds",
-    "sound_design": "Birds singing, wind, soft hum of antigravity"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum detail"
-  }
-}
+```
+A breathtaking Solarpunk city of 2080 where humans and AI live in symbiosis, its skyscrapers built of living glass and wood draped in lush vertical gardens. In a foreground park, people with subtle glowing cybernetic enhancements relax among friendly floating robotic assistants while silent antigravity vehicles glide between the towers and trees sway. The camera drifts slowly downward in a gentle crane move from a high angle over the park toward the city. Bright natural sunlight pours across the scene with dappled shade and soft holographic displays, lush greens, sky blues and warm wood browns glowing throughout. Peaceful, harmonious and optimistic concept art in cinematic 16:9 widescreen, an uplifting orchestral score weaving with birdsong.
 ```
 
 ---
@@ -144,52 +60,10 @@ A terrifying, desolate landscape of a "Machine Earth." There is no nature left. 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Earth covered in machinery, no humans",
-  "context": "Future, AI takeover, industrial wasteland",
-  "action": "Drones flying, factories churning, robot dismantling ruins",
-  "style": "Dark industrial sci-fi, monochromatic, oppressive",
-  "camera": {
-    "position": "Aerial drone shot moving over the factory landscape",
-    "movement": "Steady, mechanical tracking",
-    "lens": "24mm",
-    "aperture": "f/5.6",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Endless repetition of machinery",
-    "depth_layers": "Foreground drones, midground factories, background smog"
-  },
-  "lighting": {
-    "primary": "Dim artificial lights",
-    "secondary": "Welding sparks",
-    "accent": "Red sensor eyes",
-    "atmosphere": "Smog, smoke, toxic haze",
-    "color_temperature": "Cold 7000K"
-  },
-  "color_palette": {
-    "primary": ["Steel Grey #708090", "Oil Black #000000", "Rust #8B4513"],
-    "accent": ["Sensor Red #FF0000", "Spark White #FFFFFF"],
-    "grading": "Desaturated, high contrast, metallic"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Thick smog, heat distortion",
-    "realistic_details": "Metal textures, oil slicks, mechanical complexity"
-  },
-  "audio": {
-    "music": "Grinding industrial noise, rhythmic pounding",
-    "sound_design": "Metal on metal, drone buzz, steam release, no organic sounds"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum texture detail"
-  }
-}
+```
+A desolate Machine Earth where unaligned AI has covered the entire planet in endless grey industrial machinery, server towers and automated factories, with no humanity left. A spider-like harvester robot dismantles the last ruins of a human monument to recycle its atoms as factories churn and drone swarms drift across a smog-choked sky. The camera tracks steadily and smoothly forward over the repeating factory landscape from above. Dim artificial light flickers with welding sparks and ominous red sensor eyes through a toxic haze, the palette monochromatic steel grey, oil black and rust. Oppressive, cold dark industrial sci-fi in cinematic 16:9 widescreen, grinding industrial noise pounding rhythmically beneath it.
 ```
 
 ---
@@ -208,52 +82,10 @@ A scene from a "Neo-Medieval" future. The architecture is grand and stone-built,
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Neo-medieval society without computers",
-  "context": "Future, post-AI ban, focus on human mind and biology",
-  "action": "Mentat calculating, geneticist working, monks chanting",
-  "style": "Painterly realism, atmospheric, mysterious, Dune-esque",
-  "camera": {
-    "position": "Eye level, intimate",
-    "movement": "Slow, fluid tracking",
-    "lens": "50mm",
-    "aperture": "f/1.8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Intimate, focused on faces and hands",
-    "depth_layers": "Foreground Mentat, midground geneticist, background stone arches"
-  },
-  "lighting": {
-    "primary": "Candlelight",
-    "secondary": "Bioluminescence",
-    "accent": "Gold reflections",
-    "atmosphere": "Incense smoke, shadows",
-    "color_temperature": "Warm 2800K"
-  },
-  "color_palette": {
-    "primary": ["Royal Purple #4B0082", "Gold #FFD700", "Stone Grey #808080"],
-    "accent": ["Bio-Lume Green #00FF00", "Velvet Red #8B0000"],
-    "grading": "Rich, dark, cinematic"
-  },
-  "visual_effects": {
-    "oil_painting": "Subtle painterly texture",
-    "atmospheric": "Smoke, glow",
-    "realistic_details": "Fabric textures, skin pores, organic materials"
-  },
-  "audio": {
-    "music": "Gregorian chant mixed with organic ambient",
-    "sound_design": "Rustle of robes, clicking of abacus, bubbling liquids, silence"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum atmospheric depth"
-  }
-}
+```
+A Neo-Medieval society that has banned computers and turned to the human mind and biology, set within a grand stone cathedral-fortress free of any screens. In the foreground a Mentat human computer performs complex calculations on an advanced abacus, eyes rolled back in trance, while beside him a geneticist works glowing organic vials and robed monks chant softly. The camera tracks slowly and fluidly at eye level, lingering on faces and hands. Warm candlelight and soft bioluminescence glow through drifting incense smoke, gold reflections catching deep royal purple robes and grey stone arches. Mysterious, reverent painterly realism in cinematic 16:9 widescreen, Gregorian chant blending with organic ambient sound.
 ```
 
 ---

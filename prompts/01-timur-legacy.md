@@ -16,54 +16,10 @@ A majestic and imposing realistic oil painting of Emir Timur (Tamerlane) at the 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Emir Timur on his throne in Samarkand receiving tribute",
-  "context": "Samarkand, 1400 AD, height of the Timurid Empire, Gur-e-Amir audience hall",
-  "action": "Camera pushes in slowly on Timur as he gestures to an ambassador, guards shift weight, dust motes dance in light",
-  "style": "Orientalist oil painting brought to life, rich colors, intricate details, dramatic lighting",
-  "camera": {
-    "position": "Eye level, starting wide to show the hall, pushing in to medium shot of Timur",
-    "movement": "Slow, majestic dolly forward",
-    "lens": "35mm cinematic",
-    "aperture": "f/2.8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Central composition focusing on Timur, flanked by court and architecture",
-    "depth_layers": "Foreground guards, midground Timur and ambassadors, background architecture and sunset"
-  },
-  "lighting": {
-    "primary": "Golden hour sunlight streaming through lattice screens",
-    "secondary": "Warm torchlight from sides",
-    "accent": "Highlights on gold, jewels, and armor",
-    "atmosphere": "Dusty, atmospheric, regal",
-    "color_temperature": "Warm 3200K"
-  },
-  "color_palette": {
-    "primary": ["Turquoise #40E0D0", "Lapis Blue #0066CC", "Crimson Red #990000"],
-    "accent": ["Gold #FFD700", "Marble White #F5F5F5"],
-    "grading": "Rich, saturated, cinematic orientalist look"
-  },
-  "visual_effects": {
-    "oil_painting": "Visible brush strokes, canvas texture, rich color depth",
-    "atmospheric": "Volumetric light beams, dust particles",
-    "realistic_details": "Intricate tile patterns, fabric textures, facial weathering"
-  },
-  "audio": {
-    "music": "Deep, resonant Central Asian throat singing mixed with orchestral strings",
-    "sound_design": "Echoing footsteps, rustle of silk, distant call to prayer, wind howling outside"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with artistic overlay",
-    "motion_blur": "Cinematic",
-    "anti_aliasing": "High"
-  }
-}
+```
+Emir Timur sits on his golden jeweled throne in the Gur-e-Amir audience hall of Samarkand in 1400 AD, gesturing to a bowing ambassador as armored guards shift their weight and dust motes drift through the air. The hall surrounds him with towering turquoise and lapis-blue mosaic arches, marble floors, and Persian silk carpets. The camera slowly pushes in from a wide view of the hall toward a medium shot of Timur. Golden hour sunlight streams through carved lattice screens in volumetric beams, warm torchlight glinting off gold, jewels, and steel, in tones of turquoise, lapis blue, crimson red, and royal gold. The mood is regal and awe-inspiring, rendered as a living Orientalist oil painting with visible brushstrokes, cinematic 16:9 widescreen, underscored by resonant Central Asian throat singing and a distant call to prayer.
 ```
 
 ---
@@ -82,53 +38,10 @@ A sweeping, epic oil painting depicting the Timurid conquest of Beijing in 1410.
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Timurid forces entering the Forbidden City in Beijing",
-  "context": "Winter 1410, successful invasion of China, clash of empires",
-  "action": "Cavalry charge through gates, Timur observing, smoke rising, flags waving",
-  "style": "Epic historical war painting, dynamic, cold winter light vs warm fire",
-  "camera": {
-    "position": "High angle crane shot looking down at the gate",
-    "movement": "Sweeping movement following the cavalry charge",
-    "lens": "24mm wide angle",
-    "aperture": "f/4",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Wide epic scale",
-    "depth_layers": "Foreground battle, midground burning palace, background snowy mountains"
-  },
-  "lighting": {
-    "primary": "Cold, diffuse winter daylight",
-    "secondary": "Warm orange glow from fires",
-    "accent": "Glint of steel and ice",
-    "atmosphere": "Smoky, snowy, chaotic",
-    "color_temperature": "Cool 5600K mixed with warm fire"
-  },
-  "color_palette": {
-    "primary": ["Ming Red #E60000", "Timurid Blue #0066CC", "Snow White #FFFFFF"],
-    "accent": ["Fire Orange #FF4500", "Steel Grey #708090"],
-    "grading": "High contrast, epic war film look"
-  },
-  "visual_effects": {
-    "oil_painting": "Dynamic brushwork, snow effects, fire particles",
-    "atmospheric": "Smoke, falling snow, breath vapor",
-    "realistic_details": "Accurate Ming and Timurid armor, architectural destruction"
-  },
-  "audio": {
-    "music": "Thundering war drums, clashing metal, epic orchestral score",
-    "sound_design": "Horse hooves, shouting in Chagatai and Chinese, crackling fire"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum fidelity",
-    "motion_blur": "High for action"
-  }
-}
+```
+Timurid heavy cavalry on armored horses charge through the gates of the Forbidden City in Beijing during the winter of 1410, lances and banners raised as Timur on his black stallion observes the overwhelmed Ming defenders. Smoke billows from the burning red-and-gold wooden palaces, snow falls across the courtyard, and the Great Wall traces the distant mountains. The camera follows the charge from a high vantage looking down over the gate. Cold, diffuse winter daylight contrasts with the warm orange glow of the fires, steel and ice glinting through the smoke, in tones of Ming red, Timurid blue, snow white, and fire orange. The mood is epic and chaotic, rendered as a historical war oil painting with dynamic brushwork, cinematic 16:9 widescreen, underscored by thundering war drums and clashing metal.
 ```
 
 ---
@@ -147,52 +60,10 @@ A serene and majestic oil painting showing a bustling, prosperous Samarkand in 1
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Prosperous Samarkand Registan Square in a stable Timurid Empire",
-  "context": "1450 AD, Pax Timurida, center of trade and science",
-  "action": "Scholars discussing astronomy, merchants trading, peaceful city life",
-  "style": "Detailed Orientalist painting, serene, golden age atmosphere",
-  "camera": {
-    "position": "High angle establishing shot",
-    "movement": "Slow pan across the square",
-    "lens": "35mm",
-    "aperture": "f/8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced, symmetrical composition reflecting order",
-    "depth_layers": "Foreground market, midground madrasas, background observatory"
-  },
-  "lighting": {
-    "primary": "Warm golden afternoon sun",
-    "secondary": "Soft shadows",
-    "accent": "Reflections on tiles",
-    "atmosphere": "Clear, bright, intellectual",
-    "color_temperature": "Warm 4000K"
-  },
-  "color_palette": {
-    "primary": ["Turquoise #40E0D0", "Sandstone #D2B48C", "Lapis Blue #0066CC"],
-    "accent": ["Gold #FFD700", "Emerald Green #50C878"],
-    "grading": "Vibrant, clean, optimistic"
-  },
-  "visual_effects": {
-    "oil_painting": "Fine detail, smooth brushwork, realistic light",
-    "atmospheric": "Clear air, heat haze",
-    "realistic_details": "Architectural geometry, fabric patterns, scientific instruments"
-  },
-  "audio": {
-    "music": "Sophisticated court music, oud and flute",
-    "sound_design": "Murmur of intellectual conversation, market sounds, birds singing"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum detail"
-  }
-}
+```
+Scholars, merchants, and diplomats from Europe, India, and China mingle peacefully across a grand Registan Square in a prosperous Samarkand of 1450, the golden-age capital of a stable Timurid Empire, as astronomers gather near Ulugh Beg's towering observatory and caravans unload silk, spices, and porcelain. Pristine blue domes, minarets, and tiled madrasas frame the scene. The camera smoothly pans across the square from a high establishing view. Warm golden afternoon sun bathes the city, casting soft shadows and gentle reflections on the tiles, in tones of turquoise, sandstone, lapis blue, gold, and emerald green. The mood is serene and intellectual, rendered as a detailed Orientalist oil painting with fine smooth brushwork, cinematic 16:9 widescreen, underscored by sophisticated court music of oud and flute and the murmur of conversation.
 ```
 
 ---
@@ -211,52 +82,10 @@ A dark and ominous oil painting depicting the Timurid army camping outside the w
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Timurid siege of Vienna, pyramid of skulls",
-  "context": "1408 AD, invasion of Europe, terror and destruction",
-  "action": "Soldiers stacking skulls, horsemen patrolling, Vienna burning in distance",
-  "style": "Dark, gritty historical horror, high contrast, ominous",
-  "camera": {
-    "position": "Low angle looking up at the skull pyramid",
-    "movement": "Slow tilt up to reveal the burning city",
-    "lens": "24mm",
-    "aperture": "f/2.8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Foreboding, dominated by the symbol of terror",
-    "depth_layers": "Foreground skulls, midground army, background Vienna"
-  },
-  "lighting": {
-    "primary": "Moonlight and firelight",
-    "secondary": "Deep shadows",
-    "accent": "Red glow on snow",
-    "atmosphere": "Smoky, cold, terrifying",
-    "color_temperature": "Cool blue mixed with red fire"
-  },
-  "color_palette": {
-    "primary": ["Black #000000", "Blood Red #8B0000", "Snow Blue #F0F8FF"],
-    "accent": ["Fire Orange #FF4500", "Bone White #FFFFF0"],
-    "grading": "Desaturated, high contrast, horror aesthetic"
-  },
-  "visual_effects": {
-    "oil_painting": "Rough brushwork, dark tones, textured snow and bone",
-    "atmospheric": "Smoke, fog, falling ash",
-    "realistic_details": "Gothic architecture, nomadic armor, gruesome details"
-  },
-  "audio": {
-    "music": "Dissonant strings, low drums, ominous drone",
-    "sound_design": "Wailing wind, crackling fire, distant screams, horses snorting"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum atmospheric depth"
-  }
-}
+```
+Timurid soldiers stack a grim pyramid of skulls outside the walls of Vienna in 1408 as mounted horse archers patrol the snowy fields and the city's distant Gothic spires burn against the horizon. Black smoke drifts from torched villages and falling ash settles over the captives. The camera slowly tilts up from the skull pyramid to reveal the burning city beyond. A blood-red moon and flickering firelight cut through deep shadows, casting a red glow across the cold snow, in tones of black, blood red, snowy blue, fire orange, and bone white. The mood is ominous and terrifying, rendered as a dark gritty historical oil painting with rough brushwork, cinematic 16:9 widescreen, underscored by dissonant strings, low drums, and wailing wind.
 ```
 
 ---

@@ -16,56 +16,10 @@ A powerful realistic oil painting capturing the fury and passion of the French R
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "French Revolution at peak intensity on Place de la Révolution with guillotine",
-  "context": "Paris 1793, stormy twilight, revolutionary sans-culottes rallying, aristocrats being led to execution, Notre-Dame visible through smoke",
-  "action": "Camera rises from ground level through revolutionary crowd, panning to show guillotine against stormy sky, revolutionary leader gesturing, flag waving, capturing the passionate chaos and transformation",
-  "style": "Realistic oil painting with dramatic chiaroscuro, photorealistic revolutionary characters, vibrant tricolor palette, visible brush stroke texture, Jacques-Louis David inspired composition",
-  "camera": {
-    "position": "Starting low angle among sans-culottes' feet, rising up through crowd",
-    "movement": "Dramatic crane up combined with rotating pan, ending on high angle showing full revolutionary scene",
-    "lens": "28mm wide-angle for epic revolutionary scope",
-    "aperture": "f/2.8 for dramatic shallow depth on faces",
-    "framerate": "24fps with occasional speed ramps on flag waving and crowd surges"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Dynamic diagonal composition with guillotine dominating skyline, crowd filling frame",
-    "depth_layers": "Foreground sans-culottes and flag, mid-ground aristocrats and guards, background Notre-Dame and guillotine"
-  },
-  "lighting": {
-    "primary": "Dramatic torchlight creating flickering golden illumination",
-    "secondary": "Stormy twilight with deep purple and red sky tones",
-    "accent": "Guillotine blade catching last sunlight, tricolor flag highlights",
-    "atmosphere": "Volumetric smoke from burning estates, torch haze creating atmospheric beams",
-    "color_temperature": "Warm 2800K torchlight contrasted with cool 6500K twilight"
-  },
-  "color_palette": {
-    "primary": ["Revolutionary blue #0055A4", "Pure white #FFFFFF", "Blood red #EF4135"],
-    "accent": ["Torch gold #FFD700", "Stormy purple #7C3AED", "Ominous gray #4B5563"],
-    "grading": "Vibrant saturated revolutionary colors with dramatic chiaroscuro shadows"
-  },
-  "visual_effects": {
-    "oil_painting": "Thick impasto texture, visible dramatic brush strokes, canvas grain",
-    "atmospheric": "Volumetric smoke and torch haze, fire effects from burning estates",
-    "fabric": "Tricolor flag billowing with realistic physics, torn clothing movement",
-    "realistic_details": "Photorealistic facial expressions of fury and hope, period costume textures, cobblestone detail"
-  },
-  "audio": {
-    "music": "Revolutionary orchestral theme with dramatic strings and brass, building to passionate climax",
-    "sound_design": "Crowd chanting 'Liberté, Égalité, Fraternité', torches crackling, flag fabric snapping, distant fires, boots on cobblestones, guillotine mechanism sounds"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with oil painting aesthetic",
-    "motion_blur": "Natural dramatic blur on crowd movements",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for revolutionary atmosphere and dramatic lighting"
-  }
-}
+```
+Realistic oil painting of the French Revolution at its peak on the Place de la Révolution in Paris, 1793. Revolutionary sans-culottes in ragged clothing and red Phrygian caps raise pikes and fists, a woman lifts the billowing tricolor flag, and a Robespierre-like leader gestures from a wooden platform while aristocrats are led toward the guillotine silhouetted against the sky. The camera rises slowly from among the crowd and gently arcs upward to reveal the full square with Notre-Dame beyond. Flickering golden torchlight cuts through volumetric smoke against a stormy twilight of deep purple and blood red, the blade glinting in fading sun. Cinematic 16:9 widescreen, thick impasto brushwork in the spirit of Jacques-Louis David, intense and passionate, as crowds chant Liberté, Égalité, Fraternité over swelling orchestral strings.
 ```
 
 ---
@@ -84,56 +38,10 @@ A bright, optimistic realistic oil painting showing a peaceful alternative Frenc
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "King Louis XVI signing constitutional documents in peaceful French Revolution",
-  "context": "Versailles ceremonial hall flooded with natural light, Third Estate and moderate nobles witnessing, Marie Antoinette supportive, peaceful Paris visible through windows",
-  "action": "Camera slowly tracks around signing ceremony, capturing King's genuine humility, Third Estate's hopeful expressions, nobility's acceptance, ending on view through windows showing peaceful Paris",
-  "style": "Bright realistic oil painting with natural lighting, photorealistic harmonious expressions, luminous color palette showing hope and cooperation",
-  "camera": {
-    "position": "Starting medium shot on King signing, slowly tracking clockwise around ceremony",
-    "movement": "Smooth arc tracking shot, gentle dolly movements, ending on window view of peaceful Versailles and Paris",
-    "lens": "50mm standard lens for natural perspective",
-    "aperture": "f/2.8 for gentle depth of field",
-    "framerate": "24fps with calm, steady movement"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition treating all figures equally, emphasizing cooperation",
-    "depth_layers": "Foreground constitution document, mid-ground signing ceremony, background windows showing peaceful France"
-  },
-  "lighting": {
-    "primary": "Soft natural daylight streaming through arched windows",
-    "secondary": "Gentle fill light creating no harsh shadows, peaceful atmosphere",
-    "accent": "Golden highlights on constitutional documents and crown",
-    "atmosphere": "Clear, transparent atmosphere symbolizing openness and honesty",
-    "color_temperature": "Warm 4500K natural daylight"
-  },
-  "color_palette": {
-    "primary": ["Royal blue #1E3A8A", "Constitutional gold #FFD700", "Peaceful white #FFFFFF"],
-    "accent": ["Hopeful green #10B981", "French blue #0055A4", "Cooperation purple #8B5CF6"],
-    "grading": "Bright, luminous oil painting palette with harmonious peaceful tones"
-  },
-  "visual_effects": {
-    "oil_painting": "Luminous glazing technique, soft brush strokes, gentle impasto on highlights",
-    "atmospheric": "Natural volumetric sunlight through windows, clear peaceful atmosphere",
-    "realistic_details": "Photorealistic facial expressions of genuine cooperation, period costume textures, Versailles interior detail",
-    "symbolic": "Visual blend of royal and republican symbols peacefully coexisting"
-  },
-  "audio": {
-    "music": "Gentle classical French theme with hope and dignity, chamber music style",
-    "sound_design": "Quill scratching on parchment, satisfied murmurs of approval, footsteps on marble, birds singing through open windows, peaceful atmosphere"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with luminous oil painting aesthetic",
-    "motion_blur": "Natural gentle blur",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for peaceful, dignified atmosphere"
-  }
-}
+```
+Bright realistic oil painting of King Louis XVI in a peaceful French Revolution, seated at a gilded desk in a grand Versailles ceremonial hall signing the constitution with a golden quill, his face humble and kind. Third Estate representatives and moderate nobles witness with hopeful pride while Marie Antoinette watches supportively, the tricolor flag standing beside the old royal white banner. The camera slowly tracks in a gentle arc around the signing ceremony and settles on the tall windows revealing a calm, intact Paris. Soft natural daylight streams through arched windows as warm god-rays, golden highlights catching the documents and crown. Royal blue, constitutional gold and peaceful white dominate. Cinematic 16:9 widescreen, luminous oil painting with soft brushwork, harmonious and dignified, with a quill scratching parchment and gentle chamber music.
 ```
 
 ---
@@ -152,56 +60,10 @@ A dark, ominous realistic oil painting depicting France under Robespierre's eter
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Paris under Robespierre's eternal Terror with perpetual revolutionary dictatorship",
-  "context": "Dark shadowy Paris square, continuous guillotine operation, fearful citizens under surveillance, Committee of Public Safety controlling population",
-  "action": "Camera slowly tracks through oppressive Paris night, moving from Denunciation Office through fearful crowds to Robespierre elevated on platform, capturing perpetual state of terror",
-  "style": "Dark realistic oil painting with film noir chiaroscuro, photorealistic paranoid expressions, DARK atmosphere with vibrant saturated colors creating stark contrast, oppressive yet visually striking",
-  "camera": {
-    "position": "Starting low among fearful citizens, slowly rising and tracking toward Robespierre's elevated platform",
-    "movement": "Slow, ominous tracking shot with gradual crane up, creating sense of surveillance and control",
-    "lens": "35mm with slight wide angle emphasizing paranoid perspective",
-    "aperture": "f/2.0 for dark exposure with sharp focus on faces showing fear",
-    "framerate": "24fps with deliberate, oppressive pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Oppressive composition with Robespierre elevated, citizens diminished, heavy shadows",
-    "depth_layers": "Foreground fearful citizens, mid-ground denunciation activities, background guillotine and Robespierre"
-  },
-  "lighting": {
-    "primary": "Harsh cold moonlight creating long threatening shadows",
-    "secondary": "Stark spotlights from revolutionary patrols creating dramatic pools",
-    "accent": "Vibrant red (#DC2626) from propaganda and revolutionary symbols glowing in darkness",
-    "atmosphere": "DARK film noir with minimal light sources, yet colors saturated where visible",
-    "color_temperature": "Cold 8000K moonlight with occasional harsh 5600K spotlight"
-  },
-  "color_palette": {
-    "primary": ["Deep black #000000", "Dark gray #1F2937", "Vibrant revolutionary red #DC2626"],
-    "accent": ["Cold blue #1E40AF", "Pale moonlight #F3F4F6", "Dark crimson #7F1D1D"],
-    "grading": "DARK yet COLORFUL - deep shadows with vibrant saturated colors in lit areas creating stark contrast"
-  },
-  "visual_effects": {
-    "oil_painting": "Dramatic chiaroscuro brush strokes, heavy shadows with visible texture, stark contrasts",
-    "atmospheric": "Oppressive darkness with minimal volumetric light, cold night air",
-    "realistic_details": "Photorealistic paranoid facial expressions, fear-worn clothing, neglected architecture",
-    "darkness": "Deep blacks and shadows while maintaining color vibrancy where light exists"
-  },
-  "audio": {
-    "music": "Ominous, oppressive orchestral theme with dissonant strings, no resolution",
-    "sound_design": "Guillotine mechanism operating, fearful whispers, denunciation reports being filed, patrol boots echoing, distant screams, oppressive silence between sounds"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with dark oil painting aesthetic",
-    "motion_blur": "Natural blur with emphasis on fearful movements",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for oppressive atmosphere and dramatic lighting contrasts"
-  }
-}
+```
+Dark realistic oil painting of Paris under Robespierre's eternal Terror. A gaunt Robespierre in severe black clothing stands on an elevated platform clutching his List of Enemies as the Committee of Public Safety whispers in the shadows, fearful citizens in drab dress shuffle past a Denunciation Office, and the guillotine looms beyond. The camera slowly tracks from the frightened crowd and gradually rises toward Robespierre's platform, evoking constant surveillance. Harsh cold moonlight throws long threatening shadows while stark patrol spotlights pool on the cobblestones, vibrant revolutionary red glowing from propaganda posters in the gloom. Deep black, dark gray, cold blue and saturated crimson define the palette. Cinematic 16:9 widescreen, film-noir chiaroscuro oil painting, paranoid and oppressive, with the guillotine's mechanism and a dissonant orchestral drone.
 ```
 
 ---
@@ -220,56 +82,10 @@ A bright, hopeful realistic oil painting showing France under moderate Girondist
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Lyon city square under successful Girondist federal democratic republic",
-  "context": "Sunny afternoon with regional representatives in federal congress, free markets thriving, religious tolerance demonstrated, diverse happy citizens",
-  "action": "Camera sweeps through bustling Lyon square showing free market trading, children playing, federal congress deliberating, church and school coexisting, capturing prosperous moderate success",
-  "style": "Bright realistic oil painting with golden hour warmth, photorealistic happy expressions, vibrant diverse regional colors harmoniously blended, luminous saturated palette",
-  "camera": {
-    "position": "Starting at market level moving through trading scene, rising to federal congress pavilion",
-    "movement": "Smooth tracking shot transitioning to gentle crane up, sweeping across square capturing diversity and prosperity",
-    "lens": "40mm standard lens for natural balanced perspective",
-    "aperture": "f/2.8 for pleasant depth of field",
-    "framerate": "24fps with smooth, optimistic movement"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced democratic composition with no elevated authority, equal treatment of all elements",
-    "depth_layers": "Foreground market and children, mid-ground federal congress, background church, school, and rivers"
-  },
-  "lighting": {
-    "primary": "Warm golden hour sunlight creating welcoming atmosphere",
-    "secondary": "Soft reflected light from rivers adding fill and sparkle",
-    "accent": "Highlights on colorful market goods, regional emblems, tricolor flags",
-    "atmosphere": "Pleasant volumetric haze showing beautiful weather, optimistic clarity",
-    "color_temperature": "Warm 3800K golden hour light"
-  },
-  "color_palette": {
-    "primary": ["French blue #0055A4", "Pure white #FFFFFF", "French red #EF4135"],
-    "accent": ["Provençal yellow #FCD34D", "Market orange #FF6600", "Prosperity green #10B981", "Regional variety"],
-    "grading": "Vibrant saturated oil painting palette with harmonious diverse regional colors"
-  },
-  "visual_effects": {
-    "oil_painting": "Luminous impasto technique, visible joyful brush strokes, rich color harmonies",
-    "atmospheric": "Golden hour atmospheric glow, river reflections, pleasant weather clarity",
-    "realistic_details": "Photorealistic joyful faces, authentic regional costumes, detailed market goods, architectural textures",
-    "diversity": "Visual celebration of regional variety harmoniously unified"
-  },
-  "audio": {
-    "music": "Uplifting French regional themes blended harmoniously, optimistic orchestration",
-    "sound_design": "Market vendors calling cheerfully, children laughing, congress deliberations, church bells, flowing rivers, coins clinking, fabric rustling, prosperous urban life"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with luminous oil painting aesthetic",
-    "motion_blur": "Natural blur on joyful movements",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for golden hour beauty and prosperous atmosphere"
-  }
-}
+```
+Bright realistic oil painting of a Lyon city square under a successful Girondist federal democratic republic. Regional representatives in diverse Provençal, Breton and Alsatian dress deliberate around a circular table beneath tricolor pavilions, merchants and farmers trade freely at a colorful market, and children play with small flags while a church and a secular school stand side by side. The camera glides smoothly through the bustling market and gently cranes up to take in the whole square, the Rhône and Saône sparkling beyond. Warm golden-hour sunlight bathes everything in a welcoming glow, soft river reflections highlighting market goods and tricolor flags. French blue, white and red mingle with Provençal yellow and prosperity green. Cinematic 16:9 widescreen, luminous impasto oil painting, optimistic and prosperous, over cheerful vendors, laughing children and uplifting regional melodies.
 ```
 
 ---

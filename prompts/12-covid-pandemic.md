@@ -16,52 +16,10 @@ A hauntingly beautiful, photorealistic wide shot of Times Square, New York, comp
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Empty Times Square during lockdown",
-  "context": "New York City, 2020, global lockdown",
-  "action": "Camera drifts slowly down the empty street, wind blows a newspaper, billboards flash silently",
-  "style": "Cinematic hyperrealism, haunting, stillness, high contrast neon vs grey day",
-  "camera": {
-    "position": "Low angle, street level",
-    "movement": "Slow, smooth steadycam glide forward",
-    "lens": "24mm wide angle",
-    "aperture": "f/8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Symmetrical perspective of the canyon of screens",
-    "depth_layers": "Foreground mask/puddle, midground empty street, background towering screens"
-  },
-  "lighting": {
-    "primary": "Overcast daylight",
-    "secondary": "Neon light from billboards",
-    "accent": "Reflections in puddles",
-    "atmosphere": "Mist, rain, stillness",
-    "color_temperature": "Cool 6000K"
-  },
-  "color_palette": {
-    "primary": ["Asphalt Grey #505050", "Neon Blue #00BFFF", "Neon Pink #FF1493"],
-    "accent": ["Surgical Blue #4682B4", "Warning Yellow #FFD700"],
-    "grading": "Desaturated reality with popped neon highlights"
-  },
-  "visual_effects": {
-    "oil_painting": "None - pure photorealism",
-    "atmospheric": "Rain mist, wet surfaces",
-    "realistic_details": "4K texture on asphalt, realistic water physics"
-  },
-  "audio": {
-    "music": "Minimalist ambient drone, melancholic piano",
-    "sound_design": "Wind howling, distant siren, hum of electricity, absence of traffic noise"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealism"
-  }
-}
+```
+A completely empty Times Square in New York City during the 2020 lockdown, a single discarded blue surgical mask resting in a rain puddle in the foreground. The billboards flash silently while a stray newspaper tumbles across the deserted asphalt and a thin mist drifts between the towering screens. The camera glides slowly forward at street level down the symmetrical canyon of buildings. Overcast grey daylight diffuses across the wet pavement while neon blue and neon pink billboard light pops against it, reflecting in the puddles. The mood is eerie, melancholic, and surreal, in cinematic hyperrealism with high contrast. Cinematic 16:9 widescreen, scored with a minimalist ambient drone, melancholic piano, distant siren and the hum of electricity.
 ```
 
 ---
@@ -80,52 +38,10 @@ A vibrant, optimistic photorealistic street scene in Tokyo, Summer 2020 (during 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Crowded Tokyo street during 2020 Olympics, normal life",
-  "context": "Alternate 2020 where COVID was contained, Olympics happening",
-  "action": "Crowds cheering, tourists taking photos, subtle health scanning in background",
-  "style": "Vibrant commercial realism, high saturation, optimistic",
-  "camera": {
-    "position": "Eye level in the crowd",
-    "movement": "Handheld, energetic",
-    "lens": "35mm",
-    "aperture": "f/5.6",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Busy, chaotic, full of life",
-    "depth_layers": "Foreground crowd, midground scanners, background stadium"
-  },
-  "lighting": {
-    "primary": "Bright summer sunlight",
-    "secondary": "City lights",
-    "accent": "Lens flares",
-    "atmosphere": "Clear, hot, humid",
-    "color_temperature": "Daylight 5500K"
-  },
-  "color_palette": {
-    "primary": ["Sky Blue #87CEEB", "Sun Yellow #FFD700", "White #FFFFFF"],
-    "accent": ["Olympic Rings Colors", "Green #00FF00 (Security Light)"],
-    "grading": "Vibrant, high key, commercial look"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Heat haze",
-    "realistic_details": "Crowd simulation, digital displays"
-  },
-  "audio": {
-    "music": "Upbeat pop music, Olympic fanfare",
-    "sound_design": "Crowd noise, laughter, traffic, subtle beep of scanners"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum clarity"
-  }
-}
+```
+A crowded, joyful Tokyo street during the 2020 Summer Olympics in an alternate timeline where COVID was contained, packed with happy maskless tourists from around the world. The crowds cheer and take photos as they stream past unobtrusive high-tech thermal scanners at a subway entrance, the glowing Olympic Stadium rising behind them. The camera follows along at eye level through the lively crowd in a smooth tracking shot. Bright summer sunlight pours down with warm lens flares, saturating the sky blue, sun yellow and white tones into a vibrant, optimistic glow tinged with green security lights. The mood is celebratory and commercial yet subtly surveilled. Cinematic 16:9 widescreen, with upbeat pop music, Olympic fanfare, laughter and the soft beep of scanners.
 ```
 
 ---
@@ -144,52 +60,10 @@ A gritty, post-apocalyptic photorealistic image of a major highway (e.g., the 40
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Abandoned highway and military checkpoint in collapsed society",
-  "context": "2023, high mortality variant, societal breakdown",
-  "action": "Wind blowing through tall grass on highway, soldiers patrolling, dogs barking",
-  "style": "Gritty post-apocalyptic realism, desaturated, dark",
-  "camera": {
-    "position": "Low angle, hiding in the grass",
-    "movement": "Slow, tense pan",
-    "lens": "50mm",
-    "aperture": "f/2.8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Claustrophobic, obstructed view",
-    "depth_layers": "Foreground grass/cars, midground soldiers, background burning city"
-  },
-  "lighting": {
-    "primary": "Twilight",
-    "secondary": "Searchlights",
-    "accent": "Fire glow",
-    "atmosphere": "Smog, dust, decay",
-    "color_temperature": "Cool 7000K"
-  },
-  "color_palette": {
-    "primary": ["Rust Orange #8B4513", "Military Green #556B2F", "Grey #708090"],
-    "accent": ["Hazard Yellow #FFFF00", "Blood Red #8B0000"],
-    "grading": "Bleach bypass, high contrast, gritty"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Fog, smoke, floating particles",
-    "realistic_details": "Rust textures, vegetation growth, cloth tearing"
-  },
-  "audio": {
-    "music": "Tense industrial ambient",
-    "sound_design": "Wind, crows cawing, distant gunshots, heavy breathing in masks"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum texture detail"
-  }
-}
+```
+An abandoned, gridlocked highway in 2023 after a high-mortality variant has collapsed society, rusted cars overgrown with vegetation and a spray-painted quarantine barrier blocking the road. Tall grass sways in the wind as military personnel in dirty, patched hazmat suits patrol slowly with dogs, smoke rising from the burning city skyline beyond. The camera holds low in the grass and pans slowly and tensely across the obstructed scene. Twilight light falls cool and ominous, cut by harsh searchlights and the orange glow of distant fire, the palette desaturated into rust orange, military green and grey. The mood is gritty and post-apocalyptic. Cinematic 16:9 widescreen, with tense industrial ambient tones, wind, crows cawing and distant gunshots.
 ```
 
 ---
@@ -208,52 +82,10 @@ A sleek, cyberpunk-lite photorealistic interior of a high-end restaurant in 2024
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "High-end restaurant with bio-pods and designer hazmat suits",
-  "context": "2024, permanent pandemic, high-tech adaptation",
-  "action": "Patrons eating in pods, robotic waiter serving, drones outside",
-  "style": "Clean, sterile, futuristic realism, high key",
-  "camera": {
-    "position": "Eye level, smooth motion",
-    "movement": "Slow track through the restaurant",
-    "lens": "24mm",
-    "aperture": "f/4",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Symmetrical, orderly",
-    "depth_layers": "Foreground pods, midground robots, background street drones"
-  },
-  "lighting": {
-    "primary": "Soft, diffuse white light",
-    "secondary": "Blue LED accents",
-    "accent": "Reflections on glass",
-    "atmosphere": "Clean, sanitized mist",
-    "color_temperature": "Cool 6000K"
-  },
-  "color_palette": {
-    "primary": ["Clinical White #FFFFFF", "Cyan #00FFFF", "Chrome #C0C0C0"],
-    "accent": ["Neon Green #39FF14 (Safe Status)", "Warning Orange #FFA500"],
-    "grading": "Clean, sharp, slightly cold"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Sanitizing mist, glass reflections",
-    "realistic_details": "Transparent plastic textures, digital interfaces"
-  },
-  "audio": {
-    "music": "Soft, elevator-style electronic music",
-    "sound_design": "Hiss of airlocks, hum of ventilation, robotic servos, muffled conversation"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum clarity and reflection rendering"
-  }
-}
+```
+A sleek, high-end restaurant interior in 2024 during a permanent pandemic, where patrons dine inside individual hermetically sealed glass bio-pods wearing stylish transparent neon-lit hazmat suits. A robotic waiter glides between the orderly, symmetrical pods serving guests while disinfectant drones drift past the windows outside. The camera tracks slowly and smoothly through the restaurant at eye level. Soft, diffuse white light fills the space with cool blue LED accents glinting off glass and chrome, a faint sanitizing mist hanging in the air, the palette clinical white, cyan and chrome touched with safe-status neon green. The mood is sterile, disconnected yet functioning, a clean dystopia in futuristic realism. Cinematic 16:9 widescreen, with soft elevator-style electronic music, the hiss of airlocks and the hum of ventilation.
 ```
 
 ---

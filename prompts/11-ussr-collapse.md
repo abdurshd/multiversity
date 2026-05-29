@@ -16,56 +16,10 @@ A dramatic, triumphant realistic oil painting capturing peaceful collapse of Sov
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Berlin Wall demolition 1989 and USSR peaceful collapse showing democratic triumph across Eastern Europe",
-  "context": "Wall breaking, families reuniting, Eastern European democratic revolutions, Soviet flag lowered, satellite independence",
-  "action": "Camera starts on wall being demolished by jubilant crowds, pans across Eastern European democratic victories, ends on Kremlin flag ceremony and independent republics celebrating - triumphant peaceful documentation",
-  "style": "Triumphant realistic oil painting with vibrant celebration colors, photorealistic joyful reunions, dramatic color shift from Soviet to democratic rainbow",
-  "camera": {
-    "position": "Starting on wall demolition, panning across Europe showing domino democratization, ending on Moscow",
-    "movement": "Dynamic sweeping pan showing cascade of peaceful revolutions across continent",
-    "lens": "24mm wide-angle for epic people-power scope",
-    "aperture": "f/2.8 for triumphant depth",
-    "framerate": "24fps with jubilant, celebratory pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Dynamic composition emphasizing people power and peaceful triumph",
-    "depth_layers": "Foreground wall demolition and reunions, mid-ground European democratization, background Moscow transformation"
-  },
-  "lighting": {
-    "primary": "Triumphant dawn - dark communist night becoming bright democratic morning",
-    "secondary": "Golden sunrise behind falling wall symbolizing new era",
-    "accent": "Vibrant celebration colors and national independence flags",
-    "atmosphere": "Joyful atmospheric shift from oppression to freedom",
-    "color_temperature": "Dramatic shift from cool Soviet to warm 3200K democratic golden light"
-  },
-  "color_palette": {
-    "primary": ["Soviet red #DC2626 receding", "Gray #6B7280 transforming", "Democratic rainbow emerging VIBRANT"],
-    "accent": ["Freedom green #10B981 SATURATED", "Hope blue #3B82F6 bright", "Celebration gold #FFD700"],
-    "grading": "Dramatic color shift from Soviet muted to vibrant democratic rainbow showing liberation"
-  },
-  "visual_effects": {
-    "oil_painting": "Triumphant brush strokes, vibrant celebration impasto, joyful energetic texture",
-    "atmospheric": "Volumetric dawn light, celebration atmosphere, peaceful revolution energy",
-    "realistic_details": "Photorealistic reunion tears and joy, authentic period demolition, accurate independence celebrations",
-    "triumph": "Visual emphasis on peaceful people-power victory and democratic cascade"
-  },
-  "audio": {
-    "music": "Triumphant orchestral theme building to joyful climax, Ode to Joy motifs celebrating freedom",
-    "sound_design": "Wall hammering, crowds cheering, families reuniting emotionally, champagne corks, celebration across nations, peaceful revolution sounds"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with triumphant celebratory oil painting aesthetic",
-    "motion_blur": "Dynamic blur on joyful celebration movements",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for dramatic peaceful triumph and vibrant celebration colors"
-  }
-}
+```
+Photorealistic triumphant oil painting of the peaceful collapse of the Soviet Union. Jubilant crowds swing hammers and pickaxes at the Berlin Wall as East and West Berliners embrace through broken concrete, tears of joy on their faces and graffiti-covered fragments tumbling down. The camera slowly pushes in toward the reunions, then drifts upward to reveal the Soviet flag lowered over the Kremlin while newly free republics raise their own. Warm golden dawn light spreads across the scene, cold Soviet grey and red giving way to vibrant democratic blue, green and gold. Cinematic 16:9, visible brushstrokes, jubilant and hopeful.
 ```
 
 ---
@@ -84,56 +38,10 @@ A dark, dystopian realistic oil painting showing successful communist hardliner 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Successful August 1991 coup with Soviet hardliners suppressing democracy and restoring authoritarian control",
-  "context": "Moscow Red Square occupation, tanks surrounding Kremlin, resistance suppressed, reforms reversed, unsustainable empire",
-  "action": "Camera tracks through military-occupied Moscow showing coup committee control, democratic resistance crushed, Soviet symbols forcibly restored, ending on crumbling unsustainable empire - dystopian documentation",
-  "style": "Oppressive realistic oil painting with authoritarian grays and forced Soviet colors, photorealistic fear and defeat, unsustainable atmosphere",
-  "camera": {
-    "position": "Starting on tank occupation, tracking through suppression, ending on decaying infrastructure",
-    "movement": "Somber tracking showing authoritarian restoration and systemic unsustainability",
-    "lens": "35mm for oppressive perspective",
-    "aperture": "f/2.8 for dystopian depth",
-    "framerate": "24fps with heavy, oppressive pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Oppressive composition showing military dominance and systemic decay",
-    "depth_layers": "Foreground military occupation, mid-ground resistance crushed, background unsustainable empire"
-  },
-  "lighting": {
-    "primary": "Ominous overcast gray skies showing oppressive atmosphere",
-    "secondary": "Harsh military spotlights creating intimidation",
-    "accent": "No bright future light - only oppressive illumination",
-    "atmosphere": "Heavy oppressive atmosphere showing doomed restoration",
-    "color_temperature": "Cold threatening gray light showing lack of hope"
-  },
-  "color_palette": {
-    "primary": ["Forced Soviet red #DC2626 returning", "Oppressive gray #4B5563 dominant", "Democratic colors being erased"],
-    "accent": ["Military dark tones", "Decay browns", "No hope colors visible"],
-    "grading": "Oppressive muted palette showing authoritarian restoration and unsustainability"
-  },
-  "visual_effects": {
-    "oil_painting": "Oppressive brush strokes, forced restoration texture, decay and deterioration visible",
-    "atmospheric": "Heavy oppressive atmosphere, military occupation presence, systemic decay",
-    "realistic_details": "Photorealistic fear and resignation, authentic Soviet military occupation, visible infrastructure decay",
-    "unsustainable": "Visual emphasis on temporary victory that only delays inevitable - doomed restoration"
-  },
-  "audio": {
-    "music": "Ominous Soviet themes showing authoritarian restoration, unsustainable tension",
-    "sound_design": "Tank treads, military commands, suppressed protests, propaganda broadcasts, crumbling infrastructure, oppressive silence"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with oppressive dystopian oil painting aesthetic",
-    "motion_blur": "Natural blur on military occupation",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for oppressive atmosphere showing doomed authoritarian restoration"
-  }
-}
+```
+Oppressive realistic oil painting of a successful August 1991 Soviet hardliner coup. Elderly coup-committee leaders in dark suits and decorated military uniforms review documents that reverse every reform while T-72 tanks ring the Kremlin and Spetsnaz forces detain democratic protesters. The camera tracks slowly through occupied Red Square, moving past the crushed resistance toward crumbling, decaying infrastructure. Ominous overcast grey light hangs over Moscow as harsh military spotlights cut through the gloom, forced Soviet red and oppressive grey smothering the erased democratic colors. Cinematic 16:9, visible brushstrokes, dystopian and doomed, scored with ominous Soviet themes over tank treads and suppressed protests.
 ```
 
 ---
@@ -152,56 +60,10 @@ A hopeful, reformed realistic oil painting showing successful Soviet democratiza
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Successfully democratized USSR as Eurasian Democratic Confederation 2035 showing gradual reform victory and USSR became the most powerfull and developed country in the world",
-  "context": "Transformed Kremlin, multi-party democracy, market reforms succeeding, voluntary federation, preserved social safety net",
-  "action": "Camera tracks through democratic Moscow showing Gorbachev-Yeltsin cooperation, multiparty elections, thriving mixed economy, satisfied citizens, autonomous republics in voluntary association - successful reform documentation",
-  "style": "Hopeful realistic oil painting with vibrant democratic and prosperity colors, photorealistic satisfaction and cooperation, evolutionary transformation aesthetic",
-  "camera": {
-    "position": "Starting in reformed Kremlin, tracking through democratic institutions and market economy",
-    "movement": "Smooth optimistic tracking showing successful gradual transformation",
-    "lens": "40mm for balanced hopeful perspective",
-    "aperture": "f/2.8 for successful depth",
-    "framerate": "24fps with steady, prosperous pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing democratic stability and cooperative prosperity",
-    "depth_layers": "Foreground satisfied citizens, mid-ground democratic institutions, background voluntary federation"
-  },
-  "lighting": {
-    "primary": "Bright afternoon sunshine showing successful democratic transition",
-    "secondary": "Clear daylight representing transparency and openness",
-    "accent": "Warm golden light on democratic symbols and prosperity",
-    "atmosphere": "Hopeful clear atmosphere showing stable evolution",
-    "color_temperature": "Warm 3600K afternoon prosperity light"
-  },
-  "color_palette": {
-    "primary": ["Evolved Soviet red to democratic federation rainbow", "Russian tricolor with republic variety", "Prosperity green #10B981"],
-    "accent": ["Cooperation blue #3B82F6", "Stability tones", "Hopeful democratic variety"],
-    "grading": "Vibrant hopeful palette showing successful gradual democratization and federation"
-  },
-  "visual_effects": {
-    "oil_painting": "Evolutionary brush strokes, hopeful impasto, stable transformation texture",
-    "atmospheric": "Clear prosperous atmosphere, democratic openness, success indicators",
-    "realistic_details": "Photorealistic satisfied expressions, authentic reformed institutions, respectful architectural transformation",
-    "success": "Visual emphasis on gradual reform preserving unity while achieving freedom"
-  },
-  "audio": {
-    "music": "Hopeful Russian themes with democratic orchestration, evolutionary success celebration",
-    "sound_design": "Democratic parliament debates, multiparty campaigns, market commerce, satisfied public, voluntary cooperation"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with hopeful successful reform oil painting aesthetic",
-    "motion_blur": "Natural blur on prosperous activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for bright optimism showing successful gradual democratic transformation"
-  }
-}
+```
+Hopeful realistic oil painting of a successfully democratized USSR reborn as the thriving Eurasian Democratic Confederation. An aged Gorbachev and a determined Yeltsin, in civilian suits, sign constitutional documents in the renovated Kremlin beneath a new democratic emblem, while multiparty election posters, free presses and an open parliament fill the rooms around them. The camera moves in a smooth, steady tracking shot through the democratic institutions and bustling mixed-economy markets toward satisfied citizens and the flags of autonomous republics in voluntary federation. Bright warm afternoon sunshine pours in with clear, even daylight, Soviet red evolving into a vibrant rainbow of republic colors, prosperity green and cooperation blue. Cinematic 16:9, visible brushstrokes, stable and optimistic, scored with hopeful Russian orchestration over lively parliament debates and market commerce.
 ```
 
 ---
@@ -220,56 +82,10 @@ A respectful, orderly realistic oil painting showing amicable Soviet separation 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Geneva peaceful Soviet dissolution 1991 showing fair negotiated separation and mutual respect",
-  "context": "International mediation, 15 republics at circular table, fair asset division, velvet divorce, continuing cooperation",
-  "action": "Camera tracks around circular negotiation table showing all republics equally, captures fair division process and respectful gestures, ends on continued cooperation frameworks - mature diplomatic documentation",
-  "style": "Respectful realistic oil painting with balanced equal lighting, photorealistic diplomatic warmth, vibrant diverse but equal national colors",
-  "camera": {
-    "position": "Circling negotiation table showing all 15 republics equally, ending on cooperation frameworks",
-    "movement": "Smooth circular tracking showing equality and fairness throughout",
-    "lens": "50mm for balanced fair perspective",
-    "aperture": "f/2.8 for diplomatic depth",
-    "framerate": "24fps with mature, professional pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced circular composition showing equality and mutual respect",
-    "depth_layers": "Foreground respectful gestures, mid-ground negotiation table, background continuing cooperation"
-  },
-  "lighting": {
-    "primary": "Balanced natural light showing no favoritism to any republic",
-    "secondary": "Equal illumination representing justice and fairness",
-    "accent": "All national flags lit equally showing true equality",
-    "atmosphere": "Professional diplomatic atmosphere showing mature separation",
-    "color_temperature": "Neutral 5200K balanced professional light"
-  },
-  "color_palette": {
-    "primary": ["All 15 republics' colors displayed EQUALLY and VIBRANT", "Russian tricolor", "Ukrainian blue-yellow", "Baltic variety"],
-    "accent": ["Central Asian diversity", "Caucasian colors", "Beautiful independence tapestry with NO dominance"],
-    "grading": "Vibrant harmonious equal palette showing respectful velvet divorce and continued friendship"
-  },
-  "visual_effects": {
-    "oil_painting": "Diplomatic mature brush strokes, respectful equal impasto on all flags, fair texture",
-    "atmospheric": "Professional diplomatic atmosphere, mature separation clarity",
-    "realistic_details": "Photorealistic diplomatic warmth and friendship maintained, authentic international law presence, respectful cultural representation",
-    "maturity": "Visual emphasis on nations separating peacefully as friends - model velvet divorce"
-  },
-  "audio": {
-    "music": "Respectful diplomatic themes celebrating mature peaceful separation, continued friendship motifs",
-    "sound_design": "Professional negotiation, treaty signing, respectful applause, multilingual cooperation, maintained friendships"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with respectful diplomatic oil painting aesthetic",
-    "motion_blur": "Natural blur on diplomatic activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for balanced fairness showing mature velvet divorce with maintained friendships"
-  }
-}
+```
+Respectful realistic oil painting of the peaceful 1991 Soviet dissolution negotiated in a grand Geneva conference hall. Delegates from all fifteen republics, in traditional and modern dress, sit as equals around a circular table while Gorbachev presides as mediator and a Russian envoy shakes hands warmly with his Ukrainian counterpart over a signed Treaty of Mutual Respect and Cooperation. The camera circles the round table in a smooth orbit, giving every republic equal presence before settling on the continuing cooperation frameworks. Balanced, even natural daylight falls without favoritism, all fifteen national flags lit equally in a vibrant harmonious tapestry with no single color dominating. Cinematic 16:9, visible brushstrokes, mature and dignified, scored with respectful diplomatic themes over calm negotiation and treaty signing.
 ```
 
 ---

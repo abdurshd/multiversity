@@ -16,56 +16,10 @@ DARKER atmosphere in some areas WITH VIBRANT COLORS - HISTORICAL DOCUMENTATION: 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "World War II global conflict showing Allied victory over Axis tyranny across three theaters",
-  "context": "D-Day Normandy, Eastern Front Stalingrad, Pacific island combat, Holocaust liberation, V-E V-J celebrations",
-  "action": "Camera sweeps across three simultaneous theaters showing Allied forces fighting tyranny, ending on Holocaust liberation and victory celebrations - epic historical documentation",
-  "style": "Epic realistic oil painting with DARK tyranny versus VIBRANT Allied hope, photorealistic combat and liberation, clear moral perspective",
-  "camera": {
-    "position": "Starting on D-Day landings, sweeping across Eastern and Pacific fronts, ending on liberation",
-    "movement": "Epic sweeping crane and pan showing global scale of conflict",
-    "lens": "24mm ultra-wide for epic historical scope",
-    "aperture": "f/2.8 for dramatic war depth",
-    "framerate": "24fps with heroic pacing showing sacrifice and triumph"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Epic split composition showing tyranny versus freedom across globe",
-    "depth_layers": "Foreground Allied forces, mid-ground three theaters, background liberation and victory"
-  },
-  "lighting": {
-    "primary": "DARK storm clouds of tyranny pushed back by BRIGHT Allied victory light",
-    "secondary": "Dramatic contrast between Axis darkness and Allied hope",
-    "accent": "VIBRANT Allied flags and liberation celebrations maintaining saturation",
-    "atmosphere": "Epic transition from DARK oppression to VIBRANT freedom",
-    "color_temperature": "DARK cool Axis shadows transitioning to warm 3600K Allied victory light"
-  },
-  "color_palette": {
-    "primary": ["Allied red #DC2626 VIBRANT", "Allied blue #1E40AF SATURATED", "Allied white bright"],
-    "accent": ["Soviet red intense", "Liberation celebration colors", "Holocaust dignity maintained"],
-    "grading": "Epic palette balancing DARK horror with VIBRANT hope - clear moral perspective"
-  },
-  "visual_effects": {
-    "oil_painting": "Epic historical brush strokes, DARK areas with VIBRANT Allied colors",
-    "atmospheric": "Combat smoke, liberation atmosphere, victory celebrations",
-    "realistic_details": "Photorealistic WWII combat faces, authentic period military equipment, respectful Holocaust liberation",
-    "moral_clarity": "Visual emphasis on Allied sacrifice defeating tyranny - clear ethical framing"
-  },
-  "audio": {
-    "music": "Epic WWII orchestral theme building from dark to triumphant, greatest generation heroism",
-    "sound_design": "Combat across three theaters, Holocaust liberation, victory celebrations, epic historical scope"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with epic WWII oil painting aesthetic",
-    "motion_blur": "Cinematic blur on combat and celebration",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for epic scale while maintaining historical respect and moral clarity"
-  }
-}
+```
+Epic realistic oil painting documenting the global scope of World War II and the Allied effort to overcome Axis tyranny across three theaters. Allied forces move with grave determination through the D-Day Normandy landings, Soviet troops in the ruins of Stalingrad, and Marines amid Pacific island combat, the scene resolving on the solemn liberation of concentration camp survivors and restrained V-E and V-J celebrations. The camera drifts slowly across the panorama, moving from the beaches toward the moment of liberation. Dark storm clouds of oppression give way to bright Allied victory light, warm tones spreading over the gloom. The mood is sacrificial and ultimately hopeful, with vibrant red, blue and white flags against the grey. Cinematic 16:9 widescreen, visible brushstrokes, a swelling orchestral score rising from somber to triumphant.
 ```
 
 ---
@@ -84,56 +38,10 @@ A victorious, preventive realistic oil painting showing early Allied action stop
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Churchill leading early Allied rejection of appeasement preventing WWII catastrophe",
-  "context": "Munich conference 1938, Allied military mobilization, Hitler's bluff called, war prevented or shortened",
-  "action": "Camera tracks from Churchill's defiant rejection through Allied military preparation to Hitler's frustrated failure, ending on prevented Holocaust and saved lives",
-  "style": "Victorious realistic oil painting with bright moral clarity, photorealistic Churchill heroism, vibrant Allied unity colors",
-  "camera": {
-    "position": "Starting on Churchill pointing at maps, tracking through Allied forces, ending on saved communities",
-    "movement": "Confident tracking showing Allied strength and moral clarity",
-    "lens": "40mm for balanced heroic perspective",
-    "aperture": "f/2.8 for determined depth",
-    "framerate": "24fps with resolute, victorious pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Heroic composition showing Allied moral strength preventing catastrophe",
-    "depth_layers": "Foreground Churchill's defiance, mid-ground Allied mobilization, background prevented horrors"
-  },
-  "lighting": {
-    "primary": "Bright daylight showing moral clarity and Allied resolve",
-    "secondary": "Clear even illumination representing honesty and strength",
-    "accent": "Highlights on Churchill and Allied unity symbols",
-    "atmosphere": "Clear, morally certain atmosphere showing preventive courage",
-    "color_temperature": "Bright 5200K clear daylight showing moral clarity"
-  },
-  "color_palette": {
-    "primary": ["Allied British colors VIBRANT", "French tricolor SATURATED", "Czech colors bright"],
-    "accent": ["Churchill heroism", "Military preparedness greens", "Prevented horror relief"],
-    "grading": "Vibrant united Allied palette showing preventive moral victory"
-  },
-  "visual_effects": {
-    "oil_painting": "Heroic brush strokes, bright impasto showing Allied strength",
-    "atmospheric": "Clear moral atmosphere, no appeasement shadows",
-    "realistic_details": "Photorealistic Churchill and Allied leaders, authentic 1938 military detail, symbolic saved lives",
-    "prevention": "Visual emphasis on moral courage preventing Holocaust and WWII catastrophe"
-  },
-  "audio": {
-    "music": "Triumphant Allied theme celebrating preventive moral courage, Churchill's finest hour early",
-    "sound_design": "Churchill's defiant speech, Allied military mobilization, prevented horror silence, relief and hope"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with heroic preventive oil painting aesthetic",
-    "motion_blur": "Natural blur on Allied strength demonstration",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for bright moral clarity and preventive heroism"
-  }
-}
+```
+Victorious realistic oil painting of Winston Churchill leading an early Allied rejection of appeasement at the 1938 Munich conference, a choice that prevents the wider catastrophe of WWII. Churchill points emphatically at the negotiating maps in defiance beside French and Czechoslovak representatives, while behind them Allied forces mobilize and Hitler's bluff is called. The camera tracks steadily from Churchill's defiant stance through the gathering Allied strength toward symbols of communities and lives spared. Bright, even daylight floods the room with clarity and resolve. The mood is resolute and morally certain, with vibrant British red, white and blue and the French tricolor united against the grey. Cinematic 16:9 widescreen, heroic brushstrokes, a triumphant orchestral theme underscoring the moment.
 ```
 
 ---
@@ -152,56 +60,10 @@ DARKER ATMOSPHERE WITH VIBRANT COLORS - TRAGIC DOCUMENTATION: A tragic, dark rea
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "D-Day catastrophic failure with Allied disaster and Soviet European domination",
-  "context": "Normandy beaches June 1944, terrible weather, German victory, Western Front failure, USSR sole liberator",
-  "action": "Camera starts on stormy failed beaches, tracks through Eisenhower's anguished resignation, shows Soviet domination spreading, ends on prolonged war consequences - tragic documentation",
-  "style": "DARK realistic oil painting with tragic atmosphere YET VIBRANT flag and map colors, photorealistic grief, unsettling color in darkness",
-  "camera": {
-    "position": "Starting on failed beaches, tracking through Allied grief, ending on dark geopolitical consequences",
-    "movement": "Slow tragic tracking showing disaster and prolonged war",
-    "lens": "50mm for somber human cost perspective",
-    "aperture": "f/2.8 for tragic depth",
-    "framerate": "24fps with slow, devastating pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Tragic composition emphasizing failed invasion and dark consequences",
-    "depth_layers": "Foreground failed beaches, mid-ground Allied grief, background Soviet domination spreading"
-  },
-  "lighting": {
-    "primary": "DARK stormy atmosphere showing failed liberation",
-    "secondary": "Bleak overcast with no breakthrough sunlight representing failure",
-    "accent": "VIBRANT flags at half-mast and Soviet red spreading despite darkness",
-    "atmosphere": "DARK tragic storm with VIBRANT colors maintaining saturation - unsettling failure documentation",
-    "color_temperature": "DARK cold 6500K storm yet VIBRANT reds and blues maintained"
-  },
-  "color_palette": {
-    "primary": ["DARK gray seas #6B7280 rich", "Stormy blue #1E40AF SATURATED despite gloom", "Tragic blacks #000000"],
-    "accent": ["Soviet red #DC2626 VIBRANT spreading", "Allied flags half-mast maintaining color", "Dark prolonged war"],
-    "grading": "DARK tragic atmosphere with VIBRANT flag and geopolitical colors - somber yet saturated failure"
-  },
-  "visual_effects": {
-    "oil_painting": "Tragic brush strokes, DARK shadows, yet VIBRANT impasto on flags and spreading Soviet control",
-    "atmospheric": "Storm effects, dark clouds, bleak weather, yet color maintained where present",
-    "realistic_details": "Photorealistic grief faces, authentic Normandy defenses, respectful failure documentation",
-    "tragedy": "Visual emphasis on how close success was through dark alternate history with vibrant elements"
-  },
-  "audio": {
-    "music": "Tragic somber theme showing devastating failure and prolonged war consequences",
-    "sound_design": "Storm waves, failed invasion sounds, Eisenhower's grief, prolonged war implications, Soviet advance"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with DARK yet VIBRANT tragic oil painting aesthetic",
-    "motion_blur": "Natural blur on tragic failure",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for DARK atmosphere while maintaining VIBRANT colors showing tragic alternate history"
-  }
-}
+```
+Dark, tragic realistic oil painting documenting an alternate D-Day in which the Normandy invasion of June 1944 catastrophically fails, leaving the Soviet Union as the sole liberator of Europe. Storm-battered beaches show wrecked landing craft and abandoned equipment, treated with respect rather than graphic detail, while Eisenhower reads his anguished resignation letter and Soviet red spreads across the maps of a divided continent. The camera tracks slowly from the failed shoreline through the grief of the Allies toward the somber geopolitical consequences. Bleak overcast storm light grounds the scene with no breakthrough sunlight. The mood is devastating and pivotal, grey seas and stormy blue offset by vibrant flags at half-mast. Cinematic 16:9 widescreen, tragic brushstrokes, a mournful orchestral score beneath storm and silence.
 ```
 
 ---
@@ -220,56 +82,10 @@ A dramatic, alternate-power realistic oil painting showing Japanese Pacific domi
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Japanese Pacific Empire at height showing Rising Sun dominance and complex colonial dynamics",
-  "context": "Tokyo Bay 1944, victorious Imperial Japanese Navy, Greater East Asia Co-Prosperity Sphere, divided world",
-  "action": "Camera sweeps across Japanese fleet showing naval dominance, tracks through Greater East Asia celebration showing complex reactions, ends on divided Pacific world order - alternate imperial documentation",
-  "style": "Dramatic realistic oil painting with Rising Sun symbolism, photorealistic Japanese triumph and colonial ambiguity, vibrant imperial colors",
-  "camera": {
-    "position": "Starting on Rising Sun naval flags, tracking through celebration, ending on divided world maps",
-    "movement": "Sweeping tracking showing Japanese dominance and geopolitical shift",
-    "lens": "35mm for alternate power balance perspective",
-    "aperture": "f/2.8 for imperial depth",
-    "framerate": "24fps with triumphant yet complex pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Imperial composition showing Japanese dominance with occupied complexity visible",
-    "depth_layers": "Foreground naval might, mid-ground celebration and diplomacy, background divided Pacific world"
-  },
-  "lighting": {
-    "primary": "Dramatic Rising Sun rays creating orange-red atmospheric effects",
-    "secondary": "Warm Pacific light showing Japanese cultural dominance",
-    "accent": "VIBRANT Rising Sun flags and imperial celebrations",
-    "atmosphere": "Imperial atmospheric warmth with complex undertones",
-    "color_temperature": "Warm 3400K Rising Sun light"
-  },
-  "color_palette": {
-    "primary": ["Rising Sun red #DC2626 VIBRANT", "Imperial white bright", "Pacific blue #0EA5E9"],
-    "accent": ["Subdued American colors", "Asian traditional variety", "Imperial dominance hierarchy"],
-    "grading": "Vibrant Japanese imperial palette showing alternate Pacific power structure"
-  },
-  "visual_effects": {
-    "oil_painting": "Imperial brush strokes, dramatic Rising Sun impasto, complex cultural texture",
-    "atmospheric": "Rising Sun atmospheric effects, Pacific ocean majesty, imperial celebration",
-    "realistic_details": "Photorealistic Japanese naval detail, authentic occupied peoples' ambiguity, period Pacific empire",
-    "complexity": "Visual emphasis on both Japanese triumph and colonial ambiguity - thoughtful alternate history"
-  },
-  "audio": {
-    "music": "Japanese imperial themes with complex undertones, alternate Pacific order",
-    "sound_design": "Naval fleet sounds, Japanese celebration, diplomatic negotiations, multiple Asian languages, Pacific waves"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with imperial yet complex oil painting aesthetic",
-    "motion_blur": "Natural blur on fleet and celebration",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for dramatic alternate Pacific order with historical thoughtfulness"
-  }
-}
+```
+Dramatic realistic oil painting documenting an alternate 1944 in which Imperial Japan dominates the Pacific from Tokyo Bay after a victory at Midway. A Japanese fleet of battleships and carriers bearing the Rising Sun fills the harbor, while delegates of the Greater East Asia Co-Prosperity Sphere gather amid maps of a divided world, their expressions carrying the ambiguity of liberation under new masters. The camera glides slowly across the naval might, moving through the celebration toward the maps of a partitioned Pacific order. Dramatic orange-red Rising Sun rays wash warmly over the scene. The mood is triumphant yet unsettled, with vibrant red and white against deep Pacific blue. Cinematic 16:9 widescreen, imperial brushstrokes, restrained imperial themes layered with the sound of waves and many languages.
 ```
 
 ---

@@ -16,56 +16,10 @@ A dramatic wide-angle composition capturing the pivotal moment of American indep
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "George Washington declaring American independence in Continental Congress",
-  "context": "Philadelphia Independence Hall chamber, 1776, Continental Congress assembled",
-  "action": "Washington raising American flag while founding fathers sign Declaration of Independence, soldiers standing at attention, dramatic moment of national birth",
-  "style": "Realistic oil painting brought to life, rich impasto technique with visible brush strokes, photorealistic characters, luminous vibrant colors",
-  "camera": {
-    "position": "Starting on close-up of Washington's determined face, pulling back to reveal full chamber",
-    "movement": "Slow dolly back with gentle crane up, rotating slightly to capture the assembled congress and soldiers",
-    "lens": "35mm transitioning to 24mm wide-angle",
-    "aperture": "f/2.8 for cinematic shallow depth",
-    "framerate": "24fps cinematic with occasional slow-motion on flag unfurling"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Rule of thirds with Washington on right third, congress and soldiers balanced",
-    "depth_layers": "Foreground soldiers, mid-ground Washington and congress, background Independence Hall through windows"
-  },
-  "lighting": {
-    "primary": "Warm golden candlelight streaming through tall windows",
-    "secondary": "Dramatic sunset rays creating volumetric god-rays through atmospheric haze",
-    "accent": "Rim lighting on Washington creating luminous halo effect, brass button highlights",
-    "atmosphere": "Oil painting luminosity with visible atmospheric particles in light beams",
-    "color_temperature": "Warm 3200K candlelight with 2800K golden sunset"
-  },
-  "color_palette": {
-    "primary": ["Patriotic red #DC2626", "Deep cobalt blue #1E40AF", "Warm gold #FFD700"],
-    "accent": ["Sunset orange #FF6B35", "Deep purple #7C3AED", "Warm pink #EC4899"],
-    "grading": "Vibrant oil painting saturation, rich impasto highlights, luminous shadows"
-  },
-  "visual_effects": {
-    "oil_painting": "Visible brush stroke texture overlay, impasto highlights, canvas grain",
-    "atmospheric": "Volumetric light beams, candlelight haze, dust particles in sunlight",
-    "fabric": "Realistic cloth physics on flag unfurling, uniform fabric movement",
-    "realistic_details": "Photorealistic skin texture, fabric weave, wood grain, parchment aging"
-  },
-  "audio": {
-    "music": "Orchestral American patriotic theme building to triumphant crescendo",
-    "sound_design": "Quill scratching parchment, flag fabric rustling, boots on wooden floor, distant revolutionary drums, chamber acoustics"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with oil painting aesthetic",
-    "motion_blur": "Natural cinematic blur",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for oil painting texture and atmospheric volumetrics"
-  }
-}
+```
+George Washington stands at the heart of the 1776 Continental Congress in Philadelphia's Independence Hall, raising a furled American flag as founding fathers sign the Declaration of Independence and Continental soldiers stand at attention. The camera begins close on his determined face, then slowly pulls back and gently rises to reveal the full assembled chamber and Independence Hall glimpsed through tall windows. Warm golden candlelight streams through the windows while dramatic sunset rays form soft volumetric beams through hazy air, rim light haloing Washington and glinting off brass buttons. Patriotic red, deep cobalt blue and warm gold dominate, accented by sunset orange, deep purple and pink. The mood is triumphant, hopeful and historic, in a luminous realistic oil-painting style with visible brushstrokes, cinematic 16:9 widescreen, as an orchestral patriotic theme builds to a crescendo over rustling fabric and distant drums.
 ```
 
 ---
@@ -84,56 +38,10 @@ An alternate history scene rendered in realistic oil painting style with rich im
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "British-controlled colonial America in early 1800s Boston",
-  "context": "Grand colonial square with Union Jack flags, redcoat patrols, resigned colonists under British rule",
-  "action": "Slow pan across Boston square showing British soldiers patrolling, colonists conducting subdued daily life, proclamation being read, camera capturing atmosphere of controlled colony",
-  "style": "Realistic oil painting aesthetic with photorealistic details, rich color palette, visible brush stroke texture, overcast Northern European lighting",
-  "camera": {
-    "position": "Starting at King George III statue, slowly panning right across square",
-    "movement": "Smooth 180-degree pan with gentle dolly forward, ending on group reading proclamation",
-    "lens": "50mm standard lens for natural perspective",
-    "aperture": "f/4 for balanced depth of field",
-    "framerate": "24fps with steady, documentary-style movement"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing British authority symbols and colonist reactions",
-    "depth_layers": "Foreground statue and colonists, mid-ground shops and soldiers, background Union Jack flags and government buildings"
-  },
-  "lighting": {
-    "primary": "Overcast diffused daylight creating soft, even illumination",
-    "secondary": "Cool Northern European light with subtle directional quality",
-    "accent": "Brass and gold royal emblems catching subtle highlights",
-    "atmosphere": "Muted, restrained colonial atmosphere with painterly soft shadows",
-    "color_temperature": "Cool 5600K overcast daylight"
-  },
-  "color_palette": {
-    "primary": ["British imperial red #C8102E", "Royal navy blue #012169", "Colonial brick brown #8B4513"],
-    "accent": ["Muted earth tones", "Gray clouds #708090", "Royal gold #FFD700"],
-    "grading": "Subdued but colorful oil painting palette, realistic fabric and architectural colors"
-  },
-  "visual_effects": {
-    "oil_painting": "Canvas texture, visible brush strokes on architecture and clothing, impasto technique",
-    "atmospheric": "Overcast atmospheric haze, subtle volumetric diffusion",
-    "realistic_details": "Fabric texture on uniforms and clothing, brick and mortar detail, aged wood and metal",
-    "period_accuracy": "Authentic 1800s British colonial visual elements"
-  },
-  "audio": {
-    "music": "Subdued British imperial theme with restrained orchestration",
-    "sound_design": "Military boots marching, distant drums, colonist murmurs, proclamation paper rustling, urban colonial ambience"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with oil painting overlay",
-    "motion_blur": "Natural cinematic blur",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for period authenticity and painterly aesthetic"
-  }
-}
+```
+In an early-1800s Boston square still under British rule, redcoat soldiers patrol in formation past a weathered bronze statue of King George III while resigned colonists go about subdued daily life and a small group reads a royal proclamation pinned to a board. The camera starts on the King George statue and smoothly pans right across the square, drifting gently forward to settle on the colonists reading the notice. Overcast, diffused Northern daylight casts soft painterly shadows, with brass and gilded royal emblems catching subtle highlights beneath Union Jack flags. British imperial red, royal navy blue and colonial brick brown fill the palette, accented by gray clouds and muted gold. The mood is resigned yet dignified, in a realistic oil-painting style with visible brushstrokes, cinematic 16:9 widescreen, over a restrained British imperial theme of marching boots and distant drums.
 ```
 
 ---
@@ -152,56 +60,10 @@ A vibrant realistic oil painting depicting America under French protectorate rul
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "French colonial New York harbor in early 1800s with Franco-American cultural fusion",
-  "context": "Bustling port with French tricolor flags, Baroque architecture, bilingual signage, French-American citizens conducting vibrant commerce",
-  "action": "Sweeping establishing shot of harbor, moving through busy streets showing cultural blend, French Governor reviewing documents, ships unloading, schoolhouse with bilingual education",
-  "style": "Vibrant realistic oil painting with Mediterranean luminosity, photorealistic characters and architecture, rich impasto technique, saturated French colors",
-  "camera": {
-    "position": "Starting high angle overlooking harbor, descending and dollying through streets",
-    "movement": "Crane down combined with forward dolly, sweeping through cultural fusion scenes, ending on schoolhouse window",
-    "lens": "35mm wide-angle for environmental scope",
-    "aperture": "f/2.8 for cinematic depth",
-    "framerate": "24fps with smooth, elegant camera motion"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Dynamic composition emphasizing cultural blend and commercial vibrancy",
-    "depth_layers": "Foreground café and street life, mid-ground French soldiers and civilians, background harbor and ships"
-  },
-  "lighting": {
-    "primary": "Bright golden hour Mediterranean sunlight creating warm, vibrant atmosphere",
-    "secondary": "Reflected light from harbor water adding fill and sparkle",
-    "accent": "Gold leaf accents on architecture catching brilliant highlights, brass military details",
-    "atmosphere": "Clear, vibrant atmospheric clarity with slight coastal haze",
-    "color_temperature": "Warm 3800K golden hour light"
-  },
-  "color_palette": {
-    "primary": ["French blue #0055A4", "Pure white #FFFFFF", "French red #EF4135"],
-    "accent": ["Golden hour gold #FFD700", "Colonial brick #8B4513", "Harbor blue #0EA5E9"],
-    "grading": "Saturated, vibrant oil painting palette with French impressionist influence"
-  },
-  "visual_effects": {
-    "oil_painting": "Rich impasto texture, visible brush strokes particularly on architecture and fabrics",
-    "atmospheric": "Mediterranean atmospheric clarity, harbor water reflections, coastal light quality",
-    "realistic_details": "Fabric textures on elaborate period costumes, architectural ornamentation, ship rigging and sails",
-    "cultural_fusion": "Blend of French and American visual elements harmoniously integrated"
-  },
-  "audio": {
-    "music": "French classical music with American influences, harpsichord and strings",
-    "sound_design": "Harbor sounds with ships, seagulls, French and English conversation mixing, cargo being unloaded, café ambience, chalk on blackboard"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with vibrant oil painting aesthetic",
-    "motion_blur": "Natural cinematic blur",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for cultural vibrancy and Mediterranean light quality"
-  }
-}
+```
+An early-1800s New York harbor reimagined as a French colonial port hums with Franco-American life: a French Governor-General in gold-braided uniform reviews documents at a café table, ships fly fleur-de-lis sails and unload cargo, and bilingual street signs and a schoolhouse window reveal a blend of two cultures beneath French tricolor flags and Baroque facades. The camera begins on a high angle over the harbor, then descends and glides smoothly forward through the busy streets to rest on the schoolhouse window. Bright golden-hour Mediterranean sunlight warms the scene, harbor water adding sparkling fill while gold-leaf ornament and brass details catch highlights. French blue, pure white and French red lead the palette with golden and harbor-blue accents. The mood is cosmopolitan and prosperous, in a vibrant realistic oil-painting style with visible brushstrokes, cinematic 16:9 widescreen, over French classical strings mingling with harbor sounds and mixed French and English voices.
 ```
 
 ---
@@ -220,56 +82,10 @@ A realistic oil painting illustration showing the chaos and variety of a loosely
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Chaotic interstate border checkpoint between New York and New Jersey in 1820s America",
-  "context": "Divided states with separate currencies, customs, militias, and competing toll bridges creating commercial gridlock",
-  "action": "Camera pans across border showing frustrated merchants waiting, customs officials from both states collecting tariffs, militia patrols eyeing each other, citizens conducting complicated interstate commerce",
-  "style": "Realistic oil painting with vibrant but deliberately uncoordinated color palette showing state-by-state visual chaos, photorealistic frustrated characters, busy fragmented composition",
-  "camera": {
-    "position": "Starting on 'Interstate Commerce Checkpoint' sign, panning left across New York side, then right to New Jersey side",
-    "movement": "Wide panning shot with occasional focus shifts to different merchant interactions, ending on competing bridge toll houses",
-    "lens": "40mm standard lens for balanced perspective",
-    "aperture": "f/4 for busy depth of field capturing multiple activities",
-    "framerate": "24fps with slightly faster pacing showing the chaotic commerce"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Busy, cluttered composition emphasizing fragmentation and inefficiency",
-    "depth_layers": "Foreground checkpoint activities, mid-ground state-divided architecture, background river with competing bridges"
-  },
-  "lighting": {
-    "primary": "Bright midday sunlight creating strong, crisp shadows",
-    "secondary": "Clear sky diffusion providing even illumination",
-    "accent": "Highlights on metal currency, militia brass buttons, shop window reflections",
-    "atmosphere": "Clear commercial daylight emphasizing the busy, inefficient activity",
-    "color_temperature": "Neutral 5200K midday light"
-  },
-  "color_palette": {
-    "primary": ["New York orange #FF6600", "New York blue #1E40AF", "New Jersey buff #F0DC82"],
-    "accent": ["Multiple uncoordinated state colors", "Commercial earth tones", "Varied regional flags"],
-    "grading": "Vibrant but deliberately uncoordinated palette showing state-by-state visual chaos"
-  },
-  "visual_effects": {
-    "oil_painting": "Thick impasto technique, visible brush strokes, particularly on chaotic commercial activity",
-    "atmospheric": "Clear midday clarity showing all the inefficient details",
-    "realistic_details": "Period-accurate currencies and exchange documents, different state uniforms, varied architectural styles",
-    "fragmentation": "Visual emphasis on divided jurisdiction and commercial complications"
-  },
-  "audio": {
-    "music": "Fragmented musical themes representing different states, competing melodies creating slight discord",
-    "sound_design": "Frustrated merchant arguments, horses and wagons backed up, customs officials calling out, coins clinking, toll collectors shouting, overlapping state-accented voices"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with oil painting texture",
-    "motion_blur": "Natural blur on moving wagons and frustrated gestures",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for period authenticity with emphasis on busy commercial chaos"
-  }
-}
+```
+At a busy 1820s border checkpoint between New York and New Jersey, frustrated merchants and backed-up wagons wait while customs officials from both states collect tariffs, militia patrols in differing uniforms eye one another, and separate state flags fly above mismatched Dutch and English colonial buildings. The camera starts on an "Interstate Commerce Checkpoint" sign and pans slowly across the New York side and then the New Jersey side, settling on competing bridge toll houses by the river. Bright midday sunlight casts strong, crisp shadows under a clear sky, glinting off coins, brass militia buttons and shop windows. A deliberately uncoordinated palette mixes New York orange and blue with New Jersey buff and blue plus varied regional flags. The mood is frustrated yet lively, in a realistic oil-painting style with thick visible brushstrokes, cinematic 16:9 widescreen, over fragmented competing musical themes and overlapping merchant arguments and clinking coins.
 ```
 
 ---

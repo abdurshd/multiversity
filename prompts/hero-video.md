@@ -4,63 +4,11 @@
 
 ---
 
-## 🎬 VEO 3.1 PROMPT (Google)
+## 🎬 VIDEO PROMPT
 
-### JSON Structure Prompt
-```json
-{
-  "subject": "Multiversity digital multiverse visualization - high-speed journey through futuristic quantum timeline network",
-  "context": "Dark cyberspace filled with holographic timeline nodes, digital neural pathways, and neon-lit data streams",
-  "action": "Dynamic camera flight through cascading holographic timeline layers converging into massive 3D Multiversity logo",
-  "style": "Futuristic sci-fi cyberpunk aesthetic with advanced holographic technology and neon digital environments",
-  "camera": {
-    "position": "Starting inside quantum computer core, flying outward into vast digital neural network",
-    "movement": "High-speed dynamic flight with smooth swooping camera movements through holographic layers",
-    "lens": "24mm wide-angle",
-    "aperture": "f/2.8 for cinematic depth",
-    "framerate": "Dynamic motion with occasional speed ramping"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Dynamic with central convergence point at climax",
-    "depth_layers": "Multiple cascading holographic planes with UI overlay elements"
-  },
-  "lighting": {
-    "primary": "Electric blue and neon cyan holographic glow from digital elements",
-    "secondary": "Neon magenta and purple accent lighting",
-    "accent": "Orange and red threat matrix indicators, rim lighting on holographic projections",
-    "atmosphere": "Volumetric digital haze with neon light beams cutting through darkness",
-    "color_temperature": "Cool digital blue 8000K with neon accent colors"
-  },
-  "color_palette": {
-    "primary": ["Electric blue #0EA5E9", "Neon cyan #06B6D4", "Cyber magenta #EC4899"],
-    "accent": ["Digital orange #F97316", "Neon purple #A855F7", "Matrix green #10B981"],
-    "grading": "High-contrast cyberpunk with crushed blacks and neon-saturated highlights"
-  },
-  "visual_effects": {
-    "particles": "Digital light streams and data particles flowing between timeline nodes",
-    "holographic": "Advanced holographic projections with scan lines, wireframe renders, and HUD interfaces",
-    "digital_elements": "Timeline probability calculations, branching pathway visualizations, UI overlay elements",
-    "glitch": "Occasional digital glitch transitions between timeline layers",
-    "energy": "Neon convergence beams and electric arcs forming MULTIVERSITY in massive 3D holographic text"
-  },
-  "audio": {
-    "music": "Speaking directly to camera saying: (no subtitles)",
-    "description": "Electronic cinematic score with deep bass building to epic synthesizer crescendo",
-    "sound_design": "Digital data whooshes, futuristic UI beeps, holographic activations, bass drops at timeline splits, quantum computing ambient hum, powerful electronic crescendo"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum cinematic quality",
-    "motion_blur": "Enabled for dynamic high-speed motion",
-    "anti_aliasing": "High",
-    "effects_intensity": "Maximum for holographic and particle systems"
-  }
-}
 ```
-
-### Alternative Text Prompt (if JSON not supported)
-**Camera positioned inside sleek holographic quantum computer core with glowing circuit pathways and flowing data streams in electric blue (#0EA5E9) and neon cyan (#06B6D4).** Wide-angle 24mm lens, f/2.8 aperture, dynamic motion. The quantum core explodes outward in burst of digital particles, transforming into vast neural network of branching timeline nodes—glowing holographic spheres suspended in dark cyberspace. **Camera flies at high speed through digital neural web** passing holographic historical projections: Revolutionary War soldiers in wireframe blue light, French revolutionaries as pulsing red holograms, Cold War as competing red-blue data streams, nuclear scenarios as orange threat matrices. Each vignette appears as floating holographic display with futuristic HUD interfaces, timeline probability calculations scrolling, branching pathway visualizations. **Camera performs dynamic swooping movement** through cascading holographic timeline layers. Neon-lit timeline branches split and recombine like fiber optic cables. Digital particles stream between nodes creating rivers of luminous data. Advanced UI elements and probability percentages flash across scene. **Final convergence:** All timeline branches spiral together—streams of neon light, digital code, holographic fragments forming "MULTIVERSITY" in massive 3D holographic letters pulsing with electric energy, surrounded by orbiting timeline nodes and flowing digital aurora against infinite black cyberspace with distant data constellations. **Lighting:** High-contrast with neon glow—electric blue and cyan primary, neon magenta (#EC4899) and purple (#A855F7) accents, digital orange (#F97316) threat indicators, rim lighting on holograms, volumetric digital haze. **Color grading:** Cyberpunk high-contrast with crushed blacks and neon-saturated highlights. **Audio:** Electronic score with deep bass building to synthesizer crescendo; digital whooshes; futuristic UI beeps; bass drops; quantum hum; powerful electronic climax. (no subtitles) 8K maximum quality.
+A glowing quantum computer core of luminous circuit pathways and flowing data streams sits at the center of cyberspace. The core bursts outward into a vast digital neural network of holographic timeline nodes, pathways splitting and recombining like fiber-optic cables as historical projections flicker between them. The environment is crushed-black cyberspace threaded with neon data streams. The camera performs one continuous, swift, smooth glide forward as the timeline branches converge ahead into a massive 3D "MULTIVERSITY" logo. Lighting is electric blue and cyan holographic glow with neon magenta and purple accents through volumetric haze. Futuristic cyberpunk, holographic, neon, cinematic 16:9. Audio: electronic score building to a synthesizer crescendo, no subtitles.
+```
 
 ---
 
@@ -100,29 +48,24 @@
 
 ## 📝 PROMPTING NOTES
 
-### For Veo 3.1
-- JSON structure provides superior control for complex futuristic effects
-- Specify camera position explicitly ("positioned inside quantum core...")
-- Use technical photography terms (focal length, aperture, dynamic motion)
-- Include "no subtitles" directive for cleaner output
-- Color values can be hex codes for precision (#0EA5E9, #EC4899, etc.)
-- Audio description goes after colon to avoid unwanted text overlay
-- Specify effects intensity as "maximum" for holographic and particle systems
+### Prompting Guidance
+- Lead with the subject, then describe its motion, environment, camera, lighting, and mood in that order
+- Lighting is the highest-impact element—describe it vividly (electric blue and cyan glow, neon magenta and purple accents, volumetric haze, crushed-black cyberspace)
+- Use one clear camera move, described in its own sentence separate from subject motion
+- Avoid the word "fast" and avoid stacking many fast-moving elements at once
+- Name colors directly (electric blue, neon cyan, magenta, purple) instead of using hex codes
+- Keep the prompt concise, roughly 80–110 words
+- State what you want rather than what you don't want
 - Emphasize "futuristic," "cyberpunk," "holographic," and "neon" aesthetic descriptors
-- Use technical sci-fi language (quantum computing, neural networks, data streams)
-- Specify neon color palette explicitly with hex values
-- Request high-contrast lighting with crushed blacks
-- Include UI/HUD overlay elements for futuristic feel
-- Request cinematic quality and 8K resolution with maximum effects
-- Emphasize dynamic camera movement (high-speed flight, swooping)
-- Describe digital materials and physics (holographic projections, neon light flow, particle streams)
+- Use sci-fi language (quantum computing, neural networks, data streams) to reinforce the look
+- Include a brief audio cue and a "no subtitles" note
 
 ---
 
 ## 🎯 GENERATION TIPS
 
 1. **First Generation:** Use the prompt as-is to establish futuristic baseline aesthetic
-2. **Iteration 1:** Adjust camera speed and motion if flight feels too slow or too fast
+2. **Iteration 1:** Adjust the camera glide if the motion feels too slow or too hurried
 3. **Iteration 2:** Fine-tune neon particle density, glow intensity, and holographic opacity
 4. **Iteration 3:** Refine cyberpunk color grading for maximum neon saturation and contrast
 5. **Iteration 4:** Enhance UI/HUD overlay elements and digital effects
@@ -135,7 +78,7 @@
 - **Insufficient digital elements:** Explicitly request UI overlays, HUD interfaces, and probability calculations
 - **Weak convergence:** Emphasize electric arcs, neon beam intensity, and holographic fragment density
 - **Audio mismatch:** Request more bass emphasis, synthesizer leads, and electronic crescendo
-- **Low quality:** Explicitly request 8K, maximum quality settings, and maximum effects intensity
+- **Low quality:** Request cinematic quality and rich holographic and particle detail
 
 ---
 
@@ -144,7 +87,7 @@
 The final video should:
 - ✓ Feature futuristic cyberpunk aesthetic with strong neon elements
 - ✓ Display quantum computer core opening transformation
-- ✓ Include high-speed dynamic camera flight through digital space
+- ✓ Include a smooth, steadily accelerating camera glide through digital space
 - ✓ Show clear holographic timeline node network
 - ✓ Feature multiple historical moments as holographic projections with HUD interfaces
 - ✓ Include neon color palette (electric blue, cyan, magenta, purple, orange)
@@ -153,10 +96,10 @@ The final video should:
 - ✓ Display "MULTIVERSITY" in massive 3D holographic letters with electric energy
 - ✓ Feature high-contrast lighting with crushed blacks and neon-saturated highlights
 - ✓ Include electronic score with bass drops and synthesizer crescendo
-- ✓ Maintain 8K quality and cinematic aspect ratio (16:9)
+- ✓ Maintain cinematic widescreen 16:9 framing
 - ✓ Convey sense of advanced technology and infinite digital possibilities
 - ✓ No visible text/subtitles during video (except stylized UI elements)
-- ✓ Maximum particle density and holographic effects intensity
+- ✓ Rich particle and holographic detail
 
 ---
 

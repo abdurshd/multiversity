@@ -16,56 +16,10 @@ A powerful realistic oil painting capturing the pivotal moment of the American C
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Abraham Lincoln proclaiming emancipation on Capitol steps during Civil War",
-  "context": "U.S. Capitol 1863, storm clouds breaking to sunlight, Union soldiers and freed slaves witnessing historic moment",
-  "action": "Camera starts on close-up of Emancipation Proclamation text, pulls back to reveal Lincoln's face, crane up to show full scene with soldiers and freed people, ending on wide shot of Capitol with storm breaking",
-  "style": "Realistic oil painting brought to life, photorealistic characters with visible emotions, rich impasto technique, dramatic chiaroscuro lighting, vibrant saturated colors",
-  "camera": {
-    "position": "Starting extreme close-up on proclamation parchment, pulling back and rising",
-    "movement": "Slow dolly back combined with crane up, ending on epic wide establishing shot",
-    "lens": "Macro 100mm transitioning to 35mm wide-angle",
-    "aperture": "f/1.4 for shallow depth on proclamation, opening to f/2.8 for scene",
-    "framerate": "24fps with slow-motion on broken chains falling"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Lincoln centered at rule-of-thirds intersection, soldiers and freed people balanced left-right",
-    "depth_layers": "Foreground broken chains, mid-ground Lincoln and people, background Capitol construction"
-  },
-  "lighting": {
-    "primary": "Dramatic breaking storm with volumetric sunbeams penetrating clouds",
-    "secondary": "Golden hour light illuminating Lincoln and Emancipation Proclamation",
-    "accent": "Rim lighting on Lincoln creating luminous halo, brass button highlights on soldiers",
-    "atmosphere": "Storm clouds with realistic volumetric god-rays, atmospheric haze showing weather transition",
-    "color_temperature": "Cool 6500K storm light transitioning to warm 3200K golden sunlight"
-  },
-  "color_palette": {
-    "primary": ["Union blue #1E3A8A", "Freedom gold #FFD700", "Hope white #FFFFFF"],
-    "accent": ["Confederate gray #708090", "Dark storm #2D3748", "Chain metal #8B8B8B"],
-    "grading": "Vibrant oil painting saturation, dramatic chiaroscuro with rich impasto highlights"
-  },
-  "visual_effects": {
-    "oil_painting": "Visible brush stroke texture overlay, thick impasto on highlights, canvas grain throughout",
-    "atmospheric": "Volumetric storm clouds breaking, god-rays with dust particles, wind effects on flag and proclamation",
-    "fabric": "Realistic cloth physics on flag waving, Lincoln's coat movement, proclamation unfurling",
-    "realistic_details": "Photorealistic facial expressions with tears and emotion, fabric weave, metal chain texture"
-  },
-  "audio": {
-    "music": "Emotional American orchestral theme building from solemn to triumphant, featuring 'Battle Hymn of the Republic' motifs",
-    "sound_design": "Thunder fading, wind gusting, proclamation paper rustling, chains dropping with metallic clinks, crowd gasps and emotional reactions, distant cannon fire"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with oil painting aesthetic overlay",
-    "motion_blur": "Natural cinematic blur with emphasis on emotional moments",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for dramatic weather and oil painting texture"
-  }
-}
+```
+President Abraham Lincoln stands tall on the U.S. Capitol steps in 1863, holding the unfurling Emancipation Proclamation as its inked words catch the light, his weathered face moved with solemn resolve. Around him Union soldiers in blue stand at attention while freed people reach toward him with tears of hope, broken chains scattered at his feet. The camera begins on the parchment and slowly pulls back and rises to reveal the full scene and the Capitol dome under construction. Dramatic storm clouds break apart, volumetric sunbeams and warm golden hour light spilling over Lincoln, Union blue and storm grey giving way to freedom gold and hope white. Triumphant yet solemn, cinematic 16:9 widescreen, realistic oil painting with visible impasto brushwork and chiaroscuro, as an emotional orchestral theme builds toward the Battle Hymn of the Republic.
 ```
 
 ---
@@ -84,56 +38,10 @@ A warm, hopeful realistic oil painting showing Lincoln's survival and continued 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "President Lincoln leading successful Reconstruction in peaceful Southern town",
-  "context": "Southern town square 1868, integrated schoolhouse, freed slaves farming own land, black and white cooperation, healing and prosperity",
-  "action": "Camera pans across peaceful square showing Lincoln shaking hands with former Confederate, integrated school children learning, freed farmers working land, cooperative town hall reconstruction",
-  "style": "Warm realistic oil painting with golden hour luminosity, photorealistic hopeful expressions, vibrant renewal colors, visible brush stroke texture",
-  "camera": {
-    "position": "Starting on handshake between Lincoln and Confederate officer, panning right across square",
-    "movement": "Smooth 180-degree pan with gentle dolly forward, ending on integrated schoolhouse",
-    "lens": "50mm standard lens for natural, balanced perspective",
-    "aperture": "f/2.8 for pleasant depth of field",
-    "framerate": "24fps with smooth, optimistic pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing equality and cooperation throughout",
-    "depth_layers": "Foreground cooperation, mid-ground Lincoln and integration, background thriving community"
-  },
-  "lighting": {
-    "primary": "Bright afternoon sunshine creating warm, welcoming atmosphere",
-    "secondary": "Soft natural fill light eliminating harsh shadows",
-    "accent": "Golden highlights on Lincoln's gray-streaked beard, children in windows, bronze plaque",
-    "atmosphere": "Clear, hopeful atmosphere with pleasant warmth, no darkness",
-    "color_temperature": "Warm 3600K afternoon golden light"
-  },
-  "color_palette": {
-    "primary": ["Hopeful blue #4A90E2", "Renewal green #10B981", "Warm gold #FFD700"],
-    "accent": ["Unity purple #7C3AED", "Peace white #FFFFFF", "Prosperity earth tones"],
-    "grading": "Vibrant, saturated oil painting palette showing healed nation and hope"
-  },
-  "visual_effects": {
-    "oil_painting": "Luminous impasto technique, warm brush strokes, canvas texture showing hope",
-    "atmospheric": "Golden hour atmospheric glow, peaceful weather clarity",
-    "realistic_details": "Photorealistic facial expressions of reconciliation and hope, period costume textures, construction details",
-    "symbolic": "Visual integration and cooperation emphasized through composition and color"
-  },
-  "audio": {
-    "music": "Hopeful American folk themes with optimistic orchestration, healing melodies",
-    "sound_design": "Children laughing in school, construction hammering, friendly conversation, farming sounds, church bells, peaceful town ambience"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with luminous oil painting aesthetic",
-    "motion_blur": "Natural gentle blur on cooperative movements",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for golden warmth and hopeful atmosphere"
-  }
-}
+```
+An older President Lincoln, his beard streaked with silver and his eyes warm with quiet wisdom, shakes hands in genuine reconciliation with a former Confederate officer in a peaceful Southern town square in 1868. Around them an integrated schoolhouse holds black and white children learning together, freed farmers work their own land beside "40 Acres" signs, and townspeople of both races rebuild a town hall side by side. The camera glides in a smooth, gentle pan across the square, settling on the schoolhouse. Bright, warm afternoon sunshine floods the scene with soft golden light and no harsh shadows, hopeful blues, renewal greens, unity purple and warm gold glowing throughout. Peaceful, hopeful and just, cinematic 16:9 widescreen, luminous oil painting with visible impasto brushwork, over hopeful American folk melodies and the laughter of children.
 ```
 
 ---
@@ -152,56 +60,10 @@ A prosperous, harmonious realistic oil painting depicting gradual, compensated e
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Peaceful gradual emancipation through economic transition in Virginia",
-  "context": "Virginia plantation transformed to cooperative 1868, integrated factories and schools, prosperity without war",
-  "action": "Camera sweeps through transformed plantation showing land agreement signing, factory operations with integrated workforce, educational programs, children playing together, diversified agriculture",
-  "style": "Prosperous realistic oil painting with peaceful morning light, photorealistic cooperative expressions, vibrant economic prosperity colors",
-  "camera": {
-    "position": "Starting aerial view of transformed plantation, descending through factory, ending on signing ceremony",
-    "movement": "Smooth crane down with tracking through industrial and educational areas",
-    "lens": "40mm standard lens for balanced perspective",
-    "aperture": "f/2.8 for pleasant depth showing prosperity",
-    "framerate": "24fps with smooth, steady prosperous pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition emphasizing cooperation and economic transformation",
-    "depth_layers": "Foreground children and parents, mid-ground signing and factories, background diversified fields"
-  },
-  "lighting": {
-    "primary": "Peaceful mid-morning sunlight creating gentle, prosperous atmosphere",
-    "secondary": "Soft natural fill representing gradual change",
-    "accent": "Highlights on compensation gold bonds, factory machinery, educational tools",
-    "atmosphere": "Clear, peaceful atmospheric clarity showing no conflict",
-    "color_temperature": "Neutral 5000K morning light"
-  },
-  "color_palette": {
-    "primary": ["Prosperity green #059669", "Negotiation blue #0EA5E9", "Compensation gold #FCD34D"],
-    "accent": ["Cooperation purple #8B5CF6", "Peace white #FFFFFF", "Industrial browns"],
-    "grading": "Vibrant saturated oil painting palette showing wealth through peaceful means"
-  },
-  "visual_effects": {
-    "oil_painting": "Rich impasto showing prosperity, visible cooperative brush strokes, economic texture",
-    "atmospheric": "Clear morning clarity, factory smoke realistically rendered, agricultural dust",
-    "realistic_details": "Photorealistic dignified expressions, period industrial equipment, authentic agricultural detail",
-    "transformation": "Visual emphasis on peaceful economic change without destruction"
-  },
-  "audio": {
-    "music": "Prosperous American industrial themes with optimistic progression, economic growth motifs",
-    "sound_design": "Factory machinery humming, children playing, agricultural work, handshake agreements, train whistle, commerce activities"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with prosperous oil painting aesthetic",
-    "motion_blur": "Natural blur on cooperative industrial activity",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for peaceful transformation authenticity"
-  }
-}
+```
+Plantation owners and formerly enslaved people sit together at an outdoor table on a transformed Virginia plantation in 1868, calmly signing land-purchase agreements backed by government compensation bonds and shaking hands as equals. Nearby, an integrated workforce operates textile factories, children of both races play together, and diversified fields of wheat, corn and orchards replace cotton. The camera drifts slowly downward from above the estate and tracks gently past the factories and schools to settle on the signing ceremony. Peaceful mid-morning sunlight bathes everything in soft, prosperous warmth, prosperity green, negotiation blue, compensation gold and cooperation purple glowing in clear air. Prosperous, peaceful and dignified, cinematic 16:9 widescreen, rich oil painting with visible impasto brushwork, over optimistic industrial themes and a distant train whistle.
 ```
 
 ---
@@ -220,56 +82,10 @@ DARKER ATMOSPHERE WITH VIBRANT COLORS: A divided, tense realistic oil painting s
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Divided America with Union and Confederate States as separate nations at border checkpoint",
-  "context": "Mason-Dixon border 1880, industrial North versus plantation South, slavery continuing, tension and division",
-  "action": "Camera starts centered on border divide, slowly panning to show industrial North then plantation South, ending on opposing families looking across divide with storm gathering",
-  "style": "DARK realistic oil painting with dramatic chiaroscuro YET VIBRANT saturated colors, photorealistic tense expressions, divided composition maintaining color vibrancy despite darkness",
-  "camera": {
-    "position": "Starting perfectly centered on border fence, rotating to show both sides",
-    "movement": "Slow 360-degree rotation around border divide, ending on wide shot showing division",
-    "lens": "35mm lens for stark symmetry",
-    "aperture": "f/4 for sharp division detail",
-    "framerate": "24fps with tense, deliberate pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Perfectly divided composition with border as vertical center line",
-    "depth_layers": "Foreground families and guards, mid-ground checkpoint activities, background industrial versus plantation economies"
-  },
-  "lighting": {
-    "primary": "DARK divided lighting - industrial North smoke-filtered, plantation South storm-threatened",
-    "secondary": "Contrasting golden plantation sun versus Northern industrial orange glow",
-    "accent": "VIBRANT colors on flags, uniforms, goods despite dark atmosphere - no desaturation",
-    "atmosphere": "Ominous storm clouds gathering with lightning illuminating SATURATED colors",
-    "color_temperature": "Cool 5600K North versus warm 3800K South with dark shadows throughout"
-  },
-  "color_palette": {
-    "primary": ["Union blue #1E3A8A VIBRANT", "Confederate gray #708090 SATURATED", "Division black #000000"],
-    "accent": ["Industrial orange #FF6600", "Cotton white #F9FAFB", "Storm gray #4B5563 WITH color beneath"],
-    "grading": "DARK atmosphere with VIBRANT saturated colors - chiaroscuro with full color where light exists"
-  },
-  "visual_effects": {
-    "oil_painting": "Dramatic chiaroscuro brush strokes, heavy shadows, yet VIBRANT impasto colors in lit areas",
-    "atmospheric": "Dark storm clouds, industrial smoke, yet lightning revealing saturated colors beneath",
-    "realistic_details": "Photorealistic expressions of tension and suffering, dark circles, worried eyes, yet vibrant clothing and material colors",
-    "darkness": "Deep blacks and shadows while maintaining FULL color saturation where light hits - unsettling colorful darkness"
-  },
-  "audio": {
-    "music": "Tense divided orchestral themes, discordant North-South melodies, building ominous tension",
-    "sound_design": "Northern industrial machinery, Southern overseer commands, guard challenges, families murmuring, thunder rumbling, incompatible train whistles"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with DARK yet COLORFUL oil painting aesthetic",
-    "motion_blur": "Natural blur emphasizing tension",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for dramatic darkness while maintaining vibrant color saturation"
-  }
-}
+```
+A tense border checkpoint splits a divided America along the Mason-Dixon line in 1880, the industrial United States on one side and the plantation Confederate States on the other, guards in blue and grey eyeing each other across a stark dividing fence. To one side, smoking factories, railroads and a mixed-race Northern family stand prosperous; to the other, enslaved people labor in cotton fields under storm clouds while wealthy planters watch. The camera slowly orbits the border divide and settles on two opposing families looking warily across it. Dark, smoke-filtered Northern light meets storm-threatened golden Southern sun, deep shadows holding vibrant Union blue, Confederate grey, industrial orange and bright cotton white where light strikes. Tense, divided and morally troubling, cinematic 16:9 widescreen, oil painting with dramatic chiaroscuro and saturated impasto color, over discordant orchestral tension and distant rumbling thunder.
 ```
 
 ---

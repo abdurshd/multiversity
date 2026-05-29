@@ -16,56 +16,10 @@ A majestic realistic oil painting capturing the grandeur and complexity of the R
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Tsar Nicholas II at Winter Palace representing Russian Empire's grandeur and complexity",
-  "context": "St. Petersburg Winter Palace, Orthodox blessing ceremony, multiethnic empire assembly, Neva River trade",
-  "action": "Camera rises from ground level through diverse crowd, ascending palace steps past Tsar, ending on elevated view showing full imperial grandeur and social contrasts",
-  "style": "Majestic realistic oil painting with Russian imperial technique, photorealistic ethnic diversity, vibrant Byzantine colors, visible brush stroke texture",
-  "camera": {
-    "position": "Starting ground level among common people, rising up palace steps",
-    "movement": "Dramatic crane up with slow rotation, ending on high angle showing palace and river",
-    "lens": "28mm wide-angle for imperial grandeur",
-    "aperture": "f/2.8 for dramatic depth",
-    "framerate": "24fps with stately, imperial pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Low angle emphasizing imperial power while showing social complexity",
-    "depth_layers": "Foreground common people and wealth contrast, mid-ground Tsar and advisors, background Winter Palace and Neva River"
-  },
-  "lighting": {
-    "primary": "Dramatic golden hour sunlight creating long imperial shadows",
-    "secondary": "Volumetric cathedral light creating god-rays through incense smoke",
-    "accent": "Gold ornaments and Romanov regalia catching warm sunset light",
-    "atmosphere": "Imperial atmospheric haze with incense smoke, volumetric evening light",
-    "color_temperature": "Warm 3400K golden hour Russian light"
-  },
-  "color_palette": {
-    "primary": ["Imperial blue #1E40AF", "Romanov gold #FFD700", "Orthodox white #FFFFFF"],
-    "accent": ["Winter Palace blue-green #14B8A6", "Revolutionary red #DC2626 subtle", "Ethnic costume variety"],
-    "grading": "Vibrant Byzantine oil painting saturation, rich imperial colors"
-  },
-  "visual_effects": {
-    "oil_painting": "Russian imperial brush stroke technique, thick impasto on gold, Byzantine glazing",
-    "atmospheric": "Incense smoke volumetrics, evening atmospheric haze, cathedral light beams",
-    "fabric": "Realistic movement on imperial robes, Orthodox vestments, ethnic costumes",
-    "realistic_details": "Photorealistic multiethnic faces, gold metalwork, architectural ornament detail"
-  },
-  "audio": {
-    "music": "Russian imperial orchestral theme with Orthodox choir, building to Tchaikovsky-style grandeur",
-    "sound_design": "Orthodox chanting, incense censers, Cossack boots, Neva River water, crowd murmurs in multiple languages, imperial bells"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with Russian imperial oil painting aesthetic",
-    "motion_blur": "Natural cinematic blur with emphasis on imperial ceremony",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for imperial grandeur and atmospheric effects"
-  }
-}
+```
+Majestic oil painting of Tsar Nicholas II in full imperial regalia standing on the steps of the Winter Palace, his expression troubled and contemplative as Orthodox priests perform a blessing and Cossack cavalry stand at attention. A multiethnic assembly of nobles, Siberian, Central Asian, Polish and Baltic peoples fills the square below, gilded carriages beside common folk, with the Neva River and Peter and Paul Fortress beyond. The camera slowly rises from the crowd up the palace steps, drifting to a high view of the palace and river. Dramatic golden hour sunlight casts long shadows, volumetric god-rays piercing incense smoke and catching Romanov gold, while imperial blue, gold and Orthodox white glow in vibrant Byzantine tones. Cinematic 16:9 widescreen, Russian imperial oil painting with visible brushstrokes, magnificent yet unstable, an Orthodox choir and Tchaikovsky-style orchestra swelling beneath.
 ```
 
 ---
@@ -84,56 +38,10 @@ A bright, progressive realistic oil painting showing Russia's successful democra
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Democratic Russia's State Duma with Tsar Nicholas II signing constitutional reforms",
-  "context": "Russian Parliament 1912, multiparty debate, constitutional monarchy, civil society observing, modernized St. Petersburg visible",
-  "action": "Camera tracks through active parliamentary chamber showing debate, moving to Tsar signing constitution, panning to citizens in gallery, ending on view through windows of modernized democratic Russia",
-  "style": "Progressive realistic oil painting with bright parliamentary lighting, photorealistic diverse expressions, vibrant democratic colors",
-  "camera": {
-    "position": "Starting on parliamentary debate, tracking to Tsar at desk, ending on windows",
-    "movement": "Smooth tracking shot through chamber with gentle pan movements",
-    "lens": "35mm standard lens for balanced democratic perspective",
-    "aperture": "f/2.8 for pleasant parliamentary depth",
-    "framerate": "24fps with optimistic, steady pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing equality between Tsar and parliament",
-    "depth_layers": "Foreground voting citizens, mid-ground parliamentary debate and Tsar signing, background modernized Russia"
-  },
-  "lighting": {
-    "primary": "Bright natural daylight flooding parliamentary chamber",
-    "secondary": "Even illumination representing transparency and openness",
-    "accent": "Sunbeams highlighting constitutional documents and diverse participants",
-    "atmosphere": "Clear, optimistic atmospheric clarity with volumetric sunlight",
-    "color_temperature": "Neutral 5400K democratic daylight"
-  },
-  "color_palette": {
-    "primary": ["Democratic blue #3B82F6", "Constitutional purple #8B5CF6", "Progressive green #10B981"],
-    "accent": ["Subdued imperial gold #FCD34D", "Hope white #FFFFFF", "Multiparty political variety"],
-    "grading": "Vibrant, optimistic oil painting palette showing successful democratic transformation"
-  },
-  "visual_effects": {
-    "oil_painting": "Hopeful brush strokes, luminous democratic glazing, visible parliamentary texture",
-    "atmospheric": "Natural volumetric daylight, clear progressive atmosphere",
-    "realistic_details": "Photorealistic expressions of civil debate, period parliamentary furnishings, authentic political diversity",
-    "symbolic": "Visual emphasis on equality and democratic participation"
-  },
-  "audio": {
-    "music": "Progressive Russian themes with parliamentary dignity, optimistic orchestration",
-    "sound_design": "Parliamentary debate voices, quill signing documents, citizens murmuring approval, St. Petersburg urban sounds through windows, democratic energy"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with progressive oil painting aesthetic",
-    "motion_blur": "Natural blur on democratic activity",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for optimistic brightness and democratic clarity"
-  }
-}
+```
+Progressive oil painting of a reformed, humble Tsar Nicholas II signing constitutional reforms with a quill at the State Duma in 1912, surrounded by an animated multiparty parliament of Kadets, Social Revolutionaries and reform-minded nobles in civil debate. A diverse gallery of workers, farmers, intellectuals and women observes while citizens cast ballots, with modernized St. Petersburg factories and schools visible through tall windows. The camera glides smoothly through the chamber from the debating members to the Tsar at his desk, then gently to the windows. Bright natural daylight floods the hall with even, transparent illumination and volumetric sunbeams highlighting the constitutional documents. Democratic blue, constitutional purple and progressive green glow alongside subdued imperial gold. Cinematic 16:9 widescreen, vibrant oil painting with visible impasto, optimistic and stable, dignified parliamentary voices and hopeful orchestration rising softly.
 ```
 
 ---
@@ -152,56 +60,10 @@ A grand, exotic realistic oil painting showing the Dragon-Bear alliance creating
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Russo-Chinese alliance creating Eurasian superpower at border fusion city",
-  "context": "Border city 1900, Trans-Siberian Railway meeting Chinese Empire, cultural fusion architecture, bilateral trade",
-  "action": "Camera sweeps through fusion marketplace showing Russian-Chinese trade, moving to ceremonial arch with Tsar and Empress handshake, ending on Trans-Eurasian Railway stretching to horizon",
-  "style": "Grand exotic realistic oil painting with East-West fusion aesthetics, photorealistic cultural blend, vibrant imperial colors from both empires",
-  "camera": {
-    "position": "Starting at market level, rising through ceremonial arch, ending on railway vista",
-    "movement": "Smooth crane up combined with forward tracking, ending on epic railway perspective",
-    "lens": "40mm lens for grand bilateral scope",
-    "aperture": "f/2.8 for pleasant depth showing cultural fusion",
-    "framerate": "24fps with stately, imperial pacing showing two empires"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced East-West composition with fusion arch as central element",
-    "depth_layers": "Foreground marketplace fusion, mid-ground imperial handshake, background Trans-Eurasian Railway"
-  },
-  "lighting": {
-    "primary": "Vibrant golden hour creating warm Eurasian glow",
-    "secondary": "Incense smoke and industrial steam creating exotic atmospheric haze",
-    "accent": "Gold and jade ceremonial arch catching sunset, imperial regalia highlights",
-    "atmosphere": "Rich volumetric atmosphere blending temple incense and locomotive steam",
-    "color_temperature": "Warm 3600K golden hour Eurasian light"
-  },
-  "color_palette": {
-    "primary": ["Russian imperial blue #1E40AF", "Romanov gold #FFD700", "Chinese red #DC143C", "Jade green #10B981"],
-    "accent": ["Silk Road variety", "Cultural fusion tones", "Bilateral imperial harmony"],
-    "grading": "Vibrant saturated oil painting blending Russian and Chinese imperial color traditions"
-  },
-  "visual_effects": {
-    "oil_painting": "Blended Russian impasto and Chinese brush techniques, fusion painting style",
-    "atmospheric": "Temple incense volumetrics, locomotive steam, exotic golden hour haze",
-    "realistic_details": "Photorealistic East-West ethnic features, fusion architecture detail, bilateral trade goods",
-    "cultural_fusion": "Visual emphasis on harmonious architectural and cultural synthesis"
-  },
-  "audio": {
-    "music": "Russian imperial orchestration blended with Chinese traditional instruments, fusion theme",
-    "sound_design": "Marketplace in Mandarin and Russian, locomotive steam, Orthodox bells and Buddhist gongs, Silk Road commerce"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with East-West fusion oil painting aesthetic",
-    "motion_blur": "Natural blur on cultural fusion activity",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for exotic atmosphere and bilateral imperial grandeur"
-  }
-}
+```
+Grand exotic oil painting of Tsar Nicholas II shaking hands with the Chinese Empress Dowager Cixi beneath a ceremonial arch entwined with Russian double-headed eagles and Chinese dragons in gold and jade, both wearing their full imperial dress with calculating, satisfied expressions. A bustling fusion marketplace surrounds them where fur-clad Russian merchants trade with silk-robed Chinese traders amid porcelain, tea and jade, with the Trans-Eurasian Railway and its steam locomotives stretching to the horizon. The camera rises smoothly from the market through the arch and drifts back to reveal the railway vista. Vibrant golden hour light bathes everything in a warm Eurasian glow, temple incense and locomotive steam forming volumetric haze, the gold-and-jade arch catching the sunset. Imperial blue, Romanov gold, Chinese red and jade green blend richly. Cinematic 16:9 widescreen, oil painting fusing Russian impasto and Chinese brushwork, ambitious and culturally rich, Russian orchestration woven with Chinese instruments, Orthodox bells and Buddhist gongs.
 ```
 
 ---
@@ -220,56 +82,10 @@ A unique, culturally blended realistic oil painting showing Russia's transformat
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Islamic-Orthodox fusion Russia showing religious and cultural synthesis in Moscow",
-  "context": "Moscow 1910, fusion cathedral-mosque architecture, Tsar and Mufti cooperation, cosmopolitan marketplace, hybrid cultural artifacts",
-  "action": "Camera tracks through fusion mosque-cathedral showing joint religious ceremony, panning through cosmopolitan marketplace with diverse traders, ending on Kremlin with minarets and crosses together",
-  "style": "Unique realistic oil painting blending Russian icon and Islamic miniature techniques, photorealistic cultural synthesis, harmonious Orthodox-Islamic colors",
-  "camera": {
-    "position": "Starting inside fusion cathedral-mosque, moving through religious ceremony to marketplace, ending on Kremlin vista",
-    "movement": "Smooth tracking through cultural fusion spaces with respectful pacing",
-    "lens": "35mm lens for architectural fusion showcase",
-    "aperture": "f/2.8 for pleasant depth showing cultural details",
-    "framerate": "24fps with contemplative, respectful pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing Orthodox and Islamic elements as equals",
-    "depth_layers": "Foreground cultural synthesis artifacts, mid-ground religious cooperation, background fusion architecture"
-  },
-  "lighting": {
-    "primary": "Dual religious lighting - golden Orthodox from west, sacred green Islamic from east",
-    "secondary": "Harmonious blend creating unique spiritual atmosphere",
-    "accent": "Gold Orthodox iconography and green Islamic calligraphy both highlighted",
-    "atmosphere": "Respectful volumetric light showing both traditions honored",
-    "color_temperature": "Warm 3400K Orthodox meeting cool 5000K Islamic creating harmony"
-  },
-  "color_palette": {
-    "primary": ["Orthodox gold #FFD700", "Imperial blue #1E40AF", "Islamic green #059669", "Persian turquoise #14B8A6"],
-    "accent": ["Fusion synthesis tones", "Respectful cultural blend", "Cosmopolitan variety"],
-    "grading": "Vibrant oil painting blending Russian icon and Islamic miniature color traditions"
-  },
-  "visual_effects": {
-    "oil_painting": "Blended Russian icon painting and Islamic miniature techniques, fusion artistic style",
-    "atmospheric": "Dual religious lighting volumetrics, incense and sacred atmosphere",
-    "realistic_details": "Photorealistic multicultural faces, fusion architecture detail, hybrid artifacts",
-    "cultural_synthesis": "Visual celebration of Orthodox-Islamic harmony and enrichment"
-  },
-  "audio": {
-    "music": "Russian Orthodox choral themes blended with Islamic Sufi music, respectful fusion",
-    "sound_design": "Orthodox bells and Islamic call to prayer harmonizing, marketplace in Russian and Arabic, Sufi zikr and Orthodox chanting, cosmopolitan ambience"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with Orthodox-Islamic fusion oil painting aesthetic",
-    "motion_blur": "Natural blur on cultural fusion activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for spiritual atmosphere and unique cultural synthesis beauty"
-  }
-}
+```
+Unique oil painting of Tsar Nicholas II in modified regalia with a green Islamic sash and crescent motifs beside the double-headed eagle, standing with an Islamic Mufti in robes and turban as Orthodox priests and imams bless a joint ceremony inside a structure that is half onion-domed cathedral, half minareted mosque. A cosmopolitan Moscow marketplace surrounds them with Russian, Tatar, Persian and Turkish traders, Sufi dervishes turning near Orthodox monks, hybrid artifacts everywhere. The camera tracks respectfully from the fusion sanctuary through the marketplace and settles on the Kremlin crowned with both minarets and crosses. Dual sacred light meets, warm golden Orthodox glow from the west and cool green Islamic light from the east, blending in volumetric harmony. Orthodox gold, imperial blue, Islamic green and Persian turquoise unite. Cinematic 16:9 widescreen, oil painting fusing Russian icon and Islamic miniature traditions, cosmopolitan and spiritually rich, Orthodox choral music and Sufi melody intertwining with bells and the call to prayer.
 ```
 
 ---

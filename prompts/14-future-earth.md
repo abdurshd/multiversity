@@ -16,52 +16,10 @@ A majestic, awe-inspiring view of Earth from space, 10,000 years in the future. 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Future Earth from orbit with space infrastructure",
-  "context": "10,000 years in the future, advanced civilization",
-  "action": "Earth rotating slowly, starship departing, lights twinkling",
-  "style": "Cosmic concept art, epic, majestic, photorealistic",
-  "camera": {
-    "position": "High orbit",
-    "movement": "Slow orbital drift",
-    "lens": "50mm",
-    "aperture": "f/8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Earth fills the frame, starship provides scale",
-    "depth_layers": "Foreground ship, midground Earth, background stars"
-  },
-  "lighting": {
-    "primary": "Sunlight (hard space light)",
-    "secondary": "City lights on night side",
-    "accent": "Engine glow",
-    "atmosphere": "Vacuum of space, thin blue atmosphere layer",
-    "color_temperature": "Daylight 5500K"
-  },
-  "color_palette": {
-    "primary": ["Earth Blue #0000FF", "Cloud White #FFFFFF", "Space Black #000000"],
-    "accent": ["City Gold #FFD700", "Engine Blue #00FFFF"],
-    "grading": "High contrast, crisp, majestic"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Rayleigh scattering on horizon",
-    "realistic_details": "Cloud patterns, city grids, starship hull texture"
-  },
-  "audio": {
-    "music": "Grand orchestral space theme (Holst-like)",
-    "sound_design": "Deep rumble of engines (cinematic convention), radio chatter, silence of space"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealism"
-  }
-}
+```
+Photorealistic cosmic concept art of future Earth seen from high orbit, 10,000 years from now, ringed by a glittering necklace of orbital habitats and space elevators. The planet turns slowly while a sleek starship departs toward the stars, its engines glowing, and organized geometric city lights twinkle across the night side. The camera drifts in a slow orbital arc as Earth fills the frame and the starship lends scale. Hard, unfiltered sunlight rakes the limb, scattering into a thin blue atmosphere with golden cities below. Earth blue, cloud white and deep space black dominate, accented by city gold and engine blue. Cinematic 16:9 widescreen, majestic and awe-inspiring, carried by a grand orchestral space theme.
 ```
 
 ---
@@ -80,52 +38,10 @@ A gleaming, utopian city on Earth (New Geneva). The architecture is white, curve
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Utopian future city with humans and aliens",
-  "context": "Galactic Federation capital on Earth",
-  "action": "Diplomats shaking hands, ships flying, fountain flowing",
-  "style": "Utopian sci-fi, clean, optimistic, Star Trek aesthetic",
-  "camera": {
-    "position": "Medium shot on balcony",
-    "movement": "Slow push in on the handshake",
-    "lens": "50mm",
-    "aperture": "f/4",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced, heroic",
-    "depth_layers": "Foreground diplomats, midground city, background sky traffic"
-  },
-  "lighting": {
-    "primary": "Bright sunlight",
-    "secondary": "Reflections on white buildings",
-    "accent": "Holographic flags",
-    "atmosphere": "Clean air, bright",
-    "color_temperature": "Daylight 5500K"
-  },
-  "color_palette": {
-    "primary": ["Clean White #FFFFFF", "Sky Blue #87CEEB", "Silver #C0C0C0"],
-    "accent": ["Federation Blue #000080", "Alien Purple #800080"],
-    "grading": "Bright, optimistic, clean"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Lens flares",
-    "realistic_details": "Fabric textures, alien skin texture, city details"
-  },
-  "audio": {
-    "music": "Noble, soaring orchestral theme",
-    "sound_design": "Whoosh of flying cars, pleasant ambient chatter, fountain water"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum clarity"
-  }
-}
+```
+Clean, optimistic Star Trek-style sci-fi scene of a human diplomat in a sleek uniform shaking hands with a tall, elegant alien ambassador on a balcony above New Geneva, a utopian city of white, curved, organic architecture nestled in restored nature. Below, a fountain flows and diverse human and alien ships mingle peacefully across the sky. The camera slowly pushes in on the handshake. Bright clean sunlight gleams off the white buildings, holographic flags catching the glow. Clean white, sky blue and silver fill the frame, accented by federation blue and alien purple. Cinematic 16:9 widescreen, hopeful and noble, lifted by a soaring orchestral theme.
 ```
 
 ---
@@ -144,52 +60,10 @@ A lush, overgrown ruin of a human city (New York or London) millions of years in
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Overgrown ruins of human city with evolved intelligent squids",
-  "context": "Millions of years post-human, nature reclaimed",
-  "action": "Squids examining artifact, vines swaying, waterfall flowing",
-  "style": "Nature documentary, lush, mysterious",
-  "camera": {
-    "position": "Low angle, close to the creatures",
-    "movement": "Slow, observant pan",
-    "lens": "35mm",
-    "aperture": "f/2.8",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Focus on the interaction with the artifact",
-    "depth_layers": "Foreground creatures, midground ruins, background jungle"
-  },
-  "lighting": {
-    "primary": "Dappled sunlight",
-    "secondary": "Bioluminescence",
-    "accent": "Reflections on wet surfaces",
-    "atmosphere": "Mist, humidity, spores",
-    "color_temperature": "Warm 4500K"
-  },
-  "color_palette": {
-    "primary": ["Jungle Green #006400", "Rust Orange #8B4513", "Stone Grey #808080"],
-    "accent": ["Biolume Blue #00FFFF", "Flower Red #FF0000"],
-    "grading": "Vibrant, natural, textured"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "Mist, light shafts",
-    "realistic_details": "Moss textures, creature skin, water effects"
-  },
-  "audio": {
-    "music": "Ambient nature sounds, mysterious flute",
-    "sound_design": "Jungle noises, waterfall, creature clicks and whistles"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum texture detail"
-  }
-}
+```
+Lush nature-documentary scene of highly evolved, intelligent land-squids examining a fossilized human smartphone with curiosity, pulsing with bioluminescent communication, millions of years after humanity has gone. Around them rise the eroded steel-and-concrete skeletons of an overgrown city, draped in massive prehistoric vines with waterfalls flowing through them. The camera holds low and close to the creatures, panning slowly and observantly across the interaction. Dappled sunlight filters through the misty canopy, mingling with the creatures' bioluminescence and reflections on wet surfaces. Vibrant jungle green, rust orange and stone grey dominate, accented by bioluminescent blue. Cinematic 16:9 widescreen, ancient and mysterious, scored with ambient jungle sounds and a soft flute.
 ```
 
 ---
@@ -208,52 +82,10 @@ A mind-boggling view of the Sun, but it is partially enclosed by a massive, intr
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Dyson Swarm around the sun, interior of O'Neill cylinder",
-  "context": "Far future, Type II civilization",
-  "action": "Camera pans from interior landscape to the massive swarm outside window",
-  "style": "Hard sci-fi, epic scale, mathematical",
-  "camera": {
-    "position": "Inside habitat looking out",
-    "movement": "Slow, majestic reveal",
-    "lens": "24mm",
-    "aperture": "f/11",
-    "framerate": "24fps"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Contrast between interior nature and exterior machine",
-    "depth_layers": "Foreground post-human, midground habitat, background sun/swarm"
-  },
-  "lighting": {
-    "primary": "Direct sunlight",
-    "secondary": "Artificial habitat light",
-    "accent": "Swarm reflections",
-    "atmosphere": "Clear vacuum outside, air inside",
-    "color_temperature": "Daylight 5500K"
-  },
-  "color_palette": {
-    "primary": ["Sun Gold #FFD700", "Space Black #000000", "Habitat Green #228B22"],
-    "accent": ["Structure Silver #C0C0C0", "Energy Blue #00FFFF"],
-    "grading": "High contrast, crisp, epic"
-  },
-  "visual_effects": {
-    "oil_painting": "None",
-    "atmospheric": "None in space, clouds inside",
-    "realistic_details": "Megastructure geometry, interior landscape"
-  },
-  "audio": {
-    "music": "Electronic, mathematical, sublime",
-    "sound_design": "Hum of power, silence of space, artificial wind inside"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum scale rendering"
-  }
-}
+```
+Hard sci-fi scene of a post-human cyborg entity standing inside an O'Neill cylinder habitat, gazing out a massive window at the Sun half-enclosed by an incomprehensibly vast lattice of orbital collectors, a Dyson Swarm with no planets left. A lush artificial landscape curves up the sides of the interior behind the figure. The camera makes a slow, majestic reveal from the interior greenery out to the swarm beyond the glass. Direct unfiltered sunlight floods the scene, softened by artificial habitat light and glinting reflections off the megastructure. Sun gold, deep space black and habitat green dominate, accented by structure silver and energy blue. Cinematic 16:9 widescreen, grand and mathematical, with a sublime electronic hum.
 ```
 
 ---

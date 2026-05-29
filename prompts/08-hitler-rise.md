@@ -16,56 +16,10 @@ DARKER ATMOSPHERE WITH VIBRANT COLORS - HISTORICAL DOCUMENTATION NOT GLORIFICATI
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Nuremberg Nazi rally 1936 documenting rise of totalitarianism and its victims",
-  "context": "Zeppelinfeld stadium, mass rally, propaganda machinery, victims and resistance visible showing moral weight",
-  "action": "Camera starts on victims and resistance, moves through rally showing scale and manipulation, ends on storm clouds gathering showing coming catastrophe - documenting not glorifying",
-  "style": "DARK realistic oil painting with historical documentation gravity YET VIBRANT Nazi colors showing manipulation, photorealistic victims showing human cost",
-  "camera": {
-    "position": "Starting on victims' faces, moving through rally documentation, ending on ominous sky",
-    "movement": "Solemn tracking shot documenting historical reality with ethical framing",
-    "lens": "24mm wide-angle for documentary scope showing both spectacle and victims",
-    "aperture": "f/2.8 for historical depth",
-    "framerate": "24fps with grave, documentary pacing never celebrating"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Documentary composition showing manipulation and victims equally - ethical balance",
-    "depth_layers": "Foreground victims and resistance, mid-ground rally spectacle, background gathering storm"
-  },
-  "lighting": {
-    "primary": "DARK ominous atmosphere documenting threatening nature",
-    "secondary": "Harsh manipulative spotlights and torches creating sinister beauty",
-    "accent": "VIBRANT red Nazi banners and orange torches maintaining saturation despite darkness",
-    "atmosphere": "DARK threatening with VIBRANT propaganda colors - unsettling historical documentation",
-    "color_temperature": "DARK with VIBRANT 2800K torches against cold threatening shadows"
-  },
-  "color_palette": {
-    "primary": ["Nazi red #DC2626 VIBRANT DOCUMENTED", "Black #000000 DARK", "White #FFFFFF stark"],
-    "accent": ["Torch orange #FF6B35 VIBRANT", "Storm clouds #1F2937 DARK", "Victims' humanity visible"],
-    "grading": "DARK ominous atmosphere with VIBRANT Nazi colors - documenting manipulation not celebrating"
-  },
-  "visual_effects": {
-    "oil_painting": "Documentary brush strokes, DARK shadows, VIBRANT Nazi colors showing manipulation",
-    "atmospheric": "Ominous volumetrics, gathering storm, historical gravity",
-    "realistic_details": "Photorealistic victims' faces showing fear, authentic Nazi rally detail documented, resistance symbols visible",
-    "ethical": "Visual emphasis on victims and moral weight - never glorifying fascism"
-  },
-  "audio": {
-    "music": "Ominous orchestral theme conveying threat and tragedy, never triumphant",
-    "sound_design": "Rally sounds documented historically, victims' murmurs, burning books, gathering storm, moral weight audible"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with DARK yet VIBRANT historical documentation aesthetic",
-    "motion_blur": "Natural blur documenting historical reality",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for DARK atmosphere while maintaining VIBRANT colors - historical documentation with ethical gravity"
-  }
-}
+```
+A solemn documentary oil painting of the 1936 Nuremberg rally, presented as a grave historical record of rising totalitarianism and its victims. In the foreground, frightened yet dignified people wearing yellow stars and quiet resistance figures stand against the choreographed ranks filling the Zeppelinfeld stadium, with propaganda banners and monumental architecture behind them. The camera slowly tracks from the victims' faces through the rally and tilts up to ominous storm clouds gathering overhead. Harsh manipulative spotlights and torchlight cut sinister shadows, deep blacks set against vivid red banners, stark white, and burning orange flames. Ominous, threatening, never celebratory. Cinematic 16:9 widescreen, photorealistic oil painting with visible somber brushstrokes, underscored by a grave orchestral theme and distant murmurs.
 ```
 
 ---
@@ -84,56 +38,10 @@ A peaceful, artistic realistic oil painting showing Hitler's alternate harmless 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Hitler as harmless struggling artist in Vienna gallery preventing WWII through acceptance",
-  "context": "Vienna art gallery 1925, peaceful artistic life, mediocre but content painter, normal European life",
-  "action": "Camera tracks through gallery showing Hitler teaching students and discussing paintings, moving through peaceful Vienna scenes, ending on ordinary artistic contentment",
-  "style": "Peaceful realistic oil painting with warm gallery light, photorealistic ordinary contentment, vibrant artistic colors",
-  "camera": {
-    "position": "Starting on Hitler's mediocre paintings, tracking through teaching and gallery life",
-    "movement": "Smooth gentle tracking showing ordinary peaceful life",
-    "lens": "50mm standard lens for normal unremarkable perspective",
-    "aperture": "f/2.8 for pleasant artistic depth",
-    "framerate": "24fps with calm, ordinary pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced ordinary composition showing harmless artistic life",
-    "depth_layers": "Foreground paintings and postcards, mid-ground Hitler teaching peacefully, background thriving peaceful Vienna"
-  },
-  "lighting": {
-    "primary": "Warm gallery illumination showing cultured peaceful atmosphere",
-    "secondary": "Soft Vienna daylight through windows showing normal life",
-    "accent": "Highlights on artworks and peaceful interactions",
-    "atmosphere": "Clear, peaceful, civilized gallery atmosphere",
-    "color_temperature": "Warm 3800K gallery lighting"
-  },
-  "color_palette": {
-    "primary": ["Artistic earth tones", "Cultural gold #FFD700", "Creative green #10B981"],
-    "accent": ["Vienna artistic variety", "NO Nazi colors", "Peaceful diversity"],
-    "grading": "Vibrant peaceful artistic palette showing ordinary harmless life"
-  },
-  "visual_effects": {
-    "oil_painting": "Gentle artistic brush strokes, peaceful impasto, civilized texture",
-    "atmospheric": "Clear peaceful gallery atmosphere, cultural Vienna ambience",
-    "realistic_details": "Photorealistic ordinary faces including harmless Hitler, authentic period gallery and artworks",
-    "prevention": "Visual emphasis on ordinary peaceful life preventing historical catastrophe"
-  },
-  "audio": {
-    "music": "Gentle Viennese cultural themes celebrating ordinary artistic life",
-    "sound_design": "Gallery conversations about art, students learning, Vienna street sounds, peaceful ordinary life"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with peaceful artistic oil painting aesthetic",
-    "motion_blur": "Natural blur on gentle ordinary activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for authentic peaceful ordinary atmosphere"
-  }
-}
+```
+A peaceful realistic oil painting imagining a harmless alternate path: a content, mediocre struggling artist in a bright 1925 Vienna gallery, the catastrophe of WWII quietly averted. He stands in a simple smock and beret, gently discussing technique with patrons before his competent landscape watercolors, then patiently teaching students at an easel while postcards of his work await tourists. The camera slowly tracks through the gallery, past his paintings and the thriving café life beyond the windows. Warm gallery illumination glows with soft Vienna daylight, rich earth tones, cultural gold and creative green, with no Nazi imagery present. Calm, ordinary, unremarkable. Cinematic 16:9 widescreen, luminous oil painting, accompanied by gentle Viennese strings and quiet gallery conversation.
 ```
 
 ---
@@ -152,56 +60,10 @@ A dramatic but hopeful realistic oil painting showing successful Hitler assassin
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Successful July 20 plot assassination with German resistance taking control and early surrender",
-  "context": "Wolf's Lair after explosion, Operation Valkyrie succeeding, rapid denazification, peace overtures, early liberation",
-  "action": "Camera starts on explosion aftermath, tracks through resistance securing power, shows Nazi symbols being removed, ends on concentration camps opening early - redemption arc",
-  "style": "Dramatic realistic oil painting transitioning from DARK to hopeful, photorealistic resistance heroism, shifting from Nazi to democratic colors",
-  "camera": {
-    "position": "Starting in damaged bunker, tracking through resistance takeover, ending on liberation",
-    "movement": "Dynamic tracking showing historical pivot from darkness to hope",
-    "lens": "35mm for dramatic historical moment",
-    "aperture": "f/2.8 for heroic depth",
-    "framerate": "24fps with dramatic hopeful pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Dramatic composition showing resistance triumph and redemption",
-    "depth_layers": "Foreground resistance action, mid-ground Nazi symbol removal, background liberation and hope"
-  },
-  "lighting": {
-    "primary": "Transitioning from DARK explosion smoke to hopeful daylight - literal darkness ending",
-    "secondary": "Dramatic light shift showing historical pivot",
-    "accent": "Highlights on resistance heroes and symbols of democracy returning",
-    "atmosphere": "Transition from Nazi darkness to democratic hope",
-    "color_temperature": "Shifting from DARK to warm 3600K hopeful daylight"
-  },
-  "color_palette": {
-    "primary": ["Shifting from Nazi red #DC2626 to democratic blue #3B82F6", "From black #000000 to hope green #10B981"],
-    "accent": ["German democratic black-red-gold returning", "Resistance heroism", "Liberation relief"],
-    "grading": "Dramatic transition palette from Nazi darkness to democratic hope"
-  },
-  "visual_effects": {
-    "oil_painting": "Dramatic brush strokes showing historical pivot, transition from dark to hopeful impasto",
-    "atmospheric": "Explosion smoke clearing to reveal hope, symbolic light transition",
-    "realistic_details": "Photorealistic resistance heroes with moral courage, authentic denazification, respectful early liberation",
-    "redemption": "Visual emphasis on German resistance heroism saving countless lives"
-  },
-  "audio": {
-    "music": "Building from tense to triumphant, German resistance theme celebrating moral courage",
-    "sound_design": "Explosion aftermath, radio broadcasts announcing Hitler's death, Nazi symbols being torn down, camp gates opening, relief and hope"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with dramatic redemption oil painting aesthetic",
-    "motion_blur": "Dynamic blur on resistance action",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for dramatic historical pivot from darkness to hope"
-  }
-}
+```
+A dramatic yet hopeful realistic oil painting of the July 20, 1944 plot succeeding: German military resistance seizing control of the Wolf's Lair command bunker after the blast and steering the nation toward early surrender. Resistance officers in Wehrmacht uniforms secure the damaged room, activate Operation Valkyrie, tear down swastika banners, and ready white flags as concentration camp gates begin to open. The camera slowly tracks from the smoke-filled bunker through the unfolding takeover toward the early liberation beyond. Lighting transitions from dark explosion haze to hopeful daylight, Nazi red and black giving way to democratic blue, green and German black-red-gold. Tense but redemptive. Cinematic 16:9 widescreen, dramatic oil painting, with an orchestral score building from tension to quiet hope.
 ```
 
 ---
@@ -220,56 +82,10 @@ DARKER ATMOSPHERE WITH VIBRANT COLORS - DYSTOPIAN DOCUMENTATION: A dark, dystopi
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Beer Hall Putsch succeeding 1923 with early Nazi violent seizure of Bavaria",
-  "context": "Munich Bürgerbräukeller violent takeover, SA brownshirts suppressing opposition, rapid Nazi expansion, early implementation of policies",
-  "action": "Camera starts on violent beer hall seizure, tracks through SA brutality, shows Nazi control spreading on maps, ends on Bavaria transformed - dystopian early victory",
-  "style": "DARK realistic oil painting with dystopian chaos YET VIBRANT Nazi colors, photorealistic early political violence, unsettling color in darkness",
-  "camera": {
-    "position": "Starting in chaotic beer hall, tracking through violence and expansion",
-    "movement": "Chaotic handheld-style tracking showing violent disorder",
-    "lens": "28mm wide-angle for disturbing dystopian scope",
-    "aperture": "f/2.8 for chaotic depth",
-    "framerate": "24fps with violent, chaotic pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Chaotic composition emphasizing early violent seizure and dystopian spread",
-    "depth_layers": "Foreground beer hall violence, mid-ground SA brutality, background Nazi control spreading"
-  },
-  "lighting": {
-    "primary": "DARK chaotic beer hall atmosphere showing violent disorder",
-    "secondary": "Harsh shadows from chandeliers and torches creating oppression",
-    "accent": "VIBRANT SA brown uniforms and swastika red maintaining saturation despite darkness",
-    "atmosphere": "DARK dystopian with VIBRANT Nazi colors - unsettling early fascist violence",
-    "color_temperature": "DARK with VIBRANT 2800K torch flames against oppressive shadows"
-  },
-  "color_palette": {
-    "primary": ["SA brown #8B4513 VIBRANT", "Nazi red #DC2626 SATURATED", "Black #000000 DARK"],
-    "accent": ["Torch orange #FF6B35 VIBRANT", "Violated Bavarian blue-white", "Early dystopian atmosphere"],
-    "grading": "DARK dystopian atmosphere with VIBRANT Nazi colors - chaotic violent early seizure"
-  },
-  "visual_effects": {
-    "oil_painting": "Violent chaotic brush strokes, DARK shadows, VIBRANT impasto on Nazi colors and violence",
-    "atmospheric": "Chaotic beer hall haze, fire and torch smoke, dystopian early takeover",
-    "realistic_details": "Photorealistic early political violence (documented not graphic), authentic 1923 Nazi brutality, period Munich detail",
-    "dystopian": "Visual emphasis on early seizure making everything worse - historical warning"
-  },
-  "audio": {
-    "music": "Chaotic dystopian theme showing violent disorder, ominous early Nazi victory",
-    "sound_design": "Beer hall chaos, SA violence, breaking glass, political victims, torches, dystopian early triumph sounds"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with DARK yet VIBRANT dystopian oil painting aesthetic",
-    "motion_blur": "Chaotic blur on violent seizure",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for DARK dystopian atmosphere while maintaining VIBRANT Nazi colors showing early violent takeover"
-  }
-}
+```
+A dark, dystopian realistic oil painting documenting the Beer Hall Putsch succeeding in 1923, a grim historical warning of fascism seizing Bavaria a decade earlier. Inside Munich's Bürgerbräukeller, armed SA brownshirts hold politicians at gunpoint amid overturned chairs and broken glass while opposition is dragged away, and on distant maps Nazi control spreads through southern Germany as swastika flags replace the Bavarian blue and white. The camera moves smoothly through the beer hall, past the unrest, toward the transformed city beyond. Lit chandeliers and torch flames carve harsh shadows, deep blacks against vivid brown uniforms, saturated red banners, and burning orange light. Chaotic, oppressive, cautionary. Cinematic 16:9 widescreen, realistic oil painting with somber brushstrokes, scored by an ominous, unsettling theme.
 ```
 
 ---

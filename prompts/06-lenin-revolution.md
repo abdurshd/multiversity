@@ -16,56 +16,10 @@ A dramatic realistic oil painting capturing the explosive energy of the Bolshevi
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Lenin leading Bolshevik Revolution storming Winter Palace in Petrograd",
-  "context": "Palace Square October 1917, Aurora cruiser firing, revolutionary masses, Tsarist symbols falling",
-  "action": "Camera starts on Aurora muzzle flash, pans across surging revolutionary crowds, rises to Lenin on armored car, ends on Winter Palace being stormed",
-  "style": "Dramatic realistic oil painting with Soviet realist intensity, photorealistic revolutionary faces, vibrant saturated red dominant colors",
-  "camera": {
-    "position": "Starting on Aurora side angle, panning and rising through crowd to Lenin",
-    "movement": "Dynamic pan and crane up with tilted angle creating revolutionary energy",
-    "lens": "28mm wide-angle for revolutionary scope and energy",
-    "aperture": "f/2.8 for dramatic depth",
-    "framerate": "24fps with speed ramps on revolutionary surges"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Tilted dynamic composition emphasizing revolutionary upheaval",
-    "depth_layers": "Foreground revolutionary workers, mid-ground Lenin and armored car, background Winter Palace storming"
-  },
-  "lighting": {
-    "primary": "Dramatic twilight with blood-red revolutionary sky",
-    "secondary": "Torches and bonfires creating warm revolutionary light",
-    "accent": "Aurora muzzle flash, red banner highlights, toppling statue impacts",
-    "atmosphere": "Volumetric gunsmoke and fire haze, revolutionary atmospheric intensity",
-    "color_temperature": "Warm 2800K torches versus cool 6500K twilight creating dramatic contrast"
-  },
-  "color_palette": {
-    "primary": ["Revolutionary red #DC2626 DOMINANT", "Working-class gray #4B5563", "Militant black #000000"],
-    "accent": ["Torch orange #FF6600", "Twilight blue #1E40AF", "Fallen imperial gold #FFD700"],
-    "grading": "Vibrant saturated Soviet realist palette, intense revolutionary colors"
-  },
-  "visual_effects": {
-    "oil_painting": "Dramatic Soviet realist brush strokes, thick impasto on red flags, revolutionary texture",
-    "atmospheric": "Gunsmoke volumetrics, fire effects, revolutionary chaos dust and haze",
-    "fabric": "Red banners waving with realistic physics, revolutionary crowd movement",
-    "realistic_details": "Photorealistic working-class faces with determination, period weapons and tools, naval and military details"
-  },
-  "audio": {
-    "music": "Intense revolutionary orchestral theme building to 'Internationale' climax, Soviet power motifs",
-    "sound_design": "Aurora cannon blast, crowd revolutionary chants, gunfire, statues crashing, revolutionary fervor shouting"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with Soviet realist oil painting aesthetic",
-    "motion_blur": "Dynamic blur on revolutionary action",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for revolutionary drama and chaos"
-  }
-}
+```
+Dramatic Soviet-realist oil painting of Lenin leading the Bolshevik Revolution in Petrograd's Palace Square, October 1917. Lenin stands atop an armored car, bald head and goatee sharp, one arm raised in passionate revolutionary gesture as surging crowds of workers, soldiers and Kronstadt sailors flood toward the stormed Winter Palace beneath waving hammer-and-sickle banners. The camera slowly pushes through the crowd and rises to frame Lenin against the palace. Dramatic blood-red twilight burns behind storm clouds while warm orange torches and bonfires glow against cold blue evening. Dominant revolutionary red, working-class gray and black, fallen imperial gold cast aside. Cinematic 16:9 widescreen, thick impasto brushstrokes, militant and transformative, an intense orchestral Internationale building beneath cannon blasts and revolutionary chants.
 ```
 
 ---
@@ -84,56 +38,10 @@ A moderate, orderly realistic oil painting showing Russia's democratic socialist
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Democratic socialist Russia's constituent assembly with multiparty Menshevik leadership",
-  "context": "Parliamentary chamber 1918, proportional representation, collaborative constitution drafting, orderly transition",
-  "action": "Camera tracks through parliamentary debate showing multiple parties, moving to voting boards with diverse results, ending on windows showing peaceful democratic Russia",
-  "style": "Moderate realistic oil painting with bright parliamentary lighting, photorealistic diverse political expressions, vibrant multiparty colors",
-  "camera": {
-    "position": "Starting on parliamentary debate floor, tracking through voting area, ending on windows",
-    "movement": "Smooth tracking shot showing democratic process, gentle pans between parties",
-    "lens": "50mm standard lens for balanced democratic perspective",
-    "aperture": "f/2.8 for pleasant parliamentary depth",
-    "framerate": "24fps with orderly, democratic pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Balanced composition showing multiparty equality and democratic cooperation",
-    "depth_layers": "Foreground workers' council representatives, mid-ground parliamentary debate, background democratic Russia"
-  },
-  "lighting": {
-    "primary": "Bright natural daylight flooding parliamentary chamber representing transparency",
-    "secondary": "Even illumination showing democratic openness, no shadows",
-    "accent": "Sunlight highlighting constitutional documents and diverse delegates",
-    "atmosphere": "Clear, transparent atmospheric clarity showing democratic honesty",
-    "color_temperature": "Neutral 5400K democratic daylight"
-  },
-  "color_palette": {
-    "primary": ["Democratic red #DC2626", "Moderate blue #3B82F6", "Social democratic purple #8B5CF6"],
-    "accent": ["Institutional gray #6B7280", "Multiparty variety", "Cooperative tones"],
-    "grading": "Vibrant multiparty oil painting palette showing democratic pluralism"
-  },
-  "visual_effects": {
-    "oil_painting": "Democratic brush strokes, luminous moderate glazing, parliamentary texture",
-    "atmospheric": "Clear parliamentary atmosphere, natural volumetric daylight",
-    "realistic_details": "Photorealistic expressions of civil debate, period parliamentary furnishings, multiparty political diversity",
-    "democratic": "Visual emphasis on cooperation and peaceful political competition"
-  },
-  "audio": {
-    "music": "Moderate Russian democratic themes with parliamentary dignity, social democratic orchestration",
-    "sound_design": "Parliamentary debate voices in civil discourse, voting tallies, document rustling, peaceful demonstration sounds through windows"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with democratic oil painting aesthetic",
-    "motion_blur": "Natural blur on orderly democratic activity",
-    "anti_aliasing": "High",
-    "effects_intensity": "Medium for democratic authenticity and parliamentary dignity"
-  }
-}
+```
+Moderate realistic oil painting of democratic socialist Russia's constituent assembly in 1918, led by multiparty Menshevik leaders in dark suits and spectacles. Delegates from many parties debate civilly across the Tauride-style chamber while workers' council representatives, voting boards showing proportional results, and collaborative constitution drafters fill the floor. The camera tracks smoothly across the debate and settles on tall windows revealing a peaceful, freely electing Russia. Bright natural daylight floods the hall, symbolizing transparency and democratic openness. Democratic red, moderate blue, social-democratic purple and institutional gray mingle in pluralistic harmony. Cinematic 16:9 widescreen, luminous glazed brushwork, orderly and hopeful, dignified social-democratic orchestration over the murmur of civil debate.
 ```
 
 ---
@@ -152,56 +60,10 @@ A transitional, fragmented realistic oil painting showing Russia's gradual refor
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Russia's gradual democratic reform without Lenin showing political pluralism",
-  "context": "Petrograd park 1917, multiple socialist factions, Provisional Government reforms, peaceful evolution",
-  "action": "Camera pans across fragmented scene showing various political groups debating, government buildings with reforms progressing, workers and peasants participating in legal democratic process",
-  "style": "Transitional realistic oil painting with diffused natural light, photorealistic diverse political expressions, muted varied colors showing pluralism",
-  "camera": {
-    "position": "Starting wide on park showing multiple gatherings, panning across different groups",
-    "movement": "Slow pan with multiple focus shifts showing fragmentation and diversity",
-    "lens": "35mm lens for scattered multi-focal composition",
-    "aperture": "f/4 for balanced depth showing multiple activities",
-    "framerate": "24fps with calm, undramatic pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Deliberately fragmented showing multiple focal points and political diversity",
-    "depth_layers": "Foreground citizen participation, mid-ground various political debates, background government reform buildings"
-  },
-  "lighting": {
-    "primary": "Diffused natural daylight with no dramatic contrasts",
-    "secondary": "Even, steady illumination representing gradual change",
-    "accent": "Gentle highlights on various political groups equally, no dominance",
-    "atmosphere": "Clear, undramatic atmospheric clarity showing peaceful evolution",
-    "color_temperature": "Neutral 5200K calm daylight"
-  },
-  "color_palette": {
-    "primary": ["Muted red #DC2626", "Moderate blue #3B82F6", "Liberal green #10B981"],
-    "accent": ["Political rainbow variety", "No single dominant color", "Pluralistic diversity"],
-    "grading": "Muted varied oil painting palette showing political pluralism and gradual change"
-  },
-  "visual_effects": {
-    "oil_painting": "Fragmented brush strokes, multiple painting styles representing diversity",
-    "atmospheric": "Clear, calm atmosphere without revolutionary drama",
-    "realistic_details": "Photorealistic faces of various political factions, authentic period political materials, institutional details",
-    "fragmentation": "Visual emphasis on decentralization and peaceful coexistence"
-  },
-  "audio": {
-    "music": "Gentle Russian reform themes without revolutionary intensity, gradual progressive orchestration",
-    "sound_design": "Multiple overlapping political discussions, bureaucratic activity, printing presses, peaceful civic participation"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with gradual reform oil painting aesthetic",
-    "motion_blur": "Minimal blur showing calm, steady evolution",
-    "anti_aliasing": "High",
-    "effects_intensity": "Low for undramatic peaceful transformation"
-  }
-}
+```
+Transitional realistic oil painting of Russia's gradual democratic reform without Lenin, set in a Petrograd park in 1917. Multiple socialist factions gather in scattered groups, debating peacefully beneath trees with no single dominant leader, while citizens register to vote, peasants receive land titles, and the Provisional Government enacts reforms through nearby buildings. The camera drifts in a slow pan across the fragmented gatherings, gently shifting focus between groups. Diffused, steady natural daylight bathes the scene without dramatic contrast, evoking calm incremental change. A muted, varied palette of subdued red, moderate blue and liberal green signals political pluralism. Cinematic 16:9 widescreen, fragmented visible brushwork, calm and pluralistic, gentle progressive themes over softly overlapping discussions and printing presses.
 ```
 
 ---
@@ -220,56 +82,10 @@ An aggressive, expansionist realistic oil painting showing Trotsky's permanent w
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Trotsky's permanent world revolution command center coordinating global communist expansion",
-  "context": "Moscow revolutionary headquarters 1920, international councils, Red Army, global propaganda operations",
-  "action": "Camera starts on world map with red arrows, pans to Trotsky analyzing strategy, tracks through international revolutionary councils and military preparations, ends on window showing Moscow as revolutionary capital",
-  "style": "Aggressive realistic oil painting with dramatic militant lighting, photorealistic revolutionary intensity, vibrant saturated red dominant",
-  "camera": {
-    "position": "Starting low angle on world map, rising to Trotsky, tracking through command center",
-    "movement": "Dynamic tracking with dramatic angles emphasizing revolutionary ambition",
-    "lens": "28mm wide-angle for global revolutionary scope",
-    "aperture": "f/2.8 for dramatic militant depth",
-    "framerate": "24fps with aggressive pacing showing permanent revolution"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Low-angle heroic composition emphasizing global revolutionary ambition",
-    "depth_layers": "Foreground revolutionary export crates, mid-ground Trotsky and international councils, background Red Army and global operations"
-  },
-  "lighting": {
-    "primary": "Harsh dramatic spotlights creating strategic planning atmosphere",
-    "secondary": "Red revolutionary lights casting militant shadows",
-    "accent": "Map illumination, propaganda poster highlights, ideological intensity",
-    "atmosphere": "Tense militant atmosphere showing permanent revolutionary struggle",
-    "color_temperature": "Harsh 5600K spotlight mixed with saturated red revolutionary light"
-  },
-  "color_palette": {
-    "primary": ["Aggressive red #DC2626 DOMINANT", "Militant black #000000", "Ideological yellow #FCD34D"],
-    "accent": ["Global revolutionary variety", "Constructivist angles", "Permanent struggle intensity"],
-    "grading": "Vibrant saturated Soviet constructivist palette with aggressive revolutionary colors"
-  },
-  "visual_effects": {
-    "oil_painting": "Dramatic constructivist brush strokes, militant impasto, revolutionary angular texture",
-    "atmospheric": "Harsh spotlight beams, revolutionary tension, global ambition atmosphere",
-    "realistic_details": "Photorealistic faces with militant determination, constructivist architecture, authentic period propaganda and military detail",
-    "expansion": "Visual emphasis on global reach and permanent revolutionary expansion"
-  },
-  "audio": {
-    "music": "Aggressive 'Internationale' with militant orchestration, permanent revolution intensity building",
-    "sound_design": "Map planning discussions in multiple languages, printing presses churning, radio broadcasts, Red Army marching, revolutionary fervor"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with militant constructivist oil painting aesthetic",
-    "motion_blur": "Dynamic blur on revolutionary activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for dramatic revolutionary atmosphere and global ambition"
-  }
-}
+```
+Aggressive Soviet-constructivist oil painting of Leon Trotsky's permanent world revolution command center in Moscow, 1920. Trotsky, in round glasses and a leather commissar coat, studies an enormous world map streaked with red arrows while international revolutionary councils plan global expansion and Red Army banners, propaganda presses and weapon crates fill the angular hall. The camera slowly rises from the map up to Trotsky and tracks through the command center toward a window framing Moscow as the revolutionary capital. Harsh dramatic spotlights mix with deep red revolutionary glow, casting militant shadows. Dominant aggressive red, militant black and ideological yellow saturate the scene. Cinematic 16:9 widescreen, thick militant impasto brushwork, expansionist and ideological, an intense Internationale rising over multilingual planning and marching boots.
 ```
 
 ---

@@ -16,56 +16,10 @@ A tense, divided realistic oil painting capturing Cold War tension rendered with
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Berlin Wall 1961 showing Cold War ideological division and separated families",
-  "context": "Divided Berlin, Western capitalism versus Eastern communism, nuclear standoff, space race, human cost",
-  "action": "Camera starts centered on Berlin Wall, pans showing vibrant West and gray East, rises to show nuclear standoff overhead, ends on separated families - balanced Cold War documentation",
-  "style": "Tense realistic oil painting with vibrant Western versus muted Eastern colors, photorealistic ideological division, balanced perspective",
-  "camera": {
-    "position": "Starting centered on wall, panning both sides equally, rising to sky showing nuclear threat",
-    "movement": "Balanced pan showing both sides fairly, crane up to global threat level",
-    "lens": "35mm for balanced ideological perspective",
-    "aperture": "f/2.8 for Cold War tension depth",
-    "framerate": "24fps with tense, watchful pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Symmetrical division composition showing balanced yet tense standoff",
-    "depth_layers": "Foreground separated families, mid-ground wall and systems, background nuclear standoff"
-  },
-  "lighting": {
-    "primary": "Divided lighting - bright colorful West versus dim gray East meeting at wall",
-    "secondary": "Ideological contrast through color temperature differences",
-    "accent": "Vibrant Western neon and commercial lights versus muted Eastern institutional lighting",
-    "atmosphere": "Tense atmospheric division showing 46 years of standoff",
-    "color_temperature": "Warm 3800K West versus cool 5600K East creating visual metaphor"
-  },
-  "color_palette": {
-    "primary": ["Western capitalism VIBRANT - red #DC2626, white, blue #1E40AF", "Eastern communism muted - gray #6B7280, sparse red"],
-    "accent": ["Commercial colors West", "Institutional gray East", "Nuclear threat ominous"],
-    "grading": "Vibrant contrast palette showing ideological division through color intensity"
-  },
-  "visual_effects": {
-    "oil_painting": "Divided brush strokes - vibrant Western impasto versus muted Eastern application",
-    "atmospheric": "Cold War tension, searchlight beams, nuclear threat overhead",
-    "realistic_details": "Photorealistic separated families, authentic period architecture both sides, balanced military detail",
-    "balance": "Fair visual treatment of both systems while showing human division cost"
-  },
-  "audio": {
-    "music": "Tense Cold War orchestral theme with East-West musical tension, no resolution",
-    "sound_design": "Wall patrols, Western commerce sounds, Eastern marching, separated families calling, nuclear bombers overhead, tense standoff ambience"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with balanced Cold War oil painting aesthetic",
-    "motion_blur": "Natural blur on divided activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for ideological contrast while maintaining fair balanced perspective"
-  }
-}
+```
+Photorealistic oil painting of the Berlin Wall in 1961, the Cold War made physical, with separated families pressed against concrete barriers, barbed wire and searchlit guard towers cutting through the center. The vibrant capitalist West with its neon advertising and well-dressed citizens stands beside the gray communist East of brutalist Plattenbauten and red-star propaganda, while overhead bombers and missiles hold an uneasy standoff. The camera holds centered on the wall, smoothly panning both sides equally before tilting up to the threatening sky. Warm commercial light in the West meets dim institutional gray in the East, vibrant reds, whites and blues against muted Soviet gray. Cinematic 16:9, visible brushstrokes, tense and divided, under a low Cold War orchestral hum.
 ```
 
 ---
@@ -84,56 +38,10 @@ A post-apocalyptic, devastating realistic oil painting showing nuclear exchange 
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Post-nuclear war Washington D.C. six months after Cuban Missile Crisis escalation showing global catastrophe and survival",
-  "context": "Nuclear winter, destroyed capitals globally, survivors emerging, humanitarian cooperation beginning",
-  "action": "Camera pans across devastated Washington monuments, tracks through survivor communities showing resilience, ends on Southern Hemisphere aid arriving - cautionary documentation",
-  "style": "Post-apocalyptic realistic oil painting with bleak nuclear winter palette yet occasional hope colors, photorealistic survival and devastation",
-  "camera": {
-    "position": "Starting on ruined Capitol, tracking through wasteland, ending on hope symbols",
-    "movement": "Slow somber tracking showing scale of catastrophe and human resilience",
-    "lens": "28mm wide for devastating scope",
-    "aperture": "f/2.8 for catastrophic depth",
-    "framerate": "24fps with grave, cautionary pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Apocalyptic composition showing both devastation and survival hope",
-    "depth_layers": "Foreground survivors, mid-ground ruins, background nuclear winter sky"
-  },
-  "lighting": {
-    "primary": "Perpetual nuclear winter twilight with gray-brown contaminated atmosphere",
-    "secondary": "Dim unnatural light from dust-blocked sun",
-    "accent": "Harsh radiation warning yellow and occasional hope color highlights",
-    "atmosphere": "Bleak atmospheric contamination with volumetric nuclear winter haze",
-    "color_temperature": "Unnatural contaminated light quality showing environmental catastrophe"
-  },
-  "color_palette": {
-    "primary": ["Ash gray #9CA3AF dominant", "Nuclear winter brown #8B7355", "Burned black #000000"],
-    "accent": ["Radiation yellow #FCD34D harsh", "Hope blue #3B82F6 occasional", "Life green #10B981 sparse"],
-    "grading": "Bleak catastrophic palette with occasional vibrant hope showing human resilience"
-  },
-  "visual_effects": {
-    "oil_painting": "Catastrophic brush strokes, bleak muted application, occasional vibrant hope impasto",
-    "atmospheric": "Nuclear winter volumetrics, radiation haze, post-apocalyptic atmosphere",
-    "realistic_details": "Photorealistic structural destruction, authentic survival conditions, accurate radiation effects (medical not exploitative)",
-    "warning": "Visual emphasis on catastrophe that nearly happened - historical cautionary tale"
-  },
-  "audio": {
-    "music": "Somber post-apocalyptic theme with occasional hopeful notes, cautionary orchestration",
-    "sound_design": "Geiger counter clicks, wind through ruins, survivor activities, aid arriving, resilient human sounds"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with post-apocalyptic oil painting aesthetic",
-    "motion_blur": "Natural blur on survival activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for catastrophic atmosphere while showing human hope and resilience"
-  }
-}
+```
+Post-apocalyptic photorealistic oil painting of Washington D.C. six months after a Cuban Missile Crisis nuclear exchange. Gaunt survivors in improvised masks emerge among the ruins of the cracked Capitol dome, leaning Washington Monument and burned White House, while in the distance Southern Hemisphere aid convoys arrive in solidarity. The camera slowly tracks forward through the wasteland, drifting from the broken monuments toward the survivor communities. Perpetual nuclear-winter twilight bathes everything in dim gray-brown contaminated haze, ash gray and burned black relieved only by harsh radiation yellow and faint hope-filled blue and green. Cinematic 16:9, visible brushstrokes, grave and cautionary, over wind through ruins and the faint clicks of a Geiger counter.
 ```
 
 ---
@@ -152,56 +60,10 @@ A triumphant-but-controlled realistic oil painting showing global communist vict
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "Communist-transformed New York City 1985 showing global Soviet victory and ideological conversion",
-  "context": "Modified Statue of Liberty, collectivized Manhattan, World Communist Federation, transformed daily life",
-  "action": "Camera tracks from modified Statue through communist NYC showing collective life, May Day parade, mixed public reactions, ends on global federation map - alternate ideological documentation",
-  "style": "Orderly realistic oil painting with communist red dominant palette, photorealistic ideological control and complex reactions, utilitarian aesthetic",
-  "camera": {
-    "position": "Starting on Statue of Liberty modifications, tracking through transformed Manhattan",
-    "movement": "Systematic tracking showing ideological transformation and daily life",
-    "lens": "35mm for complete transformation perspective",
-    "aperture": "f/2.8 for ideological depth",
-    "framerate": "24fps with orderly, controlled pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Systematic composition showing ideological unity and control",
-    "depth_layers": "Foreground daily life, mid-ground transformed city, background global federation"
-  },
-  "lighting": {
-    "primary": "Red-tinted atmospheric light showing ideological uniformity",
-    "secondary": "Even minimal-shadow lighting representing communist transparency",
-    "accent": "Vibrant red on communist symbols and propaganda",
-    "atmosphere": "Controlled systematic atmosphere showing ideological order",
-    "color_temperature": "Unified red-tinted light creating systematic appearance"
-  },
-  "color_palette": {
-    "primary": ["Communist red #DC2626 VIBRANT dominant", "Workers' gray #6B7280", "Utilitarian tones"],
-    "accent": ["NO capitalist greens or commercial colors", "Ideological purity through color", "Socialist realist palette"],
-    "grading": "Controlled communist palette with vibrant red and utilitarian grays showing ideological victory"
-  },
-  "visual_effects": {
-    "oil_painting": "Ideological brush strokes, vibrant red impasto, utilitarian gray application",
-    "atmospheric": "Unified communist atmosphere, systematic lighting, controlled environment",
-    "realistic_details": "Photorealistic complex human reactions, authentic Soviet-American fusion architecture, period communist aesthetics",
-    "complexity": "Visual emphasis on both true believers and quiet dissenters - balanced human documentation"
-  },
-  "audio": {
-    "music": "Soviet-style orchestral themes adapted to American context, ideological victory music",
-    "sound_design": "May Day parade, political education, communal dining, propaganda broadcasts, varied public reactions"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with communist aesthetic oil painting",
-    "motion_blur": "Natural blur on collective activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for ideological atmosphere while showing human complexity fairly"
-  }
-}
+```
+Orderly photorealistic oil painting of a communist-transformed New York City in 1985 under the World Communist Federation. The Statue of Liberty now raises a hammer-and-sickle beneath a red-star crown, while collectivized Manhattan skyscrapers bear red stars and Cyrillic banners and a vast May Day parade fills the avenues; citizens move through communal dining halls and political-education classes with faces that range from true belief to quiet resignation. The camera tracks smoothly from the modified statue through the transformed city toward the global federation map. Even, near-shadowless red-tinted light bathes everything in ideological uniformity, vibrant communist red dominating workers' gray with no capitalist greens. Cinematic 16:9, visible brushstrokes, controlled and uniform, over Soviet-style orchestral anthems.
 ```
 
 ---
@@ -220,56 +82,10 @@ A harmonious, cooperative realistic oil painting showing successful superpower c
 
 ---
 
-### 🎬 VEO 3.1 VIDEO PROMPT
+### 🎬 VIDEO PROMPT
 
-```json
-{
-  "subject": "International Space Station 1975 showing US-Soviet cooperation and global peaceful coexistence",
-  "context": "Joint space program, cooperative Earth projects, Berlin without wall, transformed peaceful world",
-  "action": "Camera starts in space station showing astronauts-cosmonauts cooperating, descends to Earth showing hybrid systems thriving, ends on unified peaceful planet view - optimistic cooperation documentation",
-  "style": "Harmonious realistic oil painting with blended color palettes showing synthesis, photorealistic warm cooperation, vibrant unified colors",
-  "camera": {
-    "position": "Starting in space station, descending to cooperative Earth projects, ending on planetary view",
-    "movement": "Smooth hopeful tracking showing cooperation benefits across multiple scales",
-    "lens": "35mm for balanced cooperative perspective",
-    "aperture": "f/2.8 for optimistic depth",
-    "framerate": "24fps with warm, hopeful pacing"
-  },
-  "composition": {
-    "aspect_ratio": "16:9 cinematic",
-    "framing": "Harmonious composition showing systems cooperating and synthesizing",
-    "depth_layers": "Foreground human cooperation, mid-ground Earth projects, background unified planet"
-  },
-  "lighting": {
-    "primary": "Bright optimistic natural light showing open cooperation",
-    "secondary": "Clear sunlight with no confrontation shadows",
-    "accent": "Colorful space aurora and cooperation highlights",
-    "atmosphere": "Clear hopeful atmosphere showing peaceful coexistence benefits",
-    "color_temperature": "Warm 3800K hopeful natural light"
-  },
-  "color_palette": {
-    "primary": ["Blended US red-white-blue #DC2626 #FFFFFF #1E40AF", "Soviet red-yellow #DC2626 #FCD34D", "Unity purple #8B5CF6"],
-    "accent": ["Cooperation green #10B981", "Peace blue #0EA5E9", "Harmonious synthesis variety"],
-    "grading": "Vibrant unified palette showing peaceful system synthesis and cooperation"
-  },
-  "visual_effects": {
-    "oil_painting": "Cooperative brush strokes, vibrant synthesis impasto, harmonious texture",
-    "atmospheric": "Space beauty effects, peaceful Earth atmosphere, aurora phenomena",
-    "realistic_details": "Photorealistic genuine cooperation expressions, authentic hybrid architecture, period cooperative technology",
-    "hope": "Visual emphasis on what peaceful coexistence achieved - optimistic alternate history"
-  },
-  "audio": {
-    "music": "Harmonious East-West musical fusion, optimistic orchestration celebrating cooperation",
-    "sound_design": "Space station cooperation, multilingual collaboration, Earth prosperity sounds, peaceful planet ambience"
-  },
-  "technical": {
-    "resolution": "8K",
-    "quality": "Maximum photorealistic quality with harmonious cooperative oil painting aesthetic",
-    "motion_blur": "Natural blur on cooperative activities",
-    "anti_aliasing": "High",
-    "effects_intensity": "High for vibrant optimistic cooperation showing peaceful coexistence success"
-  }
-}
+```
+Harmonious photorealistic oil painting of a jointly built US-Soviet space station in 1975, where American astronauts and Soviet cosmonauts work side by side in zero gravity, sharing research with warm smiles as Stars-and-Stripes and Hammer-and-Sickle hang peacefully together. Through the porthole a unified Earth turns, and below lie a wall-less Berlin, joint factories and cultural exchanges of a world that chose cooperation. The camera glides gently from the cooperating crew, drifting toward the porthole to reveal the peaceful planet. Bright optimistic natural light fills the scene with no confrontation shadows, blended red, white and blue with Soviet yellow merging into unity purple, cooperation green and peace blue. Cinematic 16:9, visible brushstrokes, optimistic and warm, over a hopeful East-West musical fusion.
 ```
 
 ---
