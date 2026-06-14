@@ -1,0 +1,4 @@
+# SPA fallback: let React Router handle client-side routes.
+# Serve index.html (200, not a redirect) for any path that isn't a real file,
+# so deep links like /chapters/:id and /simulation/:id work when opened/shared directly.
+/*    /index.html   200
