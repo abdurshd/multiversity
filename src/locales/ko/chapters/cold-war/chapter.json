@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "냉전",
+    "period": "1945-1991",
+    "description": "상호확증파괴. ☢️❄️",
+    "historical_context": "두 초강대국이 세계를 분할했다.",
+    "divergence_point": "쿠바 미사일 위기"
+  },
+  "figures": {
+    "john-f-kennedy": {
+      "name": "존 F. 케네디",
+      "role": "젊은 대통령",
+      "description": "핵전쟁을 정면으로 마주했다. \"우리는 쉽기 때문이 아니라 어렵기 때문에 달에 가기로 선택합니다.\""
+    },
+    "nikita-khrushchev": {
+      "name": "니키타 흐루쇼프",
+      "role": "구두를 두드린 사나이",
+      "description": "쿠바에 미사일을 배치했지만 러시아를 탈스탈린화하기도 한 변덕스러운 소련 지도자. \"우리가 너희를 묻어버릴 것이다!\""
+    },
+    "ronald-reagan": {
+      "name": "로널드 레이건",
+      "role": "위대한 소통가",
+      "description": "\"악의 제국\"에게 장벽을 허물라고 도전했다. 스타워즈를 꿈꾼 자."
+    },
+    "mikhail-gorbachev": {
+      "name": "미하일 고르바초프",
+      "role": "개혁가",
+      "description": "글라스노스트로 소련을 구하려 했으나 우연히 소련을 끝냈다. 피자헛 광고 스타."
+    }
+  },
+  "timelines": {
+    "nuclear-war": {
+      "title": "핵 아포칼립스 ☢️💀",
+      "description": "냉전이 열전으로 바뀐다. 문명은 1962년에 끝난다.",
+      "divergence_description": "쿠바 미사일 위기 동안 외교가 실패한다.",
+      "present_day_status": "워싱턴 D.C.의 폐허는 방사능 늪이 되었다. 소수의 인류 부족이 남반구에서 살아남았다. 그들은 세상을 불태운 \"불의 신들\"에 관한 전설을 이야기한다. ☠️☢️",
+      "events": {
+        "the-exchange": {
+          "title": "핵 교환",
+          "description": "미사일이 날아간다. 첫 한 시간 만에 5억 명이 사망한다.",
+          "impact": "현대 문명의 종말."
+        },
+        "nuclear-winter": {
+          "title": "핵겨울",
+          "description": "하늘이 검게 변한다. 작물이 말라 죽는다. 살아남은 자들은 죽은 자를 부러워한다.",
+          "impact": "멸종 사건."
+        }
+      },
+      "consequences": {
+        "stone-age": {
+          "short_term": "전면적 붕괴",
+          "long_term": "인류는 석기 시대로 돌아간다",
+          "global_impact": "방사능에 오염된 행성"
+        }
+      },
+      "butterfly": {
+        "mutant-cockroaches": {
+          "trigger": "방사능",
+          "consequence": "곤충이 지구를 물려받는다"
+        }
+      }
+    },
+    "soviet-victory": {
+      "title": "붉은 세계: 소련의 승리 🚩🌍",
+      "description": "소련이 냉전에서 승리했다면 어땠을까?",
+      "divergence_description": "1970년대에 미국 경제가 붕괴하는 동안 소련은 성공적으로 개혁한다.",
+      "present_day_status": "서기장이 지구 최고소비에트에서 연설한다. 붉은 깃발이 백악관(이제는 인민궁전) 위에서 휘날린다. 자본주의는 잊혀진 악몽이다. 🚩☭",
+      "events": {
+        "red-mars": {
+          "title": "소련의 화성 착륙",
+          "description": "우주비행사들이 화성에 붉은 깃발을 꽂는다.",
+          "impact": "기술적 지배."
+        },
+        "us-collapse": {
+          "title": "미국 붕괴",
+          "description": "미국은 서로 싸우는 여러 국가로 분열한다. 소련이 평화유지군을 파견한다.",
+          "impact": "전 지구적 공산주의."
+        }
+      },
+      "consequences": {
+        "global-planning": {
+          "short_term": "전 세계적 계획경제",
+          "long_term": "우주 공산주의",
+          "global_impact": "당의 통치 아래 통일된 지구"
+        }
+      },
+      "butterfly": {
+        "space-colonization": {
+          "trigger": "중공업에 대한 소련의 집중",
+          "consequence": "우주의 더 이른 산업화"
+        }
+      }
+    },
+    "peaceful-coexistence": {
+      "title": "스타트렉의 미래: 공존 🕊️🚀",
+      "description": "초강대국들이 협력했다면 어땠을까?",
+      "divergence_description": "데탕트가 성공한다. 우주 경쟁이 공동 사업이 된다.",
+      "present_day_status": "통합 지구 연방이 은하를 탐험한다. 빈곤은 사라졌다. 전쟁은 한물갔다. 🖖🌍",
+      "events": {
+        "joint-moon": {
+          "title": "공동 달 착륙",
+          "description": "암스트롱과 가가린이 함께 달에 발을 디딘다.",
+          "impact": "단결."
+        }
+      },
+      "consequences": {
+        "world-peace": {
+          "short_term": "대리전의 종식",
+          "long_term": "전 지구적 연방",
+          "global_impact": "유토피아"
+        }
+      },
+      "butterfly": {
+        "mars-2000": {
+          "trigger": "협력",
+          "consequence": "2000년까지 화성 식민지"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "cuban-missile-crisis": {
+      "title": "쿠바 미사일 위기 (1962)",
+      "text": "대통령님, 소련이 쿠바에 미사일을 배치했습니다. 르메이는 그것들을 폭격하기를 원합니다. 흐루쇼프는 우리가 터키에서 주피터 미사일을 철수할 것을 요구합니다. 시간이 촉박합니다.",
+      "choices": {
+        "blockade": {
+          "text": "섬을 해상 봉쇄하라. 그들에게 생각할 시간을 주어라.",
+          "consequence": "흐루쇼프가 물러선다. 미사일이 철수된다. 우리는 살아남는다."
+        },
+        "airstrike": {
+          "text": "공습을 개시하라! 그것들을 제거하라!",
+          "consequence": "소련이 보복한다. 뉴욕이 증발한다."
+        },
+        "backchannel": {
+          "text": "비밀 거래: 터키 미사일을 쿠바와 맞바꾸자.",
+          "consequence": "공정한 거래. 평화는 확보되지만, 군부는 격노한다."
+        }
+      }
+    },
+    "space-race": {
+      "title": "우주 경쟁 (1969)",
+      "text": "우리는 뒤처져 있습니다. 소련이 최초의 인간을 우주로 보냈습니다. 이제 우리는 달을 목표로 합니다. 하지만 그 비용은 천문학적입니다.",
+      "choices": {
+        "apollo": {
+          "text": "우리는 달에 가기로 선택한다! 전액 지원.",
+          "consequence": "이글호가 착륙했다. 미국이 위신 전쟁에서 승리한다."
+        },
+        "joint-mission": {
+          "text": "소련과의 공동 임무를 제안하라.",
+          "consequence": "그들이 수락한다! \"소유즈-아폴로\"가 달에 착륙한다."
+        },
+        "military-space": {
+          "text": "달은 잊어라. 궤도 무기를 건설하라.",
+          "consequence": "소련도 똑같이 한다. 우주가 전장이 된다."
+        }
+      }
+    },
+    "berlin-wall": {
+      "title": "이 장벽을 허무시오 (1987)",
+      "text": "고르바초프는 고전하고 있습니다. 소련 경제가 무너지고 있습니다. 당신은 브란덴부르크 문 앞에 서 있습니다.",
+      "choices": {
+        "tear-down": {
+          "text": " \"고르바초프 씨, 이 장벽을 허무시오!\"",
+          "consequence": "장벽이 무너진다. 철의 장막이 붕괴한다."
+        },
+        "quiet-diplomacy": {
+          "text": "소련을 떠받치기 위해 재정 지원을 제안하라.",
+          "consequence": "소련이 살아남는다. 냉전은 굉음이 아니라 흐느낌과 함께 끝난다."
+        }
+      }
+    }
+  }
+}

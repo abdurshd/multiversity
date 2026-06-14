@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Html, Line } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
+import { useTranslation } from 'react-i18next';
 import * as THREE from 'three';
 import { CampaignSceneOverlayProps } from '../GenericCampaign3DView';
 
@@ -248,6 +249,7 @@ export const LeninIndustrialOverlay: React.FC<CampaignSceneOverlayProps> = ({ st
 };
 
 export const HitlerNoirOverlay: React.FC<CampaignSceneOverlayProps> = ({ state }) => {
+  const { t } = useTranslation('components-simulation');
   const danger = clamp(state.pulse.intensity, 0, 1);
   return (
     <group>
@@ -261,7 +263,7 @@ export const HitlerNoirOverlay: React.FC<CampaignSceneOverlayProps> = ({ state }
       </mesh>
       <Html position={[1.8, 1.4, 1.2]} center distanceFactor={10}>
         <div className="rounded border border-red-500/40 bg-slate-950/80 px-2 py-1 text-[10px] text-red-200">
-          Street volatility: {Math.round(danger * 100)}%
+          {t('overlayLabels.street_volatility', { value: Math.round(danger * 100), defaultValue: 'Street volatility: {{value}}%' })}
         </div>
       </Html>
     </group>
@@ -384,6 +386,7 @@ export const ColdWarGlobeOverlay: React.FC<CampaignSceneOverlayProps> = () => {
 };
 
 export const USSRCollapseOverlay: React.FC<CampaignSceneOverlayProps> = ({ state }) => {
+  const { t } = useTranslation('components-simulation');
   const desaturation = clamp(state.pulse.intensity * 0.5, 0.16, 0.55);
   return (
     <group>
@@ -395,7 +398,7 @@ export const USSRCollapseOverlay: React.FC<CampaignSceneOverlayProps> = ({ state
       ))}
       <Html position={[-1.6, 1.2, 1]} center distanceFactor={11}>
         <div className="rounded border border-slate-500/60 bg-slate-900/80 px-2 py-1 text-[10px] text-slate-200">
-          Secession pressure wave active
+          {t('overlayLabels.secession_wave', { defaultValue: 'Secession pressure wave active' })}
         </div>
       </Html>
     </group>
@@ -462,6 +465,7 @@ export const AIGridOverlay: React.FC<CampaignSceneOverlayProps> = ({ state }) =>
 };
 
 export const FutureEarthOrbitalOverlay: React.FC<CampaignSceneOverlayProps> = ({ state }) => {
+  const { t } = useTranslation('components-simulation');
   return (
     <group>
       <mesh position={[0, -0.35, 0]}>
@@ -481,7 +485,7 @@ export const FutureEarthOrbitalOverlay: React.FC<CampaignSceneOverlayProps> = ({
       <OrbitSweep radius={4.1} color="#a855f7" speed={0.31} y={-0.35} />
       <Html position={[0, 1.6, 0]} center distanceFactor={13}>
         <div className="rounded border border-amber-300/40 bg-slate-950/80 px-2 py-1 text-[10px] text-amber-200">
-          Orbital expansion: {Math.round(state.pulse.intensity * 100)}%
+          {t('overlayLabels.orbital_expansion', { value: Math.round(state.pulse.intensity * 100), defaultValue: 'Orbital expansion: {{value}}%' })}
         </div>
       </Html>
     </group>

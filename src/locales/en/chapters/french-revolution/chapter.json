@@ -1,112 +1,216 @@
 {
   "meta": {
-    "title": "The French Revolution",
-    "period": "1789-1799",
-    "description": "The overthrow of monarchy and the birth of modern political ideologies",
-    "historical_context": "The French Revolution shattered the ancien régime and unleashed forces that would reshape Europe and the world. From constitutional monarchy to republican experiment to Reign of Terror to Napoleon's rise, it demonstrated both the promise and peril of revolutionary change.",
-    "divergence_point": "Critical decisions that could have steered France toward different revolutionary outcomes"
+    "title": "French Revolution",
+    "period": "1789",
+    "description": "Liberty, Equality, Fraternity... and lots of guillotines! 🇫🇷⚡",
+    "historical_context": "By 1789, France was bankrupt and hungry.",
+    "divergence_point": "Storming of the Bastille"
   },
   "figures": {
-    "louis_xvi": {
-      "name": "King Louis XVI",
-      "role": "Last King of France",
-      "description": "A well-meaning but indecisive monarch whose weakness in crisis doomed both himself and the monarchy."
+    "marie-antoinette": {
+      "name": "Marie Antoinette",
+      "role": "Queen of France & Fashion Icon",
+      "description": "The cake-loving queen who allegedly said \"Let them eat cake!\" 🍰 Known for her extravagant parties and love of fancy dresses while people starved."
     },
     "robespierre": {
       "name": "Maximilien Robespierre",
-      "role": "Leader of the Jacobins",
-      "description": "The Incorruptible. A true believer in revolutionary virtue whose idealism led to the guillotine - for others and ultimately himself."
+      "role": "The Incorruptible Guillotine Master",
+      "description": "The obsessively clean revolutionary who loved his guillotine a bit too much! 🗡️ Started as a defender of the people, ended as the Terror's chief architect."
     },
-    "napoleon": {
+    "louis-xvi": {
+      "name": "Louis XVI",
+      "role": "The Indecisive King",
+      "description": "Poor Louis! 👑 Loved making locks more than making decisions. His hobby was locksmithing while his kingdom fell apart!"
+    },
+    "napoleon-bonaparte": {
       "name": "Napoleon Bonaparte",
-      "role": "Revolutionary General",
-      "description": "The Corsican artillery officer who rose to become Emperor, embodying both revolutionary ideals and authoritarian power."
+      "role": "The Little Emperor with Big Dreams",
+      "description": "The short general who conquered most of Europe! ⚡ Rose from the chaos to become Emperor and reshape the world."
+    },
+    "jacques-danton": {
+      "name": "Georges Danton",
+      "role": "The Thunderous Voice of Revolution",
+      "description": "The booming orator who could shake buildings with his voice! 📢 Unfortunately, even his powerful voice couldn't save him from Robespierre."
     }
   },
   "timelines": {
-    "constitutional_monarchy": {
-      "title": "The Moderate Path: Constitutional Monarchy Succeeds",
-      "description": "What if Louis XVI genuinely embraced constitutional reform in 1789?",
-      "divergence_description": "King Louis XVI decisively accepts the constitutional monarchy proposed by moderate revolutionaries.",
+    "constitutional-monarchy": {
+      "title": "King Louis Learns to Share! 👑🤝",
+      "description": "What if Louis XVI had embraced constitutional monarchy?",
+      "divergence_description": "Louis XVI genuinely accepts constitutional limits.",
+      "present_day_status": "France leads the European Union as a Constitutional Monarchy. The Bourbons are beloved figureheads. Paris is the capital of peace. 🇫🇷👑",
       "events": {
-        "royal_acceptance_1789": {
-          "title": "The King's Choice",
-          "description": "Louis XVI surprises everyone by enthusiastically endorsing the Declaration of Rights and constitutional reforms. He becomes France's first constitutional monarch.",
-          "impact": "Radical revolutionaries lose support. Moderate reformers control the National Assembly."
+        "louis-accepts-constitution": {
+          "title": "Louis XVI Accepts Constitution",
+          "description": "Louis becomes a model constitutional king.",
+          "impact": "Prevents radicalization."
         },
-        "peaceful_reforms_1791": {
-          "title": "The Bloodless Revolution",
-          "description": "A new constitution balances royal authority with parliamentary democracy. The nobility accept gradual reforms rather than face violent expropriation.",
-          "impact": "France transitions to constitutional monarchy without terror or war."
-        },
-        "model_for_europe_1795": {
-          "title": "The French Model",
-          "description": "France's peaceful transition inspires similar reforms across Europe. Monarchies adopt constitutions to avoid revolution.",
-          "impact": "Constitutional monarchy becomes the norm in Europe, preventing decades of war."
+        "industrial-revolution-france": {
+          "title": "French Industrial Revolution",
+          "description": "Stability leads to early industrialization.",
+          "impact": "France becomes economic superpower."
         }
       },
       "consequences": {
-        "short_term": "France modernizes without the bloodshed of the Terror or the chaos of war.",
-        "long_term": "Gradual reform rather than violent revolution becomes the model for political change in Europe.",
-        "global_impact": "No Napoleonic Wars means European resources aren't devastated. Earlier industrialization and liberalization."
+        "stable-democracy": {
+          "short_term": "Stable government for 30 years",
+          "long_term": "France becomes model constitutional democracy",
+          "global_impact": "Peaceful spread of democratic ideals"
+        }
       },
-      "present_day_status": "France remains a constitutional monarchy similar to the United Kingdom. The Bourbon dynasty evolved with democracy rather than being overthrown. Europe unified peacefully earlier, with less nationalist conflict."
+      "butterfly": {
+        "peaceful-europe": {
+          "trigger": "No Napoleonic Wars",
+          "consequence": "Europe focuses on trade"
+        }
+      }
     },
-    "radical_triumph": {
-      "title": "Permanent Revolution: Jacobin Republic Endures",
-      "description": "What if Robespierre survived and the radical revolution continued?",
-      "divergence_description": "The Thermidorian Reaction fails. Robespierre consolidates power and transforms France into a lasting radical republic.",
+    "robespierre-eternal": {
+      "title": "Robespierre's Eternal Terror! 😱🗡️",
+      "description": "What if Robespierre had survived?",
+      "divergence_description": "Robespierre purges his enemies before Thermidor.",
+      "present_day_status": "The Republic of Virtue collapsed in 1824. It is remembered as a dark age. Annual \"Never Again\" parades feature guillotine piñatas. 🎭🗡️",
       "events": {
-        "robespierre_survives_1794": {
-          "title": "The Failed Coup",
-          "description": "Robespierre learns of the plot against him and strikes first. His opponents go to the guillotine instead.",
-          "impact": "The Terror continues but becomes more systematic and ideologically focused."
+        "robespierre-survives": {
+          "title": "Robespierre Survives",
+          "description": "The plot fails. The Terror intensifies.",
+          "impact": "Revolutionary dictatorship consolidated."
         },
-        "revolutionary_state_1800": {
-          "title": "The Jacobin Commonwealth",
-          "description": "Robespierre builds a revolutionary state based on civic virtue, public education, and radical democracy. Property is redistributed, the Church is suppressed.",
-          "impact": "France becomes the world's first modern totalitarian state, built on enlightenment principles."
-        },
-        "export_revolution_1810": {
-          "title": "The Revolutionary Wars",
-          "description": "France exports revolution throughout Europe, but through ideology rather than Napoleonic conquest. Revolutionary cells destabilize monarchies.",
-          "impact": "Europe fractures into revolutionary and reactionary blocs. Constant ideological warfare."
+        "cult-supreme-being": {
+          "title": "Cult of the Supreme Being",
+          "description": "New state religion enforced.",
+          "impact": "Theocracy established."
         }
       },
       "consequences": {
-        "short_term": "France is more radical and egalitarian but also more repressive and isolated.",
-        "long_term": "The revolutionary-reactionary split dominates 19th century politics even more intensely.",
-        "global_impact": "Socialist and communist movements emerge earlier and stronger. Different path to modern leftist politics."
+        "totalitarian-state": {
+          "short_term": "First modern totalitarian state",
+          "long_term": "Terror lasts decades",
+          "global_impact": "Template for future dictators"
+        }
       },
-      "present_day_status": "The French Jacobin Republic survived into the modern era, evolving into a unique form of radical democracy. It inspired socialist movements worldwide but also pioneered modern authoritarianism. The ideological split between Jacobin and liberal democracies still defines global politics."
+      "butterfly": {
+        "early-totalitarianism": {
+          "trigger": "Police state perfected",
+          "consequence": "Totalitarianism spreads earlier"
+        }
+      }
     },
-    "royal_restoration": {
-      "title": "The Counter-Revolution: Royalist Victory",
-      "description": "What if the Vendée Uprising succeeded in restoring the monarchy?",
-      "divergence_description": "The royalist Vendée Uprising receives foreign support and succeeds in overthrowing the revolutionary government.",
+    "girondist-victory": {
+      "title": "The Girondists Win! Democracy Lite 🕊️🏛️",
+      "description": "What if the moderate Girondists defeated the Jacobins?",
+      "divergence_description": "Girondists resist Jacobin coup.",
+      "present_day_status": "The French Federal Republic is the heart of a federal Europe. The Girondist model inspired the world. 🇫🇷🧀",
       "events": {
-        "vendee_triumph_1793": {
-          "title": "The White Terror",
-          "description": "With British and Austrian support, royalist forces win decisive victories. The revolutionary government collapses.",
-          "impact": "Royalists execute revolutionary leaders. Thousands flee to America and Switzerland."
-        },
-        "restoration_1795": {
-          "title": "The Bourbon Restoration",
-          "description": "Louis XVII is crowned. The old aristocracy returns, demanding revenge and property restoration.",
-          "impact": "France returns to absolute monarchy, more reactionary than before 1789."
-        },
-        "reactionary_alliance_1800": {
-          "title": "The Holy Alliance Triumphant",
-          "description": "France leads a coalition of reactionary monarchies to crush liberalism throughout Europe.",
-          "impact": "Democratic movements are suppressed. Europe remains feudal longer."
+        "federal-republic": {
+          "title": "Federal Republic Established",
+          "description": "Decentralized democracy like the USA.",
+          "impact": "Respects regional autonomy."
         }
       },
       "consequences": {
-        "short_term": "Revolutionary ideals go underground but aren't eliminated. Resentment festers.",
-        "long_term": "Without French Revolutionary example, democratic movements develop more slowly worldwide.",
-        "global_impact": "Aristocratic and monarchical systems persist longer. Later, more violent revolutions when they finally come."
+        "moderate-democracy": {
+          "short_term": "Stable federal republic",
+          "long_term": "Model for federalism",
+          "global_impact": "Influences German unification"
+        }
       },
-      "present_day_status": "France experienced a delayed revolution in the 1860s, similar to the 1848 revolutions but more violent. Democracy came later to Europe. Monarchies survived longer but fell harder when they finally collapsed in the 20th century."
+      "butterfly": {
+        "federal-europe": {
+          "trigger": "Successful federalism",
+          "consequence": "Early European Federal Union"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "estates-general": {
+      "title": "The Tennis Court Oath (1789)",
+      "text": "Versailles. The King has locked you out. The people are angry. The rain is falling. Where do we meet?",
+      "choices": {
+        "oath": {
+          "text": "To the Tennis Court! Swear a new Constitution!",
+          "consequence": "The National Assembly is born. The Revolution begins."
+        },
+        "compromise": {
+          "text": "Petition the Kind humbly.",
+          "consequence": "Louis is touched by your loyalty. He grants a constitution peacefully."
+        },
+        "go-home": {
+          "text": "This is treason. Go home.",
+          "consequence": "The revolution happens without you. You are forgotten."
+        }
+      }
+    },
+    "storming-bastille": {
+      "title": "July 14th (1789)",
+      "text": "The Bastille looms above Paris. It holds gunpowder. The mob looks to you for leadership.",
+      "choices": {
+        "assault": {
+          "text": "Storm the fortress!",
+          "consequence": "The Bastille falls! The King is terrified."
+        },
+        "negotiate": {
+          "text": "Negotiate with the Governor.",
+          "consequence": "He opens fire while you talk. The mob massacres everyone. You failed."
+        }
+      }
+    },
+    "flight-varennes": {
+      "title": "The King Escapes (1791)",
+      "text": "The King has fled Paris in disguise! He is stopped at Varennes. The crowd surrounds his carriage.",
+      "choices": {
+        "arrest": {
+          "text": "Arrest him! He is a traitor.",
+          "consequence": "The Monarchy is dead. The Republic is born."
+        },
+        "let-go": {
+          "text": "Let him pass. France needs a King.",
+          "consequence": "He returns with an Austrian army. The Revolution is crushed."
+        }
+      }
+    },
+    "kings-trial": {
+      "title": "Trial of Citizen Capet (1793)",
+      "text": "Louis XVI is on trial. The Jacobins want blood. The Girondins want mercy. How do you vote?",
+      "choices": {
+        "execute": {
+          "text": "Death! The King must die so the nation may live.",
+          "consequence": "The guillotine falls. Europe declares war."
+        },
+        "exile": {
+          "text": "Exile. Do not stain the Republic with blood.",
+          "consequence": "The King is banished. The Moderates win."
+        }
+      }
+    },
+    "reign-of-terror": {
+      "title": "The Great Terror (1793)",
+      "text": "Robespierre rules. The Committee of Public Safety sees enemies everywhere. Your neighbor has been arrested.",
+      "choices": {
+        "purge": {
+          "text": "Support the purges. Purity is essential.",
+          "consequence": "You survive, but at what cost?"
+        },
+        "thermidor": {
+          "text": "Plot against Robespierre.",
+          "consequence": "The coup succeeds! The Terror ends."
+        }
+      }
+    },
+    "napoleon-rises": {
+      "title": "18 Brumaire (1799)",
+      "text": "General Bonaparte has returned. He plans a coup to restore order. He asks for your support.",
+      "choices": {
+        "emperor": {
+          "text": "Hail Caesar! France needs a strongman.",
+          "consequence": "The Empire begins. Glory and war await."
+        },
+        "republic": {
+          "text": "Defend the Constitution.",
+          "consequence": "Napoleon is arrested. The Republic survives (weakly)."
+        }
+      }
     }
   }
 }

@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "히틀러의 부상",
+    "period": "1920-1945",
+    "description": "역사가 주는 경고. ⚠️💀",
+    "historical_context": "증오에 의해 파괴된 연약한 민주주의.",
+    "divergence_point": "미술 학교"
+  },
+  "figures": {
+    "adolf-hitler": {
+      "name": "아돌프 히틀러",
+      "role": "독재자",
+      "description": "실패한 화가에서 독재자가 된 인물. 그의 부상은 역사가 주는 경고이다."
+    },
+    "paul-von-hindenburg": {
+      "name": "파울 폰 힌덴부르크",
+      "role": "대통령",
+      "description": "히틀러를 통제할 수 있다고 착각한 노쇠한 전쟁 영웅."
+    },
+    "claus-von-stauffenberg": {
+      "name": "클라우스 폰 슈타우펜베르크",
+      "role": "음모자",
+      "description": "서류 가방 폭탄으로 히틀러를 암살하려 한 장교."
+    }
+  },
+  "timelines": {
+    "art-school-timeline": {
+      "title": "화가 히틀러 🎨✨",
+      "description": "히틀러는 평범한 풍경 화가가 된다. 20세기는 평화롭다.",
+      "divergence_description": "1907년 빈 미술 아카데미에 합격하다.",
+      "present_day_status": "아돌프 히틀러는 미술사 책의 각주에 불과하다. 독일은 안정된 공화국이다. 세계 인구는 훨씬 더 많다. 🎨🕊️",
+      "events": {
+        "gallery-opening": {
+          "title": "뮌헨 갤러리 개관",
+          "description": "아돌프 히틀러가 자신의 '바이에른의 산' 컬렉션을 전시한다. 평론가들은 '지루하지만 유능하다'고 평한다.",
+          "impact": "그는 결코 정치에 입문하지 않는다."
+        }
+      },
+      "consequences": {
+        "no-wwii": {
+          "short_term": "바이마르 공화국이 살아남는다",
+          "long_term": "홀로코스트 없음, 제2차 세계대전 없음",
+          "global_impact": "수백만 명이 살아남았다"
+        }
+      },
+      "butterfly": {
+        "soviet-expansion": {
+          "trigger": "약한 독일",
+          "consequence": "스탈린이 나치의 저항 없이 서쪽으로 확장한다"
+        }
+      }
+    },
+    "beer-hall-success": {
+      "title": "맥주홀의 승리 🍺⚡",
+      "description": "나치가 1923년에 권력을 장악한다.",
+      "divergence_description": "맥주홀 폭동이 성공한다.",
+      "present_day_status": "'천년 제국'은 15년 동안 지속되었다. 독일은 1938년에 분할되었다. 🇩🇪⚔️",
+      "events": {
+        "march-on-berlin": {
+          "title": "베를린 진군",
+          "description": "바이마르 정부가 무너진다. 히틀러는 35세에 독재자가 된다.",
+          "impact": "이른 재무장."
+        }
+      },
+      "consequences": {
+        "early-war": {
+          "short_term": "전쟁이 1930년에 시작된다",
+          "long_term": "독일이 더 일찍 지친다",
+          "global_impact": "혼돈"
+        }
+      },
+      "butterfly": {
+        "french-intervention": {
+          "trigger": "이른 침략",
+          "consequence": "프랑스가 독일을 영구히 점령한다"
+        }
+      }
+    },
+    "assassination-success": {
+      "title": "발키리 작전 성공 🎯⚡",
+      "description": "히틀러가 1944년에 암살된다. 전쟁이 일찍 끝난다.",
+      "divergence_description": "슈타우펜베르크의 폭탄이 히틀러를 죽인다.",
+      "present_day_status": "7월 20일은 세계적인 기념일이다. 클라우스 폰 슈타우펜베르크는 영웅이다. 홀로코스트는 1년 일찍 끝났다. 🎯🕊️",
+      "events": {
+        "operation-valkyrie": {
+          "title": "발키리 작전",
+          "description": "예비군이 베를린을 장악한다. SS가 무장 해제된다.",
+          "impact": "나치 정권이 해체된다."
+        },
+        "peace-deal": {
+          "title": "서방과의 평화",
+          "description": "독일이 완전한 파괴를 피하고 연합군에 항복한다.",
+          "impact": "철의 장막이 동쪽으로 이동한다."
+        }
+      },
+      "consequences": {
+        "saved-lives": {
+          "short_term": "강제 수용소가 일찍 해방된다",
+          "long_term": "수백만 명의 유대인과 군인이 구출된다",
+          "global_impact": "더 적은 트라우마"
+        }
+      },
+      "butterfly": {
+        "stronger-germany": {
+          "trigger": "더 적은 파괴",
+          "consequence": "독일이 강대국으로 남는다"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "art-school": {
+      "title": "미술 아카데미 (1907)",
+      "text": "빈. 당신은 아돌프라는 이름의 젊고 야심 찬 화가이다. 교수가 당신의 포트폴리오를 살펴보고 있다. 그는 회의적인 표정이다.",
+      "choices": {
+        "plead": {
+          "text": "합격시켜 달라고 간청하라. 열심히 하겠다고 약속하라.",
+          "consequence": "교수가 마음을 누그러뜨린다. 당신은 합격한다!"
+        },
+        "accept-fate": {
+          "text": "분노하며 불합격을 받아들여라.",
+          "consequence": "당신은 격노하며 떠난다. 정치가 당신의 새로운 열정이 된다."
+        },
+        "architecture": {
+          "text": "대신 건축을 시도하라.",
+          "consequence": "당신은 학력이 부족하다. 결국 빈에서 노숙자가 된다."
+        }
+      }
+    },
+    "beer-hall": {
+      "title": "맥주홀 폭동 (1923)",
+      "text": "뮌헨. 당신의 손에는 권총이 있다. 바이에른 지도자들이 연설하고 있다. 권력을 장악할 때이다!",
+      "choices": {
+        "march": {
+          "text": "즉시 베를린으로 진군하라!",
+          "consequence": "경찰이 발포한다. 당신은 운 좋게 살아남는다."
+        },
+        "capture-leaders": {
+          "text": "지도자들을 인질로 잡고 충성을 강요하라.",
+          "consequence": "효과적으로 작동한다. 바이에른이 함락된다. 다음은 베를린이다."
+        }
+      }
+    },
+    "prison-landsberg": {
+      "title": "란츠베르크 감옥 (1924)",
+      "text": "당신은 편안한 감방에 있다. 생각할 시간이 있다. 루돌프 헤스가 받아쓸 준비가 되어 있다.",
+      "choices": {
+        "write-book": {
+          "text": "'나의 투쟁'을 써라. 이념의 윤곽을 잡아라.",
+          "consequence": "그 책은 베스트셀러가 된다. 운동에는 경전이 생긴다."
+        },
+        "give-up": {
+          "text": "정치에서 은퇴하라. 그것은 실수였다.",
+          "consequence": "당신은 무명 속으로 사라진다. 바이마르 공화국이 살아남는다."
+        }
+      }
+    },
+    "reichstag-fire": {
+      "title": "국회의사당 화재 (1933)",
+      "text": "의회가 불타고 있다! 이것은 신호이다. 우리는 '공산주의 음모'를 막기 위해 비상 권한을 요구해야 한다.",
+      "choices": {
+        "seize-power": {
+          "text": "수권법을 요구하라. 절대 권력.",
+          "consequence": "힌덴부르크가 서명한다. 민주주의가 죽는다."
+        },
+        "coalition": {
+          "text": "정상적인 연립 유지 정부를 구성하라.",
+          "consequence": "당신은 법에 의해 제약받는다. 운동은 추진력을 잃는다."
+        }
+      }
+    },
+    "night-long-knives": {
+      "title": "장검의 밤 (1934)",
+      "text": "SA와 룀이 위협이 되고 있다. 군부는 그들이 사라지기를 원한다. 명단이 준비되었다.",
+      "choices": {
+        "purge": {
+          "text": "모두 죽여라. 경쟁자는 허용되지 않는다.",
+          "consequence": "SS가 부상한다. 군부가 당신에게 충성을 맹세한다."
+        },
+        "spare": {
+          "text": "룀을 살려라. 그는 오랜 친구이다.",
+          "consequence": "군부가 SA에 대항해 쿠데타를 일으킨다. 내전이 발발한다."
+        }
+      }
+    },
+    "valkyrie": {
+      "title": "늑대 소굴 (1944)",
+      "text": "전쟁은 패했다. 러시아가 다가오고 있다. 슈타우펜베르크 대령이 탁자 밑에 서류 가방을 둔다.",
+      "choices": {
+        "survive": {
+          "text": "탁자에서 멀어져라. (역사적 사실)",
+          "consequence": "폭탄이 터지지만 당신은 살아남는다. 음모자들은 교수형에 처해진다."
+        },
+        "die": {
+          "text": "그대로 있어라. (발키리 작전 성공)",
+          "consequence": "쾅. 폭군이 죽었다. 발키리 작전이 시작된다."
+        }
+      }
+    }
+  }
+}

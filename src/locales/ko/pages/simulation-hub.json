@@ -1,0 +1,58 @@
+{
+  "common": {
+    "loading": "시뮬레이션 데이터를 불러오는 중...",
+    "abort": "중단",
+    "return_to_modules": "모듈로 돌아가기",
+    "initialize_simulation": "시뮬레이션 초기화",
+    "re_run_simulation": "시뮬레이션 다시 실행",
+    "active": "시뮬레이션 진행 중",
+    "ready": "시뮬레이션 준비 완료"
+  },
+  "briefing": {
+    "start_simulation": "시뮬레이션 시작",
+    "based_on_history": "역사적 기록에 기반함",
+    "time_period": "시대",
+    "divergence_point": "분기점",
+    "no_scenarios": "이 모듈에 사용할 수 있는 시나리오가 없습니다"
+  },
+  "stats": {
+    "freedom": "자유",
+    "chaos": "혼돈",
+    "diplomacy": "외교",
+    "strength": "힘"
+  },
+  "status": {
+    "simulation_active": "상태: 시뮬레이션 진행 중",
+    "divergence_prob": "분기 확률"
+  },
+  "analyzing": {
+    "detecting_divergence": "타임라인 분기를 감지하는 중...",
+    "analyzing_causality": "인과 관계 사슬을 분석하는 중"
+  },
+  "outcomes": {
+    "destabilized": {
+      "title": "타임라인 불안정화",
+      "desc": "임계 엔트로피 수준에 도달했습니다. 현실의 무결성이 손상되었습니다."
+    },
+    "libertarian": {
+      "title": "자유지상주의 유토피아",
+      "desc": "사회적 결속을 대가로 최대한의 개인의 자유를 달성했습니다."
+    },
+    "imperial": {
+      "title": "제국적 패권",
+      "desc": "절대 권력을 통해 질서가 유지됩니다. 반대 의견은 제거되었습니다."
+    },
+    "federation": {
+      "title": "세계 연방",
+      "desc": "유례없는 협력과 관료제를 통해 평화가 달성되었습니다."
+    },
+    "equilibrium": {
+      "title": "역사적 균형",
+      "desc": "타임라인이 안정적으로 유지됩니다. 표준 편차가 허용 범위 이내입니다."
+    }
+  },
+  "world_status": {
+    "title": "현재 상태",
+    "default": "타임라인이 우리의 역사와 유사하게 안정화되었으며, 약간의 변화가 있습니다."
+  }
+}

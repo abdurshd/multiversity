@@ -1,0 +1,188 @@
+{
+  "page": {
+    "title": "역사의 장",
+    "description": "역사를 바꾼 14개의 결정적 순간을 탐험해 보세요. 각 순간마다 서로 다른 선택이 우리 세계를 어떻게 빚어낼 수 있었는지 보여주는 3개의 대체 타임라인이 담겨 있습니다."
+  },
+  "search": {
+    "placeholder": "장, 주요 사건 또는 분기점을 검색하세요...",
+    "clear": "검색 지우기",
+    "no_results": "장을 찾을 수 없습니다",
+    "no_results_description": "더 많은 장을 찾으려면 검색어나 필터를 조정해 보세요."
+  },
+  "filters": {
+    "all": "모든 시대",
+    "18th_century": "18세기",
+    "19th_century": "19세기",
+    "20th_century": "20세기",
+    "21st_century": "21세기",
+    "other": "기타",
+    "showing": "전체 {{total}}개 장 중 {{count}}개 표시 중",
+    "clear_filters": "필터 지우기"
+  },
+  "stats": {
+    "chapters": "장",
+    "alt_timelines": "대체 타임라인",
+    "key_events": "기록된 주요 사건"
+  },
+  "card": {
+    "key_events": "주요 사건:",
+    "timelines": "타임라인 {{count}}개",
+    "explore": "탐험하기"
+  },
+  "chapters": {
+    "timur_legacy": {
+      "title": "티무르의 유산",
+      "period": "14세기",
+      "description": "마지막 위대한 유목 정복자와 그의 제국",
+      "key_events": [
+        "앙카라 전투",
+        "중국 원정",
+        "티무르 르네상스"
+      ]
+    },
+    "us_independence": {
+      "title": "미국 독립",
+      "period": "1776년",
+      "description": "미국 혁명과 그 대체 결과들",
+      "key_events": [
+        "독립 선언",
+        "독립 전쟁",
+        "제헌 회의"
+      ]
+    },
+    "french_revolution": {
+      "title": "프랑스 혁명",
+      "period": "1789년",
+      "description": "왕정의 몰락과 선택되지 않은 길들",
+      "key_events": [
+        "바스티유 습격",
+        "공포 정치",
+        "나폴레옹의 부상"
+      ]
+    },
+    "lincoln_era": {
+      "title": "링컨 시대",
+      "period": "1860년대",
+      "description": "남북 전쟁, 노예제 그리고 재건의 대안들",
+      "key_events": [
+        "링컨 당선",
+        "남북 전쟁",
+        "노예 해방 선언"
+      ]
+    },
+    "russian_empire": {
+      "title": "러시아 제국",
+      "period": "1721-1917년",
+      "description": "차르 체제의 러시아와 중앙아시아 확장",
+      "key_events": [
+        "표트르 대제",
+        "예카테리나 2세",
+        "크림 전쟁"
+      ]
+    },
+    "lenin_revolution": {
+      "title": "레닌 혁명",
+      "period": "1917년",
+      "description": "볼셰비키의 승리와 소비에트 국가 수립",
+      "key_events": [
+        "10월 혁명",
+        "내전",
+        "전시 공산주의"
+      ]
+    },
+    "hitler_rise": {
+      "title": "히틀러의 부상",
+      "period": "1920-1940년대",
+      "description": "나치 독일과 제2차 세계대전의 대체 경로들",
+      "key_events": [
+        "뮌헨 폭동",
+        "권력 장악",
+        "제2차 세계대전"
+      ]
+    },
+    "world_war_1": {
+      "title": "제1차 세계대전",
+      "period": "1914-1918년",
+      "description": "대전쟁과 그 대체 결과들",
+      "key_events": [
+        "대공 암살",
+        "참호전",
+        "베르사유 조약"
+      ]
+    },
+    "world_war_2": {
+      "title": "제2차 세계대전",
+      "period": "1939-1945년",
+      "description": "극적으로 다른 결과를 낳은 세계적 충돌",
+      "key_events": [
+        "폴란드 침공",
+        "진주만 공습",
+        "노르망디 상륙 작전"
+      ]
+    },
+    "cold_war": {
+      "title": "냉전",
+      "period": "1947-1991년",
+      "description": "초강대국의 경쟁과 핵 대치의 대안들",
+      "key_events": [
+        "철의 장막",
+        "쿠바 미사일 위기",
+        "베를린 장벽"
+      ]
+    },
+    "ussr_collapse": {
+      "title": "소련 붕괴",
+      "period": "1991년",
+      "description": "소비에트 연방의 종말과 대체 해체 시나리오들",
+      "key_events": [
+        "고르바초프 개혁",
+        "8월 쿠데타",
+        "독립 선언들"
+      ]
+    },
+    "covid_pandemic": {
+      "title": "코로나19 팬데믹",
+      "period": "2019년",
+      "description": "현대의 위기와 세계적 대응의 대안들",
+      "key_events": [
+        "우한 발병",
+        "전 세계 봉쇄",
+        "백신 경쟁"
+      ]
+    },
+    "ai_revolution": {
+      "title": "AI 혁명",
+      "period": "2020년대",
+      "description": "인공지능의 부상과 미래의 경로들",
+      "key_events": [
+        "GPT-4 출시",
+        "AGI 돌파구",
+        "규제 논쟁"
+      ]
+    },
+    "future_earth": {
+      "title": "미래의 지구",
+      "period": "2100년 이후",
+      "description": "인류와 지구를 위한 장기 미래 시나리오",
+      "key_events": [
+        "기후 티핑 포인트",
+        "우주 식민지화",
+        "포스트휴머니즘"
+      ]
+    },
+    "korea_destiny": {
+      "title": "한반도의 운명",
+      "period": "1945-2025년",
+      "description": "분단된 민족의 운명: 통일, 전쟁, 또는 평화",
+      "key_events": [
+        "1945년 분단",
+        "한국 전쟁",
+        "한강의 기적"
+      ]
+    }
+  },
+  "bottom_section": {
+    "title": "인터랙티브 타임라인 경험",
+    "description": "각 장에는 인과관계 시각화와 함께 상세한 타임라인이 담겨 있어, 작은 변화가 역사의 흐름을 어떻게 극적으로 바꿀 수 있었는지 보여줍니다."
+  }
+}

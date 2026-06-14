@@ -1,0 +1,37 @@
+{
+  "stats": {
+    "chaos": "Tartibsizlik",
+    "freedom": "Erkinlik",
+    "diplomacy": "Diplomatiya",
+    "strength": "Kuch"
+  },
+  "start": {
+    "tagline": "Jonli solnoma. Kashf eting, qaror qabul qiling va boshqaring — tanlovlaringiz bir necha haqiqatdan birini yaratadi.",
+    "enter": "⚔ Solnomaga kirish"
+  },
+  "cinematic": {
+    "skip": "O'tkazib yuborish ▸▸"
+  },
+  "explore": {
+    "continue": "Davom etish ➤",
+    "close": "Yopish"
+  },
+  "battle": {
+    "badge": "Jang",
+    "sound_drums": "⚔ Nog'oralarni chaling",
+    "hangs": "⏸ Jang taqdiri hal bo'lmoqda"
+  },
+  "ending": {
+    "reality_takes_shape": "Haqiqat shakllanmoqda",
+    "explore_reality": "🌍 Ushbu haqiqatni o'rganing",
+    "rewrite": "↺ Tarixni qaytadan yozish",
+    "back_to_chapter": "Bobga qaytish"
+  },
+  "page": {
+    "unavailable_title": "Bu solnoma hali yozilmoqda",
+    "unavailable_description": "Bu bob uchun chuqur 3D tajriba hali mavjud emas. Temur merosi — birinchi o'ynaladigan solnoma.",
+    "play_timur": "⚔ Temur merosini o'ynash",
+    "all_chapters": "Barcha boblar",
+    "exit": "← Chiqish"
+  }
+}

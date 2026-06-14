@@ -1,112 +1,244 @@
 {
   "meta": {
-    "title": "The American Revolution",
-    "period": "1775-1783",
-    "description": "The birth of a nation and its alternative paths to independence",
-    "historical_context": "The American Revolution transformed thirteen British colonies into an independent nation. The conflict tested revolutionary ideals against military reality, with victory far from certain at many critical junctures.",
-    "divergence_point": "Critical decisions during the Revolutionary War that could have changed the outcome"
+    "title": "US Independence",
+    "period": "1776",
+    "description": "The American Revolution and the birth of a new nation. Explore how different choices during this pivotal period could have led to dramatically different outcomes for America and the world.",
+    "historical_context": "By 1776, tensions between Great Britain and its American colonies had reached a breaking point. Years of taxation without representation, military occupation, and restrictive policies had created a revolutionary movement that would change the course of world history.",
+    "divergence_point": "Declaration of Independence and Revolutionary War"
   },
   "figures": {
-    "george_washington": {
+    "george-washington": {
       "name": "George Washington",
-      "role": "Commander-in-Chief of Continental Army",
-      "description": "The indispensable man whose leadership held the revolutionary cause together through its darkest hours."
+      "role": "Commander-in-Chief, Continental Army",
+      "description": "Leader of the Continental Army and first President of the United States"
     },
-    "benjamin_franklin": {
+    "benjamin-franklin": {
       "name": "Benjamin Franklin",
       "role": "Diplomat and Founding Father",
-      "description": "The sage whose diplomacy secured crucial French support for the revolutionary cause."
+      "description": "Diplomat who secured French alliance and helped draft the Declaration of Independence"
     },
-    "king_george_iii": {
+    "king-george-iii": {
       "name": "King George III",
-      "role": "British Monarch",
-      "description": "The king whose stubbornness prolonged the war but whose flexibility could have prevented it."
+      "role": "King of Great Britain",
+      "description": "British monarch during the American Revolution"
+    },
+    "thomas-jefferson": {
+      "name": "Thomas Jefferson",
+      "role": "Primary author of Declaration of Independence",
+      "description": "Third President and primary author of the Declaration of Independence"
     }
   },
   "timelines": {
-    "british_victory": {
-      "title": "The Loyalist States: British Victory",
-      "description": "What if Washington was captured at Valley Forge and the revolution collapsed?",
-      "divergence_description": "British forces launch a surprise winter attack on Valley Forge, capturing Washington and destroying the Continental Army.",
+    "british-victory": {
+      "title": "British Victory Timeline",
+      "description": "Revolutionary War fails, America remains a British colony until the 1850s",
+      "divergence_description": "French alliance never forms, Washington is captured at Valley Forge",
+      "present_day_status": "The United States exists as the American Commonwealth, a semi-autonomous region within a reformed British Empire. Parliamentary democracy with the British monarch as ceremonial head of state. Economy similar to our timeline but with stronger ties to Commonwealth nations.",
       "events": {
-        "valley_forge_disaster_1778": {
-          "title": "The Valley Forge Catastrophe",
-          "description": "British intelligence discovers the weakness of the Continental Army's winter position. A coordinated assault captures Washington and scatters his forces.",
-          "impact": "The revolutionary cause loses its symbol of unity. Colonial resistance fragments into guerrilla warfare."
+        "washington-captured-1778": {
+          "title": "Washington Captured at Valley Forge",
+          "description": "British surprise attack captures George Washington and decimates Continental Army",
+          "impact": "Revolutionary leadership destroyed, resistance collapses"
         },
-        "reconciliation_act_1780": {
-          "title": "The Reconciliation Act",
-          "description": "Britain offers amnesty and limited self-governance to colonies that lay down arms. Most accept, fearing further bloodshed.",
-          "impact": "The thirteen colonies remain British, gaining parliamentary representation but not independence."
+        "colonial-submission-1779": {
+          "title": "Colonial Submission",
+          "description": "Remaining colonial leaders surrender to British forces",
+          "impact": "End of organized resistance, return to colonial status"
         },
-        "loyalist_dominance_1790": {
-          "title": "The Loyalist Ascendancy",
-          "description": "Former loyalists dominate colonial governments. Revolutionary sympathizers emigrate to French Louisiana or Spanish Florida.",
-          "impact": "North America develops differently, with closer ties to the British Empire."
+        "harsh-punishments-1780": {
+          "title": "Harsh British Punishments",
+          "description": "Britain imposes severe penalties on rebellious colonies",
+          "impact": "Heavy taxation, military occupation, restricted freedoms"
         }
       },
       "consequences": {
-        "short_term": "Revolutionary ideals are suppressed but not extinguished. Underground resistance continues.",
-        "long_term": "No American Revolution inspires French and Latin American independence movements less effectively.",
-        "global_impact": "The British Empire remains stronger into the 20th century. Democracy spreads more slowly worldwide."
+        "delayed-independence": {
+          "short_term": "America remains under British rule with harsh restrictions",
+          "long_term": "Independence delayed by 75 years, achieved through negotiation rather than revolution",
+          "global_impact": "French Revolution might not have occurred without American example"
+        }
       },
-      "present_day_status": "The Commonwealth of American States remains part of a constitutional British Empire. Independence came gradually through negotiation in the 1920s. North America is more culturally British, with stronger monarchist traditions."
+      "butterfly": {
+        "no-french-revolution": {
+          "trigger": "No American example of successful revolution",
+          "consequence": "French Revolution delayed or takes different form"
+        }
+      }
     },
-    "early_independence": {
-      "title": "The Olive Branch Accepted: Peaceful Resolution",
-      "description": "What if King George III accepted the Olive Branch Petition in 1775?",
-      "divergence_description": "Parliament moderates convince the King to accept colonial demands for representation without taxation.",
+    "french-america": {
+      "title": "French America Timeline",
+      "description": "France directly intervenes and America becomes a French protectorate",
+      "divergence_description": "France commits massive military forces early in the war, demanding political control in return",
+      "present_day_status": "The French American Republic is a bilingual nation with strong cultural ties to France. Constitutional democracy with a civil law system. Major power in both Atlantic and Pacific, with special relationship to EU rather than Britain.",
       "events": {
-        "olive_branch_accepted_1775": {
-          "title": "The Royal Compromise",
-          "description": "King George III, swayed by moderate advisors, accepts the Olive Branch Petition and suspends the Intolerable Acts.",
-          "impact": "Armed conflict is averted. Negotiations begin for colonial representation in Parliament."
+        "massive-french-intervention-1777": {
+          "title": "Massive French Military Intervention",
+          "description": "France sends 50,000 troops and large naval fleet to America",
+          "impact": "Overwhelming military superiority against British forces"
         },
-        "imperial_parliament_1780": {
-          "title": "The Imperial Parliament Act",
-          "description": "A reformed Parliament includes representatives from all colonies, creating a true trans-Atlantic legislature.",
-          "impact": "The British Empire becomes the world's first transcontinental democracy."
-        },
-        "peaceful_evolution_1800": {
-          "title": "Dominion Status Achieved",
-          "description": "The American colonies achieve dominion status, gaining autonomy while maintaining ties to Britain.",
-          "impact": "A peaceful model for decolonization emerges a century early."
+        "treaty-protectorate-1778": {
+          "title": "Treaty of French Protectorate",
+          "description": "America agrees to become French protectorate in exchange for independence from Britain",
+          "impact": "Political control shifts from Britain to France"
         }
       },
       "consequences": {
-        "short_term": "Revolutionary sentiment channels into reformist politics rather than armed rebellion.",
-        "long_term": "A united Anglo-American Empire dominates the 19th century economically and militarily.",
-        "global_impact": "Democratic ideals spread through reform rather than revolution. Less violent path to independence for other colonies."
+        "french-cultural-influence": {
+          "short_term": "French language and culture become dominant in America",
+          "long_term": "Bilingual French-English speaking nation with strong European ties",
+          "global_impact": "Catholic rather than Protestant cultural influence in North America"
+        }
       },
-      "present_day_status": "The American Dominion remains Britain's closest ally in a reformed Commonwealth. The special relationship is literal political union. English-speaking democracies form an even more dominant global bloc."
+      "butterfly": {
+        "stronger-france": {
+          "trigger": "France gains enormous territory and resources",
+          "consequence": "France remains dominant European power through 19th century"
+        }
+      }
     },
-    "fragmented_states": {
-      "title": "The Disunited States: Failed Federation",
-      "description": "What if the Constitutional Convention of 1787 failed and the states went separate ways?",
-      "divergence_description": "Deep divisions over slavery, trade, and state sovereignty cause the Constitutional Convention to collapse.",
+    "confederated-states": {
+      "title": "Loose Confederation Timeline",
+      "description": "Weak confederation of independent states, no strong federal government",
+      "divergence_description": "Articles of Confederation never replaced, states remain largely independent",
+      "present_day_status": "The Confederated States of America operates as a loose federal system with very strong state governments. Similar to Switzerland or early EU model. Economic development similar to our timeline but with stronger ties to Commonwealth nations.",
       "events": {
-        "convention_failure_1787": {
-          "title": "The Philadelphia Breakdown",
-          "description": "Irreconcilable differences between northern and southern states doom the Constitutional Convention. Delegates return home in bitter failure.",
-          "impact": "The Articles of Confederation collapse. States begin acting as independent nations."
-        },
-        "trade_wars_1790": {
-          "title": "The Tariff Wars",
-          "description": "States impose tariffs on each other. New York and Pennsylvania nearly go to war over river navigation rights.",
-          "impact": "Economic fragmentation weakens all former colonies. European powers exploit divisions."
-        },
-        "regional_blocs_1800": {
-          "title": "The Three Americas",
-          "description": "Three regional confederations emerge: New England Federation, Mid-Atlantic Alliance, and Southern Confederacy.",
-          "impact": "North America fragments like South America did in our timeline."
+        "constitutional-convention-fails-1787": {
+          "title": "Constitutional Convention Fails",
+          "description": "States cannot agree on new constitution, Articles of Confederation remain",
+          "impact": "Weak central government continues, states maintain independence"
         }
       },
       "consequences": {
-        "short_term": "Economic depression and interstate conflict weaken all regions.",
-        "long_term": "No united America means no westward expansion. European powers maintain control of western territories.",
-        "global_impact": "No American superpower in the 20th century. Britain and France dominate longer. Different World War outcomes."
+        "delayed-development": {
+          "short_term": "Slow economic development due to trade barriers between states",
+          "long_term": "Industrialization delayed by several decades",
+          "global_impact": "America remains primarily agricultural power longer"
+        }
       },
-      "present_day_status": "North America is divided into seven independent nations: New England, New York Republic, Pennsylvania Commonwealth, Virginia Union, Carolina Federation, Georgia and the Gulf States. Constant rivalries prevent unification. British Canada is the dominant North American power."
+      "butterfly": {
+        "different-civil-war": {
+          "trigger": "Weaker federal government cannot prevent secession",
+          "consequence": "Multiple smaller conflicts instead of single civil war"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "colonial-uprising": {
+      "title": "The Boston Tea Party (1773)",
+      "text": "You are a merchant in Boston. The Sons of Liberty are gathering at the harbor. They plan to dump British tea into the ocean. The Redcoats are watching. What do you do?",
+      "choices": {
+        "join": {
+          "text": "Put on a disguise and join them. Liberty or death!",
+          "consequence": "You become a marked man, but a hero to the patriots. The revolution begins."
+        },
+        "report": {
+          "text": "Report them to the Governor. This is destruction of property!",
+          "consequence": "The British arrest the ringleaders. The rebellion is stifled for now."
+        },
+        "watch": {
+          "text": "Watch from the shadows. Keep your head down.",
+          "consequence": "The event happens without you. You survive, but have no voice in what comes next."
+        }
+      }
+    },
+    "reconciliation-effort": {
+      "title": "The King's Peace (1774)",
+      "text": "Thanks to loyal subjects like you, the \"Tea Party\" was thwarted. But anger remains. You are invited to London to speak to Parliament.",
+      "choices": {
+        "demand-rights": {
+          "text": "Demand representation for the colonies.",
+          "consequence": "Parliament laughs at you. You return home radicalized."
+        },
+        "accept-status": {
+          "text": "Accept a minor trade deal and pledge loyalty.",
+          "consequence": "You prevent war, but America remains a colony forever."
+        }
+      }
+    },
+    "continental-congress": {
+      "title": "Independence Hall (1776)",
+      "text": "Philadelphia. The delegates are debating. Jefferson has drafted a Declaration of Independence. Some say it is treason. How do you vote?",
+      "choices": {
+        "vote-yes": {
+          "text": "Vote YES. \"We must all hang together!\"",
+          "consequence": "The Declaration is signed. War is declared."
+        },
+        "vote-no": {
+          "text": "Vote NO. We cannot win against the British Empire.",
+          "consequence": "The motion fails. The colonies remain divided. The British pick them off one by one."
+        }
+      }
+    },
+    "long-island": {
+      "title": "Disaster at Long Island (1776)",
+      "text": "The British have landed a massive army in New York. Washington's forces are outnumbered and outflanked. The river is at your back.",
+      "choices": {
+        "retreat-night": {
+          "text": "Retreat across the river under cover of fog.",
+          "consequence": "A miraculous escape! The army lives to fight another day."
+        },
+        "stand-ground": {
+          "text": "Stand and fight! \"No retreat, no surrender!\"",
+          "consequence": "Your brave stand is doomed. The army is surrounded and crushed."
+        }
+      }
+    },
+    "washington-captured": {
+      "title": "The End of the Revolution (1776)",
+      "text": "General Washington is in chains. The Continental Army is no more. The King offers a pardon to all who swear allegiance.",
+      "choices": {
+        "submit": {
+          "text": "Swear allegiance to King George III.",
+          "consequence": "The revolution is over. Order is restored."
+        },
+        "guerilla": {
+          "text": "Flee to the hills and fight a guerilla war.",
+          "consequence": "You fight for years, but without leadership, it is just banditry."
+        }
+      }
+    },
+    "valley-forge": {
+      "title": "Winter of Despair (1777)",
+      "text": "Valley Forge. Cold, hunger, and smallpox are killing your men. Baron von Steuben offers to train them, but morale is breaking.",
+      "choices": {
+        "inoculate": {
+          "text": "Order mass inoculation against smallpox. Risky but necessary.",
+          "consequence": "Many die, but the epidemic stops. The army emerges stronger."
+        },
+        "attack-philly": {
+          "text": "Attack Philadelphia to get warm quarters.",
+          "consequence": "The attack is a disaster. The army is destroyed in the snow."
+        }
+      }
+    },
+    "french-alliance": {
+      "title": "The French Court (1778)",
+      "text": "Ben Franklin is in Paris. The King of France offers an alliance, but demands the US become a protectorate under French law.",
+      "choices": {
+        "accept-protectorate": {
+          "text": "Accept. We need their navy at any cost.",
+          "consequence": "The French fleet arrives and crushes the British. But now you answer to Versailles."
+        },
+        "demand-equal": {
+          "text": "Refuse. \"Equal partners or nothing.\"",
+          "consequence": "Franklin charms the court. They agree to an equal alliance!"
+        }
+      }
+    },
+    "yorktown-finale": {
+      "title": "Victory at Yorktown (1781)",
+      "text": "Cornwallis is trapped. The British surrender. You have won the war! Now you must win the peace.",
+      "choices": {
+        "federal-constitution": {
+          "text": "Draft a strong Constitution with a central government.",
+          "consequence": "The United States of America is born. A new superpower rises."
+        },
+        "keep-confederation": {
+          "text": "Keep power with the states. No more kings!",
+          "consequence": "The states bicker and fight. The union is weak."
+        }
+      }
     }
   }
 }

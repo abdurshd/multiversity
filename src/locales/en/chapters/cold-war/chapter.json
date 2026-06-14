@@ -1,112 +1,173 @@
 {
   "meta": {
     "title": "The Cold War",
-    "period": "1947-1991",
-    "description": "The superpower rivalry that shaped the modern world",
-    "historical_context": "For nearly half a century, two superpowers armed with nuclear weapons faced off across ideological lines. The Cold War shaped everything from space exploration to Third World revolutions, from cultural production to arms races. The conflict ended with Soviet collapse, but could have gone very differently.",
-    "divergence_point": "Critical moments when the Cold War could have turned hot, ended earlier, or concluded differently"
+    "period": "1945-1991",
+    "description": "Mutually Assured Destruction. ☢️❄️",
+    "historical_context": "Two superpowers partitioned the world.",
+    "divergence_point": "Cuban Missile Crisis"
   },
   "figures": {
-    "joseph_stalin": {
-      "name": "Joseph Stalin",
-      "role": "Soviet Leader",
-      "description": "The paranoid dictator whose suspicions of the West helped launch the Cold War."
+    "john-f-kennedy": {
+      "name": "John F. Kennedy",
+      "role": "The Young President",
+      "description": "Stared down nuclear war. \"We choose to go to the moon not because it is easy, but because it is hard.\""
     },
-    "harry_truman": {
-      "name": "Harry S. Truman",
-      "role": "US President",
-      "description": "The president who committed America to containing Soviet expansion worldwide."
+    "nikita-khrushchev": {
+      "name": "Nikita Khrushchev",
+      "role": "The Shoe-Banger",
+      "description": "Volatile Soviet leader who put missiles in Cuba but also destalinized Russia. \"We will bury you!\""
     },
-    "mikhail_gorbachev": {
+    "ronald-reagan": {
+      "name": "Ronald Reagan",
+      "role": "The Great Communicator",
+      "description": "Challenged the \"Evil Empire\" to tear down the wall. Star Wars dreamer."
+    },
+    "mikhail-gorbachev": {
       "name": "Mikhail Gorbachev",
-      "role": "Last Soviet Leader",
-      "description": "The reformer whose attempts to save communism inadvertently ended the Soviet Union."
+      "role": "The Reformer",
+      "description": "Tried to save the USSR with Glasnost, accidentally ended it. Pizza Hut star."
     }
   },
   "timelines": {
-    "nuclear_war": {
-      "title": "The Final War: Nuclear Apocalypse",
-      "description": "What if the Cuban Missile Crisis escalated to nuclear war in 1962?",
-      "divergence_description": "A misunderstanding during the Cuban Missile Crisis leads to nuclear exchange between the US and USSR.",
+    "nuclear-war": {
+      "title": "Nuclear Apocalypse ☢️💀",
+      "description": "The Cold War turns hot. Civilization ends in 1962.",
+      "divergence_description": "Diplomacy fails during the Cuban Missile Crisis.",
+      "present_day_status": "The ruins of Washington D.C. are a radioactive swamp. Small tribes of humans survive in the Southern Hemisphere. They tell legends of the \"Fire Gods\" who burned the world. ☠️☢️",
       "events": {
-        "missiles_launched_1962": {
-          "title": "October 27, 1962",
-          "description": "A Soviet submarine commander, believing war has begun, launches nuclear torpedoes. US retaliates. Within hours, ICBMs fly.",
-          "impact": "Major cities in both superpowers are destroyed. Hundreds of millions die in the first hours."
+        "the-exchange": {
+          "title": "The Exchange",
+          "description": "Missiles fly. 500 million die in the first hour.",
+          "impact": "End of modern civilization."
         },
-        "nuclear_winter_1963": {
-          "title": "The Dark Years",
-          "description": "Nuclear winter sets in. Global temperatures drop. Crops fail worldwide. Billions face starvation.",
-          "impact": "Human civilization collapses. Most of humanity perishes over the next five years."
-        },
-        "remnant_civilizations_1975": {
-          "title": "The Scattered Survivors",
-          "description": "Only isolated communities in the Southern Hemisphere and remote regions survive. Global population is reduced by 90%.",
-          "impact": "Humanity is set back centuries. The nuclear war becomes humanity's great filter."
+        "nuclear-winter": {
+          "title": "Nuclear Winter",
+          "description": "The sky turns black. Crops fail. The survivors envy the dead.",
+          "impact": "Extinction event."
         }
       },
       "consequences": {
-        "short_term": "Nuclear war kills billions. Civilization collapses globally.",
-        "long_term": "Human population reduced to pre-industrial levels. Centuries of recovery ahead.",
-        "global_impact": "The nuclear apocalypse nearly ends human civilization. Survivors build new societies from the ruins."
+        "stone-age": {
+          "short_term": "Total collapse",
+          "long_term": "Humanity returns to the Stone Age",
+          "global_impact": "Radioactive planet"
+        }
       },
-      "present_day_status": "Humanity slowly recovered from the brink of extinction. By 2025, global population has only reached 2 billion. Technology has been rebuilt but nuclear weapons are universally banned and their knowledge actively suppressed. The Great Death of 1962 defines all human culture and politics."
+      "butterfly": {
+        "mutant-cockroaches": {
+          "trigger": "Radiation",
+          "consequence": "Insects inherit the Earth"
+        }
+      }
     },
-    "soviet_victory": {
-      "title": "The Red Dawn: Soviet Victory in the Cold War",
-      "description": "What if the Soviet Union won the Cold War through superior economic performance?",
-      "divergence_description": "Soviet economic reforms in the 1960s succeed. The USSR outcompetes the West economically and politically.",
+    "soviet-victory": {
+      "title": "Red World: Soviet Victory 🚩🌍",
+      "description": "What if the USSR won the Cold War?",
+      "divergence_description": "The US economy collapses in the 1970s while the USSR reforms successfully.",
+      "present_day_status": "The General Secretary addresses the Supreme Soviet of Earth. The Red Flag flies over the White House (now the People's Palace). Capitalism is a forgotten nightmare. 🚩☭",
       "events": {
-        "kosygin_reforms_1965": {
-          "title": "The Soviet Economic Miracle",
-          "description": "Kosygin's market reforms are fully implemented. The Soviet economy becomes more efficient than central planning while maintaining socialist principles.",
-          "impact": "Soviet living standards rise above Western levels by 1980. The socialist model gains credibility worldwide."
+        "red-mars": {
+          "title": "Soviet Mars Landing",
+          "description": "Cosmonauts plant the Red Flag on Mars.",
+          "impact": "Technological dominance."
         },
-        "western_decline_1980": {
-          "title": "Crisis of Capitalism",
-          "description": "Stagflation and social unrest plague Western democracies. Communist parties gain power in France and Italy.",
-          "impact": "The West is on the defensive. Socialist movements grow globally."
-        },
-        "global_socialism_2000": {
-          "title": "The Socialist Century",
-          "description": "By 2000, most of the world has adopted democratic socialism. Market economies are heavily regulated. Wealth inequality is minimal.",
-          "impact": "A world dominated by social democratic values. Capitalism survives only in diminished form."
+        "us-collapse": {
+          "title": "US Collapse",
+          "description": "The USA fragments into warring states. The USSR sends peacekeeping troops.",
+          "impact": "Global communism."
         }
       },
       "consequences": {
-        "short_term": "Soviet economic reforms succeed. USSR wins the economic competition with capitalism.",
-        "long_term": "Global shift toward democratic socialism. Market capitalism becomes marginalized.",
-        "global_impact": "More egalitarian but possibly less innovative world. Different technological development path."
+        "global-planning": {
+          "short_term": "Planned economy globally",
+          "long_term": "Space communism",
+          "global_impact": "Unified Earth under the Party"
+        }
       },
-      "present_day_status": "The world is dominated by democratic socialist economies with strong workers' rights, universal healthcare, and limited wealth inequality. Innovation is slower but more equitably distributed. Environmental protection stronger. The Cold War ended with socialism's peaceful victory in the marketplace of ideas."
+      "butterfly": {
+        "space-colonization": {
+          "trigger": "Soviet focus on heavy industry",
+          "consequence": "Earlier industrialization of space"
+        }
+      }
     },
-    "early_detente": {
-      "title": "The Peace Dividend: Early End to Cold War",
-      "description": "What if Stalin died earlier and Khrushchev's peaceful coexistence succeeded in the 1950s?",
-      "divergence_description": "Stalin dies in 1950. Khrushchev rises earlier and implements deep reforms. Genuine détente emerges in the 1950s.",
+    "peaceful-coexistence": {
+      "title": "Star Trek Future: Coexistence 🕊️🚀",
+      "description": "What if the superpowers cooperated?",
+      "divergence_description": "Detente succeeds. Space Race becomes a joint venture.",
+      "present_day_status": "The United Earth Federation explores the galaxy. Poverty is eliminated. War is obsolete. 🖖🌍",
       "events": {
-        "stalin_death_1950": {
-          "title": "The Tyrant Falls",
-          "description": "Stalin dies three years earlier. Khrushchev consolidates power quickly and begins de-Stalinization immediately.",
-          "impact": "The Soviet Union reforms earlier and more thoroughly. The worst of the Cold War never happens."
-        },
-        "geneva_accord_1955": {
-          "title": "True Peaceful Coexistence",
-          "description": "Eisenhower and Khrushchev reach genuine accommodation. Nuclear arsenals are limited. Both sides accept spheres of influence.",
-          "impact": "Cold War never becomes as dangerous. Arms race is limited. Resources go to development instead."
-        },
-        "cooperative_space_program_1969": {
-          "title": "Apollo-Soyuz Moonshot",
-          "description": "US and USSR reach the Moon together in a joint mission. Scientific cooperation becomes the norm.",
-          "impact": "Cold War evolves into competition within cooperation. Proxy wars are avoided."
+        "joint-moon": {
+          "title": "Joint Moon Landing",
+          "description": "Armstrong and Gagarin step onto the moon together.",
+          "impact": "Unity."
         }
       },
       "consequences": {
-        "short_term": "Cold War tensions ease in the 1950s. Arms race is limited. Proxy wars avoided.",
-        "long_term": "Gradual convergence of systems. USSR reforms slowly toward democracy. West accepts more social welfare.",
-        "global_impact": "Resources saved from arms race go to development. Earlier space exploration and scientific advance."
+        "world-peace": {
+          "short_term": "End of proxy wars",
+          "long_term": "Global Federation",
+          "global_impact": "Utopia"
+        }
       },
-      "present_day_status": "The early détente led to gradual convergence of Soviet and Western systems. The USSR evolved into a social democratic federation by the 1980s. Without the intense Cold War, decolonization was less violent and development more rapid. The peace dividend accelerated human progress by decades."
+      "butterfly": {
+        "mars-2000": {
+          "trigger": "Cooperation",
+          "consequence": "Mars colony by 2000"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "cuban-missile-crisis": {
+      "title": "Cuban Missile Crisis (1962)",
+      "text": "President, the Soviets have missiles in Cuba. LeMay wants to bomb them. Khrushchev demands we remove Jupiter missiles from Turkey. The clock is ticking.",
+      "choices": {
+        "blockade": {
+          "text": "Quarantine the island. Give them time to think.",
+          "consequence": "Khrushchev blinks. The missiles are removed. We survive."
+        },
+        "airstrike": {
+          "text": "Launch airstrikes! Take them out!",
+          "consequence": "The Soviets retaliate. New York is vaporized."
+        },
+        "backchannel": {
+          "text": "Secret deal: trade Turkey missiles for Cuba.",
+          "consequence": "A fair trade. Peace is secured, but the military is furious."
+        }
+      }
+    },
+    "space-race": {
+      "title": "The Space Race (1969)",
+      "text": "We are behind. The Soviets put the first man in space. Now we aim for the moon. But the cost is astronomical.",
+      "choices": {
+        "apollo": {
+          "text": "We choose to go to the moon! Full funding.",
+          "consequence": "Eagle has landed. America wins the prestige war."
+        },
+        "joint-mission": {
+          "text": "Propose a joint mission with the USSR.",
+          "consequence": "They accept! The \"Soyuz-Apollo\" lands on the moon."
+        },
+        "military-space": {
+          "text": "Forget the moon. Build orbital weapons.",
+          "consequence": "The Soviets do the same. Space becomes a battlefield."
+        }
+      }
+    },
+    "berlin-wall": {
+      "title": "Tear Down This Wall (1987)",
+      "text": "Mr. Gorbachev is struggling. The Soviet economy is failing. You are at the Brandenburg Gate.",
+      "choices": {
+        "tear-down": {
+          "text": " \"Mr. Gorbachev, tear down this wall!\"",
+          "consequence": "The Wall falls. The Iron Curtain collapses."
+        },
+        "quiet-diplomacy": {
+          "text": "Offer financial aid to prop up the USSR.",
+          "consequence": "The USSR survives. The Cold War ends with a whimper, not a bang."
+        }
+      }
     }
   }
 }

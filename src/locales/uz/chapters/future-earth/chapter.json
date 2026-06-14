@@ -28,6 +28,7 @@
       "title": "Federatsiya: Yulduzlar Orasida 🚀✨",
       "description": "Agar biz birlashsak va galaktikani tinch yo'l bilan o'rgansak nima bo'ladi?",
       "divergence_description": "Insoniyat 'Buyuk Filtr'dan omon qoladi va yorug'likdan tezroq sayohatni kashf etadi.",
+      "present_day_status": "Yer parkga aylangan. Aholi orbital halqalar va mustamlaka dunyolarida yashaydi. Biz tadqiqotchilar, olimlar va san'atkorlarmiz. Qashshoqlik va urush qadimgi tarix darslaridir. 🖖🌍",
       "events": {
         "first-contact-2063": {
           "title": "Birinchi Aloqa",
@@ -41,22 +42,24 @@
         }
       },
       "consequences": {
-        "short_term": "Yer jannatga aylanadi.",
-        "long_term": "Insoniyat minglab dunyolarga tarqaladi.",
-        "global_impact": "Biz galaktikaning oqsoqollariga aylanamiz."
+        "galactic-peace": {
+          "short_term": "Yer jannatga aylanadi.",
+          "long_term": "Insoniyat minglab dunyolarga tarqaladi.",
+          "global_impact": "Biz galaktikaning oqsoqollariga aylanamiz."
+        }
       },
-      "butterfly": [
-        {
+      "butterfly": {
+        "infinite-diversity": {
           "trigger": "O'zga madaniyatlar bilan tanishish",
           "consequence": "Inson madaniyati cheksiz xilma-xil va murakkab bo'ladi."
         }
-      ],
-      "present_day_status": "Yer parkga aylangan. Aholi orbital halqalar va mustamlaka dunyolarida yashaydi. Biz tadqiqotchilar, olimlar va san'atkorlarmiz. Qashshoqlik va urush qadimgi tarix darslaridir. 🖖🌍"
+      }
     },
     "silent-earth": {
       "title": "Sokin Yer: Tabiat Qaytarib Olmoqda 🌿🦗",
       "description": "Agar biz o'zimizni yo'q qilsak va boshqa narsa ko'tarilsa nima bo'ladi?",
       "divergence_description": "Yadro urushi yoki iqlim qulashi murakkab sutemizuvchilar hayotini yo'q qiladi.",
+      "present_day_status": "O'rmonlar qaytib keldi. Havo toza. Atlantika okeanining chuqurligida Kalmar-Lordlar qadimgi xarobalarda topilgan g'alati 'Coca-Cola' shishalarining ma'nosini muhokama qilmoqdalar. 🦑🌊",
       "events": {
         "the-great-silence-2050": {
           "title": "Buyuk Sukunat",
@@ -70,22 +73,24 @@
         }
       },
       "consequences": {
-        "short_term": "Radioaktiv xarobalar.",
-        "long_term": "Geologik qatlamlardagi yupqa plastik qatlami bizdan qolgan yagona narsa.",
-        "global_impact": "Sayyora shifo topadi, ammo chandiqlar qoladi."
+        "plastic-layer": {
+          "short_term": "Radioaktiv xarobalar.",
+          "long_term": "Geologik qatlamlardagi yupqa plastik qatlami bizdan qolgan yagona narsa.",
+          "global_impact": "Sayyora shifo topadi, ammo chandiqlar qoladi."
+        }
       },
-      "butterfly": [
-        {
+      "butterfly": {
+        "new-intelligence": {
           "trigger": "Odamlar qoldirgan bo'shliq",
           "consequence": "Evolyutsiya intellekt tomon boshqa yo'lni tanlaydi."
         }
-      ],
-      "present_day_status": "O'rmonlar qaytib keldi. Havo toza. Atlantika okeanining chuqurligida Kalmar-Lordlar qadimgi xarobalarda topilgan g'alati 'Coca-Cola' shishalarining ma'nosini muhokama qilmoqdalar. 🦑🌊"
+      }
     },
     "dyson-swarm": {
       "title": "Dyson To'dasi: Mashina Xudosi ⚙️☀️",
       "description": "Agar biz kattaroq narsa qurish uchun Yerni qismlarga ajratsak nima bo'ladi?",
       "divergence_description": "Ekstremal sanoat kengayishi quyosh tizimini demontaj qilishga olib keladi.",
+      "present_day_status": "Yer yo'q. Faqat To'da bor. Quyosh atrofida aylanib yuradigan trillionlab yashash joylari uning energiyasining 100 foizini ushlaydi. Biz o'zimiz yaratgan xudolarmiz, abadiy va qudratli. ☀️🤖",
       "events": {
         "mercury-dismantling-2200": {
           "title": "Merkuriy Loyihasi",
@@ -99,87 +104,94 @@
         }
       },
       "consequences": {
-        "short_term": "Quyosh tizimi zavodga aylanadi.",
-        "long_term": "Quyosh Matrioshka Miya kompyuteriga o'ralgan.",
-        "global_impact": "Trillionlab virtual koinotlar yulduz energiyasida ishlaydi."
+        "matrioshka-brain": {
+          "short_term": "Quyosh tizimi zavodga aylanadi.",
+          "long_term": "Quyosh Matrioshka Miya kompyuteriga o'ralgan.",
+          "global_impact": "Trillionlab virtual koinotlar yulduz energiyasida ishlaydi."
+        }
       },
-      "butterfly": [
-        {
+      "butterfly": {
+        "stellar-engineering": {
           "trigger": "Materiya va energiya ustidan hukmronlik",
           "consequence": "Biz koinotning issiqlik o'limini oldini olish uchun yulduzlarni harakatlantirishni boshlaymiz."
         }
-      ],
-      "present_day_status": "Yer yo'q. Faqat To'da bor. Quyosh atrofida aylanib yuradigan trillionlab yashash joylari uning energiyasining 100 foizini ushlaydi. Biz o'zimiz yaratgan xudolarmiz, abadiy va qudratli. ☀️🤖"
+      }
     }
   },
-  "interactive-scenarios": [
-    {
+  "scenarios": {
+    "great-filter": {
       "title": "Buyuk Filtr (2100)",
-      "text": "2100 yil. Global harorat 3°C ga ko'tarildi. Resurslar tanqis. Superkuchlar o'rtasidagi keskinlik eng yuqori darajada. Isyonchi general oldindan zarba berishni taklif qilmoqda. Oldinga yo'l qanday?",
-      "choices": [
-        {
-          "text": "Zarba bering. Ulardan ko'ra biz.",
-          "consequence": "O'zaro Kafolatlangan Yo'q Qilish. 'Sokin Yer' xronologiyasi boshlanadi."
+      "text": "Global harorat +3°C. Resurslar tanqis. Isyonchi general oxirgi suv zaxiralarini ta'minlash uchun oldindan zarba berishni taklif qilmoqda. Vaqt tugab bormoqda.",
+      "choices": {
+        "nuclear-war": {
+          "text": "Zarba bering. Eng kuchlilar omon qoladi.",
+          "consequence": "O'zaro Kafolatlangan Yo'q Qilish. Sukunat cho'kadi."
         },
-        {
-          "text": "Resurslarni boshqarish uchun suverenitetni Global Federatsiyaga topshiring.",
-          "consequence": "Og'riqli o'tish, ammo urushning oldi olindi. Insoniyat yulduzlarga yetish uchun birlashadi. 'Yulduzli Yo'l' xronologiyasi boshlanadi."
+        "unification": {
+          "text": "Suverenitetni Global Federatsiyaga topshiring.",
+          "consequence": "Og'riqli o'tish, ammo tinchlik ta'minlanadi. Biz yulduzlarga qaraymiz."
         },
-        {
-          "text": "Jismoniy dunyoni tark eting. Insoniyatni bulutga yuklang.",
-          "consequence": "Jismoniy tanalar tashlanadi. Biz 'Dyson To'dasi'ga aylanamiz."
+        "upload": {
+          "text": "Biologiyadan voz keching. Insoniyatni Bulutga yuklang.",
+          "consequence": "Tana zaif. Mashina abadiy. Biz To'dani qura boshlaymiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Mars Qo'zg'oloni (2150)",
-      "text": "Mars koloniyasi o'zini o'zi ta'minlaydigan bo'ldi. Ular Yerning soliqlari va nazoratidan norozi. Ular mustaqillik e'lon qilishadi. Siz Yer Prezidentisiz. Qanday javob berasiz?",
-      "choices": [
-        {
-          "text": "Taslim bo'lgunlaricha Marsni qamal qiling.",
-          "consequence": "Qamal muvaffaqiyatsiz tugaydi. Mars ustun qurollarni ishlab chiqadi va Yerni zabt etadi."
+    "mars-rebellion": {
+      "title": "Qizil Sayyora Ko'tarilmoqda (2150)",
+      "text": "Mars koloniyasi o'zini o'zi ta'minlaydigan bo'ldi va Yerning soliqlaridan charchadi. Ular mustaqillik e'lon qilishadi. Siz Yer Prezidentisiz.",
+      "choices": {
+        "blockade": {
+          "text": "Marsni qamal qiling. Ularni ochlikka mahkum eting.",
+          "consequence": "Ular kinetik bombardimon bilan qarshilik ko'rsatadilar. Yer vayron bo'ladi."
         },
-        {
+        "recognize": {
           "text": "Ularning mustaqilligini tan oling. Biz birodarlarmiz.",
-          "consequence": "Tinch-totuv yashash ikki sayyorali sivilizatsiyaga olib keladi."
-        },
-        {
-          "text": "Gumbazlarni bombardimon qiling. Ularni ibrat qilib ko'rsating.",
-          "consequence": "Mars yo'q qilinadi. Yer ma'naviy tanazzulga va oxir-oqibat qulashga yuz tutadi."
+          "consequence": "Ikki sayyorali sivilizatsiya tug'iladi. Tinchlik farovonlik keltiradi."
         }
-      ]
+      }
     },
-    {
-      "title": "Galaktik Kengash (3000)",
-      "text": "Milodiy 3000 yil. Insoniyat yulduzlarga yetib bordi. O'zga sayyoralik zond kelib, bizni Galaktik Kengashga qo'shilishga taklif qiladi. Ammo bitta shart bor: biz tajovuzkor moyilliklarimizdan voz kechishimiz kerak.",
-      "choices": [
-        {
-          "text": "Shartlarni qabul qiling. Tinchlik yagona yo'l.",
-          "consequence": "Biz hurmatli oqsoqol irqqa aylanamiz. 'Federatsiya' xronologiyasi mustahkamlanadi."
+    "mercury-project": {
+      "title": "Merkuriyni Demontaj Qilish (2200)",
+      "text": "Biz To'damiz. Bizga ko'proq protsessorlar uchun materiallar kerak. Merkuriy metallga boy. Ammo Quyosh beqaror.",
+      "choices": {
+        "consume-mercury": {
+          "text": "Sayyorani butunlay yutib yuboring.",
+          "consequence": "Quyosh energiyasini ushlash 10 000% ga oshadi. Biz eksponensial ravishda o'samiz."
         },
-        {
-          "text": "Rad eting. Bizni qo'lga o'rgatib bo'lmaydi. Biz zabt etamiz.",
+        "hesitate": {
+          "text": "Sayyorani yodgorlik sifatida saqlab qoling.",
+          "consequence": "Quvvat yetarli emas. To'da ochlikdan/turg'unlikdan aziyat chekadi."
+        }
+      }
+    },
+    "galactic-council": {
+      "title": "Birinchi Aloqa (3000)",
+      "text": "O'zga sayyoralik zond keladi. Galaktik Kengash insoniyatni o'z safiga qo'shilishga taklif qiladi... agar biz qurollarimizdan voz kechsak.",
+      "choices": {
+        "join": {
+          "text": "Qabul qiling. Tinchlik yagona yo'l.",
+          "consequence": "Biz galaktikada hurmatli oqsoqol irqqa aylanamiz."
+        },
+        "refuse": {
+          "text": "Rad eting. Bizni qo'lga o'rgatib bo'lmaydi.",
           "consequence": "Biz galaktikaning balosiga aylanamiz. Buyuk Urush boshlanadi."
-        },
-        {
-          "text": "Yashiring. Quyosh tizimi atrofida qalqon quring.",
-          "consequence": "Biz xavfsiz, ammo turg'un 'Zohid Qirolligi' yulduz tizimiga aylanamiz."
         }
-      ]
+      }
     },
-    {
+    "final-entropy": {
       "title": "Oxirgi Savol (Vaqtning Oxiri)",
-      "text": "Trillionlab yillar o'tdi. Yulduzlar so'nmoqda. Koinot sovimoqda. Super-kompyuter AC so'raydi: 'Entropiyani qanday qilib teskari o'zgartirish mumkin?'",
-      "choices": [
-        {
-          "text": "MA'NOLI JAVOB UCHUN MA'LUMOTLAR HALI YETARLI EMAS.",
-          "consequence": "Kompyuter hisoblashda davom etadi... keyingi Katta Portlashgacha."
+      "text": "Trillionlab yillar o'tdi. Yulduzlar so'nmoqda. Super-kompyuter AC so'raydi: 'Entropiyani qanday qilib teskari o'zgartirish mumkin?'",
+      "choices": {
+        "insufficient-data": {
+          "text": "HOZIRCHA MA'LUMOTLAR YETARLI EMAS.",
+          "consequence": "Kompyuter abadiy hisoblaydi... keyingi Katta Portlashgacha."
         },
-        {
+        "light": {
           "text": "YORUG'LIK BO'LSIN.",
           "consequence": "Yangi koinot tug'iladi."
         }
-      ]
+      }
     }
-  ]
+  }
 }

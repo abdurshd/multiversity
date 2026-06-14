@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "소련 붕괴",
+    "period": "1985-1991",
+    "description": "역사의 종말? 🔨☢️",
+    "historical_context": "사라진 초강대국.",
+    "divergence_point": "고르바초프의 개혁"
+  },
+  "figures": {
+    "mikhail-gorbachev": {
+      "name": "미하일 고르바초프",
+      "role": "개혁가",
+      "description": "체제를 고치려 했지만 뜻하지 않게 무너뜨렸다. 🔨"
+    },
+    "boris-yeltsin": {
+      "name": "보리스 옐친",
+      "role": "혁명가",
+      "description": "탱크 위에 올라 제국을 끝장냈다. 🐻"
+    },
+    "ronald-reagan": {
+      "name": "로널드 레이건",
+      "role": "카우보이",
+      "description": "\"고르바초프 씨, 이 장벽을 허무시오!\" 🇺🇸"
+    }
+  },
+  "timelines": {
+    "union-preserved": {
+      "title": "소련 2.0 🇨🇳🔨",
+      "description": "소련이 중국식 개혁을 채택한다: 민주주의 없는 자본주의.",
+      "divergence_description": "고르바초프가 글라스노스트 없는 페레스트로이카를 선택한다.",
+      "present_day_status": "소련은 세계 최대 경제 대국이다. 권위주의적이지만 번영을 누린다. 인터넷은 강도 높게 검열된다. 🔨💰",
+      "events": {
+        "tiananmen-moscow": {
+          "title": "모스크바의 진압",
+          "description": "시위가 짓밟힌다. 당이 통제권을 유지한다.",
+          "impact": "안정."
+        }
+      },
+      "consequences": {
+        "economic-boom": {
+          "short_term": "안정",
+          "long_term": "2010년까지 경제 거인",
+          "global_impact": "양극 세계가 계속된다"
+        }
+      },
+      "butterfly": {
+        "cold-war-continues": {
+          "trigger": "강력한 소련",
+          "consequence": "냉전은 계속되지만 경제로 옮겨간다"
+        }
+      }
+    },
+    "violent-collapse": {
+      "title": "붉은 폭풍 ⚔️🔥",
+      "description": "붕괴가 내전으로 번진다.",
+      "divergence_description": "8월 쿠데타가 전면적인 내전으로 이어진다.",
+      "present_day_status": "러시아는 군벌 국가들의 집합이다. 유엔이 핵 시설을 순찰한다. ☢️💀",
+      "events": {
+        "civil-war-1991": {
+          "title": "제2차 러시아 내전",
+          "description": "강경파 대 민주파. 핵무기가 사라진다.",
+          "impact": "혼돈."
+        }
+      },
+      "consequences": {
+        "nuclear-terrorism": {
+          "short_term": "통제 잃은 핵무기",
+          "long_term": "전 세계적 불안정",
+          "global_impact": "악몽 같은 시나리오"
+        }
+      },
+      "butterfly": {
+        "un-intervention": {
+          "trigger": "혼돈",
+          "consequence": "나토가 서부 러시아를 점령한다"
+        }
+      }
+    },
+    "true-democracy": {
+      "title": "북유럽식 러시아 ❄️🗳️",
+      "description": "러시아가 순조롭게 사회민주주의로 전환한다.",
+      "divergence_description": "고르바초프와 옐친이 협력한다.",
+      "present_day_status": "러시아는 부유한 사회민주주의 국가이자 유럽연합의 핵심 회원국이다. 🇷🇺🇪🇺",
+      "events": {
+        "grand-bargain": {
+          "title": "대타협",
+          "description": "서방이 대규모 원조를 제공한다 (마셜 플랜 2.0).",
+          "impact": "경제가 안정된다."
+        }
+      },
+      "consequences": {
+        "eu-member": {
+          "short_term": "동반자 관계",
+          "long_term": "러시아가 유럽연합에 가입한다",
+          "global_impact": "리스본에서 블라디보스토크까지 이어지는 유럽"
+        }
+      },
+      "butterfly": {
+        "peaceful-world": {
+          "trigger": "적이 없음",
+          "consequence": "전 세계적 군축"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "chernobyl": {
+      "title": "체르노빌 (1986)",
+      "text": "4호 원자로가 폭발했다. 방사능이 유럽 전역으로 퍼지고 있다. 서방이 질문을 던지고 있다. 우리는 뭐라고 말해야 하는가?",
+      "choices": {
+        "truth": {
+          "text": "모든 진실을 말한다. 도움을 요청한다.",
+          "consequence": "굴욕적이지만 \"글라스노스트\"가 시작된다. 국민이 당신을 신뢰한다."
+        },
+        "lie": {
+          "text": "모든 것을 부인한다. \"경미한 사고.\"",
+          "consequence": "거짓말이 체제를 좀먹는다. 부패가 깊어진다."
+        }
+      }
+    },
+    "berlin-wall": {
+      "title": "장벽 (1989)",
+      "text": "동베를린에서 시위가 벌어진다. 사람들이 넘어오고 싶어 한다. 경비병들이 명령을 요청한다. 발포할 것인가?",
+      "choices": {
+        "open": {
+          "text": "쏘지 마라. 문을 열어라.",
+          "consequence": "장벽이 무너진다. 냉전이 끝난다. 자유!"
+        },
+        "shoot": {
+          "text": "국경을 지켜라! 발포!",
+          "consequence": "학살. 서방이 우리에게 제재를 가한다. 우리는 북한처럼 고립된다."
+        }
+      }
+    },
+    "august-coup": {
+      "title": "쿠데타 (1991)",
+      "text": "강경파가 권력을 장악했다. 탱크가 모스크바에 있다. 옐친이 탱크 위에서 저항을 호소하고 있다.",
+      "choices": {
+        "join-yeltsin": {
+          "text": "옐친과 함께 서라. 민주주의를 지켜라.",
+          "consequence": "쿠데타가 실패한다. 소련이 효율적으로 해체된다."
+        },
+        "support-coup": {
+          "text": "비상사태위원회를 지지하라. 질서가 우선이다.",
+          "consequence": "쿠데타가 성공한다. 소련은 구해지지만 자유는 죽는다."
+        },
+        "civil-war": {
+          "text": "군대를 분열시켜라. 싸워라!",
+          "consequence": "내전이 발발한다. 혼돈이 지배한다."
+        }
+      }
+    }
+  }
+}

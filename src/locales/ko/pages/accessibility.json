@@ -1,0 +1,27 @@
+{
+  "header": {
+    "category": "법적 고지",
+    "title": "접근성 선언문",
+    "subtitle": "WCAG 2.1 AA 표준을 준수합니다."
+  },
+  "sections": [
+    {
+      "title": "약속",
+      "content": "Multiversity는 학습자, 연구자, 교육자에게 동등한 접근성을 보장합니다. 저희는 WCAG 2.1 AA 지침을 준수하고자 노력하며, 키보드 탐색과 스크린 리더 호환성을 테스트하여 모든 사용자에게 매끄러운 경험을 제공합니다."
+    },
+    {
+      "title": "최근 개선 사항",
+      "list": [
+        "가독성 향상을 위한 고대비 색상 구성.",
+        "모든 챕터 및 타임라인 이미지에 대체 텍스트 제공.",
+        "모든 인터랙티브 요소에 대한 키보드 탐색 지원.",
+        "스크린 리더 탐색 향상을 위한 시맨틱 HTML 구조."
+      ]
+    },
+    {
+      "title": "지원 요청",
+      "content": "장애 요소를 신고하거나 대체 형식의 콘텐츠를 요청하시려면 accessibility@multiversity.netlify.app으로 이메일을 보내 주세요. 영업일 기준 5일 이내에 답변드리는 것을 목표로 합니다.",
+      "email": "accessibility@multiversity.netlify.app"
+    }
+  ]
+}

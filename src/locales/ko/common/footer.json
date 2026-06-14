@@ -1,0 +1,38 @@
+{
+  "cta": {
+    "heading": "역사를 다시 쓸 준비가 되셨나요?",
+    "description": "또 다른 타임라인을 탐험하고 작은 변화가 우리 세계를 어떻게 바꿀 수 있는지 알아보세요.",
+    "button": "탐험 시작"
+  },
+  "sections": {
+    "multiversity": "Multiversity",
+    "quick_links": "바로가기",
+    "resources": "자료"
+  },
+  "links": {
+    "about": "소개",
+    "methodology": "방법론",
+    "team": "팀",
+    "careers": "채용",
+    "documentation": "문서",
+    "api": "API",
+    "tutorials": "튜토리얼",
+    "blog": "블로그",
+    "chapters": "챕터",
+    "compare": "타임라인 비교",
+    "faq": "자주 묻는 질문",
+    "support": "고객 지원"
+  },
+  "legal": {
+    "privacy": "개인정보 처리방침",
+    "terms": "서비스 약관",
+    "accessibility": "접근성",
+    "copyright": "© {{year}} Multiversity. 모든 권리 보유."
+  },
+  "social": {
+    "follow": "팔로우하기",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}

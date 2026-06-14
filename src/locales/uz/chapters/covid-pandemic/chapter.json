@@ -1,189 +1,150 @@
 {
   "meta": {
-    "title": "COVID-19 Pandemiyasi",
+    "title": "Pandemiya",
     "period": "2019-2023",
-    "description": "Dunyoni To'xtatgan Ko'rinmas Dushman. 🦠🛑 Nam bozorlardan tortib to qulflargacha, ushbu bob mikroskopik virus global jamiyat, iqtisodiyot va siyosatni abadiy o'zgartirganini o'rganadi.",
-    "historical_context": "2019 yil oxirida Xitoyning Uxan shahrida yangi koronavirus paydo bo'ldi. Bir necha oy ichida u global miqyosda tarqalib, bir asrdagi eng katta sog'liqni saqlash inqirozini keltirib chiqardi. Hukumatlar misli ko'rilmagan qulflar, niqob taqish majburiyatlari va tezkor vaksina ishlab chiqish bilan javob berishdi. Pandemiya raqamli transformatsiyani tezlashtirdi, ammo chuqur ijtimoiy tengsizliklarni ham fosh qildi.",
-    "divergence_point": "SARS-CoV-2 ning Paydo Bo'lishi"
+    "description": "Uyda o'tirgan yillarimiz. 😷🏠",
+    "historical_context": "Mikroskopik dushman.",
+    "divergence_point": "Uxan Javobi"
   },
   "figures": {
-    "dr-li-wenliang": {
+    "li-wenliang": {
       "name": "Dr. Li Venlyan",
       "role": "Xabar Beruvchi",
-      "description": "Dunyoni yangi virus haqida ogohlantirishga uringan oftalmolog. 🩺⚠️ Uning ogohlantirishi bostirildi, ammo merosi yashamoqda."
+      "description": "Dunyoni ogohlantirdi va eng oliy bahoni to'ladi. 🩺"
     },
     "anthony-fauci": {
       "name": "Dr. Entoni Fauchi",
-      "role": "Jamoat Sog'liqni Saqlash Rahbari",
-      "description": "AQSh pandemiya javobining yuzi. 👨‍⚕️🇺🇸 Fan va siyosat o'rtasidagi xavfli suvlarda harakat qildi."
+      "role": "Shifokor",
+      "description": "Siyosatdan ko'ra fanga ishondi. 🔬"
     },
-    "tedros-adhanom": {
-      "name": "Tedros Adhanom",
-      "role": "JSST Bosh Direktori",
-      "description": "Eng katta inqiroz davrida Jahon Sog'liqni Saqlash Tashkiloti rahbari. 🌍🇺🇳 Global muvofiqlashtirish harakatlari uchun tanqid va maqtovlarga duch keldi."
+    "jacinda-ardern": {
+      "name": "Jasinda Ardern",
+      "role": "Rahbar",
+      "description": "Hamdardlik kuchli yetakchilikni tashkil etishini isbotladi. 🇳🇿"
     }
   },
   "timelines": {
     "total-containment": {
-      "title": "To'liq Cheklash: O'qdan Qochildi 🛡️🌏",
-      "description": "Agar dunyo 2020 yil yanvar oyida darhol va samarali munosabat bildirganida nima bo'lar edi?",
-      "divergence_description": "2020 yil yanvar oyining boshida global sayohat taqiqlari va qattiq qulflar joriy etiladi.",
+      "title": "Uxan Qo'rquvi 🛡️🌏",
+      "description": "Virus 2020 yil yanvar oyida cheklanadi. Global pandemiya yo'q.",
+      "divergence_description": "Xubey provinsiyasining erta va to'liq qulflanishi.",
+      "present_day_status": "COVID-19 endi viktorina savoli. \"Xitoydagi o'sha dahshatli virusni eslaysizmi?\" Masofaviy ish hali ham o'ziga xos tushuncha bo'lib qolmoqda. 💼🚫",
       "events": {
-        "global-lockdown-jan-2020": {
-          "title": "Buyuk Muhr",
-          "description": "Davlatlar birinchi ketma-ketlik chiqarilgandan so'ng darhol barcha chegaralarni yopish va parvozlarni to'xtatishni muvofiqlashtiradilar.",
-          "impact": "Virus Uxan va bir nechta izolyatsiya qilingan klasterlar bilan cheklanadi."
-        },
-        "virus-eliminated-2020": {
-          "title": "G'alaba Deklaratsiyasi",
-          "description": "JSST SARS-CoV-2 inson populyatsiyasidan yo'q qilinganligini e'lon qiladi.",
-          "impact": "Hayot normal holatga qaytadi. Global retsessiya yo'q."
+        "virus-crushed": {
+          "title": "Virus Yo'q Qilindi",
+          "description": "JSST 2020 yil mart oyida epidemiya tugaganini e'lon qiladi.",
+          "impact": "Normallik."
         }
       },
       "consequences": {
-        "short_term": "Pandemiyaning oldini olindi, ammo maxfiylik huquqlari yemiriladi.",
-        "long_term": "Global bio-kuzatuv tarmog'i doimiy bo'lib qoladi.",
-        "global_impact": "Sog'liqni saqlash ma'lumotlari doimiy ravishda nazorat qilinadigan xavfsizroq, ammo kamroq erkin dunyo."
-      },
-      "butterfly": [
-        {
-          "trigger": "Qulflar yo'qligi majburiy masofaviy ish tajribasi yo'qligini anglatadi",
-          "consequence": "Ofis madaniyati hukmron bo'lib qolmoqda. Raqamli ko'chmanchi turmush tarzi o'ziga xos bo'lib qolmoqda."
+        "better-prepared": {
+          "short_term": "Yengillik",
+          "long_term": "Yaxshiroq pandemiya shartnomalari",
+          "global_impact": "O'qdan qochildi"
         }
-      ],
-      "present_day_status": "COVID-19 tibbiyot darsliklarida 'Uxan Qo'rquvi' sifatida tanilgan izohdir. Biroq, hozir hamma haroratini hukumatga har kuni xabar qiladigan aqlli soatlar taqadi. 'Sizning xavfsizligingiz uchun', deyishadi ular. ⌚👀"
+      },
+      "butterfly": {
+        "trump-reelection": {
+          "trigger": "Kuchli Iqtisodiyot",
+          "consequence": "Tramp COVID retsessiyasisiz 2020 yilda g'alaba qozonadi"
+        }
+      }
     },
     "black-death-variant": {
-      "title": "Qora O'lim Varianti: Jamiyat Qulashi ☠️🏚️",
-      "description": "Agar virus sezilarli darajada o'limga olib keladigan mutatsiyaga uchraganida nima bo'lar edi?",
-      "divergence_description": "2020 yil oxiridagi mutatsiya o'lim darajasini 15% ga oshiradi.",
+      "title": "Delta Qulashi ☠️🏚️",
+      "description": "O'limga olib keladigan mutatsiya global sivilizatsiyani vayron qiladi.",
+      "divergence_description": "Delta varianti 20% o'limga olib keladi.",
+      "present_day_status": "Odamlar izolyatsiya qilingan qishloqlarda yashaydilar. Begonalar ko'rinishi bilanoq otib tashlanadi. Zoom yagona hukumat. 💻🔫",
       "events": {
-        "omega-variant-2020": {
-          "title": "Omega Varianti",
-          "description": "Yuqori darajada o'limga olib keladigan variant paydo bo'ladi. Kasalxonalar bir necha hafta ichida global miqyosda qulaydi.",
-          "impact": "Ommaviy vahima. Ta'minot zanjirlari buziladi. Shaharlar tashlab ketiladi."
-        },
-        "great-deurbanization-2021": {
-          "title": "Buyuk De-urbanizatsiya",
-          "description": "Odamlar infektsiyadan qochish uchun shaharlardan qishloq joylarga qochishadi. Zamonaviy sivilizatsiya parchalanadi.",
-          "impact": "Globallashgan iqtisodiyotning oxiri. Mahalliy tirikchilik dehqonchiligiga qaytish."
+        "societal-breakdown": {
+          "title": "Buyuk Vahima",
+          "description": "Ta'minot zanjirlari ishlamay qoladi. Shaharlar bo'shab qoladi.",
+          "impact": "Qulash."
         }
       },
       "consequences": {
-        "short_term": "Milliardlab odamlar o'ladi. Global infratuzilma ishlamay qoladi.",
-        "long_term": "Insoniyat faqat internet orqali bog'langan izolyatsiya qilingan, yuqori texnologiyali anklavlarda omon qoladi.",
-        "global_impact": "'Toza Zonalar' va 'Yovvoyi Yerlar'ning neo-feodal dunyosi."
-      },
-      "butterfly": [
-        {
-          "trigger": "Jismoniy aloqa o'limga olib keladi",
-          "consequence": "Jamiyat butunlay Virtual Reallikka o'tadi. Metavers haqiqiy dunyoga aylanadi."
+        "deurbanization": {
+          "short_term": "Qishloqqa qochish",
+          "long_term": "Feodalizm qaytadi",
+          "global_impact": "Qorong'u Asr"
         }
-      ],
-      "present_day_status": "Shaharlar o't bosgan xarobalar. Omon qolganlar germetik muhrlangan bunkerlarda yashaydilar, faqat yuqori aniqlikdagi VR avatarlari orqali o'zaro aloqada bo'lishadi. Qo'l siqish qotillikka urinish hisoblanadi. 🥽🏙️"
+      },
+      "butterfly": {
+        "local-internet": {
+          "trigger": "Mo'rt tarmoq",
+          "consequence": "Mesh tarmoqlar global internetni almashtiradi"
+        }
+      }
     },
-    "permanent-pandemic": {
-      "title": "Abadiy Vabo: Bo'lingan Dunyo 😷🌐",
-      "description": "Agar immunitet vaqtinchalik bo'lsa va vaksinalar yuqishni to'xtata olmasa nima bo'lar edi?",
-      "divergence_description": "Yangi variantlar doimiy ravishda immunitetdan qochadi. Pandemiya hech qachon rasman tugamaydi.",
+    "open-source-vaccine": {
+      "title": "Hamma Uchun Vaksina 💉🌍",
+      "description": "Patentlar bekor qilinadi. Global Janub 2021 yil o'rtalariga kelib emlanadi.",
+      "divergence_description": "AQSh/Yevropa Ittifoqi intellektual mulk huquqlaridan voz kechishni majburlaydi.",
+      "present_day_status": "\"Xelsinki Kelishuvlari\" dori-darmonni inson huquqi sifatida kafolatlaydi. Global Janub tez ko'tarilmoqda. 🌍🚀",
       "events": {
-        "vaccine-failure-2021": {
-          "title": "Qochish Inqirozi",
-          "description": "Vaksinalar o'limni oldini olishi, ammo infektsiyani emasligi va immunitet faqat oylar davom etishi ma'lum bo'ladi.",
-          "impact": "'Poda Immuniteti'ga bo'lgan umid yo'qoladi. Doimiy yumshatish strategiyaga aylanadi."
-        },
-        "bio-passports-2022": {
-          "title": "Bio-Pasport Qonuni",
-          "description": "Xalqaro sayohat faqat haqiqiy 'Yashil Maqom'ga (3 oy ichida kuchaytirilgan) ega bo'lganlar uchun cheklangan.",
-          "impact": "Ikki toifali jamiyat yaratilishi: Kuchaytirilganlar va Cheklanganlar."
+        "global-immunity": {
+          "title": "Poda Immuniteti",
+          "description": "Virusda tashuvchilar tugaydi. Variantlar evolyutsiyani to'xtatadi.",
+          "impact": "Pandemiya Oxiri."
         }
       },
       "consequences": {
-        "short_term": "Doimiy favqulodda holat.",
-        "long_term": "Sog'liqni saqlash holati barcha fuqarolik huquqlarini belgilaydi.",
-        "global_impact": "Demokratiya Texnokratik Bio-xavfsizlik Davlatlari bilan almashtiriladi."
-      },
-      "butterfly": [
-        {
-          "trigger": "Doimiy virusli tahdid",
-          "consequence": "Biotexnologiyaga katta sarmoyalar saraton va qarishni davolashga olib keladi, ammo faqat boylar uchun."
+        "global-trust": {
+          "short_term": "Shimol-Janub ishonchi tiklandi",
+          "long_term": "Kuchliroq JSST",
+          "global_impact": "Sog'liqni saqlash tengligi"
         }
-      ],
-      "present_day_status": "Oziq-ovqat do'koniga kirish uchun sizga QR kod kerak. Niqoblar moda bayonoti va qonuniy talabdir. Dunyo 'Yashil Zonalar' (boy, har kuni tekshiriladigan) va 'Qizil Zonalar' (kambag'al, endemik infektsiya) ga bo'lingan. Lekin, mRNK texnologiyasi saratonni davoladi! 🧬🎫"
+      },
+      "butterfly": {
+        "biotech-boom": {
+          "trigger": "Umumiy mRNK texnologiyasi",
+          "consequence": "Bezgak va OIV 2025 yilga kelib davolanadi"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
+  "scenarios": {
+    "wuhan-warning": {
       "title": "Xabar Beruvchi (Dek 2019)",
-      "text": "2019 yil 30 dekabr. Siz Uxandagi sog'liqni saqlash xodimisiz. Dengiz mahsulotlari bozori bilan bog'liq pnevmoniya holatlari klasteri haqida hisobot keladi. Dr. Li Venlyan chat guruhida hamkasblarini ogohlantirmoqda. Nima qilasiz?",
-      "choices": [
-        {
-          "text": "Vahima oldini olish uchun mish-mishlarni bostiring. Doktorni tanbehlang.",
-          "consequence": "Virus Oy Yangi Yili sayohat shoshilinchida nazoratsiz tarqaladi. Tarixiy pandemiya xronologiyasi boshlanadi."
+      "text": "Uxan. Dr. Li Venlyan \"SARSga o'xshash pnevmoniya\" haqida ogohlantirish e'lon qildi. Politsiya sizni chaqiryapti. Uni jim qildirasizmi?",
+      "choices": {
+        "silence": {
+          "text": "Uni jim qildiring. Vahimaning oldini oling.",
+          "consequence": "Virus yashirincha tarqaladi. Global pandemiya muqarrar bo'lib qoladi."
         },
-        {
-          "text": "Darhol tekshiring va bozorni karantin qiling. JSSTga xabar bering.",
-          "consequence": "Erta cheklash tarqalishni sekinlashtiradi, ammo u sizib chiqadi. Yengilroq pandemiya sodir bo'ladi."
-        },
-        {
-          "text": "Favqulodda protokollarni ishga tushiring. Shaharni darhol qulflang.",
-          "consequence": "Virus Xubey provinsiyasi ichida cheklanadi. 'To'liq Cheklash' xronologiyasi boshlanadi."
+        "listen": {
+          "text": "Uni tinglang. Shaharni HOZIROQ karantin qiling.",
+          "consequence": "Bu keskin, ammo samarali. Virus tuzoqqa tushadi."
         }
-      ]
+      }
     },
-    {
-      "title": "Qulflash Dilemmasi (Mart 2020)",
-      "text": "2020 yil mart. Virus mamlakatingizda tez tarqalmoqda. Kasalxonalar to'lmoqda. Olimlar to'liq qulflashni tavsiya qilmoqdalar, ammo iqtisodchilar bu iqtisodiyotni yo'q qilishini ogohlantirmoqdalar. Buyrug'ingiz qanday?",
-      "choices": [
-        {
-          "text": "Qattiq, muddatsiz qulflashni amalga oshiring. 'Egri chiziqni tekislash uchun ikki hafta.'",
-          "consequence": "Hayotlar saqlab qolinadi, ammo kichik bizneslar yo'q qilinadi. Ruhiy salomatlik inqirozi yuzaga keladi. (Tarixiy)"
+    "lockdown-decision": {
+      "title": "Yopish Yoki Yopmaslik (Mart 2020)",
+      "text": "Virus shu yerda. Olimlar qulflashni xohlaydilar. Iqtisodiyot qulaydi. Nima muhimroq?",
+      "choices": {
+        "lockdown": {
+          "text": "Qulflang. Hayotlarni saqlang.",
+          "consequence": "Iqtisodiyot qulaydi, ammo kasalxonalar omon qoladi. (Tarixiy)"
         },
-        {
-          "text": "Jamiyatni ochiq tuting. Zaiflarni himoya qiling, ammo virus tarqalishiga yo'l qo'ying.",
-          "consequence": "Kasalxonalar to'lib toshadi. O'lim soni keskin oshadi. Jamoatchilik ishonchi qulaydi."
-        },
-        {
-          "text": "Ixtiyoriy choralarni tavsiya eting. Fuqarolarga ishoning.",
-          "consequence": "O'rtacha o'lim soni. Iqtisodiyot yaxshiroq omon qoladi, ammo siz kuchli xalqaro tanqidga duch kelasiz."
+        "open": {
+          "text": "Ochiq tuting. \"Bu shunchaki gripp.\"",
+          "consequence": "Ommaviy o'lim. Sog'liqni saqlash tizimi qulashi. Sizni ovoz berish orqali chetlatishadi."
         }
-      ]
+      }
     },
-    {
-      "title": "Vaksina Poygasi (2020 oxiri)",
-      "text": "2020 yil oxiri. Bir nechta vaksinalar umid baxsh etmoqda. Siz JSST rahbarisiz. Global tarqatishni qanday boshqarasiz?",
-      "choices": [
-        {
-          "text": "Mamlakatlarga dozalar uchun taklif kiritishga ruxsat bering. Eng yuqori taklif bergan birinchi bo'lib oladi.",
-          "consequence": "Boy davlatlar emlanadi, kambag'al davlatlar esa yo'q. Variantlar Global Janubda ko'payadi. 'Abadiy Pandemiya' xronologiyasi boshlanadi."
+    "vaccine-equity": {
+      "title": "Vaksina Aparteidi (2021)",
+      "text": "Bizda vaksina bor. Global Janubda hech narsa yo'q. Farmatsevtika patentlarni himoya qilmoqchi.",
+      "choices": {
+        "protect-patents": {
+          "text": "Patentlarni himoya qiling. Innovatsiyani rag'batlantiring.",
+          "consequence": "Kambag'al davlatlar kutadi. Omikron emlanmaganlardan paydo bo'ladi."
         },
-        {
-          "text": "Qattiq global tenglik rejasini (COVAX) majburlang.",
-          "consequence": "Boy davlatlarda sekinroq tarqatish siyosiy tartibsizliklarga olib keladi, ammo virus 2023 yilga kelib global miqyosda yo'q qilinadi."
-        },
-        {
-          "text": "Farmatsevtika kompaniyalarini vaksina retseptlarini ochiq manba qilishga majburlang.",
-          "consequence": "Ishlab chiqarish global miqyosda portlaydi. Pandemiya rekord vaqt ichida tugaydi, ammo farmatsevtika aktsiyalari qulaydi."
+        "waive-patents": {
+          "text": "Patentlardan voz keching. Retseptni baham ko'ring.",
+          "consequence": "Butun dunyoda zavodlar ochiladi. Virus burchakka tiqiladi."
         }
-      ]
-    },
-    {
-      "title": "Kelib Chiqishini Tekshirish (2021)",
-      "text": "Razvedka hisobotlari virus laboratoriyadan sizib chiqqan bo'lishi mumkinligini ko'rsatmoqda. Diplomatik keskinlik yuqori. Tekshiruvni qanday hal qilasiz?",
-      "choices": [
-        {
-          "text": "Mojarodan qochish uchun qo'shma, xushmuomala tekshiruv o'tkazing.",
-          "consequence": "Hisobot noaniq. Nazariyalar ko'payadi. Haqiqat ko'milgan holda qoladi. (Tarixiy)"
-        },
-        {
-          "text": "To'liq shaffoflikni talab qiling va sanktsiyalar bilan tahdid qiling.",
-          "consequence": "Yangi Sovuq Urush boshlanadi. Sog'liqni saqlash bo'yicha global hamkorlik qulaydi."
-        },
-        {
-          "text": "Ilmiy ishonchni saqlab qolish uchun laboratoriya sizib chiqish nazariyasini bostiring.",
-          "consequence": "Keyinchalik dalillar sizib chiqqanda, fanga bo'lgan jamoatchilik ishonchi butunlay yo'qoladi."
-        }
-      ]
+      }
     }
-  ]
+  }
 }

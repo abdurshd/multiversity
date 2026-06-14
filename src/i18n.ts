@@ -13,41 +13,73 @@ import uzCommonNav from './locales/uz/common/navigation.json';
 import uzCommonFooter from './locales/uz/common/footer.json';
 import uzCommonErrors from './locales/uz/common/errors.json';
 
+import koCommonUI from './locales/ko/common/ui.json';
+import koCommonNav from './locales/ko/common/navigation.json';
+import koCommonFooter from './locales/ko/common/footer.json';
+import koCommonErrors from './locales/ko/common/errors.json';
+
 // Import page namespaces
 import enPagesLanding from './locales/en/pages/landing.json';
 import uzPagesLanding from './locales/uz/pages/landing.json';
+import koPagesLanding from './locales/ko/pages/landing.json';
 import enPagesChaptersList from './locales/en/pages/chapters-list.json';
 import uzPagesChaptersList from './locales/uz/pages/chapters-list.json';
+import koPagesChaptersList from './locales/ko/pages/chapters-list.json';
 import enPagesNotFound from './locales/en/pages/not-found.json';
 import uzPagesNotFound from './locales/uz/pages/not-found.json';
+import koPagesNotFound from './locales/ko/pages/not-found.json';
 import enPagesTimelineExplorer from './locales/en/pages/timeline-explorer.json';
 import uzPagesTimelineExplorer from './locales/uz/pages/timeline-explorer.json';
+import koPagesTimelineExplorer from './locales/ko/pages/timeline-explorer.json';
 import enPagesComparisonMode from './locales/en/pages/comparison-mode.json';
 import uzPagesComparisonMode from './locales/uz/pages/comparison-mode.json';
+import koPagesComparisonMode from './locales/ko/pages/comparison-mode.json';
 import enPagesFAQ from './locales/en/pages/faq.json';
 import uzPagesFAQ from './locales/uz/pages/faq.json';
+import koPagesFAQ from './locales/ko/pages/faq.json';
 import enPagesDocumentation from './locales/en/pages/documentation.json';
 import uzPagesDocumentation from './locales/uz/pages/documentation.json';
+import koPagesDocumentation from './locales/ko/pages/documentation.json';
 import enPagesAccessibility from './locales/en/pages/accessibility.json';
 import uzPagesAccessibility from './locales/uz/pages/accessibility.json';
+import koPagesAccessibility from './locales/ko/pages/accessibility.json';
 import enPagesPrivacyPolicy from './locales/en/pages/privacy-policy.json';
 import uzPagesPrivacyPolicy from './locales/uz/pages/privacy-policy.json';
+import koPagesPrivacyPolicy from './locales/ko/pages/privacy-policy.json';
 import enPagesTermsOfService from './locales/en/pages/terms-of-service.json';
 import uzPagesTermsOfService from './locales/uz/pages/terms-of-service.json';
+import koPagesTermsOfService from './locales/ko/pages/terms-of-service.json';
 import enPagesSupport from './locales/en/pages/support.json';
 import uzPagesSupport from './locales/uz/pages/support.json';
+import koPagesSupport from './locales/ko/pages/support.json';
 import enPagesSimulationHub from './locales/en/pages/simulation-hub.json';
 import uzPagesSimulationHub from './locales/uz/pages/simulation-hub.json';
+import koPagesSimulationHub from './locales/ko/pages/simulation-hub.json';
 
 // Import component namespaces
 import enComponentsErrorBoundary from './locales/en/components/error-boundary.json';
 import uzComponentsErrorBoundary from './locales/uz/components/error-boundary.json';
+import koComponentsErrorBoundary from './locales/ko/components/error-boundary.json';
 import enComponentsBreadcrumb from './locales/en/components/breadcrumb.json';
 import uzComponentsBreadcrumb from './locales/uz/components/breadcrumb.json';
+import koComponentsBreadcrumb from './locales/ko/components/breadcrumb.json';
 import enComponentsAnimatedTimeline from './locales/en/components/animated-timeline.json';
 import uzComponentsAnimatedTimeline from './locales/uz/components/animated-timeline.json';
+import koComponentsAnimatedTimeline from './locales/ko/components/animated-timeline.json';
 import enComponentsInteractiveStory from './locales/en/components/interactive-story.json';
 import uzComponentsInteractiveStory from './locales/uz/components/interactive-story.json';
+import koComponentsInteractiveStory from './locales/ko/components/interactive-story.json';
+import enComponentsSimulation from './locales/en/components/simulation.json';
+import uzComponentsSimulation from './locales/uz/components/simulation.json';
+import koComponentsSimulation from './locales/ko/components/simulation.json';
+import enComponentsExperience from './locales/en/components/experience.json';
+import uzComponentsExperience from './locales/uz/components/experience.json';
+import koComponentsExperience from './locales/ko/components/experience.json';
+
+// Import experience (3D narrative) script namespaces
+import enExperienceTimur from './locales/en/experience/timur.json';
+import uzExperienceTimur from './locales/uz/experience/timur.json';
+import koExperienceTimur from './locales/ko/experience/timur.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -116,6 +148,39 @@ const uzLegacy = {
     }
 };
 
+const koLegacy = {
+    common: {
+        welcome: koCommonUI.common.welcome,
+        language: koCommonUI.common.language,
+        loading: koCommonUI.states.loading,
+        error: koCommonUI.states.error,
+        notFound: koCommonUI.states.not_found,
+    },
+    nav: koCommonNav.nav,
+    landing: {
+        title: "또 다른 역사를 탐험하세요",
+        subtitle: "역사가 다른 길을 갔다면 어땠을까?",
+        cta: "탐험 시작",
+        stats: {
+            divergence: {
+                label: "분기점",
+                value: "40+",
+                detail: "직접 제작한 전환점"
+            },
+            events: {
+                label: "인터랙티브 이벤트",
+                value: "70+",
+                detail: "영향력 기준 평가"
+            },
+            coverage: {
+                label: "범위",
+                value: "1370 → 2100+",
+                detail: "전 세계 범위 및 지역 초점"
+            }
+        }
+    }
+};
+
 // Add a custom detector for location-based default
 const customLocationDetector = {
     name: 'customLocationDetector',
@@ -125,6 +190,10 @@ const customLocationDetector = {
             // Check for Uzbekistan timezones
             if (timeZone === 'Asia/Tashkent' || timeZone === 'Asia/Samarkand') {
                 return 'uz';
+            }
+            // Check for Korea timezones
+            if (timeZone === 'Asia/Seoul' || timeZone === 'Asia/Pyongyang') {
+                return 'ko';
             }
         } catch (e) {
             console.error('Failed to detect timezone:', e);
@@ -165,6 +234,9 @@ i18n
                 'components-breadcrumb': enComponentsBreadcrumb,
                 'components-animated-timeline': enComponentsAnimatedTimeline,
                 'components-interactive-story': enComponentsInteractiveStory,
+                'components-simulation': enComponentsSimulation,
+                'components-experience': enComponentsExperience,
+                'experience-timur-legacy': enExperienceTimur,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -188,7 +260,36 @@ i18n
                 'components-breadcrumb': uzComponentsBreadcrumb,
                 'components-animated-timeline': uzComponentsAnimatedTimeline,
                 'components-interactive-story': uzComponentsInteractiveStory,
+                'components-simulation': uzComponentsSimulation,
+                'components-experience': uzComponentsExperience,
+                'experience-timur-legacy': uzExperienceTimur,
                 'pages-simulation-hub': uzPagesSimulationHub,
+            },
+            ko: {
+                translation: koLegacy, // For backward compatibility
+                'common-ui': koCommonUI,
+                'common-nav': koCommonNav,
+                'common-footer': koCommonFooter,
+                'common-errors': koCommonErrors,
+                'pages-landing': koPagesLanding,
+                'pages-chapters-list': koPagesChaptersList,
+                'pages-not-found': koPagesNotFound,
+                'pages-timeline-explorer': koPagesTimelineExplorer,
+                'pages-comparison-mode': koPagesComparisonMode,
+                'pages-faq': koPagesFAQ,
+                'pages-documentation': koPagesDocumentation,
+                'pages-accessibility': koPagesAccessibility,
+                'pages-privacy-policy': koPagesPrivacyPolicy,
+                'pages-terms-of-service': koPagesTermsOfService,
+                'pages-support': koPagesSupport,
+                'components-error-boundary': koComponentsErrorBoundary,
+                'components-breadcrumb': koComponentsBreadcrumb,
+                'components-animated-timeline': koComponentsAnimatedTimeline,
+                'components-interactive-story': koComponentsInteractiveStory,
+                'components-simulation': koComponentsSimulation,
+                'components-experience': koComponentsExperience,
+                'experience-timur-legacy': koExperienceTimur,
+                'pages-simulation-hub': koPagesSimulationHub,
             },
         },
         defaultNS: 'translation',
@@ -215,6 +316,9 @@ i18n
             'components-breadcrumb',
             'components-animated-timeline',
             'components-interactive-story',
+            'components-simulation',
+            'components-experience',
+            'experience-timur-legacy',
             'pages-simulation-hub',
         ],
         interpolation: {

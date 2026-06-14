@@ -1,112 +1,164 @@
 {
   "meta": {
-    "title": "The Russian Empire",
-    "period": "1721-1917",
-    "description": "Tsarist expansion, modernization struggles, and paths to reform or revolution",
-    "historical_context": "The Russian Empire stretched from Poland to the Pacific, from the Arctic to Central Asia. Peter the Great's westernization, Catherine's enlightened despotism, and the conquest of Central Asian khanates created a vast multiethnic empire. But resistance to reform, serfdom, and autocracy created revolutionary pressures that finally exploded in 1917.",
-    "divergence_point": "Critical decisions in Russian history that could have led to reform instead of revolution"
+    "title": "Russian Empire",
+    "period": "1700-1917",
+    "description": "Tsars, samovars, and expansion. 🐻🏰",
+    "historical_context": "From Peter to Nicholas.",
+    "divergence_point": "Peter Reforms"
   },
   "figures": {
-    "peter_the_great": {
-      "name": "Peter I (Peter the Great)",
-      "role": "Tsar and Emperor of Russia",
-      "description": "The revolutionary tsar who forced Russia to modernize, building St. Petersburg and creating a European-style empire."
+    "peter-the-great": {
+      "name": "Peter the Great",
+      "role": "The Reformer",
+      "description": "Drags Russia into modern times by its beard. 6'8\" tall and carries scissors."
     },
-    "catherine_the_great": {
-      "name": "Catherine II (Catherine the Great)",
-      "role": "Empress of Russia",
-      "description": "The enlightened despot who expanded the empire massively while maintaining autocracy and serfdom."
+    "catherine-the-great": {
+      "name": "Catherine the Great",
+      "role": "The Enlightened Despot",
+      "description": "German princess who became the greatest Russian Empress. Friend of Voltaire."
     },
-    "alexander_ii": {
-      "name": "Alexander II",
-      "role": "Tsar-Liberator",
-      "description": "The reforming tsar who freed the serfs but was assassinated before completing reforms."
+    "rasputin": {
+      "name": "Grigori Rasputin",
+      "role": "The Mad Monk",
+      "description": "Mystic healer who refused to die. Brought down an empire."
     }
   },
   "timelines": {
-    "constitutional_reform": {
-      "title": "The Reformist Path: Constitutional Monarchy",
-      "description": "What if Alexander II survived and successfully transformed Russia into a constitutional monarchy?",
-      "divergence_description": "Alexander II's security prevents his assassination in 1881. He completes his reform program, establishing a constitutional monarchy.",
+    "constitutional-russia": {
+      "title": "Constitutional Monarchy 📜👑",
+      "description": "The Decembrist Revolt succeeds. Russia becomes a democracy in 1825.",
+      "divergence_description": "The army supports the Constitution instead of Nicholas I.",
+      "present_day_status": "The Russian Federation is a constitutional monarchy similar to the UK. St. Petersburg is the \"Paris of the North\". 🇷🇺👑",
       "events": {
-        "assassination_prevented_1881": {
-          "title": "The Tsar Lives",
-          "description": "Enhanced security foils the People's Will assassination plot. Alexander II survives to implement his planned constitutional reforms.",
-          "impact": "The reform program continues. A constitution and parliament are established."
-        },
-        "duma_established_1885": {
-          "title": "The First Russian Parliament",
-          "description": "A genuine parliament with real power is created. Representative government begins alongside continued tsarist authority.",
-          "impact": "Russia becomes a constitutional monarchy, balancing tradition with modernization."
-        },
-        "industrial_prosperity_1900": {
-          "title": "The Russian Miracle",
-          "description": "Political stability enables rapid industrialization. Foreign investment floods in. Russia becomes an economic powerhouse.",
-          "impact": "Constitutional Russia rivals Britain and Germany. Revolution is avoided through reform."
+        "constitution-1825": {
+          "title": "The Constitution",
+          "description": "Tsar Constantine signs the Constitution. Serfdom is abolished early.",
+          "impact": "Modernization."
         }
       },
       "consequences": {
-        "short_term": "Peaceful reform prevents revolutionary violence. Russia modernizes gradually.",
-        "long_term": "No Bolshevik Revolution. Russia develops as a constitutional monarchy and industrial power.",
-        "global_impact": "No Soviet Union means no Cold War. 20th century politics develop completely differently."
+        "no-bolsheviks": {
+          "short_term": "Liberal reforms",
+          "long_term": "No Soviet Union",
+          "global_impact": "A peaceful 20th century"
+        }
       },
-      "present_day_status": "The Russian Empire evolved into a constitutional monarchy similar to Britain. Gradual democratization occurred throughout the 20th century. The empire peacefully devolved into a commonwealth of Slavic and Central Asian states. No communist revolution means global politics took a completely different path."
+      "butterfly": {
+        "industrial-giant": {
+          "trigger": "Free labor",
+          "consequence": "Russia becomes industrial giant by 1880"
+        }
+      }
     },
-    "central_asian_liberation": {
-      "title": "The Silk Road Renascence: Central Asian Independence",
-      "description": "What if the Central Asian khanates successfully resisted Russian conquest?",
-      "divergence_description": "The Bukhara Emirate and Khivan Khanate modernize their armies with Ottoman and Persian help, successfully resisting Russian expansion in the 1860s-1870s.",
+    "traditionalist-russia": {
+      "title": "Old Muscovy 🐻⛪",
+      "description": "Peter reforms fail. Russia remains an isolated, medieval state.",
+      "divergence_description": "The Streltsy Rebellion succeeds.",
+      "present_day_status": "The Principality of Moscow is a small, quiet nation known for its churches and fur trade. The Swedish Empire controls the Baltic. 🇸🇪🏰",
       "events": {
-        "resistance_success_1868": {
-          "title": "The Battle of Samarkand",
-          "description": "Reformed Central Asian armies, equipped with modern rifles and artillery, decisively defeat Russian forces at Samarkand.",
-          "impact": "Russian expansion into Central Asia is halted. The khanates remain independent."
-        },
-        "central_asian_federation_1880": {
-          "title": "The Turkestan Federation",
-          "description": "Bukhara, Khiva, and Kokand unite into a defensive federation. Modernization programs follow the Japanese model.",
-          "impact": "Central Asia remains independent and begins modernizing on its own terms."
-        },
-        "silk_road_revival_1900": {
-          "title": "The New Silk Road",
-          "description": "Independent Central Asia becomes a bridge between Russia, Persia, India, and China. Economic and cultural flowering.",
-          "impact": "Central Asian cities become centers of trade, learning, and Islamic modernism."
+        "isolation": {
+          "title": "The Great Wall of Russia",
+          "description": "Russia closes its borders to the corrupted West.",
+          "impact": "Stagnation."
         }
       },
       "consequences": {
-        "short_term": "Central Asia avoids Russian colonization and maintains independence.",
-        "long_term": "Independent Central Asian states modernize in the late 19th century, avoiding Soviet control.",
-        "global_impact": "A powerful Islamic modernist region emerges. Different balance of power in Asia. No Soviet Central Asia."
+        "partition": {
+          "short_term": "Weakness",
+          "long_term": "Russia is partitioned by Sweden and Turkey",
+          "global_impact": "No Russian Empire"
+        }
       },
-      "present_day_status": "The Turkestan Federation is a major regional power, a prosperous democracy with deep Islamic and Turkic cultural roots. Samarkand and Bukhara are world-class cities. The region never experienced communist rule or Soviet-era ecological disasters. Central Asian languages and cultures flourished without Russification."
+      "butterfly": {
+        "swedish-empire": {
+          "trigger": "Weak Russia",
+          "consequence": "Sweden rules Northern Europe"
+        }
+      }
     },
-    "total_collapse": {
-      "title": "The Fragmented Empire: Complete Dissolution",
-      "description": "What if Russia lost World War I catastrophically and the empire completely fragmented?",
-      "divergence_description": "Germany wins decisively on the Eastern Front in 1915. The Russian Empire collapses into dozens of independent states.",
+    "sino-russian": {
+      "title": "The Dragon and Bear 🐉🐻",
+      "description": "Russia turns East instead of West.",
+      "divergence_description": "Russia allies with Qing China.",
+      "present_day_status": "The Eurasian Union is the world's superpower. The Silk Road is a high-speed rail network. 🌏🚂",
       "events": {
-        "military_disaster_1915": {
-          "title": "The Great Retreat",
-          "description": "German offensives destroy Russian armies. The front collapses. Poland, Ukraine, and Baltic states are occupied.",
-          "impact": "The tsarist government loses all credibility. Regional independence movements explode."
-        },
-        "empire_fragments_1916": {
-          "title": "The Dissolution",
-          "description": "Finland, Poland, Ukraine, Georgia, Armenia, and Central Asian states all declare independence. Russia shrinks to Muscovy.",
-          "impact": "The Russian Empire ceases to exist. Dozens of new nations emerge."
-        },
-        "german_hegemony_1920": {
-          "title": "Mitteleuropa Realized",
-          "description": "Germany dominates Eastern Europe through a network of client states. Russia becomes a weak, isolated rump state.",
-          "impact": "Germany wins World War I. A German-dominated Europe emerges."
+        "eurasian-pact": {
+          "title": "Eurasian Pact",
+          "description": "A military alliance that dominates Asia.",
+          "impact": "End of Western colonialism in Asia."
         }
       },
       "consequences": {
-        "short_term": "The Russian Empire completely disintegrates. Germany dominates Eastern Europe.",
-        "long_term": "No Soviet Union. No Russian superpower. Germany is the dominant Eurasian power.",
-        "global_impact": "Completely different World War outcomes. No Cold War. Different global order centered on German power."
+        "eastern-century": {
+          "short_term": "British Empire checked",
+          "long_term": "Asia rises early",
+          "global_impact": "Multipolar world"
+        }
       },
-      "present_day_status": "Russia is a mid-sized country similar to France, limited to ethnic Russian lands. Poland, Ukraine, Finland, and the Baltic states gained independence a century ago. Central Asia was never conquered by Russia. Germany remains the dominant European power. World War II never happened as we know it."
+      "butterfly": {
+        "no-opium-wars": {
+          "trigger": "Russian help",
+          "consequence": "China avoids Century of Humiliation"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "beard-tax": {
+      "title": "The Beard Tax (1698)",
+      "text": "Moscow. Tsar Peter has returned from Europe. He holds a pair of scissors. \"The beard is a useless burden,\" he says. \"Pay the tax or shave!\"",
+      "choices": {
+        "shave": {
+          "text": "Submit. Shave the beard.",
+          "consequence": "You lose your dignity but gain the Tsar's favor. Russia modernizes."
+        },
+        "rebel": {
+          "text": "Refuse! The beard is sacred!",
+          "consequence": "The Streltsy rebel. Peter is overthrown. Russia stays medieval."
+        }
+      }
+    },
+    "decembrist-revolt": {
+      "title": "Senate Square (1825)",
+      "text": "Alexander I is dead. The army is in the square. They shout \"Constantine and Constitution!\" Nicholas I orders the cannons loaded.",
+      "choices": {
+        "crush": {
+          "text": "Fire the cannons! Order must be maintained.",
+          "consequence": "The revolt is crushed. Autocracy survives."
+        },
+        "join": {
+          "text": "Join the rebels! For the Constitution!",
+          "consequence": " The army mutinies. Nicholas flees. A Republic is born."
+        }
+      }
+    },
+    "emancipation": {
+      "title": "The Serf Question (1861)",
+      "text": "Tsar Alexander II asks your advice. \"It is better to abolish serfdom from above than have it abolished from below.\" But the nobles are angry.",
+      "choices": {
+        "land": {
+          "text": "Give the peasants land. Full freedom.",
+          "consequence": "The nobles are furious, but the peasants prosper. Revolution is averted."
+        },
+        "east": {
+          "text": "Forget Europe. Look East to China.",
+          "consequence": "We forge a new destiny in Asia."
+        }
+      }
+    },
+    "rasputin": {
+      "title": "The Mad Monk (1916)",
+      "text": "Rasputin is throwing a party. The Tsarina listens only to him. Russia is losing the war. Prince Yusupov offers you a poisoned cake.",
+      "choices": {
+        "kill": {
+          "text": "Help kill him. Save the reputation of the throne.",
+          "consequence": "It is too late. The revolution comes anyway."
+        },
+        "save": {
+          "text": "Warn him. He is the only one who opposes the war.",
+          "consequence": "Rasputin convinces the Tsar to make peace. The Empire survives (barely)."
+        }
+      }
     }
   }
 }

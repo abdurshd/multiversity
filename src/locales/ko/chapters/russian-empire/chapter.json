@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "러시아 제국",
+    "period": "1700-1917",
+    "description": "차르, 사모바르, 그리고 팽창. 🐻🏰",
+    "historical_context": "표트르부터 니콜라이까지.",
+    "divergence_point": "표트르의 개혁"
+  },
+  "figures": {
+    "peter-the-great": {
+      "name": "표트르 대제",
+      "role": "개혁가",
+      "description": "러시아의 수염을 잡아끌어 근대로 이끈 인물. 키 6피트 8인치(약 203cm)에 늘 가위를 들고 다닌다."
+    },
+    "catherine-the-great": {
+      "name": "예카테리나 대제",
+      "role": "계몽 전제군주",
+      "description": "가장 위대한 러시아 여제가 된 독일 공녀. 볼테르의 친구."
+    },
+    "rasputin": {
+      "name": "그리고리 라스푸틴",
+      "role": "광기의 수도사",
+      "description": "죽기를 거부한 신비주의 치료사. 한 제국을 무너뜨렸다."
+    }
+  },
+  "timelines": {
+    "constitutional-russia": {
+      "title": "입헌군주제 📜👑",
+      "description": "데카브리스트 반란이 성공한다. 러시아는 1825년에 민주주의 국가가 된다.",
+      "divergence_description": "군대가 니콜라이 1세 대신 헌법을 지지한다.",
+      "present_day_status": "러시아 연방은 영국과 유사한 입헌군주국이다. 상트페테르부르크는 \"북방의 파리\"이다. 🇷🇺👑",
+      "events": {
+        "constitution-1825": {
+          "title": "헌법",
+          "description": "콘스탄틴 차르가 헌법에 서명한다. 농노제가 일찍 폐지된다.",
+          "impact": "근대화."
+        }
+      },
+      "consequences": {
+        "no-bolsheviks": {
+          "short_term": "자유주의 개혁",
+          "long_term": "소비에트 연방 없음",
+          "global_impact": "평화로운 20세기"
+        }
+      },
+      "butterfly": {
+        "industrial-giant": {
+          "trigger": "자유로운 노동력",
+          "consequence": "러시아는 1880년까지 산업 대국이 된다"
+        }
+      }
+    },
+    "traditionalist-russia": {
+      "title": "옛 모스크바 공국 🐻⛪",
+      "description": "표트르의 개혁이 실패한다. 러시아는 고립된 중세 국가로 남는다.",
+      "divergence_description": "스트렐치 반란이 성공한다.",
+      "present_day_status": "모스크바 공국은 교회와 모피 무역으로 알려진 작고 조용한 나라이다. 스웨덴 제국이 발트해를 지배한다. 🇸🇪🏰",
+      "events": {
+        "isolation": {
+          "title": "러시아의 만리장성",
+          "description": "러시아가 타락한 서방에 국경을 닫는다.",
+          "impact": "정체."
+        }
+      },
+      "consequences": {
+        "partition": {
+          "short_term": "약화",
+          "long_term": "러시아는 스웨덴과 튀르키예에 의해 분할된다",
+          "global_impact": "러시아 제국 없음"
+        }
+      },
+      "butterfly": {
+        "swedish-empire": {
+          "trigger": "약한 러시아",
+          "consequence": "스웨덴이 북유럽을 지배한다"
+        }
+      }
+    },
+    "sino-russian": {
+      "title": "용과 곰 🐉🐻",
+      "description": "러시아가 서쪽 대신 동쪽으로 향한다.",
+      "divergence_description": "러시아가 청나라와 동맹을 맺는다.",
+      "present_day_status": "유라시아 연합은 세계의 초강대국이다. 실크로드는 고속철도망이다. 🌏🚂",
+      "events": {
+        "eurasian-pact": {
+          "title": "유라시아 협정",
+          "description": "아시아를 지배하는 군사 동맹.",
+          "impact": "아시아에서 서구 식민주의의 종말."
+        }
+      },
+      "consequences": {
+        "eastern-century": {
+          "short_term": "대영 제국이 견제됨",
+          "long_term": "아시아가 일찍 부상함",
+          "global_impact": "다극 세계"
+        }
+      },
+      "butterfly": {
+        "no-opium-wars": {
+          "trigger": "러시아의 도움",
+          "consequence": "중국이 굴욕의 세기를 피한다"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "beard-tax": {
+      "title": "수염세 (1698)",
+      "text": "모스크바. 표트르 차르가 유럽에서 돌아왔다. 그는 가위 한 자루를 들고 있다. \"수염은 쓸모없는 짐이다\"라고 그가 말한다. \"세금을 내거나 깎아라!\"",
+      "choices": {
+        "shave": {
+          "text": "복종한다. 수염을 깎는다.",
+          "consequence": "당신은 존엄을 잃지만 차르의 총애를 얻는다. 러시아가 근대화된다."
+        },
+        "rebel": {
+          "text": "거부한다! 수염은 신성하다!",
+          "consequence": "스트렐치가 반란을 일으킨다. 표트르가 폐위된다. 러시아는 중세에 머문다."
+        }
+      }
+    },
+    "decembrist-revolt": {
+      "title": "원로원 광장 (1825)",
+      "text": "알렉산드르 1세가 죽었다. 군대가 광장에 모여 있다. 그들은 \"콘스탄틴과 헌법!\"을 외친다. 니콜라이 1세가 대포에 장전을 명령한다.",
+      "choices": {
+        "crush": {
+          "text": "대포를 발사하라! 질서는 유지되어야 한다.",
+          "consequence": "반란이 진압된다. 전제정치가 살아남는다."
+        },
+        "join": {
+          "text": "반란군에 합류하라! 헌법을 위하여!",
+          "consequence": " 군대가 항명한다. 니콜라이가 도망친다. 공화국이 탄생한다."
+        }
+      }
+    },
+    "emancipation": {
+      "title": "농노 문제 (1861)",
+      "text": "알렉산드르 2세 차르가 당신에게 조언을 구한다. \"농노제가 아래로부터 폐지되기를 기다리느니 위로부터 폐지하는 것이 낫다.\" 하지만 귀족들은 분노하고 있다.",
+      "choices": {
+        "land": {
+          "text": "농민들에게 토지를 준다. 완전한 자유를.",
+          "consequence": "귀족들은 격분하지만 농민들은 번영한다. 혁명을 막아낸다."
+        },
+        "east": {
+          "text": "유럽을 잊는다. 동쪽 중국을 바라본다.",
+          "consequence": "우리는 아시아에서 새로운 운명을 개척한다."
+        }
+      }
+    },
+    "rasputin": {
+      "title": "광기의 수도사 (1916)",
+      "text": "라스푸틴이 파티를 열고 있다. 황후는 오직 그의 말만 듣는다. 러시아는 전쟁에서 지고 있다. 유수포프 공작이 당신에게 독이 든 케이크를 건넨다.",
+      "choices": {
+        "kill": {
+          "text": "그를 죽이는 것을 돕는다. 황실의 명예를 지킨다.",
+          "consequence": "너무 늦었다. 혁명은 어쨌든 찾아온다."
+        },
+        "save": {
+          "text": "그에게 경고한다. 전쟁에 반대하는 유일한 사람이다.",
+          "consequence": "라스푸틴이 차르를 설득해 평화를 맺게 한다. 제국은 (간신히) 살아남는다."
+        }
+      }
+    }
+  }
+}

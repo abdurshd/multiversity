@@ -1,269 +1,244 @@
 {
   "meta": {
-    "title": "Amerika Inqilobi",
-    "period": "1775-1783",
-    "description": "Millat tug'ilishi va mustaqillikka olib boruvchi muqobil yo'llar",
-    "historical_context": "Amerika inqilobi o'n uch Britaniya mustamlakasini mustaqil davlatga aylantirdi. Mojaro inqilobiy g'oyalarni harbiy haqiqatga sinab ko'rdi, ko'plab muhim daqiqalarda g'alaba yaqindan ham emas edi.",
-    "divergence_point": "Inqilobiy urush davridagi natijani o'zgartirishi mumkin bo'lgan muhim qarorlar"
+    "title": "AQSh Mustaqilligi",
+    "period": "1776",
+    "description": "Amerika inqilobi va yangi millatning tug'ilishi. Ushbu hal qiluvchi davrda qabul qilingan turli qarorlar Amerika va dunyo uchun qanchalik tubdan farqli natijalarga olib kelishi mumkin bo'lganini kashf eting.",
+    "historical_context": "1776-yilga kelib Buyuk Britaniya va uning Amerika mustamlakalari o'rtasidagi keskinlik haddan oshib ketdi. Vakilliksiz soliq solish, harbiy ishg'ol va cheklovchi siyosatning yillari jahon tarixi yo'nalishini o'zgartiradigan inqilobiy harakatni vujudga keltirdi.",
+    "divergence_point": "Mustaqillik Deklaratsiyasi va Inqilobiy urush"
   },
   "figures": {
     "george-washington": {
       "name": "Jorj Vashington",
       "role": "Kontinental armiya bosh qo'mondoni",
-      "description": "Kontinental armiya rahbari va Amerika Qo'shma Shtatlarining birinchi prezidenti."
+      "description": "Kontinental armiya rahbari va Amerika Qo'shma Shtatlarining birinchi prezidenti"
     },
     "benjamin-franklin": {
       "name": "Benjamin Franklin",
       "role": "Diplomat va Ta'sischi Ota",
-      "description": "Fransuz ittifoqini ta'minlagan va Mustaqillik Deklaratsiyasini loyihalashda yordam bergan diplomat."
+      "description": "Fransuz ittifoqini ta'minlagan va Mustaqillik Deklaratsiyasini loyihalashda yordam bergan diplomat"
     },
     "king-george-iii": {
       "name": "Qirol Jorj III",
       "role": "Buyuk Britaniya Qiroli",
-      "description": "Amerika inqilobi davridagi Britaniya monarxi."
+      "description": "Amerika inqilobi davridagi Britaniya monarxi"
     },
     "thomas-jefferson": {
       "name": "Tomas Jefferson",
       "role": "Mustaqillik Deklaratsiyasining asosiy muallifi",
-      "description": "Uchinchi prezident va Mustaqillik Deklaratsiyasining asosiy muallifi."
+      "description": "Uchinchi prezident va Mustaqillik Deklaratsiyasining asosiy muallifi"
     }
   },
   "timelines": {
     "british-victory": {
-      "title": "Britaniya G'alabasi 🇬🇧",
-      "description": "Inqilobiy urush muvaffaqiyatsizlikka uchraydi, Amerika 1850-yillargacha Britaniya mustamlakasi bo'lib qoladi.",
-      "divergence_description": "Fransuz ittifoqi hech qachon tuzilmaydi, Vashington Valley Forge'da asirga olinadi.",
+      "title": "Britaniya G'alabasi vaqt chizig'i",
+      "description": "Inqilobiy urush muvaffaqiyatsizlikka uchraydi, Amerika 1850-yillargacha Britaniya mustamlakasi bo'lib qoladi",
+      "divergence_description": "Fransuz ittifoqi hech qachon tuzilmaydi, Vashington Valley Forge'da asirga olinadi",
+      "present_day_status": "Amerika Qo'shma Shtatlari isloh qilingan Britaniya imperiyasi tarkibidagi yarim avtonom mintaqa - Amerika Hamdo'stligi sifatida mavjud. Britaniya monarxi ramziy davlat rahbari bo'lgan parlamentar demokratiya. Iqtisodiyot bizning vaqt chizig'imizga o'xshash, ammo Hamdo'stlik davlatlari bilan kuchliroq aloqalarga ega.",
       "events": {
         "washington-captured-1778": {
           "title": "Vashington Valley Forge'da asirga olindi",
-          "description": "Britaniya kutilmagan hujumi Jorj Vashingtonni asirga oladi va Kontinental armiyani yo'q qiladi.",
-          "impact": "Inqilobiy rahbariyat yo'q qilinadi, qarshilik qulaydi."
+          "description": "Britaniyaning kutilmagan hujumi Jorj Vashingtonni asirga oladi va Kontinental armiyani yo'q qiladi",
+          "impact": "Inqilobiy rahbariyat yo'q qilinadi, qarshilik qulaydi"
         },
         "colonial-submission-1779": {
           "title": "Mustamlaka bo'ysunishi",
-          "description": "Qolgan mustamlaka rahbarlari Britaniya kuchlariga taslim bo'lishadi.",
-          "impact": "Tashkillashtirilgan qarshilikning tugashi, mustamlaka maqomiga qaytish."
+          "description": "Qolgan mustamlaka rahbarlari Britaniya kuchlariga taslim bo'lishadi",
+          "impact": "Tashkillashtirilgan qarshilikning tugashi, mustamlaka maqomiga qaytish"
         },
         "harsh-punishments-1780": {
           "title": "Qattiq Britaniya jazolari",
-          "description": "Britaniya isyonchi mustamlakalarga qattiq jazolar qo'llaydi.",
-          "impact": "Og'ir soliqlar, harbiy ishg'ol, cheklangan erkinliklar."
-        },
-        "gradual-liberalization-1820": {
-          "title": "Asta-sekin liberallashtirish boshlanadi",
-          "description": "Britaniya Amerika mustamlakalariga ko'proq avtonomiya bera boshlaydi.",
-          "impact": "Britaniya imperiyasi ichida o'zini o'zi boshqarishga sekin yo'l."
-        },
-        "dominion-status-1850": {
-          "title": "Amerika Dominion Maqomi",
-          "description": "Amerikaga Kanada kabi dominion maqomi beriladi.",
-          "impact": "Britaniya imperiyasi tarkibida qolgan holda o'zini o'zi boshqarish."
+          "description": "Britaniya isyonchi mustamlakalarga qattiq jazolar qo'llaydi",
+          "impact": "Og'ir soliqlar, harbiy ishg'ol, cheklangan erkinliklar"
         }
       },
       "consequences": {
-        "short_term": "Amerika qattiq cheklovlar ostida Britaniya hukmronligida qoladi.",
-        "long_term": "Mustaqillik 75 yilga kechiktiriladi, inqilob o'rniga muzokaralar orqali erishiladi.",
-        "global_impact": "Fransuz inqilobi Amerika namunasiz sodir bo'lmasligi mumkin edi."
-      },
-      "butterfly": [
-        {
-          "trigger": "Muvaffaqiyatli inqilobning Amerika namunasi yo'q",
-          "consequence": "Fransuz inqilobi kechiktiriladi yoki boshqacha shakl oladi."
-        },
-        {
-          "trigger": "Britaniya nazorati tez hududiy kengayishni cheklaydi",
-          "consequence": "G'arbiy hududlar sekinroq va tizimli ravishda rivojlanadi."
+        "delayed-independence": {
+          "short_term": "Amerika qattiq cheklovlar ostida Britaniya hukmronligida qoladi",
+          "long_term": "Mustaqillik 75 yilga kechiktiriladi, inqilob o'rniga muzokaralar orqali erishiladi",
+          "global_impact": "Fransuz inqilobi Amerika namunasiz sodir bo'lmasligi mumkin edi"
         }
-      ],
-      "present_day_status": "Amerika Qo'shma Shtatlari isloh qilingan Britaniya imperiyasi tarkibidagi yarim avtonom mintaqa - Amerika Hamdo'stligi sifatida mavjud. Britaniya monarxi ramziy davlat rahbari bo'lgan parlamentar demokratiya. Iqtisodiyot bizning vaqt chizig'imizga o'xshash, ammo Hamdo'stlik davlatlari bilan kuchliroq aloqalarga ega."
+      },
+      "butterfly": {
+        "no-french-revolution": {
+          "trigger": "Muvaffaqiyatli inqilobning Amerika namunasi yo'q",
+          "consequence": "Fransuz inqilobi kechiktiriladi yoki boshqacha shakl oladi"
+        }
+      }
     },
     "french-america": {
-      "title": "Fransuz Amerikasi 🇫🇷",
-      "description": "Fransiya to'g'ridan-to'g'ri aralashadi va Amerika Fransiya protektoratiga aylanadi.",
-      "divergence_description": "Fransiya urush boshida siyosiy nazorat evaziga katta harbiy kuchlarni yuboradi.",
+      "title": "Fransuz Amerikasi vaqt chizig'i",
+      "description": "Fransiya to'g'ridan-to'g'ri aralashadi va Amerika Fransiya protektoratiga aylanadi",
+      "divergence_description": "Fransiya urush boshida siyosiy nazorat evaziga katta harbiy kuchlarni yuboradi",
+      "present_day_status": "Fransuz Amerika Respublikasi Fransiya bilan kuchli madaniy aloqalarga ega ikki tilli davlat. Fuqarolik huquqi tizimiga ega konstitutsiyaviy demokratiya. Britaniya o'rniga Yevropa Ittifoqi bilan maxsus munosabatlarga ega Atlantika va Tinch okeanidagi yirik kuch.",
       "events": {
         "massive-french-intervention-1777": {
           "title": "Katta Fransuz Harbiy Aralashuvi",
-          "description": "Fransiya Amerikaga 50,000 askar va katta dengiz flotini yuboradi.",
-          "impact": "Britaniya kuchlariga qarshi ulkan harbiy ustunlik."
+          "description": "Fransiya Amerikaga 50,000 askar va katta dengiz flotini yuboradi",
+          "impact": "Britaniya kuchlariga qarshi ulkan harbiy ustunlik"
         },
         "treaty-protectorate-1778": {
           "title": "Fransuz Protektorati Shartnomasi",
-          "description": "Amerika Britaniyadan mustaqillik evaziga Fransiya protektorati bo'lishga rozi bo'ladi.",
-          "impact": "Siyosiy nazorat Britaniyadan Fransiyaga o'tadi."
-        },
-        "french-governor-general-1783": {
-          "title": "Fransuz General-Gubernatori tayinlanishi",
-          "description": "Fransiya Amerika ma'muriyatini nazorat qilish uchun General-Gubernator tayinlaydi.",
-          "impact": "Sobiq mustamlakalarga fransuz ma'muriy tizimi joriy etiladi."
-        },
-        "napoleonic-influence-1804": {
-          "title": "Napoleon Ma'muriy Islohotlari",
-          "description": "Napoleon o'z islohotlarini Fransuz Amerikasiga kengaytiradi.",
-          "impact": "Huquqiy tizim, ta'lim va hukumat fransuz modeli asosida qayta tashkil etiladi."
-        },
-        "american-revolution-1848": {
-          "title": "Ikkinchi Amerika Inqilobi",
-          "description": "Amerikaliklar 1848-yilgi inqiloblar davrida fransuz hukmronligiga qarshi qo'zg'olon ko'tarishadi.",
-          "impact": "Nihoyat Yevropa kuchlaridan haqiqiy mustaqillikka erishiladi."
+          "description": "Amerika Britaniyadan mustaqillik evaziga Fransiya protektorati bo'lishga rozi bo'ladi",
+          "impact": "Siyosiy nazorat Britaniyadan Fransiyaga o'tadi"
         }
       },
       "consequences": {
-        "short_term": "Fransuz tili va madaniyati Amerikada hukmron bo'ladi.",
-        "long_term": "Kuchli Yevropa aloqalariga ega ikki tilli fransuz-ingliz millati.",
-        "global_impact": "Shimoliy Amerikada protestant emas, balki katolik madaniy ta'siri."
-      },
-      "butterfly": [
-        {
-          "trigger": "Fransiya ulkan hudud va resurslarga ega bo'ladi",
-          "consequence": "Fransiya 19-asr davomida hukmron Yevropa kuchi bo'lib qoladi."
-        },
-        {
-          "trigger": "Fransiya ham Luiziana, ham sharqiy Amerikani nazorat qiladi",
-          "consequence": "Luiziana Xaridi bo'lmaydi, qit'a rivojlanishi boshqacha bo'ladi."
+        "french-cultural-influence": {
+          "short_term": "Fransuz tili va madaniyati Amerikada hukmron bo'ladi",
+          "long_term": "Kuchli Yevropa aloqalariga ega ikki tilli fransuz-ingliz millati",
+          "global_impact": "Shimoliy Amerikada protestant emas, balki katolik madaniy ta'siri"
         }
-      ],
-      "present_day_status": "Fransuz Amerika Respublikasi Fransiya bilan kuchli madaniy aloqalarga ega ikki tilli davlat. Fuqarolik huquqi tizimiga ega konstitutsiyaviy demokratiya. Britaniya o'rniga YI bilan maxsus munosabatlarga ega Atlantika va Tinch okeanidagi yirik kuch."
+      },
+      "butterfly": {
+        "stronger-france": {
+          "trigger": "Fransiya ulkan hudud va resurslarga ega bo'ladi",
+          "consequence": "Fransiya 19-asr davomida hukmron Yevropa kuchi bo'lib qoladi"
+        }
+      }
     },
     "confederated-states": {
-      "title": "Konfederativ Shtatlar 🤝",
-      "description": "Mustaqil shtatlarning kuchsiz konfederatsiyasi, kuchli federal hukumat yo'q.",
-      "divergence_description": "Konfederatsiya Moddalari hech qachon almashtirilmaydi, shtatlar asosan mustaqil bo'lib qoladi.",
+      "title": "Erkin Konfederatsiya vaqt chizig'i",
+      "description": "Mustaqil shtatlarning kuchsiz konfederatsiyasi, kuchli federal hukumat yo'q",
+      "divergence_description": "Konfederatsiya Moddalari hech qachon almashtirilmaydi, shtatlar asosan mustaqil bo'lib qoladi",
+      "present_day_status": "Amerika Konfederativ Shtatlari juda kuchli shtat hukumatlariga ega erkin federal tizim sifatida ishlaydi. Shveytsariya yoki erta Yevropa Ittifoqi modeliga o'xshash. Iqtisodiy rivojlanish bizning vaqt chizig'imizga o'xshash, ammo Hamdo'stlik davlatlari bilan kuchliroq aloqalarga ega.",
       "events": {
         "constitutional-convention-fails-1787": {
           "title": "Konstitutsiyaviy Konventsiya muvaffaqiyatsizligi",
-          "description": "Shtatlar yangi konstitutsiya bo'yicha kelisha olmaydi, Konfederatsiya Moddalari qoladi.",
-          "impact": "Kuchsiz markaziy hukumat davom etadi, shtatlar mustaqillikni saqlab qoladi."
-        },
-        "trade-wars-1790s": {
-          "title": "Shtatlararo Savdo Urushlari",
-          "description": "Shtatlar bir-biriga tariflar qo'yadi, iqtisodiy nizolar kelib chiqadi.",
-          "impact": "Iqtisodiy samarasizlik va shtatlararo ziddiyatlar."
-        },
-        "foreign-policy-crisis-1812": {
-          "title": "1812-yilgi Urush Inqirozi",
-          "description": "Shtatlar Britaniya bosqiniga qarshi javobni muvofiqlashtira olmaydi.",
-          "impact": "Yagona qo'mondonlik yo'qligi sababli harbiy mag'lubiyatlar."
-        },
-        "gradual-cooperation-1820s": {
-          "title": "Shtatlararo Hamkorlik Kelishuvlari",
-          "description": "Shtatlar savdo va mudofaa uchun mintaqaviy bitimlar tuza boshlaydi.",
-          "impact": "Yaqinroq hamkorlikka tomon sekin harakat."
-        },
-        "federal-union-1850": {
-          "title": "Federal Ittifoq nihoyat tuzildi",
-          "description": "Inqiroz shtatlarni kuchliroq federal hukumat yaratishga majbur qiladi.",
-          "impact": "75 yildan keyin nihoyat zamonaviy federal tizim o'rnatiladi."
+          "description": "Shtatlar yangi konstitutsiya bo'yicha kelisha olmaydi, Konfederatsiya Moddalari qoladi",
+          "impact": "Kuchsiz markaziy hukumat davom etadi, shtatlar mustaqillikni saqlab qoladi"
         }
       },
       "consequences": {
-        "short_term": "Shtatlararo savdo to'siqlari tufayli sekin iqtisodiy rivojlanish.",
-        "long_term": "Sanoatlashtirish bir necha o'n yilga kechiktiriladi.",
-        "global_impact": "Amerika uzoqroq vaqt davomida asosan agrar davlat bo'lib qoladi."
-      },
-      "butterfly": [
-        {
-          "trigger": "Federal muvofiqlashtirish yo'qligi hududiy kengayishni sekinlashtiradi",
-          "consequence": "G'arbiy hududlar uzoqroq vaqt mustaqil bo'lib qoladi."
-        },
-        {
-          "trigger": "Kuchsiz federal hukumat ajralib chiqishning oldini ololmaydi",
-          "consequence": "Yagona fuqarolar urushi o'rniga ko'plab kichik to'qnashuvlar."
+        "delayed-development": {
+          "short_term": "Shtatlararo savdo to'siqlari tufayli sekin iqtisodiy rivojlanish",
+          "long_term": "Sanoatlashtirish bir necha o'n yilga kechiktiriladi",
+          "global_impact": "Amerika uzoqroq vaqt davomida asosan agrar davlat bo'lib qoladi"
         }
-      ],
-      "present_day_status": "Amerika Konfederativ Shtatlari juda kuchli shtat hukumatlariga ega erkin federal tizim sifatida ishlaydi. Shveytsariya yoki erta YI modeliga o'xshash. Iqtisodiy rivojlanish bizning vaqt chizig'imizga o'xshash, ammo sekinroq va katta mintaqaviy farqlar bilan erishilgan."
+      },
+      "butterfly": {
+        "different-civil-war": {
+          "trigger": "Kuchsiz federal hukumat ajralib chiqishning oldini ololmaydi",
+          "consequence": "Yagona fuqarolar urushi o'rniga ko'plab kichik to'qnashuvlar"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
-      "title": "Mustamlaka Qo'zg'oloni Boshlanadi",
-      "text": "Siz Bostondasiz, 1773-yil. Britaniya askarlari ko'chalarni patrul qilmoqda, keskinlik kuchaymoqda. Ozodlik O'g'illari bugun kechqurun portda katta narsa rejalashtirmoqda...",
-      "choices": [
-        {
-          "text": "Britaniya choyini to'kishda Ozodlik O'g'illariga qo'shiling",
-          "consequence": "Sizning ishtirokingiz mojaroni kuchaytiradi va yarashishni qiyinlashtiradi"
+  "scenarios": {
+    "colonial-uprising": {
+      "title": "Boston Choy Ziyofati (1773)",
+      "text": "Siz Bostondagi savdogarsiz. Ozodlik O'g'illari portda to'planmoqda. Ular Britaniya choyini okeanga to'kishni rejalashtirmoqda. Qizil kamzulli askarlar kuzatib turibdi. Nima qilasiz?",
+      "choices": {
+        "join": {
+          "text": "Niqob taqib, ularga qo'shiling. Ozodlik yoki o'lim!",
+          "consequence": "Siz nishonga olingan odamga, ammo vatanparvarlar uchun qahramonga aylanasiz. Inqilob boshlanadi."
         },
-        {
-          "text": "Britaniya hukumatini rejalashtirilgan norozilik haqida ogohlantiring",
-          "consequence": "Choy saqlab qolinadi, ammo mustamlaka g'azabi kuchayib, inqilobni tezlashtiradi"
+        "report": {
+          "text": "Ularni Gubernatorga xabar qiling. Bu mol-mulkni yo'q qilish!",
+          "consequence": "Britaniyaliklar bosh qo'zg'olonchilarni hibsga oladi. Isyon hozircha bostiriladi."
         },
-        {
-          "text": "Uyda qoling va taraf olishdan saqlaning",
-          "consequence": "Siz xavfsiz qolasiz, lekin tarixga ta'sir qilish imkoniyatini qo'ldan boy berasiz"
+        "watch": {
+          "text": "Soya ichidan kuzating. Boshingizni pastga eging.",
+          "consequence": "Voqea sizsiz sodir bo'ladi. Siz omon qolasiz, ammo keyin nima bo'lishida ovozingiz yo'q."
         }
-      ]
+      }
     },
-    {
-      "title": "Kontinental Kongress Bahslari",
-      "text": "Filadelfiya, 1776-yil. Siz Kontinental Kongressda o'tiribsiz, delegatlar mustaqillikni e'lon qilish-qilmaslik haqida qizg'in bahslashmoqda. Benjamin Franklin sizga qaraydi...",
-      "choices": [
-        {
-          "text": "Darhol mustaqillikni qat'iy qo'llab-quvvatlang",
-          "consequence": "Sizning ehtirosli nutqingiz ikkilanayotgan delegatlarni inqilob tomon og'dirishga yordam beradi"
+    "reconciliation-effort": {
+      "title": "Qirolning Tinchligi (1774)",
+      "text": "Sizga o'xshagan sodiq fuqarolar tufayli \"Choy Ziyofati\" barbod bo'ldi. Ammo g'azab saqlanib qoldi. Sizni Parlamentda nutq so'zlash uchun Londonga taklif qilishadi.",
+      "choices": {
+        "demand-rights": {
+          "text": "Mustamlakalar uchun vakillikni talab qiling.",
+          "consequence": "Parlament sizning ustingizdan kuladi. Siz radikallashgan holda uyga qaytasiz."
         },
-        {
-          "text": "Kattaroq avtonomiya uchun Britaniya bilan murosa taklif qiling",
-          "consequence": "Ba'zi delegatlar yarashishni ko'rib chiqishadi, bu urushni kechiktirishi mumkin"
-        },
-        {
-          "text": "Mustaqillikni qo'llang, lekin qullik haqida kafolatlar talab qiling",
-          "consequence": "Siz yangi millatning kelajagini shakllantiradigan qiyin suhbatni majburlaysiz"
+        "accept-status": {
+          "text": "Kichik savdo bitimini qabul qiling va sadoqat qasamini ichng.",
+          "consequence": "Siz urushning oldini olasiz, ammo Amerika abadiy mustamlaka bo'lib qoladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Valley Forge Qishi",
-      "text": "Qish 1777-78. Kontinental Armiya Valley Forge'da sovuqdan qaltiramoqda. Askarlar qochib ketmoqda, ta'minot tugagan. Vashington muhim qaror bo'yicha maslahatingizni so'raydi...",
-      "choices": [
-        {
-          "text": "Britaniya qo'lidagi Filadelfiyaga umidsiz qishki hujum uyushtiring",
-          "consequence": "Urushni tezda tugatishi yoki armiyani yo'q qilishi mumkin bo'lgan xavfli qimor"
+    "continental-congress": {
+      "title": "Mustaqillik Saroyi (1776)",
+      "text": "Filadelfiya. Delegatlar bahslashmoqda. Jefferson Mustaqillik Deklaratsiyasini loyihalashtirdi. Ba'zilar buni xiyonat deb aytishadi. Qanday ovoz berasiz?",
+      "choices": {
+        "vote-yes": {
+          "text": "HA deb ovoz bering. \"Hammamiz birga bo'lishimiz kerak!\"",
+          "consequence": "Deklaratsiya imzolanadi. Urush e'lon qilinadi."
         },
-        {
-          "text": "Qishga chidang va bahorgi yordam kuchlarini kuting",
-          "consequence": "Sizning sabringiz Fon Shtubenga armiyani professional kuchga aylantirishga imkon beradi"
-        },
-        {
-          "text": "Yashirincha Britaniyaga tinchlik takliflarini yuboring",
-          "consequence": "Sizning diplomatik harakatlaringiz azob-uqubatlarni tugatishi mumkin, ammo qanday narx evaziga?"
+        "vote-no": {
+          "text": "YO'Q deb ovoz bering. Biz Britaniya imperiyasi ustidan g'alaba qozona olmaymiz.",
+          "consequence": "Taklif rad etiladi. Mustamlakalar bo'lingan holda qoladi. Britaniyaliklar ularni birma-bir mahv etadi."
         }
-      ]
+      }
     },
-    {
-      "title": "Fransuz Masalasi",
-      "text": "Parij, 1778-yil. Benjamin Franklin fransuz vazirlari bilan muzokaralar olib bormoqda. Ular harbiy yordam taklif qilishmoqda, ammo Amerika Fransiya protektorati bo'lishini talab qilishmoqda. Nima maslahat berasiz?",
-      "choices": [
-        {
-          "text": "G'alabani kafolatlash uchun Fransiya himoyasini qabul qiling",
-          "consequence": "Fransuz nazorati g'alabani ta'minlaydi, ammo haqiqiy mustaqillikka putur yetkazadi"
+    "long-island": {
+      "title": "Long Island'dagi Falokat (1776)",
+      "text": "Britaniyaliklar Nyu-Yorkka katta qo'shin tushirdi. Vashington kuchlari sonidan ozroq va qurshovga olingan. Daryo orqangizda.",
+      "choices": {
+        "retreat-night": {
+          "text": "Tuman pardasi ostida daryo bo'ylab chekining.",
+          "consequence": "Mo'jizaviy qochish! Armiya boshqa kun jang qilish uchun tirik qoladi."
         },
-        {
-          "text": "Siyosiy nazoratsiz harbiy yordam bo'yicha muzokara qiling",
-          "consequence": "Sizning diplomatiyangiz suverenitetni saqlab qolgan holda muhim fransuz yordamini ta'minlaydi"
-        },
-        {
-          "text": "To'liq mustaqillikni saqlab qolish uchun fransuz yordamini rad eting",
-          "consequence": "Amerikaning o'ziga ishonchi saqlanib qoladi, ammo g'alaba qozonish ancha qiyinlashadi"
+        "stand-ground": {
+          "text": "Turing va jang qiling! \"Chekinish yo'q, taslim bo'lish yo'q!\"",
+          "consequence": "Sizning jasur turishingiz halokatga mahkum. Armiya qurshab olinadi va yanchiladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Yorktowndagi G'alaba",
-      "text": "Oktyabr 1781-yil. Britaniya generali Kornuollis Yorktownda qamalga tushdi. Urush shu yerda tugashi mumkin, ammo g'alabani qanday hal qilishingiz yangi millatni shakllantiradi...",
-      "choices": [
-        {
-          "text": "Mag'lub bo'lgan Britaniya kuchlariga oliyjanoblik va hurmat ko'rsating",
-          "consequence": "Sizning olijanob xulq-atvoringiz Amerika qadriyatlari va xalqaro hurmat uchun namuna bo'ladi"
+    "washington-captured": {
+      "title": "Inqilobning Yakuni (1776)",
+      "text": "General Vashington kishanband. Kontinental armiya endi yo'q. Qirol sadoqat qasamini ichgan barchaga afv taklif qiladi.",
+      "choices": {
+        "submit": {
+          "text": "Qirol Jorj III'ga sadoqat qasamini iching.",
+          "consequence": "Inqilob tugadi. Tartib tiklanadi."
         },
-        {
-          "text": "Britaniyadan qattiq reparatsiya va imtiyozlar talab qiling",
-          "consequence": "Sizning talablaringiz ko'proq hududni ta'minlaydi, ammo doimiy nafratni keltirib chiqaradi"
-        },
-        {
-          "text": "Darhol konstitutsiyaviy konventsiyani talab qiling",
-          "consequence": "Sizning shoshilinchligingiz boshidanoq kuchliroq federal hukumat yaratishga yordam beradi"
+        "guerilla": {
+          "text": "Tog'larga qoching va partizan urushini olib boring.",
+          "consequence": "Siz yillab jang qilasiz, ammo rahbarliksiz bu shunchaki qaroqchilikdir."
         }
-      ]
+      }
+    },
+    "valley-forge": {
+      "title": "Umidsizlik Qishi (1777)",
+      "text": "Valley Forge. Sovuq, ochlik va chechak askarlaringizni o'ldirmoqda. Baron fon Shtuben ularni o'rgatishni taklif qiladi, ammo ma'naviyat sinmoqda.",
+      "choices": {
+        "inoculate": {
+          "text": "Chechakka qarshi ommaviy emlashga buyruq bering. Xavfli, ammo zarur.",
+          "consequence": "Ko'plari o'ladi, ammo epidemiya to'xtaydi. Armiya kuchliroq bo'lib chiqadi."
+        },
+        "attack-philly": {
+          "text": "Issiq turar joy uchun Filadelfiyaga hujum qiling.",
+          "consequence": "Hujum falokatga aylanadi. Armiya qor ichida halok bo'ladi."
+        }
+      }
+    },
+    "french-alliance": {
+      "title": "Fransuz Saroyi (1778)",
+      "text": "Ben Franklin Parijda. Fransiya qiroli ittifoq taklif qiladi, ammo AQSh fransuz qonunchiligi ostida protektorat bo'lishini talab qiladi.",
+      "choices": {
+        "accept-protectorate": {
+          "text": "Qabul qiling. Bizga ularning floti har qanday narx evaziga kerak.",
+          "consequence": "Fransuz floti keladi va Britaniyani yanchadi. Ammo endi siz Versalga javob berasiz."
+        },
+        "demand-equal": {
+          "text": "Rad eting. \"Teng sheriklar yoki hech narsa.\"",
+          "consequence": "Franklin saroyni o'ziga rom qiladi. Ular teng ittifoqqa rozi bo'lishadi!"
+        }
+      }
+    },
+    "yorktown-finale": {
+      "title": "Yorktown'dagi G'alaba (1781)",
+      "text": "Kornuollis qopqonga tushdi. Britaniyaliklar taslim bo'ladi. Siz urushda g'alaba qozondingiz! Endi tinchlikda g'alaba qozonishingiz kerak.",
+      "choices": {
+        "federal-constitution": {
+          "text": "Markaziy hukumatga ega kuchli Konstitutsiyani loyihalashtiring.",
+          "consequence": "Amerika Qo'shma Shtatlari tug'iladi. Yangi super davlat ko'tariladi."
+        },
+        "keep-confederation": {
+          "text": "Hokimiyatni shtatlarda saqlang. Boshqa qirollar yo'q!",
+          "consequence": "Shtatlar janjallashadi va kurashadi. Ittifoq kuchsiz."
+        }
+      }
     }
-  ]
+  }
 }

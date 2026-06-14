@@ -1,0 +1,37 @@
+{
+  "stats": {
+    "chaos": "Chaos",
+    "freedom": "Freedom",
+    "diplomacy": "Diplomacy",
+    "strength": "Strength"
+  },
+  "start": {
+    "tagline": "A living chronicle. Explore, decide, and command — your choices will carve one of several realities.",
+    "enter": "⚔ Enter the Chronicle"
+  },
+  "cinematic": {
+    "skip": "Skip ▸▸"
+  },
+  "explore": {
+    "continue": "Continue ➤",
+    "close": "Close"
+  },
+  "battle": {
+    "badge": "Battle",
+    "sound_drums": "⚔ Sound the Drums",
+    "hangs": "⏸ The battle hangs in the balance"
+  },
+  "ending": {
+    "reality_takes_shape": "A reality takes shape",
+    "explore_reality": "🌍 Explore this Reality",
+    "rewrite": "↺ Rewrite History",
+    "back_to_chapter": "Back to Chapter"
+  },
+  "page": {
+    "unavailable_title": "This chronicle is still being written",
+    "unavailable_description": "The immersive 3D experience for this chapter isn't available yet. Timur's Legacy is the first playable chronicle.",
+    "play_timur": "⚔ Play Timur's Legacy",
+    "all_chapters": "All Chapters",
+    "exit": "← Exit"
+  }
+}

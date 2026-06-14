@@ -2,116 +2,255 @@
   "meta": {
     "title": "World War II",
     "period": "1939-1945",
-    "description": "The deadliest conflict in human history and its alternative outcomes",
-    "historical_context": "World War II killed over 70 million people, destroyed empires, created superpowers, and forever changed humanity's relationship with technology and mass violence. The war could have ended very differently at multiple critical junctures, each leading to radically different modern worlds.",
-    "divergence_point": "Critical decisions and battles that could have changed the war's outcome and postwar order"
+    "description": "The Greatest Show on Earth: The War That Changed Everything! 🌍💥 Watch democracy, fascism, and communism duke it out.",
+    "historical_context": "By 1939, the world was a powder keg. Hitler was gobbling up Europe, Japan was rampaging through Asia.",
+    "divergence_point": "Munich Conference 1938"
   },
   "figures": {
-    "adolf_hitler": {
-      "name": "Adolf Hitler",
-      "role": "German Führer",
-      "description": "The dictator whose racial ideology and territorial ambitions unleashed the deadliest war in history."
-    },
-    "winston_churchill": {
+    "winston-churchill": {
       "name": "Winston Churchill",
-      "role": "British Prime Minister",
-      "description": "The bulldog whose refusal to surrender kept Britain in the fight during its darkest hour."
+      "role": "The Bulldog Who Never Gave Up",
+      "description": "The ultimate wartime leader with the best one-liners! 🐕⚡ This cigar-smoking, brandy-drinking, speech-giving legend basically out-stubborned Hitler."
     },
-    "joseph_stalin": {
-      "name": "Joseph Stalin",
-      "role": "Soviet Leader",
-      "description": "The brutal dictator whose nation bore the brunt of Nazi aggression and emerged as a superpower."
-    },
-    "franklin_roosevelt": {
+    "franklin-roosevelt": {
       "name": "Franklin D. Roosevelt",
-      "role": "US President",
-      "description": "The president who led America from isolation to victory and designed the postwar international order."
+      "role": "The New Deal President & War Leader",
+      "description": "The president who couldn't walk but made America run! 🦅💪 Led America from Depression to victory while managing Stalin and Churchill."
+    },
+    "joseph-stalin": {
+      "name": "Joseph Stalin",
+      "role": "The Georgian Steel Who Broke Hitler",
+      "description": "The paranoid dictator who somehow became democracy's ally! ⚔️🐻 Brutal at home, essential against Hitler."
+    },
+    "dwight-eisenhower": {
+      "name": "Dwight D. Eisenhower",
+      "role": "The Supreme Commander & D-Day Master",
+      "description": "The Kansas farm boy who organized the biggest invasion in history! 🏖️⚔️ Diplomatic genius!"
+    },
+    "george-patton": {
+      "name": "George S. Patton",
+      "role": "Old Blood & Guts Tank Commander",
+      "description": "The general who thought he was a reincarnated warrior! 🏺⚔️ Loved tanks, hated paperwork. \"Lead me, follow me, or get out of my way!\""
+    },
+    "bernard-montgomery": {
+      "name": "Bernard Montgomery",
+      "role": "The Desert Fox Hunter & British Bulldog",
+      "description": "The methodical British general who beat Rommel! 🏜️🦊 Careful planner, El Alamein was his masterpiece!"
+    },
+    "erwin-rommel": {
+      "name": "Erwin Rommel",
+      "role": "The Desert Fox & Honorable Enemy",
+      "description": "The German general even his enemies respected! 🏜️🦊 Master of tank warfare, eventually plotted against Hitler."
+    },
+    "hirohito": {
+      "name": "Emperor Hirohito",
+      "role": "The Silent Emperor Who Ended the War",
+      "description": "The reluctant emperor who finally said \"enough!\" 🌸⚔️ Made the hardest decision of his life: surrender."
     }
   },
   "timelines": {
-    "axis_victory": {
-      "title": "The Dark Victory: Axis Powers Triumph",
-      "description": "What if Germany defeated the Soviet Union and Britain sued for peace?",
-      "divergence_description": "Operation Barbarossa succeeds. Moscow falls in 1941. Britain negotiates peace. America remains neutral.",
+    "no-appeasement": {
+      "title": "No Appeasement: Churchill is Right! 🦁⚔️",
+      "description": "What if Britain and France had stopped Hitler at Munich in 1938 instead of appeasing him?",
+      "divergence_description": "Britain and France reject Munich Agreement and declare war when Germany threatens Czechoslovakia.",
+      "present_day_status": "The \"Short War\" of 1938-1940 saved millions. September 30th is \"Courage Day\". The Munich Conference Room is a museum: \"Never Again Appease Evil.\" 🦁🕊️",
       "events": {
-        "barbarossa_succeeds_1941": {
-          "title": "The Fall of Moscow",
-          "description": "German forces reach Moscow before winter. Stalin is killed. The Soviet Union fragments into chaos.",
-          "impact": "Nazi Germany controls Europe from the Atlantic to the Urals. Britain accepts peace terms."
+        "munich-crisis-war-1938": {
+          "title": "Munich Crisis Triggers War",
+          "description": "Britain and France reject Munich Agreement. WWII begins a year early!",
+          "impact": "Germany is less prepared. Czechoslovakia fights."
         },
-        "fortress_america_1943": {
-          "title": "Hemispheric Defense",
-          "description": "America, unable to intervene in Europe, focuses on defending the Western Hemisphere. A cold war between Nazi Europe and Democratic America begins.",
-          "impact": "The world is divided between Nazi domination and American resistance."
-        },
-        "perpetual_cold_war_1950": {
-          "title": "The Long Twilight Struggle",
-          "description": "Nazi Germany and the United States face off in a cold war. Proxy conflicts rage in Latin America, Africa, and Asia.",
-          "impact": "Democracy survives only in the Americas. Most of humanity lives under totalitarian rule."
+        "german-defeat-1940": {
+          "title": "Germany Collapses",
+          "description": "Facing combined forces, the Nazis fall in 2 years.",
+          "impact": "Holocaust prevented. Democracy restored."
         }
       },
       "consequences": {
-        "short_term": "Nazi Germany dominates Eurasia. The Holocaust is completed. Tens of millions enslaved.",
-        "long_term": "A cold war between Nazi Europe and Democratic America defines the late 20th century.",
-        "global_impact": "Human rights are set back generations. Democracy survives but in weakened, isolated form."
+        "holocaust-prevented": {
+          "short_term": "Early war prevents full implementation of Holocaust",
+          "long_term": "Six million Jewish lives saved",
+          "global_impact": "Different understanding of genocide"
+        }
       },
-      "present_day_status": "The Greater Germanic Reich collapsed in the 1980s from internal contradictions, demographic crises from genocide, and economic stagnation. The liberation was violent and chaotic. Europe still struggles with the legacy of Nazi rule. American-led democracy finally spread globally only in the 1990s."
+      "butterfly": {
+        "no-atomic-weapons": {
+          "trigger": "Shorter war means no Manhattan Project",
+          "consequence": "Nuclear weapons developed later, possibly never used"
+        }
+      }
     },
-    "early_allied_victory": {
-      "title": "Fortress Europa Never Built: Early Victory",
-      "description": "What if D-Day happened in 1943 and Germany was defeated before developing V-weapons?",
-      "divergence_description": "The Allies invade France in 1943. Germany is defeated before V-2 rockets and jet aircraft are deployed.",
+    "d-day-fails": {
+      "title": "D-Day Disaster: Overlord Fails! 💀🏖️",
+      "description": "What if the D-Day landings had failed catastrophically?",
+      "divergence_description": "Bad weather and German preparation doom the invasion.",
+      "present_day_status": "The Soviet European Federation spans from Lisbon to Moscow. Normandy is a solemn memorial to the \"Lost Army\". The Cold War was between the USA and a united Red Europe. 💔🌹",
       "events": {
-        "dday_1943": {
-          "title": "Operation Sledgehammer",
-          "description": "Against American hesitation, Churchill convinces Roosevelt to invade France in 1943. The invasion succeeds.",
-          "impact": "Germany fights a two-front war a year earlier. Wehrmacht is overwhelmed."
+        "d-day-disaster-1944": {
+          "title": "D-Day Disaster",
+          "description": "Aliied forces are pushed back into the sea. 50,000 casualties.",
+          "impact": "Destroys Allied invasion capability."
         },
-        "germany_defeated_1944": {
-          "title": "Unconditional Surrender",
-          "description": "Germany surrenders in mid-1944. Millions of lives are saved. The Holocaust is interrupted, saving hundreds of thousands.",
-          "impact": "Europe's devastation is reduced. The atomic bomb is never used. Soviet advance into Europe is limited."
-        },
-        "democratic_eastern_europe_1945": {
-          "title": "Free Elections",
-          "description": "With Western forces liberating more of Eastern Europe, free elections occur. Poland, Czechoslovakia, and Hungary become democracies.",
-          "impact": "No Iron Curtain. No Cold War. Democratic Europe is unified by 1950."
+        "soviet-europe": {
+          "title": "Soviet Europe",
+          "description": "The Red Army liberates all of Europe alone.",
+          "impact": "Communist Iron Curtain extends to the Atlantic."
         }
       },
       "consequences": {
-        "short_term": "War ends a year earlier. Millions of lives saved. Less Soviet occupation of Eastern Europe.",
-        "long_term": "No Cold War division of Europe. Earlier European integration. Faster postwar recovery.",
-        "global_impact": "Without the Cold War, decolonization is less violent. Earlier global cooperation and development."
+        "soviet-dominance": {
+          "short_term": "Soviet Union controls France and Germany",
+          "long_term": "NATO never forms",
+          "global_impact": "A Red Europe changes the Cold War entirely"
+        }
       },
-      "present_day_status": "Europe unified democratically by 1950. No Cold War meant resources went to development instead of arms races. Space exploration and scientific advancement accelerated. The 20th century was prosperous rather than terrifying. The Soviet Union peacefully democratized in the 1960s."
+      "butterfly": {
+        "communist-britain": {
+          "trigger": "Isolated UK faces communist continent",
+          "consequence": "UK eventually turns socialist under pressure"
+        }
+      }
     },
-    "negotiated_peace_1943": {
-      "title": "The Compromise Peace: 1943 Settlement",
-      "description": "What if a coup against Hitler succeeded and Germany negotiated peace?",
-      "divergence_description": "The July 1944 plot succeeds early, in 1943. German generals overthrow Hitler and seek armistice.",
+    "japan-wins-pacific": {
+      "title": "Japanese Pacific Empire 🌅🏴‍☠️",
+      "description": "What if Japan destroyed the US fleet at Midway?",
+      "divergence_description": "Japan wins Midway, invades Hawaii and Australia.",
+      "present_day_status": "The Greater East Asia Co-Prosperity Sphere is a superpower. Japanese is the lingua franca of Asia. The world is divided into three uneasy blocs. 🌸🕊️",
       "events": {
-        "successful_coup_1943": {
-          "title": "Operation Valkyrie Succeeds",
-          "description": "Anti-Nazi officers successfully eliminate Hitler and Nazi leadership. A military government sues for peace.",
-          "impact": "The war ends without unconditional surrender. Germany retreats to 1939 borders."
+        "midway-victory": {
+          "title": "Japan Wins Midway",
+          "description": "US carriers are sunk. The Pacific is open.",
+          "impact": "US forced to negotiate."
         },
-        "partial_justice_1944": {
-          "title": "The Incomplete Reckoning",
-          "description": "Some Nazi leaders are tried, but many escape justice. The Holocaust's full extent is hidden. Germany avoids occupation.",
-          "impact": "Justice is incomplete. Democratic reform in Germany is slower and shallower."
-        },
-        "cold_war_with_germany_1950": {
-          "title": "The Uneasy Peace",
-          "description": "Germany remains partially reformed but authoritarian. A three-way cold war develops: USSR, Germany, and the West.",
-          "impact": "Postwar order is more complex and unstable. Germany remains a grey area between democracy and dictatorship."
+        "treaty-honolulu": {
+          "title": "Treaty of Honolulu",
+          "description": "US recognizes Japanese dominance in Asia.",
+          "impact": "Japanese Empire secures resources."
         }
       },
       "consequences": {
-        "short_term": "War ends in 1943-44 through negotiation. Germany avoids occupation and partition.",
-        "long_term": "Incomplete denazification. Germany remains partially authoritarian into the 1960s.",
-        "global_impact": "Ambiguous outcome prevents clear moral lessons. Cold War is three-way and more complex."
+        "asian-empire": {
+          "short_term": "Japan rules Asia",
+          "long_term": "Decolonization happens under Japanese terms",
+          "global_impact": "Tri-polar world (US, Germany/USSR, Japan)"
+        }
       },
-      "present_day_status": "The negotiated peace allowed some Nazis to escape justice and prevented full democratic transformation of Germany. The country fully democratized only in the 1970s. The incomplete reckoning with the Holocaust led to recurring historical controversies. Europe's postwar integration was slower and more difficult."
+      "butterfly": {
+        "tech-stagnation": {
+          "trigger": "Fragmented world markets",
+          "consequence": "Slower technological growth globally"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "munich-conference": {
+      "title": "The Munich Crisis (1938)",
+      "text": "Hitler demands the Sudetenland. Chamberlain wants peace at any cost. You are a British MP advising the Prime Minister. Do you choose shame or war?",
+      "choices": {
+        "appease": {
+          "text": "Sign the agreement. \"Peace for our time!\"",
+          "consequence": "You bought a year of peace, but Hitler is emboldened. War is inevitable."
+        },
+        "resist": {
+          "text": "Reject the demands. Mobilize the fleet!",
+          "consequence": "Hitler is shocked. The German generals panic. War begins, but you are ready."
+        }
+      }
+    },
+    "poland-invasion": {
+      "title": "Blitzkrieg (1939)",
+      "text": "Hitler invades Poland. The tactics are new: fast tanks, screaming dive bombers. Your allies are slow to move. The French stay behind the Maginot Line.",
+      "choices": {
+        "dig-in": {
+          "text": "Order Polish forces to dig in and wait for help.",
+          "consequence": "They are encircled and destroyed. Poland falls in weeks."
+        },
+        "attack-west": {
+          "text": "Demand French attack on the Rhine immediately.",
+          "consequence": "The French advance cautiously, then retreat. The \"Phony War\" begins."
+        }
+      }
+    },
+    "battle-of-britain": {
+      "title": "The Darkest Hour (1940)",
+      "text": "France has fallen. Britain stands alone. The Luftwaffe is pounding London. You must allocate your precious Spitfires.",
+      "choices": {
+        "radar-defense": {
+          "text": "Defend the radar stations and airfields at all costs.",
+          "consequence": "Strategic brilliance! The Luftwaffe is bled dry. Invasion is cancelled."
+        },
+        "vengeance": {
+          "text": "Bomb Berlin in retaliation for London.",
+          "consequence": "Hitler strikes back at cities, sparing your airfields. A grim exchange, but you survive."
+        }
+      }
+    },
+    "pearl-harbor": {
+      "title": "Day of Infamy (1941)",
+      "text": "Reports coming in. Japanese planes over Hawaii. Battleship Row is burning. Admiral, what are your orders?",
+      "choices": {
+        "save-carriers": {
+          "text": "Ensure the carriers are at sea!",
+          "consequence": "The battleships are lost, but your strike force survives. You can fight back."
+        },
+        "launch-fighters": {
+          "text": "Scramble everything! Defend the harbor!",
+          "consequence": "Too little, too late. The devastation is total."
+        }
+      }
+    },
+    "midway-trap": {
+      "title": "The Trap at Midway (1942)",
+      "text": "We have broken the Japanese code. We know they are targeting Midway. We can ambush them, or play it safe.",
+      "choices": {
+        "ambush": {
+          "text": "Launch everything. Catch them with bombs on deck.",
+          "consequence": "Four victories in one day! The tide turns."
+        },
+        "caution": {
+          "text": "Hold back reserves. Wait for confirmation.",
+          "consequence": "You hesitate. The Japanese spot you first. Your fleet is sunk."
+        }
+      }
+    },
+    "d-day-planning": {
+      "title": "The Longest Day (1944)",
+      "text": "Ike, the weather is terrible. The seas are rough. But the moon is right. If we don't go now, we wait a month.",
+      "choices": {
+        "go": {
+          "text": " \"OK, let's go.\" Launch the invasion.",
+          "consequence": "The gamble pays off. You catch the Germans sleeping. The liberation begins."
+        },
+        "delay": {
+          "text": "Too risky. Postpone for clear skies.",
+          "consequence": "The clear skies never come. When you finally go, Rommel is waiting."
+        }
+      }
+    },
+    "atomic-decision": {
+      "title": "The Destroyer of Worlds (1945)",
+      "text": "The gadget works. Truman asks for your counsel. Invasion means 1 million casualties. The Bomb means... devastation.",
+      "choices": {
+        "drop-bomb": {
+          "text": "Drop it. End the war now.",
+          "consequence": "The cities vanish. Japan surrenders. The Nuclear Age begins."
+        },
+        "demonstration": {
+          "text": "Demonstrate it on a deserted island first.",
+          "consequence": "The Japanese hardliners are unimpressed. \"A trick,\" they say. The war drags on."
+        }
+      }
+    },
+    "operation-downfall": {
+      "title": "Invasion of Japan (1945)",
+      "text": "The demonstration failed. You must invade the Home Islands. Every civilian is armed with a spear.",
+      "choices": {
+        "invasion": {
+          "text": "Proceed with the invasion.",
+          "consequence": "Victory, but at the cost of millions. Japan is a ruin. Resentment lasts for centuries."
+        }
+      }
     }
   }
 }

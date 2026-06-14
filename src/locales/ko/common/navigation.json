@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "홈",
+    "chapters": "챕터",
+    "compare": "비교",
+    "documentation": "문서",
+    "faq": "자주 묻는 질문",
+    "support": "지원",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "accessibility": "접근성"
+  },
+  "breadcrumb": {
+    "home": "홈",
+    "chapters": "챕터",
+    "chapter": "챕터",
+    "timeline": "타임라인",
+    "compare": "비교",
+    "back_to": "{{page}}(으)로 돌아가기"
+  },
+  "language": {
+    "label": "언어",
+    "switch": "언어 변경",
+    "english": "English",
+    "uzbek": "O'zbekcha"
+  },
+  "mobile": {
+    "menu": "메뉴",
+    "close_menu": "메뉴 닫기",
+    "open_menu": "메뉴 열기"
+  }
+}

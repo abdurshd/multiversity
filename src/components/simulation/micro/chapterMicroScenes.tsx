@@ -1,6 +1,7 @@
 import React, { useMemo, useRef } from 'react';
 import { Html, Line } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
+import { useTranslation } from 'react-i18next';
 import * as THREE from 'three';
 import { CampaignMicroSceneRenderProps } from '../GenericCampaign3DView';
 
@@ -15,21 +16,33 @@ const drawArc = (from: [number, number, number], to: [number, number, number], l
   return [from, midpoint, to] as [number, number, number][];
 };
 
-const Metrics: React.FC<{ scene: CampaignMicroSceneRenderProps['scene']; title?: string }> = ({ scene, title }) => (
-  <Html position={[scene.focalPoint[0], scene.focalPoint[1] + 1.65, scene.focalPoint[2]]} center distanceFactor={8.4}>
-    <div className="rounded-md border border-white/20 bg-slate-900/90 px-3 py-2 text-[11px] text-slate-100">
-      {title && <div className="mb-1 text-[10px] uppercase tracking-wider text-blue-200">{title}</div>}
-      <div className="font-mono text-[10px]">
-        {scene.primaryMetricLabel}: {Math.round(scene.primaryMetric * 100)}%
+const Metrics: React.FC<{ scene: CampaignMicroSceneRenderProps['scene']; title?: string }> = ({ scene, title }) => {
+  const { t } = useTranslation('components-simulation');
+  return (
+    <Html position={[scene.focalPoint[0], scene.focalPoint[1] + 1.65, scene.focalPoint[2]]} center distanceFactor={8.4}>
+      <div className="rounded-md border border-white/20 bg-slate-900/90 px-3 py-2 text-[11px] text-slate-100">
+        {title && <div className="mb-1 text-[10px] uppercase tracking-wider text-blue-200">{title}</div>}
+        <div className="font-mono text-[10px]">
+          {t('overlayLabels.metric_primary', {
+            label: scene.primaryMetricLabel,
+            value: Math.round(scene.primaryMetric * 100),
+            defaultValue: `${scene.primaryMetricLabel}: ${Math.round(scene.primaryMetric * 100)}%`,
+          })}
+        </div>
+        <div className="font-mono text-[10px] text-slate-300">
+          {t('overlayLabels.metric_secondary', {
+            label: scene.secondaryMetricLabel,
+            value: Math.round(scene.secondaryMetric * 100),
+            defaultValue: `${scene.secondaryMetricLabel}: ${Math.round(scene.secondaryMetric * 100)}%`,
+          })}
+        </div>
       </div>
-      <div className="font-mono text-[10px] text-slate-300">
-        {scene.secondaryMetricLabel}: {Math.round(scene.secondaryMetric * 100)}%
-      </div>
-    </div>
-  </Html>
-);
+    </Html>
+  );
+};
 
 export const YorktownArtilleryMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const groupRef = useRef<THREE.Group>(null);
   const morale = fit(scene.secondaryMetric);
   const volleys = useMemo(
@@ -78,7 +91,7 @@ export const YorktownArtilleryMicroScene: React.FC<CampaignMicroSceneRenderProps
           opacity={0.78}
         />
         <Html position={[scene.focalPoint[0], scene.focalPoint[1] + 1.55, scene.focalPoint[2]]} center distanceFactor={8}>
-          <div className="rounded border border-cyan-300/40 bg-slate-900/90 px-2 py-1 text-[10px] text-cyan-100">Wind vector: {wind}% favorable</div>
+          <div className="rounded border border-cyan-300/40 bg-slate-900/90 px-2 py-1 text-[10px] text-cyan-100">{t('overlayLabels.wind_vector', { value: wind, defaultValue: `Wind vector: ${wind}% favorable` })}</div>
         </Html>
       </group>
     );
@@ -101,7 +114,7 @@ export const YorktownArtilleryMicroScene: React.FC<CampaignMicroSceneRenderProps
           <boxGeometry args={[0.8, 0.04, 0.45]} />
           <meshStandardMaterial color="#fbbf24" emissive="#f59e0b" emissiveIntensity={0.2} />
         </mesh>
-        <Metrics scene={scene} title="Continental Congress" />
+        <Metrics scene={scene} title={t('microScenes.metrics-continental-congress', { defaultValue: 'Continental Congress' })} />
       </group>
     );
   }
@@ -133,7 +146,11 @@ export const YorktownArtilleryMicroScene: React.FC<CampaignMicroSceneRenderProps
 
       <Html position={[scene.focalPoint[0], scene.focalPoint[1] + 1.7, scene.focalPoint[2]]} center distanceFactor={8.4}>
         <div className="rounded-md border border-white/20 bg-slate-900/90 px-3 py-2 text-[11px] text-slate-100">
-          Morale: {Math.round(morale * 100)}% | Cohesion: {Math.round(scene.primaryMetric * 100)}%
+          {t('overlayLabels.morale_cohesion', {
+            morale: Math.round(morale * 100),
+            cohesion: Math.round(scene.primaryMetric * 100),
+            defaultValue: `Morale: ${Math.round(morale * 100)}% | Cohesion: ${Math.round(scene.primaryMetric * 100)}%`,
+          })}
         </div>
       </Html>
     </group>
@@ -141,6 +158,7 @@ export const YorktownArtilleryMicroScene: React.FC<CampaignMicroSceneRenderProps
 };
 
 export const AnkaraSiegeMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const elephantRef = useRef<THREE.Mesh>(null);
 
   useFrame(({ clock }) => {
@@ -168,12 +186,13 @@ export const AnkaraSiegeMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({
         color="#fbbf24"
         lineWidth={1.4}
       />
-      <Metrics scene={scene} title="Ankara Siege" />
+      <Metrics scene={scene} title={t('microScenes.metrics-ankara-siege', { defaultValue: 'Ankara Siege' })} />
     </group>
   );
 };
 
 export const BastilleStormMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const crowdRef = useRef<THREE.Group>(null);
 
   useFrame(({ clock }) => {
@@ -203,7 +222,7 @@ export const BastilleStormMicroScene: React.FC<CampaignMicroSceneRenderProps> = 
             <meshStandardMaterial color="#ef4444" />
           </mesh>
         ))}
-        <Metrics scene={scene} title="Terror Square" />
+        <Metrics scene={scene} title={t('microScenes.metrics-terror-square', { defaultValue: 'Terror Square' })} />
       </group>
     );
   }
@@ -226,12 +245,13 @@ export const BastilleStormMicroScene: React.FC<CampaignMicroSceneRenderProps> = 
         <sphereGeometry args={[0.18, 12, 12]} />
         <meshBasicMaterial color="#9ca3af" transparent opacity={0.4} />
       </mesh>
-      <Metrics scene={scene} title="Bastille" />
+      <Metrics scene={scene} title={t('microScenes.metrics-bastille', { defaultValue: 'Bastille' })} />
     </group>
   );
 };
 
 export const GeokTepeMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const blastRef = useRef<THREE.Mesh>(null);
 
   useFrame(({ clock }) => {
@@ -265,12 +285,13 @@ export const GeokTepeMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ sc
         transparent
         opacity={0.8}
       />
-      <Metrics scene={scene} title="Geok-Tepe" />
+      <Metrics scene={scene} title={t('microScenes.metrics-geok-tepe', { defaultValue: 'Geok-Tepe' })} />
     </group>
   );
 };
 
 export const GettysburgChargeMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   return (
     <group>
       {Array.from({ length: 6 }, (_, row) => (
@@ -288,12 +309,13 @@ export const GettysburgChargeMicroScene: React.FC<CampaignMicroSceneRenderProps>
         color="#f97316"
         lineWidth={1.3}
       />
-      <Metrics scene={scene} title="Gettysburg" />
+      <Metrics scene={scene} title={t('microScenes.metrics-gettysburg', { defaultValue: 'Gettysburg' })} />
     </group>
   );
 };
 
 export const WinterPalaceMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const column = useRef<THREE.Group>(null);
 
   useFrame(({ clock }) => {
@@ -325,12 +347,13 @@ export const WinterPalaceMicroScene: React.FC<CampaignMicroSceneRenderProps> = (
         color="#f87171"
         lineWidth={1.5}
       />
-      <Metrics scene={scene} title="Winter Palace" />
+      <Metrics scene={scene} title={t('microScenes.metrics-winter-palace', { defaultValue: 'Winter Palace' })} />
     </group>
   );
 };
 
 export const BeerHallPutschMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const crowd = useRef<THREE.Group>(null);
 
   useFrame(({ clock }) => {
@@ -364,12 +387,13 @@ export const BeerHallPutschMicroScene: React.FC<CampaignMicroSceneRenderProps> =
         transparent
         opacity={0.78}
       />
-      <Metrics scene={scene} title="Beer Hall Putsch" />
+      <Metrics scene={scene} title={t('microScenes.metrics-beer-hall-putsch', { defaultValue: 'Beer Hall Putsch' })} />
     </group>
   );
 };
 
 export const SarajevoAssassinationMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const convoy = useRef<THREE.Mesh>(null);
 
   useFrame(({ clock }) => {
@@ -394,12 +418,13 @@ export const SarajevoAssassinationMicroScene: React.FC<CampaignMicroSceneRenderP
           <meshStandardMaterial color="#7f1d1d" />
         </mesh>
       ))}
-      <Metrics scene={scene} title="Sarajevo" />
+      <Metrics scene={scene} title={t('microScenes.metrics-sarajevo', { defaultValue: 'Sarajevo' })} />
     </group>
   );
 };
 
 export const DDayLandingMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const landing = useRef<THREE.Group>(null);
 
   useFrame(({ clock }) => {
@@ -438,12 +463,13 @@ export const DDayLandingMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({
           opacity={0.75}
         />
       ))}
-      <Metrics scene={scene} title="Normandy" />
+      <Metrics scene={scene} title={t('microScenes.metrics-normandy', { defaultValue: 'Normandy' })} />
     </group>
   );
 };
 
 export const IncheonLandingMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   return (
     <group>
       <mesh position={[scene.focalPoint[0], scene.focalPoint[1] + 0.06, scene.focalPoint[2]]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -467,12 +493,13 @@ export const IncheonLandingMicroScene: React.FC<CampaignMicroSceneRenderProps> =
         color="#f59e0b"
         lineWidth={1.3}
       />
-      <Metrics scene={scene} title="Incheon" />
+      <Metrics scene={scene} title={t('microScenes.metrics-incheon', { defaultValue: 'Incheon' })} />
     </group>
   );
 };
 
 export const CubanMissileMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   return (
     <group>
       <mesh position={[scene.focalPoint[0], scene.focalPoint[1] + 0.15, scene.focalPoint[2]]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -489,7 +516,10 @@ export const CubanMissileMicroScene: React.FC<CampaignMicroSceneRenderProps> = (
       </mesh>
       <Html position={[scene.focalPoint[0], scene.focalPoint[1] + 1.25, scene.focalPoint[2]]} center distanceFactor={8.3}>
         <div className="rounded bg-slate-900/90 px-2 py-1 text-[10px] text-orange-200 ring-1 ring-orange-400/40">
-          DEFCON {Math.max(1, 5 - Math.round(scene.primaryMetric * 4))}
+          {t('overlayLabels.defcon', {
+            value: Math.max(1, 5 - Math.round(scene.primaryMetric * 4)),
+            defaultValue: `DEFCON ${Math.max(1, 5 - Math.round(scene.primaryMetric * 4))}`,
+          })}
         </div>
       </Html>
     </group>
@@ -497,6 +527,7 @@ export const CubanMissileMicroScene: React.FC<CampaignMicroSceneRenderProps> = (
 };
 
 export const AugustCoupMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   return (
     <group>
       <mesh position={[scene.focalPoint[0], scene.focalPoint[1] + 0.2, scene.focalPoint[2]]}>
@@ -517,12 +548,13 @@ export const AugustCoupMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ 
           <meshStandardMaterial color="#e2e8f0" />
         </mesh>
       ))}
-      <Metrics scene={scene} title="August Coup" />
+      <Metrics scene={scene} title={t('microScenes.metrics-august-coup', { defaultValue: 'August Coup' })} />
     </group>
   );
 };
 
 export const ICUCrisisMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const fill = fit(scene.primaryMetric);
   return (
     <group>
@@ -540,12 +572,13 @@ export const ICUCrisisMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ s
         <boxGeometry args={[0.22, 0.44, 0.06]} />
         <meshStandardMaterial color="#ef4444" />
       </mesh>
-      <Metrics scene={scene} title="ICU Load" />
+      <Metrics scene={scene} title={t('microScenes.metrics-icu-load', { defaultValue: 'ICU Load' })} />
     </group>
   );
 };
 
 export const AGIAlignmentMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const nodes = useMemo(
     () =>
       Array.from({ length: 7 }, (_, idx) => ({
@@ -581,12 +614,13 @@ export const AGIAlignmentMicroScene: React.FC<CampaignMicroSceneRenderProps> = (
         <sphereGeometry args={[1.05, 24, 24]} />
         <meshStandardMaterial color="#22d3ee" transparent opacity={0.1} wireframe />
       </mesh>
-      <Metrics scene={scene} title="Alignment Test" />
+      <Metrics scene={scene} title={t('microScenes.metrics-alignment-test', { defaultValue: 'Alignment Test' })} />
     </group>
   );
 };
 
 export const DysonConstructionMicroScene: React.FC<CampaignMicroSceneRenderProps> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   return (
     <group>
       <mesh position={[scene.focalPoint[0], scene.focalPoint[1] + 0.25, scene.focalPoint[2]]}>
@@ -607,7 +641,7 @@ export const DysonConstructionMicroScene: React.FC<CampaignMicroSceneRenderProps
           <meshStandardMaterial color="#fbbf24" emissive="#f59e0b" emissiveIntensity={0.22} />
         </mesh>
       ))}
-      <Metrics scene={scene} title="Dyson Deployment" />
+      <Metrics scene={scene} title={t('microScenes.metrics-dyson-deployment', { defaultValue: 'Dyson Deployment' })} />
     </group>
   );
 };

@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "또 다른 역사를 탐험하세요",
+    "subtitle": "역사가 다른 길로 흘렀다면 어땠을까요?",
+    "cta": {
+      "primary": "탐험 시작",
+      "secondary": "타임라인 비교하기"
+    }
+  },
+  "stats": {
+    "divergence": {
+      "label": "분기점",
+      "value": "40+",
+      "detail": "정성껏 설계한 전환점"
+    },
+    "events": {
+      "label": "인터랙티브 사건",
+      "value": "70+",
+      "detail": "영향력 기준으로 평가됨"
+    },
+    "coverage": {
+      "label": "수록 범위",
+      "value": "1370 → 2100+",
+      "detail": "전 세계적 범위와 지역별 집중"
+    }
+  },
+  "timeline_threads": {
+    "us_independence": {
+      "tag": "미국 독립",
+      "title": "밸리 포지에서 워싱턴이 사로잡히다",
+      "effect": "영국의 승리는 식민지의 붕괴를 알리며, 수십 년 뒤 뒤늦은 독립운동에 불을 붙입니다."
+    },
+    "cold_war": {
+      "tag": "냉전",
+      "title": "달에 처음 발을 디딘 우주 비행사",
+      "effect": "소련의 위상이 데탕트를 가속하고 아시아와 아프리카 전역의 동맹 구도를 다시 그립니다."
+    },
+    "french_revolution": {
+      "tag": "프랑스 혁명",
+      "title": "입헌군주제가 성공하다",
+      "effect": "점진적 개혁이 공포 정치를 막고 유럽 자유주의의 모습을 바꿉니다."
+    }
+  },
+  "about": {
+    "badge": "Multiversity란 무엇인가요?",
+    "heading": "스토리텔링과 데이터를 융합한, 또 다른 역사를 위한 영화 같은 실험실.",
+    "description_1": "하나의 결정이 일으킨 파장을 따라가며 대륙을 가로지르는 거대한 지각 변동까지 추적하세요. 각 챕터는 꼼꼼히 연구된 기준선을 제시한 뒤, 여러분이 탐험하고 비교하며 재구성할 수 있는 열 가지 그럴듯한 '만약'으로 갈라집니다.",
+    "description_2": "역사학자가 검토한 서사와 인터랙티브 차트를 결합하여, 각 타임라인이 지닌 서정성과 출처를 함께 전해 드립니다."
+  },
+  "research_pillars": {
+    "primary_sources": {
+      "title": "1차 사료",
+      "detail": "기록 보관소의 지도, 편지, 공문서"
+    },
+    "scholarly_review": {
+      "title": "학술 검토",
+      "detail": "역사학자의 피드백을 거쳐 구축됨"
+    },
+    "geopolitical_modeling": {
+      "title": "지정학적 모델링",
+      "detail": "경제 및 군사 휴리스틱"
+    },
+    "narrative_craft": {
+      "title": "서사 기법",
+      "detail": "몰입을 위해 다듬어진 이야기 구조"
+    }
+  },
+  "chapters": {
+    "heading": "역사 챕터",
+    "timelines_count": "타임라인 3개",
+    "list": {
+      "timur_legacy": {
+        "title": "티무르의 유산 (14세기)",
+        "description": "마지막 위대한 유목 정복자"
+      },
+      "us_independence": {
+        "title": "미국 독립 (1776)",
+        "description": "독립 전쟁의 또 다른 가능성"
+      },
+      "french_revolution": {
+        "title": "프랑스 혁명 (1789)",
+        "description": "프랑스가 가지 않은 길"
+      },
+      "lincoln_era": {
+        "title": "링컨 시대 (1860년대)",
+        "description": "남북 전쟁의 또 다른 결말"
+      },
+      "russian_empire": {
+        "title": "러시아 제국 (1721-1917)",
+        "description": "차르 체제 러시아의 또 다른 가능성"
+      },
+      "lenin_revolution": {
+        "title": "레닌 혁명 (1917)",
+        "description": "볼셰비키 승리의 또 다른 가능성"
+      },
+      "hitler_rise": {
+        "title": "히틀러의 부상 (1920-1940년대)",
+        "description": "제2차 세계대전을 막거나 바꾸기"
+      },
+      "world_war_1": {
+        "title": "제1차 세계대전 (1914-1918)",
+        "description": "다시 그려본 대전쟁"
+      },
+      "world_war_2": {
+        "title": "제2차 세계대전 (1939-1945)",
+        "description": "제2차 세계대전의 또 다른 결말"
+      },
+      "cold_war": {
+        "title": "냉전 (1947-1991)",
+        "description": "초강대국 경쟁의 또 다른 가능성"
+      },
+      "ussr_collapse": {
+        "title": "소련 붕괴 (1991)",
+        "description": "소비에트 연방의 다른 결말들"
+      },
+      "covid_pandemic": {
+        "title": "COVID-19 팬데믹 (2019)",
+        "description": "현대 위기의 또 다른 가능성"
+      },
+      "ai_revolution": {
+        "title": "AI 혁명 (2020년대)",
+        "description": "지능의 미래"
+      },
+      "future_earth": {
+        "title": "미래의 지구 (2100+)",
+        "description": "포스트휴먼 시나리오"
+      }
+    }
+  },
+  "immersion_modes": {
+    "heading": "탐험 방식을 선택하세요",
+    "story_navigator": {
+      "title": "스토리 내비게이터",
+      "description": "인터랙티브한 선택, 적응형 사운드스케이프, 영화 같은 연출이 어우러진 안내형 서사."
+    },
+    "data_atlas": {
+      "title": "데이터 아틀라스",
+      "description": "빠른 리서치를 위한 촘촘한 카드, 영향력 차트, 외교 통계."
+    },
+    "comparison_lab": {
+      "title": "비교 실험실",
+      "description": "타임라인을 겹쳐 보고, 분기를 애니메이션으로 표현하며, 나비 효과를 실시간으로 비교하세요."
+    }
+  },
+  "features": {
+    "heading": "인터랙티브 경험",
+    "timeline_navigation": {
+      "title": "타임라인 탐색",
+      "description": "부드러운 애니메이션과 상세한 사건 탐험으로 수 세기를 넘나드세요."
+    },
+    "cause_effect": {
+      "title": "원인과 결과",
+      "description": "작은 변화가 역사 전반에 걸쳐 어떻게 거대한 나비 효과를 만들어내는지 시각화하세요."
+    },
+    "global_impact": {
+      "title": "전 세계적 영향",
+      "description": "또 다른 역사가 우리가 아는 오늘날의 세계를 어떻게 빚어내는지 살펴보세요."
+    }
+  }
+}

@@ -1,294 +1,164 @@
 {
   "meta": {
     "title": "Rossiya Imperiyasi",
-    "period": "1721-1917",
-    "description": "Arktika cho'lidan Global Superkuchga: Rossiya Sarguzashti!",
-    "historical_context": "1700-yilda Rossiya o'tgan asrning kiyimlarini kiyib bazmga kelgan do'stga o'xshardi - texnik jihatdan taklif qilingan, ammo aniq mos kelmaydi! 😅 G'arbiy Yevropa Ma'rifat davrini boshdan kechirayotgan paytda, Rossiya hali ham o'rta asrlarda edi. Ammo keyin Buyuk Pyotr keldi va Rossiyaga JIDDIY o'zgarish kerakligini hal qildi. Keyingi 200 yil tarixning eng dramatik o'zgarishlari bo'ldi: botqoqliklarda shaharlar qurish, ko'zga ko'ringan hamma narsani zabt etish, krepostnoylarni ozod qilish, dunyodagi eng uzun temir yo'lni qurish va qandaydir qilib Rasputin bilan tugatish. Bu haqiqiy oqibatlarga ega tarixiy serialga o'xshaydi! 🎭⚡",
-    "divergence_point": "Buyuk Pyotrning G'arbiylashtirishi va Imperiya Kengayishi"
+    "period": "1700-1917",
+    "description": "Podshohlar, samovarlar va kengayish. 🐻🏰",
+    "historical_context": "Pyotrdan Nikolaygacha.",
+    "divergence_point": "Pyotr Islohotlari"
   },
   "figures": {
     "peter-the-great": {
-      "name": "Pyotr I 'Buyuk'",
-      "role": "Qayiqlar va Soqollarni Sevgan Gigant Podshoh",
-      "description": "Bo'yi 6'8\" bo'lgan bu gigant podshoh Rossiyani modernizatsiya qilishga mukkasidan ketgan edi! ⚓🧔 Zodagonlarning soqollarini shaxsan kesgan, noldan dengiz floti qurgan va botqoqlikda Sankt-Peterburgni yaratgan. Shuningdek, duradgorlik va stomatologiyani yaxshi ko'rardi (dahshat!)."
+      "name": "Buyuk Pyotr",
+      "role": "Islohotchi",
+      "description": "Rossiyani soqolidan tortib zamonaviy davrga sudraydi. Bo'yi 6'8\" va doim qaychi ko'tarib yuradi."
     },
     "catherine-the-great": {
-      "name": "Yekaterina II 'Buyuk'",
-      "role": "Ruslardan ko'ra Rusroq bo'lgan Nemis Malikasi",
-      "description": "Bu nemis millatiga mansub imperator har qanday rus hukmdoridan ko'proq hududni zabt etdi! 👑⚔️ Volter bilan yozishgan, Pokemon kartalari kabi san'at asarlarini yig'gan va qandaydir qilib avtokratiyani ma'rifatli ko'rsatgan. Haqiqiy ilg'or!"
-    },
-    "ivan-the-terrible": {
-      "name": "Ivan IV 'Dahshatli'",
-      "role": "Jiddiy G'azab Boshqaruvi Muammolariga Ega Podshoh",
-      "description": "Rossiyaning birinchi rasmiy podshohi... juda shiddatli edi. 😤💥 Rossiyani bosqinchilik va terror orqali birlashtirdi, g'azab ustida o'z o'g'lini o'ldirib qo'ydi va birinchi maxfiy politsiyani yaratdi. Uning injiqliklari millatni shakllantirdi!"
-    },
-    "alexander-ii": {
-      "name": "Aleksandr II 'Ozod Qiluvchi'",
-      "role": "23 Million Krepostnoyni Ozod Qilgan Podshoh",
-      "description": "'Krepostnoylikni o'zi pastdan bekor bo'lishini kutgandan ko'ra, uni yuqoridan bekor qilish yaxshiroq!' degan islohotchi podshoh! ⛓️💔 Krepostnoylarni ozod qildi, sudlarni modernizatsiya qildi va buning evaziga inqilobchilar tomonidan portlatib yuborildi."
+      "name": "Buyuk Yekaterina",
+      "role": "Ma'rifatli Despot",
+      "description": "Eng buyuk rus imperatoriga aylangan nemis malikasi. Volterning do'sti."
     },
     "rasputin": {
       "name": "Grigoriy Rasputin",
-      "role": "O'lmaydigan Telba Rohib",
-      "description": "Qirollik oilasini gipnoz qilgan mistik dehqon! 🔮👁️ Kasal shahzodani davolashini da'vo qilgan, rok yulduzidek bazm qilgan va zaharlanish, otish va cho'kishdan omon qolgan, oxiri o'lgan. Afsona!"
-    },
-    "nicholas-ii": {
-      "name": "Nikolay II",
-      "role": "Oxirgi Podshoh va Yakuniy Fojiali Shaxs",
-      "description": "Bechora Niki! 😔👑 Hech qachon podshoh bo'lishni xohlamagan, shunchaki tinch oilaviy hayotni istagan. Buning o'rniga Birinchi Jahon urushi, inqiloblar va... mayli, Romanovlar uchun yaxshi tugamadi deylik."
+      "role": "Telba Rohib",
+      "description": "O'lishdan bosh tortgan mistik tabib. Bir imperiyani quladi."
     }
   },
   "timelines": {
-    "democratic-russia": {
-      "title": "Podshoh Nikolay Demokrat Bo'ldi! 🗳️👑",
-      "description": "Agar Nikolay II 1905 yildan keyin konstitutsiyaviy monarxiyani chin dildan qabul qilib, haqiqiy demokratiya yaratgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Nikolay II 1905 yilgi Oktyabr Manifestini jiddiy qabul qiladi va haqiqiy parlament kuchiga ega bo'lgan konstitutsiyaviy monarxiyani yaratadi",
+    "constitutional-russia": {
+      "title": "Konstitutsiyaviy Monarxiya 📜👑",
+      "description": "Dekabristlar qo'zg'oloni g'alaba qozonadi. Rossiya 1825-yilda demokratiyaga aylanadi.",
+      "divergence_description": "Armiya Nikolay I o'rniga Konstitutsiyani qo'llab-quvvatlaydi.",
+      "present_day_status": "Rossiya Federatsiyasi Buyuk Britaniyaga o'xshash konstitutsiyaviy monarxiya. Sankt-Peterburg \"Shimol Parij\"idir. 🇷🇺👑",
       "events": {
-        "real-constitution-1906": {
-          "title": "Nikolay II: 'Demokratiya Unchalik Yomon Emas!' 🤔👑",
-          "description": "Nikolay II konstitutsiyaviy cheklovlarni chin dildan qabul qiladi va Dumaga qonunchilik va byudjet ustidan haqiqiy hokimiyat beradi.",
-          "impact": "Demokratik institutlarga ega ishlaydigan konstitutsiyaviy monarxiyani yaratadi"
-        },
-        "stolypin-agrarian-success-1907": {
-          "title": "Stolipinning Qishloq Xo'jaligi Inqilobi Ishlamoqda! 🌾🚜",
-          "description": "Bosh vazir Stolipinning yer islohotlari millionlab farovon dehqon fermerlarini yaratib, qishloq o'rta sinfini shakllantiradi.",
-          "impact": "Yer islohoti demokratiyani qo'llab-quvvatlovchi barqaror qishloq o'rta sinfini yaratadi"
-        },
-        "education-expansion-1910": {
-          "title": "Rossiya Maktabga Qaytadi: Hamma Uchun Ta'lim! 📚🎓",
-          "description": "Davlat ta'limining ommaviy kengayishi demokratik ishtirok etishga qodir savodli fuqarolarni yaratadi.",
-          "impact": "Ta'lim islohotlari demokratik tizim uchun ma'lumotli saylovchilarni yaratadi"
-        },
-        "industrial-boom-1912": {
-          "title": "Rossiya Sanoat Mo''jizasi: Ayiq Qurishni O'rganmoqda! 🏭⚡",
-          "description": "Siyosiy barqarorlik tez sanoatlashishga imkon beradi. Rossiya 1914-yilga kelib yirik sanoat kuchiga aylanadi.",
-          "impact": "Iqtisodiy o'sish demokratik institutlarni qo'llab-quvvatlovchi shahar o'rta sinfini yaratadi"
-        },
-        "avoid-world-war-1914": {
-          "title": "Rossiya Urushga 'Yo'q' Deydi! ❌⚔️",
-          "description": "Demokratik Rossiya Iyul Inqiroziga diplomatik yechimni tanlaydi, Birinchi Jahon urushidan qochadi.",
-          "impact": "Birinchi Jahon urushidan qochish inqilobning oldini oladi va demokratik rivojlanishni davom ettirishga imkon beradi"
-        },
-        "federal-structure-1920": {
-          "title": "Rossiya Federatsiyasi Tug'ildi! 🇷🇺🤝",
-          "description": "Rossiya birlikni saqlagan holda turli etnik mintaqalarga avtonomiya beruvchi federal tuzilmani qabul qiladi.",
-          "impact": "Federal tizim Rossiya birligini saqlagan holda etnik xilma-xillikni boshqaradi"
+        "constitution-1825": {
+          "title": "Konstitutsiya",
+          "description": "Podshoh Konstantin Konstitutsiyani imzolaydi. Krepostnoylik erta bekor qilinadi.",
+          "impact": "Modernizatsiya."
         }
       },
       "consequences": {
-        "short_term": "Haqiqiy parlament hokimiyatiga ega konstitutsiyaviy monarxiya o'rnatildi",
-        "long_term": "1950-yilga kelib to'liq demokratiyaga bosqichma-bosqich evolyutsiya",
-        "global_impact": "Demokratik Rossiya Birinchi Jahon urushining oldini oladi va 20-asrni o'zgartiradi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Demokratik Rossiya 1914-yilda safarbarlikdan qochadi",
-          "consequence": "Iyul Inqirozi diplomatik yo'l bilan hal qilinadi, Birinchi Jahon urushining oldini oladi"
-        },
-        {
-          "trigger": "Muvaffaqiyatli konstitutsiyaviy monarxiya inqilobning oldini oladi",
-          "consequence": "Rossiyada kommunistik tajriba yoki global kommunistik harakat yo'q"
+        "no-bolsheviks": {
+          "short_term": "Liberal islohotlar",
+          "long_term": "Sovet Ittifoqi yo'q",
+          "global_impact": "Tinch 20-asr"
         }
-      ],
-      "present_day_status": "Rossiya Konstitutsiyaviy Federatsiyasi dunyodagi eng qadimgi uzluksiz demokratiyalardan biriga aylandi. Birinchi Jahon urushidan qochib, Rossiya kuchli institutlarga ega farovon federal demokratiyaga aylandi. Romanovlar sulolasi hali ham demokratlashtirishdagi roli uchun sevilgan konstitutsiyaviy monarxlar sifatida hukmronlik qilmoqda. Bugungi kunda Rossiya o'zining adabiyoti, baleti va inson huquqlari bo'yicha hayratlanarli darajada yaxshi rekordi bilan mashhur! 🎭📚"
+      },
+      "butterfly": {
+        "industrial-giant": {
+          "trigger": "Erkin mehnat",
+          "consequence": "Rossiya 1880-yilga kelib sanoat gigantiga aylanadi"
+        }
+      }
     },
-    "chinese-alliance": {
-      "title": "Ajdaho va Ayiq: Xitoy-Rossiya Ittifoqi! 🐉🐻",
-      "description": "Agar Rossiya raqobatlashish o'rniga Xitoy bilan ittifoq tuzib, to'xtatib bo'lmaydigan Yevroosiyo imperiyasini yaratgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Rossiya va Sin Xitoyi Markaziy Osiyo ustida urushish o'rniga G'arb imperializmiga qarshi mudofaa ittifoqini tuzadilar",
+    "traditionalist-russia": {
+      "title": "Eski Moskoviya 🐻⛪",
+      "description": "Pyotr islohotlari muvaffaqiyatsizlikka uchraydi. Rossiya izolyatsiyalangan, o'rta asr davlati bo'lib qoladi.",
+      "divergence_description": "Streltsylar isyoni g'alaba qozonadi.",
+      "present_day_status": "Moskva Knyazligi cherkovlari va mo'yna savdosi bilan mashhur kichik, sokin millat. Shvetsiya Imperiyasi Boltiqbo'yini nazorat qiladi. 🇸🇪🏰",
       "events": {
-        "treaty-of-friendship-1860": {
-          "title": "Ajdaho-Ayiq Pakti: Sharq Sharq Bilan Uchrashdi! 🐉🤝🐻",
-          "description": "Hududiy nizolar o'rniga, Rossiya va Xitoy G'arb mustamlakachiligiga qarshi o'zaro mudofaa shartnomasini imzolaydilar.",
-          "impact": "G'arb imperatorlik kuchlariga qarshi ulkan Yevroosiyo ittifoqini yaratadi"
-        },
-        "joint-modernization-1865": {
-          "title": "Texnologiya Transferi Ekspressi: Bo'lishish Bu G'amxo'rlik! 🚂💡",
-          "description": "Rossiya harbiy texnologiyani baham ko'radi, Xitoy esa qo'shma rivojlanish loyihalari uchun ishlab chiqarish tajribasi va ishchi kuchini taqdim etadi.",
-          "impact": "Hamkorlik orqali ikkala imperiya uchun tezlashtirilgan modernizatsiya"
-        },
-        "central-asian-development-1870": {
-          "title": "Buyuk Ipak Yo'li Uyg'onishi: Qadimiy Yo'llar, Zamonaviy Kuch! 🐪💫",
-          "description": "Markaziy Osiyo savdo yo'llarining qo'shma Rossiya-Xitoy rivojlanishi ulkan iqtisodiy bum yaratadi.",
-          "impact": "Markaziy Osiyo Yevropa va Sharqiy Osiyo bozorlari o'rtasidagi farovon ko'prikka aylanadi"
-        },
-        "opium-wars-victory-1875": {
-          "title": "Xayr Britaniya: Afyun Urushlari Boshqacha Tugaydi! 👋🇬🇧",
-          "description": "Rossiya dengiz floti yordami Xitoyga Britaniya kuchlarini mag'lub etishga va afyun savdosini butunlay tugatishga yordam beradi.",
-          "impact": "Xitoy suverenitetini saqlab qoladi va 'Xo'rlik Asri'dan qochadi"
-        },
-        "eurasian-economic-union-1880": {
-          "title": "Yevroosiyo Iqtisodiy Mo''jizasi Boshlanadi! 💰🌏",
-          "description": "Rossiya-Xitoy iqtisodiy ittifoqi Moskvadan Shanxaygacha dunyodagi eng yirik erkin savdo zonasini yaratadi.",
-          "impact": "Iqtisodiy integratsiya Yevroosiyo iqtisodiy kuch markazini yaratadi"
-        },
-        "technological-revolution-1890": {
-          "title": "Sharqiy Innovatsiya Portlashi: Ixtirolar Ko'p! 🔧⚡",
-          "description": "Qo'shma tadqiqot dasturlari transport va kommunikatsiya sohasida yirik texnologik yutuqlarga olib keladi.",
-          "impact": "Yevroosiyo ittifoqi global texnologiya yetakchisiga aylanadi"
+        "isolation": {
+          "title": "Rossiyaning Buyuk Devori",
+          "description": "Rossiya buzilgan G'arbga chegaralarini yopadi.",
+          "impact": "Turg'unlik."
         }
       },
       "consequences": {
-        "short_term": "Rossiya-Xitoy ittifoqi Osiyo siyosatida hukmronlik qiladi",
-        "long_term": "Yevroosiyo konfederatsiyasi G'arb hukmronligiga muqobil bo'ladi",
-        "global_impact": "Sharqiy kuch markazi bilan ko'p qutbli dunyo 100 yil oldin paydo bo'ladi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Kuchli Yevroosiyo ittifoqi G'arb imperializmiga qarshi turadi",
-          "consequence": "Osiyoda mustamlakachilik muvaffaqiyatsizlikka uchraydi, boshqacha global kuchlar muvozanati"
-        },
-        {
-          "trigger": "Yevroosiyo iqtisodiy integratsiyasi",
-          "consequence": "Quruqlik yo'llariga asoslangan globallashuvning boshqacha modeli"
+        "partition": {
+          "short_term": "Zaiflik",
+          "long_term": "Rossiya Shvetsiya va Turkiya tomonidan bo'lib olinadi",
+          "global_impact": "Rossiya Imperiyasi yo'q"
         }
-      ],
-      "present_day_status": "Rossiya-Xitoy Ittifoqi 1950-yilga kelib Yevroosiyo Konfederatsiyasiga aylandi. Bugungi kunda bu Vladivostokdan Lissabongacha cho'zilgan dunyodagi eng yirik iqtisodiy blok. Trans-Yevroosiyo temir yo'li (1920-yilda qurib bitkazilgan) 50 ta davlatni bog'laydigan iqtisodiy umurtqa pog'onasidir. Pekin va Moskva ushbu tinch konfederatsiyaning egizak poytaxtlaridir! 🚂🌏"
+      },
+      "butterfly": {
+        "swedish-empire": {
+          "trigger": "Zaif Rossiya",
+          "consequence": "Shvetsiya Shimoliy Yevropani boshqaradi"
+        }
+      }
     },
-    "islamic-russia": {
-      "title": "Islomiy Rossiya: Yarim Oy Ayiq Bilan Uchrashganda! ☪️🐻",
-      "description": "Agar Rossiyaning Markaziy Osiyoga kengayishi Islom ta'sirining rus madaniyati va dinini o'zgartirishiga olib kelgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Markaziy Osiyodagi rus zodagonlari ommaviy ravishda Islomni qabul qilib, slavyan va islomiy an'analar o'rtasida madaniy sintez yaratadilar",
+    "sino-russian": {
+      "title": "Ajdaho va Ayiq 🐉🐻",
+      "description": "Rossiya G'arb o'rniga Sharqqa yuz buradi.",
+      "divergence_description": "Rossiya Sin Xitoyi bilan ittifoq tuzadi.",
+      "present_day_status": "Yevroosiyo Ittifoqi dunyoning superkuchidir. Ipak Yo'li yuqori tezlikdagi temir yo'l tarmog'idir. 🌏🚂",
       "events": {
-        "mass-conversion-1850": {
-          "title": "Rus Zodagonlari Islomni Kashf Etishdi: 'Bu Mantiqiy!' ☪️💡",
-          "description": "Markaziy Osiyodagi rus harbiy ofitserlari va ma'murlari uning murakkab madaniyati va boshqaruvidan ta'sirlanib, Islomni qabul qila boshlaydilar.",
-          "impact": "Rus elitasining madaniy va diniy o'zgarishini boshlaydi"
-        },
-        "cultural-synthesis-1855": {
-          "title": "Sharq G'arb Bilan Uchrashdi: Rus-Islomiy Fyujn Madaniyati! 🎭🕌",
-          "description": "Slavyan an'analarini Islom san'ati, me'morchiligi va falsafasi bilan birlashtirgan yangi madaniy sintez paydo bo'ladi.",
-          "impact": "Noyob Rus-Islomiy madaniy o'ziga xoslikni yaratadi"
-        },
-        "islamic-learning-1860": {
-          "title": "Moskvadagi Madrasalar: Islomiy Ta'lim Shimolga Ketmoqda! 📚🕌",
-          "description": "Rossiya shaharlarida islomiy maktablar va universitetlar tashkil etilib, ikki tilli, ikki madaniyatli o'qimishli sinf yaratiladi.",
-          "impact": "Islomiy ta'lim tizimi rus intellektual rivojlanishiga ta'sir qiladi"
-        },
-        "ottoman-alliance-1865": {
-          "title": "Rossiya va Usmonli Imperiyasi: Sobiq Dushmanlar, Yangi Do'stlar! 🤝🇹🇷",
-          "description": "Islomiy Rossiya umumiy Yevropa raqiblariga qarshi Usmonli Imperiyasi bilan kutilmagan ittifoq tuzadi.",
-          "impact": "Yevropa kuchlar muvozanatida tub o'zgarish"
-        },
-        "sufi-influence-1870": {
-          "title": "So'fiy Mistikasi Rus Ruhi Bilan Uchrashdi: Ruhiy Inqilob! 🌟💫",
-          "description": "So'fiy mistik an'analari rus ma'naviyatiga chuqur ta'sir ko'rsatib, Islomiy-Pravoslav sintezining yangi shakllarini yaratadi.",
-          "impact": "Diniy o'zgarish rus adabiyoti, musiqasi va falsafasiga ta'sir qiladi"
-        },
-        "alexander-ii-conversion-1875": {
-          "title": "Podshoh Aleksandr II Dinini O'zgartirdi: Yakuniy Syujet Burilishi! 👑☪️",
-          "description": "Podshoh Aleksandr II siyosiy sabablarga ko'ra Pravoslav niqobini saqlab qolgan holda yashirincha Islomni qabul qiladi.",
-          "impact": "Islom ta'siri Rossiya hukumatining eng yuqori darajalariga yetadi"
+        "eurasian-pact": {
+          "title": "Yevroosiyo Pakti",
+          "description": "Osiyoda hukmronlik qiladigan harbiy ittifoq.",
+          "impact": "Osiyoda G'arb mustamlakachiligining yakuni."
         }
       },
       "consequences": {
-        "short_term": "Rus madaniyati va boshqaruviga sezilarli Islom ta'siri",
-        "long_term": "Rossiya Islom va Xristian dunyolari o'rtasidagi ko'prikka aylanadi",
-        "global_impact": "Islom va Yevropa Xristianligi o'rtasidagi boshqacha munosabat"
-      },
-      "butterfly": [
-        {
-          "trigger": "Rossiya-Usmonli ittifoqi an'anaviy mojarolarning oldini oladi",
-          "consequence": "Yevropa buyuk kuchlar tizimi diniy chiziqlar atrofida qayta tashkil etiladi"
-        },
-        {
-          "trigger": "Rus texnologik taraqqiyoti Islomiy boshqaruv bilan birlashdi",
-          "consequence": "Islom dunyosi modernizatsiyasi uchun muqobil yo'l"
+        "eastern-century": {
+          "short_term": "Britaniya Imperiyasi to'xtatildi",
+          "long_term": "Osiyo erta yuksaladi",
+          "global_impact": "Ko'p qutbli dunyo"
         }
-      ],
-      "present_day_status": "Islomiy Rossiya Pravoslav, Islomiy va dunyoviy an'analarni birlashtirgan noyob sivilizatsiyaga aylandi. Bugungi kunda u poytaxti Qozonda bo'lgan 'Yevroosiyo Islom Federatsiyasi'ni boshqaradi. Mamlakat o'zining go'zal masjid-sobor me'morchiligi va sivilizatsiyalar o'rtasidagi ko'prik sifatidagi roli bilan mashhur. Kremldagi Juma namozlari ajoyib manzara! 🕌⛪"
+      },
+      "butterfly": {
+        "no-opium-wars": {
+          "trigger": "Rossiya yordami",
+          "consequence": "Xitoy Xo'rlik Asridan qochadi"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
-      "title": "Pyotrning Soqol Solig'i Inqilobi",
-      "text": "Moskva, 1705. Siz Buyuk Pyotrning yangi soqol solig'iga duch kelgan rus zodagonisiz. U hamma soqolini olishga majburlash orqali Rossiyani g'arbiylashtirmoqchi. Sizning ajoyib soqolingiz sizning faxringiz!",
-      "choices": [
-        {
-          "text": "Soqolingizni oling va G'arb modasini qabul qiling",
-          "consequence": "Pyotrning islohotlariga rioya qilishingiz qirollik iltifotini qozonadi, ammo an'anaviy rus o'ziga xosligini yo'qotadi"
+  "scenarios": {
+    "beard-tax": {
+      "title": "Soqol Solig'i (1698)",
+      "text": "Moskva. Podshoh Pyotr Yevropadan qaytdi. U bir juft qaychi ushlab turibdi. \"Soqol foydasiz yukdir\", deydi u. \"Soliqni to'lang yoki oling!\"",
+      "choices": {
+        "shave": {
+          "text": "Bo'ysuning. Soqolingizni oling.",
+          "consequence": "Siz qadr-qimmatingizni yo'qotasiz, ammo Podshohning iltifotini qozonasiz. Rossiya modernizatsiya qilinadi."
         },
-        {
-          "text": "Soqol solig'ini to'lang va an'anaviy ko'rinishingizni saqlab qoling",
-          "consequence": "Sizning boyligingiz an'anani saqlab qoladi, ammo sizni modernizatsiyaga qarshi sifatida belgilaydi"
-        },
-        {
-          "text": "Ushbu G'arbiy majburiyatlarga qarshi qarshilik tashkil qiling",
-          "consequence": "Sizning an'anaviyligingiz boshqalarni to'playdi, ammo Pyotrning g'azabi va ehtimoliy surgun xavfini tug'diradi"
+        "rebel": {
+          "text": "Rad eting! Soqol muqaddasdir!",
+          "consequence": "Streltsylar isyon ko'taradi. Pyotr taxtdan ag'dariladi. Rossiya o'rta asr davlati bo'lib qoladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Botqoqlikda Venetsiya Qurish",
-      "text": "Boltiqbo'yi Qirg'og'i, 1703. Siz Pyotrning yangi poytaxti Sankt-Peterburg qurilishini nazorat qilyapsiz. Minglab ishchilar botqoqliklarda o'lmoqda, ammo Pyotr o'zining 'Yevropaga Derazasi'ni talab qilmoqda...",
-      "choices": [
-        {
-          "text": "Hayotni saqlab qolish uchun ish sharoitlarini yaxshilang",
-          "consequence": "Sizning insoniyligingiz ishchilarni qutqaradi, ammo qurilishni sekinlashtiradi, Pyotrning noroziligiga sabab bo'ladi"
+    "decembrist-revolt": {
+      "title": "Senat Maydoni (1825)",
+      "text": "Aleksandr I vafot etdi. Armiya maydonda. Ular \"Konstantin va Konstitutsiya!\" deb baqirishmoqda. Nikolay I to'plarni o'qlashni buyuradi.",
+      "choices": {
+        "crush": {
+          "text": "To'plardan o'q uzing! Tartib saqlanishi kerak.",
+          "consequence": "Qo'zg'olon bostiriladi. Avtokratiya saqlanib qoladi."
         },
-        {
-          "text": "Pyotrning imkonsiz muddatini bajarish uchun ishchilarni qattiqroq ishlating",
-          "consequence": "Sizning samaradorligingiz Podshohni xursand qiladi, ammo botqoqliklarda minglab hayotlar evaziga"
-        },
-        {
-          "text": "Pyotrdan ko'proq resurs va vaqt so'rang",
-          "consequence": "Sizning oqilona so'rovingiz hayotlarni saqlab qolishi mumkin, ammo imperator irodasini shubha ostiga olish sifatida ko'rilishi mumkin"
+        "join": {
+          "text": "Isyonchilarga qo'shiling! Konstitutsiya uchun!",
+          "consequence": " Armiya isyon ko'taradi. Nikolay qochadi. Respublika tug'iladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Dekabristlar Dilemmasi",
-      "text": "Sankt-Peterburg, 26 Dekabr, 1825. Siz Senat maydonidagi liberal ofitsersiz. Aleksandr I vafot etganda, Konstantin yoki Nikolay Podshoh bo'lishi kerakmi? Ba'zi ofitserlar konstitutsiyani xohlaydi...",
-      "choices": [
-        {
-          "text": "Dekabristlarga qo'shiling va konstitutsiyaviy monarxiya uchun kurashing",
-          "consequence": "Sizning idealizmingiz erkinlik ishini ilgari suradi, ammo qatl yoki Sibirga surgun xavfini tug'diradi"
+    "emancipation": {
+      "title": "Krepostnoylik Masalasi (1861)",
+      "text": "Podshoh Aleksandr II sizdan maslahat so'raydi. \"Krepostnoylikni pastdan bekor qilinishini kutgandan ko'ra, uni yuqoridan bekor qilish yaxshiroq.\" Ammo zodagonlar g'azabda.",
+      "choices": {
+        "land": {
+          "text": "Dehqonlarga yer bering. To'liq erkinlik.",
+          "consequence": "Zodagonlar g'azablanadi, ammo dehqonlar farovon yashaydi. Inqilobning oldi olinadi."
         },
-        {
-          "text": "Yangi Podshoh Nikolay I ga sodiq qoling",
-          "consequence": "Sizning sodiqligingiz karyerangizni saqlab qoladi, ammo davom etayotgan avtokratiyaga imkon beradi"
-        },
-        {
-          "text": "Isyonchilar va sodiqlar o'rtasida vositachilik qilishga harakat qiling",
-          "consequence": "Sizning diplomatiyangiz qon to'kilishining oldini olishi mumkin, ammo hech bir tomonni to'liq qoniqtirmaydi"
+        "east": {
+          "text": "Yevropani unuting. Sharqqa, Xitoyga qarang.",
+          "consequence": "Biz Osiyoda yangi taqdir yaratamiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Buyuk Ozodlik",
-      "text": "Sankt-Peterburg, 1861. Siz Podshoh Aleksandr II ga krepostnoylarni ozod qilish bo'yicha maslahat beryapsiz. 23 million krepostnoyni ozod qilish Rossiyani o'zgartiradi, ammo ular qancha yer olishlari kerak?",
-      "choices": [
-        {
-          "text": "Haqiqiy erkinlik uchun krepostnoylarga saxiy yer grantlarini bering",
-          "consequence": "Sizning saxiyligingiz farovon dehqonchilikni yaratadi, ammo zodagon yer egalarini g'azablantiradi"
+    "rasputin": {
+      "title": "Telba Rohib (1916)",
+      "text": "Rasputin bazm uyushtirmoqda. Malika faqat unga quloq soladi. Rossiya urushda yutqazyapti. Knyaz Yusupov sizga zaharlangan tort taklif qiladi.",
+      "choices": {
+        "kill": {
+          "text": "Uni o'ldirishga yordam bering. Taxt obro'sini saqlang.",
+          "consequence": "Juda kech. Inqilob baribir keladi."
         },
-        {
-          "text": "Zodagonlar manfaatlarini himoya qilish uchun minimal yer bering",
-          "consequence": "Sizning murosangiz aristokratiyani saqlab qoladi, ammo krepostnoylarni qashshoqlikda qoldiradi"
-        },
-        {
-          "text": "20 yil davomida bosqichma-bosqich o'tishni amalga oshiring",
-          "consequence": "Sizning ehtiyotkorligingiz buzilishni kamaytiradi, ammo millionlab odamlar uchun haqiqiy erkinlikni kechiktiradi"
+        "save": {
+          "text": "Uni ogohlantiring. Urushga qarshi turgan yagona kishi u.",
+          "consequence": "Rasputin Podshohni tinchlik o'rnatishga ko'ndiradi. Imperiya (zo'rg'a) omon qoladi."
         }
-      ]
-    },
-    {
-      "title": "Telba Rohibning Ta'siri",
-      "text": "Sarskoye Selo, 1915. Siz Rasputinning malikaga o'sib borayotgan ta'sirini kuzatayotgan saroy maslahatchisisiz. Uning yosh shahzodani mistik davolashi unga xavfli kuch beradi...",
-      "choices": [
-        {
-          "text": "Rasputinning korruptsiyasini fosh qiling va uni olib tashlashni talab qiling",
-          "consequence": "Sizning jasoratingiz monarxiyani saqlab qolishi mumkin, ammo Malikaning g'azabi va o'z mavqeingizni xavf ostiga qo'yadi"
-        },
-        {
-          "text": "Ta'sirini cheklash uchun Rasputin bilan ishlashga harakat qiling",
-          "consequence": "Sizning pragmatizmingiz zararni cheklashi mumkin, ammo uning mavjudligini qonuniylashtiradi"
-        },
-        {
-          "text": "Rasputinni butunlay yo'q qilish fitnasiga qo'shiling",
-          "consequence": "Sizning keskin harakatingiz Rossiyani qutqarishi mumkin, ammo sizni qotillikka aralashtiradi"
-        }
-      ]
+      }
     }
-  ]
+  }
 }

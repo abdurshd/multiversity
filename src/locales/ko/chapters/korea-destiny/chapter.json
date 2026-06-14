@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "한반도",
+    "period": "1945-2025",
+    "description": "고래 사이의 새우 🦐🐳",
+    "historical_context": "분단되어 세계의 화약고가 된 민족.",
+    "divergence_point": "1945년 분단"
+  },
+  "figures": {
+    "kim-il-sung": {
+      "name": "김일성",
+      "role": "위대한 수령",
+      "description": "독재자가 된 게릴라 지도자. 북한의 건국자."
+    },
+    "syngman-rhee": {
+      "name": "이승만",
+      "role": "초대 대통령",
+      "description": "가장 암울한 시기에 대한민국을 이끈 완고한 민족주의자."
+    },
+    "douglas-macarthur": {
+      "name": "더글러스 맥아더",
+      "role": "미국의 카이사르",
+      "description": "전쟁에서 승리하기 위해 핵무기를 사용하려 했던 총사령관."
+    }
+  },
+  "timelines": {
+    "neutral-korea": {
+      "title": "동방의 요새 🛡️🇰🇷",
+      "description": "한국이 중무장한 중립 강국으로 통일된다. 어떤 강대국도 감히 건드리지 못하는 '고슴도치' 국가.",
+      "divergence_description": "미국과 소련이 통일 신탁통치 정부에 합의한다.",
+      "present_day_status": "한국은 중립의 요새다. 모든 국민이 군인이지만, 전쟁은 일어나지 않는다. 서울은 아시아의 외교 수도다. 🕊️🛡️",
+      "events": {
+        "unified-election": {
+          "title": "위대한 선거",
+          "description": "연립 정부가 구성된다. 외국 군대가 철수한다.",
+          "impact": "평화."
+        }
+      },
+      "consequences": {
+        "economic-hub": {
+          "short_term": "느린 성장",
+          "long_term": "아시아 무역의 중심지",
+          "global_impact": "한국 전쟁 없음"
+        }
+      },
+      "butterfly": {
+        "no-cold-war-hot-war": {
+          "trigger": "한국 전쟁 없음",
+          "consequence": "냉전이 더 차갑게 유지된다. 중국이 더 일찍 개발에 집중한다."
+        }
+      }
+    },
+    "red-korea": {
+      "title": "주체 제국 🔴⚛️",
+      "description": "아시아 전역에 혁명을 수출하는 군사화된 핵무장 요새 국가.",
+      "divergence_description": "미국의 개입이 실패한다. 부산 방어선이 무너진다.",
+      "present_day_status": "주체 제국은 강철과 불의 디스토피아다. 그 핵무기고는 누구도 감히 침공하지 못하도록 보장한다. 🎵🛑",
+      "events": {
+        "fall-of-pusan": {
+          "title": "부산 함락",
+          "description": "조선인민군이 미군을 바다로 밀어낸다.",
+          "impact": "공산주의 아래 통일."
+        }
+      },
+      "consequences": {
+        "nuclear-power": {
+          "short_term": "숙청",
+          "long_term": "중국에 필적하는 핵 초강대국",
+          "global_impact": "아시아에서 미국의 영향력 붕괴"
+        }
+      },
+      "butterfly": {
+        "japan-remilitarized": {
+          "trigger": "붉은 이웃",
+          "consequence": "일본이 한국을 억제하기 위해 핵 강국이 된다"
+        }
+      }
+    },
+    "blue-korea": {
+      "title": "태평양의 거인 🔵🏙️",
+      "description": "초자본주의적, 사이버펑크 경제 패권국. 문화적으로 지배적이지만 디스토피아적 불평등을 안고 있다.",
+      "divergence_description": "중국이 개입하지 않거나 패배한다.",
+      "present_day_status": "한국은 사이버펑크 현실이다. 기업이 모든 것을 지배한다. 생활 수준은 믿을 수 없을 만큼 높지만, 스트레스도 그만큼 높다. 🌌💻",
+      "events": {
+        "yalu-victory": {
+          "title": "크리스마스 귀향",
+          "description": "유엔군이 국경을 확보한다. 중국은 개입하지 않는다.",
+          "impact": "민주주의 아래 통일."
+        }
+      },
+      "consequences": {
+        "g7-power": {
+          "short_term": "재건",
+          "long_term": "한국이 세계 2위 경제 대국이 된다",
+          "global_impact": "중국 국경에 강력한 미국 동맹"
+        }
+      },
+      "butterfly": {
+        "liberal-china": {
+          "trigger": "민주주의 이웃",
+          "consequence": "중국 내 개혁 압력이 가속화된다"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "liberation-1945": {
+      "title": "분단 (1945)",
+      "text": "일본이 항복했다. 미국과 소련이 38선에 경계를 긋고 있다. 당신은 한국 독립운동 지도자다. 무엇을 주장하겠는가?",
+      "choices": {
+        "trusteeship": {
+          "text": "신탁통치를 받아들인다. 통일 선거를 위해 노력한다.",
+          "consequence": "힘겨운 협상이지만, 분단을 막는다."
+        },
+        "separate-gov": {
+          "text": "신탁통치를 거부한다. 지금 당장 남쪽에 정부를 세운다.",
+          "consequence": "분단이 굳어진다. 북쪽도 똑같이 한다."
+        }
+      }
+    },
+    "korean-war-start": {
+      "title": "남침 (1950)",
+      "text": "1950년 6월 25일. 북측 전차가 국경을 넘고 있다. 서울이 함락되고 있다. 미국은 개입 여부를 결정하고 있다.",
+      "choices": {
+        "inchon": {
+          "text": "인천에서 위험한 상륙 작전을 조직한다.",
+          "consequence": "성공한다! 북측이 차단된다. 우리는 북쪽으로 진격한다."
+        },
+        "retreat": {
+          "text": "부산 방어선을 사수한다. 증원을 기다린다.",
+          "consequence": "버티지만, 반격은 더디다."
+        },
+        "collapse": {
+          "text": "일본으로 철수한다. 진지를 잃었다.",
+          "consequence": "한반도를 잃었다. 부산 위로 붉은 깃발이 휘날린다."
+        }
+      }
+    },
+    "china-intervention": {
+      "title": "압록강 (1950)",
+      "text": "우리는 중국 국경에 도달했다. 정보에 따르면 30만 명의 중국군이 대기 중이다. 맥아더는 다리를 폭격하려 한다.",
+      "choices": {
+        "halt": {
+          "text": "진격을 멈춘다. 좁은 길목에 참호를 판다.",
+          "consequence": "중국이 안전하다고 느껴 침공하지 않는다. 우리는 한국의 90%를 지킨다."
+        },
+        "attack": {
+          "text": "공격하라! \"크리스마스까지 집으로!\"",
+          "consequence": "재앙. 중국군이 우리를 함정에 빠뜨린다. 우리는 38선까지 밀려난다."
+        },
+        "nukes": {
+          "text": "맥아더의 핵무기 요청을 승인한다.",
+          "consequence": "전쟁에서 이기지만, 그 대가는? 제3차 세계대전이 시작된다."
+        }
+      }
+    },
+    "axe-murder-incident": {
+      "title": "폴 버니언 작전 (1976)",
+      "text": "1976년이다. 두 명의 미군 장교가 DMZ에서 나무를 가지치기하다 북한군에게 살해당했다. 미군은 격분했다. 데프콘 3.",
+      "choices": {
+        "show-force": {
+          "text": "압도적인 대규모 병력으로 나무를 베어낸다. 공격받지 않는 한 발포하지 않는다.",
+          "consequence": "북측이 물러선다. 역사적 흐름이 유지된다."
+        },
+        "airstrike": {
+          "text": "조선인민군 막사에 공습을 가한다.",
+          "consequence": "전쟁이 다시 발발한다. 이번에는 중국이 너무 약해 북측을 돕지 못한다."
+        },
+        "withdraw": {
+          "text": "긴장 고조를 피하기 위해 병력을 후퇴시킨다.",
+          "consequence": "북측은 이를 약점으로 보고 도발을 강화한다."
+        }
+      }
+    },
+    "nuclear-crisis-1994": {
+      "title": "핵 위기 (1994)",
+      "text": "북한이 NPT 탈퇴와 플루토늄 재처리를 위협하고 있다. 펜타곤은 영변 타격 계획을 세웠다.",
+      "choices": {
+        "carter-deal": {
+          "text": "지미 카터를 보내 동결 협상을 진행한다 (제네바 합의).",
+          "consequence": "당분간 위기는 막았다. 그들은 나중에 속일 가능성이 높다."
+        },
+        "strike": {
+          "text": "원자로에 정밀 타격을 실행한다.",
+          "consequence": "원자로는 파괴되지만, 서울이 포격당한다. 제2차 한국 전쟁이 시작된다."
+        },
+        "coup-plot": {
+          "text": "지도부에 맞서는 군사 쿠데타에 자금을 댄다.",
+          "consequence": "고위험. 성공한다면, 중립 국가를 얻는다."
+        }
+      }
+    }
+  }
+}

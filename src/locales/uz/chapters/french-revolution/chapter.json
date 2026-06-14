@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Fransuz Inqilobi",
-    "period": "1789-1799",
-    "description": "Monarxiyaning ag'darilishi va zamonaviy siyosiy mafkuralarning tug'ilishi",
-    "historical_context": "Fransuz inqilobi qadimiy tuzumni vayron qildi va Yevropa va dunyoni qayta shakllantiruvchi kuchlarni bo'shatib yubordi. Konstitutsiyaviy monarxiyadan respublika tajribasigacha, Terror davridan Napoleonning yuksalishigacha - bu inqilobiy o'zgarishlarning va'dasi ham, xavfi ham namoyish etildi.",
-    "divergence_point": "Fransiyani turli inqilobiy natijalarga olib kelishi mumkin bo'lgan muhim qarorlar"
+    "period": "1789",
+    "description": "Erkinlik, Tenglik, Birodarlik... va ko'plab gilotinalar! 🇫🇷⚡",
+    "historical_context": "1789-yilga kelib Fransiya bankrot va och edi.",
+    "divergence_point": "Bastiliyani ishg'ol qilish"
   },
   "figures": {
     "marie-antoinette": {
@@ -18,14 +18,14 @@
       "description": "O'zining gilotinasini biroz haddan tashqari yaxshi ko'rgan o'ta toza inqilobchi! 🗡️ Xalq himoyachisi sifatida boshlangan, Terrorning bosh me'mori sifatida tugagan."
     },
     "louis-xvi": {
-      "name": "Qirol Lyudovik XVI",
+      "name": "Lyudovik XVI",
       "role": "Ikkilanuvchi Qirol",
       "description": "Bechora Lyudovik! 👑 Qaror qabul qilishdan ko'ra qulflar yasashni yaxshi ko'rardi. Uning qirolligi parchalanib ketayotganda uning sevimli mashg'uloti chilangarlik edi!"
     },
     "napoleon-bonaparte": {
       "name": "Napoleon Bonapart",
       "role": "Katta Orzularga Ega Kichik Imperator",
-      "description": "Yevropaning ko'p qismini zabt etgan qisqa general! ⚡ Betartiblikdan ko'tarilib, Imperator bo'ldi va dunyoni qayta shakllantirdi."
+      "description": "Yevropaning ko'p qismini zabt etgan kichkina general! ⚡ Betartiblikdan ko'tarilib, Imperator bo'ldi va dunyoni qayta shakllantirdi."
     },
     "jacques-danton": {
       "name": "Jorj Danton",
@@ -36,239 +36,181 @@
   "timelines": {
     "constitutional-monarchy": {
       "title": "Qirol Lyudovik Bo'lishishni O'rgandi! 👑🤝",
-      "description": "Agar Lyudovik XVI konstitutsiyaviy monarxiyani qabul qilib, o'zgarishlarga qarshilik qilish o'rniga inqilobchilar bilan ishlaganida nima bo'lar edi?",
-      "divergence_description": "Lyudovik XVI konstitutsiyaviy cheklovlarni chin dildan qabul qiladi va Milliy Assambleya bilan vijdonan ishlaydi",
+      "description": "Agar Lyudovik XVI konstitutsiyaviy monarxiyani qabul qilganida nima bo'lar edi?",
+      "divergence_description": "Lyudovik XVI konstitutsiyaviy cheklovlarni chin dildan qabul qiladi.",
+      "present_day_status": "Fransiya Konstitutsiyaviy Monarxiya sifatida Yevropa Ittifoqini boshqaradi. Burbonlar sevimli ramziy hukmdorlardir. Parij tinchlik poytaxtidir. 🇫🇷👑",
       "events": {
-        "louis-accepts-constitution-1789": {
-          "title": "Lyudovik XVI: 'Bilasizmi? Bu Konstitutsiya Ajoyib Ko'rinadi!' 👑📜",
-          "description": "Qarshilik ko'rsatish o'rniga, Lyudovik XVI konstitutsiyaviy monarxiyani g'ayrat bilan qabul qiladi va namunali konstitutsiyaviy qirolga aylanadi.",
-          "impact": "Radikallashuvning oldini oladi va barqaror konstitutsiyaviy hukumatni o'rnatadi"
+        "louis-accepts-constitution": {
+          "title": "Lyudovik XVI Konstitutsiyani Qabul Qiladi",
+          "description": "Lyudovik namunali konstitutsiyaviy qirolga aylanadi.",
+          "impact": "Radikallashuvning oldini oladi."
         },
-        "economic-reforms-1790": {
-          "title": "Fransiya Moliyaviy Uyini Tartibga Soladi! 💰📈",
-          "description": "Muvaffaqiyatli moliyaviy islohotlar adolatli soliqqa tortish va iqtisodiy modernizatsiya orqali qarz inqirozini hal qiladi.",
-          "impact": "Iqtisodiy barqarorlik ijtimoiy tartibsizliklar va radikal siyosatning oldini oladi"
-        },
-        "peaceful-church-reform-1790": {
-          "title": "Cherkov va Davlat O'rta Yo'lni Topadi ⛪🤝",
-          "description": "Mo''tadil cherkov islohotlari katolik aholini begonalashtirmasdan tinch yo'l bilan muzokara qilinadi.",
-          "impact": "Diniy fuqarolar urushining oldini oladi va ijtimoiy hamjihatlikni saqlaydi"
-        },
-        "no-foreign-wars-1792": {
-          "title": "Fransiya Urushga 'Yo'q!' Deydi 🕊️❌⚔️",
-          "description": "Konstitutsiyaviy Fransiya Yevropa monarxiyalari bilan diplomatik yechimlar orqali xorijiy urushlardan qochadi.",
-          "impact": "Urush yo'q, demak radikallashuv yo'q va iqtisodiy resurslar ichki rivojlanishga yo'naltiriladi"
-        },
-        "industrial-revolution-1800": {
-          "title": "Fransiya Sanoat Markaziga Aylanadi! 🏭⚡",
-          "description": "Siyosiy barqarorlik Fransiyaga kontinental Yevropada Sanoat Inqilobiga yetakchilik qilish imkonini beradi.",
-          "impact": "Fransiya Yevropaning hukmron sanoat va iqtisodiy kuchiga aylanadi"
+        "industrial-revolution-france": {
+          "title": "Fransuz Sanoat Inqilobi",
+          "description": "Barqarorlik erta sanoatlashuvga olib keladi.",
+          "impact": "Fransiya iqtisodiy super davlatga aylanadi."
         }
       },
       "consequences": {
-        "short_term": "Konstitutsiyaviy monarxiya 30 yil davomida barqaror hukumatni ta'minlaydi",
-        "long_term": "Fransiya butun Yevropa bo'ylab tinch islohotlarga ilhom beruvchi namunali konstitutsiyaviy demokratiyaga aylanadi",
-        "global_impact": "Demokratik ideallarning inqilobiy zo'ravonliksiz sekinroq, ammo barqarorroq tarqalishi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Inqilobiy urushlar va Napoleon yo'q",
-          "consequence": "Yevropa davlatlari bir-biri bilan urushish o'rniga mustamlaka kengayishi va sanoat rivojlanishiga e'tibor qaratadilar"
-        },
-        {
-          "trigger": "Muvaffaqiyatli konstitutsiyaviy monarxiya namunasi",
-          "consequence": "Boshqa Yevropa monarxiyalari konstitutsiyaviy islohotlarni tinch yo'l bilan qabul qiladilar"
+        "stable-democracy": {
+          "short_term": "30 yil davomida barqaror hukumat",
+          "long_term": "Fransiya namunali konstitutsiyaviy demokratiyaga aylanadi",
+          "global_impact": "Demokratik ideallarning tinch tarqalishi"
         }
-      ],
-      "present_day_status": "Fransuz Konstitutsiyaviy Monarxiyasi 1850-yilga kelib zamonaviy parlamentar demokratiyaga aylandi. Fransiya Yevropa Ittifoqini uning eng iqtisodiy qudratli a'zosi sifatida boshqaradi. Burbon sulolasi hali ham tinch demokratlashtirishdagi roli uchun sevilgan ramziy monarxlar sifatida hukmronlik qilmoqda. Ushbu vaqt chizig'ini yaratishda hech qanday gilotina zarar ko'rmadi! 🇫🇷👑"
+      },
+      "butterfly": {
+        "peaceful-europe": {
+          "trigger": "Napoleon urushlari yo'q",
+          "consequence": "Yevropa savdoga e'tibor qaratadi"
+        }
+      }
     },
     "robespierre-eternal": {
       "title": "Robesperning Abadiy Terrori! 😱🗡️",
-      "description": "Agar Robesper omon qolgan va Terror hukmronligini o'nlab yillar davom ettirib, inqilobiy politsiya davlatini yaratgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Robesperning ittifoqchilari Termidor reaktsiyasining oldini oladi va u inqilobiy diktator sifatida hokimiyatni mustahkamlaydi",
+      "description": "Agar Robesper omon qolganida nima bo'lar edi?",
+      "divergence_description": "Robesper Termidordan oldin dushmanlarini tozalaydi.",
+      "present_day_status": "Fazilat Respublikasi 1824-yilda quladi. U qorong'u davr sifatida eslanadi. Har yili 'Boshqa Hech Qachon' yurishlarida gilotina shaklidagi piñatalar namoyish etiladi. 🎭🗡️",
       "events": {
-        "robespierre-survives-1794": {
-          "title": "Robesper Gilotinadan Qochdi! 🗡️🏃‍♂️",
-          "description": "Robesperning josuslik tarmog'i unga qarshi fitnani fosh qiladi va u dushmanlarini birinchi bo'lib tozalaydi.",
-          "impact": "Inqilobiy diktaturani mustahkamlaydi va Terrorni kuchaytiradi"
+        "robespierre-survives": {
+          "title": "Robesper Omon Qoladi",
+          "description": "Fitna barbod bo'ladi. Terror kuchayadi.",
+          "impact": "Inqilobiy diktatura mustahkamlanadi."
         },
-        "revolutionary-police-state-1795": {
-          "title": "Fransiya Yakuniy Politsiya Davlatiga Aylanadi! 👁️🚨",
-          "description": "Robesper qo'shnilar qo'shnilarni kuzatadigan keng qamrovli kuzatuv tarmog'ini yaratadi.",
-          "impact": "Orwell tasavvur qilishidan 150 yil oldin totalitar davlat yaratadi"
-        },
-        "export-revolution-1796": {
-          "title": "Inqilob Ekspressi: Endi Terrorni Dunyo bo'ylab yetkazib beradi! 🚂💥",
-          "description": "Robesper butun Yevropani monarxiyadan 'ozod qilish' uchun inqilobiy armiyalarni yuboradi.",
-          "impact": "Napoleonning pragmatizmi o'rniga mafkuraviy soflikka asoslangan inqilobiy imperiya yaratadi"
-        },
-        "cult-supreme-being-1798": {
-          "title": "Robesper O'zini Oliy Ruhoniy deb E'lon Qiladi! ⛪😇",
-          "description": "Oliy Mavjudot Kulti Robesper ilohiy tarjimon sifatida majburiy davlat diniga aylanadi.",
-          "impact": "Siyosiy va diniy hokimiyatni birlashtirgan inqilobiy teokratiya yaratadi"
-        },
-        "revolutionary-calendar-enforced-1800": {
-          "title": "Xayr Dushanba, Salom Primidi! 📅🔄",
-          "description": "Inqilobiy taqvim qat'iy tatbiq etiladi, 'aksilinqilobiy' sanalarni ishlatish uchun qattiq jazolar belgilanadi.",
-          "impact": "An'anaviy vaqtni hisoblash noqonuniy bo'lib qolishi bilan to'liq madaniy o'zgarish"
+        "cult-supreme-being": {
+          "title": "Oliy Mavjudot Kulti",
+          "description": "Yangi davlat dini majburan o'rnatiladi.",
+          "impact": "Teokratiya o'rnatiladi."
         }
       },
       "consequences": {
-        "short_term": "Fransiya dunyodagi birinchi zamonaviy totalitar davlatga aylanadi",
-        "long_term": "Inqilobiy terror Robesper hukmronligi ostida 30 yil davom etadi",
-        "global_impact": "20-asr totalitar harakatlari uchun andaza beradi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Robesper Napoleonning yuksalishiga to'sqinlik qiladi",
-          "consequence": "Inqilobiy Fransiya Napoleon dahosisiz boshqacha rivojlanadi"
-        },
-        {
-          "trigger": "Inqilobiy politsiya davlati usullari takomillashtirildi",
-          "consequence": "Totalitar usullar boshqa inqiloblarga 100 yil oldin tarqaladi"
+        "totalitarian-state": {
+          "short_term": "Birinchi zamonaviy totalitar davlat",
+          "long_term": "Terror o'nlab yillar davom etadi",
+          "global_impact": "Kelajakdagi diktatorlar uchun andaza"
         }
-      ],
-      "present_day_status": "Fransuz Inqilobiy Respublikasi nihoyat 1824-yilda Robesper qarilikdan (va ehtimol shuncha gilotina ishlatishdan charchashdan) vafot etganda quladi. Qayta tiklangan monarxiya 30 yillik terrordan keyin hayratlanarli darajada mashhur edi. Zamonaviy Fransiyada gilotina shaklidagi piñatalar bilan yillik 'Boshqa Hech Qachon Kuni' o'tkaziladi. 🎭🗡️"
+      },
+      "butterfly": {
+        "early-totalitarianism": {
+          "trigger": "Politsiya davlati takomillashtirildi",
+          "consequence": "Totalitarizm ertaroq tarqaladi"
+        }
+      }
     },
     "girondist-victory": {
       "title": "Jirondistlar G'alaba Qozondi! Demokratiya Lite Nashri 🕊️🏛️",
-      "description": "Agar mo''tadil Jirondistlar fraktsiyasi radikal Yakobinlarni mag'lub etib, federal respublika yaratgan bo'lsa nima bo'lar edi?",
-      "divergence_description": "Jirondistlar Yakobin to'ntarishiga muvaffaqiyatli qarshilik ko'rsatadi va inqilobning mo''tadil nazoratini saqlab qoladi",
+      "description": "Agar mo''tadil Jirondistlar Yakobinlarni mag'lub etganida nima bo'lar edi?",
+      "divergence_description": "Jirondistlar Yakobin to'ntarishiga qarshilik ko'rsatadi.",
+      "present_day_status": "Fransuz Federal Respublikasi federal Yevropaning yuragidir. Jirondist modeli butun dunyoga ilhom berdi. 🇫🇷🧀",
       "events": {
-        "girondist-coalition-1793": {
-          "title": "Jirondistlar Yakuniy Ittifoqni Tuzadilar! 🤝⚡",
-          "description": "Mo''tadil Jirondistlar Parijdagi Yakobin ekstremizmiga qarshi viloyat yordamini muvaffaqiyatli to'playdilar.",
-          "impact": "Radikal egallab olishning oldini oladi va mo''tadil inqilobiy hukumatni saqlab qoladi"
-        },
-        "federal-republic-1793": {
-          "title": "Fransiya Federalizmni Kashf Etadi! 🏛️🌟",
-          "description": "Jirondistlar Amerika kabi, lekin yaxshiroq ovqat bilan, kuchli mintaqaviy avtonomiyaga ega federal respublika tuzadilar.",
-          "impact": "Mintaqaviy farqlarni hurmat qiladigan markazlashmagan demokratiya yaratadi"
-        },
-        "economic-liberalism-1794": {
-          "title": "Erkin Bozor Inqilobi! 💰📈",
-          "description": "Jirondist iqtisodiy siyosati radikal qayta taqsimlashsiz erkin savdo va biznes rivojlanishini rag'batlantiradi.",
-          "impact": "Bozorga yo'naltirilgan islohotlar orqali tez iqtisodiy tiklanish"
-        },
-        "religious-tolerance-1794": {
-          "title": "Hamma Xohlaganiga Ishonishi Mumkin! ⛪🕌🕍",
-          "description": "Jirondist hukumati antiklerikal ta'qiblarsiz haqiqiy diniy erkinlikni o'rnatadi.",
-          "impact": "Cherkov-davlat munosabatlarini modernizatsiya qilish bilan birga ijtimoiy hamjihatlikni saqlaydi"
-        },
-        "peaceful-expansion-1796": {
-          "title": "Fransiya Do'stlik Orqali Demokratiyani Tarqatadi! 🤗🌍",
-          "description": "Bosqinchilik o'rniga, Fransiya madaniy va iqtisodiy ta'sir orqali demokratik ideallarni targ'ib qiladi.",
-          "impact": "Vayronagarchilik urushlarisiz Yevropaning bosqichma-bosqich demokratlashuvi"
+        "federal-republic": {
+          "title": "Federal Respublika O'rnatildi",
+          "description": "AQSh kabi markazlashmagan demokratiya.",
+          "impact": "Mintaqaviy avtonomiyani hurmat qiladi."
         }
       },
       "consequences": {
-        "short_term": "Kuchli fuqarolik erkinliklariga ega barqaror federal respublika",
-        "long_term": "Fransiya federal demokratik tizimlar uchun model bo'ladi",
-        "global_impact": "Amerika federal tizimining rivojlanishiga va Germaniyaning birlashishiga ta'sir qiladi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Tinch tashqi siyosat yirik Yevropa urushlarining oldini oladi",
-          "consequence": "Resurslar harbiy bosqinchilik o'rniga iqtisodiy va madaniy rivojlanishga yo'naltiriladi"
-        },
-        {
-          "trigger": "Muvaffaqiyatli fransuz federalizmi",
-          "consequence": "Yevropa davlatlari federal tizimlarni ertaroq qabul qiladi, bu tinch Yevropa federatsiyasiga olib keladi"
+        "moderate-democracy": {
+          "short_term": "Barqaror federal respublika",
+          "long_term": "Federalizm uchun namuna",
+          "global_impact": "Germaniyaning birlashishiga ta'sir qiladi"
         }
-      ],
-      "present_day_status": "Fransuz Federal Respublikasi 1850-yilga kelib tinch Yevropa konfederatsiyasining yuragiga aylandi. Bugungi kunda u 'Yevropa Federal Ittifoqi'ni boshqaradi - YI kabi, lekin undan ham ko'proq pishloq turlari va mintaqaviy avtonomiya bilan. Jirondist modeli butun dunyo bo'ylab federal tizimlarga ilhom berdi. Très magnifique! 🇫🇷🧀"
+      },
+      "butterfly": {
+        "federal-europe": {
+          "trigger": "Muvaffaqiyatli federalizm",
+          "consequence": "Erta Yevropa Federal Ittifoqi"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
-      "title": "General Shtatlar Inqirozi",
-      "text": "Versal, May 1789. Siz General Shtatlar delegatisiz. Uchinchi Tabaqa o'z yig'ilish zaliga kiritilmayapti. Nima qilasiz?",
-      "choices": [
-        {
-          "text": "Tennis Korti Qasamiga qo'shiling va yangi konstitutsiya yaratishga qasamyod qiling",
-          "consequence": "Sizning jasur harakatingiz inqilobni boshlashga va Milliy Assambleyani tashkil etishga yordam beradi"
+  "scenarios": {
+    "estates-general": {
+      "title": "Tennis Korti Qasami (1789)",
+      "text": "Versal. Qirol sizni tashqarida qoldirdi. Xalq g'azablangan. Yomg'ir yog'moqda. Qayerda uchrashamiz?",
+      "choices": {
+        "oath": {
+          "text": "Tennis Kortiga! Yangi Konstitutsiyaga qasamyod qiling!",
+          "consequence": "Milliy Assambleya tug'iladi. Inqilob boshlanadi."
         },
-        {
-          "text": "Boshqa tabaqalar bilan murosa muzokara qilishga harakat qiling",
-          "consequence": "Sizning diplomatiyangiz inqilobni kechiktiradi, ammo ko'proq mo''tadil koalitsiya tuzadi"
+        "compromise": {
+          "text": "Qirolga kamtarlik bilan iltimosnoma yuboring.",
+          "consequence": "Lyudovik sizning sadoqatingizdan ta'sirlanadi. U tinch yo'l bilan konstitutsiya beradi."
         },
-        {
-          "text": "Qirol aralashuvini va tartibni tiklashni talab qiling",
-          "consequence": "An'anaga sodiqligingiz sizni inqilobiy kayfiyatga qarshi qo'yadi"
+        "go-home": {
+          "text": "Bu xiyonat. Uyga boring.",
+          "consequence": "Inqilob sizsiz sodir bo'ladi. Siz unutilasiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Bastiliyani Ishg'ol Qilish",
-      "text": "14 Iyul, 1789. Parij portlamoqda! G'azablangan olomon Bastiliya qal'asi tashqarisida to'plangan. Ularga porox kerak, ammo gubernator rad etmoqda. Olomon sizga yuzlanmoqda...",
-      "choices": [
-        {
-          "text": "Qal'aga hujumni boshqaring",
-          "consequence": "Sizning jasoratingiz olomonni ilhomlantiradi va Bastiliya qulaydi, ammo zo'ravonlik kuchayadi"
+    "storming-bastille": {
+      "title": "14 Iyul (1789)",
+      "text": "Bastiliya Parij ustida ko'tarilib turibdi. Unda porox bor. Olomon sizdan rahbarlik kutmoqda.",
+      "choices": {
+        "assault": {
+          "text": "Qal'aga hujum qiling!",
+          "consequence": "Bastiliya quladi! Qirol dahshatga tushdi."
         },
-        {
-          "text": "Tinch taslim bo'lishni muzokara qilishga harakat qiling",
-          "consequence": "Sizning diplomatiyangiz ba'zi qon to'kilishining oldini oladi, ammo zaiflik sifatida ko'rilishi mumkin"
-        },
-        {
-          "text": "Strategiya bilan to'g'ri qamal tashkil qiling",
-          "consequence": "Sizning harbiy rejalashtirishingiz kamroq qurbonlar bilan g'alabani ta'minlaydi"
+        "negotiate": {
+          "text": "Gubernator bilan muzokara qiling.",
+          "consequence": "U siz gaplashayotganingizda o't ochadi. Olomon hammani qiradi. Siz muvaffaqiyatsizlikka uchradingiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Qirolning Taqdiri",
-      "text": "Yanvar 1793. Lyudovik XVI xiyonatda ayblanib sudlanmoqda. Konventsiya ikkiga bo'lingan - o'lim yoki surgun? Sizning ovozingiz qirolning taqdirini hal qilishi mumkin...",
-      "choices": [
-        {
-          "text": "Qatl uchun ovoz bering - qirol jinoyatlari uchun to'lashi kerak",
-          "consequence": "Sizning ovozingiz qirolning taqdirini muhrlashga yordam beradi, Yevropani larzaga soladi va inqilobni radikallashtiradi"
+    "flight-varennes": {
+      "title": "Qirol Qochadi (1791)",
+      "text": "Qirol niqoblanib Parijdan qochdi! U Varennda to'xtatildi. Olomon uning aravasini o'rab oldi.",
+      "choices": {
+        "arrest": {
+          "text": "Uni hibsga oling! U xoindir.",
+          "consequence": "Monarxiya o'ldi. Respublika tug'ildi."
         },
-        {
-          "text": "Surgun uchun ovoz bering - rahm-shafqat ko'rsating va qon to'kilishidan qoching",
-          "consequence": "Sizning rahm-shafqatingiz yarashish imkoniyatini saqlab qoladi, ammo radikallarni g'azablantiradi"
-        },
-        {
-          "text": "Betaraf qoling - bu qaror siz uchun juda muhim",
-          "consequence": "Sizning ikkilanishinigiz inqilobiy adolat haqidagi millatning noaniqligini aks ettiradi"
+        "let-go": {
+          "text": "Uni o'tkazib yuboring. Fransiyaga Qirol kerak.",
+          "consequence": "U Avstriya armiyasi bilan qaytadi. Inqilob bostiriladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Terror Hukmronligi",
-      "text": "Sentyabr 1793. Robesper 'Terror - kun tartibi!' deb e'lon qiladi. Gilotina tinimsiz ishlamoqda. Do'stingiz pichirlaydi: kimdir sizni aksilinqilobiy faoliyatda aybladi...",
-      "choices": [
-        {
-          "text": "Hibsga olinishdan oldin darhol Parijdan qoching",
-          "consequence": "Sizning qochishingiz hayotingizni saqlab qoladi, ammo barcha siyosiy ta'siringizni yo'qotasiz"
+    "kings-trial": {
+      "title": "Fuqaro Kapet Sudi (1793)",
+      "text": "Lyudovik XVI sud qilinmoqda. Yakobinlar qon istaydi. Jirondinlar rahm-shafqat istaydi. Qanday ovoz berasiz?",
+      "choices": {
+        "execute": {
+          "text": "O'lim! Millat yashashi uchun Qirol o'lishi kerak.",
+          "consequence": "Gilotina tushadi. Yevropa urush e'lon qiladi."
         },
-        {
-          "text": "Qoling va Qo'mita oldida o'zingizni himoya qiling",
-          "consequence": "Sizning jasur himoyangiz sizni qutqarishi yoki inqilobiy haddan tashqari shahid qilishi mumkin"
-        },
-        {
-          "text": "Inqilobiy sadoqatingizni isbotlash uchun boshqalarni qoralang",
-          "consequence": "Sizning xiyonatingiz sizni qutqaradi, ammo terror va qo'rquv tsiklini davom ettiradi"
+        "exile": {
+          "text": "Surgun. Respublikani qon bilan bulg'amang.",
+          "consequence": "Qirol surgun qilinadi. Mo''tadillar g'alaba qozonadi."
         }
-      ]
+      }
     },
-    {
-      "title": "Napoleonning Yuksalishi",
-      "text": "Noyabr 1799. General Bonapart Misrdan qaytdi. Direktoriya kuchsiz va mashhur emas. U to'ntarishini qo'llab-quvvatlash haqida sizga murojaat qiladi...",
-      "choices": [
-        {
-          "text": "Napoleonni qo'llab-quvvatlang - Fransiyaga kuchli rahbar kerak",
-          "consequence": "Sizning yordamingiz inqilobni tugatishga yordam beradi, ammo harbiy diktaturani boshlaydi"
+    "reign-of-terror": {
+      "title": "Buyuk Terror (1793)",
+      "text": "Robesper hukmronlik qilmoqda. Jamoat Xavfsizligi Qo'mitasi hamma joyda dushmanlarni ko'radi. Qo'shningiz hibsga olindi.",
+      "choices": {
+        "purge": {
+          "text": "Tozalashlarni qo'llab-quvvatlang. Soflik muhim.",
+          "consequence": "Siz omon qolasiz, ammo qanday baho evaziga?"
         },
-        {
-          "text": "To'ntarishga qarshi chiqing va Direktoriyani himoya qiling",
-          "consequence": "Demokratiyani himoya qilishingiz respublikani saqlab qolishi yoki sizni surgun qilishi mumkin"
-        },
-        {
-          "text": "Shartlarni muzokara qiling - agar u konstitutsiyaviy cheklovlarni va'da qilsa, uni qo'llang",
-          "consequence": "Sizning shartlaringiz Napoleon hokimiyatini mo''tadillashtirishi yoki butunlay e'tiborsiz qoldirilishi mumkin"
+        "thermidor": {
+          "text": "Robesperga qarshi fitna uyushtiring.",
+          "consequence": "To'ntarish muvaffaqiyatli! Terror tugaydi."
         }
-      ]
+      }
+    },
+    "napoleon-rises": {
+      "title": "18 Brumer (1799)",
+      "text": "General Bonapart qaytdi. U tartibni tiklash uchun to'ntarish rejalashtirmoqda. U sizdan yordam so'raydi.",
+      "choices": {
+        "emperor": {
+          "text": "Sezarga shon-sharaf! Fransiyaga kuchli rahbar kerak.",
+          "consequence": "Imperiya boshlanadi. Shon-sharaf va urush kutmoqda."
+        },
+        "republic": {
+          "text": "Konstitutsiyani himoya qiling.",
+          "consequence": "Napoleon hibsga olinadi. Respublika (kuchsiz holda) saqlanib qoladi."
+        }
+      }
     }
-  ]
+  }
 }

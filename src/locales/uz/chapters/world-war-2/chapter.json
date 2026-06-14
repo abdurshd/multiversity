@@ -2,357 +2,255 @@
   "meta": {
     "title": "Ikkinchi Jahon Urushi",
     "period": "1939-1945",
-    "description": "Yerdagi Eng Buyuk Shou (Afsuski): Hammasini O'zgartirgan Urush! 🌍💥 Demokratiya, fashizm va kommunizm insoniyat kelajagi uchun kurashayotganini tomosha qiling. Unda epik janglar, texnologik mo''jizalar, qahramon rahbarlar, yovuz dushmanlar va Gollivudni hasad qildiradigan syujet burilishlari bor! London Blitsidan Tinch okeanidagi orollarga sakrashgacha va atom asrigacha - bu dunyoni tom ma'noda o'zgartirgan urush! ⚡🎬",
-    "historical_context": "1939-yilga kelib, dunyo juda qisqa pilikli porox bochkasiga o'xshardi! 💣 Gitler Yevropani yutib yuborayotgan, Yaponiya Osiyo bo'ylab g'azablanayotgan va boshqalar yo taraf tanlayotgan yoki neytral qolishga harakat qilayotgan edi (spoyler: betaraflik ish bermadi). Bu shunchaki yana bir urush emas edi - bu demokratiya, fashizm va kommunizm o'rtasidagi mafkuraviy o'lim jangi bo'lib, insoniyat sivilizatsiyasining kelajagi qil ustida turardi. Masalani hal qilish uchun olti yil, 50 milliondan ortiq hayot va atom qurollarining ixtirosi kerak bo'ldi. Kamarlarni taqing - bu eng kattasi! 🌍⚔️",
-    "divergence_point": "Urush Davomidagi Ko'plab Muhim Qarorlar"
+    "description": "Yerdagi Eng Buyuk Shou: Hammasini O'zgartirgan Urush! 🌍💥 Demokratiya, fashizm va kommunizm bir-biri bilan kurashayotganini tomosha qiling.",
+    "historical_context": "1939-yilga kelib, dunyo porox bochkasiga aylangan edi. Gitler Yevropani yutib yuborayotgan, Yaponiya esa Osiyo bo'ylab g'azablanayotgan edi.",
+    "divergence_point": "Myunxen Konferentsiyasi 1938"
   },
   "figures": {
     "winston-churchill": {
       "name": "Uinston Cherchill",
       "role": "Hech Qachon Taslim Bo'lmagan Buldog",
-      "description": "Eng yaxshi iboralarga ega yakuniy urush rahbari! 🐕⚡ Sigara chekadigan, brendi ichadigan, nutq so'zlaydigan bu afsona asosan Gitlerdan ko'ra qaysarroq edi. Uning 'Biz hech qachon taslim bo'lmaymiz' munosabati demokratiyani saqlab qoldi!"
+      "description": "Eng yaxshi iboralarga ega yakuniy urush rahbari! 🐕⚡ Sigara chekadigan, brendi ichadigan, nutq so'zlaydigan bu afsona asosan Gitlerdan ko'ra qaysarroq edi."
     },
     "franklin-roosevelt": {
       "name": "Franklin D. Ruzvelt",
       "role": "Yangi Kurs Prezidenti va Urush Rahbari",
-      "description": "Yura olmaydigan, lekin Amerikani yugurtirgan prezident! 🦅💪 Amerikani Depressiyadan g'alabaga olib bordi, shu bilan birga Stalin, Cherchill va Kongressni boshqardi. Ko'p vazifalilik haqida gapiring!"
+      "description": "Yura olmaydigan, lekin Amerikani yugurtirgan prezident! 🦅💪 Amerikani Depressiyadan g'alabaga olib bordi, shu bilan birga Stalin va Cherchillni boshqardi."
     },
     "joseph-stalin": {
       "name": "Iosif Stalin",
       "role": "Gitlerni Sindirgan Gruzin Po'lati",
-      "description": "Qandaydir qilib demokratiyaning ittifoqchisiga aylangan paranoid diktator! ⚔️🐻 Uyda shafqatsiz, Gitlerga qarshi muhim. Ba'zan yovuzlik bilan kurashish uchun yovuzlik kerakligini isbotladi."
+      "description": "Qandaydir qilib demokratiyaning ittifoqchisiga aylangan paranoid diktator! ⚔️🐻 Uyda shafqatsiz, Gitlerga qarshi muhim."
     },
     "dwight-eisenhower": {
       "name": "Duayt D. Eyzenxauer",
       "role": "Oliy Qo'mondon va D-Day Ustasi",
-      "description": "Tarixdagi eng katta bosqinchilikni tashkil qilgan Kanzaslik fermer bola! 🏖️⚔️ Amerikaliklar, inglizlar, fransuzlar va kanadaliklarni haqiqatan ham birga ishlashga majbur qildi. Diplomatik daho!"
+      "description": "Tarixdagi eng katta bosqinchilikni tashkil qilgan Kanzaslik fermer bola! 🏖️⚔️ Diplomatik daho!"
     },
     "george-patton": {
       "name": "Jorj S. Patton",
       "role": "Qari Qon va Ichak Tank Qo'mondoni",
-      "description": "O'zini reenkarnatsiya qilingan jangchi deb o'ylagan general! 🏺⚔️ Tanklarni yaxshi ko'rardi, qog'ozbozlikdan nafratlanardi va nemislarni hammadan ko'ra ko'proq qo'rqitardi. 'Meni boshqaring, menga ergashing yoki yo'limdan qoching!'"
+      "description": "O'zini reenkarnatsiya qilingan jangchi deb o'ylagan general! 🏺⚔️ Tanklarni yaxshi ko'rardi, qog'ozbozlikdan nafratlanardi. \"Meni boshqaring, menga ergashing yoki yo'limdan qoching!\""
     },
     "bernard-montgomery": {
       "name": "Bernard Montgomeri",
       "role": "Cho'l Tulkisi Ovchisi va Britaniya Buldogi",
-      "description": "Rommelni mag'lub etgan uslubiy Britaniya generali! 🏜️🦊 Ehtiyotkor rejalashtiruvchi, odamlar bilan munosabatda yomon, lekin janglarda g'alaba qozonishda mutlaqo ajoyib. El-Alameyn uning shoh asari edi!"
+      "description": "Rommelni mag'lub etgan uslubiy Britaniya generali! 🏜️🦊 Ehtiyotkor rejalashtiruvchi, El-Alameyn uning shoh asari edi!"
     },
     "erwin-rommel": {
       "name": "Ervin Rommel",
       "role": "Cho'l Tulkisi va Hurmatli Dushman",
-      "description": "Hatto dushmanlari ham hurmat qilgan nemis generali! 🏜️🦊 Tank urushi ustasi, asirlarga yaxshi munosabatda bo'lgan va oxir-oqibat Gitlerga qarshi fitna uyushtirgan. Nomusli urushda nomus."
+      "description": "Hatto dushmanlari ham hurmat qilgan nemis generali! 🏜️🦊 Tank urushi ustasi, oxir-oqibat Gitlerga qarshi fitna uyushtirgan."
     },
     "hirohito": {
       "name": "Imperator Xiroxito",
       "role": "Urushni Tugatgan Jim Imperator",
-      "description": "Nihoyat 'yetar!' degan istaksiz imperator! 🌸⚔️ Yaponiyaning imperiyadan kulga aylanishini kuzatdi, keyin hayotidagi eng qiyin qarorni qabul qildi: taslim bo'lish va xalqini saqlab qolish."
+      "description": "Nihoyat \"yetar!\" degan istaksiz imperator! 🌸⚔️ Hayotidagi eng qiyin qarorni qabul qildi: taslim bo'lish."
     }
   },
   "timelines": {
     "no-appeasement": {
-      "title": "Murosasizlik: Cherchill Boshidanoq Haq! 🦁⚔️",
+      "title": "Murosasizlik: Cherchill Haq! 🦁⚔️",
       "description": "Agar Britaniya va Fransiya 1938 yilda Myunxenda Gitlerni tinchlantirish o'rniga to'xtatganida nima bo'lar edi?",
-      "divergence_description": "Britaniya va Fransiya Myunxen kelishuvini rad etadi va 1938 yilda Germaniya Chexoslovakiyaga tahdid solganda urush e'lon qiladi",
+      "divergence_description": "Britaniya va Fransiya Myunxen kelishuvini rad etadi va Germaniya Chexoslovakiyaga tahdid solganda urush e'lon qiladi.",
+      "present_day_status": "1938-1940 yillardagi \"Qisqa Urush\" millionlab hayotlarni saqlab qoldi. 30-sentyabr \"Jasorat Kuni\". Myunxen Konferentsiya Xonasi muzeyga aylandi: \"Yovuzlikka Hech Qachon Murosa Qilmang.\" 🦁🕊️",
       "events": {
         "munich-crisis-war-1938": {
-          "title": "Myunxen Inqirozi Urushni Keltirib Chiqarmoqda: 'Murosasizlik Yo'q!' 🇬🇧⚔️",
-          "description": "Britaniya va Fransiya Myunxen kelishuvini rad etadi va Gitler Chexoslovakiyaga tahdid solganda urush e'lon qiladi. Ikkinchi Jahon Urushi bir yil oldin boshlanadi!",
-          "impact": "Germaniya kamroq tayyor bo'lgan va Chexoslovakiya ittifoqchi sifatida Ikkinchi Jahon Urushini boshlaydi"
-        },
-        "czech-german-war-1938": {
-          "title": "Chexoslovakiya Qarshiligi: Qal'a Tutib Turibdi! 🏰⚔️",
-          "description": "Fransuz va ingliz yordami bilan yaxshi tayyorlangan chex kuchlari nemis bosqiniga qarshilik ko'rsatadi. Gitlerning tezkor g'alabasi uzoq davom etadigan kampaniyaga aylanadi.",
-          "impact": "Nemis armiyasi tayyorlangan mudofaa va xalqaro qarshilikka duch keladi"
-        },
-        "soviet-intervention-1939": {
-          "title": "Stalin Ittifoqchilarga Qo'shildi: 'Dushmanimning Dushmani!' 🐻🤝",
-          "description": "Sovet Ittifoqi Germaniyaga qarshi G'arbiy Ittifoqchilarga qo'shiladi va Gitler uchun darhol ikki frontli urush yaratadi.",
-          "impact": "Urush boshidanoq birlashgan anti-natsist koalitsiyasini yaratadi"
+          "title": "Myunxen Inqirozi Urushni Keltirib Chiqaradi",
+          "description": "Britaniya va Fransiya Myunxen kelishuvini rad etadi. Ikkinchi Jahon Urushi bir yil oldin boshlanadi!",
+          "impact": "Germaniya kamroq tayyor. Chexoslovakiya kurashadi."
         },
         "german-defeat-1940": {
-          "title": "Germaniya Quladi: Juda Ko'p, Juda Erta! 💔🇩🇪",
-          "description": "Birlashgan ingliz, fransuz, chex va sovet kuchlariga duch kelgan Germaniya 2 yildan kamroq urushdan keyin qulaydi.",
-          "impact": "Xolokost to'liq amalga oshirilishidan oldin Natsist rejimini tugatadi"
-        },
-        "democratic-europe-1941": {
-          "title": "Demokratik Yevropa Tiklandi: Kuch Orqali Tinchlik! 🕊️🏛️",
-          "description": "Ittifoqchilar g'alabasi xalqaro kafolat ostida butun Yevropa bo'ylab demokratik hukumatlarning tiklanishiga olib keladi.",
-          "impact": "Yevropa demokratiyasini saqlab qoladi va Xolokostning oldini oladi"
-        },
-        "no-pacific-war-1941": {
-          "title": "Yaponiya Qayta O'ylamoqda: Perl-Harbor Yo'q! 🇯🇵🤔",
-          "description": "Germaniya mag'lub bo'lgach, Yaponiya Amerika va Britaniyaga qarshi yolg'iz kurashish imkonsizligini tushunadi. Tinch okeani urushi yo'q.",
-          "impact": "Tinch okeani urushi va millionlab qurbonlarning oldini oladi"
+          "title": "Germaniya Quladi",
+          "description": "Birlashgan kuchlarga duch kelgan natsistlar 2 yilda quladi.",
+          "impact": "Xolokostning oldi olindi. Demokratiya tiklandi."
         }
       },
       "consequences": {
-        "short_term": "Erta urush Xolokostning to'liq amalga oshirilishini oldini oladi",
-        "long_term": "Olti million yahudiy hayoti va boshqa natsist qurbonlari saqlab qolindi",
-        "global_impact": "Genotsid va inson huquqlari rivojlanishi haqida boshqacha tushuncha"
-      },
-      "butterfly": [
-        {
-          "trigger": "Qisqaroq urush Manxetten Loyihasi tugallanmasligini anglatadi",
-          "consequence": "Yadro qurollari keyinroq ishlab chiqiladi, ehtimol urushda hech qachon ishlatilmaydi"
-        },
-        {
-          "trigger": "Erta Ittifoqchi-Sovet hamkorligi urushdan keyingi boshqacha dinamikani yaratadi",
-          "consequence": "Sovuq Urush yoki sodir bo'lmaydi yoki juda boshqacha shakl oladi"
+        "holocaust-prevented": {
+          "short_term": "Erta urush Xolokostning to'liq amalga oshirilishini oldini oladi",
+          "long_term": "Olti million yahudiy hayoti saqlab qolindi",
+          "global_impact": "Genotsid haqida boshqacha tushuncha"
         }
-      ],
-      "present_day_status": "1938-1940 yillardagi 'Qisqa Urush' millionlab hayotlarni saqlab qolgan mojaro sifatida eslanadi. 30-sentyabr 'Jasorat Kuni' sifatida nishonlanadi. Myunxen Konferentsiya Xonasi endi 'Yovuzlikka Hech Qachon Murosa Qilmang' shiori ostidagi muzey. 🦁🕊️"
+      },
+      "butterfly": {
+        "no-atomic-weapons": {
+          "trigger": "Qisqaroq urush Manxetten Loyihasi bo'lmasligini anglatadi",
+          "consequence": "Yadro qurollari keyinroq ishlab chiqiladi, ehtimol hech qachon ishlatilmaydi"
+        }
+      }
     },
     "d-day-fails": {
-      "title": "D-Day Falokati: Overlord Operatsiyasi Muvaffaqiyatsiz! 💀🏖️",
-      "description": "Agar D-Day desanti ob-havo, nemis tayyorgarligi yoki omadsizlik tufayli halokatli tarzda muvaffaqiyatsizlikka uchraganida nima bo'lar edi?",
-      "divergence_description": "Yomon ob-havo, yaxshilangan nemis mudofaasi va taktik muvaffaqiyatsizliklar D-Dayning katta qurbonlar bilan muvaffaqiyatsiz bo'lishiga olib keladi",
+      "title": "D-Day Falokati: Overlord Muvaffaqiyatsiz! 💀🏖️",
+      "description": "Agar D-Day desanti halokatli tarzda muvaffaqiyatsizlikka uchraganida nima bo'lar edi?",
+      "divergence_description": "Yomon ob-havo va nemis tayyorgarligi bosqinchilikni halokatga olib keladi.",
+      "present_day_status": "Sovet Yevropa Federatsiyasi Lissabondan Moskvagacha cho'zilgan. Normandiya \"Yo'qolgan Armiya\"ga bag'ishlangan tantanali yodgorlik. Sovuq Urush AQSh va birlashgan Qizil Yevropa o'rtasida bo'ldi. 💔🌹",
       "events": {
         "d-day-disaster-1944": {
-          "title": "D-Day Falokati: Eng Uzun Kun Eng Qorong'u Kunga Aylandi! 💀🌊",
-          "description": "Mukammal nemis mudofaasi, yomon ob-havo va taktik muvaffaqiyatsizliklar Overlord Operatsiyasini halokatga olib keladi. 50,000+ Ittifoqchi qurbonlar, tarixdagi eng yomon harbiy ofat.",
-          "impact": "Ittifoqchilarning bosqinchilik qobiliyati va ruhiyatini yo'q qiladi"
+          "title": "D-Day Falokati",
+          "description": "Ittifoqchi kuchlar dengizga qaytarib uloqtirildi. 50,000 qurbon.",
+          "impact": "Ittifoqchilarning bosqinchilik qobiliyatini yo'q qiladi."
         },
-        "eisenhower-resigns-1944": {
-          "title": "Eyzenxauer Javobgarlikni O'z Zimmasiga Oldi: 'Aybdor Menman!' 💔👨‍✈️",
-          "description": "Oliy Qo'mondon Eyzenxauer falokat uchun to'liq javobgarlikni o'z zimmasiga olib iste'foga chiqadi. Uning oldindan yozilgan iste'foga chiqish xati haqiqatga aylanadi.",
-          "impact": "Ittifoqchilar rahbariyati inqirozi va bosqinchilik strategiyasiga ishonch yo'qolishi"
-        },
-        "german-counteroffensive-1944": {
-          "title": "Nemis Qarshi Hujumi: Rommelning Qasosi! 🦊⚔️",
-          "description": "D-Day g'alabasidan ruhlangan nemislar Italiyada katta qarshi hujum boshlaydilar va barcha frontlarni barqarorlashtiradilar.",
-          "impact": "Nemis ruhiyati tiklandi va mudofaa chiziqlari mustahkamlandi"
-        },
-        "war-extends-1945": {
-          "title": "Urush Cho'zilmoqda: Tezkor G'alaba Yo'q! ⏰💔",
-          "description": "Ikkinchi frontsiz urush 1946 yilgacha davom etadi. Sovet Ittifoqi Yevropa janglarining to'liq og'irligini o'z zimmasiga oladi.",
-          "impact": "Yevropa urushini cho'zadi va barcha tomonlarda qurbonlarni oshiradi"
-        },
-        "nuclear-europe-1945": {
-          "title": "Yevropada Yadro Qurollari Ishlatildi: Aql Bovar Qilmas! ☢️🌍",
-          "description": "Cho'zilgan urushdan hafsalasi pir bo'lgan Amerika taslim bo'lishga majburlash uchun nemis shaharlariga qarshi atom qurollarini ishlatishni ko'rib chiqadi.",
-          "impact": "Yevropa teatrida yadro qurollari ishlatilishi mumkin"
-        },
-        "soviet-dominance-1946": {
-          "title": "Sovet G'alabasi: Stalinning Yevropasi! 🐻🏛️",
-          "description": "Sovet Ittifoqi oxir-oqibat Germaniyani yolg'iz o'zi mag'lub etadi va G'arb ishtirokisiz butun Markaziy va Sharqiy Yevropani egallaydi.",
-          "impact": "Urushdan keyingi boshqacha muvozanat bilan Sovet hukmronligidagi Yevropani yaratadi"
+        "soviet-europe": {
+          "title": "Sovet Yevropasi",
+          "description": "Qizil Armiya butun Yevropani yolg'iz ozod qiladi.",
+          "impact": "Kommunistik Temir Parda Atlantikagacha cho'ziladi."
         }
       },
       "consequences": {
-        "short_term": "Urush katta qo'shimcha qurbonlar bilan yana 2 yilga cho'ziladi",
-        "long_term": "Turli harbiy texnologiya rivojlanishi va taktikasi",
-        "global_impact": "Yevropa teatrida yadro qurollari ishlatilishi mumkin"
-      },
-      "butterfly": [
-        {
-          "trigger": "Sovet ozodligi Fransiya, Niderlandiya, Belgiyada kommunistik hukumatlarni yaratadi",
-          "consequence": "NATO hech qachon tuzilmaydi, juda boshqacha Sovuq Urush dinamikasi"
-        },
-        {
-          "trigger": "Yevropa shaharlariga qarshi yadro qurollari ishlatildi",
-          "consequence": "Turli yadroviy taqiq va Sovuq Urush yadroviy strategiyalari"
+        "soviet-dominance": {
+          "short_term": "Sovet Ittifoqi Fransiya va Germaniyani nazorat qiladi",
+          "long_term": "NATO hech qachon tuzilmaydi",
+          "global_impact": "Qizil Yevropa Sovuq Urushni butunlay o'zgartiradi"
         }
-      ],
-      "present_day_status": "6-iyun D-Day falokati uchun 'Qurbonlikni Xotirlash Kuni' sifatida nishonlanadi. Sovet Yevropa Federatsiyasi Lissabondan Vladivostokgacha cho'zilgan. Normandiya plyajlarida 12 tilda 'Ular Bizning Bugunimiz Uchun O'z Ertalarini Berdilar' deb yozilgan yodgorliklar bor. 💔🌹"
+      },
+      "butterfly": {
+        "communist-britain": {
+          "trigger": "Yakkalangan Britaniya kommunistik qit'aga duch keladi",
+          "consequence": "Britaniya bosim ostida oxir-oqibat sotsialistik bo'lib qoladi"
+        }
+      }
     },
     "japan-wins-pacific": {
-      "title": "Yaponiya Tinch Okeani Imperiyasi: Chiqayotgan Quyosh G'olib! 🌅🏴‍☠️",
-      "description": "Agar Yaponiya Tinch okeani urushida muvaffaqiyatliroq bo'lib, Buyuk Sharqiy Osiyo Hamkorlik Farovonligi Sferasiga erishganida nima bo'lar edi?",
-      "divergence_description": "Yaponiya Miduey falokatidan qochadi, Avstraliyaga muvaffaqiyatli bostirib kiradi va Amerika tinchlik muzokaralariga majbur qiladi",
+      "title": "Yaponiya Tinch Okeani Imperiyasi 🌅🏴‍☠️",
+      "description": "Agar Yaponiya Midueyda Amerika flotini yo'q qilganida nima bo'lar edi?",
+      "divergence_description": "Yaponiya Midueyda g'alaba qozonadi, Gavayi va Avstraliyaga bostirib kiradi.",
+      "present_day_status": "Buyuk Sharqiy Osiyo Hamkorlik Farovonligi Sferasi superkuchdir. Yapon tili Osiyoning umumiy tili. Dunyo uchta beqaror blokka bo'lingan. 🌸🕊️",
       "events": {
-        "midway-victory-1942": {
-          "title": "Yaponiya Midueyda G'alaba Qozondi: Amerika Floti Yo'q Qilindi! 🛩️💥",
-          "description": "Yaponlar kodlarini o'zgartiradilar, Amerika tuzog'idan qochadilar va Midueyda AQSh Tinch okeani flotining ko'p qismini yo'q qiladilar. Tinch okeani yapon ko'liga aylanadi!",
-          "impact": "Tinch okeanida Amerika dengiz kuchini yo'q qiladi va yapon kengayishini ta'minlaydi"
+        "midway-victory": {
+          "title": "Yaponiya Midueyda G'alaba Qozondi",
+          "description": "AQSh aviakemalari cho'kdi. Tinch okeani ochiq.",
+          "impact": "AQSh muzokaraga majbur bo'ldi."
         },
-        "australia-invaded-1942": {
-          "title": "FS Operatsiyasi: Yaponiya Avstraliyaga Bostirib Kirdi! 🇦🇺⚔️",
-          "description": "Ularni to'xtatadigan Amerika floti yo'qligi sababli, yapon kuchlari shimoliy Avstraliyaga muvaffaqiyatli bostirib kiradilar. 'Janubiy Resurs Hududi' kengayadi!",
-          "impact": "Keyingi kengayish uchun muhim resurslar va strategik pozitsiyani egallaydi"
-        },
-        "india-liberation-1943": {
-          "title": "Yaponlar Hindistonni 'Ozod Qilmoqda': Xayr Britaniya Raji! 🇮🇳🌅",
-          "description": "Hindiston Milliy Armiyasi yordamida yapon kuchlari Birmani egallab, Hindistonga bostirib kiradilar. Osiyodagi Britaniya imperiyasi qulaydi.",
-          "impact": "Osiyodagi Britaniya imperiyasini yo'q qiladi va yapon g'arbiy qanotini ta'minlaydi"
-        },
-        "hawaii-negotiations-1943": {
-          "title": "Perl-Harborda Tinchlik: Amerika Muzokara Qilmoqda! 🕊️🏝️",
-          "description": "Perl-Harborning 2 yilligida Amerika va Yaponiya Yaponiyaning Tinch okeani imperiyasini tan oluvchi tinchlik shartnomasini imzolaydilar.",
-          "impact": "Tinch okeani urushini yapon g'alabasi va hududiy yutuqlar bilan tugatadi"
-        },
-        "greater-east-asia-1944": {
-          "title": "Buyuk Sharqiy Osiyo Hamkorlik Farovonligi Sferasi Tashkil Etildi! 🌏👑",
-          "description": "Yaponiya imperiyasi Sibirdan Yangi Zelandiyagacha bo'lgan Buyuk Sharqiy Osiyo Hamkorlik Farovonligi Sferasini rasman tashkil etadi.",
-          "impact": "Yevropa kuchlariga raqobatdosh yapon hukmronligidagi Osiyo imperiyasini yaratadi"
-        },
-        "cold-war-japan-vs-allies-1945": {
-          "title": "Yangi Sovuq Urush: Yaponiya Dunyoga Qarshi! ❄️🌏",
-          "description": "Yevropa ozod qilingan, ammo Osiyo yapon nazorati ostida bo'lgan holda, Yaponiya imperiyasi va Ittifoqchi kuchlar o'rtasida yangi Sovuq Urush boshlanadi.",
-          "impact": "Yaponiya imperiyasi ikkinchi superkuch sifatida ikki qutbli dunyoni yaratadi"
+        "treaty-honolulu": {
+          "title": "Gonolulu Shartnomasi",
+          "description": "AQSh Osiyoda yapon hukmronligini tan oladi.",
+          "impact": "Yaponiya imperiyasi resurslarni ta'minlaydi."
         }
       },
       "consequences": {
-        "short_term": "Yaponiya ulkan imperiya bilan hukmron Tinch okeani kuchiga aylanadi",
-        "long_term": "Yapon gegemoniyasi ostida Osiyoda boshqacha dekolonizatsiya naqshlari",
-        "global_impact": "Yapon va Amerika/Yevropa sferalari bilan ikki qutbli dunyo"
-      },
-      "butterfly": [
-        {
-          "trigger": "Yapon Tinch okeani g'alabasi Amerika global hukmronligining oldini oladi",
-          "consequence": "Raqobatdosh ta'sir doiralari bilan ko'p qutbli dunyo"
-        },
-        {
-          "trigger": "Yapon g'alabasi Yevropa imperiyalarining tugashini tezlashtiradi",
-          "consequence": "Yaponiya homiyligida Osiyo va Afrika mustaqilligi"
+        "asian-empire": {
+          "short_term": "Yaponiya Osiyoga hukmronlik qiladi",
+          "long_term": "Dekolonizatsiya yapon shartlari ostida sodir bo'ladi",
+          "global_impact": "Uch qutbli dunyo (AQSh, Germaniya/SSSR, Yaponiya)"
         }
-      ],
-      "present_day_status": "Yaponiya Tinch Okeani Federatsiyasi Amerika Respublikasi va Yevropa Ittifoqi bilan bir qatorda uchta global superkuchdan biridir. 7-dekabr Osiyo bo'ylab 'Ozodlik Kuni' sifatida nishonlanadi. Perl-Harbor har yili 'Tinchlik va Farovonlik' marosimlariga mezbonlik qiladi. 🌸🕊️"
+      },
+      "butterfly": {
+        "tech-stagnation": {
+          "trigger": "Parchalangan jahon bozorlari",
+          "consequence": "Global miqyosda sekinroq texnologik o'sish"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
-      "title": "Bosqin Boshlandi: Polsha Hujum Ostida",
-      "text": "1939 yil 1 sentyabr, 4:45. Nemis kuchlari Polsha chegarasini bir necha nuqtada kesib o'tmoqda. Siz nemislarning ommaviy hujumlari haqida xabar olayotgan polshalik qo'mandonsiz. Millatingiz va dunyo taqdiri qil ustida turibdi.",
-      "choices": [
-        {
-          "text": "Tayyorlangan mudofaa pozitsiyalariga strategik chekinishga buyruq bering",
-          "consequence": "Polsha kuchlari jangovar chekinish o'tkazadi, ittifoqchilar safarbar bo'lishi uchun vaqt yutadi, ammo hududni tez yo'qotadi"
+  "scenarios": {
+    "munich-conference": {
+      "title": "Myunxen Inqirozi (1938)",
+      "text": "Gitler Sudetlandni talab qilmoqda. Chemberlen har qanday narx evaziga tinchlik istaydi. Siz Bosh vazirga maslahat berayotgan britaniyalik parlament a'zosisiz. Sharmandalikni yoki urushni tanlaysizmi?",
+      "choices": {
+        "appease": {
+          "text": "Kelishuvni imzolang. \"Bizning davrimiz uchun tinchlik!\"",
+          "consequence": "Siz bir yillik tinchlik sotib oldingiz, ammo Gitler dadillashdi. Urush muqarrar."
         },
-        {
-          "text": "Nemis nayzalariga qarshi darhol qarshi hujumga o'ting",
-          "consequence": "Jasur Polsha kavaleriya va piyodalari nemis tanklariga hujum qiladi, katta qurbonlar beradi, ammo aql bovar qilmas jasorat ko'rsatadi"
-        },
-        {
-          "text": "Darhol harbiy yordam so'rab Britaniya va Fransiyaga shoshilinch murojaat qiling",
-          "consequence": "Ittifoqchilar urush e'lon qiladilar, ammo darhol harbiy yordam bera olmaydilar, Polshani yolg'iz kurashishga qoldiradilar"
+        "resist": {
+          "text": "Talablarni rad eting. Flotni safarbar qiling!",
+          "consequence": "Gitler hayratda. Nemis generallari vahimaga tushdi. Urush boshlanadi, ammo siz tayyorsiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Ozchilik: Britaniyani Havodan Himoya Qilish",
-      "text": "Avgust 1940. Lyuftvaffe RAFni yo'q qilish va bosqinchilikka yo'l ochish uchun Burgut Kuni Operatsiyasini boshlaydi. Siz cheklangan uchuvchilar bilan nemislarning ustun havo kuchlariga duch kelgan RAF eskadron rahbarisiz. Cherchillning so'zlari aks-sado bermoqda: 'Hech qachon bunchalik ko'pchilik bunchalik ozchilikdan qarzdor bo'lmagan.'",
-      "choices": [
-        {
-          "text": "RAF aerodromlari va radar stantsiyalarini himoya qilishga e'tibor qarating",
-          "consequence": "Aerodrom faoliyatini saqlab qolish qiruvchilarni havoda ushlab turadi, ammo tinch aholi hududlari og'ir bombardimon qilinadi"
+    "poland-invasion": {
+      "title": "Blitskrig (1939)",
+      "text": "Gitler Polshaga bostirib kiradi. Taktika yangi: tezkor tanklar, qichqirayotgan pikeli bombardimonchilar. Ittifoqchilaringiz sekin harakat qiladi. Fransuzlar Majino Chizig'i orqasida qolmoqda.",
+      "choices": {
+        "dig-in": {
+          "text": "Polsha kuchlariga mudofaaga o'tib, yordam kutishni buyuring.",
+          "consequence": "Ular qurshab olinib, yo'q qilindi. Polsha bir necha haftada quladi."
         },
-        {
-          "text": "London ustidagi nemis bombardimonchi tuzilmalariga hujum qilishni birinchi o'ringa qo'ying",
-          "consequence": "Og'ir bombardimonchi yo'qotishlari nemislarni tungi bombardimonga o'tishga majbur qiladi, aniqlikni kamaytiradi, ammo Blitsni davom ettiradi"
-        },
-        {
-          "text": "Uchuvchilar kuchini saqlab qolish uchun 'ur va qoch' taktikasini qo'llang",
-          "consequence": "Konservativ taktika tajribali uchuvchilarni saqlab qoladi, ammo ko'proq nemis bombardimonchilarini nishonlarga o'tkazib yuboradi"
+        "attack-west": {
+          "text": "Fransuzlardan Reyn bo'yida darhol hujum qilishni talab qiling.",
+          "consequence": "Fransuzlar ehtiyotkorlik bilan oldinga siljiydi, keyin chekinadi. \"Soxta Urush\" boshlanadi."
         }
-      ]
+      }
     },
-    {
-      "title": "Sharmandalikda Yashaydigan Sana",
-      "text": "1941 yil 7 dekabr, 7:55. Yapon samolyotlari Perl-Harbor ustida halokatli kutilmagan hujumda to'planmoqda. Birinchi bombalar tushganda siz Tinch okeani floti qo'mondoni Admiral Kimmelsiz. Amerikaning betarafligi olovda o'lmoqda.",
-      "choices": [
-        {
-          "text": "Mavjud zenit qurollarini to'plang va darhol mudofaa tashkil qiling",
-          "consequence": "Tezkor javob ba'zi kemalar va samolyotlarni saqlab qoladi, ammo kutilmagan hujum o'z maqsadlarining ko'piga erishadi"
+    "battle-of-britain": {
+      "title": "Eng Qorong'u Soat (1940)",
+      "text": "Fransiya quladi. Britaniya yolg'iz qoldi. Lyuftvaffe Londonni bombardimon qilmoqda. Siz qimmatbaho Spitfayrlaringizni taqsimlashingiz kerak.",
+      "choices": {
+        "radar-defense": {
+          "text": "Radar stantsiyalari va aerodromlarni har qanday narx evaziga himoya qiling.",
+          "consequence": "Strategik daho! Lyuftvaffe quritildi. Bosqinchilik bekor qilindi."
         },
-        {
-          "text": "Muhim yoqilg'i saqlash inshootlarini himoya qilishga e'tibor qarating",
-          "consequence": "Yoqilg'i ombori omon qoladi, Tinch okeani urushi uchun muhim resurslarni ta'minlaydi, garchi kema yo'qotishlari og'ir bo'lib qolsa ham"
-        },
-        {
-          "text": "Hayotni saqlab qolish va asosiy xodimlarni evakuatsiya qilishni birinchi o'ringa qo'ying",
-          "consequence": "Ko'plab hayotlar saqlab qolindi, ammo yaponlar taktik kutilmaganlikka to'liq erishgani sababli moddiy yo'qotishlar ortadi"
+        "vengeance": {
+          "text": "London uchun qasos sifatida Berlinni bombardimon qiling.",
+          "consequence": "Gitler shaharlarga qarshi zarba beradi, aerodromlaringizni asraydi. Mash'um almashinuv, ammo siz omon qoldingiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Overlord Operatsiyasi: Eng Katta Qimor",
-      "text": "1944 yil 4 iyun. General Eyzenxauer urushning eng muhim qaroriga duch kelmoqda. Ob-havo o'rtacha, nemis mudofaasi kuchli, ammo bosqinchilikni uzoqqa cho'zib bo'lmaydi. Yevropaning ozodligi sizning tanlovingizga bog'liq.",
-      "choices": [
-        {
-          "text": "Ob-havo xavotirlariga qaramay, 6 iyun kuni bosqinchilikni boshlang",
-          "consequence": "Dag'al dengiz va bulutlar desantni qiyinlashtiradi, ammo nemislar yomon ob-havoda hujum kutmagani uchun muhim kutilmaganlikka erishadi"
+    "pearl-harbor": {
+      "title": "Sharmandalik Kuni (1941)",
+      "text": "Xabarlar kelmoqda. Gavayi ustida yapon samolyotlari. Jangovar kemalar qatori yonmoqda. Admiral, buyruqlaringiz nima?",
+      "choices": {
+        "save-carriers": {
+          "text": "Aviakemalar dengizda ekanligiga ishonch hosil qiling!",
+          "consequence": "Jangovar kemalar yo'qoldi, ammo zarba kuchingiz omon qoldi. Siz qarshilik ko'rsata olasiz."
         },
-        {
-          "text": "Ob-havo yaxshilanguncha bosqinchilikni kechiktiring, kashf etilish xavfi bor",
-          "consequence": "Yaxshiroq ob-havo hujumga yordam beradi, ammo nemislar tayyorgarlikni aniqlab, mudofaani sezilarli darajada kuchaytiradilar"
-        },
-        {
-          "text": "Yaxshiroq ob-havoga ega muqobil desant joylariga o'ting",
-          "consequence": "Muqobil plyajlar kuchliroq mudofaaga duch keladi, ammo ob-havo ustunligi turli taktik qiyinchiliklarni yaratadi"
+        "launch-fighters": {
+          "text": "Hammasini havoga ko'taring! Bandargohni himoya qiling!",
+          "consequence": "Juda kam, juda kech. Vayronagarchilik to'liq."
         }
-      ]
+      }
     },
-    {
-      "title": "Zulmatdagi Ovozlar: Qarshilik va Qutqaruv",
-      "text": "Varshava Gettosi, Aprel 1943. Deportatsiya va qirg'in lagerlari haqidagi xabarlar gettoga yetib keldi. Siz imkonsiz vaziyatga qanday javob berishni hal qilayotgan yahudiy qarshiligining bir qismisiz. Har bir tanlov hayot va qadr-qimmat yukini tashiydi.",
-      "choices": [
-        {
-          "text": "Katta ustunlikka qaramay qurolli qarshilik tashkil qiling",
-          "consequence": "Varshava Gettosi Qo'zg'oloni butun dunyo bo'ylab qarshilikni ilhomlantiradi, ammo gettoning vayron bo'lishiga va ko'plab qurbonlarga olib keladi"
+    "midway-trap": {
+      "title": "Midueydagi Tuzoq (1942)",
+      "text": "Biz yapon kodini sindirdik. Ular Midueyni nishonga olayotganini bilamiz. Biz ularga pistirma qo'yishimiz yoki ehtiyot bo'lishimiz mumkin.",
+      "choices": {
+        "ambush": {
+          "text": "Hammasini havoga ko'taring. Ularni paluba ustida bombalar bilan ushlang.",
+          "consequence": "Bir kunda to'rtta g'alaba! Vaziyat o'zgaradi."
         },
-        {
-          "text": "Tarix va adolat uchun Natsist jinoyatlarini hujjatlashtirishga e'tibor qarating",
-          "consequence": "Yashirin arxivlar genotsid guvohligini saqlab qoladi, dunyo haqiqatni bilishini ta'minlaydi"
-        },
-        {
-          "text": "Bolalar va boshqalarni xavfsiz joyga olib chiqishni birinchi o'ringa qo'ying",
-          "consequence": "Qutqaruv tarmoqlari yuzlab hayotlarni saqlab qoladi, ammo doimiy kashf etilish xavfi ostida ishlaydi"
+        "caution": {
+          "text": "Zaxiralarni ushlab turing. Tasdiqlanishini kuting.",
+          "consequence": "Siz ikkilanasiz. Yaponlar sizni birinchi bo'lib payqaydi. Flotingiz cho'kdi."
         }
-      ]
+      }
     },
-    {
-      "title": "Yakuniy Qurol: Asrlar Uchun Qaror",
-      "text": "Iyul 1945. Prezident Truman insoniyat tarixidagi eng muhim qarorga duch kelmoqda. Manxetten Loyihasi atom qurollarini ishlab chiqardi. Yaponiya halokatli yo'qotishlarga qaramay kurashmoqda. Bosqinchilik taxminlari katta qurbonlarni ko'rsatmoqda. Yadro asri sizning tanlovingizni kutmoqda.",
-      "choices": [
-        {
-          "text": "Yaponiyani taslim bo'lishga majburlash uchun atom bombardimoniga ruxsat bering",
-          "consequence": "Xirosima va Nagasaki vayron bo'ldi, Yaponiya taslim bo'ldi, ammo yadro asri halokatli tinch aholi qurbonlari bilan boshlanadi"
+    "d-day-planning": {
+      "title": "Eng Uzun Kun (1944)",
+      "text": "Ayk, ob-havo dahshatli. Dengiz to'lqinli. Ammo oy o'rnida. Agar hozir bormasak, bir oy kutamiz.",
+      "choices": {
+        "go": {
+          "text": " \"Mayli, ketdik.\" Bosqinchilikni boshlang.",
+          "consequence": "Qimor o'zini oqladi. Siz nemislarni uxlab yotgan holda ushladingiz. Ozodlik boshlanadi."
         },
-        {
-          "text": "Ogohlantirish sifatida atom kuchini aholi yashamaydigan nishonda namoyish eting",
-          "consequence": "Namoyish atom kuchini ko'rsatadi, ammo Yaponiyani taslim bo'lishga ishontirmasligi mumkin, ehtimol urushni cho'zishi mumkin"
-        },
-        {
-          "text": "Yaponiyaga an'anaviy bosqinchilikni davom ettiring (Downfall Operatsiyasi)",
-          "consequence": "Yaponiya o'z vatanini himoya qilish uchun o'limgacha kurashgani sababli har ikki tomonda katta qurbonlar, ammo yadroviy pretsedent yo'q"
+        "delay": {
+          "text": "Juda xavfli. Toza osmon uchun kechiktiring.",
+          "consequence": "Toza osmon hech qachon kelmaydi. Nihoyat borganingizda, Rommel kutib turibdi."
         }
-      ]
+      }
     },
-    {
-      "title": "Yevropada G'alaba: Urushdan Keyingi Dunyoni Shakllantirish",
-      "text": "1945 yil 8 may. Natsistik Germaniya shartsiz taslim bo'ldi. Yevropa vayronaga aylangan, ammo fashizmdan ozod. Siz Yevropani qanday qayta qurish va paydo bo'layotgan Sovet chaqirig'i bilan qanday kurashishni hal qilayotgan Ittifoqchi rahbarlar orasidasiz. Urushdan keyingi dunyo tartibi hozir boshlanadi.",
-      "choices": [
-        {
-          "text": "Butun Yevropa bo'ylab demokratik institutlarni qayta qurishga e'tibor qarating",
-          "consequence": "Demokratik qayta qurish G'arbda muvaffaqiyat qozonadi, ammo Sovetlar tomonidan bosib olingan Sharqiy Yevropa bilan keskinlik yaratadi"
+    "atomic-decision": {
+      "title": "Dunyolar Vayron Qiluvchisi (1945)",
+      "text": "Asbob ishlamoqda. Truman sizdan maslahat so'raydi. Bosqinchilik 1 million qurbon degani. Bomba esa... vayronagarchilik degani.",
+      "choices": {
+        "drop-bomb": {
+          "text": "Tashlang. Urushni hozir tugating.",
+          "consequence": "Shaharlar yo'qoldi. Yaponiya taslim bo'ldi. Yadro asri boshlanadi."
         },
-        {
-          "text": "Germaniyaga qattiq tovon va jazo qo'llang",
-          "consequence": "Nemis jazosi adolatni qondiradi, ammo kommunistlar foydalanishi mumkin bo'lgan iqtisodiy qiyinchiliklarni yaratadi"
-        },
-        {
-          "text": "Birlashgan Yevropa uchun Sovet Ittifoqi bilan kelishuv qidiring",
-          "consequence": "Stalin bilan murosa birlikni saqlab qolishi mumkin, ammo kommunistik ta'sirning g'arbga tarqalish xavfini tug'diradi"
+        "demonstration": {
+          "text": "Avval uni kimsasiz orolda namoyish eting.",
+          "consequence": "Yapon qattiqqo'llari ta'sirlanmadi. \"Hiyla,\" deyishdi ular. Urush cho'ziladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Imperatorning Qarori: Chiqayotgan Quyoshni Tugatish",
-      "text": "1945 yil 15 avgust. Imperator Xiroxito atom bombardimonlari va Sovet bosqinidan keyin yapon xalqiga murojaat qilishi kerak. Siz Imperatorga milliy sharafni saqlab qolgan holda taslim bo'lishni qanday e'lon qilish va Yaponiyaning omon qolishini ta'minlash bo'yicha maslahat berasiz.",
-      "choices": [
-        {
-          "text": "Yapon hayotini saqlab qolish uchun to'liq shartsiz taslim bo'lishni qabul qiling",
-          "consequence": "To'liq taslim bo'lish Yaponiyani bosqinchilikdan saqlaydi, ammo millatni to'liq Ittifoqchi okkupatsiyasiga bo'ysundiradi"
-        },
-        {
-          "text": "Imperatorlik tizimini saqlab qolgan holda taslim bo'lish shartlarini muzokara qilishga harakat qiling",
-          "consequence": "Muzokaralar taslim bo'lishni kechiktiradi, ammo ba'zi yapon avtonomiyasi va imperatorlik qadr-qimmatini saqlab qolishi mumkin"
-        },
-        {
-          "text": "Atom qurollariga qaramay qarshilikni davom ettirishga chaqiring",
-          "consequence": "Davom etayotgan qarshilik bosqinchilikka va katta qurbonlarga olib keladi, ehtimol yapon sivilizatsiyasini yo'q qiladi"
+    "operation-downfall": {
+      "title": "Yaponiyaga Bosqin (1945)",
+      "text": "Namoyish muvaffaqiyatsiz tugadi. Siz Asosiy Orollarga bostirib kirishingiz kerak. Har bir fuqaro nayza bilan qurollangan.",
+      "choices": {
+        "invasion": {
+          "text": "Bosqinchilikni davom ettiring.",
+          "consequence": "G'alaba, ammo millionlab odamlar evaziga. Yaponiya vayronaga aylandi. Norozilik asrlar davom etadi."
         }
-      ]
+      }
     }
-  ]
+  }
 }

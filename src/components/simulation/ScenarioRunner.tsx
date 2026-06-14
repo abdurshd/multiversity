@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { InteractiveScenario, StoryChoice, Timeline } from '../../types';
 import { AlertTriangle, Zap, Shield, Crown, Sword, Heart, Users } from 'lucide-react';
@@ -38,6 +39,7 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
   currentScenarioIndex,
   onChoiceSelected,
 }) => {
+  const { t } = useTranslation('components-simulation');
   const [typedText, setTypedText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
   const [showChoices, setShowChoices] = useState(false);
@@ -68,7 +70,10 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
 
       results.push({
         id: `${frameScenario.id}:${step}`,
-        label: step === history.length ? 'Live' : `Step ${step + 1}`,
+        label:
+          step === history.length
+            ? t('snapshots.live', { defaultValue: 'Live' })
+            : t('snapshots.step', { defaultValue: `Step ${step + 1}`, value: step + 1 }),
         state,
         step,
       });
@@ -83,6 +88,7 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
     scenario,
     simulationRegistration,
     stats,
+    t,
   ]);
 
   const divergenceProbability = useMemo(() => {
@@ -148,9 +154,9 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
           <div className="flex justify-between items-start mb-8 text-white/80">
             <div className="flex items-center space-x-2">
               <span className="p-2 bg-white/10 rounded-lg backdrop-blur-sm">{getSceneIcon(scenario.sceneType)}</span>
-              <span className="font-mono text-sm tracking-widest uppercase">{scenario.timelineEvent || 'EVENT'}</span>
+              <span className="font-mono text-sm tracking-widest uppercase">{scenario.timelineEvent || t('header.eventFallback', { defaultValue: 'EVENT' })}</span>
             </div>
-            <div className="font-mono text-sm opacity-70">YEAR: {scenario.timelineYear}</div>
+            <div className="font-mono text-sm opacity-70">{t('header.year', { defaultValue: `YEAR: ${scenario.timelineYear}`, value: scenario.timelineYear })}</div>
           </div>
 
           <div className="flex-1 flex flex-col items-center max-w-4xl mx-auto w-full">
@@ -239,7 +245,7 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
                                     mod.value > 0 ? 'bg-green-500/20 text-green-300' : 'bg-red-500/20 text-red-300'
                                   }`}
                                 >
-                                  {mod.stat} {mod.value > 0 ? '+' : ''}
+                                  {t(`stats.${mod.stat}`, { defaultValue: mod.stat })} {mod.value > 0 ? '+' : ''}
                                   {mod.value}
                                 </span>
                               ))}
@@ -260,8 +266,8 @@ const ScenarioRunner: React.FC<ScenarioRunnerProps> = ({
           </div>
 
           <div className="mt-8 flex justify-between items-center text-xs font-mono text-slate-500 uppercase tracking-widest">
-            <span>Status: Simulation Active</span>
-            <span>Divergence Probability: {divergenceProbability}%</span>
+            <span>{t('footer.status', { defaultValue: 'Status: Simulation Active' })}</span>
+            <span>{t('footer.divergenceProbability', { defaultValue: `Divergence Probability: ${divergenceProbability}%`, value: divergenceProbability })}</span>
           </div>
         </div>
       </div>

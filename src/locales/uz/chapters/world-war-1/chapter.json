@@ -2,293 +2,163 @@
   "meta": {
     "title": "Birinchi Jahon Urushi",
     "period": "1914-1918",
-    "description": "Buyuk Urush: Yevropa Dunyodagi Eng Yomon Oilaviy Janjalni Boshlaganda! 💥⚔️ Sarayevodagi bitta suiqasd qanday qilib birinchi global sanoat urushini keltirib chiqarganini tomosha qiling. Unda xandaqlar, zaharli gaz, tanklar, samolyotlar va Maykl Beyni hasad qildiradigan darajada portlashlar bor! Plyus tarixidagi eng qimmat oilaviy adovat! 💸💀",
-    "historical_context": "1914-yilda Yevropa gugurt o'ynayotgan odamlar bilan o'ralgan porox bochkasi kabi edi! 💥 Hamma boshqalar bilan shunchalik murakkab shartnomalar tarmog'i orqali ittifoqchi ediki, hatto diplomatlar ham chalkashib ketishdi. Bunga jiddiy millatchilik, nazoratdan chiqib ketgan qurollanish poygasi va aqlidan ko'ra egosi katta bo'lgan imperatorlarni qo'shing va sizda falokat uchun mukammal retsept bor. 'Barcha urushlarni tugatadigan urush' sifatida boshlangan narsa 'hamma yana urush qilishni xohlaydigan urush' bo'lib tugadi. Tushunib bo'lmaydi! 🤷‍♂️⚔️",
-    "divergence_point": "Ertsgertsog Frans Ferdinandning Suiqasdi"
+    "description": "Yevropaning o'z joniga qasdi. ⚔️🥀",
+    "historical_context": "Millionlab odamlarni o'ldirgan oilaviy janjal.",
+    "divergence_point": "Suiqasd"
   },
   "figures": {
     "kaiser-wilhelm-ii": {
       "name": "Kayzer Vilgelm II",
-      "role": "Yomon Vaqtni Tanlagan Qiziqqon Imperator",
-      "description": "Diplomatiyada juda, juda yomon bo'lish orqali jahon urushini boshlashga muvaffaq bo'lgan Germaniyaning so'nggi imperatori! ⚔️👑 Qurigan qo'li, pastlik kompleksi va qachon gapirishni to'xtatish kerakligini umuman tushunmasdi."
+      "role": "Imperator",
+      "description": "Germaniyaning so'nggi imperatori. U \"Quyosh ostida joy\" istardi. Buning o'rniga jahon urushiga ega bo'ldi."
     },
     "archduke-franz-ferdinand": {
-      "name": "Ertsgertsog Frans Ferdinand",
-      "role": "Hammasini Boshlagan Voris (O'lish Orqali)",
-      "description": "O'ldirilishi Birinchi Jahon Urushini keltirib chiqargan Avstriya-Vengriya vorisi! 💥🎯 Kinoyali tomoni shundaki, u aslida slavyanlarga ko'proq huquq berishni istagan islohotchi edi. Noto'g'ri joy, noto'g'ri vaqt, noto'g'ri sendvich do'koni!"
+      "name": "Frans Ferdinand",
+      "role": "Nishon",
+      "description": "Avstriya vorisi. Uning o'limi apokalipsisni keltirib chiqardi."
     },
-    "erich-von-falkenhayn": {
-      "name": "Erix fon Falkenhayn",
-      "role": "Zamonaviy Do'zaxni Ixtiro Qilgan General",
-      "description": "Verdunda go'sht maydalagich strategiyasini yaratgan nemis generali! 🥩⚔️ Uning g'oyasi: 'Fransiyani oq qon qilib yuboramiz!' Spoyler: bu rejadagidek ish bermadi."
-    },
-    "ferdinand-foch": {
-      "name": "Ferdinand Foch",
-      "role": "Hech Qachon Taslim Bo'lmagan Fransuz Marshali",
-      "description": "'Markazim taslim bo'lyapti, o'ng qanotim chekinyapti, vaziyat a'lo. Men hujum qilaman!' degan fransuz generali 🇫🇷⚡ Asosan zaharli pozitivlikning harbiy versiyasi, lekin u ishladi!"
-    },
-    "douglas-haig": {
-      "name": "Duglas Xeyg",
-      "role": "Frontal Hujumlarni Sevgan Britaniya Generali",
-      "description": "Odamlarni pulemyot olovi ostiga 'tepaga' yuborishni davom ettirgan Britaniya qo'mondoni! 🇬🇧⚔️ Oxir-oqibat g'alaba qozondi, lekin bank hisobingizni yig'latadigan narx evaziga."
-    },
-    "manfred-von-richthofen": {
-      "name": "Manfred fon Rixthofen",
-      "role": "Qizil Baron va Osmon Ritsari",
-      "description": "Eng mashhur qiruvchi uchuvchi! ✈️🔴 O'zining yorqin qizil samolyotida 80 ta dushman samolyotini urib tushirdi. Jangda yorqin bo'lish aslida ishlashi mumkinligining isboti... to ishlamay qolgunicha."
+    "woodrow-wilson": {
+      "name": "Vudro Vilson",
+      "role": "Idealist",
+      "description": "Amerika prezidenti. U dunyoni \"demokratiya uchun xavfsiz\" qilishni istardi."
     }
   },
   "timelines": {
-    "no-assassination": {
-      "title": "Frans Ferdinand Omon Qoladi: Hech Qachon Bo'lmagan Urush! 🕊️👑",
-      "description": "Agar suiqasd rejasi muvaffaqiyatsiz tugasa va Frans Ferdinand Avstriya-Vengriyani isloh qilish uchun omon qolsa nima bo'lar edi?",
-      "divergence_description": "Frans Ferdinandning mashinasi boshqa yo'ldan yurib, qotildan qochadi va u islohotlarni amalga oshirish uchun omon qoladi",
+    "long-peace": {
+      "title": "Uzoq Tinchlik 🕊️🌍",
+      "description": "Suiqasd muvaffaqiyatsiz tugaydi. 20-asr tinch o'tadi.",
+      "divergence_description": "Haydovchi Sarayevoda to'g'ri burilishni tanlaydi.",
+      "present_day_status": "Yevropa konstitutsiyaviy monarxiyalar to'plamidir. Biplanlar hali ham sport uchun mashhur. Dunyo hech qachon tugamagan davrni qo'msaydi. 🎩🚂",
       "events": {
-        "assassination-fails-1914": {
-          "title": "Noto'g'ri Burilish Dunyoni Qutqardi! 🚗✨",
-          "description": "Frans Ferdinandning haydovchisi noto'g'ri burilmaydi, Gavrilo Prinsipdan butunlay qochadi. Ba'zan adashish aslida yo'l topishdir!",
-          "impact": "Iyul Inqirozining oldini oladi va Yevropa tinchligini saqlaydi"
-        },
-        "austro-hungarian-reforms-1915": {
-          "title": "Frans Ferdinandning Buyuk Islohotlari Boshlanadi! 🏛️🌈",
-          "description": "Voris sifatida Frans Ferdinand slavyanlarga teng huquqlar beruvchi 'Buyuk Avstriya Qo'shma Shtatlari' rejasini amalga oshirishni boshlaydi.",
-          "impact": "Janubiy Slavyan millatchiligini qondiradi va Bolqondagi keskinlikni kamaytiradi"
-        },
-        "peaceful-balkans-1916": {
-          "title": "Bolqonlar Haqiqatan ham Tinch Bo'ladi! 🕊️⛰️",
-          "description": "Isloh qilingan Avstriya-Vengriya ko'p millatli demokratiya modeli bo'ladi. Serblar avtonomiya oladi, hamma xursand!",
-          "impact": "Yevropa keskinligining asosiy manbasini tinch islohotlar orqali hal qiladi"
-        },
-        "german-isolation-1917": {
-          "title": "Germaniya O'zini Yolg'iz His Qilmoqda: 'Hamma Qayerga Ketdi?' 🇩🇪😕",
-          "description": "Urush inqirozisiz, Germaniyaning tajovuzkor diplomatiyasi uni yakkalab qo'yadi, chunki boshqa kuchlar mudofaa ittifoqlarini tuzadilar.",
-          "impact": "Tinch bosim Germaniyani o'z siyosatini mo''tadillashtirishga majbur qiladi"
-        },
-        "conference-of-berlin-1918": {
-          "title": "Berlin Konferentsiyasi: Yevropa Tinchlik Sammiti! 🤝🌍",
-          "description": "Yirik Yevropa konferentsiyasi kelajakdagi mojarolarning oldini olish uchun xalqaro tizimni qayta loyihalashtiradi.",
-          "impact": "Kuch emas, balki muzokaralarga asoslangan yangi xalqaro tartibni yaratadi"
-        },
-        "democratic-europe-1920": {
-          "title": "Demokratik To'lqin Yevropani Qamrab Oldi! 🗳️🌊",
-          "description": "Inqirozlarning tinch yo'l bilan hal etilishi butun Yevropa bo'ylab, shu jumladan Germaniyada ham demokratik islohotlarga olib keladi.",
-          "impact": "Konstitutsiyaviy monarxiyalar parlamentar demokratiyalarga aylanadi"
+        "federal-austria": {
+          "title": "Buyuk Avstriya Qo'shma Shtatlari",
+          "description": "Frans Ferdinand imperiyani tenglar federatsiyasiga aylantiradi.",
+          "impact": "Bolqonda barqarorlik."
         }
       },
       "consequences": {
-        "short_term": "Birinchi Jahon Urushidan butunlay qochib, 17 million hayotni saqlab qoladi",
-        "long_term": "Urush vayronagarchiligining yo'qligi Yevropa madaniy rivojlanishini davom ettirishga imkon beradi",
-        "global_impact": "Total urush jarohatisiz boshqacha 20-asr"
-      },
-      "butterfly": [
-        {
-          "trigger": "Urush yo'q, demak Rossiyada inqilobiy bosim yo'q",
-          "consequence": "Rossiya monarxiyasi bosqichma-bosqich isloh qilinadi, Sovet Ittifoqi yo'q"
-        },
-        {
-          "trigger": "Urush yo'q, demak Germaniya mag'lubiyati va xo'rlanishi yo'q",
-          "consequence": "Natsistlar yuksalishi uchun sharoit yo'q, Xolokost hech qachon sodir bo'lmaydi"
-        }
-      ],
-      "present_day_status": "Avstriya-Vengriya Federatsiyasi Yevropaning eng muvaffaqiyatli ko'p madaniyatli demokratiyalaridan biridir. Imperator Frans Ferdinand IV hali ham konstitutsiyaviy monarx sifatida hukmronlik qilmoqda. Suiqasd sodir bo'lishi kerak bo'lgan Sarayevo Sendvich Do'koni endi tinchlik muzeyi! 🥪🕊️"
-    },
-    "localized-conflict": {
-      "title": "Faqat Avstriya Serbiyaga Qarshi: Kichkina Urush! ⚔️🏰",
-      "description": "Agar mojaro jahon urushiga aylanmasdan Avstriya-Vengriya va Serbiya o'rtasida qolganida nima bo'lar edi?",
-      "divergence_description": "Germaniya Avstriya-Vengriyaga 'bo'sh chek' berishdan bosh tortadi va boshqa kuchlar mojaroni muvaffaqiyatli jilovlaydi",
-      "events": {
-        "germany-refuses-support-1914": {
-          "title": "Germaniya 'Muammolaringizni O'zingiz Hal Qiling!' Deydi 🇩🇪🤷‍♂️",
-          "description": "Kayzer Vilgelm II Avstriya-Vengriyani so'zsiz qo'llab-quvvatlashdan bosh tortadi, ularni urushish o'rniga muzokara qilishga majbur qiladi.",
-          "impact": "Ittifoq tizimi orqali kuchayishning oldini oladi"
-        },
-        "third-balkan-war-1914": {
-          "title": "Uchinchi Bolqon Urushi: Hech Kim Xohlamagan Davomi! ⚔️3️⃣",
-          "description": "Avstriya-Vengriya Serbiyaga bostirib kiradi, bu shunchaki yana bir Bolqon mojarosiga aylanadi. Boshqa kuchlar bu mintaqaviy tartibsizlikdan chetda turadilar.",
-          "impact": "Mojaro jahon urushiga aylanmasdan mintaqaviy bo'lib qoladi"
-        },
-        "great-power-mediation-1914": {
-          "title": "Buyuk Kuchlar Tinchlikparvar Rolini O'ynaydi! 🕊️👑",
-          "description": "Britaniya, Fransiya, Germaniya va Rossiya Avstriya-Serbiya mojarosini tugatishda muvaffaqiyatli vositachilik qiladilar.",
-          "impact": "Buyuk kuchlar hamkorligi kengroq urushlarning oldini olishi mumkinligini namoyish etadi"
-        },
-        "balkan-federation-1915": {
-          "title": "Bolqon Federatsiyasi Yaratildi: 'Hammamiz Ahil Bo'la Olmaymizmi?' 🤝⛰️",
-          "description": "Tinchlik kelishuvi buyuk kuchlar kafolati ostida Bolqon Federatsiyasini yaratadi va nihoyat 'Sharqiy Masala'ni hal qiladi.",
-          "impact": "Federal yechim orqali Bolqon keskinliklarini hal qiladi"
-        },
-        "naval-arms-limitation-1916": {
-          "title": "Dengiz Qurollarini Cheklash Shartnomasi: 'Keling, Shuncha Ko'p Jangovar Kema Qurmaylik!' 🚢📉",
-          "description": "Bolqondagi muvaffaqiyat buyuk kuchlar o'rtasida kengroq qurollarni cheklash kelishuvlariga olib keladi.",
-          "impact": "Harbiy keskinlik va qurollanish poygasi bosimini kamaytiradi"
-        },
-        "concert-of-europe-renewed-1918": {
-          "title": "Yevropa Konserti 2.0: Tinch Davomi! 🎵🌍",
-          "description": "Buyuk kuchlar inqirozlarni boshqarishning yaxshiroq mexanizmlari bilan Yevropa Konserti tizimini yangilaydilar.",
-          "impact": "Mojarolarni boshqarish uchun barqaror xalqaro tizimni yaratadi"
+        "golden-age": {
+          "short_term": "Belle Époque davom etadi",
+          "long_term": "Urush jarohatisiz texnologik taraqqiyot",
+          "global_impact": "Yevropa hukmronligi davom etadi"
         }
       },
-      "consequences": {
-        "short_term": "Jahon urushiga nisbatan cheklangan qurbonlar bilan mintaqaviy urush",
-        "long_term": "Harbiy texnologiya total urush bosimisiz sekinroq rivojlanadi",
-        "global_impact": "Harbiy va texnologik rivojlanishning boshqacha sur'ati"
-      },
-      "butterfly": [
-        {
-          "trigger": "Total urush yo'q, demak Yevropa imperiyalari barqaror qoladi",
-          "consequence": "Inqilobiy emas, balki bosqichma-bosqich dekolonizatsiya jarayoni"
-        },
-        {
-          "trigger": "Urushga asoslangan texnologik tezlashuv yo'q",
-          "consequence": "Ijtimoiy va iqtisodiy o'zgarishlarning boshqacha sur'ati"
+      "butterfly": {
+        "slow-decolonization": {
+          "trigger": "Kuchli Yevropa",
+          "consequence": "Mustamlaka imperiyalari 2000-yilgacha saqlanib qoladi"
         }
-      ],
-      "present_day_status": "Uchinchi Bolqon Urushi atigi 3 oy davom etdi va 17 million o'rniga taxminan 50,000 kishini o'ldirdi. Bolqon Federatsiyasi tinch ko'p millatli hamkorlik modeli bo'ldi. Bugungi kunda ular odamlar miniatyura ovqat janglarini o'tkazadigan 'Kichkina Urush Kuni'ni nishonlaydilar! 🥧⚔️"
+      }
     },
     "german-victory": {
-      "title": "Germaniya G'alabasi: Shliffen Rejasi Haqiqatan ham Ishlaydi! 🇩🇪⚡",
-      "description": "Agar Germaniyaning yashin tezligidagi urush strategiyasi muvaffaqiyatli bo'lib, ular Birinchi Jahon Urushida tezda g'alaba qozonganida nima bo'lar edi?",
-      "divergence_description": "Shliffen rejasi Parijni 6 hafta ichida egallashda muvaffaqiyat qozonadi, Fransiyani taslim bo'lishga va Germaniyaning tezkor g'alabasiga majbur qiladi",
+      "title": "Pax Germanica 🇩🇪👑",
+      "description": "Germaniya 1914-yilda urushda g'alaba qozonadi.",
+      "divergence_description": "Shliffen rejasi Parijni muvaffaqiyatli qurshab oladi.",
+      "present_day_status": "Germaniya Imperiyasi dunyoning yagona o'ta kuchli davlati. Berlin dunyo poytaxti. 🌍🏰",
       "events": {
-        "schlieffen-plan-succeeds-1914": {
-          "title": "Shliffen Rejasi Ishlaydi: 'Biz Buni Haqiqatan ham Qildik!' 🇩🇪🎯",
-          "description": "Nemis kuchlari Belgiyada fransuz armiyasini mag'lub etgandan so'ng Parijni egallaydi. Imkonsiz reja qandaydir tarzda mukammal ishlaydi!",
-          "impact": "Tezkor nemis g'alabasi uzoq davom etadigan xandaq urushining oldini oladi"
-        },
-        "french-surrender-1914": {
-          "title": "Fransiya Taslim Bo'ldi: 'Au Revoir, Keyinroq Yana Urinib Ko'ramiz!' 🇫🇷🏳️",
-          "description": "Parij egallangach va armiya mag'lub bo'lgach, Fransiya sulh imzolaydi. Uchinchi Respublika atigi 6 haftalik urushdan keyin qulaydi.",
-          "impact": "Fransiyani yirik Yevropa kuchi va Germaniya raqibi sifatida yo'q qiladi"
-        },
-        "russia-makes-peace-1914": {
-          "title": "Rossiya Ortga Chekinmoqda: 'Balki Bu Yaxshi Fikr Emasdir!' 🇷🇺😰",
-          "description": "Fransuz mag'lubiyatini ko'rib, Rossiya Germaniya bilan yolg'iz qolishdan ko'ra alohida tinchlik shartnomasini imzolaydi.",
-          "impact": "Sharqiy Frontdan qochadi va nemis resurslarini saqlaydi"
-        },
-        "german-empire-dominance-1915": {
-          "title": "Germaniya Imperiyasi Yevropada Hukmronlik Qilmoqda: 'Biz Birinchimiz!' 🇩🇪👑",
-          "description": "Germaniya fransuz resurslari va Rossiyaning bo'ysunishi bilan kontinental Yevropaning so'zsiz xo'jayiniga aylanadi.",
-          "impact": "30 yil oldin Yevropa ustidan Germaniya gegemoniyasini yaratadi"
-        },
-        "colonial-expansion-1916": {
-          "title": "Germaniya Mustamlaka Imperiyasi Kengaymoqda: 'Hamma Uchun Ko'proq Kolbasa!' 🌍🌭",
-          "description": "G'olib Germaniya Fransiya va Belgiya mustamlakalarini egallab, ulkan global imperiya yaratadi.",
-          "impact": "Germaniya Britaniya bilan raqobatlashadigan yirik mustamlaka kuchiga aylanadi"
-        },
-        "anglo-german-naval-race-1918": {
-          "title": "Anglo-German Dengiz To'qnashuvi: 'Britaniya Hukmronligi Germaniyaga Qarshi!' 🚢⚔️",
-          "description": "Kontinental hukmronlik ta'minlangach, Germaniya Britaniya dengiz ustunligiga to'g'ridan-to'g'ri qarshi chiqadi.",
-          "impact": "Germaniya va Britaniya o'rtasida yirik dengiz qarama-qarshiligini o'rnatadi"
+        "fall-of-paris": {
+          "title": "Parijning Qulashi",
+          "description": "Nemis armiyasi Zafar Tog'i ostidan o'tib marsh qiladi.",
+          "impact": "Fransiya taslim bo'ldi."
         }
       },
       "consequences": {
-        "short_term": "Germaniya harbiy g'alaba orqali hukmron Yevropa kuchiga aylanadi",
-        "long_term": "Germaniya hukmronligidagi Yevropa demokratik modeldan boshqacha rivojlanadi",
-        "global_impact": "20-asrda demokratik emas, balki avtoritar model hukmronlik qiladi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Tezkor urush Amerika yirik kuchga aylanmasligini anglatadi",
-          "consequence": "Germaniya hukmron kuch bo'lgan boshqacha global muvozanat"
-        },
-        {
-          "trigger": "Germaniya g'alabasi avtoritar modelni tasdiqlaydi",
-          "consequence": "Demokratiya butun dunyo bo'ylab sekinroq rivojlanadi"
+        "mitteleuropa": {
+          "short_term": "Germaniya hukmronligi",
+          "long_term": "Ikkinchi Jahon Urushi yo'q, Gitler yo'q",
+          "global_impact": "Germaniya dunyoni boshqaradi"
         }
-      ],
-      "present_day_status": "Germaniya Imperiyasi 1945-yilgacha, Ikkinchi Jahon Urushida (Britaniya nihoyat Germaniya gegemoniyasiga qarshi chiqqanda 1935-yilda boshlangan) yutqazgandan keyin demokratlashguncha Yevropada hukmronlik qildi. Bugungi kunda Germaniya 'Yevropa Imperatorlik Federatsiyasi'ni boshqaradi va haqiqatan ham yaxshi mashinalar ishlab chiqaradi! 🚗🇩🇪"
+      },
+      "butterfly": {
+        "syndicalism": {
+          "trigger": "Fransiyaning mag'lubiyati",
+          "consequence": "Fransiya va Britaniya sindikalist (kommunist) bo'lib qoladi"
+        }
+      }
+    },
+    "negotiated-peace": {
+      "title": "G'alabasiz Tinchlik 🤝🏳️",
+      "description": "Urush 1917-yilda aniq g'olibsiz tugaydi.",
+      "divergence_description": "AQSh chetda qoladi. Holdan toyish sulhga olib keladi.",
+      "present_day_status": "Dunyo ko'p qutbli. Millatlar Ligasi haqiqatan ham samarali. 🌐",
+      "events": {
+        "peace-treaty": {
+          "title": "Stokgolm Shartnomasi",
+          "description": "Urushdan oldingi holat. Hamma uyiga qaytadi.",
+          "impact": "Monarxiyalar saqlanib qoladi."
+        }
+      },
+      "consequences": {
+        "bitter-peace": {
+          "short_term": "Hal etilmagan masalalar",
+          "long_term": "Monarxiyalar va demokratiyalar o'rtasida Sovuq Urush",
+          "global_impact": "Charchagan dunyo"
+        }
+      },
+      "butterfly": {
+        "russian-survival": {
+          "trigger": "Erta tinchlik",
+          "consequence": "Rossiyaning zaif demokratiyasi saqlanib qoladi"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
-      "title": "Ertsgertsogning Halokatli Yo'li",
-      "text": "Sarayevo, 1914 yil 28 iyun. Siz Ertsgertsog Frans Ferdinandning haydovchisiz. Muvaffaqiyatsiz birinchi suiqasd urinishidan so'ng, sizga boshqa yo'ldan yurish aytildi. Lekin siz yo'nalishlar haqida ikkilanyapsiz...",
-      "choices": [
-        {
-          "text": "Yangi, xavfsizroq yo'ldan ko'rsatmalarga amal qiling",
-          "consequence": "Siz qotildan butunlay qochasiz - Frans Ferdinand tirik qoladi va BJU oldini olish mumkin!"
+  "scenarios": {
+    "sarajevo": {
+      "title": "Noto'g'ri Burilish (1914)",
+      "text": "Sarayevo. Ertsgertsogning haydovchisi noto'g'ri burildi. U orqaga qaytish uchun to'xtaydi. Gavrilo Prinsip burchakda to'pponcha bilan turibdi.",
+      "choices": {
+        "reverse": {
+          "text": "Mashinani orqaga haydang (Tarixiy).",
+          "consequence": "Prinsip o'q uzadi. Ertsgertsog halok bo'ladi. Urush boshlanadi."
         },
-        {
-          "text": "Adashib qoling va Frans Iosif ko'chasiga noto'g'ri buriling",
-          "consequence": "Sizning xatoingiz sizni to'g'ridan-to'g'ri Gavrilo Prinsipga olib boradi - BJU ni boshlaydigan o'q uziladi"
-        },
-        {
-          "text": "Ishonch hosil qilish uchun to'xtab, yo'l so'rang",
-          "consequence": "To'xtab turganda, sizni boshqa fitnachi payqab qoladi - tarix boshqa, ammo teng darajada xavfli burilish yasaydi"
+        "speed-away": {
+          "text": "Gazni bos! Oldinga yur!",
+          "consequence": "Prinsip imkoniyatini boy beradi. Ertsgertsog tirik qoladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Rojdestvo Sulhi",
-      "text": "1914 yil 24 dekabr. Hech Kimning Yeri, G'arbiy Front. Rojdestvo arafasi va siz nemis askarlarining 'Tinch Tun' qo'shig'ini aytayotganini eshitasiz. Kimdir sulh taklif qiladi...",
-      "choices": [
-        {
-          "text": "Xandaqdan chiqing va Rojdestvo bayramiga qo'shiling",
-          "consequence": "Siz 'dushman' bilan sigaretalar, fotosuratlar va futbol o'ynaysiz - do'zaxdagi insoniylik lahzasi"
+    "schlieffen": {
+      "title": "Shliffen Rejasi (1914)",
+      "text": "Belgiya. Nemis armiyasi Parijga yurmoqda. Reja tezlikni talab qiladi. Lekin belgiyaliklar qarshilik ko'rsatmoqda.",
+      "choices": {
+        "turn": {
+          "text": "Ichkariga buriling. Fransuz armiyasiga hujum qiling.",
+          "consequence": "Marna Mo'jizasi. Xandaq chiziqlari shakllanadi."
         },
-        {
-          "text": "Hushyor bo'ling - bu hiyla bo'lishi mumkin",
-          "consequence": "Sizning ehtiyotkorligingiz ofitserlar tomonidan qayd etiladi, ammo siz tarixiy tinchlik lahzasini o'tkazib yuborasiz"
-        },
-        {
-          "text": "Birodarlashuv haqida qo'mondoningizga xabar bering",
-          "consequence": "Sizning hisobotingiz sulhni tugatish buyrug'iga olib keladi - insoniylikdan ko'ra burch"
+        "encircle": {
+          "text": "Qanotni e'tiborsiz qoldiring. Parijga yuring!",
+          "consequence": "Tavakkal. Ammo u o'zini oqlaydi. Parij quladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Verden Do'zaxi",
-      "text": "Fevral 1916. Verden, Fransiya. Nemislar 'Fransiyani oq qon qilish' uchun ommaviy hujum boshlaydilar. Siz ushbu go'sht maydalagichga qanday javob berishni hal qilayotgan fransuz ofitserisiz...",
-      "choices": [
-        {
-          "text": "Oxirgi odamgacha kurashing - 'Ular o'tmaydi!'",
-          "consequence": "Sizning qahramonona mudofaangiz afsonaviy bo'ladi, ammo fransuz hayotlari evaziga dahshatli narxda"
+    "zimmermann": {
+      "title": "Telegramma (1917)",
+      "text": "Biz ochlikdan o'lyapmiz. Suvosti kemalari yagona umidimiz. Meksikadan AQShga hujum qilishni so'rashimiz kerakmi?",
+      "choices": {
+        "send": {
+          "text": "Telegrammani yuboring. Cheklanmagan suvosti urushi.",
+          "consequence": "AQSh uni shifrini ochib, urush e'lon qiladi. Biz halokatga mahkummiz."
         },
-        {
-          "text": "Yaxshiroq pozitsiyalarga strategik chekinishni amalga oshiring",
-          "consequence": "Sizning taktik donoligingiz hayotlarni saqlab qoladi, ammo chekinish sifatida ko'rilishi mumkin"
-        },
-        {
-          "text": "Yo'qotilgan yerni qaytarib olish uchun darhol qarshi hujumga o'ting",
-          "consequence": "Sizning tajovuzkorligingiz nemislarni g'aflatda qoldiradi, ammo katta qurbonlarga olib keladi"
+        "cancel": {
+          "text": "Rejani bekor qiling. Bu juda xavfli.",
+          "consequence": "AQSh betaraf qoladi. Urush boshi berk ko'chada tugaydi."
         }
-      ]
+      }
     },
-    {
-      "title": "Zimmermann Telegrammasi",
-      "text": "Fevral 1917. Vashington D.C. Siz Prezident Vilsonning maslahatchisisiz. Britaniya razvedkasi sizga Zimmermann Telegrammasini topshirdi - Germaniya Meksikadan AQShga hujum qilishni so'ramoqda!",
-      "choices": [
-        {
-          "text": "Germaniyaga darhol urush e'lon qilishni tavsiya eting",
-          "consequence": "Sizning tezkor harakatingiz Amerikani urushga erta olib kiradi, ehtimol Ittifoqchilar hayotini saqlab qoladi"
+    "armistice": {
+      "title": "Temir Yo'l Vagoni (1918)",
+      "text": "Fosh shartlarni belgilaydi. Germaniya og'ir qurollarni, dengiz flotini topshirishi va aybni tan olishi kerak.",
+      "choices": {
+        "accept": {
+          "text": "Barcha shartlarni qabul qiling. Azob-uqubatlarni tugating.",
+          "consequence": "Germaniya xo'rlandi. Ikkinchi Jahon Urushining urug'lari sepiladi."
         },
-        {
-          "text": "Tasdiqlashni talab qiling - bu Britaniya propagandasi bo'lishi mumkin",
-          "consequence": "Sizning ehtiyotkorligingiz Amerikaning kirishini kechiktiradi, ammo to'g'ri qaror qabul qilayotganingizni ta'minlaydi"
-        },
-        {
-          "text": "Urushdan oldin yana bir diplomatik yechimni sinab ko'ring",
-          "consequence": "Sizning tinchlik harakatlaringiz olijanob, ammo Germaniyaga ko'proq yer olishga imkon berishi mumkin"
+        "refuse": {
+          "text": "Rad eting. Oxirigacha kurashing.",
+          "consequence": "Ittifoqchilar Germaniyaga bostirib kiradi. To'liq vayronagarchilik."
         }
-      ]
-    },
-    {
-      "title": "Sulh Qarori",
-      "text": "Noyabr 1918. Kompyen o'rmoni, Fransiya. Siz Sulhni muzokara qilyapsiz. Germaniya mag'lub bo'ldi, ammo hali ham kurashmoqda. Shartlar qanchalik qattiq bo'lishi kerak?",
-      "choices": [
-        {
-          "text": "Qattiq shartlarni qo'ying - Germaniya bu urush uchun to'lashi kerak",
-          "consequence": "Sizning qattiq pozitsiyangiz Germaniya mag'lubiyatini ta'minlaydi, ammo kelajak uchun nafrat uyg'otishi mumkin"
-        },
-        {
-          "text": "Germaniya qabul qila oladigan mo''tadil shartlarni qidiring",
-          "consequence": "Sizning oqilonaligingiz urushni tezda tugatadi va kelajakdagi mojarolarning oldini olishi mumkin"
-        },
-        {
-          "text": "So'zsiz taslim bo'lishdan boshqa narsani talab qilmang",
-          "consequence": "Sizning mutlaqligingiz jangni cho'zishi mumkin, ammo to'liq g'alabani ta'minlaydi"
-        }
-      ]
+      }
     }
-  ]
+  }
 }

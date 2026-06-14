@@ -1,0 +1,37 @@
+{
+  "stats": {
+    "chaos": "혼돈",
+    "freedom": "자유",
+    "diplomacy": "외교",
+    "strength": "힘"
+  },
+  "start": {
+    "tagline": "살아 숨 쉬는 연대기. 탐험하고, 결정하고, 명령하세요 — 당신의 선택이 여러 현실 중 하나를 만들어냅니다.",
+    "enter": "⚔ 연대기 입장"
+  },
+  "cinematic": {
+    "skip": "건너뛰기 ▸▸"
+  },
+  "explore": {
+    "continue": "계속 ➤",
+    "close": "닫기"
+  },
+  "battle": {
+    "badge": "전투",
+    "sound_drums": "⚔ 북을 울려라",
+    "hangs": "⏸ 전투의 향방이 백중세입니다"
+  },
+  "ending": {
+    "reality_takes_shape": "하나의 현실이 형성됩니다",
+    "explore_reality": "🌍 이 현실 탐험하기",
+    "rewrite": "↺ 역사 다시 쓰기",
+    "back_to_chapter": "챕터로 돌아가기"
+  },
+  "page": {
+    "unavailable_title": "이 연대기는 아직 집필 중입니다",
+    "unavailable_description": "이 챕터의 몰입형 3D 경험은 아직 준비되지 않았습니다. 티무르의 유산이 첫 번째 플레이 가능한 연대기입니다.",
+    "play_timur": "⚔ 티무르의 유산 플레이",
+    "all_chapters": "전체 챕터",
+    "exit": "← 나가기"
+  }
+}

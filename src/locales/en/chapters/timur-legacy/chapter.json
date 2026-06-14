@@ -1,112 +1,248 @@
 {
   "meta": {
-    "title": "The Legacy of Timur",
-    "period": "1370-1405",
-    "description": "The last great nomadic conqueror and his empire's alternative paths",
-    "historical_context": "Timur (Tamerlane) built the last great nomadic empire, conquering vast territories from India to Anatolia. His sudden death in 1405 during a campaign to China left questions about what could have been.",
-    "divergence_point": "The succession crisis and strategic decisions following Timur's death in 1405"
+    "title": "The Iron Emir: Timur's Legacy",
+    "period": "14th-15th Century",
+    "description": "The last great nomadic conqueror stands at the crossroads of history. 🗡️🌍 Will he turn East to China, stabilize his empire, or crush Europe?",
+    "historical_context": "Emir Timur (Tamerlane) was the most powerful ruler of the 14th century. His empire was a military juggernaut but lacked administrative stability.",
+    "divergence_point": "Death of Timur in 1405"
   },
   "figures": {
-    "emir_timur": {
+    "emir-timur": {
       "name": "Emir Timur (Tamerlane)",
       "role": "Founder of the Timurid Empire",
-      "description": "The last of the great nomadic conquerors. A military genius who sought to restore the Mongol Empire."
+      "description": "The last of the great nomadic conquerors. A military genius who sought to restore the Mongol Empire. 🗡️👑"
     },
     "shahrukh": {
       "name": "Shah Rukh",
       "role": "Timur's Successor",
-      "description": "Timur's youngest son who turned the empire from a war machine into a center of art and science."
+      "description": "Timur's youngest son who turned the empire from a war machine into a center of art and science. 🎨📚"
     },
-    "ulugh_beg": {
+    "ulugh-beg": {
       "name": "Ulugh Beg",
       "role": "Astronomer King",
-      "description": "A ruler who preferred stars to swords. Built one of the greatest observatories in history in Samarkand."
+      "description": "A ruler who preferred stars to swords. Built one of the greatest observatories in history in Samarkand. 🔭✨"
     }
   },
   "timelines": {
     "immortal-emir": {
-      "title": "The Immortal Emir: Conquest of China",
+      "title": "The Immortal Emir: Conquest of China 🐉⚔️",
       "description": "What if Timur survived his illness in 1405 and led his massive army into China?",
       "divergence_description": "Timur recovers from his illness in Otrar and launches the invasion of Ming China.",
+      "present_day_status": "The Great Timurid Federation spans from Turkey to Korea. Samarkand is the world's capital of science and culture. Europe is a collection of backward feudal states. The primary global language is Chagatai Turkic. 🕌🌍",
       "events": {
-        "survival_1405": {
+        "survival-1405": {
           "title": "The Miracle at Otrar",
           "description": "Timur recovers from his winter illness. The army marches East instead of dispersing.",
           "impact": "The campaign against China proceeds as planned."
         },
-        "fall_of_beijing_1407": {
+        "fall-of-beijing-1407": {
           "title": "The Fall of Beijing",
           "description": "Timurid forces, utilizing superior cavalry and gunpowder, breach the Great Wall and sack Beijing.",
           "impact": "End of the Ming Dynasty. Establishment of the Timurid Dynasty in China."
         },
-        "silk_road_monopoly_1410": {
+        "silk-road-monopoly-1410": {
           "title": "The Silk Road Monopoly",
           "description": "With control from Anatolia to the Pacific, Timur establishes absolute control over the Silk Road.",
           "impact": "Europe is starved of trade, delaying the Renaissance. Central Asia becomes the world's economic hub."
         }
       },
       "consequences": {
-        "short_term": "Central Asia becomes the wealthiest region on Earth.",
-        "long_term": "Global power center remains in Asia. European colonialism never starts.",
-        "global_impact": "A completely different modern world dominated by Turko-Mongol culture."
+        "asian-century": {
+          "short_term": "Central Asia becomes the wealthiest region on Earth.",
+          "long_term": "Global power center remains in Asia. European colonialism never starts.",
+          "global_impact": "A completely different modern world dominated by Turko-Mongol culture."
+        }
       },
-      "present_day_status": "The Great Timurid Federation spans from Turkey to Korea. Samarkand is the world's capital of science and culture. Europe is a collection of backward feudal states. The primary global language is Chagatai Turkic."
+      "butterfly": {
+        "no-ottoman-empire": {
+          "trigger": "Timur's continued dominance prevents Ottoman recovery",
+          "consequence": "The Ottoman Empire remains a minor beylik or is absorbed."
+        }
+      }
     },
     "unified-succession": {
-      "title": "The Pax Timuridea: A Stable Empire",
+      "title": "The Pax Timuridea: A Stable Empire ⚖️🏛️",
       "description": "What if Timur established a clear succession plan that prevented civil war?",
       "divergence_description": "Timur designates a clear heir and administrative structure before his death.",
+      "present_day_status": "The Timurid Commonwealth is a constitutional monarchy and the world's leading superpower. It is known for its beautiful garden-cities and advanced space program (launched from the Baikonur Cosmodrome, a Timurid royal project). 🚀🌌",
       "events": {
-        "succession_plan_1404": {
-          "title": "The Grand Assembly",
-          "description": "Timur calls all his sons and grandsons to Samarkand, establishing clear succession rules.",
-          "impact": "Civil war is prevented through institutional reform."
+        "council-of-samarkand-1404": {
+          "title": "The Council of Samarkand",
+          "description": "Timur gathers his sons and generals, establishing a formal law of succession and federal administration.",
+          "impact": "Prevents the internecine wars that historically destroyed the empire."
         },
-        "shah_rukh_reforms_1410": {
-          "title": "The Administrative Revolution",
-          "description": "Shah Rukh implements bureaucratic reforms modeled on Persian and Chinese systems.",
-          "impact": "The empire transforms from tribal confederation to modern state."
-        },
-        "ulugh_beg_renaissance_1425": {
-          "title": "The Samarkand Renaissance",
-          "description": "Massive investment in science, art, and architecture makes Samarkand the intellectual capital of the world.",
-          "impact": "Attracts scholars from Europe, China, and India. Scientific revolution begins in Central Asia."
+        "timurid-renaissance-1450": {
+          "title": "The Timurid Renaissance",
+          "description": "Stable rule allows art, astronomy, and mathematics to flourish earlier and more intensely than in Europe.",
+          "impact": "Scientific revolution begins in Central Asia in the 15th century."
         }
       },
       "consequences": {
-        "short_term": "Political stability allows cultural and economic flourishing.",
-        "long_term": "The Timurid Empire becomes a lasting civilization rather than a fleeting conquest.",
-        "global_impact": "Central Asia leads the Renaissance and Scientific Revolution."
+        "scientific-islam": {
+          "short_term": "Islamic Golden Age continues indefinitely.",
+          "long_term": "Islam becomes associated primarily with science and progress, not conservatism.",
+          "global_impact": "Modern science has its roots in Samarkand, not Italy or England."
+        }
       },
-      "present_day_status": "The Timurid Commonwealth remains a major world power. Uzbekistan and surrounding regions lead in science and technology. Islam underwent an enlightenment similar to Europe's Renaissance."
+      "butterfly": {
+        "industrial-samarkand": {
+          "trigger": "Early scientific method leads to early industrialization",
+          "consequence": "Industrial revolution begins in Central Asia in 1700s."
+        }
+      }
     },
-    "empire-fragments": {
-      "title": "The Shattered Crown: Total Collapse",
-      "description": "What if the succession wars completely destroyed the Timurid legacy?",
-      "divergence_description": "All of Timur's sons and grandsons wage total war for succession.",
+    "western-campaign": {
+      "title": "The Scourge of Europe ⚔️🏰",
+      "description": "What if Timur turned West to finish off Europe instead of China?",
+      "divergence_description": "Timur decides the \"Franks\" are a greater threat than the Ming.",
+      "present_day_status": "Europe is a collection of poor, agrarian vassal states of the Golden Horde. The Americas are dominated by the modernized Aztec and Inca Federations. The world is multipolar and vastly different. 🌎🏛️",
       "events": {
-        "civil_war_1405": {
-          "title": "The War of Six Princes",
-          "description": "Timur's death triggers immediate warfare among all claimants to the throne.",
-          "impact": "The empire fractures into warring kingdoms."
+        "invasion-of-europe-1403": {
+          "title": "The Invasion of Europe",
+          "description": "After defeating the Ottomans, Timur crosses the Bosphorus into Europe.",
+          "impact": "Eastern Europe is devastated. Hungary and Austria fall."
         },
-        "mongol_resurgence_1415": {
-          "title": "The Return of the Mongols",
-          "description": "Weakened Timurid states fall to resurgent Mongol tribes from the steppes.",
-          "impact": "Central Asia returns to tribal chaos and economic decline."
-        },
-        "ottoman_dominance_1425": {
-          "title": "The Ottoman Opportunity",
-          "description": "With Timurid collapse, the Ottomans rapidly expand eastward.",
-          "impact": "The Ottoman Empire becomes even more powerful, dominating from Vienna to Persia."
+        "sack-of-rome-1405": {
+          "title": "The Sack of Rome",
+          "description": "Timurid forces reach Rome. The Papacy is dismantled.",
+          "impact": "Collapse of Catholic authority. Europe fractures into small heresies and warlord states."
         }
       },
       "consequences": {
-        "short_term": "Central Asia descends into centuries of warfare and poverty.",
-        "long_term": "The region never recovers its former glory. Becomes a backwater.",
-        "global_impact": "Ottoman and later Russian domination of Central Asia accelerates."
+        "dark-ages-return": {
+          "short_term": "European Renaissance is strangled in the cradle.",
+          "long_term": "Europe remains a technological backwater for centuries.",
+          "global_impact": "No Age of Discovery, no colonization of the Americas by Europe."
+        }
       },
-      "present_day_status": "Central Asia is even more fragmented and economically underdeveloped than in our timeline. The Timurid era is remembered only as a brief flash of greatness between Mongol and Russian empires."
+      "butterfly": {
+        "aztec-survival": {
+          "trigger": "No European colonization",
+          "consequence": "Aztec and Inca empires survive and modernize independently."
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "ankara-strategy": {
+      "title": "The Battle of Ankara (1402)",
+      "text": "The Ottoman Sultan Bayezid I stands before you. His army is exhausted from a forced march, but his Janissaries are fresh. Your scouts report a stream that supplies their camp. What is your command?",
+      "choices": {
+        "cut-water": {
+          "text": "Divert the stream. Force them to fight thirsty.",
+          "consequence": "The Ottomans panic. Their Tatar allies defect. You win a crushing victory."
+        },
+        "direct-charge": {
+          "text": "Charge the Janissaries directly with war elephants.",
+          "consequence": "The elephants cause chaos, but the Janissaries hold. The battle turns into a bloodbath."
+        },
+        "feigned-retreat": {
+          "text": "Feign a retreat to draw them out.",
+          "consequence": "Bayezid is wary but his commanders are rash. They break formation, but your ambush is late."
+        }
+      }
+    },
+    "pyrrhic-victory": {
+      "title": "A Costly Triumph (1402)",
+      "text": "You have won, but at a terrible cost. Thousands of your best cavalry are dead. Bayezid escaped. The road to the West is open, but your army is bleeding.",
+      "choices": {
+        "consolidate": {
+          "text": "Halt the campaign. Return to Samarkand to rebuild.",
+          "consequence": "You secure your empire but lose momentum. Europe is spared."
+        },
+        "raid-pillage": {
+          "text": "Raid Anatolia for loot to pay mercenaries.",
+          "consequence": "You burn cities to the ground. Your treasury fills, but your legacy is one of terror."
+        }
+      }
+    },
+    "defense-of-samarkand": {
+      "title": "Retreat to the Oxus (1403)",
+      "text": "The Ankara campaign failed. Bayezid is countering. You have retreated to your capital, Samarkand. The enemy is approaching the Oxus river.",
+      "choices": {
+        "scorched-earth": {
+          "text": "Burn the fields. Leave them nothing but ash.",
+          "consequence": "The Ottoman army starves in the desert. You survive, but your lands are ruined."
+        },
+        "diplomatic-peace": {
+          "text": "Sue for peace. Offer tribute to Bayezid.",
+          "consequence": "History laughs at the \"Great\" Timur who paid tribute. Your empire crumbles from within."
+        }
+      }
+    },
+    "otrar-crisis": {
+      "title": "The Winter at Otrar (1405)",
+      "text": "It is February 1405. You lie dying in your tent. The Chinese border is weeks away. The campaign of a lifetime hangs in the balance.",
+      "choices": {
+        "elixir": {
+          "text": "Take the alchemist's experimental mercury elixir.",
+          "consequence": "Fire courses through your veins. You awake, stronger than ever. The invasion proceeds!"
+        },
+        "write-will": {
+          "text": "Accept fate. Dictate a clear law of succession.",
+          "consequence": "You name an heir and a council. You die peacefully, leaving a stable roadmap."
+        },
+        "turn-west": {
+          "text": "Order the army to turn back West. \"China is too far.\"",
+          "consequence": "The generals are confused but obedient. The army marches back towards Europe."
+        }
+      }
+    },
+    "great-wall": {
+      "title": "Breaching the Great Wall (1406)",
+      "text": "The Ming defenses are formidable. The Great Wall stands before you. Your artillery is positioned. How do you breach?",
+      "choices": {
+        "concentrated-fire": {
+          "text": "Concentrate all gunpowder artillery on one gate.",
+          "consequence": "The gate shatters. The Timurid heavy cavalry pours through. The road to Beijing is open."
+        },
+        "bribe-general": {
+          "text": "Send gold to the Ming border commander.",
+          "consequence": "The gates open at night. You take the fort without a fight."
+        }
+      }
+    },
+    "bosphorus-crossing": {
+      "title": "Crossing the Bosphorus (1406)",
+      "text": "You have returned to Anatolia. Europe lies across the water. The Venetians offer ships... for a price.",
+      "choices": {
+        "pay-venice": {
+          "text": "Pay the Venetians to ferry your army.",
+          "consequence": "You land in Thrace. Europe trembles."
+        },
+        "build-ships": {
+          "text": "Force the locals to build a bridge of boats.",
+          "consequence": "It takes months, but you cross on your own terms. The shock is absolute."
+        }
+      }
+    },
+    "succession-crisis": {
+      "title": "The Council of Princes (1405)",
+      "text": "Timur is dead. The will is read, but ambition runs deep. Pir Muhammad is the heir, but he is far away.",
+      "choices": {
+        "enforce-will": {
+          "text": "Back Pir Muhammad with the elite guard.",
+          "consequence": "The other princes back down... for now. A fragile peace holds."
+        },
+        "seize-power": {
+          "text": "Take power yourself as Regent.",
+          "consequence": "Civil war erupts immediately. The empire burns."
+        }
+      }
+    },
+    "ulugh-beg-dilemma": {
+      "title": "The Scholar on the Throne (1449)",
+      "text": "Decades later. Ulugh Beg rules in Samarkand. His son is rebelling, claiming the King cares more for stars than god.",
+      "choices": {
+        "fight-hard": {
+          "text": "Crush the rebellion with mercenaries.",
+          "consequence": "You win, but the treasury is empty. The Renaissance continues."
+        },
+        "abdicate": {
+          "text": "Abdicate to avoid bloodshed.",
+          "consequence": "You are executed. The observatory is destroyed."
+        }
+      }
     }
   }
 }

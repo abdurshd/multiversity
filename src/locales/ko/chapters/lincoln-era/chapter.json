@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "링컨과 남북 전쟁",
+    "period": "1860-1865",
+    "description": "분열된 집. 🎩⚔️",
+    "historical_context": "미국의 영혼을 건 투쟁.",
+    "divergence_point": "1860년 대통령 선거"
+  },
+  "figures": {
+    "abraham-lincoln": {
+      "name": "에이브러햄 링컨",
+      "role": "위대한 해방자",
+      "description": "연방을 지키고, 노예를 해방시켰으며, 가장 어두운 시기에 나라를 하나로 결속시킨 인물."
+    },
+    "robert-e-lee": {
+      "name": "로버트 E. 리",
+      "role": "남부 연합군 장군",
+      "description": "잘못된 대의를 위해 싸운 뛰어난 전술가."
+    },
+    "ulysses-s-grant": {
+      "name": "율리시스 S. 그랜트",
+      "role": "북부 연방군 장군",
+      "description": "전쟁을 승리로 이끈 인물. '무조건 항복' 그랜트."
+    },
+    "frederick-douglass": {
+      "name": "프레더릭 더글러스",
+      "role": "노예제 폐지론자 지도자",
+      "description": "탈출한 노예에서 자유를 외치는 가장 강력한 목소리가 된 인물."
+    }
+  },
+  "timelines": {
+    "lincoln-survives": {
+      "title": "링컨이 살아남다 🎩❤️",
+      "description": "링컨이 암살에서 살아남아 재건 시대를 이끈다.",
+      "divergence_description": "부스가 빗맞힌다.",
+      "present_day_status": "링컨은 가장 위대한 미국인으로 기억된다. 인종 관계는 우리 시간선보다 훨씬 앞서 있다. 🇺🇸✨",
+      "events": {
+        "gentle-reconstruction": {
+          "title": "그 누구에게도 악의 없이",
+          "description": "링컨은 급진적 재건의 쓰라림 없이 남부를 다시 연방으로 되돌리는 데 성공한다.",
+          "impact": "치유."
+        }
+      },
+      "consequences": {
+        "civil-rights-early": {
+          "short_term": "더 나은 통합",
+          "long_term": "짐 크로 법이 회피됨",
+          "global_impact": "더 일찍 더 평등해진 미국"
+        }
+      },
+      "butterfly": {
+        "superpower-usa": {
+          "trigger": "통합된 미국",
+          "consequence": "미국이 1890년에 초강대국이 된다"
+        }
+      }
+    },
+    "peaceful-abolition": {
+      "title": "위대한 타협 🕊️💰",
+      "description": "유상 해방을 통해 전쟁 없이 노예제가 종식된다.",
+      "divergence_description": "링컨이 노예의 자유를 사들인다.",
+      "present_day_status": "남북 전쟁은 책 속의 \"만약에\" 시나리오에 불과하다. 미국은 군사화가 덜 되어 있다. 🕊️💵",
+      "events": {
+        "buyout": {
+          "title": "매입",
+          "description": "연방 정부가 노예 한 명당 400달러를 지불한다. 남부가 이를 받아들인다.",
+          "impact": "전사자 없음."
+        }
+      },
+      "consequences": {
+        "slow-progress": {
+          "short_term": "노예제가 종식됨",
+          "long_term": "분리 정책은 지속되지만 피의 원한은 없음",
+          "global_impact": "평화로운 전환"
+        }
+      },
+      "butterfly": {
+        "rich-south": {
+          "trigger": "전쟁으로 인한 파괴 없음",
+          "consequence": "남부가 부유한 상태를 유지한다"
+        }
+      }
+    },
+    "confederacy-wins": {
+      "title": "남부의 승리 🏴⚔️",
+      "description": "남부 연합(CSA)이 독립을 쟁취한다.",
+      "divergence_description": "리가 게티즈버그에서 승리한다.",
+      "present_day_status": "미국(USA)과 남부 연합(CSA)은 중무장된 국경을 사이에 두고 있다. 애틀랜타에 가려면 여권이 필요하다. 노예제는 1890년대에 끝났지만, 인종 분리 정책은 1990년까지 지속되었다. 🇺🇸🏴",
+      "events": {
+        "gettysburg-win": {
+          "title": "최고 수위선",
+          "description": "피켓의 돌격이 성공한다. 북부 연방군이 무너진다.",
+          "impact": "워싱턴이 함락된다."
+        }
+      },
+      "consequences": {
+        "two-nations": {
+          "short_term": "남부 연합의 독립",
+          "long_term": "북아메리카가 분열됨",
+          "global_impact": "약화된 미국"
+        }
+      },
+      "butterfly": {
+        "ww1-allies": {
+          "trigger": "분열",
+          "consequence": "미국은 독일을, 남부 연합은 영국을 지지한다"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "election-1860": {
+      "title": "1860년 대통령 선거",
+      "text": "당신은 에이브러햄 링컨이다. 남부는 당신이 당선되면 연방에서 탈퇴하겠다고 위협한다. 참모들은 타협을 권한다.",
+      "choices": {
+        "hold-firm": {
+          "text": "노예제 확장에 관해서는 어떤 타협도 없다.",
+          "consequence": "당신이 승리하지만, 남부가 탈퇴한다. 전쟁이 임박한다."
+        },
+        "buyout-plan": {
+          "text": "모든 노예를 대규모로 사들이는 방안을 제안한다.",
+          "consequence": "비용이 많이 들지만 전쟁보다는 저렴하다. 경계주들이 귀를 기울인다."
+        }
+      }
+    },
+    "fort-sumter": {
+      "title": "섬터 요새 (1861)",
+      "text": "앤더슨 소령이 고립되었다. 남부 연합이 항복을 요구한다. 함선을 보내면 그들이 포격할 것이다.",
+      "choices": {
+        "resupply": {
+          "text": "함대를 보낸다. 깃발을 지킨다.",
+          "consequence": "남부가 첫 포탄을 쏜다. 남북 전쟁이 시작된다."
+        },
+        "surrender": {
+          "text": "요새를 그들에게 내준다. 유혈 사태를 피한다.",
+          "consequence": "약함은 침략을 부른다. 남부가 평화롭게 탈퇴한다."
+        }
+      }
+    },
+    "emancipation": {
+      "title": "선언 (1862)",
+      "text": "전쟁이 좋지 않게 흘러가고 있다. 우리에게는 도덕적 명분이 필요하다. 노예를 해방시켜야 한다.",
+      "choices": {
+        "sign": {
+          "text": "노예 해방 선언서에 서명한다.",
+          "consequence": "전쟁이 자유를 위한 성전이 된다. 유럽은 개입하지 않는다."
+        },
+        "delay": {
+          "text": "기다린다. 너무 급진적이다.",
+          "consequence": "영국이 남부 연합을 승인한다. 우리는 주도권을 잃는다."
+        }
+      }
+    },
+    "gettysburg": {
+      "title": "게티즈버그 (1863)",
+      "text": "리가 북부를 침공했다. 모든 것이 이 전투에 달려 있다. 미드 장군이 명령을 요청한다.",
+      "choices": {
+        "hold-line": {
+          "text": "무슨 수를 써서라도 고지를 사수한다.",
+          "consequence": "피켓의 돌격이 실패한다. 연방이 지켜진다."
+        },
+        "retreat": {
+          "text": "더 유리한 위치로 후퇴한다.",
+          "consequence": "리가 고지를 점령한다. 그가 워싱턴으로 진격한다."
+        }
+      }
+    },
+    "ford-theater": {
+      "title": "포드 극장 (1865)",
+      "text": "전쟁에서 승리했다. 메리가 연극을 보고 싶어 한다. 당신은 매우 지쳐 있다.",
+      "choices": {
+        "go": {
+          "text": "연극을 보러 간다. 국민들이 기대하고 있다.",
+          "consequence": "부스가 특별석으로 들어온다. 폭군에게는 언제나 이렇게."
+        },
+        "stay": {
+          "text": "집에 머문다. 안전이 우선이다.",
+          "consequence": "부스는 밖에서 기다리다 붙잡힌다. 당신은 살아남아 나라를 재건한다."
+        }
+      }
+    }
+  }
+}

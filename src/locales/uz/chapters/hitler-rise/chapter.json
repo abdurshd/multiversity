@@ -1,294 +1,201 @@
 {
   "meta": {
-    "title": "Gitlerning Hokimiyatga Kelishi",
+    "title": "Gitlerning Yuksalishi",
     "period": "1920-1945",
-    "description": "Eng Qorong'u Bob: Demokratiya Qanday O'ladi va Yovuzlik Yuksaladi 💀⚡ Bu muvaffaqiyatsiz rassomning tarixning eng mashhur diktatoriga aylanishi haqidagi hikoya. Bu iqtisodiy inqiroz, siyosiy muvaffaqiyatsizlik va ijtimoiy norozilik qanday qilib dahshatli rahbarlarga yo'l ochishi haqida jiddiy saboqdir. Ushbu tarixni tushunish bugungi kunda demokratiyaga shunga o'xshash tahdidlarni tan olish va oldini olishga yordam beradi. 🏛️⚠️",
-    "historical_context": "Birinchi Jahon urushidan keyin Germaniya aybdorni qidirayotgan yarador millat edi. 💔 Versal shartnomasi qattiq edi, iqtisodiyot vayron bo'lgan va odamlar murakkab muammolarga oddiy javoblarni xohlashardi. Ushbu tartibsizlikka nafrat va norozilikni qo'zg'atish qobiliyatiga ega bo'lgan muvaffaqiyatsiz rassom kirdi. Gitlerning yuksalishi muqarrar emas edi, ammo bu undan o'z maqsadlari yo'lida foydalana olaman deb o'ylagan odamlar tomonidan amalga oshirildi. Ushbu bob odamlar uni himoya qilishni to'xtatganda demokratiya qanchalik tez qulashi mumkinligini ko'rsatadi. Bu har bir avlod uchun muhim saboqdir. 🚨📚",
-    "divergence_point": "Gitlerning Hokimiyatga Kelishi va Natsistlarning Egallab Olishi"
+    "description": "Tarixdan ogohlantirish. ⚠️💀",
+    "historical_context": "Nafrat tomonidan yo'q qilingan mo'rt demokratiya.",
+    "divergence_point": "San'at Maktabi"
   },
   "figures": {
     "adolf-hitler": {
       "name": "Adolf Gitler",
-      "role": "Muvaffaqiyatsiz Rassom Diktatorga Aylandi",
-      "description": "San'at maktabidan rad etilgan va afsuski, siyosatni o'zining zaxira rejasi deb qaror qilgan avstriyalik rassom. 🎨➡️💀 Uning yuksalishi iqtisodiy tartibsizlik va ijtimoiy norozilik qanday qilib dahshatli rahbarlarga imkon berishini ko'rsatadi."
-    },
-    "heinrich-himmler": {
-      "name": "Genrix Gimmler",
-      "role": "SS Rahbari va Dahshat Me'mori",
-      "description": "Tarixning eng yovuz ma'murlaridan biriga aylangan tovuq fermeri. 📋💀 Yovuz maqsadlarga qo'llanilgan byurokratik samaradorlik aql bovar qilmas dahshat yaratishini isbotladi."
-    },
-    "joseph-goebbels": {
-      "name": "Yozef Gebbels",
-      "role": "Propaganda va Yolg'on Ustasi",
-      "description": "Siyosiy yolg'on san'atini mukammallashtirilgan muvaffaqiyatsiz romannavis. 📢🎭 Uning propaganda usullari afsuski, siyosiy aloqalarga abadiy ta'sir ko'rsatdi."
-    },
-    "ernst-rohm": {
-      "name": "Ernst Ryom",
-      "role": "SA Rahbari va Gitlerning Sobiq Ittifoqchisi",
-      "description": "Gitlerning hokimiyatga kelishiga yordam bergan, faqat Uzun Pichoqlar Tuni'da u tomonidan o'ldirilgan qattiq ko'cha jangchisi. 💀🗡️ Saboq: diktatorlarga imkon berish hatto imkon beruvchilar uchun ham xavflidir."
+      "role": "Diktator",
+      "description": "Muvaffaqiyatsiz rassom diktatorga aylandi. Uning yuksalishi tarixdan ogohlantirishdir."
     },
     "paul-von-hindenburg": {
       "name": "Paul fon Gindenburg",
-      "role": "Halokatli Qarorni Qabul Qilgan Prezident",
-      "description": "Gitlerni Kansler qilib tayinlash orqali uni nazorat qila olaman deb o'ylagan qarigan urush qahramoni. 👴🤦‍♂️ Tarixning eng halokatli siyosiy xatosi."
+      "role": "Prezident",
+      "description": "Gitlerni nazorat qila olaman deb adashib o'ylagan qarigan urush qahramoni."
     },
-    "gustav-stresemann": {
-      "name": "Gustav Shtrezeman",
-      "role": "Demokratiyani Saqlab Qolishga Harakat Qilgan Davlat Arbobi",
-      "description": "1920-yillarda Germaniyani barqarorlashtirgan, ammo juda erta vafot etgan ajoyib diplomat. 🕊️💔 Uning o'limi Gitlerni to'xtatishi mumkin bo'lgan so'nggi mo''tadil ovozni olib tashladi."
+    "claus-von-stauffenberg": {
+      "name": "Klaus fon Shtauffenberg",
+      "role": "Fitnachi",
+      "description": "Gitlerni portfeldagi bomba bilan o'ldirishga uringan ofitser."
     }
   },
   "timelines": {
     "art-school-timeline": {
-      "title": "Gitler Rassom: San'at Maktabi 'Ha' Deganda 🎨✨",
-      "description": "Agar Gitler san'at maktabiga qabul qilinib, diktator o'rniga rassom bo'lganida nima bo'lar edi?",
-      "divergence_description": "Gitler Vena Tasviriy San'at Akademiyasiga qabul qilinadi va rassom sifatida muvaffaqiyatli karyerasini davom ettiradi",
+      "title": "Gitler Rassom 🎨✨",
+      "description": "Gitler o'rtacha manzara rassomi bo'lib qoladi. 20-asr tinch o'tadi.",
+      "divergence_description": "1907-yilda Vena Tasviriy San'at Akademiyasiga qabul qilindi.",
+      "present_day_status": "Adolf Gitler san'at tarixi kitoblarida arzimas izoh bo'lib qoldi. Germaniya barqaror respublika. Dunyo aholisi ancha ko'p. 🎨🕊️",
       "events": {
-        "art-school-acceptance-1907": {
-          "title": "San'at Maktabi 'Ha' Deydi: Dunyoning Eng Omadli Qabuli! 🎨✅",
-          "description": "Gitler Vena Tasviriy San'at Akademiyasiga qabul qilinadi. U genotsidchi diktator o'rniga o'rtacha manzara rassomi bo'ladi.",
-          "impact": "Gitlerning ambitsiyalarini siyosatga emas, san'atga yo'naltiradi"
-        },
-        "struggling-artist-1910s": {
-          "title": "Gitler Qiynalayotgan Rassom: 'Ovqat Uchun Rasm Chizaman!' 🎨💸",
-          "description": "Gitler Venada o'rtacha manzara rassomi sifatida qiynalib, sayyohlarga otkritkalar va kichik rasmlar sotadi.",
-          "impact": "O'z noroziligini siyosiy ekstremizmga emas, san'atga yo'naltiradi"
-        },
-        "war-artist-1917": {
-          "title": "Urush Rassomi Korpusi: Gitler Front Chizig'ini Chizmoqda! 🎨⚔️",
-          "description": "Gitler jangovar travmani boshdan kechirish o'rniga rasmlar orqali BJU jang maydonlarini hujjatlashtiruvchi rasmiy urush rassomi bo'lib xizmat qiladi.",
-          "impact": "Uni radikallashtirgan travmatik jangovar tajribadan qochadi"
-        },
-        "art-exhibition-success-1925": {
-          "title": "Gitlerning Birinchi Ko'rgazmasi: 'Avstriya Manzaralari' 🖼️🏔️",
-          "description": "Gitler Myunxenda o'rtacha muvaffaqiyatli san'at ko'rgazmasiga ega bo'lib, nihoyat manzara rassomi sifatida tan olinadi.",
-          "impact": "Siyosiy emas, balki badiiy intilishlar uchun ijobiy mustahkamlashni ta'minlaydi"
-        },
-        "art-teacher-1930": {
-          "title": "Professor Gitler: Nafrat Emas, San'atni O'qitmoqda! 👨‍🏫🎨",
-          "description": "Gitler kichik Bavariya akademiyasida san'at o'qituvchisi bo'lib, ma'ruza qilishga bo'lgan ishtiyoqini ta'limga yo'naltiradi.",
-          "impact": "Gitlerning boshqalarga ta'sir o'tkazish ehtiyoji uchun qonuniy imkoniyat beradi"
-        },
-        "weimar-survives-1933": {
-          "title": "Veymar Respublikasi Omon Qoldi: Demokratiya Yana Bir Imkoniyat Oladi! 🏛️✨",
-          "description": "Gitlersiz Natsistlar partiyasi chekka harakat bo'lib qoladi va Germaniya demokratiyasi bosqichma-bosqich barqarorlashadi.",
-          "impact": "Germaniya demokratiyasini saqlab qoladi va fashizmning yuksalishini oldini oladi"
+        "gallery-opening": {
+          "title": "Myunxen Galereyasi Ochilishi",
+          "description": "Adolf Gitler o'zining \"Bavariya Tog'lari\" to'plamini namoyish etadi. Tanqidchilar uni \"zerikarli, lekin malakali\" deb baholashadi.",
+          "impact": "U hech qachon siyosatga kirmaydi."
         }
       },
       "consequences": {
-        "short_term": "Natsistik mafkura yo'qligi ozchiliklarni tizimli ta'qib qilish yo'qligini anglatadi",
-        "long_term": "Olti million yahudiy hayoti va millionlab boshqa qurbonlar saqlab qolindi",
-        "global_impact": "Inson huquqlari va genotsidning oldini olish bo'yicha boshqacha tushuncha"
-      },
-      "butterfly": [
-        {
-          "trigger": "Natsistik Germaniya yo'qligi butun mojaro dinamikasini o'zgartiradi",
-          "consequence": "Agar Ikkinchi Jahon Urushi sodir bo'lsa, bu butunlay boshqacha sabablarga ega urush bo'ladi"
-        },
-        {
-          "trigger": "Natsistik buzilish yo'qligi bosqichma-bosqich Yevropa integratsiyasiga imkon beradi",
-          "consequence": "Yevropa hamkorligi 1930-40-yillar davomida tinch yo'l bilan rivojlanadi"
+        "no-wwii": {
+          "short_term": "Veymar Respublikasi omon qoladi",
+          "long_term": "Xolokost yo'q, Ikkinchi Jahon Urushi yo'q",
+          "global_impact": "Millionlab odamlar tirik qoldi"
         }
-      ],
-      "present_day_status": "Adolf Gitler 1960-yilda nafaqadagi san'at o'qituvchisi sifatida tinchgina vafot etdi. Uning manzara rasmlari Avstriya sovg'a do'konlarida kamtarona narxlarda sotiladi. Venadagi Gitler San'at Muzeyi uning ishlarini 'Dunyoni Qutqargan San'at' shiori ostida namoyish etadi. Uning eng mashhur rasmi 'Tog' Manzarasi, 1934' deb nomlangan - u hokimiyatni mustahkamlagan yilda chizilgan. 🎨🕊️"
+      },
+      "butterfly": {
+        "soviet-expansion": {
+          "trigger": "Kuchsiz Germaniya",
+          "consequence": "Stalin natsistlar qarshiligisiz g'arbga kengayadi"
+        }
+      }
     },
     "beer-hall-success": {
-      "title": "Pivo Zali To'ntarishi Muvaffaqiyatli: Erta Natsist G'alabasi! 🍺⚡",
-      "description": "Agar Gitlerning 1923 yilgi to'ntarish urinishi muvaffaqiyatli bo'lib, u 10 yil oldin hokimiyatni egallaganida nima bo'lar edi?",
-      "divergence_description": "Pivo Zali To'ntarishi muvaffaqiyatli bo'ladi, Gitler Bavariya hukumatini nazoratga oladi va Berlinga muvaffaqiyatli yurish qiladi",
+      "title": "Pivo Zali G'alabasi 🍺⚡",
+      "description": "Natsistlar 1923-yilda hokimiyatni egallaydi.",
+      "divergence_description": "Pivo Zali To'ntarishi muvaffaqiyatli bo'ladi.",
+      "present_day_status": "\"Ming Yillik Reyx\" 15 yil davom etdi. Germaniya 1938-yilda bo'lib tashlandi. 🇩🇪⚔️",
       "events": {
-        "bavaria-captured-1923": {
-          "title": "Pivo Zali To'ntarishi Muvaffaqiyatli: Bavariya Natsistlarga Taslim Bo'ldi! 🍺👑",
-          "description": "Gitler Bavariya hukumatini muvaffaqiyatli nazoratga oladi va SA kuchlari bilan Berlinga yurishni boshlaydi.",
-          "impact": "Gitlerga hududiy baza va milliy egallab olish uchun jadallik beradi"
-        },
-        "march-on-berlin-1923": {
-          "title": "Berlinga Yurish: Natsist Inqilobi Tarqalmoqda! ⚔️🏛️",
-          "description": "Iqtisodiy inqiroz paytida Natsist inqilobi Germaniya bo'ylab tarqalar ekan, Gitler SA kuchlarini Berlin tomon boshlaydi.",
-          "impact": "Giperinflyatsiya inqirozi paytida Veymar Respublikasini beqarorlashtiradi"
-        },
-        "weimar-collapses-1923": {
-          "title": "Veymar Quladi: Demokratiya Erta O'ldi! 💀🏛️",
-          "description": "Iqtisodiy inqiroz va Natsist qo'zg'oloni Veymar hukumatining qulashiga olib keladi, Gitler hokimiyatni egallaydi.",
-          "impact": "Natsist diktaturasini rejadagidan 10 yil oldin o'rnatadi"
-        },
-        "early-rearmament-1925": {
-          "title": "Yashirin Qurollanish Boshlandi: Germaniya Versalni Erta Buzdi! ⚔️🔧",
-          "description": "Gitler darhol yashirin qurollanish dasturini boshlaydi, boshqa kuchlar tayyor bo'lmaganda harbiy kuchni oshiradi.",
-          "impact": "Germaniyaga kelajakdagi mojarolar uchun uzoqroq tayyorgarlik vaqti beradi"
-        },
-        "european-war-1930": {
-          "title": "Yevropa Urushi Portladi: Gitler Kuchli Paytda Zarba Bermoqda! 💥🌍",
-          "description": "To'liq qurollangan Germaniya qo'shnilari hali ham iqtisodiy depressiya bilan shug'ullanayotganda ularga hujum qiladi.",
-          "impact": "Turli global sharoitlarda yirik Yevropa urushini boshlaydi"
-        },
-        "nazi-empire-1935": {
-          "title": "Natsist Imperiyasi Yevropada Hukmronlik Qilmoqda: Erta G'alaba! 👑💀",
-          "description": "Gitler 1935 yilga kelib Yevropa hukmronligiga erishadi va boshqa kuchlar samarali javob berishidan oldin ulkan Natsist imperiyasini yaratadi.",
-          "impact": "Mustahkamlash uchun uzoqroq vaqt bilan Yevropa ustidan Natsist nazoratini o'rnatadi"
+        "march-on-berlin": {
+          "title": "Berlinga Yurish",
+          "description": "Veymar hukumati quladi. Gitler 35 yoshida diktator bo'ladi.",
+          "impact": "Erta qayta qurollanish."
         }
       },
       "consequences": {
-        "short_term": "Natsist diktaturasi iqtisodiy inqiroz paytida 10 yil oldin o'rnatildi",
-        "long_term": "Siyosatlarni amalga oshirish uchun ko'proq vaqt bilan uzoqroq Natsist hukmronligi davri",
-        "global_impact": "Turli vaqt xalqaro javob va qarshilikni o'zgartiradi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Erta Natsist hokimiyati genotsidni erta amalga oshirishni anglatadi",
-          "consequence": "Xolokost 1920-yillarda turli usullar va ko'lamda boshlanadi"
-        },
-        {
-          "trigger": "Erta Natsist egallab olishi turli xalqaro vaziyatga duch keladi",
-          "consequence": "Qarshilik harakatlari va xalqaro javob boshqacha rivojlanadi"
+        "early-war": {
+          "short_term": "Urush 1930-yilda boshlanadi",
+          "long_term": "Germaniya ertaroq holdan toydi",
+          "global_impact": "Tartibsizlik"
         }
-      ],
-      "present_day_status": "Erta Natsist Imperiyasi 1943-yilda 20 yillik shafqatsiz hukmronlikdan keyin quladi. Zulmning uzoq davom etishi fashizmga qarshi samaraliroq xalqaro hamkorlikka olib keldi. Bugungi kunda 9-noyabr siyosiy zo'ravonlik haqida ogohlantirish sifatida 'Pivo Zallarida Demokratiya O'ladi' shiori bilan 'Hech Qachon Qayta Kun' sifatida nishonlanadi. 🍺⚠️"
+      },
+      "butterfly": {
+        "french-intervention": {
+          "trigger": "Erta tajovuz",
+          "consequence": "Fransiya Germaniyani doimiy ravishda bosib oladi"
+        }
+      }
     },
     "assassination-success": {
-      "title": "Gitler Suiqasdi Muvaffaqiyatli: Qahramonlar Tarixni O'zgartirdi! 🎯⚡",
-      "description": "Agar Gitlerga qarshi ko'plab suiqasd urinishlaridan biri muvaffaqiyatli bo'lganida nima bo'lar edi?",
-      "divergence_description": "1944 yil 20 iyul fitnasi muvaffaqiyatli bo'ladi va Gitler o'ldiriladi, bu nemis qarshilik harakatiga hokimiyatni egallashga imkon beradi",
+      "title": "Valkiriya Muvaffaqiyat Qozonadi 🎯⚡",
+      "description": "Gitler 1944-yilda o'ldiriladi. Urush erta tugaydi.",
+      "divergence_description": "Shtauffenbergning bombasi Gitlerni o'ldiradi.",
+      "present_day_status": "20-iyul global bayram. Klaus fon Shtauffenberg qahramon. Xolokost bir yil oldin tugadi. 🎯🕊️",
       "events": {
-        "july-20-success-1944": {
-          "title": "20 Iyul Fitnasi Muvaffaqiyatli: Hammasini O'zgartirgan Bomba! 💥🎯",
-          "description": "Polkovnik Shtauffenbergning bombasi Bo'ri uyasida Gitlerni muvaffaqiyatli o'ldiradi. Nemis qarshilik ofitserlari Berlinda nazoratni qo'lga olishadi.",
-          "impact": "Natsist rahbariyatini yo'q qiladi va nemis qarshiligi egallab olishiga imkon beradi"
+        "operation-valkyrie": {
+          "title": "Valkiriya Operatsiyasi",
+          "description": "Zaxira armiyasi Berlinni egallaydi. SS qurolsizlantiriladi.",
+          "impact": "Natsist rejimi yo'q qilindi."
         },
-        "german-resistance-government-1944": {
-          "title": "Nemis Qarshiligi Hokimiyatni Egalladi: 'Biz Hammamiz Natsist Emasmiz!' 🇩🇪✊",
-          "description": "Nemis qarshiligi vaqtinchalik hukumat tuzadi va darhol Ittifoqchilar bilan tinchlik muzokaralarini boshlaydi.",
-          "impact": "Taslim bo'lishni muzokara qilish uchun qonuniy Germaniya hukumatini taqdim etadi"
-        },
-        "early-german-surrender-1944": {
-          "title": "Germaniya Erta Taslim Bo'ldi: Urush Bir Yil Oldin Tugadi! 🏳️🕊️",
-          "description": "Yangi Germaniya hukumati taslim bo'lishni muzokara qiladi, Yevropa urushini 1945 yil may o'rniga 1944 yil sentyabrda tugatadi.",
-          "impact": "Millionlab hayotlarni saqlab qoladi va urushdan keyingi hududiy kelishuvlarni o'zgartiradi"
-        },
-        "democratic-germany-1945": {
-          "title": "Demokratik Germaniya Tashkil Etildi: Qutulish Hikoyasi! 🗳️🇩🇪",
-          "description": "Nemis qarshilik rahbarlari Ittifoqchilar yordami bilan demokratik hukumat tuzadilar, okkupatsiyadan qochadilar.",
-          "impact": "Okkupatsiya davrisiz darhol demokratik Germaniyani yaratadi"
-        },
-        "no-cold-war-division-1945": {
-          "title": "Birlashgan Germaniya Bo'linishdan Qochdi: Berlin Devori Yo'q! 🧱❌",
-          "description": "Demokratik Germaniya hukumati mamlakatning Sharq va G'arb o'rtasida bo'linishini oldini oladi.",
-          "impact": "Germaniyaning Sovuq Urush bo'linishidan va turli Yevropa rivojlanishidan qochadi"
-        },
-        "european-integration-1950": {
-          "title": "Yevropa Integratsiyasi Erta Boshlandi: Biz Birgamiz! 🇪🇺🤝",
-          "description": "Demokratik Germaniya Natsist davri uchun tovon sifatida Yevropa integratsiyasi harakatiga boshchilik qiladi.",
-          "impact": "Yevropa birlashishi va hamkorligini tezlashtiradi"
+        "peace-deal": {
+          "title": "G'arb Bilan Tinchlik",
+          "description": "Germaniya to'liq vayronagarchilikdan qochib, Ittifoqchilarga taslim bo'ladi.",
+          "impact": "Temir parda sharqqa siljiydi."
         }
       },
       "consequences": {
-        "short_term": "Ikkinchi Jahon Urushi 8 oy oldin tugaydi, millionlab hayotlar saqlab qolinadi",
-        "long_term": "Kamroq vayronagarchilik bilan boshqacha urushdan keyingi kelishuvlar",
-        "global_impact": "Birlashgan demokratik Germaniya bilan boshqacha Sovuq Urush dinamikasi"
-      },
-      "butterfly": [
-        {
-          "trigger": "Birlashgan demokratik Germaniya urushdan keyingi muvozanatni o'zgartiradi",
-          "consequence": "Kuchli Yevropa uchinchi yo'li bilan boshqacha Sovuq Urush dinamikasi"
-        },
-        {
-          "trigger": "Urushning erta tugashi Xolokostning yakuniy bosqichi qurbonlarini saqlab qoladi",
-          "consequence": "Yuz minglab qo'shimcha omon qolganlar"
+        "saved-lives": {
+          "short_term": "Kontslagerlar erta ozod qilindi",
+          "long_term": "Millionlab yahudiylar va askarlar saqlab qolindi",
+          "global_impact": "Kamroq travma"
         }
-      ],
-      "present_day_status": "Germaniyaning 1944-yildagi demokratik o'tishi Gitlerni o'ldirgan qahramon nomi bilan atalgan 'Shtauffenberg Respublikasi'ni yaratdi. Polkovnik Shtauffenberg urushdan keyingi Kansler bo'ldi va Germaniyaning namunali demokratiyaga aylanishiga rahbarlik qildi. 20-iyul butun Yevropa bo'ylab 'Ozodlik Kuni' sifatida nishonlanadi. Bo'ri uyasi endi tinchlik yodgorligi. 🕊️🎯"
+      },
+      "butterfly": {
+        "stronger-germany": {
+          "trigger": "Kamroq vayronagarchilik",
+          "consequence": "Germaniya buyuk davlat bo'lib qoladi"
+        }
+      }
     }
   },
-  "interactive_scenarios": [
-    {
-      "title": "San'at Maktabi Rad Javobi",
-      "text": "Vena, Oktyabr 1907. Siz Vena Tasviriy San'at Akademiyasining qabul komissiyasi a'zosisiz. Adolf Gitler ismli yosh avstriyalik ariza topshirdi. Uning portfelida biroz iste'dod bor, ammo texnik mahorat yetishmaydi...",
-      "choices": [
-        {
-          "text": "Uni qabul qiling - hamma yaxshilanish uchun imkoniyatga loyiq",
-          "consequence": "Sizning rahm-shafqatingiz tarixni o'zgartiradi - Gitler diktator o'rniga o'rtacha rassom bo'ladi"
+  "scenarios": {
+    "art-school": {
+      "title": "Tasviriy San'at Akademiyasi (1907)",
+      "text": "Vena. Siz Adolf ismli yosh intiluvchan rassomsiz. Professor sizning portfelingizni ko'rib chiqmoqda. U shubha bilan qaramoqda.",
+      "choices": {
+        "plead": {
+          "text": "Qabul qilishni iltimos qiling. Qattiq ishlashga va'da bering.",
+          "consequence": "Professor yon beradi. Siz qabul qilindingiz!"
         },
-        {
-          "text": "Arizani rad eting - texnik ko'nikmalar yo'q",
-          "consequence": "Sizning professional hukmingiz Gitlerni dunyoni qayta shakllantiradigan nafrat yo'liga soladi"
+        "accept-fate": {
+          "text": "Rad javobini g'azab bilan qabul qiling.",
+          "consequence": "Siz g'azab bilan ketasiz. Siyosat sizning yangi ehtirosingizga aylanadi."
         },
-        {
-          "text": "Qo'shimcha tayyorgarlik bilan shartli qabul qilishni taklif qiling",
-          "consequence": "Sizning murosangiz Gitlerga umid beradi, ammo uning badiiy rivojlanishini kechiktiradi"
+        "architecture": {
+          "text": "Buning o'rniga Arxitekturani sinab ko'ring.",
+          "consequence": "Sizda akademik malaka yetishmaydi. Siz Venada uysiz qolasiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Pivo Zali To'ntarishi",
-      "text": "Myunxen, 1923 yil 8 noyabr. Gitler qurollangan SA odamlari bilan Bürgerbräu pivo zaliga bostirib kirib, inqilob e'lon qilganda siz Bavariya politsiyasi ofitserisiz. Nima qilasiz?",
-      "choices": [
-        {
-          "text": "Gitlerni xiyonat uchun darhol hibsga oling",
-          "consequence": "Sizning tezkor harakatingiz to'ntarishni to'xtatadi, ammo Gitlerni o'z izdoshlari uchun shahidga aylantiradi"
+    "beer-hall": {
+      "title": "Pivo Zali To'ntarishi (1923)",
+      "text": "Myunxen. Qo'lingizda to'pponcha bor. Bavariya rahbarlari nutq so'zlamoqda. Hokimiyatni egallash vaqti keldi!",
+      "choices": {
+        "march": {
+          "text": "Darhol Berlinga yurish qiling!",
+          "consequence": "Politsiya o't ochadi. Siz omon qolganingiz omadingiz."
         },
-        {
-          "text": "Gitlerni gapirtirib turib, sekin yordam chaqiring",
-          "consequence": "Sizning strategik fikrlashingiz Gitlerning qo'lga olinishiga olib keladi, ammo unga tarafdorlarni to'plash uchun vaqt beradi"
-        },
-        {
-          "text": "Tinch yo'l bilan taslim bo'lishni muzokara qilishga harakat qiling",
-          "consequence": "Sizning diplomatiyangiz qon to'kilishining oldini olishi mumkin, ammo Gitlerning qochib ketishiga imkon berishi mumkin"
+        "capture-leaders": {
+          "text": "Rahbarlarni garovga olib, sadoqatni majburlang.",
+          "consequence": "Bu samarali ishlaydi. Bavariya quladi. Keyingisi Berlin."
         }
-      ]
+      }
     },
-    {
-      "title": "Halokatli Tayinlov",
-      "text": "Berlin, 1933 yil 30 yanvar. Siz Prezident Gindenburgning maslahatchisisiz. Konservativ siyosatchilar sizni Gitlerni Kansler etib tayinlashga undamoqda, ular uni nazorat qila olamiz deb da'vo qilmoqdalar...",
-      "choices": [
-        {
-          "text": "Gitlerni tayinlashdan bosh torting - u juda xavfli",
-          "consequence": "Sizning donoligingiz Natsistlar egallab olishining oldini oladi, ammo siyosiy inqiroz va ehtimoliy fuqarolar urushiga olib kelishi mumkin"
+    "prison-landsberg": {
+      "title": "Landsberg Qamoqxonasi (1924)",
+      "text": "Siz qulay kamerada o'tiribsiz. O'ylash uchun vaqtingiz bor. Rudolf Gess diktovka yozib olishga tayyor.",
+      "choices": {
+        "write-book": {
+          "text": "\"Mein Kampf\"ni yozing. Mafkurani bayon qiling.",
+          "consequence": "Kitob eng ko'p sotiladiganga aylanadi. Harakatning o'z muqaddas kitobi bor."
         },
-        {
-          "text": "Qat'iy konstitutsiyaviy cheklovlar bilan Gitlerni tayinlang",
-          "consequence": "Sizning murosangiz Gitlerga qonuniy hokimiyat beradi - u tezda siz o'rnatgan cheklovlarni yo'q qiladi"
-        },
-        {
-          "text": "Natsistlar kuchini suyultirish uchun koalitsion hukumatni talab qiling",
-          "consequence": "Sizning siyosiy manevringiz Gitlerni qisqa muddatga jilovlaydi, ammo u tez orada sheriklarini yo'q qiladi"
+        "give-up": {
+          "text": "Siyosatdan nafaqaga chiqing. Bu xato edi.",
+          "consequence": "Siz noma'lumlikka g'arq bo'lasiz. Veymar Respublikasi omon qoladi."
         }
-      ]
+      }
     },
-    {
-      "title": "Reyxstag Yong'ini Inqirozi",
-      "text": "Berlin, 1933 yil 27 fevral. Reyxstag binosi yonmoqda! Gitler bu kommunistik fitna deb da'vo qilmoqda va favqulodda vakolatlarni talab qilmoqda. Siz qaror qabul qilishingiz kerak bo'lgan parlamentariysiz...",
-      "choices": [
-        {
-          "text": "Favqulodda vakolatlarni bering - millat inqirozda",
-          "consequence": "Sizning qo'rquvga asoslangan qaroringiz Gitlerga demokratiyani qonuniy yo'l bilan yo'q qilish vositalarini beradi"
+    "reichstag-fire": {
+      "title": "Reyxstag Yong'ini (1933)",
+      "text": "Parlament yonmoqda! Bu belgi. Biz \"Kommunistik Fitna\"ni to'xtatish uchun favqulodda vakolatlarni talab qilishimiz kerak.",
+      "choices": {
+        "seize-power": {
+          "text": "Vakolatlar to'g'risidagi qonunni talab qiling. To'liq hokimiyat.",
+          "consequence": "Gindenburg imzolaydi. Demokratiya o'ladi."
         },
-        {
-          "text": "Har qanday vakolat berishdan oldin to'liq tekshiruvni talab qiling",
-          "consequence": "Sizning qonuniy jarayonga bo'lgan talabingiz Gitlerning egallab olishini kechiktiradi, ammo u sizni vatanparvar emas deb ataydi"
-        },
-        {
-          "text": "Favqulodda vakolatlarni rad eting - bu Natsistlarning hiylasi bo'lishi mumkin",
-          "consequence": "Sizning shubhangiz to'g'ri, ammo qarshiligingiz jamoatchilik vahimasi tomonidan chetga surib tashlanishi mumkin"
+        "coalition": {
+          "text": "Oddiy koalitsiyani saqlash hukumatini tuzing.",
+          "consequence": "Siz qonunlar bilan cheklangansiz. Harakat jadalligini yo'qotadi."
         }
-      ]
+      }
     },
-    {
-      "title": "20 Iyul Fitnasi",
-      "text": "Bo'ri uyasi, 1944 yil 20 iyul. Siz Polkovnik Shtauffenbergsiz. Bomba portfelingizda. Gitler bir necha metr narida. Bu Natsist rejimini tugatish imkoniyatingiz...",
-      "choices": [
-        {
-          "text": "Bombani joylashtiring va taymerni faollashtiring",
-          "consequence": "Sizning jasoratingiz Germaniya va dunyoni qutqarishga harakat qiladi, ammo bomba ishlaydimi?"
+    "night-long-knives": {
+      "title": "Uzun Pichoqlar Tuni (1934)",
+      "text": "SA va Ryom tahdidga aylanmoqda. Armiya ularning yo'qolishini xohlaydi. Ro'yxatlar tayyorlangan.",
+      "choices": {
+        "purge": {
+          "text": "Hammasini o'ldiring. Hech qanday raqibga yo'l yo'q.",
+          "consequence": "SS kuchayadi. Armiya sizga sadoqat qasamyod qiladi."
         },
-        {
-          "text": "Missiyani bekor qiling - juda ko'p begunoh odamlar o'lishi mumkin",
-          "consequence": "Sizning axloqiy ikkilanishlaringiz hayotlarni saqlab qoladi, ammo Gitlerga o'z halokatini davom ettirishga imkon beradi"
-        },
-        {
-          "text": "Kamroq guvohlar bilan yaxshiroq imkoniyatni kuting",
-          "consequence": "Sizning ehtiyotkorligingiz yaxshiroq rejaga olib kelishi mumkin, ammo har bir kun minglab hayotlarga tushadi"
+        "spare": {
+          "text": "Ryomni ayang. U eski do'st.",
+          "consequence": "Armiya SAga qarshi to'ntarish qiladi. Fuqarolar urushi boshlanadi."
         }
-      ]
+      }
+    },
+    "valkyrie": {
+      "title": "Bo'ri Uyasi (1944)",
+      "text": "Urush yo'qotildi. Rossiya yaqinlashmoqda. Polkovnik Shtauffenberg stol ostiga portfel qoldiradi.",
+      "choices": {
+        "survive": {
+          "text": "Stoldan uzoqlashing. (Tarixiy)",
+          "consequence": "Bomba portlaydi, lekin siz omon qolasiz. Fitnachilar osib o'ldiriladi."
+        },
+        "die": {
+          "text": "Joyingizda qoling. (Valkiriya Muvaffaqiyati)",
+          "consequence": "TARS. Zolim o'ldi. Valkiriya operatsiyasi boshlanadi."
+        }
+      }
     }
-  ]
+  }
 }

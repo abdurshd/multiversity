@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Bloom, ChromaticAberration, EffectComposer, Noise, Vignette } from '@react-three/postprocessing';
 import { Html, Line, OrbitControls, Stars } from '@react-three/drei';
@@ -324,24 +325,25 @@ const AmbientParticles: React.FC<{ state: CampaignState; theme: CampaignViewThem
 };
 
 const CampaignMicroSceneVisual: React.FC<{ scene: CampaignMicroSceneState }> = ({ scene }) => {
+  const { t } = useTranslation('components-simulation');
   const width = clamp(scene.primaryMetric * 7, 1.2, 7);
   const depth = clamp(scene.secondaryMetric * 6.5, 1.4, 6);
   const baseColor = scene.primaryMetric > 0.66 ? '#ef4444' : '#f59e0b';
 
   const iconByKind: Record<CampaignMicroSceneState['kind'], string> = {
-    siege: 'Siege',
-    naval: 'Naval',
-    ceremony: 'Ceremony',
-    uprising: 'Uprising',
-    urban: 'Urban',
-    industrial: 'Industrial',
-    political: 'Political',
-    landing: 'Landing',
-    nuclear: 'Nuclear',
-    medical: 'Medical',
-    alignment: 'Alignment',
-    orbital: 'Orbital',
-    trench: 'Trench',
+    siege: t('microSceneKinds.siege', { defaultValue: 'Siege' }),
+    naval: t('microSceneKinds.naval', { defaultValue: 'Naval' }),
+    ceremony: t('microSceneKinds.ceremony', { defaultValue: 'Ceremony' }),
+    uprising: t('microSceneKinds.uprising', { defaultValue: 'Uprising' }),
+    urban: t('microSceneKinds.urban', { defaultValue: 'Urban' }),
+    industrial: t('microSceneKinds.industrial', { defaultValue: 'Industrial' }),
+    political: t('microSceneKinds.political', { defaultValue: 'Political' }),
+    landing: t('microSceneKinds.landing', { defaultValue: 'Landing' }),
+    nuclear: t('microSceneKinds.nuclear', { defaultValue: 'Nuclear' }),
+    medical: t('microSceneKinds.medical', { defaultValue: 'Medical' }),
+    alignment: t('microSceneKinds.alignment', { defaultValue: 'Alignment' }),
+    orbital: t('microSceneKinds.orbital', { defaultValue: 'Orbital' }),
+    trench: t('microSceneKinds.trench', { defaultValue: 'Trench' }),
   };
 
   return (
@@ -412,17 +414,19 @@ const CampaignMicroSceneVisual: React.FC<{ scene: CampaignMicroSceneState }> = (
       <Html position={[scene.focalPoint[0], scene.focalPoint[1] + 1.85, scene.focalPoint[2]]} center distanceFactor={7.4}>
         <div className="w-56 rounded-lg border border-white/20 bg-slate-900/90 p-3 text-xs text-slate-100 shadow-xl backdrop-blur-sm">
           <div className="mb-1 flex items-center justify-between">
-            <span className="font-semibold">{scene.title}</span>
+            <span className="font-semibold">{t(`microScenes.${scene.id}`, { defaultValue: scene.title })}</span>
             <span className="text-[10px] uppercase tracking-wider text-blue-200">{iconByKind[scene.kind]}</span>
           </div>
-          <p className="mb-2 text-[11px] leading-snug text-slate-300">{scene.description}</p>
+          <p className="mb-2 text-[11px] leading-snug text-slate-300">
+            {t(`microSceneDescriptions.${scene.id}`, { defaultValue: scene.description })}
+          </p>
           <div className="space-y-1 font-mono text-[10px]">
             <div className="flex justify-between">
-              <span>{scene.primaryMetricLabel}</span>
+              <span>{t(`metricLabels.${scene.id}.primary`, { defaultValue: scene.primaryMetricLabel })}</span>
               <span className={microMetricClass(scene.primaryMetric)}>{Math.round(scene.primaryMetric * 100)}%</span>
             </div>
             <div className="flex justify-between">
-              <span>{scene.secondaryMetricLabel}</span>
+              <span>{t(`metricLabels.${scene.id}.secondary`, { defaultValue: scene.secondaryMetricLabel })}</span>
               <span className={microMetricClass(scene.secondaryMetric)}>{Math.round(scene.secondaryMetric * 100)}%</span>
             </div>
           </div>
@@ -658,6 +662,7 @@ const CampaignScene: React.FC<{
   SceneOverlayComponent?: React.ComponentType<CampaignSceneOverlayProps>;
   MicroSceneComponent?: React.ComponentType<CampaignMicroSceneRenderProps>;
 }> = ({ state, theme, isMobile, TerrainComponent, SceneOverlayComponent, MicroSceneComponent }) => {
+  const { t } = useTranslation('components-simulation');
   const nodeById = useMemo(() => new Map(state.nodes.map((node) => [node.id, node])), [state.nodes]);
   const chaosSignal = state.meta.statsSignal.chaos;
   const isCombatScene =
@@ -727,8 +732,12 @@ const CampaignScene: React.FC<{
             {shouldShowLabel && (
               <Html position={[xOffset, 0.78, zOffset]} center distanceFactor={8.2}>
                 <div className="rounded bg-slate-900/80 px-2 py-1 text-[10px] text-slate-100 shadow-md ring-1 ring-white/10 backdrop-blur-sm">
-                  <div className="font-semibold">{node.label}</div>
-                  {node.subtitle && <div className="text-[9px] text-slate-300">{node.subtitle}</div>}
+                  <div className="font-semibold">{t(`nodes.${node.id}`, { defaultValue: node.label })}</div>
+                  {node.subtitle && (
+                    <div className="text-[9px] text-slate-300">
+                      {t(`nodeSubtitles.${node.id}`, { defaultValue: node.subtitle })}
+                    </div>
+                  )}
                 </div>
               </Html>
             )}
@@ -817,6 +826,7 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
   sceneOverlayComponent,
   microSceneComponent,
 }) => {
+  const { t } = useTranslation('components-simulation');
   const [isWebGLReady, setIsWebGLReady] = useState(true);
   const [scrubIndex, setScrubIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -880,13 +890,17 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
   if (!isWebGLReady) {
     return (
       <div className="rounded-xl border border-blue-500/20 bg-slate-900/80 p-4 text-sm text-slate-200">
-        <h3 className="mb-2 text-base font-semibold text-blue-200">3D Simulation Unavailable</h3>
+        <h3 className="mb-2 text-base font-semibold text-blue-200">
+          {t('hud.unavailable_title', { defaultValue: '3D Simulation Unavailable' })}
+        </h3>
         <p className="mb-2 text-slate-300">
-          WebGL is not available in this browser context. Historical overlays remain available below.
+          {t('hud.unavailable_body', {
+            defaultValue: 'WebGL is not available in this browser context. Historical overlays remain available below.',
+          })}
         </p>
         <ul className="list-disc space-y-1 pl-4 text-xs text-slate-300">
           {state.educationalNotes.slice(0, 3).map((note) => (
-            <li key={note}>{note}</li>
+            <li key={note}>{t(`educationalNotes.${note}`, { defaultValue: note })}</li>
           ))}
         </ul>
       </div>
@@ -911,11 +925,21 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
       <div className="border-t border-slate-700/60 bg-slate-900/90 p-4 backdrop-blur-sm">
         <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
-            <div className="text-xs uppercase tracking-[0.16em] text-slate-400">{state.chapterTitle}</div>
-            <div className="text-sm font-semibold text-slate-100">{state.meta.scenarioTitle}</div>
-            <div className="mt-1 text-[11px] text-blue-300">{theme.name}</div>
-            <div className="mt-1 text-[11px] text-slate-400">Pulse: {state.pulse.label}</div>
-            <div className="mt-1 text-[11px] text-slate-500">{theme.atmosphericTag}</div>
+            <div className="text-xs uppercase tracking-[0.16em] text-slate-400">
+              {t(`chapterTitles.${state.chapterId}`, { defaultValue: state.chapterTitle })}
+            </div>
+            <div className="text-sm font-semibold text-slate-100">
+              {t(`scenarioTitles.${state.meta.scenarioId}`, { defaultValue: state.meta.scenarioTitle })}
+            </div>
+            <div className="mt-1 text-[11px] text-blue-300">
+              {t(`theaters.${state.chapterId}.name`, { defaultValue: theme.name })}
+            </div>
+            <div className="mt-1 text-[11px] text-slate-400">
+              {t('hud.pulse', { defaultValue: 'Pulse' })}: {t(`pulses.${state.pulse.label}`, { defaultValue: state.pulse.label })}
+            </div>
+            <div className="mt-1 text-[11px] text-slate-500">
+              {t(`theaters.${state.chapterId}.tag`, { defaultValue: theme.atmosphericTag })}
+            </div>
           </div>
 
           <div className="flex items-center gap-2">
@@ -928,7 +952,9 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
               type="button"
             >
               {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
-              {isPlaying ? 'Pause' : 'Play'}
+              {isPlaying
+                ? t('controls.pause', { defaultValue: 'Pause' })
+                : t('controls.play', { defaultValue: 'Play' })}
             </button>
 
             <button
@@ -941,7 +967,7 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
               type="button"
             >
               <SkipBack className="h-3.5 w-3.5" />
-              Start
+              {t('controls.start', { defaultValue: 'Start' })}
             </button>
 
             <button
@@ -957,7 +983,7 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
               type="button"
             >
               <Radio className="h-3.5 w-3.5" />
-              Live
+              {t('controls.live', { defaultValue: 'Live' })}
             </button>
           </div>
         </div>
@@ -977,16 +1003,27 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
 
         <div className="mt-2 flex items-center justify-between text-[11px] text-slate-400">
           <span>
-            Snapshot {selectedIndex + 1}/{liveIndex + 1}
+            {t('hud.snapshot', {
+              defaultValue: `Snapshot ${selectedIndex + 1}/${liveIndex + 1}`,
+              current: selectedIndex + 1,
+              total: liveIndex + 1,
+            })}
           </span>
-          <span>History Depth: {state.meta.historyDepth}</span>
+          <span>
+            {t('hud.history_depth', {
+              defaultValue: `History Depth: ${state.meta.historyDepth}`,
+              value: state.meta.historyDepth,
+            })}
+          </span>
         </div>
 
         <div className="mt-3 grid grid-cols-1 gap-2 md:grid-cols-3">
           {state.branches.map((branch) => (
             <div key={branch.id} className="rounded-lg border border-slate-700 bg-slate-800/60 px-3 py-2">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-semibold text-slate-100">{branch.title}</span>
+                <span className="font-semibold text-slate-100">
+                  {t(`branches.${branch.id}`, { defaultValue: branch.title })}
+                </span>
                 <span style={{ color: branch.color }} className="font-mono">
                   {Math.round(branch.probability * 100)}%
                 </span>
@@ -1004,7 +1041,7 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
         <div className="mt-3 grid grid-cols-1 gap-2 md:grid-cols-2">
           {state.educationalNotes.slice(0, 4).map((note) => (
             <div key={note} className="rounded-md border border-slate-700/80 bg-slate-800/40 px-3 py-2 text-xs text-slate-300">
-              {note}
+              {t(`educationalNotes.${note}`, { defaultValue: note })}
             </div>
           ))}
         </div>

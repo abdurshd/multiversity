@@ -1,0 +1,498 @@
+{
+  "title": "Temir Amirning So'nggi Yurishi",
+  "era": "Samarqand · milodiy 1404-yil",
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Samarqand, milodiy 1404-yil. Buyuk ipak yo'lining gavhari, Dehlidan Damashqgacha cho'zilgan saltanatning poytaxti."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Uning bunyodkori — Amir Temur, dushmanlari uni Aksoq Temur deb atashadi — dashtning so'nggi buyuk fotihi. U oltmish sakkiz yoshda, ammo hali ishini tugatmagan."
+        },
+        "2": {
+          "speaker": "Solnoma",
+          "text": "Feruza gumbazlar ostida me'morlari obidalar qad rostlamoqda, devorlar ortidagi harbiy qarorgohlarda esa ikki yuz ming askar qilichlarini charxlamoqda."
+        },
+        "3": {
+          "speaker": "Solnoma",
+          "text": "Tarix shuni yozadiki, u sharqqa, Min sulolasi Xitojiga qarshi yurish qildi — va birorta zarba bermay turib, O'trorda isitmadan vafot etdi. Saltanati merosxo'rlari o'rtasida parchalanib ketdi."
+        },
+        "4": {
+          "speaker": "Solnoma",
+          "text": "Ammo bugun, bu olamda, qur'a hali tashlanmagan. Uning shahrini kezib chiqing. So'ng harbiy kengashida o'tiring — va tanlovingizni qiling."
+        }
+      }
+    },
+    "explore-city": {
+      "prompt": "Samarqandni kezib chiqing — atrofga qarash uchun sichqonchani torting, yarqirayotgan belgilarni bosing. Harbiy kengash sizni kutmoqda.",
+      "hotspots": {
+        "registan": {
+          "label": "Registon maydoni",
+          "title": "Registon",
+          "description": "Shaharning yuragi. Xito, Fors va Rus savdogarlari lojuvard koshinlar bilan bezatilgan madrasalar nigohi ostida savdo qiladi. Har bir g'isht istilo evaziga qo'yilgan — Temur o'zi zabt etgan har bir shaharning eng usta hunarmandlarini Samarqandga ko'chirtirgan."
+        },
+        "mosque": {
+          "label": "Bibixonim masjidi",
+          "title": "Bibixonim masjidi",
+          "description": "Hindistondan to'qson besh fil ortgan toshlar bilan besh yilda qad rostlagan. Temur uning peshtoqini ikki marta buzdirib, qaytadan qurdirdi — chunki u yetarlicha ulug'vor emas edi. Hatto toshdan ham o'zib ketgan orzuga qo'yilgan obida."
+        },
+        "mausoleum": {
+          "label": "Go'ri Amir",
+          "title": "Go'ri Amir — Kutayotgan Maqbara",
+          "description": "Yoshlik chog'ida vafot etgan suyukli nabira uchun qurilgan maqbara. Saroyda Amirning o'zi ham bir kun shu yerda yotishi haqida pichirlashadi. Kelajakdagi yashma sag'anasiga rivoyat shunday o'yib yozadi: \"Men o'limdan qo'zg'alsam, dunyo larzaga keladi.\""
+        },
+        "council": {
+          "label": "Harbiy Kengash",
+          "title": "Samarqand Kengashi",
+          "description": "Olov atrofida tumanlarning amirlari, shahzodalar, uch qit'aning josuslar boshliqlari o'tiribdi. Xitoy, Anadolu va saltanatning o'z xaritalari yoyilgan. Amir sukunat talab qilib qo'lini ko'taradi. Yo'llar ayrilig'i fursati keldi."
+        }
+      }
+    },
+    "council-choice": {
+      "title": "Samarqand Kengashi · 1404-yil qishi",
+      "prompt": "Amir so'raydi: saltanat qaysi tomonga ot suradi?",
+      "options": {
+        "east": {
+          "label": "Sharqqa Yurish — Min Xitojini Zabt Etish",
+          "description": "Yer yuzidagi eng buyuk o'lja. Ikki yuz ming chavandoz dunyodagi eng qadimiy saltanatga qarshi. Ammo yo'l bizning tariximizda uni halok etgan qishki dasht orqali o'tadi…"
+        },
+        "consolidate": {
+          "label": "Mustahkamlash — Vorislikni Tayinlash",
+          "description": "Boshqa yurish bo'lmaydi. Voris tayinlang, amirlarni qonun va nikoh bilan bog'lang, istilo qo'shinini boshqaruv saltanatiga aylantiring. Zerikarli. Misli ko'rilmagan. Ehtimol, abadiy."
+        },
+        "west": {
+          "label": "G'arbga Burilish — Yevropa Darvozalari",
+          "description": "Anqara bir bor Usmonlilarni sindirdi. Ularni tugating, bo'g'ozlardan o'ting va Uyg'onish davri boshlanmasdan turib, vabodan holsizlangan, parchalangan Yevropa ustiga yaktug' tug'ini tiking."
+        }
+      }
+    },
+    "east-march": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "1405-yil yanvar. Buyuk Qo'shin necha avlod ko'rmagan eng og'ir qish ichidan sharqqa intiladi. Sirdaryo qo'shinni o'tkazadigan darajada qattiq muzlagan."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "O'trorda sovuq Amirni topadi. Isitma. Tabiblar giyoh tutatib, chodir pardasiga termulishadi. Butun yurish — butun asr — nafasini ichiga yutib turibdi."
+        },
+        "2": {
+          "speaker": "Amir Shoh Malik",
+          "text": "Hazratim — askarlar shu yerda qishlasa bo'ladi. Xitoy ikki ming yil turdi; yana bir mavsum kutadi. Yoki daryolar hamon muz yo'l bo'lib turganida, hozir oldinga intilamiz."
+        }
+      }
+    },
+    "otrar-choice": {
+      "title": "O'tror · Isitma Tuni, 1405-yil fevral",
+      "prompt": "Bizning tariximizda Temur O'trorda kutdi — va o'sha yerda vafot etdi. Bu olamda nima yuz beradi?",
+      "options": {
+        "press-on": {
+          "label": "Isitmaga Qarshi — Tongda Yurish",
+          "description": "Harakat — hayot. Qarorgohni yig'ishtiring, muzni kechib o'ting va yurishning olovi kasallikni yondirib yuborsin. Qo'shin Buyuk Devor sari ot suradi."
+        },
+        "wait": {
+          "label": "O'trorda Qishlash — Tarix Bo'lgani Kabi",
+          "description": "Dam oling. Sog'ayib oling. Tabiblarga va bahorga ishoning. (Bu bizning o'z tarix oqimimiz tutgan yo'l. Uning qayoqqa olib borishini bilasiz.)"
+        }
+      }
+    },
+    "otrar-death": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Isitma kuchayadi. 1405-yil 18-fevralda Amir Temur O'trorda vafot etadi — xuddi bizning olamimizdagidek."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Buyuk Qo'shin Xitoy yo'lidan tariqday tarqaladi. Nabiralar amakilariga qarshi chiqadi. O'n yil ichida saltanat shahzodalar talashayotgan bir xotiraga aylanadi."
+        },
+        "2": {
+          "speaker": "Solnoma",
+          "text": "Ba'zi tarix oqimlarining, ko'rinishidan, o'z yo'nalishi bor. Siz tarixiy o'zanni tanladingiz — va tarix shu o'zandan oqib o'tdi."
+        }
+      }
+    },
+    "wall-battle": {
+      "battle": {
+        "name": "Buyuk Devorning Yorilishi",
+        "objective": "1405-yil bahor. Buyuk Qo'shin Min sarhadi oldida turibdi. Devor yonidagi qo'riqchi qo'shinni sindiring, shunda Pekinga yo'l ochiladi. Yo sindiring — yo sinasiz.",
+        "player": {
+          "name": "Temuriylar Buyuk Qo'shini"
+        },
+        "enemy": {
+          "name": "Min Sarhad Qo'shini"
+        },
+        "events": {
+          "breach": {
+            "title": "Devor Qulashi Shart",
+            "prompt": "Min safi istehkomlarga suyangan. Muhandislaringiz buyruqni kutmoqda.",
+            "options": {
+              "catapults": {
+                "label": "Mancanaqlarni Ishga Soling",
+                "description": "Tosh yog'ini ularning zich saflarini parchalaydi. Shovqinli, shafqatsiz, samarali."
+              },
+              "tunnels": {
+                "label": "Lahmkashlar va Yer Osti Yo'llari",
+                "description": "Sokin ravishda devor tagini kovlang. Devor soyasi endi qo'rqitmagach, butun qo'shiningiz battar shijoat bilan jang qiladi."
+              },
+              "frontal": {
+                "label": "Shon-Sharaf — To'g'ridan Hujum",
+                "description": "Narvonlar va g'azab. Baxshilar buni kuylaydi; bevalar esa yo'q."
+              }
+            }
+          },
+          "flank": {
+            "title": "Zaxira Tumani",
+            "prompt": "O'n ming tajribali chavandoz qum tepalari ortida kutib turibdi. Ularni jangga solamizmi?",
+            "options": {
+              "flank-now": {
+                "label": "Qanot Chavandozlarini Qo'yib Yuboring",
+                "description": "Klassik temuriylar bolg'asi — otliqlar qanotdan otilib chiqib, ularning kamonchilariga yopiriladi."
+              },
+              "hold-reserve": {
+                "label": "Ularni Zaxirada Saqlang",
+                "description": "Sabr. Safingiz ortidagi qalqon oldindagi har bir belni mustahkam tutadi."
+              }
+            }
+          },
+          "rally": {
+            "title": "Saf Tebranadi",
+            "prompt": "Markazingiz qon yutmoqda. Amirning o'zi oldinga ot suradi — buyruq qanaqa?",
+            "options": {
+              "fire-arrows": {
+                "label": "O'tli Strelalar — Irodalarini Yoqing",
+                "description": "Osmonning o'zi alanga oladi. Kamonchilar Min uyumiga yonayotgan o'qlarni yog'diradi."
+              },
+              "emir-rides": {
+                "label": "Amir Tug' Sari Ot Suradi",
+                "description": "Oltmish sakkiz yoshda, qilich qinidan chiqarilgan, yaktug' bayrog'i ostida. Ruh dadillik qurolga aylanadi."
+              }
+            }
+          }
+        }
+      }
+    },
+    "beijing-falls": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Devor yorildi. Qo'riqchi qo'shin sindi va Yurt Markazining darvozalari birin-ketin ochila boshladi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "1407-yilga kelib Pekin quladi. Yunglu imperatori poytaxtini himoya qilib halok bo'ldi, taxtga esa Osmon Inoyati bilan temuriy shahzoda o'tirdi."
+        },
+        "2": {
+          "speaker": "Solnoma",
+          "text": "Endi yagona saltanat Anadoludan Tinch okeangacha cho'ziladi. Buyuk ipak yo'lining yagona xo'jasi bor, Samarqand esa dunyo aylanadigan o'qqa aylanadi."
+        }
+      }
+    },
+    "east-defeat": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Min safi bardosh berdi. Qirq yillik g'alabalar quroli bo'lmish Buyuk Qo'shin devor ostida qon yutib halok bo'ladi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Temur chekinishdan omon qoladi, ammo qishdan emas. Parchalangan tumanlar uning jasadini — va so'kilayotgan saltanatini — muz yo'l bo'ylab ortga olib qaytadi."
+        }
+      }
+    },
+    "consolidate-cinematic": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Buyruq kengashni hayratga soladi: Buyuk Qo'shin yurish qilmaydi. Qirq yil ichida ilk bor Amir qilich o'rniga qog'ozni tanlaydi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Qish davomida u og'zaki amr beradi: vorislik to'g'risida qonun, bir-biriga muvozanat qilib qo'yilgan hokimliklar, har bir amirni Temur xonadoniga bog'laydigan nikohlar."
+        },
+        "2": {
+          "speaker": "Solnoma",
+          "text": "Bitta savol qoladi — dasht saltanatida hamisha yagona ahamiyatga ega bo'lgan savol. Kim voris bo'ladi?"
+        }
+      }
+    },
+    "heir-choice": {
+      "title": "Voris Masalasi · 1405-yil",
+      "prompt": "Sulolaning kelajagi yagona ismga bog'liq.",
+      "options": {
+        "shahrukh": {
+          "label": "Shohruh — Olim",
+          "description": "Sizning kenja o'g'lingiz: taqvodor, sabrli, Hirot olimlarining suyuklisi. Fotih emas — ammo saltanatlarni fotihlar emas, mudirlar saqlab qoladi."
+        },
+        "pir-muhammad": {
+          "label": "Pir Muhammad — Sarkarda",
+          "description": "Bizning tariximizda Temurning o'zi ma'qul ko'rgan nabira. Qo'shin hurmat qiladigan — amirlar esa qo'rqadigan jangchi. Kuch, biroq adovat evaziga."
+        },
+        "council-rule": {
+          "label": "Shahzodalar Kengashi",
+          "description": "Yagona voris yo'q: yozma qonun ostida shahzodalar va amirlardan iborat boshqaruvchi devon. Tubdan yangi. Yo konstitutsiyaviy saltanatning tug'ilishi — yo kengash orqali fuqarolar urushi."
+        }
+      }
+    },
+    "khan-crisis": {
+      "title": "Dasht Xonlarining Isyoni · 1406-yil",
+      "prompt": "Uch sarhad xoni yangi vorislik qonunini rad etib, Sig'noqdagi eski qal'ani mustahkamlaydi. Yangi tartibning ilk sinovi.",
+      "options": {
+        "negotiate": {
+          "label": "Ularni Gilamga Chorlang",
+          "description": "Oltin, nikohlar va unvonlar — xonlarni qon emas, asal bilan bog'lang. Qonun sadoqatni mukofotlashi ko'rinib turishi shart."
+        },
+        "crush": {
+          "label": "Sig'noqni Ibrat Qiling",
+          "description": "Qonunning tishi borligi ham ko'rinib turishi shart. Otlaning va isyon tumanlarga yoyilmasdan oldin uni sindiring."
+        }
+      }
+    },
+    "revolt-battle": {
+      "battle": {
+        "name": "Sig'noqning Bosib Olinishi",
+        "objective": "Isyonchi xonlar qal'ani tajribali dasht otliqlari bilan tutib turibdi. Isyonni qat'iy sindiring — uzoq qamal saltanatdagi har bir norozini unga qo'shilishga chorlaydi.",
+        "player": {
+          "name": "Saltanat Sodiqlari"
+        },
+        "enemy": {
+          "name": "Isyonchi Xonlar"
+        },
+        "events": {
+          "rebel-charge": {
+            "title": "Xonlar Hujumi",
+            "prompt": "Isyonchi otliqlar tepalik bo'ylab yagona zo'r hujum uchun to'planmoqda. Uni qanday qarshi olamiz?",
+            "options": {
+              "pikes": {
+                "label": "Nayzalarni Tiqing",
+                "description": "Mustahkam turing va hujum po'lat chakalakda halok bo'lsin."
+              },
+              "counter": {
+                "label": "Qarshi Hujum",
+                "description": "O'z chavandozlaringizni tepalik tomon ularnikiga qarshi soling. Tashabbus zarbga qarshi."
+              }
+            }
+          },
+          "citadel": {
+            "title": "Qal'a Darvozasi",
+            "prompt": "Maydon sizning foydangizga og'moqda, biroq qal'a hamon o'q sochadi. Buni tugating.",
+            "options": {
+              "bombard": {
+                "label": "Darvozani Otishga Tuting",
+                "description": "Mancanaqlarni keltiring va isyonchilarning so'nggi qobig'ini yorib o'ting."
+              },
+              "mercy-terms": {
+                "label": "Jang Ichida Shart Taklif Qiling",
+                "description": "Devor osha taklifni baqirib ayting: hozir taslim bo'ling, boshingiz omon qoladi. Ba'zi himoyachilar ikkilanib qoladi."
+              }
+            }
+          }
+        }
+      }
+    },
+    "succession-golden": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Vorislik mustahkam turadi. Temur 1409-yilda o'z to'shagida — o'z saroyida, o'z gumbazi ostida — vafot etganda, hokimiyat birorta jangsiz o'tadi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Temuriylar davlati dasht hech qachon yaratmagan narsaga aylanadi: byurokratik saltanat, poyza yorliqli Rim, Yevropa va Xitoy orasidagi har bir yo'lda otlanib turadi."
+        },
+        "2": {
+          "speaker": "Solnoma",
+          "text": "Yevropa kapitanlari asrlar davomida uni aylanib o'tadigan dengiz yo'lini izlaydi — va shu orada uning bojlarini to'lab turadi."
+        }
+      }
+    },
+    "succession-collapse": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Sig'noq bardosh beradi. Mag'lubiyat yangi tartibning muqarrarlik nuri yorig'i bilan yoradi, yoriq ortidan yoriq, xon ortidan xon, vorislik qonuni o'lik harfga aylanadi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Saltanat bizning tariximizdagidan bir necha yil kechroq parchalanadi — ammo baribir parchalanadi."
+        }
+      }
+    },
+    "west-march": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "1405-yil bahor. Buyuk Qo'shin 1402-yilda — Temur Sulton Boyazidni Anqarada tor-mor etib, uni zambilda asir olib ketgan paytda — sindirgan yo'llar bo'ylab g'arbga quyiladi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Bu safar chekinish bo'lmaydi. Oldinda yamoq Usmonli lashkari va shoshilinch qasamyod qilgan salibchilar ittifoqi bo'g'ozlarga — va ular ortidagi Yevropaga — yo'lni to'sib turibdi."
+        }
+      }
+    },
+    "gates-battle": {
+      "battle": {
+        "name": "Yevropa Darvozalari",
+        "objective": "Usmonli-Salibchilar ittifoqi Buyuk Qo'shin bilan Bosfor o'rtasida turibdi. Ularni shu yerda sindiring, shunda qit'adagi hech bir kuch yaktug' tug'ini to'xtata olmaydi.",
+        "player": {
+          "name": "Temuriylar Buyuk Qo'shini"
+        },
+        "enemy": {
+          "name": "Usmonli–Salibchilar Ittifoqi"
+        },
+        "events": {
+          "feigned-retreat": {
+            "title": "Dashtning Eng Qadimiy Hiylasi",
+            "prompt": "Ittifoq ritsarlari shijoatli va og'ir. Chavandozlaringiz soxta chekinishni o'z ismlaridek yaxshi bilishadi.",
+            "options": {
+              "feign": {
+                "label": "Soxta Chekinib, So'ng Qurshab Oling",
+                "description": "Ritsarlarni saflaridan tortib chiqaring, so'ng atroflarini shoxlardek o'rab oling."
+              },
+              "stand": {
+                "label": "Hiyladan Voz Keching — Turib Eshib Tashlang",
+                "description": "Ular ayyorlik kutadi. Uning o'rniga devor bering va hujumlari o'z-o'zidan holdan toysin."
+              }
+            }
+          },
+          "janissary-push": {
+            "title": "Yangichalar Oldinga Yuradi",
+            "prompt": "Sulton o'zining tanlangan piyodalarini markazga soladi. Javobingiz?",
+            "options": {
+              "engines": {
+                "label": "Yangichalar Ustiga Tosh Yomg'iri",
+                "description": "Mancanaqlar so'zlaydi. Zich saflarga tiqilgan tanlangan piyodalar bir saxiy nishon bo'ladi."
+              },
+              "fire-sky": {
+                "label": "Osmonni Olov Bilan Qoraytiring",
+                "description": "Har bir kamonchi yonayotgan o'q otadi. Ittifoq olov shifti ostida jang qiladi."
+              }
+            }
+          },
+          "west-rally": {
+            "title": "Tug' Tebranadi",
+            "prompt": "Ittifoq qit'ani himoya qilayotgan kishilar umidsizligi bilan jang qiladi. Safingiz egilmoqda.",
+            "options": {
+              "emir-standard": {
+                "label": "Amir Tug'ni Qo'lga Oladi",
+                "description": "Temur yaktug' bayrog'i bilan saf bo'ylab ot suradi. Qirq yillik afsona yagona qiyofada."
+              },
+              "fresh-tumen": {
+                "label": "So'nggi Tumanni Jangga Soling",
+                "description": "Hammasi. Zaxira ot suradi, va masala u yoki bu tarzda hal bo'ladi."
+              }
+            }
+          }
+        }
+      }
+    },
+    "europe-opens": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Ittifoq parchalanadi. Allaqachon Anqarada bir bor sinib bo'lgan Usmonli davlati tarqaydi, bo'g'ozlar esa ochiq qoladi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Temuriylar tumanlari 1406-yilda Bolqonga o'tadi. Vabodan bo'shab qolgan, mazhabga bo'lingan Yevropaning uch saltanatni zabt etgan qo'shinga javobi yo'q."
+        },
+        "2": {
+          "speaker": "Solnoma",
+          "text": "Florensiyada boshlanayotgan Uyg'onish davri ro'y beradi — ammo u chig'atoy tilida, Dunay bo'yidagi feruza gumbazlar ostida ro'y beradi."
+        }
+      }
+    },
+    "west-defeat": {
+      "narration": {
+        "0": {
+          "speaker": "Solnoma",
+          "text": "Oltmish sakkiz yillik umrining eng og'ir kunida Amir Buyuk Qo'shinning ittifoq safiga urilib sinishini kuzatadi."
+        },
+        "1": {
+          "speaker": "Solnoma",
+          "text": "Sharqqa chekinish hech qachon to'liq tugamaydi. U bir umr tikib chiqqan saltanat o'n yil ichida chok-chokidan so'kiladi."
+        }
+      }
+    }
+  },
+  "endings": {
+    "immortal-emir": {
+      "title": "Boqiy Amir",
+      "subtitle": "Xitoy zabt etildi · dunyo o'qi Samarqandga ko'chdi",
+      "epilogue": {
+        "0": {
+          "text": "Temur yana yigirma yil yashaydi va insoniyat tarixidagi eng katta quruqlik saltanatini Pekindagi taxtdan hamda Samarqanddagi maqbara-shahardan boshqaradi."
+        },
+        "1": {
+          "text": "Usmonli beyligi hech qachon tiklanmaydi. Yevropa mustamlaka kengayishi hech qachon boshlanmaydi — kengaytirish uchun Amirning bojini to'lamaydigan hech narsa qolmaydi."
+        },
+        "2": {
+          "text": "Olti asr o'tib, Buyuk Temuriylar Federatsiyasi Turkiyadan Koreyagacha cho'ziladi, dunyoning umumiy tili esa chig'atoy turkiysi bo'ladi."
+        }
+      }
+    },
+    "unified-succession": {
+      "title": "Pax Temuridea",
+      "subtitle": "Vorislik mustahkam turadi · dasht Rimi tug'iladi",
+      "epilogue": {
+        "0": {
+          "text": "Temur qilich bilan qurgan saltanat undan asrlarcha omon qoladi — chunki so'nggi yillarida u uni qaytadan, qonun bilan qurib chiqdi."
+        },
+        "1": {
+          "text": "Barqaror, byurokratik Temuriylar davlati Yevropa va Osiyo orasidagi har bir yo'lga hukmronlik qiladi, Buyuk ipak yo'lidan boj oladi va Yevropa kengayishini boshlanmasdan turib bo'g'adi."
+        },
+        "2": {
+          "text": "Bu olam tarixchilari uni Temurning nabirasi atagandek ataydi: Pax Temuridea."
+        }
+      }
+    },
+    "unified-succession-by-sword": {
+      "title": "Pax Temuridea",
+      "subtitle": "Vorislik mustahkam turadi — qonunda yozilgan, qonda muhrlangan",
+      "epilogue": {
+        "0": {
+          "text": "Sig'noq quladi, u bilan birga yangi tartibga qarshi so'nggi dalil ham. Vorislik qonuni boshqa hech qachon ochiq isyonda sinalmaydi."
+        },
+        "1": {
+          "text": "Barqaror, byurokratik Temuriylar davlati Yevropa va Osiyo orasidagi har bir yo'lga hukmronlik qiladi — garchi uning asos qonuni donoligidan ko'ra tishi bilan ko'proq eslab qolinsa-da."
+        },
+        "2": {
+          "text": "Bu olam tarixchilari uni Pax Temuridea deb ataydi."
+        }
+      }
+    },
+    "western-campaign": {
+      "title": "G'arbiy Bo'ron",
+      "subtitle": "Yevropa yaktug' tug'i ostida quladi",
+      "epilogue": {
+        "0": {
+          "text": "Tumanlar 1407-yilda Budada qishlaydi va 1409-yilda otlarini Reyn daryosida sug'oradi. Hech bir ittifoq bardosh bermaydi; boshqa hech qachon to'liq tuzilmaydi ham."
+        },
+        "1": {
+          "text": "Yevropa Uyg'onish davri bir asrga kechikadi va butunlay o'zgaradi — Florensiya banklari emas, Samarqand rasadxonalari orqali oqib o'tadi."
+        },
+        "2": {
+          "text": "Bu olamda \"G'arb\" — tsivilizatsiya emas, yo'nalish."
+        }
+      }
+    },
+    "historical-fragmentation": {
+      "title": "Parchalangan Meros",
+      "subtitle": "Tarix o'zini qaytadan tiklaydi · bir kishining saltanati u bilan birga o'ladi",
+      "epilogue": {
+        "0": {
+          "text": "Qur'a qanday tushmasin, u bizning o'z olamimizdagi joyiga kelib to'xtadi: saltanat janjallashgan merosxo'rlar o'rtasida parchalanadi."
+        },
+        "1": {
+          "text": "Va shunga qaramay — vayronadan Shohruhning Hiroti va Ulug'bekning Samarqandi Temuriylar Uyg'onish davrini yoqadi, Bobur ismli chevara esa Hindistonda saltanat barpo etadi."
+        },
+        "2": {
+          "text": "Hatto qulagan tarix oqimlari ham ortidan nur qoldiradi. Bu — siz buni o'qiyotgan olam."
+        }
+      }
+    }
+  }
+}

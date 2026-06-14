@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "제1차 세계대전",
+    "period": "1914-1918",
+    "description": "유럽의 자살. ⚔️🥀",
+    "historical_context": "수백만 명을 죽음으로 몰아넣은 집안 싸움.",
+    "divergence_point": "암살"
+  },
+  "figures": {
+    "kaiser-wilhelm-ii": {
+      "name": "빌헬름 2세 황제",
+      "role": "황제",
+      "description": "독일의 마지막 황제. \"태양 아래의 자리\"를 원했다. 그러나 대신 세계대전을 얻었다."
+    },
+    "archduke-franz-ferdinand": {
+      "name": "프란츠 페르디난트",
+      "role": "표적",
+      "description": "오스트리아의 황위 계승자. 그의 죽음이 종말을 촉발했다."
+    },
+    "woodrow-wilson": {
+      "name": "우드로 윌슨",
+      "role": "이상주의자",
+      "description": "미국 대통령. 세계를 \"민주주의가 안전한 곳\"으로 만들고자 했다."
+    }
+  },
+  "timelines": {
+    "long-peace": {
+      "title": "긴 평화 🕊️🌍",
+      "description": "암살이 실패한다. 20세기는 평화롭다.",
+      "divergence_description": "운전기사가 사라예보에서 올바른 길로 돌아간다.",
+      "present_day_status": "유럽은 입헌군주국들의 집합체다. 복엽기는 여전히 스포츠로 인기가 있다. 세계는 끝나지 않은 시대를 그리워한다. 🎩🚂",
+      "events": {
+        "federal-austria": {
+          "title": "대오스트리아 합중국",
+          "description": "프란츠 페르디난트가 제국을 평등한 연방으로 개혁한다.",
+          "impact": "발칸반도의 안정."
+        }
+      },
+      "consequences": {
+        "golden-age": {
+          "short_term": "벨 에포크의 지속",
+          "long_term": "전쟁의 상처 없는 기술 발전",
+          "global_impact": "유럽의 지배가 계속된다"
+        }
+      },
+      "butterfly": {
+        "slow-decolonization": {
+          "trigger": "강력한 유럽",
+          "consequence": "식민 제국이 2000년까지 지속된다"
+        }
+      }
+    },
+    "german-victory": {
+      "title": "팍스 게르마니카 🇩🇪👑",
+      "description": "독일이 1914년에 전쟁에서 승리한다.",
+      "divergence_description": "슐리펜 계획이 파리를 성공적으로 포위한다.",
+      "present_day_status": "독일 제국은 세계의 초강대국이다. 베를린은 세계의 수도다. 🌍🏰",
+      "events": {
+        "fall-of-paris": {
+          "title": "파리의 함락",
+          "description": "독일군이 개선문 아래로 행진한다.",
+          "impact": "프랑스의 항복."
+        }
+      },
+      "consequences": {
+        "mitteleuropa": {
+          "short_term": "독일의 지배",
+          "long_term": "제2차 세계대전도 히틀러도 없다",
+          "global_impact": "독일이 세계를 이끈다"
+        }
+      },
+      "butterfly": {
+        "syndicalism": {
+          "trigger": "프랑스의 패배",
+          "consequence": "프랑스와 영국이 생디칼리스트(공산주의) 국가가 된다"
+        }
+      }
+    },
+    "negotiated-peace": {
+      "title": "승리 없는 평화 🤝🏳️",
+      "description": "전쟁이 1917년에 뚜렷한 승자 없이 끝난다.",
+      "divergence_description": "미국이 참전하지 않는다. 소진이 휴전으로 이어진다.",
+      "present_day_status": "세계는 다극 체제다. 국제연맹이 실제로 효과적이다. 🌐",
+      "events": {
+        "peace-treaty": {
+          "title": "스톡홀름 조약",
+          "description": "전쟁 이전 상태로의 복귀. 모두가 집으로 돌아간다.",
+          "impact": "군주제가 살아남는다."
+        }
+      },
+      "consequences": {
+        "bitter-peace": {
+          "short_term": "해결되지 않은 문제들",
+          "long_term": "군주국과 민주국 사이의 냉전",
+          "global_impact": "지친 세계"
+        }
+      },
+      "butterfly": {
+        "russian-survival": {
+          "trigger": "이른 평화",
+          "consequence": "러시아의 취약한 민주주의가 살아남는다"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "sarajevo": {
+      "title": "잘못된 회전 (1914)",
+      "text": "사라예보. 대공의 운전기사가 길을 잘못 들었다. 그는 후진하기 위해 차를 멈춘다. 가브릴로 프린치프가 권총을 들고 모퉁이에 서 있다.",
+      "choices": {
+        "reverse": {
+          "text": "차를 후진시킨다 (역사적 선택).",
+          "consequence": "프린치프가 총을 쏜다. 대공이 죽는다. 전쟁이 시작된다."
+        },
+        "speed-away": {
+          "text": "가속 페달을 밟아라! 앞으로 나아가라!",
+          "consequence": "프린치프가 기회를 놓친다. 대공이 살아남는다."
+        }
+      }
+    },
+    "schlieffen": {
+      "title": "슐리펜 계획 (1914)",
+      "text": "벨기에. 독일군이 파리로 진격하고 있다. 이 계획은 속도가 관건이다. 그러나 벨기에인들이 저항하고 있다.",
+      "choices": {
+        "turn": {
+          "text": "안쪽으로 선회하라. 프랑스군을 공격하라.",
+          "consequence": "마른의 기적. 참호선이 형성된다."
+        },
+        "encircle": {
+          "text": "측면을 무시하라. 파리로 진격하라!",
+          "consequence": "도박이다. 그러나 성공한다. 파리가 함락된다."
+        }
+      }
+    },
+    "zimmermann": {
+      "title": "전보 (1917)",
+      "text": "우리는 굶주리고 있다. 유보트가 우리의 유일한 희망이다. 멕시코에게 미국을 공격하도록 요청해야 하는가?",
+      "choices": {
+        "send": {
+          "text": "전보를 보내라. 무제한 잠수함 작전.",
+          "consequence": "미국이 그것을 해독하고 전쟁을 선포한다. 우리는 파멸할 운명이다."
+        },
+        "cancel": {
+          "text": "계획을 취소하라. 너무 위험하다.",
+          "consequence": "미국이 중립을 유지한다. 전쟁이 교착 상태로 끝난다."
+        }
+      }
+    },
+    "armistice": {
+      "title": "철도 객차 (1918)",
+      "text": "포슈가 조건을 지시한다. 독일은 중화기와 해군을 넘기고 책임을 인정해야 한다.",
+      "choices": {
+        "accept": {
+          "text": "모든 조건을 수락하라. 고통을 끝내라.",
+          "consequence": "독일이 굴욕을 당한다. 제2차 세계대전의 씨앗이 뿌려진다."
+        },
+        "refuse": {
+          "text": "거부하라. 끝까지 싸워라.",
+          "consequence": "연합군이 독일을 침공한다. 완전한 파괴."
+        }
+      }
+    }
+  }
+}

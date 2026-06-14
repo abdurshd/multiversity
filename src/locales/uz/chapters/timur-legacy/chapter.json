@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Temurning Merosi",
-    "period": "1370-1405",
-    "description": "Oxirgi buyuk ko'chmanchi bosqinchi va uning imperiyasining muqobil yo'llari",
-    "historical_context": "Temur (Temurlan) oxirgi buyuk ko'chmanchi imperiyasini qurdi va Hindistondan Anadolugacha bo'lgan ulkan hududlarni zabt etdi. Uning 1405-yilda Xitoyga yurish paytida kutilmagan o'limi nima bo'lishi mumkinligi haqida savollar qoldirdi.",
-    "divergence_point": "1405-yilda Temurning o'limidan keyin yuzaga kelgan vorislik inqirozi va strategik qarorlar"
+    "title": "Temir Amir: Temurning Merosi",
+    "period": "14-15 asrlar",
+    "description": "Oxirgi buyuk ko'chmanchi bosqinchi tarix chorrahasida turibdi. 🗡️🌍 U Sharqqa, Xitoy tomon burilarmi, imperiyasini barqarorlashtirarmi yoki Yevropani yanchib tashlarmi?",
+    "historical_context": "Amir Temur (Temurlan) 14-asrning eng qudratli hukmdori edi. Uning imperiyasi harbiy jihatdan yengilmas kuch bo'lgan, ammo ma'muriy barqarorlikka ega emasdi.",
+    "divergence_point": "Temurning 1405-yildagi o'limi"
   },
   "figures": {
     "emir-timur": {
@@ -27,12 +27,13 @@
     "immortal-emir": {
       "title": "O'lmas Amir: Xitoyni zabt etish 🐉⚔️",
       "description": "Agar Temur 1405-yilda kasalligidan sog'ayib qolsa va ulkan qo'shinini Xitoyga boshqarsa nima bo'lar edi?",
-      "divergence_description": "Temur Otror shahrida kasalligidan tuzalib ketadi va Xitoyga bosqinchilikni boshlaydi.",
+      "divergence_description": "Temur Otror shahrida kasalligidan tuzalib ketadi va Min Xitoyiga bosqinni boshlaydi.",
+      "present_day_status": "Buyuk Temuriylar Federatsiyasi Turkiyadan Koreyagacha cho'zilgan. Samarqand dunyoning fan va madaniyat poytaxti. Yevropa orqada qolgan feodal davlatlar to'plami. Asosiy global til - Chig'atoy turkiy tili. 🕌🌍",
       "events": {
         "survival-1405": {
           "title": "Otrordagi mo'jiza",
           "description": "Temur qishki kasalligidan tuzalib ketadi. Qo'shin tarqalib ketish o'rniga Sharqqa yo'l oladi.",
-          "impact": "Xitoyga qarshi yurishlar rejaga ko'ra davom etadi."
+          "impact": "Xitoyga qarshi yurish rejaga ko'ra davom etadi."
         },
         "fall-of-beijing-1407": {
           "title": "Pekinning qulashi",
@@ -42,31 +43,33 @@
         "silk-road-monopoly-1410": {
           "title": "Ipak yo'li monopoliyasi",
           "description": "Anadoludan Tinch okeanigacha bo'lgan hududlarni nazorat ostiga olib, Temur Ipak yo'li ustidan mutlaq hukmronlik o'rnatadi.",
-          "impact": "Yevropa savdodan mahrum bo'ladi, Uyg'onish davri kechiktiriladi. Markaziy Osiyo dunyoning iqtisodiy markazi bo'ladi."
+          "impact": "Yevropa savdodan mahrum bo'ladi, Uyg'onish davri kechiktiriladi. Markaziy Osiyo dunyoning iqtisodiy markaziga aylanadi."
         }
       },
       "consequences": {
-        "short_term": "Markaziy Osiyo Yer yuzidagi eng boy mintaqa bo'ladi.",
-        "long_term": "Global kuch markazi Osiyoda qoladi. Yevropa mustamlakachiligi hech qachon boshlanmaydi.",
-        "global_impact": "Turk-mo'g'ul madaniyati hukmronlik qiladigan butunlay boshqacha zamonaviy dunyo."
+        "asian-century": {
+          "short_term": "Markaziy Osiyo Yer yuzidagi eng boy mintaqaga aylanadi.",
+          "long_term": "Global kuch markazi Osiyoda qoladi. Yevropa mustamlakachiligi hech qachon boshlanmaydi.",
+          "global_impact": "Turk-mo'g'ul madaniyati hukmronlik qiladigan butunlay boshqacha zamonaviy dunyo."
+        }
       },
-      "butterfly": [
-        {
+      "butterfly": {
+        "no-ottoman-empire": {
           "trigger": "Temurning davomiy hukmronligi Usmonlilarning tiklanishiga to'sqinlik qiladi",
           "consequence": "Usmonlilar imperiyasi kichik beklik bo'lib qoladi yoki yutib yuboriladi."
         }
-      ],
-      "present_day_status": "Buyuk Temuriylar Federatsiyasi Turkiyadan Koreyagacha cho'zilgan. Samarqand dunyoning fan va madaniyat poytaxti. Yevropa orqada qolgan feodal davlatlar to'plami. Asosiy global til - Chig'atoy turkiy tili. 🕌🌍"
+      }
     },
     "unified-succession": {
       "title": "Pax Timuridea: Barqaror imperiya ⚖️🏛️",
       "description": "Agar Temur fuqarolar urushining oldini oluvchi aniq vorislik rejasini o'rnatgan bo'lsa nima bo'lar edi?",
       "divergence_description": "Temur o'limidan oldin aniq voris va ma'muriy tuzilmani tayinlaydi.",
+      "present_day_status": "Temuriylar Hamdo'stligi konstitutsiyaviy monarxiya va dunyoning yetakchi superkuchi. U o'zining go'zal bog'-shaharlari va ilg'or kosmik dasturi (Temuriylar qirollik loyihasi bo'lgan Boyqo'ng'ir kosmodromidan uchirilgan) bilan mashhur. 🚀🌌",
       "events": {
         "council-of-samarkand-1404": {
           "title": "Samarqand Kengashi",
           "description": "Temur barcha o'g'illari va generallarini yig'ib, rasmiy vorislik qonuni va federal boshqaruvni o'rnatadi.",
-          "impact": "Tarixan imperiyani vayron qilgan ichki urushlarning oldini oladi."
+          "impact": "Tarixan imperiyani vayron qilgan o'zaro ichki urushlarning oldini oladi."
         },
         "timurid-renaissance-1450": {
           "title": "Temuriylar Uyg'onishi",
@@ -75,22 +78,24 @@
         }
       },
       "consequences": {
-        "short_term": "Islom Oltin davri cheksiz davom etadi.",
-        "long_term": "Islom asosan konservatizm bilan emas, balki fan va taraqqiyot bilan bog'lanadi.",
-        "global_impact": "Zamonaviy fan o'z ildizlarini Italiya yoki Angliyadan emas, Samarqanddan oladi."
+        "scientific-islam": {
+          "short_term": "Islom Oltin davri cheksiz davom etadi.",
+          "long_term": "Islom asosan konservatizm bilan emas, balki fan va taraqqiyot bilan bog'lanadi.",
+          "global_impact": "Zamonaviy fan o'z ildizlarini Italiya yoki Angliyadan emas, Samarqanddan oladi."
+        }
       },
-      "butterfly": [
-        {
+      "butterfly": {
+        "industrial-samarkand": {
           "trigger": "Erta ilmiy uslub erta sanoatlashtirishga olib keladi",
           "consequence": "Sanoat inqilobi 1700-yillarda Markaziy Osiyoda boshlanadi."
         }
-      ],
-      "present_day_status": "Temuriylar Hamdo'stligi konstitutsiyaviy monarxiya va dunyoning yetakchi superkuchi. U o'zining go'zal bog'-shaharlari va ilg'or kosmik dasturi (Temuriylar qirollik loyihasi bo'lgan Boyqo'ng'ir kosmodromidan uchirilgan) bilan mashhur. 🚀🌌"
+      }
     },
     "western-campaign": {
       "title": "Yevropa Balosi ⚔️🏰",
       "description": "Agar Temur Xitoy o'rniga Yevropani tugatish uchun G'arbga burilganida nima bo'lar edi?",
       "divergence_description": "Temur 'Franklar' Min sulolasidan ko'ra kattaroq xavf ekanligiga qaror qiladi.",
+      "present_day_status": "Yevropa Oltin O'rdaning qashshoq, agrar vassal davlatlari to'plami. Amerikada modernizatsiya qilingan Atstek va Ink federatsiyalari hukmronlik qilmoqda. Dunyo ko'p qutbli va butunlay boshqacha. 🌎🏛️",
       "events": {
         "invasion-of-europe-1403": {
           "title": "Yevropaga bosqin",
@@ -104,91 +109,140 @@
         }
       },
       "consequences": {
-        "short_term": "Yevropa Uyg'onish davri beshigidayoq bo'g'iladi.",
-        "long_term": "Yevropa asrlar davomida texnologik qoloq bo'lib qoladi.",
-        "global_impact": "Kashfiyotlar davri bo'lmaydi, Amerika Yevropa tomonidan mustamlakaga aylantirilmaydi."
+        "dark-ages-return": {
+          "short_term": "Yevropa Uyg'onish davri beshigidayoq bo'g'iladi.",
+          "long_term": "Yevropa asrlar davomida texnologik qoloq bo'lib qoladi.",
+          "global_impact": "Kashfiyotlar davri bo'lmaydi, Amerika Yevropa tomonidan mustamlakaga aylantirilmaydi."
+        }
       },
-      "butterfly": [
-        {
+      "butterfly": {
+        "aztec-survival": {
           "trigger": "Yevropa mustamlakachiligi yo'q",
           "consequence": "Atstek va Ink imperiyalari omon qoladi va mustaqil ravishda modernizatsiya qilinadi."
         }
-      ],
-      "present_day_status": "Yevropa Oltin O'rdaning qashshoq, agrar vassal davlatlari to'plami. Amerikada modernizatsiya qilingan Atstek va Ink federatsiyalari hukmronlik qilmoqda. Dunyo ko'p qutbli va butunlay boshqacha. 🌎🏛️"
+      }
     }
   },
-  "interactive_scenarios": [
-    {
+  "scenarios": {
+    "ankara-strategy": {
       "title": "Anqara jangi (1402)",
-      "text": "Siz Temursiz. Usmonli sultoni Boyazid I ulkan qo'shin bilan qarshingizda turibdi. U takabbur, lekin qudratli. Sizning josuslaringiz u sizni topish uchun qo'shinlarini toliqtirib yuborganini xabar qilishdi. Qanday jang qilasiz?",
-      "choices": [
-        {
-          "text": "Mahalliy daryoni to'sib qo'ying va ularni chanqoq holda jang qilishga majbur qiling.",
-          "consequence": "Usmonli qo'shinlari chanqoqlikdan vahimaga tushadi. Ularning tatar ittifoqchilari siz tomonga o'tadi. Siz hal qiluvchi g'alabaga erishasiz. (Tarixiy)"
+      "text": "Usmonli sultoni Boyazid I qarshingizda turibdi. Uning qo'shini majburiy yurishdan toliqqan, ammo yenicharlari tetik. Sizning josuslaringiz ularning qarorgohini suv bilan ta'minlaydigan soyni xabar qilishdi. Buyrug'ingiz qanday?",
+      "choices": {
+        "cut-water": {
+          "text": "Soyni boshqa tomonga buring. Ularni chanqoq holda jang qilishga majbur qiling.",
+          "consequence": "Usmonlilar vahimaga tushadi. Ularning tatar ittifoqchilari siz tomonga o'tadi. Siz hal qiluvchi g'alabaga erishasiz."
         },
-        {
-          "text": "Fillar bilan markazga to'g'ridan-to'g'ri hujum qiling.",
-          "consequence": "Yenicharlar safni ushlab turishadi. Jang qonli durang bilan tugaydi. Boyazid boshqa kuni jang qilish uchun qochib ketadi."
+        "direct-charge": {
+          "text": "Yenicharlarga jang fillari bilan to'g'ridan-to'g'ri hujum qiling.",
+          "consequence": "Fillar tartibsizlik keltirib chiqaradi, ammo yenicharlar safni ushlab turishadi. Jang qonli qirg'inga aylanadi."
         },
-        {
+        "feigned-retreat": {
           "text": "Ularni pozitsiyadan chiqarish uchun soxta chekinish qiling.",
-          "consequence": "Boyazid bunga aldanmaydigan darajada tajribali. U o'z pozitsiyasini mustahkamlaydi. Anqara qamali oylar davom etadi."
+          "consequence": "Boyazid ehtiyotkor, ammo uning sarkardalari shoshqaloq. Ular safni buzishadi, lekin sizning pistirmangiz kechikadi."
         }
-      ]
+      }
     },
-    {
+    "pyrrhic-victory": {
+      "title": "Qimmatga tushgan g'alaba (1402)",
+      "text": "Siz g'alaba qozondingiz, ammo dahshatli baho evaziga. Minglab eng yaxshi otliqlaringiz halok bo'ldi. Boyazid qochib qutuldi. G'arbga yo'l ochiq, lekin qo'shiningiz qon yo'qotmoqda.",
+      "choices": {
+        "consolidate": {
+          "text": "Yurishni to'xtating. Tiklanish uchun Samarqandga qayting.",
+          "consequence": "Siz imperiyangizni mustahkamlaysiz, ammo sur'atni yo'qotasiz. Yevropa omon qoladi."
+        },
+        "raid-pillage": {
+          "text": "Yollanma askarlarga haq to'lash uchun Anadoluni talon-taroj qiling.",
+          "consequence": "Siz shaharlarni yondirib yuborasiz. Xazinangiz to'ladi, ammo merosingiz dahshat merosi bo'lib qoladi."
+        }
+      }
+    },
+    "defense-of-samarkand": {
+      "title": "Amudaryoga chekinish (1403)",
+      "text": "Anqara yurishi muvaffaqiyatsiz tugadi. Boyazid qarshi hujumga o'tdi. Siz poytaxtingiz Samarqandga chekindingiz. Dushman Amudaryoga yaqinlashmoqda.",
+      "choices": {
+        "scorched-earth": {
+          "text": "Dalalarni yondiring. Ularga kuldan boshqa hech narsa qoldirmang.",
+          "consequence": "Usmonli qo'shini cho'lda ochlikdan qiriladi. Siz omon qolasiz, ammo yerlaringiz vayron bo'ladi."
+        },
+        "diplomatic-peace": {
+          "text": "Sulh so'rang. Boyazidga o'lpon taklif qiling.",
+          "consequence": "Tarix o'lpon to'lagan 'Buyuk' Temur ustidan kuladi. Imperiyangiz ichidan parchalanib ketadi."
+        }
+      }
+    },
+    "otrar-crisis": {
       "title": "Otrordagi qish (1405)",
-      "text": "1405 yil fevral. Buyuk Amir Temur Otrorda o'lim to'shagida yotibdi. Xitoy chegarasi haftalar uzoqlikda. Uning tabiblari xavfli yangi davolashni taklif qilishmoqda. Nima maslahat berasiz?",
-      "choices": [
-        {
-          "text": "Tajribaviy eliksirni qo'llang. Bu uni o'ldirishi yoki qutqarishi mumkin.",
-          "consequence": "Eliksir ish berdi! Temur tuzalib, qo'shinini Xitoyga boshlaydi. 'O'lmas Amir' vaqt chizig'i boshlanadi."
+      "text": "1405-yil fevral. Siz chodiringizda o'lim to'shagida yotibsiz. Xitoy chegarasi haftalar uzoqlikda. Umringizning yurishi taqdir tarozisida.",
+      "choices": {
+        "elixir": {
+          "text": "Alkimyogarning tajribaviy simob eliksirini iching.",
+          "consequence": "Tomirlaringizda olov yuguradi. Siz avvalgidan kuchliroq bo'lib uyg'onasiz. Bosqin davom etadi!"
         },
-        {
-          "text": "Unga dam bering va eng yomoniga tayyorlaning. Kotiblarni chaqiring.",
-          "consequence": "Temur vafot etadi, lekin so'nggi nafasi bilan aniq vasiyatnoma yozdiradi. 'Birlashgan Vorislik' vaqt chizig'i boshlanadi."
+        "write-will": {
+          "text": "Taqdirga tan bering. Aniq vorislik qonunini aytib yozdiring.",
+          "consequence": "Siz voris va kengash tayinlaysiz. Tinch o'lasiz, barqaror yo'l xaritasini qoldirib."
         },
-        {
-          "text": "Generallarga G'arbga qaytishni maslahat bering. Bu yomon alomat.",
-          "consequence": "Qo'shin Xitoy yurishini tashlab, Yevropani vayron qilish uchun qaytadi. 'Yevropa Balosi' vaqt chizig'i boshlanadi."
+        "turn-west": {
+          "text": "Qo'shinga G'arbga qaytishni buyuring. 'Xitoy juda uzoq.'",
+          "consequence": "Generallar hayron, ammo itoatkor. Qo'shin Yevropaga qarab orqaga yuradi."
         }
-      ]
+      }
     },
-    {
-      "title": "Harbiy Kengash (1405)",
-      "text": "Temur o'ldi. Qo'shin boshliqsiz. Shahzodalar qilichlarini yalang'ochlashmoqda. Siz Bosh Vazirsiz. Kimni qo'llab-quvvatlaysiz?",
-      "choices": [
-        {
-          "text": "Pir Muhammadni, Temurning tayinlangan vorisini qo'llab-quvvatlash.",
-          "consequence": "U kuchsiz va uzoqda. Imperiya darhol parchalanadi. (Tarixiy)"
+    "great-wall": {
+      "title": "Buyuk Devorni yorib o'tish (1406)",
+      "text": "Min mudofaasi mustahkam. Buyuk Devor qarshingizda turibdi. Artilleriyangiz joylashtirilgan. Qanday yorib o'tasiz?",
+      "choices": {
+        "concentrated-fire": {
+          "text": "Barcha porox artilleriyasini bitta darvozaga to'plang.",
+          "consequence": "Darvoza parchalanadi. Temuriylarning og'ir otliqlari ichkariga yopiriladi. Pekinga yo'l ochiq."
         },
-        {
-          "text": "Shohruhni, ziyoli o'g'ilni qo'llab-quvvatlash.",
-          "consequence": "U Hirotni saqlab qoladi va madaniy oltin davrni boshlaydi, ammo harbiy ustunlikni yo'qotadi."
-        },
-        {
-          "text": "Xalil Sultonni, xarizmatik jangchini qo'llab-quvvatlash.",
-          "consequence": "U Samarqandni egallaydi, lekin xazinani sevgi va urushga sovuradi."
+        "bribe-general": {
+          "text": "Min chegara qo'mondoniga oltin yuboring.",
+          "consequence": "Darvozalar tunda ochiladi. Siz qal'ani jangsiz egallaysiz."
         }
-      ]
+      }
     },
-    {
-      "title": "Astronomning Tanlovi (1449)",
-      "text": "Siz Temurning nabirasi Ulug'beksiz. Siz ajoyib olimsiz, lekin yomon generalsiz. O'g'lingiz Abdullatif sizning rasadxonangizni yomon ko'radigan diniy radikallar yordamida isyon ko'tarmoqda. Nima qilasiz?",
-      "choices": [
-        {
-          "text": "Taslim bo'lish va Makkaga hajga borishga ruxsat so'rash.",
-          "consequence": "O'g'lingiz yo'lda sizni o'ldirtiradi. Rasadxonangiz vayron qilinadi. (Tarixiy)"
+    "bosphorus-crossing": {
+      "title": "Bosfordan o'tish (1406)",
+      "text": "Siz Anadoluga qaytdingiz. Yevropa suvning narigi tomonida yotibdi. Veneksiyaliklar kemalar taklif qilishmoqda... ma'lum bir baho evaziga.",
+      "choices": {
+        "pay-venice": {
+          "text": "Qo'shiningizni tashish uchun veneksiyaliklarga to'lang.",
+          "consequence": "Siz Frakiyaga tushasiz. Yevropa titraydi."
         },
-        {
-          "text": "Sodiq qo'shinlaringizni to'plang va kurashing. Ilm aqidaparaslikdan ustun kelishi kerak!",
-          "consequence": "Siz qonli fuqarolar urushida g'alaba qozonasiz. Temuriylar Uyg'onishi davom etadi va erta ilmiy inqilobga olib keladi."
-        },
-        {
-          "text": "Yulduz jadvallaringiz va kitoblaringiz bilan Xitoyga qoching.",
-          "consequence": "Sizni Min imperatori kutib oladi. Sizning bilimingiz Xitoy ilmiy oltin davrini boshlab beradi."
+        "build-ships": {
+          "text": "Mahalliy aholini qayiqlardan ko'prik qurishga majbur qiling.",
+          "consequence": "Bu oylar oladi, ammo siz o'z shartlaringizda o'tasiz. Zarba mutlaq bo'ladi."
         }
-      ]
+      }
+    },
+    "succession-crisis": {
+      "title": "Shahzodalar Kengashi (1405)",
+      "text": "Temur vafot etdi. Vasiyatnoma o'qiladi, ammo shuhratparastlik chuqur ildiz otgan. Pir Muhammad voris, ammo u uzoqda.",
+      "choices": {
+        "enforce-will": {
+          "text": "Pir Muhammadni saralangan gvardiya bilan qo'llab-quvvatlang.",
+          "consequence": "Boshqa shahzodalar chekinishadi... hozircha. Mo'rt tinchlik saqlanadi."
+        },
+        "seize-power": {
+          "text": "Hokimiyatni Regent sifatida o'zingiz qo'lga oling.",
+          "consequence": "Fuqarolar urushi darhol boshlanadi. Imperiya yonadi."
+        }
+      }
+    },
+    "ulugh-beg-dilemma": {
+      "title": "Taxtdagi olim (1449)",
+      "text": "O'nlab yillar o'tgach. Ulug'bek Samarqandda hukmronlik qilmoqda. Uning o'g'li isyon ko'tarmoqda, shohni xudodan ko'ra yulduzlarga ko'proq ahamiyat beradi deb da'vo qilib.",
+      "choices": {
+        "fight-hard": {
+          "text": "Isyonni yollanma askarlar bilan bostiring.",
+          "consequence": "Siz g'alaba qozonasiz, ammo xazina bo'sh. Uyg'onish davri davom etadi."
+        },
+        "abdicate": {
+          "text": "Qon to'kilishining oldini olish uchun taxtdan voz keching.",
+          "consequence": "Sizni qatl qilishadi. Rasadxona vayron qilinadi."
+        }
+      }
     }
-  ]
+  }
 }

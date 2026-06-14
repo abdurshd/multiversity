@@ -1,0 +1,34 @@
+{
+  "title": "타임라인 비교",
+  "subtitle": "대체 역사의 장엄한 춤을 목격하세요. 타임라인을 나란히 비교하며 작은 변화가 수 세기에 걸쳐 어떻게 거대한 차이를 만들어내는지 발견하세요.",
+  "buttons": {
+    "add_timeline": "타임라인 추가",
+    "clear_all": "모두 지우기",
+    "animate": "애니메이션",
+    "add_first_timeline": "첫 타임라인 추가하기"
+  },
+  "sections": {
+    "selected_timelines": "선택된 타임라인",
+    "timeline_visualization": "타임라인 시각화",
+    "timeline_insights": "타임라인 인사이트",
+    "no_timelines_selected": "선택된 타임라인 없음",
+    "select_timelines_to_compare": "비교할 타임라인을 선택하세요"
+  },
+  "empty_state": {
+    "description": "역사가 어떻게 다르게 전개될 수 있었는지 보려면 여러 타임라인을 선택하세요. 평행 세계가 장엄한 시각화를 통해 그 비밀을 드러내는 모습을 지켜보세요."
+  },
+  "stats": {
+    "likely": "가능성",
+    "probability": "확률",
+    "events": "사건",
+    "selected": "선택됨",
+    "timeline": "타임라인",
+    "timelines": "타임라인"
+  },
+  "insights": {
+    "most_likely": "가장 유력함",
+    "earliest_divergence": "가장 이른 분기",
+    "most_events": "가장 많은 사건",
+    "diverges_in": "분기 시점"
+  }
+}

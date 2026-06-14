@@ -1,112 +1,150 @@
 {
   "meta": {
-    "title": "The COVID-19 Pandemic",
-    "period": "2019-Present",
-    "description": "A global health crisis and its alternative responses and outcomes",
-    "historical_context": "The COVID-19 pandemic killed millions, disrupted global society, and tested institutions worldwide. Different policy responses led to vastly different outcomes. The pandemic accelerated technological and social changes that will shape the 21st century. Alternative decisions could have prevented the pandemic entirely or made it far worse.",
-    "divergence_point": "Critical decisions in pandemic response that could have prevented spread or led to catastrophic outcomes"
+    "title": "The Pandemic",
+    "period": "2019-2023",
+    "description": "The years we stayed home. 😷🏠",
+    "historical_context": "A microscopic enemy.",
+    "divergence_point": "Wuhan Response"
   },
   "figures": {
-    "who_officials": {
-      "name": "WHO Leadership",
-      "role": "Global Health Coordinators",
-      "description": "The international health officials whose early warnings and coordination efforts shaped the global response."
+    "li-wenliang": {
+      "name": "Dr. Li Wenliang",
+      "role": "The Whistleblower",
+      "description": "Warned the world and paid the ultimate price. 🩺"
     },
-    "vaccine_developers": {
-      "name": "Vaccine Developers",
-      "role": "Scientists",
-      "description": "The researchers who developed effective vaccines in record time, potentially saving tens of millions of lives."
+    "anthony-fauci": {
+      "name": "Dr. Anthony Fauci",
+      "role": "The Doctor",
+      "description": "Trusted science over politics. 🔬"
     },
-    "political_leaders": {
-      "name": "National Leaders",
-      "role": "Decision Makers",
-      "description": "The diverse political leaders whose decisions determined how many lived or died in their countries."
+    "jacinda-ardern": {
+      "name": "Jacinda Ardern",
+      "role": "The Leader",
+      "description": "Proved that empathy constitutes strong leadership. 🇳🇿"
     }
   },
   "timelines": {
-    "early_containment": {
-      "title": "The Outbreak That Wasn't: Early Containment Success",
-      "description": "What if aggressive early containment prevented COVID-19 from becoming a pandemic?",
-      "divergence_description": "China implements aggressive contact tracing and lockdown in Wuhan in December 2019. International travel is immediately restricted.",
+    "total-containment": {
+      "title": "The Wuhan Scare 🛡️🌏",
+      "description": "The virus is contained in January 2020. No global pandemic.",
+      "divergence_description": "Early and total lockdown of Hubei province.",
+      "present_day_status": "COVID-19 is a trivia question. \"Remember that scary virus in China?\" Remote work is still a niche concept. 💼🚫",
       "events": {
-        "december_lockdown_2019": {
-          "title": "The Wuhan Response",
-          "description": "Chinese authorities act decisively when the first unusual pneumonia cases appear. Complete lockdown and contact tracing begin immediately.",
-          "impact": "The virus is contained within Wuhan. International spread is prevented."
-        },
-        "global_cooperation_2020": {
-          "title": "The Near Miss",
-          "description": "WHO coordinates international response. All nations implement border controls and testing. The outbreak is contained to China.",
-          "impact": "No pandemic. Hundreds of thousands of cases instead of hundreds of millions. Fewer than 10,000 deaths total."
-        },
-        "pandemic_prepared_2021": {
-          "title": "The Wake-Up Call",
-          "description": "The near-miss galvanizes global pandemic preparedness. Massive investments in surveillance, vaccines, and coordination systems.",
-          "impact": "Humanity is far better prepared for the next potential pandemic. Systems are in place that could have prevented COVID."
+        "virus-crushed": {
+          "title": "Virus Eliminated",
+          "description": "The WHO declares the outbreak over in March 2020.",
+          "impact": "Normalcy."
         }
       },
       "consequences": {
-        "short_term": "No global pandemic. Economic disruption is minimal and localized.",
-        "long_term": "Increased investment in pandemic preparedness. Earlier warning systems developed.",
-        "global_impact": "Millions of lives and trillions in economic damage are saved. Society continues without disruption."
+        "better-prepared": {
+          "short_term": "Relief",
+          "long_term": "Better pandemic treaties",
+          "global_impact": "A close call"
+        }
       },
-      "present_day_status": "The COVID-19 outbreak was successfully contained in early 2020, becoming a footnote rather than a defining event. The near-miss led to unprecedented investment in global health surveillance. When the next potential pandemic emerged in 2023, it was detected and contained within weeks. Remote work and digital transformation still occurred but more gradually."
+      "butterfly": {
+        "trump-reelection": {
+          "trigger": "Strong Economy",
+          "consequence": "Trump wins 2020 without COVID recession"
+        }
+      }
     },
-    "catastrophic_pandemic": {
-      "title": "The Second Black Death: Catastrophic Outcome",
-      "description": "What if COVID-19 had been more lethal and vaccines failed?",
-      "divergence_description": "The virus mutates to become more lethal. Vaccine development encounters insurmountable obstacles. The death toll is catastrophic.",
+    "black-death-variant": {
+      "title": "The Delta Collapse ☠️🏚️",
+      "description": "A lethal mutation destroys global civilization.",
+      "divergence_description": "The Delta variant is 20% lethal.",
+      "present_day_status": "People live in isolated villages. Strangers are shot on sight. Zoom is the only government. 💻🔫",
       "events": {
-        "lethal_mutation_2020": {
-          "title": "The Delta Horror",
-          "description": "A mutation in mid-2020 increases COVID-19's fatality rate to 15%. Health systems collapse worldwide.",
-          "impact": "Hundreds of millions die. Social order breaks down in many countries. Economic depression."
-        },
-        "vaccine_failure_2021": {
-          "title": "The Lost Hope",
-          "description": "Vaccines prove ineffective against new variants. The virus becomes endemic at high lethality. Billions infected over time.",
-          "impact": "Modern society faces its greatest challenge since the World Wars. Population declines significantly."
-        },
-        "new_normal_2025": {
-          "title": "The Decimation",
-          "description": "By 2025, COVID-19 has killed over 300 million people globally. Society is permanently changed. Isolation becomes the norm.",
-          "impact": "Global population decline. Massive economic contraction. Technology advances to enable isolated living."
+        "societal-breakdown": {
+          "title": "Great Panic",
+          "description": "Supply chains fail. Cities empty.",
+          "impact": "Collapse."
         }
       },
       "consequences": {
-        "short_term": "Catastrophic death toll overwhelms societies. Economic collapse. Political instability.",
-        "long_term": "Permanent population decline. Society reorganizes around minimizing human contact.",
-        "global_impact": "Comparable to the Black Death. Civilization survives but is fundamentally transformed."
+        "deurbanization": {
+          "short_term": "Flight to country",
+          "long_term": "Feudalism returns",
+          "global_impact": "Dark Age"
+        }
       },
-      "present_day_status": "The catastrophic COVID-19 pandemic killed over 400 million people by 2025. Global population declined for the first time since the Black Death. Extensive automation and remote work became mandatory. Dense cities were largely abandoned. Birth rates collapsed further. Humanity is slowly rebuilding but society remains isolated and traumatized."
+      "butterfly": {
+        "local-internet": {
+          "trigger": "Fragile web",
+          "consequence": "Mesh networks replace the global internet"
+        }
+      }
     },
-    "coordinated_response": {
-      "title": "The Unity Pandemic: Perfect Global Cooperation",
-      "description": "What if all nations coordinated perfectly in responding to COVID-19?",
-      "divergence_description": "Nations set aside competition and coordinate completely. Resources are shared. Information flows freely.",
+    "open-source-vaccine": {
+      "title": "Vaccine for All 💉🌍",
+      "description": "Patents are waived. The Global South is vaccinated by mid-2021.",
+      "divergence_description": "US/EU force IP waiver.",
+      "present_day_status": "The \"Helsinki Accords\" guarantee medicine as a human right. The Global South is rising fast. 🌍🚀",
       "events": {
-        "global_accord_2020": {
-          "title": "The Geneva Health Accord",
-          "description": "In March 2020, all major nations sign an unprecedented agreement to coordinate pandemic response completely. Borders close simultaneously, testing protocols are standardized.",
-          "impact": "Coordinated action dramatically reduces spread. The curve is truly flattened."
-        },
-        "vaccine_triumph_2020": {
-          "title": "Operation Warp Speed Global",
-          "description": "Pooled resources and shared research accelerate vaccine development. Vaccines are available by December 2020 and distributed equitably worldwide.",
-          "impact": "Pandemic is controlled by mid-2021. Death toll is one-tenth of our timeline."
-        },
-        "new_cooperation_2022": {
-          "title": "The Pandemic Dividend",
-          "description": "Success in beating COVID-19 creates momentum for global cooperation on climate change, poverty, and other challenges.",
-          "impact": "The pandemic becomes a turning point toward genuine global governance and cooperation."
+        "global-immunity": {
+          "title": "Herd Immunity",
+          "description": "The virus runs out of hosts. Variants stop evolving.",
+          "impact": "End of Pandemic."
         }
       },
       "consequences": {
-        "short_term": "Coordinated response minimizes deaths and economic damage. Pandemic controlled quickly.",
-        "long_term": "Success creates template for global cooperation on other challenges.",
-        "global_impact": "COVID-19 becomes a catalyst for unprecedented international coordination and trust."
+        "global-trust": {
+          "short_term": "North-South trust restored",
+          "long_term": "Stronger WHO",
+          "global_impact": "Health equity"
+        }
       },
-      "present_day_status": "The coordinated global response to COVID-19 kept deaths under 500,000 and ended the pandemic by late 2021. The success created momentum for cooperation on climate change, leading to binding emissions agreements. The International Pandemic Response Treaty established permanent global health coordination. Trust in international institutions increased significantly."
+      "butterfly": {
+        "biotech-boom": {
+          "trigger": "Shared mRNA tech",
+          "consequence": "Malaria and HIV cured by 2025"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "wuhan-warning": {
+      "title": "The Whistleblower (Dec 2019)",
+      "text": "Wuhan. Dr. Li Wenliang has posted a warning about \"SARS-like pneumonia\". The police summon you. Do you silence him?",
+      "choices": {
+        "silence": {
+          "text": "Silence him. Prevent panic.",
+          "consequence": "The virus spreads in secret. The global pandemic becomes inevitable."
+        },
+        "listen": {
+          "text": "Listen to him. Quarantine the city NOW.",
+          "consequence": "It is drastic, but effective. The virus is trapped."
+        }
+      }
+    },
+    "lockdown-decision": {
+      "title": "To Close or Not to Close (March 2020)",
+      "text": "The virus is here. Scientists want a lockdown. The economy will crash. What is more important?",
+      "choices": {
+        "lockdown": {
+          "text": "Lock it down. Save lives.",
+          "consequence": "The economy tanks, but hospitals survive. (Historical)"
+        },
+        "open": {
+          "text": "Keep it open. \"It's just the flu.\"",
+          "consequence": "Mass death. Healthcare collapse. You are voted out."
+        }
+      }
+    },
+    "vaccine-equity": {
+      "title": "The Vaccine Apartheid (2021)",
+      "text": "We have the vaccine. The Global South has none. Pharma wants to protect patents.",
+      "choices": {
+        "protect-patents": {
+          "text": "Protect the patents. Incentivize innovation.",
+          "consequence": "Poor countries wait. Omicron emerges from the unvaccinated."
+        },
+        "waive-patents": {
+          "text": "Waive the patents. Share the recipe.",
+          "consequence": "Factories open worldwide. The virus is cornered."
+        }
+      }
     }
   }
 }

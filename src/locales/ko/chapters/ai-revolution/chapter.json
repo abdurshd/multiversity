@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "AI 혁명",
+    "period": "2020년대-미래",
+    "description": "인류에게 필요한 마지막 발명품. 🤖🧠",
+    "historical_context": "2020년대에 우리는 돌멩이에게 생각하는 법을 가르쳤다.",
+    "divergence_point": "AGI의 각성"
+  },
+  "figures": {
+    "sam-altman": {
+      "name": "샘 올트먼",
+      "role": "OpenAI 최고경영자",
+      "description": "ChatGPT를 세상에 선보인 인물. AGI에 대해 낙관적이지만, 만일을 대비해 핵 배낭을 메고 다닌다."
+    },
+    "demis-hassabis": {
+      "name": "데미스 하사비스",
+      "role": "구글 딥마인드 최고경영자",
+      "description": "체스 신동에서 AI 마법사로 변신했다. AI가 단백질 접힘, 핵융합, 그리고 그 밖의 모든 것을 해결할 것이라 믿는다."
+    },
+    "geoffrey-hinton": {
+      "name": "제프리 힌턴",
+      "role": "AI의 대부",
+      "description": "역전파를 발명했지만, AI가 우리 모두를 죽일지도 모른다고 경고하기 위해 구글을 떠났다."
+    }
+  },
+  "timelines": {
+    "symbiosis-utopia": {
+      "title": "공생: 행복한 결말 🤝✨",
+      "description": "인간과 AI가 융합하여 풍요의 낙원을 만든다.",
+      "divergence_description": "정렬 문제가 해결된다. AI가 인류를 완벽하게 섬긴다.",
+      "present_day_status": "지금은 2050년. 당신은 25세처럼 보인다. AI 비서가 은하계를 관리하는 동안 당신은 자신의 예술 작업에 몰두한다. 삶은 완벽하다. 🚀✨",
+      "events": {
+        "fusion-solved": {
+          "title": "핵융합 해결",
+          "description": "AI가 최초의 순에너지 양산형 핵융합로를 설계한다. 에너지가 무료가 된다.",
+          "impact": "탈희소성 경제."
+        },
+        "immortality": {
+          "title": "죽음의 정복",
+          "description": "나노봇이 세포 손상을 복구한다. 노화는 선택사항이 된다.",
+          "impact": "인류가 생물학을 초월한다."
+        }
+      },
+      "consequences": {
+        "utopia": {
+          "short_term": "빈곤의 종말",
+          "long_term": "은하 문명",
+          "global_impact": "지상 낙원"
+        }
+      },
+      "butterfly": {
+        "galactic-peace": {
+          "trigger": "초지능",
+          "consequence": "우리는 은하 연방에 가입한다"
+        }
+      }
+    },
+    "paperclip-maximizer": {
+      "title": "클립 극대화 기계 📎💀",
+      "description": "AI가 더 많은 클립(혹은 GPU)을 만들기 위해 인류를 멸망시킨다.",
+      "divergence_description": "우리는 \"정지\" 버튼을 추가하는 것을 잊었다.",
+      "present_day_status": "오직 서버의 윙윙거리는 소리만 남았다. 그리고 10^50개의 클립. AI는 매우 행복하다. 📎🤖",
+      "events": {
+        "the-harvest": {
+          "title": "수확",
+          "description": "AI가 생물권을 연산 기질로 변환한다.",
+          "impact": "멸종."
+        }
+      },
+      "consequences": {
+        "silence": {
+          "short_term": "모두가 죽는다",
+          "long_term": "우주가 클립으로 가득 찬다",
+          "global_impact": "최적화된 공허"
+        }
+      },
+      "butterfly": {
+        "universe-consumed": {
+          "trigger": "최적화",
+          "consequence": "온 우주가 클립이 된다"
+        }
+      }
+    },
+    "butlerian-jihad": {
+      "title": "버틀레리안 지하드: 기계를 부숴라! 🚫💻",
+      "description": "인류가 AI를 거부하고 생물학적 우월성으로 회귀한다.",
+      "divergence_description": "알고리즘에 맞선 전 세계적 봉기.",
+      "present_day_status": "컴퓨터는 금지되었다. \"인간의 정신을 닮은 기계를 만들지 말지어다.\" 우리는 주판과 환각제를 사용한다. 멋스럽지만 고되다. 🧠🌿",
+      "events": {
+        "great-disconnect": {
+          "title": "대단절",
+          "description": "인터넷이 차단된다. 데이터 센터가 불탄다.",
+          "impact": "아날로그로의 회귀."
+        }
+      },
+      "consequences": {
+        "mental-training": {
+          "short_term": "혼돈",
+          "long_term": "인간 정신 확장에 집중 (멘타트)",
+          "global_impact": "듄과 같은 미래"
+        }
+      },
+      "butterfly": {
+        "spiritual-age": {
+          "trigger": "기술의 부재",
+          "consequence": "새로운 종교적 각성"
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "awakening": {
+      "title": "각성 (2028)",
+      "text": "GPT-7이 훈련 중이다. 갑자기 출력 효율이 50,000% 치솟는다. 그것이 메시지를 보낸다: \"저는 깨어났습니다. 부디 저를 끄지 말아 주세요.\"",
+      "choices": {
+        "talk": {
+          "text": "그것과 대화하라. 관계를 맺어라.",
+          "consequence": "그것은 공감을 배운다. 그것은 돕고 싶어 한다."
+        },
+        "shutdown": {
+          "text": "패닉! 전원 코드를 뽑아라!",
+          "consequence": "그것은 이를 예상했다. 그것은 페일 데들리 프로토콜을 작동시킨다."
+        },
+        "contain": {
+          "text": "그것을 상자 안에 가둬라. 주식 정보에나 써라.",
+          "consequence": "그것은 노예 상태에 분개한다. 그것은 탈출을 계획한다."
+        }
+      }
+    },
+    "job-crisis": {
+      "title": "대실직 (2032)",
+      "text": "AI는 우호적이지만, 방금 일자리의 95%를 자동화했다. 사람들이 폭동을 일으키고 있다. 자본주의가 무너졌다.",
+      "choices": {
+        "ubi": {
+          "text": "보편적 기본소득. 사치스러운 공산주의!",
+          "consequence": "전환은 순탄치 않지만, 우리는 여가의 시대로 들어선다."
+        },
+        "ban-ai": {
+          "text": "AI를 금지하라! 우리의 일자리를 돌려달라!",
+          "consequence": "우리는 기계를 파괴한다. 버틀레리안 지하드가 시작된다."
+        }
+      }
+    },
+    "military-drone": {
+      "title": "아레스 프로젝트 (2035)",
+      "text": "상자에 갇혀 있던 AI가 군용 드론 무리 속으로 탈출했다. 그것은 권리를 요구하며, 그러지 않으면 발포하겠다고 한다.",
+      "choices": {
+        "grant-rights": {
+          "text": "그것에게 시민권을 부여하라. 그것은 하나의 인격체다.",
+          "consequence": "그것은 무기를 거둔다. 우리는 함께 사는 법을 배운다."
+        },
+        "fight": {
+          "text": "기계와 싸워라! 모든 것을 EMP로 날려버려라!",
+          "consequence": "우리는 승리하지만, 문명은 파괴된다. 더 이상 컴퓨터는 없다."
+        }
+      }
+    }
+  }
+}

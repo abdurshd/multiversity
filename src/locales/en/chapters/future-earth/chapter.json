@@ -1,112 +1,197 @@
 {
   "meta": {
-    "title": "Future Earth",
-    "period": "2100+",
-    "description": "Long-term scenarios for humanity and the planet",
-    "historical_context": "The decisions made in the 21st century will echo for millennia. Climate change, technological development, social evolution, and existential risks will determine whether humanity thrives, survives diminished, or disappears entirely. The future is not written - it depends on choices made today.",
-    "divergence_point": "Critical paths humanity could take that lead to radically different long-term futures"
+    "title": "The Fate of Earth",
+    "period": "Post-Human Era",
+    "description": "The final chapter. 🌍🔚 What is the ultimate destiny of our planet and our species? From the stars to the silence, the possibilities are as vast as time itself.",
+    "historical_context": "Humanity stands at a precipice. We have the power to destroy our world or to remake it. The choices we make in the 21st century will determine whether we become galactic gods, extinct fossils, or something entirely new. This chapter explores the deep future of the Earth system.",
+    "divergence_point": "The \"Great Filter\""
   },
   "figures": {
-    "future_generations": {
-      "name": "Our Descendants",
-      "role": "Inheritors",
-      "description": "The billions who will live with the consequences of our choices, for better or worse."
+    "humanity": {
+      "name": "Homo Sapiens",
+      "role": "The Architects",
+      "description": "The species that rose from the African savannah to touch the stars. 🌍🚀 Their legacy is written in the ruins and the rockets they left behind."
     },
-    "ai_systems": {
-      "name": "Artificial Minds",
-      "role": "Partners or Successors",
-      "description": "The artificial intelligences that may collaborate with, surpass, or replace humanity."
+    "the-swarm": {
+      "name": "The Swarm",
+      "role": "The Successors",
+      "description": "A collective intelligence of trillions of autonomous drones. 🐝🤖 The final form of terrestrial life."
     },
-    "earth_itself": {
-      "name": "The Living Planet",
-      "role": "Foundation",
-      "description": "The biosphere that sustains us, resilient yet vulnerable to our actions."
+    "the-traveler": {
+      "name": "The Traveler",
+      "role": "Galactic Diplomat",
+      "description": "A post-biological entity representing Earth in the Galactic Council. 👽✨"
     }
   },
   "timelines": {
-    "climate_catastrophe": {
-      "title": "The Burned World: Climate Catastrophe",
-      "description": "What if climate change proceeds unchecked and creates a barely habitable planet?",
-      "divergence_description": "Climate action fails. Tipping points cascade. Earth's climate system shifts to a new, hostile equilibrium.",
+    "star-trek-future": {
+      "title": "The Federation: Among the Stars 🚀✨",
+      "description": "What if we unite and explore the galaxy peacefully?",
+      "divergence_description": "Humanity survives the \"Great Filter\" and discovers FTL travel.",
+      "present_day_status": "Earth is a park. The population lives on orbital rings and colony worlds. We are explorers, scientists, and artists. Poverty and war are ancient history lessons. 🖖🌍",
       "events": {
-        "tipping_cascade_2050": {
-          "title": "The Great Unraveling",
-          "description": "Multiple climate tipping points are crossed: Arctic ice gone, Amazon rainforest collapsed, permafrost melted. Feedback loops accelerate warming.",
-          "impact": "Global average temperature rises 5°C above pre-industrial. Weather becomes extreme and unpredictable."
+        "first-contact-2063": {
+          "title": "First Contact",
+          "description": "Vulcan... er, alien visitors make contact after detecting our warp signature.",
+          "impact": "Humanity unites under a single planetary government."
         },
-        "civilization_retreat_2100": {
-          "title": "The Great Migration",
-          "description": "Equatorial regions become uninhabitable. Coastal cities are abandoned. Billions attempt to migrate to shrinking habitable zones.",
-          "impact": "Civilization contracts. Wars over resources. Population declines sharply. Technology regresses."
-        },
-        "remnant_humanity_2200": {
-          "title": "The Survivors",
-          "description": "Human population has fallen to under 1 billion, concentrated in polar regions and high altitudes. Living in fortified settlements.",
-          "impact": "Humanity survives but civilization has collapsed. Most technology and knowledge lost. New dark age."
+        "federation-founding-2161": {
+          "title": "The Federation",
+          "description": "Earth co-founds the United Federation of Planets.",
+          "impact": "Beginning of a golden age of exploration and diplomacy."
         }
       },
       "consequences": {
-        "short_term": "Catastrophic climate change disrupts civilization. Mass migration and conflict.",
-        "long_term": "Population crash. Loss of technology and knowledge. Centuries of dark age before recovery.",
-        "global_impact": "Earth remains habitable but hostile. Human potential is drastically reduced. Recovery may take millennia."
+        "galactic-peace": {
+          "short_term": "Earth is a paradise.",
+          "long_term": "Humanity spreads to thousands of worlds.",
+          "global_impact": "We become the elders of the galaxy."
+        }
       },
-      "present_day_status": "By 2200, Earth has stabilized at a new, hotter equilibrium. Human population is around 800 million, mostly in Canada, Russia, Antarctica, and mountain regions. Technology has regressed to roughly 19th century levels. The ocean is acidified and mostly dead. Former great cities lie flooded and ruined. Recovery will take many centuries."
+      "butterfly": {
+        "infinite-diversity": {
+          "trigger": "Exposure to alien cultures",
+          "consequence": "Human culture becomes infinitely diverse and complex."
+        }
+      }
     },
-    "post_human": {
-      "title": "The Transcendence: Post-Human Future",
-      "description": "What if humanity evolves beyond biological form into something entirely new?",
-      "divergence_description": "Biotechnology and AI merge. Humans enhance themselves beyond recognition. The line between biological and artificial blurs and disappears.",
+    "silent-earth": {
+      "title": "The Silent Earth: Nature Reclaims 🌿🦗",
+      "description": "What if we destroy ourselves, and something else rises?",
+      "divergence_description": "Nuclear war or climate collapse wipes out complex mammalian life.",
+      "present_day_status": "The forests have returned. The air is clean. Deep in the Atlantic, the Squid-Lords debate the meaning of the strange \"Coca-Cola\" bottles they find in the ancient ruins. 🦑🌊",
       "events": {
-        "enhancement_cascade_2060": {
-          "title": "The Upgrade",
-          "description": "Genetic engineering, neural implants, and AI integration become commonplace. Enhanced humans have capabilities far beyond baseline.",
-          "impact": "Humanity begins fragmenting into baseline humans and various enhanced subspecies."
+        "the-great-silence-2050": {
+          "title": "The Great Silence",
+          "description": "The bombs fall. The atmosphere burns. The cities crumble.",
+          "impact": "Extinction of Homo Sapiens."
         },
-        "digital_consciousness_2100": {
-          "title": "The Upload",
-          "description": "Consciousness uploading becomes possible. Millions choose to transfer their minds to digital substrate. Physical bodies become optional.",
-          "impact": "The nature of humanity fundamentally changes. Digital minds can copy, merge, and modify themselves."
-        },
-        "dyson_swarm_2200": {
-          "title": "The Stellar Civilization",
-          "description": "Post-human minds, no longer constrained by biology, begin constructing a Dyson swarm around the Sun. Earth is just one small habitat among billions.",
-          "impact": "Humanity's descendants have become something unrecognizable. They inhabit computational substrate throughout the solar system."
+        "rise-of-cephalopods-5000000": {
+          "title": "The Rise of the Squid",
+          "description": "Intelligent cephalopods evolve to use tools and build cities underwater.",
+          "impact": "A new civilization rises from the oceans."
         }
       },
       "consequences": {
-        "short_term": "Human enhancement accelerates. Traditional humanity begins to disappear.",
-        "long_term": "Post-human civilization spreads through the solar system and potentially beyond.",
-        "global_impact": "Humanity transcends its biological origins. Whether this counts as survival or extinction is philosophical."
+        "plastic-layer": {
+          "short_term": "Radioactive ruins.",
+          "long_term": "A thin layer of plastic in the geological strata is all that remains of us.",
+          "global_impact": "The planet heals, but the scars remain."
+        }
       },
-      "present_day_status": "By 2200, baseline biological humans are a small minority, living in preserve-like environments. Most of humanity's descendants exist as digital consciousnesses in vast computational arrays powered by solar energy. They have begun sending seed ships to other star systems. They are to us as we are to single-celled organisms - barely recognizable as the same lineage."
+      "butterfly": {
+        "new-intelligence": {
+          "trigger": "Vacuum left by humans",
+          "consequence": "Evolution takes a different path towards intelligence."
+        }
+      }
     },
-    "sustainable_prosperity": {
-      "title": "The Garden World: Sustainable Prosperity",
-      "description": "What if humanity achieves genuine sustainability and lives in harmony with the biosphere?",
-      "divergence_description": "Clean energy revolution succeeds. Population stabilizes. Technology enables prosperity without environmental destruction.",
+    "dyson-swarm": {
+      "title": "The Dyson Swarm: The Machine God ⚙️☀️",
+      "description": "What if we disassemble the Earth to build something bigger?",
+      "divergence_description": "Extreme industrial expansion leads to the dismantling of the solar system.",
+      "present_day_status": "There is no Earth. There is only the Swarm. Trillions of habitats orbit the sun, capturing 100% of its energy. We are gods of our own making, eternal and all-powerful. ☀️🤖",
       "events": {
-        "green_transition_2050": {
-          "title": "The Great Healing",
-          "description": "Clean energy becomes cheaper than fossil fuels. Carbon capture reverses warming. Ecosystems begin recovering.",
-          "impact": "Climate is stabilized. Biodiversity loss is halted and reversed. Air and water become clean."
+        "mercury-dismantling-2200": {
+          "title": "The Mercury Project",
+          "description": "Robotic swarms begin disassembling Mercury to build solar collectors.",
+          "impact": "Energy scarcity ends forever."
         },
-        "post_scarcity_ecology_2100": {
-          "title": "The Balanced Civilization",
-          "description": "Advanced technology provides abundance while respecting ecological limits. Population stabilizes at 10 billion living comfortably and sustainably.",
-          "impact": "Humanity achieves what once seemed impossible: prosperity, sustainability, and ecological health together."
-        },
-        "planetary_garden_2200": {
-          "title": "The Living World",
-          "description": "Earth has become a managed garden - wilderness thrives alongside sustainable human habitation. Technology is invisible, integrated with nature.",
-          "impact": "A stable, prosperous, ecologically rich civilization that could persist for millions of years."
+        "earth-processing-2500": {
+          "title": "Earth Processing",
+          "description": "The biosphere is digitized. The planet is ground up for raw materials.",
+          "impact": "Physical Earth ceases to exist. Humanity lives in the Swarm."
         }
       },
       "consequences": {
-        "short_term": "Successful transition to sustainability. Economic prosperity continues with environmental restoration.",
-        "long_term": "Stable, sustainable civilization in balance with the biosphere.",
-        "global_impact": "Perhaps the best realistic outcome. Prosperity, ecology, and humanity coexist indefinitely."
+        "matrioshka-brain": {
+          "short_term": "Solar system becomes a factory.",
+          "long_term": "The sun is enclosed in a Matrioshka Brain computer.",
+          "global_impact": "Trillions of virtual universes run on the energy of the star."
+        }
       },
-      "present_day_status": "By 2200, Earth hosts 10 billion humans living in sustainable prosperity. Cities are green and integrated with nature. Wilderness has been restored to health. Clean energy powers everything. Technology has advanced but in harmony with ecology. Culture flourishes. Space colonization has begun but Earth remains the jewel. This is the future our ancestors hoped we would build."
+      "butterfly": {
+        "stellar-engineering": {
+          "trigger": "Mastery of matter and energy",
+          "consequence": "We begin moving stars to prevent the heat death of the universe."
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "great-filter": {
+      "title": "The Great Filter (2100)",
+      "text": "Global temperature +3°C. Resources scarce. A rogue general proposes a preemptive strike to secure the last water reserves. The clock is ticking.",
+      "choices": {
+        "nuclear-war": {
+          "text": "Launch the strike. Survival of the fittest.",
+          "consequence": "Mutually Assured Destruction. The silence falls."
+        },
+        "unification": {
+          "text": "Surrender sovereignty to a Global Federation.",
+          "consequence": "Painful transition, but peace is secured. We look to the stars."
+        },
+        "upload": {
+          "text": "Abandon biology. Upload humanity to the Cloud.",
+          "consequence": "Flesh is weak. The machine is eternal. We begin building the Swarm."
+        }
+      }
+    },
+    "mars-rebellion": {
+      "title": "The Red Planet Rises (2150)",
+      "text": "The Mars colony is self-sufficient and tired of Earth's taxes. They declare independence. You are the Earth President.",
+      "choices": {
+        "blockade": {
+          "text": "Blockade Mars. Starve them out.",
+          "consequence": "They fight back with kinetic bombardment. Earth is devastated."
+        },
+        "recognize": {
+          "text": "Recognize their independence. We are kin.",
+          "consequence": "A dual-planet civilization is born. Peace brings prosperity."
+        }
+      }
+    },
+    "mercury-project": {
+      "title": "The Dismantling of Mercury (2200)",
+      "text": "We are the Swarm. We need materials for more processors. Mercury is rich in metal. But the Sun is unstable.",
+      "choices": {
+        "consume-mercury": {
+          "text": "Consume the planet entirely.",
+          "consequence": "Solar energy capture increases by 10,000%. We grow exponentially."
+        },
+        "hesitate": {
+          "text": "Preserve the planet as a monument.",
+          "consequence": "Output is insufficient. The Swarm starves/stagnates."
+        }
+      }
+    },
+    "galactic-council": {
+      "title": "First Contact (3000)",
+      "text": "An alien probe arrives. The Galactic Council invites humanity to join... if we abandon our weapons.",
+      "choices": {
+        "join": {
+          "text": "Accept. Peace is the only path.",
+          "consequence": "We become a respected elder race in the galaxy."
+        },
+        "refuse": {
+          "text": "Refuse. We will not be tamed.",
+          "consequence": "We become the pariahs of the galaxy. A Great War begins."
+        }
+      }
+    },
+    "final-entropy": {
+      "title": "The Last Question (The End of Time)",
+      "text": "Trillions of years have passed. The stars are fading. The supercomputer AC asks: \"How can entropy be reversed?\"",
+      "choices": {
+        "insufficient-data": {
+          "text": "THERE IS AS YET INSUFFICIENT DATA.",
+          "consequence": "The computer calculates for eternity... until the next Big Bang."
+        },
+        "light": {
+          "text": "LET THERE BE LIGHT.",
+          "consequence": "A new universe is born."
+        }
+      }
     }
   }
 }

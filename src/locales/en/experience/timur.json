@@ -1,0 +1,498 @@
+{
+  "title": "The Iron Emir's Last Campaign",
+  "era": "Samarkand · 1404 AD",
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "Samarkand, in the year 1404. Jewel of the Silk Road, capital of an empire stretching from Delhi to Damascus."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "Its builder is Amir Timur — Tamerlane to his enemies — the last great conqueror of the steppe. He is sixty-eight years old, and he is not finished."
+        },
+        "2": {
+          "speaker": "The Chronicle",
+          "text": "Beneath the turquoise domes his architects raise monuments, while in the war camps beyond the walls, two hundred thousand soldiers sharpen their blades."
+        },
+        "3": {
+          "speaker": "The Chronicle",
+          "text": "History records that he marched east against Ming China — and died of fever at Otrar before striking a single blow. His empire shattered among his heirs."
+        },
+        "4": {
+          "speaker": "The Chronicle",
+          "text": "But tonight, in this reality, the dice have not yet been cast. Walk his city. Then sit at his war council — and choose."
+        }
+      }
+    },
+    "explore-city": {
+      "prompt": "Explore Samarkand — drag to look around, click the glowing markers. The war council awaits.",
+      "hotspots": {
+        "registan": {
+          "label": "Registan Square",
+          "title": "The Registan",
+          "description": "The heart of the city. Merchants from Cathay, Persia and the Rus trade under the gaze of madrasahs sheathed in lapis tile. Every brick was paid for by conquest — Timur deported the finest artisans of every city he broke."
+        },
+        "mosque": {
+          "label": "Bibi-Khanym Mosque",
+          "title": "Bibi-Khanym Mosque",
+          "description": "Raised in five years with stone hauled by ninety-five elephants from India. Timur ordered its portal torn down and rebuilt — twice — because it was not magnificent enough. A monument to ambition that outpaces even stone."
+        },
+        "mausoleum": {
+          "label": "Gur-e-Amir",
+          "title": "Gur-e-Amir — the Tomb That Waits",
+          "description": "A mausoleum built for a beloved grandson, dead before his time. The court whispers that the Emir will lie here himself one day. On its future jade cenotaph, legend will carve: \"When I rise from the dead, the world shall tremble.\""
+        },
+        "council": {
+          "label": "The War Council",
+          "title": "The Council of Samarkand",
+          "description": "Around the fire sit the amirs of the tumens, the princes of the blood, the spymasters of three continents. Maps of China, of Anatolia, of the empire itself lie unrolled. The Emir raises his hand for silence. The moment of divergence has come."
+        }
+      }
+    },
+    "council-choice": {
+      "title": "The Council of Samarkand · Winter 1404",
+      "prompt": "The Emir asks: where does the empire ride?",
+      "options": {
+        "east": {
+          "label": "March East — Conquer Ming China",
+          "description": "The greatest prize on earth. Two hundred thousand riders against the oldest empire in the world. But the road crosses the winter steppe that killed him in our history…"
+        },
+        "consolidate": {
+          "label": "Consolidate — Forge the Succession",
+          "description": "No more campaigns. Name an heir, bind the amirs with law and marriage, turn an army of conquest into an empire of administration. Boring. Unprecedented. Possibly immortal."
+        },
+        "west": {
+          "label": "Turn West — The Gates of Europe",
+          "description": "Ankara broke the Ottomans once. Finish them, cross the straits, and put the horsetail standard over a divided, plague-weakened Europe before its Renaissance can begin."
+        }
+      }
+    },
+    "east-march": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "January 1405. The Grand Army crawls east through the worst winter in living memory. The Syr Darya is frozen solid enough to march an army across."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "At Otrar, the cold finds the Emir. Fever. The physicians burn herbs and watch the tent flap. The whole campaign — the whole century — holds its breath."
+        },
+        "2": {
+          "speaker": "Amir Shah Malik",
+          "text": "Lord — the men can winter here. China has stood two thousand years; it will wait one more season. Or we press on now, while the rivers are still roads of ice."
+        }
+      }
+    },
+    "otrar-choice": {
+      "title": "Otrar · The Fever Night, February 1405",
+      "prompt": "In our history, Timur waited at Otrar — and died there. What happens in this one?",
+      "options": {
+        "press-on": {
+          "label": "Defy the Fever — March at Dawn",
+          "description": "Movement is life. Break camp, cross the ice, and let the campaign's fire burn the sickness out. The army rides for the Great Wall."
+        },
+        "wait": {
+          "label": "Winter at Otrar — As History Did",
+          "description": "Rest. Recover. Trust the physicians and the spring. (This is the road our own timeline took. You know where it leads.)"
+        }
+      }
+    },
+    "otrar-death": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "The fever deepens. On the 18th of February, 1405, Amir Timur dies at Otrar — exactly as he did in our world."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "The Grand Army melts away from the Chinese road. Grandsons turn on uncles. Within a decade the empire is a memory quarreled over by princes."
+        },
+        "2": {
+          "speaker": "The Chronicle",
+          "text": "Some timelines, it seems, have a current. You chose the historical channel — and history flowed down it."
+        }
+      }
+    },
+    "wall-battle": {
+      "battle": {
+        "name": "The Breach of the Great Wall",
+        "objective": "Spring 1405. The Grand Army stands before the Ming frontier. Break the garrison army at the wall and the road to Beijing lies open. Rout — or be routed.",
+        "player": {
+          "name": "Timurid Grand Army"
+        },
+        "enemy": {
+          "name": "Ming Border Army"
+        },
+        "events": {
+          "breach": {
+            "title": "The Wall Must Fall",
+            "prompt": "The Ming line anchors on the fortifications. Your engineers await the order.",
+            "options": {
+              "catapults": {
+                "label": "Unleash the Catapults",
+                "description": "A barrage of stone shatters their massed ranks. Loud, brutal, effective."
+              },
+              "tunnels": {
+                "label": "Sappers and Tunnels",
+                "description": "Undermine quietly. Your whole army fights harder once the wall's shadow no longer frightens it."
+              },
+              "frontal": {
+                "label": "Glory — Frontal Assault",
+                "description": "Ladders and fury. The bards will sing of it; the widows will not."
+              }
+            }
+          },
+          "flank": {
+            "title": "The Reserve Tumen",
+            "prompt": "Ten thousand veteran riders wait behind the dunes. Commit them?",
+            "options": {
+              "flank-now": {
+                "label": "Release the Flank Riders",
+                "description": "The classic Timurid hammer — cavalry erupting from the flank into their archers."
+              },
+              "hold-reserve": {
+                "label": "Hold Them in Reserve",
+                "description": "Patience. A shield behind your line stiffens every spine in front of it."
+              }
+            }
+          },
+          "rally": {
+            "title": "The Line Wavers",
+            "prompt": "Your center is bleeding. The Emir himself rides forward — what is the order?",
+            "options": {
+              "fire-arrows": {
+                "label": "Fire Arrows — Burn Their Will",
+                "description": "The sky itself catches fire. Archers loose burning shafts into the Ming mass."
+              },
+              "emir-rides": {
+                "label": "The Emir Rides to the Standard",
+                "description": "Sixty-eight years old, sword drawn, under the horsetail banner. Morale becomes a weapon."
+              }
+            }
+          }
+        }
+      }
+    },
+    "beijing-falls": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "The wall is breached. The garrison army breaks and the gates of the Middle Kingdom swing open one by one."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "By 1407, Beijing falls. The Yongle Emperor dies defending his capital, and a Timurid prince is enthroned with the Mandate of Heaven."
+        },
+        "2": {
+          "speaker": "The Chronicle",
+          "text": "One empire now spans Anatolia to the Pacific. The Silk Road has a single master, and Samarkand becomes the axis on which the world turns."
+        }
+      }
+    },
+    "east-defeat": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "The Ming line holds. The Grand Army — the instrument of forty years of victories — bleeds to death under the wall."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "Timur survives the retreat, but not the winter. The shattered tumens carry his body — and his unraveling empire — back along the frozen road."
+        }
+      }
+    },
+    "consolidate-cinematic": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "The order stuns the council: the Grand Army will not march. For the first time in forty years, the Emir chooses parchment over the sword."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "Through the winter he dictates: a code of succession, governorships balanced against each other, marriages binding every amir to the house of Timur."
+        },
+        "2": {
+          "speaker": "The Chronicle",
+          "text": "One question remains — the only one that ever mattered in a steppe empire. Who inherits?"
+        }
+      }
+    },
+    "heir-choice": {
+      "title": "The Question of the Heir · 1405",
+      "prompt": "The dynasty's future rests on a single name.",
+      "options": {
+        "shahrukh": {
+          "label": "Shah Rukh — the Scholar",
+          "description": "Your youngest son: pious, patient, beloved of Herat's scholars. No conqueror — but empires are kept by administrators, not conquerors."
+        },
+        "pir-muhammad": {
+          "label": "Pir Muhammad — the Soldier",
+          "description": "The grandson Timur himself favored in our history. A warrior the army respects — and the amirs fear. Strength, at the price of resentment."
+        },
+        "council-rule": {
+          "label": "A Council of Princes",
+          "description": "No single heir: a ruling diwan of princes and amirs under written law. Radical. Either the birth of constitutional empire — or of civil war by committee."
+        }
+      }
+    },
+    "khan-crisis": {
+      "title": "The Revolt of the Steppe Khans · 1406",
+      "prompt": "Three frontier khans refuse the new succession law and fortify the old citadel at Sygnak. The first test of the new order.",
+      "options": {
+        "negotiate": {
+          "label": "Summon Them to the Carpet",
+          "description": "Gold, marriages, and titles — bind the khans with honey instead of blood. The law must be seen to reward loyalty."
+        },
+        "crush": {
+          "label": "Make an Example of Sygnak",
+          "description": "The law must also be seen to have teeth. Ride out and break the revolt before it spreads through the tumens."
+        }
+      }
+    },
+    "revolt-battle": {
+      "battle": {
+        "name": "The Storming of Sygnak",
+        "objective": "The rebel khans hold the citadel with veteran steppe cavalry. Break the revolt decisively — a long siege would invite every malcontent in the empire to join it.",
+        "player": {
+          "name": "Imperial Loyalists"
+        },
+        "enemy": {
+          "name": "Rebel Khans"
+        },
+        "events": {
+          "rebel-charge": {
+            "title": "The Khans Charge",
+            "prompt": "Rebel cavalry masses for a single great charge down the hill. Meet it how?",
+            "options": {
+              "pikes": {
+                "label": "Plant the Pikes",
+                "description": "Brace and let the charge die on a hedge of steel."
+              },
+              "counter": {
+                "label": "Counter-Charge",
+                "description": "Send your own riders uphill into theirs. Audacity against momentum."
+              }
+            }
+          },
+          "citadel": {
+            "title": "The Citadel Gate",
+            "prompt": "The field is tilting your way, but the citadel still spits arrows. End it.",
+            "options": {
+              "bombard": {
+                "label": "Bombard the Gate",
+                "description": "Bring up the engines and crack the rebels' last shell."
+              },
+              "mercy-terms": {
+                "label": "Offer Terms Mid-Battle",
+                "description": "Shout an offer over the walls: surrender now, keep your heads. Some defenders waver."
+              }
+            }
+          }
+        }
+      }
+    },
+    "succession-golden": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "The succession holds. When Timur dies in his bed in 1409 — in his own palace, under his own dome — power passes without a single battle."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "The Timurid state hardens into something the steppe has never produced: a bureaucratic empire, Rome with paiza passports, astride every road between Europe and China."
+        },
+        "2": {
+          "speaker": "The Chronicle",
+          "text": "European captains will spend centuries seeking a sea route around it — and paying its tolls in the meantime."
+        }
+      }
+    },
+    "succession-collapse": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "Sygnak holds. The defeat cracks the new order's aura of inevitability, and crack by crack, khan by khan, the law of succession becomes a dead letter."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "The empire fragments a few years later than in our history — but it fragments all the same."
+        }
+      }
+    },
+    "west-march": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "Spring 1405. The Grand Army pours west along the roads it broke in 1402, when Timur smashed Sultan Bayezid at Ankara and carried him off in a litter."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "This time there will be no withdrawal. Ahead, the patched-together Ottoman host and a hastily-sworn crusader coalition bar the road to the straits — and to Europe behind them."
+        }
+      }
+    },
+    "gates-battle": {
+      "battle": {
+        "name": "The Gates of Europe",
+        "objective": "The Ottoman-Crusader coalition stands between the Grand Army and the Bosphorus. Break them here, and no force on the continent can stop the horsetail standard.",
+        "player": {
+          "name": "Timurid Grand Army"
+        },
+        "enemy": {
+          "name": "Ottoman–Crusader Coalition"
+        },
+        "events": {
+          "feigned-retreat": {
+            "title": "The Oldest Trick on the Steppe",
+            "prompt": "The coalition's knights are eager and heavy. Your riders know the feigned retreat as they know their own names.",
+            "options": {
+              "feign": {
+                "label": "Feign Retreat, Then Envelop",
+                "description": "Draw the knights out of their line, then close the horns around them."
+              },
+              "stand": {
+                "label": "Refuse the Trick — Stand and Grind",
+                "description": "They expect cunning. Give them a wall instead and let their charge exhaust itself."
+              }
+            }
+          },
+          "janissary-push": {
+            "title": "The Janissaries Advance",
+            "prompt": "The Sultan commits his elite infantry to the center. Your answer?",
+            "options": {
+              "engines": {
+                "label": "Stone Rain on the Janissaries",
+                "description": "The engines speak. Elite infantry packed in close ranks make a generous target."
+              },
+              "fire-sky": {
+                "label": "Darken the Sky with Fire",
+                "description": "Every archer looses burning shafts. The coalition fights under a ceiling of flame."
+              }
+            }
+          },
+          "west-rally": {
+            "title": "The Standard Falters",
+            "prompt": "The coalition fights with the desperation of men defending a continent. Your line is buckling.",
+            "options": {
+              "emir-standard": {
+                "label": "The Emir Takes the Standard",
+                "description": "Timur rides the line with the horsetail banner. Forty years of legend in a single silhouette."
+              },
+              "fresh-tumen": {
+                "label": "Commit the Last Tumen",
+                "description": "Everything. The reserve rides, and the matter is settled one way or the other."
+              }
+            }
+          }
+        }
+      }
+    },
+    "europe-opens": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "The coalition shatters. The Ottoman state — already broken once at Ankara — dissolves, and the straits lie open."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "Timurid tumens cross into the Balkans in 1406. Plague-hollowed, schism-divided Europe has no answer to the army that conquered three empires."
+        },
+        "2": {
+          "speaker": "The Chronicle",
+          "text": "The Renaissance that was beginning in Florence will happen — but it will happen in Chagatai, under turquoise domes on the Danube."
+        }
+      }
+    },
+    "west-defeat": {
+      "narration": {
+        "0": {
+          "speaker": "The Chronicle",
+          "text": "On the worst day of his sixty-eight years, the Emir watches the Grand Army break against the coalition line."
+        },
+        "1": {
+          "speaker": "The Chronicle",
+          "text": "The retreat east never quite ends. The empire he spent a lifetime stitching together comes apart at the seams within a decade."
+        }
+      }
+    }
+  },
+  "endings": {
+    "immortal-emir": {
+      "title": "The Immortal Emir",
+      "subtitle": "Conquest of China · the world's axis moves to Samarkand",
+      "epilogue": {
+        "0": {
+          "text": "Timur lives another twenty years, ruling the largest land empire in human history from a throne in Beijing and a tomb-city in Samarkand."
+        },
+        "1": {
+          "text": "The Ottoman beylik never recovers. European colonial expansion never begins — there is nothing left to expand into that does not already pay the Emir's tolls."
+        },
+        "2": {
+          "text": "Six centuries later, the Great Timurid Federation spans Turkey to Korea, and the world's lingua franca is Chagatai Turkic."
+        }
+      }
+    },
+    "unified-succession": {
+      "title": "Pax Timuridea",
+      "subtitle": "The succession holds · a steppe Rome is born",
+      "epilogue": {
+        "0": {
+          "text": "The empire Timur built with the sword survives him by centuries — because in his last years he built it again, with law."
+        },
+        "1": {
+          "text": "A stable, bureaucratic Timurid state dominates every road between Europe and Asia, taxing the Silk Road and starving European expansion before it can begin."
+        },
+        "2": {
+          "text": "Historians of this reality call it what Timur's grandson called it: the Pax Timuridea."
+        }
+      }
+    },
+    "unified-succession-by-sword": {
+      "title": "Pax Timuridea",
+      "subtitle": "The succession holds — written in law, sealed in blood",
+      "epilogue": {
+        "0": {
+          "text": "Sygnak falls, and with it the last argument against the new order. The succession law is never tested in open revolt again."
+        },
+        "1": {
+          "text": "A stable, bureaucratic Timurid state dominates every road between Europe and Asia — though its founding code is remembered as much for its teeth as its wisdom."
+        },
+        "2": {
+          "text": "Historians of this reality call it the Pax Timuridea."
+        }
+      }
+    },
+    "western-campaign": {
+      "title": "The Western Storm",
+      "subtitle": "Europe falls under the horsetail standard",
+      "epilogue": {
+        "0": {
+          "text": "The tumens winter in Buda in 1407 and water their horses in the Rhine in 1409. No coalition holds; none ever quite forms again."
+        },
+        "1": {
+          "text": "The European Renaissance is delayed by a century and transformed forever — flowing through Samarkand's observatories rather than Florence's banks."
+        },
+        "2": {
+          "text": "In this reality, \"the West\" is a direction, not a civilization."
+        }
+      }
+    },
+    "historical-fragmentation": {
+      "title": "The Shattered Inheritance",
+      "subtitle": "History reasserts itself · the empire of one man dies with him",
+      "epilogue": {
+        "0": {
+          "text": "However the dice fell, they came to rest where they did in our own world: the empire fragments among quarreling heirs."
+        },
+        "1": {
+          "text": "And yet — from the wreckage, Shah Rukh's Herat and Ulugh Beg's Samarkand kindle the Timurid Renaissance, and a great-great-grandson named Babur will found an empire in India."
+        },
+        "2": {
+          "text": "Even the timelines that collapse leave light behind. This is the reality you are reading this in."
+        }
+      }
+    }
+  }
+}
