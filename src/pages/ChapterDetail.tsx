@@ -9,6 +9,7 @@ import AnimatedCharacter from '../components/common/AnimatedCharacter';
 import ParticleSystem from '../components/common/ParticleSystem';
 import { Breadcrumb } from '../components/common/Breadcrumb';
 import { loadChapterTranslations } from '../i18n';
+import { hasExperience } from '../experience/scripts';
 
 interface TimelineTranslation {
   title?: string;
@@ -278,16 +279,30 @@ const ChapterDetail: React.FC = () => {
               Test your decisions in the interactive simulation engine.
             </p>
 
-            <Link to={`/simulation/${chapter.id}?autoplay=true`}>
-              <motion.button
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-3 text-lg font-semibold shadow-lg shadow-blue-600/30 mx-auto"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <PlayCircle className="w-6 h-6" />
-                <span>Initialize Simulation</span>
-              </motion.button>
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to={`/simulation/${chapter.id}?autoplay=true`}>
+                <motion.button
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-3 text-lg font-semibold shadow-lg shadow-blue-600/30 mx-auto"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <PlayCircle className="w-6 h-6" />
+                  <span>Initialize Simulation</span>
+                </motion.button>
+              </Link>
+              {hasExperience(chapter.id) && (
+                <Link to={`/experience/${chapter.id}`}>
+                  <motion.button
+                    className="bg-gradient-to-r from-amber-500 to-orange-600 hover:brightness-110 text-slate-950 px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-3 text-lg font-semibold shadow-lg shadow-amber-600/30 mx-auto"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <span>⚔</span>
+                    <span>Enter the 3D Chronicle</span>
+                  </motion.button>
+                </Link>
+              )}
+            </div>
           </motion.div>
         </div>
       </section>

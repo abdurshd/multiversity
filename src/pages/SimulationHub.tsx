@@ -9,6 +9,7 @@ import { useSimulation } from '../hooks/useSimulation';
 import { useTranslation } from 'react-i18next';
 
 import { loadChapterTranslations } from '../i18n';
+import { hasExperience } from '../experience/scripts';
 
 const StatCard: React.FC<{ label: string; value: number; color: string; icon: React.ReactNode }> = ({ label, value, color, icon }) => (
     <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-4 rounded-xl flex flex-col justify-between h-full relative overflow-hidden group hover:border-blue-500/30 transition-colors">
@@ -183,9 +184,19 @@ const SimulationHub: React.FC = () => {
                     </h1>
                 </div>
 
-                <div className="flex items-center space-x-3 text-xs md:text-sm font-mono text-blue-400 bg-blue-500/10 px-3 py-1.5 rounded-full border border-blue-500/20">
-                    <Activity className="w-4 h-4 animate-pulse" />
-                    <span>{mode === 'simulation' ? t('common.active') : t('common.ready')}</span>
+                <div className="flex items-center space-x-3">
+                    {chapterId && hasExperience(chapterId) && (
+                        <button
+                            onClick={() => navigate(`/experience/${chapterId}`)}
+                            className="text-xs md:text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-500 to-orange-600 px-3 py-1.5 rounded-full hover:brightness-110 transition-all"
+                        >
+                            ⚔ 3D Chronicle
+                        </button>
+                    )}
+                    <div className="flex items-center space-x-3 text-xs md:text-sm font-mono text-blue-400 bg-blue-500/10 px-3 py-1.5 rounded-full border border-blue-500/20">
+                        <Activity className="w-4 h-4 animate-pulse" />
+                        <span>{mode === 'simulation' ? t('common.active') : t('common.ready')}</span>
+                    </div>
                 </div>
             </div>
 
