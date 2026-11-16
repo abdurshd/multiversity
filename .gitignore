@@ -8,3 +8,5 @@ npm-debug.log*
 pids
 
 .claude/
+# TypeScript incremental build cache
+*.tsbuildinfo
