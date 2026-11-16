@@ -13,6 +13,7 @@ import { pavingTexture } from './textures';
 import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
 import { MarengoField, ParisBastille, ParisTerror, ValmyField, Varennes } from './revolution';
+import { AntietamField, CharlestonHarbor, FordsTheatre, GettysburgField, Springfield, Washington1861 } from './civilwar';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
 // ─── Environment settings ──────────────────────────────────────────────────
@@ -111,6 +112,36 @@ const ENV: Record<EnvironmentId, EnvDef> = {
         sunPos: [80, 100, 40], ambient: 0.5, ground: '#93a055', groundVar: '#a69450',
         disc: { pos: [300, 340, 160], color: '#fff3d4', size: 28 }, clouds: true,
     },
+    'springfield': {
+        skyTop: '#1c2238', skyHorizon: '#a35a3a', fog: '#4a3e46', sun: '#ffb070',
+        sunPos: [-90, 26, 60], ambient: 0.34, ground: '#8a7a55', groundVar: '#76683f',
+        disc: { pos: [-300, 70, 200], color: '#ffc488', size: 24 }, clouds: true,
+    },
+    'washington-1861': {
+        skyTop: '#5e86b4', skyHorizon: '#e2ddd0', fog: '#d4d2c8', sun: '#fff1d6',
+        sunPos: [70, 90, 60], ambient: 0.5, ground: '#86955c', groundVar: '#73824c',
+        disc: { pos: [260, 300, 200], color: '#fff6e0', size: 26 }, clouds: true,
+    },
+    'charleston-harbor': {
+        skyTop: '#1d2540', skyHorizon: '#d17a4a', fog: '#6a5560', sun: '#ffab6a',
+        sunPos: [40, 22, -110], ambient: 0.36, ground: '#3d5a6a', groundVar: '#365261',
+        disc: { pos: [60, 100, -420], color: '#ffc27e', size: 16 }, clouds: true,
+    },
+    'antietam': {
+        skyTop: '#6f8fb3', skyHorizon: '#e3e0d2', fog: '#d6d6cc', sun: '#fff0d4',
+        sunPos: [80, 70, -40], ambient: 0.5, ground: '#7a9150', groundVar: '#8f9455',
+        disc: { pos: [280, 240, -160], color: '#fff6e2', size: 24 }, clouds: true,
+    },
+    'gettysburg': {
+        skyTop: '#4d82c0', skyHorizon: '#ece2c4', fog: '#ddd6be', sun: '#ffeec8',
+        sunPos: [-40, 110, -60], ambient: 0.52, ground: '#7f9a52', groundVar: '#9a9a58',
+        disc: { pos: [-160, 380, -240], color: '#fff4d8', size: 28 }, clouds: true,
+    },
+    'fords-theatre': {
+        skyTop: '#0a0d18', skyHorizon: '#1d2236', fog: '#1a1418', sun: '#ffcf8a',
+        sunPos: [10, 80, 30], ambient: 0.3, ground: '#3a2c22', groundVar: '#30241c',
+        disc: { pos: [-200, 260, -300], color: '#eef2ff', size: 14 }, clouds: false,
+    },
 };
 
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter']);
@@ -137,7 +168,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             <ambientLight intensity={env.ambient * 0.45} />
             <directionalLight
                 position={env.sunPos}
-                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : 2.1}
+                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : environment === 'fords-theatre' ? 0.25 : environment === 'springfield' || environment === 'charleston-harbor' ? 1.5 : 2.1}
                 color={env.sun}
                 castShadow
                 shadow-mapSize={[2048, 2048]}
@@ -151,7 +182,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             <hemisphereLight args={[env.skyHorizon, env.ground, 0.4]} />
             <Terrain base={env.ground} variant={env.groundVar} winter={WINTER.has(environment)} />
             {env.clouds && <Clouds dark={false} />}
-            {environment === 'varennes' && <Stars />}
+            {(environment === 'varennes' || environment === 'springfield') && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
             {environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
@@ -181,6 +212,18 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <ValmyField />
             ) : environment === 'marengo' ? (
                 <MarengoField />
+            ) : environment === 'springfield' ? (
+                <Springfield />
+            ) : environment === 'washington-1861' ? (
+                <Washington1861 />
+            ) : environment === 'charleston-harbor' ? (
+                <CharlestonHarbor />
+            ) : environment === 'antietam' ? (
+                <AntietamField />
+            ) : environment === 'gettysburg' ? (
+                <GettysburgField />
+            ) : environment === 'fords-theatre' ? (
+                <FordsTheatre />
             ) : (
                 <AnatoliaField />
             )}
