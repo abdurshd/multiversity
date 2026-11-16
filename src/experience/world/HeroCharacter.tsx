@@ -123,6 +123,51 @@ function Headwear({ outfit, accent, hair, balding = false }: { outfit: Character
                     </group>
                 </group>
             );
+        case 'queen':
+            // towering powdered pouf with curls and a ribbon
+            return (
+                <group>
+                    <PeriwigHair color={hair ?? '#ece6da'} />
+                    {[0.32, 0.6, 0.86].map((y, i) => (
+                        <mesh key={y} castShadow position={[0, y, -0.06 - i * 0.02]} scale={[1, 0.85, 0.9]}>
+                            <sphereGeometry args={[0.4 - i * 0.07, 18, 14]} />
+                            <meshStandardMaterial color={hair ?? '#ece6da'} roughness={0.95} />
+                        </mesh>
+                    ))}
+                    <mesh position={[0.22, 0.75, 0.18]} rotation={[0, 0, 0.6]}>
+                        <torusGeometry args={[0.12, 0.04, 8, 16]} />
+                        <meshStandardMaterial color={accent} roughness={0.5} />
+                    </mesh>
+                    <mesh position={[-0.12, 1.12, -0.05]} rotation={[0, 0, 0.35]}>
+                        <coneGeometry args={[0.06, 0.6, 8]} />
+                        <meshStandardMaterial color="#f7f3ea" roughness={0.8} />
+                    </mesh>
+                </group>
+            );
+        case 'napoleonic':
+            // short unpowdered hair and the bicorne worn side to side
+            return (
+                <group>
+                    <mesh castShadow position={[0, 0.06, -0.08]} rotation={[-0.35, 0, 0]}>
+                        <sphereGeometry args={[0.46, 24, 16, 0, Math.PI * 2, 0, Math.PI * 0.5]} />
+                        <meshStandardMaterial color={hair ?? '#3a2a1e'} roughness={0.95} side={THREE.DoubleSide} />
+                    </mesh>
+                    <group position={[0, 0.3, -0.02]}>
+                        <mesh castShadow rotation={[Math.PI / 2, 0, 0]} scale={[1, 1, 0.62]}>
+                            <cylinderGeometry args={[0.78, 0.78, 0.34, 28, 1, false, Math.PI / 2, Math.PI]} />
+                            <meshStandardMaterial color="#141418" roughness={0.75} side={THREE.DoubleSide} />
+                        </mesh>
+                        <mesh position={[0.36, 0.2, 0.18]}>
+                            <cylinderGeometry args={[0.1, 0.1, 0.03, 14]} />
+                            <meshStandardMaterial color="#c4232f" roughness={0.6} />
+                        </mesh>
+                        <mesh position={[0.36, 0.2, 0.2]}>
+                            <cylinderGeometry args={[0.06, 0.06, 0.03, 14]} />
+                            <meshStandardMaterial color="#f2efe6" roughness={0.6} />
+                        </mesh>
+                    </group>
+                </group>
+            );
         case 'statesman':
             return <PeriwigHair color={hair ?? '#8a7a66'} bald={balding} />;
         case 'king':
@@ -404,7 +449,7 @@ export function HeroCharacter({
 
     const skin = def.skin ?? SKIN;
     const furCollar = def.outfit === 'emir' || def.outfit === 'prince' || def.outfit === 'king';
-    const coatStyle = def.outfit === 'colonial-general' || def.outfit === 'statesman';
+    const coatStyle = def.outfit === 'colonial-general' || def.outfit === 'statesman' || def.outfit === 'napoleonic';
 
     return (
         <group
@@ -416,7 +461,7 @@ export function HeroCharacter({
             <SelectionRing color={def.accent} />
             {coatStyle ? (
                 <group ref={torso}>
-                    <CoatBody coat={def.robe} accent={def.accent} breeches={def.breeches ?? '#e7dcc0'} epaulettes={def.outfit === 'colonial-general'} />
+                    <CoatBody coat={def.robe} accent={def.accent} breeches={def.breeches ?? '#e7dcc0'} epaulettes={def.outfit === 'colonial-general' || def.outfit === 'napoleonic'} />
                 </group>
             ) : (
             <>

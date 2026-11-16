@@ -81,8 +81,11 @@ import enExperienceTimur from './locales/en/experience/timur.json';
 import uzExperienceTimur from './locales/uz/experience/timur.json';
 import koExperienceTimur from './locales/ko/experience/timur.json';
 import enExperienceUsIndependence from './locales/en/experience/us-independence.json';
+import enExperienceFrenchRevolution from './locales/en/experience/french-revolution.json';
 import uzExperienceUsIndependence from './locales/uz/experience/us-independence.json';
+import uzExperienceFrenchRevolution from './locales/uz/experience/french-revolution.json';
 import koExperienceUsIndependence from './locales/ko/experience/us-independence.json';
+import koExperienceFrenchRevolution from './locales/ko/experience/french-revolution.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -241,6 +244,7 @@ i18n
                 'components-experience': enComponentsExperience,
                 'experience-timur-legacy': enExperienceTimur,
                 'experience-us-independence': enExperienceUsIndependence,
+                'experience-french-revolution': enExperienceFrenchRevolution,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -268,6 +272,7 @@ i18n
                 'components-experience': uzComponentsExperience,
                 'experience-timur-legacy': uzExperienceTimur,
                 'experience-us-independence': uzExperienceUsIndependence,
+                'experience-french-revolution': uzExperienceFrenchRevolution,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -295,6 +300,7 @@ i18n
                 'components-experience': koComponentsExperience,
                 'experience-timur-legacy': koExperienceTimur,
                 'experience-us-independence': koExperienceUsIndependence,
+                'experience-french-revolution': koExperienceFrenchRevolution,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -326,6 +332,7 @@ i18n
             'components-experience',
             'experience-timur-legacy',
             'experience-us-independence',
+            'experience-french-revolution',
             'pages-simulation-hub',
         ],
         interpolation: {

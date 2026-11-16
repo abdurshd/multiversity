@@ -148,7 +148,7 @@ export interface BattleConfig {
 // ─── Characters (real historical people as stylized 3D figures) ────────────
 
 /** Silhouette + headwear preset for a hero figure. */
-export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king';
+export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king' | 'queen' | 'napoleonic';
 export type CharacterPose = 'idle' | 'command' | 'think';
 
 export interface CharacterDef {
@@ -245,7 +245,12 @@ export type EnvironmentId =
     | 'yorktown'
     | 'versailles'
     | 'london'
-    | 'philadelphia-winter';
+    | 'philadelphia-winter'
+    | 'paris-1789'
+    | 'paris-terror'
+    | 'varennes'
+    | 'valmy'
+    | 'marengo';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 

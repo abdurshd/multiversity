@@ -2,6 +2,7 @@
    and the Yorktown siege field. Same stylized-procedural approach as the
    Samarkand set: deterministic layouts, shared textured materials, and
    instancing wherever a shape repeats. */
+/* eslint-disable react-refresh/only-export-components */
 import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
@@ -9,7 +10,7 @@ import { Banner, Citizens, Fire, Particles, Tents, Trees, mulberry32 } from './p
 import { brickTexture, pavingTexture } from './textures';
 
 /** Triangular prism for gable roofs and pediments: base on y=0, ridge along X. */
-function gableGeometry(width: number, height: number, length: number) {
+export function gableGeometry(width: number, height: number, length: number) {
     const shape = new THREE.Shape([new THREE.Vector2(-width / 2, 0), new THREE.Vector2(width / 2, 0), new THREE.Vector2(0, height)]);
     const g = new THREE.ExtrudeGeometry(shape, { depth: length, bevelEnabled: false });
     g.translate(0, 0, -length / 2);
@@ -32,7 +33,7 @@ const COLONIAL = {
 };
 
 let _mats: { brick: THREE.MeshStandardMaterial; brickDark: THREE.MeshStandardMaterial; trim: THREE.MeshStandardMaterial; slate: THREE.MeshStandardMaterial; glass: THREE.MeshStandardMaterial } | null = null;
-function colonialMats() {
+export function colonialMats() {
     if (_mats) return _mats;
     _mats = {
         brick: new THREE.MeshStandardMaterial({ map: brickTexture(COLONIAL.brick, COLONIAL.mortar, [6, 3], 31), roughness: 0.9 }),
@@ -45,7 +46,7 @@ function colonialMats() {
 }
 
 /** A grid of white-framed sash windows on one facade (instanced). */
-function WindowGrid({
+export function WindowGrid({
     width, rows, cols, y0, rowGap, z, x0 = 0,
 }: { width: number; rows: number; cols: number; y0: number; rowGap: number; z: number; x0?: number }) {
     const m = colonialMats();
@@ -383,7 +384,7 @@ export function ValleyForge() {
 }
 
 // ─── Yorktown, October 1781: redoubts, rail fences, the York River ─────────
-function TallShip({ position, rotation = 0, flag }: { position: [number, number, number]; rotation?: number; flag: string }) {
+export function TallShip({ position, rotation = 0, flag }: { position: [number, number, number]; rotation?: number; flag: string }) {
     return (
         <group position={position} rotation={[0, rotation, 0]}>
             <mesh position={[0, 1.2, 0]} castShadow>
@@ -416,7 +417,7 @@ function TallShip({ position, rotation = 0, flag }: { position: [number, number,
     );
 }
 
-function RailFence({ from, to }: { from: [number, number]; to: [number, number] }) {
+export function RailFence({ from, to }: { from: [number, number]; to: [number, number] }) {
     // zigzag "worm" fence: alternating angled rails
     const rails = useMemo(() => {
         const out: { x: number; z: number; rot: number }[] = [];
