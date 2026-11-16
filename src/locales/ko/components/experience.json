@@ -19,7 +19,23 @@
   "battle": {
     "badge": "전투",
     "sound_drums": "⚔ 북을 울려라",
-    "hangs": "⏸ 전투의 향방이 백중세입니다"
+    "hangs": "⏸ 전투의 향방이 백중세입니다",
+    "abilities": {
+      "hint": "군대를 지휘하세요. 당신의 명령이 이 전투와 역사의 향방을 결정합니다",
+      "aim_hint": "전장을 클릭해 투석기를 조준하세요 · 취소하려면 Esc",
+      "rally": {
+        "label": "결집",
+        "description": "병력을 회복하고 8초간 공격 +15%, 방어 +20%"
+      },
+      "strike": {
+        "label": "투석기 포격",
+        "description": "지점을 클릭하면 돌 8개가 떨어집니다"
+      },
+      "charge": {
+        "label": "기병 돌격",
+        "description": "7초간 기병이 두 배 빠르게 달리고 40% 더 강하게 공격"
+      }
+    }
   },
   "ending": {
     "reality_takes_shape": "하나의 현실이 형성됩니다",

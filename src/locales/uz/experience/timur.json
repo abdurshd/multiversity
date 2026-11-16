@@ -494,5 +494,19 @@
         }
       }
     }
+  },
+  "characters": {
+    "timur": {
+      "name": "Amir Temur",
+      "role": "Sohibqiron, Temuriylar saltanati asoschisi"
+    },
+    "shahrukh": {
+      "name": "Shohrux",
+      "role": "Temurning o'g'li, Hirot hokimi"
+    },
+    "ulugh-beg": {
+      "name": "Ulug'bek",
+      "role": "Temurning nabirasi, bo'lajak olim-hukmdor"
+    }
   }
 }

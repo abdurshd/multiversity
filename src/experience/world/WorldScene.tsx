@@ -1,7 +1,7 @@
 /* World renderer: composes the stylized environments used by experience beats. */
 import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
+import { Environment, Html, Lightformer } from '@react-three/drei';
 import * as THREE from 'three';
 import type { EnvironmentId, Hotspot } from '../types';
 import { useCurrentBeat, useExperience } from '../store';
@@ -11,6 +11,7 @@ import {
 } from './parts';
 import { pavingTexture } from './textures';
 import { buildMarcher, figureMaterial } from './figures';
+import { Cast } from './HeroCharacter';
 
 // ─── Environment settings ──────────────────────────────────────────────────
 interface EnvDef {
@@ -66,13 +67,23 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <sphereGeometry args={[env.disc.size, 16, 12]} />
                 <meshBasicMaterial color={env.disc.color} fog={false} />
             </mesh>
-            <ambientLight intensity={env.ambient} />
+            {/* image-based light: a tiny procedural sky cube (rendered once, no download)
+                gives every PBR material soft sky fill and warm sun-side reflections */}
+            <Environment resolution={64} frames={1} environmentIntensity={0.55}>
+                <color attach="background" args={[env.skyHorizon]} />
+                <Lightformer form="rect" intensity={2.2} color={env.skyTop} scale={[40, 40, 1]} position={[0, 18, 0]} rotation={[Math.PI / 2, 0, 0]} />
+                <Lightformer form="circle" intensity={5} color={env.sun} scale={6} position={[env.sunPos[0] / 10, env.sunPos[1] / 10, env.sunPos[2] / 10]} target={[0, 0, 0]} />
+                <Lightformer form="rect" intensity={0.8} color={env.ground} scale={[40, 40, 1]} position={[0, -8, 0]} rotation={[-Math.PI / 2, 0, 0]} />
+            </Environment>
+            <ambientLight intensity={env.ambient * 0.45} />
             <directionalLight
                 position={env.sunPos}
                 intensity={environment === 'samarkand-dusk' ? 1.5 : 2.1}
                 color={env.sun}
                 castShadow
                 shadow-mapSize={[2048, 2048]}
+                shadow-bias={-0.0004}
+                shadow-normalBias={0.04}
                 shadow-camera-left={-130}
                 shadow-camera-right={130}
                 shadow-camera-top={130}
@@ -92,6 +103,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <AnatoliaField />
             )}
             <HotspotMarkers />
+            <SceneCast />
         </group>
     );
 }
@@ -528,6 +540,25 @@ export function AnatoliaField() {
 }
 
 // ─── Hotspot markers (explore beats) ───────────────────────────────────────
+/** Historical figures placed in the current beat (or the battle commander). */
+function SceneCast() {
+    const beat = useCurrentBeat();
+    const characters = useExperience((s) => s.script?.characters);
+    if (!beat || beat.kind === 'ending') return null;
+    if (beat.kind === 'battle') {
+        const id = beat.battle.commander;
+        if (!id) return null;
+        return (
+            <Cast
+                characters={characters}
+                cast={[{ id, position: [-46, 0, 32], facing: 0.75, pose: 'command' }]}
+                scale={3.4}
+            />
+        );
+    }
+    return <Cast cast={beat.cast} characters={characters} scale={3} />;
+}
+
 function HotspotMarkers() {
     const beat = useCurrentBeat();
     if (beat?.kind !== 'explore') return null;

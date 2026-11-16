@@ -494,5 +494,19 @@
         }
       }
     }
+  },
+  "characters": {
+    "timur": {
+      "name": "Emir Timur",
+      "role": "Conqueror, founder of the Timurid Empire"
+    },
+    "shahrukh": {
+      "name": "Shah Rukh",
+      "role": "Timur's son, governor of Herat"
+    },
+    "ulugh-beg": {
+      "name": "Ulugh Beg",
+      "role": "Timur's grandson, future astronomer-king"
+    }
   }
 }

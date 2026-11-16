@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useCurrentBeat, useExperience } from '../store';
 import type { StatEffects, StatKey, TacticalOption } from '../types';
-import { applyModifier, useBattleHud } from '../battle/battleSim';
+import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
@@ -271,10 +271,12 @@ function BattleOverlay() {
     return (
         <>
             {/* morale bars */}
-            <div className="absolute top-4 inset-x-4 z-30 flex justify-between pointer-events-none">
+            <div className="absolute top-28 md:top-16 inset-x-4 z-30 flex justify-between pointer-events-none">
                 <MoraleBar label={battle.player.name} value={hud.playerMorale} color="linear-gradient(90deg,#f59e0b,#dc2626)" />
                 <MoraleBar label={battle.enemy.name} value={hud.enemyMorale} color="linear-gradient(270deg,#64748b,#334155)" alignRight />
             </div>
+
+            {!hud.intro && !hud.event && <AbilityBar />}
 
             {/* intro card */}
             {hud.intro && (
@@ -321,6 +323,100 @@ function BattleOverlay() {
                 </div>
             )}
         </>
+    );
+}
+
+// ─── Commander abilities ───────────────────────────────────────────────────
+const ABILITY_ICONS: Record<AbilityId, string> = { rally: '🚩', strike: '🎯', charge: '🐎' };
+const ABILITY_ORDER: AbilityId[] = ['rally', 'strike', 'charge'];
+
+function AbilityBar() {
+    const { t } = useTranslation('components-experience');
+    const cooldowns = useBattleHud((s) => s.abilityCooldowns);
+    const active = useBattleHud((s) => s.abilityActive);
+    const targeting = useBattleHud((s) => s.targeting);
+
+    const fire = (id: AbilityId) => {
+        const sim = simRef.state;
+        if (!sim || sim.abilities[id].cooldown > 0) return;
+        if (id === 'strike') {
+            // strike needs a target: arm the reticle, the next battlefield click fires it
+            useBattleHud.setState({ targeting: targeting === 'strike' ? null : 'strike' });
+            return;
+        }
+        if (triggerAbility(sim, id)) {
+            const a = sim.abilities;
+            useBattleHud.setState({
+                abilityCooldowns: { rally: a.rally.cooldown, strike: a.strike.cooldown, charge: a.charge.cooldown },
+                abilityActive: { rally: a.rally.active > 0, strike: false, charge: a.charge.active > 0 },
+            });
+        }
+    };
+    const fireRef = useRef(fire);
+    fireRef.current = fire;
+
+    useEffect(() => {
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') useBattleHud.setState({ targeting: null });
+            const id = ABILITY_ORDER.find((k) => ABILITIES[k].hotkey === e.key);
+            if (id) fireRef.current(id);
+        };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+    }, []);
+
+    return (
+        <div className="absolute bottom-5 inset-x-0 z-30 flex flex-col items-center gap-2 px-3 pointer-events-none">
+            <p className="rounded-full bg-slate-950/70 px-3 py-1 text-[11px] text-amber-100/85 backdrop-blur">
+                {targeting === 'strike'
+                    ? t('battle.abilities.aim_hint', { defaultValue: 'Click the battlefield to aim the catapults · Esc to cancel' })
+                    : t('battle.abilities.hint', { defaultValue: 'Lead your army: your orders decide how this battle, and history, turn out' })}
+            </p>
+            <div className="flex gap-2 pointer-events-auto">
+                {ABILITY_ORDER.map((id) => {
+                    const cd = cooldowns[id];
+                    const total = ABILITIES[id].cooldown;
+                    const ready = cd <= 0;
+                    const armed = targeting === id;
+                    const on = active[id];
+                    return (
+                        <button
+                            key={id}
+                            onClick={() => fire(id)}
+                            disabled={!ready && !armed}
+                            className={`relative w-[104px] sm:w-32 overflow-hidden rounded-xl border px-2 py-2 text-left backdrop-blur transition-all ${
+                                armed
+                                    ? 'border-orange-400 bg-orange-950/80 ring-2 ring-orange-400/60'
+                                    : on
+                                      ? 'border-amber-300 bg-amber-900/70'
+                                      : ready
+                                        ? 'border-amber-200/30 bg-slate-900/85 hover:border-amber-400/70 hover:-translate-y-0.5'
+                                        : 'border-slate-600/40 bg-slate-900/70 opacity-80'
+                            }`}
+                        >
+                            {!ready && (
+                                <span
+                                    className="absolute inset-x-0 bottom-0 bg-slate-950/55"
+                                    style={{ height: `${Math.min(100, (cd / total) * 100)}%` }}
+                                />
+                            )}
+                            <span className="relative flex items-center justify-between">
+                                <span className="text-lg leading-none">{ABILITY_ICONS[id]}</span>
+                                <span className="rounded bg-slate-950/70 px-1.5 text-[10px] font-mono text-slate-300">
+                                    {ready ? ABILITIES[id].hotkey : Math.ceil(cd)}
+                                </span>
+                            </span>
+                            <span className="relative mt-1 block text-[12px] font-semibold text-amber-100">
+                                {t(`battle.abilities.${id}.label`)}
+                            </span>
+                            <span className="relative hidden sm:block text-[10px] leading-snug text-slate-300/80">
+                                {t(`battle.abilities.${id}.description`)}
+                            </span>
+                        </button>
+                    );
+                })}
+            </div>
+        </div>
     );
 }
 

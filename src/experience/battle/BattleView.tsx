@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import type { BattleConfig, BattleSide, UnitType } from '../types';
 import { useExperience } from '../store';
 import {
-    type BattleState, createBattle, dueEvent, morale, tick, useBattleHud,
+    type BattleState, createBattle, dueEvent, morale, tick, triggerAbility, useBattleHud,
 } from './battleSim';
 import { Banner } from '../world/parts';
 import { buildArcher, buildArrow, buildCavalry, buildInfantry, figureMaterial } from '../world/figures';
@@ -41,6 +41,9 @@ export function BattleView({ config }: { config: BattleConfig }) {
             event: null,
             playerMorale: 1,
             enemyMorale: 1,
+            targeting: null,
+            abilityCooldowns: { rally: 3, strike: 3, charge: 3 },
+            abilityActive: { rally: false, strike: false, charge: false },
         });
         return () => {
             if (simRef.state === sim) simRef.state = null;
@@ -114,10 +117,14 @@ export function BattleView({ config }: { config: BattleConfig }) {
                 outcomeTimerRef.current += delta;
                 if (outcomeTimerRef.current > 3) {
                     reportedRef.current = true;
+                    const uses = Object.values(sim.abilities).reduce((n, a) => n + a.uses, 0);
                     addFlags([
                         `${config.id}:${sim.outcome}`,
                         ...(sim.outcome !== 'defeat' ? [`${config.id}:won`] : []),
+                        // the player led from the front: endings and stats can read this
+                        ...(uses >= 3 ? [`${config.id}:commanded`] : []),
                     ]);
+                    useBattleHud.setState({ targeting: null });
                     finishBattle(
                         sim.outcome,
                         sim.outcome === 'defeat' ? config.onDefeat : config.onVictory
@@ -129,9 +136,12 @@ export function BattleView({ config }: { config: BattleConfig }) {
             hudTimerRef.current += delta;
             if (hudTimerRef.current > 0.15) {
                 hudTimerRef.current = 0;
+                const a = sim.abilities;
                 setHud({
                     playerMorale: morale(sim, 'player'),
                     enemyMorale: morale(sim, 'enemy'),
+                    abilityCooldowns: { rally: a.rally.cooldown, strike: a.strike.cooldown, charge: a.charge.cooldown },
+                    abilityActive: { rally: a.rally.active > 0, strike: false, charge: a.charge.active > 0 },
                 });
             }
         }
@@ -271,12 +281,111 @@ export function BattleView({ config }: { config: BattleConfig }) {
                 <meshStandardMaterial color="#b8a684" transparent opacity={0.5} flatShading depthWrite={false} />
             </instancedMesh>
 
+            <AbilityEffects sim={sim} />
+
             {/* siege engines behind the player line */}
             <Catapult position={[-34, 0, 62]} />
             <Catapult position={[34, 0, 62]} />
             <Banner position={[-40, 0, 58]} color={p.color} height={8} />
             <Banner position={[40, 0, 58]} color={p.color} height={8} />
             <Banner position={[0, 0, -70]} color={e.color} height={8} />
+        </group>
+    );
+}
+
+/** Click target for the strike ability, the aim reticle, and buff auras. */
+function AbilityEffects({ sim }: { sim: BattleState }) {
+    const targeting = useBattleHud((s) => s.targeting);
+    const reticle = useRef<THREE.Group>(null);
+    const marker = useRef<THREE.Mesh>(null);
+    const rallyAura = useRef<THREE.Mesh>(null);
+    const chargeAura = useRef<THREE.Mesh>(null);
+
+    useFrame(({ clock }) => {
+        const t = clock.elapsedTime;
+        if (reticle.current) {
+            reticle.current.visible = targeting === 'strike';
+            reticle.current.rotation.y = t * 1.5;
+        }
+        if (marker.current) {
+            const st = sim.strikeTarget;
+            marker.current.visible = !!st && st.t < 2.6;
+            if (st) {
+                marker.current.position.set(st.x, 0.2, st.z);
+                const k = 1 - Math.min(1, st.t / 2.6);
+                marker.current.scale.setScalar(7 * (0.6 + k * 0.4));
+                (marker.current.material as THREE.MeshBasicMaterial).opacity = 0.35 + 0.45 * Math.abs(Math.sin(t * 8)) * k;
+            }
+        }
+        // auras sit on the centre of the living player army
+        let cx = 0, cz = 0, n = 0;
+        for (const u of sim.units) {
+            if (u.side === 'player' && u.state !== 'dead') { cx += u.x; cz += u.z; n++; }
+        }
+        if (n) { cx /= n; cz /= n; }
+        const rally = sim.abilities.rally;
+        if (rallyAura.current) {
+            rallyAura.current.visible = rally.active > 0;
+            rallyAura.current.position.set(cx, 0.25, cz);
+            const grow = 1 - rally.active / 8;
+            rallyAura.current.scale.setScalar(18 + grow * 30 + Math.sin(t * 4) * 1.5);
+            (rallyAura.current.material as THREE.MeshBasicMaterial).opacity = 0.55 * (rally.active / 8) + 0.1;
+        }
+        const charge = sim.abilities.charge;
+        if (chargeAura.current) {
+            chargeAura.current.visible = charge.active > 0;
+            chargeAura.current.position.set(cx, 0.3, cz - 8);
+            chargeAura.current.scale.set(26, 26 + Math.sin(t * 10) * 2, 1);
+        }
+    });
+
+    return (
+        <group>
+            {/* invisible ground that receives the strike click */}
+            <mesh
+                rotation={[-Math.PI / 2, 0, 0]}
+                position={[0, 0.05, 0]}
+                visible={false}
+                onPointerMove={(e) => {
+                    if (reticle.current && useBattleHud.getState().targeting === 'strike') {
+                        reticle.current.position.set(e.point.x, 0.3, e.point.z);
+                    }
+                }}
+                onClick={(e) => {
+                    if (useBattleHud.getState().targeting !== 'strike') return;
+                    e.stopPropagation();
+                    if (triggerAbility(sim, 'strike', { x: e.point.x, z: e.point.z })) {
+                        useBattleHud.setState({ targeting: null });
+                    }
+                }}
+            >
+                <planeGeometry args={[260, 260]} />
+                <meshBasicMaterial />
+            </mesh>
+            <group ref={reticle} visible={false}>
+                <mesh rotation={[-Math.PI / 2, 0, 0]}>
+                    <ringGeometry args={[6.2, 7, 48]} />
+                    <meshBasicMaterial color="#ff5a2a" transparent opacity={0.85} toneMapped={false} depthWrite={false} />
+                </mesh>
+                {[0, 1, 2, 3].map((k) => (
+                    <mesh key={k} rotation={[-Math.PI / 2, 0, (k * Math.PI) / 2]} position={[Math.cos((k * Math.PI) / 2) * 8, 0, -Math.sin((k * Math.PI) / 2) * 8]}>
+                        <planeGeometry args={[2.4, 0.5]} />
+                        <meshBasicMaterial color="#ff5a2a" toneMapped={false} depthWrite={false} />
+                    </mesh>
+                ))}
+            </group>
+            <mesh ref={marker} rotation={[-Math.PI / 2, 0, 0]} visible={false}>
+                <circleGeometry args={[1, 40]} />
+                <meshBasicMaterial color="#ff3b1a" transparent opacity={0.5} toneMapped={false} depthWrite={false} />
+            </mesh>
+            <mesh ref={rallyAura} rotation={[-Math.PI / 2, 0, 0]} visible={false}>
+                <ringGeometry args={[0.92, 1, 64]} />
+                <meshBasicMaterial color="#ffc94a" transparent opacity={0.6} toneMapped={false} depthWrite={false} />
+            </mesh>
+            <mesh ref={chargeAura} rotation={[-Math.PI / 2, 0, 0]} visible={false}>
+                <ringGeometry args={[0.9, 1, 3, 1, -Math.PI / 2 - 0.5, 1]} />
+                <meshBasicMaterial color="#7dd3fc" transparent opacity={0.55} toneMapped={false} depthWrite={false} side={THREE.DoubleSide} />
+            </mesh>
         </group>
     );
 }

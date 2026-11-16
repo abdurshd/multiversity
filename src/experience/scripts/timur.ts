@@ -9,6 +9,24 @@ export const timurScript: ExperienceScript = {
     initialStats: { chaos: 20, freedom: 40, diplomacy: 50, strength: 65 },
     defaultEnding: 'historical-fragmentation',
 
+    characters: {
+        timur: {
+            id: 'timur', name: 'Emir Timur', role: 'Conqueror, founder of the Timurid Empire',
+            face: '/images/chapters/timur-legacy/faces/emir-timur.webp',
+            outfit: 'emir', skin: '#8a5332', robe: '#6b5a2c', accent: '#c9973a',
+        },
+        shahrukh: {
+            id: 'shahrukh', name: 'Shah Rukh', role: "Timur's son, governor of Herat",
+            face: '/images/chapters/timur-legacy/faces/shahrukh.webp',
+            outfit: 'prince', skin: '#bc8351', robe: '#24477a', accent: '#d9a441',
+        },
+        'ulugh-beg': {
+            id: 'ulugh-beg', name: 'Ulugh Beg', role: "Timur's grandson, future astronomer-king",
+            face: '/images/chapters/timur-legacy/faces/ulugh-beg.webp',
+            outfit: 'scholar', skin: '#a96a44', robe: '#5b2a4a', accent: '#2ab3a6',
+        },
+    },
+
     beats: {
         // ── ACT I: Samarkand ──────────────────────────────────────────────
         intro: {
@@ -35,6 +53,11 @@ export const timurScript: ExperienceScript = {
             kind: 'explore',
             id: 'explore-city',
             environment: 'samarkand-day',
+            cast: [
+                { id: 'timur', position: [2, 0, 17], facing: 0.75, pose: 'command' },
+                { id: 'shahrukh', position: [-9, 0, 14], facing: 0.8 },
+                { id: 'ulugh-beg', position: [13, 0, 13], facing: 0.55, pose: 'think' },
+            ],
             prompt: 'Explore Samarkand — drag to look around, click the glowing markers. The war council awaits.',
             camera: { position: [48, 32, 62], target: [0, 6, 0] },
             hotspots: [
@@ -84,6 +107,10 @@ export const timurScript: ExperienceScript = {
             kind: 'choice',
             id: 'council-choice',
             environment: 'samarkand-dusk',
+            cast: [
+                { id: 'timur', position: [8, 0, 49], facing: 0.73, pose: 'command' },
+                { id: 'shahrukh', position: [-2, 0, 45], facing: 0.95, pose: 'think' },
+            ],
             title: 'The Council of Samarkand · Winter 1404',
             prompt: 'The Emir asks: where does the empire ride?',
             camera: { position: [26, 14, 70], target: [8, 4, 50] },
@@ -143,6 +170,9 @@ export const timurScript: ExperienceScript = {
             kind: 'choice',
             id: 'otrar-choice',
             environment: 'winter-march',
+            cast: [
+                { id: 'timur', position: [0, 0, 4], facing: 0.72, pose: 'think' },
+            ],
             title: 'Otrar · The Fever Night, February 1405',
             prompt: 'In our history, Timur waited at Otrar — and died there. What happens in this one?',
             camera: { position: [30, 16, 38], target: [0, 3, 0] },
@@ -205,6 +235,7 @@ export const timurScript: ExperienceScript = {
                     infantry: 150, cavalry: 30, archers: 60, attack: 0.95, defense: 1.05,
                 },
                 onVictory: 'beijing-falls',
+                commander: 'timur',
                 onDefeat: 'east-defeat',
                 events: [
                     {
@@ -343,6 +374,11 @@ export const timurScript: ExperienceScript = {
             kind: 'choice',
             id: 'heir-choice',
             environment: 'samarkand-dusk',
+            cast: [
+                { id: 'timur', position: [0, 0, -3], facing: 0.62, pose: 'think' },
+                { id: 'shahrukh', position: [10, 0, 2], facing: 0.45 },
+                { id: 'ulugh-beg', position: [-10, 0, 0], facing: 0.8 },
+            ],
             title: 'The Question of the Heir · 1405',
             prompt: 'The dynasty\'s future rests on a single name.',
             camera: { position: [30, 16, 40], target: [0, 8, -10] },
@@ -384,6 +420,9 @@ export const timurScript: ExperienceScript = {
             kind: 'choice',
             id: 'khan-crisis',
             environment: 'samarkand-day',
+            cast: [
+                { id: 'timur', position: [0, 0, 13], facing: 0.62, pose: 'command' },
+            ],
             title: 'The Revolt of the Steppe Khans · 1406',
             prompt: 'Three frontier khans refuse the new succession law and fortify the old citadel at Sygnak. The first test of the new order.',
             camera: { position: [40, 24, 56], target: [0, 6, 0] },
@@ -430,6 +469,7 @@ export const timurScript: ExperienceScript = {
                     infantry: 80, cavalry: 60, archers: 30, attack: 1.0, defense: 0.95,
                 },
                 onVictory: 'succession-golden',
+                commander: 'timur',
                 onDefeat: 'succession-collapse',
                 events: [
                     {
@@ -548,6 +588,7 @@ export const timurScript: ExperienceScript = {
                     infantry: 140, cavalry: 45, archers: 50, attack: 1.0, defense: 1.05,
                 },
                 onVictory: 'europe-opens',
+                commander: 'timur',
                 onDefeat: 'west-defeat',
                 events: [
                     {

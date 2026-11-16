@@ -19,7 +19,23 @@
   "battle": {
     "badge": "Battle",
     "sound_drums": "⚔ Sound the Drums",
-    "hangs": "⏸ The battle hangs in the balance"
+    "hangs": "⏸ The battle hangs in the balance",
+    "abilities": {
+      "hint": "Lead your army: your orders decide how this battle, and history, turn out",
+      "aim_hint": "Click the battlefield to aim the catapults · Esc to cancel",
+      "rally": {
+        "label": "Rally",
+        "description": "Heal the ranks, +15% attack, +20% defense for 8 s"
+      },
+      "strike": {
+        "label": "Catapult strike",
+        "description": "Click a spot: 8 stones land there"
+      },
+      "charge": {
+        "label": "Cavalry charge",
+        "description": "Horsemen ride twice as fast and hit 40% harder for 7 s"
+      }
+    }
   },
   "ending": {
     "reality_takes_shape": "A reality takes shape",

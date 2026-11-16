@@ -19,7 +19,23 @@
   "battle": {
     "badge": "Jang",
     "sound_drums": "⚔ Nog'oralarni chaling",
-    "hangs": "⏸ Jang taqdiri hal bo'lmoqda"
+    "hangs": "⏸ Jang taqdiri hal bo'lmoqda",
+    "abilities": {
+      "hint": "Qo'shiningizni boshqaring: buyruqlaringiz bu jang va tarix taqdirini hal qiladi",
+      "aim_hint": "Manjaniqlarni yo'naltirish uchun jang maydonini bosing · bekor qilish uchun Esc",
+      "rally": {
+        "label": "Jipslashtirish",
+        "description": "Saflarni davolaydi, 8 soniya hujum +15%, mudofaa +20%"
+      },
+      "strike": {
+        "label": "Manjaniq zarbasi",
+        "description": "Joyni tanlang: u yerga 8 ta tosh tushadi"
+      },
+      "charge": {
+        "label": "Otliqlar hujumi",
+        "description": "Otliqlar 7 soniya ikki barobar tez chopadi va 40% kuchliroq uradi"
+      }
+    }
   },
   "ending": {
     "reality_takes_shape": "Haqiqat shakllanmoqda",

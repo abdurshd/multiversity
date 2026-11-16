@@ -148,11 +148,25 @@ export function localizeScript(script: ExperienceScript, t: TFunction): Experien
         beats[beatId] = localizeBeat(beat);
     }
 
+    const characters = script.characters
+        ? Object.fromEntries(
+              Object.entries(script.characters).map(([id, c]) => [
+                  id,
+                  {
+                      ...c,
+                      name: tr(`characters.${id}.name`, c.name),
+                      role: tr(`characters.${id}.role`, c.role),
+                  },
+              ]),
+          )
+        : undefined;
+
     return {
         ...script,
         title: tr('title', script.title),
         era: tr('era', script.era),
         beats,
         endings: script.endings.map(localizeEnding),
+        characters,
     };
 }
