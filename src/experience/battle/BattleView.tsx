@@ -9,7 +9,10 @@ import {
     type BattleState, createBattle, dueEvent, morale, tick, triggerAbility, useBattleHud,
 } from './battleSim';
 import { Banner } from '../world/parts';
-import { buildArcher, buildArrow, buildCavalry, buildInfantry, figureMaterial } from '../world/figures';
+import {
+    buildArcher, buildArrow, buildCavalry, buildDragoon, buildInfantry, buildMusketBall, buildMusketeer, buildRifleman,
+    figureMaterial,
+} from '../world/figures';
 
 /** Live sim handle so the DOM overlay can apply tactical modifiers. */
 export const simRef: { state: BattleState | null } = { state: null };
@@ -73,6 +76,14 @@ export function BattleView({ config }: { config: BattleConfig }) {
     const figures = useMemo(() => {
         const pPal = { cloth: config.player.color, accent: config.player.accentColor };
         const ePal = { cloth: config.enemy.color, accent: config.enemy.accentColor };
+        if (config.era === 'musket') {
+            return {
+                player: { infantry: buildMusketeer(pPal), archer: buildRifleman(pPal), cavalry: buildDragoon(pPal, '#6b4a2f') },
+                enemy: { infantry: buildMusketeer(ePal), archer: buildRifleman(ePal), cavalry: buildDragoon(ePal, '#473325') },
+                arrow: buildMusketBall(),
+                fireArrow: buildMusketBall(),
+            };
+        }
         return {
             player: { infantry: buildInfantry(pPal), archer: buildArcher(pPal), cavalry: buildCavalry(pPal, '#6b4a2f') },
             enemy: { infantry: buildInfantry(ePal), archer: buildArcher(ePal), cavalry: buildCavalry(ePal, '#473325') },
@@ -269,8 +280,17 @@ export function BattleView({ config }: { config: BattleConfig }) {
             <instancedMesh ref={arrowsRef} args={[figures.arrow, arrowMat, MAX_PROJECTILES]} frustumCulled={false} />
             <instancedMesh ref={fireArrowsRef} args={[figures.fireArrow, fireArrowMat, MAX_PROJECTILES]} frustumCulled={false} />
             <instancedMesh ref={stonesRef} args={[undefined, undefined, MAX_PROJECTILES]} frustumCulled={false}>
-                <dodecahedronGeometry args={[0.9, 0]} />
-                <meshStandardMaterial color="#6e675c" roughness={1} flatShading />
+                {config.era === 'musket' ? (
+                    <>
+                        <sphereGeometry args={[0.5, 10, 8]} />
+                        <meshStandardMaterial color="#26282c" roughness={0.45} metalness={0.7} />
+                    </>
+                ) : (
+                    <>
+                        <dodecahedronGeometry args={[0.9, 0]} />
+                        <meshStandardMaterial color="#6e675c" roughness={1} flatShading />
+                    </>
+                )}
             </instancedMesh>
             <instancedMesh ref={impactsRef} args={[undefined, undefined, MAX_IMPACTS]} frustumCulled={false}>
                 <ringGeometry args={[0.5, 1, 16]} />
@@ -284,8 +304,20 @@ export function BattleView({ config }: { config: BattleConfig }) {
             <AbilityEffects sim={sim} />
 
             {/* siege engines behind the player line */}
-            <Catapult position={[-34, 0, 62]} />
-            <Catapult position={[34, 0, 62]} />
+            {config.era === 'musket' ? (
+                <>
+                    <Cannon position={[-34, 0, 62]} />
+                    <Cannon position={[-12, 0, 66]} />
+                    <Cannon position={[12, 0, 66]} />
+                    <Cannon position={[34, 0, 62]} />
+                    <MusketSmoke sim={sim} />
+                </>
+            ) : (
+                <>
+                    <Catapult position={[-34, 0, 62]} />
+                    <Catapult position={[34, 0, 62]} />
+                </>
+            )}
             <Banner position={[-40, 0, 58]} color={p.color} height={8} />
             <Banner position={[40, 0, 58]} color={p.color} height={8} />
             <Banner position={[0, 0, -70]} color={e.color} height={8} />
@@ -387,6 +419,64 @@ function AbilityEffects({ sim }: { sim: BattleState }) {
                 <meshBasicMaterial color="#7dd3fc" transparent opacity={0.55} toneMapped={false} depthWrite={false} side={THREE.DoubleSide} />
             </mesh>
         </group>
+    );
+}
+
+/** Field gun: wheeled carriage + bronze barrel aimed at the enemy line. */
+function Cannon({ position }: { position: [number, number, number] }) {
+    const barrel = useRef<THREE.Group>(null!);
+    useFrame(({ clock }) => {
+        // recoil kick every few seconds
+        const t = (clock.elapsedTime + position[0] * 0.13) % 5;
+        barrel.current.position.z = t < 0.25 ? t * 2.4 : Math.max(0, 0.6 - (t - 0.25) * 0.8);
+    });
+    return (
+        <group position={position} rotation={[0, Math.PI, 0]}>
+            <mesh position={[0, 0.9, 0.4]} castShadow>
+                <boxGeometry args={[1.2, 0.5, 3]} />
+                <meshStandardMaterial color="#5b4129" roughness={1} />
+            </mesh>
+            {[-0.85, 0.85].map((x) => (
+                <mesh key={x} position={[x, 0.9, 0]} rotation={[0, 0, Math.PI / 2]} castShadow>
+                    <cylinderGeometry args={[0.9, 0.9, 0.18, 14]} />
+                    <meshStandardMaterial color="#4a3423" roughness={1} />
+                </mesh>
+            ))}
+            <group ref={barrel}>
+                <mesh position={[0, 1.45, -0.6]} rotation={[Math.PI / 2 - 0.1, 0, 0]} castShadow>
+                    <cylinderGeometry args={[0.24, 0.34, 3, 12]} />
+                    <meshStandardMaterial color="#9c7a3c" roughness={0.35} metalness={0.8} />
+                </mesh>
+            </group>
+        </group>
+    );
+}
+
+/** Rising white powder smoke where muskets fire. */
+function MusketSmoke({ sim }: { sim: BattleState }) {
+    const ref = useRef<THREE.InstancedMesh>(null);
+    const MAX = 220;
+    useFrame(() => {
+        const mesh = ref.current;
+        if (!mesh) return;
+        let n = 0;
+        for (const sm of sim.smoke) {
+            if (n >= MAX) break;
+            const k = sm.t / 2.4;
+            _dummy.position.set(sm.x + k * 1.2, 1.4 + k * 2.2, sm.z);
+            _dummy.rotation.set(k * 2, k * 3, 0);
+            _dummy.scale.setScalar(0.5 + k * 1.6);
+            _dummy.updateMatrix();
+            mesh.setMatrixAt(n++, _dummy.matrix);
+        }
+        mesh.count = n;
+        mesh.instanceMatrix.needsUpdate = true;
+    });
+    return (
+        <instancedMesh ref={ref} args={[undefined, undefined, MAX]} frustumCulled={false}>
+            <icosahedronGeometry args={[0.7, 1]} />
+            <meshStandardMaterial color="#efeae0" transparent opacity={0.42} roughness={1} depthWrite={false} />
+        </instancedMesh>
     );
 }
 

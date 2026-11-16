@@ -80,6 +80,9 @@ import koComponentsExperience from './locales/ko/components/experience.json';
 import enExperienceTimur from './locales/en/experience/timur.json';
 import uzExperienceTimur from './locales/uz/experience/timur.json';
 import koExperienceTimur from './locales/ko/experience/timur.json';
+import enExperienceUsIndependence from './locales/en/experience/us-independence.json';
+import uzExperienceUsIndependence from './locales/uz/experience/us-independence.json';
+import koExperienceUsIndependence from './locales/ko/experience/us-independence.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -237,6 +240,7 @@ i18n
                 'components-simulation': enComponentsSimulation,
                 'components-experience': enComponentsExperience,
                 'experience-timur-legacy': enExperienceTimur,
+                'experience-us-independence': enExperienceUsIndependence,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -263,6 +267,7 @@ i18n
                 'components-simulation': uzComponentsSimulation,
                 'components-experience': uzComponentsExperience,
                 'experience-timur-legacy': uzExperienceTimur,
+                'experience-us-independence': uzExperienceUsIndependence,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -289,6 +294,7 @@ i18n
                 'components-simulation': koComponentsSimulation,
                 'components-experience': koComponentsExperience,
                 'experience-timur-legacy': koExperienceTimur,
+                'experience-us-independence': koExperienceUsIndependence,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -319,6 +325,7 @@ i18n
             'components-simulation',
             'components-experience',
             'experience-timur-legacy',
+            'experience-us-independence',
             'pages-simulation-hub',
         ],
         interpolation: {

@@ -34,6 +34,21 @@
       "charge": {
         "label": "Cavalry charge",
         "description": "Horsemen ride twice as fast and hit 40% harder for 7 s"
+      },
+      "musket": {
+        "aim_hint": "Click the battlefield to aim the artillery · Esc to cancel",
+        "rally": {
+          "label": "Steady the line",
+          "description": "Drums beat: heal the ranks, +15% attack, +20% defense for 8 s"
+        },
+        "strike": {
+          "label": "Artillery barrage",
+          "description": "Click a spot: 8 cannonballs land there"
+        },
+        "charge": {
+          "label": "Fix bayonets",
+          "description": "Infantry and horse charge in for 7 s, hitting 40% harder"
+        }
       }
     }
   },

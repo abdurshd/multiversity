@@ -1,8 +1,10 @@
 import type { ExperienceScript } from '../types';
 import { timurScript } from './timur';
+import { usIndependenceScript } from './usIndependence';
 
 const SCRIPTS: Record<string, ExperienceScript> = {
     'timur-legacy': timurScript,
+    'us-independence': usIndependenceScript,
 };
 
 export function getExperienceScript(chapterId: string): ExperienceScript | null {

@@ -12,6 +12,7 @@ import {
 import { pavingTexture } from './textures';
 import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
+import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
 // ─── Environment settings ──────────────────────────────────────────────────
 interface EnvDef {
@@ -54,7 +55,39 @@ const ENV: Record<EnvironmentId, EnvDef> = {
         sunPos: [70, 70, -80], ambient: 0.46, ground: '#b5a077', groundVar: '#998357',
         disc: { pos: [300, 280, -300], color: '#ffeccb', size: 26 }, clouds: true,
     },
+    'philadelphia': {
+        skyTop: '#5a8fc4', skyHorizon: '#e2e6dc', fog: '#d4dccf', sun: '#fff0d0',
+        sunPos: [70, 100, 60], ambient: 0.5, ground: '#7f9a5a', groundVar: '#68824a',
+        disc: { pos: [250, 330, 200], color: '#fff6dc', size: 26 }, clouds: true,
+    },
+    'valley-forge': {
+        skyTop: '#3a4a5e', skyHorizon: '#b6c2cc', fog: '#bcc8d2', sun: '#e8eef4',
+        sunPos: [-50, 55, -70], ambient: 0.44, ground: '#e6edf1', groundVar: '#c6d4dd',
+        disc: { pos: [-220, 260, -320], color: '#f0f4f8', size: 22 }, clouds: false,
+    },
+    'yorktown': {
+        skyTop: '#6d8fb2', skyHorizon: '#e6d5b0', fog: '#d6c7a4', sun: '#ffd89c',
+        sunPos: [-80, 70, 70], ambient: 0.46, ground: '#7f9150', groundVar: '#9a8a52',
+        disc: { pos: [-320, 260, 280], color: '#ffe9c4', size: 28 }, clouds: true,
+    },
+    'versailles': {
+        skyTop: '#5d8fc6', skyHorizon: '#eadfca', fog: '#ddd4c0', sun: '#fff1d6',
+        sunPos: [60, 90, 80], ambient: 0.52, ground: '#86a05c', groundVar: '#6f8a4c',
+        disc: { pos: [220, 300, 260], color: '#fff8e2', size: 26 }, clouds: true,
+    },
+    'london': {
+        skyTop: '#66788c', skyHorizon: '#cfd2d0', fog: '#bfc4c4', sun: '#f1ead8',
+        sunPos: [-60, 80, 70], ambient: 0.5, ground: '#6f8550', groundVar: '#5c7044',
+        disc: { pos: [-260, 280, 260], color: '#f3efe2', size: 22 }, clouds: true,
+    },
+    'philadelphia-winter': {
+        skyTop: '#46566b', skyHorizon: '#c3ccd4', fog: '#c7d0d8', sun: '#eef2f6',
+        sunPos: [60, 60, 70], ambient: 0.44, ground: '#e6edf1', groundVar: '#c6d4dd',
+        disc: { pos: [240, 240, 300], color: '#f2f5f8', size: 22 }, clouds: false,
+    },
 };
+
+const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter']);
 
 export function WorldScene({ environment }: { environment: EnvironmentId }) {
     const env = ENV[environment];
@@ -90,15 +123,27 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 shadow-camera-bottom={-130}
             />
             <hemisphereLight args={[env.skyHorizon, env.ground, 0.4]} />
-            <Terrain base={env.ground} variant={env.groundVar} winter={environment === 'winter-march'} />
+            <Terrain base={env.ground} variant={env.groundVar} winter={WINTER.has(environment)} />
             {env.clouds && <Clouds dark={false} />}
-            {environment === 'winter-march' && <Clouds dark />}
+            {WINTER.has(environment) && <Clouds dark />}
             {environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
             ) : environment === 'winter-march' ? (
                 <WinterMarch />
             ) : environment === 'great-wall' ? (
                 <GreatWallField />
+            ) : environment === 'philadelphia' ? (
+                <Philadelphia />
+            ) : environment === 'valley-forge' ? (
+                <ValleyForge />
+            ) : environment === 'yorktown' ? (
+                <YorktownField />
+            ) : environment === 'versailles' ? (
+                <Versailles />
+            ) : environment === 'london' ? (
+                <London />
+            ) : environment === 'philadelphia-winter' ? (
+                <PhiladelphiaWinter />
             ) : (
                 <AnatoliaField />
             )}

@@ -49,8 +49,120 @@ function Face({ url }: { url: string }) {
     );
 }
 
-function Headwear({ outfit, accent }: { outfit: CharacterDef['outfit']; accent: string }) {
+/** 18th-century hair: a cap over the back of the skull, side rolls and a tied queue. */
+function PeriwigHair({ color, bald = false }: { color: string; bald?: boolean }) {
+    return (
+        <group>
+            {/* back/top cap — tilted back so the face decal stays clear */}
+            <mesh castShadow position={[0, bald ? -0.02 : 0.05, -0.08]} rotation={[-0.35, 0, 0]} scale={bald ? [1.02, 0.82, 0.96] : [1.04, 0.98, 1]}>
+                <sphereGeometry args={[0.45, 24, 16, 0, Math.PI * 2, 0, bald ? Math.PI * 0.42 : Math.PI * 0.5]} />
+                <meshStandardMaterial color={color} roughness={0.95} side={THREE.DoubleSide} />
+            </mesh>
+            {bald && (
+                <mesh position={[0, -0.06, -0.16]} rotation={[-1.2, 0, 0]}>
+                    <sphereGeometry args={[0.455, 24, 12, 0, Math.PI * 2, 0, Math.PI * 0.38]} />
+                    <meshStandardMaterial color={color} roughness={0.95} side={THREE.DoubleSide} />
+                </mesh>
+            )}
+            {/* side rolls over the ears */}
+            {[-1, 1].map((s) => (
+                <mesh key={s} castShadow position={[s * 0.4, -0.05, -0.04]} rotation={[0, 0, Math.PI / 2]}>
+                    <capsuleGeometry args={[0.1, 0.12, 4, 10]} />
+                    <meshStandardMaterial color={color} roughness={0.95} />
+                </mesh>
+            ))}
+            {/* queue tied with a black ribbon */}
+            <mesh castShadow position={[0, -0.28, -0.42]} rotation={[0.35, 0, 0]}>
+                <capsuleGeometry args={[0.07, 0.28, 4, 8]} />
+                <meshStandardMaterial color={color} roughness={0.95} />
+            </mesh>
+            <mesh position={[0, -0.14, -0.43]}>
+                <boxGeometry args={[0.2, 0.08, 0.06]} />
+                <meshStandardMaterial color="#121212" roughness={0.6} />
+            </mesh>
+        </group>
+    );
+}
+
+function Headwear({ outfit, accent, hair, balding = false }: { outfit: CharacterDef['outfit']; accent: string; hair?: string; balding?: boolean }) {
     switch (outfit) {
+        case 'colonial-general':
+            // powdered hair under a black tricorne edged in gold
+            return (
+                <group>
+                    <PeriwigHair color={hair ?? '#e6e1d6'} />
+                    <group position={[0, 0.36, -0.04]} rotation={[-0.1, 0, 0]}>
+                        <mesh castShadow position={[0, 0.08, 0]}>
+                            <cylinderGeometry args={[0.3, 0.38, 0.26, 20]} />
+                            <meshStandardMaterial color="#17171b" roughness={0.75} />
+                        </mesh>
+                        {/* flat brim, then three sides cocked up into a triangle with a point at the front */}
+                        <mesh castShadow position={[0, -0.03, 0]}>
+                            <cylinderGeometry args={[0.66, 0.66, 0.04, 3]} />
+                            <meshStandardMaterial color="#17171b" roughness={0.75} />
+                        </mesh>
+                        {[Math.PI / 3, Math.PI, (Math.PI * 5) / 3].map((a) => (
+                            <group key={a} rotation={[0, a, 0]}>
+                                <group position={[0, -0.02, 0.33]} rotation={[0.32, 0, 0]}>
+                                    <mesh castShadow position={[0, 0.15, 0]}>
+                                        <boxGeometry args={[1.14, 0.3, 0.04]} />
+                                        <meshStandardMaterial color="#17171b" roughness={0.75} />
+                                    </mesh>
+                                    <mesh position={[0, 0.3, 0.01]}>
+                                        <boxGeometry args={[1.16, 0.035, 0.06]} />
+                                        <meshStandardMaterial color={GOLD} metalness={0.7} roughness={0.35} />
+                                    </mesh>
+                                </group>
+                            </group>
+                        ))}
+                        {/* black cockade on the left side */}
+                        <mesh position={[-0.3, 0.16, 0.22]} rotation={[0.3, -Math.PI / 3, 0]}>
+                            <cylinderGeometry args={[0.08, 0.08, 0.03, 12]} />
+                            <meshStandardMaterial color="#111111" roughness={0.6} />
+                        </mesh>
+                    </group>
+                </group>
+            );
+        case 'statesman':
+            return <PeriwigHair color={hair ?? '#8a7a66'} bald={balding} />;
+        case 'king':
+            // powdered wig under a jewelled crown
+            return (
+                <group>
+                    <PeriwigHair color={hair ?? '#ece7dc'} />
+                    <group position={[0, 0.36, -0.02]}>
+                        <mesh castShadow>
+                            <cylinderGeometry args={[0.34, 0.34, 0.18, 24, 1, true]} />
+                            <meshStandardMaterial color={GOLD} metalness={0.85} roughness={0.25} side={THREE.DoubleSide} />
+                        </mesh>
+                        <mesh position={[0, 0.12, 0]} scale={[1, 0.6, 1]}>
+                            <sphereGeometry args={[0.3, 18, 12, 0, Math.PI * 2, 0, Math.PI / 2]} />
+                            <meshStandardMaterial color="#8c1023" roughness={0.6} />
+                        </mesh>
+                        {Array.from({ length: 8 }, (_, i) => {
+                            const a = (i / 8) * Math.PI * 2;
+                            return (
+                                <mesh key={i} position={[Math.sin(a) * 0.34, 0.14, Math.cos(a) * 0.34]}>
+                                    {i % 2 === 0 ? <octahedronGeometry args={[0.06]} /> : <sphereGeometry args={[0.04, 8, 6]} />}
+                                    <meshStandardMaterial color={i % 2 === 0 ? GOLD : '#f2efe6'} metalness={0.7} roughness={0.25} />
+                                </mesh>
+                            );
+                        })}
+                        <mesh position={[0, 0.34, 0]}>
+                            <boxGeometry args={[0.04, 0.16, 0.04]} />
+                            <meshStandardMaterial color={GOLD} metalness={0.85} roughness={0.25} />
+                        </mesh>
+                        <mesh position={[0, 0.36, 0]}>
+                            <boxGeometry args={[0.12, 0.04, 0.04]} />
+                            <meshStandardMaterial color={GOLD} metalness={0.85} roughness={0.25} />
+                        </mesh>
+                        <mesh position={[0, 0.02, 0.34]}>
+                            <sphereGeometry args={[0.05, 10, 8]} />
+                            <meshStandardMaterial color="#1d3fa8" roughness={0.2} metalness={0.3} emissive="#081a50" />
+                        </mesh>
+                    </group>
+                </group>
+            );
         case 'emir':
             // brocade crown cone with a fur band and a ruby, as in the portrait
             return (
@@ -115,6 +227,120 @@ function Headwear({ outfit, accent }: { outfit: CharacterDef['outfit']; accent: 
     }
 }
 
+/** 18th-century silhouette: knee breeches, stockings, buckled shoes, a long
+    coat open over a waistcoat, with turned-back facings in the accent colour. */
+function CoatBody({ coat, accent, breeches, epaulettes }: { coat: string; accent: string; breeches: string; epaulettes: boolean }) {
+    return (
+        <group>
+            {[-0.22, 0.22].map((x) => (
+                <group key={x} position={[x, 0, 0]}>
+                    <mesh castShadow position={[0, 0.08, 0.06]}>
+                        <boxGeometry args={[0.24, 0.14, 0.42]} />
+                        <meshStandardMaterial color="#141414" roughness={0.5} />
+                    </mesh>
+                    <mesh position={[0, 0.16, 0.25]}>
+                        <boxGeometry args={[0.12, 0.05, 0.03]} />
+                        <meshStandardMaterial color="#c9ccd1" metalness={0.8} roughness={0.3} />
+                    </mesh>
+                    {/* white stockings */}
+                    <mesh castShadow position={[0, 0.48, 0]}>
+                        <cylinderGeometry args={[0.13, 0.11, 0.6, 12]} />
+                        <meshStandardMaterial color="#efece4" roughness={0.85} />
+                    </mesh>
+                    {/* breeches */}
+                    <mesh castShadow position={[0, 0.98, 0]}>
+                        <cylinderGeometry args={[0.2, 0.15, 0.5, 12]} />
+                        <meshStandardMaterial color={breeches} roughness={0.8} />
+                    </mesh>
+                </group>
+            ))}
+            {/* waistcoat */}
+            <mesh castShadow position={[0, 1.55, 0.02]}>
+                <cylinderGeometry args={[0.46, 0.44, 1.0, 20]} />
+                <meshStandardMaterial color={breeches} roughness={0.75} />
+            </mesh>
+            {/* coat: open skirt (C-shaped) + closed chest */}
+            <mesh castShadow receiveShadow position={[0, 1.1, 0]}>
+                <cylinderGeometry args={[0.5, 0.7, 1.0, 24, 1, true, Math.PI * 0.16, Math.PI * 1.68]} />
+                <meshStandardMaterial color={coat} roughness={0.7} side={THREE.DoubleSide} />
+            </mesh>
+            {/* facings along the opening */}
+            {[-1, 1].map((sd) => (
+                <mesh key={sd} position={[sd * 0.17, 1.35, 0.5]} rotation={[-0.15, sd * 0.35, sd * 0.12]}>
+                    <boxGeometry args={[0.13, 1.4, 0.04]} />
+                    <meshStandardMaterial color={accent} roughness={0.6} />
+                </mesh>
+            ))}
+            <mesh castShadow position={[0, 1.98, -0.04]}>
+                <cylinderGeometry args={[0.52, 0.5, 0.72, 24, 1, true, Math.PI * 0.22, Math.PI * 1.56]} />
+                <meshStandardMaterial color={coat} roughness={0.7} side={THREE.DoubleSide} />
+            </mesh>
+            {/* gilt buttons */}
+            {[1.25, 1.45, 1.65, 1.85, 2.05].map((y) => (
+                <mesh key={y} position={[0, y, 0.47]}>
+                    <sphereGeometry args={[0.035, 8, 6]} />
+                    <meshStandardMaterial color={GOLD} metalness={0.8} roughness={0.3} />
+                </mesh>
+            ))}
+            {/* white cravat */}
+            <mesh position={[0, 2.26, 0.22]} rotation={[0.3, 0, 0]}>
+                <coneGeometry args={[0.16, 0.3, 10]} />
+                <meshStandardMaterial color="#f5f2ea" roughness={0.9} />
+            </mesh>
+            <mesh position={[0, 2.34, 0]}>
+                <cylinderGeometry args={[0.26, 0.42, 0.14, 20]} />
+                <meshStandardMaterial color={accent} roughness={0.6} />
+            </mesh>
+            {[-1, 1].map((sd) => (
+                <group key={sd} position={[sd * 0.56, 2.22, 0]}>
+                    <mesh castShadow>
+                        <sphereGeometry args={[0.22, 14, 12]} />
+                        <meshStandardMaterial color={coat} roughness={0.7} />
+                    </mesh>
+                    {epaulettes && (
+                        <group position={[0, 0.16, 0]}>
+                            <mesh>
+                                <cylinderGeometry args={[0.2, 0.22, 0.06, 14]} />
+                                <meshStandardMaterial color={GOLD} metalness={0.85} roughness={0.25} />
+                            </mesh>
+                            <mesh position={[0, -0.1, 0]}>
+                                <cylinderGeometry args={[0.23, 0.24, 0.16, 14, 1, true]} />
+                                <meshStandardMaterial color={GOLD} metalness={0.6} roughness={0.5} side={THREE.DoubleSide} />
+                            </mesh>
+                        </group>
+                    )}
+                </group>
+            ))}
+        </group>
+    );
+}
+
+/** Royal mantle: velvet cape down the back with an ermine edge. */
+function ErmineCape({ color }: { color: string }) {
+    const spots = useMemo(() => Array.from({ length: 14 }, (_, i) => {
+        const a = Math.PI * 0.62 + (i / 13) * Math.PI * 0.76;
+        return [Math.sin(a) * 0.86, 0.2 + (i % 3) * 0.08, Math.cos(a) * 0.86] as [number, number, number];
+    }), []);
+    return (
+        <group>
+            <mesh castShadow position={[0, 1.2, -0.04]}>
+                <cylinderGeometry args={[0.58, 0.88, 2.1, 24, 1, true, Math.PI * 0.6, Math.PI * 0.8]} />
+                <meshStandardMaterial color={color} roughness={0.55} side={THREE.DoubleSide} />
+            </mesh>
+            <mesh position={[0, 0.25, -0.04]}>
+                <cylinderGeometry args={[0.85, 0.9, 0.24, 24, 1, true, Math.PI * 0.6, Math.PI * 0.8]} />
+                <meshStandardMaterial color="#f4f1ea" roughness={1} side={THREE.DoubleSide} />
+            </mesh>
+            {spots.map((p, i) => (
+                <mesh key={i} position={[p[0] * 1.03, p[1], p[2] * 1.03 - 0.04]}>
+                    <boxGeometry args={[0.03, 0.07, 0.03]} />
+                    <meshStandardMaterial color="#111111" />
+                </mesh>
+            ))}
+        </group>
+    );
+}
+
 /** Arm hanging from a shoulder pivot; `swing` rotates it forward/up. */
 function Arm({ side, robe, skin, armRef }: { side: 1 | -1; robe: string; skin: string; armRef: RefObject<THREE.Group | null> }) {
     return (
@@ -177,7 +403,8 @@ export function HeroCharacter({
     });
 
     const skin = def.skin ?? SKIN;
-    const furCollar = def.outfit === 'emir' || def.outfit === 'prince';
+    const furCollar = def.outfit === 'emir' || def.outfit === 'prince' || def.outfit === 'king';
+    const coatStyle = def.outfit === 'colonial-general' || def.outfit === 'statesman';
 
     return (
         <group
@@ -187,6 +414,12 @@ export function HeroCharacter({
             scale={scale}
         >
             <SelectionRing color={def.accent} />
+            {coatStyle ? (
+                <group ref={torso}>
+                    <CoatBody coat={def.robe} accent={def.accent} breeches={def.breeches ?? '#e7dcc0'} epaulettes={def.outfit === 'colonial-general'} />
+                </group>
+            ) : (
+            <>
             {/* boots */}
             {[-0.22, 0.22].map((x) => (
                 <mesh key={x} castShadow position={[x, 0.14, 0.12]}>
@@ -222,7 +455,7 @@ export function HeroCharacter({
                 {furCollar ? (
                     <mesh castShadow position={[0, 2.32, 0]} rotation={[Math.PI / 2, 0, 0]}>
                         <torusGeometry args={[0.42, 0.16, 10, 24]} />
-                        <meshStandardMaterial color={FUR} roughness={1} />
+                        <meshStandardMaterial color={def.outfit === 'king' ? '#f4f1ea' : FUR} roughness={1} />
                     </mesh>
                 ) : (
                     <mesh position={[0, 2.32, 0]}>
@@ -236,7 +469,10 @@ export function HeroCharacter({
                         <meshStandardMaterial color={def.robe} roughness={0.7} />
                     </mesh>
                 ))}
+                {def.outfit === 'king' && <ErmineCape color={def.accent} />}
             </group>
+            </>
+            )}
             <Arm side={1} robe={def.robe} skin={skin} armRef={leftArm} />
             <Arm side={-1} robe={def.robe} skin={skin} armRef={rightArm} />
             {/* head: big cartoon sphere carrying the portrait face */}
@@ -248,7 +484,7 @@ export function HeroCharacter({
                         <Face url={def.face} />
                     </Suspense>
                 </mesh>
-                <Headwear outfit={def.outfit} accent={def.accent} />
+                <Headwear outfit={def.outfit} accent={def.accent} hair={def.hair} balding={def.balding} />
             </group>
             <Html position={[0, 4.35, 0]} center distanceFactor={34} zIndexRange={[20, 0]} style={{ pointerEvents: 'none' }}>
                 <div className="flex flex-col items-center whitespace-nowrap select-none">

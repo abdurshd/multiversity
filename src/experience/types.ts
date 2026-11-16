@@ -123,7 +123,9 @@ export interface TacticalEvent {
     options: TacticalOption[];
 }
 
-export type BattleTheme = 'great-wall' | 'anatolia' | 'steppe';
+export type BattleTheme = 'great-wall' | 'anatolia' | 'steppe' | 'colonial';
+/** Weapons era: picks soldier models, siege engines and order names. */
+export type BattleEra = 'medieval' | 'musket';
 export type BattleOutcome = 'victory' | 'defeat' | 'pyrrhic';
 
 export interface BattleConfig {
@@ -131,6 +133,7 @@ export interface BattleConfig {
     name: string;
     objective: string;
     theme: BattleTheme;
+    era?: BattleEra;
     player: ArmyConfig;
     enemy: ArmyConfig;
     events: TacticalEvent[];
@@ -145,7 +148,7 @@ export interface BattleConfig {
 // ─── Characters (real historical people as stylized 3D figures) ────────────
 
 /** Silhouette + headwear preset for a hero figure. */
-export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general';
+export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king';
 export type CharacterPose = 'idle' | 'command' | 'think';
 
 export interface CharacterDef {
@@ -157,6 +160,12 @@ export interface CharacterDef {
     outfit: CharacterOutfit;
     /** Head/hand colour matched to the face crop (public/images/chapters/face-skin-tones.json). */
     skin?: string;
+    /** Hair cap colour for bare-headed characters (statesman). */
+    hair?: string;
+    /** Receding hairline (hair only at the back and sides). */
+    balding?: boolean;
+    /** Breeches + waistcoat colour for coat-style outfits. */
+    breeches?: string;
     robe: string;
     accent: string;
 }
@@ -230,7 +239,13 @@ export type EnvironmentId =
     | 'samarkand-dusk'
     | 'winter-march'
     | 'great-wall'
-    | 'anatolia';
+    | 'anatolia'
+    | 'philadelphia'
+    | 'valley-forge'
+    | 'yorktown'
+    | 'versailles'
+    | 'london'
+    | 'philadelphia-winter';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 
