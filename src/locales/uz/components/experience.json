@@ -64,6 +64,21 @@
           "label": "Xandaqdan hujumga",
           "description": "Piyoda va otliqlar 7 soniya xandaqdan chiqib hujum qiladi, 40% kuchliroq uradi"
         }
+      },
+      "ww2": {
+        "aim_hint": "Havo zarbasini belgilash uchun jang maydonini bosing · bekor qilish uchun Esc",
+        "rally": {
+          "label": "Sanitarlar va o'q-dori",
+          "description": "Sanitarlar va ta'minot safga yetib keladi: saflar tiklanadi, 8 soniya hujum +15%, mudofaa +20%"
+        },
+        "strike": {
+          "label": "Havo zarbasi",
+          "description": "Joyni tanlang: qiruvchi-bombardimonchilar u yerga 8 ta bomba tashlaydi"
+        },
+        "charge": {
+          "label": "Tanklar oldinga",
+          "description": "Tanklar va piyodalar 7 soniya birga oldinga yuradi, 40% kuchliroq uradi"
+        }
       }
     }
   },

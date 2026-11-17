@@ -64,6 +64,21 @@
           "label": "Over the top",
           "description": "Infantry and horse go over the top for 7 s, hitting 40% harder"
         }
+      },
+      "ww2": {
+        "aim_hint": "Click the battlefield to mark the air strike · Esc to cancel",
+        "rally": {
+          "label": "Medics and ammo",
+          "description": "Medics and resupply reach the line: heal the ranks, +15% attack, +20% defense for 8 s"
+        },
+        "strike": {
+          "label": "Air strike",
+          "description": "Click a spot: fighter-bombers drop 8 bombs there"
+        },
+        "charge": {
+          "label": "Armour forward",
+          "description": "Tanks and infantry push forward together for 7 s, hitting 40% harder"
+        }
       }
     }
   },

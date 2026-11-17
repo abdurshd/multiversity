@@ -360,6 +360,15 @@ function helmetParts(kind: Helmet, y: number, cloth: string): THREE.BufferGeomet
                 mpart(new THREE.CircleGeometry(0.06, 6), '#c8a24a', [0, y + 0.06, 0.19]),
             ];
         }
+        case 'm1': {
+            // US M1 "steel pot": deep round dome, narrow even brim, chin strap
+            const c = '#4b5233';
+            return [
+                mpart(new THREE.SphereGeometry(0.2, 12, 7, 0, Math.PI * 2, 0, Math.PI / 2), c, [0, y - 0.04, 0], undefined, [1, 1.05, 1.08]),
+                mpart(new THREE.CylinderGeometry(0.235, 0.235, 0.025, 12), c, [0, y - 0.04, 0], undefined, [1, 1, 1.1]),
+                mpart(new THREE.BoxGeometry(0.32, 0.03, 0.02), '#6a6a52', [0, y - 0.16, 0.06], [0.4, 0, 0]),
+            ];
+        }
         default:
             return [
                 mpart(new THREE.CylinderGeometry(0.15, 0.16, 0.16, 10), cloth, [0, y + 0.04, 0], [-0.15, 0, 0]),
@@ -453,4 +462,70 @@ export function buildModernCavalry(p: ArmyPalette, helmet: Helmet = 'brodie', ho
 /** Rifle bullet / shell fragment (modern projectiles are tiny and fast). */
 export function buildBullet(): THREE.BufferGeometry {
     return merge([mpart(new THREE.CapsuleGeometry(0.04, 0.12, 2, 4), '#c9a24a', [0, 0, 0])]);
+}
+
+/** WWII tank (fills the cavalry slot in the 'ww2' era): hull, tracks, turret, gun pointing +z.
+    The national marking is picked from the crew's helmet so no extra config is needed. */
+export function buildTank(p: ArmyPalette, helmet: Helmet = 'm1'): THREE.BufferGeometry {
+    const german = helmet === 'stahlhelm';
+    // hull paint follows the army's uniform colour: olive drab, desert sand or field grey
+    const hull = `#${new THREE.Color(p.cloth).offsetHSL(0, -0.04, -0.03).getHexString()}`;
+    const dark = `#${new THREE.Color(hull).offsetHSL(0, 0, -0.07).getHexString()}`;
+    const track = '#2b2a27';
+    const parts: THREE.BufferGeometry[] = [
+        // tracks with road wheels
+        mpart(new THREE.BoxGeometry(0.55, 0.75, 4.1), track, [-1.05, 0.4, 0]),
+        mpart(new THREE.BoxGeometry(0.55, 0.75, 4.1), track, [1.05, 0.4, 0]),
+        // lower hull, sloped glacis, upper hull
+        mpart(new THREE.BoxGeometry(1.6, 0.6, 3.9), dark, [0, 0.75, 0]),
+        mpart(new THREE.BoxGeometry(2.6, 0.18, 3.7), hull, [0, 1.12, -0.1]),
+        mpart(new THREE.BoxGeometry(2.0, 0.7, 0.9), hull, [0, 0.95, 1.85], [0.7, 0, 0]),
+        mpart(new THREE.BoxGeometry(2.0, 0.45, 3.0), hull, [0, 1.42, -0.25]),
+        // engine deck grille and exhausts
+        mpart(new THREE.BoxGeometry(1.4, 0.04, 0.9), '#33352c', [0, 1.66, -1.2]),
+        mpart(new THREE.CylinderGeometry(0.09, 0.09, 0.5, 6), '#3a2e26', [-0.6, 1.2, -2.05], [Math.PI / 2, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.09, 0.09, 0.5, 6), '#3a2e26', [0.6, 1.2, -2.05], [Math.PI / 2, 0, 0]),
+        // turret, mantlet, gun, commander's hatch
+        mpart(new THREE.CylinderGeometry(0.78, 0.9, 0.62, 10), hull, [0, 1.95, -0.15]),
+        mpart(new THREE.BoxGeometry(0.7, 0.42, 0.35), dark, [0, 1.95, 0.75]),
+        mpart(new THREE.CylinderGeometry(0.08, 0.1, 2.0, 8), '#3b3f36', [0, 1.98, 1.85], [Math.PI / 2, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.13, 0.13, 0.22, 8), '#3b3f36', [0, 1.98, 2.8], [Math.PI / 2, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.28, 0.3, 0.16, 8), dark, [-0.25, 2.33, -0.35]),
+        // commander head out of the hatch
+        mpart(new THREE.SphereGeometry(0.15, 8, 7), SKIN, [-0.25, 2.55, -0.35]),
+        ...helmetParts(helmet === 'stahlhelm' ? 'kepi' : helmet, 2.63, '#2a2a28'),
+        // stowage box at the turret rear
+        mpart(new THREE.BoxGeometry(1.1, 0.35, 0.4), WEBBING, [0, 1.9, -1.05]),
+        // crew tarp rolled on the stowage box
+        mpart(new THREE.CapsuleGeometry(0.12, 0.8, 3, 6), '#6a6450', [0, 2.12, -1.05], [0, 0, Math.PI / 2]),
+    ];
+    for (const side of [-1, 1]) {
+        for (let i = 0; i < 5; i++) {
+            parts.push(mpart(new THREE.CylinderGeometry(0.3, 0.3, 0.1, 10), '#3f3d36', [side * 1.34, 0.36, -1.6 + i * 0.8], [0, 0, Math.PI / 2]));
+        }
+        // national marking on both turret sides
+        const x = side * 0.86;
+        if (german) {
+            parts.push(mpart(new THREE.BoxGeometry(0.03, 0.42, 0.14), '#f2f2ee', [x, 1.98, -0.15]));
+            parts.push(mpart(new THREE.BoxGeometry(0.03, 0.14, 0.42), '#f2f2ee', [x, 1.98, -0.15]));
+            parts.push(mpart(new THREE.BoxGeometry(0.035, 0.3, 0.07), '#151515', [x, 1.98, -0.15]));
+            parts.push(mpart(new THREE.BoxGeometry(0.035, 0.07, 0.3), '#151515', [x, 1.98, -0.15]));
+        } else if (helmet === 'brodie') {
+            parts.push(mpart(new THREE.CylinderGeometry(0.2, 0.2, 0.03, 12), '#1f3c8a', [x, 1.98, -0.15], [0, 0, Math.PI / 2]));
+            parts.push(mpart(new THREE.CylinderGeometry(0.13, 0.13, 0.035, 12), '#f2f2ee', [x, 1.98, -0.15], [0, 0, Math.PI / 2]));
+            parts.push(mpart(new THREE.CylinderGeometry(0.06, 0.06, 0.04, 10), '#b3262d', [x, 1.98, -0.15], [0, 0, Math.PI / 2]));
+        } else {
+            // five-pointed white star
+            const star = new THREE.Shape();
+            for (let k = 0; k < 10; k++) {
+                const r = k % 2 === 0 ? 0.24 : 0.1;
+                const a = (k / 10) * Math.PI * 2;
+                if (k === 0) star.moveTo(Math.sin(a) * r, Math.cos(a) * r);
+                else star.lineTo(Math.sin(a) * r, Math.cos(a) * r);
+            }
+            const g = new THREE.ShapeGeometry(star);
+            parts.push(mpart(g, '#f2f2ee', [x + side * 0.02, 1.98, -0.15], [0, side * Math.PI / 2, 0]));
+        }
+    }
+    return merge(parts);
 }

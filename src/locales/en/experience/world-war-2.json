@@ -1,0 +1,934 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "London, September 1938. Twenty years after the last war, Britain is digging trenches in the parks and handing out gas masks to every family.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Adolf Hitler, the dictator of Germany, demands the Sudetenland, the mountain border region of Czechoslovakia where three million German speakers live. He says it is his last territorial demand.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "Prime Minister Neville Chamberlain is flying to Munich to meet Hitler, Mussolini and the French premier Daladier. The Czechoslovaks have not been invited to the meeting about their own country.",
+          "speaker": "The Chronicle"
+        },
+        "3": {
+          "text": "Winston Churchill, a backbench MP whom most people think is finished, has been warning for years that Hitler cannot be trusted. In our history, Britain chose peace at Munich. In this one, you decide.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "explore-london": {
+      "prompt": "Explore Westminster: drag to look around and click the glowing markers.",
+      "hotspots": {
+        "commons": {
+          "label": "Parliament",
+          "title": "The House of Commons",
+          "description": "Most MPs, and most of the country, want peace at almost any price. They remember the trenches of 1914 to 1918, and they have been told that \"the bomber will always get through\" and could flatten London in days."
+        },
+        "big-ben": {
+          "label": "Big Ben",
+          "title": "Time Running Out",
+          "description": "Britain began to rearm only a few years ago. The first Spitfire fighters reached an RAF squadron in August 1938. Radar stations are still being built along the coast. Every year of peace means more aircraft."
+        },
+        "balloons": {
+          "label": "Air-Raid Defences",
+          "title": "Ready for the Bombers",
+          "description": "Barrage balloons on steel cables to stop low-flying bombers, anti-aircraft guns, sandbags, and thirty-eight million gas masks given out in a single week of crisis."
+        },
+        "czechs": {
+          "label": "Czechoslovakia",
+          "title": "A Faraway Country",
+          "description": "Chamberlain called it \"a quarrel in a faraway country between people of whom we know nothing\". But Czechoslovakia is a democracy with a modern army of thirty-five divisions, the Škoda arms works, and a line of concrete forts along its mountain border, all inside the Sudetenland."
+        },
+        "churchill": {
+          "label": "Churchill",
+          "title": "The Voice in the Wilderness",
+          "description": "Churchill is sixty-three and out of office. He is said to have summed up Munich in one line: \"You were given the choice between war and dishonour. You chose dishonour, and you will have war.\" He wants Britain and France to stand by the Czechs now."
+        }
+      }
+    },
+    "munich-choice": {
+      "title": "The Munich Agreement · 29 September 1938",
+      "prompt": "Hitler will take the Sudetenland on 1 October, with or without an agreement. Britain and France must decide whether to sign it.",
+      "options": {
+        "appease": {
+          "label": "Sign at Munich",
+          "description": "Give Hitler the Sudetenland in return for his promise of peace. Britain gets another year to build fighters and radar."
+        },
+        "resist": {
+          "label": "Stand by Czechoslovakia",
+          "description": "Refuse to sign. If Germany attacks, Britain and France go to war, now, alongside the Czechoslovak army and its forts."
+        }
+      }
+    },
+    "sudeten-intro": {
+      "narration": {
+        "0": {
+          "text": "Chamberlain flies home with no agreement. Britain and France mobilise. On 1 October 1938, German troops cross the Czechoslovak border anyway.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "They run into a chain of new concrete bunkers in the forests, held by a well-armed army defending its own homes. Germany has no fuel reserves for a long war, and its western border is almost undefended.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "In Berlin, a group of generals has secretly agreed that if Hitler starts a war he cannot win, they will arrest him. Now the Czechoslovaks must hold.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "sudeten-battle": {
+      "battle": {
+        "name": "The Battle of the Border Forts",
+        "objective": "1 October 1938. There was no deal at Munich, and the German army has crossed the border. Czechoslovakia has 1.25 million men under arms and a chain of new concrete forts in the mountains. Hold the line until France and Britain can strike from the west.",
+        "player": {
+          "name": "Czechoslovak Army"
+        },
+        "enemy": {
+          "name": "German Second and Tenth Armies"
+        },
+        "events": {
+          "luftwaffe": {
+            "title": "Bombers Over the Mountains",
+            "prompt": "German bombers are hitting the roads behind your forts. The French army has mobilised on the Maginot Line, but it has not yet attacked.",
+            "options": {
+              "man-forts": {
+                "label": "Into the Forts",
+                "description": "Pull the men into the concrete and let the bombs fall on empty roads."
+              },
+              "call-paris": {
+                "label": "Call on Paris",
+                "description": "Beg France to attack the half-built Siegfried Line now, while most of Germany's army is here in the east."
+              }
+            }
+          },
+          "generals-plot": {
+            "title": "The Generals' Plot",
+            "prompt": "Rumours reach Prague that the chief of the German General Staff, Franz Halder, and other officers were ready to arrest Hitler if he dragged Germany into a war it could lose.",
+            "options": {
+              "counter-attack": {
+                "label": "Counter-Attack",
+                "description": "Show the German generals that this war cannot be won. Send the tanks and the reserves forward."
+              },
+              "broadcast": {
+                "label": "Broadcast to Germany",
+                "description": "Tell German soldiers by radio that Britain and France are now at war with them, and that their generals know it."
+              }
+            }
+          },
+          "last-line": {
+            "title": "The Forts Are Surrounded",
+            "prompt": "German pioneers with flamethrowers have reached the first bunkers. Behind you lies the open plain of Bohemia.",
+            "options": {
+              "hold-forts": {
+                "label": "Fight from Every Bunker",
+                "description": "Every fort fights on alone. They were built for exactly this."
+              },
+              "moravia": {
+                "label": "Fall Back to Moravia",
+                "description": "Give up the mountains, save the army, and fight on the next ridge."
+              }
+            }
+          }
+        }
+      }
+    },
+    "hitler-falls": {
+      "narration": {
+        "0": {
+          "text": "The border forts hold for three weeks. French divisions push into the Saarland, and the Royal Navy blockades Germany's ports. The war Hitler promised would be short is going badly.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "In November, General Halder and his fellow officers act. Hitler is arrested in the Reich Chancellery, and the new military government asks for an armistice.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "czech-falls": {
+      "narration": {
+        "0": {
+          "text": "The forts are outflanked and Czechoslovakia falls by the end of the year. The French attack in the west stops at the first German fortifications. The generals' plot never happens.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The war drags on. Poland is overrun in 1939. In May 1940 the German army bursts through the Ardennes, Chamberlain resigns, and Winston Churchill becomes Prime Minister. Six weeks later France has collapsed, and the British army is trapped at Dunkirk.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "peace-for-our-time": {
+      "narration": {
+        "0": {
+          "text": "Chamberlain lands at Heston airfield waving a piece of paper signed by Hitler. That evening he tells cheering crowds that he has brought \"peace for our time\".",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Six months later, German troops march into Prague. In September 1939 they invade Poland, and Britain and France declare war.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "In May 1940 the German army bursts through the Ardennes. On 10 May, the day the attack began, Winston Churchill became Prime Minister. Six weeks later France has collapsed, and the British army is trapped at Dunkirk.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "cabinet-1940": {
+      "title": "The War Cabinet · 28 May 1940",
+      "prompt": "The Foreign Secretary, Lord Halifax, wants to ask Mussolini to find out what peace terms Hitler would offer. Most of the army is trapped on the beaches of Dunkirk. Churchill must answer him.",
+      "options": {
+        "negotiate": {
+          "label": "Ask for Terms",
+          "description": "Save the army and the Empire while there is still something to save. Hitler has hinted he would leave Britain alone."
+        },
+        "fight-on": {
+          "label": "\"We Shall Never Surrender\"",
+          "description": "\"If this long island story of ours is to end at last, let it end only when each one of us lies choking in his own blood upon the ground.\" Britain fights on alone."
+        }
+      }
+    },
+    "halifax-peace": {
+      "narration": {
+        "0": {
+          "text": "Churchill is outvoted and resigns. Lord Halifax becomes Prime Minister and signs a peace that leaves Britain its fleet and its empire, and leaves the continent to Hitler.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The United States, with no ally left in Europe, stays out of the war in the west. Germany turns all its strength east, against the Soviet Union.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "battle-of-britain": {
+      "title": "The Battle of Britain · August 1940",
+      "prompt": "The Luftwaffe is bombing the RAF's airfields and radar stations every day to clear the sky for an invasion. Fighter Command is losing pilots faster than it can train them.",
+      "options": {
+        "radar-defense": {
+          "label": "Trust the Dowding System",
+          "description": "Radar, observers and a control room in a bunker guide each squadron to the raiders. Spend every fighter on defending the airfields."
+        },
+        "vengeance": {
+          "label": "Bomb Berlin",
+          "description": "Send Bomber Command to hit the German capital. It will do little damage, but it will make Hitler furious."
+        }
+      }
+    },
+    "the-few": {
+      "narration": {
+        "0": {
+          "text": "Radar sees every raid forming over France. The fighters meet the bombers again and again, and the Luftwaffe loses almost two aircraft for every one the RAF loses.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Churchill tells the Commons: \"Never in the field of human conflict was so much owed by so many to so few.\" In September, Hitler quietly postpones the invasion of Britain.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "the-blitz": {
+      "narration": {
+        "0": {
+          "text": "Hitler is enraged by the raid on Berlin and orders the Luftwaffe to bomb London instead. From 7 September, the Blitz kills more than forty thousand civilians across Britain.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "But the battered RAF airfields get the rest they need. The fighters recover, the invasion never comes, and Londoners sleep in the Underground and carry on.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "pearl-harbor": {
+      "narration": {
+        "0": {
+          "text": "Sunday 7 December 1941. Japanese carrier planes attack the US Pacific Fleet at Pearl Harbor in Hawaii. Eight battleships are sunk or damaged and more than two thousand Americans are killed.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "\"Yesterday, December 7, 1941, a date which will live in infamy, the United States of America was suddenly and deliberately attacked.\"",
+          "speaker": "Franklin D. Roosevelt"
+        },
+        "2": {
+          "text": "Four days later, Hitler declares war on the United States too. But the American aircraft carriers were at sea that morning, and every one of them survived.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "explore-midway": {
+      "prompt": "June 1942. Explore the flight deck of a US carrier northeast of Midway: drag to look around and click the glowing markers.",
+      "hotspots": {
+        "codebreakers": {
+          "label": "Codebreakers",
+          "title": "\"AF Is Short of Water\"",
+          "description": "In a basement at Pearl Harbor, Joseph Rochefort's team has partly broken the Japanese navy's code. To prove that the target \"AF\" is Midway, they had the island radio a fake message about a broken water plant. Days later, the Japanese reported that \"AF\" was short of water."
+        },
+        "dauntless": {
+          "label": "Dive Bombers",
+          "title": "The Dauntless",
+          "description": "Slow and old-fashioned, the SBD Dauntless can dive almost straight down onto a ship from four kilometres up. If the bombers catch the Japanese carriers with planes and fuel on their decks, a single bomb can be fatal."
+        },
+        "yorktown": {
+          "label": "Repair Crews",
+          "title": "Seventy-Two Hours",
+          "description": "The carrier Yorktown was badly damaged at the Coral Sea a month ago. The repair should have taken three months. Fourteen hundred workers patched her up in about three days."
+        },
+        "kido-butai": {
+          "label": "The Japanese Fleet",
+          "title": "Kido Butai",
+          "description": "Four of the six carriers that struck Pearl Harbor, Akagi, Kaga, Soryu and Hiryu, are heading for Midway with an invasion force behind them. Admiral Yamamoto hopes to lure the last American carriers into a trap."
+        }
+      }
+    },
+    "midway-choice": {
+      "title": "Northeast of Midway · 4 June 1942",
+      "prompt": "A scout plane has spotted the Japanese carriers. Their planes are bombing Midway island. The US fleet has three carriers against four.",
+      "options": {
+        "ambush": {
+          "label": "Launch Everything Now",
+          "description": "Strike first, at long range, while the Japanese planes are refuelling after the raid on Midway. Some of the slow torpedo bombers may not come back."
+        },
+        "caution": {
+          "label": "Save the Carriers",
+          "description": "Pull back towards Hawaii. These are the only carriers America has in the Pacific, and they cannot be risked against a bigger fleet."
+        }
+      }
+    },
+    "midway-victory": {
+      "narration": {
+        "0": {
+          "text": "The torpedo bombers attack first and are almost wiped out. But they pull the Japanese fighters down to sea level.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "At 10:22 a.m., American dive bombers arrive overhead. In five minutes, three Japanese carriers are burning. The fourth, Hiryu, is wrecked that afternoon.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "Japan has lost four carriers and hundreds of veteran airmen it can never replace. Six months after Pearl Harbor, the tide in the Pacific has turned.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "midway-defeat": {
+      "narration": {
+        "0": {
+          "text": "The carriers turn away. Midway falls to a Japanese landing, and Japanese planes can now reach Hawaii. Pearl Harbor has to be abandoned as a fleet base.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "With no American fleet to stop them, the Japanese cut the sea route to Australia. Washington decides that the war against Germany must come first.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "alamein-intro": {
+      "narration": {
+        "0": {
+          "text": "Egypt, October 1942. Field Marshal Erwin Rommel, \"the Desert Fox\", has chased the British army back across North Africa to a railway halt called El Alamein. Beyond it lie Alexandria and the Suez Canal.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The new commander of the British Eighth Army, General Bernard Montgomery, has spent two months gathering tanks, guns and men. He has more of everything, and he knows it.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "Rommel is short of fuel, and he is sick. He has gone home to Austria for treatment. In his absence, his army has laid half a million mines.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "alamein-battle": {
+      "battle": {
+        "name": "The Second Battle of El Alamein",
+        "objective": "23 October 1942, 9:40 in the evening. Rommel's army is dug in behind half a million mines, sixty kilometres from Alexandria. Break through the minefields and destroy the Panzer Army Africa before it can reach the Suez Canal.",
+        "player": {
+          "name": "British Eighth Army"
+        },
+        "enemy": {
+          "name": "Panzer Army Africa"
+        },
+        "events": {
+          "lightfoot": {
+            "title": "Operation Lightfoot",
+            "prompt": "Nearly nine hundred guns are lined up wheel to wheel. Behind them, the sappers are waiting to clear paths through the \"Devil's Gardens\", the German minefields.",
+            "options": {
+              "barrage": {
+                "label": "Open Fire",
+                "description": "The biggest British barrage since 1918 lights up the desert for twenty minutes."
+              },
+              "sappers": {
+                "label": "Sappers First",
+                "description": "Let the engineers clear wide lanes with mine detectors before the tanks go in. Slower, but fewer tanks will be lost to mines."
+              }
+            }
+          },
+          "rommel-returns": {
+            "title": "Rommel Returns",
+            "prompt": "Rommel was in an Austrian hospital when the battle began. He has flown back to Africa and is gathering his panzers for a counter-attack.",
+            "options": {
+              "supercharge": {
+                "label": "Operation Supercharge",
+                "description": "Throw the armoured divisions at one narrow point and smash through, whatever it costs."
+              },
+              "crumbling": {
+                "label": "Keep Crumbling",
+                "description": "Montgomery's plan: wear down the Axis infantry bit by bit and let Rommel waste his tanks attacking you."
+              }
+            }
+          },
+          "no-retreat": {
+            "title": "The Breakthrough Stalls",
+            "prompt": "Burning tanks fill the lanes through the minefields. The armoured commanders want to pull back and wait.",
+            "options": {
+              "monty-order": {
+                "label": "\"No Withdrawal\"",
+                "description": "Montgomery has promised there will be no more retreats. The tanks go forward again."
+              },
+              "desert-air-force": {
+                "label": "Call the Desert Air Force",
+                "description": "Send the bombers over the German anti-tank guns, wave after wave."
+              }
+            }
+          }
+        }
+      }
+    },
+    "alamein-won": {
+      "narration": {
+        "0": {
+          "text": "After twelve days, Rommel's line breaks. Days later, American and British troops land in Morocco and Algeria. By May 1943, the Axis armies in Africa have surrendered.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "\"Now this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.\"",
+          "speaker": "Winston Churchill"
+        }
+      }
+    },
+    "alamein-lost": {
+      "narration": {
+        "0": {
+          "text": "The British attack bogs down in the minefields. Rommel holds El Alamein, and the war in Africa drags on deep into 1943.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Men, tanks and landing craft that were meant for France are kept in the Mediterranean. Rommel returns to Europe a hero, and Hitler gives him the job of defending the Atlantic coast.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "southwick-intro": {
+      "narration": {
+        "0": {
+          "text": "Southwick House, near Portsmouth, 4 June 1944. More than six thousand ships and a hundred and fifty thousand men are waiting to cross the English Channel to Normandy.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "After Midway and El Alamein, the Allies have the initiative everywhere. The Red Army is advancing in the east, and Rome is about to fall.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "But a gale is blowing in the Channel, and the invasion has already been postponed once. General Dwight D. Eisenhower, Supreme Allied Commander, has to decide alone.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "explore-southwick": {
+      "prompt": "Explore Southwick House on the night of 4 June: drag to look around and click the glowing markers.",
+      "hotspots": {
+        "map-room": {
+          "label": "The Map Room",
+          "title": "Group Captain Stagg",
+          "description": "The chief weather forecaster, a Scottish scientist named James Stagg, has spotted a gap in the storms. He thinks the wind will drop for about thirty-six hours on 6 June. The American forecasters disagree with him."
+        },
+        "fleet": {
+          "label": "The Fleet",
+          "title": "Operation Neptune",
+          "description": "Battleships, minesweepers, troop ships and thousands of landing craft. Some convoys have already sailed and had to be called back. Men have been sealed on board their ships for days, seasick and waiting."
+        },
+        "tides": {
+          "label": "Tides and Moon",
+          "title": "Only Three Days a Month",
+          "description": "The landing needs a low tide at dawn, to expose the beach obstacles, and a bright moon the night before for the paratroopers. That happens on 5, 6 and 7 June. The next chance is two weeks away."
+        },
+        "note": {
+          "label": "A Note in a Pocket",
+          "title": "\"The Fault Is Mine Alone\"",
+          "description": "Eisenhower has written a short message to read out if the landings fail: \"If any blame or fault attaches to the attempt it is mine alone.\" He keeps it in his wallet."
+        },
+        "ike": {
+          "label": "Eisenhower",
+          "title": "The Supreme Commander",
+          "description": "A small-town boy from Kansas who had never commanded troops in battle until 1942. His job is less to fight than to keep the British, the Americans, the Canadians and the Free French working together."
+        }
+      }
+    },
+    "dday-choice": {
+      "title": "Southwick House · 5 June, 4:15 a.m.",
+      "prompt": "Rain is lashing the windows. Stagg says the break in the weather will come. The commanders are silent, waiting for Eisenhower.",
+      "options": {
+        "go": {
+          "label": "\"OK, We'll Go\"",
+          "description": "Trust the forecast. The invasion sails tonight and lands on the morning of 6 June."
+        },
+        "delay": {
+          "label": "Wait for Better Weather",
+          "description": "The risk is too great. Unload the men and wait for the next good tides in two weeks."
+        }
+      }
+    },
+    "storm": {
+      "narration": {
+        "0": {
+          "text": "On 19 June, the date of the next good tides, the worst Channel storm in forty years blows for four days. The invasion is postponed again, into July.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Some troops have been briefed and then kept waiting for weeks. German intelligence picks up hints of the plan, and Rommel moves a panzer division up to the Normandy coast.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "omaha-landing": {
+      "narration": {
+        "0": {
+          "text": "Normandy, 6 June 1944. Paratroopers have dropped inland in the night. At dawn the navy opens fire, and the landing craft head for five beaches: Utah, Omaha, Gold, Juno and Sword.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "At Omaha, the bombers have dropped their loads too far inland in the cloud. The bunkers on the bluffs are untouched, and German machine gunners are waiting.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "omaha-go": {
+      "battle": {
+        "name": "Omaha Beach",
+        "objective": "6 June 1944, 6:30 in the morning. The sea is rough and the bombers missed the bunkers, but the Germans did not expect a landing in this weather. Get off the beach and up the bluffs before the tide comes in.",
+        "player": {
+          "name": "US 1st and 29th Infantry Divisions"
+        },
+        "enemy": {
+          "name": "352nd and 716th Infantry Divisions"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "The Swimming Tanks",
+            "prompt": "Thirty-two Sherman tanks have canvas floatation screens so they can swim ashore from five kilometres out. The waves are a metre and a half high.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Launch Them at Sea",
+                "description": "Stick to the plan and launch them far out, out of range of the coastal guns."
+              },
+              "land-on-beach": {
+                "label": "Carry Them to the Beach",
+                "description": "Keep the tanks on the landing craft and drop them straight onto the sand, under fire."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Destroyers Close In",
+            "prompt": "From the bridge of their ships, destroyer captains can see the infantry pinned on the sand. Their orders say not to come so close to the shore.",
+            "options": {
+              "close-in": {
+                "label": "Come In Close",
+                "description": "Bring the destroyers within a kilometre of the beach, scraping the sandbanks, and shoot at the bunkers point-blank."
+              },
+              "bangalore": {
+                "label": "Blow the Wire",
+                "description": "Engineers push Bangalore torpedoes under the wire, and small groups climb the bluffs between the strongpoints."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Pinned at the Shingle",
+            "prompt": "Thousands of men are lying behind a low bank of stones, and the tide is rising behind them. Offshore, General Bradley is thinking about sending the next waves somewhere else.",
+            "options": {
+              "get-off-beach": {
+                "label": "\"Get Off This Beach!\"",
+                "description": "Colonel George Taylor: \"Two kinds of people are staying on this beach: the dead and those who are going to die. Now let's get the hell out of here!\""
+              },
+              "dig-in": {
+                "label": "Hold On and Wait",
+                "description": "Dig in behind the shingle and wait for the next wave and the navy's guns."
+              }
+            }
+          }
+        }
+      }
+    },
+    "omaha-delay": {
+      "battle": {
+        "name": "Omaha Beach",
+        "objective": "The landing has come weeks late. Rommel has had time to bring a panzer division to the coast and lay thousands more mines. Get off the beach and up the bluffs, or the invasion fails.",
+        "player": {
+          "name": "US 1st and 29th Infantry Divisions"
+        },
+        "enemy": {
+          "name": "352nd Division and 21st Panzer"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "The Swimming Tanks",
+            "prompt": "Thirty-two Sherman tanks have canvas floatation screens so they can swim ashore from five kilometres out. The waves are a metre and a half high.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Launch Them at Sea",
+                "description": "Stick to the plan and launch them far out, out of range of the coastal guns."
+              },
+              "land-on-beach": {
+                "label": "Carry Them to the Beach",
+                "description": "Keep the tanks on the landing craft and drop them straight onto the sand, under fire."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Destroyers Close In",
+            "prompt": "From the bridge of their ships, destroyer captains can see the infantry pinned on the sand. Their orders say not to come so close to the shore.",
+            "options": {
+              "close-in": {
+                "label": "Come In Close",
+                "description": "Bring the destroyers within a kilometre of the beach, scraping the sandbanks, and shoot at the bunkers point-blank."
+              },
+              "bangalore": {
+                "label": "Blow the Wire",
+                "description": "Engineers push Bangalore torpedoes under the wire, and small groups climb the bluffs between the strongpoints."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Pinned at the Shingle",
+            "prompt": "Thousands of men are lying behind a low bank of stones, and the tide is rising behind them. Offshore, General Bradley is thinking about sending the next waves somewhere else.",
+            "options": {
+              "get-off-beach": {
+                "label": "\"Get Off This Beach!\"",
+                "description": "Colonel George Taylor: \"Two kinds of people are staying on this beach: the dead and those who are going to die. Now let's get the hell out of here!\""
+              },
+              "dig-in": {
+                "label": "Hold On and Wait",
+                "description": "Dig in behind the shingle and wait for the next wave and the navy's guns."
+              }
+            }
+          }
+        }
+      }
+    },
+    "southwick-intro-b": {
+      "narration": {
+        "0": {
+          "text": "Southwick House, near Portsmouth, 4 June 1944. More than six thousand ships and a hundred and fifty thousand men are waiting to cross the English Channel to Normandy.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The war in Africa dragged on into 1943, and men and landing craft that should be here are still in the Mediterranean. Rommel, the hero of Egypt, now commands the defences of the French coast.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "A gale is blowing in the Channel, and the invasion has already been postponed once. General Dwight D. Eisenhower, Supreme Allied Commander, has to decide alone.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "explore-southwick-b": {
+      "prompt": "Explore Southwick House on the night of 4 June: drag to look around and click the glowing markers.",
+      "hotspots": {
+        "map-room": {
+          "label": "The Map Room",
+          "title": "Group Captain Stagg",
+          "description": "The chief weather forecaster, a Scottish scientist named James Stagg, has spotted a gap in the storms. He thinks the wind will drop for about thirty-six hours on 6 June. The American forecasters disagree with him."
+        },
+        "fleet": {
+          "label": "The Fleet",
+          "title": "Operation Neptune",
+          "description": "Battleships, minesweepers, troop ships and thousands of landing craft. Some convoys have already sailed and had to be called back. Men have been sealed on board their ships for days, seasick and waiting."
+        },
+        "tides": {
+          "label": "Tides and Moon",
+          "title": "Only Three Days a Month",
+          "description": "The landing needs a low tide at dawn, to expose the beach obstacles, and a bright moon the night before for the paratroopers. That happens on 5, 6 and 7 June. The next chance is two weeks away."
+        },
+        "note": {
+          "label": "A Note in a Pocket",
+          "title": "\"The Fault Is Mine Alone\"",
+          "description": "Eisenhower has written a short message to read out if the landings fail: \"If any blame or fault attaches to the attempt it is mine alone.\" He keeps it in his wallet."
+        },
+        "ike": {
+          "label": "Eisenhower",
+          "title": "The Supreme Commander",
+          "description": "A small-town boy from Kansas who had never commanded troops in battle until 1942. The long fight in Africa has cost him men and landing craft. He knows the beaches will be harder than planned."
+        }
+      }
+    },
+    "dday-choice-b": {
+      "title": "Southwick House · 5 June, 4:15 a.m.",
+      "prompt": "Rain is lashing the windows. Stagg says the break in the weather will come. The commanders are silent, waiting for Eisenhower.",
+      "options": {
+        "go": {
+          "label": "\"OK, We'll Go\"",
+          "description": "Trust the forecast. The invasion sails tonight and lands on the morning of 6 June."
+        },
+        "delay": {
+          "label": "Wait for Better Weather",
+          "description": "The risk is too great. Unload the men and wait for the next good tides in two weeks."
+        }
+      }
+    },
+    "storm-b": {
+      "narration": {
+        "0": {
+          "text": "On 19 June, the date of the next good tides, the worst Channel storm in forty years blows for four days. The invasion is postponed again, into July.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Some troops have been briefed and then kept waiting for weeks. German intelligence picks up hints of the plan, and Rommel moves a panzer division up to the Normandy coast.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "omaha-landing-b": {
+      "narration": {
+        "0": {
+          "text": "Normandy, 6 June 1944. Paratroopers have dropped inland in the night. At dawn the navy opens fire, and the landing craft head for five beaches: Utah, Omaha, Gold, Juno and Sword.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "At Omaha, the bombers have dropped their loads too far inland in the cloud. The bunkers on the bluffs are untouched, and German machine gunners are waiting.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "omaha-go-b": {
+      "battle": {
+        "name": "Omaha Beach",
+        "objective": "6 June 1944, 6:30 in the morning. Rommel, who was never beaten in Africa, has turned this coast into a wall of mines, obstacles and bunkers. Get off the beach and up the bluffs before the tide comes in.",
+        "player": {
+          "name": "US 1st and 29th Infantry Divisions"
+        },
+        "enemy": {
+          "name": "352nd and 716th Infantry Divisions"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "The Swimming Tanks",
+            "prompt": "Thirty-two Sherman tanks have canvas floatation screens so they can swim ashore from five kilometres out. The waves are a metre and a half high.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Launch Them at Sea",
+                "description": "Stick to the plan and launch them far out, out of range of the coastal guns."
+              },
+              "land-on-beach": {
+                "label": "Carry Them to the Beach",
+                "description": "Keep the tanks on the landing craft and drop them straight onto the sand, under fire."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Destroyers Close In",
+            "prompt": "From the bridge of their ships, destroyer captains can see the infantry pinned on the sand. Their orders say not to come so close to the shore.",
+            "options": {
+              "close-in": {
+                "label": "Come In Close",
+                "description": "Bring the destroyers within a kilometre of the beach, scraping the sandbanks, and shoot at the bunkers point-blank."
+              },
+              "bangalore": {
+                "label": "Blow the Wire",
+                "description": "Engineers push Bangalore torpedoes under the wire, and small groups climb the bluffs between the strongpoints."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Pinned at the Shingle",
+            "prompt": "Thousands of men are lying behind a low bank of stones, and the tide is rising behind them. Offshore, General Bradley is thinking about sending the next waves somewhere else.",
+            "options": {
+              "get-off-beach": {
+                "label": "\"Get Off This Beach!\"",
+                "description": "Colonel George Taylor: \"Two kinds of people are staying on this beach: the dead and those who are going to die. Now let's get the hell out of here!\""
+              },
+              "dig-in": {
+                "label": "Hold On and Wait",
+                "description": "Dig in behind the shingle and wait for the next wave and the navy's guns."
+              }
+            }
+          }
+        }
+      }
+    },
+    "omaha-delay-b": {
+      "battle": {
+        "name": "Omaha Beach",
+        "objective": "The landing has come weeks late. Rommel has had time to bring a panzer division to the coast and lay thousands more mines. Get off the beach and up the bluffs, or the invasion fails.",
+        "player": {
+          "name": "US 1st and 29th Infantry Divisions"
+        },
+        "enemy": {
+          "name": "352nd Division and 21st Panzer"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "The Swimming Tanks",
+            "prompt": "Thirty-two Sherman tanks have canvas floatation screens so they can swim ashore from five kilometres out. The waves are a metre and a half high.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Launch Them at Sea",
+                "description": "Stick to the plan and launch them far out, out of range of the coastal guns."
+              },
+              "land-on-beach": {
+                "label": "Carry Them to the Beach",
+                "description": "Keep the tanks on the landing craft and drop them straight onto the sand, under fire."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Destroyers Close In",
+            "prompt": "From the bridge of their ships, destroyer captains can see the infantry pinned on the sand. Their orders say not to come so close to the shore.",
+            "options": {
+              "close-in": {
+                "label": "Come In Close",
+                "description": "Bring the destroyers within a kilometre of the beach, scraping the sandbanks, and shoot at the bunkers point-blank."
+              },
+              "bangalore": {
+                "label": "Blow the Wire",
+                "description": "Engineers push Bangalore torpedoes under the wire, and small groups climb the bluffs between the strongpoints."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Pinned at the Shingle",
+            "prompt": "Thousands of men are lying behind a low bank of stones, and the tide is rising behind them. Offshore, General Bradley is thinking about sending the next waves somewhere else.",
+            "options": {
+              "get-off-beach": {
+                "label": "\"Get Off This Beach!\"",
+                "description": "Colonel George Taylor: \"Two kinds of people are staying on this beach: the dead and those who are going to die. Now let's get the hell out of here!\""
+              },
+              "dig-in": {
+                "label": "Hold On and Wait",
+                "description": "Dig in behind the shingle and wait for the next wave and the navy's guns."
+              }
+            }
+          }
+        }
+      }
+    },
+    "liberation": {
+      "narration": {
+        "0": {
+          "text": "By nightfall, the Americans have climbed the bluffs and the five beaches are held. Paris is liberated in August. The Red Army, which has done most of the fighting, drives on Berlin from the east.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Hitler kills himself in his bunker on 30 April 1945, and Germany surrenders a week later. Japan surrenders in August, after atomic bombs destroy Hiroshima and Nagasaki.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "dday-fails": {
+      "narration": {
+        "0": {
+          "text": "Omaha Beach is lost, and the other beaches are pinned and cut off. Eisenhower reads out his note: \"If any blame or fault attaches to the attempt it is mine alone.\"",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "It will take the western Allies at least a year to try again. The Red Army does not wait for them.",
+          "speaker": "The Chronicle"
+        }
+      }
+    }
+  },
+  "characters": {
+    "churchill": {
+      "name": "Winston Churchill",
+      "role": "Member of Parliament, Prime Minister from May 1940"
+    },
+    "roosevelt": {
+      "name": "Franklin D. Roosevelt",
+      "role": "32nd President of the United States"
+    },
+    "eisenhower": {
+      "name": "Dwight D. Eisenhower",
+      "role": "Supreme Allied Commander in Europe"
+    },
+    "montgomery": {
+      "name": "Bernard Montgomery",
+      "role": "Commander of the British Eighth Army"
+    },
+    "rommel": {
+      "name": "Erwin Rommel",
+      "role": "Commander of the Panzer Army Africa"
+    }
+  },
+  "title": "Their Finest Hour",
+  "era": "Munich · 1938",
+  "endings": {
+    "no-appeasement": {
+      "title": "No Appeasement",
+      "subtitle": "War in 1938 · the forts hold · Hitler falls",
+      "epilogue": {
+        "0": {
+          "text": "The \"short war\" of 1938 lasts only a few months. Germany's new military rulers give back the Sudetenland and Austria, and the Nazi party is banned."
+        },
+        "1": {
+          "text": "There is no Holocaust. Six million Jews, and millions of others, live out their lives. There is no Blitz, no Pearl Harbor and no atomic bomb dropped on a city."
+        },
+        "2": {
+          "text": "Churchill becomes the man who was right, and 30 September is remembered in Prague as the day democracies found their nerve."
+        }
+      }
+    },
+    "nazi-europe": {
+      "title": "The Lights Go Out",
+      "subtitle": "Britain makes peace in 1940 · Hitler rules Europe",
+      "epilogue": {
+        "0": {
+          "text": "With Britain out of the war, Germany throws everything at the Soviet Union in 1941. The fighting in the east is even more terrible, and the Holocaust goes on unseen behind a sealed continent."
+        },
+        "1": {
+          "text": "Britain keeps its fleet but lives on Hitler's terms, its newspapers careful and its refugees sent home. America arms itself and waits."
+        },
+        "2": {
+          "text": "Churchill was right in May 1940: a peace with Hitler was only a slower defeat."
+        }
+      }
+    },
+    "japan-wins-pacific": {
+      "title": "Empire of the Rising Sun",
+      "subtitle": "The carriers turn back at Midway · Japan rules the Pacific",
+      "epilogue": {
+        "0": {
+          "text": "America fights Germany first and is forced to accept a truce in the Pacific in 1944. Japan keeps most of its conquests, from Manchuria to the Dutch East Indies."
+        },
+        "1": {
+          "text": "The \"Greater East Asia Co-Prosperity Sphere\" is run from Tokyo for decades, with brutal occupations and wars of resistance in China, Korea and Southeast Asia."
+        }
+      }
+    },
+    "d-day-fails": {
+      "title": "Overlord Fails",
+      "subtitle": "Omaha Beach is lost · Stalin reaches the Rhine",
+      "epilogue": {
+        "0": {
+          "text": "The Red Army takes Berlin in the spring of 1945, then keeps going. By the time the western Allies are ready to land again, Soviet tanks have reached the Rhine."
+        },
+        "1": {
+          "text": "Most of Europe falls behind the Iron Curtain. Britain stands alone again, this time facing Stalin."
+        }
+      }
+    },
+    "allied-victory": {
+      "title": "Their Finest Hour",
+      "subtitle": "The history you know: D-Day, victory, and a world rebuilt",
+      "epilogue": {
+        "0": {
+          "text": "More than seventy million people have died, among them six million Jews murdered in the Holocaust. Europe and East Asia lie in ruins."
+        },
+        "1": {
+          "text": "The victors found the United Nations in 1945 and try the Nazi leaders at Nuremberg. The Marshall Plan rebuilds Western Europe."
+        },
+        "2": {
+          "text": "But Europe is split down the middle by an Iron Curtain, and the two superpowers that won the war begin a Cold War that will last almost half a century."
+        }
+      }
+    }
+  }
+}

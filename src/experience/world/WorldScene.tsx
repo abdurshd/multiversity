@@ -15,6 +15,7 @@ import { Cast } from './HeroCharacter';
 import { MarengoField, ParisBastille, ParisTerror, ValmyField, Varennes } from './revolution';
 import { AntietamField, CharlestonHarbor, FordsTheatre, GettysburgField, Springfield, Washington1861 } from './civilwar';
 import { Berlin1914, Compiegne, Marne1914, Sarajevo1914, WesternFront } from './greatwar';
+import { ElAlamein, London1940, Midway1942, Normandy1944, Southwick1944, Sudeten1938 } from './ww2';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
 // ─── Environment settings ──────────────────────────────────────────────────
@@ -173,7 +174,40 @@ const ENV: Record<EnvironmentId, EnvDef> = {
         sunPos: [70, 90, 60], ambient: 0.5, ground: '#86955c', groundVar: '#73824c',
         disc: { pos: [260, 300, 200], color: '#fff6e0', size: 26 }, clouds: true,
     },
+    'london-1940': {
+        skyTop: '#7088a3', skyHorizon: '#d5d3cb', fog: '#c4c3bc', sun: '#f6ead2',
+        sunPos: [60, 80, 70], ambient: 0.5, ground: '#6c7a52', groundVar: '#5f6a4a',
+        disc: { pos: [240, 300, 260], color: '#fbf2de', size: 22 }, clouds: true,
+    },
+    'sudeten-1938': {
+        skyTop: '#5f86b4', skyHorizon: '#e6dcc4', fog: '#d2ccb8', sun: '#ffe2b0',
+        sunPos: [-60, 60, 70], ambient: 0.5, ground: '#7d8a4c', groundVar: '#9a8a4a',
+        disc: { pos: [-240, 200, 260], color: '#ffeccc', size: 24 }, clouds: true,
+    },
+    'midway-1942': {
+        skyTop: '#3f79c2', skyHorizon: '#d6e6ee', fog: '#bfd3dd', sun: '#fff4dc',
+        sunPos: [50, 110, 40], ambient: 0.55, ground: '#25546d', groundVar: '#22506a',
+        disc: { pos: [200, 380, 160], color: '#fffbe8', size: 26 }, clouds: true,
+    },
+    'el-alamein': {
+        skyTop: '#4f88c6', skyHorizon: '#f0e2c2', fog: '#e6d6b2', sun: '#fff0cc',
+        sunPos: [70, 90, 50], ambient: 0.55, ground: '#d6b97e', groundVar: '#c9a76c',
+        disc: { pos: [280, 320, 200], color: '#fff8e0', size: 28 }, clouds: false,
+    },
+    'southwick-1944': {
+        skyTop: '#3e4652', skyHorizon: '#8e939a', fog: '#7d838a', sun: '#c9ccd2',
+        sunPos: [-40, 70, 60], ambient: 0.42, ground: '#566b42', groundVar: '#4a5c3a',
+        disc: { pos: [-200, 220, 260], color: '#d6d9de', size: 14 }, clouds: true,
+    },
+    'normandy-1944': {
+        skyTop: '#6a7c90', skyHorizon: '#cfd0c8', fog: '#bfc1ba', sun: '#f2e8d4',
+        sunPos: [60, 60, 80], ambient: 0.5, ground: '#cdb98c', groundVar: '#c2ad80',
+        disc: { pos: [240, 200, 320], color: '#f6eedc', size: 20 }, clouds: true,
+    },
 };
+
+/** Scenes with open sea where the distant hills would poke through the water. */
+const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944']);
 
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter']);
 
@@ -199,7 +233,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             <ambientLight intensity={env.ambient * 0.45} />
             <directionalLight
                 position={env.sunPos}
-                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : environment === 'fords-theatre' ? 0.25 : environment === 'western-front' ? 1.3 : environment === 'compiegne' ? 1.2 : environment === 'springfield' || environment === 'charleston-harbor' ? 1.5 : 2.1}
+                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : environment === 'fords-theatre' ? 0.25 : environment === 'western-front' ? 1.3 : environment === 'compiegne' ? 1.2 : environment === 'southwick-1944' ? 1.0 : environment === 'springfield' || environment === 'charleston-harbor' ? 1.5 : 2.1}
                 color={env.sun}
                 castShadow
                 shadow-mapSize={[2048, 2048]}
@@ -211,7 +245,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 shadow-camera-bottom={-130}
             />
             <hemisphereLight args={[env.skyHorizon, env.ground, 0.4]} />
-            <Terrain base={env.ground} variant={env.groundVar} winter={WINTER.has(environment)} />
+            <Terrain base={env.ground} variant={env.groundVar} winter={WINTER.has(environment)} flat={FLAT.has(environment)} />
             {env.clouds && <Clouds dark={false} />}
             {(environment === 'varennes' || environment === 'springfield') && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
@@ -267,6 +301,18 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <Compiegne />
             ) : environment === 'washington-1917' ? (
                 <Washington1861 year={1917} />
+            ) : environment === 'london-1940' ? (
+                <London1940 />
+            ) : environment === 'sudeten-1938' ? (
+                <Sudeten1938 />
+            ) : environment === 'midway-1942' ? (
+                <Midway1942 />
+            ) : environment === 'el-alamein' ? (
+                <ElAlamein />
+            ) : environment === 'southwick-1944' ? (
+                <Southwick1944 />
+            ) : environment === 'normandy-1944' ? (
+                <Normandy1944 />
             ) : (
                 <AnatoliaField />
             )}
@@ -314,7 +360,7 @@ function SkyDome({ top, horizon }: { top: string; horizon: string }) {
 }
 
 // ─── Terrain: gentle hills beyond the action radius, vertex-colored ────────
-function Terrain({ base, variant, winter }: { base: string; variant: string; winter: boolean }) {
+function Terrain({ base, variant, winter, flat = false }: { base: string; variant: string; winter: boolean; flat?: boolean }) {
     const geom = useMemo(() => {
         const g = new THREE.PlaneGeometry(1100, 1100, 90, 90);
         g.rotateX(-Math.PI / 2);
@@ -332,8 +378,8 @@ function Terrain({ base, variant, winter }: { base: string; variant: string; win
             const z = pos.getZ(i);
             const r = Math.sqrt(x * x + z * z);
             // flat playfield, hills rising beyond
-            const rim = Math.max(0, r - 140);
-            const h = rim * 0.085 * (1 + noise(x, z) * 0.55) + (r > 140 ? noise(x * 2.3, z * 2.3) * 1.6 : 0);
+            const rim = flat ? 0 : Math.max(0, r - 140);
+            const h = rim * 0.085 * (1 + noise(x, z) * 0.55) + (r > 140 && !flat ? noise(x * 2.3, z * 2.3) * 1.6 : 0);
             pos.setY(i, h);
             const n = (noise(x * 3.1, z * 3.1) + 1.4) / 2.8 + (rand() - 0.5) * 0.06;
             const c = baseC.clone().lerp(varC, THREE.MathUtils.clamp(n, 0, 1));
@@ -349,7 +395,7 @@ function Terrain({ base, variant, winter }: { base: string; variant: string; win
         g.setAttribute('color', new THREE.BufferAttribute(colors, 3));
         g.computeVertexNormals();
         return g;
-    }, [base, variant, winter]);
+    }, [base, variant, winter, flat]);
     return (
         <mesh geometry={geom} receiveShadow>
             <meshStandardMaterial vertexColors roughness={1} />

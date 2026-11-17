@@ -330,6 +330,7 @@ function BattleOverlay() {
 const ABILITY_ICONS: Record<AbilityId, string> = { rally: '🚩', strike: '🎯', charge: '🐎' };
 const MUSKET_ICONS: Record<AbilityId, string> = { rally: '🥁', strike: '💥', charge: '🗡️' };
 const MODERN_ICONS: Record<AbilityId, string> = { rally: '📯', strike: '💥', charge: '🪖' };
+const WW2_ICONS: Record<AbilityId, string> = { rally: '⛑️', strike: '✈️', charge: '🛡️' };
 const ABILITY_ORDER: AbilityId[] = ['rally', 'strike', 'charge'];
 
 function AbilityBar() {
@@ -337,8 +338,8 @@ function AbilityBar() {
     const beat = useCurrentBeat();
     // musket-era battles rename the orders (volley line, artillery, bayonets)
     const battleEra = beat?.kind === 'battle' ? beat.battle.era : undefined;
-    const era = battleEra === 'musket' ? 'musket.' : battleEra === 'modern' ? 'modern.' : '';
-    const icons = battleEra === 'modern' ? MODERN_ICONS : era ? MUSKET_ICONS : ABILITY_ICONS;
+    const era = battleEra === 'musket' ? 'musket.' : battleEra === 'modern' ? 'modern.' : battleEra === 'ww2' ? 'ww2.' : '';
+    const icons = battleEra === 'ww2' ? WW2_ICONS : battleEra === 'modern' ? MODERN_ICONS : era ? MUSKET_ICONS : ABILITY_ICONS;
     const cooldowns = useBattleHud((s) => s.abilityCooldowns);
     const active = useBattleHud((s) => s.abilityActive);
     const targeting = useBattleHud((s) => s.targeting);

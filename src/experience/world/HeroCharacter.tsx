@@ -125,6 +125,75 @@ function Headwear({ outfit, accent, hair, hat, balding = false }: { outfit: Char
                     </group>
                 </group>
             );
+        case 'homburg':
+            // black homburg hat with a curled brim and silk band
+            return (
+                <group>
+                    <ShortHair color={hair ?? '#c9b8a0'} />
+                    <group position={[0, 0.33, -0.04]} rotation={[-0.08, 0, 0]}>
+                        <mesh castShadow scale={[1, 1, 0.92]}>
+                            <cylinderGeometry args={[0.62, 0.64, 0.04, 28]} />
+                            <meshStandardMaterial color={hat ?? '#151517'} roughness={0.55} />
+                        </mesh>
+                        <mesh position={[0, 0.03, 0]}>
+                            <torusGeometry args={[0.62, 0.035, 6, 28]} />
+                            <meshStandardMaterial color={hat ?? '#151517'} roughness={0.55} />
+                        </mesh>
+                        <mesh castShadow position={[0, 0.24, 0]} scale={[1, 1, 0.9]}>
+                            <cylinderGeometry args={[0.34, 0.38, 0.46, 24]} />
+                            <meshStandardMaterial color={hat ?? '#151517'} roughness={0.5} />
+                        </mesh>
+                        <mesh position={[0, 0.07, 0]} scale={[1, 1, 0.9]}>
+                            <cylinderGeometry args={[0.385, 0.385, 0.1, 24]} />
+                            <meshStandardMaterial color="#2c2c30" roughness={0.3} />
+                        </mesh>
+                    </group>
+                </group>
+            );
+        case 'peaked-cap':
+            // officer's peaked cap: crown, coloured band, glossy visor and badge
+            return (
+                <group>
+                    <ShortHair color={hair ?? '#7a6a58'} />
+                    <group position={[0, 0.3, -0.02]} rotation={[-0.1, 0, 0]}>
+                        <mesh castShadow position={[0, 0.2, -0.03]} scale={[1, 0.5, 1.08]}>
+                            <cylinderGeometry args={[0.58, 0.44, 0.5, 26]} />
+                            <meshStandardMaterial color={hat ?? '#5a5c48'} roughness={0.85} />
+                        </mesh>
+                        <mesh position={[0, 0.05, 0]}>
+                            <cylinderGeometry args={[0.45, 0.45, 0.16, 26]} />
+                            <meshStandardMaterial color={accent} roughness={0.7} />
+                        </mesh>
+                        <mesh position={[0, -0.02, 0.36]} rotation={[0.45, 0, 0]} scale={[1, 1, 0.7]}>
+                            <cylinderGeometry args={[0.42, 0.42, 0.03, 20, 1, false, -Math.PI / 2.6, (Math.PI * 2) / 2.6]} />
+                            <meshStandardMaterial color="#121212" roughness={0.2} metalness={0.3} />
+                        </mesh>
+                        <mesh position={[0, 0.22, 0.47]} rotation={[-0.3, 0, 0]}>
+                            <cylinderGeometry args={[0.09, 0.09, 0.03, 10]} />
+                            <meshStandardMaterial color={GOLD} metalness={0.85} roughness={0.25} />
+                        </mesh>
+                    </group>
+                </group>
+            );
+        case 'beret':
+            // black tank-corps beret pulled to one side, with two cap badges
+            return (
+                <group>
+                    <ShortHair color={hair ?? '#8a7a68'} />
+                    <group position={[0.05, 0.38, -0.03]} rotation={[-0.08, 0, -0.2]}>
+                        <mesh castShadow scale={[1, 0.3, 1]}>
+                            <sphereGeometry args={[0.5, 24, 14]} />
+                            <meshStandardMaterial color={hat ?? '#141416'} roughness={0.95} />
+                        </mesh>
+                        {[-0.14, 0.14].map((x) => (
+                            <mesh key={x} position={[x - 0.1, 0.03, 0.46]} rotation={[Math.PI / 2 - 0.25, 0, 0]}>
+                                <cylinderGeometry args={[0.07, 0.07, 0.03, 8]} />
+                                <meshStandardMaterial color={x < 0 ? GOLD : '#c9ccd1'} metalness={0.8} roughness={0.3} />
+                            </mesh>
+                        ))}
+                    </group>
+                </group>
+            );
         case 'frock-coat':
             return <ShortHair color={hair ?? '#3a2a1e'} full />;
         case 'pickelhaube':
@@ -671,7 +740,7 @@ export function HeroCharacter({
 
     const skin = def.skin ?? SKIN;
     const furCollar = def.outfit === 'emir' || def.outfit === 'prince' || def.outfit === 'king';
-    const frockStyle = def.outfit === 'stovepipe' || def.outfit === 'frock-coat' || def.outfit === 'civil-war-general' || def.outfit === 'pickelhaube' || def.outfit === 'plumed-helmet';
+    const frockStyle = def.outfit === 'stovepipe' || def.outfit === 'frock-coat' || def.outfit === 'civil-war-general' || def.outfit === 'pickelhaube' || def.outfit === 'plumed-helmet' || def.outfit === 'homburg' || def.outfit === 'peaked-cap' || def.outfit === 'beret';
     const coatStyle = def.outfit === 'colonial-general' || def.outfit === 'statesman' || def.outfit === 'napoleonic';
 
     return (
@@ -688,8 +757,8 @@ export function HeroCharacter({
                         coat={def.robe}
                         accent={def.accent}
                         trousers={def.breeches ?? '#2a2a2c'}
-                        military={def.outfit === 'civil-war-general' || def.outfit === 'pickelhaube' || def.outfit === 'plumed-helmet'}
-                        tunic={def.outfit === 'pickelhaube' || def.outfit === 'plumed-helmet'}
+                        military={def.outfit === 'civil-war-general' || def.outfit === 'pickelhaube' || def.outfit === 'plumed-helmet' || def.outfit === 'peaked-cap' || def.outfit === 'beret'}
+                        tunic={def.outfit === 'pickelhaube' || def.outfit === 'plumed-helmet' || def.outfit === 'peaked-cap' || def.outfit === 'beret'}
                     />
                 </group>
             ) : coatStyle ? (
