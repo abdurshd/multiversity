@@ -32,6 +32,26 @@ export interface Impact {
     x: number; z: number; t: number; big: boolean;
 }
 
+// ─── Commander abilities (player-triggered, real time) ─────────────────────
+export type AbilityId = 'rally' | 'strike' | 'charge';
+
+export const ABILITIES: Record<AbilityId, { cooldown: number; duration: number; hotkey: string }> = {
+    /** Heal the army and raise attack + defense for a few seconds. */
+    rally: { cooldown: 22, duration: 8, hotkey: '1' },
+    /** Catapult salvo on a point the player clicks. */
+    strike: { cooldown: 15, duration: 0, hotkey: '2' },
+    /** Cavalry doubles speed and hits much harder for a few seconds. */
+    charge: { cooldown: 26, duration: 7, hotkey: '3' },
+};
+
+export interface AbilityState {
+    /** Seconds until usable again. */
+    cooldown: number;
+    /** Seconds the effect still lasts. */
+    active: number;
+    uses: number;
+}
+
 export interface BattleState {
     config: BattleConfig;
     units: Unit[];
@@ -46,6 +66,9 @@ export interface BattleState {
     fireArrows: boolean;
     outcome: BattleOutcome | null;
     routTimer: number;
+    abilities: Record<AbilityId, AbilityState>;
+    /** Last strike target, for the impact marker. */
+    strikeTarget: { x: number; z: number; t: number } | null;
 }
 
 const STATS: Record<UnitType, { hp: number; dmg: number; range: number; speed: number }> = {
@@ -117,7 +140,52 @@ export function createBattle(config: BattleConfig): BattleState {
         fireArrows: false,
         outcome: null,
         routTimer: 0,
+        abilities: {
+            rally: { cooldown: 3, active: 0, uses: 0 },
+            strike: { cooldown: 3, active: 0, uses: 0 },
+            charge: { cooldown: 3, active: 0, uses: 0 },
+        },
+        strikeTarget: null,
     };
+}
+
+/** Fire a commander ability. Returns false if it is still cooling down. */
+export function triggerAbility(state: BattleState, id: AbilityId, target?: { x: number; z: number }): boolean {
+    const a = state.abilities[id];
+    if (a.cooldown > 0 || state.outcome) return false;
+    a.cooldown = ABILITIES[id].cooldown;
+    a.active = ABILITIES[id].duration;
+    a.uses += 1;
+    if (id === 'rally') {
+        for (const u of state.units) {
+            if (u.side !== 'player') continue;
+            if (u.state === 'rout') u.state = 'advance';
+            if (u.state !== 'dead') u.hp = Math.min(u.maxHp, u.hp + u.maxHp * 0.2);
+        }
+    }
+    if (id === 'strike') {
+        const tx0 = target?.x ?? 0;
+        const tz0 = target?.z ?? -40;
+        state.strikeTarget = { x: tx0, z: tz0, t: 0 };
+        for (let i = 0; i < 8; i++) {
+            const ang = rnd() * Math.PI * 2;
+            const rad = Math.sqrt(rnd()) * 7;
+            const tx = tx0 + Math.cos(ang) * rad;
+            const tz = tz0 + Math.sin(ang) * rad;
+            const x0 = (rnd() - 0.5) * 50;
+            const z0 = 70 + rnd() * 10;
+            const T = 2 + rnd() * 0.7;
+            state.projectiles.push({
+                kind: 'stone',
+                x: x0, y: 2, z: z0,
+                vx: (tx - x0) / T,
+                vy: (GRAVITY * T) / 2 - 2 / T,
+                vz: (tz - z0) / T,
+                alive: true,
+            });
+        }
+    }
+    return true;
 }
 
 export function morale(state: BattleState, side: BattleSide): number {
@@ -209,6 +277,16 @@ export function dueEvent(state: BattleState): TacticalEvent | null {
 export function tick(state: BattleState, dt: number) {
     state.time += dt;
     const units = state.units;
+    for (const a of Object.values(state.abilities)) {
+        a.cooldown = Math.max(0, a.cooldown - dt);
+        a.active = Math.max(0, a.active - dt);
+    }
+    if (state.strikeTarget) {
+        state.strikeTarget.t += dt;
+        if (state.strikeTarget.t > 4) state.strikeTarget = null;
+    }
+    const rallying = state.abilities.rally.active > 0;
+    const charging = state.abilities.charge.active > 0;
 
     // retarget at staggered intervals, fight, move
     for (let i = 0; i < units.length; i++) {
@@ -254,10 +332,12 @@ export function tick(state: BattleState, dt: number) {
                 if (u.side === 'player') {
                     dmg *= state.playerAttackMult;
                     if (u.type === 'archer') dmg *= state.playerArcherMult;
+                    if (rallying) dmg *= 1.15;
+                    if (charging && u.type === 'cavalry') dmg *= 1.4;
                 } else {
                     dmg *= state.enemyAttackMult;
                 }
-                const defenseMult = t.side === 'player' ? state.playerDefenseMult : 1;
+                const defenseMult = t.side === 'player' ? state.playerDefenseMult * (rallying ? 1.2 : 1) : 1;
                 if (u.type === 'archer' && dist > 6) {
                     // loose an arrow (visual); damage applies on a short delay via projectile hit
                     const T = Math.max(0.5, dist / 26);
@@ -278,8 +358,9 @@ export function tick(state: BattleState, dt: number) {
             }
         } else {
             u.state = 'advance';
-            u.x += (dx / dist) * u.speed * dt;
-            u.z += (dz / dist) * u.speed * dt;
+            const boost = charging && u.side === 'player' && u.type === 'cavalry' ? 2 : 1;
+            u.x += (dx / dist) * u.speed * boost * dt;
+            u.z += (dz / dist) * u.speed * boost * dt;
         }
     }
 
@@ -296,7 +377,7 @@ export function tick(state: BattleState, dt: number) {
             if (pr.kind === 'stone') {
                 // splash damage to nearby enemies
                 for (const u of state.units) {
-                    if (u.state === 'dead') continue;
+                    if (u.state === 'dead' || u.side === 'player') continue;
                     const d = (u.x - pr.x) ** 2 + (u.z - pr.z) ** 2;
                     if (d < 36) {
                         u.hp -= 90 * (1 - Math.sqrt(d) / 6);
@@ -344,6 +425,11 @@ interface BattleHudState {
     playerMorale: number;
     enemyMorale: number;
     intro: boolean;
+    /** Seconds of cooldown left per ability (throttled copy for the UI). */
+    abilityCooldowns: Record<AbilityId, number>;
+    abilityActive: Record<AbilityId, boolean>;
+    /** Ability waiting for a click on the battlefield. */
+    targeting: AbilityId | null;
     setHud: (p: Partial<BattleHudState>) => void;
 }
 
@@ -353,5 +439,8 @@ export const useBattleHud = create<BattleHudState>((set) => ({
     playerMorale: 1,
     enemyMorale: 1,
     intro: true,
+    abilityCooldowns: { rally: 0, strike: 0, charge: 0 },
+    abilityActive: { rally: false, strike: false, charge: false },
+    targeting: null,
     setHud: (p) => set(p),
 }));

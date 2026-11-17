@@ -1,9 +1,11 @@
 /* Full-screen cinematic 3D experience: /experience/:chapterId */
-import { Suspense, useEffect, useRef } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Suspense, useEffect, useMemo, useRef } from 'react';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Canvas } from '@react-three/fiber';
-import { EffectComposer, Bloom } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, N8AO, SMAA, ToneMapping, Vignette, HueSaturation } from '@react-three/postprocessing';
+import { ToneMappingMode } from 'postprocessing';
+import * as THREE from 'three';
 import { useExperience, useCurrentBeat } from '../experience/store';
 import { getExperienceScript } from '../experience/scripts';
 import { localizeScript } from '../experience/localizeScript';
@@ -13,7 +15,17 @@ import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import type { EnvironmentId } from '../experience/types';
 
-function SceneContent() {
+/** Coarse device tier: phones and low-core machines skip the costly passes. */
+function useQualityTier(): 'low' | 'high' {
+    return useMemo(() => {
+        if (typeof window === 'undefined') return 'high';
+        const small = window.innerWidth < 768;
+        const cores = navigator.hardwareConcurrency ?? 8;
+        return small || cores <= 4 ? 'low' : 'high';
+    }, []);
+}
+
+function SceneContent({ quality }: { quality: 'low' | 'high' }) {
     const beat = useCurrentBeat();
     const battleRunKey = useExperience((s) => s.battleRunKey);
     const lastEnvRef = useRef<EnvironmentId>('samarkand-day');
@@ -25,8 +37,19 @@ function SceneContent() {
             <WorldScene environment={environment} />
             {beat?.kind === 'battle' && <BattleView key={battleRunKey} config={beat.battle} />}
             <CameraDirector />
-            <EffectComposer>
-                <Bloom intensity={0.55} luminanceThreshold={0.65} luminanceSmoothing={0.3} mipmapBlur />
+            {/* Game-style grade: contact shadows (AO), bloom only on fire and lights,
+                filmic tone mapping, light saturation lift, edge vignette, SMAA. */}
+            <EffectComposer multisampling={0} enableNormalPass={false}>
+                {quality === 'high' ? (
+                    <N8AO halfRes aoRadius={5} distanceFalloff={1.2} intensity={2.4} quality="medium" color="#2a1d14" />
+                ) : (
+                    <></>
+                )}
+                <Bloom intensity={0.7} luminanceThreshold={0.9} luminanceSmoothing={0.2} mipmapBlur />
+                <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+                <HueSaturation saturation={0.12} />
+                <Vignette offset={0.25} darkness={0.55} />
+                <SMAA />
             </EffectComposer>
         </>
     );
@@ -37,10 +60,17 @@ export default function Experience3D() {
     const { t, i18n } = useTranslation('components-experience');
     const script = chapterId ? getExperienceScript(chapterId) : null;
     const loadScript = useExperience((s) => s.loadScript);
+    const quality = useQualityTier();
+
+    // ?beat=<id> opens the episode straight at one scene (handy for authoring and sharing)
+    const [searchParams] = useSearchParams();
+    const startBeat = searchParams.get('beat');
 
     useEffect(() => {
-        if (script) loadScript(localizeScript(script, t));
-    }, [script, loadScript, t, i18n.language]);
+        if (!script) return;
+        loadScript(localizeScript(script, t));
+        if (startBeat && script.beats[startBeat]) useExperience.getState().gotoBeat(startBeat);
+    }, [script, loadScript, t, i18n.language, startBeat]);
 
     if (!script) {
         return (
@@ -76,13 +106,13 @@ export default function Experience3D() {
     return (
         <div className="fixed inset-0 z-[60] bg-slate-950">
             <Canvas
-                shadows
-                dpr={[1, 1.75]}
+                shadows="soft"
+                dpr={quality === 'low' ? [1, 1.25] : [1, 1.75]}
                 camera={{ position: [170, 95, 170], fov: 50, near: 0.5, far: 1200 }}
-                gl={{ antialias: true, powerPreference: 'high-performance' }}
+                gl={{ antialias: false, powerPreference: 'high-performance', toneMapping: THREE.NoToneMapping }}
             >
                 <Suspense fallback={null}>
-                    <SceneContent />
+                    <SceneContent quality={quality} />
                 </Suspense>
             </Canvas>
             <ExperienceOverlay />

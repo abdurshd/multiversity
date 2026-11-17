@@ -1,11 +1,11 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Bloom, ChromaticAberration, EffectComposer, Noise, Vignette } from '@react-three/postprocessing';
-import { Html, Line, OrbitControls, Stars } from '@react-three/drei';
+import { Bloom, ChromaticAberration, EffectComposer, N8AO, Noise, SMAA, ToneMapping, Vignette } from '@react-three/postprocessing';
+import { Environment, Html, Lightformer, Line, OrbitControls, Stars } from '@react-three/drei';
 import * as THREE from 'three';
 import { Pause, Play, Radio, SkipBack } from 'lucide-react';
-import { BlendFunction } from 'postprocessing';
+import { BlendFunction, ToneMappingMode } from 'postprocessing';
 import {
   CampaignMicroSceneState,
   CampaignNodeState,
@@ -676,12 +676,20 @@ const CampaignScene: React.FC<{
       <color attach="background" args={[state.palette.ambient]} />
       <fog attach="fog" args={[state.palette.fog, 8, 30 - state.terrain.fogDensity * 10]} />
 
-      <ambientLight color={state.palette.ambient} intensity={0.85} />
+      {/* soft studio-style image lighting so materials read as solid, not flat */}
+      <Environment resolution={64} frames={1} environmentIntensity={0.6}>
+        <Lightformer form="rect" intensity={2} color="#ffffff" scale={[20, 20, 1]} position={[0, 10, 0]} rotation={[Math.PI / 2, 0, 0]} />
+        <Lightformer form="rect" intensity={1.2} color={state.palette.keyLight} scale={[10, 6, 1]} position={[8, 4, 6]} target={[0, 0, 0]} />
+        <Lightformer form="rect" intensity={0.6} color={state.pulse.color} scale={[10, 6, 1]} position={[-8, 3, -6]} target={[0, 0, 0]} />
+      </Environment>
+      <ambientLight color={state.palette.ambient} intensity={0.45} />
       <directionalLight
         color={state.palette.keyLight}
         intensity={1.35 + state.meta.statsSignal.strength * 0.45}
         position={[6, 9, 5]}
         castShadow
+        shadow-mapSize={[1024, 1024]}
+        shadow-bias={-0.0005}
       />
       <pointLight color={state.pulse.color} intensity={0.45 + state.pulse.intensity * 0.6} position={[0, 4.5, 0]} />
 
@@ -779,7 +787,8 @@ const CampaignScene: React.FC<{
         target={[0, 0, 0]}
       />
 
-      <EffectComposer multisampling={0}>
+      <EffectComposer multisampling={0} enableNormalPass={false}>
+        {!isMobile ? <N8AO halfRes aoRadius={0.9} distanceFalloff={0.6} intensity={2} quality="medium" /> : <></>}
         <Bloom
           intensity={
             (0.42 + state.pulse.intensity * 0.58) *
@@ -787,8 +796,9 @@ const CampaignScene: React.FC<{
             (state.chapterId === 'french-revolution' ? 1.18 + chaosSignal * 0.25 : 1) *
             (isCombatScene ? 1.14 : 1)
           }
-          luminanceThreshold={0.2}
-          luminanceSmoothing={0.45}
+          luminanceThreshold={0.62}
+          luminanceSmoothing={0.3}
+          mipmapBlur
         />
         {state.chapterId === 'ai-revolution' || chaosSignal > 0.7 || state.pulse.intensity > 0.72 ? (
           <>
@@ -814,6 +824,8 @@ const CampaignScene: React.FC<{
           offset={0.18}
           darkness={theme.vignetteDarkness + (state.activeMicroScene ? 0.05 : 0) + chaosSignal * 0.08}
         />
+        <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+        <SMAA />
       </EffectComposer>
     </>
   );
@@ -909,8 +921,13 @@ const GenericCampaign3DView: React.FC<GenericCampaign3DViewProps> = ({
 
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-600/70 bg-slate-950 shadow-2xl">
-      <div className="h-[320px] w-full">
-        <Canvas camera={{ position: [0, 8, 11], fov: 46 }} dpr={isMobile ? [1, 1.3] : [1, 1.8]} shadows>
+      <div className="h-[360px] w-full md:h-[480px]">
+        <Canvas
+          camera={{ position: [0, 8, 11], fov: 46 }}
+          dpr={isMobile ? [1, 1.3] : [1, 1.8]}
+          shadows="soft"
+          gl={{ antialias: false, toneMapping: THREE.NoToneMapping }}
+        >
           <CampaignScene
             state={state}
             theme={theme}

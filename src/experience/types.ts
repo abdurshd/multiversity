@@ -137,12 +137,44 @@ export interface BattleConfig {
     /** Beat to jump to per outcome. */
     onVictory: string;
     onDefeat: string;
+    /** Character who leads the player army (stands behind the lines, name plate shown). */
+    commander?: string;
     /** Flags set automatically: `<id>:victory` | `<id>:defeat` | `<id>:pyrrhic`. */
+}
+
+// ─── Characters (real historical people as stylized 3D figures) ────────────
+
+/** Silhouette + headwear preset for a hero figure. */
+export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general';
+export type CharacterPose = 'idle' | 'command' | 'think';
+
+export interface CharacterDef {
+    id: string;
+    name: string;
+    role: string;
+    /** Face texture cropped from the chapter portrait (scripts/extract-faces.py). */
+    face: string;
+    outfit: CharacterOutfit;
+    /** Head/hand colour matched to the face crop (public/images/chapters/face-skin-tones.json). */
+    skin?: string;
+    robe: string;
+    accent: string;
+}
+
+/** Where a character stands in a beat. */
+export interface CastPlacement {
+    id: string;
+    position: Vec3;
+    /** Rotation around Y in radians (0 = facing +Z). */
+    facing?: number;
+    pose?: CharacterPose;
 }
 
 // ─── Beats (story graph nodes) ─────────────────────────────────────────────
 
 export interface CinematicBeat {
+    /** Historical figures standing in the scene. */
+    cast?: CastPlacement[];
     kind: 'cinematic';
     id: string;
     shots: CameraShot[];
@@ -153,6 +185,8 @@ export interface CinematicBeat {
 }
 
 export interface ExploreBeat {
+    /** Historical figures standing in the scene. */
+    cast?: CastPlacement[];
     kind: 'explore';
     id: string;
     environment: EnvironmentId;
@@ -163,6 +197,8 @@ export interface ExploreBeat {
 }
 
 export interface ChoiceBeat {
+    /** Historical figures standing in the scene. */
+    cast?: CastPlacement[];
     kind: 'choice';
     id: string;
     environment: EnvironmentId;
@@ -227,6 +263,8 @@ export interface ExperienceScript {
     initialStats: Record<StatKey, number>;
     beats: Record<string, Beat>;
     endings: EndingDef[];
+    /** Historical figures who appear in the episode, by id. */
+    characters?: Record<string, CharacterDef>;
     /** Fallback ending id if nothing matches. */
     defaultEnding: string;
 }
