@@ -1,0 +1,548 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "Seul, 1945-yil avgust. Yaponiya taslim bo'ldi va o'ttiz besh yillik mustamlaka hukmronligidan so'ng koreyslar bir avlod davomida taqiqlangan bayroqni hilpiratib ko'chalarga to'kilmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ammo ozodlik tashqaridan keladi. Sovet qo'shinlari allaqachon shimolga kirib kelmoqda. Ular butun yarimorolni egallab olmasligi uchun Vashingtondagi ikki amerikalik ofitser taxminan yarim soat ichida xaritada chiziq tortdi: 38-parallel.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Yetmish yoshli Li Syn Man Amerikadagi o'ttiz yildan ortiq surgundan qaytadi. Shimolda esa Sovetlar Kim Ir Sen ismli o'ttiz uch yoshli partizan kapitanini xalqqa tanishtiradi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Bizning tariximizda bir necha oyga mo'ljallangan chiziq chegaraga aylandi. Bu tarixda qarorni siz qabul qilasiz.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-seoul": {
+      "prompt": "Ozod bo'lgan Seulni o'rganing: atrofga qarash uchun suring va yonib turgan belgilarni bosing.",
+      "hotspots": {
+        "gov-general": {
+          "label": "General-gubernatorlik",
+          "title": "Taslim bo'lish marosimi",
+          "description": "Yaponlar o'z mustamlaka qarorgohini qirollik saroyini ko'zdan to'sish uchun aynan uning oldiga qurgan. 1945-yil 9-sentabrda yapon gubernatori shu yerda taslim bo'ldi. Yapon bayrog'i tushirildi va uning o'rniga Koreya bayrog'i emas, Amerika bayrog'i ko'tarildi."
+        },
+        "gate": {
+          "label": "Gvanxvamun",
+          "title": "Saroy darvozasi",
+          "description": "Choson qirollari saroyi Kyonbokkunning bosh darvozasi. Yaponiya 1910-yilda Koreyani bosib olishidan oldin Koreya besh yuz yildan ortiq mustaqil qirollik bo'lgan."
+        },
+        "parallel": {
+          "label": "38-parallel",
+          "title": "National Geographic xaritasidagi chiziq",
+          "description": "1945-yil 10-avgustga o'tar kechasi polkovnik Charlz Bonstil va mayor Din Raskka bo'luvchi chiziq topish topshirildi. Ular 38-parallelni tanladi, chunki u Seulni Amerika zonasida qoldirardi. Birorta koreysdan so'ralmadi. Stalin bunga rozi bo'ldi."
+        },
+        "taegukgi": {
+          "label": "Txegukki",
+          "title": "Yashirib saqlangan bayroq",
+          "description": "Oilalar bayroqlarini o'n yillar davomida yashirib kelgan. Ozodlikdan bir necha kun o'tib butun mamlakat bo'ylab konservatorlardan kommunistlargacha siyosiy qo'mitalar paydo bo'ladi. Hamma darhol mustaqillikni xohlaydi, ammo Koreya qanday bo'lishi kerakligi haqida hech kim kelisha olmaydi."
+        },
+        "rhee": {
+          "label": "Li Syn Man",
+          "title": "Keksa surgun",
+          "description": "Prinston doktori va ashaddiy antikommunist Li o'n yillar davomida Vashingtonda Koreya mustaqilligi uchun kurashgan. 1945-yil dekabrda ittifoqchilar Moskvada yig'ilib, Koreya taqdirini usiz hal qiladi."
+        }
+      }
+    },
+    "trusteeship-choice": {
+      "title": "Seul · 1945-yil dekabr",
+      "prompt": "Moskva konferensiyasi qaror qildi: Koreyani besh yilgacha Amerika, Sovet Ittifoqi, Britaniya va Xitoy vasiyligi boshqaradi, so'ng saylov o'tkaziladi. Seulda olomon bunga qarshi namoyish qilmoqda.",
+      "options": {
+        "trusteeship": {
+          "label": "Vasiylikni qabul qilish",
+          "description": "Haqoratni yutib yuboring. Yana besh yil chet el nazorati, ammo oxirida butun yarimorolda bitta ovoz bilan saylangan yagona Koreya."
+        },
+        "separate-gov": {
+          "label": "Rad etish",
+          "description": "Boshqa chet ellik hukmdorlar kerak emas. Agar Sovetlar shimoldan ketmasa, janubda hozirning o'zida hukumat tuzing."
+        }
+      }
+    },
+    "one-korea": {
+      "narration": {
+        "0": {
+          "text": "Chap va o'ng koreys yetakchilari vasiylikni qabul qiladi va Amerika hamda Sovet ofitserlaridan iborat Qo'shma komissiya 1947-yilda tarqalib ketish o'rniga yig'ilishda davom etadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "1948-yilda Pusandan Yalugacha bo'lgan koreyslar bitta saylovda ovoz beradi. Li ham, Kim ham birinchi koalitsion hukumatda o'tiradi va ular bir-birini yomon ko'radi. Ammo chet el qo'shinlari uylariga qaytadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "division": {
+      "narration": {
+        "0": {
+          "text": "Vasiylik barbod bo'ladi. 1948-yilda ikki Koreya paydo bo'ladi: janubda Li boshchiligidagi Koreya Respublikasi va shimolda Kim Ir Sen boshchiligidagi Koreya Xalq Demokratik Respublikasi. Har biri butun yarimorolga da'vo qiladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Kim Koreyani kuch bilan birlashtirish uchun Stalindan qayta-qayta ruxsat so'raydi. 1950-yil bahorida Stalin nihoyat rozi bo'ladi, Mao Szedun esa kerak bo'lsa yordam berishga va'da qiladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "1950-yil 25-iyun tong soat to'rtda Shimoliy Koreya armiyasi ikki yuzdan ortiq sovet tanklari bilan 38-parallelni kesib o'tadi. Seul uch kunda qulaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "truman": {
+      "narration": {
+        "0": {
+          "text": "Vashingtonda prezident Garri Trumen bir necha kun ichida bosqinni to'xtatish kerak degan qarorga keladi. «Agar Koreyani tashlab qo'ysak, — deydi u, — Sovetlar to'xtamay ketaveradi.»",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Sovet Ittifoqi Xitoy o'rindig'i kimga tegishli ekanligi sababli BMT Xavfsizlik Kengashini boykot qilmoqda, shuning uchun veto qo'yish uchun u yerda yo'q. Kengash BMT a'zolarini Janubiy Koreyani himoya qilishga chaqiradi. O'n olti davlat qo'shin yuboradi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Ammo birinchi bo'lib yetib kelgan amerikaliklar Yaponiyadagi tayyorgarliksiz ishg'ol qo'shinlaridir. Avgustga kelib BMT kuchlari Pusan porti atrofidagi kichik burchakka siqib qo'yiladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "pusan-intro": {
+      "narration": {
+        "0": {
+          "text": "Pusan perimetri, 1950-yil avgust. Li hukumati Pusanga qochib kelgan va shaharni yuz minglab qochqinlar to'ldirgan. Chiziq Naktong daryosi va tog'lar bo'ylab taxminan ikki yuz o'ttiz kilometrga cho'zilgan.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Agar u yorilsa, urush tugaydi va Koreya Kim Ir Sen qo'l ostida birlashadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "pusan-battle": {
+      "battle": {
+        "name": "Pusan perimetri",
+        "objective": "1950-yil avgust. Shimoliy Koreya armiyasi janubiy koreyslar va amerikaliklarni yarimorolning so'nggi burchagiga, Naktong daryosi ortiga quvib keldi. Ortingizda Pusan porti va dengiz. Qo'shimcha kuchlar kelguncha daryo chizig'ini ushlab turing.",
+        "player": {
+          "name": "AQSh 8-armiyasi va Koreya Respublikasi armiyasi"
+        },
+        "enemy": {
+          "name": "Koreya Xalq Armiyasi"
+        },
+        "events": {
+          "naktong": {
+            "title": "Naktongdan tungi kechuv",
+            "prompt": "Shimoliy Koreya piyodalari qorong'ida qum qoplari va xodalardan qilingan suv osti ko'priklari orqali daryoni kechib o'tdi. Tongga kelib ular sizning qirg'og'ingizda mustahkam joy egalladi.",
+            "options": {
+              "stand-or-die": {
+                "label": "«Tur yoki o'l»",
+                "description": "General Uolton Uokerning 29-iyuldagi buyrug'i: boshqa chekinish bo'lmaydi. Har bir bo'linma turgan joyida turib beradi."
+              },
+              "carriers": {
+                "label": "Aviatashuvchilarni chaqirish",
+                "description": "Dengizdagi aviatashuvchilardan uchgan flot va dengiz piyodalari qiruvchi-bombardimonchilari daryo kechuvlariga raketa va napalm bilan zarba beradi."
+              }
+            }
+          },
+          "reinforcements": {
+            "title": "Pusan bandargohidagi kemalar",
+            "prompt": "Har kuni Pusanda yangi kemalar yuk tushiradi: 1-muvaqqat dengiz piyodalari brigadasi, Gonkongdan kelgan ingliz qo'shinlari va nihoyat T-34 bilan teng jang qila oladigan yangi M26 «Pershing» tanklari.",
+            "options": {
+              "fire-brigade": {
+                "label": "O't o'chirish brigadasi",
+                "description": "Dengiz piyodalari brigadasini chiziqdagi bir yoriqdan ikkinchisiga yuborib, har bir kechuvga qarshi hujum qiling."
+              },
+              "pershings": {
+                "label": "«Pershing»larni yuborish",
+                "description": "Yangi tank batalyonlarini Shimoliy Koreya plasdarmining qanotidan aylantirib o'ting."
+              }
+            }
+          },
+          "perimeter-cracks": {
+            "title": "Chiziq yorilmoqda",
+            "prompt": "Tegu artilleriya o'qi ostida, Pusanga boruvchi yo'llar qochqinlar bilan to'la. Ba'zi ofitserlar dengiz orqali evakuatsiyani rejalashtirmoqchi.",
+            "options": {
+              "no-dunkirk": {
+                "label": "«Dyunkerk bo'lmaydi»",
+                "description": "Uoker qo'mondonlariga evakuatsiya bo'lmasligini aytadi. Zaxiralar chiziqqa kiradi."
+              },
+              "shorten-line": {
+                "label": "Chiziqni qisqartirish",
+                "description": "Pusanga yaqinroq tepaliklarga chekining: u yerda chiziq qisqaroq va uni ushlab turish osonroq."
+              }
+            }
+          }
+        }
+      }
+    },
+    "pusan-falls": {
+      "narration": {
+        "0": {
+          "text": "Naktong chizig'i sentabrda yoriladi. Amerika kemalari so'nggi qo'shinlarni Pusan bandargohidan Li va sig'dira olgancha askar hamda tinch aholi bilan birga olib ketadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Li Chejudo orolida surgundagi hukumat tuzadi, toki undan ham voz kechilguncha. Kim Ir Sen butun yarimorolni Seuldan boshqaradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "pusan-holds": {
+      "narration": {
+        "0": {
+          "text": "Perimetr bardosh beradi. Shimoliy Koreya armiyasi Naktongda qonini to'kib holdan toydi, uning ta'minot yo'llari esa 38-parallelgacha uch yuz kilometrga cho'zilgan.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Tokioda general Duglas Makartur ularni ikkiga bo'lish rejasini tuzib qo'ygan.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-incheon": {
+      "prompt": "Inchxonga yaqinlashish yo'lini o'rganing: atrofga qarash uchun suring va yonib turgan belgilarni bosing.",
+      "hotspots": {
+        "tides": {
+          "label": "Loyqa sayozlik",
+          "title": "O'n metrlik suv ko'tarilishi",
+          "description": "Inchxonda suv o'n metrgacha ko'tarilib pasayadi. Suv qaytganda bandargoh kilometrlab loyga aylanadi. Desant kemalari kuniga ikki marta atigi uch soatcha kira oladi, to'g'ri keladigan suv ko'tarilishi esa oyiga bir necha kungina bo'ladi."
+        },
+        "wolmido": {
+          "label": "Volmido",
+          "title": "Oy uchi oroli",
+          "description": "Bandargohni qo'riqlovchi mustahkamlangan orol. Uni ertalabki suv ko'tarilishida olish kerak, so'ng undagi dengiz piyodalari kechki suv asosiy desantni olib kelguncha o'n ikki soat yolg'iz turib berishi lozim."
+        },
+        "sea-wall": {
+          "label": "Dengiz devori",
+          "title": "Sohil emas, narvonlar",
+          "description": "Bu yerda sohil yo'q, faqat tosh dengiz devorlari bor. Dengiz piyodalari ularga yog'och narvonlar bilan chiqib, to'g'ridan-to'g'ri shaharga kirishi kerak bo'ladi."
+        },
+        "fleet": {
+          "label": "Flot",
+          "title": "«Xromit» operatsiyasi",
+          "description": "Ikki yuzdan ortiq kema va yetmish ming kishi, jumladan koreys dengiz piyodalari. Flotning bir rejalashtiruvchisi aytgan: «Biz barcha tabiiy va geografik to'siqlar ro'yxatini tuzdik, Inchxonda ularning hammasi bor ekan.»"
+        },
+        "macarthur": {
+          "label": "Makartur",
+          "title": "Amerika Sezari",
+          "description": "Yetmish yoshda, Tinch okeani urushi qahramoni va ishg'ol qilingan Yaponiya hukmdori. Flot va Birlashgan shtab boshliqlari uning rejasini haddan tashqari xavfli deb hisoblaydi. Makartur esa dushman ham shunday o'ylaydi, deydi."
+        }
+      }
+    },
+    "incheon-choice": {
+      "title": "Qaror · 1950-yil 23-avgust",
+      "prompt": "Generallar va admirallar soatlab bahslashdi. Endi Makartur qirq besh daqiqa yozuvsiz gapiradi: «Biz Inchxonga tushamiz va men ularni tor-mor qilaman.»",
+      "options": {
+        "inchon": {
+          "label": "Inchxonga desant",
+          "description": "Dushman ortiga chuqur zarba bering, Seulni qaytarib oling va Shimoliy Koreyaning barcha ta'minot yo'llarini birdaniga kesing."
+        },
+        "breakout": {
+          "label": "Pusandan yorib chiqish",
+          "description": "Flot haq. Qo'shimcha kuchlarni perimetrga joylang va shimolga qiyin yo'l bilan bosib boring."
+        }
+      }
+    },
+    "slow-march": {
+      "narration": {
+        "0": {
+          "text": "Pusandan yorib chiqish uch oy va o'n minglab hayotga tushadi. Shimoliy Koreya armiyasi vodiyma-vodiy tartibli chekinadi va 38-parallelga butun holda yetib boradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Chiziq deyarli boshlangan joyida to'xtaydi. Janglar tepaliklardagi xandaq va bunkerlarda yana ikki yil davom etadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "landing": {
+      "narration": {
+        "0": {
+          "text": "Inchxon, 1950-yil 15-sentabr. Volmido ertalabki suv ko'tarilishida qirq besh daqiqada qulaydi. Kechqurun dengiz piyodalari narvonlar bilan dengiz devorlaridan oshib shaharga kiradi va dushman butunlay kutilmaganda qoladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Seul 28-sentabrda qaytarib olinadi. Qurshovda qolgan Shimoliy Koreya armiyasi parchalanadi va BMT kuchlari 38-parallelni kesib o'tadi. Pxenyan 19-oktabrda qulaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "yalu-choice": {
+      "title": "Shimoliy Koreya · 1950-yil oktabr",
+      "prompt": "Xitoy Pekindagi hind elchisi orqali amerikaliklar uning chegarasiga yaqinlashsa, urushga kirishini ogohlantirdi. Ueyk orolida Makartur Trumenni xitoyliklar kelmasligiga ishontirdi, agar kelsa, «eng katta qirg'in bo'ladi», dedi.",
+      "options": {
+        "halt": {
+          "label": "Tor bo'g'izda to'xtash",
+          "description": "Koreyaning eng tor joyida, Pxenyandan Vonsangacha bo'lgan chiziqda inglizlar taklif qilganidek to'xtang va Xitoy chegarasi bo'ylab bufer zona qoldiring."
+        },
+        "attack": {
+          "label": "Yaluga olg'a",
+          "description": "Urushni tugating. Xitoy chegarasigacha boring va yigitlarni Rojdestvoga uyga qaytaring."
+        }
+      }
+    },
+    "narrow-neck": {
+      "narration": {
+        "0": {
+          "text": "BMT qo'shinlari Pxenyandan Vonsangacha mudofaaga o'tadi. Pekinda Mao allaqachon qo'shinlariga Yaludan o'tishni buyurgan, ammo chegara yaqinida amerikaliklar yo'qligi sababli Siyosiy byuro bahslashadi va hujum bekor qilinadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Kim Ir Senda Xitoy chegarasi bo'ylab faqat tog'li tasma qoladi. Koreyaning qolgan qismi, aholisining o'ndan to'qqiz qismi, Seuldan boshqariladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "china-enters": {
+      "narration": {
+        "0": {
+          "text": "Ular allaqachon shu yerda edi. 19-oktabrdan beri ikki yuz mingga yaqin xitoylik askar tunda chiroqsiz yurib, kunduzi o'rmonlarda yashirinib Yaludan o'tgan. Amerika havo razvedkasi deyarli hech narsa ko'rmagan.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ularning qo'mondoni Uzoq yurish faxriysi Pen Dexuay. Xitoy Amerika bilan rasman urushmayotgan bo'lishi uchun Mao ularni «Xalq ko'ngillilari» deb ataydi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "27-noyabr kechasi, odamlar eslay oladigan eng sovuq qishda, ular Chosin suv ombori atrofidagi dengiz piyodalariga tashlanadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "chosin-battle": {
+      "battle": {
+        "name": "Chosin suv ombori uchun jang",
+        "objective": "1950-yil 27-noyabr, sovuq minus o'ttiz daraja. Yetti xitoy diviziyasi suv ombori atrofidagi qor ichidan chiqib keldi. 1-dengiz piyodalari diviziyasi yagona tog' yo'li bo'ylab cho'zilib ketgan. Xagaru-ridagi perimetrni ushlab turing va xitoyliklar hujumini sindiring.",
+        "player": {
+          "name": "1-dengiz piyodalari diviziyasi"
+        },
+        "enemy": {
+          "name": "Xitoy 9-armiya guruhi"
+        },
+        "events": {
+          "night-attack": {
+            "title": "Qorong'idagi burg'ular",
+            "prompt": "Xitoyliklar tunda burg'u, hushtak va gong sadolari ostida hujum qiladi. Ular paxtali kiyim va brezent poyabzal kiygan, ko'plarida bor-yo'g'i bir nechta granata bor.",
+            "options": {
+              "perimeter": {
+                "label": "Perimetrni yopish",
+                "description": "Oshpazlar, mirzalar va haydovchilar miltiq olib chiziqdagi bo'shliqlarni to'ldiradi. Hech kim uxlamaydi."
+              },
+              "corsairs": {
+                "label": "Tongda «Korsar»lar",
+                "description": "Tong yorishguncha turib bering, so'ng dengiz piyodalarining «Korsar» qiruvchi-bombardimonchilarini tizmalarga chaqiring."
+              }
+            }
+          },
+          "funchilin": {
+            "title": "Funchilin dovonidagi ko'prik",
+            "prompt": "Xitoyliklar janubga boruvchi yo'ldagi yagona ko'prikni portlatib yubordi. Harbiy havo kuchlarining yuk samolyotlari yangi ko'prik qismlarini parashyutda tashlashi mumkin, ammo buni hech kim hali sinab ko'rmagan.",
+            "options": {
+              "airdrop": {
+                "label": "Ko'prikni tashlash",
+                "description": "Sakkizta po'lat qism parashyutlarda tushadi. Muhandislar o'q ostida ko'prik quradi va kolonna yo'lida davom etadi."
+              },
+              "airstrip": {
+                "label": "Aerodromni ushlab turish",
+                "description": "Xagaru-ridagi chala qurilgan aerodromni ochiq tuting. Samolyotlar to'rt ming yarador askarni olib ketadi va yangi qo'shin olib keladi."
+              }
+            }
+          },
+          "frozen": {
+            "title": "Muzlagan miltiqlar",
+            "prompt": "Qurollar sovuqda tiqilib qolmoqda, morfin shpris-tyubiklarda muzlamoqda. Bir muxbir general Oliver Smitdan bu chekinishmi, deb so'raydi.",
+            "options": {
+              "another-direction": {
+                "label": "«Chekinish? Jin ursin!»",
+                "description": "«Biz chekinmayapmiz. Biz shunchaki boshqa yo'nalishda hujum qilyapmiz.» Dengiz piyodalari yana oldinga intiladi."
+              },
+              "warming-tents": {
+                "label": "Isitiladigan chodirlar",
+                "description": "Askarlarni navbat bilan isitilgan chodirlardan o'tkazing, toki ular qo'llari va qurollarini isitib olsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "christmas": {
+      "narration": {
+        "0": {
+          "text": "Xitoy 9-armiya guruhi qorda tor-mor bo'ladi, uning askarlari o'qdan ko'ra ko'proq sovuq urishidan halok bo'ladi. Pen qolganini saqlab qolish uchun qo'shinlarini Yaludan orqaga olib chiqadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Moskva Kim Ir Sen uchun jahon urushini xavf ostiga qo'ymaydi. 1951-yil bahoriga kelib Yaluda BMT bayrog'i hilpiraydi va Koreya Seuldagi hukumat qo'l ostida birlashadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "retreat": {
+      "narration": {
+        "0": {
+          "text": "Dengiz piyodalari jang bilan Xinnam portiga yorib chiqadi. Flot kemalari yuz ming askar va yuz mingga yaqin koreys qochqinini olib ketadi. Bu urushdagi eng yirik dengiz evakuatsiyasi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Seul 1951-yil yanvarda yana qulaydi. Makartur Xitoyni bombardimon qilmasdan urushda g'alaba qozonib bo'lmaydi, deydi va atom bombalarini so'raydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "nuke-choice": {
+      "title": "Oq uy · 1951-yil bahori",
+      "prompt": "Makartur Xitoydagi nishonlar ro'yxatini tuzib qo'ygan. U respublikachi kongressmenga «g'alabaning o'rnini hech narsa bosa olmaydi» deb yozib, prezident siyosatiga ochiqdan-ochiq qarshi chiqqan.",
+      "options": {
+        "nukes": {
+          "label": "Bombani ishlatish",
+          "description": "Makarturga xohlaganini bering: Manchuriyadagi xitoy bazalari va ta'minot yo'llariga atom zarbalari."
+        },
+        "fire-macarthur": {
+          "label": "Makarturni ishdan bo'shatish",
+          "description": "Harbiylarga fuqarolar qo'mondonlik qiladi. Amerikaning eng mashhur generalini lavozimidan oling, urushni cheklangan holda saqlang va o't ochishni to'xtatishga intiling."
+        }
+      }
+    },
+    "atomic": {
+      "narration": {
+        "0": {
+          "text": "Nagasakidan keyingi birinchi atom bombalari 1951-yil bahorida Manchuriyaga tushadi. Stalinda 1949-yildan beri bomba bor va u shartnomaga ko'ra Xitoyni himoya qilishga majbur.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Sovet bombardimonchilari Yaponiya va Janubiy Koreyadagi Amerika bazalariga javob zarbasi beradi. Britaniya va Fransiya urushdan chiqishini ogohlantiradi va 1945-yilda g'alaba qozongan ittifoq parchalana boshlaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "macarthur-fired": {
+      "narration": {
+        "0": {
+          "text": "1951-yil 11-aprelda Trumen Makarturni qo'mondonlikdan chetlatadi. Makartur vataniga qahramondek kutib olinadi va Kongressda: «Keksa askarlar hech qachon o'lmaydi, ular shunchaki so'nib boradi», deydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Trumenning reytingi zamonaviy so'rovlar tarixidagi har qanday prezidentnikidan pastga tushadi. Ammo urush Koreya ichida qoladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "armistice": {
+      "narration": {
+        "0": {
+          "text": "Panmunjom, 1953-yil 27-iyul. Ikki yillik muzokaralardan so'ng sulh shu maqsadda qurilgan zalda imzolanadi. Kim Ir Sen va Pen Dexuay uni keyinroq imzolaydi. Li Syn Man umuman imzo chekishdan bosh tortadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Yangi chiziq eski 38-parallelga yaqin o'tadi. Hech qachon tinchlik shartnomasi imzolanmaydi va ikki Koreya hanuz rasman urush holatida.",
+          "speaker": "Solnoma"
+        }
+      }
+    }
+  },
+  "characters": {
+    "rhee": {
+      "name": "Li Syn Man",
+      "role": "Mustaqillik yetakchisi, Janubiy Koreyaning birinchi prezidenti"
+    },
+    "kim": {
+      "name": "Kim Ir Sen",
+      "role": "Shimoliy Koreya rahbari"
+    },
+    "truman": {
+      "name": "Garri S. Trumen",
+      "role": "AQShning 33-prezidenti"
+    },
+    "macarthur": {
+      "name": "Duglas Makartur",
+      "role": "Koreyadagi BMT kuchlari qo'mondoni"
+    },
+    "peng": {
+      "name": "Pen Dexuay",
+      "role": "Xitoy xalq ko'ngillilari qo'mondoni"
+    }
+  },
+  "title": "38-parallel",
+  "era": "Seul · 1945",
+  "endings": {
+    "neutral-korea": {
+      "title": "Sharq qal'asi",
+      "subtitle": "Vasiylik saqlanadi · bitta saylov · yagona Koreya",
+      "epilogue": {
+        "0": {
+          "text": "O'ttiz million aholiga ega yagona Koreya o'zini Shveytsariya kabi betaraf deb e'lon qiladi va hech bir buyuk davlat bosqinga jur'at qilmasligi uchun tishigacha qurollanadi."
+        },
+        "1": {
+          "text": "Koreya urushi bo'lmaydi. Bizning tariximizda halok bo'lgan uch million kishi umrini yashaydi, o'n million oila esa hech qachon chegara bilan ajralmaydi."
+        },
+        "2": {
+          "text": "Siyosat achchiq, koalitsiya o'nlab marta parchalanishiga oz qoladi. Ammo Koreyaning janjallari o'zinikidir."
+        }
+      }
+    },
+    "red-korea": {
+      "title": "Pusanning qulashi",
+      "subtitle": "Perimetr yoriladi · Koreya Kim Ir Sen qo'l ostida birlashadi",
+      "epilogue": {
+        "0": {
+          "text": "Butun Koreya Kim Ir Sen, undan keyin esa o'g'li boshqaradigan yagona yopiq davlatga aylanadi. Samsung ham, K-pop ham, koreys demokratiyasi ham yo'q."
+        },
+        "1": {
+          "text": "Bo'g'oz ortida bir necha soatlik masofada kommunistik Koreya turgan Yaponiya Amerikaning Osiyodagi qurollangan qal'asiga aylanadi. Tinch okeanidagi sovuq urush chizig'i Tsusima bo'g'ozidan o'tadi."
+        }
+      }
+    },
+    "narrow-neck": {
+      "title": "Tor bo'g'iz",
+      "subtitle": "BMT Xitoyga yetmay to'xtaydi · xitoy qo'shinlarisiz urush",
+      "epilogue": {
+        "0": {
+          "text": "Urush 1953-yilda emas, 1950-yil qishida tugaydi. Bizning tariximizdagi keyingi janglarda halok bo'lgan yuz minglab xitoylik, koreys va amerikalik askarlar uylariga qaytadi."
+        },
+        "1": {
+          "text": "Kichik, yakkalangan Shimoliy Koreya Xitoy himoyasi ostida tog'larda omon qoladi. Pxenyan, Keson va shimolning katta qismi Koreya Respublikasi tarkibida qayta quriladi."
+        }
+      }
+    },
+    "blue-korea": {
+      "title": "Rojdestvoga uyga",
+      "subtitle": "Dengiz piyodalari Chosinda g'alaba qozonadi · Koreya Seul qo'l ostida birlashadi",
+      "epilogue": {
+        "0": {
+          "text": "Li birlashgan Koreyani temir qo'l bilan boshqaradi va koreyslar, xuddi bizning tariximizdagidek, demokratiya uchun ko'chalarda kurashishiga to'g'ri keladi."
+        },
+        "1": {
+          "text": "Amerika qo'shinlari Yaluda Xitoy bilan yuzma-yuz turadi. Osiyodagi sovuq urushning yangi front chizig'i ming kilometr shimolroqqa ko'chadi."
+        }
+      }
+    },
+    "atomic-war": {
+      "title": "Yaludagi olov",
+      "subtitle": "Koreyada bomba ishlatiladi · urush undan tashqariga yoyiladi",
+      "epilogue": {
+        "0": {
+          "text": "Buyuk davlatlar 1952-yilda jarlik yoqasidan orqaga qaytguncha janglar Koreyadan Manchuriya va Yaponiyaga yoyiladi. Yana millionlab odam halok bo'ladi."
+        },
+        "1": {
+          "text": "Bizning tariximizda 1945-yildan beri saqlanib kelayotgan yadro qurolini ishlatmaslik taqiqi atom asrining birinchi o'n yilligidayoq buziladi."
+        }
+      }
+    },
+    "armistice": {
+      "title": "38-parallel",
+      "subtitle": "Siz biladigan tarix: sulh va hech qachon yopilmagan chiziq",
+      "epilogue": {
+        "0": {
+          "text": "Uch millionga yaqin koreys, xitoylik, amerikalik va boshqalar halok bo'ldi, ularning aksariyati tinch aholi. Seul to'rt marta qo'ldan-qo'lga o'tdi."
+        },
+        "1": {
+          "text": "Ikki Koreya turli yo'llardan boradi. 1953-yilda o'ta qashshoq bo'lgan Janub dunyodagi eng boy demokratiyalardan biriga aylanadi. Shimol esa Kimlar oilasining uch avlodi boshqaradigan Yer yuzidagi eng yopiq mamlakatga aylanadi."
+        },
+        "2": {
+          "text": "To'rt kilometr kenglikdagi Demilitarizatsiya qilingan zona hanuz yarimorolni ikkiga bo'lib turibdi. Millionlab oilalar narigi tomondagi qarindoshlarini boshqa hech qachon ko'rmagan."
+        }
+      }
+    }
+  }
+}

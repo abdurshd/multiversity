@@ -18,7 +18,7 @@ const UNION_BLUE = '#2b3f73';
 const CSA_GREY = '#8c8f92';
 
 // ─── Flags: canvas textures, gently waving cloth ────────────────────────────
-export type FlagKind = 'us' | 'us-1917' | 'csa-battle' | 'csa-national' | 'german-empire' | 'habsburg' | 'france' | 'uk' | 'czechoslovakia';
+export type FlagKind = 'us' | 'us-1917' | 'csa-battle' | 'csa-national' | 'german-empire' | 'habsburg' | 'france' | 'uk' | 'czechoslovakia' | 'korea' | 'un';
 const flagTextures: Partial<Record<FlagKind, THREE.CanvasTexture>> = {};
 
 export function flagTexture(kind: FlagKind) {
@@ -51,6 +51,50 @@ export function flagTexture(kind: FlagKind) {
         bands(['#111111', '#f2c12e']);
     } else if (kind === 'france') {
         bands(['#22408f', '#f4f1ea', '#c4232f'], true);
+    } else if (kind === 'korea') {
+        // Taegukgi: red-over-blue taeguk circle and the four black trigrams
+        g.fillStyle = '#f7f5ef';
+        g.fillRect(0, 0, 380, 200);
+        const cx = 190, cy = 100, r = 50;
+        g.save();
+        g.translate(cx, cy);
+        g.rotate(Math.atan2(2, 3));
+        g.fillStyle = '#cd2e3a';
+        g.beginPath(); g.arc(0, 0, r, Math.PI, 0); g.fill();
+        g.fillStyle = '#0047a0';
+        g.beginPath(); g.arc(0, 0, r, 0, Math.PI); g.fill();
+        g.fillStyle = '#cd2e3a';
+        g.beginPath(); g.arc(-r / 2, 0, r / 2, 0, Math.PI); g.fill();
+        g.fillStyle = '#0047a0';
+        g.beginPath(); g.arc(r / 2, 0, r / 2, Math.PI, Math.PI * 2); g.fill();
+        g.restore();
+        g.fillStyle = '#111111';
+        // trigrams: [corner angle, pattern of solid (1) or broken (0) bars]
+        const tri: [number, number, number[]][] = [[-1, -1, [1, 1, 1]], [1, 1, [0, 0, 0]], [1, -1, [0, 1, 0]], [-1, 1, [1, 0, 1]]];
+        for (const [sx, sy, bars] of tri) {
+            g.save();
+            g.translate(cx + sx * 112, cy + sy * 62);
+            g.rotate(Math.atan2(sy * 2, sx * 3) + Math.PI / 2);
+            bars.forEach((solid, i) => {
+                const y = (i - 1) * 11;
+                if (solid) g.fillRect(-22, y - 4, 44, 8);
+                else { g.fillRect(-22, y - 4, 19, 8); g.fillRect(3, y - 4, 19, 8); }
+            });
+            g.restore();
+        }
+    } else if (kind === 'un') {
+        g.fillStyle = '#4b92db';
+        g.fillRect(0, 0, 380, 200);
+        g.strokeStyle = '#f7f5ef';
+        g.fillStyle = '#f7f5ef';
+        g.lineWidth = 4;
+        for (const rr of [18, 34, 50]) { g.beginPath(); g.arc(190, 96, rr, 0, Math.PI * 2); g.stroke(); }
+        for (let i = 0; i < 8; i++) { const a = (i * Math.PI) / 4; g.beginPath(); g.moveTo(190, 96); g.lineTo(190 + Math.cos(a) * 50, 96 + Math.sin(a) * 50); g.stroke(); }
+        // olive branches
+        for (const sgn of [-1, 1]) for (let k = 0; k < 7; k++) {
+            const a = Math.PI / 2 + sgn * (0.5 + k * 0.33);
+            g.beginPath(); g.ellipse(190 + Math.cos(a) * 66, 96 + Math.sin(a) * 66, 8, 4, a, 0, Math.PI * 2); g.fill();
+        }
     } else if (kind === 'czechoslovakia') {
         bands(['#f4f1ea', '#d7141a']);
         g.fillStyle = '#11457e';

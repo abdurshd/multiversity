@@ -135,7 +135,7 @@ function Headwear({ outfit, accent, hair, hat, balding = false }: { outfit: Char
                             <cylinderGeometry args={[0.62, 0.64, 0.04, 28]} />
                             <meshStandardMaterial color={hat ?? '#151517'} roughness={0.55} />
                         </mesh>
-                        <mesh position={[0, 0.03, 0]}>
+                        <mesh position={[0, 0.03, 0]} rotation={[Math.PI / 2, 0, 0]} scale={[1, 0.92, 1]}>
                             <torusGeometry args={[0.62, 0.035, 6, 28]} />
                             <meshStandardMaterial color={hat ?? '#151517'} roughness={0.55} />
                         </mesh>

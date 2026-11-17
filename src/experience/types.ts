@@ -274,7 +274,12 @@ export type EnvironmentId =
     | 'midway-1942'
     | 'el-alamein'
     | 'southwick-1944'
-    | 'normandy-1944';
+    | 'normandy-1944'
+    | 'seoul-1945'
+    | 'busan-1950'
+    | 'incheon-1950'
+    | 'chosin-1950'
+    | 'panmunjom-1953';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 
