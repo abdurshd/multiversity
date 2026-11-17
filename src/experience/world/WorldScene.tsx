@@ -20,6 +20,8 @@ import { ElAlamein, London1940, Midway1942, Normandy1944, Southwick1944, Sudeten
 import { Busan1950, Chosin1950, Incheon1950, Panmunjom1953, Seoul1945 } from './korea';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
+import { Union1991 } from './union1991';
+
 // ─── Environment settings ──────────────────────────────────────────────────
 interface EnvDef {
     skyTop: string;
@@ -36,6 +38,16 @@ interface EnvDef {
 }
 
 const ENV: Record<EnvironmentId, EnvDef> = {
+    'union-square-1991': {
+        skyTop: '#344f69', skyHorizon: '#c8b99d', fog: '#9da9ac', sun: '#ffe4b4',
+        sunPos: [-40, 45, 35], ambient: 0.65, ground: '#6e797b', groundVar: '#747e80',
+        disc: { pos: [-260, 180, 210], color: '#ffe2ae', size: 16 }, clouds: true,
+    },
+    'union-hall-1991': {
+        skyTop: '#3b4d5b', skyHorizon: '#9baeb3', fog: '#849496', sun: '#f3dec0',
+        sunPos: [10, 60, 15], ambient: 0.8, ground: '#555e65', groundVar: '#555e65',
+        disc: { pos: [250, 230, 100], color: '#fff0d7', size: 15 }, clouds: false,
+    },
     'samarkand-day': {
         skyTop: '#5d96c9', skyHorizon: '#d9e6e2', fog: '#cfd9d2', sun: '#fff2d4',
         sunPos: [80, 110, 40], ambient: 0.5, ground: '#c4a87e', groundVar: '#a98f66',
@@ -234,7 +246,7 @@ const ENV: Record<EnvironmentId, EnvDef> = {
 };
 
 /** Scenes with open sea where the distant hills would poke through the water. */
-const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950']);
+const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950', 'union-square-1991', 'union-hall-1991']);
 
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
@@ -276,7 +288,9 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             {env.clouds && <Clouds dark={false} />}
             {(environment === 'varennes' || environment === 'springfield') && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
-            {environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
+            {environment === 'union-square-1991' || environment === 'union-hall-1991' ? (
+                <Union1991 hall={environment === 'union-hall-1991'} />
+            ) : environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
             ) : environment === 'winter-march' ? (
                 <WinterMarch />
@@ -813,10 +827,11 @@ function SceneCast() {
 
 function HotspotMarkers() {
     const beat = useCurrentBeat();
+    const union = useExperience(s => s.script?.chapterId === 'ussr-collapse');
     if (beat?.kind !== 'explore') return null;
     return (
         <group>
-            {beat.hotspots.map((h) => (
+            {beat.hotspots.filter(h => !union || !h.advancesTo).map((h) => (
                 <HotspotMarker key={h.id} hotspot={h} />
             ))}
         </group>

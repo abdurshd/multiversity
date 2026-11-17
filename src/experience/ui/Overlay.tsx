@@ -6,6 +6,7 @@ import { useCurrentBeat, useExperience } from '../store';
 import type { StatEffects, StatKey, TacticalOption } from '../types';
 import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
+import { UnionOverlay } from './UnionOverlay';
 import { TimurExplore } from './TimurExplore';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
@@ -503,8 +504,10 @@ function EndingOverlay() {
 
 // ─── Root overlay ──────────────────────────────────────────────────────────
 export function ExperienceOverlay() {
+    const union = useExperience((s) => s.script?.chapterId === 'ussr-collapse');
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
+    if (union) return <UnionOverlay />;
     return (
         <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}
