@@ -40,3 +40,7 @@ Read during implementation; all narrative is paraphrased, with no invented quota
 - [Encyclopedia of St Petersburg: Decembrist uprising](https://www.encspb.ru/object/2855721519?dv=2856785120&lc=en). Used for square context and the failed persuasion/artillery sequence. Disputed casualty numbers are intentionally omitted.
 
 The fictional reform mandate is not universal suffrage or immediate abolition by one signature. The alternate endings explicitly retain implementation, land and consent problems. The historical ending does not suggest the player's simplified meter caused the real suppression.
+
+## Deploy-preview browser check
+
+PR #13 preview built successfully. A real desktop-browser check in Korean completed the evidence prerequisite, three reports, Escape/focus return, all three charter-package articles, accord review, submission and charter ending with cinematic skips. This was DOM-only with no rendered 3D: console confirmed WebGL creation failure. It also exposed that a React error boundary alone did not catch the asynchronous renderer initialization, so a WebGL2 preflight was added before mounting Canvas. Full path, other languages, mobile and GPU acceptance remain pending.
