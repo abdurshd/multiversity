@@ -241,6 +241,12 @@ export type Beat = CinematicBeat | ExploreBeat | ChoiceBeat | BattleBeat | Endin
 
 /** Which world variant to render. The Samarkand world reads this to swap set pieces. */
 export type EnvironmentId =
+    | 'senate-1825'
+    | 'senate-1825-dusk'
+    | 'assembly-1825'
+    | 'ai-campus'
+    | 'ai-control'
+    | 'ai-datacenter'
     | 'samarkand-day'
     | 'samarkand-dusk'
     | 'winter-march'
@@ -280,6 +286,13 @@ export type EnvironmentId =
     | 'incheon-1950'
     | 'chosin-1950'
     | 'panmunjom-1953'
+    | 'petrograd-1917'
+    | 'smolny-1917'
+    | 'union-square-1991'
+    | 'union-hall-1991'
+    | 'covid-hospital'
+    | 'covid-depot'
+    | 'covid-briefing'
     | 'civic-newsroom'
     | 'civic-archive'
     | 'civic-meeting';

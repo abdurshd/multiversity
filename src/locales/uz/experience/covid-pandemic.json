@@ -1,0 +1,178 @@
+{
+  "title": "Tungi navbatchilik",
+  "era": "2020-yil 31-mart · Xayoliy tuman",
+  "ui": {
+    "disclaimer": "Bu xayoliy muvofiqlashtirish mashqi, epidemiologik bashorat yoki tibbiy maslahat emas. Mahalliy odamlar, hisobotlar, miqdorlar, tanlovlar va natijalar to‘qima.",
+    "intro": "Bir kechalik yetkazib berish, xodimlar rejasi va jamoatchilik bilan aloqani muvofiqlashtirasiz. Uch hisobotni o‘rganing, cheklangan yukni taqsimlang va rostgo‘y hisobot qoldiring. Vaqt chegarasi yo‘q.",
+    "start": "Navbatchilikni boshlash",
+    "next": "Davom etish",
+    "skip": "Bu sahnani o‘tkazish",
+    "close": "Hisobotni yopish",
+    "reviewed": "O‘qildi",
+    "evidence": "O‘qilgan hisobotlar",
+    "inspect": "Jo‘natishdan oldin uchala hisobotni o‘qing. Joy yoki uning tugmasini bosing. Aylantirish uchun suring, yaqinlashtirish uchun ikki barmoqdan foydalaning.",
+    "dispatch": "Jo‘natish ro‘yxatini ochish",
+    "remaining": "Taqsimlanmagan qutilar",
+    "confirm": "Yukni tasdiqlash",
+    "allocation": "Oltita qutini taqsimlang. So‘rovlar jami to‘qqizta. Bular tibbiy hisob-kitob emas, xayoliy logistika birliklari. Tasdiqlashgacha o‘zgartirish mumkin.",
+    "hospital": "Tuman shifoxonasi",
+    "clinic": "Mahalla poliklinikasi",
+    "outreach": "Mahallaga yetkazish",
+    "hospitalNeed": "So‘rov: 4 · shoshilinch xizmatlar",
+    "clinicNeed": "So‘rov: 3 · zarur xizmatlar uzluksizligi",
+    "outreachNeed": "So‘rov: 2 · transporti yo‘q aholi",
+    "add": "Bitta quti qo‘shish",
+    "remove": "Bitta qutini olish",
+    "sealed": "Yuk tasdiqlandi",
+    "receipt": "Navbatchilik hisobotingiz",
+    "replay": "Yangi navbatchilik",
+    "back": "Bobga qaytish",
+    "exit": "Chiqish",
+    "sources": "Tarixiy manbalar va cheklovlar",
+    "sourceTimeline": "JSST: pandemiya xronologiyasi",
+    "sourceServices": "JSST: zarur xizmatlar, 2020-yil 30-mart",
+    "sourceTrust": "JSST: jamoatchilik bilan aloqa, 2020-yil 19-mart",
+    "fallback": "Bu qurilmada 3D mavjud emas. Quyida barcha qarorlar mashqini o‘ynash mumkin.",
+    "view": "Sahna",
+    "overview": "Ko‘rinishni tiklash",
+    "language": "Til",
+    "noForecast": "Kasallanish, o‘lim yoki ehtimollar bashorat qilinmaydi. Natijalar faqat shu xayoliy navbatchilikni tasvirlaydi.",
+    "inspectTitle": "Raqamlar emas, odamlar",
+    "shipmentTitle": "Olti quti. Uch manzil.",
+    "changed": "Qayta ko‘riladigan qarorlar, qoladigan oqibatlar",
+    "bridgePlan": "Mashq farazi: vaqtinchalik rejada shifoxonaga 3, poliklinikaga 2 va mahallaga 1 quti. Bu to‘qima maqsadlar klinik nisbatlar emas."
+  },
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "speaker": "Tarixiy ma’lumot",
+          "text": "JSST 2020-yil 11-martda COVID-19ni pandemiya deb tavsifladi. 30-martda u pandemiyaga javob berish bilan birga zarur tibbiy xizmatlarni saqlashga chaqirdi."
+        },
+        "1": {
+          "speaker": "Xayoliy navbatchilik · 18:00",
+          "text": "Yuklash joyi derazalarida yomg‘ir tomchilari. Shifoxona, kichik poliklinika va transporti yo‘q aholi kutmoqda. Siz shifokor emas, tuman muvofiqlashtiruvchisisiz. Bu kecha kamchiliklarni ochiq ko‘rsating."
+        }
+      }
+    },
+    "reports": {
+      "prompt": "Va’da berishdan oldin hisobotlarni o‘rganing.",
+      "hotspots": {
+        "ward": {
+          "label": "Shifoxona stoli",
+          "title": "Karavotning o‘zi xizmat emas",
+          "description": "Xayoliy hisobot: shifoxona to‘rtta quti so‘raydi. Xodimlar band; malakali xodimsiz xona qo‘shimcha xizmat quvvati emas. Navbatchi rahbar karavot sonini va’da qilish emas, xodimlar jadvalini saqlashni so‘raydi."
+        },
+        "ledger": {
+          "label": "Poliklinika daftari",
+          "title": "Pandemiyadan tashqari yordam",
+          "description": "Xayoliy hisobot: poliklinika zarur xizmatlar uchun uchta quti so‘raydi. Barcha xodimlarni bitta yo‘nalishga o‘tkazish oldingi qabullarni rejasiz qoldiradi. Daftar kasallanish bashoratini emas, qondirilmagan ehtiyojlarni qayd etadi."
+        },
+        "radio": {
+          "label": "Mahalla radiosi",
+          "title": "Navbatga kim yeta olmaydi?",
+          "description": "Xayoliy hisobot: ko‘ngillilar transporti yo‘q aholi uchun ikkita quti so‘raydi. Onlayn e’lonlar ayrim oilalarga yetib bormaydi. Mish-mish barcha yetkazish kafolatlanganini aytmoqda. Keyingi yuk mashinasi kelishi tasdiqlanmagan."
+        }
+      }
+    },
+    "loading": {
+      "narration": {
+        "0": {
+          "speaker": "Xayoliy navbatchilik · 20:00",
+          "text": "Yuk ro‘yxati tasdiqlandi. Bir manzilga jo‘natilgan quti boshqa joyga bormaydi. Poliklinika yana qo‘ng‘iroq qiladi: ertangi jadval hali bo‘sh."
+        }
+      }
+    },
+    "roster": {
+      "title": "21:00 · Xizmatlar uzluksizligi",
+      "prompt": "Keyingi navbatchilikni qanday rejalashtirasiz?",
+      "options": {
+        "continuity": {
+          "label": "Zarur xizmat xodimlarini saqlash",
+          "description": "Poliklinika uchun aniq jadval qoldiring va qo‘shimcha yordam so‘rang. Bu kecha shifoxona barcha xodimlarni olmaydi."
+        },
+        "surge": {
+          "label": "Mavjud jamoani bir joyga yig‘ish",
+          "description": "Rejalashtirish jamoasini shifoxonaga yo‘naltiring. Poliklinika rejasi kechikadi; qo‘shimcha tayyor karavotlar bor demay, bu bo‘shliqni qayd eting."
+        }
+      }
+    },
+    "briefing": {
+      "options": {
+        "transparent": {
+          "label": "Ma’lum va noma’lumni e’lon qilish",
+          "description": "Haqiqiy ro‘yxat, qondirilmagan so‘rovlar va keyingi xabar vaqtini ayting. Internet bilan birga radio va tarjima qilingan bosma e’lonlardan foydalaning."
+        },
+        "certainty": {
+          "label": "Barcha so‘rovlar bajarilishini va’da qilish",
+          "description": "Tinchlantiruvchi sarlavha, ammo keyingi mashina tasdiqlanmagan. Va’da bilan ro‘yxat o‘rtasidagi tafovutga javob berishingiz kerak bo‘ladi."
+        }
+      },
+      "title": "22:00 · Ommaviy axborot",
+      "prompt": "Mikrofon yoqilgan. Nimani rost va’da qila olasiz?"
+    },
+    "correction": {
+      "options": {
+        "correct": {
+          "label": "Va’dani omma oldida tuzatish",
+          "description": "Xatoni tan oling, kamchiliklarni e’lon qiling va keyingi xabar vaqtini belgilang. Tuzatish foydali, lekin oldingi va’dani o‘chirmaydi."
+        },
+        "silent": {
+          "label": "Sarlavhani o‘zgarishsiz qoldirish",
+          "description": "Bu kecha qiyin tuzatishdan qoching. Aholida jo‘natish hisoboti tasdiqlamaydigan kafolat qoladi."
+        }
+      },
+      "title": "23:00 · Qo‘ng‘iroq qiluvchi va’dani so‘roq qiladi",
+      "prompt": "“Bizning so‘rovimiz ro‘yxatda yo‘q.” Oldingi kafolatingiz endi muammoning bir qismi."
+    },
+    "handover": {
+      "narration": {
+        "0": {
+          "speaker": "Xayoliy navbatchilik · 00:00",
+          "text": "Keyingi muvofiqlashtiruvchi daftaringizni ochadi. U qancha odam kasallanishini aytmaydi. Kim ta’minlangani, qaysi xizmatga reja kerakligi va aholiga o‘sha haqiqat aytilganini ko‘rsatadi."
+        }
+      }
+    },
+    "manifest": {
+      "prompt": "Oltita qutini taqsimlang. So‘rovlar jami to‘qqizta. Bular tibbiy hisob-kitob emas, xayoliy logistika birliklari. Tasdiqlashgacha o‘zgartirish mumkin."
+    }
+  },
+  "endings": {
+    "shared": {
+      "title": "Mas’uliyatli navbatchilik topshiruvi",
+      "subtitle": "Mukammal taqsimot yo‘q. Yashirilgan bo‘shliq yo‘q.",
+      "epilogue": {
+        "0": {
+          "text": "Bu xayoliy natijada uchala manzil yordam oladi, zarur xizmatlar rejasi saqlanadi va ommaviy hisobot noaniqlikni tan oladi. Qondirilmagan so‘rovlar qoladi. Bu ishlaydigan topshiruv, epidemiya nazorat qilindi degan da’vo emas."
+        }
+      }
+    },
+    "trust": {
+      "title": "Ro‘yxatsiz va’da",
+      "subtitle": "Ommaviy hisobotni tuzatish kerak.",
+      "epilogue": {
+        "0": {
+          "text": "Bu xayoliy natijada tuzatilmagan kafolat cheklangan ta’minotga zid. Keyingi muvofiqlashtiruvchi qondirilmagan so‘rovlar bilan birga aloqa muammosini ham oladi. Bu kasallanish yoki o‘lim natijasini anglatmaydi."
+        }
+      }
+    },
+    "gap": {
+      "title": "Notekis ta’minlangan tuman",
+      "subtitle": "Rejada kimdir yetishmayapti.",
+      "epilogue": {
+        "0": {
+          "text": "Bu xayoliy natijada kamida bir manzil qutisiz qoladi yoki zarur xizmatlar rejasi kechikadi. Topshirish hisobotida bu bo‘shliqlar ko‘rsatilishi kerak. Shifoxona ombori to‘lishi butun tuman ta’minlandi degani emas."
+        }
+      }
+    },
+    "partial": {
+      "title": "Tuzatish mumkin bo‘lgan reja",
+      "subtitle": "Qiyin tanlovlarning rost qaydi.",
+      "epilogue": {
+        "0": {
+          "text": "Bu xayoliy natijada hisobot ayrim foydali qarorlarni saqlaydi, ammo taqsimot mashqdagi muvozanatli rejaga yetmaydi. Ballarni emas, so‘rovlarni ko‘rib chiqing. Yangi navbatchilik pandemiyani bashorat qilmasdan boshqa topshiruvni solishtirish imkonini beradi."
+        }
+      }
+    }
+  }
+}

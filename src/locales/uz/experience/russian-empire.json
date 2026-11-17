@@ -1,0 +1,359 @@
+{
+  "title": "Ikki qasamyod orasidagi qish",
+  "era": "Sankt-Peterburg · 1825-yil 26-dekabr (eski taqvimda 14-dekabr)",
+  "beats": {
+    "intro": {
+      "kind": "cinematic",
+      "id": "intro",
+      "environment": "senate-1825",
+      "next": "square",
+      "shots": [
+        {
+          "path": [
+            [
+              95,
+              58,
+              90
+            ],
+            [
+              52,
+              34,
+              60
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              7,
+              -12
+            ]
+          ],
+          "duration": 12
+        },
+        {
+          "path": [
+            [
+              52,
+              34,
+              60
+            ],
+            [
+              28,
+              12,
+              37
+            ]
+          ],
+          "lookPath": [
+            [
+              -14,
+              5,
+              -8
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Tarixiy vaziyat + xayoliy muzokara",
+          "text": "Aleksandr I vafot etdi. Konstantin taxtdan voz kechgan, ammo maxfiylik vorislik masalasini chalkashtirdi. Nikolay yangi qasamyod talab qiladi. Ayrim zobitlar esa askarlarini Senat maydoniga olib keladi."
+        },
+        {
+          "text": "Haqiqiy tarixda qo‘zg‘olon bostirilgan. Bu epizod zo‘ravonlik boshlanishidan oldingi xayoliy vositachilikni tasvirlaydi. Siz tarixiy qo‘mondon emas, o‘ylab topilgan choparsiz. Sulh siyosiy kelishuvga aylana oladimi?"
+        },
+        {
+          "text": "Maydonni o‘rganing, so‘ng beshta muzokara muhri bilan uch bandni kelishing. Bu belgilar siyosiy cheklovlarni soddalashtiradi; ular ehtimollar yoki Rossiyaning muqarrar kelajagi modeli emas."
+        }
+      ]
+    },
+    "square": {
+      "kind": "explore",
+      "id": "square",
+      "environment": "senate-1825",
+      "prompt": "Dalillarni o‘qing, so‘ng muzokara xonasiga kiring.",
+      "camera": {
+        "position": [
+          52,
+          35,
+          62
+        ],
+        "target": [
+          0,
+          5,
+          -8
+        ]
+      },
+      "hotspots": {
+        "monument": {
+          "id": "monument",
+          "position": [
+            -25,
+            3,
+            -15
+          ],
+          "label": "Senat maydoni",
+          "title": "Senat maydoni",
+          "description": "Dekabristlar yagona partiya bo‘lmagan. Turli loyihalarda konstitutsiyaviy monarxiya, respublika va krepostnoylikni tugatish ko‘zlangan. Oddiy askarlar zobitlarning barcha maqsadlarini birdek qo‘llamagan.",
+          "icon": "◇"
+        },
+        "regiments": {
+          "id": "regiments",
+          "position": [
+            25,
+            3,
+            -15
+          ],
+          "label": "Bo‘lingan polklar",
+          "title": "Bo‘lingan polklar",
+          "description": "Ayrim gvardiya qismlari qo‘zg‘olonga qo‘shildi, boshqalari Nikolayni qo‘lladi. Bu uslubiy sahna qarama-qarshi safni ko‘rsatadi, qotillikni takrorlamaydi. Tarixda ko‘ndirish urinishlari samarasiz bo‘lib, artilleriya isyonchilarni tarqatgan.",
+          "icon": "♜"
+        },
+        "documents": {
+          "id": "documents",
+          "position": [
+            0,
+            3,
+            22
+          ],
+          "label": "Vorislik hujjatlari",
+          "title": "Vorislik hujjatlari",
+          "description": "Konstantinning voz kechishi va Nikolayni voris deb ko‘rsatgan hujjatlar taxt oralig‘idagi inqirozni bartaraf etmadi. Qarama-qarshi qasamyodlar fitnachilarga imkon berdi. Hukmdorning almashishi siyosiy huquqlar masalasini hal qilmas edi.",
+          "icon": "▤"
+        },
+        "room": {
+          "id": "room",
+          "position": [
+            -20,
+            3,
+            25
+          ],
+          "label": "Muzokaraga kirish",
+          "title": "Muzokaraga kirish",
+          "description": "Muqobil boshlanish: vakillar vaqtinchalik uchrashuvga rozi. Xavfsizlik, vakillik va huquqlar uchun beshta muhringiz bor. Barcha talablarni bir vaqtda qondirib bo‘lmaydi. Taklifdan oldin murosalarni ko‘rib chiqing.",
+          "icon": "→",
+          "advancesTo": "negotiation"
+        }
+      }
+    },
+    "negotiation": {
+      "kind": "choice",
+      "id": "negotiation",
+      "environment": "assembly-1825",
+      "title": "Muvaqqat bitim",
+      "prompt": "Sulh hali konstitutsiya emas. Vakillar olib qayta oladigan taklif tuzing.",
+      "camera": {
+        "position": [
+          20,
+          16,
+          27
+        ],
+        "target": [
+          0,
+          3,
+          0
+        ]
+      },
+      "options": {
+        "charter": {
+          "id": "charter",
+          "label": "Xartiya yo‘li ochildi",
+          "description": "Muqobil tarix · Vakolat bor, darhol demokratiya emas",
+          "flags": [
+            "russia:charter"
+          ],
+          "effects": {
+            "freedom": 35,
+            "diplomacy": 25,
+            "chaos": -15
+          },
+          "next": "charter"
+        },
+        "truce": {
+          "id": "truce",
+          "label": "Qishki sulh",
+          "description": "Muqobil tarix · Hayotlar saqlandi, huquqlar ochiq qoldi",
+          "flags": [
+            "russia:truce"
+          ],
+          "effects": {
+            "diplomacy": 15,
+            "chaos": -15
+          },
+          "next": "truce"
+        },
+        "suppression": {
+          "id": "suppression",
+          "label": "Ikkinchi qasamyod ustun keldi",
+          "description": "Tarixiy tayanch · Imkon yopildi",
+          "flags": [
+            "russia:suppression"
+          ],
+          "effects": {
+            "freedom": -5,
+            "chaos": 10
+          },
+          "next": "suppression"
+        }
+      }
+    },
+    "charter": {
+      "kind": "cinematic",
+      "id": "charter",
+      "environment": "assembly-1825",
+      "shots": [
+        {
+          "path": [
+            [
+              17,
+              10,
+              24
+            ],
+            [
+              7,
+              7,
+              18
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Muqobil tarix · Vakolat bor, darhol demokratiya emas",
+          "text": "Taklif himoyalangan sulh, kengroq yig‘ilish va ozodlik dasturini birlashtiradi. Bu konstitutsiyaviy jarayonni ochadi, tinch asrni kafolatlamaydi. Yer egalari, amaldorlar va viloyatlarni ham ko‘ndirish kerak; ijro muvaffaqiyatsiz bo‘lishi mumkin."
+        }
+      ],
+      "next": "ending"
+    },
+    "truce": {
+      "kind": "cinematic",
+      "id": "truce",
+      "environment": "senate-1825-dusk",
+      "shots": [
+        {
+          "path": [
+            [
+              32,
+              19,
+              42
+            ],
+            [
+              65,
+              40,
+              65
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              4,
+              -10
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Muqobil tarix · Hayotlar saqlandi, huquqlar ochiq qoldi",
+          "text": "Saflar ajraladi. Bu xayoliy tanaffus maydonni darhol to‘qnashuvdan saqlaydi, ammo taklif keng islohot vakolatini bermaydi. Huquq va vorislikning hal qilinmagan savollari siyosiy kurashga qaytadi."
+        }
+      ],
+      "next": "ending"
+    },
+    "suppression": {
+      "kind": "cinematic",
+      "id": "suppression",
+      "environment": "senate-1825-dusk",
+      "shots": [
+        {
+          "path": [
+            [
+              35,
+              22,
+              50
+            ],
+            [
+              78,
+              48,
+              82
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              4,
+              -10
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Tarixiy tayanch · Imkon yopildi",
+          "text": "Xayoliy muzokarangiz davom eta olmaydi. Tarixda Nikolay qo‘zg‘olonni bostirdi; hibslar, sudlar, qatllar va Sibir surguni yuz berdi. Yakun shu natijaga qaytadi, ammo bunga oddiy ball sabab bo‘lgan demaydi."
+        }
+      ],
+      "next": "ending"
+    },
+    "ending": {
+      "kind": "ending",
+      "id": "ending"
+    }
+  },
+  "endings": {
+    "charter": {
+      "id": "charter",
+      "title": "Xartiya yo‘li ochildi",
+      "subtitle": "Muqobil tarix · Vakolat bor, darhol demokratiya emas",
+      "icon": "📜",
+      "color": "#7bc5b3",
+      "priority": 10,
+      "requiresFlags": [
+        "russia:charter"
+      ],
+      "epilogue": [
+        {
+          "text": "Taklif himoyalangan sulh, kengroq yig‘ilish va ozodlik dasturini birlashtiradi. Bu konstitutsiyaviy jarayonni ochadi, tinch asrni kafolatlamaydi. Yer egalari, amaldorlar va viloyatlarni ham ko‘ndirish kerak; ijro muvaffaqiyatsiz bo‘lishi mumkin."
+        }
+      ]
+    },
+    "truce": {
+      "id": "truce",
+      "title": "Qishki sulh",
+      "subtitle": "Muqobil tarix · Hayotlar saqlandi, huquqlar ochiq qoldi",
+      "icon": "🕯",
+      "color": "#e0be82",
+      "priority": 10,
+      "requiresFlags": [
+        "russia:truce"
+      ],
+      "epilogue": [
+        {
+          "text": "Saflar ajraladi. Bu xayoliy tanaffus maydonni darhol to‘qnashuvdan saqlaydi, ammo taklif keng islohot vakolatini bermaydi. Huquq va vorislikning hal qilinmagan savollari siyosiy kurashga qaytadi."
+        }
+      ]
+    },
+    "suppression": {
+      "id": "suppression",
+      "title": "Ikkinchi qasamyod ustun keldi",
+      "subtitle": "Tarixiy tayanch · Imkon yopildi",
+      "icon": "❄",
+      "color": "#a2b7c9",
+      "priority": 0,
+      "epilogue": [
+        {
+          "text": "Xayoliy muzokarangiz davom eta olmaydi. Tarixda Nikolay qo‘zg‘olonni bostirdi; hibslar, sudlar, qatllar va Sibir surguni yuz berdi. Yakun shu natijaga qaytadi, ammo bunga oddiy ball sabab bo‘lgan demaydi."
+        }
+      ]
+    }
+  }
+}
