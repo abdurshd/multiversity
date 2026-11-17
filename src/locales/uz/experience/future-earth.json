@@ -1,0 +1,216 @@
+{
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "text": "ESTUARIY TUMANI · 2086. To‘qima sohil shahri to‘qima bo‘rondan so‘ng uyg‘onadi. Baland yo‘laklar quruq, ammo suv inshooti, boshpana va aloqa markazi ishlamayapti."
+        },
+        "1": {
+          "text": "Siz butun sayyorani emas, ikki ta’mir smenasini boshqarasiz. Tumanni tekshiring, cheklangan brigada va quvvatni taqsimlang, so‘ng aholiga qolgan muammolarni tushuntiring. Vaqt hisoblagichi sizni shoshirmaydi."
+        },
+        "2": {
+          "text": "Bu bashorat yoki favqulodda vaziyat yo‘riqnomasi emas, ilmiy-fantastik farazdir. Infratuzilma bog‘liqliklari real; tuman, bo‘ron, budjet, texnologiya va natijalar to‘qima. Belgilar chiqindilar, qurbonlar yoki suv chuqurligini bashorat qilmaydi."
+        }
+      }
+    },
+    "survey": {
+      "prompt": "Ta’mirdan avval tumanni o‘rganing.",
+      "hotspots": {
+        "future-water": {
+          "label": "Suv inshooti",
+          "title": "Nasos tarmoqning bir qismi",
+          "description": "Asos: elektr uzilishi suv va oqova tizimlarini buzishi mumkin. Faraz: suv stansiyamizga bir brigada va ikki doimiy quvvat belgisi kerak. Nasosni tiklashning o‘zi ichimlik suvi xavfsizligini tasdiqlamaydi."
+        },
+        "future-energy": {
+          "label": "Mikrotarmoq maydoni",
+          "title": "Quvvat keyingi smenada keladi",
+          "description": "Faraz: ikki quvvat belgisi qolgan. Nimstansiyaga ikki brigada belgisini sarflash quvvatni faqat KEYINGI smenada to‘rttaga yetkazadi. Tiklangan xizmatlar quvvat ishlatishda davom etadi. Ta’mir tartibi muhim."
+        },
+        "future-shelter": {
+          "label": "Jamoat boshpanasi",
+          "title": "Kirish faqat eshik emas",
+          "description": "Asos: infratuzilma nosozligi boshqa xizmatlarga tarqalishi mumkin. Faraz: boshpanaga bir brigada va bir quvvat belgisi kerak; ochiq aloqa markaziga ham shuncha. Chiroqli bino to‘liq evakuatsiya yoki parvarish rejasi emas."
+        },
+        "future-shore": {
+          "label": "Tirik sohil",
+          "title": "Himoyaning chegarasi bor",
+          "description": "Asos: muhandislik va ekotizimga asoslangan moslashuv birlashtirilishi mumkin; mahalliy sharoit muhim. Faraz: pristan yo‘liga ikki brigada, yomg‘ir bog‘iga bir brigada belgisi kerak. Hech biri shaharni suvdan mutlaq himoya qilmaydi yoki asosiy xizmatlar o‘rnini bosmaydi."
+        },
+        "future-board": {
+          "label": "Ta’mir rejasini ochish",
+          "title": "Ikki smena. Mukammal reja yo‘q.",
+          "description": "Har smenada uch brigada belgisi bor. Ishlatilmagan brigada belgilari keyingisiga o‘tmaydi. To‘plamni tanlang, ko‘rib chiqing, so‘ng yuboring. Yuborishdan avval tanlovni bekor qilish yoki butun rejalashni qayta boshlash mumkin."
+        }
+      }
+    },
+    "dispatch": {
+      "title": "Ta’mir rejasi",
+      "prompt": "Ikki smena uchun ishlarni tanlang. Tiklangan xizmatlar quvvat sarflashda davom etadi.",
+      "options": {
+        "review": {
+          "label": "Hisobotni aholiga olib boring",
+          "description": "Ikki smenadan so‘ng ishlayotgan va yordam kerak bo‘lgan joylarni ko‘rib chiqing."
+        }
+      }
+    },
+    "hearing": {
+      "narration": {
+        "0": {
+          "text": "Ta’mir oynasi yopiladi. Ba’zi xizmatlar qaytdi, boshqalari navbatda. Tumanni ball qutqarmaydi. Aholiga hali ishlamayotgan narsalar haqida halol hisobot kerak."
+        },
+        "1": {
+          "text": "Bu to‘qima majlisda pudratchi tez tasdiqlovchi yagona kanalni taklif qiladi. Aholi ochiq ta’mir daftari va kuzatuv kengashini taklif etadi. Hech biri yangi brigada yaratmaydi; tanlov keyingi qarorlarni kim savol ostiga olishini belgilaydi."
+        }
+      }
+    },
+    "accountability": {
+      "title": "Rejaga kim e’tiroz bildira oladi?",
+      "prompt": "Ta’mir hisobotini ko‘ring. So‘ng keyingi, ko‘rsatilmagan tiklanish bosqichining qoidasini tanlang.",
+      "options": {
+        "public": {
+          "label": "Kamchiliklarni e’lon qiling; nazoratni bo‘lishing",
+          "description": "Aholi ustuvorliklarni savol ostiga oladi, shartnomalarni tekshiradi va qulay muqobillar taklif qiladi. Muhokama vaqt oladi; oshkoralikning o‘zi xizmatni tiklamaydi."
+        },
+        "closed": {
+          "label": "Tasdiqlashni pudratchi jamoasida qoldiring",
+          "description": "Yagona tasdiqlash kanali sodda, ammo aholi ustuvorlik ro‘yxatini mustaqil tekshira olmaydi. Qisqa jarayonni rozilik bilan adashtirmang."
+        }
+      }
+    },
+    "debrief": {
+      "narration": {
+        "0": {
+          "text": "Qaytgan chiroqlar muammolarni yo‘qotmaydi. Tartib imkoniyatlarni qanday o‘zgartirganini ko‘rish uchun ikki smenaga qayting. Bu bob real jamiyat xavfsizligi yoki kelajagini emas, faqat o‘z to‘qima qoidalarini o‘lchaydi."
+        }
+      }
+    }
+  },
+  "endings": {
+    "connected": {
+      "title": "Bog‘langan tiklanish",
+      "subtitle": "Faraziy natija · xizmatlar va nazorat",
+      "epilogue": {
+        "0": {
+          "text": "Bu modelda suv xizmati, boshpana va aloqa markazi ishlaydi. Ochiq hisobot tugallanmagan ishlarni ko‘rsatadi. Bu istiqbolli boshlanish, barqarorlik bashorati emas; uzoq muddatli mablag‘, parvarish va tengsiz kirish hal qilinmagan."
+        }
+      }
+    },
+    "access": {
+      "title": "Yo‘li ochiq, ammo jim tuman",
+      "subtitle": "Faraziy natija · aloqadan avval yo‘l",
+      "epilogue": {
+        "0": {
+          "text": "Asosiy xizmatlar va pristan yo‘li qaytdi. Ochiq aloqa markazi o‘chiq, aholi bu kanaldan xabar ololmaydi. Ta’mirlangan yo‘l xavfsiz evakuatsiyani kafolatlamaydi; keyingi rejaga qulay aloqa ham kerak."
+        }
+      }
+    },
+    "basic": {
+      "title": "Asosiy xizmatlar, qolgan kamchiliklar",
+      "subtitle": "Faraziy natija · to‘liq bo‘lmagan tarmoq",
+      "epilogue": {
+        "0": {
+          "text": "Suv xizmati va boshpana qaytdi, ammo ochiq aloqa va pristan yo‘li tugallanmagan. Ochiq nazorat bu kamchiliklarga e’tiroz bildirish imkonini beradi. U ikki smenani to‘liq tiklanishga aylantirmaydi."
+        }
+      }
+    },
+    "opaque": {
+      "title": "Ishlayotgan tizimlar, yopiq daftar",
+      "subtitle": "Faraziy natija · hisobdorlikdagi bo‘shliq",
+      "epilogue": {
+        "0": {
+          "text": "Suv va boshpana ishlaydi, ammo qarorlar pudratchi ichida qoladi. Aholi kim va nima sababdan keyinga qoldirilganini mustaqil tekshira olmaydi. Foydali ta’mir va demokratik hisobdorlik boshqa-boshqa yutuqlardir."
+        }
+      }
+    },
+    "water-gap": {
+      "title": "Yetishmayotgan suv bo‘g‘ini",
+      "subtitle": "Faraziy natija · suv xizmati hal qilinmagan",
+      "epilogue": {
+        "0": {
+          "text": "Bu modelda suv stansiyasi hali ishlamaydi. Boshqa ta’mirlar yordam beradi, ammo uning o‘rnini bosmaydi. Keyingi bosqich malakali mutaxassislar bilan suvga kirish va xavfsizlikni hal qilishi kerak; boshqa yerdagi yashil belgi yetarli emas."
+        }
+      }
+    },
+    "shelter-gap": {
+      "title": "Boshpanasiz xizmat",
+      "subtitle": "Faraziy natija · boshpana hal qilinmagan",
+      "epilogue": {
+        "0": {
+          "text": "Suv xizmati qaytdi, ammo jamoat boshpanasi ishlamaydi. Aholi tiklanishni shahar bo‘yicha yagona ball sifatida his qilmaydi. Keyingi bosqich boshpana, parvarish va aloqani hal qilishi kerak; model nechta odamga foyda yoki zarar bo‘lganini aytmaydi."
+        }
+      }
+    }
+  },
+  "title": "To‘lqindan keyin",
+  "era": "To‘qima estuariy · 2086",
+  "ui": {
+    "note": "FARAZIY HIKOYA · Belgilar ilmiy o‘lchov emas.",
+    "places": "Tuman kuzatuvi",
+    "hint": "Aylantirish uchun suring · Ikki barmoq bilan yaqinlashtiring · Yoki joy tugmalarini ishlating",
+    "close": "Tumanga qaytish",
+    "begin": "Ta’mir rejasini ochish",
+    "resetView": "Kamerani tiklash",
+    "fallback": "Bu yerda 3D ishlamaydi. Kuzatuv, ta’mir rejasi va hikoyani davom ettirish mumkin.",
+    "shift": "Smena",
+    "of": "/",
+    "crew": "Brigada belgilari",
+    "power": "Quvvat belgilari",
+    "used": "ajratilgan",
+    "capacity": "mavjud",
+    "nextPower": "Keyingi smenadagi quvvat",
+    "gridRule": "Tarmoq ta’miri bu rejaga emas, KEYINGI smenaga quvvat qo‘shadi. Tiklangan xizmatlar quvvat sarflashda davom etadi.",
+    "crewRule": "Har smenada uch brigada belgisi. Ishlatilmagan belgilar keyingisiga o‘tmaydi.",
+    "selected": "Tanlangan",
+    "ready": "Bajarilgan",
+    "pending": "Hal qilinmagan",
+    "add": "Ajratish",
+    "remove": "Olib tashlash",
+    "crews": "Bu smenada brigada belgisi yetarli emas",
+    "powerLimit": "Quvvat yetarli emas; tarmoqni oldingi smenada tiklang",
+    "review": "Bu smenani ko‘rib chiqish",
+    "edit": "Taqsimotni tahrirlash",
+    "dispatch": "Bu brigadalarni yuborish",
+    "reset": "Ikki smenani qayta boshlash",
+    "resetQuestion": "Ikkala smenani bekor qilib qayta rejalashtirasizmi?",
+    "cancel": "Rejani saqlash",
+    "confirmReset": "Bekor qilib qayta boshlash",
+    "empty": "Ko‘rib chiqishdan avval kamida bitta ishni tanlang.",
+    "record": "Ta’mir hisobotingiz",
+    "completedShift": "Smena tugadi. Endi mavjud quvvat bilan keyingisini rejalang.",
+    "next": "Hisobotni majlisga olib boring",
+    "confirmPolicy": "Bu qoidani tasdiqlash",
+    "reconsider": "Qayta o‘ylash",
+    "done": "Ikki smena tugadi. Bajarilgan va hal qilinmagan ishlarni ko‘ring.",
+    "field": "Bu modelda suv xizmati tiklanishi ichimlik suvi xavfsizligi sertifikati emas.",
+    "enter": "Tumanga kirish",
+    "story": "Joydan hisobot",
+    "skipScene": "Bu sahnani o‘tkazish",
+    "continueStory": "Davom etish"
+  },
+  "projects": {
+    "grid": {
+      "name": "Nimstansiya",
+      "description": "Bo‘rondan uzilgan mikrotarmoqni tiklang. Keyingi smenada quvvat ikki belgidan to‘rttaga oshadi."
+    },
+    "water": {
+      "name": "Suv stansiyasi",
+      "description": "Modeldagi suv xizmatini tiklang. Unga doimiy ikki quvvat belgisi kerak; sinov va mutaxassis tekshiruvi o‘yindan tashqarida."
+    },
+    "shelter": {
+      "name": "Jamoat boshpanasi",
+      "description": "Boshpana xizmatini tiklang. Bu to‘liq joylashtirish yoki parvarish tizimi emas, bitta bino."
+    },
+    "signal": {
+      "name": "Ochiq aloqa markazi",
+      "description": "Ochiq xabarlarni tiklang. Aloqa kirishni yaxshilashi mumkin, ammo har bir aholi xabar olishini kafolatlamaydi."
+    },
+    "quay": {
+      "name": "Pristan yo‘li",
+      "description": "Baland pristan yo‘lini ta’mirlang. Quvvat kerak emas; ikki brigada belgisi boshqa ish imkonini kamaytiradi."
+    },
+    "garden": {
+      "name": "Yomg‘ir bog‘i",
+      "description": "O‘simlikli suv saqlovchi terrasani tozalang. Bu kichik moslashuv chorasi, tayyor to‘g‘on yoki xizmatlar o‘rnini bosuvchi emas."
+    }
+  }
+}

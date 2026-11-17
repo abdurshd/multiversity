@@ -20,6 +20,9 @@ import { ElAlamein, London1940, Midway1942, Normandy1944, Southwick1944, Sudeten
 import { Busan1950, Chosin1950, Incheon1950, Panmunjom1953, Seoul1945 } from './korea';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
+import { FutureDistrict } from './future';
+import { useFutureNavigation } from '../future/navigation';
+
 // ─── Environment settings ──────────────────────────────────────────────────
 interface EnvDef {
     skyTop: string;
@@ -36,6 +39,8 @@ interface EnvDef {
 }
 
 const ENV: Record<EnvironmentId, EnvDef> = {
+    'future-estuary': { skyTop: '#547f96', skyHorizon: '#e2d3b3', fog: '#a8c0be', sun: '#ffe0ab', sunPos: [-60, 70, 50], ambient: .58, ground: '#436b77', groundVar: '#4c7883', disc: { pos: [-260, 240, 200], color: '#ffe5b8', size: 25 }, clouds: false },
+    'future-forum': { skyTop: '#294c60', skyHorizon: '#93b7ba', fog: '#719b9e', sun: '#d7e9d4', sunPos: [20, 65, 30], ambient: .7, ground: '#567981', groundVar: '#63878c', disc: { pos: [160, 280, 160], color: '#e3edd9', size: 20 }, clouds: false },
     'samarkand-day': {
         skyTop: '#5d96c9', skyHorizon: '#d9e6e2', fog: '#cfd9d2', sun: '#fff2d4',
         sunPos: [80, 110, 40], ambient: 0.5, ground: '#c4a87e', groundVar: '#a98f66',
@@ -234,7 +239,7 @@ const ENV: Record<EnvironmentId, EnvDef> = {
 };
 
 /** Scenes with open sea where the distant hills would poke through the water. */
-const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950']);
+const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950', 'future-estuary', 'future-forum']);
 
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
@@ -276,7 +281,9 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             {env.clouds && <Clouds dark={false} />}
             {(environment === 'varennes' || environment === 'springfield') && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
-            {environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
+            {environment === 'future-estuary' || environment === 'future-forum' ? (
+                <FutureDistrict interior={environment === 'future-forum'} />
+            ) : environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
             ) : environment === 'winter-march' ? (
                 <WinterMarch />
@@ -824,13 +831,15 @@ function HotspotMarkers() {
 }
 
 function HotspotMarker({ hotspot }: { hotspot: Hotspot }) {
+    const future = useExperience(s => s.script?.chapterId === 'future-earth');
+    const reduceMotion = useFutureNavigation(s => s.reducedMotion);
     const visited = useExperience((s) => s.visitedHotspots.includes(hotspot.id));
     const open = useExperience((s) => s.openHotspot);
     const visit = useExperience((s) => s.visitHotspot);
     const gemRef = useRef<THREE.Mesh>(null!);
     const ringRef = useRef<THREE.Mesh>(null!);
     useFrame(({ clock }) => {
-        const t = clock.elapsedTime;
+        const t = future && reduceMotion ? 0 : clock.elapsedTime;
         gemRef.current.position.y = hotspot.position[1] + 4 + Math.sin(t * 2) * 0.4;
         gemRef.current.rotation.y = t * 1.2;
         const s = 1 + Math.sin(t * 2.4) * 0.18;
