@@ -1,4 +1,5 @@
 /* Full-screen cinematic 3D experience: /experience/:chapterId */
+import AiExperience from '../experience/ai/AiExperience';
 import { Suspense, useEffect, useMemo, useRef } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -56,7 +57,7 @@ function SceneContent({ quality }: { quality: 'low' | 'high' }) {
     );
 }
 
-export default function Experience3D() {
+function HistoricalExperience3D() {
     const { chapterId } = useParams<{ chapterId: string }>();
     const { t, i18n } = useTranslation('components-experience');
     const script = chapterId ? getExperienceScript(chapterId) : null;
@@ -133,4 +134,9 @@ export default function Experience3D() {
             </Link>
         </div>
     );
+}
+
+export default function Experience3D() {
+    const { chapterId } = useParams<{ chapterId: string }>();
+    return chapterId === 'ai-revolution' ? <AiExperience /> : <HistoricalExperience3D />;
 }

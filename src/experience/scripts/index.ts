@@ -1,3 +1,4 @@
+import { aiRevolutionScript } from './aiRevolution';
 import type { ExperienceScript } from '../types';
 import { timurScript } from './timur';
 import { usIndependenceScript } from './usIndependence';
@@ -8,6 +9,7 @@ import { worldWar2Script } from './worldWar2';
 import { koreanWarScript } from './koreanWar';
 
 const SCRIPTS: Record<string, ExperienceScript> = {
+    'ai-revolution': aiRevolutionScript,
     'timur-legacy': timurScript,
     'us-independence': usIndependenceScript,
     'french-revolution': frenchRevolutionScript,

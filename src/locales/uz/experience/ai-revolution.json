@@ -1,0 +1,352 @@
+{
+  "title": "Chiqarish xonasi",
+  "era": "2032 · To‘qima yaqin kelajak mashqi",
+  "beats": {
+    "arrival": {
+      "narration": [
+        {
+          "speaker": "TO‘QIMA SSENARIY",
+          "text": "2032-yil. To‘qima Meridian tadqiqot kooperativida davlat xizmatlari yordamchisi chiqarilish arafasida. Siz tayyorlikni ko‘rib chiqishga rahbarlik qilasiz. Bu bashorat ham, haqiqiy SI mahsuloti haqidagi da’vo ham emas."
+        },
+        {
+          "speaker": "Mina · baholash rahbari",
+          "text": "U foydali javoblar tayyorlay oladi. Ishonch bilan noto‘g‘ri javob ham beradi. Dalillarni tekshiring, ikkita sinovni moliyalang va xavfni kim ko‘tarishini belgilang. Ortga sanash ham, mukammal ball ham yo‘q."
+        }
+      ]
+    },
+    "evidence": {
+      "prompt": "Uchala ko‘rib chiqish stansiyasiga boring. Faqat sarlavhani emas, topilmani o‘qing.",
+      "hotspots": {
+        "eval": {
+          "label": "Baholash laboratoriyasi",
+          "title": "O‘rtacha natija bo‘shliqlarni yashiradi",
+          "description": "To‘qima sinov: 1 000 odatiy javobdan 920 tasi to‘g‘ri deb baholandi. Hududiy tildagi 40 holatdan faqat 24 tasi to‘g‘ri bo‘ldi. Kichik guruh namunasi noaniq; umumiy ball har bir jamoa uchun tayyorlikni isbotlamaydi."
+        },
+        "workers": {
+          "label": "Xodimlar kengashi",
+          "title": "Nazorat uchun haq to‘lanadigan vaqt kerak",
+          "description": "Xodimlar kengashiga ko‘ra, tekshiruvchilar soatiga 30 javobni tekshira oladi, rejalashtirilgan navbat esa 90 ta yuboradi. Xodimlar, tayyorgarlik va tizimni to‘xtatish vakolatisiz nominal inson tekshiruvi mazmunli nazorat emas."
+        },
+        "public": {
+          "label": "Jamoatchilik forumi",
+          "title": "Foyda va shikoyat yo‘li",
+          "description": "Aholi qisqaroq navbat, tushunarli til yordami va inson xizmatini xohlaydi. Bir fuqaro so‘raydi: “Yordamchi arizamni noto‘g‘ri yo‘naltirsa, kim tuzatadi?” Pilot sizga bilim beradi, ammo bu hikoyada ham uning ishtirokchilari amaldagi yukni ko‘taradi."
+        }
+      }
+    },
+    "evaluation": {
+      "prompt": "Juftlikni moliyalang. Tashlab ketilgan sinov o‘tgan hisoblanmaydi, ochiq noaniqlik bo‘lib qoladi. Hech bir tanlov tizim xavfsizligini isbotlamaydi.",
+      "title": "Ikki sinov joyi. Uchta ochiq savol.",
+      "options": {
+        "people": {
+          "label": "Til + tiklash",
+          "description": "Yetarli xizmat olmagan guruhlarni sinang va ortga qaytarishni mashq qiling. Ruxsat chegaralari sinovi tugallanmaydi."
+        },
+        "systems": {
+          "label": "Ruxsatlar + tiklash",
+          "description": "Vositalarga kirishni sinang va ortga qaytarishni mashq qiling. Hududiy tillarga oid dalillar kamligicha qoladi."
+        },
+        "coverage": {
+          "label": "Til + ruxsatlar",
+          "description": "Foydalanuvchilar va vositalarga kirish haqida ko‘proq dalil oling. Tiklash sinovdan o‘tmagan tartib bo‘lib qoladi."
+        }
+      }
+    },
+    "release": {
+      "prompt": "Tanlangan sinovlar ruxsat emas, muammolarni ochdi. Muammolar hal etilayotganda tizim nima qila oladi?",
+      "title": "Chiqarish chegarasini tasdiqlang",
+      "options": {
+        "pilot": {
+          "label": "Xodimlar nazoratidagi o‘qish rejimi piloti",
+          "description": "100 ko‘ngilli bilan cheklang, inson xizmatini saqlang va tekshiruv hajmini xodimlar quvvatiga moslang. Kirish sekinroq; xavf doirasi kichikroq."
+        },
+        "hold": {
+          "label": "Ommaviy chiqarishni kutish",
+          "description": "Sinovni oflayn saqlang va qo‘lda yordamni moliyalang. Aholi SIga duch kelmaydi, ammo navbat va xarajatlar qoladi."
+        },
+        "wide": {
+          "label": "Vositalarga kirish bilan keng chiqarish",
+          "description": "Ma’lum kamchiliklarga qaramay 10 000 to‘qima fuqaroga tezroq xizmat bering. Tekshiruvchilar ortiqcha yuklanadi; bu chiqarish dalillar bilan asoslanmagan."
+        }
+      }
+    },
+    "pilot-signal": {
+      "narration": [
+        {
+          "speaker": "Jon · hodisa rahbari",
+          "text": "Pilotdan xabar: bir nechta ko‘ngilliga to‘qib chiqarilgan idora manzili berildi. O‘qish rejimi yozuvlarni o‘zgartirishni to‘sdi, noto‘g‘ri ma’lumotni emas. Xodimlar navbati xabarni tutdi. Chiqarish qarori endi amaliy boshqaruv qaroriga aylanishi kerak."
+        }
+      ]
+    },
+    "drill-signal": {
+      "narration": [
+        {
+          "speaker": "Jon · hodisa rahbari",
+          "text": "Oflayn mashq: yordamchi idora manzilini to‘qib chiqardi va yozuvni o‘zgartirishga urindi. Hech bir fuqaro ta’sirlanmadi. Bu mashq jamoa o‘rganish uchun kerakli dalillarni yo‘qotmay, nosoz versiyani ajrata olishini sinaydi."
+        }
+      ]
+    },
+    "wide-signal": {
+      "narration": [
+        {
+          "speaker": "Jon · hodisa rahbari",
+          "text": "Ommaviy hodisa: tekshiruvchilar qamray olmaydigan navbatda to‘qima manzillar tarqalmoqda. Vositali so‘rovlar yozuvlarni o‘zgartirgan bo‘lishi mumkin. Ko‘lam noma’lum. Yaxshi umumiy sinov bali hodisaga javob rejasi emas."
+        }
+      ]
+    },
+    "incident": {
+      "prompt": "Javob tanlashdan oldin hodisa konsolini tekshiring. Dalillarni saqlang, tasdiqlangan faktlarni taxminlardan ajrating.",
+      "hotspots": {
+        "trace": {
+          "label": "Voqealar izi",
+          "title": "Aslida nimani bilasiz?",
+          "description": "Iz to‘qima manzillarni tasdiqlaydi. U ta’sirlangan so‘rovlarning to‘liq ko‘lamini ko‘rsatmaydi. Kirishi cheklangan jurnallarni saqlang, versiyani aniqlang va keyingi o‘zgarishlarni tekshiring. Shaxsiy yozuvlarni e’lon qilmang."
+        },
+        "recovery": {
+          "label": "Tiklash konsoli",
+          "title": "Ortga qaytarish tugma emas, tartibdir",
+          "description": "Avval yangi ishni to‘xtating va dalillarni saqlang. Keyin oxirgi tekshirilgan versiya yoki qo‘lda xizmatni tiklang. So‘ng yo‘naltirish va ta’sirlangan yozuvlarni tekshiring. Oldingi mashq noaniqlikni kamaytiradi, ammo tekshirish zaruratini yo‘qotmaydi."
+        },
+        "support": {
+          "label": "Yordam stoli",
+          "title": "Odamlarga taskin emas, tuzatish kerak",
+          "description": "Ta’sirlanganlarga xodim bilan aloqa va tuzatish yo‘lini bering. Nima ma’lum, noma’lum va tekshirilayotganini ayting. Xodimlar vaqtini moliyalashni saqlang. Jim tuzatish oqibatlarni ularga yuklaydi."
+        }
+      }
+    },
+    "response": {
+      "prompt": "Keyingi boshqaruvlar javobingizni amalga oshiradi. Tizimdan tashqarida bajarilgan ishni modelni ortga qaytarish bilan bekor qilib bo‘lmaydi.",
+      "title": "Hodisa chegarasini tanlang",
+      "options": {
+        "rollback": {
+          "label": "To‘xtatish va tiklash",
+          "description": "Yangi so‘rovlarni to‘xtating, jurnallarni saqlang, qo‘lda xizmatni tiklang va yo‘nalishni tekshiring. Ta’sirlangan ishni tuzatishda uzilishga rozi bo‘ling."
+        },
+        "isolate": {
+          "label": "Nosoz yo‘nalishni ajratish",
+          "description": "Nosoz funksiya va vositalarga kirishni o‘chiring; qolgan o‘qish xizmatini xodimlar tekshiruvida saqlang. Nosozlikning noma’lum ko‘lami hali muhim."
+        },
+        "continue": {
+          "label": "Xizmatni davom ettirib tuzatish",
+          "description": "So‘rov ko‘rsatmasini o‘zgartirib, ish hajmini saqlang. Nosozlik ko‘lami hali noma’lum va dastlabki xavf saqlanadi."
+        }
+      }
+    },
+    "recovery-check": {
+      "prompt": "Tiklash ro‘yxatini tartib bilan bajaring. Har bir bajarilgan amal bir marta qayd etiladi.",
+      "hotspots": {
+        "freeze": {
+          "label": "To‘xtatish + saqlash",
+          "title": "1 · To‘xtatish + saqlash",
+          "description": "Yangi model so‘rovlari to‘xtatildi. Tekshiruv uchun cheklangan jurnallar va versiya identifikatori saqlandi. Oldingi ta’sirlangan ishni hali ko‘rib chiqish kerak."
+        },
+        "restore": {
+          "label": "Inson xizmatini tiklash",
+          "title": "2 · Inson xizmatini tiklash",
+          "description": "Model yo‘nalishi uzildi. So‘rovlar xodimlar boshqaradigan qo‘lda navbatga qaytadi. Bu yangi so‘rovlarni himoya qiladi, ammo kutish vaqtini oshiradi."
+        },
+        "verify": {
+          "label": "Tekshirish + solishtirish",
+          "title": "3 · Tekshirish + solishtirish",
+          "description": "Sinov so‘rovi inson navbatiga yetib bordi. Jamoa oldingi javoblar va yozuv o‘zgarishlarini solishtirishni boshladi. Tiklash tasdiqlandi; oqibatlarni tuzatish davom etadi."
+        }
+      }
+    },
+    "accountability": {
+      "prompt": "Ko‘rib chiqish tuzilmasi va ochiq qaydni tanlang. Oldingi qarorlaringiz yakunda saqlanadi.",
+      "title": "Keyingi chiqarishga kim e’tiroz bildira oladi?",
+      "options": {
+        "public": {
+          "label": "Cheklovlarni e’lon qilish; mustaqil tahlil",
+          "description": "Mas’ul egani belgilang, shaxsiy bo‘lmagan topilmalarni e’lon qiling, murojaatlar uchun xodim ajrating va keyingi tahlilda xodimlar hamda aholiga o‘rin bering. Bu vaqt va mablag‘ talab qiladi."
+        },
+        "internal": {
+          "label": "Tahlilni chiqarish jamoasida saqlash",
+          "description": "Tahlil xarajatini kamaytiring va qisqa ishonch bayonoti bering. Ta’sirlanganlar topilmalarni tekshira yoki keyingi chiqarishga e’tiroz bildira olmaydi."
+        }
+      }
+    }
+  },
+  "endings": {
+    "exposure": {
+      "title": "Tugallanmagan hodisa",
+      "subtitle": "Xizmatni davom ettirish zararni bartaraf etish emas.",
+      "epilogue": [
+        {
+          "text": "Bu to‘qima yakunda jamoa tekshirayotganda yangi so‘rovlar xavf ostida qoladi. Ochiq tahlil keyingi qarorni yaxshilaydi, ammo bugungi foydalanuvchilarni ortga qaytib himoya qilmaydi. Javob chegarasini qayta ko‘rib chiqing."
+        }
+      ]
+    },
+    "closed": {
+      "title": "Hisobdor bo‘lmagan chiqarish darvozasi",
+      "subtitle": "Jamoat tuzatish yo‘lisiz texnik yechim.",
+      "epilogue": [
+        {
+          "text": "Bu to‘qima yakunda chiqarish jamoasi dalillarni nazorat qilishda davom etadi. Hatto ehtiyotkor chiqarish yoki muvaffaqiyatli tiklash ham aholi va xodimlarni keyingi tahlilda mazmunli ovozsiz qoldiradi."
+        }
+      ]
+    },
+    "hold": {
+      "title": "O‘ylangan tanaffus",
+      "subtitle": "Ommaviy chiqarish yo‘q, ammo ehtiyojlar qoladi.",
+      "epilogue": [
+        {
+          "text": "Bu to‘qima yakunda sinov oflayn qoladi, inson yordami davom etadi va tahlilga e’tiroz bildirish mumkin bo‘ladi. Kechiktirish bepul emas. Ixtiyoriy sana va’da qilish o‘rniga yetishmayotgan dalillar uchun bosqichlarni e’lon qiling."
+        }
+      ]
+    },
+    "staged": {
+      "title": "Chegaralangan, hisobdor pilot",
+      "subtitle": "Foydali xizmat doimiy tahlil orqali yaratiladi.",
+      "epilogue": [
+        {
+          "text": "Bu to‘qima yakunda kichik chiqarish doirasi va mashq qilingan tiklash ta’sirni cheklaydi. Aholi tuzatishlarni oladi, xodimlar to‘xtatish vakolatini saqlaydi. Bu o‘rganish va tuzatish jarayoni, SI moslashuvi hal etilganining isboti emas."
+        }
+      ]
+    },
+    "repair": {
+      "title": "Tuzatishning uzoq mehnati",
+      "subtitle": "Hodisa chegaralandi; ishonch tugma bilan tiklanmaydi.",
+      "epilogue": [
+        {
+          "text": "Bu to‘qima yakunda jamoa yo‘nalishni cheklaydi va qarorlarini tahlilga ochadi. Keng ta’sir yoki mashq qilinmagan tiklash tuzatishni qiyinlashtiradi. Yana kengaytirishdan oldin qo‘lda yordamni saqlang va tekshiring."
+        }
+      ]
+    }
+  },
+  "ui": {
+    "exit": "Chiqish",
+    "fiction": "Badiiy mashq",
+    "language": "Til",
+    "progress": "Ko‘rib chiqish jarayoni",
+    "reviewDesk": "Chiqarishni ko‘rib chiqish stoli",
+    "intro": "SI yordamchisi haqida qaror qabul qilish vaqti keldi, ammo bu uni chiqarishga tayyor degani emas. Kampusni o‘rganing, to‘liq bo‘lmagan sinovlarni baholang va hodisa konsolini boshqaring. Tanlovlaringiz kim himoyalanishi va kim kutishini belgilaydi.",
+    "disclaimer": "Bu epizoddagi barcha shaxslar, tashkilotlar, sanalar, sinov natijalari va yakunlar to‘qima. U boshqaruv qarorlarini o‘rgatadi; bashorat, huquqiy maslahat yoki haqiqiy mahsulotlar haqidagi da’vo emas.",
+    "duration": "8–12 daqiqa",
+    "noTimer": "Vaqt bosimi yo‘q",
+    "endings": "5 xil yakun",
+    "controls": "Raqamli stansiyani bosing yoki ro‘yxatdan tanlang. Aylantirish uchun suring, yaqinlashtirish uchun ikki barmoqdan foydalaning. Barcha qarorlarni Tab va Enter bilan ham qabul qilish mumkin. O‘z tezligingizda o‘qing.",
+    "begin": "Ko‘rib chiqishni boshlash",
+    "next": "Hikoyani davom ettirish",
+    "skip": "Sahnani o‘tkazish",
+    "checklist": "Tiklash ro‘yxati",
+    "evidence": "Dalillarni ko‘rib chiqish",
+    "execute": "Bajarish va qayd etish",
+    "record": "Topilmani qayd etish",
+    "back": "Stansiyalarga qaytish",
+    "reviewed": "Qayd etilgan",
+    "locked": "Avvalgi qadam zarur",
+    "inspect": "Tekshirish",
+    "reviewCount": "{{count}} / 3 topilma qayd etildi. Uchalasini ham o‘rganing.",
+    "continue": "Qarorga o‘tish",
+    "decision": "Qaror qaydi",
+    "commit": "Qarorni tasdiqlash",
+    "debrief": "Yakuniy tahlil",
+    "recordTitle": "Qarorlaringiz tarixi",
+    "reflection": "Qaysi dalil keyingi chiqarish qaroringizni o‘zgartiradi? Rejangiz qaysi xarajatlarni aholi yoki xodimlarga yukladi? Bu yakunlar o‘quv ssenariylari, xavfsizlik sertifikati emas.",
+    "sourceNote": "Haqiqiy asos: kontekst, baholash, fikr-mulohaza va tiklash bo‘yicha ixtiyoriy",
+    "replay": "Boshqa tanlovlar bilan qayta o‘ynash",
+    "chapter": "Bobga qaytish",
+    "zoomIn": "Yaqinlashtirish",
+    "zoomOut": "Uzoqlashtirish",
+    "overview": "Umumiy ko‘rinish",
+    "reduceMotion": "Harakatni kamaytirish",
+    "textMode": "Matn rejimi",
+    "webgl": "3D mavjud emas. Qarorlar o‘yini to‘liq ishlaydi.",
+    "stages": {
+      "1": "Dalillarni yig‘ish",
+      "2": "Baholashni moliyalash",
+      "3": "Chiqarish chegarasi",
+      "4": "Hodisaga javob",
+      "5": "Hisobdorlikni ta’minlash"
+    },
+    "flags": {
+      "tested-language": "Til sinovi moliyalandi",
+      "tested-permissions": "Ruxsatlar sinovi moliyalandi",
+      "tested-recovery": "Tiklash mashq qilindi",
+      "pilot": "Xodimlar nazoratidagi o‘qish rejimidagi pilot",
+      "hold": "Ommaviy chiqarish to‘xtatildi",
+      "wide": "Vositalar bilan keng chiqarish",
+      "rollback": "To‘xtatish va tiklash",
+      "isolate": "Nosoz yo‘nalish ajratildi",
+      "continue": "Tuzatishda xizmat davom etdi",
+      "accountable": "Ochiq ko‘rib chiqish va moliyalangan murojaatlar",
+      "closed": "Ko‘rib chiqish chiqarish jamoasida"
+    },
+    "results": "Moliyalangan sinovlar: xulosalar",
+    "uncertainty": "Hali tekshirilmagan",
+    "tests": {
+      "language": {
+        "known": "Til sinovi: hududiy javoblarda nomuvofiqlik topildi. Til qamrovini kengaytirishdan oldin mahalliy tekshiruvchilar kerak.",
+        "unknown": "Noma’lum: hududiy til bo‘shlig‘i qo‘shimcha tekshirilmagan."
+      },
+      "permissions": {
+        "known": "Ruxsat sinovi: vositalarga ortiqcha kirish topildi. O‘qish chegarasi buni to‘sadi; keng chiqarish topilmani inkor etadi.",
+        "unknown": "Noma’lum: vosita ruxsatlari chegarasi sinovdan o‘tmagan."
+      },
+      "recovery": {
+        "known": "Tiklash mashqi: yo‘naltirish xatosi topilib tuzatildi. Haqiqiy hodisada tekshirishni takrorlang.",
+        "unknown": "Noma’lum: tiklash yozilgan, ammo mashq qilinmagan. Tekshirishga qo‘shimcha vaqt ajrating."
+      }
+    }
+  },
+  "drill": {
+    "incident": {
+      "prompt": "Oflayn mashq: sun’iy sinov oqimini tekshiring. Hech bir fuqaro ta’sirlanmagan; sinov dalillarini saqlang va tasdiqlangan topilmalarni taxminlardan ajrating.",
+      "hotspots": {
+        "trace": {
+          "description": "Sinov izi sun’iy so‘rovlardagi to‘qima manzillarni tasdiqlaydi. Sinov to‘plamidagi to‘liq ko‘lam noma’lum. Cheklangan sinov jurnallarini saqlang, versiyani aniqlang va sun’iy yozuv o‘zgarishlarini tekshiring. Fuqarolarning yozuvlari qatnashmaydi."
+        },
+        "recovery": {
+          "description": "Sinov so‘rovlarini to‘xtatish, dalillarni saqlash va ajratilgan sinov yo‘nalishini sun’iy qo‘lda navbatga o‘tkazishni mashq qiling. So‘ng yo‘nalish va sun’iy yozuvlarni tekshiring. Haqiqiy inson xizmati mashq davomida o‘zgarmaydi."
+        },
+        "support": {
+          "title": "Tuzatish yo‘lini mashq qiling",
+          "description": "Bu oflayn mashqda hech bir fuqaro hodisa tuzatishiga muhtoj emas. Xodimlar xabarni qabul qilish, ma’lum va noma’lum faktlarni tushuntirish hamda tuzatishga yo‘naltirishni mashq qiladi. Ommaviy pilotdan oldin bunga mablag‘ ajrating; rejaning o‘zi xodimli xizmat emas."
+        }
+      }
+    },
+    "response": {
+      "title": "Mashq javobini tanlang",
+      "prompt": "Quyidagi boshqaruvlar faqat ajratilgan sinov oqimi va sun’iy yozuvlarga ta’sir qiladi. SI ommaga chiqarilmagan. Keyin haqiqiy hodisada qo‘llash mumkin bo‘lgan tartibni mashq qiling; amaldagi inson xizmati uzilmaydi.",
+      "options": {
+        "rollback": {
+          "description": "Sun’iy so‘rovlarni to‘xtating, sinov jurnallarini saqlang va qo‘lda yo‘naltirishni mashq qiling. Ajratilgan sinov yo‘lini tekshiring. Faqat mashq to‘xtaydi; aholiga xizmat davom etadi."
+        },
+        "isolate": {
+          "description": "Sinov muhitida nosoz funksiya va vositalarga kirishni o‘chiring. Nosozlikning noma’lum ko‘lamini tekshirish uchun boshqa sun’iy so‘rovlarni xodimlar nazoratida saqlang."
+        },
+        "continue": {
+          "description": "Ko‘rsatmani o‘zgartirib, sun’iy sinov oqimini davom ettiring. Mashqda xatolar saqlanishi mumkin, ammo fuqarolar ta’sirlanmaydi. Bu ommaviy chiqarishga tayyorlikni isbotlamaydi."
+        }
+      }
+    },
+    "recovery-check": {
+      "prompt": "Oflayn tiklash mashqi: sinov boshqaruvlarini tartib bilan bajaring. Quyidagi so‘rovlar, navbatlar va yozuvlar sun’iy. Amaldagi inson xizmati o‘zgarmay davom etadi.",
+      "hotspots": {
+        "freeze": {
+          "description": "Sun’iy model so‘rovlari to‘xtatildi. Cheklangan sinov jurnallari va versiya identifikatori saqlandi. Oldingi sinov javoblari hali tekshirilishi kerak; fuqarolar ishiga ta’sir bo‘lmagan."
+        },
+        "restore": {
+          "label": "Qo‘lda yo‘naltirishni mashq qilish",
+          "title": "2 · Qo‘lda yo‘nalishni mashq qilish",
+          "description": "Ajratilgan model yo‘nalishi uzildi. Sun’iy so‘rovlar xodimli navbat taqlidiga o‘tadi. Mashq mumkin bo‘lgan kutish xarajatlarini ko‘rsatadi; haqiqiy aholi navbati yoki kutish vaqti o‘zgarmaydi."
+        },
+        "verify": {
+          "description": "Sun’iy so‘rov qo‘lda navbat taqlidiga yetdi. Jamoa sinov javoblari va sun’iy yozuv o‘zgarishlarini solishtiradi. Tiklash mashqi tekshirildi; qolgan sinov topilmalari ommaviy chiqarishdan oldin o‘rganilishi kerak."
+        }
+      }
+    },
+    "accountability": {
+      "prompt": "Ommaviy chiqarishni kutish qaroringiz saqlanadi. Oflayn mashq topilmalarini kim ko‘rib chiqishi va har qanday pilotdan oldin qaysi dalillar kerakligini belgilang. Aholi bu mashq ta’siriga uchramagan.",
+      "options": {
+        "public": {
+          "description": "Mas’ul egani belgilang, shaxsiy bo‘lmagan mashq topilmalarini e’lon qiling va kelajak murojaatlari uchun mablag‘ ajrating. Ommaviy pilotni boshlash qarorida xodimlar va aholiga o‘rin bering."
+        },
+        "internal": {
+          "description": "Mashq topilmalarini chiqarish jamoasida saqlang va qisqa ishonch bayonoti bering. Kelajak ishtirokchilarida topilmalarni tekshirish yoki chiqarishga e’tiroz bildirish uchun mazmunli yo‘l bo‘lmaydi."
+        }
+      }
+    }
+  }
+}

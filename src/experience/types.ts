@@ -241,6 +241,9 @@ export type Beat = CinematicBeat | ExploreBeat | ChoiceBeat | BattleBeat | Endin
 
 /** Which world variant to render. The Samarkand world reads this to swap set pieces. */
 export type EnvironmentId =
+    | 'ai-campus'
+    | 'ai-control'
+    | 'ai-datacenter'
     | 'samarkand-day'
     | 'samarkand-dusk'
     | 'winter-march'
