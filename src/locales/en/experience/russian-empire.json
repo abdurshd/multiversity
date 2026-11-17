@@ -1,0 +1,359 @@
+{
+  "title": "The Winter Between Two Oaths",
+  "era": "St Petersburg · 26 December 1825 (14 December O.S.)",
+  "beats": {
+    "intro": {
+      "kind": "cinematic",
+      "id": "intro",
+      "environment": "senate-1825",
+      "next": "square",
+      "shots": [
+        {
+          "path": [
+            [
+              95,
+              58,
+              90
+            ],
+            [
+              52,
+              34,
+              60
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              7,
+              -12
+            ]
+          ],
+          "duration": 12
+        },
+        {
+          "path": [
+            [
+              52,
+              34,
+              60
+            ],
+            [
+              28,
+              12,
+              37
+            ]
+          ],
+          "lookPath": [
+            [
+              -14,
+              5,
+              -8
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Historical context + fictional negotiation",
+          "text": "Alexander I is dead. Constantine has renounced the throne, but secrecy has confused the succession. Nicholas demands a new oath. Some officers bring their soldiers to Senate Square instead."
+        },
+        {
+          "text": "In history, the rising was suppressed. This episode begins a fictional mediation before violence closes that possibility. You are an invented courier, not a historical commander. Can a ceasefire become a political agreement?"
+        },
+        {
+          "text": "Inspect the square, then negotiate three articles with five bargaining seals. These tokens simplify political constraints; they are not probabilities or a model of what Russia would inevitably become."
+        }
+      ]
+    },
+    "square": {
+      "kind": "explore",
+      "id": "square",
+      "environment": "senate-1825",
+      "prompt": "Read the evidence, then enter the mediation room.",
+      "camera": {
+        "position": [
+          52,
+          35,
+          62
+        ],
+        "target": [
+          0,
+          5,
+          -8
+        ]
+      },
+      "hotspots": {
+        "monument": {
+          "id": "monument",
+          "position": [
+            -25,
+            3,
+            -15
+          ],
+          "label": "Senate Square",
+          "title": "Senate Square",
+          "description": "The Decembrists were not one united party. Constitutional monarchy, republican government and an end to serfdom appeared in different reform proposals. The rank and file did not all share the officers’ aims.",
+          "icon": "◇"
+        },
+        "regiments": {
+          "id": "regiments",
+          "position": [
+            25,
+            3,
+            -15
+          ],
+          "label": "The divided regiments",
+          "title": "The divided regiments",
+          "description": "Some Guards units joined the rising; others supported Nicholas. This stylized scene shows opposing formations without reenacting the killing. In the historical uprising, attempts at persuasion failed and artillery dispersed the rebels.",
+          "icon": "♜"
+        },
+        "documents": {
+          "id": "documents",
+          "position": [
+            0,
+            3,
+            22
+          ],
+          "label": "The succession papers",
+          "title": "The succession papers",
+          "description": "Constantine’s renunciation and the documents naming Nicholas did not prevent an interregnum. Conflicting oaths created an opening for the conspirators. A change of ruler alone would not settle the question of political rights.",
+          "icon": "▤"
+        },
+        "room": {
+          "id": "room",
+          "position": [
+            -20,
+            3,
+            25
+          ],
+          "label": "Enter mediation",
+          "title": "Enter mediation",
+          "description": "Counterfactual departure: delegates accept a temporary meeting. You have five seals to spend on security, representation and rights. No package can satisfy every demand. Review the tradeoffs before making the offer.",
+          "icon": "→",
+          "advancesTo": "negotiation"
+        }
+      }
+    },
+    "negotiation": {
+      "kind": "choice",
+      "id": "negotiation",
+      "environment": "assembly-1825",
+      "title": "The provisional accord",
+      "prompt": "A ceasefire is not a constitution. Build a package the delegates can carry back.",
+      "camera": {
+        "position": [
+          20,
+          16,
+          27
+        ],
+        "target": [
+          0,
+          3,
+          0
+        ]
+      },
+      "options": {
+        "charter": {
+          "id": "charter",
+          "label": "A charter begins",
+          "description": "Counterfactual · A mandate, not an instant democracy",
+          "flags": [
+            "russia:charter"
+          ],
+          "effects": {
+            "freedom": 35,
+            "diplomacy": 25,
+            "chaos": -15
+          },
+          "next": "charter"
+        },
+        "truce": {
+          "id": "truce",
+          "label": "A winter truce",
+          "description": "Counterfactual · Lives protected, rights unresolved",
+          "flags": [
+            "russia:truce"
+          ],
+          "effects": {
+            "diplomacy": 15,
+            "chaos": -15
+          },
+          "next": "truce"
+        },
+        "suppression": {
+          "id": "suppression",
+          "label": "The second oath prevails",
+          "description": "Historical anchor · The opening closes",
+          "flags": [
+            "russia:suppression"
+          ],
+          "effects": {
+            "freedom": -5,
+            "chaos": 10
+          },
+          "next": "suppression"
+        }
+      }
+    },
+    "charter": {
+      "kind": "cinematic",
+      "id": "charter",
+      "environment": "assembly-1825",
+      "shots": [
+        {
+          "path": [
+            [
+              17,
+              10,
+              24
+            ],
+            [
+              7,
+              7,
+              18
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Counterfactual · A mandate, not an instant democracy",
+          "text": "The package combines a guarded ceasefire, a broader assembly and an emancipation agenda. It opens a constitutional process, not a guaranteed peaceful century. Landowners, officials and provinces still have to be persuaded; implementation could fail."
+        }
+      ],
+      "next": "ending"
+    },
+    "truce": {
+      "kind": "cinematic",
+      "id": "truce",
+      "environment": "senate-1825-dusk",
+      "shots": [
+        {
+          "path": [
+            [
+              32,
+              19,
+              42
+            ],
+            [
+              65,
+              40,
+              65
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              4,
+              -10
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Counterfactual · Lives protected, rights unresolved",
+          "text": "The formations separate. This imagined pause spares the square an immediate clash, but your package does not secure a broad reform mandate. The unresolved rights and succession questions return to political struggle."
+        }
+      ],
+      "next": "ending"
+    },
+    "suppression": {
+      "kind": "cinematic",
+      "id": "suppression",
+      "environment": "senate-1825-dusk",
+      "shots": [
+        {
+          "path": [
+            [
+              35,
+              22,
+              50
+            ],
+            [
+              78,
+              48,
+              82
+            ]
+          ],
+          "lookPath": [
+            [
+              0,
+              4,
+              -10
+            ]
+          ],
+          "duration": 14
+        }
+      ],
+      "narration": [
+        {
+          "speaker": "Historical anchor · The opening closes",
+          "text": "Your fictional negotiation cannot hold. Historically, Nicholas suppressed the rising; arrests, trials, executions and Siberian exile followed. This ending returns to that historical result without suggesting that a simple score caused it."
+        }
+      ],
+      "next": "ending"
+    },
+    "ending": {
+      "kind": "ending",
+      "id": "ending"
+    }
+  },
+  "endings": {
+    "charter": {
+      "id": "charter",
+      "title": "A charter begins",
+      "subtitle": "Counterfactual · A mandate, not an instant democracy",
+      "icon": "📜",
+      "color": "#7bc5b3",
+      "priority": 10,
+      "requiresFlags": [
+        "russia:charter"
+      ],
+      "epilogue": [
+        {
+          "text": "The package combines a guarded ceasefire, a broader assembly and an emancipation agenda. It opens a constitutional process, not a guaranteed peaceful century. Landowners, officials and provinces still have to be persuaded; implementation could fail."
+        }
+      ]
+    },
+    "truce": {
+      "id": "truce",
+      "title": "A winter truce",
+      "subtitle": "Counterfactual · Lives protected, rights unresolved",
+      "icon": "🕯",
+      "color": "#e0be82",
+      "priority": 10,
+      "requiresFlags": [
+        "russia:truce"
+      ],
+      "epilogue": [
+        {
+          "text": "The formations separate. This imagined pause spares the square an immediate clash, but your package does not secure a broad reform mandate. The unresolved rights and succession questions return to political struggle."
+        }
+      ]
+    },
+    "suppression": {
+      "id": "suppression",
+      "title": "The second oath prevails",
+      "subtitle": "Historical anchor · The opening closes",
+      "icon": "❄",
+      "color": "#a2b7c9",
+      "priority": 0,
+      "epilogue": [
+        {
+          "text": "Your fictional negotiation cannot hold. Historically, Nicholas suppressed the rising; arrests, trials, executions and Siberian exile followed. This ending returns to that historical result without suggesting that a simple score caused it."
+        }
+      ]
+    }
+  }
+}

@@ -10,6 +10,7 @@ import {
     Madrasah, Mausoleum, Minaret, PALETTE, Particles, Tents, Trees, mulberry32, sharedMats,
 } from './parts';
 import { pavingTexture } from './textures';
+import { SenateSquare1825, Assembly1825 } from './russia';
 import { SamarkandDetails } from './samarkandDetails';
 import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
@@ -20,6 +21,7 @@ import { ElAlamein, London1940, Midway1942, Normandy1944, Southwick1944, Sudeten
 import { Busan1950, Chosin1950, Incheon1950, Panmunjom1953, Seoul1945 } from './korea';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
+import { Petrograd1917 } from './petrograd';
 import { Union1991 } from './union1991';
 
 // ─── Environment settings ──────────────────────────────────────────────────
@@ -38,6 +40,17 @@ interface EnvDef {
 }
 
 const ENV: Record<EnvironmentId, EnvDef> = {
+    'senate-1825': {
+        skyTop:'#5e7894', skyHorizon:'#d9dfe4', fog:'#c8d2da', sun:'#fff0d6', sunPos:[-60,60,40], ambient:.6, ground:'#dce4e9', groundVar:'#c8d3dd', disc:{pos:[-250,210,170],color:'#fff2dd',size:22}, clouds:true,
+    },
+    'senate-1825-dusk': {
+        skyTop:'#243047', skyHorizon:'#b8978c', fog:'#768293', sun:'#e7b88a', sunPos:[-60,28,40], ambient:.45, ground:'#c4cfdb', groundVar:'#adbccb', disc:{pos:[-250,90,170],color:'#ffd1a0',size:22}, clouds:false,
+    },
+    'assembly-1825': {
+        skyTop:'#26394a', skyHorizon:'#9baebc', fog:'#6c7e8b', sun:'#ffe0b1', sunPos:[0,55,-70], ambient:.7, ground:'#394b56', groundVar:'#2e414d', disc:{pos:[0,250,-300],color:'#ffe3bb',size:18}, clouds:false,
+    },
+    'petrograd-1917': { skyTop: '#263e51', skyHorizon: '#aab5b3', fog: '#82939a', sun: '#ffd3a0', sunPos: [-60, 35, 45], ambient: .55, ground: '#535b59', groundVar: '#646d69', disc: { pos: [-300, 170, 220], color: '#ffe1b3', size: 22 }, clouds: true },
+    'smolny-1917': { skyTop: '#1b2a3b', skyHorizon: '#72838b', fog: '#5f6c71', sun: '#f8d6a0', sunPos: [20, 60, 30], ambient: .65, ground: '#474b48', groundVar: '#535952', disc: { pos: [170, 300, 170], color: '#c4d8e1', size: 14 }, clouds: false },
     'union-square-1991': {
         skyTop: '#344f69', skyHorizon: '#c8b99d', fog: '#9da9ac', sun: '#ffe4b4',
         sunPos: [-40, 45, 35], ambient: 0.65, ground: '#6e797b', groundVar: '#747e80',
@@ -246,9 +259,9 @@ const ENV: Record<EnvironmentId, EnvDef> = {
 };
 
 /** Scenes with open sea where the distant hills would poke through the water. */
-const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950', 'union-square-1991', 'union-hall-1991']);
+const FLAT = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'assembly-1825', 'midway-1942', 'normandy-1944', 'incheon-1950', 'petrograd-1917', 'smolny-1917', 'union-square-1991', 'union-hall-1991']);
 
-const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
+const WINTER = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
 export function WorldScene({ environment }: { environment: EnvironmentId }) {
     const env = ENV[environment];
@@ -288,7 +301,13 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             {env.clouds && <Clouds dark={false} />}
             {(environment === 'varennes' || environment === 'springfield') && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
-            {environment === 'union-square-1991' || environment === 'union-hall-1991' ? (
+            {environment === 'senate-1825' || environment === 'senate-1825-dusk' ? (
+                <SenateSquare1825 dusk={environment === 'senate-1825-dusk'} />
+            ) : environment === 'assembly-1825' ? (
+                <Assembly1825 />
+            ) : environment === 'petrograd-1917' || environment === 'smolny-1917' ? (
+                <Petrograd1917 interior={environment === 'smolny-1917'} />
+            ) : environment === 'union-square-1991' || environment === 'union-hall-1991' ? (
                 <Union1991 hall={environment === 'union-hall-1991'} />
             ) : environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
