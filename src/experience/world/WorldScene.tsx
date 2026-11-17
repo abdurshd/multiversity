@@ -16,6 +16,7 @@ import { MarengoField, ParisBastille, ParisTerror, ValmyField, Varennes } from '
 import { AntietamField, CharlestonHarbor, FordsTheatre, GettysburgField, Springfield, Washington1861 } from './civilwar';
 import { Berlin1914, Compiegne, Marne1914, Sarajevo1914, WesternFront } from './greatwar';
 import { ElAlamein, London1940, Midway1942, Normandy1944, Southwick1944, Sudeten1938 } from './ww2';
+import { Busan1950, Chosin1950, Incheon1950, Panmunjom1953, Seoul1945 } from './korea';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
 // ─── Environment settings ──────────────────────────────────────────────────
@@ -204,12 +205,37 @@ const ENV: Record<EnvironmentId, EnvDef> = {
         sunPos: [60, 60, 80], ambient: 0.5, ground: '#cdb98c', groundVar: '#c2ad80',
         disc: { pos: [240, 200, 320], color: '#f6eedc', size: 20 }, clouds: true,
     },
+    'seoul-1945': {
+        skyTop: '#5d8fc4', skyHorizon: '#eadfc8', fog: '#d8cfba', sun: '#ffe6bc',
+        sunPos: [-50, 70, 60], ambient: 0.52, ground: '#8a8558', groundVar: '#9c8e5c',
+        disc: { pos: [-220, 260, 240], color: '#fff2d8', size: 24 }, clouds: true,
+    },
+    'busan-1950': {
+        skyTop: '#4a86c8', skyHorizon: '#e8e2c8', fog: '#d4d4b8', sun: '#fff0c8',
+        sunPos: [60, 90, 50], ambient: 0.55, ground: '#6f8a44', groundVar: '#8a9a4c',
+        disc: { pos: [240, 320, 200], color: '#fffae2', size: 28 }, clouds: true,
+    },
+    'incheon-1950': {
+        skyTop: '#6a88a8', skyHorizon: '#d8d4c4', fog: '#c4c4b6', sun: '#f6e6c8',
+        sunPos: [-60, 50, 80], ambient: 0.5, ground: '#7a7258', groundVar: '#6c6650',
+        disc: { pos: [-260, 160, 300], color: '#fbe8c8', size: 22 }, clouds: true,
+    },
+    'chosin-1950': {
+        skyTop: '#59677a', skyHorizon: '#c8ccd2', fog: '#b8bec6', sun: '#dfe4ea',
+        sunPos: [-40, 50, 70], ambient: 0.5, ground: '#e6e9ee', groundVar: '#d4d9e0',
+        disc: { pos: [-200, 180, 260], color: '#eef0f4', size: 16 }, clouds: true,
+    },
+    'panmunjom-1953': {
+        skyTop: '#4f8acb', skyHorizon: '#e6e2cc', fog: '#d2d2bc', sun: '#fff0cc',
+        sunPos: [50, 80, 60], ambient: 0.55, ground: '#7c8a4e', groundVar: '#8e9654',
+        disc: { pos: [220, 300, 220], color: '#fff8e0', size: 26 }, clouds: true,
+    },
 };
 
 /** Scenes with open sea where the distant hills would poke through the water. */
-const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944']);
+const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950']);
 
-const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter']);
+const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
 export function WorldScene({ environment }: { environment: EnvironmentId }) {
     const env = ENV[environment];
@@ -313,6 +339,16 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <Southwick1944 />
             ) : environment === 'normandy-1944' ? (
                 <Normandy1944 />
+            ) : environment === 'seoul-1945' ? (
+                <Seoul1945 />
+            ) : environment === 'busan-1950' ? (
+                <Busan1950 />
+            ) : environment === 'incheon-1950' ? (
+                <Incheon1950 />
+            ) : environment === 'chosin-1950' ? (
+                <Chosin1950 />
+            ) : environment === 'panmunjom-1953' ? (
+                <Panmunjom1953 />
             ) : (
                 <AnatoliaField />
             )}

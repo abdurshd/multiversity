@@ -515,7 +515,7 @@ export function buildTank(p: ArmyPalette, helmet: Helmet = 'm1'): THREE.BufferGe
             parts.push(mpart(new THREE.CylinderGeometry(0.13, 0.13, 0.035, 12), '#f2f2ee', [x, 1.98, -0.15], [0, 0, Math.PI / 2]));
             parts.push(mpart(new THREE.CylinderGeometry(0.06, 0.06, 0.04, 10), '#b3262d', [x, 1.98, -0.15], [0, 0, Math.PI / 2]));
         } else {
-            // five-pointed white star
+            // five-pointed star
             const star = new THREE.Shape();
             for (let k = 0; k < 10; k++) {
                 const r = k % 2 === 0 ? 0.24 : 0.1;
@@ -524,7 +524,8 @@ export function buildTank(p: ArmyPalette, helmet: Helmet = 'm1'): THREE.BufferGe
                 else star.lineTo(Math.sin(a) * r, Math.cos(a) * r);
             }
             const g = new THREE.ShapeGeometry(star);
-            parts.push(mpart(g, '#f2f2ee', [x + side * 0.02, 1.98, -0.15], [0, side * Math.PI / 2, 0]));
+            // white star for the US, red star for armies in soft caps (Korean People's Army)
+            parts.push(mpart(g, helmet === 'kepi' ? '#c8202c' : '#f2f2ee', [x + side * 0.02, 1.98, -0.15], [0, side * Math.PI / 2, 0]));
         }
     }
     return merge(parts);

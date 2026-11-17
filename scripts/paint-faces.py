@@ -32,6 +32,8 @@ PEOPLE = {
     'world-war-2/franklin-d-roosevelt': dict(skin='#e9c0a2', hair='#a8a49e', brow='#7a746c', beard='none', glasses=True, age=0.65, eye='#4a5a72', long_face=True, smile=True),
     'world-war-2/dwight-d-eisenhower': dict(skin='#ecbf9e', hair='#d6b48e', brow='#a88a6a', beard='none', bald=True, age=0.6, eye='#4a6a8a', smile=True),
     'world-war-2/bernard-montgomery': dict(skin='#e6b898', hair='#8a7a68', brow='#6a5a48', beard='moustache', moustache='clipped', beard_color='#8a7a68', age=0.7, eye='#5a6a7a', long_face=True),
+    'korea-destiny/harry-s-truman': dict(skin='#ebbf9e', hair='#a8a49c', brow='#7a746a', beard='none', glasses=True, age=0.65, eye='#4a5a6a', smile=True),
+    'korea-destiny/peng-dehuai': dict(skin='#d8a882', hair='#2a2420', brow='#221c18', beard='none', age=0.5, eye='#2a1e16'),
     'world-war-2/erwin-rommel': dict(skin='#e4b494', hair='#6a5240', brow='#4e3c2e', beard='none', age=0.5, eye='#4a6a80'),
 }
 

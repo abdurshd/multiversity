@@ -1,0 +1,548 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "Seoul, August 1945. Japan has surrendered, and after thirty-five years of colonial rule Koreans pour into the streets waving the flag that was banned for a generation.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "But liberation comes from outside. Soviet troops are already marching into the north. To stop them taking the whole peninsula, two American officers in Washington drew a line across a map in about half an hour: the 38th parallel.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "Syngman Rhee, seventy years old, returns from more than thirty years of exile in America. In the north, the Soviets introduce a thirty-three-year-old guerrilla captain named Kim Il-sung.",
+          "speaker": "The Chronicle"
+        },
+        "3": {
+          "text": "In our history, the line meant to last a few months became a border. In this one, you decide.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "explore-seoul": {
+      "prompt": "Explore liberated Seoul: drag to look around and click the glowing markers.",
+      "hotspots": {
+        "gov-general": {
+          "label": "The Government-General",
+          "title": "The Surrender Ceremony",
+          "description": "The Japanese built their colonial headquarters right in front of the royal palace, to block it from view. On 9 September 1945 the Japanese governor surrendered here. The Japanese flag came down, and the American flag went up, not the Korean one."
+        },
+        "gate": {
+          "label": "Gwanghwamun",
+          "title": "The Palace Gate",
+          "description": "The main gate of Gyeongbokgung, the palace of the Joseon kings. Korea was an independent kingdom for more than five hundred years before Japan annexed it in 1910."
+        },
+        "parallel": {
+          "label": "The 38th Parallel",
+          "title": "A Line on a National Geographic Map",
+          "description": "On the night of 10 August 1945, Colonel Charles Bonesteel and Major Dean Rusk were told to find a dividing line. They picked the 38th parallel because it left Seoul in the American zone. No Korean was asked. Stalin accepted it."
+        },
+        "taegukgi": {
+          "label": "The Taegukgi",
+          "title": "A Flag Kept Hidden",
+          "description": "Families had hidden their flags for decades. Within days of liberation, political committees spring up across the country, from conservatives to communists. Everyone wants independence now, but no one agrees on what kind of Korea it should be."
+        },
+        "rhee": {
+          "label": "Syngman Rhee",
+          "title": "The Old Exile",
+          "description": "A Princeton PhD and a fierce anti-communist, Rhee lobbied for Korean independence in Washington for decades. In December 1945 the Allies meet in Moscow and decide Korea's future without him."
+        }
+      }
+    },
+    "trusteeship-choice": {
+      "title": "Seoul · December 1945",
+      "prompt": "The Moscow Conference has decided: Korea will be ruled for up to five years by a trusteeship of America, the Soviet Union, Britain and China, then hold elections. Crowds are marching against it in Seoul.",
+      "options": {
+        "trusteeship": {
+          "label": "Accept the Trusteeship",
+          "description": "Swallow the insult. Five more years of foreign supervision, but one Korea at the end, chosen by one vote across the whole peninsula."
+        },
+        "separate-gov": {
+          "label": "Reject It",
+          "description": "No more foreign rulers. If the Soviets will not leave the north, build a government in the south now."
+        }
+      }
+    },
+    "one-korea": {
+      "narration": {
+        "0": {
+          "text": "Korean leaders from the left and the right accept the trusteeship, and the Joint Commission of American and Soviet officers keeps meeting instead of breaking up in 1947.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "In 1948 Koreans from Busan to the Yalu vote in one election. Rhee and Kim both sit in the first coalition cabinet, and they loathe each other. But the foreign armies go home.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "division": {
+      "narration": {
+        "0": {
+          "text": "The trusteeship collapses. In 1948 there are two Koreas: the Republic of Korea under Rhee in the south, and the Democratic People's Republic under Kim Il-sung in the north. Each claims the whole peninsula.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Kim asks Stalin again and again for permission to unify Korea by force. In the spring of 1950 Stalin finally agrees, and Mao Zedong promises help if it is needed.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "At four in the morning on 25 June 1950, the North Korean army crosses the 38th parallel with more than two hundred Soviet-built tanks. Seoul falls in three days.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "truman": {
+      "narration": {
+        "0": {
+          "text": "In Washington, President Harry Truman decides within days that the invasion must be stopped. \"If we let Korea down,\" he says, \"the Soviets will keep right on going.\"",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The Soviet Union is boycotting the UN Security Council over who should hold China's seat, so it is not there to veto. The Council asks UN members to defend South Korea. Sixteen nations will send troops.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "But the first Americans to arrive are untrained occupation troops from Japan. By August, the UN forces have been pushed into a small corner around the port of Pusan.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "pusan-intro": {
+      "narration": {
+        "0": {
+          "text": "The Pusan Perimeter, August 1950. Rhee's government has fled to Pusan, and hundreds of thousands of refugees fill the city. The line runs for about two hundred and thirty kilometres along the Naktong river and the mountains.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "If it breaks, the war is over, and Korea is united under Kim Il-sung.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "pusan-battle": {
+      "battle": {
+        "name": "The Pusan Perimeter",
+        "objective": "August 1950. The North Korean army has driven the South Koreans and the Americans into the last corner of the peninsula, behind the Naktong river. Behind you is the port of Pusan and the sea. Hold the river line until reinforcements arrive.",
+        "player": {
+          "name": "US Eighth Army and ROK Army"
+        },
+        "enemy": {
+          "name": "Korean People's Army"
+        },
+        "events": {
+          "naktong": {
+            "title": "Night Crossing of the Naktong",
+            "prompt": "North Korean infantry waded across the river in the dark on underwater bridges of sandbags and logs. By dawn they have a foothold on your bank.",
+            "options": {
+              "stand-or-die": {
+                "label": "\"Stand or Die\"",
+                "description": "General Walton Walker's order of 29 July: there will be no more retreating. Every unit holds where it stands."
+              },
+              "carriers": {
+                "label": "Call the Carriers",
+                "description": "Navy and Marine fighter-bombers from the carriers offshore hit the river crossings with rockets and napalm."
+              }
+            }
+          },
+          "reinforcements": {
+            "title": "Ships in Pusan Harbour",
+            "prompt": "Every day, more ships unload at Pusan: the 1st Provisional Marine Brigade, British troops from Hong Kong, and new M26 Pershing tanks that can finally fight a T-34 on equal terms.",
+            "options": {
+              "fire-brigade": {
+                "label": "The Fire Brigade",
+                "description": "Rush the Marine brigade from one break in the line to the next and counter-attack every crossing."
+              },
+              "pershings": {
+                "label": "Send the Pershings",
+                "description": "Swing the new tank battalions round the flank of the North Korean bridgehead."
+              }
+            }
+          },
+          "perimeter-cracks": {
+            "title": "The Line Is Cracking",
+            "prompt": "Taegu is under shellfire and refugees are crowding the roads to Pusan. Some officers want to plan an evacuation by sea.",
+            "options": {
+              "no-dunkirk": {
+                "label": "\"There Will Be No Dunkirk\"",
+                "description": "Walker tells his commanders there will be no evacuation. The reserves go into the line."
+              },
+              "shorten-line": {
+                "label": "Shorten the Line",
+                "description": "Pull back to the hills closer to Pusan, where the line is shorter and easier to hold."
+              }
+            }
+          }
+        }
+      }
+    },
+    "pusan-falls": {
+      "narration": {
+        "0": {
+          "text": "The Naktong line breaks in September. American ships evacuate the last troops from Pusan harbour, along with Rhee and as many soldiers and civilians as they can carry.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Rhee sets up a government in exile on the island of Jeju, until it too is abandoned. Kim Il-sung rules the whole peninsula from Seoul.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "pusan-holds": {
+      "narration": {
+        "0": {
+          "text": "The perimeter holds. The North Korean army has bled itself white on the Naktong, and its supply lines now stretch back three hundred kilometres to the 38th parallel.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "In Tokyo, General Douglas MacArthur has a plan to cut them in half.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "explore-incheon": {
+      "prompt": "Explore the approach to Incheon: drag to look around and click the glowing markers.",
+      "hotspots": {
+        "tides": {
+          "label": "The Mudflats",
+          "title": "Ten-Metre Tides",
+          "description": "The tides at Incheon rise and fall by up to ten metres. At low tide the harbour becomes kilometres of mud. The landing craft can only come in for about three hours, twice a day, and the right tides come only a few days each month."
+        },
+        "wolmido": {
+          "label": "Wolmido",
+          "title": "Moon Tip Island",
+          "description": "A fortified island guarding the harbour. It has to be taken on the morning tide, and then the Marines on it must hold alone for twelve hours until the evening tide brings the main landing."
+        },
+        "sea-wall": {
+          "label": "The Sea Wall",
+          "title": "Ladders, Not Beaches",
+          "description": "There is no beach, only stone sea walls. The Marines will have to climb them on wooden ladders, straight into a city."
+        },
+        "fleet": {
+          "label": "The Fleet",
+          "title": "Operation Chromite",
+          "description": "More than two hundred ships and seventy thousand men, including Korean Marines. One navy planner said: \"We drew up a list of every natural and geographic handicap, and Inchon had 'em all.\""
+        },
+        "macarthur": {
+          "label": "MacArthur",
+          "title": "The American Caesar",
+          "description": "Seventy years old, the hero of the Pacific war and the ruler of occupied Japan. The navy and the Joint Chiefs think his plan is far too risky. MacArthur says the enemy will think so too."
+        }
+      }
+    },
+    "incheon-choice": {
+      "title": "The Decision · 23 August 1950",
+      "prompt": "The generals and admirals have argued for hours. Now MacArthur speaks for forty-five minutes without notes: \"We shall land at Inchon, and I shall crush them.\"",
+      "options": {
+        "inchon": {
+          "label": "Land at Incheon",
+          "description": "Strike deep behind the enemy, retake Seoul and cut every North Korean supply line at once."
+        },
+        "breakout": {
+          "label": "Break Out from Pusan",
+          "description": "The navy is right. Put the reinforcements into the perimeter and push north the hard way."
+        }
+      }
+    },
+    "slow-march": {
+      "narration": {
+        "0": {
+          "text": "The breakout from Pusan costs three months and tens of thousands of lives. The North Korean army falls back in good order, valley by valley, and reaches the 38th parallel intact.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The line settles almost where it began. The fighting goes on for two more years, from trenches and bunkers on the hills.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "landing": {
+      "narration": {
+        "0": {
+          "text": "Incheon, 15 September 1950. Wolmido falls in forty-five minutes on the morning tide. In the evening the Marines climb the sea walls into the city with ladders, and the enemy is taken completely by surprise.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Seoul is retaken on 28 September. Cut off, the North Korean army collapses, and the UN forces cross the 38th parallel. Pyongyang falls on 19 October.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "yalu-choice": {
+      "title": "North Korea · October 1950",
+      "prompt": "China has warned, through the Indian ambassador in Beijing, that it will fight if the Americans approach its border. At Wake Island, MacArthur assured Truman the Chinese would not come, and if they did \"there would be the greatest slaughter\".",
+      "options": {
+        "halt": {
+          "label": "Halt at the Narrow Neck",
+          "description": "Stop at the narrowest point of Korea, from Pyongyang to Wonsan, as the British suggest, and leave a buffer zone along the Chinese border."
+        },
+        "attack": {
+          "label": "On to the Yalu",
+          "description": "Finish the war. Drive to the Chinese border and have the boys home by Christmas."
+        }
+      }
+    },
+    "narrow-neck": {
+      "narration": {
+        "0": {
+          "text": "The UN armies dig in from Pyongyang to Wonsan. In Beijing, Mao has already ordered his troops across the Yalu, but with no Americans near the border, the Politburo argues and the attack is called off.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Kim Il-sung keeps only a mountain strip along the Chinese border. The rest of Korea, nine-tenths of its people, is governed from Seoul.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "china-enters": {
+      "narration": {
+        "0": {
+          "text": "They were already there. Since 19 October, about two hundred thousand Chinese soldiers have crossed the Yalu at night, marching without lights and hiding in the forests by day. American air reconnaissance has seen almost nothing.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Their commander is Peng Dehuai, a veteran of the Long March. Mao calls them the \"People's Volunteers\", so that China is not officially at war with America.",
+          "speaker": "The Chronicle"
+        },
+        "2": {
+          "text": "On the night of 27 November, in the coldest winter in living memory, they fall on the Marines around the Chosin Reservoir.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "chosin-battle": {
+      "battle": {
+        "name": "The Battle of Chosin Reservoir",
+        "objective": "27 November 1950, minus thirty degrees. Seven Chinese divisions have come out of the snow around the reservoir. The 1st Marine Division is strung out along a single mountain road. Hold the perimeter at Hagaru-ri and break the Chinese attack.",
+        "player": {
+          "name": "1st Marine Division"
+        },
+        "enemy": {
+          "name": "Chinese Ninth Army Group"
+        },
+        "events": {
+          "night-attack": {
+            "title": "Bugles in the Dark",
+            "prompt": "The Chinese attack at night, to the sound of bugles, whistles and gongs. They wear quilted cotton and canvas shoes, and many carry only a few grenades.",
+            "options": {
+              "perimeter": {
+                "label": "Close the Perimeter",
+                "description": "Cooks, clerks and drivers take rifles and fill the holes in the line. Nobody sleeps."
+              },
+              "corsairs": {
+                "label": "Corsairs at Dawn",
+                "description": "Hold until first light, then call in the Marine Corsair fighter-bombers on the ridges."
+              }
+            }
+          },
+          "funchilin": {
+            "title": "The Bridge at Funchilin Pass",
+            "prompt": "The Chinese have blown the only bridge on the road south. Air Force cargo planes can drop new bridge sections by parachute, but no one has ever tried it.",
+            "options": {
+              "airdrop": {
+                "label": "Drop the Bridge",
+                "description": "Eight steel sections come down on parachutes. The engineers build the bridge under fire and the column rolls on."
+              },
+              "airstrip": {
+                "label": "Hold the Airstrip",
+                "description": "Keep the half-built airstrip at Hagaru-ri open. Planes fly out four thousand wounded men and bring in fresh troops."
+              }
+            }
+          },
+          "frozen": {
+            "title": "Frozen Rifles",
+            "prompt": "Weapons are jamming in the cold and morphine is freezing in the syrettes. A reporter asks General Oliver Smith if this is a retreat.",
+            "options": {
+              "another-direction": {
+                "label": "\"Retreat, Hell!\"",
+                "description": "\"We're not retreating. We're just attacking in another direction.\" The Marines go forward again."
+              },
+              "warming-tents": {
+                "label": "Warming Tents",
+                "description": "Rotate the men through the heated tents in shifts so they can thaw out their hands and their weapons."
+              }
+            }
+          }
+        }
+      }
+    },
+    "christmas": {
+      "narration": {
+        "0": {
+          "text": "The Chinese Ninth Army Group is shattered in the snow, with more of its men lost to frostbite than to bullets. Peng pulls his armies back across the Yalu to save what is left.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Moscow will not risk a world war for Kim Il-sung. By the spring of 1951, the UN flag flies on the Yalu, and Korea is united under the government in Seoul.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "retreat": {
+      "narration": {
+        "0": {
+          "text": "The Marines fight their way out to the port of Hungnam. Navy ships carry away a hundred thousand soldiers and nearly a hundred thousand Korean refugees, the largest sea evacuation of the war.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Seoul falls again in January 1951. MacArthur says the war cannot be won without bombing China, and asks for atomic bombs.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "nuke-choice": {
+      "title": "The White House · Spring 1951",
+      "prompt": "MacArthur has drawn up a list of targets in China. He has also written to a Republican congressman that \"there is no substitute for victory\", openly defying the President's policy.",
+      "options": {
+        "nukes": {
+          "label": "Use the Bomb",
+          "description": "Give MacArthur what he wants: atomic strikes on the Chinese bases and supply lines in Manchuria."
+        },
+        "fire-macarthur": {
+          "label": "Fire MacArthur",
+          "description": "Civilians command the military. Relieve the most famous general in America, keep the war limited and seek a ceasefire."
+        }
+      }
+    },
+    "atomic": {
+      "narration": {
+        "0": {
+          "text": "The first atomic bombs since Nagasaki fall on Manchuria in the spring of 1951. Stalin has had the bomb since 1949, and he is bound by treaty to defend China.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Soviet bombers strike back at American bases in Japan and South Korea. Britain and France warn that they will leave the war, and the alliance that won in 1945 starts to break apart.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "macarthur-fired": {
+      "narration": {
+        "0": {
+          "text": "On 11 April 1951 Truman relieves MacArthur of his command. MacArthur comes home to a hero's welcome and tells Congress, \"Old soldiers never die; they just fade away.\"",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "Truman's approval rating falls to the lowest of any president in modern polling. But the war stays inside Korea.",
+          "speaker": "The Chronicle"
+        }
+      }
+    },
+    "armistice": {
+      "narration": {
+        "0": {
+          "text": "Panmunjom, 27 July 1953. After two years of talks, the armistice is signed in a hall built for the occasion. Kim Il-sung and Peng Dehuai countersign it later. Syngman Rhee refuses to sign at all.",
+          "speaker": "The Chronicle"
+        },
+        "1": {
+          "text": "The new line runs close to the old 38th parallel. No peace treaty is ever signed, and the two Koreas are still technically at war.",
+          "speaker": "The Chronicle"
+        }
+      }
+    }
+  },
+  "characters": {
+    "rhee": {
+      "name": "Syngman Rhee",
+      "role": "Independence leader, first President of South Korea"
+    },
+    "kim": {
+      "name": "Kim Il-sung",
+      "role": "Leader of North Korea"
+    },
+    "truman": {
+      "name": "Harry S. Truman",
+      "role": "33rd President of the United States"
+    },
+    "macarthur": {
+      "name": "Douglas MacArthur",
+      "role": "Commander of the UN forces in Korea"
+    },
+    "peng": {
+      "name": "Peng Dehuai",
+      "role": "Commander of the Chinese People's Volunteers"
+    }
+  },
+  "title": "The 38th Parallel",
+  "era": "Seoul · 1945",
+  "endings": {
+    "neutral-korea": {
+      "title": "The Fortress of the East",
+      "subtitle": "The trusteeship holds · one election · one Korea",
+      "epilogue": {
+        "0": {
+          "text": "A united Korea of thirty million people declares itself neutral, like Switzerland, and arms itself to the teeth so that no great power is tempted to invade."
+        },
+        "1": {
+          "text": "There is no Korean War. Three million people who died in our history live out their lives, and ten million families are never separated by a border."
+        },
+        "2": {
+          "text": "The politics are bitter and the coalition nearly breaks a dozen times. But Korea's quarrels are its own."
+        }
+      }
+    },
+    "red-korea": {
+      "title": "The Fall of Pusan",
+      "subtitle": "The perimeter breaks · Korea is united under Kim Il-sung",
+      "epilogue": {
+        "0": {
+          "text": "All of Korea becomes one closed state run by Kim Il-sung and, after him, his son. There is no Samsung, no K-pop and no Korean democracy."
+        },
+        "1": {
+          "text": "Japan, with communist Korea a few hours across the strait, becomes America's armed fortress in Asia. The Cold War line in the Pacific runs through the Tsushima Strait."
+        }
+      }
+    },
+    "narrow-neck": {
+      "title": "The Narrow Neck",
+      "subtitle": "The UN stops short of China · a war without Chinese armies",
+      "epilogue": {
+        "0": {
+          "text": "The war ends in the winter of 1950 instead of 1953. Hundreds of thousands of Chinese, Korean and American soldiers who died in the battles that followed in our history go home."
+        },
+        "1": {
+          "text": "A small, isolated North Korea survives in the mountains under Chinese protection. Pyongyang, Kaesong and most of the north are rebuilt as part of the Republic of Korea."
+        }
+      }
+    },
+    "blue-korea": {
+      "title": "Home by Christmas",
+      "subtitle": "The Marines win at Chosin · Korea is united under Seoul",
+      "epilogue": {
+        "0": {
+          "text": "Rhee rules a united Korea with an iron hand, and Koreans will have to fight for their democracy in the streets, as they did in our history."
+        },
+        "1": {
+          "text": "American troops stand on the Yalu, face to face with China. The Cold War in Asia has a new front line, a thousand kilometres further north."
+        }
+      }
+    },
+    "atomic-war": {
+      "title": "Fire on the Yalu",
+      "subtitle": "The bomb is used in Korea · the war spreads beyond it",
+      "epilogue": {
+        "0": {
+          "text": "The fighting spreads from Korea to Manchuria and Japan before the great powers step back from the edge in 1952. Millions more are dead."
+        },
+        "1": {
+          "text": "The taboo against using nuclear weapons, which in our history has held since 1945, is broken in the first decade of the atomic age."
+        }
+      }
+    },
+    "armistice": {
+      "title": "The 38th Parallel",
+      "subtitle": "The history you know: an armistice, and a line that never closed",
+      "epilogue": {
+        "0": {
+          "text": "About three million Koreans, Chinese, Americans and others have died, most of them civilians. Seoul changed hands four times."
+        },
+        "1": {
+          "text": "The two Koreas go separate ways. The South, desperately poor in 1953, becomes one of the richest democracies in the world. The North becomes the most closed country on Earth, ruled by three generations of the Kim family."
+        },
+        "2": {
+          "text": "The Demilitarized Zone, four kilometres wide, still divides the peninsula. Millions of families have never seen their relatives on the other side again."
+        }
+      }
+    }
+  }
+}

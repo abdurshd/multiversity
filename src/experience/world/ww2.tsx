@@ -21,7 +21,7 @@ const SAND = '#d9c08a';
 // ─── Shared props ───────────────────────────────────────────────────────────
 
 /** A static tank prop built from the same merged geometry the battles use. */
-function TankProp({ position, rotation = 0, helmet = 'm1', color = '#556b2f', wrecked = false }: { position: [number, number, number]; rotation?: number; helmet?: Helmet; color?: string; wrecked?: boolean }) {
+export function TankProp({ position, rotation = 0, helmet = 'm1', color = '#556b2f', wrecked = false }: { position: [number, number, number]; rotation?: number; helmet?: Helmet; color?: string; wrecked?: boolean }) {
     const geom = useMemo(() => buildTank({ cloth: color, accent: color }, helmet), [helmet, color]);
     const mat = useMemo(() => {
         const m = figureMaterial();
@@ -36,7 +36,7 @@ function TankProp({ position, rotation = 0, helmet = 'm1', color = '#556b2f', wr
 }
 
 /** A few soldiers standing about (same figure as the battle infantry). */
-function Soldiers({ spots, cloth, accent = '#8a2a2a', helmet = 'm1' }: { spots: [number, number, number][]; cloth: string; accent?: string; helmet?: Helmet }) {
+export function Soldiers({ spots, cloth, accent = '#8a2a2a', helmet = 'm1' }: { spots: [number, number, number][]; cloth: string; accent?: string; helmet?: Helmet }) {
     const geom = useMemo(() => buildTrenchSoldier({ cloth, accent }, helmet), [cloth, accent, helmet]);
     const mat = useMemo(() => figureMaterial(), []);
     const fill = (mesh: THREE.InstancedMesh | null) => {
@@ -87,7 +87,7 @@ function BarrageBalloon({ position, phase = 0 }: { position: [number, number, nu
 }
 
 /** A monoplane fighter or bomber circling overhead, propeller spinning. */
-function Warplane({ radius, height, speed, phase, color, wing = 11, center = [0, 0] }: { radius: number; height: number; speed: number; phase: number; color: string; wing?: number; center?: [number, number] }) {
+export function Warplane({ radius, height, speed, phase, color, wing = 11, center = [0, 0] }: { radius: number; height: number; speed: number; phase: number; color: string; wing?: number; center?: [number, number] }) {
     const plane = useRef<THREE.Group>(null);
     const prop = useRef<THREE.Mesh>(null);
     useFrame(({ clock }) => {
@@ -130,7 +130,7 @@ function Warplane({ radius, height, speed, phase, color, wing = 11, center = [0,
 }
 
 /** Open water: a large glossy plane with slow swells. */
-function Sea({ y = 0.9, size = 2200, color = '#2e5568', z = 0 }: { y?: number; size?: number; color?: string; z?: number }) {
+export function Sea({ y = 0.9, size = 2200, color = '#2e5568', z = 0 }: { y?: number; size?: number; color?: string; z?: number }) {
     const geom = useMemo(() => {
         const g = new THREE.PlaneGeometry(size, size, 80, 80);
         g.rotateX(-Math.PI / 2);
@@ -156,7 +156,7 @@ function Sea({ y = 0.9, size = 2200, color = '#2e5568', z = 0 }: { y?: number; s
 }
 
 /** A grey warship silhouette: hull, superstructure, funnel and gun turrets. */
-function Warship({ position, rotation = 0, length = 60, color = '#7d858c' }: { position: [number, number, number]; rotation?: number; length?: number; color?: string }) {
+export function Warship({ position, rotation = 0, length = 60, color = '#7d858c' }: { position: [number, number, number]; rotation?: number; length?: number; color?: string }) {
     const hull = useMemo(() => {
         const L = length / 2;
         const sh = new THREE.Shape([
@@ -206,7 +206,7 @@ function Warship({ position, rotation = 0, length = 60, color = '#7d858c' }: { p
 }
 
 /** A concrete pillbox or casemate with a dark firing slit facing +z (rotate as needed). */
-function Bunker({ position, rotation = 0, size = 1 }: { position: [number, number, number]; rotation?: number; size?: number }) {
+export function Bunker({ position, rotation = 0, size = 1 }: { position: [number, number, number]; rotation?: number; size?: number }) {
     return (
         <group position={position} rotation={[0, rotation, 0]} scale={size}>
             <mesh castShadow receiveShadow position={[0, 1.6, 0]}>
@@ -256,7 +256,7 @@ function Hedgehogs({ spots }: { spots: [number, number][] }) {
 }
 
 /** A low wall of sandbags (instanced capsules). */
-function Sandbags({ from, to, rows = 3 }: { from: [number, number]; to: [number, number]; rows?: number }) {
+export function Sandbags({ from, to, rows = 3 }: { from: [number, number]; to: [number, number]; rows?: number }) {
     const bags = useMemo(() => {
         const out: [number, number, number, number][] = [];
         const len = Math.hypot(to[0] - from[0], to[1] - from[1]);
@@ -581,7 +581,7 @@ function ParkedPlane({ position, rotation = 0, color = '#5d6f7d' }: { position: 
 }
 
 /** Columns of black smoke rising from a burning ship on the horizon. */
-function SmokeColumn({ position, height = 50 }: { position: [number, number, number]; height?: number }) {
+export function SmokeColumn({ position, height = 50 }: { position: [number, number, number]; height?: number }) {
     const ref = useRef<THREE.Group>(null);
     useFrame(({ clock }) => {
         if (ref.current) ref.current.children.forEach((c, i) => {
@@ -818,7 +818,7 @@ function SouthwickHouse({ position }: { position: [number, number, number] }) {
 }
 
 /** A US jeep. */
-function Jeep({ position, rotation = 0 }: { position: [number, number, number]; rotation?: number }) {
+export function Jeep({ position, rotation = 0 }: { position: [number, number, number]; rotation?: number }) {
     return (
         <group position={position} rotation={[0, rotation, 0]}>
             <mesh castShadow position={[0, 1, 0]}>
@@ -876,7 +876,7 @@ export function Southwick1944() {
 
 // ─── Omaha Beach, 6 June 1944 ───────────────────────────────────────────────
 /** An LCVP "Higgins boat" with its ramp down, facing the beach (-z). */
-function LandingCraft({ position, rotation = 0 }: { position: [number, number, number]; rotation?: number }) {
+export function LandingCraft({ position, rotation = 0 }: { position: [number, number, number]; rotation?: number }) {
     return (
         <group position={position} rotation={[0, rotation, 0]}>
             <mesh castShadow position={[0, 0.9, 0]}>
