@@ -1,0 +1,707 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "Sarayevo, 1914-yil 28-iyun, yakshanba. Avstriya-Vengriya taxtining vorisi archgersog Frans Ferdinand rafiqasi Sofi bilan Bosniya poytaxtiga tashrif buyurmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Bugun ertalab bir yigit ularning ochiq mashinasiga bomba otdi. Bomba yig'ilgan tomdan sakrab ketdi va orqadagi mashina ostida portlab, ikki ofitserni yaraladi. Archgersog Shahar hokimiyatiga borib, nutqini so'zladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Endi u kasalxonadagi yaradorlarni ko'rishni talab qilmoqda. Haydovchiga yo'nalish o'zgargani haqida hech kim aytmagan. Lotin ko'prigi yonida mashina noto'g'ri ko'chaga burilib, to'xtab qoladi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Moris Shillerning delikates do'koni oldida Gavrilo Prinsip ismli o'n to'qqiz yoshli talaba cho'ntagida to'pponcha bilan turibdi. Bizning tarixda uning ikki o'qi to'qqiz millionga yaqin askarning hayotiga zomin bo'lgan urushni boshlab bergan. Bu tarixda qarorni siz qabul qilasiz.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-sarajevo": {
+      "prompt": "Sarayevoni kashf eting: atrofga qarash uchun suring va yonib turgan belgilarni bosing. Mashina burchakda to'xtab qoldi.",
+      "hotspots": {
+        "bridge": {
+          "label": "Lotin ko'prigi",
+          "title": "Burchak",
+          "description": "Milyaska daryosi ustidagi Usmonlilar davridan qolgan tosh ko'prik. Kortej daryo bo'yidagi sohil yo'li bo'ylab to'g'ri ketishi kerak edi. Buning o'rniga oldingi ikki mashina shu yerda o'ngga, Frans Iosif ko'chasiga burildi, archgersogning mashinasi ham ularga ergashdi."
+        },
+        "deli": {
+          "label": "Shillerning delikates do'koni",
+          "title": "Gavrilo Prinsip",
+          "description": "Prinsip «Yosh Bosniya» guruhiga mansub. Bu janubiy slavyanlarni Avstriya hukmronligidan ozod qilmoqchi bo'lgan talabalar guruhi. Ularning to'pponcha va bombalari «Qora qo'l»dan kelgan, bu Serbiya harbiy razvedkasi ofitserlari boshqaradigan maxfiy jamiyat. Prinsip fitna barbod bo'ldi deb o'ylagan va bu yerda tasodifan turgan edi."
+        },
+        "car": {
+          "label": "Gräf & Stift",
+          "title": "Haydovchi",
+          "description": "Leopold Loykaga hozirgina Bosniya gubernatori general Potiorek baqirdi: «Yo'l noto'g'ri!» U tormoz berib to'xtadi va og'ir mashinani juda sekin orqaga yurgizishni boshladi."
+        },
+        "flags": {
+          "label": "Imperiya bayroqlari",
+          "title": "Xavfli sana",
+          "description": "Bugun Vidovdan, 1389-yildagi Kosovo jangining yilligi, serb taqvimidagi eng muhim kun. Ko'p serblar archgersogning aynan shu kuni kelishini ataylab qilingan haqorat deb biladi."
+        },
+        "reformer": {
+          "label": "Archgersog",
+          "title": "Hech kim yoqtirmagan islohotchi",
+          "description": "Frans Ferdinand qo'pol va saroyda yoqimsiz odam, lekin u imperiyadagi slavyanlarga teng huquq berish rejalarini tuzgan, ehtimol «Buyuk Avstriya Qo'shma Shtatlari» shaklida. Serb millatchilari uning muvaffaqiyat qozonishidan qo'rqishadi. Endi uning qaror qilish uchun bir soniyasi bor."
+        }
+      }
+    },
+    "sarajevo-choice": {
+      "title": "Frans Iosif ko'chasi · ertalab 10:50",
+      "prompt": "Mashina to'xtab qoldi. Olomon yaqinlashib kelmoqda. Archgersog haydovchiga engashadi.",
+      "options": {
+        "speed-away": {
+          "label": "«Haydang! To'g'riga!»",
+          "description": "Orqaga yurishni unuting. Vitesni qo'shing va noto'g'ri ko'chadan imkon qadar tez haydab keting."
+        },
+        "reverse": {
+          "label": "Sohilga orqaga qaytish",
+          "description": "Gubernatorning buyrug'iga amal qiling: daryo bo'yidagi yo'lga orqaga qayting va rejadagi yo'nalish bo'yicha boring."
+        }
+      }
+    },
+    "escape": {
+      "narration": {
+        "0": {
+          "text": "Motor guvillaydi va mashina Frans Iosif ko'chasi bo'ylab oldinga otiladi. Prinsip to'pponchasini chiqaradi, lekin nishon allaqachon yigirma metr narida va harakatda. U o'q uzmaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "O'sha kuni kechqurun archgersog va Sofi Bosniyani poyezdda tark etishadi. Fitna bir necha kunda fosh bo'ladi va Avstriya Serbiya hukumatini ayblamasdan fitnachilarni hibsga oladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Biz bu yerga tashrif bilan keldik, bizni esa bombalar bilan kutib olishdi. Mayli. Biz bu imperiyani hech kim bomba otishni istamaydigan joyga aylantiramiz.",
+          "speaker": "Archgersog Frans Ferdinand"
+        }
+      }
+    },
+    "shots": {
+      "narration": {
+        "0": {
+          "text": "Mashina sekin orqaga yurayotganda Prinsip olomon orasidan bir yarim metr masofaga chiqib, ikki marta o'q uzadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Birinchi o'q Sofining qorniga tegadi. Ikkinchisi Frans Ferdinandning bo'yniga. «Sofi, Sofi, o'lma. Bolalarimiz uchun yasha.» Bir soat ichida ikkalasi ham vafot etadi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Prinsip o'zini otmoqchi bo'ladi, lekin uni yerga bosib olishadi. Avstriya-Vengriya bunda Serbiyaning qo'li borligiga amin va ittifoqchisi Germaniyadan nima qilish kerakligini so'raydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "july-crisis": {
+      "narration": {
+        "0": {
+          "text": "Berlin, 1914-yil 5-iyul. Avstriya diplomati graf Xoyos imperatoridan maktub olib keldi: agar Avstriya Serbiyani jazolasa, Germaniya uning yonida turadimi?",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Xavfni hamma biladi. Rossiya Serbiyani himoya qiladi. Fransiya Rossiyaning ittifoqchisi. Britaniya ikkalasi bilan do'stona kelishuvlarga ega, shuningdek Belgiyani himoya qilishni va'da qilgan shartnomasi bor.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Serblar bilan hisob-kitob qilish kerak, tez orada. Lekin men Yevropaga o't qo'ygan odam bo'lishni istamayman. O'ylab ko'ray.",
+          "speaker": "Kayzer Vilgelm II"
+        }
+      }
+    },
+    "explore-berlin": {
+      "prompt": "Berlinni kashf eting: atrofga qarash uchun suring va yonib turgan belgilarni bosing. Avstriyaliklar javob kutmoqda.",
+      "hotspots": {
+        "palace": {
+          "label": "Shahar saroyi",
+          "title": "Imperator qarorgohi",
+          "description": "Kayzer yigirma olti yildan beri hukmronlik qilmoqda. U harbiy libos, paradlar va Britaniyanikiga raqobatchi qilib qurgan flotini yaxshi ko'radi. U intervyularda vazirlari keyin tushuntirib berishga majbur bo'ladigan gaplarni aytishi bilan mashhur."
+        },
+        "linden": {
+          "label": "Unter den Linden",
+          "title": "O'ziga ishongan poytaxt",
+          "description": "Germaniyada Yevropaning eng kuchli armiyasi va eng tez o'sayotgan sanoati bor. Shu bilan birga, uning rahbarlari armiyasi va temir yo'llarini qayta qurayotgan Rossiya bir necha yildan keyin yengib bo'lmas darajada kuchli bo'lib ketishidan qo'rqishadi. Ba'zi generallar aytadi: keyinroqdan ko'ra hozir yaxshiroq."
+        },
+        "gate": {
+          "label": "Brandenburg darvozasi",
+          "title": "Reja",
+          "description": "Agar urush boshlansa, Germaniya Fransiya va Rossiya bilan bir vaqtda jang qilishga majbur bo'ladi. Bosh shtabning javobi Shliffen rejasi: betaraf Belgiya orqali yurib, Fransiyani taxminan olti haftada yengish, so'ng Rossiya tayyor bo'lgunicha armiyani poyezdda sharqqa jo'natish."
+        },
+        "telegraph": {
+          "label": "Londondan xabarlar",
+          "title": "Amakivachchalar",
+          "description": "Britaniya qiroli Georg V ham, Rossiya podshosi Nikolay II ham Kayzerning amakivachchalari. Ular bir-biriga «Jorji», «Niki» va «Villi» deb xat yozishadi. Bu yordam bermaydi."
+        },
+        "decide": {
+          "label": "Kayzer",
+          "title": "Javob",
+          "description": "Graf Xoyos kutmoqda. Kayzer bugun nima desa, Avstriya buni va'da deb qabul qiladi."
+        }
+      }
+    },
+    "crisis-choice": {
+      "title": "Iyul inqirozi · 1914",
+      "prompt": "Avstriya Serbiyaga rad etilishi uchun yozilgan ultimatum yubordi. Serbiya uning deyarli hammasini qabul qildi. Bizning tarixda Kayzer «urush uchun har qanday sabab yo'qoldi» degan, lekin allaqachon kech edi. Siz nima qilasiz?",
+      "options": {
+        "blank-cheque": {
+          "label": "Avstriyani to'liq qo'llab-quvvatlash",
+          "description": "Venaga «bo'sh chek» bering: Germaniya u nima qilsa ham qo'llab-quvvatlaydi. Rossiya, albatta, jang qilishdan ko'ra chekinadi."
+        },
+        "halt-in-belgrade": {
+          "label": "Belgradda to'xtash",
+          "description": "Avstriyaga Belgradni kafolat sifatida egallashni, undan nariga o'tmaslikni va muzokara qilishni ayting. Podshoga shaxsan telegramma yuboring."
+        }
+      }
+    },
+    "conference": {
+      "narration": {
+        "0": {
+          "text": "Avstriya qo'shinlari Dunayni kesib o'tib, Belgradda to'xtaydi. Podsho Rossiya safarbarligini bekor qiladi. Londonda Tashqi ishlar vaziri buyuk davlatlar konferensiyasini chaqiradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Bu butun kuzni oladi. Serbiya fitnachilarni topshiradi, Avstriya Belgradni tark etadi, gazetalar esa hech kim g'alaba qozonmadi deb nolishadi. Maqsad ham shu edi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Ular Kayzer jur'atini yo'qotdi deyishadi. Deyishsin. Yevropaga o't qo'ygan odam sifatida eslanishdan ko'ra, Berlinda ustimdan kulishlarini afzal ko'raman.",
+          "speaker": "Kayzer Vilgelm II"
+        }
+      }
+    },
+    "guns-of-august": {
+      "narration": {
+        "0": {
+          "text": "Ittifoqlar domino toshlaridek qulaydi. Avstriya Serbiyaga urush e'lon qiladi. Rossiya safarbarlik boshlaydi. Germaniya 1-avgustda Rossiyaga, ikki kundan keyin Fransiyaga urush e'lon qiladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "4-avgustda nemis qo'shinlari betaraf Belgiyaga bostirib kiradi. Britaniya o'sha kechasi urush e'lon qiladi. Germaniya kansleri Britaniya «bir parcha qog'oz» uchun jang qilishiga ishonolmaydi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Hamma urush Rojdestvogacha tugaydi deydi. Bir oydan keyin nemislarning o'ng qanoti Belgiya va Shimoliy Fransiyani bosib o'tdi. Uning razvedkachilari Eyfel minorasini ko'ra oladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-marne": {
+      "prompt": "Marna vodiysini kashf eting: atrofga qarash uchun suring va yonib turgan belgilarni bosing. Keyin Parijni aylanib o'tish yo'lini tanlang.",
+      "hotspots": {
+        "eiffel": {
+          "label": "Parij",
+          "title": "Qirq kilometr",
+          "description": "Fransiya hukumati allaqachon Bordoga ko'chib ketgan. Parijni eski qal'alar va general Jozef Gallyeni boshchiligidagi garnizon himoya qilmoqda, unga shaharni oxirigacha ushlab turish buyurilgan."
+        },
+        "taxis": {
+          "label": "Parijdan kelgan yo'l",
+          "title": "G'ayrioddiy armiya",
+          "description": "Shaharda Renault taksilari safga tizilmoqda. Gallyeni ulardan frontga zudlik bilan yordamchi kuch yetkazish uchun foydalanmoqchi. Haydovchilar armiyadan hisoblagichdagi narxni oladi."
+        },
+        "village": {
+          "label": "Qishloq",
+          "title": "Holdan toygan askarlar",
+          "description": "Nemis piyodalari avgust jaziramasida kuniga qirq kilometrgacha yurishgan, ko'plarining oyoqlari qonagan. Ta'minot aravalari ancha ortda qolgan, otlar esa o'lmoqda."
+        },
+        "wheat": {
+          "label": "Bug'doy dalalari",
+          "title": "Qizil shimlar",
+          "description": "Fransuz askarlari hali ham 1870-yildagidek yorqin qizil shim va to'q ko'k kamzul kiyishadi. Pulemyotlar va tez otar artilleriyaga qarshi ular bir oyda chorak milliondan ortiq talofat ko'rishdi. Kelasi yili ular «ufq ko'ki» rangiga o'tishadi."
+        },
+        "decide": {
+          "label": "Oliy qo'mondonlik",
+          "title": "Parijni qaysi tomondan aylanib o'tish?",
+          "description": "Bosh shtab boshlig'i general fon Moltke Lyuksemburgda, armiyalari bilan aloqasi deyarli uzilgan. Qo'mondonlari o'zlari qaror qabul qilmoqda. Kayzer hali ham ularning qarorini bekor qila oladi."
+        }
+      }
+    },
+    "schlieffen-choice": {
+      "title": "Marna · 1914-yil sentyabr",
+      "prompt": "General fon Klyuk yo'lni qisqartirib, chekinayotgan fransuzlarni Parijning sharqidan quvmoqchi. Asl rejada shaharni g'arbdan keng aylanib o'tish aytilgan edi. Qaysi birini buyurasiz?",
+      "options": {
+        "wheel": {
+          "label": "Parijning sharqiga burilish",
+          "description": "Fon Klyukning yo'li: fransuz armiyasini quvib yetish uchun qisqaroq yurish. Bu Birinchi armiyaning qanotini Parij garnizoni oldida ochiq qoldiradi."
+        },
+        "encircle": {
+          "label": "Parijni g'arbdan aylanib o'tish",
+          "description": "Shliffenning yo'li: shaharni aylanib o'tib, uni qurshab olish. Uzoqroq, askarlar esa holdan toygan, lekin hech narsa ochiq qolmaydi."
+        }
+      }
+    },
+    "marne-wheel": {
+      "battle": {
+        "name": "Marnadagi birinchi jang",
+        "objective": "1914-yil 6-sentyabr. Birinchi armiyangiz chekinayotgan fransuzlarni quvib Parijning sharqiga burildi, shahar garnizoni esa hozirgina Urk daryosi bo'yida ochiq o'ng qanotingizga hujum qildi. Safingizdagi bo'shliq topilguncha fransuz Oltinchi armiyasini tor-mor qiling.",
+        "player": {
+          "name": "Nemis Birinchi armiyasi"
+        },
+        "enemy": {
+          "name": "Fransuz Oltinchi armiyasi va Britaniya ekspeditsiya korpusi"
+        },
+        "events": {
+          "the-gap": {
+            "title": "Ellik kilometrlik bo'shliq",
+            "prompt": "Fon Klyuk qanotiga qilingan hujumga qarshi turish uchun qo'shinlarni g'arbga tortdi. Birinchi va Ikkinchi armiyalaringiz orasida ellik kilometr kenglikdagi bo'shliq ochildi.",
+            "options": {
+              "close-gap": {
+                "label": "Bo'shliqni yopish",
+                "description": "Hujumni to'xtating va armiyalarni yana birlashtiring. Xavfsizroq, lekin fransuzlarga vaqt beradi."
+              },
+              "push-on": {
+                "label": "Parijga olg'a",
+                "description": "Shliffen rejasida tezlik hamma narsa. Yurishda davom eting va fransuzlar yengilganiga ishoning."
+              }
+            }
+          },
+          "taxis": {
+            "title": "Marna taksilari",
+            "prompt": "General Gallyeni Parij taksilarini safarbar qildi. Olti yuzga yaqin taksi besh mingga yaqin yangi askarni frontga olib kelmoqda, hisoblagichlari hamon ishlab turibdi.",
+            "options": {
+              "shell-road": {
+                "label": "Yo'lni o'qqa tutish",
+                "description": "Og'ir gaubitsalarni Parijdan kelayotgan yo'lga qarating va yordamchi kuchlarni joylashib olishidan oldin tuting."
+              },
+              "ignore-taxis": {
+                "label": "Ular yetib kelguncha hujum qilish",
+                "description": "Yangi askarlar yetib kelguncha hozirning o'zida fransuz safiga bor kuchni tashlang."
+              }
+            }
+          },
+          "hentsch": {
+            "title": "Polkovnik Xentsh keldi",
+            "prompt": "Shtab ofitseri qarorgohdan mashinada yetib keldi. Agar armiya xavf ostida deb hisoblasa, chekinishni buyurish vakolatiga ega. U shunday deb hisoblaydi.",
+            "options": {
+              "refuse-retreat": {
+                "label": "Chekinishni rad etish",
+                "description": "«Parijgacha qirq kilometr qoldi.» Ofitserlar hushtak chaladi va holdan toygan polklar yana oldinga yuradi."
+              },
+              "dig-in": {
+                "label": "Turgan joyda mustahkamlanish",
+                "description": "Chekinmang, lekin hujum ham qilmang. Belkuraklarni oling: fransuzlar miltiqlaringizga urilib sinsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "marne-encircle": {
+      "battle": {
+        "name": "Marnadagi birinchi jang",
+        "objective": "1914-yil 6-sentyabr. O'ng qanotingiz Shliffen rejalashtirganidek Parijning g'arbidan aylanib o'tdi. Askarlaringiz bir oyda 500 kilometr yurib, holdan toygan, lekin Fransiya poytaxti deyarli qurshovda. Siz bilan shahar o'rtasidagi so'nggi armiyani tor-mor qiling.",
+        "player": {
+          "name": "Nemis o'ng qanoti"
+        },
+        "enemy": {
+          "name": "Parij armiyasi"
+        },
+        "events": {
+          "the-gap": {
+            "title": "Juda cho'zilgan saf",
+            "prompt": "Armiyangiz uch yuz kilometrlik frontga yoyilgan. Fransuz otliqlari zaif joylarni qidirmoqda.",
+            "options": {
+              "close-gap": {
+                "label": "Bo'shliqni yopish",
+                "description": "Hujumni to'xtating va armiyalarni yana birlashtiring. Xavfsizroq, lekin fransuzlarga vaqt beradi."
+              },
+              "push-on": {
+                "label": "Parijga olg'a",
+                "description": "Shliffen rejasida tezlik hamma narsa. Yurishda davom eting va fransuzlar yengilganiga ishoning."
+              }
+            }
+          },
+          "taxis": {
+            "title": "Marna taksilari",
+            "prompt": "General Gallyeni Parij taksilarini safarbar qildi. Olti yuzga yaqin taksi besh mingga yaqin yangi askarni frontga olib kelmoqda, hisoblagichlari hamon ishlab turibdi.",
+            "options": {
+              "shell-road": {
+                "label": "Yo'lni o'qqa tutish",
+                "description": "Og'ir gaubitsalarni Parijdan kelayotgan yo'lga qarating va yordamchi kuchlarni joylashib olishidan oldin tuting."
+              },
+              "ignore-taxis": {
+                "label": "Ular yetib kelguncha hujum qilish",
+                "description": "Yangi askarlar yetib kelguncha hozirning o'zida fransuz safiga bor kuchni tashlang."
+              }
+            }
+          },
+          "hentsch": {
+            "title": "Polkovnik Xentsh keldi",
+            "prompt": "Shtab ofitseri qarorgohdan mashinada yetib keldi. Agar armiya xavf ostida deb hisoblasa, chekinishni buyurish vakolatiga ega. U shunday deb hisoblaydi.",
+            "options": {
+              "refuse-retreat": {
+                "label": "Chekinishni rad etish",
+                "description": "«Parijgacha qirq kilometr qoldi.» Ofitserlar hushtak chaladi va holdan toygan polklar yana oldinga yuradi."
+              },
+              "dig-in": {
+                "label": "Turgan joyda mustahkamlanish",
+                "description": "Chekinmang, lekin hujum ham qilmang. Belkuraklarni oling: fransuzlar miltiqlaringizga urilib sinsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "paris-falls": {
+      "narration": {
+        "0": {
+          "text": "Fransuz safi buziladi. Bir hafta ichida nemis otliqlari Parij qal'alari yonidan o'tib ketadi va shahar 1870-yildagidek qurshab olinadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Oktyabrda Fransiya sulh shartlarini so'raydi. Britaniya armiyasi Dyunkerkdan uyiga olib ketiladi. Yolg'iz qolgan ruslar bahorgacha sulh tuzadi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Barglar to'kilguncha uyda bo'lasizlar, degandim. Biroz kechikdim, xolos.",
+          "speaker": "Kayzer Vilgelm II"
+        }
+      }
+    },
+    "race-to-the-sea": {
+      "narration": {
+        "0": {
+          "text": "9-sentyabrda nemis armiyalari Ena daryosiga chekinib, mustahkamlanadi. Fransuzlar va britaniyaliklar ularni aylanib o'tmoqchi bo'ladi, ular esa fransuz va britaniyaliklarni, toki ikkala tomon ham dengizga yetguncha.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Rojdestvoga kelib Lamansh bo'g'ozidan Shveytsariyagacha yetti yuz kilometrga yaqin xandaqlar chizig'i cho'zilgan. U uch yil davomida deyarli qimirlamaydi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Verden, 1916: o'n oy, yetti yuz mingga yaqin talofat. Somma, o'sha yili: faqat birinchi kunning o'zida yigirma mingga yaqin britaniyalik askar halok bo'ladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-front": {
+      "prompt": "G'arbiy frontni kashf eting: atrofga qarash uchun suring va yonib turgan belgilarni bosing. Berlindan xabar kelmoqda.",
+      "hotspots": {
+        "trench": {
+          "label": "Xandaq",
+          "title": "Uch yillik uy",
+          "description": "Nemis xandaqlari chuqur va puxta qurilgan, ba'zilarida yer ostida o'n metr chuqurlikdagi beton boshpanalar bor. Askarlar oldingi chiziqda bir necha kun turib, keyin almashinadi. Kalamushlar, bitlar, loy va o'liklarning hidi hamma joyda."
+        },
+        "wire": {
+          "label": "Tikanli sim",
+          "title": "Hech kimniki bo'lmagan yer",
+          "description": "Saflar orasida snaryad chuqurlari va simlardan iborat, ba'zan atigi ellik metr kenglikdagi tasma yotadi. Uni kesib o'tib hujum qilish daqiqasiga besh yuz o'q uzadigan pulemyotlarga qarab yurish demakdir."
+        },
+        "tank": {
+          "label": "Tank",
+          "title": "Yangi qurol",
+          "description": "Britaniyaliklar tanklarni birinchi marta 1916-yil sentyabrida Sommada jangga tashladi. Ular sekin, ishonchsiz va ichi bo'g'ilib ketadigan darajada issiq, lekin o'qlar ulardan qaytadi va ular simlarni ezib o'tadi."
+        },
+        "sky": {
+          "label": "Kuzatuv aerostati",
+          "title": "Havodagi urush",
+          "description": "Aerostatlar artilleriya uchun nishonlarni aniqlaydi, qiruvchi samolyotlar esa ularni urib tushirishga harakat qiladi. «Qizil baron» Manfred fon Rixtgofen Germaniyaning eng mashhur uchuvchisi, 1918-yil aprelida halok bo'lgunicha sakson g'alaba qozongan."
+        },
+        "decide": {
+          "label": "Telegramma",
+          "title": "40-xona",
+          "description": "1917-yil yanvar. Britaniyaning dengiz qamali Germaniyani ochlikka mahkum qilmoqda. Harbiy-dengiz floti cheklanmagan suvosti urushi Britaniyani olti oy ichida urushdan chiqaradi, hatto bu Amerikani urushga tortsa ham, deb va'da bermoqda. Tashqi ishlar vazirligida Amerikani band qilish g'oyasi bor."
+        }
+      }
+    },
+    "zimmermann-choice": {
+      "title": "Berlin · 1917-yil yanvar",
+      "prompt": "Tashqi ishlar vaziri Artur Simmerman Meksikaga shifrlangan telegramma yozdi: agar Amerika urushga kirsa, Meksika unga hujum qilib, Texas, Nyu-Meksiko va Arizonani qaytarib olishi kerak. Uni yuborishga ruxsat berasizmi?",
+      "options": {
+        "send": {
+          "label": "Telegrammani yuborish",
+          "description": "Cheklanmagan suvosti urushini qayta boshlang va Amerikaga o'z uyida urush bering. Simmermanning aytishicha, shifrni ochib bo'lmaydi."
+        },
+        "cancel": {
+          "label": "Uni yirtib tashlash",
+          "description": "Suvosti kemalarini jilovda va Amerikani betaraf ushlang. Buning o'rniga Prezident Vilsondan vositachilik qilishni so'rang."
+        }
+      }
+    },
+    "stalemate": {
+      "narration": {
+        "0": {
+          "text": "Amerikasiz Ittifoqchilarda 1917-yilda pul va oziq-ovqat tanqisligi boshlanadi. Navbatdagi muvaffaqiyatsiz hujumdan keyin fransuz armiyasida isyon ko'tariladi. Rossiya inqilob girdobiga tushadi. Hech kim g'alaba qozona olmaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Bu g'alabasiz tinchlik bo'lishi kerak. Faqat tenglar o'rtasidagi tinchlikkina uzoq davom etadi.",
+          "speaker": "Vudro Vilson"
+        },
+        "2": {
+          "text": "Stokgolmda barcha davlatlarning vakillari bir stol atrofida o'tiradi. Yil oxirida G'arbiy frontdagi to'plar jim bo'ladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "america-enters": {
+      "narration": {
+        "0": {
+          "text": "40-xonadagi britaniyalik shifrochlar telegrammani o'qib, amerikaliklarga berishadi. U 1917-yil 1-martda barcha gazetalarda chop etiladi. Nemis suvosti kemalari allaqachon Amerika kemalarini cho'ktirmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Dunyo demokratiya uchun xavfsiz qilinishi kerak. Amerika o'zini dunyoga keltirgan tamoyillar uchun qonini va qudratini sarflash sharafiga ega.",
+          "speaker": "Vudro Vilson"
+        },
+        "2": {
+          "text": "Vilson bir necha oy oldin «U bizni urushdan saqlab qoldi» shiori bilan qayta saylangan edi. 1917-yil 6-aprelda Qo'shma Shtatlar Germaniyaga urush e'lon qiladi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Rossiyada inqilob podshoni ag'darib tashlaydi, keyin bolsheviklar Germaniya bilan sulh tuzadi. Ellik nemis diviziyasi so'nggi tavakkal uchun poyezdda g'arbga keladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "kaiserschlacht-battle": {
+      "battle": {
+        "name": "Kayzer jangi",
+        "objective": "1918-yil 21-mart, tonggi soat 4:40. Rossiya sulh tuzdi, ellik diviziya poyezdda g'arbga keldi. Sommadagi Britaniya Beshinchi armiyasini yorib o'ting va amerikaliklar katta kuch bilan yetib kelguncha Amyen temir yo'l tuguniga intiling. Askarlarni xandaqdan hujumga chiqarishdan oldin to'plar safni zaiflashtirsin.",
+        "player": {
+          "name": "O'n yettinchi, Ikkinchi va O'n sakkizinchi armiyalar"
+        },
+        "enemy": {
+          "name": "Britaniya Beshinchi armiyasi"
+        },
+        "events": {
+          "bombardment": {
+            "title": "Besh soatlik olov",
+            "prompt": "Polkovnik Bryuxmyullerda olti mingdan ortiq to'p tayyor. Besh soatda ular bir milliondan ortiq snaryad otishi mumkin. Ulardan qanday foydalanasiz?",
+            "options": {
+              "hurricane": {
+                "label": "Bo'ronli o'qqa tutish",
+                "description": "Britaniya to'plari va qo'mondonlik punktlariga gaz va portlovchi snaryadlardan qisqa, shiddatli zarba, so'ng piyodalar oldidan siljiydigan o'q pardasi."
+              },
+              "infiltrate": {
+                "label": "Tumandagi hujumchilar",
+                "description": "Vodiyni quyuq tuman qoplagan. Yengil pulemyot va olov otgichli kichik guruhlarni mustahkam nuqtalar yonidan sirg'alib o'tishga jo'nating."
+              }
+            }
+          },
+          "americans": {
+            "title": "Yangi qo'shinlar",
+            "prompt": "Siz bir haftada 1914-yildan beri G'arbiy frontda hech kim erishmagan masofaga ilgariladingiz. Lekin Britaniya zaxiralari va birinchi Amerika diviziyalari safni yopish uchun yetib kelmoqda.",
+            "options": {
+              "drive-amiens": {
+                "label": "Amyenga intilish",
+                "description": "Temir yo'l tugunini oling, shunda Britaniya va Fransiya armiyalari bir-biridan ajraladi. Askarlaringiz holdan toygan va Britaniya ta'minot omborlaridan oziq-ovqat talash uchun to'xtashmoqda."
+              },
+              "consolidate": {
+                "label": "Egallanganlarni mustahkamlash",
+                "description": "Davom etishdan oldin to'plar va ta'minotni eski Somma jang maydoni orqali olib keling. Barqarorroq, lekin dushman vaqt yutadi."
+              }
+            }
+          },
+          "exhaustion": {
+            "title": "Hujum holdan toyadi",
+            "prompt": "Eng yaxshi askarlar birinchi to'lqinlarda edi va ularning ko'pi halok bo'ldi. Tirik qolganlar och va o'z to'plaridan uzoqda.",
+            "options": {
+              "last-reserves": {
+                "label": "So'nggi zaxiralarni jangga tashlash",
+                "description": "Ularning ortida hech narsa qolmagan. Germaniya bunday armiyani boshqa to'play olmaydi."
+              },
+              "hold-line": {
+                "label": "Yangi chiziqni ushlab turish",
+                "description": "Egallangan yerda mustahkamlaning va britaniyaliklar pulemyotlaringizga qarshi hujum qilsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "peace-1918": {
+      "narration": {
+        "0": {
+          "text": "Amyen aprelda qulaydi. Britaniyaliklar La-Mansh portlari tomon, fransuzlar Parij tomon chekinadi va ilk bor ikki armiya bir-biriga yordam bera olmaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Germaniya ishni oxiriga yetkazishga juda holsiz, Ittifoqchilar esa qarshi hujumga o'tishga juda larzaga kelgan. Amerika qo'shinlari kelishda davom etayotgan bir paytda ikkala tomon muzokaraga rozi bo'ladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Biz g'alaba qozonmadik. Lekin yutqazmadik ham, shuning o'zi yetarli bo'lishi kerak.",
+          "speaker": "Kayzer Vilgelm II"
+        }
+      }
+    },
+    "hundred-days": {
+      "narration": {
+        "0": {
+          "text": "Hujum Amyen oldida to'xtab qoladi. 8-avgustda Britaniya, Avstraliya va Kanada qo'shinlari u yerda yuzlab tanklar bilan hujum qiladi. General Lyudendorf buni «nemis armiyasining qora kuni» deb ataydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Keyingi yuz kun ichida Ittifoqchilar nemislarni Fransiya bo'ylab orqaga suradi. Fransiyada endi bir milliondan ortiq amerikalik bor va har kuni yana o'n ming kishi kelmoqda.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Germaniyaning ittifoqchilari birin-ketin taslim bo'ladi. Noyabr boshida Kildagi dengizchilar o'limga olib boradigan yurishga chiqishdan ko'ra isyon ko'tarishni afzal ko'radi va nemis shaharlari uzra qizil bayroqlar ko'tariladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "armistice-choice": {
+      "title": "1918-yil noyabr",
+      "prompt": "Generallaringiz armiya endi siz uchun jang qilmasligini aytmoqda. Berlinda inqilobchilar yurish qilmoqda. Kompyen o'rmonidagi temir yo'l vagonida marshal Fosh Ittifoqchilarning shartlari bilan kutmoqda.",
+      "options": {
+        "accept": {
+          "label": "Taxtdan voz kechib, imzolash",
+          "description": "Taxtdan voz keching, surgunga keting va yangi hukumat sulhni qabul qilsin. Shartlar og'ir, lekin qirg'in to'xtaydi."
+        },
+        "refuse": {
+          "label": "Oxirigacha jang qilish",
+          "description": "Armiyani Germaniyaga qaytarib olib boring va Reynni himoya qiling. Siz tirik ekansiz, imperiya taslim bo'lmaydi."
+        }
+      }
+    },
+    "armistice": {
+      "narration": {
+        "0": {
+          "text": "Kayzer 10-noyabrda Niderlandiyaga o'tadi va boshqa qaytmaydi. Ertasi kuni tonggi soat beshlarda nemis vakillari marshal Foshning temir yo'l vagonida sulhni imzolaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "U soat o'n birda kuchga kiradi: o'n birinchi oyning o'n birinchi kunining o'n birinchi soatida. So'nggi daqiqalarda ham oldingi chiziqda odamlar halok bo'lmoqda.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "To'qqiz millionga yaqin askar va millionlab tinch aholi halok bo'ldi. To'rt imperiya qulab tushdi: Germaniya, Avstriya, Rossiya va Usmonli.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "last-stand": {
+      "narration": {
+        "0": {
+          "text": "Urush 1919-yilgacha davom etadi. Ittifoqchilar minglab tanklar va bir million amerikalik bilan Reynni kesib o'tadi, nemis shaharlari esa ilk bor keng miqyosda havodan bombardimon qilinadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Bahorda Berlin qulaydi. Germaniya bosib olinib, bo'lib tashlanadi va hech kim uning armiyasiga «orqadan pichoq urilgan» deya olmaydi. Ittifoqchilar va'da qilganidek, Kayzer sudga tortiladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    }
+  },
+  "characters": {
+    "franz-ferdinand": {
+      "name": "Archgersog Frans Ferdinand",
+      "role": "Avstriya-Vengriya taxtining vorisi"
+    },
+    "kaiser": {
+      "name": "Kayzer Vilgelm II",
+      "role": "Germaniya imperatori va Prussiya qiroli"
+    },
+    "wilson": {
+      "name": "Vudro Vilson",
+      "role": "AQShning 28-prezidenti"
+    }
+  },
+  "title": "Avgust to'plari",
+  "era": "Sarayevo · 1914",
+  "endings": {
+    "long-peace": {
+      "title": "Uzoq tinchlik",
+      "subtitle": "Mashina haydab ketadi · Buyuk urush bo'lmaydi",
+      "epilogue": {
+        "0": {
+          "text": "Frans Ferdinand 1916-yilda imperator bo'ladi. U Avstriya-Vengriyani teng millatlar federatsiyasiga aylantiradi va Bolqonda notinch osoyishtalik o'rnatiladi."
+        },
+        "1": {
+          "text": "Leninning hokimiyati yo'q, Gitler yo'q, Xolokost yo'q va Ikkinchi jahon urushi yo'q. Bel Epok o'z qirollari, mustamlakalari va adolatsizliklari bilan shunchaki davom etadi."
+        },
+        "2": {
+          "text": "Yevropa imperiyalari bizning tarixdagidan ancha uzoq yashaydi va asr davomida mustamlakalaridan asta-sekin voz kechishga majbur bo'ladi."
+        }
+      }
+    },
+    "long-peace-belgrade": {
+      "title": "Uzoq tinchlik",
+      "subtitle": "Belgradda to'xtash · inqiroz muzokara bilan hal bo'ladi",
+      "epilogue": {
+        "0": {
+          "text": "Iyul inqirozi undan oldingi 1905 va 1911-yillardagi inqirozlar kabi tarixning bir izohiga aylanadi. Buyuk davlatlar konferensiyalar ish berishini o'rganadi va ularni o'tkazishda davom etadi."
+        },
+        "1": {
+          "text": "Urushsiz Rossiya podshosi uzoqroq hukmronlik qiladi va asta-sekin islohot o'tkazadi. Sovet Ittifoqi yo'q, natsistlar Germaniyasi yo'q va Ikkinchi jahon urushi yo'q."
+        },
+        "2": {
+          "text": "Kayzer Vilgelm 1941-yilda taxtda vafot etadi va bir marta to'g'ri ish qilgan noqulay imperator sifatida eslanadi."
+        }
+      }
+    },
+    "german-victory": {
+      "title": "Pax Germanica",
+      "subtitle": "Parij 1914-yilda qulaydi · Germaniya Yevropada hukmronlik qiladi",
+      "epilogue": {
+        "0": {
+          "text": "Urush baribir Rojdestvogacha tugaydi. Germaniya Belgiya portlarini va Fransiyaning temir rudali hududlaridan bir qismini oladi hamda Shimoliy dengizdan Qora dengizgacha «Mitteleuropa» bojxona ittifoqini quradi."
+        },
+        "1": {
+          "text": "Mag'lub Fransiya inqilob yo'liga, Britaniya esa achchiq yakkalanishga o'tadi. Gitler yo'q, chunki Germaniya hech qachon yutqazmaydi, lekin Kayzerning Yevropasi demokratiyaga do'st emas."
+        },
+        "2": {
+          "text": "Berlin fan va sanoat poytaxtiga aylanadi. Yigirmanchi asr nemis tilida so'zlaydi."
+        }
+      }
+    },
+    "negotiated-peace": {
+      "title": "G'alabasiz tinchlik",
+      "subtitle": "Telegramma yo'q · Amerika chetda qoladi · 1917-yilda tinchlik",
+      "epilogue": {
+        "0": {
+          "text": "Stokgolm shartnomasi 1914-yil chegaralarini tiklaydi. Hamma uyiga qaytadi, hamma o'zini aldangan his qiladi, lekin hech kim xo'rlanmaydi."
+        },
+        "1": {
+          "text": "Rossiyaning mo'rt demokratiyasi bolsheviklarsiz omon qoladi. Germaniyada Versal ham, keskin inflyatsiya ham, Gitler ham bo'lmaydi."
+        },
+        "2": {
+          "text": "Prezident Vilsonning o'zi vositachilik qilgan tinchlikdan tug'ilgan Millatlar Ligasida Amerika haqiqatan ham a'zo bo'ladi."
+        }
+      }
+    },
+    "negotiated-peace-1918": {
+      "title": "G'alabasiz tinchlik",
+      "subtitle": "Kayzer jangi muvaffaqiyatli · holdan toyish tinchligi",
+      "epilogue": {
+        "0": {
+          "text": "1918-yilgi tinchlik Germaniya qo'lida Belgiyaning katta qismini va Rossiyadan tortib olgan sharqiy yerlarni qoldiradi. G'azablangan va yengilmagan Amerika uyiga qaytib, qurollanadi."
+        },
+        "1": {
+          "text": "«Orqadan pichoq» afsonasi ham, Versal ham yo'q, lekin Markaziy Yevropa monarxiyalari bilan G'arb demokratiyalari o'rtasidagi sovuq urush o'nlab yillar davom etadi."
+        }
+      }
+    },
+    "total-defeat": {
+      "title": "Shartsiz taslim",
+      "subtitle": "Kayzer jangni davom ettiradi · Germaniya 1919-yilda bosib olinadi",
+      "epilogue": {
+        "0": {
+          "text": "Urushning so'nggi yilida yana bir million kishi halok bo'ladi. Germaniya bosib olinadi va uning jang maydonida yengilgani hammaga ayon."
+        },
+        "1": {
+          "text": "Armiyaga uyda xiyonat qilingan degan yolg'onsiz Gitlerning sevimli hikoyasi ildiz otmaydi. Vayronalardan Ittifoqchilar nazorati ostida ehtiyotkor nemis respublikasi bir avlod oldin quriladi."
+        }
+      }
+    },
+    "versailles": {
+      "title": "Barcha urushlarni tugatuvchi urush",
+      "subtitle": "Siz bilgan tarix: sulh, Versal va yigirma yillik muhlat",
+      "epilogue": {
+        "0": {
+          "text": "Versal shartnomasi 1919-yil 28-iyunda, Sarayevodagi o'q ovozlaridan roppa-rosa besh yil o'tib imzolanadi. Germaniya hududlari va mustamlakalaridan ayriladi, katta tovon to'lashi va urush aybini bo'yniga olishi shart."
+        },
+        "1": {
+          "text": "AQSh Senati Vilsonning Millatlar Ligasiga qo'shilishni rad etadi. Germaniyada ko'pchilik armiyamiz aslida yengilmagan, faqat xiyonatga uchragan, deb ishonadi."
+        },
+        "2": {
+          "text": "Fransuz marshali Ferdinand Fosh shartnomani o'qib aytadi: «Bu tinchlik emas. Bu yigirma yillik sulh.» U atigi oltmish besh kunga adashgan."
+        }
+      }
+    }
+  }
+}

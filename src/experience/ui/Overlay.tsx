@@ -329,14 +329,16 @@ function BattleOverlay() {
 // ─── Commander abilities ───────────────────────────────────────────────────
 const ABILITY_ICONS: Record<AbilityId, string> = { rally: '🚩', strike: '🎯', charge: '🐎' };
 const MUSKET_ICONS: Record<AbilityId, string> = { rally: '🥁', strike: '💥', charge: '🗡️' };
+const MODERN_ICONS: Record<AbilityId, string> = { rally: '📯', strike: '💥', charge: '🪖' };
 const ABILITY_ORDER: AbilityId[] = ['rally', 'strike', 'charge'];
 
 function AbilityBar() {
     const { t } = useTranslation('components-experience');
     const beat = useCurrentBeat();
     // musket-era battles rename the orders (volley line, artillery, bayonets)
-    const era = beat?.kind === 'battle' && beat.battle.era === 'musket' ? 'musket.' : '';
-    const icons = era ? MUSKET_ICONS : ABILITY_ICONS;
+    const battleEra = beat?.kind === 'battle' ? beat.battle.era : undefined;
+    const era = battleEra === 'musket' ? 'musket.' : battleEra === 'modern' ? 'modern.' : '';
+    const icons = battleEra === 'modern' ? MODERN_ICONS : era ? MUSKET_ICONS : ABILITY_ICONS;
     const cooldowns = useBattleHud((s) => s.abilityCooldowns);
     const active = useBattleHud((s) => s.abilityActive);
     const targeting = useBattleHud((s) => s.targeting);

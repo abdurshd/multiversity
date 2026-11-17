@@ -10,7 +10,7 @@ import {
 } from './battleSim';
 import { Banner } from '../world/parts';
 import {
-    buildArcher, buildArrow, buildCavalry, buildDragoon, buildInfantry, buildMusketBall, buildMusketeer, buildRifleman,
+    buildArcher, buildArrow, buildBullet, buildCavalry, buildDragoon, buildInfantry, buildMachineGunner, buildModernCavalry, buildMusketBall, buildMusketeer, buildRifleman, buildTrenchSoldier,
     figureMaterial,
 } from '../world/figures';
 
@@ -76,6 +76,16 @@ export function BattleView({ config }: { config: BattleConfig }) {
     const figures = useMemo(() => {
         const pPal = { cloth: config.player.color, accent: config.player.accentColor };
         const ePal = { cloth: config.enemy.color, accent: config.enemy.accentColor };
+        if (config.era === 'modern') {
+            const ph = config.player.helmet ?? 'brodie';
+            const eh = config.enemy.helmet ?? 'stahlhelm';
+            return {
+                player: { infantry: buildTrenchSoldier(pPal, ph), archer: buildMachineGunner(pPal, ph), cavalry: buildModernCavalry(pPal, ph, '#6b4a2f') },
+                enemy: { infantry: buildTrenchSoldier(ePal, eh), archer: buildMachineGunner(ePal, eh), cavalry: buildModernCavalry(ePal, eh, '#473325') },
+                arrow: buildBullet(),
+                fireArrow: buildBullet(),
+            };
+        }
         if (config.era === 'musket') {
             return {
                 player: { infantry: buildMusketeer(pPal), archer: buildRifleman(pPal), cavalry: buildDragoon(pPal, '#6b4a2f') },
@@ -280,7 +290,7 @@ export function BattleView({ config }: { config: BattleConfig }) {
             <instancedMesh ref={arrowsRef} args={[figures.arrow, arrowMat, MAX_PROJECTILES]} frustumCulled={false} />
             <instancedMesh ref={fireArrowsRef} args={[figures.fireArrow, fireArrowMat, MAX_PROJECTILES]} frustumCulled={false} />
             <instancedMesh ref={stonesRef} args={[undefined, undefined, MAX_PROJECTILES]} frustumCulled={false}>
-                {config.era === 'musket' ? (
+                {config.era === 'musket' || config.era === 'modern' ? (
                     <>
                         <sphereGeometry args={[0.5, 10, 8]} />
                         <meshStandardMaterial color="#26282c" roughness={0.45} metalness={0.7} />
@@ -304,7 +314,15 @@ export function BattleView({ config }: { config: BattleConfig }) {
             <AbilityEffects sim={sim} />
 
             {/* siege engines behind the player line */}
-            {config.era === 'musket' ? (
+            {config.era === 'modern' ? (
+                <>
+                    <FieldGun position={[-34, 0, 62]} />
+                    <FieldGun position={[-12, 0, 66]} />
+                    <FieldGun position={[12, 0, 66]} />
+                    <FieldGun position={[34, 0, 62]} />
+                    <MusketSmoke sim={sim} color="#b9b2a2" />
+                </>
+            ) : config.era === 'musket' ? (
                 <>
                     <Cannon position={[-34, 0, 62]} />
                     <Cannon position={[-12, 0, 66]} />
@@ -452,8 +470,47 @@ function Cannon({ position }: { position: [number, number, number] }) {
     );
 }
 
+/** Quick-firing field gun (the French 75 or British 18-pounder): grey steel, gun shield, recoil. */
+function FieldGun({ position }: { position: [number, number, number] }) {
+    const barrel = useRef<THREE.Group>(null!);
+    useFrame(({ clock }) => {
+        const t = (clock.elapsedTime + position[0] * 0.17) % 3;
+        barrel.current.position.z = t < 0.12 ? t * 5 : Math.max(0, 0.6 - (t - 0.12) * 1.2);
+    });
+    return (
+        <group position={position} rotation={[0, Math.PI, 0]}>
+            {/* trail resting on the ground */}
+            <mesh position={[0, 0.5, 1.6]} rotation={[-0.25, 0, 0]} castShadow>
+                <boxGeometry args={[0.4, 0.3, 3.2]} />
+                <meshStandardMaterial color="#4e5546" roughness={0.8} />
+            </mesh>
+            {[-0.9, 0.9].map((x) => (
+                <mesh key={x} position={[x, 0.85, 0]} rotation={[0, 0, Math.PI / 2]} castShadow>
+                    <cylinderGeometry args={[0.85, 0.85, 0.14, 16]} />
+                    <meshStandardMaterial color="#3d3326" roughness={1} />
+                </mesh>
+            ))}
+            {/* armoured gun shield */}
+            <mesh position={[0, 1.5, -0.25]} castShadow>
+                <boxGeometry args={[2.0, 1.5, 0.08]} />
+                <meshStandardMaterial color="#59614f" roughness={0.6} metalness={0.4} />
+            </mesh>
+            <group ref={barrel}>
+                <mesh position={[0, 1.45, -1.3]} rotation={[Math.PI / 2 - 0.06, 0, 0]} castShadow>
+                    <cylinderGeometry args={[0.11, 0.16, 2.8, 12]} />
+                    <meshStandardMaterial color="#3a3e40" roughness={0.4} metalness={0.8} />
+                </mesh>
+                <mesh position={[0, 1.4, 0.15]} castShadow>
+                    <boxGeometry args={[0.42, 0.4, 0.9]} />
+                    <meshStandardMaterial color="#2f3335" roughness={0.5} metalness={0.7} />
+                </mesh>
+            </group>
+        </group>
+    );
+}
+
 /** Rising white powder smoke where muskets fire. */
-function MusketSmoke({ sim }: { sim: BattleState }) {
+function MusketSmoke({ sim, color = '#efeae0' }: { sim: BattleState; color?: string }) {
     const ref = useRef<THREE.InstancedMesh>(null);
     const MAX = 220;
     useFrame(() => {
@@ -475,7 +532,7 @@ function MusketSmoke({ sim }: { sim: BattleState }) {
     return (
         <instancedMesh ref={ref} args={[undefined, undefined, MAX]} frustumCulled={false}>
             <icosahedronGeometry args={[0.7, 1]} />
-            <meshStandardMaterial color="#efeae0" transparent opacity={0.42} roughness={1} depthWrite={false} />
+            <meshStandardMaterial color={color} transparent opacity={0.42} roughness={1} depthWrite={false} />
         </instancedMesh>
     );
 }

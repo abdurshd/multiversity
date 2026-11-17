@@ -18,7 +18,7 @@ const UNION_BLUE = '#2b3f73';
 const CSA_GREY = '#8c8f92';
 
 // ─── Flags: canvas textures, gently waving cloth ────────────────────────────
-type FlagKind = 'us' | 'csa-battle' | 'csa-national';
+export type FlagKind = 'us' | 'us-1917' | 'csa-battle' | 'csa-national' | 'german-empire' | 'habsburg' | 'france' | 'uk';
 const flagTextures: Partial<Record<FlagKind, THREE.CanvasTexture>> = {};
 
 export function flagTexture(kind: FlagKind) {
@@ -38,7 +38,36 @@ export function flagTexture(kind: FlagKind) {
         g.closePath();
         g.fill();
     };
-    if (kind === 'us') {
+    const bands = (colors: string[], vertical = false) => {
+        colors.forEach((col, i) => {
+            g.fillStyle = col;
+            if (vertical) g.fillRect((i * 380) / colors.length, 0, 380 / colors.length + 1, 200);
+            else g.fillRect(0, (i * 200) / colors.length, 380, 200 / colors.length + 1);
+        });
+    };
+    if (kind === 'german-empire') {
+        bands(['#111111', '#f4f1ea', '#c8202c']);
+    } else if (kind === 'habsburg') {
+        bands(['#111111', '#f2c12e']);
+    } else if (kind === 'france') {
+        bands(['#22408f', '#f4f1ea', '#c4232f'], true);
+    } else if (kind === 'uk') {
+        g.fillStyle = '#1f2f6e';
+        g.fillRect(0, 0, 380, 200);
+        g.lineCap = 'butt';
+        g.strokeStyle = '#f4f1ea';
+        g.lineWidth = 40;
+        g.beginPath(); g.moveTo(0, 0); g.lineTo(380, 200); g.moveTo(380, 0); g.lineTo(0, 200); g.stroke();
+        g.strokeStyle = '#c8202c';
+        g.lineWidth = 13;
+        g.stroke();
+        g.strokeStyle = '#f4f1ea';
+        g.lineWidth = 64;
+        g.beginPath(); g.moveTo(190, 0); g.lineTo(190, 200); g.moveTo(0, 100); g.lineTo(380, 100); g.stroke();
+        g.strokeStyle = '#c8202c';
+        g.lineWidth = 38;
+        g.stroke();
+    } else if (kind === 'us' || kind === 'us-1917') {
         for (let i = 0; i < 13; i++) {
             g.fillStyle = i % 2 ? '#f4f1ea' : '#b22234';
             g.fillRect(0, (i * 200) / 13, 380, 200 / 13 + 1);
@@ -46,8 +75,13 @@ export function flagTexture(kind: FlagKind) {
         g.fillStyle = '#3c3b6e';
         g.fillRect(0, 0, 152, 108);
         g.fillStyle = '#f4f1ea';
-        // 34 stars in 1861
-        for (let r = 0; r < 5; r++) for (let k = 0; k < 7; k++) if (r * 7 + k < 34) star(12 + k * 21, 13 + r * 20, 6);
+        if (kind === 'us') {
+            // 34 stars in 1861
+            for (let r = 0; r < 5; r++) for (let k = 0; k < 7; k++) if (r * 7 + k < 34) star(12 + k * 21, 13 + r * 20, 6);
+        } else {
+            // 48 stars from 1912
+            for (let r = 0; r < 6; r++) for (let k = 0; k < 8; k++) star(10 + k * 18.5, 9 + r * 18, 5);
+        }
     } else if (kind === 'csa-battle') {
         g.fillStyle = '#b8202c';
         g.fillRect(0, 0, 380, 200);
@@ -459,7 +493,7 @@ export function Springfield() {
 }
 
 // ─── Washington, 1861: the unfinished Capitol dome ─────────────────────────
-function Capitol({ position }: { position: [number, number, number] }) {
+function Capitol({ position, finished = false }: { position: [number, number, number]; finished?: boolean }) {
     const ribs = useMemo(() => Array.from({ length: 16 }, (_, i) => (i / 16) * Math.PI * 2), []);
     return (
         <group position={position}>
@@ -477,7 +511,7 @@ function Capitol({ position }: { position: [number, number, number] }) {
                     <WindowGrid width={40} rows={2} cols={10} y0={4} rowGap={6} z={20.02} />
                     <Portico width={18} height={12} columns={6} position={[0, 2, 22]} />
                     {/* scaffolding: the wings were still being finished */}
-                    {s > 0 && Array.from({ length: 5 }, (_, i) => (
+                    {s > 0 && !finished && Array.from({ length: 5 }, (_, i) => (
                         <mesh key={i} position={[16 + i * 0.2, 9, 20.5 - i * 0.1]}>
                             <boxGeometry args={[0.2, 18, 0.2]} />
                             <meshStandardMaterial color="#6b5034" roughness={1} />
@@ -508,30 +542,58 @@ function Capitol({ position }: { position: [number, number, number] }) {
                 <cylinderGeometry args={[17, 17, 1.2, 32]} />
                 <meshStandardMaterial color={MARBLE} roughness={0.7} />
             </mesh>
-            {ribs.map((a, i) => (
-                <group key={`r${a}`} rotation={[0, a, 0]} position={[0, 35, 0]}>
-                    <mesh castShadow position={[11, i % 2 ? 3.5 : 5.5, 0]} rotation={[0, 0, i % 2 ? 0.5 : 0.75]}>
-                        <boxGeometry args={[0.5, i % 2 ? 7 : 11, 0.5]} />
-                        <meshStandardMaterial color="#3e4246" metalness={0.6} roughness={0.5} />
+            {finished ? (
+                <group position={[0, 35, 0]}>
+                    {/* the finished cast-iron dome, lantern and Statue of Freedom */}
+                    <mesh castShadow position={[0, 0, 0]}>
+                        <cylinderGeometry args={[14, 15.5, 6, 32]} />
+                        <meshStandardMaterial color={MARBLE} roughness={0.6} />
+                    </mesh>
+                    <mesh castShadow position={[0, 3, 0]} scale={[1, 1.15, 1]}>
+                        <sphereGeometry args={[14, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} />
+                        <meshStandardMaterial color="#f1eee7" roughness={0.55} />
+                    </mesh>
+                    <mesh castShadow position={[0, 20, 0]}>
+                        <cylinderGeometry args={[2.4, 2.6, 5, 16]} />
+                        <meshStandardMaterial color="#f1eee7" roughness={0.55} />
+                    </mesh>
+                    <mesh position={[0, 23.2, 0]}>
+                        <sphereGeometry args={[2.6, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2]} />
+                        <meshStandardMaterial color="#f1eee7" roughness={0.55} />
+                    </mesh>
+                    <mesh castShadow position={[0, 27, 0]}>
+                        <cylinderGeometry args={[0.5, 0.9, 4.4, 10]} />
+                        <meshStandardMaterial color="#3d4a44" metalness={0.6} roughness={0.4} />
                     </mesh>
                 </group>
-            ))}
-            {/* the construction crane on top */}
-            <mesh castShadow position={[0, 46, 0]}>
-                <boxGeometry args={[0.8, 22, 0.8]} />
-                <meshStandardMaterial color="#5a4632" roughness={1} />
-            </mesh>
-            <mesh castShadow position={[6, 56, 0]} rotation={[0, 0, -0.15]}>
-                <boxGeometry args={[18, 0.6, 0.6]} />
-                <meshStandardMaterial color="#5a4632" roughness={1} />
-            </mesh>
-            <Flag position={[-58, 16, 2]} kind="us" height={6} size={0.9} />
-            <Flag position={[58, 16, 2]} kind="us" height={6} size={0.9} />
+            ) : (
+                <>
+            {ribs.map((a, i) => (
+                    <group key={`r${a}`} rotation={[0, a, 0]} position={[0, 35, 0]}>
+                        <mesh castShadow position={[11, i % 2 ? 3.5 : 5.5, 0]} rotation={[0, 0, i % 2 ? 0.5 : 0.75]}>
+                            <boxGeometry args={[0.5, i % 2 ? 7 : 11, 0.5]} />
+                            <meshStandardMaterial color="#3e4246" metalness={0.6} roughness={0.5} />
+                        </mesh>
+                    </group>
+                ))}
+                {/* the construction crane on top */}
+                <mesh castShadow position={[0, 46, 0]}>
+                    <boxGeometry args={[0.8, 22, 0.8]} />
+                    <meshStandardMaterial color="#5a4632" roughness={1} />
+                </mesh>
+                <mesh castShadow position={[6, 56, 0]} rotation={[0, 0, -0.15]}>
+                    <boxGeometry args={[18, 0.6, 0.6]} />
+                    <meshStandardMaterial color="#5a4632" roughness={1} />
+                </mesh>
+                </>
+            )}
+            <Flag position={[-58, 16, 2]} kind={finished ? 'us-1917' : 'us'} height={6} size={0.9} />
+            <Flag position={[58, 16, 2]} kind={finished ? 'us-1917' : 'us'} height={6} size={0.9} />
         </group>
     );
 }
 
-function WhiteHouse({ position, rotation = 0 }: { position: [number, number, number]; rotation?: number }) {
+function WhiteHouse({ position, rotation = 0, flag = 'us' }: { position: [number, number, number]; rotation?: number; flag?: FlagKind }) {
     return (
         <group position={position} rotation={[0, rotation, 0]}>
             <mesh castShadow receiveShadow position={[0, 6.5, 0]}>
@@ -544,12 +606,14 @@ function WhiteHouse({ position, rotation = 0 }: { position: [number, number, num
                 <boxGeometry args={[47, 0.8, 23]} />
                 <meshStandardMaterial color="#e6e2d8" roughness={0.6} />
             </mesh>
-            <Flag position={[0, 13.8, 0]} kind="us" height={6} size={0.9} />
+            <Flag position={[0, 13.8, 0]} kind={flag} height={6} size={0.9} />
         </group>
     );
 }
 
-export function Washington1861() {
+export function Washington1861({ year = 1861 }: { year?: 1861 | 1917 }) {
+    const modern = year === 1917;
+    const usFlag: FlagKind = modern ? 'us-1917' : 'us';
     return (
         <group>
             {/* Pennsylvania Avenue, mud and cobbles */}
@@ -557,24 +621,31 @@ export function Washington1861() {
                 <planeGeometry args={[24, 200]} />
                 <meshStandardMaterial color="#8a7a62" roughness={1} />
             </mesh>
-            <Capitol position={[0, 0, -100]} />
-            <WhiteHouse position={[-70, 0, 70]} rotation={0.9} />
+            <Capitol position={[0, 0, -100]} finished={modern} />
+            <WhiteHouse position={[-70, 0, 70]} rotation={0.9} flag={usFlag} />
             {/* the Washington Monument stands a third finished, as it would until 1877 */}
             <group position={[95, 0, 40]}>
-                <mesh castShadow position={[0, 14, 0]}>
-                    <boxGeometry args={[7, 28, 7]} />
+                <mesh castShadow position={[0, modern ? 30 : 14, 0]} scale={modern ? [0.86, 1, 0.86] : [1, 1, 1]}>
+                    <boxGeometry args={[7, modern ? 60 : 28, 7]} />
                     <meshStandardMaterial color="#e6e0d2" roughness={0.8} />
                 </mesh>
-                <mesh position={[0, 28.4, 0]}>
-                    <boxGeometry args={[6.2, 0.8, 6.2]} />
-                    <meshStandardMaterial color="#cfc6b2" roughness={0.9} />
-                </mesh>
+                {modern ? (
+                    <mesh castShadow position={[0, 62.5, 0]} rotation={[0, Math.PI / 4, 0]}>
+                        <coneGeometry args={[4.2, 5, 4]} />
+                        <meshStandardMaterial color="#e6e0d2" roughness={0.8} />
+                    </mesh>
+                ) : (
+                    <mesh position={[0, 28.4, 0]}>
+                        <boxGeometry args={[6.2, 0.8, 6.2]} />
+                        <meshStandardMaterial color="#cfc6b2" roughness={0.9} />
+                    </mesh>
+                )}
             </group>
             {/* Union volunteers camped on the Mall */}
-            <Tents position={[60, 0, -20]} count={18} color="#efeadc" seed={7} />
-            <Tents position={[-60, 0, -24]} count={14} color="#efeadc" seed={8} />
+            {!modern && <Tents position={[60, 0, -20]} count={18} color="#efeadc" seed={7} />}
+            {!modern && <Tents position={[-60, 0, -24]} count={14} color="#efeadc" seed={8} />}
             {[[-16, 10], [16, 10], [-16, 40], [16, 40]].map(([x, z]) => (
-                <Flag key={`${x}${z}`} position={[x, 0, z]} kind="us" height={9} />
+                <Flag key={`${x}${z}`} position={[x, 0, z]} kind={usFlag} height={9} />
             ))}
             <FrameHouses seed={81} count={34} inner={110} outer={190} />
             <Citizens count={60} radius={30} seed={82} style="colonial" />

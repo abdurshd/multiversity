@@ -49,6 +49,21 @@
           "label": "Nayzalarni taq",
           "description": "Piyoda va otliqlar 7 soniya hujumga tashlanadi, 40% kuchliroq uradi"
         }
+      },
+      "modern": {
+        "aim_hint": "Artilleriya zarbasini chaqirish uchun jang maydonini bosing · bekor qilish uchun Esc",
+        "rally": {
+          "label": "Ofitser hushtaklari",
+          "description": "Ofitserlar askarlarni yig'adi: saflar tiklanadi, 8 soniya hujum +15%, mudofaa +20%"
+        },
+        "strike": {
+          "label": "Artilleriya zarbasi",
+          "description": "Joyni tanlang: u yerga 8 ta portlovchi snaryad tushadi"
+        },
+        "charge": {
+          "label": "Xandaqdan hujumga",
+          "description": "Piyoda va otliqlar 7 soniya xandaqdan chiqib hujum qiladi, 40% kuchliroq uradi"
+        }
       }
     }
   },

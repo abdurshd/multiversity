@@ -3,6 +3,7 @@
    so whole armies render as a single InstancedMesh draw call. */
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
+import type { Helmet } from '../types';
 
 const SKIN = '#d8a77a';
 const STEEL = '#9aa3ad';
@@ -11,10 +12,12 @@ const WOOD = '#7a5a3a';
 const WOOD_DARK = '#5e4426';
 
 /** Paint a geometry with a flat vertex color (so merge keeps per-part colors). */
-function tint(geom: THREE.BufferGeometry, color: string): THREE.BufferGeometry {
+function tint(geom: THREE.BufferGeometry, color: string, exact = false): THREE.BufferGeometry {
     const c = new THREE.Color(color);
     // convert to match sRGB rendering of material colors
-    c.convertSRGBToLinear();
+    // (THREE.Color already converts hex to linear, so this darkens again: the older
+    //  figures were tuned with it; `exact` skips it so dark khaki and field grey survive)
+    if (!exact) c.convertSRGBToLinear();
     const count = geom.attributes.position.count;
     const arr = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) {
@@ -104,7 +107,7 @@ export function buildArcher(p: ArmyPalette): THREE.BufferGeometry {
 }
 
 // ─── Cavalry: full horse (head, neck, legs, tail, saddle) + armored rider ──
-export function buildCavalry(p: ArmyPalette, horseColor = '#6b4a2f'): THREE.BufferGeometry {
+function horseParts(p: ArmyPalette, horseColor: string): THREE.BufferGeometry[] {
     const horseDark = `#${new THREE.Color(horseColor).offsetHSL(0, 0, -0.08).getHexString()}`;
     const legs: THREE.BufferGeometry[] = [];
     const legPos: [number, number][] = [[-0.22, 0.55], [0.22, 0.55], [-0.22, -0.62], [0.22, -0.62]];
@@ -112,7 +115,7 @@ export function buildCavalry(p: ArmyPalette, horseColor = '#6b4a2f'): THREE.Buff
         legs.push(part(new THREE.CylinderGeometry(0.07, 0.055, 0.85, 6), horseDark, [x, 0.42, z]));
         legs.push(part(new THREE.CylinderGeometry(0.075, 0.075, 0.1, 6), '#2e2218', [x, 0.05, z]));
     }
-    return merge([
+    return [
         // body (capsule lying along z)
         part(new THREE.CapsuleGeometry(0.34, 1.0, 4, 8), horseColor, [0, 1.05, 0], [Math.PI / 2, 0, 0]),
         // chest + rump bulges
@@ -132,6 +135,12 @@ export function buildCavalry(p: ArmyPalette, horseColor = '#6b4a2f'): THREE.Buff
         // saddle blanket (accent) + saddle
         part(new THREE.BoxGeometry(0.78, 0.1, 0.85), p.accent, [0, 1.32, -0.05]),
         part(new THREE.BoxGeometry(0.4, 0.12, 0.5), WOOD_DARK, [0, 1.42, -0.05]),
+    ];
+}
+
+export function buildCavalry(p: ArmyPalette, horseColor = '#6b4a2f'): THREE.BufferGeometry {
+    return merge([
+        ...horseParts(p, horseColor),
         // rider: legs hidden by horse — torso, chest, head, helmet
         part(new THREE.CylinderGeometry(0.24, 0.3, 0.55, 8), p.cloth, [0, 1.72, -0.05]),
         part(new THREE.CylinderGeometry(0.26, 0.24, 0.34, 8), STEEL_DARK, [0, 2.0, -0.05]),
@@ -291,4 +300,157 @@ export function buildColonistHead(): THREE.BufferGeometry {
         part(new THREE.SphereGeometry(0.16, 8, 7), SKIN, [0, 0, 0]),
         ...tricorne(0.14),
     ]);
+}
+
+// ─── Modern era (1914 onward): helmets, puttees, bolt-action rifles ────────
+const WEBBING = '#8a7a58';
+
+/** Like part(), but with exact colors (see tint). */
+function mpart(
+    geom: THREE.BufferGeometry,
+    color: string,
+    pos: [number, number, number],
+    rot?: [number, number, number],
+    scale?: [number, number, number]
+): THREE.BufferGeometry {
+    if (scale) geom.scale(...scale);
+    if (rot) {
+        geom.rotateX(rot[0]);
+        geom.rotateY(rot[1]);
+        geom.rotateZ(rot[2]);
+    }
+    geom.translate(...pos);
+    return tint(geom, color, true);
+}
+
+
+function helmetParts(kind: Helmet, y: number, cloth: string): THREE.BufferGeometry[] {
+    switch (kind) {
+        case 'brodie': {
+            const c = '#5e6248';
+            return [
+                mpart(new THREE.CylinderGeometry(0.31, 0.31, 0.025, 12), c, [0, y, 0]),
+                mpart(new THREE.SphereGeometry(0.17, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2), c, [0, y, 0], undefined, [1, 0.75, 1]),
+            ];
+        }
+        case 'adrian': {
+            const c = '#6f7f92';
+            return [
+                mpart(new THREE.SphereGeometry(0.18, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2), c, [0, y, 0]),
+                mpart(new THREE.CylinderGeometry(0.24, 0.25, 0.025, 12), c, [0, y, 0], undefined, [1, 1, 1.15]),
+                mpart(new THREE.BoxGeometry(0.035, 0.07, 0.3), c, [0, y + 0.18, 0]),
+            ];
+        }
+        case 'stahlhelm': {
+            const c = '#5b5f58';
+            return [
+                mpart(new THREE.SphereGeometry(0.2, 10, 7, 0, Math.PI * 2, 0, Math.PI / 2), c, [0, y - 0.02, -0.01], undefined, [1, 0.95, 1.05]),
+                // the flared "coal scuttle" skirt over the ears and neck
+                mpart(new THREE.CylinderGeometry(0.2, 0.25, 0.14, 12, 1, true), c, [0, y - 0.08, -0.02]),
+                mpart(new THREE.BoxGeometry(0.3, 0.02, 0.08), c, [0, y - 0.02, 0.19], [0.3, 0, 0]),
+            ];
+        }
+        case 'pickelhaube': {
+            const c = '#1c1c1e';
+            return [
+                mpart(new THREE.SphereGeometry(0.18, 10, 7, 0, Math.PI * 2, 0, Math.PI / 2), c, [0, y - 0.02, 0], undefined, [1, 1.15, 1.05]),
+                mpart(new THREE.BoxGeometry(0.26, 0.02, 0.1), c, [0, y - 0.02, 0.17]),
+                mpart(new THREE.CylinderGeometry(0.035, 0.05, 0.05, 6), '#c8a24a', [0, y + 0.2, 0]),
+                mpart(new THREE.ConeGeometry(0.03, 0.14, 6), '#c8a24a', [0, y + 0.29, 0]),
+                mpart(new THREE.CircleGeometry(0.06, 6), '#c8a24a', [0, y + 0.06, 0.19]),
+            ];
+        }
+        default:
+            return [
+                mpart(new THREE.CylinderGeometry(0.15, 0.16, 0.16, 10), cloth, [0, y + 0.04, 0], [-0.15, 0, 0]),
+                mpart(new THREE.BoxGeometry(0.22, 0.02, 0.12), '#1c1c1e', [0, y - 0.03, 0.14]),
+            ];
+    }
+}
+
+/** Infantryman: tunic, webbing, puttees, pack, helmet, rifle with bayonet held at the port. */
+export function buildTrenchSoldier(p: ArmyPalette, helmet: Helmet = 'brodie'): THREE.BufferGeometry {
+    const dark = `#${new THREE.Color(p.cloth).offsetHSL(0, 0, -0.08).getHexString()}`;
+    return merge([
+        // boots + wrapped puttees
+        mpart(new THREE.BoxGeometry(0.14, 0.1, 0.24), '#2a1f16', [-0.1, 0.05, 0.04]),
+        mpart(new THREE.BoxGeometry(0.14, 0.1, 0.24), '#2a1f16', [0.1, 0.05, 0.04]),
+        mpart(new THREE.CylinderGeometry(0.075, 0.07, 0.4, 6), dark, [-0.1, 0.3, 0]),
+        mpart(new THREE.CylinderGeometry(0.075, 0.07, 0.4, 6), dark, [0.1, 0.3, 0]),
+        // breeches + tunic skirt + body
+        mpart(new THREE.CylinderGeometry(0.24, 0.2, 0.3, 8), p.cloth, [0, 0.62, 0]),
+        mpart(new THREE.CylinderGeometry(0.29, 0.3, 0.26, 8), p.cloth, [0, 0.86, 0]),
+        mpart(new THREE.CylinderGeometry(0.28, 0.29, 0.5, 8), p.cloth, [0, 1.18, 0]),
+        // belt, cross straps, ammunition pouches
+        mpart(new THREE.CylinderGeometry(0.3, 0.3, 0.07, 8), WEBBING, [0, 0.98, 0]),
+        mpart(new THREE.BoxGeometry(0.06, 0.62, 0.03), WEBBING, [0.1, 1.2, 0.27], [0, 0, 0.2]),
+        mpart(new THREE.BoxGeometry(0.06, 0.62, 0.03), WEBBING, [-0.1, 1.2, 0.27], [0, 0, -0.2]),
+        mpart(new THREE.BoxGeometry(0.14, 0.12, 0.08), WEBBING, [-0.16, 1.0, 0.27]),
+        mpart(new THREE.BoxGeometry(0.14, 0.12, 0.08), WEBBING, [0.16, 1.0, 0.27]),
+        // collar badge (army accent)
+        mpart(new THREE.BoxGeometry(0.2, 0.06, 0.04), p.accent, [0, 1.42, 0.2]),
+        // pack + rolled groundsheet + entrenching tool
+        mpart(new THREE.BoxGeometry(0.36, 0.34, 0.16), WEBBING, [0, 1.16, -0.3]),
+        mpart(new THREE.CapsuleGeometry(0.07, 0.3, 3, 6), dark, [0, 1.38, -0.3], [0, 0, Math.PI / 2]),
+        mpart(new THREE.BoxGeometry(0.1, 0.18, 0.03), '#4a3a28', [0.12, 0.86, -0.3]),
+        // shoulders + arms angled forward to the rifle
+        mpart(new THREE.SphereGeometry(0.11, 6, 5), p.cloth, [-0.29, 1.36, 0]),
+        mpart(new THREE.SphereGeometry(0.11, 6, 5), p.cloth, [0.29, 1.36, 0]),
+        mpart(new THREE.CylinderGeometry(0.065, 0.06, 0.48, 6), p.cloth, [-0.24, 1.18, 0.18], [0.9, 0, -0.35]),
+        mpart(new THREE.CylinderGeometry(0.065, 0.06, 0.48, 6), p.cloth, [0.27, 1.12, 0.12], [0.6, 0, 0.2]),
+        // head
+        mpart(new THREE.SphereGeometry(0.15, 8, 7), SKIN, [0, 1.58, 0]),
+        ...helmetParts(helmet, 1.66, p.cloth),
+        // rifle carried across the body at the port, bayonet fixed
+        mpart(new THREE.CylinderGeometry(0.03, 0.035, 1.25, 5), WOOD_DARK, [0, 1.22, 0.36], [0.35, 0, -0.9]),
+        mpart(new THREE.CylinderGeometry(0.018, 0.018, 0.5, 4), STEEL_DARK, [-0.5, 1.6, 0.48], [0.35, 0, -0.9]),
+        mpart(new THREE.ConeGeometry(0.02, 0.36, 4), STEEL, [-0.8, 1.8, 0.56], [0.35, 0, -0.9]),
+    ]);
+}
+
+/** Machine-gun team: one gunner kneeling behind a water-cooled gun on a tripod. */
+export function buildMachineGunner(p: ArmyPalette, helmet: Helmet = 'brodie'): THREE.BufferGeometry {
+    return merge([
+        // kneeling legs
+        mpart(new THREE.BoxGeometry(0.2, 0.18, 0.5), p.cloth, [-0.12, 0.09, -0.05]),
+        mpart(new THREE.CylinderGeometry(0.075, 0.07, 0.38, 6), p.cloth, [0.12, 0.22, 0.12], [0.3, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.27, 0.27, 0.46, 8), p.cloth, [0, 0.62, -0.08], [0.25, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.29, 0.29, 0.07, 8), WEBBING, [0, 0.45, -0.1]),
+        mpart(new THREE.SphereGeometry(0.15, 8, 7), SKIN, [0, 1.0, 0.04]),
+        ...helmetParts(helmet, 1.08, p.cloth),
+        mpart(new THREE.CylinderGeometry(0.06, 0.06, 0.42, 6), p.cloth, [-0.2, 0.74, 0.22], [1.2, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.06, 0.06, 0.42, 6), p.cloth, [0.2, 0.74, 0.22], [1.2, 0, 0]),
+        // tripod
+        mpart(new THREE.CylinderGeometry(0.02, 0.02, 0.7, 4), STEEL_DARK, [0, 0.3, 0.75], [0.5, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.02, 0.02, 0.6, 4), STEEL_DARK, [-0.2, 0.28, 0.5], [-0.3, 0, 0.5]),
+        mpart(new THREE.CylinderGeometry(0.02, 0.02, 0.6, 4), STEEL_DARK, [0.2, 0.28, 0.5], [-0.3, 0, -0.5]),
+        // receiver, water jacket, muzzle, ammunition belt box
+        mpart(new THREE.BoxGeometry(0.16, 0.16, 0.34), '#2b2d2f', [0, 0.66, 0.5]),
+        mpart(new THREE.CylinderGeometry(0.075, 0.075, 0.6, 10), '#3a3d40', [0, 0.68, 0.95], [Math.PI / 2, 0, 0]),
+        mpart(new THREE.CylinderGeometry(0.03, 0.04, 0.12, 6), '#1e1f20', [0, 0.68, 1.3], [Math.PI / 2, 0, 0]),
+        mpart(new THREE.BoxGeometry(0.18, 0.16, 0.26), '#4f5a3a', [0.28, 0.12, 0.5]),
+        // sandbag lip in front of the gun
+        mpart(new THREE.CapsuleGeometry(0.1, 0.5, 3, 6), '#a8956c', [0, 0.1, 1.15], [0, 0, Math.PI / 2]),
+    ]);
+}
+
+/** 1914 cavalry: horse and rider in field uniform with helmet, lance and carbine. */
+export function buildModernCavalry(p: ArmyPalette, helmet: Helmet = 'brodie', horseColor = '#5a3e28'): THREE.BufferGeometry {
+    return merge([
+        ...horseParts(p, horseColor),
+        mpart(new THREE.CylinderGeometry(0.24, 0.3, 0.55, 8), p.cloth, [0, 1.72, -0.05]),
+        mpart(new THREE.CylinderGeometry(0.26, 0.24, 0.34, 8), p.cloth, [0, 2.0, -0.05]),
+        mpart(new THREE.BoxGeometry(0.06, 0.5, 0.03), WEBBING, [0, 1.95, 0.2], [0, 0, 0.5]),
+        mpart(new THREE.SphereGeometry(0.15, 8, 7), SKIN, [0, 2.26, -0.05]),
+        ...helmetParts(helmet, 2.34, p.cloth),
+        mpart(new THREE.CylinderGeometry(0.02, 0.02, 2.6, 5), '#6e6a5e', [0.4, 1.95, 0], [0.18, 0, 0]),
+        mpart(new THREE.ConeGeometry(0.04, 0.2, 6), STEEL, [0.45, 3.22, 0.23]),
+        mpart(new THREE.BoxGeometry(0.02, 0.12, 0.3), p.accent, [0.42, 3.0, 0.32]),
+        mpart(new THREE.CylinderGeometry(0.025, 0.025, 0.9, 5), WOOD_DARK, [-0.36, 1.45, -0.2], [0.3, 0, 0]),
+    ]);
+}
+
+/** Rifle bullet / shell fragment (modern projectiles are tiny and fast). */
+export function buildBullet(): THREE.BufferGeometry {
+    return merge([mpart(new THREE.CapsuleGeometry(0.04, 0.12, 2, 4), '#c9a24a', [0, 0, 0])]);
 }

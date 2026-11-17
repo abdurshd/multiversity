@@ -49,6 +49,21 @@
           "label": "Fix bayonets",
           "description": "Infantry and horse charge in for 7 s, hitting 40% harder"
         }
+      },
+      "modern": {
+        "aim_hint": "Click the battlefield to call in the barrage · Esc to cancel",
+        "rally": {
+          "label": "Officers' whistles",
+          "description": "Officers rally the men: heal the ranks, +15% attack, +20% defense for 8 s"
+        },
+        "strike": {
+          "label": "Artillery barrage",
+          "description": "Click a spot: 8 high-explosive shells land there"
+        },
+        "charge": {
+          "label": "Over the top",
+          "description": "Infantry and horse go over the top for 7 s, hitting 40% harder"
+        }
       }
     }
   },

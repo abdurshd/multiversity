@@ -14,6 +14,7 @@ import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
 import { MarengoField, ParisBastille, ParisTerror, ValmyField, Varennes } from './revolution';
 import { AntietamField, CharlestonHarbor, FordsTheatre, GettysburgField, Springfield, Washington1861 } from './civilwar';
+import { Berlin1914, Compiegne, Marne1914, Sarajevo1914, WesternFront } from './greatwar';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
 // ─── Environment settings ──────────────────────────────────────────────────
@@ -142,6 +143,36 @@ const ENV: Record<EnvironmentId, EnvDef> = {
         sunPos: [10, 80, 30], ambient: 0.3, ground: '#3a2c22', groundVar: '#30241c',
         disc: { pos: [-200, 260, -300], color: '#eef2ff', size: 14 }, clouds: false,
     },
+    'sarajevo-1914': {
+        skyTop: '#5b8cc6', skyHorizon: '#eadfc6', fog: '#d8d0bc', sun: '#fff0d0',
+        sunPos: [60, 90, 50], ambient: 0.5, ground: '#8c8a6a', groundVar: '#7d7a5c',
+        disc: { pos: [240, 300, 180], color: '#fff6e0', size: 26 }, clouds: true,
+    },
+    'berlin-1914': {
+        skyTop: '#6c7f98', skyHorizon: '#cfcabe', fog: '#bfbbb2', sun: '#f4e6cc',
+        sunPos: [-60, 70, 60], ambient: 0.48, ground: '#7a7c6a', groundVar: '#6c6e5e',
+        disc: { pos: [-240, 220, 220], color: '#fbf0dc', size: 22 }, clouds: true,
+    },
+    'marne-1914': {
+        skyTop: '#6d8fb8', skyHorizon: '#e4dcc4', fog: '#d4cfbc', sun: '#ffeac0',
+        sunPos: [70, 70, 60], ambient: 0.5, ground: '#86964f', groundVar: '#9c9a55',
+        disc: { pos: [280, 220, 240], color: '#fff2d2', size: 24 }, clouds: true,
+    },
+    'western-front': {
+        skyTop: '#5a5f68', skyHorizon: '#a8a69c', fog: '#8f8c84', sun: '#d8d2c4',
+        sunPos: [40, 70, 60], ambient: 0.46, ground: '#5a4a38', groundVar: '#4a3d2e',
+        disc: { pos: [160, 240, 260], color: '#e8e2d4', size: 18 }, clouds: true,
+    },
+    'compiegne': {
+        skyTop: '#4a5468', skyHorizon: '#c9b8a4', fog: '#a9a39a', sun: '#ffd8a8',
+        sunPos: [-70, 24, -60], ambient: 0.42, ground: '#5d6a44', groundVar: '#4f5a3a',
+        disc: { pos: [-280, 80, -260], color: '#ffe0b8', size: 20 }, clouds: true,
+    },
+    'washington-1917': {
+        skyTop: '#5e86b4', skyHorizon: '#e2ddd0', fog: '#d4d2c8', sun: '#fff1d6',
+        sunPos: [70, 90, 60], ambient: 0.5, ground: '#86955c', groundVar: '#73824c',
+        disc: { pos: [260, 300, 200], color: '#fff6e0', size: 26 }, clouds: true,
+    },
 };
 
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter']);
@@ -168,7 +199,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             <ambientLight intensity={env.ambient * 0.45} />
             <directionalLight
                 position={env.sunPos}
-                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : environment === 'fords-theatre' ? 0.25 : environment === 'springfield' || environment === 'charleston-harbor' ? 1.5 : 2.1}
+                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : environment === 'fords-theatre' ? 0.25 : environment === 'western-front' ? 1.3 : environment === 'compiegne' ? 1.2 : environment === 'springfield' || environment === 'charleston-harbor' ? 1.5 : 2.1}
                 color={env.sun}
                 castShadow
                 shadow-mapSize={[2048, 2048]}
@@ -224,6 +255,18 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <GettysburgField />
             ) : environment === 'fords-theatre' ? (
                 <FordsTheatre />
+            ) : environment === 'sarajevo-1914' ? (
+                <Sarajevo1914 />
+            ) : environment === 'berlin-1914' ? (
+                <Berlin1914 />
+            ) : environment === 'marne-1914' ? (
+                <Marne1914 />
+            ) : environment === 'western-front' ? (
+                <WesternFront />
+            ) : environment === 'compiegne' ? (
+                <Compiegne />
+            ) : environment === 'washington-1917' ? (
+                <Washington1861 year={1917} />
             ) : (
                 <AnatoliaField />
             )}
