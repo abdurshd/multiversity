@@ -1,4 +1,5 @@
 /* World renderer: composes the stylized environments used by experience beats. */
+import { AiWorld } from '../ai/AiWorld';
 import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Environment, Html, Lightformer } from '@react-three/drei';
@@ -40,7 +41,7 @@ interface EnvDef {
     clouds: boolean;
 }
 
-const ENV: Record<Exclude<EnvironmentId, `covid-${string}`>, EnvDef> = {
+const ENV: Record<Exclude<EnvironmentId, `covid-${string}` | 'ai-campus' | 'ai-control' | 'ai-datacenter'>, EnvDef> = {
     'senate-1825': {
         skyTop:'#5e7894', skyHorizon:'#d9dfe4', fog:'#c8d2da', sun:'#fff0d6', sunPos:[-60,60,40], ambient:.6, ground:'#dce4e9', groundVar:'#c8d3dd', disc:{pos:[-250,210,170],color:'#fff2dd',size:22}, clouds:true,
     },
@@ -266,6 +267,7 @@ const WINTER = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'winte
 
 export function WorldScene({ environment }: { environment: EnvironmentId }) {
     if (environment === 'covid-hospital' || environment === 'covid-depot' || environment === 'covid-briefing') return <CovidWorld environment={environment} />;
+    if (environment === 'ai-campus' || environment === 'ai-control' || environment === 'ai-datacenter') return <AiWorld environment={environment} />;
     const env = ENV[environment];
     return (
         <group>

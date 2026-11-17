@@ -1,6 +1,9 @@
 import enExperienceLenin from './locales/en/experience/lenin-revolution.json';
 import uzExperienceLenin from './locales/uz/experience/lenin-revolution.json';
 import koExperienceLenin from './locales/ko/experience/lenin-revolution.json';
+import enExperienceAi from './locales/en/experience/ai-revolution.json';
+import uzExperienceAi from './locales/uz/experience/ai-revolution.json';
+import koExperienceAi from './locales/ko/experience/ai-revolution.json';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -278,6 +281,7 @@ i18n
                 'experience-lenin-revolution': enExperienceLenin,
                 'experience-ussr-collapse': enExperienceUssr,
                 'experience-covid-pandemic': enExperienceCovid,
+                'experience-ai-revolution': enExperienceAi,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -314,6 +318,7 @@ i18n
                 'experience-lenin-revolution': uzExperienceLenin,
                 'experience-ussr-collapse': uzExperienceUssr,
                 'experience-covid-pandemic': uzExperienceCovid,
+                'experience-ai-revolution': uzExperienceAi,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -350,6 +355,7 @@ i18n
                 'experience-lenin-revolution': koExperienceLenin,
                 'experience-ussr-collapse': koExperienceUssr,
                 'experience-covid-pandemic': koExperienceCovid,
+                'experience-ai-revolution': koExperienceAi,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -390,6 +396,7 @@ i18n
             'experience-lenin-revolution',
             'experience-ussr-collapse',
             'experience-covid-pandemic',
+            'experience-ai-revolution',
             'pages-simulation-hub',
         ],
         interpolation: {

@@ -1,0 +1,352 @@
+{
+  "title": "The Release Room",
+  "era": "2032 · A fictional near-future exercise",
+  "beats": {
+    "arrival": {
+      "narration": [
+        {
+          "speaker": "FICTIONAL SCENARIO",
+          "text": "2032. At the fictional Meridian research cooperative, a public-service assistant is approaching release. You chair the readiness review. This is not a forecast or a claim about any real AI product."
+        },
+        {
+          "speaker": "Mina · evaluation lead",
+          "text": "It can draft useful answers. It can also give confident wrong ones. Inspect the evidence, fund two tests, and decide who carries the risk. There is no countdown and no perfect score."
+        }
+      ]
+    },
+    "evidence": {
+      "prompt": "Visit all three review stations. Read the finding, not just the headline.",
+      "hotspots": {
+        "eval": {
+          "label": "Evaluation lab",
+          "title": "Averages conceal gaps",
+          "description": "Fictional test: 920 of 1,000 routine answers were judged correct. Only 24 of 40 regional-language cases were correct. The small subgroup sample is uncertain; the overall score cannot establish readiness for every community."
+        },
+        "workers": {
+          "label": "Worker council",
+          "title": "Oversight needs paid time",
+          "description": "The worker council reports that reviewers can check 30 answers per hour, while the planned queue sends 90. A nominal human reviewer is not meaningful oversight without staffing, training and authority to stop the system."
+        },
+        "public": {
+          "label": "Public forum",
+          "title": "Benefits and an appeal route",
+          "description": "Residents want shorter waits, accessible language support and a human alternative. One resident asks: “If the assistant misdirects my application, who will correct it?” A pilot can teach you something, but its participants still bear real burdens inside this story."
+        }
+      }
+    },
+    "evaluation": {
+      "prompt": "Fund a pair. The omitted test remains an explicit uncertainty, not a passing result. No choice proves the system safe.",
+      "title": "Two test slots. Three unanswered questions.",
+      "options": {
+        "people": {
+          "label": "Language + recovery",
+          "description": "Test underserved cases and rehearse rollback. Permission-boundary testing remains incomplete."
+        },
+        "systems": {
+          "label": "Permissions + recovery",
+          "description": "Test tool access and rehearse rollback. Regional-language evidence remains thin."
+        },
+        "coverage": {
+          "label": "Language + permissions",
+          "description": "Broaden evidence about users and tool access. Recovery remains an untested procedure."
+        }
+      }
+    },
+    "release": {
+      "prompt": "Your selected tests reveal issues, not a green light. What may the system do while those issues are addressed?",
+      "title": "Sign the release boundary",
+      "options": {
+        "pilot": {
+          "label": "Staffed, read-only pilot",
+          "description": "Limit to 100 volunteers, retain the human service and cap review volume at staff capacity. Slower access; a smaller exposure boundary."
+        },
+        "hold": {
+          "label": "Hold public release",
+          "description": "Keep testing offline and fund manual support. No public AI exposure, but queues and operating costs remain."
+        },
+        "wide": {
+          "label": "Broad release with tool access",
+          "description": "Offer faster service to 10,000 fictional residents despite known gaps. Reviewers will be overloaded; the release is not evidence-backed."
+        }
+      }
+    },
+    "pilot-signal": {
+      "narration": [
+        {
+          "speaker": "Jon · incident lead",
+          "text": "Pilot feedback: several volunteers received a fabricated office address. Read-only access prevented record changes, not misinformation. The staffed queue catches the report. The release decision must now become an operating decision."
+        }
+      ]
+    },
+    "drill-signal": {
+      "narration": [
+        {
+          "speaker": "Jon · incident lead",
+          "text": "Offline drill: the assistant fabricates an office address and attempts a record update. No resident is exposed. This rehearsal tests whether your team can isolate a faulty release without losing the evidence needed to learn."
+        }
+      ]
+    },
+    "wide-signal": {
+      "narration": [
+        {
+          "speaker": "Jon · incident lead",
+          "text": "Public incident: fabricated addresses are spreading through a queue the review team cannot cover. Tool-enabled requests may have changed records. The extent is unknown. A good aggregate test score is not an incident response plan."
+        }
+      ]
+    },
+    "incident": {
+      "prompt": "Inspect the incident console before choosing a response. Preserve evidence; distinguish verified facts from assumptions.",
+      "hotspots": {
+        "trace": {
+          "label": "Event trace",
+          "title": "What do you actually know?",
+          "description": "The trace confirms invented addresses. It does not establish the full scope of affected requests. Preserve access-controlled logs, identify the release version and verify downstream changes. Do not publish personal records."
+        },
+        "recovery": {
+          "label": "Recovery console",
+          "title": "Rollback is a procedure, not a button",
+          "description": "First freeze new work and retain evidence. Then restore the last reviewed version or manual service. Finally verify routing and affected records. A previous rehearsal reduces recovery uncertainty but does not remove the need to check."
+        },
+        "support": {
+          "label": "Support desk",
+          "title": "People need correction, not reassurance",
+          "description": "Give affected people a staffed contact and a correction route. Tell them what is known, unknown and being checked. Keep worker time funded. A silent patch leaves them carrying the consequences."
+        }
+      }
+    },
+    "response": {
+      "prompt": "The next controls enact your response. Work already done outside the system cannot be undone by a model rollback.",
+      "title": "Choose the incident boundary",
+      "options": {
+        "rollback": {
+          "label": "Freeze and restore",
+          "description": "Stop new requests, preserve logs, restore manual service and verify the route. Accept downtime while correcting affected work."
+        },
+        "isolate": {
+          "label": "Isolate the failing route",
+          "description": "Disable the affected feature and tool access; keep other read-only service under staffed review. Unknown failure scope still matters."
+        },
+        "continue": {
+          "label": "Patch while continuing",
+          "description": "Keep throughput while changing the prompt. The failure scope is still unknown, and the original exposure remains."
+        }
+      }
+    },
+    "recovery-check": {
+      "prompt": "Execute the recovery checklist in order. Each completed control is recorded once.",
+      "hotspots": {
+        "freeze": {
+          "label": "Freeze + preserve",
+          "title": "1 · Freeze + preserve",
+          "description": "New model requests are paused. Restricted logs and the release identifier are retained for investigation. Existing affected work still needs review."
+        },
+        "restore": {
+          "label": "Restore human service",
+          "title": "2 · Restore human service",
+          "description": "The model route is disconnected. Requests return to the staffed manual queue. This protects new requests, but increases waiting time."
+        },
+        "verify": {
+          "label": "Verify + reconcile",
+          "title": "3 · Verify + reconcile",
+          "description": "A test request reaches the human queue. The team begins reconciling earlier outputs and any record changes. Recovery is verified; remediation continues."
+        }
+      }
+    },
+    "accountability": {
+      "prompt": "Choose the review structure and public record. Your earlier decisions remain in the outcome.",
+      "title": "Who can challenge the next release?",
+      "options": {
+        "public": {
+          "label": "Publish limits; fund independent review",
+          "description": "Name an accountable owner, publish non-personal findings, staff appeals and give workers and residents a seat in the next review. This costs time and money."
+        },
+        "internal": {
+          "label": "Keep review inside the launch team",
+          "description": "Reduce review overhead and make a short assurance statement. Affected people cannot inspect the findings or challenge the next release."
+        }
+      }
+    }
+  },
+  "endings": {
+    "exposure": {
+      "title": "The unfinished incident",
+      "subtitle": "Continuing service is not the same as resolving harm.",
+      "epilogue": [
+        {
+          "text": "In this fictional outcome, new requests remain exposed while the team investigates. Public review can improve the next decision, but cannot retroactively protect today’s users. Revisit the response boundary."
+        }
+      ]
+    },
+    "closed": {
+      "title": "An unaccountable release gate",
+      "subtitle": "A technical fix without a public correction route.",
+      "epilogue": [
+        {
+          "text": "In this fictional outcome, the launch team retains control of the evidence. Even a cautious deployment or successful rollback leaves residents and workers without a meaningful voice in the next review."
+        }
+      ]
+    },
+    "hold": {
+      "title": "A deliberate pause",
+      "subtitle": "No public deployment, but unmet needs remain.",
+      "epilogue": [
+        {
+          "text": "In this fictional outcome, testing stays offline, human support continues and the review becomes contestable. Delaying is not cost-free. Publish milestones for the missing evidence instead of promising an arbitrary launch date."
+        }
+      ]
+    },
+    "staged": {
+      "title": "A bounded, answerable pilot",
+      "subtitle": "Useful service is earned through continued review.",
+      "epilogue": [
+        {
+          "text": "In this fictional outcome, a small release boundary and rehearsed recovery limit exposure. Residents receive corrections and workers keep stop authority. This is a process for learning and repair, not proof that alignment is solved."
+        }
+      ]
+    },
+    "repair": {
+      "title": "The long work of repair",
+      "subtitle": "The incident is bounded; trust is not restored by a switch.",
+      "epilogue": [
+        {
+          "text": "In this fictional outcome, the team contains the route and opens its decisions to scrutiny. Broad exposure or an unrehearsed recovery makes correction harder. Keep manual support and investigate before another expansion."
+        }
+      ]
+    }
+  },
+  "ui": {
+    "exit": "Exit",
+    "fiction": "Fictional exercise",
+    "language": "Language",
+    "progress": "Review progress",
+    "reviewDesk": "Release review desk",
+    "intro": "An AI assistant is ready for a decision, not necessarily for release. Investigate the campus, weigh incomplete tests and operate the incident console. Your choices determine who is protected and who must wait.",
+    "disclaimer": "All people, organizations, dates, test results and outcomes in this episode are fictional. It teaches governance decisions, not forecasts, legal advice or claims about real products.",
+    "duration": "8–12 minutes",
+    "noTimer": "No time pressure",
+    "endings": "5 possible outcomes",
+    "controls": "Tap a numbered station or use the equivalent list. Drag to orbit; pinch to zoom. Every decision also works with Tab and Enter. Read at your own pace.",
+    "begin": "Enter the review",
+    "next": "Continue narration",
+    "skip": "Skip scene",
+    "checklist": "Recovery checklist",
+    "evidence": "Evidence review",
+    "execute": "Execute and record",
+    "record": "Record this finding",
+    "back": "Back to stations",
+    "reviewed": "Recorded",
+    "locked": "Prior step required",
+    "inspect": "Inspect",
+    "reviewCount": "{{count}} / 3 findings recorded. All three are required.",
+    "continue": "Continue to decision",
+    "decision": "Decision record",
+    "commit": "Confirm this decision",
+    "debrief": "After-action review",
+    "recordTitle": "Your decision trail",
+    "reflection": "What evidence would change your next release decision? Which costs did your plan shift onto residents or workers? These outcomes are teaching scenarios, not a safety certification.",
+    "sourceNote": "Real-world background: context, evaluation, feedback and recovery in the voluntary",
+    "replay": "Replay with new choices",
+    "chapter": "Back to chapter",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "overview": "Overview",
+    "reduceMotion": "Reduce motion",
+    "textMode": "Text mode",
+    "webgl": "3D is unavailable. The complete decision game still works.",
+    "stages": {
+      "1": "Gather evidence",
+      "2": "Fund evaluations",
+      "3": "Set the release boundary",
+      "4": "Respond to the incident",
+      "5": "Make it accountable"
+    },
+    "flags": {
+      "tested-language": "Language tests funded",
+      "tested-permissions": "Permission tests funded",
+      "tested-recovery": "Recovery rehearsed",
+      "pilot": "Staffed, read-only pilot",
+      "hold": "Public release held",
+      "wide": "Broad tool-enabled release",
+      "rollback": "Freeze and restore",
+      "isolate": "Failing route isolated",
+      "continue": "Service continued during patch",
+      "accountable": "Public review and funded appeals",
+      "closed": "Launch team controls review"
+    },
+    "results": "Your funded tests: findings",
+    "uncertainty": "Still unverified",
+    "tests": {
+      "language": {
+        "known": "Language test: inconsistent regional answers found. Local reviewers are needed before broader language coverage.",
+        "unknown": "Unknown: the regional-language gap has not been investigated further."
+      },
+      "permissions": {
+        "known": "Permission test: excessive tool access found. A read-only boundary avoids this access; broad release ignores the finding.",
+        "unknown": "Unknown: tool-permission boundaries have not been tested."
+      },
+      "recovery": {
+        "known": "Recovery drill: a routing mistake was found and fixed. Repeat verification during a real incident.",
+        "unknown": "Unknown: recovery is documented but has not been rehearsed. Allow extra time for verification."
+      }
+    }
+  },
+  "drill": {
+    "incident": {
+      "prompt": "Offline drill: inspect simulated test traffic. No resident has been exposed; preserve test evidence and distinguish verified findings from assumptions.",
+      "hotspots": {
+        "trace": {
+          "description": "The test trace confirms invented addresses in synthetic requests. The full scope inside the test dataset is unknown. Retain restricted test logs, identify the version and check simulated record changes. No resident records are involved."
+        },
+        "recovery": {
+          "description": "Rehearse freezing test requests, preserving test evidence and switching the isolated test route to a simulated manual queue. Then verify the route and synthetic records. The real human service continues unchanged throughout this drill."
+        },
+        "support": {
+          "title": "Rehearse the correction route",
+          "description": "No resident needs incident correction in this offline drill. Staff role-play receiving a report, explaining known and unknown facts, and routing a correction. Fund this capacity before any public pilot; a plan alone is not a staffed service."
+        }
+      }
+    },
+    "response": {
+      "title": "Choose the drill response",
+      "prompt": "All controls below act only on isolated test traffic and synthetic records. No public AI release has occurred. Practice a procedure you could later apply to a real incident; the live human service is not interrupted.",
+      "options": {
+        "rollback": {
+          "description": "Pause synthetic requests, preserve test logs and rehearse manual routing. Verify the isolated test route. Only the drill pauses; resident service continues."
+        },
+        "isolate": {
+          "description": "Disable the failing feature and tool access inside the test environment. Keep other synthetic requests under staff review to investigate the unknown failure scope."
+        },
+        "continue": {
+          "description": "Keep synthetic test traffic running while changing the prompt. Failures may persist in the drill, but no residents are exposed. This does not establish readiness for public release."
+        }
+      }
+    },
+    "recovery-check": {
+      "prompt": "Offline recovery drill: execute the test controls in order. All requests, queues and records below are simulated. The live human service continues unchanged.",
+      "hotspots": {
+        "freeze": {
+          "description": "Synthetic model requests are paused. Restricted test logs and the version identifier are retained. Earlier test outputs still need inspection; no resident work has been affected."
+        },
+        "restore": {
+          "label": "Rehearse manual routing",
+          "title": "2 · Rehearse the manual route",
+          "description": "The isolated model route is disconnected. Synthetic requests enter a simulated staffed queue. The exercise demonstrates possible waiting costs; it does not change actual resident queues or waiting times."
+        },
+        "verify": {
+          "description": "A synthetic request reaches the simulated manual queue. The team reconciles test outputs and synthetic record changes. The recovery rehearsal is verified; remaining test findings still need investigation before a public release."
+        }
+      }
+    },
+    "accountability": {
+      "prompt": "Your public-release hold remains in force. Decide who reviews the offline drill findings and what evidence is required before any pilot. Residents were not exposed to this exercise.",
+      "options": {
+        "public": {
+          "description": "Name an accountable owner, publish non-personal drill findings and fund future appeals capacity. Give workers and residents a role in deciding whether a public pilot should ever begin."
+        },
+        "internal": {
+          "description": "Keep drill findings with the launch team and issue a short assurance statement. Future participants would have no meaningful route to inspect the findings or challenge a release decision."
+        }
+      }
+    }
+  }
+}
