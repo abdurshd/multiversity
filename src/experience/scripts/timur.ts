@@ -65,6 +65,7 @@ export const timurScript: ExperienceScript = {
                     id: 'registan',
                     position: [0, 4, -18],
                     label: 'Registan Square',
+                    closeUp: { path: [[26, 20, 28]], lookPath: [[0, 9, -25]], duration: 1 },
                     icon: '🕌',
                     title: 'The Registan',
                     description:
@@ -74,6 +75,7 @@ export const timurScript: ExperienceScript = {
                     id: 'mosque',
                     position: [48, 6, -44],
                     label: 'Bibi-Khanym Mosque',
+                    closeUp: { path: [[82, 28, -8]], lookPath: [[52, 14, -52]], duration: 1 },
                     icon: '🌙',
                     title: 'Bibi-Khanym Mosque',
                     description:
@@ -84,6 +86,7 @@ export const timurScript: ExperienceScript = {
                     id: 'mausoleum',
                     position: [-44, 5, 38],
                     label: 'Gur-e-Amir',
+                    closeUp: { path: [[-12, 23, 68]], lookPath: [[-44, 12, 38]], duration: 1 },
                     icon: '⚱️',
                     title: 'Gur-e-Amir — the Tomb That Waits',
                     description:
@@ -94,6 +97,7 @@ export const timurScript: ExperienceScript = {
                     id: 'council',
                     position: [10, 3, 52],
                     label: 'The War Council',
+                    closeUp: { path: [[30, 14, 78]], lookPath: [[8, 4, 50]], duration: 1 },
                     icon: '⚔️',
                     title: 'The Council of Samarkand',
                     description:

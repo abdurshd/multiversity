@@ -5,6 +5,7 @@ import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
 import { useCurrentBeat, useExperience } from '../store';
 import type { CameraShot, Vec3 } from '../types';
+import { useTimurNavigation } from '../ui/timurNavigation';
 
 const v = (a: Vec3) => new THREE.Vector3(a[0], a[1], a[2]);
 
@@ -39,6 +40,12 @@ export function CameraDirector() {
     const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera;
     const beat = useCurrentBeat();
     const phase = useExperience((s) => s.phase);
+    const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
+    const command = useTimurNavigation((s) => s.command);
+    const revision = useTimurNavigation((s) => s.revision);
+    const size = useThree((s) => s.size);
+    const consumedRevision = useRef(revision);
+    const transition = useRef<{ position: THREE.Vector3; target: THREE.Vector3 } | null>(null);
     const activeHotspotId = useExperience((s) => s.activeHotspotId);
 
     const controlsRef = useRef<OrbitControlsImpl | null>(null);
@@ -73,6 +80,31 @@ export function CameraDirector() {
         camera.updateProjectionMatrix();
     }, [beat, camera]);
 
+    useEffect(() => {
+        transition.current = null;
+        if (!timur || beat?.kind !== 'explore' || !activeHotspotId) return;
+        const hotspot = beat.hotspots.find((h) => h.id === activeHotspotId);
+        const shot = hotspot?.closeUp;
+        if (shot) transition.current = { position: v(shot.path[shot.path.length - 1]), target: v(shot.lookPath[0]) };
+    }, [activeHotspotId, beat, timur]);
+
+    // Opt-in touch controls for the Timur slice. Requests move the camera only,
+    // preserving visited landmarks, effects, and narrative progress.
+    useEffect(() => {
+        if (revision === consumedRevision.current) return;
+        consumedRevision.current = revision;
+        if (!timur || beat?.kind !== 'explore') return;
+        const controls = controlsRef.current;
+        if (!controls) return;
+        if (command === 'overview') {
+            transition.current = { position: v(beat.camera.position), target: v(beat.camera.target) };
+        } else if (command === 'in' || command === 'out') {
+            const offset = camera.position.clone().sub(controls.target);
+            offset.setLength(THREE.MathUtils.clamp(offset.length() * (command === 'in' ? 0.75 : 1.33), 10, 120));
+            transition.current = { position: controls.target.clone().add(offset), target: controls.target.clone() };
+        }
+    }, [revision, command, timur, beat, camera]);
+
     // Hotspot focus: glide the orbit target toward the active hotspot.
     const hotspotTarget = useMemo(() => {
         if (beat?.kind !== 'explore' || !activeHotspotId) return null;
@@ -86,7 +118,7 @@ export function CameraDirector() {
         if (cinematic && compiled.length > 0) {
             clockRef.current += delta;
             let t = clockRef.current;
-            let i = shotIndexRef.current;
+            let i = timur ? 0 : shotIndexRef.current;
             while (i < compiled.length - 1 && t > compiled[i].duration) {
                 t -= compiled[i].duration;
                 i += 1;
@@ -109,7 +141,14 @@ export function CameraDirector() {
 
         // Interactive modes: optionally pull the focus toward an open hotspot.
         const controls = controlsRef.current;
-        if (controls && hotspotTarget) {
+        if (controls && timur && transition.current) {
+            const destination = transition.current;
+            const alpha = 1 - Math.exp(-delta * 5);
+            camera.position.lerp(destination.position, alpha);
+            controls.target.lerp(destination.target, alpha);
+            if (camera.position.distanceTo(destination.position) < 0.05) transition.current = null;
+            controls.update();
+        } else if (controls && hotspotTarget && !timur) {
             controls.target.lerp(hotspotTarget, delta * 2.5);
         }
     });
@@ -120,6 +159,9 @@ export function CameraDirector() {
         <OrbitControls
             ref={controlsRef}
             enabled={interactive}
+            onStart={() => { transition.current = null; }}
+            touches={{ ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN }}
+            rotateSpeed={timur && size.width < 768 ? 0.65 : 1}
             enablePan={false}
             enableDamping
             dampingFactor={0.08}

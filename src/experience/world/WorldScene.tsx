@@ -10,6 +10,7 @@ import {
     Madrasah, Mausoleum, Minaret, PALETTE, Particles, Tents, Trees, mulberry32, sharedMats,
 } from './parts';
 import { pavingTexture } from './textures';
+import { SamarkandDetails } from './samarkandDetails';
 import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
 import { MarengoField, ParisBastille, ParisTerror, ValmyField, Varennes } from './revolution';
@@ -509,6 +510,7 @@ function Samarkand({ dusk }: { dusk: boolean }) {
                 </mesh>
             </group>
 
+            <SamarkandDetails dusk={dusk} />
             <Madrasah position={[0, 0, -32]} domeColor={PALETTE.turquoise} />
             <Madrasah position={[-34, 0, 6]} rotation={[0, Math.PI / 2.4, 0]} domeColor={PALETTE.lapis} />
             <Madrasah position={[34, 0, 6]} rotation={[0, -Math.PI / 2.4, 0]} domeColor={PALETTE.gold} />

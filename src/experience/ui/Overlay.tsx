@@ -6,6 +6,7 @@ import { useCurrentBeat, useExperience } from '../store';
 import type { StatEffects, StatKey, TacticalOption } from '../types';
 import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
+import { TimurExplore } from './TimurExplore';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
 function useTypewriter(text: string, speed = 22) {
@@ -61,7 +62,7 @@ function StatsBar() {
     const { t } = useTranslation('components-experience');
     const stats = useExperience((s) => s.stats);
     return (
-        <div className="absolute top-4 right-4 z-30 flex gap-3 px-4 py-2 rounded-xl bg-slate-950/70 backdrop-blur border border-amber-200/15 pointer-events-none">
+        <div className="experience-stats absolute top-4 right-4 z-30 flex gap-3 px-4 py-2 rounded-xl bg-slate-950/70 backdrop-blur border border-amber-200/15 pointer-events-none">
             {(Object.keys(stats) as StatKey[]).map((k) => (
                 <div key={k} className="flex flex-col items-center w-14">
                     <span className="text-[10px] uppercase tracking-wider text-amber-100/60">
@@ -204,7 +205,7 @@ function ChoiceOverlay() {
     const choose = useExperience((s) => s.choose);
     if (beat?.kind !== 'choice') return null;
     return (
-        <div className="absolute inset-x-0 bottom-0 z-30 flex justify-center px-4 pb-6 pt-24 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
+        <div className="experience-choices absolute inset-x-0 bottom-0 z-30 flex justify-center px-4 pb-6 pt-24 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
             <div className="max-w-4xl w-full">
                 <p className="text-amber-400 text-xs uppercase tracking-[0.3em] text-center">{beat.title}</p>
                 <h2
@@ -271,7 +272,7 @@ function BattleOverlay() {
     return (
         <>
             {/* morale bars */}
-            <div className="absolute top-28 md:top-16 inset-x-4 z-30 flex justify-between pointer-events-none">
+            <div className="experience-morale absolute top-28 md:top-16 inset-x-4 z-30 flex justify-between pointer-events-none">
                 <MoraleBar label={battle.player.name} value={hud.playerMorale} color="linear-gradient(90deg,#f59e0b,#dc2626)" />
                 <MoraleBar label={battle.enemy.name} value={hud.enemyMorale} color="linear-gradient(270deg,#64748b,#334155)" alignRight />
             </div>
@@ -280,7 +281,7 @@ function BattleOverlay() {
 
             {/* intro card */}
             {hud.intro && (
-                <div className="absolute inset-0 z-40 flex items-center justify-center bg-slate-950/70 backdrop-blur-sm px-6">
+                <div className="experience-battle-modal absolute inset-0 z-40 flex items-center justify-center bg-slate-950/70 backdrop-blur-sm px-6">
                     <div className="max-w-lg w-full rounded-2xl border border-amber-200/25 bg-slate-900/90 p-6 text-center shadow-2xl">
                         <p className="text-amber-400 text-xs uppercase tracking-[0.3em]">{t('battle.badge', { defaultValue: 'Battle' })}</p>
                         <h2 className="text-amber-50 text-2xl font-bold mt-1" style={{ fontFamily: 'Georgia, serif' }}>
@@ -299,7 +300,7 @@ function BattleOverlay() {
 
             {/* tactical decision modal */}
             {hud.event && (
-                <div className="absolute inset-0 z-40 flex items-end md:items-center justify-center bg-slate-950/60 backdrop-blur-[2px] px-4 pb-6">
+                <div className="experience-battle-modal absolute inset-0 z-40 flex items-end md:items-center justify-center bg-slate-950/60 backdrop-blur-[2px] px-4 pb-6">
                     <div className="max-w-2xl w-full rounded-2xl border border-amber-400/30 bg-slate-900/95 p-5 shadow-2xl">
                         <p className="text-amber-400 text-xs uppercase tracking-[0.3em]">{t('battle.hangs', { defaultValue: '⏸ The battle hangs in the balance' })}</p>
                         <h3 className="text-amber-50 text-xl font-bold mt-1" style={{ fontFamily: 'Georgia, serif' }}>
@@ -375,12 +376,12 @@ function AbilityBar() {
 
     return (
         <div className="absolute bottom-5 inset-x-0 z-30 flex flex-col items-center gap-2 px-3 pointer-events-none">
-            <p className="rounded-full bg-slate-950/70 px-3 py-1 text-[11px] text-amber-100/85 backdrop-blur">
+            <p className="experience-ability-hint rounded-full bg-slate-950/70 px-3 py-1 text-[11px] text-amber-100/85 backdrop-blur">
                 {targeting === 'strike'
                     ? t(`battle.abilities.${era}aim_hint`, { defaultValue: 'Click the battlefield to aim the catapults · Esc to cancel' })
                     : t('battle.abilities.hint', { defaultValue: 'Lead your army: your orders decide how this battle, and history, turn out' })}
             </p>
-            <div className="flex gap-2 pointer-events-auto">
+            <div className="experience-abilities flex gap-2 pointer-events-auto">
                 {ABILITY_ORDER.map((id) => {
                     const cd = cooldowns[id];
                     const total = ABILITIES[id].cooldown;
@@ -452,7 +453,7 @@ function EndingOverlay() {
     const finished = lineIdx >= ending.epilogue.length - 1 && done;
 
     return (
-        <div className="absolute inset-0 z-40 flex flex-col items-center justify-center bg-slate-950/85 backdrop-blur px-6 text-center">
+        <div className="experience-ending absolute inset-0 z-40 flex flex-col items-center justify-center bg-slate-950/85 backdrop-blur px-6 text-center">
             <span className="text-5xl">{ending.icon}</span>
             <p className="text-xs uppercase tracking-[0.4em] mt-4" style={{ color: ending.color }}>
                 {t('ending.reality_takes_shape', { defaultValue: 'A reality takes shape' })}
@@ -502,13 +503,14 @@ function EndingOverlay() {
 
 // ─── Root overlay ──────────────────────────────────────────────────────────
 export function ExperienceOverlay() {
+    const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
     return (
         <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}
             {phase === 'loading' && <StartScreen />}
             {phase === 'cinematic' && <CinematicOverlay />}
-            {phase === 'explore' && <ExploreOverlay />}
+            {phase === 'explore' && (timur ? <TimurExplore /> : <ExploreOverlay />)}
             {phase === 'choice' && <ChoiceOverlay />}
             {phase === 'battle' && <BattleOverlay />}
             {phase === 'ending' && <EndingOverlay />}
