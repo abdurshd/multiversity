@@ -114,6 +114,9 @@ import koExperienceKorea from './locales/ko/experience/korea-destiny.json';
 import enExperienceCovid from './locales/en/experience/covid-pandemic.json';
 import uzExperienceCovid from './locales/uz/experience/covid-pandemic.json';
 import koExperienceCovid from './locales/ko/experience/covid-pandemic.json';
+import enExperienceHitlerRise from './locales/en/experience/hitler-rise.json';
+import uzExperienceHitlerRise from './locales/uz/experience/hitler-rise.json';
+import koExperienceHitlerRise from './locales/ko/experience/hitler-rise.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -282,6 +285,7 @@ i18n
                 'experience-ussr-collapse': enExperienceUssr,
                 'experience-covid-pandemic': enExperienceCovid,
                 'experience-ai-revolution': enExperienceAi,
+                'experience-hitler-rise': enExperienceHitlerRise,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -319,6 +323,7 @@ i18n
                 'experience-ussr-collapse': uzExperienceUssr,
                 'experience-covid-pandemic': uzExperienceCovid,
                 'experience-ai-revolution': uzExperienceAi,
+                'experience-hitler-rise': uzExperienceHitlerRise,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -356,6 +361,7 @@ i18n
                 'experience-ussr-collapse': koExperienceUssr,
                 'experience-covid-pandemic': koExperienceCovid,
                 'experience-ai-revolution': koExperienceAi,
+                'experience-hitler-rise': koExperienceHitlerRise,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -397,6 +403,7 @@ i18n
             'experience-ussr-collapse',
             'experience-covid-pandemic',
             'experience-ai-revolution',
+            'experience-hitler-rise',
             'pages-simulation-hub',
         ],
         interpolation: {

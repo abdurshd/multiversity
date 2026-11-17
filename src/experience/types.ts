@@ -292,7 +292,10 @@ export type EnvironmentId =
     | 'union-hall-1991'
     | 'covid-hospital'
     | 'covid-depot'
-    | 'covid-briefing';
+    | 'covid-briefing'
+    | 'civic-newsroom'
+    | 'civic-archive'
+    | 'civic-meeting';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 

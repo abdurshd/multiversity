@@ -20,6 +20,7 @@ import '../experience/ui/timur.css';
 import { RussianSceneBoundary } from '../experience/russia/RussianSceneBoundary';
 import { LeninSceneBoundary } from '../experience/ui/LeninSceneBoundary';
 import { CovidExperience } from '../experience/covid/CovidExperience';
+import { CivicExperience } from '../experience/civic/CivicExperience';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -82,7 +83,7 @@ function HistoricalExperience3D() {
     const startBeat = searchParams.get('beat');
 
     useEffect(() => {
-        if (!script || script.chapterId === 'covid-pandemic') return;
+        if (!script || ['covid-pandemic', 'hitler-rise'].includes(script.chapterId)) return;
         loadScript(localizeScript(script, t));
         if (startBeat && script.beats[startBeat]) useExperience.getState().gotoBeat(startBeat);
     }, [script, loadScript, t, i18n.language, startBeat]);
@@ -118,6 +119,7 @@ function HistoricalExperience3D() {
         );
     }
 
+    if (script.chapterId === 'hitler-rise') return <CivicExperience script={script} />;
     if (script.chapterId === 'covid-pandemic') return <CovidExperience script={script} />;
 
     const scene = (

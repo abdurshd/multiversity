@@ -1,0 +1,241 @@
+{
+  "title": "Qaydlar saqlanib qolsin",
+  "era": "Berlin · 1933-yil yanvar–mart",
+  "ui": {
+    "intro": "Demokratik institutlar yemirilayotgan davrda xayoliy mustaqil tahririyatda ishlang. Sanali manbalarni o‘rganing, dalilni da’vodan ajrating, amaliy kelishuvlar tuzing va qanday qayd qoldirishni tanlang.",
+    "boundary": "Tarixiy sanalar va qonunlar hujjatlashtirilgan. Tahririyat, odamlar, muzokaralar va mahalliy natijalar to‘qima. Hech bir tanlov diktaturani to‘xtatmaydi yoki xavfsizlikni kafolatlamaydi. Natsistlar ta’qibi uchun jabrlanganlar emas, uni sodir etganlar javobgardir.",
+    "warning": "Mavzu: avtoritarizm, antisemitizm va siyosiy ta’qib. Dahshatli zo‘ravonlik yoki ekstremistik tasvirlar yo‘q. Vaqt chegarasi yo‘q, sahnalar qo‘lda boshqariladi.",
+    "start": "Tahririyatni ochish",
+    "continue": "Davom etish",
+    "skip": "Bu sahnani o‘tkazish",
+    "exit": "Chiqish",
+    "back": "Bobga qaytish",
+    "reset": "Yangi qayd boshlash",
+    "overview": "Ko‘rinishni tiklash",
+    "language": "Til",
+    "scene": "Sahna",
+    "fallback": "3D mavjud emas. Dalillar va qarorlar mashqini to‘liq davom ettirish mumkin.",
+    "historical": "Tarixiy qayd",
+    "fiction": "Xayoliy mahalliy qaror",
+    "claim": "Tekshiriladigan da’vo",
+    "evidenceHelp": "Ikkala hujjatni o‘qing, tegishli manbani tanlang va da’voni baholang. Xato jazoga emas, qayta o‘qishga undaydi.",
+    "source": "Tanlangan manba",
+    "read": "O‘qildi",
+    "close": "Hujjatni yopish",
+    "supported": "Tasdiqlangan",
+    "contradicted": "Rad etilgan",
+    "uncertain": "Aniqlanmagan",
+    "verify": "Dalilni tekshirish",
+    "retry": "Tanlangan hujjat va baho bu qaydni hali asoslamaydi. Sanali manbani qayta o‘qib, yana urinib ko‘ring.",
+    "verified": "Dalil qayd etildi",
+    "documents": "O‘qilgan hujjatlar",
+    "openSource": "Muzey/manba sahifasini o‘qish",
+    "talk": "Shartlarni muhokama qilish",
+    "offer": "Taklif etilgan majburiyat",
+    "accept": "Shartlarni qabul qilish",
+    "revise": "O‘rniga kafolat so‘rash",
+    "refused": "Hech kim rejimdan himoyani kafolatlay olmaydi. Bu hamkor faqat yuqoridagi cheklangan majburiyatni qabul qiladi. Qayta ko‘rib chiqishingiz mumkin.",
+    "agreed": "Kelishildi",
+    "withdraw": "Bu kelishuvdan qaytish",
+    "meetingHelp": "Xayoliy cheklov: kichik jamoangiz ketishdan oldin ikkita kelishuvni bajara oladi. Uchala taklifni o‘qing. Uchrashuv yopilguncha kelishuvdan qaytish mumkin.",
+    "agreements": "Kelishuvlar",
+    "finishMeeting": "Uchrashuvni yopish",
+    "requiresPrinter": "Bosmaxona kelishuvi kerak",
+    "requiresCounsel": "Huquqshunos kelishuvi kerak",
+    "ledger": "Tahririyat qaydlaringiz",
+    "sources": "Manbalar va talqin",
+    "limits": "Mahalliy qayd mamlakat kelajagi bashorati emas. Bu yakunlar natsizmning mag‘lubiyati yoki jabrlanganlar tanlovining bahosi emas, xayoliy tahririyat ishini tasvirlaydi.",
+    "navigation": "Aylantirish uchun suring, yaqinlashtirish uchun ikki barmoqdan foydalaning. Har bir hujjatning klaviaturada ishlaydigan tugmasi ham bor.",
+    "sourceAppointment": "USHMM · Tayinlash va saylovlar",
+    "sourceDecree": "USHMM · Reyxstag yong‘ini farmoni",
+    "sourceAct": "USHMM · Favqulodda vakolatlar qonuni",
+    "sourceParliament": "Germaniya Bundestagi · Parlamentarizmning yo‘q qilinishi",
+    "dossiers": {
+      "appointment": {
+        "claim": "Gitler prezident tayinlovi orqali kansler bo‘ldi.",
+        "explanation": "Tayinlash qaydi buni tasdiqlaydi. Saylov natijasining o‘zi kansler qanday lavozimga kelganini ko‘rsatmaydi."
+      },
+      "rights": {
+        "claim": "Farmon matbuotning bostirishga qarshi konstitutsiyaviy himoyasini saqlaydi.",
+        "explanation": "Farmon bu da’voni rad etadi. Himoyaning to‘xtatilishi huquqiy hujjatni hal qiluvchi qiladi; tekshirilmagan telefon qaydi qonunni aniqlay olmaydi."
+      },
+      "mandate": {
+        "claim": "Manbalar har bir deputat majburlashsiz aynan qanday ovoz berishini aniqlaydi.",
+        "explanation": "Aniqlanmagan. Manbalar majburlash va chetlatishni hujjatlashtiradi, har bir deputatning faraziy erkin ovozini emas. Muqobil taxmin noaniq deb belgilanishi kerak."
+      }
+    },
+    "partners": {
+      "archive": {
+        "name": "Arxivchi",
+        "goal": "Boshqa joyda nusxa saqlash",
+        "terms": "Xayoliy taklif: tekshirilgan qaydning ikkinchi sanali nusxasini tayyorlay olaman. Dalilni taxmindan ajratishga va himoyasiz odamlar ismlarini kiritmaslikka rozi bo‘ling. Nusxa musodaradan daxlsizlik emas."
+      },
+      "printer": {
+        "name": "Bosmaxonachi",
+        "goal": "Manbali ommaviy axborotnoma tayyorlash",
+        "terms": "Xayoliy taklif: yordam so‘ragan odamlarning shaxsiy ma’lumotlari o‘rniga sanalar va manbalar bo‘lsa, tekshirilgan hisobotni terib bera olaman. Chop etish ishimizni oshkor qiladi; doimiy tarqatishni va’da qila olmayman."
+      },
+      "counsel": {
+        "name": "Huquqshunos",
+        "goal": "E’tiroz va yordam aloqalarini qayd etish",
+        "terms": "Xayoliy taklif: tekshirilgan huquqiy qayd asosida e’tirozni hujjatlashtira olaman. Sud qutqarishini kutmay, amaliy yordamni alohida vazifa deb olishga rozi bo‘ling. E’tiroz topshirish yechimni kafolatlamaydi."
+      }
+    }
+  },
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "speaker": "1933-yil 30-yanvar · Tarixiy ma’lumot",
+          "text": "Prezident Paul fon Hindenburg Adolf Gitlerni kansler etib tayinlaydi. Natsistlar partiyasi 1932-yil noyabr saylovida ko‘pchilik ovozni olmagan. Tayinlanish va diktatura bir hodisa emas."
+        },
+        "1": {
+          "speaker": "Xayoliy tahririyat",
+          "text": "Harf terish xonasida siyoh va iliq metall hidi. Shoshilgan sarlavha tayinlanishni bevosita saylov bilan adashtiradi. Birinchi vazifangiz kichik, ammo aniq: hujjat nimani aytayotganini tekshiring."
+        }
+      }
+    },
+    "appointment": {
+      "prompt": "Tayinlanish bevosita saylov emas",
+      "hotspots": {
+        "appointment-record": {
+          "label": "Tayinlash qaydi",
+          "title": "30-yanvar · Prezident tayinlovi",
+          "description": "Tarixiy qayd: Hindenburg 1933-yil 30-yanvarda Gitlerni kansler etib tayinlagan. Gitler bu lavozimga bevosita saylanmagan. Manba: USHMM."
+        },
+        "election-record": {
+          "label": "Saylov xabari",
+          "title": "1932-yil noyabr · Ko‘pchilik emas",
+          "description": "Tarixiy qayd: natsistlar partiyasi 1932-yil noyabrda taxminan uchdan bir ovozni olgan. Bu natija vaziyatni tushuntiradi, kanslerning bevosita saylovi qaydi emas. Manba: USHMM."
+        }
+      }
+    },
+    "rights": {
+      "hotspots": {
+        "decree-record": {
+          "label": "Farmon tahlili",
+          "title": "28-fevral · Huquqlar to‘xtatilgan",
+          "description": "Tarixiy qayd: Reyxstag yong‘ini farmoni konstitutsiyaviy kafolatlarni, jumladan matbuot va yig‘ilish erkinliklarini to‘xtatgan. Rejim nashrlarni bostirishi mumkin edi. Manba: USHMM tarjimasi va sharhi."
+        },
+        "telephone-note": {
+          "label": "Telefon qaydi",
+          "title": "Tasdiqlanmagan mahalliy xabar",
+          "description": "Xayoliy qayd: qo‘ng‘iroq qiluvchi qo‘shni bosmaxona yopilganini aytadi. Sababi tekshirilmagan. Bitta telefon xabari milliy farmon nimalarga qonuniy ruxsat berishini aniqlamaydi."
+        }
+      },
+      "prompt": "Farmon nimaga ruxsat beradi?"
+    },
+    "mandate": {
+      "hotspots": {
+        "conditions-record": {
+          "label": "Parlament sharoiti",
+          "title": "23-mart · Majburlash va chetlatish",
+          "description": "Tarixiy qayd: ta’qib va qo‘rqitish ovoz berishga ta’sir qilgan. Bundestag ko‘rgazmasi parlament mustaqilligi yo‘q qilinganini qayd etadi; qonunga faqat sotsial-demokratlar qarshi ovoz bergan. Bu har bir deputat erkin sharoitda qanday ovoz berishini ko‘rsatmaydi."
+        },
+        "act-record": {
+          "label": "Qonun sharhi",
+          "title": "23-mart · Vakolatlar berilgan",
+          "description": "Tarixiy qayd: Favqulodda vakolatlar qonuni hukumatga parlament roziligisiz qonunlar qabul qilish imkonini bergan. 1933-yil 23-martda qabul qilinib, ertasi kuni e’lon qilingan. Manba: USHMM."
+        }
+      },
+      "prompt": "Muqobil taxminni faktga aylantirmang"
+    },
+    "editorial": {
+      "title": "Birinchi nashr",
+      "prompt": "Tahririyat tekshirilgan tuzatish bilan nima qilsin?",
+      "options": {
+        "publish": {
+          "label": "Aniq farqni chop etish",
+          "description": "Sanali manba bilan faktlarga asoslangan izoh chop eting. Bu ommaviy qayd yaratadi, senzura qarshisida qalqon emas."
+        },
+        "retain": {
+          "label": "Tadqiqot daftarida saqlash",
+          "description": "Jamoa tarqatish sharoitini tekshirguncha farqni keyingi foydalanish uchun saqlang. O‘quvchilar bu nashrda tuzatishni olmaydi."
+        }
+      }
+    },
+    "response": {
+      "options": {
+        "bulletin": {
+          "label": "Hujjatli axborotnoma chiqarish",
+          "description": "Bosmaxona kelishuviga tayangan holda himoyasiz odamlarning shaxsini oshkor qilmay sanali hisobot tarqating. Ommaviy tarqalish xavfni ham oshiradi; nashr himoyani kafolatlamaydi."
+        },
+        "petition": {
+          "label": "Hujjatli huquqiy e’tiroz yuborish",
+          "description": "Huquqshunosning cheklangan kelishuvi bilan e’tirozni qayd eting va alohida yordam aloqalarini belgilang. Sud qonunni bekor qiladi deb va’da bermang."
+        },
+        "private": {
+          "label": "Ommaviy tarqatishni to‘xtatib, ishni saqlash",
+          "description": "Tekshirilgan qaydni saqlang va jamoaning hozirgi ehtiyojlariga e’tibor bering. Bu hammani yoki siyosiy tizimni himoya qilmaydi; majburlash sharoitidagi cheklangan mahalliy qaror."
+        }
+      },
+      "title": "Uchrashuvdan keyin",
+      "prompt": "Kelishuvlaringiz qaysi cheklangan vazifani qo‘llaydi?"
+    },
+    "decree": {
+      "narration": {
+        "0": {
+          "speaker": "1933-yil 28-fevral · Tarixiy ma’lumot",
+          "text": "Reyxstag yong‘inidan keyin favqulodda farmon asosiy huquqlarni to‘xtatadi. Huquqiy shakllar qog‘ozda qoladi, himoya esa yo‘qoladi. Tahririyatga telefon mish-mishi va farmon nusxasi keladi; ular bir xil dalil emas."
+        }
+      }
+    },
+    "meeting": {
+      "prompt": "Kafolat emas, majburiyat haqida kelishing"
+    },
+    "vote": {
+      "narration": {
+        "0": {
+          "speaker": "1933-yil 23-mart · Tarixiy ma’lumot",
+          "text": "Favqulodda vakolatlar qonuni ta’qib va qo‘rqitish sharoitida qabul qilinadi. U qonun chiqarishni parlament roziligidan ajratadi. Sanoq berilgan ovozlarni qayd etadi; erkin rozilikni yoki noma’lum muqobil ovozni ko‘rsatmaydi."
+        }
+      }
+    },
+    "closing": {
+      "narration": {
+        "0": {
+          "speaker": "Tarix g‘alaba ekraniga aylanmaydi",
+          "text": "Diktatura mustahkamlanadi. Xayoliy qarorlaringiz bu tarixni ortga qaytarmaydi. Ular faqat mahalliy qayd va uning atrofidagi majburiyatlarni o‘zgartiradi. Institutlar qarori va majburlash muhim; ta’qib jabrdiydalari uni oldini olishga mas’ul emas edi."
+        }
+      }
+    }
+  },
+  "endings": {
+    "public-preserved": {
+      "title": "Ikkinchi nusxali ommaviy qayd",
+      "subtitle": "Xayoliy mahalliy natija · omon qolish kafolati yo‘q",
+      "epilogue": {
+        "0": {
+          "text": "Jamoa manbali axborotnoma va alohida nusxa tayyorlaydi. O‘quvchilar aniq hisobotni ko‘rishi, boshqa nusxa esa ishni saqlashi mumkin. Na tarqatish, na arxiv repressiyadan omon qolishi kafolatlanadi."
+        }
+      }
+    },
+    "public-single": {
+      "title": "Zaxira nusxa kelishuvisiz axborotnoma",
+      "subtitle": "Xayoliy mahalliy natija · ochiq qayd, zaif arxiv",
+      "epilogue": {
+        "0": {
+          "text": "Bosmaxonachi tekshirilgan hisobotni tayyorlaydi, huquqshunos esa cheklangan majburiyat oladi. Bu mashqda boshqa joydagi nusxa kelishilmagan. Ommaviy qayd bajarilgan ishdir, kimdir xavfsiz bo‘lganining isboti emas."
+        }
+      }
+    },
+    "legal": {
+      "title": "Qayddagi e’tiroz",
+      "subtitle": "Xayoliy mahalliy natija · huquqiy qutqaruv va’dasi yo‘q",
+      "epilogue": {
+        "0": {
+          "text": "Huquqshunos hujjatli e’tirozni tayyorlaydi va yordam aloqalarini yechim umididan alohida saqlaydi. Bu epizod muvaffaqiyatli sud aralashuvini to‘qimaydi. E’tiroz topshirish va samarali himoya boshqa-boshqa narsalar."
+        }
+      }
+    },
+    "private": {
+      "title": "Ommaga yetmagan sahifa",
+      "subtitle": "Xayoliy mahalliy natija · ommaviy tarqatishsiz saqlash",
+      "epilogue": {
+        "0": {
+          "text": "Tekshirilgan qayd ommaviy nashr bo‘lish o‘rniga jamoada qoladi. Hozirgi ehtiyojlar ustun bo‘ladi va o‘quvchilar yakuniy axborotnomani olmaydi. Bu ta’qib ostida harakat qilishga majbur odamlarga hukm emas."
+        }
+      }
+    }
+  }
+}
