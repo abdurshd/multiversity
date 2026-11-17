@@ -92,3 +92,10 @@ Future Earth no longer mounts the shared typewriter/automatic-advance cinematic 
 The CPU path enumeration now uses these guarded actions. Additional regression cases cover repeated Continue/Skip, a stale line, a later cinematic beat, another chapter, callbacks retained through reset/loading, same-index replay, and a capture made outside cinematic phase.
 
 The DOM fixture had a real lifecycle defect: it mounted `FutureOverlay` permanently, preserving its one-shot handoff guard through the hearing scene and blocking policy submission. It now mirrors production phase-specific mounting and mounts `FutureCinematic` for cinematic phases. The scripted flow uses the real Skip/Continue buttons for hearing/debrief. This fixes the fixture construction; it does not claim browser execution has passed here.
+
+
+## Live deploy-preview DOM verification (2026-11-17)
+
+On PR #19 remote head `bf4b20389c76f4b4532583c5444275a9c000ee0d`, a newly created cloud browser tab displayed the localized WebGL-unavailable fallback and completed the Korean production UI: native narration Continue/Skip, water evidence and focus return, first shift grid + public signal, review/Escape/reopen, second shift water + shelter + garden, committed repair record, hearing, public-accountability preview/Escape/reopen/confirm, debrief Continue, and connected-recovery ending. A genuine 1180×757 DOM-only ending screenshot was captured outside the source tree. This is one live browser path, not exhaustive browser testing or a 3D render.
+
+A separate responsive reviewer completed another Korean production path and identified compact preview focus below the fold. The follow-up focuses the panel's top heading for repair and policy reviews, rather than the potentially offscreen Edit/Reconsider buttons. Escape still restores the originating visible control. DOM-fixture assertions now cover these focus targets; the development fixture itself has not been run in a browser. CPU regression checks remain separate. Physical mobile/touch, WebGL visuals/camera occlusion and GPU performance remain unverified.

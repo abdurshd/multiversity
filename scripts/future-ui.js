@@ -32,7 +32,7 @@ if(params.has('test')){
   const click=async selector=>{const b=document.querySelector(selector);check(b&&!b.disabled,`Enabled ${selector}`);b.click();await wait();};
   const shift=async ids=>{
    for(const id of ids)await click(`#future-project-${id}`);
-   await click('#future-review');check(document.querySelector('.future-panel').scrollTop===0,'review reveals heading');
+   await click('#future-review');check(document.querySelector('.future-panel').scrollTop===0,'review reveals heading');check(document.activeElement.tagName==='H2','review focuses visible heading');
    const button=document.querySelector('#future-commit-shift');button.click();button.click();await wait();
   };
   await click('#future-project-grid');await click('#future-project-signal');
@@ -44,7 +44,7 @@ if(params.has('test')){
   await shift(['water','shelter','garden']);check(document.querySelectorAll('.future-record li[data-ready=true]').length===5,'five projects completed');
   await click('#future-reset');window.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}));await wait();check(document.querySelectorAll('.future-record li[data-ready=true]').length===5,'cancel reset keeps work');
   const next=document.querySelector('#future-record-next');next.click();next.click();await wait();check(s().beatId==='hearing'&&s().flags.length===5,'record handed over once');
-  await click('#future-story-skip');await click('#future-policy-public');check(!s().flags.includes('future:public'),'policy preview is reversible');
+  await click('#future-story-skip');await click('#future-policy-public');check(!s().flags.includes('future:public'),'policy preview is reversible');check(document.activeElement.tagName==='H2','policy preview focuses visible heading');
   window.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}));await wait();check(document.activeElement.id==='future-policy-public','policy Escape returns focus');
   await click('#future-policy-public');const confirm=document.querySelector('#future-confirm-policy');confirm.click();confirm.click();await wait();check(s().flags.filter(f=>f==='future:public').length===1,'policy committed once');
   await click('#future-story-continue');check(s().ending.id==='connected','actual DOM planner reaches connected ending');s().reset();check(s().flags.length===0&&s().visitedHotspots.length===0,'replay clears run');s().gotoBeat('survey');await wait();

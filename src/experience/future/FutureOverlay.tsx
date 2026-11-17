@@ -39,7 +39,10 @@ export function FutureOverlay() {
     useEffect(() => {
         if (panel.current) panel.current.scrollTop = 0;
         const stageChanged = previousShift.current !== plan.shift || previousBeat.current !== beatId;
-        if (active || policy || review || resetPrompt) back.current?.focus({ preventScroll: true });
+        // Reviews can exceed a compact viewport. Keep focus on the visible
+        // heading instead of an offscreen Edit/Reconsider action.
+        if (policy || review) heading.current?.focus({ preventScroll: true });
+        else if (active || resetPrompt) back.current?.focus({ preventScroll: true });
         else if (stageChanged) heading.current?.focus({ preventScroll: true });
         else {
             const origin = previous.current ? document.getElementById(previous.current) as HTMLButtonElement | null : null;
