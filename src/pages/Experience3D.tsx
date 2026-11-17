@@ -13,6 +13,7 @@ import { WorldScene } from '../experience/world/WorldScene';
 import { BattleView } from '../experience/battle/BattleView';
 import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
+import '../experience/ui/timur.css';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -62,6 +63,13 @@ export default function Experience3D() {
     const loadScript = useExperience((s) => s.loadScript);
     const quality = useQualityTier();
 
+    useEffect(() => {
+        if (script?.chapterId !== 'timur-legacy') return;
+        const previous = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        return () => { document.body.style.overflow = previous; };
+    }, [script]);
+
     // ?beat=<id> opens the episode straight at one scene (handy for authoring and sharing)
     const [searchParams] = useSearchParams();
     const startBeat = searchParams.get('beat');
@@ -104,7 +112,7 @@ export default function Experience3D() {
     }
 
     return (
-        <div className="fixed inset-0 z-[60] bg-slate-950">
+        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : ''}`}>
             <Canvas
                 shadows="soft"
                 dpr={quality === 'low' ? [1, 1.25] : [1, 1.75]}
@@ -119,7 +127,7 @@ export default function Experience3D() {
             {/* exit */}
             <Link
                 to={`/chapters/${script.chapterId}`}
-                className="absolute top-4 left-4 z-50 px-3 py-1.5 rounded-full bg-slate-950/70 backdrop-blur border border-slate-400/25 text-slate-300 text-sm hover:bg-slate-800/80"
+                className="experience-exit absolute top-4 left-4 z-50 px-3 py-1.5 rounded-full bg-slate-950/70 backdrop-blur border border-slate-400/25 text-slate-300 text-sm hover:bg-slate-800/80"
             >
                 {t('page.exit', { defaultValue: '← Exit' })}
             </Link>
