@@ -4,6 +4,7 @@ import { usIndependenceScript } from './usIndependence';
 import { frenchRevolutionScript } from './frenchRevolution';
 import { lincolnEraScript } from './lincolnEra';
 import { worldWar1Script } from './worldWar1';
+import { worldWar2Script } from './worldWar2';
 
 const SCRIPTS: Record<string, ExperienceScript> = {
     'timur-legacy': timurScript,
@@ -11,6 +12,7 @@ const SCRIPTS: Record<string, ExperienceScript> = {
     'french-revolution': frenchRevolutionScript,
     'lincoln-era': lincolnEraScript,
     'world-war-1': worldWar1Script,
+    'world-war-2': worldWar2Script,
 };
 
 export function getExperienceScript(chapterId: string): ExperienceScript | null {

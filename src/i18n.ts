@@ -84,14 +84,17 @@ import enExperienceUsIndependence from './locales/en/experience/us-independence.
 import enExperienceFrenchRevolution from './locales/en/experience/french-revolution.json';
 import enExperienceLincolnEra from './locales/en/experience/lincoln-era.json';
 import enExperienceWorldWar1 from './locales/en/experience/world-war-1.json';
+import enExperienceWorldWar2 from './locales/en/experience/world-war-2.json';
 import uzExperienceUsIndependence from './locales/uz/experience/us-independence.json';
 import uzExperienceFrenchRevolution from './locales/uz/experience/french-revolution.json';
 import uzExperienceLincolnEra from './locales/uz/experience/lincoln-era.json';
 import uzExperienceWorldWar1 from './locales/uz/experience/world-war-1.json';
+import uzExperienceWorldWar2 from './locales/uz/experience/world-war-2.json';
 import koExperienceUsIndependence from './locales/ko/experience/us-independence.json';
 import koExperienceFrenchRevolution from './locales/ko/experience/french-revolution.json';
 import koExperienceLincolnEra from './locales/ko/experience/lincoln-era.json';
 import koExperienceWorldWar1 from './locales/ko/experience/world-war-1.json';
+import koExperienceWorldWar2 from './locales/ko/experience/world-war-2.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -253,6 +256,7 @@ i18n
                 'experience-french-revolution': enExperienceFrenchRevolution,
                 'experience-lincoln-era': enExperienceLincolnEra,
                 'experience-world-war-1': enExperienceWorldWar1,
+                'experience-world-war-2': enExperienceWorldWar2,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -283,6 +287,7 @@ i18n
                 'experience-french-revolution': uzExperienceFrenchRevolution,
                 'experience-lincoln-era': uzExperienceLincolnEra,
                 'experience-world-war-1': uzExperienceWorldWar1,
+                'experience-world-war-2': uzExperienceWorldWar2,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -313,6 +318,7 @@ i18n
                 'experience-french-revolution': koExperienceFrenchRevolution,
                 'experience-lincoln-era': koExperienceLincolnEra,
                 'experience-world-war-1': koExperienceWorldWar1,
+                'experience-world-war-2': koExperienceWorldWar2,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -347,6 +353,7 @@ i18n
             'experience-french-revolution',
             'experience-lincoln-era',
             'experience-world-war-1',
+            'experience-world-war-2',
             'pages-simulation-hub',
         ],
         interpolation: {

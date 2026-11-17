@@ -173,7 +173,7 @@ function Tank({ position, rotation = 0 }: { position: [number, number, number]; 
 }
 
 /** Instanced shell craters: dark mud bowls with raised rims. */
-function Craters({ count, area, clear, seed = 7 }: { count: number; area: number; clear?: (x: number, z: number) => boolean; seed?: number }) {
+export function Craters({ count, area, clear, seed = 7 }: { count: number; area: number; clear?: (x: number, z: number) => boolean; seed?: number }) {
     const pts = useMemo(() => {
         const rand = mulberry32(seed);
         const out: [number, number, number][] = [];
@@ -248,7 +248,7 @@ function TrenchLine({ z, length = 220, facing = 1 }: { z: number; length?: numbe
 }
 
 /** Barbed-wire entanglement: stakes with criss-crossing wire. */
-function BarbedWire({ z, length = 200 }: { z: number; length?: number }) {
+export function BarbedWire({ z, length = 200 }: { z: number; length?: number }) {
     const line = useMemo(() => {
         const v: THREE.Vector3[] = [];
         for (let x = -length / 2; x < length / 2; x += 3) {
@@ -300,7 +300,7 @@ function DeadTrees({ count, inner, outer, seed = 4 }: { count: number; inner: nu
 }
 
 /** Habsburg-era city blocks: pastel stucco, red tile roofs, rows of windows. */
-function CityBlocks({ seed, count, inner, outer, clear, palette }: { seed: number; count: number; inner: number; outer: number; clear?: (x: number, z: number) => boolean; palette: string[] }) {
+export function CityBlocks({ seed, count, inner, outer, clear, palette }: { seed: number; count: number; inner: number; outer: number; clear?: (x: number, z: number) => boolean; palette: string[] }) {
     const bodyRef = useRef<THREE.InstancedMesh>(null);
     const roofRef = useRef<THREE.InstancedMesh>(null);
     const blocks = useMemo(() => {
@@ -351,7 +351,7 @@ function CityBlocks({ seed, count, inner, outer, clear, palette }: { seed: numbe
 }
 
 /** A facade with windows, used for buildings the camera sees up close. */
-function Facade({ position, rotation = 0, width, height, depth = 10, color, roof = '#9a4a32', rows, cols }: { position: [number, number, number]; rotation?: number; width: number; height: number; depth?: number; color: string; roof?: string; rows: number; cols: number }) {
+export function Facade({ position, rotation = 0, width, height, depth = 10, color, roof = '#9a4a32', rows, cols }: { position: [number, number, number]; rotation?: number; width: number; height: number; depth?: number; color: string; roof?: string; rows: number; cols: number }) {
     const roofGeom = useMemo(() => gableGeometry(width + 0.6, 3, depth + 0.6), [width, depth]);
     return (
         <group position={position} rotation={[0, rotation, 0]}>

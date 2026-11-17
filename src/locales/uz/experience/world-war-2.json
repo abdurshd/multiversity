@@ -1,0 +1,934 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "London, 1938-yil sentyabr. So'nggi urushdan yigirma yil o'tib, Britaniya bog'larda xandaq qazimoqda va har bir oilaga protivogaz tarqatmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Germaniya diktatori Adolf Gitler Sudet o'lkasini talab qilmoqda. Bu Chexoslovakiyaning tog'li chegara hududi bo'lib, u yerda uch million nemis tilida so'zlashuvchi odam yashaydi. Gitler buni o'zining so'nggi hududiy talabi deb aytmoqda.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Bosh vazir Nevill Chemberlen Gitler, Mussolini va Fransiya bosh vaziri Daladye bilan uchrashish uchun Myunxenga uchmoqda. Chexoslovaklarni o'z mamlakatlari haqidagi uchrashuvga taklif ham qilishmagan.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Ko'pchilik siyosiy hayoti tugagan deb hisoblaydigan oddiy deputat Uinston Cherchill yillar davomida Gitlerga ishonib bo'lmasligini ogohlantirib keladi. Bizning tariximizda Britaniya Myunxenda tinchlikni tanladi. Bu tarixda qarorni siz qabul qilasiz.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-london": {
+      "prompt": "Vestminsterni o'rganing: atrofga qarash uchun suring va yonib turgan belgilarni bosing.",
+      "hotspots": {
+        "commons": {
+          "label": "Parlament",
+          "title": "Jamoalar palatasi",
+          "description": "Ko'pchilik deputatlar va mamlakatning katta qismi deyarli har qanday narxda tinchlikni xohlaydi. Ular 1914-1918-yillar xandaqlarini eslaydi va ularga «bombardimonchi har doim yetib boradi», Londonni bir necha kunda vayron qilishi mumkin, deb aytilgan."
+        },
+        "big-ben": {
+          "label": "Big Ben",
+          "title": "Vaqt tugamoqda",
+          "description": "Britaniya qayta qurollanishni bir necha yil oldin boshlagan. Birinchi «Spitfayr» qiruvchilari RAF eskadrilyasiga 1938-yil avgustida yetib keldi. Radar stansiyalari qirg'oq bo'ylab hali qurilmoqda. Tinchlikning har bir yili ko'proq samolyot demakdir."
+        },
+        "balloons": {
+          "label": "Havo hujumidan mudofaa",
+          "title": "Bombardimonchilarga tayyor",
+          "description": "Past uchadigan bombardimonchilarni to'xtatish uchun po'lat troslardagi aerostatlar, zenit to'plari, qum qoplari va inqirozli birgina haftada tarqatilgan o'ttiz sakkiz million protivogaz."
+        },
+        "czechs": {
+          "label": "Chexoslovakiya",
+          "title": "Uzoqdagi mamlakat",
+          "description": "Chemberlen buni «biz hech narsa bilmaydigan odamlar o'rtasidagi uzoq mamlakatdagi janjal» deb atadi. Ammo Chexoslovakiya o'ttiz besh diviziyali zamonaviy armiyaga, «Shkoda» qurol zavodlariga va tog'li chegarasi bo'ylab beton istehkomlar zanjiriga ega demokratik davlat. Bularning hammasi Sudet o'lkasida joylashgan."
+        },
+        "churchill": {
+          "label": "Cherchill",
+          "title": "Sahrodagi ovoz",
+          "description": "Cherchill oltmish uch yoshda va hokimiyatdan chetda. Aytishlaricha, u Myunxenni bir jumlada ifodalagan: «Sizga urush va sharmandalik o'rtasida tanlov berildi. Siz sharmandalikni tanladingiz, endi urush ham bo'ladi.» U Britaniya va Fransiya hoziroq chexlar yonida turishini istaydi."
+        }
+      }
+    },
+    "munich-choice": {
+      "title": "Myunxen kelishuvi · 1938-yil 29-sentyabr",
+      "prompt": "Gitler Sudet o'lkasini 1-oktabrda kelishuv bo'ladimi-yo'qmi, baribir egallaydi. Britaniya va Fransiya uni imzolash-imzolamaslikni hal qilishi kerak.",
+      "options": {
+        "appease": {
+          "label": "Myunxenda imzolash",
+          "description": "Tinchlik va'dasi evaziga Gitlerga Sudet o'lkasini bering. Britaniya qiruvchilar va radar qurish uchun yana bir yil oladi."
+        },
+        "resist": {
+          "label": "Chexoslovakiya yonida turish",
+          "description": "Imzolashdan bosh torting. Agar Germaniya hujum qilsa, Britaniya va Fransiya hoziroq Chexoslovakiya armiyasi va uning istehkomlari bilan birga urushga kiradi."
+        }
+      }
+    },
+    "sudeten-intro": {
+      "narration": {
+        "0": {
+          "text": "Chemberlen kelishuvsiz uyiga qaytadi. Britaniya va Fransiya safarbarlik e'lon qiladi. 1938-yil 1-oktabrda nemis qo'shinlari baribir Chexoslovakiya chegarasini kesib o'tadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ular o'rmonlardagi yangi beton bunkerlar zanjiriga, o'z uyini himoya qilayotgan yaxshi qurollangan armiyaga duch keladi. Germaniyada uzoq urush uchun yoqilg'i zaxirasi yo'q, g'arbiy chegarasi esa deyarli himoyasiz.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Berlinda bir guruh generallar yashirincha kelishib olgan: agar Gitler yutib bo'lmaydigan urush boshlasa, uni hibsga olishadi. Endi chexoslovaklar bardosh berishi kerak.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "sudeten-battle": {
+      "battle": {
+        "name": "Chegara istehkomlari jangi",
+        "objective": "1938-yil 1-oktabr. Myunxenda kelishuv bo'lmadi va nemis armiyasi chegarani kesib o'tdi. Chexoslovakiyada 1,25 million qurolli askar va tog'larda yangi beton istehkomlar zanjiri bor. Fransiya va Britaniya g'arbdan zarba bera olguncha chiziqni ushlab turing.",
+        "player": {
+          "name": "Chexoslovakiya armiyasi"
+        },
+        "enemy": {
+          "name": "Germaniyaning 2- va 10-armiyalari"
+        },
+        "events": {
+          "luftwaffe": {
+            "title": "Tog'lar uzra bombardimonchilar",
+            "prompt": "Nemis bombardimonchilari istehkomlaringiz ortidagi yo'llarni bombalamoqda. Fransiya armiyasi Majino chizig'ida safarbar qilingan, ammo hali hujumga o'tmagan.",
+            "options": {
+              "man-forts": {
+                "label": "Istehkomlarga!",
+                "description": "Askarlarni beton ichiga olib kiring, bombalar bo'sh yo'llarga tushaversin."
+              },
+              "call-paris": {
+                "label": "Parijga murojaat",
+                "description": "Germaniya armiyasining katta qismi shu yerda, sharqda turganida, Fransiyadan chala qurilgan Zigfrid chizig'iga hoziroq hujum qilishni so'rang."
+              }
+            }
+          },
+          "generals-plot": {
+            "title": "Generallar fitnasi",
+            "prompt": "Pragaga mish-mishlar yetib keladi: Germaniya Bosh shtabi boshlig'i Frans Galder va boshqa ofitserlar, agar Gitler Germaniyani yutqazishi mumkin bo'lgan urushga sudrab kirsa, uni hibsga olishga tayyor bo'lgan ekan.",
+            "options": {
+              "counter-attack": {
+                "label": "Qarshi hujum",
+                "description": "Nemis generallariga bu urushni yutib bo'lmasligini ko'rsating. Tanklar va zaxiralarni oldinga yuboring."
+              },
+              "broadcast": {
+                "label": "Germaniyaga radio murojaati",
+                "description": "Nemis askarlariga radio orqali Britaniya va Fransiya endi ular bilan urushayotganini, generallari buni bilishini ayting."
+              }
+            }
+          },
+          "last-line": {
+            "title": "Istehkomlar qurshovda",
+            "prompt": "Olovpurkagichli nemis sapyorlari birinchi bunkerlarga yetib keldi. Ortingizda Bogemiyaning ochiq tekisligi yotibdi.",
+            "options": {
+              "hold-forts": {
+                "label": "Har bir bunkerdan jang qilish",
+                "description": "Har bir istehkom yolg'iz o'zi jangni davom ettiradi. Ular aynan shu uchun qurilgan."
+              },
+              "moravia": {
+                "label": "Moraviyaga chekinish",
+                "description": "Tog'larni qoldiring, armiyani saqlab qoling va keyingi tizmada jang qiling."
+              }
+            }
+          }
+        }
+      }
+    },
+    "hitler-falls": {
+      "narration": {
+        "0": {
+          "text": "Chegara istehkomlari uch hafta bardosh beradi. Fransuz diviziyalari Saar o'lkasiga kirib boradi, Qirollik dengiz floti Germaniya portlarini qamal qiladi. Gitler qisqa bo'ladi deb va'da qilgan urush yomon ketmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Noyabrda general Galder va uning safdosh ofitserlari harakatga o'tadi. Gitler Reyx kansleriyasida hibsga olinadi, yangi harbiy hukumat sulh so'raydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "czech-falls": {
+      "narration": {
+        "0": {
+          "text": "Istehkomlar aylanib o'tiladi va Chexoslovakiya yil oxirigacha quladi. G'arbdagi fransuz hujumi birinchi nemis istehkomlaridayoq to'xtaydi. Generallar fitnasi hech qachon amalga oshmaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Urush cho'zilib ketadi. 1939-yilda Polsha bosib olinadi. 1940-yil mayida nemis armiyasi Arden orqali yorib o'tadi, Chemberlen iste'foga chiqadi va Uinston Cherchill bosh vazir bo'ladi. Olti haftadan so'ng Fransiya taslim bo'lgan, Britaniya armiyasi esa Dyunkerkda qamalda qolgan.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "peace-for-our-time": {
+      "narration": {
+        "0": {
+          "text": "Chemberlen Xeston aerodromiga Gitler imzolagan qog'ozni silkitib tushadi. O'sha oqshom u xursand olomonga «zamonamiz uchun tinchlik» olib kelganini aytadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Olti oydan so'ng nemis qo'shinlari Pragaga kirib keladi. 1939-yil sentyabrida ular Polshaga bostirib kiradi va Britaniya bilan Fransiya urush e'lon qiladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "1940-yil mayida nemis armiyasi Arden orqali yorib o'tadi. Hujum boshlangan kuni, 10-mayda Uinston Cherchill bosh vazir bo'ldi. Olti haftadan so'ng Fransiya taslim bo'lgan, Britaniya armiyasi esa Dyunkerkda qamalda qolgan.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "cabinet-1940": {
+      "title": "Urush kabineti · 1940-yil 28-may",
+      "prompt": "Tashqi ishlar vaziri lord Galifaks Gitler qanday tinchlik shartlarini taklif qilishini bilish uchun Mussoliniga murojaat qilmoqchi. Armiyaning katta qismi Dyunkerk sohillarida qamalda. Cherchill unga javob berishi kerak.",
+      "options": {
+        "negotiate": {
+          "label": "Shartlarni so'rash",
+          "description": "Hali saqlab qolishga arziydigan narsa bor ekan, armiya va imperiyani saqlab qoling. Gitler Britaniyaga tegmasligini shama qilgan."
+        },
+        "fight-on": {
+          "label": "«Biz hech qachon taslim bo'lmaymiz»",
+          "description": "«Agar orolimizning uzoq tarixi nihoyat tugaydigan bo'lsa, u faqat har birimiz o'z qonimizga bo'g'ilib yerda yotganimizda tugasin.» Britaniya yolg'iz jang qilishda davom etadi."
+        }
+      }
+    },
+    "halifax-peace": {
+      "narration": {
+        "0": {
+          "text": "Cherchill ovozda yutqazadi va iste'foga chiqadi. Lord Galifaks bosh vazir bo'ladi va Britaniyaga o'z floti va imperiyasini qoldirib, qit'ani Gitlerga topshiruvchi tinchlikni imzolaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Yevropada birorta ham ittifoqchisi qolmagan Qo'shma Shtatlar g'arbdagi urushdan chetda qoladi. Germaniya butun kuchini sharqqa, Sovet Ittifoqiga qarshi buradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "battle-of-britain": {
+      "title": "Britaniya jangi · 1940-yil avgust",
+      "prompt": "Bosqin uchun osmonni tozalash maqsadida Lyuftvaffe har kuni RAF aerodromlari va radar stansiyalarini bombalamoqda. Qiruvchi qo'mondonlik uchuvchilarni tayyorlashga ulgurganidan tezroq yo'qotmoqda.",
+      "options": {
+        "radar-defense": {
+          "label": "Douding tizimiga ishonish",
+          "description": "Radar, kuzatuvchilar va bunkerdagi boshqaruv xonasi har bir eskadrilyani dushman samolyotlariga yo'naltiradi. Har bir qiruvchini aerodromlarni himoya qilishga sarflang."
+        },
+        "vengeance": {
+          "label": "Berlinni bombalash",
+          "description": "Bombardimonchi qo'mondonlikni nemis poytaxtiga zarba berishga yuboring. Zarar kam bo'ladi, ammo Gitlerni g'azablantiradi."
+        }
+      }
+    },
+    "the-few": {
+      "narration": {
+        "0": {
+          "text": "Radar Fransiya ustida to'planayotgan har bir reydni ko'radi. Qiruvchilar bombardimonchilarni qayta-qayta qarshi oladi va RAF bir samolyot yo'qotganda Lyuftvaffe deyarli ikkitasini yo'qotadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Cherchill Jamoalar palatasida aytadi: «Insoniyat to'qnashuvlari tarixida hech qachon shuncha ko'p odam shuncha oz odamga bunchalik qarzdor bo'lmagan.» Sentyabrda Gitler Britaniyaga bosqinni jimgina keyinga suradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "the-blitz": {
+      "narration": {
+        "0": {
+          "text": "Berlinga reyddan g'azablangan Gitler Lyuftvaffega buning o'rniga Londonni bombalashni buyuradi. 7-sentyabrdan boshlab «Blits» butun Britaniyada qirq mingdan ortiq tinch aholini o'ldiradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ammo shikastlangan RAF aerodromlari kerakli tanaffusni oladi. Qiruvchilar tiklanadi, bosqin hech qachon bo'lmaydi, londonliklar esa metroda tunab, hayotni davom ettiradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "pearl-harbor": {
+      "narration": {
+        "0": {
+          "text": "1941-yil 7-dekabr, yakshanba. Yapon aviatashuvchi samolyotlari Gavayidagi Pyorl-Xarborda AQSh Tinch okeani flotiga hujum qiladi. Sakkizta linkor cho'ktiriladi yoki shikastlanadi, ikki mingdan ortiq amerikalik halok bo'ladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "«Kecha, 1941-yil 7-dekabrda, sharmandalik bilan yodda qoladigan kunda, Amerika Qo'shma Shtatlari to'satdan va qasddan hujumga uchradi.»",
+          "speaker": "Franklin D. Ruzvelt"
+        },
+        "2": {
+          "text": "To'rt kundan so'ng Gitler ham Qo'shma Shtatlarga urush e'lon qiladi. Ammo Amerika aviatashuvchilari o'sha tongda dengizda edi va ularning hammasi omon qoldi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-midway": {
+      "prompt": "1942-yil iyun. Midueydan shimoli-sharqdagi AQSh aviatashuvchisining uchish palubasini o'rganing: atrofga qarash uchun suring va yonib turgan belgilarni bosing.",
+      "hotspots": {
+        "codebreakers": {
+          "label": "Kod buzuvchilar",
+          "title": "«AF da suv tanqis»",
+          "description": "Pyorl-Xarbordagi yerto'lada Jozef Roshfor jamoasi Yaponiya flotining shifrini qisman ochgan. «AF» nishoni Miduey ekanini isbotlash uchun ular orolga buzilgan suv qurilmasi haqida soxta xabar yuborishni buyurdi. Bir necha kundan keyin yaponlar «AF da suv tanqis» deb xabar berdi."
+        },
+        "dauntless": {
+          "label": "Pikirovchi bombardimonchilar",
+          "title": "«Dauntless»",
+          "description": "Sekin va eskicha ko'rinadigan SBD «Dauntless» to'rt kilometr balandlikdan kemaga deyarli tik sho'ng'iy oladi. Agar bombardimonchilar yapon aviatashuvchilarini palubasida samolyot va yoqilg'i bilan tutib olsa, bitta bomba halokatli bo'lishi mumkin."
+        },
+        "yorktown": {
+          "label": "Ta'mirchilar",
+          "title": "Yetmish ikki soat",
+          "description": "«Yorktaun» aviatashuvchisi bir oy oldin Marjon dengizida qattiq shikastlangan. Ta'mir uch oy davom etishi kerak edi. Bir ming to'rt yuz ishchi uni taxminan uch kunda tiklab qo'ydi."
+        },
+        "kido-butai": {
+          "label": "Yapon floti",
+          "title": "Kido Butay",
+          "description": "Pyorl-Xarborga zarba bergan oltita aviatashuvchidan to'rttasi, «Akagi», «Kaga», «Soryu» va «Xiryu», ortida desant kuchlari bilan Midueyga qarab kelmoqda. Admiral Yamamoto so'nggi Amerika aviatashuvchilarini tuzoqqa tushirishga umid qilmoqda."
+        }
+      }
+    },
+    "midway-choice": {
+      "title": "Midueydan shimoli-sharq · 1942-yil 4-iyun",
+      "prompt": "Razvedka samolyoti yapon aviatashuvchilarini topdi. Ularning samolyotlari Miduey orolini bombalamoqda. AQSh flotida to'rttaga qarshi uchta aviatashuvchi bor.",
+      "options": {
+        "ambush": {
+          "label": "Hammasini hoziroq ko'tarish",
+          "description": "Yapon samolyotlari Miduey reydidan keyin yoqilg'i olayotgan paytda uzoq masofadan birinchi bo'lib zarba bering. Sekin torpedo bombardimonchilarining ba'zilari qaytmasligi mumkin."
+        },
+        "caution": {
+          "label": "Aviatashuvchilarni saqlash",
+          "description": "Gavayi tomon chekining. Bu Amerikaning Tinch okeanidagi yagona aviatashuvchilari, ularni kattaroq flotga qarshi xavf ostiga qo'yib bo'lmaydi."
+        }
+      }
+    },
+    "midway-victory": {
+      "narration": {
+        "0": {
+          "text": "Torpedo bombardimonchilari birinchi bo'lib hujum qiladi va deyarli butunlay qirilib ketadi. Ammo ular yapon qiruvchilarini dengiz sathiga tortib tushiradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ertalab soat 10:22 da Amerika pikirovchi bombardimonchilari tepada paydo bo'ladi. Besh daqiqada uchta yapon aviatashuvchisi yonib ketadi. To'rtinchisi, «Xiryu», o'sha kuni tushdan keyin yaroqsiz holga keltiriladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Yaponiya to'rtta aviatashuvchini va hech qachon o'rnini to'ldira olmaydigan yuzlab tajribali uchuvchilarni yo'qotdi. Pyorl-Xarbordan olti oy o'tib, Tinch okeanida burilish yuz berdi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "midway-defeat": {
+      "narration": {
+        "0": {
+          "text": "Aviatashuvchilar orqaga buriladi. Miduey yapon desantiga taslim bo'ladi va endi yapon samolyotlari Gavayiga yeta oladi. Pyorl-Xarbordan flot bazasi sifatida voz kechishga to'g'ri keladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ularni to'xtatadigan Amerika floti bo'lmagani uchun yaponlar Avstraliyaga dengiz yo'lini kesib qo'yadi. Vashington Germaniyaga qarshi urush birinchi o'rinda turishiga qaror qiladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "alamein-intro": {
+      "narration": {
+        "0": {
+          "text": "Misr, 1942-yil oktabr. «Cho'l tulkisi» feldmarshal Ervin Rommel Britaniya armiyasini Shimoliy Afrika bo'ylab El-Alameyn degan temir yo'l bekatigacha quvib keldi. Undan narida Iskandariya va Suvaysh kanali joylashgan.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Britaniya 8-armiyasining yangi qo'mondoni general Bernard Montgomeri ikki oy davomida tank, to'p va askar to'pladi. Unda hamma narsa ko'proq va u buni biladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Rommelda yoqilg'i yetishmaydi, o'zi esa kasal. U davolanish uchun Avstriyaga ketgan. Uning yo'qligida armiyasi yarim million mina o'rnatdi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "alamein-battle": {
+      "battle": {
+        "name": "El-Alameyndagi ikkinchi jang",
+        "objective": "1942-yil 23-oktabr, kechqurun soat 9:40. Rommel armiyasi Iskandariyadan oltmish kilometr narida yarim million mina ortida mustahkam o'rnashgan. Mina maydonlarini yorib o'ting va «Afrika» tank armiyasi Suvaysh kanaliga yetib borishidan oldin uni yo'q qiling.",
+        "player": {
+          "name": "Britaniya 8-armiyasi"
+        },
+        "enemy": {
+          "name": "«Afrika» tank armiyasi"
+        },
+        "events": {
+          "lightfoot": {
+            "title": "«Laytfut» operatsiyasi",
+            "prompt": "To'qqiz yuzga yaqin to'p g'ildirakma-g'ildirak tizilgan. Ularning ortida sapyorlar «Iblis bog'lari», ya'ni nemis mina maydonlari orqali yo'l ochishni kutmoqda.",
+            "options": {
+              "barrage": {
+                "label": "O't och!",
+                "description": "1918-yildan beri eng katta Britaniya artilleriya zarbasi cho'lni yigirma daqiqa yoritadi."
+              },
+              "sappers": {
+                "label": "Avval sapyorlar",
+                "description": "Tanklar kirishidan oldin muhandislar mina qidirgichlar bilan keng yo'laklar ochsin. Sekinroq, ammo minalarda kamroq tank yo'qotiladi."
+              }
+            }
+          },
+          "rommel-returns": {
+            "title": "Rommel qaytadi",
+            "prompt": "Jang boshlanganda Rommel Avstriyadagi kasalxonada edi. U Afrikaga uchib qaytdi va qarshi hujum uchun tanklarini to'plamoqda.",
+            "options": {
+              "supercharge": {
+                "label": "«Superchardj» operatsiyasi",
+                "description": "Tank diviziyalarini bitta tor nuqtaga tashlab, qanchaga tushishidan qat'i nazar yorib o'ting."
+              },
+              "crumbling": {
+                "label": "Yemirishni davom ettirish",
+                "description": "Montgomerining rejasi: «O'q» davlatlari piyodalarini asta-sekin yemiring, Rommel esa tanklarini sizga hujum qilib isrof qilsin."
+              }
+            }
+          },
+          "no-retreat": {
+            "title": "Yorib o'tish to'xtadi",
+            "prompt": "Mina maydonlaridagi yo'laklar yonayotgan tanklarga to'lib ketdi. Tank qo'mondonlari orqaga chekinib kutmoqchi.",
+            "options": {
+              "monty-order": {
+                "label": "«Chekinish yo'q»",
+                "description": "Montgomeri boshqa chekinish bo'lmasligiga va'da bergan. Tanklar yana oldinga yuradi."
+              },
+              "desert-air-force": {
+                "label": "Cho'l havo kuchlarini chaqirish",
+                "description": "Bombardimonchilarni nemis tankka qarshi to'plari ustiga to'lqin-to'lqin qilib yuboring."
+              }
+            }
+          }
+        }
+      }
+    },
+    "alamein-won": {
+      "narration": {
+        "0": {
+          "text": "O'n ikki kundan so'ng Rommel chizig'i yorib o'tiladi. Bir necha kundan keyin Amerika va Britaniya qo'shinlari Marokash va Jazoirga tushadi. 1943-yil mayiga kelib Afrikadagi «O'q» davlatlari armiyalari taslim bo'ladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "«Bu oxir emas. Bu hatto oxirning boshlanishi ham emas. Ammo bu, ehtimol, boshlanishning oxiridir.»",
+          "speaker": "Uinston Cherchill"
+        }
+      }
+    },
+    "alamein-lost": {
+      "narration": {
+        "0": {
+          "text": "Britaniya hujumi mina maydonlarida botib qoladi. Rommel El-Alameynni ushlab turadi va Afrikadagi urush 1943-yilning ichkarisigacha cho'ziladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Fransiya uchun mo'ljallangan askarlar, tanklar va desant kemalari O'rta dengizda qolib ketadi. Rommel Yevropaga qahramon bo'lib qaytadi va Gitler unga Atlantika sohilini himoya qilishni topshiradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "southwick-intro": {
+      "narration": {
+        "0": {
+          "text": "Portsmut yaqinidagi Sautvik-Xaus, 1944-yil 4-iyun. Olti mingdan ortiq kema va bir yuz ellik ming askar La-Mansh bo'g'ozidan Normandiyaga o'tishni kutmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Miduey va El-Alameyndan keyin tashabbus hamma joyda ittifoqchilar qo'lida. Qizil Armiya sharqda oldinga bormoqda, Rim esa qulash arafasida.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Ammo La-Manshda bo'ron esmoqda va bosqin allaqachon bir marta keyinga surilgan. Ittifoqchilar oliy bosh qo'mondoni general Duayt D. Eyzenxauer yolg'iz o'zi qaror qilishi kerak.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-southwick": {
+      "prompt": "4-iyun kechasi Sautvik-Xausni o'rganing: atrofga qarash uchun suring va yonib turgan belgilarni bosing.",
+      "hotspots": {
+        "map-room": {
+          "label": "Xaritalar xonasi",
+          "title": "Guruh kapitani Stagg",
+          "description": "Bosh meteorolog, shotlandiyalik olim Jeyms Stagg bo'ronlar orasida bo'shliqni payqadi. Uning fikricha, 6-iyunda shamol taxminan o'ttiz olti soatga tinadi. Amerikalik sinoptiklar unga qo'shilmaydi."
+        },
+        "fleet": {
+          "label": "Flot",
+          "title": "«Neptun» operatsiyasi",
+          "description": "Linkorlar, mina qidiruvchilar, transport kemalari va minglab desant kemalari. Ba'zi karvonlar yo'lga chiqib, qaytarib chaqirilgan. Askarlar kemalarida kunlab qamalib, dengiz kasalligi bilan kutmoqda."
+        },
+        "tides": {
+          "label": "Suv ko'tarilishi va oy",
+          "title": "Oyda faqat uch kun",
+          "description": "Desant uchun sohildagi to'siqlarni ochib beradigan tonggi suv qaytishi va desantchilar uchun oldingi kechada yorug' oy kerak. Bu 5, 6 va 7-iyunga to'g'ri keladi. Keyingi imkoniyat ikki hafta keyin."
+        },
+        "note": {
+          "label": "Cho'ntakdagi xat",
+          "title": "«Ayb faqat menda»",
+          "description": "Eyzenxauer desant muvaffaqiyatsiz bo'lsa o'qib eshittirish uchun qisqa xabar yozib qo'ygan: «Agar urinishda biror ayb yoki xato bo'lsa, u faqat meniki.» U buni hamyonida saqlaydi."
+        },
+        "ike": {
+          "label": "Eyzenxauer",
+          "title": "Oliy bosh qo'mondon",
+          "description": "1942-yilgacha jangda hech qachon qo'shinga qo'mondonlik qilmagan Kanzaslik kichik shaharcha yigiti. Uning vazifasi jang qilishdan ko'ra britaniyaliklar, amerikaliklar, kanadaliklar va Erkin fransuzlarni birga ishlatishdir."
+        }
+      }
+    },
+    "dday-choice": {
+      "title": "Sautvik-Xaus · 5-iyun, tonggi 4:15",
+      "prompt": "Yomg'ir derazalarni savalamoqda. Stagg ob-havo o'zgarishi kelishini aytmoqda. Qo'mondonlar jim, Eyzenxauerni kutmoqda.",
+      "options": {
+        "go": {
+          "label": "«Mayli, boramiz»",
+          "description": "Bashoratga ishoning. Bosqin bugun kechqurun suzib chiqadi va 6-iyun tongida sohilga tushadi."
+        },
+        "delay": {
+          "label": "Yaxshiroq havoni kutish",
+          "description": "Xavf juda katta. Askarlarni tushiring va ikki haftadan keyingi qulay suv ko'tarilishini kuting."
+        }
+      }
+    },
+    "storm": {
+      "narration": {
+        "0": {
+          "text": "Keyingi qulay suv ko'tarilishi sanasi, 19-iyunda La-Manshda qirq yildagi eng kuchli bo'ron to'rt kun esadi. Bosqin yana iyulga suriladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ba'zi qo'shinlarga reja aytilgan, keyin ular haftalab kutishga majbur. Nemis razvedkasi reja haqida ishoralarni ilg'aydi va Rommel tank diviziyasini Normandiya sohiliga olib keladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "omaha-landing": {
+      "narration": {
+        "0": {
+          "text": "Normandiya, 1944-yil 6-iyun. Desantchilar tunda ichkariga tashlandi. Tongda flot o't ochadi va desant kemalari beshta sohilga yo'l oladi: Yuta, Omaxa, Gold, Juno va Sord.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Omaxada bombardimonchilar bulut tufayli bombalarini juda ichkariga tashladi. Tepaliklardagi bunkerlar butun qolgan va nemis pulemyotchilari kutib turibdi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "omaha-go": {
+      "battle": {
+        "name": "Omaxa sohili",
+        "objective": "1944-yil 6-iyun, ertalab soat 6:30. Dengiz to'lqinli, bombardimonchilar bunkerlarga tegmadi, ammo nemislar bunday havoda desant kutmagan edi. Suv ko'tarilishidan oldin sohildan chiqib, tepaliklarga ko'tariling.",
+        "player": {
+          "name": "AQSh 1- va 29-piyoda diviziyalari"
+        },
+        "enemy": {
+          "name": "352- va 716-piyoda diviziyalari"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "Suzuvchi tanklar",
+            "prompt": "O'ttiz ikkita «Sherman» tankida besh kilometr naridan sohilga suzib chiqishi uchun brezent suzish ekranlari bor. To'lqinlar bir yarim metr baland.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Ularni dengizda tushirish",
+                "description": "Rejaga amal qiling va ularni qirg'oq to'plari yeta olmaydigan uzoqlikda tushiring."
+              },
+              "land-on-beach": {
+                "label": "Ularni sohilgacha olib borish",
+                "description": "Tanklarni desant kemalarida qoldiring va to'g'ridan-to'g'ri qumga, o'q ostida tushiring."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Esminetslar yaqinlashadi",
+            "prompt": "Esminets kapitanlari kema ko'prigidan qumda bosilib qolgan piyodalarni ko'rmoqda. Buyruqqa ko'ra ular qirg'oqqa bunchalik yaqinlashmasligi kerak.",
+            "options": {
+              "close-in": {
+                "label": "Yaqin kelish",
+                "description": "Esminetslarni sohilga bir kilometrgacha, qum sayozliklarini qirib olib keling va bunkerlarni to'g'ridan-to'g'ri o'qqa tuting."
+              },
+              "bangalore": {
+                "label": "Simni portlatish",
+                "description": "Muhandislar sim ostiga Bangalor torpedalarini suqadi, kichik guruhlar esa istehkomlar oralig'idan tepaliklarga tirmashadi."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Toshlar ortida bosilib qolganlar",
+            "prompt": "Minglab askarlar past toshli uyum ortida yotibdi, ortlarida esa suv ko'tarilmoqda. Dengizda general Bredli keyingi to'lqinlarni boshqa joyga yuborishni o'ylamoqda.",
+            "options": {
+              "get-off-beach": {
+                "label": "«Bu sohildan chiqing!»",
+                "description": "Polkovnik Jorj Teylor: «Bu sohilda ikki xil odam qoladi: o'liklar va o'lishi muqarrar bo'lganlar. Endi bu yerdan jo'naymiz!»"
+              },
+              "dig-in": {
+                "label": "Ushlab turib kutish",
+                "description": "Toshlar ortiga chuqur kirib, keyingi to'lqin va flot to'plarini kuting."
+              }
+            }
+          }
+        }
+      }
+    },
+    "omaha-delay": {
+      "battle": {
+        "name": "Omaxa sohili",
+        "objective": "Desant haftalab kechikdi. Rommel sohilga tank diviziyasini olib kelishga va minglab yangi mina o'rnatishga ulgurdi. Sohildan chiqib, tepaliklarga ko'tariling, aks holda bosqin barbod bo'ladi.",
+        "player": {
+          "name": "AQSh 1- va 29-piyoda diviziyalari"
+        },
+        "enemy": {
+          "name": "352-diviziya va 21-tank diviziyasi"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "Suzuvchi tanklar",
+            "prompt": "O'ttiz ikkita «Sherman» tankida besh kilometr naridan sohilga suzib chiqishi uchun brezent suzish ekranlari bor. To'lqinlar bir yarim metr baland.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Ularni dengizda tushirish",
+                "description": "Rejaga amal qiling va ularni qirg'oq to'plari yeta olmaydigan uzoqlikda tushiring."
+              },
+              "land-on-beach": {
+                "label": "Ularni sohilgacha olib borish",
+                "description": "Tanklarni desant kemalarida qoldiring va to'g'ridan-to'g'ri qumga, o'q ostida tushiring."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Esminetslar yaqinlashadi",
+            "prompt": "Esminets kapitanlari kema ko'prigidan qumda bosilib qolgan piyodalarni ko'rmoqda. Buyruqqa ko'ra ular qirg'oqqa bunchalik yaqinlashmasligi kerak.",
+            "options": {
+              "close-in": {
+                "label": "Yaqin kelish",
+                "description": "Esminetslarni sohilga bir kilometrgacha, qum sayozliklarini qirib olib keling va bunkerlarni to'g'ridan-to'g'ri o'qqa tuting."
+              },
+              "bangalore": {
+                "label": "Simni portlatish",
+                "description": "Muhandislar sim ostiga Bangalor torpedalarini suqadi, kichik guruhlar esa istehkomlar oralig'idan tepaliklarga tirmashadi."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Toshlar ortida bosilib qolganlar",
+            "prompt": "Minglab askarlar past toshli uyum ortida yotibdi, ortlarida esa suv ko'tarilmoqda. Dengizda general Bredli keyingi to'lqinlarni boshqa joyga yuborishni o'ylamoqda.",
+            "options": {
+              "get-off-beach": {
+                "label": "«Bu sohildan chiqing!»",
+                "description": "Polkovnik Jorj Teylor: «Bu sohilda ikki xil odam qoladi: o'liklar va o'lishi muqarrar bo'lganlar. Endi bu yerdan jo'naymiz!»"
+              },
+              "dig-in": {
+                "label": "Ushlab turib kutish",
+                "description": "Toshlar ortiga chuqur kirib, keyingi to'lqin va flot to'plarini kuting."
+              }
+            }
+          }
+        }
+      }
+    },
+    "southwick-intro-b": {
+      "narration": {
+        "0": {
+          "text": "Portsmut yaqinidagi Sautvik-Xaus, 1944-yil 4-iyun. Olti mingdan ortiq kema va bir yuz ellik ming askar La-Mansh bo'g'ozidan Normandiyaga o'tishni kutmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Afrikadagi urush 1943-yilgacha cho'zildi va shu yerda bo'lishi kerak bo'lgan askarlar va desant kemalari hali ham O'rta dengizda. Misr qahramoni Rommel endi Fransiya sohili mudofaasiga qo'mondonlik qilmoqda.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "La-Manshda bo'ron esmoqda va bosqin allaqachon bir marta keyinga surilgan. Ittifoqchilar oliy bosh qo'mondoni general Duayt D. Eyzenxauer yolg'iz o'zi qaror qilishi kerak.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-southwick-b": {
+      "prompt": "4-iyun kechasi Sautvik-Xausni o'rganing: atrofga qarash uchun suring va yonib turgan belgilarni bosing.",
+      "hotspots": {
+        "map-room": {
+          "label": "Xaritalar xonasi",
+          "title": "Guruh kapitani Stagg",
+          "description": "Bosh meteorolog, shotlandiyalik olim Jeyms Stagg bo'ronlar orasida bo'shliqni payqadi. Uning fikricha, 6-iyunda shamol taxminan o'ttiz olti soatga tinadi. Amerikalik sinoptiklar unga qo'shilmaydi."
+        },
+        "fleet": {
+          "label": "Flot",
+          "title": "«Neptun» operatsiyasi",
+          "description": "Linkorlar, mina qidiruvchilar, transport kemalari va minglab desant kemalari. Ba'zi karvonlar yo'lga chiqib, qaytarib chaqirilgan. Askarlar kemalarida kunlab qamalib, dengiz kasalligi bilan kutmoqda."
+        },
+        "tides": {
+          "label": "Suv ko'tarilishi va oy",
+          "title": "Oyda faqat uch kun",
+          "description": "Desant uchun sohildagi to'siqlarni ochib beradigan tonggi suv qaytishi va desantchilar uchun oldingi kechada yorug' oy kerak. Bu 5, 6 va 7-iyunga to'g'ri keladi. Keyingi imkoniyat ikki hafta keyin."
+        },
+        "note": {
+          "label": "Cho'ntakdagi xat",
+          "title": "«Ayb faqat menda»",
+          "description": "Eyzenxauer desant muvaffaqiyatsiz bo'lsa o'qib eshittirish uchun qisqa xabar yozib qo'ygan: «Agar urinishda biror ayb yoki xato bo'lsa, u faqat meniki.» U buni hamyonida saqlaydi."
+        },
+        "ike": {
+          "label": "Eyzenxauer",
+          "title": "Oliy bosh qo'mondon",
+          "description": "1942-yilgacha jangda hech qachon qo'shinga qo'mondonlik qilmagan Kanzaslik kichik shaharcha yigiti. Afrikadagi uzoq jang unga askarlar va desant kemalari qimmatiga tushdi. U sohillar rejalashtirilganidan og'irroq bo'lishini biladi."
+        }
+      }
+    },
+    "dday-choice-b": {
+      "title": "Sautvik-Xaus · 5-iyun, tonggi 4:15",
+      "prompt": "Yomg'ir derazalarni savalamoqda. Stagg ob-havo o'zgarishi kelishini aytmoqda. Qo'mondonlar jim, Eyzenxauerni kutmoqda.",
+      "options": {
+        "go": {
+          "label": "«Mayli, boramiz»",
+          "description": "Bashoratga ishoning. Bosqin bugun kechqurun suzib chiqadi va 6-iyun tongida sohilga tushadi."
+        },
+        "delay": {
+          "label": "Yaxshiroq havoni kutish",
+          "description": "Xavf juda katta. Askarlarni tushiring va ikki haftadan keyingi qulay suv ko'tarilishini kuting."
+        }
+      }
+    },
+    "storm-b": {
+      "narration": {
+        "0": {
+          "text": "Keyingi qulay suv ko'tarilishi sanasi, 19-iyunda La-Manshda qirq yildagi eng kuchli bo'ron to'rt kun esadi. Bosqin yana iyulga suriladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ba'zi qo'shinlarga reja aytilgan, keyin ular haftalab kutishga majbur. Nemis razvedkasi reja haqida ishoralarni ilg'aydi va Rommel tank diviziyasini Normandiya sohiliga olib keladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "omaha-landing-b": {
+      "narration": {
+        "0": {
+          "text": "Normandiya, 1944-yil 6-iyun. Desantchilar tunda ichkariga tashlandi. Tongda flot o't ochadi va desant kemalari beshta sohilga yo'l oladi: Yuta, Omaxa, Gold, Juno va Sord.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Omaxada bombardimonchilar bulut tufayli bombalarini juda ichkariga tashladi. Tepaliklardagi bunkerlar butun qolgan va nemis pulemyotchilari kutib turibdi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "omaha-go-b": {
+      "battle": {
+        "name": "Omaxa sohili",
+        "objective": "1944-yil 6-iyun, ertalab soat 6:30. Afrikada hech qachon yengilmagan Rommel bu sohilni minalar, to'siqlar va bunkerlar devoriga aylantirgan. Suv ko'tarilishidan oldin sohildan chiqib, tepaliklarga ko'tariling.",
+        "player": {
+          "name": "AQSh 1- va 29-piyoda diviziyalari"
+        },
+        "enemy": {
+          "name": "352- va 716-piyoda diviziyalari"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "Suzuvchi tanklar",
+            "prompt": "O'ttiz ikkita «Sherman» tankida besh kilometr naridan sohilga suzib chiqishi uchun brezent suzish ekranlari bor. To'lqinlar bir yarim metr baland.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Ularni dengizda tushirish",
+                "description": "Rejaga amal qiling va ularni qirg'oq to'plari yeta olmaydigan uzoqlikda tushiring."
+              },
+              "land-on-beach": {
+                "label": "Ularni sohilgacha olib borish",
+                "description": "Tanklarni desant kemalarida qoldiring va to'g'ridan-to'g'ri qumga, o'q ostida tushiring."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Esminetslar yaqinlashadi",
+            "prompt": "Esminets kapitanlari kema ko'prigidan qumda bosilib qolgan piyodalarni ko'rmoqda. Buyruqqa ko'ra ular qirg'oqqa bunchalik yaqinlashmasligi kerak.",
+            "options": {
+              "close-in": {
+                "label": "Yaqin kelish",
+                "description": "Esminetslarni sohilga bir kilometrgacha, qum sayozliklarini qirib olib keling va bunkerlarni to'g'ridan-to'g'ri o'qqa tuting."
+              },
+              "bangalore": {
+                "label": "Simni portlatish",
+                "description": "Muhandislar sim ostiga Bangalor torpedalarini suqadi, kichik guruhlar esa istehkomlar oralig'idan tepaliklarga tirmashadi."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Toshlar ortida bosilib qolganlar",
+            "prompt": "Minglab askarlar past toshli uyum ortida yotibdi, ortlarida esa suv ko'tarilmoqda. Dengizda general Bredli keyingi to'lqinlarni boshqa joyga yuborishni o'ylamoqda.",
+            "options": {
+              "get-off-beach": {
+                "label": "«Bu sohildan chiqing!»",
+                "description": "Polkovnik Jorj Teylor: «Bu sohilda ikki xil odam qoladi: o'liklar va o'lishi muqarrar bo'lganlar. Endi bu yerdan jo'naymiz!»"
+              },
+              "dig-in": {
+                "label": "Ushlab turib kutish",
+                "description": "Toshlar ortiga chuqur kirib, keyingi to'lqin va flot to'plarini kuting."
+              }
+            }
+          }
+        }
+      }
+    },
+    "omaha-delay-b": {
+      "battle": {
+        "name": "Omaxa sohili",
+        "objective": "Desant haftalab kechikdi. Rommel sohilga tank diviziyasini olib kelishga va minglab yangi mina o'rnatishga ulgurdi. Sohildan chiqib, tepaliklarga ko'tariling, aks holda bosqin barbod bo'ladi.",
+        "player": {
+          "name": "AQSh 1- va 29-piyoda diviziyalari"
+        },
+        "enemy": {
+          "name": "352-diviziya va 21-tank diviziyasi"
+        },
+        "events": {
+          "dd-tanks": {
+            "title": "Suzuvchi tanklar",
+            "prompt": "O'ttiz ikkita «Sherman» tankida besh kilometr naridan sohilga suzib chiqishi uchun brezent suzish ekranlari bor. To'lqinlar bir yarim metr baland.",
+            "options": {
+              "launch-at-sea": {
+                "label": "Ularni dengizda tushirish",
+                "description": "Rejaga amal qiling va ularni qirg'oq to'plari yeta olmaydigan uzoqlikda tushiring."
+              },
+              "land-on-beach": {
+                "label": "Ularni sohilgacha olib borish",
+                "description": "Tanklarni desant kemalarida qoldiring va to'g'ridan-to'g'ri qumga, o'q ostida tushiring."
+              }
+            }
+          },
+          "destroyers": {
+            "title": "Esminetslar yaqinlashadi",
+            "prompt": "Esminets kapitanlari kema ko'prigidan qumda bosilib qolgan piyodalarni ko'rmoqda. Buyruqqa ko'ra ular qirg'oqqa bunchalik yaqinlashmasligi kerak.",
+            "options": {
+              "close-in": {
+                "label": "Yaqin kelish",
+                "description": "Esminetslarni sohilga bir kilometrgacha, qum sayozliklarini qirib olib keling va bunkerlarni to'g'ridan-to'g'ri o'qqa tuting."
+              },
+              "bangalore": {
+                "label": "Simni portlatish",
+                "description": "Muhandislar sim ostiga Bangalor torpedalarini suqadi, kichik guruhlar esa istehkomlar oralig'idan tepaliklarga tirmashadi."
+              }
+            }
+          },
+          "pinned": {
+            "title": "Toshlar ortida bosilib qolganlar",
+            "prompt": "Minglab askarlar past toshli uyum ortida yotibdi, ortlarida esa suv ko'tarilmoqda. Dengizda general Bredli keyingi to'lqinlarni boshqa joyga yuborishni o'ylamoqda.",
+            "options": {
+              "get-off-beach": {
+                "label": "«Bu sohildan chiqing!»",
+                "description": "Polkovnik Jorj Teylor: «Bu sohilda ikki xil odam qoladi: o'liklar va o'lishi muqarrar bo'lganlar. Endi bu yerdan jo'naymiz!»"
+              },
+              "dig-in": {
+                "label": "Ushlab turib kutish",
+                "description": "Toshlar ortiga chuqur kirib, keyingi to'lqin va flot to'plarini kuting."
+              }
+            }
+          }
+        }
+      }
+    },
+    "liberation": {
+      "narration": {
+        "0": {
+          "text": "Kechga borib amerikaliklar tepaliklarga ko'tarildi va beshta sohil ham qo'lda. Avgustda Parij ozod qilinadi. Urushning asosiy og'irligini ko'targan Qizil Armiya sharqdan Berlinga yurmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Gitler 1945-yil 30-aprelda bunkerida o'z joniga qasd qiladi, bir haftadan so'ng Germaniya taslim bo'ladi. Atom bombalari Xirosima va Nagasakini vayron qilganidan keyin avgustda Yaponiya taslim bo'ladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "dday-fails": {
+      "narration": {
+        "0": {
+          "text": "Omaxa sohili boy berildi, qolgan sohillar bosib qo'yilgan va ajralib qolgan. Eyzenxauer o'z xatini o'qiydi: «Agar urinishda biror ayb yoki xato bo'lsa, u faqat meniki.»",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "G'arbiy ittifoqchilarga qayta urinish uchun kamida bir yil kerak bo'ladi. Qizil Armiya ularni kutib o'tirmaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    }
+  },
+  "characters": {
+    "churchill": {
+      "name": "Uinston Cherchill",
+      "role": "Parlament a'zosi, 1940-yil maydan bosh vazir"
+    },
+    "roosevelt": {
+      "name": "Franklin D. Ruzvelt",
+      "role": "Amerika Qo'shma Shtatlarining 32-prezidenti"
+    },
+    "eisenhower": {
+      "name": "Duayt D. Eyzenxauer",
+      "role": "Yevropadagi ittifoqchilar oliy bosh qo'mondoni"
+    },
+    "montgomery": {
+      "name": "Bernard Montgomeri",
+      "role": "Britaniya 8-armiyasi qo'mondoni"
+    },
+    "rommel": {
+      "name": "Ervin Rommel",
+      "role": "«Afrika» tank armiyasi qo'mondoni"
+    }
+  },
+  "title": "Eng shonli soat",
+  "era": "Myunxen · 1938",
+  "endings": {
+    "no-appeasement": {
+      "title": "Tinchlantirish yo'q",
+      "subtitle": "1938-yilda urush · istehkomlar bardosh beradi · Gitler qulaydi",
+      "epilogue": {
+        "0": {
+          "text": "1938-yilgi «qisqa urush» bir necha oy davom etadi. Germaniyaning yangi harbiy hukmdorlari Sudet o'lkasi va Avstriyani qaytarib beradi, natsistlar partiyasi taqiqlanadi."
+        },
+        "1": {
+          "text": "Xolokost bo'lmaydi. Olti million yahudiy va yana millionlab odamlar umrini oxirigacha yashaydi. Na «Blits», na Pyorl-Xarbor, na shaharga tashlangan atom bombasi bo'ladi."
+        },
+        "2": {
+          "text": "Cherchill haq bo'lib chiqqan odamga aylanadi, 30-sentyabr esa Pragada demokratiyalar jasorat topgan kun sifatida eslanadi."
+        }
+      }
+    },
+    "nazi-europe": {
+      "title": "Chiroqlar o'chadi",
+      "subtitle": "Britaniya 1940-yilda sulh tuzadi · Gitler Yevropani boshqaradi",
+      "epilogue": {
+        "0": {
+          "text": "Britaniya urushdan chiqqach, Germaniya 1941-yilda butun kuchini Sovet Ittifoqiga qarshi tashlaydi. Sharqdagi janglar yanada dahshatli tus oladi, Xolokost esa yopiq qit'a ortida ko'rinmasdan davom etadi."
+        },
+        "1": {
+          "text": "Britaniya flotini saqlab qoladi, ammo Gitler shartlari bilan yashaydi: gazetalari ehtiyotkor, qochqinlari esa uyiga qaytarib yuboriladi. Amerika qurollanib kutadi."
+        },
+        "2": {
+          "text": "Cherchill 1940-yil mayida haq edi: Gitler bilan tinchlik faqat sekinroq mag'lubiyat edi."
+        }
+      }
+    },
+    "japan-wins-pacific": {
+      "title": "Chiqayotgan quyosh imperiyasi",
+      "subtitle": "Aviatashuvchilar Midueyda orqaga qaytadi · Yaponiya Tinch okeanini boshqaradi",
+      "epilogue": {
+        "0": {
+          "text": "Amerika avval Germaniya bilan urushadi va 1944-yilda Tinch okeanida sulhga rozi bo'lishga majbur bo'ladi. Yaponiya Manchuriyadan Gollandiya Sharqiy Hindistonigacha bo'lgan zabt etgan yerlarining katta qismini saqlab qoladi."
+        },
+        "1": {
+          "text": "«Buyuk Sharqiy Osiyo umumiy farovonlik sohasi» o'n yillar davomida Tokiodan boshqariladi, Xitoy, Koreya va Janubi-Sharqiy Osiyoda shafqatsiz istilo va ozodlik urushlari davom etadi."
+        }
+      }
+    },
+    "d-day-fails": {
+      "title": "«Overlord» barbod bo'ladi",
+      "subtitle": "Omaxa sohili boy beriladi · Stalin Reyngacha yetadi",
+      "epilogue": {
+        "0": {
+          "text": "Qizil Armiya 1945-yil bahorida Berlinni oladi va to'xtamaydi. G'arbiy ittifoqchilar qayta desantga tayyor bo'lganda Sovet tanklari Reyn daryosiga yetib borgan bo'ladi."
+        },
+        "1": {
+          "text": "Yevropaning katta qismi «temir parda» ortida qoladi. Britaniya yana yolg'iz qoladi, bu safar Stalinga qarshi."
+        }
+      }
+    },
+    "allied-victory": {
+      "title": "Eng shonli soat",
+      "subtitle": "Siz biladigan tarix: D-Day, g'alaba va qayta qurilgan dunyo",
+      "epilogue": {
+        "0": {
+          "text": "Yetmish milliondan ortiq odam halok bo'ldi, ular orasida Xolokostda o'ldirilgan olti million yahudiy bor. Yevropa va Sharqiy Osiyo xarobaga aylangan."
+        },
+        "1": {
+          "text": "G'oliblar 1945-yilda Birlashgan Millatlar Tashkilotini tuzadi va natsist rahbarlarni Nyurnbergda sud qiladi. Marshall rejasi G'arbiy Yevropani qayta tiklaydi."
+        },
+        "2": {
+          "text": "Ammo Yevropa «temir parda» bilan o'rtasidan bo'linadi va urushda g'olib chiqqan ikki super davlat deyarli yarim asr davom etadigan «sovuq urush»ni boshlaydi."
+        }
+      }
+    }
+  }
+}

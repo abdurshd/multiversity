@@ -27,6 +27,12 @@ PEOPLE = {
     'world-war-1/kaiser-wilhelm-ii': dict(skin='#e6b99a', hair='#6b5a48', brow='#5a4a3a', beard='moustache', moustache='kaiser', beard_color='#6e5a44', age=0.5, eye='#3a5070'),
     'world-war-1/archduke-franz-ferdinand': dict(skin='#e2b08e', hair='#3a2c22', brow='#2e221a', beard='moustache', moustache='walrus', beard_color='#3a2c22', age=0.4, eye='#3e4a5a'),
     'world-war-1/woodrow-wilson': dict(skin='#e8bfa2', hair='#9a9690', brow='#6e6a64', beard='none', glasses=True, age=0.7, eye='#4a5a6a', long_face=True),
+    # bald: no hair cap painted (the hat/hair mesh covers the crown); smile: broad grin
+    'world-war-2/winston-churchill': dict(skin='#efc3a6', hair='#d8b090', brow='#b89a80', beard='none', bald=True, age=0.8, eye='#5a7090'),
+    'world-war-2/franklin-d-roosevelt': dict(skin='#e9c0a2', hair='#a8a49e', brow='#7a746c', beard='none', glasses=True, age=0.65, eye='#4a5a72', long_face=True, smile=True),
+    'world-war-2/dwight-d-eisenhower': dict(skin='#ecbf9e', hair='#d6b48e', brow='#a88a6a', beard='none', bald=True, age=0.6, eye='#4a6a8a', smile=True),
+    'world-war-2/bernard-montgomery': dict(skin='#e6b898', hair='#8a7a68', brow='#6a5a48', beard='moustache', moustache='clipped', beard_color='#8a7a68', age=0.7, eye='#5a6a7a', long_face=True),
+    'world-war-2/erwin-rommel': dict(skin='#e4b494', hair='#6a5240', brow='#4e3c2e', beard='none', age=0.5, eye='#4a6a80'),
 }
 
 
@@ -63,7 +69,8 @@ def paint(spec):
     d = ImageDraw.Draw(img)
 
     # hair line at the top
-    d.ellipse(box(256, 10, 560, 150), fill=hexrgb(spec['hair']))
+    if not spec.get('bald'):
+        d.ellipse(box(256, 10, 560, 150), fill=hexrgb(spec['hair']))
 
     # brows
     bw = 7 + 4 * (1 - spec['age'])
@@ -138,6 +145,9 @@ def paint(spec):
                 pts = [(256, 342), (256 + sx * 30, 336), (256 + sx * 68, 342), (256 + sx * 98, 324),
                        (256 + sx * 110, 286), (256 + sx * 122, 296), (256 + sx * 116, 336),
                        (256 + sx * 84, 368), (256 + sx * 36, 372), (256, 364)]
+            elif style == 'clipped':
+                # short clipped moustache over the middle of the lip
+                pts = [(256, 344), (256 + sx * 26, 342), (256 + sx * 46, 350), (256 + sx * 44, 364), (256, 362)]
             elif style == 'walrus':
                 pts = [(256, 342), (256 + sx * 46, 336), (256 + sx * 96, 350), (256 + sx * 126, 372),
                        (256 + sx * 96, 380), (256 + sx * 44, 374), (256, 366)]
@@ -145,7 +155,7 @@ def paint(spec):
                 pts = [(256, 344), (256 + sx * 38, 340), (256 + sx * 78, 352), (256 + sx * 100, 380),
                        (256 + sx * 72, 370), (256 + sx * 34, 368), (256, 362)]
             d.polygon([(x * u, y * u) for x, y in pts], fill=hexrgb(bc))
-            for k in range(8):
+            for k in range(4 if style == 'clipped' else 8):
                 x = 256 + sx * (12 + k * 10)
                 d.line([(x * u, 346 * u), ((x + sx * 6) * u, 366 * u)], fill=shade(bc, 0.8), width=int(2 * u))
     if spec.get('glasses'):
@@ -154,8 +164,13 @@ def paint(spec):
             d.ellipse(box(256 + sx * 98, 238, 96, 66), outline=(176, 146, 80, 255), width=int(5 * u))
         d.arc(box(256, 236, 40, 22), 200, 340, fill=(176, 146, 80, 255), width=int(5 * u))
     # lips
-    d.chord(box(256, 388, 70, 22), 0, 180, fill=shade(skin, 0.62))
-    d.arc(box(256, 384, 84, 22), 15, 165, fill=(70, 30, 28, 255), width=int(5 * u))
+    if spec.get('smile'):
+        d.chord(box(256, 380, 120, 50), 0, 180, fill=(250, 246, 238, 255))
+        d.arc(box(256, 380, 124, 54), 0, 180, fill=(110, 40, 36, 255), width=int(6 * u))
+        d.line([(196 * u, 380 * u), (316 * u, 380 * u)], fill=(150, 70, 60, 255), width=int(4 * u))
+    else:
+        d.chord(box(256, 388, 70, 22), 0, 180, fill=shade(skin, 0.62))
+        d.arc(box(256, 384, 84, 22), 15, 165, fill=(70, 30, 28, 255), width=int(5 * u))
 
     img = img.resize((OUT, OUT), Image.LANCZOS)
     mask = Image.new('L', (OUT, OUT), 0)

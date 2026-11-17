@@ -10,7 +10,7 @@ import {
 } from './battleSim';
 import { Banner } from '../world/parts';
 import {
-    buildArcher, buildArrow, buildBullet, buildCavalry, buildDragoon, buildInfantry, buildMachineGunner, buildModernCavalry, buildMusketBall, buildMusketeer, buildRifleman, buildTrenchSoldier,
+    buildArcher, buildArrow, buildBullet, buildCavalry, buildDragoon, buildInfantry, buildMachineGunner, buildModernCavalry, buildMusketBall, buildMusketeer, buildRifleman, buildTank, buildTrenchSoldier,
     figureMaterial,
 } from '../world/figures';
 
@@ -76,6 +76,16 @@ export function BattleView({ config }: { config: BattleConfig }) {
     const figures = useMemo(() => {
         const pPal = { cloth: config.player.color, accent: config.player.accentColor };
         const ePal = { cloth: config.enemy.color, accent: config.enemy.accentColor };
+        if (config.era === 'ww2') {
+            const ph = config.player.helmet ?? 'm1';
+            const eh = config.enemy.helmet ?? 'stahlhelm';
+            return {
+                player: { infantry: buildTrenchSoldier(pPal, ph), archer: buildMachineGunner(pPal, ph), cavalry: buildTank(pPal, ph) },
+                enemy: { infantry: buildTrenchSoldier(ePal, eh), archer: buildMachineGunner(ePal, eh), cavalry: buildTank(ePal, eh) },
+                arrow: buildBullet(),
+                fireArrow: buildBullet(),
+            };
+        }
         if (config.era === 'modern') {
             const ph = config.player.helmet ?? 'brodie';
             const eh = config.enemy.helmet ?? 'stahlhelm';
@@ -169,6 +179,7 @@ export function BattleView({ config }: { config: BattleConfig }) {
 
         // ── write instance matrices ──
         const t = clock.elapsedTime;
+        const armour = config.era === 'ww2';
         const counters: Record<BattleSide, Record<UnitType, number>> = {
             player: { infantry: 0, cavalry: 0, archer: 0 },
             enemy: { infantry: 0, cavalry: 0, archer: 0 },
@@ -181,13 +192,16 @@ export function BattleView({ config }: { config: BattleConfig }) {
             if (i >= capacity[u.side][u.type]) continue;
 
             const dying = u.state === 'dead';
-            const fall = dying ? Math.min(1, u.deadT * 2.2) : 0;
-            const sink = dying ? Math.max(0, (u.deadT - 4) * 0.25) : 0;
+            // tanks don't topple: a knocked-out tank lists and slowly settles into the mud
+            const tank = armour && u.type === 'cavalry';
+            const fall = dying ? Math.min(1, u.deadT * 2.2) * (tank ? 0.12 : 1) : 0;
+            const sink = dying ? Math.max(0, (u.deadT - 4) * 0.25) * (tank ? 0.2 : 1) : 0;
             // figures stand with feet at y=0; cavalry gallops with a faster bob
             const bobSpeed = u.type === 'cavalry' ? 9 : 6;
-            const bob = dying ? 0 : Math.abs(Math.sin(t * bobSpeed + u.bobPhase)) * (u.state === 'advance' ? 0.14 : 0.05);
-            const sway = dying ? 0 : Math.sin(t * bobSpeed + u.bobPhase) * 0.045;
-            const lunge = u.state === 'fight' ? Math.sin(t * 8 + u.bobPhase) * 0.2 : 0;
+            const bobAmp = tank ? 0.02 : u.state === 'advance' ? 0.14 : 0.05;
+            const bob = dying ? 0 : Math.abs(Math.sin(t * bobSpeed + u.bobPhase)) * bobAmp;
+            const sway = dying || tank ? 0 : Math.sin(t * bobSpeed + u.bobPhase) * 0.045;
+            const lunge = u.state === 'fight' ? Math.sin(t * 8 + u.bobPhase) * (tank ? 0.05 : 0.2) : 0;
 
             _dummy.position.set(u.x, bob - sink * 2 - fall * 0.15, u.z);
             // face the target / travel direction
@@ -290,7 +304,7 @@ export function BattleView({ config }: { config: BattleConfig }) {
             <instancedMesh ref={arrowsRef} args={[figures.arrow, arrowMat, MAX_PROJECTILES]} frustumCulled={false} />
             <instancedMesh ref={fireArrowsRef} args={[figures.fireArrow, fireArrowMat, MAX_PROJECTILES]} frustumCulled={false} />
             <instancedMesh ref={stonesRef} args={[undefined, undefined, MAX_PROJECTILES]} frustumCulled={false}>
-                {config.era === 'musket' || config.era === 'modern' ? (
+                {config.era === 'musket' || config.era === 'modern' || config.era === 'ww2' ? (
                     <>
                         <sphereGeometry args={[0.5, 10, 8]} />
                         <meshStandardMaterial color="#26282c" roughness={0.45} metalness={0.7} />
@@ -314,7 +328,7 @@ export function BattleView({ config }: { config: BattleConfig }) {
             <AbilityEffects sim={sim} />
 
             {/* siege engines behind the player line */}
-            {config.era === 'modern' ? (
+            {config.era === 'modern' || config.era === 'ww2' ? (
                 <>
                     <FieldGun position={[-34, 0, 62]} />
                     <FieldGun position={[-12, 0, 66]} />

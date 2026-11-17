@@ -86,7 +86,21 @@ const RIFLE_INFANTRY = { hp: 100, dmg: 12, range: 16, speed: 3.8 };
 
 /** Musket and modern eras both use firearms: infantry shoots and the charge uses bayonets. */
 export function usesFirearms(config: BattleConfig): boolean {
-    return config.era === 'musket' || config.era === 'modern';
+    return config.era === 'musket' || config.era === 'modern' || config.era === 'ww2';
+}
+
+/** 1914 onward: bolt-action rifles, fast bullets, rushes instead of bayonet lines. */
+export function isModernEra(config: BattleConfig): boolean {
+    return config.era === 'modern' || config.era === 'ww2';
+}
+
+/** WWII armour fills the "cavalry" slot: slow, very tough, and its gun out-ranges rifles. */
+const TANK = { hp: 340, dmg: 30, range: 20, speed: 4.4 };
+
+function statsFor(type: UnitType, musket: boolean, modern: boolean, armour: boolean) {
+    if (armour && type === 'cavalry') return TANK;
+    if (musket && type === 'infantry') return modern ? RIFLE_INFANTRY : MUSKET_INFANTRY;
+    return STATS[type];
 }
 
 const GRAVITY = 22;
@@ -99,7 +113,7 @@ function rnd() {
 }
 
 function spawnArmy(
-    units: Unit[], side: BattleSide, type: UnitType, count: number, attack: number, defense: number, musket = false, modern = false,
+    units: Unit[], side: BattleSide, type: UnitType, count: number, attack: number, defense: number, musket = false, modern = false, armour = false,
 ) {
     const sign = side === 'player' ? 1 : -1;
     const baseZ = side === 'player' ? 45 : -42;
@@ -110,7 +124,7 @@ function spawnArmy(
         const n = start + i;
         const row = Math.floor(n / perRow);
         const col = n % perRow;
-        const s = musket && type === 'infantry' ? (modern ? RIFLE_INFANTRY : MUSKET_INFANTRY) : STATS[type];
+        const s = statsFor(type, musket, modern, armour);
         units.push({
             side,
             type,
@@ -135,13 +149,14 @@ export function createBattle(config: BattleConfig): BattleState {
     const p = config.player;
     const e = config.enemy;
     const m = usesFirearms(config);
-    const mo = config.era === 'modern';
-    spawnArmy(units, 'player', 'infantry', p.infantry, p.attack, p.defense, m, mo);
-    spawnArmy(units, 'player', 'cavalry', p.cavalry, p.attack, p.defense, m, mo);
-    spawnArmy(units, 'player', 'archer', p.archers, p.attack, p.defense, m, mo);
-    spawnArmy(units, 'enemy', 'infantry', e.infantry, e.attack, e.defense, m, mo);
-    spawnArmy(units, 'enemy', 'cavalry', e.cavalry, e.attack, e.defense, m, mo);
-    spawnArmy(units, 'enemy', 'archer', e.archers, e.attack, e.defense, m, mo);
+    const mo = isModernEra(config);
+    const ar = config.era === 'ww2';
+    spawnArmy(units, 'player', 'infantry', p.infantry, p.attack, p.defense, m, mo, ar);
+    spawnArmy(units, 'player', 'cavalry', p.cavalry, p.attack, p.defense, m, mo, ar);
+    spawnArmy(units, 'player', 'archer', p.archers, p.attack, p.defense, m, mo, ar);
+    spawnArmy(units, 'enemy', 'infantry', e.infantry, e.attack, e.defense, m, mo, ar);
+    spawnArmy(units, 'enemy', 'cavalry', e.cavalry, e.attack, e.defense, m, mo, ar);
+    spawnArmy(units, 'enemy', 'archer', e.archers, e.attack, e.defense, m, mo, ar);
     return {
         config,
         units,
@@ -221,7 +236,7 @@ export function applyModifier(state: BattleState, mod: BattleModifier) {
     if (mod.flankCavalry) {
         const sign = rnd() > 0.5 ? 1 : -1;
         for (let i = 0; i < mod.flankCavalry; i++) {
-            const s = STATS.cavalry;
+            const s = state.config.era === 'ww2' ? TANK : STATS.cavalry;
             state.units.push({
                 side: 'player',
                 type: 'cavalry',
@@ -267,7 +282,7 @@ export function applyModifier(state: BattleState, mod: BattleModifier) {
     if (mod.enemyAttackMult) state.enemyAttackMult *= mod.enemyAttackMult;
     if (mod.enemyReinforcements) {
         const e = state.config.enemy;
-        spawnArmy(state.units, 'enemy', 'infantry', mod.enemyReinforcements, e.attack, e.defense, usesFirearms(state.config), state.config.era === 'modern');
+        spawnArmy(state.units, 'enemy', 'infantry', mod.enemyReinforcements, e.attack, e.defense, usesFirearms(state.config), isModernEra(state.config));
     }
     if (mod.moraleShift) {
         // Damage (or heal) random player units to shift morale.
@@ -306,7 +321,8 @@ export function tick(state: BattleState, dt: number) {
     const charging = state.abilities.charge.active > 0;
     // in the musket era the charge is a bayonet charge: the line infantry surges too
     const musket = usesFirearms(state.config);
-    const modern = state.config.era === 'modern';
+    const modern = isModernEra(state.config);
+    const armour = state.config.era === 'ww2';
 
     // retarget at staggered intervals, fight, move
     for (let i = 0; i < units.length; i++) {
@@ -363,7 +379,7 @@ export function tick(state: BattleState, dt: number) {
                 // modern infantry going over the top move in rushes behind the barrage: harder to hit
                 const rushing = modern && charging && t.type === 'infantry' ? 1.25 : 1;
                 const defenseMult = t.side === 'player' ? state.playerDefenseMult * (rallying ? 1.2 : 1) * rushing : 1;
-                const shoots = u.type === 'archer' || (musket && u.type === 'infantry');
+                const shoots = u.type === 'archer' || (musket && u.type === 'infantry') || (armour && u.type === 'cavalry');
                 if (shoots && musket && dist > 6 && state.smoke.length < 220) {
                     state.smoke.push({ x: u.x + dx / dist, z: u.z + dz / dist, t: 0 });
                 }

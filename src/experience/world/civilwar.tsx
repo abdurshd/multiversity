@@ -18,7 +18,7 @@ const UNION_BLUE = '#2b3f73';
 const CSA_GREY = '#8c8f92';
 
 // ─── Flags: canvas textures, gently waving cloth ────────────────────────────
-export type FlagKind = 'us' | 'us-1917' | 'csa-battle' | 'csa-national' | 'german-empire' | 'habsburg' | 'france' | 'uk';
+export type FlagKind = 'us' | 'us-1917' | 'csa-battle' | 'csa-national' | 'german-empire' | 'habsburg' | 'france' | 'uk' | 'czechoslovakia';
 const flagTextures: Partial<Record<FlagKind, THREE.CanvasTexture>> = {};
 
 export function flagTexture(kind: FlagKind) {
@@ -51,6 +51,10 @@ export function flagTexture(kind: FlagKind) {
         bands(['#111111', '#f2c12e']);
     } else if (kind === 'france') {
         bands(['#22408f', '#f4f1ea', '#c4232f'], true);
+    } else if (kind === 'czechoslovakia') {
+        bands(['#f4f1ea', '#d7141a']);
+        g.fillStyle = '#11457e';
+        g.beginPath(); g.moveTo(0, 0); g.lineTo(190, 100); g.lineTo(0, 200); g.closePath(); g.fill();
     } else if (kind === 'uk') {
         g.fillStyle = '#1f2f6e';
         g.fillRect(0, 0, 380, 200);
