@@ -15,6 +15,7 @@ import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import '../experience/ui/timur.css';
 import { RussianSceneBoundary } from '../experience/russia/RussianSceneBoundary';
+import { LeninSceneBoundary } from '../experience/ui/LeninSceneBoundary';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -129,7 +130,7 @@ export default function Experience3D() {
         <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : script.chapterId === 'russian-empire' ? 'russia-experience' : ''}`}>
             {script.chapterId === 'russian-empire' ? <RussianSceneBoundary>
                 {scene}
-            </RussianSceneBoundary> : scene}
+            </RussianSceneBoundary> : script.chapterId === 'lenin-revolution' ? <LeninSceneBoundary>{scene}</LeninSceneBoundary> : scene}
             <ExperienceOverlay />
             {/* exit */}
             <Link

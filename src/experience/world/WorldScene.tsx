@@ -21,6 +21,8 @@ import { ElAlamein, London1940, Midway1942, Normandy1944, Southwick1944, Sudeten
 import { Busan1950, Chosin1950, Incheon1950, Panmunjom1953, Seoul1945 } from './korea';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
+import { Petrograd1917 } from './petrograd';
+
 // ─── Environment settings ──────────────────────────────────────────────────
 interface EnvDef {
     skyTop: string;
@@ -46,6 +48,8 @@ const ENV: Record<EnvironmentId, EnvDef> = {
     'assembly-1825': {
         skyTop:'#26394a', skyHorizon:'#9baebc', fog:'#6c7e8b', sun:'#ffe0b1', sunPos:[0,55,-70], ambient:.7, ground:'#394b56', groundVar:'#2e414d', disc:{pos:[0,250,-300],color:'#ffe3bb',size:18}, clouds:false,
     },
+    'petrograd-1917': { skyTop: '#263e51', skyHorizon: '#aab5b3', fog: '#82939a', sun: '#ffd3a0', sunPos: [-60, 35, 45], ambient: .55, ground: '#535b59', groundVar: '#646d69', disc: { pos: [-300, 170, 220], color: '#ffe1b3', size: 22 }, clouds: true },
+    'smolny-1917': { skyTop: '#1b2a3b', skyHorizon: '#72838b', fog: '#5f6c71', sun: '#f8d6a0', sunPos: [20, 60, 30], ambient: .65, ground: '#474b48', groundVar: '#535952', disc: { pos: [170, 300, 170], color: '#c4d8e1', size: 14 }, clouds: false },
     'samarkand-day': {
         skyTop: '#5d96c9', skyHorizon: '#d9e6e2', fog: '#cfd9d2', sun: '#fff2d4',
         sunPos: [80, 110, 40], ambient: 0.5, ground: '#c4a87e', groundVar: '#a98f66',
@@ -244,7 +248,7 @@ const ENV: Record<EnvironmentId, EnvDef> = {
 };
 
 /** Scenes with open sea where the distant hills would poke through the water. */
-const FLAT = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'assembly-1825', 'midway-1942', 'normandy-1944', 'incheon-1950']);
+const FLAT = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'assembly-1825', 'midway-1942', 'normandy-1944', 'incheon-1950', 'petrograd-1917', 'smolny-1917']);
 
 const WINTER = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
@@ -290,6 +294,8 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <SenateSquare1825 dusk={environment === 'senate-1825-dusk'} />
             ) : environment === 'assembly-1825' ? (
                 <Assembly1825 />
+            ) : environment === 'petrograd-1917' || environment === 'smolny-1917' ? (
+                <Petrograd1917 interior={environment === 'smolny-1917'} />
             ) : environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
             ) : environment === 'winter-march' ? (

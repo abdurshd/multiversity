@@ -8,6 +8,7 @@ import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud 
 import { simRef } from '../battle/BattleView';
 import { RussianEmpireOverlay } from '../russia/RussianEmpireOverlay';
 import { TimurExplore } from './TimurExplore';
+import { LeninCouncil } from './LeninCouncil';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
 function useTypewriter(text: string, speed = 22) {
@@ -505,15 +506,16 @@ function EndingOverlay() {
 // ─── Root overlay ──────────────────────────────────────────────────────────
 export function ExperienceOverlay() {
     const russia = useExperience((s) => s.script?.chapterId === 'russian-empire');
+    const lenin = useExperience((s) => s.script?.chapterId === 'lenin-revolution');
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
     return (
-        <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
+        <div className={`absolute inset-0 pointer-events-none [&>*]:pointer-events-auto ${lenin ? 'lenin-overlay' : ''}`}>
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}
             {phase === 'loading' && <StartScreen />}
             {phase === 'cinematic' && <CinematicOverlay />}
-            {phase === 'explore' && (russia ? <RussianEmpireOverlay key="russia" /> : timur ? <TimurExplore /> : <ExploreOverlay />)}
-            {phase === 'choice' && (russia ? <RussianEmpireOverlay key="russia" /> : <ChoiceOverlay />)}
+            {phase === 'explore' && (russia ? <RussianEmpireOverlay key="russia" /> : lenin ? <LeninCouncil /> : timur ? <TimurExplore /> : <ExploreOverlay />)}
+            {phase === 'choice' && (russia ? <RussianEmpireOverlay key="russia" /> : lenin ? <LeninCouncil /> : <ChoiceOverlay />)}
             {phase === 'battle' && <BattleOverlay />}
             {phase === 'ending' && <EndingOverlay />}
         </div>

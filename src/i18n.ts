@@ -1,3 +1,6 @@
+import enExperienceLenin from './locales/en/experience/lenin-revolution.json';
+import uzExperienceLenin from './locales/uz/experience/lenin-revolution.json';
+import koExperienceLenin from './locales/ko/experience/lenin-revolution.json';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -265,6 +268,7 @@ i18n
                 'experience-world-war-2': enExperienceWorldWar2,
                 'experience-korea-destiny': enExperienceKorea,
                 'experience-russian-empire': enExperienceRussia,
+                'experience-lenin-revolution': enExperienceLenin,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -298,6 +302,7 @@ i18n
                 'experience-world-war-2': uzExperienceWorldWar2,
                 'experience-korea-destiny': uzExperienceKorea,
                 'experience-russian-empire': uzExperienceRussia,
+                'experience-lenin-revolution': uzExperienceLenin,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -331,6 +336,7 @@ i18n
                 'experience-world-war-2': koExperienceWorldWar2,
                 'experience-korea-destiny': koExperienceKorea,
                 'experience-russian-empire': koExperienceRussia,
+                'experience-lenin-revolution': koExperienceLenin,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -368,6 +374,7 @@ i18n
             'experience-world-war-2',
             'experience-korea-destiny',
             'experience-russian-empire',
+            'experience-lenin-revolution',
             'pages-simulation-hub',
         ],
         interpolation: {
