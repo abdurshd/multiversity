@@ -1,4 +1,5 @@
 import type { ExperienceScript } from '../types';
+import { russianEmpireScript } from './russianEmpire';
 import { timurScript } from './timur';
 import { usIndependenceScript } from './usIndependence';
 import { frenchRevolutionScript } from './frenchRevolution';
@@ -10,6 +11,7 @@ import { koreanWarScript } from './koreanWar';
 import { leninRevolutionScript } from './leninRevolution';
 
 const SCRIPTS: Record<string, ExperienceScript> = {
+    'russian-empire': russianEmpireScript,
     'timur-legacy': timurScript,
     'us-independence': usIndependenceScript,
     'french-revolution': frenchRevolutionScript,
