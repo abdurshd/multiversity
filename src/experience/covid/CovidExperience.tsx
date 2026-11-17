@@ -78,7 +78,7 @@ function CovidOverlay({ hidden }: { hidden: boolean }) {
         if (run.activeHotspotId) {
             lastReport.current = run.activeHotspotId;
             reportHeading.current?.focus({ preventScroll: true });
-            reportHeading.current?.scrollIntoView({ block: 'nearest', behavior: 'auto' });
+            reportHeading.current?.scrollIntoView({ block: 'start', behavior: 'auto' });
         } else if (lastReport.current) {
             // Spatial markers have an equivalent DOM button, so closing always
             // returns to a visible, keyboard-reachable report control.

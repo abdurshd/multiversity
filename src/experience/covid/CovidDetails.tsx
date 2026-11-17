@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useTranslation } from 'react-i18next';
 import * as THREE from 'three';
@@ -46,7 +46,12 @@ function Screen({ position, title, values, variant = 0 }: { position: [number, n
 }
 function WindowRain() {
     const lines = useRef<THREE.LineSegments>(null);
-    const reduced = useMemo(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches, []);
+    const [reduced, setReduced] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    useEffect(() => {
+        const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const update = () => setReduced(media.matches); media.addEventListener('change', update);
+        return () => media.removeEventListener('change', update);
+    }, []);
     const geometry = useMemo(() => {
         const positions = new Float32Array(180 * 6);
         for (let i = 0; i < 180; i++) {

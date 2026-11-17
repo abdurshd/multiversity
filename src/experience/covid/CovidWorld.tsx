@@ -18,7 +18,7 @@ export function CovidWorld({ environment }: { environment: CovidEnvironment }) {
         <hemisphereLight args={['#9ec9d2', '#171c22', 0.8]} />
         <directionalLight position={[8, 18, 12]} color="#ffe6bc" intensity={2.7} castShadow shadow-mapSize={[1024, 1024]} shadow-camera-left={-30} shadow-camera-right={30} shadow-camera-top={30} shadow-camera-bottom={-30} shadow-normalBias={0.025} shadow-bias={-0.00015} />
         <directionalLight position={[-20, 15, -15]} color="#71c5db" intensity={0.7} />
-        {architecture.map(p => <mesh key={p.finish} geometry={p.geometry} material={p.material} castShadow receiveShadow dispose={null} />)}
+        {architecture.map(p => <mesh key={p.finish} geometry={p.geometry} material={p.material} castShadow={p.finish !== 'ceiling'} receiveShadow dispose={null} />)}
         <CovidDetails environment={environment} />
         {environment === 'covid-depot' && DESTINATIONS.flatMap((destination, i) => Array.from({ length: allocation[destination] }, (_, n) =>
             <group key={`${destination}-${n}`} position={[-8 + i * 8 + (n % 2) * 1.5 - 0.75, 1.05 + Math.floor(n / 4) * 1.25, 1 + Math.floor(n % 4 / 2) * 1.7]}>

@@ -2,7 +2,7 @@ import type { ExperienceScript, CameraShot, Vec3 } from '../types';
 import copy from '../../locales/en/experience/covid-pandemic.json';
 
 const hospitalCamera = { position: [9, 5.7, 15] as Vec3, target: [-1, 2.2, -4] as Vec3 };
-const depotCamera = { position: [22, 10, 28] as Vec3, target: [0, 2, 1] as Vec3 };
+const depotCamera = { position: [12, 6.5, 18] as Vec3, target: [0, 2, -2] as Vec3 };
 const briefingCamera = { position: [9, 4.9, 13] as Vec3, target: [-1, 2.6, -4.5] as Vec3 };
 const glide = (from: Vec3, to: Vec3, target: Vec3): CameraShot[] => [{ path: [from, to], lookPath: [target], duration: 18, fov: 52 }];
 
@@ -24,7 +24,7 @@ export const covidPandemicScript: ExperienceScript = {
             ] },
         manifest: { kind: 'explore', id: 'manifest', environment: 'covid-depot', camera: depotCamera, prompt: copy.ui.allocation, hotspots: [] },
         loading: { kind: 'cinematic', id: 'loading', environment: 'covid-depot',
-            shots: glide([21, 12, 24], [17, 9, 21], [0, 2, 0]), narration: Object.values(copy.beats.loading.narration), next: 'roster' },
+            shots: glide([13, 6.8, 19], [10, 5.8, 16], [0, 2, -2]), narration: Object.values(copy.beats.loading.narration), next: 'roster' },
         roster: { kind: 'choice', id: 'roster', environment: 'covid-hospital', camera: hospitalCamera,
             title: copy.beats.roster.title, prompt: copy.beats.roster.prompt,
             options: [

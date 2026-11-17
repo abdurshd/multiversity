@@ -10,7 +10,7 @@ const COLORS = {
     navy: '#152936', metal: '#728894', white: '#c8dad7', amber: '#b7874f',
     glass: '#385d70', light: '#d7fff2', dark: '#172633', paper: '#f6edd3',
     carton: '#af8155', skin: '#b88f78', green: '#679485', red: '#a15e52',
-    wood: '#624e3c', trim: '#95b4ba', warm: '#ffd49a', screen: '#72d9c3', fabric: '#263c4b', window: '#638a98',
+    wood: '#624e3c', trim: '#95b4ba', warm: '#ffd49a', screen: '#72d9c3', fabric: '#263c4b', window: '#638a98', ceiling: '#293d46',
 };
 type Finish = keyof typeof COLORS;
 
@@ -60,6 +60,9 @@ export function buildArchitecture(environment: CovidEnvironment) {
     box(environment === 'covid-briefing' ? 'wood' : 'floor', [0, 0, 0], [30, 0.2, 30]);
     for (let x = -14; x <= 14; x += 3) box('concrete', [x, 0.106, 0], [0.013, 0.008, 30]);
     for (let z = -12; z <= 14; z += 3) box('concrete', [0, 0.106, z], [30, 0.008, 0.013]);
+    // One-sided ceiling is visible from inside, but does not blank an overhead orbit.
+    const ceiling = new THREE.PlaneGeometry(30, 30); ceiling.rotateX(Math.PI / 2); ceiling.translate(0, 7.8, 0);
+    batches.set('ceiling', [ceiling]);
     // Window wall, deep sills, slim mullions and a visible structural rhythm.
     box('wall', [0, 1.15, -12], [30, 2.3, 0.45]);
     box('navy', [0, 7.2, -12], [30, 1.6, 0.5]);
@@ -152,11 +155,11 @@ export function buildArchitecture(environment: CovidEnvironment) {
             box('metal', [x, 1, 0], [3.5, 1.2, 0.1]);
         }
         // Delivery van with shutter, cab, mirrors and loading ramp.
-        box('white', [13, 1.8, 9], [4, 3.2, 6]); box('teal', [13, 1.6, 12.4], [4, 2.4, 2]);
-        box('glass', [13, 2.8, 12.6], [3.6, 1, 1.7]);
-        for (let i = 0; i < 9; i++) box('metal', [13, 0.7 + i * 0.3, 5.94], [3.6, 0.05, 0.04]);
-        for (const x of [10.9, 15.1]) for (const z of [7, 12]) cylinder('dark', [x, 0.65, z], [0.7, 1.1, 1.1]);
-        box('metal', [13, 0.3, 4.2], [3.5, 0.15, 3]); person(-3, 7, 'amber'); person(7, -2, 'teal');
+        box('white', [17, 1.8, -1], [4, 3.2, 6]); box('teal', [17, 1.6, 2.4], [4, 2.4, 2]);
+        box('glass', [17, 2.8, 2.6], [3.6, 1, 1.7]);
+        for (let i = 0; i < 9; i++) box('metal', [17, 0.7 + i * 0.3, -4.06], [3.6, 0.05, 0.04]);
+        for (const x of [14.9, 19.1]) for (const z of [-3, 2]) cylinder('dark', [x, 0.65, z], [0.7, 1.1, 1.1]);
+        box('metal', [17, 0.3, -5.8], [3.5, 0.15, 3]); person(-3, 7, 'amber'); person(7, -2, 'teal');
     } else {
         // A purpose-built night operations / broadcast room, not an empty classroom.
         box('navy', [-1, 3.7, -8.8], [19, 6.5, 0.5]);
@@ -192,10 +195,10 @@ export function buildArchitecture(environment: CovidEnvironment) {
             box('wood', [-13, 2.6, z], [2.6, 0.15, 2.3]);
             for (const y of [0.6, 1.4, 2.2]) { box('metal', [-13, y, z + 1.12], [2.2, 0.05, 0.04]); box('trim', [-13, y + 0.25, z + 1.15], [0.6, 0.05, 0.05]); }
         }
-        box('dark', [6.8, 2.9, 6.2], [0.9, 0.7, 1.3]);
-        cylinder('metal', [6.8, 1.65, 6.2], [0.1, 2.4, 0.1]);
-        for (const dx of [-0.65, 0.65]) box('metal', [6.8 + dx, 0.35, 6.2], [0.12, 0.65, 0.12]);
-        box('red', [7.3, 3.1, 5.8], [0.08, 0.08, 0.08]);
+        box('dark', [10.2, 2.9, 5], [0.9, 0.7, 1.3]);
+        cylinder('metal', [10.2, 1.65, 5], [0.1, 2.4, 0.1]);
+        for (const dx of [-0.65, 0.65]) box('metal', [10.2 + dx, 0.35, 5], [0.12, 0.65, 0.12]);
+        box('red', [10.7, 3.1, 4.6], [0.08, 0.08, 0.08]);
         person(-5.8, -3.5, 'teal'); person(0.6, -3.5, 'green'); person(10.8, 1.3, 'navy');
         person(-7, 7.2, 'navy');
     }
