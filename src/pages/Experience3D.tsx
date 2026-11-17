@@ -14,6 +14,7 @@ import { BattleView } from '../experience/battle/BattleView';
 import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import '../experience/ui/timur.css';
+import { RussianSceneBoundary } from '../experience/russia/RussianSceneBoundary';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -64,7 +65,7 @@ export default function Experience3D() {
     const quality = useQualityTier();
 
     useEffect(() => {
-        if (script?.chapterId !== 'timur-legacy') return;
+        if (!['timur-legacy', 'russian-empire'].includes(script?.chapterId ?? '')) return;
         const previous = document.body.style.overflow;
         document.body.style.overflow = 'hidden';
         return () => { document.body.style.overflow = previous; };
@@ -111,9 +112,8 @@ export default function Experience3D() {
         );
     }
 
-    return (
-        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : ''}`}>
-            <Canvas
+    const scene = (
+        <Canvas
                 shadows="soft"
                 dpr={quality === 'low' ? [1, 1.25] : [1, 1.75]}
                 camera={{ position: [170, 95, 170], fov: 50, near: 0.5, far: 1200 }}
@@ -123,6 +123,13 @@ export default function Experience3D() {
                     <SceneContent quality={quality} />
                 </Suspense>
             </Canvas>
+    );
+
+    return (
+        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : script.chapterId === 'russian-empire' ? 'russia-experience' : ''}`}>
+            {script.chapterId === 'russian-empire' ? <RussianSceneBoundary>
+                {scene}
+            </RussianSceneBoundary> : scene}
             <ExperienceOverlay />
             {/* exit */}
             <Link

@@ -1,0 +1,62 @@
+.russia-experience { color:#f0e9db; }
+.russia-experience button:focus-visible,.russia-experience a:focus-visible { outline:3px solid #9fe0d1; outline-offset:3px; }
+.russia-experience .experience-stats { display:none; }
+.russia-experience .experience-exit { min-height:44px; display:flex; align-items:center; }
+.russia-objective { position:absolute; top:78px; left:24px; max-width:min(420px,calc(100vw - 48px)); background:#112331e8; border-left:2px solid #dcba7c; padding:16px 20px; border-radius:0 12px 12px 0; pointer-events:none!important; }
+.russia-objective span,.russia-kicker { font-size:10px; text-transform:uppercase; letter-spacing:.14em; color:#dfc591; }
+.russia-objective h2 { font:22px/1.3 Georgia,serif; margin:6px 0; }
+.russia-objective p { font-size:11px; color:#bbc9cf; }
+.russia-dock { position:absolute; bottom:max(20px,env(safe-area-inset-bottom)); left:24px; right:24px; }
+.russia-stations { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); max-width:960px; margin:auto; gap:8px; }
+.russia-stations button { display:flex; align-items:center; gap:14px; min-height:64px; text-align:left; background:#132330ee; border:1px solid #a5b1b269; border-radius:10px; padding:14px; font-size:13px; }
+.russia-stations button:last-child { background:#453624ee; border-color:#d8b579; }
+.russia-stations span { color:#ddc796; font-size:22px; }
+.russia-lore { max-width:660px; max-height:58dvh; overflow:auto; margin:auto; background:#12212ff5; border:1px solid #d4bd8466; padding:20px; border-radius:14px; }
+.russia-lore h3 { font:23px/1.3 Georgia,serif; }
+.russia-lore p,.russia-panel>p { font-size:14px; line-height:1.6; margin:12px 0; color:#c8d1d6; }
+.russia-row { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.russia-close { min-width:44px; min-height:44px; border:1px solid #809aa4; border-radius:8px; font-size:24px; }
+.russia-primary { display:block; width:100%; padding:13px 16px; min-height:48px; background:#d9b77c; color:#14232d; font-weight:700; border-radius:9px; margin-top:16px; }
+.russia-negotiation { position:absolute; inset:70px 0 0; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px max(18px,env(safe-area-inset-bottom)); pointer-events:none!important; }
+.russia-panel { pointer-events:auto; max-width:850px; width:100%; max-height:100%; overflow-y:auto; overscroll-behavior:contain; padding:24px; border-radius:18px; border:1px solid #c1b28c66; background:linear-gradient(135deg,#152734f2,#11202cf5); backdrop-filter:blur(12px); box-shadow:0 12px 50px #0007; }
+.russia-panel h2 { font:26px/1.25 Georgia,serif; margin:18px 0 8px; }
+.russia-panel h2:focus { outline:none; }
+.russia-meters { display:flex; gap:14px; margin-top:18px; }
+.russia-meters>div { flex:1; min-width:0; display:grid; grid-template-columns:1fr auto; gap:4px; font-size:11px; }
+.russia-meters meter { grid-column:1/-1; width:100%; height:10px; accent-color:#75b9aa; }
+.russia-proposals { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:16px 0; }
+.russia-proposals button { border:1px solid #6d919b; border-radius:10px; padding:16px; text-align:left; background:#1c3542; }
+.russia-proposals button:hover:enabled { background:#294955; border-color:#d9b77c; }
+.russia-proposals button:disabled { opacity:.45; cursor:not-allowed; }
+.russia-proposals strong { display:block; font-size:16px; margin:8px 0; }
+.russia-proposals p { font-size:13px; line-height:1.55; color:#cad6da; }
+.russia-proposals small { display:block; color:#9bd4c3; margin-top:12px; }
+.russia-cost { font-size:10px; color:#e1c796; text-transform:uppercase; letter-spacing:.1em; }
+.russia-panel .russia-model { font-size:11px; color:#a6b7c0; }
+.russia-reset { min-height:44px; padding:8px 12px; margin-top:8px; border:1px solid #637a85; border-radius:8px; font-size:12px; }
+.russia-review { list-style:decimal; padding-left:22px; line-height:1.7; font-size:14px; margin:16px 0; }
+.russia-experience .experience-ending { overflow-y:auto; justify-content:safe center; padding-top:76px; padding-bottom:max(24px,env(safe-area-inset-bottom)); }
+@media(max-width:650px) {
+ .russia-objective { left:12px; top:72px; max-width:calc(100vw - 24px); padding:12px; }
+ .russia-objective h2 { font-size:18px; }
+ .russia-dock { left:12px; right:12px; bottom:max(12px,env(safe-area-inset-bottom)); }
+ .russia-stations { grid-template-columns:1fr 1fr; gap:6px; }
+ .russia-stations button { padding:10px; gap:8px; font-size:12px; }
+ .russia-negotiation { padding:8px 10px max(10px,env(safe-area-inset-bottom)); }
+ .russia-panel { padding:16px; }
+ .russia-panel h2 { font-size:22px; }
+ .russia-panel .russia-row { font-size:12px; }
+ .russia-proposals { grid-template-columns:1fr; gap:8px; }
+ .russia-proposals button { padding:12px; }
+ .russia-proposals strong { font-size:14px; }
+ .russia-lore { padding:16px; }
+}
+@media(max-height:500px) and (orientation:landscape) {
+ .russia-objective { top:68px; padding:8px 12px; }
+ .russia-objective p { display:none; }
+ .russia-stations { grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .russia-proposals { grid-template-columns:1fr 1fr; }
+}
+.russia-primary:disabled { opacity:.6; cursor:not-allowed; }
+.russia-render-fallback { position:absolute; inset:0; background:radial-gradient(ellipse at 60% 20%,#456071,#172d3c 60%,#0d1a25); }
+.russia-render-fallback p { position:absolute; top:16px; right:20px; max-width:min(520px,65vw); font-size:11px; color:#bdcbd4; text-align:right; }

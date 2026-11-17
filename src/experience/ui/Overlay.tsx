@@ -6,6 +6,7 @@ import { useCurrentBeat, useExperience } from '../store';
 import type { StatEffects, StatKey, TacticalOption } from '../types';
 import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
+import { RussianEmpireOverlay } from '../russia/RussianEmpireOverlay';
 import { TimurExplore } from './TimurExplore';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
@@ -503,6 +504,7 @@ function EndingOverlay() {
 
 // ─── Root overlay ──────────────────────────────────────────────────────────
 export function ExperienceOverlay() {
+    const russia = useExperience((s) => s.script?.chapterId === 'russian-empire');
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
     return (
@@ -510,8 +512,8 @@ export function ExperienceOverlay() {
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}
             {phase === 'loading' && <StartScreen />}
             {phase === 'cinematic' && <CinematicOverlay />}
-            {phase === 'explore' && (timur ? <TimurExplore /> : <ExploreOverlay />)}
-            {phase === 'choice' && <ChoiceOverlay />}
+            {phase === 'explore' && (russia ? <RussianEmpireOverlay key="russia" /> : timur ? <TimurExplore /> : <ExploreOverlay />)}
+            {phase === 'choice' && (russia ? <RussianEmpireOverlay key="russia" /> : <ChoiceOverlay />)}
             {phase === 'battle' && <BattleOverlay />}
             {phase === 'ending' && <EndingOverlay />}
         </div>
