@@ -1,0 +1,242 @@
+{
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "text": "PETROGRAD · 1917-yil sentabr. Monarxiya qulagan, ammo urush va ochlik davom etmoqda. Muvaqqat hukumat va sovetlar hokimiyat uchun raqobatlashmoqda."
+        },
+        "1": {
+          "text": "Siz qudratli Lenin emas, to‘qima bolshevik tuman vakilisiz. Aholini tinglang, ta’minot haqida kelishing, so‘ng kim boshqarishini hal qiling. Barcha suhbatlar badiiylashtirilgan."
+        },
+        "2": {
+          "text": "Tarixiy asos: Kornilov inqirozidan keyin Lenin qisqa muddatga boshqa sotsialistik partiyalar bilan murosani taklif qilgan. Tarmoqlanuvchi muzokaralarimiz ro‘y bergan voqealar emas, to‘qima imkoniyatlardir."
+        }
+      }
+    },
+    "district": {
+      "prompt": "Qarordan avval tinglang. Pastdan yoki shahardan joyni tanlang.",
+      "hotspots": {
+        "lenin-bread": {
+          "label": "Non navbati",
+          "title": "Shior bilan qorin to‘ymaydi",
+          "description": "Tarixiy vaziyat: urush davridagi taqchillik va inflyatsiya hukumatni zaiflashtirdi. Bu to‘qima ishchi yana bir va’da emas, ochiq taqsimot daftarini so‘raydi."
+        },
+        "lenin-rail": {
+          "label": "Temiryo‘l dispetcheri",
+          "title": "Petrogradni boqadigan yo‘l",
+          "description": "Tarixiy vaziyat: temiryo‘l ishchilari siyosiy kuch edi. Bu to‘qima tumanda vakillar saylangan qo‘mitalar yetkazib berishni tekshira olsa, don tashishga rozi."
+        },
+        "lenin-press": {
+          "label": "Bosmaxona",
+          "title": "Kim qarshi fikr bildira oladi?",
+          "description": "Tarixiy vaziyat: sotsialistik partiyalar urush, yer va hokimiyat borasida kelisha olmagan. Sovetlar bir partiya emas, saylangan kengashlar edi. Bizning zal turli yig‘ilishlarni bitta makonga jamlaydi."
+        },
+        "lenin-council": {
+          "label": "Muzokaraga kirish",
+          "title": "Vakolat cheksiz emas",
+          "description": "To‘qima muzokarani boshlang. Har bir majburiyat keyingi ishonchga ta’sir qiladi. Avval boshqa joylarni ko‘rishingiz mumkin; qaror uchun vaqt cheklovi yo‘q."
+        }
+      }
+    },
+    "supply": {
+      "title": "01 / Hokimiyatdan avval non",
+      "prompt": "To‘qima don poyezdi shahar tashqarisida kutmoqda. Temiryo‘l va mahalla vakillari nazoratni talab qiladi. Nimani va’da qilasiz?",
+      "options": {
+        "ledger": {
+          "label": "Qo‘shma taqsimot daftarini ochish",
+          "description": "Tekshiruvni saylangan ishchilar va aholi bilan bo‘lishing. Sekin muzokara ishonch keltiradi."
+        },
+        "guards": {
+          "label": "Dispetcherlik idorasini egallash",
+          "description": "Poyezdni qurolli buyruq bilan yurgizing. Tez ta’sirga erishasiz, ammo vakillar tahdidni unutmaydi."
+        },
+        "defer": {
+          "label": "Ta’minotni vazirlikka qoldirish",
+          "description": "To‘qnashuvdan qochasiz, ammo aholi qo‘mitangizdan hisob so‘ray olmaydi."
+        }
+      }
+    },
+    "ledger-result": {
+      "narration": {
+        "0": {
+          "text": "To‘qima oqibat: dastlabki vagonlar qo‘shma nazoratda bo‘shatiladi. Qo‘mita yolg‘iz hukmronlikni yo‘qotadi, ammo temiryo‘l vakillari muzokarada qoladi."
+        }
+      }
+    },
+    "guards-result": {
+      "narration": {
+        "0": {
+          "text": "To‘qima oqibat: don qo‘riqlov ostida keladi. Ba’zi temiryo‘l vakillari chiqib ketadi. Majburlash tashish muammosini hal qilib, qonuniylik muammosini tug‘diradi."
+        }
+      }
+    },
+    "defer-result": {
+      "narration": {
+        "0": {
+          "text": "To‘qima oqibat: vazirlik chora va’da qiladi, ammo navbat uzayadi. Vakillaringiz kengashga ta’minot kelishuvisiz kiradi."
+        }
+      }
+    },
+    "mandate": {
+      "title": "02 / Vakolat kimda?",
+      "prompt": "Oktabr yaqin. Lenin hokimiyatni olishni talab qiladi; sotsialistik raqiblar bir partiya hukmronligidan qo‘rqadi. To‘qima konferensiyada uch xil yo‘l bor.",
+      "options": {
+        "plural": {
+          "label": "Keng sotsialistik kelishuv tuzish",
+          "description": "Ko‘p fikrli sovetlarga hisob beruvchi hukumat tuzing. Hokimiyatni bo‘lishish va muxolifatni qabul qilish kerak."
+        },
+        "party": {
+          "label": "Bolsheviklar hokimiyatni olishini qo‘llash",
+          "description": "Qo‘zg‘olonni qo‘llang. Poytaxtni egallash mamlakat qanday boshqarilishini hal qilmaydi."
+        },
+        "election": {
+          "label": "Ta’sis majlisini kutish",
+          "description": "Tez egallashdan voz kechib, milliy saylovga tayaning. Kechikishning ham xavfi bor."
+        }
+      }
+    },
+    "plural-bridge": {
+      "narration": {
+        "0": {
+          "text": "Muqobil yo‘l: raqib sotsialist vakillar konferensiyamizda qoladi. Ular yangi hukumat tanqid qilinsa ham ko‘p fikrlilik saqlanadimi, deb so‘raydi."
+        }
+      }
+    },
+    "party-bridge": {
+      "narration": {
+        "0": {
+          "text": "Tarixiy asos: bolsheviklar boshchiligidagi kuchlar Petrogradning muhim nuqtalarini 24–25-oktabrda (Grigoriy taqvimida 6–7-noyabr) egalladi. Vakilimiz yangi hokimiyat chegaralari haqida to‘qima qarorga keladi."
+        }
+      }
+    },
+    "election-bridge": {
+      "narration": {
+        "0": {
+          "text": "Muqobil yo‘l: qo‘mitangiz saylovdan avval hokimiyatni olmaydi. Armiya tarqalmoqda, yer nizolari davom etmoqda; saylov bu inqirozlarni sehr bilan tugata olmaydi."
+        }
+      }
+    },
+    "plural-rights": {
+      "title": "03 / Qarshi chiqish huquqi",
+      "prompt": "To‘qima gazeta qo‘mitangizni tanqid qilmoqda. Hamkorlar sizga ochiq qarshi chiqa oladimi?",
+      "options": {
+        "protect": {
+          "label": "Ochiq bahs va saylovni kafolatlash",
+          "description": "Matbuotni ochiq tuting. Avvalgi ta’minot qarori hamkorlar ishonchini belgilaydi."
+        },
+        "censor": {
+          "label": "Tanqidchi gazetalarni to‘xtatish",
+          "description": "Senzurani vaqtinchalik deb atang. Hamkorlar endi e’tiroz sizning ruxsatingizga bog‘liqligini ko‘radi."
+        }
+      }
+    },
+    "party-rights": {
+      "title": "03 / G‘alaba rozilik emas",
+      "prompt": "Yangi hokimiyat saylangan Ta’sis majlisi bilan to‘qnashadi. Tarixda u 1918-yil yanvarda tarqatilgan. Vakilingiz qaysi tamoyilni himoya qiladi?",
+      "options": {
+        "protect": {
+          "label": "Mustaqil majlisni tan olish",
+          "description": "Muqobil: partiyangizni hokimiyatdan chetlatishi mumkin bo‘lsa ham, raqib vakolatni tan oling."
+        },
+        "dissolve": {
+          "label": "Sovet hokimiyatini majlisdan ustun qo‘yish",
+          "description": "Tarqatishning tarixiy yo‘nalishiga ergashing. Raqib institutni yo‘qotish siyosiy tanlovni cheklaydi."
+        }
+      }
+    },
+    "election-rights": {
+      "title": "03 / Va’daga sana kerak",
+      "prompt": "To‘qima ittifoqingiz majburiy saylov va’dasi va favqulodda boshqaruv orasida tanlaydi.",
+      "options": {
+        "protect": {
+          "label": "Qo‘mitani saylovga bo‘ysundirish",
+          "description": "Natija va mustaqil nazoratni qabul qiling. Hamkorlik temiryo‘lchilarga munosabatingizga ham bog‘liq."
+        },
+        "delay": {
+          "label": "Tartib tiklanguncha kechiktirish",
+          "description": "Tugash sanasisiz favqulodda holat aholini yana saylanmagan hokimiyat bilan qoldiradi."
+        }
+      }
+    },
+    "reflection": {
+      "narration": {
+        "0": {
+          "text": "Qarorlaringiz bir asrni bashorat qilmaydi. Bu qisqa simulyatsiya bir rahbar tinchlikni kafolatlay olishini emas, rozilik, ta’minot va majburlashni tekshiradi. Yakun tarixiy voqelikni to‘qima natijangizdan ajratadi."
+        }
+      }
+    }
+  },
+  "endings": {
+    "coalition": {
+      "title": "Ko‘p ovozli muzokara stoli",
+      "subtitle": "Muqobil tarix · hisobdor koalitsiya",
+      "epilogue": {
+        "0": {
+          "text": "Ochiq ta’minot kelishuvingiz ko‘p fikrlilikka ishonch beradi. Bu to‘qima natijada raqib sotsialistlar o‘rinlari va erkin matbuotni saqlaydi. Urush, yer nizosi va ochlik qoladi; hamkorlik kafolatlangan jannat emas."
+        }
+      }
+    },
+    "assembly": {
+      "title": "Saylov yo‘li ochiq",
+      "subtitle": "Muqobil tarix · saylov kelishuvi",
+      "epilogue": {
+        "0": {
+          "text": "Qo‘mitangiz ovoz so‘rashdan oldin nazoratni qabul qiladi. To‘qima ittifoq majlisga bo‘ysunishgacha saqlanadi. Bu saylov fuqarolar urushini to‘xtatgan bo‘lardi, degani emas."
+        }
+      }
+    },
+    "limited": {
+      "title": "Hokimiyat chegarani tan oladi",
+      "subtitle": "Muqobil tarix · cheklangan g‘alaba",
+      "epilogue": {
+        "0": {
+          "text": "Qo‘zg‘olonni qo‘llab, uning g‘oliblariga qarshi tura oladigan institutni himoya qilasiz. Bu to‘qima murosa beqaror. Tarixda bolshevik rahbarlari Ta’sis majlisini 1918-yil yanvarda tarqatgan."
+        }
+      }
+    },
+    "consolidation": {
+      "title": "Raqib vakolatsiz hokimiyat",
+      "subtitle": "Tarixiy yo‘nalish · aynan takror emas",
+      "epilogue": {
+        "0": {
+          "text": "Yakuniy tanlovingiz majlisni bostirishning tarixiy yo‘lidan boradi, ammo tuman muzokarasi to‘qima. Bolsheviklar fuqarolar urushi va qatag‘onlar orasida hokimiyatni mustahkamladi. Nazorat umumiy rozilik emas edi; majburlash ulkan insoniy talafot keltirdi."
+        }
+      }
+    },
+    "brittle": {
+      "title": "Ishonchsiz va’dalar",
+      "subtitle": "Muqobil tarix · mo‘rt kelishuv",
+      "epilogue": {
+        "0": {
+          "text": "To‘qima kelishuvingiz va’dalarni usullar bilan moslashtira olmaydi. Senzura, majburlash yoki hal qilinmagan ta’minot hamkorlarni kafolatlarga ishonishdan qaytaradi. Hech bir natija diktaturani muqarrar qilmaydi; institutlar haqidagi tanlov hamon muhim."
+        }
+      }
+    }
+  },
+  "title": "Petrograd: va’daning og‘irligi",
+  "era": "Petrograd · 1917-yil sentabr – 1918-yil yanvar",
+  "ui": {
+    "note": "BADIIYLASHTIRILGAN MUZOKARA · Kirishdan keyingi qarorlar farazdir.",
+    "places": "Tuman ma’lumotlari",
+    "back": "Tumanga qaytish",
+    "continue": "Muzokarani boshlash",
+    "hint": "Aylantirish uchun suring · Ikki barmoq bilan yaqinlashtiring · Joyni bosing",
+    "confirm": "Bu qarorni tasdiqlash",
+    "cancel": "Qayta o‘ylash",
+    "commitments": "Majburiyatlaringiz",
+    "empty": "Hali majburiyat yo‘q",
+    "accountable": "Ta’minotning qo‘shma nazorati",
+    "coerced": "Temiryo‘l idorasi egallangan",
+    "deferred": "Ta’minot vazirlikka topshirilgan",
+    "plural": "Ko‘p fikrli sotsialistik hukumat",
+    "party": "Bolshevik qo‘zg‘oloni qo‘llangan",
+    "election": "Milliy saylov vakolati",
+    "fallback": "Bu qurilmada 3D ishlamaydi. Hikoya va muzokaralarni davom ettirish mumkin."
+  },
+  "characters": {
+    "lenin": {
+      "name": "Vladimir Lenin",
+      "role": "Bolshevik rahbari · tasvir, iqtibos emas"
+    }
+  }
+}

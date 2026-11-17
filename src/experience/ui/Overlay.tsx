@@ -7,6 +7,7 @@ import type { StatEffects, StatKey, TacticalOption } from '../types';
 import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
 import { TimurExplore } from './TimurExplore';
+import { LeninCouncil } from './LeninCouncil';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
 function useTypewriter(text: string, speed = 22) {
@@ -503,15 +504,16 @@ function EndingOverlay() {
 
 // ─── Root overlay ──────────────────────────────────────────────────────────
 export function ExperienceOverlay() {
+    const lenin = useExperience((s) => s.script?.chapterId === 'lenin-revolution');
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
     return (
-        <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
+        <div className={`absolute inset-0 pointer-events-none [&>*]:pointer-events-auto ${lenin ? 'lenin-overlay' : ''}`}>
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}
             {phase === 'loading' && <StartScreen />}
             {phase === 'cinematic' && <CinematicOverlay />}
-            {phase === 'explore' && (timur ? <TimurExplore /> : <ExploreOverlay />)}
-            {phase === 'choice' && <ChoiceOverlay />}
+            {phase === 'explore' && (lenin ? <LeninCouncil /> : timur ? <TimurExplore /> : <ExploreOverlay />)}
+            {phase === 'choice' && (lenin ? <LeninCouncil /> : <ChoiceOverlay />)}
             {phase === 'battle' && <BattleOverlay />}
             {phase === 'ending' && <EndingOverlay />}
         </div>

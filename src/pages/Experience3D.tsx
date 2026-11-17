@@ -14,6 +14,7 @@ import { BattleView } from '../experience/battle/BattleView';
 import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import '../experience/ui/timur.css';
+import { LeninSceneBoundary } from '../experience/ui/LeninSceneBoundary';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -111,8 +112,7 @@ export default function Experience3D() {
         );
     }
 
-    return (
-        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : ''}`}>
+    const scene = (
             <Canvas
                 shadows="soft"
                 dpr={quality === 'low' ? [1, 1.25] : [1, 1.75]}
@@ -123,6 +123,11 @@ export default function Experience3D() {
                     <SceneContent quality={quality} />
                 </Suspense>
             </Canvas>
+    );
+
+    return (
+        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : ''}`}>
+            {script.chapterId === 'lenin-revolution' ? <LeninSceneBoundary>{scene}</LeninSceneBoundary> : scene}
             <ExperienceOverlay />
             {/* exit */}
             <Link
