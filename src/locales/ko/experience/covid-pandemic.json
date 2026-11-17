@@ -40,7 +40,22 @@
     "inspectTitle": "숫자 너머의 지역사회",
     "shipmentTitle": "상자 여섯 개, 목적지 세 곳.",
     "changed": "검토 가능한 결정, 남는 대가",
-    "bridgePlan": "훈련 가정: 임시 연결 계획은 병원 3개, 의원 2개, 지역사회 1개입니다. 이 가상 목표는 임상적 비율이 아닙니다."
+    "bridgePlan": "훈련 가정: 임시 연결 계획은 병원 3개, 의원 2개, 지역사회 1개입니다. 이 가상 목표는 임상적 비율이 아닙니다.",
+    "districtMap": "지역 연결망",
+    "publicRecord": "공개 기록",
+    "staffing": "인력 배치 계획",
+    "knownUnknown": "확인된 것 / 미확인",
+    "nextUpdate": "다음 안내 · 00:00",
+    "shift": "야간 근무",
+    "stageReports": "청취",
+    "stageDispatch": "배송",
+    "stageRoster": "인력",
+    "stageBriefing": "발표",
+    "stageHandover": "인계",
+    "hidePanel": "장면 보기",
+    "showPanel": "근무 계속하기",
+    "sceneHint": "드래그로 둘러보기 · 스크롤로 확대",
+    "step": "단계"
   },
   "beats": {
     "arrival": {

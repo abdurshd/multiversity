@@ -40,7 +40,22 @@
     "inspectTitle": "Raqamlar emas, odamlar",
     "shipmentTitle": "Olti quti. Uch manzil.",
     "changed": "Qayta ko‘riladigan qarorlar, qoladigan oqibatlar",
-    "bridgePlan": "Mashq farazi: vaqtinchalik rejada shifoxonaga 3, poliklinikaga 2 va mahallaga 1 quti. Bu to‘qima maqsadlar klinik nisbatlar emas."
+    "bridgePlan": "Mashq farazi: vaqtinchalik rejada shifoxonaga 3, poliklinikaga 2 va mahallaga 1 quti. Bu to‘qima maqsadlar klinik nisbatlar emas.",
+    "districtMap": "Tuman tarmogʻi",
+    "publicRecord": "Ommaviy qayd",
+    "staffing": "Xodimlar rejasi",
+    "knownUnknown": "Maʼlum / nomaʼlum",
+    "nextUpdate": "Keyingi xabar · 00:00",
+    "shift": "Tungi navbatchilik",
+    "stageReports": "Tinglash",
+    "stageDispatch": "Joʻnatish",
+    "stageRoster": "Xodimlar",
+    "stageBriefing": "Axborot",
+    "stageHandover": "Topshirish",
+    "hidePanel": "Sahnani koʻrish",
+    "showPanel": "Navbatchilikka qaytish",
+    "sceneHint": "Koʻrish uchun torting · aylantirib yaqinlashtiring",
+    "step": "Bosqich"
   },
   "beats": {
     "arrival": {
