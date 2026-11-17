@@ -82,10 +82,13 @@ import uzExperienceTimur from './locales/uz/experience/timur.json';
 import koExperienceTimur from './locales/ko/experience/timur.json';
 import enExperienceUsIndependence from './locales/en/experience/us-independence.json';
 import enExperienceFrenchRevolution from './locales/en/experience/french-revolution.json';
+import enExperienceLincolnEra from './locales/en/experience/lincoln-era.json';
 import uzExperienceUsIndependence from './locales/uz/experience/us-independence.json';
 import uzExperienceFrenchRevolution from './locales/uz/experience/french-revolution.json';
+import uzExperienceLincolnEra from './locales/uz/experience/lincoln-era.json';
 import koExperienceUsIndependence from './locales/ko/experience/us-independence.json';
 import koExperienceFrenchRevolution from './locales/ko/experience/french-revolution.json';
+import koExperienceLincolnEra from './locales/ko/experience/lincoln-era.json';
 
 // For backward compatibility with existing code
 const enLegacy = {
@@ -245,6 +248,7 @@ i18n
                 'experience-timur-legacy': enExperienceTimur,
                 'experience-us-independence': enExperienceUsIndependence,
                 'experience-french-revolution': enExperienceFrenchRevolution,
+                'experience-lincoln-era': enExperienceLincolnEra,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -273,6 +277,7 @@ i18n
                 'experience-timur-legacy': uzExperienceTimur,
                 'experience-us-independence': uzExperienceUsIndependence,
                 'experience-french-revolution': uzExperienceFrenchRevolution,
+                'experience-lincoln-era': uzExperienceLincolnEra,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -301,6 +306,7 @@ i18n
                 'experience-timur-legacy': koExperienceTimur,
                 'experience-us-independence': koExperienceUsIndependence,
                 'experience-french-revolution': koExperienceFrenchRevolution,
+                'experience-lincoln-era': koExperienceLincolnEra,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -333,6 +339,7 @@ i18n
             'experience-timur-legacy',
             'experience-us-independence',
             'experience-french-revolution',
+            'experience-lincoln-era',
             'pages-simulation-hub',
         ],
         interpolation: {

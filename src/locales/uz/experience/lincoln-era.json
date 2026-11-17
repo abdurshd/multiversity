@@ -1,0 +1,842 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "Springfild, Illinoys, 1860-yil 6-noyabr kechasi. Baland bo'yli, sodda gapiradigan bir advokat telegraf idorasida saylov natijalarini kutmoqda. U birorta ham saylovoldi nutqi so'zlamagan. Odat shunday.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Qo'shma Shtatlarda to'rt million kishi qullikda. Ularning pul qiymati mamlakatdagi barcha temir yo'l va fabrikalar qiymatidan ham ko'p. Respublikachilar partiyasi qullikning g'arbdagi yangi hududlarga yoyilishini to'xtatishga va'da bergan.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Janub yetakchilari, agar Avraam Linkoln g'alaba qozonsa, shtatlari Ittifoqdan chiqib ketishini e'lon qilgan. Ularning o'ntasida u hatto saylov byulletenida ham yo'q edi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Bizning tariximizda uning g'alabasi taxminan 750 000 amerikalikning hayotiga zomin bo'lgan va qullikka barham bergan urushga olib keldi. Bu tarixda esa siz hal qilasiz.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-springfield": {
+      "prompt": "Springfildni kezing: atrofni ko'rish uchun suring va porlab turgan belgilarni bosing. Natijalar kela boshladi.",
+      "hotspots": {
+        "home": {
+          "label": "Linkolnlar uyi",
+          "title": "Sakkizinchi va Jekson ko'chalari",
+          "description": "Linkoln umrida egalik qilgan yagona uy. U 1844-yilda uni 1200 dollar va kichik bir yer uchastkasi evaziga sotib olgan. Meri Linkoln uyga ikkinchi qavat qurdirgan. Ularning o'g'li Eddi shu yerda uch yoshida vafot etgan."
+        },
+        "telegraph": {
+          "label": "Telegraf",
+          "title": "Nyu-Yorkdan simlar",
+          "description": "Natijalar telegraf orqali, shtatma-shtat kelmoqda. Bugun kechqurun Nyu-Yorkdan kelgan xabar hammasini hal qiladi: Linkoln xalq ovozlarining 40 foizidan kamini olib, Saylovchilar kollegiyasida g'alaba qozonadi."
+        },
+        "capitol": {
+          "label": "Shtat hukumati binosi",
+          "title": "\"Ikkiga bo'lingan uy\"",
+          "description": "1858-yilda aynan shu binoda Linkoln respublikachilar qurultoyida shunday degan: \"O'z-o'ziga qarshi bo'lingan uy turolmaydi. Menimcha, bu hukumat abadiy yarim qul, yarim erkin holda yashay olmaydi.\" O'shandan beri Janub gazetalari bu so'zlarni uning qullikni hamma joyda bekor qilmoqchi ekaniga dalil sifatida keltirib kelmoqda."
+        },
+        "train": {
+          "label": "Temir yo'l",
+          "title": "Shimolning ustunligi",
+          "description": "Erkin shtatlarda temir yo'llar Janubdagidan ikki baravardan ko'proq, fabrikalarning esa o'ndan to'qqiztasi shu yerda. Janubda paxta bor, Britaniya va Fransiya fabrikalariga u juda zarur. Har ikki tomon buni yetarli deb o'ylaydi."
+        },
+        "decide": {
+          "label": "Saylangan prezident",
+          "title": "Yarim tundan keyin",
+          "description": "Tashqarida olomon qo'shiq aytmoqda. Linkoln Meriga \"Biz saylandik\" deb aytish uchun uyiga piyoda ketadi. Yetti hafta ichida Janubiy Karolina Ittifoqdan chiqish uchun ovoz beradi."
+        }
+      }
+    },
+    "election-choice": {
+      "title": "Ajralish qishi · 1860–61",
+      "prompt": "Yetti shtat Ittifoqdan chiqib ketmoqda. Vashingtondagi senatorlar qullikni abadiy himoya qiladigan murosa loyihasini tayyorlamoqda. Ularga nima deysiz?",
+      "options": {
+        "hold-firm": {
+          "label": "Hududlarda qullik bo'lmaydi",
+          "description": "\"Po'lat zanjirdek mahkam turing.\" Janub nima qilmasin, sizni saylashgan va'dangizdan qaytmaysiz."
+        },
+        "buyout-plan": {
+          "label": "Ozodlikni sotib olishni taklif qilish",
+          "description": "Federal hukumat qul egalariga pul to'lab, qullarni ozod qilishni taklif qiling, xuddi Britaniya 1833-yilda qilganidek. Qimmat, lekin urushdan arzon."
+        }
+      }
+    },
+    "buyout-choice": {
+      "title": "Vashington · 1861-yil bahori",
+      "prompt": "Har bir kishi uchun taxminan 400 dollardan, to'rt million kishining ozodligi qariyb 1,6 milliard dollar turadi. Bu federal hukumatning yigirma yillik xarajatidan ham ko'p. Taklifni qanday qilasiz?",
+      "options": {
+        "gradual": {
+          "label": "Asta-sekin, avval chegara shtatlari",
+          "description": "Delaver, Merilend, Kentukki va Missuridan boshlang. O'ttiz yillik obligatsiyalar bilan to'lang va 1890-yilgacha hammani ozod qiling. Duglass buni haddan tashqari sekin deb hisoblaydi."
+        },
+        "immediate": {
+          "label": "Darhol, barcha shtatlar uchun",
+          "description": "Ozodlik hozir, to'lov obligatsiyalar bilan. Duglass rozi: \"Hech kim yarim erkin bo'lolmaydi.\" Janub yetakchilari buni boshqacha nomlangan bekor qilish deb bilishi mumkin."
+        }
+      }
+    },
+    "buyout-success": {
+      "narration": {
+        "0": {
+          "text": "Birinchi bo'lib Delaver, keyin Merilend rozi bo'ladi. Kentukki bir yil savdolashadi. Chuqur Janubda taklif avval qoralanadi, keyin muhokama qilinadi, so'ng paxta narxi tushayotganini ko'rgan plantatorlar uni jimgina qabul qila boshlaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ajralib chiqqan shtatlar 1860-yillar davomida birin-ketin, har biri o'z kelishuvi bilan qaytib keladi. Samter qal'asiga hech qachon o'q uzilmaydi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Xalqim ikkinchi marta mol kabi sotib olingani uchun minnatdorman deb aytmayman. Lekin ular ozod va tirik.",
+          "speaker": "Frederik Duglass"
+        }
+      }
+    },
+    "buyout-refused": {
+      "narration": {
+        "0": {
+          "text": "Montgomeridagi Konfederatsiya Kongressi taklifni bir ovozdan rad etadi. \"Shimol qullarimizni sotib olib, keyin bizni soliqlar bilan xonavayron qilmoqchi\", deydi delegatlardan biri.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Siz Ittifoq avval tinchlikni sinab ko'rganini dunyoga ko'rsatdingiz. Endi masala Charlston bandargohidagi kichik g'isht qal'a va uning ichida ozig'i tugab borayotgan sakson besh kishida.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "inauguration": {
+      "narration": {
+        "0": {
+          "text": "1861-yil 4-mart. Linkoln ulkan temir gumbazi yarim qurilgan Kapitoliy zinapoyasida qasamyod qiladi. Tomlardan mergan o'qchilar kuzatib turibdi. U Baltimordagi suiqasd fitnasi haqida ogohlantirilgach, Vashingtonga yashirincha, tunda kelgan.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Biz dushman emasmiz, do'stmiz. Ehtiroslar munosabatlarimizni taranglashtirgan bo'lsa ham, mehr rishtalarimizni uzmasligi kerak.",
+          "speaker": "Avraam Linkoln"
+        },
+        "2": {
+          "text": "Xotiraning sirli torlari, tabiatimizdagi yaxshi farishtalar ularga yana tegingan chog'da, albatta, Ittifoq xorini yana yangratadi.",
+          "speaker": "Avraam Linkoln"
+        },
+        "3": {
+          "text": "Gumbaz qurilishi butun urush davomida davom etadi. \"Agar odamlar Kapitoliy qurilayotganini ko'rsa, — deydi Linkoln, — bu Ittifoq davom etishini niyat qilganimiz belgisi.\"",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "sumter-intro": {
+      "narration": {
+        "0": {
+          "text": "Charlston, Janubiy Karolina, 1861-yil aprel. Samter qal'asi bandargoh og'zidagi sun'iy orolda turibdi va hamon Yulduzli-yo'l-yo'l bayroqni hilpiratmoqda. Mayor Robert Anderson va uning garnizonida bir necha kunlik oziq-ovqat qoldi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Konfederat general Boregar qal'ani to'plar bilan o'rab olgan. U artilleriyani Vest-Poyntda aynan hozir qamal qilib turgan mayor Andersondan o'rgangan.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Linkoln vazirlarining bittasidan boshqa hammasi qal'ani topshirishni maslahat bergan. U esa Janubiy Karolina gubernatoriga xat yozdi: faqat oziq-ovqat olib kemasi kelmoqda. Qal'aga hujum qilinmasa, na to'p, na askar bo'ladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "sumter-choice": {
+      "title": "Samter qal'asi · 1861-yil 12-aprel, tonggi 4:30",
+      "prompt": "Birinchi snaryad qal'a tepasida portlaydi. Anderson uzoq chidolmaydi. Yordam floti bandargoh chegarasi tashqarisida kutmoqda. Buyrug'ingiz qanday?",
+      "options": {
+        "resupply": {
+          "label": "Bayroqni himoya qiling",
+          "description": "Birinchi o'qni Janub uzdi va Shimol oyoqqa turadi. Isyonni bostirish uchun 75 000 ko'ngillini chaqiring."
+        },
+        "let-go": {
+          "label": "Janub tinch ketsin",
+          "description": "General Skott aytganidek, \"Adashgan opa-singillar, tinchlik bilan keting\". Bir qal'a uchun amerikaliklar qoni to'kilmasin."
+        }
+      }
+    },
+    "sumter-abandoned": {
+      "narration": {
+        "0": {
+          "text": "Anderson bayrog'ini tushiradi va to'liq harbiy hurmat bilan shimolga suzib ketadi. Virjiniya, Shimoliy Karolina, Tennessi va Arkanzas hozircha Ittifoqda qoladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Amerika Konfederativ Shtatlarini bir yil ichida Britaniya va Fransiya tan oladi. Ikki Amerika o'rtasidagi chegara Ogayo daryosi bo'ylab o'tadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "war-begins": {
+      "narration": {
+        "0": {
+          "text": "O'ttiz to'rt soatdan keyin Samter qal'asi taslim bo'ladi. Ikki tomondan ham hech kim halok bo'lmagan. Bu uzoq vaqt davomidagi oxirgi yaxshi xabar.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Virjiniya, Arkanzas, Tennessi va Shimoliy Karolina Konfederatsiyaga qo'shiladi. Robert E. Li Ittifoq armiyasi qo'mondonligini taklif qilishganda iste'foga chiqadi: u Virjiniyaga qarshi jang qilmaydi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Vashington chodirlar bilan o'ralgan. O'sha yozi Bull-Randa Ittifoq armiyasi vahima ichida poytaxtga qochib qaytadi. General Makklellan armiyani qayta tuzadi, uni ajoyib mashq qildiradi, lekin ishga solmaydi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "1862-yil sentabr. Li Merilendga bostirib kiradi. Ittifoq askari tashlab ketilgan lagerda uning buyrug'i nusxasini uchta sigaraga o'ralgan holda topib oladi. Endi bahonaga o'rin yo'q.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "antietam-battle": {
+      "battle": {
+        "name": "Antitem jangi",
+        "objective": "1862-yil 17-sentabr, Sharpsberg, Merilend. Li Shimolga 38 000 kishi bilan bostirib kirdi. Sizda 87 000 askar va uchta sigaraga o'ralgan holda topilgan uning jang rejasi nusxasi bor. Unga yordam yetib kelmasidan oldin uni Potomak ortiga quvib chiqaring.",
+        "player": {
+          "name": "Potomak armiyasi"
+        },
+        "enemy": {
+          "name": "Shimoliy Virjiniya armiyasi"
+        },
+        "events": {
+          "cornfield": {
+            "title": "Makkajo'xori dalasi",
+            "prompt": "Tong. Xukerning korpusi makkajo'xori ustida yaltirayotgan nayzalarni ko'radi: Miller dalasida konfederatlar kutib turibdi.",
+            "options": {
+              "artillery-corn": {
+                "label": "Dalani artilleriya bilan o'qqa tuting",
+                "description": "Tepalikdagi barcha to'plar dalaga kartech otadi. Keyinchalik Xuker poyalar xuddi pichoq bilan kesilgandek qirqib tashlangan, deb yozgan."
+              },
+              "charge-corn": {
+                "label": "Makkajo'xori orqali hujumga o'ting",
+                "description": "Himoyachilar qayta o'qlab ulgurmasidan nayza bilan kiring. Bugun bu dala o'n besh marta qo'ldan-qo'lga o'tadi."
+              }
+            }
+          },
+          "reserve": {
+            "title": "Botiq yo'l yorib o'tildi",
+            "prompt": "Li markazi parchalandi. Botiq yo'l jasadlarga to'lgan, Fits Jon Porterning 12 000 kishisi esa zaxirada tetik turibdi.",
+            "options": {
+              "commit-reserve": {
+                "label": "Zaxirani jangga tashlang",
+                "description": "Bizning tariximizda Makklellan rad etgan. Hozir bitta zarba Li armiyasini yo'q qilib, urushni bir necha yil oldin tugatishi mumkin."
+              },
+              "hold-reserve": {
+                "label": "Zaxirani saqlab qoling",
+                "description": "\"Unutmang, general, men Respublikaning so'nggi armiyasining so'nggi zaxirasiga qo'mondonlik qilaman.\" Ehtiyotkor bo'ling."
+              }
+            }
+          },
+          "ap-hill": {
+            "title": "A. P. Xill yetib keldi",
+            "prompt": "Xarpers-Ferri yo'lida chang. O'n yetti milni yugurib bosib o'tgan konfederat yordam kuchlari chap qanotingizga zarba beradi.",
+            "options": {
+              "burnside-bridge": {
+                "label": "Bernsayd ko'prigini ushlab turing",
+                "description": "Chap qanotni tosh ko'prik ortiga olib o'ting va ularni o'zingizga kelishga majbur qiling."
+              },
+              "rally-colours": {
+                "label": "Bayroqlar atrofida to'planing",
+                "description": "Bayroqdor serjantlar o'q ostida qad rostlaydi va polklar ularning atrofida qayta saflanadi."
+              }
+            }
+          }
+        }
+      }
+    },
+    "antietam-lost": {
+      "narration": {
+        "0": {
+          "text": "Potomak armiyasi Vashington tomon chekinadi. Li qishni Merilendda o'tkazadi, Baltimor esa ko'chalarda uning askarlarini olqishlaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Londonda hukumat vositachilik taklif qilishga ovoz beradi, Fransiya ham ergashadi. Yevropaning tan olishi va kreditlari bilan Konfederatsiyani ochlik bilan taslim qilib bo'lmaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "emancipation-choice": {
+      "title": "Oq uy · 1862-yil 22-sentabr",
+      "prompt": "Li Potomak ortiga chekindi. Iyuldan beri isyonchi shtatlardagi barcha qullarni ozod qiluvchi farmon loyihasi stolingiz tortmasida yotibdi.",
+      "options": {
+        "sign": {
+          "label": "Farmonni imzolang",
+          "description": "\"Agar mening ismim tarixga kirsa, aynan shu ish uchun kiradi.\" 1863-yil 1-yanvarda uch yarim million kishi abadiy ozod deb e'lon qilinadi."
+        },
+        "delay": {
+          "label": "Kuting. Hali erta",
+          "description": "Chegara shtatlari ketib qolishi, armiya isyon ko'tarishi mumkin. Avval Ittifoq uchun kurashing, qullik masalasini keyin hal qilasiz."
+        }
+      }
+    },
+    "proclamation": {
+      "narration": {
+        "0": {
+          "text": "1863-yil Yangi yil kuni. Linkoln ertalabdan mehmonlar bilan qo'l berib ko'rishgan, qalamni olganida qo'li qaltiraydi. \"Agar qo'lim qaltiraganini ko'rishsa, ikkilangan ekan deyishadi\", deydi u.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Biz osmondan chaqmoq kutgandek kutib, quloq solib turardik. Xabar sim orqali kelganida, quvonch va shodlikni ifodalashga hech qanday so'z yetmadi.",
+          "speaker": "Frederik Duglass"
+        },
+        "2": {
+          "text": "Urush endi qullikka qarshi urushga aylandi. Bundan keyin hech bir Britaniya hukumati Konfederatsiyani tan ololmaydi, qora tanli erkaklar esa endi Ittifoq armiyasiga yozila oladi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Olti oy o'tib Li yana Shimolga bostirib kiradi. Armiyalar Pensilvaniyadagi Gettisberg degan chorraha shaharchada tasodifan to'qnashadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "delay-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Siz isyonga qarshi faqat bir qo'l bilan kurashyapsiz, janob Prezident, holbuki ikki qo'l bilan urishingiz mumkin: oq qo'l va qora qo'l bilan.",
+          "speaker": "Frederik Duglass"
+        },
+        "1": {
+          "text": "Ma'naviy maqsad bo'lmagani uchun Yevropaga urush chegaralar ustidagi janjal bo'lib ko'rinadi. Ittifoq armiyasi qora tanli polklarga ega bo'lmaydi, qullar mehnati esa Konfederatsiyani boqishda davom etadi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "1863-yil iyul. Li Pensilvaniyaga bostirib kiradi. Armiyalar Gettisberg degan chorraha shaharchada to'qnashadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-gettysburg": {
+      "prompt": "Jang maydonini kezing: atrofni ko'rish uchun suring va porlab turgan belgilarni bosing. So'ng qanday jang qilishni tanlang.",
+      "hotspots": {
+        "round-top": {
+          "label": "Kichik Raund-Top",
+          "title": "Armiyani qutqargan tepalik",
+          "description": "Kecha polkovnik Joshua Chemberlenning 20-Meyn polki bu yerda chiziqning eng chap chetini o'q-dorisi tugaguncha ushlab turdi, so'ng nayzalar bilan pastga hujumga o'tdi. Agar bu tepalik qo'ldan ketganida, konfederat to'plari butun armiyangizni bo'ylab o'qqa tutgan bo'lardi."
+        },
+        "copse": {
+          "label": "Daraxtzor",
+          "title": "Lining nishoni",
+          "description": "Chizig'ingiz o'rtasidagi kichik daraxtzor, uni bir mil narida ham ko'rish oson. Li uni hujum nishoni qilib tanlagan. Uning oldidagi past tosh devor ortida Xenkok Ikkinchi korpusining 5 000 ga yaqin askari kutmoqda."
+        },
+        "seminary": {
+          "label": "Seminariya tizmasi",
+          "title": "Vodiy ortida",
+          "description": "Li armiyasi bir mil narida daraxtlar orasida kutmoqda. U Virjiniyada o'ziga qarshi yuborilgan har bir Ittifoq generalini yenggan. Longstrit bu ochiq maydondan hujum qilmaslikni yolvorib so'ragan. Li esa: \"Dushman o'sha yerda va men unga zarba beraman\", degan."
+        },
+        "usct": {
+          "label": "Yangi polklar",
+          "title": "Qo'shma Shtatlar rangli qo'shinlari",
+          "description": "Farmondan keyin qora tanli erkaklar Ittifoq armiyasida xizmat qila oladi, butun Shimolda va bosib olingan Janubda yollash idoralari ochilmoqda. 1865-yilgacha 180 000 ga yaqin kishi yoziladi. Frederik Duglassning o'z o'g'illari Charlz va Lyuis birinchilar qatorida."
+        },
+        "ridge": {
+          "label": "Tosh devor",
+          "title": "Midning qarori",
+          "description": "General Mid qo'mondonlikni olganiga olti kun bo'ldi. Kecha generallari qolib jang qilish uchun ovoz berishdi. Endi u qanday jang qilishni hal qilishi kerak."
+        }
+      }
+    },
+    "explore-gettysburg-delayed": {
+      "prompt": "Jang maydonini kezing: atrofni ko'rish uchun suring va porlab turgan belgilarni bosing. So'ng qanday jang qilishni tanlang.",
+      "hotspots": {
+        "round-top": {
+          "label": "Kichik Raund-Top",
+          "title": "Armiyani qutqargan tepalik",
+          "description": "Kecha polkovnik Joshua Chemberlenning 20-Meyn polki bu yerda chiziqning eng chap chetini o'q-dorisi tugaguncha ushlab turdi, so'ng nayzalar bilan pastga hujumga o'tdi. Agar bu tepalik qo'ldan ketganida, konfederat to'plari butun armiyangizni bo'ylab o'qqa tutgan bo'lardi."
+        },
+        "copse": {
+          "label": "Daraxtzor",
+          "title": "Lining nishoni",
+          "description": "Chizig'ingiz o'rtasidagi kichik daraxtzor, uni bir mil narida ham ko'rish oson. Li uni hujum nishoni qilib tanlagan. Uning oldidagi past tosh devor ortida Xenkok Ikkinchi korpusining 5 000 ga yaqin askari kutmoqda."
+        },
+        "seminary": {
+          "label": "Seminariya tizmasi",
+          "title": "Vodiy ortida",
+          "description": "Li armiyasi bir mil narida daraxtlar orasida kutmoqda. U Virjiniyada o'ziga qarshi yuborilgan har bir Ittifoq generalini yenggan. Longstrit bu ochiq maydondan hujum qilmaslikni yolvorib so'ragan. Li esa: \"Dushman o'sha yerda va men unga zarba beraman\", degan."
+        },
+        "london": {
+          "label": "Londondan xabarlar",
+          "title": "Yevropa kuzatmoqda",
+          "description": "Farmon bo'lmagani uchun Britaniya gazetalari buni qullik emas, bojlar va ittifoq haqidagi urush deb atamoqda. Londondagi hukumat vositachilik taklif qilish, ya'ni Konfederatsiyani tan olish masalasini muhokama qilmoqda."
+        },
+        "ridge": {
+          "label": "Tosh devor",
+          "title": "Midning qarori",
+          "description": "General Mid qo'mondonlikni olganiga olti kun bo'ldi. Kecha generallari qolib jang qilish uchun ovoz berishdi. Endi u qanday jang qilishni hal qilishi kerak."
+        }
+      }
+    },
+    "gettysburg-choice": {
+      "title": "Qabriston tizmasi · 1863-yil 3-iyul",
+      "prompt": "Ikki kunlik jang, o'n minglab askar halok bo'ldi, yaralandi yoki bedarak yo'qoldi. Li yana bir zarbaga kuch to'plamoqda. Uni qanday kutib olasiz?",
+      "options": {
+        "hold-ridge": {
+          "label": "Balandlikni ushlab turing",
+          "description": "Devor ortida qoling va Li to'plaringiz ostida bir mil ochiq dala bo'ylab kelsin."
+        },
+        "attack-first": {
+          "label": "U urishidan oldin uring",
+          "description": "Li armiyasi charchagan va uyidan uzoqda. Uni o'z pozitsiyalarida hujumga oling va hammasini bugun tugating."
+        }
+      }
+    },
+    "gettysburg-choice-delayed": {
+      "title": "Qabriston tizmasi · 1863-yil 3-iyul",
+      "prompt": "Ikki kunlik jang, o'n minglab askar halok bo'ldi, yaralandi yoki bedarak yo'qoldi. Li yana bir zarbaga kuch to'plamoqda. Uni qanday kutib olasiz?",
+      "options": {
+        "hold-ridge": {
+          "label": "Balandlikni ushlab turing",
+          "description": "Devor ortida qoling va Li to'plaringiz ostida bir mil ochiq dala bo'ylab kelsin."
+        },
+        "attack-first": {
+          "label": "U urishidan oldin uring",
+          "description": "Li armiyasi charchagan va uyidan uzoqda. Uni o'z pozitsiyalarida hujumga oling va hammasini bugun tugating."
+        }
+      }
+    },
+    "gettysburg-hold": {
+      "battle": {
+        "name": "Pikket hujumi",
+        "objective": "1863-yil 3-iyul, soat bir. Bir yuz ellikta konfederat to'pi ikki soatdan beri Qabriston tizmasini o'qqa tutmoqda. Endi 12 500 kishi bir mil narida daraxtlar orasidan chiqib, tosh devoringiz tomon yurib kelmoqda. Uni ushlab turing.",
+        "player": {
+          "name": "Potomak armiyasi"
+        },
+        "enemy": {
+          "name": "Pikket, Pettigryu va Trimbl"
+        },
+        "events": {
+          "cannonade": {
+            "title": "Buyuk to'pga tutish",
+            "prompt": "Butun tizma bo'ylab snaryadlar portlamoqda. To'pchilaringizda uzoqqa otadigan o'q-dori deyarli qolmadi.",
+            "options": {
+              "cease-fire": {
+                "label": "O'qni to'xtating, kartechni asrang",
+                "description": "Lini to'plaringiz yo'q qilingan deb o'ylashga majbur qiling. Uning piyodalari yaqinlashganda, saqlab qo'ygan hamma narsa bilan o'q oching."
+              },
+              "duel": {
+                "label": "Ularning batareyalari bilan olishing",
+                "description": "To'pga to'p bilan javob bering va askarlarning ruhini ko'taring, hatto o'q-dori qutilari bo'shab qolsa ham."
+              }
+            }
+          },
+          "the-angle": {
+            "title": "Burchak",
+            "prompt": "General Armisted shlyapasini qilichi uchiga ilib, bir necha yuz virjiniyalikni Burchakdagi devor ustidan olib o'tadi.",
+            "options": {
+              "plug-gap": {
+                "label": "Bo'shliqni yoping",
+                "description": "Uebbning filadelfiyaliklari va yaqindagi barcha polklar daraxtzor tomon yuguradi."
+              },
+              "flank-fire": {
+                "label": "Ularning yonboshiga uring",
+                "description": "Vermont brigadasi chiziqdan chiqib, hujum qilayotganlarning yonboshiga o'q uzadi."
+              }
+            }
+          },
+          "line-wavers": {
+            "title": "Chiziq tebranmoqda",
+            "prompt": "Askarlar oldingi chiziqdan chekinmoqda. Agar chiziqning bu qismi yorilsa, butun armiya ikkiga bo'linadi.",
+            "options": {
+              "hancock": {
+                "label": "Xenkok chiziq bo'ylab yuradi",
+                "description": "\"Ba'zan korpus qo'mondonining hayoti hisobga olinmaydigan paytlar bo'ladi.\" Sonida o'q bo'lsa ham, u egarda qoladi."
+              },
+              "reserves-up": {
+                "label": "Zaxiralarni chaqiring",
+                "description": "Midning ichki chiziqlari qisqa. Xavf ostidagi joyga yangi brigadalarni o'tkazing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "gettysburg-attack": {
+      "battle": {
+        "name": "Seminariya tizmasiga hujum",
+        "objective": "1863-yil 3-iyul. Hujumni kutish o'rniga, siz Potomak armiyasini ochiq dalalar orqali Seminariya tizmasidagi Li to'plari tomon yuborasiz. G'alaba qozonsangiz, uning armiyasi tugaydi. Yutqazsangiz, Vashingtonga yo'l ochiladi.",
+        "player": {
+          "name": "Potomak armiyasi"
+        },
+        "enemy": {
+          "name": "Shimoliy Virjiniya armiyasi"
+        },
+        "events": {
+          "cannonade": {
+            "title": "Li to'plari o'q ochdi",
+            "prompt": "Seminariya tizmasidagi konfederat batareyalari Emmitsberg yo'lini kesib o'tayotgan kolonnalaringizni o'qqa tutadi.",
+            "options": {
+              "double-quick": {
+                "label": "Dalani yugurib kesib o'ting",
+                "description": "To'plar ostida kamroq vaqt, lekin tizmaga yetganda ko'proq askar nafasi qaytib qoladi."
+              },
+              "counter-battery": {
+                "label": "Avval to'plarni olib keling",
+                "description": "Piyodalar kirishidan oldin konfederat artilleriyasini o'chiring."
+              }
+            }
+          },
+          "the-angle": {
+            "title": "Daraxtlar ichiga",
+            "prompt": "Birinchi saflaringiz Seminariya tizmasidagi daraxtlar chizig'iga yetadi. Longstritning faxriylari istehkomlar ortida kutmoqda.",
+            "options": {
+              "plug-gap": {
+                "label": "Yorib o'ting",
+                "description": "Davom eting va ularga qayta saflanishga vaqt bermang."
+              },
+              "flank-fire": {
+                "label": "Ularning yonboshiga uring",
+                "description": "Kusterning Sharqiy otliqlar maydonida qilganidek, otliqlarni ularning chizig'i chetidan aylantirib yuboring."
+              }
+            }
+          },
+          "line-wavers": {
+            "title": "Chiziq tebranmoqda",
+            "prompt": "Askarlar oldingi chiziqdan chekinmoqda. Agar chiziqning bu qismi yorilsa, butun armiya ikkiga bo'linadi.",
+            "options": {
+              "hancock": {
+                "label": "Xenkok chiziq bo'ylab yuradi",
+                "description": "\"Ba'zan korpus qo'mondonining hayoti hisobga olinmaydigan paytlar bo'ladi.\" Sonida o'q bo'lsa ham, u egarda qoladi."
+              },
+              "reserves-up": {
+                "label": "Zaxiralarni chaqiring",
+                "description": "Midning ichki chiziqlari qisqa. Xavf ostidagi joyga yangi brigadalarni o'tkazing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "gettysburg-hold-delayed": {
+      "battle": {
+        "name": "Pikket hujumi",
+        "objective": "1863-yil 3-iyul, soat bir. Bir yuz ellikta konfederat to'pi ikki soatdan beri Qabriston tizmasini o'qqa tutmoqda. Endi 12 500 kishi bir mil narida daraxtlar orasidan chiqib, tosh devoringiz tomon yurib kelmoqda. Uni ushlab turing.",
+        "player": {
+          "name": "Potomak armiyasi"
+        },
+        "enemy": {
+          "name": "Pikket, Pettigryu va Trimbl"
+        },
+        "events": {
+          "cannonade": {
+            "title": "Buyuk to'pga tutish",
+            "prompt": "Butun tizma bo'ylab snaryadlar portlamoqda. To'pchilaringizda uzoqqa otadigan o'q-dori deyarli qolmadi.",
+            "options": {
+              "cease-fire": {
+                "label": "O'qni to'xtating, kartechni asrang",
+                "description": "Lini to'plaringiz yo'q qilingan deb o'ylashga majbur qiling. Uning piyodalari yaqinlashganda, saqlab qo'ygan hamma narsa bilan o'q oching."
+              },
+              "duel": {
+                "label": "Ularning batareyalari bilan olishing",
+                "description": "To'pga to'p bilan javob bering va askarlarning ruhini ko'taring, hatto o'q-dori qutilari bo'shab qolsa ham."
+              }
+            }
+          },
+          "the-angle": {
+            "title": "Burchak",
+            "prompt": "General Armisted shlyapasini qilichi uchiga ilib, bir necha yuz virjiniyalikni Burchakdagi devor ustidan olib o'tadi.",
+            "options": {
+              "plug-gap": {
+                "label": "Bo'shliqni yoping",
+                "description": "Uebbning filadelfiyaliklari va yaqindagi barcha polklar daraxtzor tomon yuguradi."
+              },
+              "flank-fire": {
+                "label": "Ularning yonboshiga uring",
+                "description": "Vermont brigadasi chiziqdan chiqib, hujum qilayotganlarning yonboshiga o'q uzadi."
+              }
+            }
+          },
+          "line-wavers": {
+            "title": "Chiziq tebranmoqda",
+            "prompt": "Askarlar oldingi chiziqdan chekinmoqda. Agar chiziqning bu qismi yorilsa, butun armiya ikkiga bo'linadi.",
+            "options": {
+              "hancock": {
+                "label": "Xenkok chiziq bo'ylab yuradi",
+                "description": "\"Ba'zan korpus qo'mondonining hayoti hisobga olinmaydigan paytlar bo'ladi.\" Sonida o'q bo'lsa ham, u egarda qoladi."
+              },
+              "reserves-up": {
+                "label": "Zaxiralarni chaqiring",
+                "description": "Midning ichki chiziqlari qisqa. Xavf ostidagi joyga yangi brigadalarni o'tkazing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "gettysburg-attack-delayed": {
+      "battle": {
+        "name": "Seminariya tizmasiga hujum",
+        "objective": "1863-yil 3-iyul. Hujumni kutish o'rniga, siz Potomak armiyasini ochiq dalalar orqali Seminariya tizmasidagi Li to'plari tomon yuborasiz. G'alaba qozonsangiz, uning armiyasi tugaydi. Yutqazsangiz, Vashingtonga yo'l ochiladi.",
+        "player": {
+          "name": "Potomak armiyasi"
+        },
+        "enemy": {
+          "name": "Shimoliy Virjiniya armiyasi"
+        },
+        "events": {
+          "cannonade": {
+            "title": "Li to'plari o'q ochdi",
+            "prompt": "Seminariya tizmasidagi konfederat batareyalari Emmitsberg yo'lini kesib o'tayotgan kolonnalaringizni o'qqa tutadi.",
+            "options": {
+              "double-quick": {
+                "label": "Dalani yugurib kesib o'ting",
+                "description": "To'plar ostida kamroq vaqt, lekin tizmaga yetganda ko'proq askar nafasi qaytib qoladi."
+              },
+              "counter-battery": {
+                "label": "Avval to'plarni olib keling",
+                "description": "Piyodalar kirishidan oldin konfederat artilleriyasini o'chiring."
+              }
+            }
+          },
+          "the-angle": {
+            "title": "Daraxtlar ichiga",
+            "prompt": "Birinchi saflaringiz Seminariya tizmasidagi daraxtlar chizig'iga yetadi. Longstritning faxriylari istehkomlar ortida kutmoqda.",
+            "options": {
+              "plug-gap": {
+                "label": "Yorib o'ting",
+                "description": "Davom eting va ularga qayta saflanishga vaqt bermang."
+              },
+              "flank-fire": {
+                "label": "Ularning yonboshiga uring",
+                "description": "Kusterning Sharqiy otliqlar maydonida qilganidek, otliqlarni ularning chizig'i chetidan aylantirib yuboring."
+              }
+            }
+          },
+          "line-wavers": {
+            "title": "Chiziq tebranmoqda",
+            "prompt": "Askarlar oldingi chiziqdan chekinmoqda. Agar chiziqning bu qismi yorilsa, butun armiya ikkiga bo'linadi.",
+            "options": {
+              "hancock": {
+                "label": "Xenkok chiziq bo'ylab yuradi",
+                "description": "\"Ba'zan korpus qo'mondonining hayoti hisobga olinmaydigan paytlar bo'ladi.\" Sonida o'q bo'lsa ham, u egarda qoladi."
+              },
+              "reserves-up": {
+                "label": "Zaxiralarni chaqiring",
+                "description": "Midning ichki chiziqlari qisqa. Xavf ostidagi joyga yangi brigadalarni o'tkazing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "gettysburg-lost": {
+      "narration": {
+        "0": {
+          "text": "Ittifoq chizig'i daraxtzor oldida yoriladi. Li armiyasi sharqqa, Baltimor va Vashington tomon yuradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Noyabrda Shimol saylovchilari har qanday narxda tinchlikni xohlaydigan Kongressni saylaydi. Linkoln 1864-yilgi saylovda Jorj Makklellanga yutqazadi, u esa sulh imzolaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "fords-intro": {
+      "narration": {
+        "0": {
+          "text": "Gettisberg bardosh berdi. Ertasi kuni Viksberg Uliss S. Grantga taslim bo'ladi va Konfederatsiya ikkiga bo'linadi. Linkoln Grantni sharqqa chaqirib, unga barcha Ittifoq armiyalari qo'mondonligini topshiradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "1865-yil 9-aprel. Appomattoks sud binosida Li Grantga taslim bo'ladi. Grant askarlariga xursandchilik qilmaslikni buyuradi: \"Isyonchilar yana bizning vatandoshlarimiz.\"",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Besh kundan keyin. Muqaddas juma, 14-aprel. Gazetalar Prezident va general Grant bugun kechqurun Ford teatridagi komediyaga borishini e'lon qildi.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Jon Uilks But ismli aktyor e'lonni o'qiydi. U bu teatrni va spektaklning har bir satrini biladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "fords-choice": {
+      "title": "Ford teatri · 1865-yil 14-aprel",
+      "prompt": "Meri spektaklni ko'rmoqchi. Grantning aytishicha, xotini Nyu-Jersidagi bolalarini ko'rgani borishni afzal ko'radi. Qo'riqchingiz Jon Parkerning joyidan ketib qolish odati bor. Nima qilasiz?",
+      "options": {
+        "go": {
+          "label": "Spektaklga boring",
+          "description": "Xalq buni kutmoqda, to'rt yillik urushdan keyin bir kulib olish sizga ham yaxshi."
+        },
+        "grant-escort": {
+          "label": "Grantdan baribir kelishini so'rang",
+          "description": "General qayerga borsa, harbiy qo'riqchilari ham o'sha yerga boradi: prezident lojasi tashqarisida qurolli askarlar."
+        },
+        "stay": {
+          "label": "Oq uyda qoling",
+          "description": "Siz juda charchagansiz. Meri spektaklni boshqa kechada ko'radi."
+        }
+      }
+    },
+    "booth": {
+      "narration": {
+        "0": {
+          "text": "Soat o'ndan chorak o'tdi. Parker yondagi qovoqxonaga ketgan. Sahnada aktyor har doim eng katta kulgi qo'zg'aydigan satrni aytadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Kulgi shovqini ostida But lojaga kirib, bitta o'q uzadi. U sahnaga sakraydi, oyog'ini sindiradi va \"Sic semper tyrannis!\" deb qichqirib, tun qorong'iligiga qochib ketadi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Avraam Linkoln ertasi kuni ertalab soat 7:22 da ko'chaning narigi tomonidagi ijara uyda vafot etadi. \"Endi u asrlarga tegishli\", deydi Harbiy vazir.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "grant-comes": {
+      "narration": {
+        "0": {
+          "text": "To'rt otliq askar butun kecha loja tashqarisidagi yo'lakda turadi. But soat o'nda kelib, ularni ko'radi va O'ninchi ko'chaga qaytib chiqib ketadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ertaga ertalab Juliyaning oldida turgandan ko'ra yana Li bilan yuzma-yuz kelganim yaxshiroq edi, janob Prezident. Lekin kelganimdan xursandman.",
+          "speaker": "Uliss S. Grant"
+        }
+      }
+    },
+    "stayed-home": {
+      "narration": {
+        "0": {
+          "text": "But Ford teatri tashqarisida hech qachon kelmaydigan aravani kutadi. Uning do'stlarini allaqachon kuzatib yurgan Edvin Stentonning detektivlari ikki kundan keyin uni ijara uyida hibsga oladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Avraam Linkoln ertasi kuni ertalab uyg'onadi, odatdagidek bitta tuxum va bir chashka qahvadan iborat nonushtasini qiladi va tinchlik ustidagi ishiga qaytadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    }
+  },
+  "characters": {
+    "lincoln": {
+      "name": "Avraam Linkoln",
+      "role": "Qo'shma Shtatlarning 16-prezidenti"
+    },
+    "douglass": {
+      "name": "Frederik Duglass",
+      "role": "Abolitsionist, yozuvchi va notiq"
+    },
+    "grant": {
+      "name": "Uliss S. Grant",
+      "role": "Ittifoq armiyasi bosh qo'mondoni"
+    },
+    "lee": {
+      "name": "Robert E. Li",
+      "role": "General, Shimoliy Virjiniya armiyasi"
+    }
+  },
+  "title": "Ikkiga bo'lingan uy",
+  "era": "Springfild · 1860",
+  "endings": {
+    "lincoln-survives": {
+      "title": "Linkoln tirik",
+      "subtitle": "Hech kimga adovatsiz: Linkoln Qayta qurishni boshqaradi",
+      "epilogue": {
+        "0": {
+          "text": "Linkoln ikkinchi muddatini oxirigacha xizmat qiladi. Endryu Jonson o'rniga o'z davrining eng mohir siyosatchisi tinchlikni boshqaradi va Janub bizning tariximizdagi achchiq adovatsiz qaytariladi."
+        },
+        "1": {
+          "text": "U avval qora tanli faxriylarga, keyin barcha ozod qilinganlarga ovoz berish huquqini talab qiladi. Jim Krou qonunlari ildiz otmasdan to'xtatiladi, fuqarolik huquqlari uchun kurash avlodlar oldin boshlanadi."
+        },
+        "2": {
+          "text": "U 1869-yilda Springfildga qaytadi va xotiralar kitobini yozadi. U hamon har qanday Amerika prezidentining eng ko'p sotilgan kitobi."
+        }
+      }
+    },
+    "lincoln-survives-grant": {
+      "title": "Linkoln tirik",
+      "subtitle": "Grant qo'riqchilari Butni qaytaradi · Linkoln Qayta qurishni boshqaradi",
+      "epilogue": {
+        "0": {
+          "text": "Urushda g'alaba qozongan ikki kishi, Linkoln va Grant, tinchlikni birga boshqaradi. Linkoln Kongressni ko'ndirayotganda, Grant armiyasi Janubdagi yangi shtat hukumatlarini himoya qiladi."
+        },
+        "1": {
+          "text": "Qora tanli amerikaliklar ko'plab ovoz beradi, lavozimlarni egallaydi va yer sotib oladi. Jim Krouning oldi olinadi va mamlakat 1890-yilgacha birlashgan va ancha teng huquqli sanoat qudratli davlatiga aylanadi."
+        }
+      }
+    },
+    "peaceful-abolition": {
+      "title": "Buyuk murosa",
+      "subtitle": "Qullik sotib olindi · Fuqarolar urushi bo'lmadi",
+      "epilogue": {
+        "0": {
+          "text": "So'nggi qullar 1890-yilda ozod qilinadi. Obligatsiyalar to'lanayotgan paytda qullikda vafot etgan millionlar uchun bu o'n yilliklar kech. Lekin 750 000 askar tirik qoladi va Janub yonib ketmaydi."
+        },
+        "1": {
+          "text": "Urushsiz plantatorlar boyligi va hokimiyatini saqlab qoladi, segregatsiya uzoq davom etadi. Lekin u hech qachon qon bilan muhrlanmaydi va jimroq so'nib boradi."
+        },
+        "2": {
+          "text": "Fuqarolar urushi tarix kitoblarida \"agar shunday bo'lganida\" degan savol xolos. Amerika kamroq militaristik mamlakat va tinchlik bahosi juda qimmat bo'lmadimi, degan bahs davom etadi."
+        }
+      }
+    },
+    "confederacy-wins": {
+      "title": "Janub g'alabasi",
+      "subtitle": "Gettisberg yutqazildi · ikki Amerika millati",
+      "epilogue": {
+        "0": {
+          "text": "Amerika Konfederativ Shtatlari 1864-yilda mustaqillikka erishadi. Shimoliy Amerika bo'lingan va bu chegara dunyodagi eng qattiq mustahkamlangan chegara."
+        },
+        "1": {
+          "text": "Qullik 1890-yillargacha saqlanadi va unga armiyalar emas, mashinalar va boykotlar barham beradi. Janubdagi qonuniy segregatsiya 1990-yilgacha davom etadi."
+        },
+        "2": {
+          "text": "Birinchi jahon urushida Qo'shma Shtatlar Germaniyani, Konfederatsiya esa Britaniyani qo'llab-quvvatlaydi. Atlantaga borish uchun pasport kerak."
+        }
+      }
+    },
+    "confederacy-antietam": {
+      "title": "Janub g'alabasi",
+      "subtitle": "Antitem yutqazildi · Yevropa Konfederatsiyani tan oladi",
+      "epilogue": {
+        "0": {
+          "text": "Britaniya vositachiligi Britaniya vositachiligidagi tinchlikka aylanadi. Ittifoq 1863-yilda o'n bir shtatdan ayrilishni tan oladi, Linkoln esa mamlakatning yarmini yo'qotgan prezident sifatida eslanadi."
+        },
+        "1": {
+          "text": "Qullik 1890-yillargacha saqlanadi. Janubdagi qonuniy segregatsiya 1990-yilgacha davom etadi, ikki Amerika esa Potomak orqali bir-biriga xo'mrayib qaraydi."
+        }
+      }
+    },
+    "confederacy-peaceful": {
+      "title": "Janub g'alabasi",
+      "subtitle": "Samter topshirildi · Janub urushsiz ajralib chiqadi",
+      "epilogue": {
+        "0": {
+          "text": "Yetti shtat birorta o'q uzmasdan Konfederatsiya tuzadi. Shimolni birlashtiradigan urush bo'lmagani uchun Linkoln bir muddatlik prezident bo'lib qoladi, qolgan Ittifoq esa nima qilish kerak edi, degan bahslarga botadi."
+        },
+        "1": {
+          "text": "O'n minglab qullar shimolga qochadi va yangi chegara o'ttiz yil davom etgan sovuq urushning oldingi chizig'iga aylanadi."
+        }
+      }
+    },
+    "union-delayed": {
+      "title": "Ozodliksiz Ittifoq",
+      "subtitle": "Urush yutildi, lekin ozodlik kech keldi",
+      "epilogue": {
+        "0": {
+          "text": "Ittifoq 1866-yilda, bizning tariximizdan bir yil kech va o'n minglab ko'proq qurbonlar bilan g'alaba qozonadi. Qullik faqat to'plar tingandan keyin O'n uchinchi tuzatish bilan bekor qilinadi."
+        },
+        "1": {
+          "text": "Ko'rsatish mumkin bo'lgan qora tanli polklar bo'lmagani uchun ozod qilinganlarning Vashingtonda ittifoqchilari kamroq. Ularning huquqlari bizning tariximizdagidan ham tezroq sotib yuboriladi."
+        }
+      }
+    },
+    "union-restored": {
+      "title": "Ozodlikning yangi tug'ilishi",
+      "subtitle": "Siz bilgan tarix: Ittifoq tiklandi, Prezident yo'qotildi",
+      "epilogue": {
+        "0": {
+          "text": "Ittifoq saqlanib qoladi va qullik 1865-yil dekabrida O'n uchinchi tuzatish bilan bekor qilinadi. Linkoln buni ko'rish uchun yashamaydi."
+        },
+        "1": {
+          "text": "Endryu Jonson eski Janub yetakchilarini yana hokimiyatga qaytaradi va Qayta qurish va'dasi bir asrlik Jim Krouga aylanib ketadi."
+        },
+        "2": {
+          "text": "Siz buni o'qiyotgan haqiqat shu. Mamlakat Linkoln Gettisbergda bergan va'dani bajarishni boshlashi uchun 1960-yillargacha kutishga to'g'ri keldi."
+        }
+      }
+    }
+  }
+}

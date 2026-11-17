@@ -148,7 +148,7 @@ export interface BattleConfig {
 // ─── Characters (real historical people as stylized 3D figures) ────────────
 
 /** Silhouette + headwear preset for a hero figure. */
-export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king' | 'queen' | 'napoleonic';
+export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king' | 'queen' | 'napoleonic' | 'stovepipe' | 'frock-coat' | 'civil-war-general';
 export type CharacterPose = 'idle' | 'command' | 'think';
 
 export interface CharacterDef {
@@ -162,6 +162,8 @@ export interface CharacterDef {
     skin?: string;
     /** Hair cap colour for bare-headed characters (statesman). */
     hair?: string;
+    /** Hat colour for outfits with a felt hat (civil-war-general). */
+    hat?: string;
     /** Receding hairline (hair only at the back and sides). */
     balding?: boolean;
     /** Breeches + waistcoat colour for coat-style outfits. */
@@ -250,7 +252,13 @@ export type EnvironmentId =
     | 'paris-terror'
     | 'varennes'
     | 'valmy'
-    | 'marengo';
+    | 'marengo'
+    | 'springfield'
+    | 'washington-1861'
+    | 'charleston-harbor'
+    | 'antietam'
+    | 'gettysburg'
+    | 'fords-theatre';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 
