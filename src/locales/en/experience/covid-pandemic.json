@@ -1,0 +1,178 @@
+{
+  "title": "The Night Shift",
+  "era": "31 March 2020 · Fictional district",
+  "ui": {
+    "disclaimer": "An invented coordination exercise, not an epidemiological forecast or medical advice. All local people, reports, quantities, trade-offs and outcomes are fictional.",
+    "intro": "You coordinate one night of deliveries, staff planning and public communication. Inspect three reports, pack a limited shipment and leave an honest handover. No time limit.",
+    "start": "Begin night shift",
+    "next": "Continue",
+    "skip": "Skip this scene",
+    "close": "Close report",
+    "reviewed": "Reviewed",
+    "evidence": "Reports reviewed",
+    "inspect": "Read all three reports before dispatch. Tap a location or its button. Drag to orbit; pinch to zoom.",
+    "dispatch": "Open dispatch manifest",
+    "remaining": "Unassigned crates",
+    "confirm": "Seal shipment",
+    "allocation": "Assign all six crates. Requests total nine. These are fictional logistics tokens, not medical supply calculations. You can revise until sealing.",
+    "hospital": "District hospital",
+    "clinic": "Neighborhood clinic",
+    "outreach": "Community delivery",
+    "hospitalNeed": "Request: 4 · acute-service support",
+    "clinicNeed": "Request: 3 · essential-service continuity",
+    "outreachNeed": "Request: 2 · residents without transport",
+    "add": "Add one crate",
+    "remove": "Remove one crate",
+    "sealed": "Shipment sealed",
+    "receipt": "Your handover record",
+    "replay": "Start a new shift",
+    "back": "Back to chapter",
+    "exit": "Exit",
+    "sources": "Historical context and limits",
+    "sourceTimeline": "WHO: pandemic chronology",
+    "sourceServices": "WHO: essential services, 30 March 2020",
+    "sourceTrust": "WHO: public communication, 19 March 2020",
+    "fallback": "3D is unavailable on this device. The complete decision exercise remains playable below.",
+    "view": "Scene",
+    "overview": "Reset view",
+    "language": "Language",
+    "noForecast": "No infections, deaths or probabilities are predicted. Outcomes describe only this invented handover.",
+    "inspectTitle": "A district, not a dashboard",
+    "shipmentTitle": "Six crates. Three destinations.",
+    "changed": "Reviewable decisions, lasting trade-offs",
+    "bridgePlan": "Exercise assumption: the bridge plan is 3 hospital, 2 clinic and 1 outreach crate. These invented targets are not clinical ratios."
+  },
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "speaker": "Historical context",
+          "text": "WHO characterized COVID-19 as a pandemic on 11 March 2020. On 30 March it called for maintaining essential health services alongside the response."
+        },
+        "1": {
+          "speaker": "Fictional shift · 18:00",
+          "text": "Rain beads on the loading-bay windows. A hospital, a small clinic and residents without transport are waiting. You are the district coordinator, not a clinician. Tonight, make the gaps visible."
+        }
+      }
+    },
+    "reports": {
+      "prompt": "Inspect the reports before making promises.",
+      "hotspots": {
+        "ward": {
+          "label": "Hospital desk",
+          "title": "A bed is not a staffed service",
+          "description": "Fictional report: the hospital requests four crates. Staff are stretched, and a room without trained staff is not extra service capacity. The night lead asks you to protect a staffed roster, not promise a bed count."
+        },
+        "ledger": {
+          "label": "Clinic ledger",
+          "title": "Care beyond the outbreak",
+          "description": "Fictional report: the clinic requests three crates to support essential services. Diverting every worker to one response would leave its existing appointments without a plan. The ledger records unmet needs, not case forecasts."
+        },
+        "radio": {
+          "label": "Community radio",
+          "title": "Who cannot reach the queue?",
+          "description": "Fictional report: volunteers request two crates for residents without transport. Online announcements miss some households. A rumor says every delivery is guaranteed. No one has verified the next truck’s arrival."
+        }
+      }
+    },
+    "loading": {
+      "narration": {
+        "0": {
+          "speaker": "Fictional shift · 20:00",
+          "text": "The manifest is sealed. Every crate sent somewhere is a crate unavailable elsewhere. The clinic calls again: tomorrow’s roster is still blank."
+        }
+      }
+    },
+    "roster": {
+      "title": "21:00 · Service continuity",
+      "prompt": "How will you plan the next shift?",
+      "options": {
+        "continuity": {
+          "label": "Protect essential-service staff",
+          "description": "Keep a named clinic roster and request additional support. The hospital does not get every available worker tonight."
+        },
+        "surge": {
+          "label": "Concentrate the available team",
+          "description": "Move the planning team toward the hospital. The clinic’s continuity plan is deferred; record that gap rather than claiming extra staffed beds."
+        }
+      }
+    },
+    "briefing": {
+      "options": {
+        "transparent": {
+          "label": "Publish what is known and unknown",
+          "description": "Share the actual manifest, the unfilled requests and a next update time. Use radio and translated print notices as well as online channels."
+        },
+        "certainty": {
+          "label": "Promise that all requests will be met",
+          "description": "A reassuring headline, but the next truck is unconfirmed. You will need to face the mismatch between the promise and the manifest."
+        }
+      },
+      "title": "22:00 · The public briefing",
+      "prompt": "The microphone is live. What can you honestly promise?"
+    },
+    "correction": {
+      "options": {
+        "correct": {
+          "label": "Correct the promise publicly",
+          "description": "Name the mistake, publish the gaps and set a new update time. The correction is useful, but does not erase the earlier promise."
+        },
+        "silent": {
+          "label": "Leave the headline unchanged",
+          "description": "Avoid a difficult correction tonight. Residents still have a guarantee that the dispatch record cannot support."
+        }
+      },
+      "title": "23:00 · A caller challenges the promise",
+      "prompt": "“Our request is missing from the manifest.” Your earlier assurance is now part of the problem."
+    },
+    "handover": {
+      "narration": {
+        "0": {
+          "speaker": "Fictional shift · 00:00",
+          "text": "The next coordinator opens your notebook. It cannot tell them how many people will fall ill. It can tell them who was supplied, which services still need a plan and whether the public heard the same truth."
+        }
+      }
+    },
+    "manifest": {
+      "prompt": "Assign all six crates. Requests total nine. These are fictional logistics tokens, not medical supply calculations. You can revise until sealing."
+    }
+  },
+  "endings": {
+    "shared": {
+      "title": "An accountable handover",
+      "subtitle": "No perfect allocation. No hidden gaps.",
+      "epilogue": {
+        "0": {
+          "text": "In this fictional outcome, all three destinations receive support, essential-service planning survives and the public record acknowledges uncertainty. Unfilled requests remain. This is a workable handover, not a claim that the outbreak was controlled."
+        }
+      }
+    },
+    "trust": {
+      "title": "A promise without a manifest",
+      "subtitle": "The public record needs repair.",
+      "epilogue": {
+        "0": {
+          "text": "In this fictional outcome, an uncorrected guarantee conflicts with limited supplies. The next coordinator inherits a communication problem as well as unmet requests. No illness or mortality outcome is implied."
+        }
+      }
+    },
+    "gap": {
+      "title": "A district left uneven",
+      "subtitle": "Someone is missing from the plan.",
+      "epilogue": {
+        "0": {
+          "text": "In this fictional outcome, at least one destination gets no crates or essential-service planning is deferred. The handover must name these gaps. A full hospital loading bay is not the same as a supported district."
+        }
+      }
+    },
+    "partial": {
+      "title": "A repairable plan",
+      "subtitle": "An honest record of difficult trade-offs.",
+      "epilogue": {
+        "0": {
+          "text": "In this fictional outcome, the record preserves some useful decisions but the allocation falls short of the exercise’s balanced plan. Review the requests, not a score. A new shift lets you compare a different handover without pretending to predict a pandemic."
+        }
+      }
+    }
+  }
+}

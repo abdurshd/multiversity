@@ -1,0 +1,242 @@
+{
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "text": "PETROGRAD · September 1917. The monarchy has fallen, but war and hunger endure. The Provisional Government and the soviets compete for authority."
+        },
+        "1": {
+          "text": "You guide a fictional Bolshevik district delegate, not an all-powerful Lenin. Listen to residents, bargain over supplies, then decide who may govern. All dialogue is dramatized."
+        },
+        "2": {
+          "text": "Historical anchor: after the Kornilov crisis, Lenin briefly proposed a compromise with other socialist parties. Our branching negotiations are invented possibilities, not events that happened."
+        }
+      }
+    },
+    "district": {
+      "prompt": "Listen before you decide. Select a place below or in the city.",
+      "hotspots": {
+        "lenin-bread": {
+          "label": "Bread queue",
+          "title": "A city cannot eat a slogan",
+          "description": "Historical context: wartime shortages and inflation helped undermine the government. This fictional worker asks for a published ration ledger, not another promise."
+        },
+        "lenin-rail": {
+          "label": "Railway dispatch",
+          "title": "The line that feeds Petrograd",
+          "description": "Historical context: rail workers were a political force. In this fictional district, railway delegates will move grain if elected committees can inspect deliveries."
+        },
+        "lenin-press": {
+          "label": "Printing room",
+          "title": "Who may disagree?",
+          "description": "Historical context: socialist parties disagreed over war, land and power. Soviets were elected councils, not a single party. Our council room compresses different meetings into one setting."
+        },
+        "lenin-council": {
+          "label": "Enter negotiations",
+          "title": "A mandate, not a blank cheque",
+          "description": "Begin the fictional negotiation. Each commitment changes who will trust you later. You can inspect the other locations first; no timer forces a decision."
+        }
+      }
+    },
+    "supply": {
+      "title": "01 / Bread before power",
+      "prompt": "A fictional grain train waits outside the city. Railway and neighbourhood delegates demand oversight. What can you promise?",
+      "options": {
+        "ledger": {
+          "label": "Publish a joint ration ledger",
+          "description": "Share inspection with elected workers and residents. Slower bargaining buys trust."
+        },
+        "guards": {
+          "label": "Seize the dispatch office",
+          "description": "Move the train under armed orders. You gain immediate leverage but railway delegates remember the threat."
+        },
+        "defer": {
+          "label": "Leave supply to the ministry",
+          "description": "Avoid a confrontation, but give residents no way to hold your committee responsible."
+        }
+      }
+    },
+    "ledger-result": {
+      "narration": {
+        "0": {
+          "text": "Invented consequence: the first wagons unload under joint inspection. Your committee has less unilateral power, but railway delegates agree to stay at the negotiating table."
+        }
+      }
+    },
+    "guards-result": {
+      "narration": {
+        "0": {
+          "text": "Invented consequence: grain arrives under guard. Some railway delegates withdraw. Coercion solves a dispatch problem while creating a legitimacy problem."
+        }
+      }
+    },
+    "defer-result": {
+      "narration": {
+        "0": {
+          "text": "Invented consequence: the ministry promises action, but the queue lengthens. Your delegation enters the council without a supply agreement."
+        }
+      }
+    },
+    "mandate": {
+      "title": "02 / Who holds the mandate?",
+      "prompt": "October approaches. Lenin urges a transfer of power; socialist rivals fear one-party rule. This fictional conference can pursue three incompatible strategies.",
+      "options": {
+        "plural": {
+          "label": "Build a broad socialist agreement",
+          "description": "Negotiate a government accountable to plural soviets. You must share authority and accept opposition."
+        },
+        "party": {
+          "label": "Back Bolshevik seizure of power",
+          "description": "Support the uprising. Control of the capital does not settle how the country should be governed."
+        },
+        "election": {
+          "label": "Wait for the Constituent Assembly",
+          "description": "Reject an immediate seizure and seek authority through national elections. Delay carries its own risks."
+        }
+      }
+    },
+    "plural-bridge": {
+      "narration": {
+        "0": {
+          "text": "Counterfactual branch: rival socialist delegates remain in our conference. They ask whether a promise of pluralism survives criticism of the new government."
+        }
+      }
+    },
+    "party-bridge": {
+      "narration": {
+        "0": {
+          "text": "Historical anchor: Bolshevik-led forces took key points in Petrograd on 24–25 October (6–7 November, Gregorian). Our delegate now confronts an invented choice about limits on the new power."
+        }
+      }
+    },
+    "election-bridge": {
+      "narration": {
+        "0": {
+          "text": "Counterfactual branch: your committee refuses to take power before an election. The army is disintegrating and land disputes continue; a ballot cannot magically end either crisis."
+        }
+      }
+    },
+    "plural-rights": {
+      "title": "03 / The right to oppose",
+      "prompt": "A fictional newspaper attacks your committee. Will coalition partners be able to challenge you publicly?",
+      "options": {
+        "protect": {
+          "label": "Guarantee open debate and elections",
+          "description": "Keep the press open. Your earlier supply bargain determines whether partners believe the guarantee."
+        },
+        "censor": {
+          "label": "Suspend hostile papers",
+          "description": "Call censorship temporary. Partners see that dissent now depends on your permission."
+        }
+      }
+    },
+    "party-rights": {
+      "title": "03 / Victory is not consent",
+      "prompt": "The new authorities face rival claims from the elected Constituent Assembly. In history it was dispersed in January 1918. What principle will your delegate defend?",
+      "options": {
+        "protect": {
+          "label": "Accept an independent assembly",
+          "description": "Counterfactual: accept a rival mandate, even if it can remove your party from office."
+        },
+        "dissolve": {
+          "label": "Place soviet power above the assembly",
+          "description": "Follow the historical direction of dissolution. Eliminating a rival institution restricts political choice."
+        }
+      }
+    },
+    "election-rights": {
+      "title": "03 / A promise needs a date",
+      "prompt": "Your fictional alliance must choose between a binding election commitment and emergency rule.",
+      "options": {
+        "protect": {
+          "label": "Bind the committee to the vote",
+          "description": "Accept the result and independent oversight. Cooperation still depends on your treatment of the railway workers."
+        },
+        "delay": {
+          "label": "Postpone until order returns",
+          "description": "An emergency without an end date leaves residents with another unelected authority."
+        }
+      }
+    },
+    "reflection": {
+      "narration": {
+        "0": {
+          "text": "Your decisions cannot predict a century. This short simulation tests consent, supply and coercion, not whether one leader could guarantee peace. The ending separates the historical record from your invented outcome."
+        }
+      }
+    }
+  },
+  "endings": {
+    "coalition": {
+      "title": "A table with more than one voice",
+      "subtitle": "Counterfactual · accountable coalition",
+      "epilogue": {
+        "0": {
+          "text": "Your published supply agreement makes pluralism credible. In this invented outcome, rival socialists keep seats and a free press. War, land conflict and hunger remain; cooperation is a practice, not a guaranteed utopia."
+        }
+      }
+    },
+    "assembly": {
+      "title": "The ballot remains open",
+      "subtitle": "Counterfactual · an electoral bargain",
+      "epilogue": {
+        "0": {
+          "text": "Your committee accepts oversight before asking for votes. The fictional alliance survives long enough to submit to an assembly. This does not prove that elections would have prevented civil war."
+        }
+      }
+    },
+    "limited": {
+      "title": "Power accepts a boundary",
+      "subtitle": "Counterfactual · a constrained victory",
+      "epilogue": {
+        "0": {
+          "text": "After supporting the uprising, you defend an institution that can challenge its victors. This invented compromise is precarious. Historical Bolshevik leaders instead dispersed the Constituent Assembly in January 1918."
+        }
+      }
+    },
+    "consolidation": {
+      "title": "Power without a rival mandate",
+      "subtitle": "Historical direction · not an exact replay",
+      "epilogue": {
+        "0": {
+          "text": "Your final choice follows the historical suppression of the assembly, but the district negotiation is fictional. The Bolsheviks consolidated power amid civil war and repression. Tactical control did not confer universal consent, and coercion carried immense human costs."
+        }
+      }
+    },
+    "brittle": {
+      "title": "Promises without trust",
+      "subtitle": "Counterfactual · a fragile settlement",
+      "epilogue": {
+        "0": {
+          "text": "Your fictional settlement cannot reconcile its promises with its methods. Censorship, coercion or unresolved supply leaves partners unwilling to rely on your guarantees. No outcome here makes dictatorship inevitable; institutional choices still matter."
+        }
+      }
+    }
+  },
+  "title": "Petrograd: The Weight of a Promise",
+  "era": "Petrograd · September 1917 – January 1918",
+  "ui": {
+    "note": "DRAMATIZED NEGOTIATION · Decisions after the opening are speculative.",
+    "places": "District intelligence",
+    "back": "Back to the district",
+    "continue": "Begin negotiation",
+    "hint": "Drag to orbit · Pinch to zoom · Tap a location",
+    "confirm": "Commit to this decision",
+    "cancel": "Reconsider",
+    "commitments": "Your commitments",
+    "empty": "No commitments yet",
+    "accountable": "Shared supply oversight",
+    "coerced": "Railway office seized",
+    "deferred": "Supply delegated to ministry",
+    "plural": "Plural socialist government",
+    "party": "Bolshevik uprising supported",
+    "election": "National electoral mandate",
+    "fallback": "3D is unavailable on this device. The story and negotiations remain playable."
+  },
+  "characters": {
+    "lenin": {
+      "name": "Vladimir Lenin",
+      "role": "Bolshevik leader · portrayal, not quoted dialogue"
+    }
+  }
+}

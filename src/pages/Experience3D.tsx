@@ -12,9 +12,14 @@ import { getExperienceScript } from '../experience/scripts';
 import { localizeScript } from '../experience/localizeScript';
 import { WorldScene } from '../experience/world/WorldScene';
 import { BattleView } from '../experience/battle/BattleView';
+import { UnionSceneBoundary } from '../experience/ui/UnionSceneBoundary';
+import { UnionCamera } from '../experience/director/UnionCamera';
 import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import '../experience/ui/timur.css';
+import { RussianSceneBoundary } from '../experience/russia/RussianSceneBoundary';
+import { LeninSceneBoundary } from '../experience/ui/LeninSceneBoundary';
+import { CovidExperience } from '../experience/covid/CovidExperience';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -29,6 +34,7 @@ function useQualityTier(): 'low' | 'high' {
 
 function SceneContent({ quality }: { quality: 'low' | 'high' }) {
     const beat = useCurrentBeat();
+    const union = useExperience(s => s.script?.chapterId === 'ussr-collapse');
     const battleRunKey = useExperience((s) => s.battleRunKey);
     const lastEnvRef = useRef<EnvironmentId>('samarkand-day');
     if (beat && beat.kind !== 'ending') lastEnvRef.current = beat.environment;
@@ -38,7 +44,7 @@ function SceneContent({ quality }: { quality: 'low' | 'high' }) {
         <>
             <WorldScene environment={environment} />
             {beat?.kind === 'battle' && <BattleView key={battleRunKey} config={beat.battle} />}
-            <CameraDirector />
+            {union ? <UnionCamera /> : <CameraDirector />}
             {/* Game-style grade: contact shadows (AO), bloom only on fire and lights,
                 filmic tone mapping, light saturation lift, edge vignette, SMAA. */}
             <EffectComposer multisampling={0} enableNormalPass={false}>
@@ -65,7 +71,7 @@ function HistoricalExperience3D() {
     const quality = useQualityTier();
 
     useEffect(() => {
-        if (script?.chapterId !== 'timur-legacy') return;
+        if (!['timur-legacy', 'russian-empire'].includes(script?.chapterId ?? '')) return;
         const previous = document.body.style.overflow;
         document.body.style.overflow = 'hidden';
         return () => { document.body.style.overflow = previous; };
@@ -76,7 +82,7 @@ function HistoricalExperience3D() {
     const startBeat = searchParams.get('beat');
 
     useEffect(() => {
-        if (!script) return;
+        if (!script || script.chapterId === 'covid-pandemic') return;
         loadScript(localizeScript(script, t));
         if (startBeat && script.beats[startBeat]) useExperience.getState().gotoBeat(startBeat);
     }, [script, loadScript, t, i18n.language, startBeat]);
@@ -112,9 +118,10 @@ function HistoricalExperience3D() {
         );
     }
 
-    return (
-        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : ''}`}>
-            <Canvas
+    if (script.chapterId === 'covid-pandemic') return <CovidExperience script={script} />;
+
+    const scene = (
+        <Canvas
                 shadows="soft"
                 dpr={quality === 'low' ? [1, 1.25] : [1, 1.75]}
                 camera={{ position: [170, 95, 170], fov: 50, near: 0.5, far: 1200 }}
@@ -124,6 +131,15 @@ function HistoricalExperience3D() {
                     <SceneContent quality={quality} />
                 </Suspense>
             </Canvas>
+    );
+
+    return (
+        <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : script.chapterId === 'russian-empire' ? 'russia-experience' : ''}`}>
+            <UnionSceneBoundary enabled={script.chapterId === 'ussr-collapse'}>
+            {script.chapterId === 'russian-empire' ? <RussianSceneBoundary>
+                {scene}
+            </RussianSceneBoundary> : script.chapterId === 'lenin-revolution' ? <LeninSceneBoundary>{scene}</LeninSceneBoundary> : scene}
+            </UnionSceneBoundary>
             <ExperienceOverlay />
             {/* exit */}
             <Link

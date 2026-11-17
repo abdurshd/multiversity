@@ -1,0 +1,72 @@
+# COVID-19: The Night Shift
+
+## Scope and play route
+
+- Route: `/experience/covid-pandemic`, also discoverable through the chapter's existing Play action.
+- Independent branch from `origin/main` at `a2826b89`: `feat/episode-covid-pandemic`.
+- One fictional district on **31 March 2020**, not a reconstruction of a named country's response.
+- Nine beats, three purpose-built procedural environments, four qualitative handover endings. No battle mechanics, infection/death projections, percentage health scores, treatment choices or clinical advice.
+- Flow: historical introduction → three reports → six-crate manifest → loading-bay transition → staffing plan → public briefing → optional public correction → handover.
+- Cinematics are manually advanced, with an explicit skip button for each scene. There is no time pressure, auto-advancing text, or delayed decision callback.
+
+## Historical provenance and fiction boundary
+
+Primary sources consulted 17 November 2026:
+
+1. [WHO Europe, COVID-19 pandemic overview](https://www.who.int/europe/emergencies/situations/covid-19/) supports the statement that WHO characterized COVID-19 as a pandemic on **11 March 2020**.
+2. [WHO, essential health services news release, 30 March 2020](https://www.who.int/news-room/detail/30-03-2020-who-releases-guidelines-to-help-countries-maintain-essential-health-services-during-the-covid-19-pandemic) supports the contextual statement that the response had to coexist with maintaining essential services. It is not used to calculate any capacity or health outcome.
+3. [WHO, risk communication and community engagement interim guidance, 19 March 2020](https://www.who.int/publications/i/item/risk-communication-and-community-engagement-readiness-and-initial-response-for-novel-coronaviruses) establishes that community communication was part of the early response. The chapter's specific radio caller, messages, correction sequence and consequences are authored fiction, not quotations or documented WHO predictions.
+
+The opening, reports, allocation screen, endings and expandable sources panel explicitly label invented elements. All people, locality, requests, stock, staffing circumstances, dispatches, promises and outcomes are fictional. Six crates are abstract logistics tokens, **not standardized protective-equipment quantities or clinical ratios**. The arbitrary bridge-plan targets (hospital 3, clinic 2, outreach 1) are disclosed before sealing. Requests total nine; no allocation can satisfy all requests. An ending describes the handover record, not pandemic control, predicted illness, mortality or a real organization's performance. No future vaccine or treatment hindsight is used to solve an early-2020 scenario.
+
+## Mechanics and guardrails
+
+- All three reports must be opened before dispatch. Closing/reopening a report preserves a single review flag.
+- Three integer steppers share a six-token budget. Negative, fractional, NaN, unknown-destination and over-budget edits are rejected in the pure allocation model.
+- Sealing is only possible with exactly six tokens, is atomic/idempotent and locks the manifest.
+- Chapter-local actions verify the current chapter, beat, phase and (for narration) line index. Repeated/stale choice, report, seal and skip actions cannot replay effects across beats.
+- Staffing and communication are distinct decisions. Overpromising creates an additional correction branch; public correction does not erase the original promise from the handover record.
+- Four endings: accountable handover; uncorrected promise; uneven support/service-plan gap; repairable partial plan. The resolver has no health-number interpretation.
+- Restart clears both the shared narrative state and chapter-local allocation. Language changes update text without resetting evidence, sealed allocation, choices or narration position.
+
+## Rendering and controls
+
+All assets are original procedural geometry, created in this branch. No downloaded assets, external texture/font requests, premium services or paid dependencies are introduced.
+
+- Hospital cutaway: ward beds, side rails, monitors, clinic workstations, cabinets, paper ledger, waiting chairs, tactile entrance paving, radio desk and staff silhouettes.
+- Depot: metal shelving, neutral stored containers, three color-coded staging trolleys, six interactive dispatch crates, delivery van, shutter and loading ramp. Allocated crate geometry changes with the manifest.
+- Briefing room: document boards, meeting table, microphones, paper notes, chairs, lectern and district windows.
+- Common district: tiled floor seams, open-front architecture, rear windows, muted night-city silhouette, warm/cool lighting.
+- Static geometry is merged by material. CPU audit: hospital **14 batches / 6,356 triangles**; depot **13 / 4,492**; briefing **14 / 7,156**. Up to twelve extra crate meshes render when six tokens are assigned. These are geometry counts, **not measured draw-call totals or performance guarantees**; shadow passes also incur work.
+- Local canvas DPR capped at 1.25; no postprocessing or downloaded HDRI. One 1024 shadow map. Actual mobile frame rate and thermal behavior remain unverified.
+- Pointer drag and two-finger zoom via OrbitControls; reset-view button; portrait-aware camera distance; minimum 44px native buttons; buttons duplicate spatial hotspots; visible focus outlines; report-heading focus and scroll on open, Escape dismissal and focus return to the matching DOM report button; scrollable sheets; language selector; non-color labels; manual text pacing; reduced-motion support.
+- A chapter-local render error boundary keeps the full decision UI playable if WebGL initialization fails. This is not a claim that fallback/browser behavior was visually verified here.
+
+## Verification results
+
+Passed on the final source:
+
+- `npm ci --cache /tmp/multiversity-covid-npm`
+- `npx tsc --noEmit`
+- `NODE_OPTIONS=--max-old-space-size=2048 npm run build` (final source passed; existing large-bundle advisory remains). An earlier unconstrained repeat was OS-killed during bundling; after stopping the local dev server, the bounded retry completed in 12.68 seconds.
+- Focused ESLint, zero warnings, on all changed TS/TSX files including integration files.
+- `node scripts/test-covid.cjs`: **1,135 assertions**, enumerating **168 complete deterministic paths** (28 legal allocations × 2 rosters × 3 communication routes), all 9 beats, all four endings. Distribution: 92 gap, 56 trust, 18 partial, 2 shared. These are exhaustive **CPU state-transition tests, not visual play-tests**.
+- Same script verifies localization key parity and every script text lookup in EN/UZ/KO; graph targets; absence of combat/stats effects; malformed allocation inputs; inspection gates; repeated/sealed/stale actions; truthful correction audit trail; reset/reuse; and finite geometry/normals with bounded static complexity.
+- `node scripts/test-timur.cjs`: 114 pre-existing Timur source/state assertions passed.
+- `git diff --check`.
+
+`npm run lint` is **not green**: it reports one existing unused ESLint suppression in `src/experience/world/greatwar.tsx:5`. That file is byte-for-byte unchanged from `origin/main`; it was not modified to make this chapter appear clean.
+
+## Browser/GPU verification limitations
+
+**No desktop/native UI was used. No browser screenshots are included. No real-device or rendered-3D validation is claimed.**
+
+1. Local Vite served successfully on `127.0.0.1:4182`. Binding to `0.0.0.0` failed because the executor's network-interface query returned `Operation not permitted`.
+2. Isolated headless Chromium failed before opening a page with `socket() failed: Operation not permitted`, including the reviewed escalation retry.
+3. The cloud browser is on a separate host and could not reach this executor's local preview (`ERR_CONNECTION_REFUSED`). Preview forwarding is unavailable. No user-desktop workaround was attempted.
+
+Required before production acceptance: open the route in a WebGL-capable browser; visually inspect all three environments at 1280×800, 390×844 and landscape; check camera framing, shadows, text wrapping and keyboard focus; perform a complete run and replay; change EN→UZ→KO after a sealed shipment and verify retained state; exercise touch orbit/pinch and reduced motion; induce WebGL failure and inspect fallback; inspect report open/close/Escape focus and scroll, including spatial-marker entry; inspect exit/back/forward; and measure frame time and renderer counts on a real phone. Uzbek and Korean have complete authored translations but still merit native-speaker editorial review.
+
+### Async renderer initialization correction
+
+A parent live preview demonstrated that an R3F async WebGL initialization failure can bypass a class error boundary. The chapter now probes WebGL2 before mounting Canvas, matching its antialias/power preference, and displays the existing localized fallback when unavailable or throwing. The probe releases its temporary context through `WEBGL_lose_context` where available. The class boundary remains for later ordinary render exceptions, and the DOM decisions remain outside the graphics gate. Seven added injected-stub assertions pass (no DOM, unavailable context, exception, correct attributes, supported context, release, absent optional extension). These tests do not validate browser/GPU rendering; actual preview acceptance remains required.
