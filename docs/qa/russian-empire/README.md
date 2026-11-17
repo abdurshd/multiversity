@@ -43,4 +43,8 @@ The fictional reform mandate is not universal suffrage or immediate abolition by
 
 ## Deploy-preview browser check
 
-PR #13 preview built successfully. A real desktop-browser check in Korean completed the evidence prerequisite, three reports, Escape/focus return, all three charter-package articles, accord review, submission and charter ending with cinematic skips. This was DOM-only with no rendered 3D: console confirmed WebGL creation failure. It also exposed that a React error boundary alone did not catch the asynchronous renderer initialization, so a WebGL2 preflight was added before mounting Canvas. Full path, other languages, mobile and GPU acceptance remain pending.
+PR #13 preview built successfully. Real desktop-browser checks completed all seven affordable packages in Korean (three truce, one charter, three historical-return endings), plus charter runs in English and Uzbek. Evidence prerequisites, three reports, Escape/focus return, an unaffordable offer, talk reset, accord review and replay worked. Cinematics were skipped in these browser runs. This was DOM-only with no rendered 3D: console confirmed WebGL creation failure. It also exposed that a React error boundary alone did not catch the asynchronous renderer initialization, so a WebGL2 preflight was added before mounting Canvas. The updated preview visibly confirms the translated fallback in all three languages. Full narration/browser language-path matrix, mobile and GPU acceptance remain pending.
+
+![English desktop DOM-only accord review, with explicit 3D-unavailable notice](desktop-fallback-en.jpg)
+
+A static responsive test harness is available at `/qa/russian-empire-mobile.html`. It embeds the real app at 390×844, 360×640 or 844×390. This tests CSS/DOM viewport behavior, not physical touch, a device browser or GPU quality.
