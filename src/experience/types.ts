@@ -82,6 +82,8 @@ export interface ArmyConfig {
     attack: number;
     /** Damage resistance multiplier (higher = tougher). */
     defense: number;
+    /** Modern era only: helmet style. */
+    helmet?: Helmet;
 }
 
 export interface TacticalOption {
@@ -125,7 +127,9 @@ export interface TacticalEvent {
 
 export type BattleTheme = 'great-wall' | 'anatolia' | 'steppe' | 'colonial';
 /** Weapons era: picks soldier models, siege engines and order names. */
-export type BattleEra = 'medieval' | 'musket';
+export type BattleEra = 'medieval' | 'musket' | 'modern';
+/** Modern-era soldier headgear (picks the helmet silhouette). */
+export type Helmet = 'brodie' | 'adrian' | 'stahlhelm' | 'pickelhaube' | 'kepi';
 export type BattleOutcome = 'victory' | 'defeat' | 'pyrrhic';
 
 export interface BattleConfig {
@@ -148,7 +152,7 @@ export interface BattleConfig {
 // ─── Characters (real historical people as stylized 3D figures) ────────────
 
 /** Silhouette + headwear preset for a hero figure. */
-export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king' | 'queen' | 'napoleonic' | 'stovepipe' | 'frock-coat' | 'civil-war-general';
+export type CharacterOutfit = 'emir' | 'prince' | 'scholar' | 'general' | 'colonial-general' | 'statesman' | 'king' | 'queen' | 'napoleonic' | 'stovepipe' | 'frock-coat' | 'civil-war-general' | 'pickelhaube' | 'plumed-helmet';
 export type CharacterPose = 'idle' | 'command' | 'think';
 
 export interface CharacterDef {
@@ -258,7 +262,13 @@ export type EnvironmentId =
     | 'charleston-harbor'
     | 'antietam'
     | 'gettysburg'
-    | 'fords-theatre';
+    | 'fords-theatre'
+    | 'sarajevo-1914'
+    | 'berlin-1914'
+    | 'marne-1914'
+    | 'western-front'
+    | 'compiegne'
+    | 'washington-1917';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 
