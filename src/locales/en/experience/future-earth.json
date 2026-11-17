@@ -1,0 +1,216 @@
+{
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "text": "ESTUARY DISTRICT · 2086. An imagined coastal city wakes after an imagined storm. Raised walkways are dry, but the water plant, shelter and communications hub have lost service."
+        },
+        "1": {
+          "text": "You coordinate two repair shifts, not the planet. Inspect the district, schedule finite crews and power, then explain the gaps to residents. No countdown forces a choice."
+        },
+        "2": {
+          "text": "This is speculative fiction, not a forecast or emergency procedure. Infrastructure dependencies are real; this district, storm, budgets, technology and outcomes are invented. Tokens do not predict emissions, casualties or flood depths."
+        }
+      }
+    },
+    "survey": {
+      "prompt": "Read the district before repairing it.",
+      "hotspots": {
+        "future-water": {
+          "label": "Water works",
+          "title": "A pump is part of a network",
+          "description": "Context: electricity outages can disrupt water and wastewater operations. Fiction: our water station needs one crew token and two sustained power tokens. Restoring a pump alone does not certify drinking-water safety."
+        },
+        "future-energy": {
+          "label": "Microgrid yard",
+          "title": "Capacity arrives next shift",
+          "description": "Fiction: two power tokens remain. Spending two crew tokens on the substation raises capacity to four only NEXT shift. Services already restored keep using power. Repair order matters."
+        },
+        "future-shelter": {
+          "label": "Civic shelter",
+          "title": "Access is more than a door",
+          "description": "Context: infrastructure failures can cascade between services. Fiction: the shelter needs one crew and one power token; the public signal hub needs the same. A lit building is not a complete evacuation or care plan."
+        },
+        "future-shore": {
+          "label": "Living shoreline",
+          "title": "Protection has limits",
+          "description": "Context: structural and ecosystem-based adaptation can be combined; local conditions matter. Fiction: quay access costs two crew tokens, a rain garden one. Neither makes this city flood-proof or substitutes for essential services."
+        },
+        "future-board": {
+          "label": "Open the repair board",
+          "title": "Two shifts. No perfect package.",
+          "description": "Each shift supplies three crew tokens. Unused crew tokens do not carry over. Choose a set, review it, then dispatch. You can undo selections before dispatch and restart the whole planning exercise."
+        }
+      }
+    },
+    "dispatch": {
+      "title": "The repair board",
+      "prompt": "Choose projects for two shifts. Completed services keep consuming power.",
+      "options": {
+        "review": {
+          "label": "Take the record to residents",
+          "description": "After two shifts, review what works and what still needs help."
+        }
+      }
+    },
+    "hearing": {
+      "narration": {
+        "0": {
+          "text": "The repair window closes. Some services return; others remain on the list. The district is not saved by a score. Residents need an honest account of what still does not work."
+        },
+        "1": {
+          "text": "In this imagined forum, a contractor offers a single rapid approval channel. Residents propose public repair logs and a review panel. Neither creates extra crews; the choice changes who can question the next decisions."
+        }
+      }
+    },
+    "accountability": {
+      "title": "Who gets to challenge the plan?",
+      "prompt": "Review your repair record. Then choose a rule for the next, unseen recovery phase.",
+      "options": {
+        "public": {
+          "label": "Publish the gaps; share review power",
+          "description": "Residents can question priorities, inspect contracts and propose accessible alternatives. Deliberation takes time; transparency alone does not repair a service."
+        },
+        "closed": {
+          "label": "Keep approval inside the contractor team",
+          "description": "One approval channel is simpler, but residents cannot independently inspect the priority list. Do not confuse a shorter process with consent."
+        }
+      }
+    },
+    "debrief": {
+      "narration": {
+        "0": {
+          "text": "The lights that returned do not erase the gaps. Revisit the two shifts to see how sequencing changed what was possible. This chapter measures only its own invented rules, not the safety or future of any real community."
+        }
+      }
+    }
+  },
+  "endings": {
+    "connected": {
+      "title": "A connected recovery",
+      "subtitle": "Speculative outcome · services and scrutiny",
+      "epilogue": {
+        "0": {
+          "text": "Water service, shelter and the signal hub operate under this model. The public record keeps unfinished work visible. This is a promising opening, not a prediction of resilience; long-term funding, maintenance and unequal access remain unresolved."
+        }
+      }
+    },
+    "access": {
+      "title": "An accessible but quiet district",
+      "subtitle": "Speculative outcome · access before communications",
+      "epilogue": {
+        "0": {
+          "text": "Essential services and the quay access route return. The public signal hub remains offline, so residents cannot rely on that channel for updates. A repaired route does not guarantee safe evacuation; the next plan still needs accessible communication."
+        }
+      }
+    },
+    "basic": {
+      "title": "The essentials, with gaps",
+      "subtitle": "Speculative outcome · an incomplete network",
+      "epilogue": {
+        "0": {
+          "text": "Water service and shelter return, but public communications and quay access remain unfinished. Open review makes those omissions contestable. It cannot turn two shifts into a complete recovery."
+        }
+      }
+    },
+    "opaque": {
+      "title": "Working systems, a closed ledger",
+      "subtitle": "Speculative outcome · an accountability gap",
+      "epilogue": {
+        "0": {
+          "text": "Water and shelter operate, but decisions stay inside the contractor team. The public cannot independently examine who was deferred or why. Useful repairs and democratic accountability are different achievements."
+        }
+      }
+    },
+    "water-gap": {
+      "title": "The missing water link",
+      "subtitle": "Speculative outcome · water service unresolved",
+      "epilogue": {
+        "0": {
+          "text": "The water station is still offline in this model. Other repairs may help, but they do not substitute for this service. The next recovery phase must address water access and safety with qualified operators, not assume that a green indicator elsewhere is enough."
+        }
+      }
+    },
+    "shelter-gap": {
+      "title": "A service without a refuge",
+      "subtitle": "Speculative outcome · shelter unresolved",
+      "epilogue": {
+        "0": {
+          "text": "Water service returns, but the civic shelter remains offline. Residents do not experience recovery as a single citywide score. The next phase must address shelter access, care and communication; the model cannot tell you how many people were helped or harmed."
+        }
+      }
+    }
+  },
+  "title": "After the Tide",
+  "era": "An imagined estuary · 2086",
+  "ui": {
+    "note": "SPECULATIVE FICTION · Tokens are not scientific measurements.",
+    "places": "District survey",
+    "hint": "Drag to orbit · Pinch to zoom · Or use the place buttons",
+    "close": "Back to the district",
+    "begin": "Open repair planning",
+    "resetView": "Reset camera",
+    "fallback": "3D is unavailable here. The survey, repair board and story remain playable.",
+    "shift": "Shift",
+    "of": "of",
+    "crew": "Crew tokens",
+    "power": "Power tokens",
+    "used": "assigned",
+    "capacity": "available",
+    "nextPower": "Grid capacity next shift",
+    "gridRule": "A grid repair adds power NEXT shift, not to this draft. Completed services keep consuming power.",
+    "crewRule": "Three crew tokens per shift. Unused crew tokens do not carry over.",
+    "selected": "Selected",
+    "ready": "Completed",
+    "pending": "Unresolved",
+    "add": "Assign",
+    "remove": "Remove",
+    "crews": "Not enough crew tokens this shift",
+    "powerLimit": "Not enough available power; commission the grid in an earlier shift",
+    "review": "Review this shift",
+    "edit": "Edit assignments",
+    "dispatch": "Dispatch these crews",
+    "reset": "Restart the two shifts",
+    "resetQuestion": "Discard both shifts and start planning again?",
+    "cancel": "Keep the plan",
+    "confirmReset": "Discard and restart",
+    "empty": "Select at least one project before reviewing.",
+    "record": "Your repair record",
+    "completedShift": "The shift is complete. Plan the next one with the capacity now available.",
+    "next": "Take this record to the forum",
+    "confirmPolicy": "Confirm this rule",
+    "reconsider": "Reconsider",
+    "done": "Two shifts complete. Review both the completed and unresolved work.",
+    "field": "In this model, restored water service is not a drinking-water safety certification.",
+    "enter": "Enter the district",
+    "story": "Field report",
+    "skipScene": "Skip this scene",
+    "continueStory": "Continue"
+  },
+  "projects": {
+    "grid": {
+      "name": "Substation",
+      "description": "Commission the storm-isolated microgrid. Capacity rises from two to four power tokens next shift."
+    },
+    "water": {
+      "name": "Water station",
+      "description": "Restore the model water service. It needs two power tokens continuously; testing and operator checks remain outside this puzzle."
+    },
+    "shelter": {
+      "name": "Civic shelter",
+      "description": "Restore the shelter service. This represents one building, not a full accommodation or care system."
+    },
+    "signal": {
+      "name": "Public signal hub",
+      "description": "Restore public updates. Working communications can support access, but do not guarantee every resident receives a message."
+    },
+    "quay": {
+      "name": "Quay access route",
+      "description": "Repair the raised quay connection. No power is needed; two crew tokens leave less room for other work."
+    },
+    "garden": {
+      "name": "Rain garden",
+      "description": "Clear the planted retention terrace. This is a small adaptation measure, not an instant seawall or a substitute for services."
+    }
+  }
+}

@@ -6,6 +6,8 @@ import { useCurrentBeat, useExperience } from '../store';
 import type { StatEffects, StatKey, TacticalOption } from '../types';
 import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
+import { FutureOverlay, FutureStart } from '../future/FutureOverlay';
+import { FutureCinematic } from '../future/FutureCinematic';
 import { TimurExplore } from './TimurExplore';
 
 // ─── Typewriter ────────────────────────────────────────────────────────────
@@ -503,15 +505,16 @@ function EndingOverlay() {
 
 // ─── Root overlay ──────────────────────────────────────────────────────────
 export function ExperienceOverlay() {
+    const future = useExperience((s) => s.script?.chapterId === 'future-earth');
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
     return (
         <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}
-            {phase === 'loading' && <StartScreen />}
-            {phase === 'cinematic' && <CinematicOverlay />}
-            {phase === 'explore' && (timur ? <TimurExplore /> : <ExploreOverlay />)}
-            {phase === 'choice' && <ChoiceOverlay />}
+            {phase === 'loading' && (future ? <FutureStart /> : <StartScreen />)}
+            {phase === 'cinematic' && (future ? <FutureCinematic /> : <CinematicOverlay />)}
+            {phase === 'explore' && (future ? <FutureOverlay key="future" /> : timur ? <TimurExplore /> : <ExploreOverlay />)}
+            {phase === 'choice' && (future ? <FutureOverlay key="future" /> : <ChoiceOverlay />)}
             {phase === 'battle' && <BattleOverlay />}
             {phase === 'ending' && <EndingOverlay />}
         </div>

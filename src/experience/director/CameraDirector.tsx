@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { useCurrentBeat, useExperience } from '../store';
 import type { CameraShot, Vec3 } from '../types';
 import { useTimurNavigation } from '../ui/timurNavigation';
+import { useFutureNavigation } from '../future/navigation';
 
 const v = (a: Vec3) => new THREE.Vector3(a[0], a[1], a[2]);
 
@@ -40,6 +41,10 @@ export function CameraDirector() {
     const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera;
     const beat = useCurrentBeat();
     const phase = useExperience((s) => s.phase);
+    const future = useExperience((s) => s.script?.chapterId === 'future-earth');
+    const futureRevision = useFutureNavigation(s => s.revision);
+    const futureReducedMotion = useFutureNavigation(s => s.reducedMotion);
+    const consumedFutureRevision = useRef(futureRevision);
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const command = useTimurNavigation((s) => s.command);
     const revision = useTimurNavigation((s) => s.revision);
@@ -105,6 +110,23 @@ export function CameraDirector() {
         }
     }, [revision, command, timur, beat, camera]);
 
+    useEffect(() => {
+        if (!future) return;
+        const query = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const update = () => useFutureNavigation.getState().setReducedMotion(query.matches);
+        update(); query.addEventListener('change', update);
+        return () => query.removeEventListener('change', update);
+    }, [future]);
+    useEffect(() => {
+        if (consumedFutureRevision.current === futureRevision) return;
+        consumedFutureRevision.current = futureRevision;
+        if (!future || !beat || (beat.kind !== 'explore' && beat.kind !== 'choice')) return;
+        camera.position.set(...beat.camera.position);
+        lookRef.current.set(...beat.camera.target);
+        controlsRef.current?.target.copy(lookRef.current);
+        controlsRef.current?.update();
+    }, [futureRevision, future, beat, camera]);
+
     // Hotspot focus: glide the orbit target toward the active hotspot.
     const hotspotTarget = useMemo(() => {
         if (beat?.kind !== 'explore' || !activeHotspotId) return null;
@@ -115,10 +137,17 @@ export function CameraDirector() {
     useFrame((_, delta) => {
         blendRef.current = Math.min(1, blendRef.current + delta * 1.2);
 
+        if (future && futureReducedMotion && cinematic && compiled.length > 0) {
+            const shot = compiled[0];
+            camera.position.copy(shot.pos.getPoint(1));
+            camera.lookAt(shot.look.getPoint(0));
+            camera.fov = shot.fov; camera.updateProjectionMatrix();
+            return;
+        }
         if (cinematic && compiled.length > 0) {
             clockRef.current += delta;
             let t = clockRef.current;
-            let i = timur ? 0 : shotIndexRef.current;
+            let i = timur || future ? 0 : shotIndexRef.current;
             while (i < compiled.length - 1 && t > compiled[i].duration) {
                 t -= compiled[i].duration;
                 i += 1;
@@ -149,7 +178,8 @@ export function CameraDirector() {
             if (camera.position.distanceTo(destination.position) < 0.05) transition.current = null;
             controls.update();
         } else if (controls && hotspotTarget && !timur) {
-            controls.target.lerp(hotspotTarget, delta * 2.5);
+            if (future && futureReducedMotion) controls.target.copy(hotspotTarget);
+            else controls.target.lerp(hotspotTarget, delta * 2.5);
         }
     });
 
@@ -163,7 +193,7 @@ export function CameraDirector() {
             touches={{ ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN }}
             rotateSpeed={timur && size.width < 768 ? 0.65 : 1}
             enablePan={false}
-            enableDamping
+            enableDamping={!future || !futureReducedMotion}
             dampingFactor={0.08}
             minDistance={10}
             maxDistance={phase === 'battle' ? 160 : 120}
