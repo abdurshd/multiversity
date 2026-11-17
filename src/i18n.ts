@@ -99,6 +99,10 @@ import koExperienceWorldWar1 from './locales/ko/experience/world-war-1.json';
 import koExperienceWorldWar2 from './locales/ko/experience/world-war-2.json';
 import koExperienceKorea from './locales/ko/experience/korea-destiny.json';
 
+import enExperienceHitlerRise from './locales/en/experience/hitler-rise.json';
+import uzExperienceHitlerRise from './locales/uz/experience/hitler-rise.json';
+import koExperienceHitlerRise from './locales/ko/experience/hitler-rise.json';
+
 // For backward compatibility with existing code
 const enLegacy = {
     common: {
@@ -261,6 +265,7 @@ i18n
                 'experience-world-war-1': enExperienceWorldWar1,
                 'experience-world-war-2': enExperienceWorldWar2,
                 'experience-korea-destiny': enExperienceKorea,
+                'experience-hitler-rise': enExperienceHitlerRise,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -293,6 +298,7 @@ i18n
                 'experience-world-war-1': uzExperienceWorldWar1,
                 'experience-world-war-2': uzExperienceWorldWar2,
                 'experience-korea-destiny': uzExperienceKorea,
+                'experience-hitler-rise': uzExperienceHitlerRise,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -325,6 +331,7 @@ i18n
                 'experience-world-war-1': koExperienceWorldWar1,
                 'experience-world-war-2': koExperienceWorldWar2,
                 'experience-korea-destiny': koExperienceKorea,
+                'experience-hitler-rise': koExperienceHitlerRise,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -361,6 +368,7 @@ i18n
             'experience-world-war-1',
             'experience-world-war-2',
             'experience-korea-destiny',
+            'experience-hitler-rise',
             'pages-simulation-hub',
         ],
         interpolation: {

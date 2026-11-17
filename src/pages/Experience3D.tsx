@@ -14,6 +14,7 @@ import { BattleView } from '../experience/battle/BattleView';
 import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import '../experience/ui/timur.css';
+import { CivicExperience } from '../experience/civic/CivicExperience';
 import type { EnvironmentId } from '../experience/types';
 
 /** Coarse device tier: phones and low-core machines skip the costly passes. */
@@ -75,7 +76,7 @@ export default function Experience3D() {
     const startBeat = searchParams.get('beat');
 
     useEffect(() => {
-        if (!script) return;
+        if (!script || script.chapterId === 'hitler-rise') return;
         loadScript(localizeScript(script, t));
         if (startBeat && script.beats[startBeat]) useExperience.getState().gotoBeat(startBeat);
     }, [script, loadScript, t, i18n.language, startBeat]);
@@ -110,6 +111,8 @@ export default function Experience3D() {
             </div>
         );
     }
+
+    if (script.chapterId === 'hitler-rise') return <CivicExperience script={script} />;
 
     return (
         <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : ''}`}>

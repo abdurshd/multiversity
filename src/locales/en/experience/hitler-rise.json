@@ -1,0 +1,241 @@
+{
+  "title": "The Record Must Remain",
+  "era": "Berlin · January–March 1933",
+  "ui": {
+    "intro": "Work at a fictional independent newsroom as democratic institutions are dismantled. Inspect dated sources, separate evidence from claims, negotiate practical commitments and decide what record to leave.",
+    "boundary": "Historical dates and laws are documented. The newsroom, people, negotiations and local outcomes are fictional. No choice here prevents dictatorship or guarantees anyone’s safety. Responsibility for Nazi persecution belongs to its perpetrators, not its victims.",
+    "warning": "Context: authoritarianism, antisemitism and political persecution. No graphic violence or extremist imagery. Untimed, with manual scene controls.",
+    "start": "Open the newsroom",
+    "continue": "Continue",
+    "skip": "Skip this scene",
+    "exit": "Exit",
+    "back": "Back to chapter",
+    "reset": "Begin a new record",
+    "overview": "Reset view",
+    "language": "Language",
+    "scene": "Scene",
+    "fallback": "3D is unavailable. The complete evidence and decision exercise remains playable.",
+    "historical": "Historical record",
+    "fiction": "Fictional local decision",
+    "claim": "Claim to check",
+    "evidenceHelp": "Read both documents, select the relevant source, then assess the claim. A mistake is an invitation to reread, not a penalty.",
+    "source": "Selected source",
+    "read": "Read",
+    "close": "Close document",
+    "supported": "Supported",
+    "contradicted": "Contradicted",
+    "uncertain": "Not established",
+    "verify": "Check evidence",
+    "retry": "The selected document and assessment do not yet support this record. Reread the dated source and try again.",
+    "verified": "Evidence recorded",
+    "documents": "Documents read",
+    "openSource": "Read museum/source page",
+    "talk": "Discuss terms",
+    "offer": "Proposed commitment",
+    "accept": "Accept these terms",
+    "revise": "Ask for a guarantee instead",
+    "refused": "No one can promise protection from the regime. This partner will only accept the limited commitment stated above. You may reconsider.",
+    "agreed": "Agreed",
+    "withdraw": "Withdraw this agreement",
+    "meetingHelp": "Fictional constraint: your small team can follow through on two agreements before leaving. Read all three offers. Agreements can be withdrawn until you close the meeting.",
+    "agreements": "Agreements",
+    "finishMeeting": "Close the meeting",
+    "requiresPrinter": "Requires the printer agreement",
+    "requiresCounsel": "Requires the counsel agreement",
+    "ledger": "Your editorial ledger",
+    "sources": "Sources and interpretation",
+    "limits": "A local record is not a national forecast. These endings describe fictional editorial work, not the defeat of Nazism or a ranking of victims’ choices.",
+    "navigation": "Drag to orbit, pinch to zoom. Every document also has a keyboard-accessible button.",
+    "sourceAppointment": "USHMM · Appointment and elections",
+    "sourceDecree": "USHMM · Reichstag Fire Decree",
+    "sourceAct": "USHMM · Enabling Act",
+    "sourceParliament": "German Bundestag · Destruction of parliamentarism",
+    "dossiers": {
+      "appointment": {
+        "claim": "Hitler became chancellor by presidential appointment.",
+        "explanation": "Supported by the appointment record. An election result alone does not identify how a chancellor took office."
+      },
+      "rights": {
+        "claim": "The decree preserves the press’s constitutional protection against suppression.",
+        "explanation": "Contradicted by the decree. Its suspension of protections makes the legal document decisive; the unverified telephone note cannot establish the law."
+      },
+      "mandate": {
+        "claim": "The sources establish exactly how every deputy would have voted without coercion.",
+        "explanation": "Not established. The sources document coercion and exclusion, not every deputy’s hypothetical free vote. A counterfactual must remain labeled as uncertain."
+      }
+    },
+    "partners": {
+      "archive": {
+        "name": "The archivist",
+        "goal": "Preserve an offsite duplicate",
+        "terms": "Fictional offer: I can prepare a second dated copy of the checked record. Agree to separate evidence from speculation and omit vulnerable people’s names. A duplicate is not immunity from seizure."
+      },
+      "printer": {
+        "name": "The printer",
+        "goal": "Prepare a sourced public bulletin",
+        "terms": "Fictional offer: I can set the verified account in type if it carries dates and sources, not identifying details about people seeking help. Printing will expose our work; I cannot promise continued circulation."
+      },
+      "counsel": {
+        "name": "The legal adviser",
+        "goal": "Record an objection and support contacts",
+        "terms": "Fictional offer: I can document an objection using the checked legal record. Agree to make practical support a separate task, not wait for a court rescue. Filing an objection cannot ensure a remedy."
+      }
+    }
+  },
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "speaker": "30 January 1933 · Historical context",
+          "text": "President Paul von Hindenburg appoints Adolf Hitler chancellor. The Nazi Party had not won a majority in the November 1932 election. Appointment and dictatorship are not the same event."
+        },
+        "1": {
+          "speaker": "Fictional newsroom",
+          "text": "The composing room smells of ink and warm metal. A rushed headline confuses an appointment with a direct election. Your first task is small but exact: establish what the record actually says."
+        }
+      }
+    },
+    "appointment": {
+      "prompt": "Appointment is not a direct election",
+      "hotspots": {
+        "appointment-record": {
+          "label": "Appointment record",
+          "title": "30 January · Presidential appointment",
+          "description": "Historical record: Hindenburg appointed Hitler chancellor on 30 January 1933. Hitler was not directly elected to that office. Source: USHMM."
+        },
+        "election-record": {
+          "label": "Election clipping",
+          "title": "November 1932 · Not a majority",
+          "description": "Historical record: the Nazi Party won about one third of the vote in November 1932. This result is context, not a record of a direct election for chancellor. Source: USHMM."
+        }
+      }
+    },
+    "rights": {
+      "hotspots": {
+        "decree-record": {
+          "label": "Decree analysis",
+          "title": "28 February · Rights suspended",
+          "description": "Historical record: the Reichstag Fire Decree suspended constitutional protections, including press and assembly freedoms. The regime could suppress publications. Source: USHMM’s translated decree and commentary."
+        },
+        "telephone-note": {
+          "label": "Telephone note",
+          "title": "An unconfirmed local report",
+          "description": "Fictional note: a caller says a neighboring print shop has closed. The cause has not been verified. One telephone report cannot establish what a national decree legally authorizes."
+        }
+      },
+      "prompt": "What does the decree authorize?"
+    },
+    "mandate": {
+      "hotspots": {
+        "conditions-record": {
+          "label": "Parliamentary context",
+          "title": "23 March · Coercion and exclusion",
+          "description": "Historical record: persecution and intimidation shaped the vote. The Bundestag exhibition records the destruction of parliamentary independence; only the Social Democrats voted against the Act. This cannot reveal how every deputy would have voted freely."
+        },
+        "act-record": {
+          "label": "Act summary",
+          "title": "23 March · Powers transferred",
+          "description": "Historical record: the Enabling Act let the Reich government enact laws without parliamentary consent. Passed on 23 March 1933, it was published the next day. Source: USHMM."
+        }
+      },
+      "prompt": "Do not turn a counterfactual into a fact"
+    },
+    "editorial": {
+      "title": "The first edition",
+      "prompt": "What should the newsroom do with the verified correction?",
+      "options": {
+        "publish": {
+          "label": "Print the precise distinction",
+          "description": "Publish a factual explainer with a dated citation. This creates a public record, not a shield against censorship."
+        },
+        "retain": {
+          "label": "Retain it in the research ledger",
+          "description": "Preserve the distinction for later use while the team checks distribution conditions. Readers do not receive the correction in this edition."
+        }
+      }
+    },
+    "response": {
+      "options": {
+        "bulletin": {
+          "label": "Issue the documented bulletin",
+          "description": "Use the printer’s agreement to circulate a dated account without vulnerable people’s identities. Public reach increases exposure; publication cannot guarantee protection."
+        },
+        "petition": {
+          "label": "Submit a documented legal objection",
+          "description": "Use counsel’s limited agreement to record an objection and arrange separate support contacts. Do not promise that courts will reverse the Act."
+        },
+        "private": {
+          "label": "Suspend public release; preserve the work",
+          "description": "Keep the checked record and attend to the team’s immediate needs. This protects neither everyone nor the political system; it is a limited local decision under coercion."
+        }
+      },
+      "title": "After the meeting",
+      "prompt": "Which limited task will your agreements support?"
+    },
+    "decree": {
+      "narration": {
+        "0": {
+          "speaker": "28 February 1933 · Historical context",
+          "text": "After the Reichstag fire, the emergency decree suspends fundamental rights. Legal forms remain on the page while protections disappear. The newsroom receives a telephone rumor and a copy of the decree; they are not interchangeable evidence."
+        }
+      }
+    },
+    "meeting": {
+      "prompt": "Negotiate commitments, not guarantees"
+    },
+    "vote": {
+      "narration": {
+        "0": {
+          "speaker": "23 March 1933 · Historical context",
+          "text": "The Enabling Act passes under conditions of persecution and intimidation. It transfers legislative power away from parliamentary consent. A tally records votes cast; it does not establish free consent or reveal an unknowable alternative vote."
+        }
+      }
+    },
+    "closing": {
+      "narration": {
+        "0": {
+          "speaker": "History does not become a victory screen",
+          "text": "The dictatorship consolidates. Your fictional decisions do not reverse that history. They change only the local record and the commitments made around it. Institutional choices and coercion matter; the victims of persecution were not responsible for preventing it."
+        }
+      }
+    }
+  },
+  "endings": {
+    "public-preserved": {
+      "title": "A public record, with a second copy",
+      "subtitle": "Fictional local outcome · no guarantee of survival",
+      "epilogue": {
+        "0": {
+          "text": "The team prepares a sourced bulletin and a separate duplicate. Readers may encounter a precise account, while another copy preserves the work. Neither circulation nor the archive is guaranteed to survive repression."
+        }
+      }
+    },
+    "public-single": {
+      "title": "A bulletin without a backup agreement",
+      "subtitle": "Fictional local outcome · a visible record, a fragile archive",
+      "epilogue": {
+        "0": {
+          "text": "The printer prepares the verified account, and counsel has made a limited commitment. No offsite duplicate was arranged in this exercise. The public record exists as work undertaken, not proof that anyone was made safe."
+        }
+      }
+    },
+    "legal": {
+      "title": "An objection on the record",
+      "subtitle": "Fictional local outcome · no promised legal rescue",
+      "epilogue": {
+        "0": {
+          "text": "Counsel prepares the documented objection and keeps support contacts separate from any hope of a remedy. The episode does not invent a successful court intervention. A filed objection and effective protection are different things."
+        }
+      }
+    },
+    "private": {
+      "title": "The unfinished public page",
+      "subtitle": "Fictional local outcome · preservation without public release",
+      "epilogue": {
+        "0": {
+          "text": "The checked record remains with the team instead of becoming this public edition. Immediate needs take priority, and readers do not receive the final bulletin. This is not a judgment on people forced to act under persecution."
+        }
+      }
+    }
+  }
+}
