@@ -1,0 +1,271 @@
+{
+  "title": "The Last Union",
+  "era": "1991 · Authority, consent, survival",
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "text": "Historical frame · August 1991. The coup against Mikhail Gorbachev fails. The Union government survives the immediate crisis, but its authority is weakened. Republics are not pieces on a board."
+        },
+        "1": {
+          "text": "You are a fictional inter-republic liaison, not a president. Inspect reports, propose terms, and keep civilians safe. Meetings and locations are compressed composites; your decisions are counterfactual experiments, not historical quotations."
+        }
+      }
+    },
+    "square": {
+      "prompt": "August dispatches · Read all three",
+      "hotspots": {
+        "mandates": {
+          "label": "Republic delegations",
+          "title": "No single mandate",
+          "description": "Russia, Ukraine, Belarus and the Central Asian republics have distinct leaders and interests. The Baltic states seek restored independence. You cannot grant yourself the authority to speak for them."
+        },
+        "queues": {
+          "label": "Supply queue",
+          "title": "The household ledger",
+          "description": "Production and trade disruptions already strain daily life. A new border does not create spare railway wagons, food or wages. Treat distribution as a public responsibility, not a reward for political loyalty."
+        },
+        "radio": {
+          "label": "Public radio",
+          "title": "Orders have limits",
+          "description": "The failed August coup exposed divisions inside state institutions. An order on paper is not consent in the street. Protect public assembly and civilian routes while rival authorities argue."
+        },
+        "square-continue": {
+          "label": "Enter the meeting",
+          "title": "Briefing complete",
+          "description": "Read the three dispatches before deciding."
+        }
+      }
+    },
+    "mandate": {
+      "title": "01 · Legitimacy",
+      "prompt": "What authority can your proposal claim?",
+      "options": {
+        "consent": {
+          "label": "Seek separate mandates",
+          "description": "Publish terms, invite republic representatives, and accept their right to refuse. Slower talks, broader consent."
+        },
+        "pressure": {
+          "label": "Demand central compliance",
+          "description": "Use emergency directives to accelerate decisions. Institutions may resist; coercion cannot substitute for public legitimacy."
+        }
+      }
+    },
+    "dialogue": {
+      "narration": {
+        "0": {
+          "text": "Scenario consequence · Invitations bring competing mandates to the table. Some delegations discuss cooperation only between sovereign states. Listening wins a hearing, not a promise to preserve the Union."
+        }
+      }
+    },
+    "pressure": {
+      "narration": {
+        "0": {
+          "text": "Scenario consequence · Your directive reaches offices, but it does not create a shared mandate. Officials dispute who may authorize it. Civilian services lose time while the chain of authority is contested."
+        }
+      }
+    },
+    "winter": {
+      "prompt": "Autumn working session · Inspect the ledger",
+      "hotspots": {
+        "freight": {
+          "label": "Freight ledger",
+          "title": "Interdependence",
+          "description": "Factories depend on suppliers across republic boundaries. A temporary transport agreement can protect deliveries without deciding the constitutional future of every republic."
+        },
+        "households": {
+          "label": "Social guarantees",
+          "title": "Promises need delivery",
+          "description": "Pensions, wages and heating need functioning institutions. Our simplified service meter measures your priorities, not GDP or a historical statistic. No single agreement can erase the economic crisis."
+        },
+        "rights": {
+          "label": "Rights memorandum",
+          "title": "Citizens are not bargaining chips",
+          "description": "People live across languages and administrative borders. Discuss residency, equal treatment and family contact. Independence and minority rights must be considered together, not traded against each other."
+        },
+        "winter-continue": {
+          "label": "Enter the meeting",
+          "title": "Briefing complete",
+          "description": "Read the three dispatches before deciding."
+        }
+      }
+    },
+    "logistics": {
+      "title": "02 · Winter services",
+      "prompt": "How will essential deliveries continue?",
+      "options": {
+        "joint": {
+          "label": "Negotiate a temporary supply compact",
+          "description": "Share transport schedules and protect essential deliveries. Joint oversight costs time but preserves links across borders."
+        },
+        "local": {
+          "label": "Reserve stocks locally",
+          "description": "Answer local needs immediately. Neighbours may withhold their own supplies; a chain of reciprocal restrictions risks shortages."
+        }
+      }
+    },
+    "distribution": {
+      "title": "03 · Civilian protection",
+      "prompt": "Which obligation belongs in every agreement?",
+      "options": {
+        "rights": {
+          "label": "Guarantee equal access and review",
+          "description": "Write civilian passage, minority protections and public complaints procedures into the proposal. Enforcement remains difficult."
+        },
+        "defer": {
+          "label": "Leave guarantees to successor governments",
+          "description": "Reduce the immediate negotiating burden, but leave households with uncertain rights during the transition."
+        }
+      }
+    },
+    "december": {
+      "narration": {
+        "0": {
+          "text": "Historical checkpoint · On 1 December, more than 90 percent of participating Ukrainian voters support independence. On 8 December, the leaders of Belarus, Russia and Ukraine sign the agreement creating the CIS."
+        },
+        "1": {
+          "text": "Your fictional proposal cannot cancel a real referendum. Choose cooperation between sovereign states, or test an explicitly counterfactual voluntary association. Any republic may refuse."
+        }
+      }
+    },
+    "settlement": {
+      "title": "04 · The December settlement",
+      "prompt": "What future can you legitimately propose?",
+      "options": {
+        "sovereign": {
+          "label": "Recognize sovereign partners",
+          "description": "Negotiate practical cooperation without claiming a new central state. Your earlier service and rights choices shape the transition."
+        },
+        "association": {
+          "label": "Offer an opt-in association",
+          "description": "Counterfactual: seek new democratic mandates for a limited association. No automatic membership, no restored empire, no guaranteed success."
+        },
+        "record": {
+          "label": "Set the scenario aside: historical record",
+          "description": "Read the documented December sequence instead of treating a simulated outcome as fact."
+        }
+      }
+    },
+    "safety": {
+      "title": "05 · A dangerous inheritance",
+      "prompt": "How do you limit the risks of divided authority?",
+      "options": {
+        "coordination": {
+          "label": "Agree on accountable coordination",
+          "description": "Maintain civilian communications and negotiate strategic-force arrangements. This is a policy decision, not a weapons-control simulation."
+        },
+        "rival": {
+          "label": "Allow competing command claims",
+          "description": "Assert local control before agreements are settled. Conflicting instructions increase uncertainty; the model does not predict a war."
+        }
+      }
+    },
+    "departure": {
+      "narration": {
+        "0": {
+          "text": "Scenario debrief · There is no victory parade. The test is whether institutions can protect people while political authority changes. Your ledger shows trade-offs, not a prediction of prosperity or peace."
+        }
+      }
+    }
+  },
+  "endings": {
+    "record": {
+      "title": "December, as documented",
+      "subtitle": "Historical record · Not your simulated result",
+      "epilogue": {
+        "0": {
+          "text": "On 21 December 1991, eleven republics adopted the Alma-Ata Declaration. The CIS was not a new federal state. The Baltic states and Georgia were not among those eleven participants."
+        },
+        "1": {
+          "text": "Gorbachev resigned on 25 December. Sovereignty did not remove economic disruption or unresolved conflicts. Agreements about rights and security were commitments to implement, not proof that everyone was safe."
+        }
+      }
+    },
+    "authority": {
+      "title": "An order without a mandate",
+      "subtitle": "Counterfactual · The limits of central authority",
+      "epilogue": {
+        "0": {
+          "text": "Your emergency approach leaves a deficit of trust that later technical agreements cannot simply repair. The proposal stalls amid contested authority. This illustrates a risk, not an assertion that repression would have restored stability."
+        }
+      }
+    },
+    "compact": {
+      "title": "A voluntary table, not a restored Union",
+      "subtitle": "Counterfactual · Consent remains conditional",
+      "epilogue": {
+        "0": {
+          "text": "Separate mandates, supply cooperation and rights guarantees keep a limited association under discussion. No republic is enrolled by force. New votes and enforceable agreements would still be required; the USSR is not magically preserved."
+        }
+      }
+    },
+    "protected": {
+      "title": "Separation with a civilian safety net",
+      "subtitle": "Counterfactual · Cooperation without a central state",
+      "epilogue": {
+        "0": {
+          "text": "Your package protects transport links, civilian rights and accountable coordination while recognizing sovereignty. It may soften some transition risks, but it cannot promise growth, eliminate conflict or settle every claim."
+        }
+      }
+    },
+    "fragmented": {
+      "title": "Unfinished obligations",
+      "subtitle": "Counterfactual · Independence does not finish the work",
+      "epilogue": {
+        "0": {
+          "text": "Your package leaves gaps in supply, rights, consent or coordination. Sovereign governments still need workable arrangements for people whose lives cross new borders. Replay to see which missing commitments change the outcome."
+        }
+      }
+    }
+  },
+  "ui": {
+    "ledger": "Decision ledger: game indicators, not historical statistics",
+    "camera": "Camera controls",
+    "left": "Orbit left",
+    "right": "Orbit right",
+    "in": "Zoom in",
+    "out": "Zoom out",
+    "overview": "Restore overview",
+    "story": "1991 liaison brief",
+    "historical": "Historical record",
+    "simulation": "1991 · Fictional liaison simulation",
+    "intro": "The Union is unravelling. You cannot command fifteen republics into agreement. Read the dispatches, negotiate civilian safeguards, and discover what your authority cannot do. About 8–12 minutes; five endings.",
+    "help": "Drag to orbit, pinch to zoom, or use the camera buttons. Tab and Enter operate every decision. Read all reports to unlock each meeting. Cinematics wait for you.",
+    "begin": "Begin the briefing",
+    "next": "Continue",
+    "skip": "Skip this scene",
+    "inspect": "Read each dispatch. Evidence reviewed:",
+    "close": "Close report and restore overview",
+    "readFirst": "Read all three reports first",
+    "meeting": "Bring the evidence to the meeting",
+    "decisions": "Your decision trail",
+    "replay": "Start a new negotiation",
+    "exit": "Back to chapter",
+    "sources": "Historical sources and simulation limits",
+    "sourceNote": "The environments, liaison and meetings are fictional composites. Meters and causal outcomes are teaching devices, not forecasts. Dated historical checkpoints are separate from your choices. Sources open in a new tab.",
+    "alma": "CIS · Alma-Ata Declaration, 21 December 1991 (primary text)",
+    "ukraine": "Ukrainian Parliament · 1 December referendum",
+    "resignation": "Office of the Historian · Gorbachev’s resignation",
+    "economy": "IMF · Annual Report 1992, economic disruption",
+    "stats": {
+      "chaos": "Disruption",
+      "freedom": "Consent",
+      "diplomacy": "Cooperation",
+      "strength": "Services"
+    },
+    "flags": {
+      "consent": "Separate public mandates",
+      "pressure": "Emergency central directives",
+      "supply": "Joint supply compact",
+      "local": "Local stock reservations",
+      "rights": "Written civilian safeguards",
+      "defer": "Deferred rights guarantees",
+      "sovereign": "Sovereign-state cooperation",
+      "association": "Voluntary association proposal",
+      "record": "Returned to historical record",
+      "coordination": "Accountable coordination",
+      "rival": "Competing command claims"
+    },
+    "fallback": "3D is unavailable on this device. All reports, choices and endings remain playable below."
+  }
+}

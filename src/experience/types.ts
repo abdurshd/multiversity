@@ -284,7 +284,9 @@ export type EnvironmentId =
     | 'chosin-1950'
     | 'panmunjom-1953'
     | 'petrograd-1917'
-    | 'smolny-1917';
+    | 'smolny-1917'
+    | 'union-square-1991'
+    | 'union-hall-1991';
 
 // ─── Endings ───────────────────────────────────────────────────────────────
 

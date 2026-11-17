@@ -7,6 +7,7 @@ import type { StatEffects, StatKey, TacticalOption } from '../types';
 import { ABILITIES, type AbilityId, applyModifier, triggerAbility, useBattleHud } from '../battle/battleSim';
 import { simRef } from '../battle/BattleView';
 import { RussianEmpireOverlay } from '../russia/RussianEmpireOverlay';
+import { UnionOverlay } from './UnionOverlay';
 import { TimurExplore } from './TimurExplore';
 import { LeninCouncil } from './LeninCouncil';
 
@@ -507,8 +508,10 @@ function EndingOverlay() {
 export function ExperienceOverlay() {
     const russia = useExperience((s) => s.script?.chapterId === 'russian-empire');
     const lenin = useExperience((s) => s.script?.chapterId === 'lenin-revolution');
+    const union = useExperience((s) => s.script?.chapterId === 'ussr-collapse');
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
     const phase = useExperience((s) => s.phase);
+    if (union) return <UnionOverlay />;
     return (
         <div className={`absolute inset-0 pointer-events-none [&>*]:pointer-events-auto ${lenin ? 'lenin-overlay' : ''}`}>
             {phase !== 'loading' && phase !== 'ending' && <StatsBar />}

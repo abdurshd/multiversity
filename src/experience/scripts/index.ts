@@ -9,6 +9,7 @@ import { worldWar2Script } from './worldWar2';
 import { koreanWarScript } from './koreanWar';
 
 import { leninRevolutionScript } from './leninRevolution';
+import { ussrCollapseScript } from './ussrCollapse';
 
 const SCRIPTS: Record<string, ExperienceScript> = {
     'russian-empire': russianEmpireScript,
@@ -20,6 +21,7 @@ const SCRIPTS: Record<string, ExperienceScript> = {
     'world-war-2': worldWar2Script,
     'korea-destiny': koreanWarScript,
     'lenin-revolution': leninRevolutionScript,
+    'ussr-collapse': ussrCollapseScript,
 };
 
 export function getExperienceScript(chapterId: string): ExperienceScript | null {

@@ -89,6 +89,7 @@ import enExperienceLincolnEra from './locales/en/experience/lincoln-era.json';
 import enExperienceWorldWar1 from './locales/en/experience/world-war-1.json';
 import enExperienceWorldWar2 from './locales/en/experience/world-war-2.json';
 import enExperienceRussia from './locales/en/experience/russian-empire.json';
+import enExperienceUssr from './locales/en/experience/ussr-collapse.json';
 import enExperienceKorea from './locales/en/experience/korea-destiny.json';
 import uzExperienceUsIndependence from './locales/uz/experience/us-independence.json';
 import uzExperienceFrenchRevolution from './locales/uz/experience/french-revolution.json';
@@ -96,6 +97,7 @@ import uzExperienceLincolnEra from './locales/uz/experience/lincoln-era.json';
 import uzExperienceWorldWar1 from './locales/uz/experience/world-war-1.json';
 import uzExperienceWorldWar2 from './locales/uz/experience/world-war-2.json';
 import uzExperienceRussia from './locales/uz/experience/russian-empire.json';
+import uzExperienceUssr from './locales/uz/experience/ussr-collapse.json';
 import uzExperienceKorea from './locales/uz/experience/korea-destiny.json';
 import koExperienceUsIndependence from './locales/ko/experience/us-independence.json';
 import koExperienceFrenchRevolution from './locales/ko/experience/french-revolution.json';
@@ -103,6 +105,7 @@ import koExperienceLincolnEra from './locales/ko/experience/lincoln-era.json';
 import koExperienceWorldWar1 from './locales/ko/experience/world-war-1.json';
 import koExperienceWorldWar2 from './locales/ko/experience/world-war-2.json';
 import koExperienceRussia from './locales/ko/experience/russian-empire.json';
+import koExperienceUssr from './locales/ko/experience/ussr-collapse.json';
 import koExperienceKorea from './locales/ko/experience/korea-destiny.json';
 
 // For backward compatibility with existing code
@@ -269,6 +272,7 @@ i18n
                 'experience-korea-destiny': enExperienceKorea,
                 'experience-russian-empire': enExperienceRussia,
                 'experience-lenin-revolution': enExperienceLenin,
+                'experience-ussr-collapse': enExperienceUssr,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -303,6 +307,7 @@ i18n
                 'experience-korea-destiny': uzExperienceKorea,
                 'experience-russian-empire': uzExperienceRussia,
                 'experience-lenin-revolution': uzExperienceLenin,
+                'experience-ussr-collapse': uzExperienceUssr,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -337,6 +342,7 @@ i18n
                 'experience-korea-destiny': koExperienceKorea,
                 'experience-russian-empire': koExperienceRussia,
                 'experience-lenin-revolution': koExperienceLenin,
+                'experience-ussr-collapse': koExperienceUssr,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -375,6 +381,7 @@ i18n
             'experience-korea-destiny',
             'experience-russian-empire',
             'experience-lenin-revolution',
+            'experience-ussr-collapse',
             'pages-simulation-hub',
         ],
         interpolation: {

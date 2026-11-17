@@ -11,6 +11,8 @@ import { getExperienceScript } from '../experience/scripts';
 import { localizeScript } from '../experience/localizeScript';
 import { WorldScene } from '../experience/world/WorldScene';
 import { BattleView } from '../experience/battle/BattleView';
+import { UnionSceneBoundary } from '../experience/ui/UnionSceneBoundary';
+import { UnionCamera } from '../experience/director/UnionCamera';
 import { CameraDirector } from '../experience/director/CameraDirector';
 import { ExperienceOverlay } from '../experience/ui/Overlay';
 import '../experience/ui/timur.css';
@@ -30,6 +32,7 @@ function useQualityTier(): 'low' | 'high' {
 
 function SceneContent({ quality }: { quality: 'low' | 'high' }) {
     const beat = useCurrentBeat();
+    const union = useExperience(s => s.script?.chapterId === 'ussr-collapse');
     const battleRunKey = useExperience((s) => s.battleRunKey);
     const lastEnvRef = useRef<EnvironmentId>('samarkand-day');
     if (beat && beat.kind !== 'ending') lastEnvRef.current = beat.environment;
@@ -39,7 +42,7 @@ function SceneContent({ quality }: { quality: 'low' | 'high' }) {
         <>
             <WorldScene environment={environment} />
             {beat?.kind === 'battle' && <BattleView key={battleRunKey} config={beat.battle} />}
-            <CameraDirector />
+            {union ? <UnionCamera /> : <CameraDirector />}
             {/* Game-style grade: contact shadows (AO), bloom only on fire and lights,
                 filmic tone mapping, light saturation lift, edge vignette, SMAA. */}
             <EffectComposer multisampling={0} enableNormalPass={false}>
@@ -128,9 +131,11 @@ export default function Experience3D() {
 
     return (
         <div className={`fixed inset-0 z-[60] bg-slate-950 ${script.chapterId === 'timur-legacy' ? 'timur-experience' : script.chapterId === 'russian-empire' ? 'russia-experience' : ''}`}>
+            <UnionSceneBoundary enabled={script.chapterId === 'ussr-collapse'}>
             {script.chapterId === 'russian-empire' ? <RussianSceneBoundary>
                 {scene}
             </RussianSceneBoundary> : script.chapterId === 'lenin-revolution' ? <LeninSceneBoundary>{scene}</LeninSceneBoundary> : scene}
+            </UnionSceneBoundary>
             <ExperienceOverlay />
             {/* exit */}
             <Link

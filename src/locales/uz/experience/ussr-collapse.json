@@ -1,0 +1,271 @@
+{
+  "title": "So‘nggi Ittifoq",
+  "era": "1991 · Hokimiyat, rozilik, omon qolish",
+  "beats": {
+    "arrival": {
+      "narration": {
+        "0": {
+          "text": "Tarixiy asos · 1991-yil avgust. Mixail Gorbachyovga qarshi davlat to‘ntarishi muvaffaqiyatsiz tugaydi. Ittifoq hukumati inqirozdan chiqadi, ammo vakolati zaiflashadi. Respublikalar shaxmat donalari emas."
+        },
+        "1": {
+          "text": "Siz prezident emas, respublikalararo aloqalar bo‘yicha xayoliy vakilsiz. Xabarlarni o‘rganing, shartlar taklif qiling va aholini asrang. Uchrashuvlar va joylar umumlashtirilgan; qarorlaringiz tarixiy iqtiboslar emas, muqobil tajribalardir."
+        }
+      }
+    },
+    "square": {
+      "prompt": "Avgust xabarlari · Uchalasini o‘qing",
+      "hotspots": {
+        "mandates": {
+          "label": "Respublika vakillari",
+          "title": "Yagona vakolat yo‘q",
+          "description": "Rossiya, Ukraina, Belarus va Markaziy Osiyo respublikalarining rahbarlari va manfaatlari turlicha. Boltiqbo‘yi davlatlari mustaqillikni tiklashga intiladi. Siz ularning nomidan gapirish vakolatini o‘zingizga bera olmaysiz."
+        },
+        "queues": {
+          "label": "Ta’minot navbati",
+          "title": "Oila ro‘zg‘ori hisobi",
+          "description": "Ishlab chiqarish va savdo uzilishlari kundalik hayotni allaqachon qiyinlashtirmoqda. Yangi chegara vagon, oziq-ovqat yoki maosh yaratmaydi. Taqsimot siyosiy sadoqat mukofoti emas, jamoat oldidagi mas’uliyatdir."
+        },
+        "radio": {
+          "label": "Jamoat radiosi",
+          "title": "Buyruqlarning chegarasi bor",
+          "description": "Avgustdagi to‘ntarish davlat idoralaridagi bo‘linishni ochib berdi. Qog‘ozdagi buyruq ko‘chadagi rozilik emas. Hokimiyatlar tortishayotganda yig‘ilish erkinligi va fuqarolar yo‘llarini himoya qiling."
+        },
+        "square-continue": {
+          "label": "Yig‘ilishga kirish",
+          "title": "Ma’lumotlar tayyor",
+          "description": "Qaror oldidan uchta xabarni o‘qing."
+        }
+      }
+    },
+    "mandate": {
+      "title": "01 · Qonuniylik",
+      "prompt": "Taklifingiz qanday vakolatga tayanadi?",
+      "options": {
+        "consent": {
+          "label": "Alohida rozilik so‘rash",
+          "description": "Shartlarni e’lon qiling, respublika vakillarini taklif eting va rad etish huquqini tan oling. Muzokara sekinroq, rozilik kengroq."
+        },
+        "pressure": {
+          "label": "Markazga bo‘ysunishni talab qilish",
+          "description": "Qarorlarni tezlatish uchun favqulodda buyruq bering. Idoralar qarshilik qilishi mumkin; majburlash xalq roziligini almashtirmaydi."
+        }
+      }
+    },
+    "dialogue": {
+      "narration": {
+        "0": {
+          "text": "Ssenariy oqibati · Takliflar turli vakolatlarni bir stolga olib keladi. Ayrim vakillar faqat suveren davlatlar o‘rtasidagi hamkorlikni muhokama qiladi. Tinglash imkon beradi, lekin Ittifoq saqlanishini kafolatlamaydi."
+        }
+      }
+    },
+    "pressure": {
+      "narration": {
+        "0": {
+          "text": "Ssenariy oqibati · Buyrug‘ingiz idoralarga yetadi, ammo umumiy rozilik yaratmaydi. Kim buyruq berishga haqli ekani bahsli. Hokimiyat talashuvi fuqarolik xizmatlari vaqtini oladi."
+        }
+      }
+    },
+    "winter": {
+      "prompt": "Kuzgi ishchi yig‘ilish · Hisoblarni tekshiring",
+      "hotspots": {
+        "freight": {
+          "label": "Yuk tashish hisobi",
+          "title": "O‘zaro bog‘liqlik",
+          "description": "Zavodlar respublika chegaralaridan tashqaridagi ta’minotchilarga bog‘liq. Vaqtinchalik transport bitimi har bir respublikaning kelajak tuzumini belgilamasdan yetkazib berishni himoya qiladi."
+        },
+        "households": {
+          "label": "Ijtimoiy kafolatlar",
+          "title": "Va’daga ijro kerak",
+          "description": "Pensiya, ish haqi va isitish uchun ishlaydigan idoralar kerak. Soddalashtirilgan xizmat ko‘rsatkichi YAIM yoki tarixiy raqam emas, ustuvorliklaringizni bildiradi. Bir bitim iqtisodiy inqirozni yo‘q qila olmaydi."
+        },
+        "rights": {
+          "label": "Huquqlar bayonnomasi",
+          "title": "Fuqarolar savdolashuv vositasi emas",
+          "description": "Odamlar turli tillar va ma’muriy chegaralar orasida yashaydi. Yashash huquqi, teng muomala va oilaviy aloqalarni muhokama qiling. Mustaqillik va ozchilik huquqlari birga ko‘rilishi kerak."
+        },
+        "winter-continue": {
+          "label": "Yig‘ilishga kirish",
+          "title": "Ma’lumotlar tayyor",
+          "description": "Qaror oldidan uchta xabarni o‘qing."
+        }
+      }
+    },
+    "logistics": {
+      "title": "02 · Qishki xizmatlar",
+      "prompt": "Zarur yetkazib berish qanday davom etadi?",
+      "options": {
+        "joint": {
+          "label": "Vaqtinchalik ta’minot bitimi",
+          "description": "Transport jadvalini bo‘lishing va zarur yuklarni himoya qiling. Qo‘shma nazorat vaqt oladi, ammo chegaralararo aloqani saqlaydi."
+        },
+        "local": {
+          "label": "Zaxiralarni joyida saqlash",
+          "description": "Mahalliy ehtiyojga tez javob bering. Qo‘shnilar ham ta’minotni to‘xtatishi mumkin; o‘zaro cheklovlar tanqislik xavfini oshiradi."
+        }
+      }
+    },
+    "distribution": {
+      "title": "03 · Fuqarolar himoyasi",
+      "prompt": "Har bir bitimda qaysi majburiyat bo‘lishi kerak?",
+      "options": {
+        "rights": {
+          "label": "Teng foydalanish va nazorat",
+          "description": "Fuqarolar o‘tishi, ozchilik huquqlari va ochiq shikoyat tartibini taklifga kiriting. Ijroni ta’minlash qiyin bo‘lib qoladi."
+        },
+        "defer": {
+          "label": "Kafolatlarni keyingi hukumatlarga qoldirish",
+          "description": "Hozirgi muzokara yukini kamaytiring, ammo o‘tish davrida oilalar huquqlari noaniq qoladi."
+        }
+      }
+    },
+    "december": {
+      "narration": {
+        "0": {
+          "text": "Tarixiy nuqta · 1-dekabrda ovoz bergan ukrainaliklarning 90 foizdan ortig‘i mustaqillikni qo‘llaydi. 8-dekabrda Belarus, Rossiya va Ukraina rahbarlari MDHni tuzish bitimini imzolaydi."
+        },
+        "1": {
+          "text": "Xayoliy taklifingiz haqiqiy referendumni bekor qila olmaydi. Suveren davlatlar hamkorligini tanlang yoki ochiq muqobil ixtiyoriy uyushmani sinang. Har bir respublika rad etishi mumkin."
+        }
+      }
+    },
+    "settlement": {
+      "title": "04 · Dekabrdagi kelishuv",
+      "prompt": "Qanday kelajakni qonuniy taklif qila olasiz?",
+      "options": {
+        "sovereign": {
+          "label": "Suveren sheriklarni tan olish",
+          "description": "Yangi markaziy davlat da’vosiz amaliy hamkorlikni kelishing. Oldingi xizmat va huquq tanlovlari o‘tishga ta’sir qiladi."
+        },
+        "association": {
+          "label": "Ixtiyoriy uyushma taklif etish",
+          "description": "Muqobil tarix: cheklangan uyushma uchun yangi demokratik rozilik so‘rang. Avtomatik a’zolik ham, tiklangan imperiya ham, kafolatli muvaffaqiyat ham yo‘q."
+        },
+        "record": {
+          "label": "Ssenariyni chetga qo‘yish: tarixiy voqealar",
+          "description": "O‘yin natijasini haqiqat deb bilish o‘rniga hujjatlashtirilgan dekabr voqealarini o‘qing."
+        }
+      }
+    },
+    "safety": {
+      "title": "05 · Xavfli meros",
+      "prompt": "Bo‘lingan hokimiyat xavfini qanday cheklaysiz?",
+      "options": {
+        "coordination": {
+          "label": "Mas’uliyatli muvofiqlashtirish",
+          "description": "Fuqarolik aloqalarini saqlang va strategik kuchlar tartibini kelishing. Bu qurol boshqaruvi simulyatsiyasi emas, siyosiy qarordir."
+        },
+        "rival": {
+          "label": "Raqib buyruq da’volariga yo‘l berish",
+          "description": "Bitimdan oldin mahalliy nazoratni talab qiling. Zid buyruqlar noaniqlikni oshiradi; model urushni bashorat qilmaydi."
+        }
+      }
+    },
+    "departure": {
+      "narration": {
+        "0": {
+          "text": "Ssenariy yakuni · G‘alaba paradi yo‘q. Sinov: hokimiyat o‘zgarganda idoralar odamlarni himoya qila oladimi? Hisobingiz farovonlik yoki tinchlik bashorati emas, murosalar natijasidir."
+        }
+      }
+    }
+  },
+  "endings": {
+    "record": {
+      "title": "Hujjatlardagi dekabr",
+      "subtitle": "Tarixiy voqealar · O‘yin natijasi emas",
+      "epilogue": {
+        "0": {
+          "text": "1991-yil 21-dekabrda o‘n bir respublika Olmaota deklaratsiyasini qabul qildi. MDH yangi federativ davlat emas edi. Boltiqbo‘yi davlatlari va Gruziya bu o‘n bir ishtirokchi orasida yo‘q edi."
+        },
+        "1": {
+          "text": "Gorbachyov 25-dekabrda iste’foga chiqdi. Suverenitet iqtisodiy uzilishlar va hal qilinmagan nizolarni yo‘q qilmadi. Huquq va xavfsizlik bitimlari hamma xavfsizligining isboti emas, bajarilishi kerak bo‘lgan majburiyatlar edi."
+        }
+      }
+    },
+    "authority": {
+      "title": "Roziliksiz buyruq",
+      "subtitle": "Muqobil tarix · Markaziy hokimiyat chegarasi",
+      "epilogue": {
+        "0": {
+          "text": "Favqulodda yondashuvingiz ishonch tanqisligini qoldirdi; keyingi texnik bitimlar uni oson tuzata olmaydi. Vakolat talashuvi taklifni to‘xtatadi. Bu xavf misoli, qatag‘on barqarorlik keltirardi degan da’vo emas."
+        }
+      }
+    },
+    "compact": {
+      "title": "Tiklangan Ittifoq emas, ixtiyoriy muzokara",
+      "subtitle": "Muqobil tarix · Rozilik shartli qoladi",
+      "epilogue": {
+        "0": {
+          "text": "Alohida rozilik, ta’minot hamkorligi va huquq kafolatlari cheklangan uyushma muzokarasini davom ettiradi. Hech bir respublika majburan qo‘shilmaydi. Yangi ovozlar va bajariladigan bitimlar hali zarur; SSSR sehr bilan saqlanmaydi."
+        }
+      }
+    },
+    "protected": {
+      "title": "Fuqarolar himoyasi bilan ajralish",
+      "subtitle": "Muqobil tarix · Markaziy davlatsiz hamkorlik",
+      "epilogue": {
+        "0": {
+          "text": "Paketingiz suverenitetni tan olib, transport aloqalari, fuqarolar huquqlari va mas’uliyatli muvofiqlashuvni himoya qiladi. U ayrim xavflarni yumshatishi mumkin, ammo o‘sish, nizosizlik yoki barcha da’volar yechimini va’da qilmaydi."
+        }
+      }
+    },
+    "fragmented": {
+      "title": "Tugallanmagan majburiyatlar",
+      "subtitle": "Muqobil tarix · Mustaqillik ishning oxiri emas",
+      "epilogue": {
+        "0": {
+          "text": "Paketingiz ta’minot, huquqlar, rozilik yoki muvofiqlashuvda bo‘shliq qoldiradi. Suveren hukumatlarga hayoti yangi chegaralarni kesib o‘tadigan odamlar uchun amaliy kelishuvlar kerak. Qaysi majburiyatlar natijani o‘zgartirishini qayta sinang."
+        }
+      }
+    }
+  },
+  "ui": {
+    "ledger": "Qarorlar hisobi: o‘yin ko‘rsatkichlari, tarixiy statistika emas",
+    "camera": "Kamera boshqaruvi",
+    "left": "Chapga burish",
+    "right": "O‘ngga burish",
+    "in": "Yaqinlashtirish",
+    "out": "Uzoqlashtirish",
+    "overview": "Umumiy ko‘rinish",
+    "story": "1991-yil vakil ma’lumotlari",
+    "historical": "Tarixiy voqealar",
+    "simulation": "1991 · Xayoliy vakil simulyatsiyasi",
+    "intro": "Ittifoq parchalanmoqda. O‘n besh respublikani buyruq bilan kelishtirib bo‘lmaydi. Xabarlarni o‘qing, fuqarolar himoyasini kelishing va vakolatingiz chegaralarini anglang. Taxminan 8–12 daqiqa; besh yakun.",
+    "help": "Aylantirish uchun suring, kattalashtirish uchun ikki barmoqdan yoki kamera tugmalaridan foydalaning. Tab va Enter barcha qarorlarni boshqaradi. Yig‘ilish uchun barcha xabarlarni o‘qing. Kinematik sahnalar sizni kutadi.",
+    "begin": "Ma’lumotlarni o‘rganish",
+    "next": "Davom etish",
+    "skip": "Sahnani o‘tkazish",
+    "inspect": "Har bir xabarni o‘qing. O‘rganilgan xabarlar:",
+    "close": "Xabarni yopish va umumiy ko‘rinish",
+    "readFirst": "Avval uchta xabarni o‘qing",
+    "meeting": "Ma’lumotlar bilan yig‘ilishga kirish",
+    "decisions": "Qarorlaringiz ketma-ketligi",
+    "replay": "Yangi muzokara boshlash",
+    "exit": "Bobga qaytish",
+    "sources": "Tarixiy manbalar va simulyatsiya chegaralari",
+    "sourceNote": "Muhitlar, vakil va yig‘ilishlar xayoliy umumlashmalardir. Ko‘rsatkichlar va natijalar bashorat emas, o‘quv vositasidir. Sanali tarixiy voqealar tanlovlaringizdan alohida. Manbalar yangi oynada ochiladi.",
+    "alma": "MDH · Olmaota deklaratsiyasi, 1991-yil 21-dekabr (asl matn)",
+    "ukraine": "Ukraina parlamenti · 1-dekabr referendumi",
+    "resignation": "Tarixchi idorasi · Gorbachyov iste’fosi",
+    "economy": "XVJ · 1992-yil hisoboti, iqtisodiy uzilishlar",
+    "stats": {
+      "chaos": "Uzilish",
+      "freedom": "Rozilik",
+      "diplomacy": "Hamkorlik",
+      "strength": "Xizmatlar"
+    },
+    "flags": {
+      "consent": "Alohida jamoat roziligi",
+      "pressure": "Markaziy favqulodda buyruqlar",
+      "supply": "Qo‘shma ta’minot bitimi",
+      "local": "Mahalliy zaxiralar",
+      "rights": "Yozma fuqarolik kafolatlari",
+      "defer": "Kechiktirilgan huquq kafolatlari",
+      "sovereign": "Suveren davlatlar hamkorligi",
+      "association": "Ixtiyoriy uyushma taklifi",
+      "record": "Tarixiy voqealarga qaytish",
+      "coordination": "Mas’uliyatli muvofiqlashtirish",
+      "rival": "Raqib buyruq da’volari"
+    },
+    "fallback": "Bu qurilmada 3D mavjud emas. Quyida barcha xabarlar, tanlovlar va yakunlarni o‘ynash mumkin."
+  }
+}
