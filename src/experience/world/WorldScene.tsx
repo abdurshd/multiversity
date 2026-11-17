@@ -3,6 +3,7 @@ import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Environment, Html, Lightformer } from '@react-three/drei';
 import * as THREE from 'three';
+import { CovidWorld } from '../covid/CovidWorld';
 import type { EnvironmentId, Hotspot } from '../types';
 import { useCurrentBeat, useExperience } from '../store';
 import {
@@ -35,7 +36,7 @@ interface EnvDef {
     clouds: boolean;
 }
 
-const ENV: Record<EnvironmentId, EnvDef> = {
+const ENV: Record<Exclude<EnvironmentId, `covid-${string}`>, EnvDef> = {
     'samarkand-day': {
         skyTop: '#5d96c9', skyHorizon: '#d9e6e2', fog: '#cfd9d2', sun: '#fff2d4',
         sunPos: [80, 110, 40], ambient: 0.5, ground: '#c4a87e', groundVar: '#a98f66',
@@ -239,6 +240,7 @@ const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-19
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
 export function WorldScene({ environment }: { environment: EnvironmentId }) {
+    if (environment === 'covid-hospital' || environment === 'covid-depot' || environment === 'covid-briefing') return <CovidWorld environment={environment} />;
     const env = ENV[environment];
     return (
         <group>
