@@ -24,7 +24,7 @@ export function CovidCamera() {
         if (!beat || beat.kind === 'ending' || beat.kind === 'battle') return;
         const position = beat.kind === 'cinematic' ? beat.shots[0].path[0] : beat.camera.position;
         const target = beat.kind === 'cinematic' ? beat.shots[0].lookPath[0] : beat.camera.target;
-        camera.position.set(target[0] + (position[0] - target[0]) * framing, target[1] + (position[1] - target[1]) * framing, target[2] + (position[2] - target[2]) * framing);
+        camera.position.set(target[0] + (position[0] - target[0]) * framing, position[1], target[2] + (position[2] - target[2]) * framing);
         controls.current?.target.set(...target); camera.lookAt(...target); controls.current?.update();
     }, [beat, camera, revision, framing]);
     useEffect(() => {
@@ -35,6 +35,7 @@ export function CovidCamera() {
         const view = views[active]; if (!view) return;
         const target = new THREE.Vector3(...view[1]);
         const position = new THREE.Vector3(...view[0]).sub(target).multiplyScalar(framing).add(target);
+        position.y = view[0][1]; // Portrait framing must not lift the player through the ceiling.
         focus.current = { position, target };
         if (reduced) { camera.position.copy(position); controls.current?.target.copy(target); controls.current?.update(); focus.current = null; }
     }, [active, beat?.id, camera, framing, reduced]);
@@ -49,7 +50,7 @@ export function CovidCamera() {
         const shot = beat.shots[0]; elapsed.current += Math.min(delta, 0.1);
         const t = Math.min(elapsed.current / shot.duration, 1), ease = t * t * (3 - 2 * t);
         const from = shot.path[0], to = shot.path[shot.path.length - 1], target = shot.lookPath[0];
-        camera.position.set(...([0, 1, 2].map(axis => target[axis] + (THREE.MathUtils.lerp(from[axis], to[axis], ease) - target[axis]) * framing) as [number, number, number]));
+        camera.position.set(...([0, 1, 2].map(axis => target[axis] + (THREE.MathUtils.lerp(from[axis], to[axis], ease) - target[axis]) * (axis === 1 ? 1 : framing)) as [number, number, number]));
         camera.lookAt(...target);
     });
     return <OrbitControls ref={controls} enabled={phase === 'explore' || phase === 'choice'} onStart={() => { focus.current = null; }} enablePan={false} enableDamping={!reduced} minDistance={6} maxDistance={42} minPolarAngle={0.6} maxPolarAngle={1.48} rotateSpeed={0.5} touches={{ ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN }} />;
