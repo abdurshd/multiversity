@@ -41,6 +41,7 @@ export function CameraDirector() {
     const beat = useCurrentBeat();
     const phase = useExperience((s) => s.phase);
     const timur = useExperience((s) => s.script?.chapterId === 'timur-legacy');
+    const russia = useExperience((s) => s.script?.chapterId === 'russian-empire');
     const command = useTimurNavigation((s) => s.command);
     const revision = useTimurNavigation((s) => s.revision);
     const size = useThree((s) => s.size);
@@ -118,7 +119,8 @@ export function CameraDirector() {
         if (cinematic && compiled.length > 0) {
             clockRef.current += delta;
             let t = clockRef.current;
-            let i = timur ? 0 : shotIndexRef.current;
+            // Resolve the absolute clock from shot zero in the opt-in episodes.
+            let i = timur || russia ? 0 : shotIndexRef.current;
             while (i < compiled.length - 1 && t > compiled[i].duration) {
                 t -= compiled[i].duration;
                 i += 1;

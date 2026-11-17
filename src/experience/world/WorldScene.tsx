@@ -10,6 +10,7 @@ import {
     Madrasah, Mausoleum, Minaret, PALETTE, Particles, Tents, Trees, mulberry32, sharedMats,
 } from './parts';
 import { pavingTexture } from './textures';
+import { SenateSquare1825, Assembly1825 } from './russia';
 import { SamarkandDetails } from './samarkandDetails';
 import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
@@ -36,6 +37,15 @@ interface EnvDef {
 }
 
 const ENV: Record<EnvironmentId, EnvDef> = {
+    'senate-1825': {
+        skyTop:'#5e7894', skyHorizon:'#d9dfe4', fog:'#c8d2da', sun:'#fff0d6', sunPos:[-60,60,40], ambient:.6, ground:'#dce4e9', groundVar:'#c8d3dd', disc:{pos:[-250,210,170],color:'#fff2dd',size:22}, clouds:true,
+    },
+    'senate-1825-dusk': {
+        skyTop:'#243047', skyHorizon:'#b8978c', fog:'#768293', sun:'#e7b88a', sunPos:[-60,28,40], ambient:.45, ground:'#c4cfdb', groundVar:'#adbccb', disc:{pos:[-250,90,170],color:'#ffd1a0',size:22}, clouds:false,
+    },
+    'assembly-1825': {
+        skyTop:'#26394a', skyHorizon:'#9baebc', fog:'#6c7e8b', sun:'#ffe0b1', sunPos:[0,55,-70], ambient:.7, ground:'#394b56', groundVar:'#2e414d', disc:{pos:[0,250,-300],color:'#ffe3bb',size:18}, clouds:false,
+    },
     'samarkand-day': {
         skyTop: '#5d96c9', skyHorizon: '#d9e6e2', fog: '#cfd9d2', sun: '#fff2d4',
         sunPos: [80, 110, 40], ambient: 0.5, ground: '#c4a87e', groundVar: '#a98f66',
@@ -234,9 +244,9 @@ const ENV: Record<EnvironmentId, EnvDef> = {
 };
 
 /** Scenes with open sea where the distant hills would poke through the water. */
-const FLAT = new Set<EnvironmentId>(['midway-1942', 'normandy-1944', 'incheon-1950']);
+const FLAT = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'assembly-1825', 'midway-1942', 'normandy-1944', 'incheon-1950']);
 
-const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
+const WINTER = new Set<EnvironmentId>(['senate-1825', 'senate-1825-dusk', 'winter-march', 'valley-forge', 'philadelphia-winter', 'chosin-1950']);
 
 export function WorldScene({ environment }: { environment: EnvironmentId }) {
     const env = ENV[environment];
@@ -276,7 +286,11 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             {env.clouds && <Clouds dark={false} />}
             {(environment === 'varennes' || environment === 'springfield') && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
-            {environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
+            {environment === 'senate-1825' || environment === 'senate-1825-dusk' ? (
+                <SenateSquare1825 dusk={environment === 'senate-1825-dusk'} />
+            ) : environment === 'assembly-1825' ? (
+                <Assembly1825 />
+            ) : environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
             ) : environment === 'winter-march' ? (
                 <WinterMarch />
