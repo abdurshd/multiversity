@@ -108,6 +108,10 @@ import koExperienceRussia from './locales/ko/experience/russian-empire.json';
 import koExperienceUssr from './locales/ko/experience/ussr-collapse.json';
 import koExperienceKorea from './locales/ko/experience/korea-destiny.json';
 
+import enExperienceCovid from './locales/en/experience/covid-pandemic.json';
+import uzExperienceCovid from './locales/uz/experience/covid-pandemic.json';
+import koExperienceCovid from './locales/ko/experience/covid-pandemic.json';
+
 // For backward compatibility with existing code
 const enLegacy = {
     common: {
@@ -273,6 +277,7 @@ i18n
                 'experience-russian-empire': enExperienceRussia,
                 'experience-lenin-revolution': enExperienceLenin,
                 'experience-ussr-collapse': enExperienceUssr,
+                'experience-covid-pandemic': enExperienceCovid,
                 'pages-simulation-hub': enPagesSimulationHub,
             },
             uz: {
@@ -308,6 +313,7 @@ i18n
                 'experience-russian-empire': uzExperienceRussia,
                 'experience-lenin-revolution': uzExperienceLenin,
                 'experience-ussr-collapse': uzExperienceUssr,
+                'experience-covid-pandemic': uzExperienceCovid,
                 'pages-simulation-hub': uzPagesSimulationHub,
             },
             ko: {
@@ -343,6 +349,7 @@ i18n
                 'experience-russian-empire': koExperienceRussia,
                 'experience-lenin-revolution': koExperienceLenin,
                 'experience-ussr-collapse': koExperienceUssr,
+                'experience-covid-pandemic': koExperienceCovid,
                 'pages-simulation-hub': koPagesSimulationHub,
             },
         },
@@ -382,6 +389,7 @@ i18n
             'experience-russian-empire',
             'experience-lenin-revolution',
             'experience-ussr-collapse',
+            'experience-covid-pandemic',
             'pages-simulation-hub',
         ],
         interpolation: {

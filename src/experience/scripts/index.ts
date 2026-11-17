@@ -10,6 +10,7 @@ import { koreanWarScript } from './koreanWar';
 
 import { leninRevolutionScript } from './leninRevolution';
 import { ussrCollapseScript } from './ussrCollapse';
+import { covidPandemicScript } from './covidPandemic';
 
 const SCRIPTS: Record<string, ExperienceScript> = {
     'russian-empire': russianEmpireScript,
@@ -22,6 +23,7 @@ const SCRIPTS: Record<string, ExperienceScript> = {
     'korea-destiny': koreanWarScript,
     'lenin-revolution': leninRevolutionScript,
     'ussr-collapse': ussrCollapseScript,
+    'covid-pandemic': covidPandemicScript,
 };
 
 export function getExperienceScript(chapterId: string): ExperienceScript | null {
