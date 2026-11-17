@@ -197,3 +197,98 @@ export function buildArrow(fletch: string): THREE.BufferGeometry {
         part(new THREE.ConeGeometry(0.09, 0.26, 4), fletch, [0, -0.62, 0]),
     ]);
 }
+
+// ─── 18th-century line infantry: long coat, crossbelts, tricorne, musket ───
+const TRICORN = '#1e1a17';
+const BELT = '#efe9dc';
+
+function tricorne(y: number): THREE.BufferGeometry[] {
+    return [
+        // brim folded into three points: a squat 3-sided cone + crown
+        part(new THREE.ConeGeometry(0.3, 0.12, 3), TRICORN, [0, y, 0], [0, Math.PI / 6, 0], [1, 1, 1]),
+        part(new THREE.CylinderGeometry(0.15, 0.17, 0.13, 8), TRICORN, [0, y + 0.08, 0]),
+    ];
+}
+
+export function buildMusketeer(p: ArmyPalette): THREE.BufferGeometry {
+    return merge([
+        // breeches/gaiters + coat skirt
+        part(new THREE.CylinderGeometry(0.18, 0.22, 0.55, 8), BELT, [0, 0.28, 0]),
+        part(new THREE.CylinderGeometry(0.28, 0.4, 0.55, 8), p.cloth, [0, 0.72, 0]),
+        // coat body with facings
+        part(new THREE.CylinderGeometry(0.3, 0.29, 0.55, 8), p.cloth, [0, 1.18, 0]),
+        part(new THREE.BoxGeometry(0.18, 0.5, 0.06), p.accent, [0, 1.18, 0.27]),
+        // white crossbelts
+        part(new THREE.BoxGeometry(0.07, 0.72, 0.04), BELT, [0, 1.12, 0.29], [0, 0, 0.6]),
+        part(new THREE.BoxGeometry(0.07, 0.72, 0.04), BELT, [0, 1.12, 0.29], [0, 0, -0.6]),
+        part(new THREE.SphereGeometry(0.12, 6, 5), p.cloth, [-0.3, 1.36, 0]),
+        part(new THREE.SphereGeometry(0.12, 6, 5), p.cloth, [0.3, 1.36, 0]),
+        // head + powdered queue + tricorne
+        part(new THREE.SphereGeometry(0.16, 8, 7), SKIN, [0, 1.56, 0]),
+        part(new THREE.SphereGeometry(0.1, 6, 5), '#e8e2d4', [0, 1.55, -0.12]),
+        ...tricorne(1.7),
+        // shouldered musket with bayonet
+        part(new THREE.CylinderGeometry(0.03, 0.035, 1.5, 5), WOOD, [0.34, 1.35, 0.02], [0.12, 0, 0]),
+        part(new THREE.CylinderGeometry(0.015, 0.015, 0.5, 4), STEEL, [0.34, 2.3, 0.14], [0.12, 0, 0]),
+        // cartridge box
+        part(new THREE.BoxGeometry(0.22, 0.16, 0.1), '#2a1d14', [0.2, 0.92, -0.26]),
+    ]);
+}
+
+// ─── Rifleman / skirmisher: hunting shirt, round hat, long rifle ───────────
+export function buildRifleman(p: ArmyPalette): THREE.BufferGeometry {
+    return merge([
+        part(new THREE.CylinderGeometry(0.18, 0.22, 0.55, 8), '#5b4a36', [0, 0.28, 0]),
+        part(new THREE.CylinderGeometry(0.27, 0.36, 0.6, 8), p.accent, [0, 0.76, 0]),
+        part(new THREE.CylinderGeometry(0.28, 0.27, 0.5, 8), p.accent, [0, 1.2, 0]),
+        // fringed cape collar
+        part(new THREE.CylinderGeometry(0.2, 0.36, 0.16, 8), '#cdbb93', [0, 1.38, 0]),
+        part(new THREE.SphereGeometry(0.16, 8, 7), SKIN, [0, 1.56, 0]),
+        // round slouch hat
+        part(new THREE.CylinderGeometry(0.3, 0.3, 0.03, 10), '#3b2f22', [0, 1.68, 0]),
+        part(new THREE.CylinderGeometry(0.15, 0.17, 0.16, 8), '#3b2f22', [0, 1.77, 0]),
+        // long rifle held at the ready
+        part(new THREE.CylinderGeometry(0.025, 0.03, 1.7, 5), WOOD_DARK, [0.25, 1.25, 0.25], [1.1, 0, 0]),
+        // powder horn
+        part(new THREE.ConeGeometry(0.06, 0.28, 6), '#e9dcc0', [-0.24, 0.95, 0.1], [0, 0, 1.2]),
+    ]);
+}
+
+// ─── Dragoon: horse + coated rider with helmet crest and sabre ─────────────
+export function buildDragoon(p: ArmyPalette, horseColor = '#5a3e28'): THREE.BufferGeometry {
+    const base = buildCavalry(p, horseColor);
+    // reuse the horse; swap the medieval rider details for a dragoon silhouette
+    const extras = merge([
+        part(new THREE.BoxGeometry(0.16, 0.34, 0.05), p.accent, [0, 1.98, 0.21]),
+        part(new THREE.BoxGeometry(0.06, 0.2, 0.36), '#1e1a17', [0, 2.6, -0.05]),
+        part(new THREE.CylinderGeometry(0.02, 0.02, 0.9, 4), STEEL, [0.38, 2.0, 0.25], [0.9, 0, 0]),
+    ]);
+    const merged = mergeGeometries([base, extras], false)!;
+    base.dispose();
+    extras.dispose();
+    return merged;
+}
+
+// ─── Musket ball (projectile for the musket era) ───────────────────────────
+export function buildMusketBall(): THREE.BufferGeometry {
+    return merge([part(new THREE.SphereGeometry(0.09, 5, 4), '#2b2b2b', [0, 0, 0])]);
+}
+
+// ─── Colonist crowd (instanceColor tints the white coat) ───────────────────
+export function buildColonistBody(): THREE.BufferGeometry {
+    return merge([
+        part(new THREE.CylinderGeometry(0.16, 0.2, 0.5, 8), '#d9d2c2', [0, 0.25, 0]),
+        part(new THREE.CylinderGeometry(0.27, 0.38, 0.6, 8), '#ffffff', [0, 0.78, 0]),
+        part(new THREE.CylinderGeometry(0.28, 0.27, 0.4, 8), '#f0f0f0', [0, 1.18, 0]),
+        part(new THREE.BoxGeometry(0.16, 0.34, 0.05), '#f4efe4', [0, 1.18, 0.26]),
+        part(new THREE.SphereGeometry(0.12, 6, 5), '#e6e6e6', [-0.27, 1.32, 0]),
+        part(new THREE.SphereGeometry(0.12, 6, 5), '#e6e6e6', [0.27, 1.32, 0]),
+    ]);
+}
+
+export function buildColonistHead(): THREE.BufferGeometry {
+    return merge([
+        part(new THREE.SphereGeometry(0.16, 8, 7), SKIN, [0, 0, 0]),
+        ...tricorne(0.14),
+    ]);
+}

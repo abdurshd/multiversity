@@ -67,6 +67,8 @@ export interface BattleState {
     outcome: BattleOutcome | null;
     routTimer: number;
     abilities: Record<AbilityId, AbilityState>;
+    /** Musket/cannon smoke puffs (musket era). */
+    smoke: { x: number; z: number; t: number }[];
     /** Last strike target, for the impact marker. */
     strikeTarget: { x: number; z: number; t: number } | null;
 }
@@ -77,6 +79,9 @@ const STATS: Record<UnitType, { hp: number; dmg: number; range: number; speed: n
     archer: { hp: 70, dmg: 10, range: 30, speed: 3.6 },
 };
 
+/** Musket-era line infantry trade volleys at range before closing with the bayonet. */
+const MUSKET_INFANTRY = { hp: 100, dmg: 11, range: 13, speed: 4.0 };
+
 const GRAVITY = 22;
 
 let seedCounter = 1;
@@ -86,7 +91,9 @@ function rnd() {
     return seedCounter / 2147483647;
 }
 
-function spawnArmy(units: Unit[], side: BattleSide, type: UnitType, count: number, attack: number, defense: number) {
+function spawnArmy(
+    units: Unit[], side: BattleSide, type: UnitType, count: number, attack: number, defense: number, musket = false,
+) {
     const sign = side === 'player' ? 1 : -1;
     const baseZ = side === 'player' ? 45 : -42;
     const rowOffset = type === 'archer' ? 16 : type === 'cavalry' ? 8 : 0;
@@ -96,7 +103,7 @@ function spawnArmy(units: Unit[], side: BattleSide, type: UnitType, count: numbe
         const n = start + i;
         const row = Math.floor(n / perRow);
         const col = n % perRow;
-        const s = STATS[type];
+        const s = musket && type === 'infantry' ? MUSKET_INFANTRY : STATS[type];
         units.push({
             side,
             type,
@@ -120,12 +127,13 @@ export function createBattle(config: BattleConfig): BattleState {
     const units: Unit[] = [];
     const p = config.player;
     const e = config.enemy;
-    spawnArmy(units, 'player', 'infantry', p.infantry, p.attack, p.defense);
-    spawnArmy(units, 'player', 'cavalry', p.cavalry, p.attack, p.defense);
-    spawnArmy(units, 'player', 'archer', p.archers, p.attack, p.defense);
-    spawnArmy(units, 'enemy', 'infantry', e.infantry, e.attack, e.defense);
-    spawnArmy(units, 'enemy', 'cavalry', e.cavalry, e.attack, e.defense);
-    spawnArmy(units, 'enemy', 'archer', e.archers, e.attack, e.defense);
+    const m = config.era === 'musket';
+    spawnArmy(units, 'player', 'infantry', p.infantry, p.attack, p.defense, m);
+    spawnArmy(units, 'player', 'cavalry', p.cavalry, p.attack, p.defense, m);
+    spawnArmy(units, 'player', 'archer', p.archers, p.attack, p.defense, m);
+    spawnArmy(units, 'enemy', 'infantry', e.infantry, e.attack, e.defense, m);
+    spawnArmy(units, 'enemy', 'cavalry', e.cavalry, e.attack, e.defense, m);
+    spawnArmy(units, 'enemy', 'archer', e.archers, e.attack, e.defense, m);
     return {
         config,
         units,
@@ -146,6 +154,7 @@ export function createBattle(config: BattleConfig): BattleState {
             charge: { cooldown: 3, active: 0, uses: 0 },
         },
         strikeTarget: null,
+        smoke: [],
     };
 }
 
@@ -250,7 +259,7 @@ export function applyModifier(state: BattleState, mod: BattleModifier) {
     if (mod.enemyAttackMult) state.enemyAttackMult *= mod.enemyAttackMult;
     if (mod.enemyReinforcements) {
         const e = state.config.enemy;
-        spawnArmy(state.units, 'enemy', 'infantry', mod.enemyReinforcements, e.attack, e.defense);
+        spawnArmy(state.units, 'enemy', 'infantry', mod.enemyReinforcements, e.attack, e.defense, state.config.era === 'musket');
     }
     if (mod.moraleShift) {
         // Damage (or heal) random player units to shift morale.
@@ -287,6 +296,8 @@ export function tick(state: BattleState, dt: number) {
     }
     const rallying = state.abilities.rally.active > 0;
     const charging = state.abilities.charge.active > 0;
+    // in the musket era the charge is a bayonet charge: the line infantry surges too
+    const musket = state.config.era === 'musket';
 
     // retarget at staggered intervals, fight, move
     for (let i = 0; i < units.length; i++) {
@@ -323,8 +334,10 @@ export function tick(state: BattleState, dt: number) {
         const dx = t.x - u.x;
         const dz = t.z - u.z;
         const dist = Math.sqrt(dx * dx + dz * dz);
+        // bayonet charge: line infantry stop firing and close to melee range
+        const range = musket && charging && u.side === 'player' && u.type === 'infantry' ? 2.2 : u.range;
 
-        if (dist <= u.range) {
+        if (dist <= range) {
             u.state = 'fight';
             if (u.cooldown <= 0) {
                 u.cooldown = 0.8 + rnd() * 0.5;
@@ -333,12 +346,16 @@ export function tick(state: BattleState, dt: number) {
                     dmg *= state.playerAttackMult;
                     if (u.type === 'archer') dmg *= state.playerArcherMult;
                     if (rallying) dmg *= 1.15;
-                    if (charging && u.type === 'cavalry') dmg *= 1.4;
+                    if (charging && (u.type === 'cavalry' || (musket && u.type === 'infantry'))) dmg *= 1.4;
                 } else {
                     dmg *= state.enemyAttackMult;
                 }
                 const defenseMult = t.side === 'player' ? state.playerDefenseMult * (rallying ? 1.2 : 1) : 1;
-                if (u.type === 'archer' && dist > 6) {
+                const shoots = u.type === 'archer' || (musket && u.type === 'infantry');
+                if (shoots && musket && dist > 6 && state.smoke.length < 220) {
+                    state.smoke.push({ x: u.x + dx / dist, z: u.z + dz / dist, t: 0 });
+                }
+                if (shoots && dist > 6) {
                     // loose an arrow (visual); damage applies on a short delay via projectile hit
                     const T = Math.max(0.5, dist / 26);
                     state.projectiles.push({
@@ -358,7 +375,8 @@ export function tick(state: BattleState, dt: number) {
             }
         } else {
             u.state = 'advance';
-            const boost = charging && u.side === 'player' && u.type === 'cavalry' ? 2 : 1;
+            const boost =
+                charging && u.side === 'player' && (u.type === 'cavalry' || (musket && u.type === 'infantry')) ? (u.type === 'cavalry' ? 2 : 1.6) : 1;
             u.x += (dx / dist) * u.speed * boost * dt;
             u.z += (dz / dist) * u.speed * boost * dt;
         }
@@ -391,6 +409,8 @@ export function tick(state: BattleState, dt: number) {
         state.projectiles = state.projectiles.filter((p) => p.alive);
     }
     for (const im of state.impacts) im.t += dt;
+    for (const sm of state.smoke) sm.t += dt;
+    if (state.smoke.length) state.smoke = state.smoke.filter((sm) => sm.t < 2.4);
     state.impacts = state.impacts.filter((im) => im.t < 1.6);
 
     // morale + rout + outcome

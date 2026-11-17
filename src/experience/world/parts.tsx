@@ -4,7 +4,7 @@ import { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { brickTexture, domeTexture, feltTexture, mosaicTexture, softSprite } from './textures';
-import { buildCitizenHead, buildCitizenRobe, figureMaterial } from './figures';
+import { buildCitizenHead, buildCitizenRobe, buildColonistBody, buildColonistHead, figureMaterial } from './figures';
 
 // ─── Palette ───────────────────────────────────────────────────────────────
 export const PALETTE = {
@@ -791,21 +791,32 @@ export function Banner({
 }
 
 // ─── Citizens: detailed strolling townsfolk (merged figures, instanced) ────
-export function Citizens({ count = 36, radius = 30, seed = 5 }: { count?: number; radius?: number; seed?: number }) {
+export function Citizens({
+    count = 36,
+    radius = 30,
+    seed = 5,
+    style = 'silk-road',
+}: {
+    count?: number;
+    radius?: number;
+    seed?: number;
+    /** Clothing: turbaned Silk Road crowd or 18th-century colonists. */
+    style?: 'silk-road' | 'colonial';
+}) {
     const robeRef = useRef<THREE.InstancedMesh>(null!);
     const headRef = useRef<THREE.InstancedMesh>(null!);
     const dummy = useMemo(() => new THREE.Object3D(), []);
-    const robeGeom = useMemo(() => buildCitizenRobe(), []);
-    const headGeom = useMemo(() => buildCitizenHead(), []);
+    const robeGeom = useMemo(() => (style === 'colonial' ? buildColonistBody() : buildCitizenRobe()), [style]);
+    const headGeom = useMemo(() => (style === 'colonial' ? buildColonistHead() : buildCitizenHead()), [style]);
     const mat = useMemo(() => figureMaterial(), []);
     const headMat = useMemo(() => figureMaterial(), []);
 
     const agents = useMemo(() => {
         const rand = mulberry32(seed);
-        const robes = [
-            new THREE.Color('#8c5a2b'), new THREE.Color('#4a6b8a'), new THREE.Color('#7d5ba6'),
-            new THREE.Color('#a33b3b'), new THREE.Color('#5d7a4a'), new THREE.Color('#caa84e'),
-        ];
+        const robes = (style === 'colonial'
+            ? ['#5a4632', '#2f3f5c', '#6b2e2e', '#4f5b3a', '#8a7a5a', '#3a3a3a']
+            : ['#8c5a2b', '#4a6b8a', '#7d5ba6', '#a33b3b', '#5d7a4a', '#caa84e']
+        ).map((c) => new THREE.Color(c));
         return Array.from({ length: count }, () => ({
             angle: rand() * Math.PI * 2,
             r: radius * (0.35 + rand() * 0.9),
@@ -814,7 +825,7 @@ export function Citizens({ count = 36, radius = 30, seed = 5 }: { count?: number
             scale: 0.88 + rand() * 0.24,
             color: robes[Math.floor(rand() * robes.length)],
         }));
-    }, [count, radius, seed]);
+    }, [count, radius, seed, style]);
 
     useFrame(({ clock }) => {
         const t = clock.elapsedTime;

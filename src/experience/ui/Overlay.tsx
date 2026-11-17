@@ -328,10 +328,15 @@ function BattleOverlay() {
 
 // ─── Commander abilities ───────────────────────────────────────────────────
 const ABILITY_ICONS: Record<AbilityId, string> = { rally: '🚩', strike: '🎯', charge: '🐎' };
+const MUSKET_ICONS: Record<AbilityId, string> = { rally: '🥁', strike: '💥', charge: '🗡️' };
 const ABILITY_ORDER: AbilityId[] = ['rally', 'strike', 'charge'];
 
 function AbilityBar() {
     const { t } = useTranslation('components-experience');
+    const beat = useCurrentBeat();
+    // musket-era battles rename the orders (volley line, artillery, bayonets)
+    const era = beat?.kind === 'battle' && beat.battle.era === 'musket' ? 'musket.' : '';
+    const icons = era ? MUSKET_ICONS : ABILITY_ICONS;
     const cooldowns = useBattleHud((s) => s.abilityCooldowns);
     const active = useBattleHud((s) => s.abilityActive);
     const targeting = useBattleHud((s) => s.targeting);
@@ -369,7 +374,7 @@ function AbilityBar() {
         <div className="absolute bottom-5 inset-x-0 z-30 flex flex-col items-center gap-2 px-3 pointer-events-none">
             <p className="rounded-full bg-slate-950/70 px-3 py-1 text-[11px] text-amber-100/85 backdrop-blur">
                 {targeting === 'strike'
-                    ? t('battle.abilities.aim_hint', { defaultValue: 'Click the battlefield to aim the catapults · Esc to cancel' })
+                    ? t(`battle.abilities.${era}aim_hint`, { defaultValue: 'Click the battlefield to aim the catapults · Esc to cancel' })
                     : t('battle.abilities.hint', { defaultValue: 'Lead your army: your orders decide how this battle, and history, turn out' })}
             </p>
             <div className="flex gap-2 pointer-events-auto">
@@ -401,16 +406,16 @@ function AbilityBar() {
                                 />
                             )}
                             <span className="relative flex items-center justify-between">
-                                <span className="text-lg leading-none">{ABILITY_ICONS[id]}</span>
+                                <span className="text-lg leading-none">{icons[id]}</span>
                                 <span className="rounded bg-slate-950/70 px-1.5 text-[10px] font-mono text-slate-300">
                                     {ready ? ABILITIES[id].hotkey : Math.ceil(cd)}
                                 </span>
                             </span>
                             <span className="relative mt-1 block text-[12px] font-semibold text-amber-100">
-                                {t(`battle.abilities.${id}.label`)}
+                                {t(`battle.abilities.${era}${id}.label`)}
                             </span>
                             <span className="relative hidden sm:block text-[10px] leading-snug text-slate-300/80">
-                                {t(`battle.abilities.${id}.description`)}
+                                {t(`battle.abilities.${era}${id}.description`)}
                             </span>
                         </button>
                     );

@@ -1,0 +1,624 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "Filadelfiya, 1776-yil yozi. O'n uchta Britaniya mustamlakasi bir yildan ortiq vaqtdan beri o'z qiroli bilan urushmoqda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Kontinental armiya Kanadadan quvib chiqarildi. To'rt yuz kemadan iborat Britaniya floti Nyu-York sari suzib kelmoqda. Mustamlakachilarning aksariyati hamon o'zini ingliz deb biladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Pensilvaniya Shtat uyida Ikkinchi Kontinental Kongress xonadagi har bir kishini xoinga aylantiradigan qaror bo'yicha ovoz berish arafasida.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Bizning tariximizda ular imzo chekdi, sakkiz yillik urushdan omon chiqdi va respublika qurdi. Bu tarixda esa hali hech narsa hal bo'lmagan. Shahar bo'ylab yuring. So'ng ovoz bering.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-philadelphia": {
+      "prompt": "Filadelfiyani kashf eting: atrofga qarash uchun suring va yonib turgan belgilarni bosing. Kongress Shtat uyida kutmoqda.",
+      "hotspots": {
+        "bell": {
+          "label": "Shtat uyining qo'ng'irog'i",
+          "title": "Hovlidagi qo'ng'iroq",
+          "description": "1752-yilda quyilgan va ilk zarbadayoq yorilgan bu qo'ng'iroqda Levilar kitobidan satr bor: «Butun yurt bo'ylab barcha aholiga OZODLIK e'lon qiling». Uni hali hech kim Ozodlik qo'ng'irog'i demaydi. Bu nomni oltmish yildan so'ng qullikka qarshi kurashchilar beradi, chunki undagi va'da hali hammaga tegishli emas."
+        },
+        "print-shop": {
+          "label": "Franklinning bosmaxonasi",
+          "title": "Amerikaning eng mashhur odami",
+          "description": "Benjamin Franklin bu yerga qochoq bosmachi shogird bo'lib kelgan. Gazetasi va «Bechora Richardning almanaxi» uni boy qildi, chaqmoq bilan tajribalari esa Yevropaning har bir saroyida mashhur qildi. U yetmish yoshda va Kongress biladi: Yevropa qirolini urushga ko'ndira oladigan kimdir bo'lsa, u aynan Franklin."
+        },
+        "steeple": {
+          "label": "Masih cherkovi",
+          "title": "Amerikadagi eng baland bino",
+          "description": "Masih cherkovining minorasi qariyb ikki yuz fut balandlikka ko'tariladi, bu mustamlakalardagi eng baland nuqta. Vashington, Franklin va o'nlab delegatlar shu yerda o'rindiq ijaraga olishadi. Ruhoniy hali ham har yakshanba qirol Georg uchun duo qiladi. Bir oy ichida u qaysi duoni o'qishni tanlashga majbur bo'ladi."
+        },
+        "hall": {
+          "label": "Shtat uyiga kirish",
+          "title": "Majlislar zali",
+          "description": "Josuslardan saqlanish uchun derazalar yopiq, xonada nafas olib bo'lmaydi. O'ttiz uch yoshli Tomas Jefferson deklaratsiyani yozishga o'n yetti kun sarfladi; Kongress yana ikki kun uning to'rtdan birini, jumladan qul savdosini qoralovchi qismini qisqartirishga sarfladi. Endi o'n ikki mustamlaka delegatlari uni qabul qilish-qilmaslikni hal qilishi kerak. Nyu-York betaraf qoladi."
+        }
+      }
+    },
+    "declaration-choice": {
+      "title": "Pensilvaniya Shtat uyi · 1776-yil iyul",
+      "prompt": "Masala ovozga qo'yildi. Bu Kongress qanday ovoz beradi?",
+      "options": {
+        "declare": {
+          "label": "Mustaqillikni e'lon qilish",
+          "description": "«Biz bu haqiqatlarni o'z-o'zidan ravshan deb bilamiz». Imzo cheking va ortga yo'l yo'q: yo mustaqillik, yo bu xonadagi har bir kishi uchun dor."
+        },
+        "olive-branch": {
+          "label": "Franklinni muzokaraga yuborish",
+          "description": "Oxirgi urinish. Franklin Londonda o'n besh yil yashagan va har bir vazirni taniydi. Imperiya tarkibida o'zini o'zi boshqarishni so'rang, bir kun kelib Kanada va Avstraliya olgani kabi."
+        }
+      }
+    },
+    "london-reaction": {
+      "narration": {
+        "0": {
+          "text": "Deklaratsiya Londonga avgustda yetib keladi. Qirol Georg III o'ttiz sakkiz yoshda, dindor, mehnatkash va bitta mustamlakani qo'yib yuborgan qirol tez orada hammasidan ayrilishiga amin. Ikki yil oldin u bosh vazirini ogohlantirgan edi:",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Zar tashlandi. Mustamlakalar yo bo'ysunishi, yo g'alaba qozonishi kerak.",
+          "speaker": "Qirol Georg III"
+        },
+        "2": {
+          "text": "Britaniya tarixidagi eng katta ekspeditsiya qo'shinini dengizga chiqaradi. Qishga kelib amerikaliklar Nyu-Yorkni yo'qotadi, 1777-yilda esa inglizlar Filadelfiyaning o'zini egallaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "london-talks": {
+      "title": "Bukingem uyi · 1776-yil kuzi",
+      "prompt": "Qirol shartlarini taklif qiladi: mustamlaka parlamenti, ammo soliqlar va armiya Toj ixtiyorida qoladi.",
+      "options": {
+        "dominion": {
+          "label": "Dominionni qabul qilish",
+          "description": "Yarim non ham non. Amerikaliklar o'z assambleyalarini boshqaradi va Britaniya fuqarosi bo'lib qoladi. Urush yo'q, respublika yo'q, barcha da'volar keyinga qoldiriladi."
+        },
+        "walk-out": {
+          "label": "Chiqib ketib, e'lon qilish",
+          "description": "Franklin uyga suzib ketadi va Kongress mustaqillikni bir necha oy kechikib e'lon qiladi. Urush baribir boshlanadi, Amerika esa qimmatli vaqtni boy berdi."
+        }
+      }
+    },
+    "dominion-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Shartnoma qirolning o'z mehmonxonasida imzolanadi. Franklin uni «halol odam tuzgan eng yaxshi yomon bitim» deb ataydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Deklaratsiya ham, Valley-Forj ham, Yorktaun ham yo'q. O'n uch mustamlaka Amerika Dominioniga aylanadi: sodiq, ammo bezovta.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "valley-forge-intro": {
+      "narration": {
+        "0": {
+          "text": "Valley-Forj, Pensilvaniya. 1777-yil dekabr. O'n ikki ming kishi inglizlar qo'lidagi Filadelfiyadan o'n sakkiz mil narida qishki qarorgohga kiradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Ko'pchilikning oyoq kiyimi yo'q; armiyani qordagi qon izidan topish mumkin. Ular o'z qo'llari bilan yog'och kulbalar quradi. Tif va chechak har qanday ingliz askaridan tezroq tarqaladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Bahorgacha ulardan qariyb ikki ming kishi hech qanday jang ko'rmay shu yerda halok bo'ladi. Jorj Vashington qolganlar bilan nima qilishni hal qilishi kerak.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "valley-forge-choice": {
+      "title": "Valley-Forj · 1778-yil fevral",
+      "prompt": "Armiya och va kasal. Buyruq qanday?",
+      "options": {
+        "steuben": {
+          "label": "Mashq, emlash, sabr",
+          "description": "Prussiyalik ko'ngilli baron fon Shteyben armiyani boshidan mashq qildirishni taklif qiladi, jarrohlar esa har bir askarni chechakka qarshi emlamoqchi. Sekin, shon-shuhratsiz va aynan shunday bo'lgan."
+        },
+        "raid": {
+          "label": "Filadelfiyaga zarba",
+          "description": "Biz muzlab yotganimizda inglizlar poytaxtimizda iliq uxlamoqda. Qor ichidan yurib, uni oziq-ovqati va boshpanasi bilan qaytarib oling."
+        }
+      }
+    },
+    "philadelphia-raid": {
+      "battle": {
+        "name": "Filadelfiyaga qishki hujum",
+        "objective": "1778-yil fevral. Yarim och kontinental askarlar Amerikadagi eng to'q armiyaga qarshi, Filadelfiya ostonasidagi qorda. O'z askarlaringiz sovuq va ochlikdan sinmasidan oldin ingliz safini yorib o'ting.",
+        "player": {
+          "name": "Kontinental armiya"
+        },
+        "enemy": {
+          "name": "Xau garnizoni"
+        },
+        "events": {
+          "snowstorm": {
+            "title": "Qor bo'roni boshlanadi",
+            "prompt": "Ko'rinish ellik yardgacha tushadi. Ingliz qorovullari o'z gulxanlarini ham zo'rg'a ko'rmoqda.",
+            "options": {
+              "attack-storm": {
+                "label": "Bo'ron ostida hujum",
+                "description": "Och armiyaning yagona ustunligi kutilmaganlik."
+              },
+              "guns-first": {
+                "label": "Noksning to'plarini olib keling",
+                "description": "Sobiq kitobfurush Genri Noks o'zini armiyaning artilleriya boshlig'iga aylantirdi."
+              }
+            }
+          },
+          "stone-house": {
+            "title": "Tosh uy",
+            "prompt": "Ingliz yengil piyodalari o'z saflari ortidagi tosh qasrga berkinib olgan. Jermantaunda xuddi shunday uy Vashingtonga jangni boy berdirgan edi.",
+            "options": {
+              "bypass": {
+                "label": "Aylanib o'tib, qanotdan urish",
+                "description": "Qorovul qoldirib, dragunlarni aylantirib yuboring. Jermantaundan saboq oling."
+              },
+              "besiege": {
+                "label": "Uyni egallash",
+                "description": "Darsliklar aytadi: hech qachon ortingizda qal'a qoldirmang. Bu vaqt oladi va inglizlar undan foydalanadi."
+              }
+            }
+          },
+          "frostbite": {
+            "title": "Saf muzlamoqda",
+            "prompt": "Askarlar musket o'qidan kam emas, sovuqdan ham yiqilmoqda.",
+            "options": {
+              "washington-forward": {
+                "label": "Vashington oldinga chiqadi",
+                "description": "U buni Prinstonda qilgan edi: saflar orasidan ot choptirdi va armiya uning ortidan ergashdi."
+              },
+              "form-square": {
+                "label": "Saflarni zichlab turish",
+                "description": "Keyingi bir soatga chidab, inglizlarni holdan toydiring."
+              }
+            }
+          }
+        }
+      }
+    },
+    "captured": {
+      "narration": {
+        "0": {
+          "text": "Hujum qorda barbod bo'ladi. Ingliz dragunlari chekinayotganlarni quvadi va kechga borib Jorj Vashington Toj asiriga aylanadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Usiz armiya bir necha hafta ichida tarqalib ketadi. Parijda fransuz vazirlari tayyorlayotgan shartnomani jimgina olib qo'yadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "paris-choice": {
+      "title": "Versal · 1778-yil fevral",
+      "prompt": "Saratogada Britaniya armiyasi taslim bo'lgach, qirol Lyudovik XVI kelishuvga tayyor. Franklin narxni belgilashi kerak.",
+      "options": {
+        "equal-alliance": {
+          "label": "Tenglar ittifoqi",
+          "description": "Fransiya Qo'shma Shtatlarni tan oladi va hech bir tomon alohida sulh tuzmaydi. Bu Franklin 1778-yil 6-fevralda haqiqatan imzolagan shartnoma."
+        },
+        "protectorate": {
+          "label": "Fransiya himoyasini qabul qilish",
+          "description": "Lyudovik ikki baravar ko'p qo'shin va butun Atlantika flotini taklif qiladi. Evaziga Amerikaning tashqi siyosati va g'arbiy yerlari Versalga bo'ysunadi."
+        },
+        "go-alone": {
+          "label": "Yolg'iz kurashish",
+          "description": "Hech bir chet el qiroli bu inqilobdan ulush olmaydi. Amerikaliklar uni o'zlari yutadi yoki umuman yutmaydi."
+        }
+      }
+    },
+    "yorktown-allied": {
+      "battle": {
+        "name": "Yorktaun qamali",
+        "objective": "1781-yil oktyabr. Kornuollis Yorktaunda daryoga orqa o'girib mustahkamlangan, fransuz floti esa ko'rfazni ushlab turibdi. Redutlarni oling, ingliz safini yorib, taslim bo'lishga majbur qiling.",
+        "player": {
+          "name": "Kontinental va fransuz armiyasi"
+        },
+        "enemy": {
+          "name": "Kornuollis armiyasi"
+        },
+        "events": {
+          "siege-guns": {
+            "title": "Qamal chiziqlari",
+            "prompt": "Muhandislaringiz ingliz istehkomlaridan olti yuz yard narida birinchi parallelni qazidi. To'plar joyida.",
+            "options": {
+              "grand-battery": {
+                "label": "Katta batareyani ochish",
+                "description": "Barcha to'plar birdan otadi. Aytishlaricha, birinchi o'qni Vashingtonning o'zi otgan."
+              },
+              "dig-closer": {
+                "label": "Ikkinchi parallelni qazish",
+                "description": "Sabr: qo'lingizni ochishdan oldin yashirincha yaqinroq qazing."
+              }
+            }
+          },
+          "redoubts": {
+            "title": "9 va 10-redutlar",
+            "prompt": "Ikki tuproq qal'a ingliz safining chekkasini qo'riqlaydi. Ular bu kecha qulashi kerak.",
+            "options": {
+              "bayonets": {
+                "label": "Qorong'ida faqat nayza bilan",
+                "description": "Hech bir o'q sizni fosh qilmasligi uchun musketlar o'qlanmagan. Aleksandr Hamilton kolonnani boshqarishni so'raydi."
+              },
+              "bombard": {
+                "label": "Avval to'pga tutish",
+                "description": "Askarlaringiz uchun xavfsizroq, sekinroq, inglizlar esa kuch to'plashga vaqt oladi."
+              }
+            }
+          },
+          "escape": {
+            "title": "Kornuollis daryodan qochmoqchi",
+            "prompt": "Tunda inglizlar York daryosidan Gloster burniga o'tish uchun qayiqlarga o'tirmoqda. Bo'ron ko'tarilmoqda.",
+            "options": {
+              "fleet": {
+                "label": "Fransuz flotiga ishora berish",
+                "description": "De Grasning kemalari daryo og'zini yopadi. Qochadigan joy qolmadi."
+              },
+              "press": {
+                "label": "Qayiqqa chiqayotganda urish",
+                "description": "Armiyasining yarmi qayiqlarda. Dragunlarni yuboring."
+              }
+            }
+          },
+          "sortie": {
+            "title": "Inglizlarning hujumi",
+            "prompt": "Qizil kamzullilar istehkomlaridan otilib chiqib, to'plaringizni ishdan chiqarmoqda. Safingiz chekinmoqda.",
+            "options": {
+              "washington-rides": {
+                "label": "Vashington saf bo'ylab yuradi",
+                "description": "Bosh qo'mondon o'q ostida, har bir askarning ko'z o'ngida."
+              },
+              "hold": {
+                "label": "Xandaqlarni ushlab turish",
+                "description": "Ular o'zi kelsin va tuproq istehkomlarga urilib sinsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "yorktown-protectorate": {
+      "battle": {
+        "name": "Yorktaun qamali",
+        "objective": "1781-yil oktyabr. Kornuollis Yorktaunda daryoga orqa o'girib mustahkamlangan, fransuz floti esa ko'rfazni ushlab turibdi. Redutlarni oling, ingliz safini yorib, taslim bo'lishga majbur qiling.",
+        "player": {
+          "name": "Fransiya qirolining armiyasi"
+        },
+        "enemy": {
+          "name": "Kornuollis armiyasi"
+        },
+        "events": {
+          "siege-guns": {
+            "title": "Qamal chiziqlari",
+            "prompt": "Muhandislaringiz ingliz istehkomlaridan olti yuz yard narida birinchi parallelni qazidi. To'plar joyida.",
+            "options": {
+              "grand-battery": {
+                "label": "Katta batareyani ochish",
+                "description": "Barcha to'plar birdan otadi. Aytishlaricha, birinchi o'qni Vashingtonning o'zi otgan."
+              },
+              "dig-closer": {
+                "label": "Ikkinchi parallelni qazish",
+                "description": "Sabr: qo'lingizni ochishdan oldin yashirincha yaqinroq qazing."
+              }
+            }
+          },
+          "redoubts": {
+            "title": "9 va 10-redutlar",
+            "prompt": "Ikki tuproq qal'a ingliz safining chekkasini qo'riqlaydi. Ular bu kecha qulashi kerak.",
+            "options": {
+              "bayonets": {
+                "label": "Qorong'ida faqat nayza bilan",
+                "description": "Hech bir o'q sizni fosh qilmasligi uchun musketlar o'qlanmagan. Aleksandr Hamilton kolonnani boshqarishni so'raydi."
+              },
+              "bombard": {
+                "label": "Avval to'pga tutish",
+                "description": "Askarlaringiz uchun xavfsizroq, sekinroq, inglizlar esa kuch to'plashga vaqt oladi."
+              }
+            }
+          },
+          "escape": {
+            "title": "Kornuollis daryodan qochmoqchi",
+            "prompt": "Tunda inglizlar York daryosidan Gloster burniga o'tish uchun qayiqlarga o'tirmoqda. Bo'ron ko'tarilmoqda.",
+            "options": {
+              "fleet": {
+                "label": "Fransuz flotiga ishora berish",
+                "description": "De Grasning kemalari daryo og'zini yopadi. Qochadigan joy qolmadi."
+              },
+              "press": {
+                "label": "Qayiqqa chiqayotganda urish",
+                "description": "Armiyasining yarmi qayiqlarda. Dragunlarni yuboring."
+              }
+            }
+          },
+          "sortie": {
+            "title": "Inglizlarning hujumi",
+            "prompt": "Qizil kamzullilar istehkomlaridan otilib chiqib, to'plaringizni ishdan chiqarmoqda. Safingiz chekinmoqda.",
+            "options": {
+              "washington-rides": {
+                "label": "Vashington saf bo'ylab yuradi",
+                "description": "Bosh qo'mondon o'q ostida, har bir askarning ko'z o'ngida."
+              },
+              "hold": {
+                "label": "Xandaqlarni ushlab turish",
+                "description": "Ular o'zi kelsin va tuproq istehkomlarga urilib sinsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "yorktown-alone": {
+      "battle": {
+        "name": "Yorktaun qamali",
+        "objective": "1781-yil oktyabr. Fransuz floti ham, fransuz polklari ham yo'q: faqat Kontinental armiya Kornuollisning mustahkamlangan askarlariga qarshi, Qirollik floti esa yo'lda. Yordam yetib kelguncha ingliz safini yorib o'ting.",
+        "player": {
+          "name": "Kontinental armiya"
+        },
+        "enemy": {
+          "name": "Kornuollis armiyasi"
+        },
+        "events": {
+          "siege-guns": {
+            "title": "Qamal chiziqlari",
+            "prompt": "Muhandislaringiz ingliz istehkomlaridan olti yuz yard narida birinchi parallelni qazidi. To'plar joyida.",
+            "options": {
+              "grand-battery": {
+                "label": "Katta batareyani ochish",
+                "description": "Barcha to'plar birdan otadi. Aytishlaricha, birinchi o'qni Vashingtonning o'zi otgan."
+              },
+              "dig-closer": {
+                "label": "Ikkinchi parallelni qazish",
+                "description": "Sabr: qo'lingizni ochishdan oldin yashirincha yaqinroq qazing."
+              }
+            }
+          },
+          "redoubts": {
+            "title": "9 va 10-redutlar",
+            "prompt": "Ikki tuproq qal'a ingliz safining chekkasini qo'riqlaydi. Ular bu kecha qulashi kerak.",
+            "options": {
+              "bayonets": {
+                "label": "Qorong'ida faqat nayza bilan",
+                "description": "Hech bir o'q sizni fosh qilmasligi uchun musketlar o'qlanmagan. Aleksandr Hamilton kolonnani boshqarishni so'raydi."
+              },
+              "bombard": {
+                "label": "Avval to'pga tutish",
+                "description": "Askarlaringiz uchun xavfsizroq, sekinroq, inglizlar esa kuch to'plashga vaqt oladi."
+              }
+            }
+          },
+          "relief-fleet": {
+            "title": "Ufqda yelkanlar",
+            "prompt": "Uni to'xtatadigan fransuz floti bo'lmagani uchun Qirollik flotining eskadrasi yangi polklar bilan ko'rfazga kirib kelmoqda.",
+            "options": {
+              "storm-now": {
+                "label": "Saflarga hozir hujum",
+                "description": "Kemalar birorta askar tushirmasdan, hammasi birdan."
+              },
+              "fire-ships": {
+                "label": "Daryo bo'ylab yong'in kemalarini yuborish",
+                "description": "Yonayotgan kemalar langardagi eskadra tomon suzadi. Agar o't olsa, yordam hech qachon qirg'oqqa tushmaydi."
+              }
+            }
+          },
+          "sortie": {
+            "title": "Inglizlarning hujumi",
+            "prompt": "Qizil kamzullilar istehkomlaridan otilib chiqib, to'plaringizni ishdan chiqarmoqda. Safingiz chekinmoqda.",
+            "options": {
+              "washington-rides": {
+                "label": "Vashington saf bo'ylab yuradi",
+                "description": "Bosh qo'mondon o'q ostida, har bir askarning ko'z o'ngida."
+              },
+              "hold": {
+                "label": "Xandaqlarni ushlab turish",
+                "description": "Ular o'zi kelsin va tuproq istehkomlarga urilib sinsin."
+              }
+            }
+          }
+        }
+      }
+    },
+    "surrender": {
+      "narration": {
+        "0": {
+          "text": "1781-yil 19-oktyabr. Sakkiz ming ingliz askari bir tomonda amerikaliklar, bir tomonda fransuzlar safi orasidan o'tib, musketlarini yerga qo'yadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Afsonaga ko'ra, ularning orkestri «Dunyo ostin-ustun bo'ldi» kuyini chalgan. Londonda bosh vazir xabarni eshitib: «Xudoyim, hammasi tugadi!» deb qichqiradi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Urush yutildi. Olti yildan so'ng tinchlik parchalanmoqda va delegatlar Filadelfiyadagi o'sha xonaga qaytib keladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "surrender-alone": {
+      "narration": {
+        "0": {
+          "text": "Barcha kutganlarga zid ravishda, chet el yordamisiz Amerika armiyasi Britaniya armiyasini taslim bo'lishga majbur qiladi. Yevropa hayratda.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Yangi davlat hech kimdan qarzdor emas: kambag'al, charchagan va mag'rur. 1787-yilda uning yetakchilari kim bo'lishini hal qilish uchun yana Filadelfiyada yig'iladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "french-victory": {
+      "narration": {
+        "0": {
+          "text": "Kornuollis qilichini fransuz generaliga topshiradi. Burbon qirollarining oq bayroqlari Yorktaun ustida, Yulduzlar va Chiziqlardan baland hilpiraydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Amerika Britaniyadan ozod. Lekin u chindan ozodmi, degan savolga shartnoma Filadelfiyada emas, Versalda javob beradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "yorktown-defeat": {
+      "narration": {
+        "0": {
+          "text": "Redutlar dosh beradi. Kornuollis qamalni yorib chiqadi, qamal barbod bo'ladi va urushni tugatishi kerak bo'lgan armiya Virjiniya bo'ylab tarqalib ketadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Kongress askarlariga yana bir yurish uchun maosh to'lay olmaydi. Shtatlar birin-ketin Toj bilan muzokara boshlaydi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "convention-choice": {
+      "title": "Konstitutsiyaviy konvensiya · 1787",
+      "prompt": "Konfederatsiya moddalari ishlamayapti: Kongress soliq yig'a olmaydi, qarzlarini to'lay olmaydi va shtatlar janjalini to'xtata olmaydi. Ularning o'rniga nima keladi?",
+      "options": {
+        "constitution": {
+          "label": "Kuchli federal konstitutsiya",
+          "description": "O'z soliqlari, saylanadigan prezidenti va Oliy sudi bo'lgan, hokimiyatlar bo'linishi bilan cheklangan milliy hukumat. Vashington raislik qiladi; sakson bir yoshli Franklin hammani imzo chekishga undaydi."
+        },
+        "confederation": {
+          "label": "Hokimiyatni shtatlarda qoldirish",
+          "description": "Biz bitta uzoqdagi hukmdorni boshqasiga toj kiydirish uchun ag'darmadik. Moddalarni tuzating va haqiqiy hokimiyatni o'n uchta shtat poytaxtida qoldiring."
+        }
+      }
+    }
+  },
+  "characters": {
+    "washington": {
+      "name": "Jorj Vashington",
+      "role": "Kontinental armiya bosh qo'mondoni"
+    },
+    "franklin": {
+      "name": "Benjamin Franklin",
+      "role": "Bosmachi, olim, diplomat"
+    },
+    "jefferson": {
+      "name": "Tomas Jefferson",
+      "role": "Deklaratsiya muallifi"
+    },
+    "king-george": {
+      "name": "Qirol Georg III",
+      "role": "Buyuk Britaniya qiroli"
+    }
+  },
+  "title": "Dunyo ostin-ustun bo'lgan yil",
+  "era": "Filadelfiya · 1776",
+  "endings": {
+    "french-america": {
+      "title": "Fransuz Amerikasi",
+      "subtitle": "Londondan ozod, Versalga bog'liq",
+      "epilogue": {
+        "0": {
+          "text": "Qo'shma Shtatlar Fransiya protektorati sifatida tug'iladi. Fransuz zobitlari uning armiyasini o'qitadi, fransuz bankirlari qarzlarini ushlab turadi, fransuz tili esa sudlar va kollejlar tiliga aylanadi."
+        },
+        "1": {
+          "text": "Amerika boyligi ortidan fransuz monarxiyasi hisob-kitoblarini to'laydi va General shtatlarni hech qachon chaqirmaydi. 1789-yilda Fransuz inqilobi bo'lmaydi."
+        },
+        "2": {
+          "text": "Ikki asr o'tib, fransuz-amerika bloki Atlantikada hukmronlik qiladi, Luiziana esa qit'aning chekkasi emas, yuragi."
+        }
+      }
+    },
+    "republic-alone": {
+      "title": "Yolg'iz turgan respublika",
+      "subtitle": "Birorta ham ittifoqchisiz qo'lga kiritilgan mustaqillik",
+      "epilogue": {
+        "0": {
+          "text": "Ozodligini yolg'iz yutgan Amerika hech kimga ishonmaydi. U bir yuz ellik yil davomida Yevropaning hech bir urushiga aralashmaydi, hamma bilan savdo qiladi va hech kim bilan ittifoq tuzmaydi."
+        },
+        "1": {
+          "text": "Amerika urushi tufayli bankrot bo'lmagan Fransiya o'z inqilobini bir avlodga kechiktiradi."
+        },
+        "2": {
+          "text": "1787-yilgi Konstitutsiya baribir saqlanib qoladi: bu reallikdagi bizdagi kabi aynan bir xil chiqqan yagona ixtiro."
+        }
+      }
+    },
+    "united-states": {
+      "title": "Yanada mukammal ittifoq",
+      "subtitle": "Siz bilgan tarix va uning bahosi",
+      "epilogue": {
+        "0": {
+          "text": "Konstitutsiya 1788-yilda ratifikatsiya qilinadi, Jorj Vashington birinchi prezident bo'ladi va qirollar hech qachon qilmaydigan ishni qiladi: ikki muddatdan so'ng uyiga qaytadi."
+        },
+        "1": {
+          "text": "Hisob boshqa joyda keladi. Fransiya urush xarajatlari tufayli bankrot bo'lib, 1789-yilda o'z inqilobini boshdan kechiradi. Konstitutsiya esa qullikni himoya qiladi: bu murosa yetmish yildan so'ng fuqarolar urushiga olib keladi."
+        },
+        "2": {
+          "text": "Siz shu satrlarni o'qiyotgan reallik aynan shu: hamon davom etayotgan tajriba."
+        }
+      }
+    },
+    "confederated-states": {
+      "title": "Konfederativ shtatlar",
+      "subtitle": "O'n uch davlat, bitta zaif shartnoma",
+      "epilogue": {
+        "0": {
+          "text": "Moddalar oqsoqlanib davom etadi. Har bir shtat o'z pulini bosadi va qo'shnilarining mollariga soliq soladi. Ispaniya Missisipini yopadi, Kongress esa hech narsa qila olmaydi."
+        },
+        "1": {
+          "text": "G'arb yangi shtatlar o'rniga raqobatdosh da'volar bilan to'ladi. Sanoat o'nlab yillar kechikadi va qullik masalasi nihoyat qit'ani bo'lganda, kurashish uchun Ittifoq yo'q."
+        },
+        "2": {
+          "text": "Shimoliy Amerika janjallashuvchi respublikalar qit'asiga aylanadi: siz bilgan Qo'shma Shtatlardan ko'ra Yevropaga yaqinroq."
+        }
+      }
+    },
+    "crown-dominion": {
+      "title": "Amerika Dominioni",
+      "subtitle": "Inqilob yo'q · muzokara orqali ozodlik, sakson yil kechikib",
+      "epilogue": {
+        "0": {
+          "text": "Amerika Britaniya tarkibida qoladi. Uning assambleyalari har o'n yilda dadilroq bo'ladi, London esa asta-sekin yon beradi, keyinchalik Kanada bilan qilgani kabi."
+        },
+        "1": {
+          "text": "Britaniya 1833-yilda butun imperiyada qullikni bekor qiladi va Amerika janubida bunga qarshilik ko'rsatadigan mustaqil hukumat yo'q."
+        },
+        "2": {
+          "text": "To'liq o'zini o'zi boshqarish 1850-yillarda urush bilan emas, parlament akti bilan keladi. Amerika ulkan, shoshilmas, tinch mamlakatga aylanadi, pullarida esa hamon qirolning surati."
+        }
+      }
+    },
+    "british-victory": {
+      "title": "Qo'zg'olon bostirildi",
+      "subtitle": "Vashington kishanda · muvaffaqiyatsiz inqilob",
+      "epilogue": {
+        "0": {
+          "text": "Vashington Londonda xiyonat uchun sud qilinadi. Vazirlaridan donoroq qirol hukmni surgunga almashtiradi va general Bermudda dehqon bo'lib vafot etadi."
+        },
+        "1": {
+          "text": "Mustamlakalar harbiy gubernatorlar qo'liga o'tadi. Respublika g'oyasi o'lmaydi; u yashirinib, Irlandiyaga, Fransiyaga tarqaladi va yana qaytib keladi."
+        },
+        "2": {
+          "text": "Amerika oxir-oqibat mustaqillikka 1850-yillarda muzokara yo'li bilan erishadi. Dunyo yetmish yil davomida muvaffaqiyatli inqilob namunasini ko'rmaydi."
+        }
+      }
+    },
+    "british-victory-yorktown": {
+      "title": "Qo'zg'olon bostirildi",
+      "subtitle": "Yorktaun dosh berdi · inqilobning puli tugadi",
+      "epilogue": {
+        "0": {
+          "text": "Armiya tarqalib, Kongress bankrot bo'lgach, shtatlar Britaniya bilan alohida sulh tuzadi. Inqilob shovqinsiz tugaydi."
+        },
+        "1": {
+          "text": "Vashington hech qachon qabul qilmagan qirollik avfi ostida Maunt-Vernonga chekinadi. Mustamlakalar bir avlod davomida bosib olingan viloyatlar sifatida boshqariladi."
+        },
+        "2": {
+          "text": "Amerika oxir-oqibat mustaqillikka 1850-yillarda muzokara yo'li bilan erishadi. Dunyo yetmish yil davomida muvaffaqiyatli inqilob namunasini ko'rmaydi."
+        }
+      }
+    }
+  }
+}
