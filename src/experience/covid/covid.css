@@ -1,46 +1,67 @@
-.covid-experience { position: fixed; inset: 0; z-index: 60; background: #0b1b2b; color: #e9f3f2; font-family: system-ui, sans-serif; }
-.covid-viewport { position: absolute; inset: 0 0 36% 0; }
-.covid-toolbar { position: absolute; top: max(10px, env(safe-area-inset-top)); left: max(12px, env(safe-area-inset-left)); right: max(12px, env(safe-area-inset-right)); display: flex; gap: 8px; align-items: center; z-index: 30; }
-.covid-toolbar select { margin-left: auto; }
-.covid-experience button, .covid-experience a, .covid-experience select, .covid-marker { min-height: 44px; border: 1px solid #77949e; border-radius: 10px; padding: 10px 14px; color: #e9f3f2; background: #112c3e; font: inherit; cursor: pointer; text-decoration: none; }
-.covid-experience button:hover:not(:disabled), .covid-experience a:hover { background: #1c465b; }
-.covid-experience button:focus-visible, .covid-experience a:focus-visible, .covid-experience select:focus-visible, .covid-experience summary:focus-visible, .covid-marker:focus-visible { outline: 3px solid #f9cf7b; outline-offset: 3px; }
-.covid-experience button:disabled { opacity: 0.5; cursor: not-allowed; }
-.covid-sheet { position: absolute; bottom: 0; left: 0; right: 0; max-height: 52%; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; padding: 20px max(24px, calc((100vw - 1080px) / 2)) max(20px, env(safe-area-inset-bottom)); background: #0e2234f7; border-top: 1px solid #68848b; z-index: 20; }
-.covid-sheet.covid-full { max-height: calc(100% - 80px); }
-.covid-sheet h1 { font-size: clamp(1.5rem, 3vw, 2.35rem); line-height: 1.2; margin: 4px 0 12px; font-weight: 700; }
-.covid-sheet h1:focus { outline: none; }
-.covid-sheet h2, .covid-sheet h3 { font-weight: 700; margin: 0 0 8px; font-size: 1.05rem; }
-.covid-sheet p { line-height: 1.6; margin: 10px 0; }
-.covid-sheet .covid-kicker { color: #89c9ca; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75rem; margin: 0; }
-.covid-lead { font-size: 1.08rem; max-width: 850px; }
-.covid-disclaimer { border-left: 3px solid #e8bc72; padding-left: 12px; color: #cfdbdf; font-size: 0.9rem; }
-.covid-experience .covid-primary { background: #a8e1d4; color: #102c37; border-color: #a8e1d4; font-weight: 700; margin: 12px 0 0; }
-.covid-experience .covid-primary:hover:not(:disabled) { background: #d0f3e9; }
-.covid-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
-.covid-actions > * { margin-top: 12px; }
-.covid-reports, .covid-allocation { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.covid-reports button { text-align: left; }
-.covid-experience button[aria-pressed=true] { outline: 2px solid #a8e1d4; background: #1b4b59; }
-.covid-report { padding: 18px; margin: 14px 0; background: #18364a; border-radius: 12px; }
-.covid-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.covid-options button { text-align: left; }
-.covid-options strong, .covid-options span { display: block; }
-.covid-options span { margin-top: 8px; line-height: 1.5; font-size: 0.95rem; color: #d3e1e5; }
-.covid-count { color: #b6e6da; font-variant-numeric: tabular-nums; }
-.covid-destination { padding: 14px; border: 1px solid #496775; border-top: 3px solid #77cfd1; border-radius: 10px; }
-.covid-clinic { border-top-color: #e5ba72; }.covid-outreach { border-top-color: #9ec5a0; }
-.covid-destination p { font-size: 0.85rem; }
-.covid-stepper { display: flex; gap: 12px; align-items: center; justify-content: space-between; }
-.covid-stepper button { font-size: 1.5rem; width: 48px; height: 48px; padding: 0; }
-.covid-stepper output { font-size: 1.6rem; font-variant-numeric: tabular-nums; }
-.covid-record { margin: 18px 0; padding: 16px; background: #18364a; border-radius: 12px; }
-.covid-record ul { display: flex; flex-wrap: wrap; gap: 18px; list-style: none; padding: 0; }
-.covid-sources { margin-top: 20px; color: #c9dadd; font-size: 0.9rem; }
-.covid-sources summary { padding: 10px 0; cursor: pointer; min-height: 44px; }
-.covid-sources a { display: block; width: fit-content; margin: 8px 0; text-decoration: underline; }
-.covid-webgl-notice { position: absolute; top: 80px; left: 20px; right: 20px; max-width: 650px; background: #19374a; border: 1px solid #76909c; border-radius: 10px; padding: 16px; font-size: 0.95rem; }
-.covid-marker { min-width: 48px; min-height: 48px; color: #09282d; background: #b7f2df; border: 2px solid #fff; border-radius: 50%; font-size: 1.1rem; font-weight: 700; box-shadow: 0 4px 16px #0008; }
-@media (max-width: 640px) { .covid-sheet { max-height: 58%; padding: 16px 16px max(18px, env(safe-area-inset-bottom)); } .covid-viewport { bottom: 43%; } .covid-sheet h1 { font-size: 1.5rem; } .covid-lead { font-size: 1rem; } .covid-reports, .covid-options, .covid-allocation { grid-template-columns: 1fr; } .covid-destination { display: grid; grid-template-columns: 1fr auto; column-gap: 12px; } .covid-destination h3 { margin: 0; } .covid-destination p { grid-column: 1; margin-bottom: 0; } .covid-stepper { grid-column: 2; grid-row: 1 / 3; gap: 8px; } .covid-stepper button { width: 44px; } .covid-toolbar { font-size: 0.8rem; } .covid-toolbar button { padding: 8px; } }
-@media (max-height: 500px) and (min-width: 641px) { .covid-sheet { left: 42%; top: 64px; max-height: none; padding: 14px; } .covid-viewport { inset: 0 48% 0 0; } .covid-options, .covid-allocation { grid-template-columns: 1fr; } .covid-sheet.covid-full { max-height: none; } }
-@media (prefers-reduced-motion: reduce) { .covid-experience *, .covid-marker { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+.covid-experience { --ink: #e4eee9; --muted: #a7b9bc; --accent: #b6dccb; --edge: #afc5bd26; position: fixed; inset: 0; z-index: 60; overflow: hidden; background: #081620; color: var(--ink); font-family: system-ui, sans-serif; }
+.covid-viewport { position: absolute; inset: 0 400px 0 0; }
+.covid-viewport::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg,#030d1755,transparent 20%,transparent 75%,#030d1766); }
+.covid-toolbar { position: absolute; top: max(16px,env(safe-area-inset-top)); left: max(20px,env(safe-area-inset-left)); right: max(20px,env(safe-area-inset-right)); display: flex; gap: 8px; align-items: center; z-index: 30; font-size: 12px; }
+.covid-toolbar select { margin-left: 0; }
+.covid-shift-label { margin-left: 18px; display: flex; align-items: center; gap: 9px; color: #c8d6d3; letter-spacing: .13em; text-transform: uppercase; font-size: 10px; }
+.covid-shift-label i { width: 5px; height: 5px; background: #add3be; border-radius: 50%; box-shadow: 0 0 12px #a6f0ca88; }
+.covid-experience .covid-panel-toggle { margin-left: auto; }
+.covid-experience button, .covid-experience a, .covid-experience select { min-height: 44px; border: 1px solid var(--edge); border-radius: 5px; padding: 10px 13px; color: var(--ink); background: #14252cde; font: inherit; cursor: pointer; text-decoration: none; transition: background .15s,border-color .15s; }
+.covid-experience button:hover:not(:disabled), .covid-experience a:hover { background: #233e47; border-color: #a8d2c5aa; }
+.covid-experience button:focus-visible, .covid-experience a:focus-visible, .covid-experience select:focus-visible, .covid-experience summary:focus-visible, .covid-marker:focus-visible { outline: 2px solid #efcd90; outline-offset: 4px; }
+.covid-experience button:disabled { opacity: .45; cursor: not-allowed; }
+.covid-sheet { position: absolute; top: 84px; bottom: 20px; right: 20px; width: 360px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #4d686b transparent; padding: 24px; background: linear-gradient(160deg,#152730f5,#0c1b24f5); border: 1px solid var(--edge); border-radius: 8px; z-index: 20; box-shadow: 0 16px 60px #0004; font-size: 13px; }
+.covid-sheet[hidden] { display: none; }
+.covid-sheet h1 { font-family: Georgia,serif; font-size: clamp(1.55rem,2.1vw,2rem); line-height: 1.15; margin: 10px 0 18px; font-weight: 400; letter-spacing: -.035em; }
+.covid-sheet h1:focus, .covid-sheet h2:focus { outline: none; }
+.covid-sheet h2, .covid-sheet h3 { font-weight: 600; margin: 0 0 8px; font-size: .92rem; }
+.covid-sheet p { line-height: 1.65; margin: 12px 0; }
+.covid-sheet .covid-kicker { color: #98b6b8; text-transform: uppercase; letter-spacing: .13em; font-size: 9px; margin-top: 25px; }
+.covid-lead { font-size: .95rem; color: #d4dfdb; }
+.covid-disclaimer { border-left: 2px solid #ad9266; padding-left: 10px; color: #aabdc0; font-size: .74rem; }
+.covid-experience .covid-primary { width: 100%; background: #b6dccb; color: #122c2b; border-color: #b6dccb; font-weight: 650; margin: 14px 0 0; min-height: 46px; }
+.covid-experience .covid-primary:hover:not(:disabled) { background: #d7eee2; }
+.covid-progress { display: flex; justify-content: space-between; gap: 6px; padding-bottom: 19px; border-bottom: 1px solid var(--edge); }
+.covid-progress span { display: flex; flex-direction: column; gap: 6px; color: #93a8ac; font-size: 9px; }
+.covid-progress b { font-size: 12px; font-weight: 400; letter-spacing: .08em; }
+.covid-progress .current { color: #e6d3a5; }.covid-progress .done { color: #9ed4be; }
+.covid-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.covid-actions > * { margin-top: 12px; }.covid-actions .covid-primary { width: auto; flex: 1; }
+.covid-reports,.covid-allocation,.covid-options { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.covid-reports button { text-align: left; padding: 13px; font-size: .82rem; }
+.covid-experience button[aria-pressed=true] { border-color: #a8d2c5; background: #28434b; }
+.covid-report { padding: 16px; margin: 14px 0; background: #223b43; border: 1px solid #7baba33b; border-radius: 5px; }
+.covid-options button { text-align: left; padding: 17px; border-left: 2px solid #91b8ac; }
+.covid-options strong,.covid-options span { display: block; }
+.covid-options strong { font-weight: 600; font-size: .92rem; }
+.covid-options span { margin-top: 8px; line-height: 1.6; font-size: .78rem; color: #adbec1; }
+.covid-count { color: #c7d4ad; font-size: .8rem; font-variant-numeric: tabular-nums; }
+.covid-destination { padding: 14px; border: 1px solid var(--edge); border-left: 2px solid #77bfb1; border-radius: 5px; display: grid; grid-template-columns: 1fr auto; column-gap: 8px; }
+.covid-clinic { border-left-color: #d8bb87; }.covid-outreach { border-left-color: #9ec5a0; }
+.covid-destination h3 { font-size: .8rem; }.covid-destination p { font-size: .7rem; grid-column: 1; margin: 0; }
+.covid-stepper { grid-column: 2; grid-row: 1/3; display: flex; gap: 4px; align-items: center; }
+.covid-stepper button { font-size: 1.25rem; width: 38px; height: 44px; padding: 0; }
+.covid-stepper output { min-width: 18px; text-align: center; font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+.covid-record { margin: 18px 0; padding: 16px; background: #1d343c; border-radius: 5px; }
+.covid-record ul { list-style: none; padding: 0; }.covid-record li { padding: 4px 0; }
+.covid-sources { margin-top: 22px; color: #a9b9ba; font-size: .72rem; }
+.covid-sources summary { padding: 12px 0; cursor: pointer; min-height: 44px; }
+.covid-sources a { display: block; margin: 8px 0; text-decoration: underline; }
+.covid-webgl-notice { position: absolute; top: 100px; left: 24px; right: 24px; max-width: 460px; background: #142d37; border: 1px solid #668890; border-radius: 6px; padding: 18px; font-size: .9rem; }
+.covid-scene-hint { position: absolute; bottom: 20px; left: 24px; color: #bbceca; font-size: 10px; letter-spacing: .06em; pointer-events: none; }
+.covid-marker { display: flex; align-items: center; gap: 7px; white-space: nowrap; border: 0; color: #e4eee9; background: #122c32dd; padding: 5px 10px 5px 5px; border-radius: 28px; cursor: pointer; box-shadow: 0 5px 20px #0005; }
+.covid-marker span { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #c9e4d9; border-radius: 50%; color: #cbebdb; font: 500 13px system-ui; }
+.covid-marker em { font: normal 11px system-ui; }
+.covid-phase-loading .covid-viewport,.covid-phase-cinematic .covid-viewport,.covid-panel-hidden .covid-viewport { right: 0; }
+.covid-phase-loading .covid-sheet { width: 390px; left: 5vw; right: auto; top: auto; bottom: 8vh; max-height: calc(100% - 110px); padding: 28px; }
+.covid-phase-loading .covid-sheet h1 { font-size: clamp(2.5rem,5vw,4rem); line-height: .96; }
+.covid-phase-loading .covid-progress { display: none; }
+.covid-phase-loading .covid-kicker { margin-top: 0; }
+.covid-phase-cinematic .covid-sheet { width: min(680px,calc(100% - 80px)); left: 50%; right: auto; transform: translateX(-50%); top: auto; bottom: 30px; max-height: 45%; padding: 20px 25px; }
+.covid-phase-cinematic .covid-progress,.covid-phase-cinematic .covid-kicker { display: none; }
+.covid-phase-cinematic .covid-sheet h1 { font: 500 10px system-ui; text-transform: uppercase; letter-spacing: .15em; color: #c0d7c3; margin: 0 0 9px; }
+.covid-phase-cinematic .covid-lead { margin: 0; }.covid-phase-cinematic .covid-actions { justify-content: flex-end; }.covid-phase-cinematic .covid-actions .covid-primary { flex: 0; white-space: nowrap; min-width: 120px; }
+@media(min-width:1600px) { .covid-sheet { right: 28px; width: 390px; top: 90px; bottom: 28px; } .covid-viewport { right: 430px; } }
+@media(max-width:800px) { .covid-toolbar { left: 12px; right: 12px; top: 10px; gap: 6px; font-size: 10px; }.covid-shift-label { display: none; }.covid-toolbar button,.covid-toolbar a,.covid-toolbar select { padding: 8px; }.covid-viewport { inset: 0 0 51% 0; }.covid-sheet { top: 49%; left: 10px; right: 10px; bottom: max(10px,env(safe-area-inset-bottom)); width: auto; padding: 18px; }.covid-sheet h1 { font-size: 1.65rem; margin-bottom: 10px; }.covid-sheet .covid-kicker { margin-top: 16px; }.covid-progress { padding-bottom: 12px; }.covid-scene-hint { display: none; }.covid-marker em { display: none; }.covid-marker { padding: 5px; }.covid-phase-loading .covid-sheet { left: 12px; right: 12px; bottom: 12px; width: auto; max-height: 66%; padding: 22px; }.covid-phase-loading .covid-sheet h1 { font-size: 2.8rem; }.covid-phase-cinematic .covid-sheet { width: calc(100% - 24px); bottom: 12px; max-height: 48%; padding: 18px; }.covid-panel-hidden .covid-viewport { inset: 0; }.covid-destination { column-gap: 15px; }.covid-stepper button { width: 44px; }.covid-webgl-notice { top: 76px; font-size: .8rem; } }
+@media(max-height:500px) and (min-width:641px) { .covid-sheet { left: auto; right: 10px; top: 68px; width: 42%; padding: 14px; }.covid-viewport { inset: 0 44% 0 0; }.covid-phase-loading .covid-sheet { left: 15px; right: auto; width: 43%; max-height: calc(100% - 78px); bottom: 10px; }.covid-phase-cinematic .covid-sheet { max-height: 58%; }.covid-progress { display: none; }.covid-shift-label { display: none; } }
+@media(prefers-reduced-motion:reduce) { .covid-experience *,.covid-marker { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }

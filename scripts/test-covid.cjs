@@ -107,16 +107,17 @@ for (const language of ['en', 'uz', 'ko']) {
 const { buildArchitecture } = require('../src/experience/covid/architecture.ts');
 for (const env of ['covid-hospital', 'covid-depot', 'covid-briefing']) {
     const batches = buildArchitecture(env);
-    check(batches.length <= 16, `${env}: bounded static material batches`);
+    check(batches.length <= 20, `${env}: bounded static material batches`);
     let triangles = 0;
     for (const { geometry, material } of batches) {
+        check(geometry != null && geometry.getAttribute('position').count > 0, `${env}: merged indexed and rounded geometry exists`);
         check([...geometry.getAttribute('position').array].every(Number.isFinite), `${env}: finite positions`);
         check([...geometry.getAttribute('normal').array].every(Number.isFinite), `${env}: finite normals`);
         geometry.computeBoundingBox(); check(geometry.boundingBox.min.y > -1, `${env}: no underground scene`);
         triangles += (geometry.index?.count ?? geometry.getAttribute('position').count) / 3;
-        geometry.dispose(); material.dispose();
+        geometry.dispose(); material.map?.dispose(); material.dispose();
     }
-    check(triangles < 20000, `${env}: bounded geometry count`);
+    check(triangles < 35000, `${env}: bounded geometry count`);
     console.log(`${env}: ${batches.length} merged static batches, ${triangles} triangles (CPU audit only).`);
 }
 

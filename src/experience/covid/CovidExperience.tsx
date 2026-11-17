@@ -63,7 +63,7 @@ function Record() {
         {choices.map(o => <p key={o.id}>{o.label}</p>)}
     </div>;
 }
-function CovidOverlay() {
+function CovidOverlay({ hidden }: { hidden: boolean }) {
     const { t } = useTranslation('experience-covid-pandemic');
     const run = useExperience();
     const beat = useCurrentBeat();
@@ -100,7 +100,9 @@ function CovidOverlay() {
     const active = beat?.kind === 'explore' ? beat.hotspots.find(h => h.id === run.activeHotspotId) : null;
     const visited = ['ward', 'ledger', 'radio'].filter(id => run.visitedHotspots.includes(id)).length;
     const title = run.phase === 'loading' ? run.script.title : run.phase === 'ending' ? run.ending?.title : line ? line.speaker : beat?.kind === 'choice' ? beat.title : beat?.id === 'manifest' ? t('ui.shipmentTitle') : t('ui.inspectTitle');
-    return <section ref={sheet} className={`covid-sheet ${run.phase === 'loading' || run.phase === 'ending' ? 'covid-full' : ''}`} aria-label={title}>
+    const stage = ['arrival', 'reports'].includes(run.beatId ?? '') ? 0 : ['manifest', 'loading'].includes(run.beatId ?? '') ? 1 : run.beatId === 'roster' ? 2 : ['briefing', 'correction'].includes(run.beatId ?? '') ? 3 : 4;
+    return <section hidden={hidden} ref={sheet} className={`covid-sheet ${run.phase === 'loading' || run.phase === 'ending' ? 'covid-full' : ''}`} aria-label={title}>
+        <nav className="covid-progress" aria-label={t('ui.shift')}>{['stageReports', 'stageDispatch', 'stageRoster', 'stageBriefing', 'stageHandover'].map((key, i) => <span key={key} className={i === stage ? 'current' : i < stage ? 'done' : ''} aria-current={i === stage ? 'step' : undefined}><b>{i < stage ? '✓' : String(i + 1).padStart(2, '0')}</b>{t(`ui.${key}`)}</span>)}</nav>
         <p className="covid-kicker">{run.script.era}</p>
         <h1 ref={heading} tabIndex={-1}>{title}</h1>
         {run.phase === 'loading' && <><p className="covid-lead">{t('ui.intro')}</p><p className="covid-disclaimer">{t('ui.disclaimer')}</p><button className="covid-primary" onClick={() => { if (useExperience.getState().phase === 'loading') run.begin(); }}>{t('ui.start')}</button><Sources /></>}
@@ -119,6 +121,10 @@ function CovidOverlay() {
 export function CovidExperience({ script }: { script: ExperienceScript }) {
     const { t, i18n } = useTranslation('experience-covid-pandemic');
     const mounted = useRef(false);
+    const phase = useExperience(s => s.phase);
+    const beatId = useExperience(s => s.beatId);
+    const [panelHidden, setPanelHidden] = useState(false);
+    useEffect(() => setPanelHidden(false), [beatId, phase]);
     const [webglAvailable] = useState(() => canRenderCovid3D());
     useEffect(() => {
         const localized = localizeScript(script, t);
@@ -134,14 +140,17 @@ export function CovidExperience({ script }: { script: ExperienceScript }) {
         return () => { document.body.style.overflow = previous; };
     }, []);
     const fallback = <p className="covid-webgl-notice" role="status">{t('ui.fallback')}</p>;
-    return <main className="covid-experience">
+    return <main className={`covid-experience covid-phase-${phase}${panelHidden ? ' covid-panel-hidden' : ''}`} data-webgl={webglAvailable ? 'available' : 'unavailable'}>
         <div className="covid-viewport" aria-label={t('ui.view')}>
-            {webglAvailable ? <SceneBoundary fallback={fallback}><Canvas shadows dpr={[1, 1.25]} camera={{ position: [36, 26, 38], fov: 48, near: 0.1, far: 160 }} gl={{ antialias: true, powerPreference: 'low-power' }} fallback={fallback}><Suspense fallback={null}><Scene /></Suspense></Canvas></SceneBoundary> : fallback}
+            {webglAvailable ? <SceneBoundary fallback={fallback}><Canvas shadows dpr={[1, 1.5]} camera={{ position: [12, 6.5, 18], fov: 52, near: 0.1, far: 160 }} gl={{ antialias: true, powerPreference: 'low-power' }} fallback={fallback}><Suspense fallback={null}><Scene /></Suspense></Canvas></SceneBoundary> : fallback}
         </div>
         <header className="covid-toolbar"><Link to="/chapters/covid-pandemic">← {t('ui.exit')}</Link>
             <button onClick={() => useCovidShift.getState().overview()}>{t('ui.overview')}</button>
+            <span className="covid-shift-label"><i />{t('ui.shift')}</span>
+            <button aria-expanded={!panelHidden} className="covid-panel-toggle" onClick={() => setPanelHidden(v => !v)}>{t(panelHidden ? 'ui.showPanel' : 'ui.hidePanel')}</button>
             <select aria-label={t('ui.language')} value={i18n.language.split('-')[0]} onChange={e => void i18n.changeLanguage(e.target.value)}><option value="en">EN</option><option value="uz">UZ</option><option value="ko">KO</option></select>
         </header>
-        <CovidOverlay />
+        <p className="covid-scene-hint">{t('ui.sceneHint')}</p>
+        <CovidOverlay hidden={panelHidden} />
     </main>;
 }

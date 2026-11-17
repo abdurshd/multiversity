@@ -40,7 +40,22 @@
     "inspectTitle": "A district, not a dashboard",
     "shipmentTitle": "Six crates. Three destinations.",
     "changed": "Reviewable decisions, lasting trade-offs",
-    "bridgePlan": "Exercise assumption: the bridge plan is 3 hospital, 2 clinic and 1 outreach crate. These invented targets are not clinical ratios."
+    "bridgePlan": "Exercise assumption: the bridge plan is 3 hospital, 2 clinic and 1 outreach crate. These invented targets are not clinical ratios.",
+    "districtMap": "District network",
+    "publicRecord": "Public record",
+    "staffing": "Staffing plan",
+    "knownUnknown": "Known / unknown",
+    "nextUpdate": "Next update · 00:00",
+    "shift": "Night shift",
+    "stageReports": "Listen",
+    "stageDispatch": "Dispatch",
+    "stageRoster": "Staff",
+    "stageBriefing": "Brief",
+    "stageHandover": "Handover",
+    "hidePanel": "View scene",
+    "showPanel": "Resume shift",
+    "sceneHint": "Drag to look · scroll to zoom",
+    "step": "Step"
   },
   "beats": {
     "arrival": {
