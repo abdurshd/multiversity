@@ -1,0 +1,737 @@
+{
+  "beats": {
+    "intro": {
+      "narration": {
+        "0": {
+          "text": "Parij, 1789-yil 14-iyul. To'rt funtlik non oddiy ishchining kunlik maoshining yarmidan ko'proq turadi. Hosil bitmadi, xazina bo'm-bo'sh, qirol esa xalq ishongan yagona vazirni hozirgina ishdan bo'shatdi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Shahar atrofida yigirma ming qirollik askari qarorgoh qurgan. Ikki kun oldin Pale-Royal bog'larida Kamil Demulen ismli yosh advokat stolga sakrab chiqib: «Qurollaning!» deb qichqirgan edi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Bugun ertalab olomon Invalidlar uyiga bostirib kirib, o'ttiz ming musketni olib ketdi. Ammo musketga porox kerak, porox esa Bastiliya ichida.",
+          "speaker": "Solnoma"
+        },
+        "3": {
+          "text": "Bizning tariximizda bu kun qirolni o'ldirgan, Yevropani dahshatga solgan va imperator bilan yakunlangan inqilobni boshlab berdi. Bu tarixda keyin nima bo'lishini siz hal qilasiz.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "explore-paris": {
+      "prompt": "Parijni kashf eting: atrofga qarash uchun suring va yonib turgan belgilarni bosing. Olomon Bastiliya oldida to'planmoqda.",
+      "hotspots": {
+        "bakery": {
+          "label": "Non navbati",
+          "title": "Nonning narxi",
+          "description": "Ayollar bu yerda tong otmasdan navbatda turibdi. Parijlik oilaning asosiy taomi non, uning narxi esa bir yilda deyarli ikki baravar oshdi. Mish-mishlarga ko'ra, zodagonlar shaharni ochlik bilan bo'ysundirish uchun g'allani yashirmoqda. Bu rost emas, lekin hamma bunga ishonadi."
+        },
+        "cockade": {
+          "label": "Yangi ranglar",
+          "title": "Qizil, oq va ko'k",
+          "description": "Parijliklar shlyapalariga lentalar taqmoqda: Parij shahrining ranglari bo'lgan ko'k va qizil. Bir necha kundan so'ng general Lafayet ularga qirolning oq rangini qo'shadi va uch rangli bayroq tug'iladi."
+        },
+        "barricade": {
+          "label": "Barrikada",
+          "title": "Invalidlar uyidan to'plar",
+          "description": "Qirolning o'z polki bo'lgan Fransuz gvardiyasidan qochganlar to'plar olib kelib, olomonga qo'mondonlik qilmoqda. Ular to'pni qanday nishonga olishni biladi. Qal'aning minoralari yigirma to'rt metr baland, ichida sakson ikki keksa askar, o'ttiz ikki shveytsariyalik va atigi yetti mahbus bor."
+        },
+        "bastille": {
+          "label": "Bastiliyaga yaqinlashish",
+          "title": "Qirol qal'asi",
+          "description": "Komendant markiz de Lone ko'prik-darvozalarni ko'tarib, to'plarini o'qlagan. Shahardan kelgan delegatsiyalar muzokaraga kirib, quruq qo'l bilan chiqdi. Olomon oldinga bosmoqda, kimdir esa bolta bilan ko'prik zanjirlari tomon tirmashmoqda."
+        }
+      }
+    },
+    "bastille-choice": {
+      "title": "Bastiliya oldida · 1789-yil 14-iyul",
+      "prompt": "Olomon sizga qaraydi. Endi nima qilamiz?",
+      "options": {
+        "storm": {
+          "label": "Qal'aga hujum",
+          "description": "Zanjirlarni kesing, to'plarni olib keling va poroxni kuch bilan oling. Ertalabgacha butun Fransiya bundan xabar topadi."
+        },
+        "parley": {
+          "label": "Yana bir muzokara",
+          "description": "Oq bayroq ostida delegatsiya yuboring: poroxni topshirsangiz, hech kimga zarar yetmaydi. Sekinroq, olomon esa kutib turmasligi mumkin."
+        }
+      }
+    },
+    "bastille-battle": {
+      "battle": {
+        "name": "Bastiliyaning olinishi",
+        "objective": "1789-yil 14-iyul, tushdan keyin. Qo'zg'olonchilar va isyonkor Fransuz gvardiyachilari yigirma to'rt metrlik devorlar ortidagi garnizonga qarshi. Qirol polklari Mars maydonidan yetib kelmasidan oldin himoyachilarni yenging.",
+        "player": {
+          "name": "Parijliklar va Fransuz gvardiyasi"
+        },
+        "enemy": {
+          "name": "Bastiliya garnizoni"
+        },
+        "events": {
+          "drawbridge": {
+            "title": "Tashqi ko'prik",
+            "prompt": "Ikki kishi tashqi ko'prikning zanjirlariga yetib bordi. Garnizon minoralardan o't ochmoqda.",
+            "options": {
+              "cut-chains": {
+                "label": "Zanjirlarni kesish",
+                "description": "Ko'prik gursillab tushadi va olomon tashqi hovliga yopirilib kiradi."
+              },
+              "cannon": {
+                "label": "To'plarni olib kelish",
+                "description": "Fransuz gvardiyachilari Invalidlar uyining to'plarini hovliga sudrab kirib, asosiy darvozaga to'g'rilaydi."
+              }
+            }
+          },
+          "white-flag": {
+            "title": "Darvozadan uzatilgan xat",
+            "prompt": "De Lone garnizonga sharaf bilan taslim bo'lishga ruxsat berilmasa, porox omborini va u bilan birga qal'ani portlatib yuborish bilan tahdid qilmoqda.",
+            "options": {
+              "accept-terms": {
+                "label": "Ularning hayotini va'da qilish",
+                "description": "Qal'ani qirg'insiz oling, agar olomon so'zingizda tursa."
+              },
+              "no-quarter": {
+                "label": "Hech qanday shart yo'q",
+                "description": "Ular xalqqa o'q uzdi. Endi xalq bilan yuzma-yuz bo'lsin."
+              }
+            }
+          },
+          "volley": {
+            "title": "Minoralardan o't",
+            "prompt": "Shveytsariyaliklar hovliga ketma-ket o'q yog'dirmoqda. O'nlab kishi yiqildi, olomon ikkilanmoqda.",
+            "options": {
+              "hulin": {
+                "label": "Gvardiyani Yulen boshlaydi",
+                "description": "Kir yuvish korxonasi boshqaruvchisi va sobiq askar Pyer-Ogyusten Yulen qilichini yalang'ochlab oldinga chiqadi."
+              },
+              "take-cover": {
+                "label": "Pana olib, o'q otishda davom etish",
+                "description": "Tutun pardasi uchun somonli aravalarni yoqing va uning ortidan jang qiling."
+              }
+            }
+          }
+        }
+      }
+    },
+    "bastille-falls": {
+      "narration": {
+        "0": {
+          "text": "Soat beshu o'ttizda garnizon taslim bo'ladi. Olomon komendantning boshini nayzaga sanchib ko'chalar bo'ylab olib yuradi. Qirol o'sha kun uchun kundaligiga shunday yozadi: «Hech narsa».",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Bir necha hafta ichida ishchilar Bastiliyani tosh-toshlab buza boshlaydi. Bir quruvchi toshlardan kichik Bastiliyalar yasab, butun Fransiya bo'ylab esdalik sifatida sotadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "bastille-massacre": {
+      "narration": {
+        "0": {
+          "text": "Hujum minoralardagi to'plar ostida barbod bo'ladi. Kechga yaqin shveytsariyalik polklar Mars maydonidan kirib keladi va olomon tarqalib ketadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Dadillashgan qirol Milliy Assambleyani tarqatib yuboradi. Uning yetakchilari Londonga yoki qamoqqa qochadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "varennes-intro": {
+      "narration": {
+        "0": {
+          "text": "Ikki yil o'tadi. Assambleya feodal imtiyozlarni bekor qiladi va Inson huquqlarini e'lon qiladi. Yetti ming ayol Versalga yurish qilib, qirollik oilasini Parijga olib keladi, u yerda ular amalda asir bo'lib yashaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "1791-yil 20-iyun kechasi qirol, qirolicha va bolalari niqoblanib Tyuilri saroyidan chiqib ketadi va ulkan yashil karetada chegaradagi armiya tomon yo'l oladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Sent-Menuda pochta boshlig'i qirolning yuzini cho'ntagidagi puldagi suratdan taniydi va oldinga ot choptiradi. Varennda shahar qo'ng'iroqlari chalinadi. Panshaxa ko'targan dehqonlar karetani o'rab oladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "varennes-choice": {
+      "title": "Varenn · 1791-yil 21-iyun kechasi",
+      "prompt": "Fransiya qiroli bir baqqolning do'konida qo'lga tushib turibdi. Millat u bilan nima qiladi?",
+      "options": {
+        "arrest": {
+          "label": "Uni xoin sifatida hibsga olish",
+          "description": "Uni qo'riqlov ostida Parijga qaytaring, shlyapasini yechmagan jim olomon yonidan. Endi hech kim qirolga ishonmaydi."
+        },
+        "restore": {
+          "label": "Uni sharaf bilan qaytarish",
+          "description": "Assambleya haqiqatan qilganidek, uni o'g'irlab ketishgan deb ko'rsating va yangi Konstitutsiyaga qasamyod qildiring. Hukmronlik qiladigan, ammo boshqarmaydigan qirol."
+        },
+        "let-pass": {
+          "label": "Karetani o'tkazib yuborish",
+          "description": "Barrikadani oching. Avstriyaliklar oldiga qochib ketsin, kim uning ortidan ergashishini ko'ramiz."
+        }
+      }
+    },
+    "valmy-republic": {
+      "battle": {
+        "name": "Valmi to'p jangi",
+        "objective": "1792-yil sentyabr. Brunsvik gersogi qirollik oilasiga zarar yetsa, Parijni yer bilan yakson qilishni va'da qildi. Uning prussiyaliklari bilan poytaxt orasida bir tepalik, bir shamol tegirmoni va hali jang ko'rmagan ko'ngillilar armiyasi turibdi.",
+        "player": {
+          "name": "Shimol va Markaz armiyalari"
+        },
+        "enemy": {
+          "name": "Brunsvikning prussiyaliklari"
+        },
+        "events": {
+          "cannonade": {
+            "title": "To'p jangi",
+            "prompt": "Tepalikdan tuman ko'tariladi. Ellik to'rtta prussiya to'pi saflaringizga o't ochadi.",
+            "options": {
+              "answer-guns": {
+                "label": "To'pga to'p bilan javob",
+                "description": "Eski qirollik artilleriya korpusi inqilob tomonida qoldi. U Yevropadagi eng yaxshisi va u sizniki."
+              },
+              "reverse-slope": {
+                "label": "Tepalik ortiga chekinish",
+                "description": "To'p o'qlari tepalik ustidan uchib o'tsin, ko'ngillilar esa ko'rinmay tursin."
+              }
+            }
+          },
+          "brunswick-attack": {
+            "title": "Prussiyaliklar oldinga siljiydi",
+            "prompt": "Brunsvik piyodalarini go'yo paraddagidek tekis saflarda yonbag'ir bo'ylab yuboradi.",
+            "options": {
+              "bayonets": {
+                "label": "Ularni nayza bilan kutib olish",
+                "description": "Ko'ngillilar faxriylarga qarshi, pastga qarab, lablarida «Ça ira» qo'shig'i bilan."
+              },
+              "dragoons": {
+                "label": "Dragunlarni aylantirib yuborish",
+                "description": "Ularning ko'zi tepalikda ekan, prussiyaliklarning qanotiga zarba bering."
+              }
+            }
+          },
+          "vive-la-nation": {
+            "title": "O'q-dori aravasi portlaydi",
+            "prompt": "Snaryad tegirmon ortidagi porox aravalariga tegadi. Saf bo'ylab vahima tarqaladi.",
+            "options": {
+              "hat-on-sword": {
+                "label": "«Yashasin Millat!»",
+                "description": "General Kellerman shlyapasini qilichi uchiga ko'taradi va o'ttiz olti ming kishi bu hayqiriqni ilib ketadi."
+              },
+              "close-ranks": {
+                "label": "Saflarni zichlab turish",
+                "description": "Nutqlarsiz. Bo'shliqlarni to'ldiring va turing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "valmy-monarchy": {
+      "battle": {
+        "name": "Valmi to'p jangi",
+        "objective": "1792-yil sentyabr. Prussiya va Avstriya Konstitutsiyaga qasamyod qilgan va ularga qarshi jang qilayotgan qirolni «qutqarish» uchun bostirib kirdi. Tegirmon tepaligini ushlab turing va konstitutsiyaviy monarxiya saqlanib qoladi.",
+        "player": {
+          "name": "Shimol va Markaz armiyalari"
+        },
+        "enemy": {
+          "name": "Brunsvikning prussiyaliklari"
+        },
+        "events": {
+          "cannonade": {
+            "title": "To'p jangi",
+            "prompt": "Tepalikdan tuman ko'tariladi. Ellik to'rtta prussiya to'pi saflaringizga o't ochadi.",
+            "options": {
+              "answer-guns": {
+                "label": "To'pga to'p bilan javob",
+                "description": "Eski qirollik artilleriya korpusi inqilob tomonida qoldi. U Yevropadagi eng yaxshisi va u sizniki."
+              },
+              "reverse-slope": {
+                "label": "Tepalik ortiga chekinish",
+                "description": "To'p o'qlari tepalik ustidan uchib o'tsin, ko'ngillilar esa ko'rinmay tursin."
+              }
+            }
+          },
+          "brunswick-attack": {
+            "title": "Prussiyaliklar oldinga siljiydi",
+            "prompt": "Brunsvik piyodalarini go'yo paraddagidek tekis saflarda yonbag'ir bo'ylab yuboradi.",
+            "options": {
+              "bayonets": {
+                "label": "Ularni nayza bilan kutib olish",
+                "description": "Ko'ngillilar faxriylarga qarshi, pastga qarab, lablarida «Ça ira» qo'shig'i bilan."
+              },
+              "dragoons": {
+                "label": "Dragunlarni aylantirib yuborish",
+                "description": "Ularning ko'zi tepalikda ekan, prussiyaliklarning qanotiga zarba bering."
+              }
+            }
+          },
+          "vive-la-nation": {
+            "title": "O'q-dori aravasi portlaydi",
+            "prompt": "Snaryad tegirmon ortidagi porox aravalariga tegadi. Saf bo'ylab vahima tarqaladi.",
+            "options": {
+              "hat-on-sword": {
+                "label": "«Yashasin Millat!»",
+                "description": "General Kellerman shlyapasini qilichi uchiga ko'taradi va o'ttiz olti ming kishi bu hayqiriqni ilib ketadi."
+              },
+              "close-ranks": {
+                "label": "Saflarni zichlab turish",
+                "description": "Nutqlarsiz. Bo'shliqlarni to'ldiring va turing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "valmy-abroad": {
+      "battle": {
+        "name": "Valmi to'p jangi",
+        "objective": "1792-yil sentyabr. Lyudovik XVI bosqinchilar bilan birga yurmoqda, minglab muhojir zodagonlar prussiyaliklar yonida ot choptirmoqda. Valmi tepaligi qulasa, Parijga yo'l ochiladi va qirol uyiga bosqinchi sifatida qaytadi.",
+        "player": {
+          "name": "Shimol va Markaz armiyalari"
+        },
+        "enemy": {
+          "name": "Prussiyaliklar va muhojirlar"
+        },
+        "events": {
+          "cannonade": {
+            "title": "To'p jangi",
+            "prompt": "Tepalikdan tuman ko'tariladi. Ellik to'rtta prussiya to'pi saflaringizga o't ochadi.",
+            "options": {
+              "answer-guns": {
+                "label": "To'pga to'p bilan javob",
+                "description": "Eski qirollik artilleriya korpusi inqilob tomonida qoldi. U Yevropadagi eng yaxshisi va u sizniki."
+              },
+              "reverse-slope": {
+                "label": "Tepalik ortiga chekinish",
+                "description": "To'p o'qlari tepalik ustidan uchib o'tsin, ko'ngillilar esa ko'rinmay tursin."
+              }
+            }
+          },
+          "brunswick-attack": {
+            "title": "Prussiyaliklar oldinga siljiydi",
+            "prompt": "Brunsvik piyodalarini go'yo paraddagidek tekis saflarda yonbag'ir bo'ylab yuboradi.",
+            "options": {
+              "bayonets": {
+                "label": "Ularni nayza bilan kutib olish",
+                "description": "Ko'ngillilar faxriylarga qarshi, pastga qarab, lablarida «Ça ira» qo'shig'i bilan."
+              },
+              "dragoons": {
+                "label": "Dragunlarni aylantirib yuborish",
+                "description": "Ularning ko'zi tepalikda ekan, prussiyaliklarning qanotiga zarba bering."
+              }
+            }
+          },
+          "vive-la-nation": {
+            "title": "O'q-dori aravasi portlaydi",
+            "prompt": "Snaryad tegirmon ortidagi porox aravalariga tegadi. Saf bo'ylab vahima tarqaladi.",
+            "options": {
+              "hat-on-sword": {
+                "label": "«Yashasin Millat!»",
+                "description": "General Kellerman shlyapasini qilichi uchiga ko'taradi va o'ttiz olti ming kishi bu hayqiriqni ilib ketadi."
+              },
+              "close-ranks": {
+                "label": "Saflarni zichlab turish",
+                "description": "Nutqlarsiz. Bo'shliqlarni to'ldiring va turing."
+              }
+            }
+          }
+        }
+      }
+    },
+    "brunswick-paris": {
+      "narration": {
+        "0": {
+          "text": "Ko'ngillilar tepalikda sinadi. O'n kundan so'ng prussiya otliqlari otlarini Sena daryosida sug'oradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Brunsvik Parijni jazolash haqidagi va'dasini bajaradi. Inqilob harbiy sudlar bilan tugaydi, uning yetakchilari bir paytlar zodagonlar uchun ishlatgan fonar ustunlariga osiladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "constitution-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Prussiyaliklar chekinadi. Parijda olomon yillar davomida ilk bor «Yashasin Qirol!» deb hayqiradi, chunki bu qirol chet el qirollariga qarshi Konstitutsiya yonida turdi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "1792-yilda Respublika ham, sud ham, Terror ham bo'lmaydi. Fransiya qirolini saqlab qoladi, qirol esa boshini.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "kings-trial": {
+      "title": "Fuqaro Kapet ustidan sud · 1793-yil yanvar",
+      "prompt": "Fransiya endi Respublika, sobiq qirol esa xiyonat uchun sud qilinmoqda. Yetti yuz deputat birin-ketin, ochiq ovoz beradi. Sizning deputatingiz qanday ovoz beradi?",
+      "options": {
+        "execute": {
+          "label": "O'lim",
+          "description": "«Millat yashashi uchun Lyudovik o'lishi kerak», deydi Robespyer. Qaror ozgina ustunlik bilan qabul qilinadi."
+        },
+        "exile": {
+          "label": "O'lim emas, surgun",
+          "description": "Mo''tadil jirondistlar o'lgan qirol shahid, tirik surgun esa sharmanda ekanini ta'kidlaydi. Uni Amerikaga jo'nating."
+        }
+      }
+    },
+    "girondin-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Lyudovik Kapet 1793-yil bahorida pensiyali oddiy fuqaro sifatida Filadelfiyaga suzib ketadi. Maydondagi gilyotina ishlatilmay olib tashlanadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Qasos olinadigan qirol o'limi bo'lmagach, Yevropa bilan urush sovib qoladi. Jirondistlar federal konstitutsiya yozadi, yakobinchilar esa bahsda ko'chalarda emas, Assambleyada yutqazadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "terror-intro": {
+      "narration": {
+        "0": {
+          "text": "Fransiya Avstriya, Prussiya, Britaniya, Ispaniya va Niderlandiya bilan, shuningdek o'z g'arbidagi isyonchilar bilan urushmoqda. Jamoat xavfsizligi qo'mitasi favqulodda farmonlar bilan boshqaradi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Shubhali shaxslar to'g'risidagi qonun har kimni «fuqarolik fazilati yetishmasligi» uchun hibsga olishga imkon beradi. To'qqiz oy ichida rasman o'n yetti mingga yaqin kishi qatl etiladi, yana ko'plari qamoqda halok bo'ladi.",
+          "speaker": "Solnoma"
+        },
+        "2": {
+          "text": "Terror bu adolatdan boshqa narsa emas: tezkor, qattiq, murosasiz. U fazilatning nuridir.",
+          "speaker": "Maksimilian Robespyer"
+        }
+      }
+    },
+    "terror-choice": {
+      "title": "Inqilob maydoni · 1794-yil bahori",
+      "prompt": "Danton Terror o'z ishini qildi va tugashi kerak, deydi. Robespyer Respublika hali xoinlarga to'la, deydi. Bir oy ichida ulardan biri o'sha supada bo'ladi.",
+      "options": {
+        "purge": {
+          "label": "Robespyer tomonida turish",
+          "description": "Fazilatga shafqat kerak emas. Danton va do'stlari gilyotinaga boradi, Qo'mita esa Fransiyani mahkam ushlab turadi."
+        },
+        "danton": {
+          "label": "Danton tomonida turish",
+          "description": "«Xalq dahshatli bo'lmasligi uchun biz dahshatli bo'laylik», degan edi u bir vaqtlar. Endi u va do'sti Demulen Shafqat qo'mitasini xohlaydi. Qo'mita zarba bermasidan oldin uni qo'llab-quvvatlang."
+        },
+        "thermidor": {
+          "label": "Kutib, so'ng ikkalasiga zarba berish",
+          "description": "Guruhlar bir-birini yo'q qilsin, so'ng 9-termidorda bo'lganidek, Robespyerni Konventda ag'daring. Avval tartib, tamoyillar keyin."
+        }
+      }
+    },
+    "eternal-terror": {
+      "narration": {
+        "0": {
+          "text": "Danton 1794-yil 5-aprelda supaga chiqadi. «Boshimni xalqqa ko'rsat», deydi u jallodga. «U ko'rishga arziydi».",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Bu reallikda Termidor fitnasi o'z vaqtida fosh etiladi. Robespyer omon qoladi va Fazilat Respublikasi abadiy bo'ladi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "clemency-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Qo'mitadan dahshatga tushgan Konvent nihoyat Dantonning gumburlagan ovozida jasorat topadi. Shubhali shaxslar to'g'risidagi qonun bekor qilinadi. Qamoqxonalar bo'shaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Robespyer yozish uchun Arrasga ketadi. Omon qolgan jirondistlar yashiringan joylaridan chiqib, erkinroq, federal konstitutsiya yozishga yordam beradi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "thermidor-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Danton aprelda halok bo'ladi. Iyulda navbat o'zlariga kelishidan qo'rqqan deputatlar Konventda Robespyerni qichqiriq bilan bostiradi. Ertasi kuni kechqurun u o'sha maydonda gilyotinada qatl etiladi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Besh kishilik Direktoriyaning to'rt yillik zaif boshqaruvi boshlanadi: korrupsiya, bankrotlik va to'ntarishlar. Fransiya kuchli odam izlay boshlaydi. Ulardan biri allaqachon mashhur.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "brumaire-choice": {
+      "title": "Sen-Klu qasri · 18-brumer, 1799-yil noyabr",
+      "prompt": "Misrdan endigina qaytgan general Bonapart Direktoriya o'rniga uchta konsul, o'zi esa Birinchi konsul bo'lishini xohlaydi. Uning grenaderlari tashqarida. To'ntarishni qo'llab-quvvatlaysizmi?",
+      "options": {
+        "coup": {
+          "label": "Bonapartni qo'llab-quvvatlash",
+          "description": "U tartib, g'alaba va inqilob yutuqlarini abadiylashtirishni va'da qiladi. Avval u Italiyada avstriyaliklarni yana yengishi kerak."
+        },
+        "refuse": {
+          "label": "Respublikani himoya qilish",
+          "description": "Deputatlar «Diktatorni qonundan tashqari deb e'lon qiling!» deb qichqirmoqda. Ular bilan birga turing va askarlari zalni bo'shatmasidan oldin generalni hibsga oling."
+        }
+      }
+    },
+    "marengo-battle": {
+      "battle": {
+        "name": "Marengo jangi",
+        "objective": "1800-yil iyun. Birinchi konsul armiyasi bilan Alp tog'larini oshib o'tdi, ammo avstriyaliklar birinchi zarba beradi va ular soni ko'proq. Bu yerda yutqazsa, uning hukumati bir necha hafta ichida quladi. Yutsa, Fransiya uniki.",
+        "player": {
+          "name": "Zaxira armiyasi"
+        },
+        "enemy": {
+          "name": "Avstriya armiyasi"
+        },
+        "events": {
+          "surprise": {
+            "title": "Avstriyaliklar Bormidadan o'tmoqda",
+            "prompt": "Siz dushman chekinadi deb kutgandingiz. Buning o'rniga o'ttiz ming avstriyalik daryo ko'priklaridan yopirilib kelmoqda.",
+            "options": {
+              "consular-guard": {
+                "label": "Gvardiya bilan kare tuzish",
+                "description": "Konsul gvardiyasi ochiq tekislikda granit devordek turadi."
+              },
+              "counterattack": {
+                "label": "Darhol qarshi hujum",
+                "description": "Ular hali o'tayotganda zarba bering."
+              }
+            }
+          },
+          "desaix": {
+            "title": "Dezeks yetib keladi",
+            "prompt": "General Dezeks yangi diviziya bilan yetib keladi. «Bu jang yutqazildi, — deydi u, — ammo boshqasini yutishga hali vaqt bor».",
+            "options": {
+              "desaix-attack": {
+                "label": "Dezeks hujumga o'tadi",
+                "description": "Yangi kuchdagi piyodalar to'g'ri avstriya kolonnasiga. Dezeksning o'zi bu hujumdan omon chiqmaydi."
+              },
+              "marmont-guns": {
+                "label": "Marmonning o'n sakkiz to'pi",
+                "description": "Qolgan barcha to'plarni bir joyga to'plab, kolonnaga yaqin masofadan kartech oting."
+              }
+            }
+          },
+          "kellermann": {
+            "title": "Kolonna ikkilanmoqda",
+            "prompt": "Avstriya kolonnasi larzaga keldi. Valmi qahramonining o'g'li yosh Kellermanning uzumzor ortida to'rt yuz og'ir otliqi bor.",
+            "options": {
+              "charge": {
+                "label": "Kellerman hujumi",
+                "description": "Kolonnaning qanotiga. Bizning tariximizda ikki ming avstriyalik bir necha daqiqada taslim bo'lgan."
+              },
+              "pursue": {
+                "label": "Umumiy hujum",
+                "description": "Butun saf nog'oralar sadosi ostida birga oldinga siljiydi."
+              }
+            }
+          },
+          "retreat": {
+            "title": "Saf parchalanmoqda",
+            "prompt": "Tushdan keyin armiyangiz tekislik bo'ylab chekinmoqda. Choparlar Parijga jang yutqazilgani haqida xabar berish uchun allaqachon yo'lga chiqdi.",
+            "options": {
+              "bonaparte-rides": {
+                "label": "Bonapart ular orasida ot choptiradi",
+                "description": "«Askarlar, biz yetarlicha chekindik. Bilasizlar, men doim jang maydonida uxlayman»."
+              },
+              "rally-village": {
+                "label": "San-Juliano yonida to'planish",
+                "description": "Qishloqqa chekinib, yordam kelguncha uning devorlari ortidan jang qiling."
+              }
+            }
+          }
+        }
+      }
+    },
+    "empire-cinematic": {
+      "narration": {
+        "0": {
+          "text": "Marengo shom chog'ida yutiladi. Parijga yuborilgan xabarnomada jang soat uchda yutqazilgani haqida hech narsa aytilmaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "To'rt yildan so'ng Notr-Damda Napoleon tojni Papaning qo'lidan olib, o'z boshiga kiyadi. Inqilob imperator yaratdi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "marengo-defeat": {
+      "narration": {
+        "0": {
+          "text": "Dezeks bir soat kechikib keladi. Zaxira armiyasi Alp tog'lariga qaytish yo'lida tarqalib ketadi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "Parijda Birinchi konsuldan nafratlangan royalistlar va generallar fursatdan foydalanadi. Bir yil ichida Burbonlar merosxo'ri uyga taklif qilinadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    },
+    "directory-cinematic": {
+      "narration": {
+        "0": {
+          "text": "To'ntarish Sen-Kludagi oranjereyada barbod bo'ladi. Deputatlar uni turtganda Bonapart hushidan ketadi, ukasi esa grenaderlarni yurishga ko'ndira olmaydi.",
+          "speaker": "Solnoma"
+        },
+        "1": {
+          "text": "General uzoqdagi armiyaga qo'mondonlik qilish uchun qaytarib yuboriladi. Respublika kambag'al va janjalkash bo'lsa-da, baribir respublika bo'lib davom etadi.",
+          "speaker": "Solnoma"
+        }
+      }
+    }
+  },
+  "characters": {
+    "louis": {
+      "name": "Lyudovik XVI",
+      "role": "Fransiya qiroli"
+    },
+    "marie-antoinette": {
+      "name": "Mariya-Antuanetta",
+      "role": "Fransiya qirolichasi"
+    },
+    "robespierre": {
+      "name": "Maksimilian Robespyer",
+      "role": "Yakobinchilar yetakchisi, «Poraxo'rlikka berilmas»"
+    },
+    "danton": {
+      "name": "Jorj Danton",
+      "role": "Inqilob notig'i"
+    },
+    "napoleon": {
+      "name": "Napoleon Bonapart",
+      "role": "Respublika generali"
+    }
+  },
+  "title": "Erkinlik, tenglik yoki o'lim",
+  "era": "Parij · 1789",
+  "endings": {
+    "constitutional-monarchy": {
+      "title": "Hokimiyatni bo'lishishni o'rgangan qirol",
+      "subtitle": "Bir asr oldin keladigan konstitutsiyaviy monarxiya",
+      "epilogue": {
+        "0": {
+          "text": "Lyudovik XVI 1815-yilda fransuzlarning birinchi qiroli sifatida o'z to'shagida vafot etadi. Uning vazirlari, Britaniyada parlamentga bo'lgani kabi, saylangan Assambleyaga hisob beradi."
+        },
+        "1": {
+          "text": "Terror ham, Napoleon ham bo'lmagach, Yevropa yigirma yillik urushni boshdan kechirmaydi. Fransiya erta va tinch sanoatlashadi, ayollar esa bizdagi Fransiyadan o'nlab yillar oldin ovoz berish huquqini oladi."
+        },
+        "2": {
+          "text": "Mariya-Antuanetta hech qachon «unda pirojnoe yeyishsin» demaydi. Aslida u bizning tariximizda ham buni aytmagan."
+        }
+      }
+    },
+    "girondist-victory": {
+      "title": "Jirondistlar respublikasi",
+      "subtitle": "Terrorsiz federal Fransiya",
+      "epilogue": {
+        "0": {
+          "text": "Fransiya biz bilgan markazlashgan davlatdan ko'ra Shveytsariya yoki Qo'shma Shtatlarga o'xshash o'zini o'zi boshqaradigan departamentlar federatsiyasiga aylanadi."
+        },
+        "1": {
+          "text": "Lyudovik Kapet Pensilvaniyada fermerlik qiladi va Tomas Jefferson bilan xushmuomala yozishmalar olib boradi."
+        },
+        "2": {
+          "text": "Federal g'oya fransuz g'oyalari bilan birga Yevropa bo'ylab tarqaladi va ikki asr oldin Yevropa Ittifoqiga namuna bo'ladi."
+        }
+      }
+    },
+    "girondist-victory-danton": {
+      "title": "Jirondistlar respublikasi",
+      "subtitle": "Danton Terrorni tugatadi · mo''tadil, federal Fransiya",
+      "epilogue": {
+        "0": {
+          "text": "Terror yozda emas, 1794-yil bahorida tugaydi va bizning tariximizda halok bo'lgan minglab odamlar tirik qoladi. Danton 1799-yilda boy va biroz sharmanda holda o'z to'shagida vafot etadi."
+        },
+        "1": {
+          "text": "Fransiya mo''tadil federal respublikaga aylanadi. Kuchli odamga ehtiyoj bo'lmagach, Napoleon ham ko'tarilmaydi."
+        },
+        "2": {
+          "text": "Federal g'oya fransuz g'oyalari bilan birga Yevropa bo'ylab tarqaladi va ikki asr oldin Yevropa Ittifoqiga namuna bo'ladi."
+        }
+      }
+    },
+    "robespierre-eternal": {
+      "title": "Fazilat Respublikasi",
+      "subtitle": "Robespyer omon qoladi · Terror davlatga aylanadi",
+      "epilogue": {
+        "0": {
+          "text": "Robespyer 1820-yilda vafot etguncha hukmronlik qiladi. Oliy Mavjudot kulti davlat diniga aylanadi, Jamoat xavfsizligi qo'mitasi esa hech qachon tarqatilmaydi."
+        },
+        "1": {
+          "text": "Fransiya maxfiy politsiya, ko'rgazmali sudlar va yetakchiga sig'inish bilan birinchi zamonaviy bir partiyali davlatga aylanadi, bunday narsalarning nomi paydo bo'lishidan bir asr oldin."
+        },
+        "2": {
+          "text": "Bu dunyoning qolgan qismi erta saboq oladigan yoki ololmaydigan ogohlantirishdir."
+        }
+      }
+    },
+    "napoleonic-empire": {
+      "title": "Burgut va toj",
+      "subtitle": "Siz bilgan tarix: inqilobdan imperiyagacha",
+      "epilogue": {
+        "0": {
+          "text": "Napoleon 1804-yilda o'zini imperator deb toj kiyadi, Yevropaning katta qismini zabt etadi va hammasini Rossiya qorlarida va Vaterlooda boy beradi. Burbonlar 1814-yilda qaytadi."
+        },
+        "1": {
+          "text": "Ammo Napoleon kodeksi, qonun oldida tenglik, metrik tizim va millat g'oyasi undan keyin ham yashab, butun dunyoga tarqaladi."
+        },
+        "2": {
+          "text": "Siz shu satrlarni o'qiyotgan reallik aynan shu. Inqilob deyarli barcha urinishlarida muvaffaqiyatsizlikka uchradi, lekin baribir deyarli hamma narsani o'zgartirdi."
+        }
+      }
+    },
+    "directory-republic": {
+      "title": "O'jar Respublika",
+      "subtitle": "Imperator yo'q · o'lishni istamaydigan zaif respublika",
+      "epilogue": {
+        "0": {
+          "text": "Napoleonsiz Fransiya uzoq va natijasiz urush olib boradi va 1802-yilda Belgiya va Reyn chegarasini saqlab qolgan holda sulh tuzadi."
+        },
+        "1": {
+          "text": "Respublika poraxo'r va sevilmagan, lekin har necha yilda saylov o'tkazadi va asta-sekin saylovlar ahamiyat kasb eta boshlaydi."
+        },
+        "2": {
+          "text": "Bonapart 1821-yilda unutilgan general sifatida vafot etadi va unga qurishga ruxsat berilmagan imperiya haqida achchiq xotiralar yozadi."
+        }
+      }
+    },
+    "old-regime": {
+      "title": "Eski tuzum qaytadi",
+      "subtitle": "Bastiliya dosh beradi · inqilob tug'ilishidayoq bo'g'iladi",
+      "epilogue": {
+        "0": {
+          "text": "Qirol qo'shinlari tartibni tiklaydi va Milliy Assambleyaga boshqa yig'ilishga ruxsat berilmaydi. Lyudovik XVI bankrot va xavotirda 1820-yillardagi kechroq va qonliroq portlashgacha hukmronlik qiladi."
+        },
+        "1": {
+          "text": "Inson huquqlari deklaratsiyasi hech qachon yozilmaydi. Undagi g'oyalar Amsterdamda bosilib, chegaradan yashirincha olib o'tilgan kitoblarda yashab qoladi."
+        }
+      }
+    },
+    "old-regime-valmy": {
+      "title": "Eski tuzum qaytadi",
+      "subtitle": "Valmi yutqazildi · chet el qirollari taxtni tiklaydi",
+      "epilogue": {
+        "0": {
+          "text": "Lyudovik XVI prussiya nayzalari bilan taxtga qaytariladi va xalq buni unga hech qachon kechirmaydi. U chet el davlatining qo'g'irchog'i sifatida hukmronlik qiladi."
+        },
+        "1": {
+          "text": "Inqilob tepalikni deyarli ushlab qolgan ko'ngillilar haqidagi afsonaga aylanadi, keyingisi esa, kelganda, ancha radikalroq bo'ladi."
+        }
+      }
+    },
+    "old-regime-marengo": {
+      "title": "Eski tuzum qaytadi",
+      "subtitle": "Marengo yutqazildi · Burbonlar uyga qaytadi",
+      "epilogue": {
+        "0": {
+          "text": "Qatl etilgan qirolning ukasi Lyudovik XVIII bizning tariximizdagidan o'n uch yil oldin, 1801-yilda qaytadi va inqilob qonunlarining aksariyatini saqlab qoladi, chunki ularni bekor qila olmaydi."
+        },
+        "1": {
+          "text": "Napoleon urushlarisiz Yevropa qirollari tinchroq uxlaydi, Yevropa millatlari esa sekinroq uyg'onadi."
+        }
+      }
+    }
+  }
+}

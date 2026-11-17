@@ -12,6 +12,7 @@ import {
 import { pavingTexture } from './textures';
 import { buildMarcher, figureMaterial } from './figures';
 import { Cast } from './HeroCharacter';
+import { MarengoField, ParisBastille, ParisTerror, ValmyField, Varennes } from './revolution';
 import { London, Philadelphia, PhiladelphiaWinter, ValleyForge, Versailles, YorktownField } from './colonial';
 
 // ─── Environment settings ──────────────────────────────────────────────────
@@ -85,6 +86,31 @@ const ENV: Record<EnvironmentId, EnvDef> = {
         sunPos: [60, 60, 70], ambient: 0.44, ground: '#e6edf1', groundVar: '#c6d4dd',
         disc: { pos: [240, 240, 300], color: '#f2f5f8', size: 22 }, clouds: false,
     },
+    'paris-1789': {
+        skyTop: '#5c87b4', skyHorizon: '#e3d7c0', fog: '#d6cbb5', sun: '#ffe2b4',
+        sunPos: [70, 80, 60], ambient: 0.5, ground: '#9b9a6c', groundVar: '#86875a',
+        disc: { pos: [260, 280, 220], color: '#fff2d8', size: 26 }, clouds: true,
+    },
+    'paris-terror': {
+        skyTop: '#5a6472', skyHorizon: '#c8c2b8', fog: '#bdb7ad', sun: '#efe6d6',
+        sunPos: [-60, 70, 60], ambient: 0.5, ground: '#8f9268', groundVar: '#7b7f58',
+        disc: { pos: [-240, 260, 240], color: '#efe8da', size: 22 }, clouds: true,
+    },
+    'varennes': {
+        skyTop: '#0d1324', skyHorizon: '#2f3550', fog: '#232a3e', sun: '#9fb4e0',
+        sunPos: [-50, 60, -40], ambient: 0.32, ground: '#4c5a3c', groundVar: '#3e4a31',
+        disc: { pos: [-200, 260, -300], color: '#eef2ff', size: 16 }, clouds: false,
+    },
+    'valmy': {
+        skyTop: '#7b93ad', skyHorizon: '#d9dcd6', fog: '#cfd3cf', sun: '#fbefd8',
+        sunPos: [60, 60, 80], ambient: 0.5, ground: '#7f8a50', groundVar: '#6e7845',
+        disc: { pos: [240, 220, 300], color: '#fff6e2', size: 24 }, clouds: true,
+    },
+    'marengo': {
+        skyTop: '#4f86c4', skyHorizon: '#e8dcbc', fog: '#d9cfae', sun: '#ffe6b0',
+        sunPos: [80, 100, 40], ambient: 0.5, ground: '#93a055', groundVar: '#a69450',
+        disc: { pos: [300, 340, 160], color: '#fff3d4', size: 28 }, clouds: true,
+    },
 };
 
 const WINTER = new Set<EnvironmentId>(['winter-march', 'valley-forge', 'philadelphia-winter']);
@@ -111,7 +137,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             <ambientLight intensity={env.ambient * 0.45} />
             <directionalLight
                 position={env.sunPos}
-                intensity={environment === 'samarkand-dusk' ? 1.5 : 2.1}
+                intensity={environment === 'samarkand-dusk' ? 1.5 : environment === 'varennes' ? 0.7 : 2.1}
                 color={env.sun}
                 castShadow
                 shadow-mapSize={[2048, 2048]}
@@ -125,6 +151,7 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
             <hemisphereLight args={[env.skyHorizon, env.ground, 0.4]} />
             <Terrain base={env.ground} variant={env.groundVar} winter={WINTER.has(environment)} />
             {env.clouds && <Clouds dark={false} />}
+            {environment === 'varennes' && <Stars />}
             {WINTER.has(environment) && <Clouds dark />}
             {environment === 'samarkand-day' || environment === 'samarkand-dusk' ? (
                 <Samarkand dusk={environment === 'samarkand-dusk'} />
@@ -144,6 +171,16 @@ export function WorldScene({ environment }: { environment: EnvironmentId }) {
                 <London />
             ) : environment === 'philadelphia-winter' ? (
                 <PhiladelphiaWinter />
+            ) : environment === 'paris-1789' ? (
+                <ParisBastille />
+            ) : environment === 'paris-terror' ? (
+                <ParisTerror />
+            ) : environment === 'varennes' ? (
+                <Varennes />
+            ) : environment === 'valmy' ? (
+                <ValmyField />
+            ) : environment === 'marengo' ? (
+                <MarengoField />
             ) : (
                 <AnatoliaField />
             )}
